@@ -1,0 +1,79 @@
+# Cyber Watch — collecte automatique quotidienne + publication du site.
+#
+# Version « dépôt dédié » : le site, les données et ce fichier sont tous sur main.
+
+name: Cyber Watch - collecte
+
+on:
+  schedule:
+    - cron: "0 5 * * *"      # tous les jours à 05:00 UTC (7h à Paris l'été, 6h l'hiver)
+  workflow_dispatch:          # bouton « Run workflow » dans l'onglet Actions
+
+env:
+  BRANCHE_VEILLE: main  # dépôt dédié : tout est sur la branche main
+
+permissions:
+  contents: write   # pour enregistrer les nouvelles données sur la branche
+  pages: write      # pour publier le site
+  id-token: write
+
+concurrency:
+  group: cyberwatch
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.publication.outputs.page_url }}
+    steps:
+      - name: Récupérer la branche de veille
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCHE_VEILLE }}
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Collecter les nouveaux articles
+        run: python collecte/collecte.py
+        env:
+          # Identifiants de l'API Légifrance (PISTE), à créer dans
+          # Settings > Secrets and variables > Actions. Facultatifs.
+          LEGIFRANCE_CLIENT_ID: ${{ secrets.LEGIFRANCE_CLIENT_ID }}
+          LEGIFRANCE_CLIENT_SECRET: ${{ secrets.LEGIFRANCE_CLIENT_SECRET }}
+          LEGIFRANCE_ENV: ${{ vars.LEGIFRANCE_ENV }}
+
+      - name: Enregistrer les données sur la branche
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "Veille : mise à jour du $(date -u +%Y-%m-%d)"
+            git push origin HEAD:${{ env.BRANCHE_VEILLE }}
+          fi
+
+      - name: Préparer le site (uniquement les fichiers publics)
+        run: |
+          mkdir -p _site/data
+          cp index.html style.css script.js _site/
+          cp data/*.js _site/data/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Publier sur GitHub Pages
+        id: publication
+        uses: actions/deploy-pages@v4

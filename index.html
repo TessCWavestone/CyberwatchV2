@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyber Watch</title>
+<meta name="description" content="Veille réglementaire cybersécurité, IA et dispositifs médicaux — collecte automatique.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!--
+  Ce fichier ne contient plus d'actualités écrites en dur.
+  Le contenu vient de trois fichiers de données, chargés ci-dessous :
+    data/actualites.js    -> écrit chaque jour par collecte/collecte.py
+    data/etat_sources.js  -> écrit chaque jour par collecte/collecte.py
+    data/syntheses.js     -> analyses rédigées à la main (jamais écrasé)
+  Le titre, les rubriques et les mots-clés se règlent dans config/veille.json.
+-->
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="eyebrow" id="surtitre">Veille réglementaire — Wavestone</p>
+    <h1 id="titre">Cyber Watch</h1>
+    <p class="subtitle" id="sous-titre"></p>
+
+    <div class="update-bar">
+      <p class="update-info" id="update-info">Aucune collecte pour l'instant.</p>
+      <div class="update-actions">
+        <a class="btn btn-primary" id="lancer-maj" href="#" target="_blank" rel="noopener noreferrer" hidden>Lancer une mise à jour</a>
+        <button type="button" class="btn" id="export-csv">Exporter la sélection (Excel)</button>
+      </div>
+    </div>
+
+    <div class="stats" role="list">
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="total">0</span><span class="stat-lab">articles collectés</span></div>
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="semaine">0</span><span class="stat-lab">publiés ces 7 jours</span></div>
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="sources">0</span><span class="stat-lab">sources suivies</span></div>
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="tags">0</span><span class="stat-lab">mots-clés détectés</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Sommaire">
+  <div class="wrap nav-inner" id="nav"></div>
+</nav>
+
+<main id="contenu" class="wrap">
+
+<section class="panel" aria-labelledby="filtres-titre">
+  <div class="panel-head">
+    <h2 id="filtres-titre">
+      <button type="button" class="panel-toggle" id="toggle-filters" aria-expanded="true" aria-controls="facets">
+        <span class="chevron" aria-hidden="true"></span>
+        Filtres
+        <span class="active-count" id="active-count" hidden></span>
+      </button>
+    </h2>
+    <div class="panel-actions">
+      <button type="button" class="btn" id="expand-all">Tout déplier</button>
+      <button type="button" class="btn" id="collapse-all">Tout replier</button>
+    </div>
+  </div>
+
+  <div class="search-row">
+    <label class="search-label" for="recherche">Rechercher</label>
+    <input type="search" id="recherche" class="search" placeholder="Titre, résumé, source… (ex. NIS2, IVDR, ANSSI)" autocomplete="off">
+  </div>
+
+  <div class="facets" id="facets">
+    <fieldset class="facet">
+      <legend>Période de publication</legend>
+      <div class="chips">
+        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="7"><span>7 jours</span></label>
+        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="30"><span>30 jours</span></label>
+        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="90"><span>3 mois</span></label>
+        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="" checked><span>Tout</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="facet">
+      <legend>Nature de la source</legend>
+      <div class="chips">
+        <label class="chip chip-confirme"><input type="checkbox" data-facet="nature" value="officielle"><span>Source officielle</span></label>
+        <label class="chip chip-nuance"><input type="checkbox" data-facet="nature" value="cabinet"><span>Cabinet d'avocats</span></label>
+        <label class="chip"><input type="checkbox" data-facet="nature" value="presse"><span>Presse &amp; autres</span></label>
+        <label class="chip"><input type="checkbox" data-facet="nature" value="synthese"><span>Analyse rédigée</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="facet facet-wide">
+      <legend>Rubrique</legend>
+      <div class="chips" id="rubrique-chips"></div>
+    </fieldset>
+
+    <fieldset class="facet facet-wide">
+      <legend>Zone géographique</legend>
+      <div class="chips chips-scroll" id="zone-chips"></div>
+    </fieldset>
+
+    <fieldset class="facet facet-wide">
+      <legend>Mot-clé</legend>
+      <div class="chips chips-scroll" id="tag-chips"></div>
+    </fieldset>
+  </div>
+
+  <div class="panel-foot">
+    <button type="button" class="btn btn-ghost" id="reset-filters">Réinitialiser les filtres</button>
+    <p class="hint">Plusieurs mots-clés cochés : l'article doit tous les porter. Les autres filtres s'additionnent (« ou »).</p>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+  </div>
+</section>
+
+<p class="empty" id="empty-state" hidden>Aucun article ne correspond à ces filtres.</p>
+<p class="empty" id="no-data" hidden>Aucun article collecté pour l'instant. Lancez la première mise à jour : les articles apparaîtront ici.</p>
+
+<!-- Rubriques d'articles collectés, puis analyses rédigées : construites par script.js -->
+<div id="rubriques"></div>
+
+<section class="section" id="glossaire" hidden>
+  <header class="section-head">
+    <p class="section-num">—</p>
+    <h2>Glossaire</h2>
+    <p class="section-lead">Les textes et notions qui reviennent le plus dans cette veille.</p>
+  </header>
+  <ol class="glossary" id="glossary"></ol>
+</section>
+
+<section class="section" id="etat-sources">
+  <header class="section-head">
+    <p class="section-num">—</p>
+    <h2>Sources de la veille</h2>
+    <p class="section-lead">Toutes les sources de l'onglet « Sources Cyberwatch alimentées », et leur accessibilité lors de la dernière collecte. Une source « partielle » a été lue, mais au moins une de ses pages ou un de ses flux a échoué : le détail est dans la dernière colonne.</p>
+    <p class="section-count" id="etat-resume"></p>
+  </header>
+
+  <div class="src-stats" id="etat-stats"></div>
+
+  <div class="src-tools">
+    <div class="chips" id="etat-filtres">
+      <label class="chip"><input type="radio" name="etat-acces" value="" checked><span>Toutes</span></label>
+      <label class="chip chip-confirme"><input type="radio" name="etat-acces" value="ok"><span>Accessibles</span></label>
+      <label class="chip chip-nuance"><input type="radio" name="etat-acces" value="partielle"><span>Partielles</span></label>
+      <label class="chip chip-rapporte"><input type="radio" name="etat-acces" value="ko"><span>Inaccessibles</span></label>
+      <label class="chip"><input type="radio" name="etat-acces" value="autre"><span>Ignorées / non configurées</span></label>
+    </div>
+    <input type="search" id="etat-recherche" class="search search-sm" placeholder="Filtrer par nom ou pays…" autocomplete="off">
+  </div>
+
+  <div class="table-wrap">
+    <table class="src-table">
+      <thead>
+        <tr><th>Accès</th><th>Source</th><th>Zone</th><th>Lecture</th><th class="num" title="Liens lus sur les pages et flux">Trouvés</th><th class="num" title="Articles ajoutés au site lors de la dernière collecte">Nouveaux</th><th>Détail</th></tr>
+      </thead>
+      <tbody id="etat-lignes"></tbody>
+    </table>
+  </div>
+  <p class="empty" id="etat-vide" hidden>Aucune source ne correspond à ce filtre.</p>
+</section>
+
+<section class="section" id="methode">
+  <header class="section-head">
+    <p class="section-num">—</p>
+    <h2>Méthode</h2>
+    <p class="section-lead">Comment les articles sont collectés et triés, sans intelligence artificielle.</p>
+  </header>
+
+  <div class="method">
+    <div class="method-block">
+      <h3>Collecte</h3>
+      <p>Chaque jour, un script lit toutes les sources de l'onglet « Sources Cyberwatch alimentées ». Il utilise en priorité le flux RSS indiqué dans l'Excel, sinon il cherche un flux sur le site, et à défaut il surveille la page web et repère les nouveaux liens.</p>
+      <p>Lors de la première visite d'une source, seuls les articles datés des 60 derniers jours sont repris, pour ne pas faire passer d'anciens contenus pour des nouveautés.</p>
+    </div>
+    <div class="method-block">
+      <h3>Tri par mots-clés</h3>
+      <p>Un article n'est retenu que s'il contient au moins un mot-clé de l'onglet « Mots Clés » (ou des variantes multilingues de <code>config/veille.json</code>). Les termes trop génériques (« amendment », « guideline »…) ajoutent un tag mais ne suffisent pas seuls.</p>
+      <p>La rubrique est celle dont les mots-clés sont les plus nombreux dans le titre et le résumé.</p>
+    </div>
+    <div class="method-block">
+      <h3>Nature et limites</h3>
+      <dl class="conf-legend">
+        <dt><span class="badge badge-confirme">Source officielle</span></dt>
+        <dd>Autorité, régulateur, institution ou journal officiel.</dd>
+        <dt><span class="badge badge-nuance">Cabinet d'avocats</span></dt>
+        <dd>Analyse d'un cabinet : utile, mais à recouper avec le texte officiel.</dd>
+        <dt><span class="badge badge-presse">Presse &amp; autres</span></dt>
+        <dd>Presse spécialisée, newsletters, prestataires.</dd>
+      </dl>
+      <p>Les résumés sont ceux fournis par les sites, sans relecture. La mention « date estimée » signale une date de détection et non de publication. Ce site ne constitue pas un conseil juridique.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p id="footer-main">Cyber Watch — Wavestone · collecte automatique, sans IA.</p>
+    <p class="footer-note">Site statique, sans dépendance externe. Données dans le dossier <code>data/</code>, réglages dans <code>config/</code>.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="data/actualites.js"></script>
+<script src="data/etat_sources.js"></script>
+<script src="data/syntheses.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

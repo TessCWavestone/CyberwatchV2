@@ -1,0 +1,203 @@
+{
+  "_aide": "Fichier de réglage de la veille. Modifiez-le pour adapter l'outil à un autre sujet ou un autre client : titre, rubriques, mots-clés. Les sources, elles, sont lues dans l'Excel.",
+  "titre": "Cyber Watch",
+  "surtitre": "Veille réglementaire — Wavestone",
+  "sous_titre": "Cybersécurité · IA · Dispositifs médicaux — collecte automatique quotidienne",
+  "fichier_sources": "config/sources.xlsx",
+  "onglet_sources": "Sources Cyberwatch alimentées",
+  "onglet_mots_cles": "Mots Clés",
+  "statuts_ignores": [
+    "Inactif"
+  ],
+  "rubriques": [
+    {
+      "id": "reglementation",
+      "titre": "Réglementation cyber, données et IA",
+      "chapeau": "Nouveaux textes, projets et mises à jour des grandes réglementations européennes et nationales.",
+      "groupes": [
+        "Réglementations Cyber",
+        "Réglementations européennes majeures",
+        "Termes multilingues",
+        "Nouveaux textes réglementaires"
+      ]
+    },
+    {
+      "id": "standards",
+      "titre": "Standards et référentiels",
+      "chapeau": "Normes ISO/IEC, NIST, ETSI, CEN/CENELEC et référentiels de sécurité.",
+      "groupes": [
+        "Standards à surveiller",
+        "Standards Cyber"
+      ]
+    },
+    {
+      "id": "secteur",
+      "titre": "Santé, diagnostic et dispositifs médicaux",
+      "chapeau": "Actualités santé et diagnostic : IVDR, MDR, logiciels médicaux, laboratoires.",
+      "groupes": [
+        "Secteur santé : mots clés spécifiques",
+        "Secteur santé : catégories de produits",
+        "Termes santé"
+      ]
+    }
+  ],
+  "_aide_groupes": "Un article est retenu s'il contient au moins un mot-clé d'un groupe 'suffisant'. Les groupes 'non suffisants' (termes trop génériques comme 'amendment' ou 'guideline') ajoutent des tags mais ne suffisent pas à eux seuls.",
+  "groupes_non_suffisants": [
+    "Nouveaux textes réglementaires",
+    "Standards Cyber",
+    "Secteur santé : catégories de produits",
+    "Termes génériques"
+  ],
+  "_aide_mots_cles_supplementaires": "Mots-clés ajoutés à ceux de l'onglet Excel. Utile pour les sources non anglophones. Format : 'Libellé du tag': ['variante 1', 'variante 2'].",
+  "mots_cles_supplementaires": {
+    "Termes multilingues": {
+      "NIS2": [
+        "NIS2",
+        "NIS 2",
+        "NIS-2",
+        "Cyberbeveiligingswet"
+      ],
+      "CRA": [
+        "Cyber Resilience Act",
+        "CRA",
+        "Cyberresilienzgesetz",
+        "Cyber Resilience-Verordnung",
+        "règlement sur la cyberrésilience",
+        "cyberrésilience",
+        "ciberresiliencia",
+        "ciberresiliência"
+      ],
+      "DORA": [
+        "DORA",
+        "résilience opérationnelle numérique"
+      ],
+      "AI Act": [
+        "AI Act",
+        "règlement sur l'IA",
+        "règlement sur l'intelligence artificielle",
+        "KI-Verordnung",
+        "Reglamento de IA",
+        "AI-förordningen",
+        "AI-forordning"
+      ],
+      "RGPD": [
+        "GDPR",
+        "RGPD",
+        "DSGVO",
+        "RODO",
+        "AVG",
+        "GDPR",
+        "protection des données",
+        "données personnelles",
+        "Datenschutz",
+        "protección de datos",
+        "protezione dei dati",
+        "dataskydd",
+        "databeskyttelse",
+        "personvern",
+        "ochrona danych",
+        "proteção de dados",
+        "dados pessoais",
+        "gegevensbescherming",
+        "persoonsgegevens",
+        "ochrana osobních údajů",
+        "osobních údajů",
+        "Datenschutzgesetz"
+      ],
+      "Cybersécurité (réglementation)": [
+        "loi de résilience",
+        "cybersécurité",
+        "Cybersicherheit",
+        "ciberseguridad",
+        "cibersegurança",
+        "sicurezza informatica",
+        "cybersikkerhed",
+        "cybersäkerhet",
+        "cybersikkerhet",
+        "kyberturvallisuu",
+        "cyberbezpieczeństw",
+        "kybernetick",
+        "kiberbiztonság",
+        "κυβερνοασφάλεια",
+        "cyberbeveiliging",
+        "Cyberbeveiligingswet",
+        "kyberbezpečnost",
+        "cibersegurança",
+        "ciberseguranca"
+      ],
+      "Cybersecurity Act": [
+        "Cybersecurity Act",
+        "certification de cybersécurité",
+        "EUCS",
+        "EUCC",
+        "SecNumCloud"
+      ],
+      "Notification d'incident": [
+        "incident reporting",
+        "notification d'incident",
+        "signalement d'incident",
+        "Meldepflicht"
+      ]
+    },
+    "Termes santé": {
+      "Dispositifs médicaux": [
+        "medical device",
+        "medical devices",
+        "dispositif médical",
+        "dispositifs médicaux",
+        "Medizinprodukt",
+        "MDCG",
+        "IVDR",
+        "MDR",
+        "in vitro diagnostic",
+        "diagnostic in vitro"
+      ],
+      "Santé": [
+        "hôpital",
+        "hospital",
+        "healthcare",
+        "health data",
+        "données de santé",
+        "EHDS",
+        "Espace européen des données de santé"
+      ]
+    },
+    "Termes génériques": {
+      "Sanction": [
+        "sanction",
+        "amende",
+        "fined",
+        "Bußgeld",
+        "multa",
+        "penalty"
+      ],
+      "Consultation publique": [
+        "consultation publique",
+        "öffentliche Konsultation",
+        "call for evidence"
+      ]
+    }
+  },
+  "_aide_mots_courts": "Les mots-clés de 4 lettres ou moins écrits en MAJUSCULES (CRA, MDR, NIST…) sont cherchés en respectant la casse et en mot entier, pour éviter les faux positifs.",
+  "jours_conservation": 365,
+  "jours_premiere_collecte": 60,
+  "nb_max_articles": 3000,
+  "delai_requete_secondes": 25,
+  "requetes_paralleles": 8,
+  "user_agent": "CyberWatch-Veille/1.0 (+veille reglementaire; contact interne)",
+  "_aide_legifrance": "Recherche dans le Journal officiel via l'API PISTE. Les identifiants ne sont jamais écrits ici : ils sont stockés dans les secrets GitHub (voir README).",
+  "legifrance": {
+    "environnement": "sandbox",
+    "jours": 30,
+    "mots_cles": [
+      "cybersécurité",
+      "sécurité des systèmes d'information",
+      "résilience des infrastructures critiques",
+      "NIS 2",
+      "données de santé",
+      "dispositif médical de diagnostic in vitro",
+      "intelligence artificielle",
+      "hébergement de données de santé"
+    ]
+  }
+}

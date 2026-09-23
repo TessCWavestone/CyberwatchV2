@@ -1,0 +1,1204 @@
+{
+ "meta": {
+  "titre": "Cyber Watch",
+  "surtitre": "Veille réglementaire — Wavestone",
+  "sous_titre": "Cybersécurité · IA · Dispositifs médicaux — collecte automatique quotidienne",
+  "rubriques": [
+   {
+    "id": "reglementation",
+    "titre": "Réglementation cyber, données et IA",
+    "chapeau": "Nouveaux textes, projets et mises à jour des grandes réglementations européennes et nationales."
+   },
+   {
+    "id": "standards",
+    "titre": "Standards et référentiels",
+    "chapeau": "Normes ISO/IEC, NIST, ETSI, CEN/CENELEC et référentiels de sécurité."
+   },
+   {
+    "id": "secteur",
+    "titre": "Santé, diagnostic et dispositifs médicaux",
+    "chapeau": "Actualités santé et diagnostic : IVDR, MDR, logiciels médicaux, laboratoires."
+   }
+  ],
+  "mise_a_jour": "2026-09-23T13:57+00:00",
+  "nb_sources": 75,
+  "nb_nouveaux": 72,
+  "url_lancer_maj": "https://github.com/TessCWavestone/CyberwatchV2/actions/workflows/veille.yml"
+ },
+ "articles": [
+  {
+   "id": "92ef850b974d",
+   "titre": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
+   "lien": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "resume": "L'ANSSI, l'ANFR et la DGE ont coorganisé un évènement autour du Cyber Resilient Act (CRA) afin d'accompagner les fabricants dans la mise en conformité des produits numériques aux exigences du CRA",
+   "date": "2026-09-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "ANSSI (Agence Nationale de la Sécurité des SI)",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ]
+  },
+  {
+   "id": "64730112fdeb",
+   "titre": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
+   "lien": "https://cyber.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "resume": "Publié le mercredi 23 septembre 2026",
+   "date": "2026-09-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "ANSSI (Agence Nationale de la Sécurité des SI)",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ]
+  },
+  {
+   "id": "54e666f6c580",
+   "titre": "Amendes RGPD et interaction avec le règlement sur les services numériques : retour sur la plénière du CEPD du 17 septembre 2026",
+   "lien": "https://www.cnil.fr/fr/pleniere-cepd-amendes-reglement-services-numeriques",
+   "resume": "Le 17 septembre 2026, le CEPD a adopté des lignes directrices sur le pouvoir des autorités de protection des données d’infliger des amendes administratives et la version finale de ses lignes directrices sur l'interaction entre le règlement sur les services numériques (DSA) et le RGPD.",
+   "date": "2026-09-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD",
+    "Sanction"
+   ]
+  },
+  {
+   "id": "e7c5fddb3031",
+   "titre": "N° 3186 - Proposition de résolution de M. Hadrien Clouet visant le reclassement statutaire des ambulanciers de la fonction publique hospitalière",
+   "lien": "https://www.assemblee-nationale.fr/17/propositions/pion3186.asp",
+   "resume": "N° 3186 - Proposition de résolution de M. Hadrien Clouet visant le reclassement statutaire des ambulanciers de la fonction publique hospitalière",
+   "date": "2026-09-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Assemblée nationale - Dossiers législatifs",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "tags": [
+    "Santé"
+   ]
+  },
+  {
+   "id": "c76267e7d7d9",
+   "titre": "Więcej O: Szkolenie NASK-PIB z Systemu S46",
+   "lien": "https://www.uke.gov.pl/akt/szkolenie-nask-pib-z-systemu-s46,691.html",
+   "resume": "Szkolenie NASK-PIB z Systemu S46 23 września 2026 24 września 2026 r. w godzinach 10:00-12:00 odbędzie się szkolenie „Cyberbezpieczeństwo jako wspólna odpowiedzialność - szkolenie z Systemu S46 w ujęciu ustawy o krajowym systemie cyberbezpieczeństwa”. Szkolenie zostało przygotowane przez Naukową i…",
+   "date": "2026-09-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "UKE (Urząd Komunikacji Elektronicznej)",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "a4843be1a749",
+   "titre": "Bundesamt für Cybersicherheit: Österreich bündelt Schutz vor digitalen Bedrohungen",
+   "lien": "https://www.bmi.gv.at/news.aspx?id=46424559634E697077716F3D",
+   "resume": "Österreich stärkt mit der neuen nationalen Cybersicherheitsbehörde den Schutz vor digitalen Bedrohungen.",
+   "date": "2026-09-22",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Ministère fédéral de l'intérieur Autriche",
+   "zone": "Autriche",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "6d68c8f74dd7",
+   "titre": "Reclassement statutaire des ambulanciers de la fonction publique hospitalière",
+   "lien": "https://www.assemblee-nationale.fr/dyn/17/dossiers/reclassement_ambulanciers_fonction_publique_hospitaliere_34-1_17e",
+   "resume": "Proposition de résolution Dépôt à l'Assemblée nationale le mardi 22 septembre 2026 (Proposition de résolution n°3186 ) En cours : Lecture unique, 1er dépôt d'une initiative.",
+   "date": "2026-09-22",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Assemblée nationale - Dossiers législatifs",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "tags": [
+    "Santé"
+   ]
+  },
+  {
+   "id": "47a23a882d75",
+   "titre": "Autoriteit Persoonsgegevens waarschuwt gebruikers camerabrillen voor privacyregels",
+   "lien": "https://www.security.nl/posting/954102/Autoriteit+Persoonsgegevens+waarschuwt+gebruikers+camerabrillen+voor+privacyregels?channel=rss",
+   "resume": "De Autoriteit Persoonsgegevens (AP) waarschuwt gebruikers van camerabrillen dat het filmen van andere mensen in de meeste ...",
+   "date": "2026-09-22",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Security.NL",
+   "zone": "Pays-Bas",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD"
+   ]
+  },
+  {
+   "id": "635da126b90c",
+   "titre": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+   "lien": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+   "resume": "Brussels, 21 September – During its latest plenary, the EDPB has adopted guidelines on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR and the final version of its guidelines on interplay between the Digital Service Act (DSA) and the GDPR . The new EDPB guidelines are a major step in further aligning how Data Protection Authorities decide whether an…",
+   "date": "2026-09-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "guideline",
+    "GDPR",
+    "RGPD"
+   ]
+  },
+  {
+   "id": "7960eb766f48",
+   "titre": "Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. bezpieczeństwa systemów w sektorze wodociągowo-kanalizacyjnym",
+   "lien": "https://www.gov.pl/web/cyfryzacja/rekomendacja-pelnomocnika-rzadu-do-spraw-cyberbezpieczenstwa-dotyczaca-bezpieczenstwa-systemow-ot-w-sektorze-wodociagowo-kanalizacyjnym",
+   "resume": "",
+   "date": "2026-09-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Ministère du numérique",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "500d2329f38c",
+   "titre": "Česká delegace v Jižní Koreji se zapojila do Cyber Summit Korea a mezinárodního cvičení APEX",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2459-ceska-delegace-v-jizni-koreji-se-zapojila-do-cyber-summit-korea-a-mezinarodniho-cviceni-apex",
+   "resume": "Delegace Národního úřadu pro kybernetickou a informační bezpečnost (NÚKIB) vedená prvním náměstkem ředitele NÚKIB Tomášem Krejčím se ve dnech 14.–18. září 2026 zúčastnila mezinárodní konference Cyber Summit Korea (CSK) a kybernetického cvičení Allied Power Exercise (APEX) v jihokorejském Soulu. Účast českých expertů přispěla k posilování spolupráce s partnery z indo-pacifického regionu, sdílení zkušeností v oblasti…",
+   "date": "2026-09-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "b5259f4b3963",
+   "titre": "Google Hit with €403m GDPR Fine Over Location Data Practices",
+   "lien": "https://www.infosecurity-magazine.com/news/google-hit-with-403m-gdpr-fine/",
+   "resume": "21 September 2026 The Irish DPC found that Google users were unaware that their location was being used to influence them with ads",
+   "date": "2026-09-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Infosecurity Magazine (UK)",
+   "zone": "Royaume-Uni",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ]
+  },
+  {
+   "id": "10cf2164b00c",
+   "titre": "BSI im Dialog: Cybersicherheit in Schulen vermitteln",
+   "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/BSI-im-Dialog-Schulen_260918.html",
+   "resume": "",
+   "date": "2026-09-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "BSI (Office fédéral allemand de la sécurité de l'information)",
+   "zone": "Allemagne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "2f68fe179d07",
+   "titre": "AI Board holds its ninth meeting",
+   "lien": "https://digital-strategy.ec.europa.eu/en/news/ai-board-holds-its-ninth-meeting",
+   "resume": "News article 18 September 2026 During the meeting, participants discussed the latest developments of EU and international AI policy as well as various aspects around AI Act enforcement and implementation.",
+   "date": "2026-09-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Commission Européenne - Cybersecurity",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "acfad90f79fd",
+   "titre": "Kyberturvallisuuskeskuksen viikkokatsaus – 38/2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-382026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Tällä viikolla kerromme toimitusjohtajahuijauksista sekä toivotamme teidät tervetulleiksi GovCyber Finland 2026 -seminaariin. Lisäksi käsittelemme ClickFix-haittaohjelmailmiötä sekä Digi- ja väestötietoviraston vuoden 2026 Digiturvabarometria. Lopuksi tutustumme ajankohtaisiin huijauksiin ja viikolla julkaistuihin haavoittuvuustiedotteisiin.",
+   "date": "2026-09-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "bc073904da6a",
+   "titre": "Cyberbezpieczeństwo w centrum uwagi. VIII Forum Cyberbezpieczeństwa już 30 września",
+   "lien": "https://www.gov.pl/web/cyfryzacja/cyberbezpieczenstwo-w-centrum-uwagi-viii-forum-cyberbezpieczenstwa-juz-30-wrzesnia",
+   "resume": "18.09.2026 30 września i 1 października w Pałacu Kultury i Nauki spotkamy się podczas VIII Forum Cyberbezpieczeństwa. Po raz pierwszy Forum odbędzie się w Warszawie jako samodzielne wydarzenie, organizowane przez Ministerstwo Cyfryzacji we współpracy z m.st. Warszawą. To właśnie nim oficjalnie…",
+   "date": "2026-09-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Ministère du numérique",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "9f1d80c1b9a8",
+   "titre": "The EBA publishes its final Guidelines on the management of third-party risk, delivering a more proportionate and consistent framework aligned with DORA",
+   "lien": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-management-third-party-risk-delivering-more-proportionate-and",
+   "resume": "As part of the European Banking Authority’s (EBA) ongoing efforts to simplify its regulatory framework, the Guidelines focus on third-party arrangements supporting critical or important functions (CIFs) namely the disruption of which would materially impair the performance of a financial entity. By concentrating on these higher-risk arrangements, the Guidelines reduce unnecessary operational and supervisory burdens…",
+   "date": "2026-09-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "EBA (DORA)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "guideline",
+    "DORA"
+   ]
+  },
+  {
+   "id": "4cf4cac90c14",
+   "titre": "Guidelines 3/2025 on the interplay between the DSA and the GDPR",
+   "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-32025-on-the-interplay-between-the-dsa-and-the-gdpr_en",
+   "resume": "",
+   "date": "2026-09-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "guideline",
+    "GDPR",
+    "RGPD"
+   ]
+  },
+  {
+   "id": "050e584d0be0",
+   "titre": "Guidelines 04/2026 on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR",
+   "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en",
+   "resume": "",
+   "date": "2026-09-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "guideline",
+    "GDPR",
+    "RGPD"
+   ]
+  },
+  {
+   "id": "2c915da93c28",
+   "titre": "Więcej O: Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dotycząca ochrony kont w komunikatorze Signal",
+   "lien": "https://www.uke.gov.pl/akt/rekomendacja-pelnomocnika-rzadu-ds-cyberbezpieczenstwa-dotyczaca-ochrony-kont-w-komunikatorze-signal,687.html",
+   "resume": "Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dotycząca ochrony kont w komunikatorze Signal 17 września 2026 Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dotycząca ochrony kont w komunikatorze Signal przed przejęciem z wykorzystaniem klucza odzyskiwania kopii zapasowej Więcej…",
+   "date": "2026-09-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "UKE (Urząd Komunikacji Elektronicznej)",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "7c7a46a44659",
+   "titre": "Niebezpiecznik.pl dołącza do Programu Współpracy w Cyberbezpieczeństwie (PWCyber)",
+   "lien": "https://www.gov.pl/web/cyfryzacja/niebezpiecznikpl-dolacza-do-programu-wspolpracy-w-cyberbezpieczenstwie-pwcyber",
+   "resume": "16.09.2026 Kolejny podmiot wspiera krajowy system cyberbezpieczeństwa. Do Programu Współpracy w Cyberbezpieczeństwie (PWCyber) przystąpił serwis Niebezpiecznik.pl - portal informacyjny oraz firma doradczo-szkoleniowa z branży bezpieczeństwa IT.",
+   "date": "2026-09-16",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Ministère du numérique",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "190bb222d287",
+   "titre": "Vydali jsme přehled kybernetických incidentů za srpen 2026",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2458-vydali-jsme-prehled-kybernetickych-incidentu-za-srpen-2026",
+   "resume": "V srpnu Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) zaznamenal celkem 28 kybernetických bezpečnostních incidentů1. Jednalo se o druhý nejvyšší počet za poslední rok. Devět incidentů NÚKIB vyhodnotil jako významných, což je nejvíce za posledních 12 měsíců. Zbývajících devatenáct incidentů bylo méně významných.",
+   "date": "2026-09-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "75c58d16baf5",
+   "titre": "MISP-dagen 2026 - anmälan stängd",
+   "lien": "https://www.cert.se/2026/09/misp-dagen-2026.html",
+   "resume": "Varmt välkommen till en dag för alla som vill stärka Sveriges cybersäkerhet genom informationsdelning!",
+   "date": "2026-09-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CERT SE",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "6f2171d9a74a",
+   "titre": "HILIGHT is advancing microscope analysis with photonics",
+   "lien": "https://hadea.ec.europa.eu/node/2002",
+   "resume": "Modern healthcare solutions heavily rely on digital imaging technologies that involve photonics, i.e. illuminating samples by a laser and scanning the light refractions using various photonics sensors to diagnose diseases and develop novel therapies.",
+   "date": "2026-09-14",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "European Health and Digital Executive Agency",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "tags": [
+    "Santé"
+   ]
+  },
+  {
+   "id": "36104ca718a7",
+   "titre": "Inga större informations- eller cyberangrepp mot svenska valet",
+   "lien": "https://www.ncsc.se/sv/aktuellt/inga-storre-informations--eller-cyberangrepp-mot-svenska-valet/",
+   "resume": "14 sep. 2026 kl. 18:18 NYHET Riksdagsvalet genomfördes utan större cyberangrepp eller koordinerad informationspåverkan från främmande makt. Den bedömningen gör Nationellt cybersäkerhetscenter (NCSC) och Myndigheten för psykologiskt försvar (MPF).",
+   "date": "2026-09-14",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Agence pour la défense civile",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "169a517ea976",
+   "titre": "Første tilsyn med forbudt AI-praksis er afsluttet",
+   "lien": "https://digst.dk/nyheder/nyhedsarkiv/2026/september/foerste-tilsyn-med-forbudt-ai-praksis-er-afsluttet/",
+   "resume": "Publiceret 14.09.2026 Tilsyn AI-forordningen regulerer, hvordan virksomheder kan benytte kunstig intelligens. Digitaliseringsstyrelsen er tilsynsmyndighed og har gennemført de første tilsyn på området.",
+   "date": "2026-09-14",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Agence danoise du numérique (DIGST)",
+   "zone": "Danemark",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "b89e9b501f80",
+   "titre": "Nu skal virksomheder i hele EU underrette om digitale sårbarheder i produkter",
+   "lien": "https://samsik.dk/artikler/2026/09/nu-skal-virksomheder-i-hele-eu-underrette-om-digitale-saarbarheder-i-produkter/",
+   "resume": "Fra den 11. september i år skal virksomheder i EU indberette digitale sårbarheder og alvorlige it-sikkerhedshændelser i produkter med digitale elementer. Forordningen for cyberrobusthed (CRA) skal sikre produkter mod cyberangreb og gælder både hardware og software.",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Agence pour la sécurité sociétale",
+   "zone": "Danemark",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "a626501d09fe",
+   "titre": "Kyberturvallisuuskeskuksen viikkokatsaus – 37/2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-372026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Kyberkestävyyssäädös parantaa verkkolaitteiden käyttäjän asemaa ja helpottaa verkkolaitteiden turvallista ylläpitoa. Uuden säädöksen myötä valmistajalla on vastuu seurata ja tiedottaa laitteiden haavoittuvuudesta. Verkon reunalaitteiden ylläpitoon ja hallintaan uudistus on tervetullut parannus. Elokuun kybersää kertoo sateisesta kybermaisemasta.",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "d7b54c0aa2fa",
+   "titre": "Meldplicht Cyber Resilience Act gaat vandaag in",
+   "lien": "https://www.ncsc.nl/nieuws/meldplicht-cyber-resilience-act-gaat-vandaag-in",
+   "resume": "",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre National de Cybersécurité",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ]
+  },
+  {
+   "id": "2ef0c783cfdd",
+   "titre": "HP Inc Polska wzmacnia grono partnerów programu PWCyber",
+   "lien": "https://www.gov.pl/web/cyfryzacja/hp-inc-polska-wzmacnia-grono-partnerow-programu-pwcyber",
+   "resume": "11.09.2026 Współpraca państwa z sektorem technologicznym jest ważnym elementem wzmacniania cyberbezpieczeństwa. Firma HP Inc Polska dołącza do Programu Współpracy w Cyberbezpieczeństwie (PWCyber), który zrzesza już ponad 60 firm i organizacji. Partnerzy programu wspólnie pracują nad podnoszeniem…",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Ministère du numérique",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "d932f8112ceb",
+   "titre": "CYBER_CON 2026 přivedl do Brna stovky odborníků. Hlavním tématem letošního ročníku byla kybernetická odolnost",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2457-cyber-con-2026-privedl-do-brna-stovky-odborniku-hlavnim-tematem-letosniho-rocniku-byla-kyberneticka-odolnost",
+   "resume": "Téměř 900 účastníků, bezmála 70 řečníků, desítky odborných přednášek, workshopů a diskusí. Takový byl 12. ročník konference CYBER_CON 2026 pořádané Národním úřadem pro kybernetickou a informační bezpečnost (NÚKIB) ve spolupráci s vybranými partnery v čele se sdružením CZ.NIC, NIX.CZ a CESNET. O účast na letošním ročníku konference CYBER_CON byl tradičně mimořádný zájem. Kapacita akce se naplnila již krátce po…",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "3e199a5b8fd7",
+   "titre": "CERT-SE:s veckobrev v.37",
+   "lien": "https://www.cert.se/2026/09/cert-se-veckobrev-v37.html",
+   "resume": "I veckans brev kan du läsa om EU:s Cyber Resilience Act (CRA), där de första kraven träder i kraft idag. Du kan även läsa om cybersäkerhetskonferensen Svensk cyber 2026 som arrangeras av NCSC i november, där årets tema är ”Förmåga att agera i en föränderlig tid”.",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CERT SE",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA",
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "a97fd9f30d64",
+   "titre": "XAI in der Cybersicherheit: Whitepaper schafft Bewertungsgrundlagen und Orientierung",
+   "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/XAI-Chancen-Risiken-Cybersicherheit_260910.html",
+   "resume": "",
+   "date": "2026-09-10",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "BSI (Office fédéral allemand de la sécurité de l'information)",
+   "zone": "Allemagne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "fe403a8c350f",
+   "titre": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
+   "lien": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
+   "resume": "Depuis le 1er septembre 2026, la réforme relative à la facturation électronique entre entreprises est entrée en vigueur. La CNIL aide les entreprises à comprendre les enjeux et à assurer la sécurité des données traitées.",
+   "date": "2026-09-10",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD"
+   ]
+  },
+  {
+   "id": "360275fabef7",
+   "titre": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+   "lien": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en",
+   "resume": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer 2025, an attacker…",
+   "date": "2026-09-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "tags": [
+    "Santé",
+    "Sanction"
+   ]
+  },
+  {
+   "id": "1de3670a1438",
+   "titre": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
+   "lien": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
+   "resume": "News announcement 9 September 2026 1 min read",
+   "date": "2026-09-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Medical Device Coordination Group",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "tags": [
+    "Dispositifs médicaux"
+   ]
+  },
+  {
+   "id": "374695b76b54",
+   "titre": "Non-respect des droits des personnes : sanction de 300 000 euros à l’encontre de la société EXTIA",
+   "lien": "https://www.cnil.fr/fr/sanction-non-respect-droits-personnes-extia",
+   "resume": "Le 21 juillet 2026, la CNIL a sanctionné la société EXTIA d’une amende de 300&amp;nbsp;000 euros pour divers manquements relatifs au respect des droits des personnes, notamment du droit à l’effacement des données personnelles («&amp;nbsp;droit à l’oubli&amp;nbsp;»).",
+   "date": "2026-09-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD",
+    "Sanction"
+   ]
+  },
+  {
+   "id": "a9746ffd2a40",
+   "titre": "Kyberturvallisuuskeskuksen viikkokatsaus - 36/2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-362026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Microsoft 365 -tilimurtojen määrä kasvoi jälleen elokuussa. Viikkokatsauksessa käsitellään myös KHO:n uusia evästelinjauksia, julkaistua CSIRT-ajankohtaiswebinaaria sekä avautunutta rahoitushakua kyberturvallisuusratkaisujen kehittämiseen.",
+   "date": "2026-09-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "95750b4fec92",
+   "titre": "Ruští aktéři cílí na uživatele Signalu. NÚKIB vydává analýzu a doporučení, jak si aplikaci zabezpečit",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2456-rusti-akteri-cili-na-uzivatele-signalu-nukib-vydava-analyzu-a-doporuceni-jak-si-aplikaci-zabezpecit",
+   "resume": "Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) upozorňuje na cílené phishingové kampaně zaměřené na uživatele komunikační aplikace Signal. Tyto aktivity jsou spojovány zejména s aktéry napojenými na Ruskou federaci a jejich cílem je získání přístupu ke komunikaci obětí prostřednictvím zneužití nepozornosti uživatelů. Vzhledem k oblibě aplikace Signal mezi exponovanými osobami a k výskytu…",
+   "date": "2026-09-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "c4f8e2b9293f",
+   "titre": "CERT-SE:s veckobrev v.36",
+   "lien": "https://www.cert.se/2026/09/cert-se-veckobrev-v36.html",
+   "resume": "Den 13 september är det val i Sverige och Nationellt cybersäkerhetscenter (NCSC) bevakar hotläget från ett cybersäkerhetsperspektiv. NCSC:s chef John Billow berättar om uppdraget i Sveriges Radios program Gräns.",
+   "date": "2026-09-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CERT SE",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "ed847d0ca3cc",
+   "titre": "Violation de données en matière de santé : sanction de 500 000 euros à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE",
+   "lien": "https://www.cnil.fr/fr/sanction-hopital-prive-loire",
+   "resume": "Le 3 septembre 2026, la CNIL a prononcé une sanction de 500&amp;nbsp;000&amp;nbsp;€ à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE, pour ne pas avoir pris des mesures adaptées pour assurer la sécurité des données de ses patients et de certains de leurs proches.",
+   "date": "2026-09-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "tags": [
+    "Santé",
+    "Sanction"
+   ]
+  },
+  {
+   "id": "cb044d9ba41c",
+   "titre": "COMUNICATO STAMPA - Garante: illecita la diffusione delle conversazioni private di Raoul Bova. Sanzionato Fabrizio Corona, contenuti pubblicati per spettacolarizzazione e gossip",
+   "lien": "https://www.gpdp.it/garante/doc.jsp?ID=10287714",
+   "resume": "Garante: illecita la diffusione delle conversazioni private di Raoul Bova Sanzionato Fabrizio Corona, contenuti pubblicati per spettacolarizzazione e gossip Il Garante per la protezione dei dati personali ha dichiarato illecita la diffusione non auto...",
+   "date": "2026-09-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Garante per la Protezione dei Dati Personali",
+   "zone": "Italie",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD"
+   ]
+  },
+  {
+   "id": "5c929afa4912",
+   "titre": "HILIGHT is advancing microscope analysis with photonics",
+   "lien": "https://hadea.ec.europa.eu/news/hilight-advancing-microscope-analysis-photonics-2026-09-02_en",
+   "resume": "News article 2 September 2026 Modern healthcare solutions heavily rely on digital imaging technologies that involve photonics, i.e. illuminating samples by a laser and scanning the light refractions using various photonics sensors to diagnose diseases and develop novel therapies. 7 min read",
+   "date": "2026-09-02",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "European Health and Digital Executive Agency",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "tags": [
+    "Santé"
+   ]
+  },
+  {
+   "id": "ad72c6fa2fe7",
+   "titre": "NÚKIB uspořádá Konferenci Festivalu bezpečného internetu 2026",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2454-nukib-usporada-konferenci-festivalu-bezpecneho-internetu-2026",
+   "resume": "Národní úřad pro kybernetickou a informační bezpečnost připravuje na podzim 2026 odbornou Konferenci Festivalu bezpečného internetu 2026. Jednodenní akce se uskuteční 19. listopadu 2026 v Brně v prostorách Hotelu Continental a zaměří se na aktuální online rizika ohrožující děti a dospívající. Konference je součástí širšího projektu Festival bezpečného internetu 2026, který se letos tematicky soustředí na bezpečí…",
+   "date": "2026-09-01",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "480bf2b3dbce",
+   "titre": "Participez aux Rencontres Informatique & Libertés le 29 septembre 2026",
+   "lien": "https://www.cnil.fr/fr/ril-2026",
+   "resume": "La CNIL organise la 2ème édition de ses Rencontres Informatique &amp;amp; Libertés le mardi 29&amp;nbsp;septembre 2026. Cette matinée est l'occasion d’échanger sur différents sujets en lien avec la protection des données, notamment l’essor des lunettes connectées ou le rôle des sanctions.",
+   "date": "2026-08-31",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD",
+    "Sanction"
+   ]
+  },
+  {
+   "id": "80bbdd83966d",
+   "titre": "Kyberturvallisuuslaki kokonaisuutena onnistunut – Haasteena valvonnan resurssien puute",
+   "lien": "https://lvm.fi/-/kyberturvallisuuslaki-kokonaisuutena-onnistunut-haasteena-valvonnan-resurssien-puute",
+   "resume": "Tyyppi: Tiedote Luokitukset: Julkaisuajankohta: 31.8.2026 Liikenne- ja viestintäministeriö on julkaissut loppuraportin kyberturvallisuuslain seurannasta ja arvioinnista 31.8.2026. Lakia pidetään yleisesti onnistuneena ja sen toimeenpano on vahvistanut... Avainsanat:",
+   "date": "2026-08-31",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Ministry of Transport and Communications Finland",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "f17a4f76fba2",
+   "titre": "Kyberturvallisuuskeskuksen viikkokatsaus – 35/2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-352026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Tämän viikon viikkokatsauksessa esiin nousseita aiheita ovat muun muassa WordPress-sivustojen murrot, joissa haavoittuvuuksia hyödynnetään haitallisen sisällön levittämiseen. Lisäksi katsauksessa käsitellään Signal-tukena esiintyvää tietojenkalastelua, tekoälyn käyttöön liittyviä uusia avoimuusvelvoitteita sekä kyberkestävyyssäädöksen mukaisia ilmoitusvelvoitteita.",
+   "date": "2026-08-28",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "d4f76f251eec",
+   "titre": "CERT-SE:s veckobrev v.35",
+   "lien": "https://www.cert.se/2026/08/cert-se-veckobrev-v35.html",
+   "resume": "I veckans brev kan du ta del av ett axplock av händelser inom cybersäkerhetsområdet. Dessutom hittar du en utvärdering av organisationers cyberförsvar som CISA gjort, som innehåller rekommendationer för att stärka sin motståndskraft.",
+   "date": "2026-08-28",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CERT SE",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "f782eaf5868e",
+   "titre": "Sensibiliser les élèves de CM2 à la protection des données",
+   "lien": "https://www.cnil.fr/fr/sensibiliser-les-eleves-de-cm2-la-protection-des-donnees",
+   "resume": "En 2026, la CNIL a contribué à sensibiliser 2&amp;nbsp;500 élèves de CM2 du département de l’Oise aux enjeux du numérique et à la protection des données personnelles. Vous êtes enseignant(e)&amp;nbsp;? Retrouvez, dans cette page, les ressources pour reproduire ce projet pédagogique.",
+   "date": "2026-08-27",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD"
+   ]
+  },
+  {
+   "id": "fb7d5f2bfdfd",
+   "titre": "Disruptive cyber activity highlights risk from internet-exposed systems and edge devices",
+   "lien": "https://www.ncsc.gov.uk/news/disruptive-cyber-activity-highlights-risk-from-internet-exposed-systems-and-edge-devices",
+   "resume": "Owners of operational technology encouraged to address avoidable vulnerabilities, and build long-term cyber resilience.",
+   "date": "2026-08-27",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre National de Cybersécurité)",
+   "zone": "Royaume-Uni",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "cyber resilience"
+   ]
+  },
+  {
+   "id": "1a71fb618512",
+   "titre": "Valmistaja - varaudu ennalta kyberkestävyyssäädöksen mukaiseen haavoittuvuuksien ja poikkeamien ilmoittamiseen",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/valmistaja-varaudu-ennalta-kyberkestavyyssaadoksen-mukaiseen-haavoittuvuuksien-ja-poikkeamien-ilmoittamiseen?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Ennen CRA:n ilmoitusvelvollisuuden soveltamista organisaatioiden on tärkeää valmistautua sisäisesti ilmoituksen jättämiseen. Ilmoittamisen määräajat ovat lyhyitä, joten vastuut ja toimintatavat kannattaa sopia ennen kuin ensimmäinen ilmoitettava tapaus tulee vastaan. Olemme koonneet valmistajille listan tarkistettavista asioista ja linkit keskeisiin ohjeisiin.",
+   "date": "2026-08-26",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "c3f226c98d10",
+   "titre": "Kyberturvallisuuskeskuksen viikkokatsaus – 34/2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-342026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Tämän viikon viikkokatsauksessa esiin nousseita aiheita ovat lisääntyneet palkanmaksuhuijaukset, joissa rikolliset pyrkivät ohjaamaan palkkoja omille tileilleen väärennetyillä sähköpostiviesteillä. Lisäksi käsitellään pelien käyttäjien tekemiin lisäsisältöihin piilotettuja haittaohjelmia sekä EU:n uusia menettelyjä sähköisten todisteiden hankkimiseksi rikostutkinnoissa.",
+   "date": "2026-08-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "d7b9381b4c7c",
+   "titre": "NÚKIB vydal Zprávu o stavu kybernetické bezpečnosti ČR za rok 2025. Incidentů ubylo, sofistikovanost útočníků roste",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2453-nukib-vydal-zpravu-o-stavu-kyberneticke-bezpecnosti-cr-za-rok-2025-incidentu-ubylo-sofistikovanost-utocniku-roste",
+   "resume": "",
+   "date": "2026-08-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "0ed8d276c4df",
+   "titre": "Davantage d'informations sur «Le Tribunal administratif fédéral confirme la pratique du PFPDT»",
+   "lien": "https://www.edoeb.admin.ch/fr/taf-confirme-pratique-du-pfpdt",
+   "resume": "20 août 2026 Le Tribunal administratif fédéral confirme la pratique du PFPDT Dans son arrêt du 22 juin 2026, le TAF a rejeté le recours d’Inkasso-Team SA et confirmé que la publication de données personnelles dans le but de localiser des débiteurs présumés et à avertir des tiers constituait une…",
+   "date": "2026-08-20",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "PFPDT / EDÖB (Préposé fédéral à la protection des données)",
+   "zone": "Suisse",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD"
+   ]
+  },
+  {
+   "id": "4c353759e466",
+   "titre": "NYDFS levies $250,000 fine on licensee for inadequate cyber risk assessment",
+   "lien": "https://www.dataprotectionreport.com/2026/08/nydfs-levies-250000-fine-on-licensee-for-inadequate-cyber-risk-assessment/",
+   "resume": "On August 5, 2026, the New York Department of Financial Services (NYDFS) entered into a consent order with Order Express, Inc., a money transmitter licensed by NYDFS. Although Order Express qualified for a limited exemption under the NYDFS cybersecurity regulation , NYDFS found that the company violated the regulation’s applicable requirements in three ways: (1) failure to “conduct a risk assessment sufficient to…",
+   "date": "2026-08-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Data Protection Report (Norton Rose Fulbright)",
+   "zone": "Worldwide",
+   "nature": "cabinet",
+   "rubrique": "reglementation",
+   "tags": [
+    "cybersecurity regulation"
+   ]
+  },
+  {
+   "id": "a8be5772037d",
+   "titre": "Hae rahoitustukea kyberturvallisuusratkaisun kaupallistamiseen",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/hae-rahoitustukea-kyberturvallisuusratkaisun-kaupallistamiseen?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Traficom on avannut syksyn 2026 rahoitushaun. Tavoitteena on tukea yritysten kasvun ja kansainvälistymisen edellytyksiä sekä lisätä kehittyneiden kyberturvallisuusratkaisujen saatavuutta.",
+   "date": "2026-08-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "c34d06a5deca",
+   "titre": "Więcej O: Warsztaty poświęcone problematyce cyberbezpieczeństwa - termin",
+   "lien": "https://www.uke.gov.pl/akt/warsztaty-poswiecone-problematyce-cyberbezpieczenstwa-termin,684.html",
+   "resume": "Warsztaty poświęcone problematyce cyberbezpieczeństwa - termin 17 sierpnia 2026 23 września 2026 roku w godz. 10.00-13.00 odbędą się warsztaty poświęcone problematyce cyberbezpieczeństwa. Więcej o: Warsztaty poświęcone problematyce cyberbezpieczeństwa - termin",
+   "date": "2026-08-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "UKE (Urząd Komunikacji Elektronicznej)",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "3cf8168ed768",
+   "titre": "Cyberbeveiligingswet en Wet weerbaarheid kritieke entiteiten vanaf vandaag van kracht",
+   "lien": "https://www.ncsc.nl/nieuws/cbw-en-wwke-nu-van-kracht",
+   "resume": "",
+   "date": "2026-08-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre National de Cybersécurité",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "NIS2",
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "5c7d5a1d65dc",
+   "titre": "Kyberturvallisuuskeskuksen viikkokatsaus – 33/2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-332026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Tällä viikolla kerromme tietomurroista, joissa verkkosivupalvelimet on valjastettu jakamaan haittaohjelmia verkkosivujen selaajille. Yksinkertaiset varotoimet auttavat suojautumaan haittaohjelman uhkaa vastaan. Kehotamme myös valppauteen pikaviestinpalvelun uusia ominaisuuksia käyttäessä. Lisäksi tällä viikolla julkaistu heinäkuun Kybersää osoittaa sateisen syksyn merkkejä.",
+   "date": "2026-08-14",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "3fc3efb60b6d",
+   "titre": "Heinäkuun Kybersää 2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/heinakuun-kybersaa-2026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Heinäkuussa kyberin kentällä nähtiin saderrintamia. Kyberturvallisuuskeskukselle tehtyjen kiristyshaittaohjelmailmoitusten määrä kasvoi. Myös haavoittuvuuksien määrä on jatkuvassa nousussa, mikä näkyy myös Kyberturvallisuuskeskuksen jakamien haavoittuvuustiedotteiden määrässä.",
+   "date": "2026-08-13",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "8fab798fba81",
+   "titre": "Vydali jsme přehled kybernetických incidentů za červenec 2026",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2449-vydali-jsme-prehled-kybernetickych-incidentu-za-cervenec-2026",
+   "resume": "",
+   "date": "2026-08-13",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "b2e7c80b5eff",
+   "titre": "NÚKIB se připojil k mezinárodnímu upozornění na ruskou kybernetickou kampaň zneužívající Zimbra Collaboration Suite",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2447-nukib-se-pripojil-k-mezinarodnimu-upozorneni-na-ruskou-kybernetickou-kampan-zneuzivajici-zimbra-collaboration-suite",
+   "resume": "",
+   "date": "2026-08-10",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "c608a8d08f1d",
+   "titre": "Datum zveřejnění 10.08.2026 Doporučení ÚOOÚ č. 1/2026 ke kamerovým systémům ve zdravotnictví Úřad pro ochranu osobních údajů zveřejňuje Doporučení č. 1/2026 ke kamerovým systémům umístěným u poskytovatelů zdravotních služeb.",
+   "lien": "https://uoou.gov.cz/novinky/vse/doporuceni-uoou-c-12026-ke-kamerovym-systemum-ve-zdravotnictvi",
+   "resume": "",
+   "date": "2026-08-10",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "ÚOOÚ (Autorité tchèque de protection des données)",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD"
+   ]
+  },
+  {
+   "id": "897efe22e252",
+   "titre": "Kyberturvallisuuskeskuksen viikkokatsaus - 32/2026",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-322026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Tällä viikolla muistutamme lomilta paluun yhteydessä yleistyvistä huijauksista sekä tietojenkalastelusta. Nostamme esiin npm-ekosysteemin kohdistuneen uuden toimitusketjuhyökkäyksen sekä kerromme, miten yksikin suojaamaton laite voi avata tien verkkoon. Kerromme lisäksi tälläkin viikolla esiin nousseista ClickFix-tartuntatapauksista. Lopuksi kerromme EU-komission julkaisemasta soveltamisohjeesta ja esittelemme…",
+   "date": "2026-08-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "b00f865edf0a",
+   "titre": "Výzva k podání nabídky: Expertní služby na podporu implementace směrnice NIS2 v České republice",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2446-vyzva-k-podani-nabidky-expertni-sluzby-na-podporu-implementace-smernice-nis2-v-ceske-republice",
+   "resume": "",
+   "date": "2026-08-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "NIS2"
+   ]
+  },
+  {
+   "id": "33f7b7768aae",
+   "titre": "Liikenne- ja viestintäministeriön hallinnonalan talousarvioehdotus vuodelle 2027",
+   "lien": "https://lvm.fi/-/liikenne-ja-viestintaministerion-hallinnonalan-talousarvioehdotus-vuodelle-2027-",
+   "resume": "Tyyppi: Tiedote Luokitukset: Julkaisuajankohta: 6.8.2026 Liikenne- ja viestintäministeriö ehdottaa hallinnonalalleen 3,88 miljardin euron määrärahaa vuodelle 2027. Ministeriön ehdotuksessa korostuvat perusväylänpidon ja kyberturvallisuustoimien... Avainsanat: valtion budjetti",
+   "date": "2026-08-06",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Ministry of Transport and Communications Finland",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "e7644651c602",
+   "titre": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+   "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+   "resume": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August Anonymous (not verified) Fri, 07/31/2026 - 09:00 From 2 August 2026, the European Commission’s AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act. On the same date, new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting…",
+   "date": "2026-07-31",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Commission Européenne - Cybersecurity",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "005f385d79a8",
+   "titre": "Mitä tekoälyn tekemiksi kutsutut tietomurrot oikeastaan kertovat?",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/mita-tekoalyn-tekemiksi-kutsutut-tietomurrot-oikeastaan-kertovat?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Julkisuudessa on viime aikoina keskusteltu tapauksista, joissa tekoälyjärjestelmät ovat turvallisuustesteissä toteuttaneet toimia, jotka muistuttavat tietomurtoja tai luvattomia tunkeutumisyrityksiä. Tapaukset ovat herättäneet kysymyksiä siitä, kuinka itsenäisesti tekoäly kykenee toimimaan ja millaisia riskejä sen käyttöön liittyy kyberturvallisuuden näkökulmasta.",
+   "date": "2026-07-31",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "4d5d44c7f9f5",
+   "titre": "Bundesnetzagentur übernimmt zentrale Rolle bei der Umsetzung der KI-Verordnung",
+   "lien": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/SharedDocs/Pressemitteilungen/DE/2026/20260729_KI_VO.html",
+   "resume": "",
+   "date": "2026-07-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Bundesnetzagentur",
+   "zone": "Allemagne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "6df540f99531",
+   "titre": "Kyberkestävyyssäädöksen vaatimukset selkiytyvät - EU-komissio julkaisi uuden soveltamisohjeen",
+   "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberkestavyyssaadoksen-vaatimukset-selkiytyvat-eu-komissio-julkaisi-uuden-soveltamisohjeen?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "resume": "Euroopan komissio on julkaissut uuden soveltamisohjeen kyberkestävyyssäädöksen (Cyber Resilience Act, CRA) toimeenpanon tueksi. Ohjeistus on suunnattu erityisesti valmistajille, ohjelmistokehittäjille sekä muille yrityksille, jotka saattavat markkinoille digitaalisia tuotteita. Ohjeistus tarjoaa yrityksille konkreettisia neuvoja siihen, miten ne voivat valmistautua tuleviin kyberturvallisuusvaatimuksiin ja osoittaa…",
+   "date": "2026-07-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Centre de cybersécurité de Traficom",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA",
+    "Cybersécurité (réglementation)"
+   ]
+  },
+  {
+   "id": "70c2720592e8",
+   "titre": "Commission publishes new guidance to support timely Cyber Resilience Act implementation",
+   "lien": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation",
+   "resume": "Policy and legislation 27 July 2026 In a clear demonstration of its commitment to simplification and timely implementation, the Commission today published practical guidance to help manufacturers, developers, and businesses of all sizes meet their obligations under the Cyber Resilience Act.",
+   "date": "2026-07-27",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Commission Européenne - Cybersecurity",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ]
+  },
+  {
+   "id": "b75485077e36",
+   "titre": "27/07/2026 CNPD participa no Encontro da Rede Lusófona de Proteção de Dados e em Evento Internacional em Brasília",
+   "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-participa-no-encontro-da-rede-lusofona-de-protecao-de-dados-e-em-evento-internacional-em-brasilia/",
+   "resume": "",
+   "date": "2026-07-27",
+   "date_estimee": false,
+   "detecte_le": "2026-09-23",
+   "source": "Comissão Nacional de Proteção de Dados (CNPD)",
+   "zone": "Portugal",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "tags": [
+    "RGPD"
+   ]
+  }
+ ]
+}

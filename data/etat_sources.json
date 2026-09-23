@@ -1,4 +1,4 @@
-window.VEILLE_ETAT_SOURCES = {
+{
  "mise_a_jour": "2026-09-23T13:57+00:00",
  "jours_premiere_collecte": 60,
  "jours_conservation": 365,
@@ -1320,4 +1320,4 @@ window.VEILLE_ETAT_SOURCES = {
    "verifie_le": ""
   }
  ]
-};
+}

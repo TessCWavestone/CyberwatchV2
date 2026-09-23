@@ -1,4 +1,4 @@
-window.VEILLE_ACTUALITES = {
+{
  "meta": {
   "titre": "Cyber Watch",
   "surtitre": "Veille réglementaire — Wavestone",
@@ -1201,4 +1201,4 @@ window.VEILLE_ACTUALITES = {
    ]
   }
  ]
-};
+}

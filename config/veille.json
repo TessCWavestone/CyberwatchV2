@@ -2,7 +2,7 @@
   "_aide": "Fichier de réglage de la veille. Modifiez-le pour adapter l'outil à un autre sujet ou un autre client : titre, rubriques, mots-clés. Les sources, elles, sont lues dans l'Excel.",
   "titre": "Cyber Watch",
   "surtitre": "Veille réglementaire — Wavestone",
-  "sous_titre": "Cybersécurité · IA · Dispositifs médicaux — collecte automatique quotidienne",
+  "sous_titre": "Cybersécurité · Données · IA · Dispositifs médicaux — collecte automatique chaque lundi",
   "fichier_sources": "config/sources.xlsx",
   "onglet_sources": "Sources Cyberwatch alimentées",
   "onglet_mots_cles": "Mots Clés",
@@ -19,7 +19,9 @@
         "Réglementations européennes majeures",
         "Termes multilingues",
         "Nouveaux textes réglementaires"
-      ]
+      ],
+      "titre_en": "Cyber, data and AI regulation",
+      "chapeau_en": "New texts, drafts and updates of the main European and national regulations."
     },
     {
       "id": "standards",
@@ -28,7 +30,9 @@
       "groupes": [
         "Standards à surveiller",
         "Standards Cyber"
-      ]
+      ],
+      "titre_en": "Standards and frameworks",
+      "chapeau_en": "ISO/IEC, NIST, ETSI, CEN/CENELEC standards and security frameworks."
     },
     {
       "id": "secteur",
@@ -38,10 +42,20 @@
         "Secteur santé : mots clés spécifiques",
         "Secteur santé : catégories de produits",
         "Termes santé"
-      ]
+      ],
+      "titre_en": "Health, diagnostics and medical devices",
+      "chapeau_en": "Health and diagnostics news: IVDR, MDR, medical software, laboratories."
+    },
+    {
+      "id": "autres",
+      "titre": "Autres actualités à surveiller",
+      "titre_en": "Other news to monitor",
+      "chapeau": "Articles sans lien évident avec les thèmes prioritaires : gardés pour ne rien manquer.",
+      "chapeau_en": "Articles with no obvious link to the priority themes: kept so that nothing is missed.",
+      "groupes": []
     }
   ],
-  "_aide_groupes": "Un article est retenu s'il contient au moins un mot-clé d'un groupe 'suffisant'. Les groupes 'non suffisants' (termes trop génériques comme 'amendment' ou 'guideline') ajoutent des tags mais ne suffisent pas à eux seuls.",
+  "_aide_groupes": "Les mots-clés ne servent plus à écarter un article : TOUS les articles collectés sont gardés. Ils justifient la présence d'un article (affichés dans « Pourquoi cet article »), orientent sa rubrique et donnent un petit bonus à sa note de pertinence. Un groupe « non suffisant » (termes génériques comme 'amendment') donne un bonus plus faible et ne choisit pas la rubrique. La note de pertinence elle-même se règle dans config/profil_pertinence.json.",
   "groupes_non_suffisants": [
     "Nouveaux textes réglementaires",
     "Standards Cyber",
@@ -179,9 +193,9 @@
     }
   },
   "_aide_mots_courts": "Les mots-clés de 4 lettres ou moins écrits en MAJUSCULES (CRA, MDR, NIST…) sont cherchés en respectant la casse et en mot entier, pour éviter les faux positifs.",
-  "jours_conservation": 365,
+  "jours_conservation": 730,
   "jours_premiere_collecte": 60,
-  "nb_max_articles": 3000,
+  "nb_max_articles": 5000,
   "delai_requete_secondes": 25,
   "requetes_paralleles": 8,
   "user_agent": "CyberWatch-Veille/1.0 (+veille reglementaire; contact interne)",
@@ -199,5 +213,32 @@
       "intelligence artificielle",
       "hébergement de données de santé"
     ]
-  }
+  },
+  "surtitre_en": "Regulatory watch — Wavestone",
+  "sous_titre_en": "Cybersecurity · Data · AI · Medical devices — automated collection every Monday",
+  "libelles_en": {
+    "Cybersécurité (réglementation)": "Cybersecurity (regulation)",
+    "Dispositifs médicaux": "Medical devices",
+    "Santé": "Health",
+    "Sanction": "Penalty",
+    "Consultation publique": "Public consultation",
+    "Notification d'incident": "Incident reporting",
+    "RGPD": "GDPR",
+    "Cahiers de laboratoire": "Laboratory notebooks",
+    "Séquençage Nouvelle Génération": "Next-generation sequencing",
+    "Production de tests": "Test manufacturing"
+  },
+  "_aide_traduction": "Traduction automatique gratuite (Argos Translate, open source) des titres et résumés vers les langues 'cibles'. Les acronymes sont protégés et harmonisés via config/acronymes.json. 'max_segments_par_collecte' limite la durée d'une collecte : le reste est traduit le lendemain.",
+  "traduction": {
+    "active": true,
+    "cibles": [
+      "en",
+      "fr"
+    ],
+    "max_segments_par_collecte": 2500
+  },
+  "rattrapage_pages_max": 15,
+  "_aide_rattrapage": "Rattrapage ponctuel des archives : dans GitHub, Actions > Run workflow > « Rattrapage depuis » = 2026-01-01. Nombre maximal de pages d'archives lues par source.",
+  "date_debut_veille": "2026-01-01",
+  "_aide_date_debut": "Aucun article antérieur à cette date n'est ajouté (début de la base de connaissance)."
 }

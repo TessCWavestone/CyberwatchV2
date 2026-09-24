@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 """
-Cyber Watch — collecte automatique, sans IA.
+Cyber Watch — collecte automatique, gratuite, sans clé API.
 
-Lit la liste des sources dans l'Excel (config/sources.xlsx), récupère les
-nouveaux articles (flux RSS/Atom quand il existe, sinon surveillance de la page
-web), garde ceux qui contiennent au moins un mot-clé de l'onglet « Mots Clés »,
-et écrit les fichiers lus par le site :
+Lit la liste des sources dans l'Excel (config/sources.xlsx) et les sources
+ajoutées depuis le site (config/sources_manuelles.json), récupère les nouveaux
+articles (flux RSS/Atom quand il existe, sinon surveillance de la page web),
+et les GARDE TOUS : chaque article reçoit une note de pertinence (élevée /
+moyenne / faible) et une justification (thèmes proches, mots-clés présents).
+La base de connaissance initiale (config/base_connaissance.json) est ajoutée.
 
-    data/actualites.json / .js    les articles retenus
+Fichiers écrits (lus par le site) :
+    data/actualites.json / .js    les articles
     data/etat_sources.json / .js  le diagnostic de chaque source
+    data/versions.json / .js      l'historique des collectes
     data/vus.json                 la mémoire des liens déjà vus (pages web)
 
 Lancement :  python collecte/collecte.py
+Rattrapage ponctuel (archives depuis une date) :
+             RATTRAPAGE_DEPUIS=2026-01-01 python collecte/collecte.py
 Dépendances : requests, beautifulsoup4, openpyxl  (voir requirements.txt)
 """
 
@@ -33,10 +39,27 @@ import openpyxl
 import requests
 from bs4 import BeautifulSoup
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from traduction import Traducteur, extraire_acronymes, registre_acronymes  # noqa: E402
+from pertinence import Pertinence  # noqa: E402
+from amendes import detecter as detecter_amende  # noqa: E402
+
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(RACINE, "data")
 AUJOURDHUI = dt.date.today()
 MAINTENANT = dt.datetime.now(dt.timezone.utc)
+
+
+def _date_rattrapage():
+    v = (os.environ.get("RATTRAPAGE_DEPUIS") or "").strip()
+    try:
+        return dt.date.fromisoformat(v) if v else None
+    except ValueError:
+        print("RATTRAPAGE_DEPUIS invalide (%s) : ignoré" % v)
+        return None
+
+
+RATTRAPAGE = _date_rattrapage()
 
 
 # --------------------------------------------------------------------------- utilitaires
@@ -200,8 +223,6 @@ def charger_sources(cfg, classeur, avec_inactives=False):
         if not nom or not url.startswith("http"):
             continue
         inactive = any(get("statut").lower().startswith(i) for i in ignores)
-        if inactive and not avec_inactives:
-            continue
         cle = normaliser_lien(url)
         if cle in deja:
             continue
@@ -213,9 +234,28 @@ def charger_sources(cfg, classeur, avec_inactives=False):
         sources.append({
             "nom": nom, "zone": get("zone") or "—", "type": get("type"), "url": url,
             "urls_actu": list(dict.fromkeys(actus)), "flux_excel": list(dict.fromkeys(flux)), "statut_excel": get("statut"),
-            "inactive": inactive,
+            "inactive": inactive, "origine": "excel",
         })
-    return sources
+    return appliquer_sources_manuelles(sources, deja, avec_inactives)
+
+
+def appliquer_sources_manuelles(sources, deja, avec_inactives):
+    """Ajouts et retraits faits depuis le site (config/sources_manuelles.json)."""
+    manu = lire_json(os.path.join(RACINE, "config", "sources_manuelles.json"), {})
+    retraits = {normaliser_lien(r["url"] if isinstance(r, dict) else r) for r in manu.get("retraits", [])}
+    for s in manu.get("ajouts", []):
+        url = (s.get("url") or "").strip()
+        if not url.startswith("http") or normaliser_lien(url) in deja:
+            continue
+        deja.add(normaliser_lien(url))
+        liste = lambda v: [u for u in (v if isinstance(v, list) else re.split(r"[\s;,]+", v or "")) if u.startswith("http")]
+        sources.append({"nom": s.get("nom") or domaine(url), "zone": s.get("zone") or "—", "type": s.get("type", ""),
+                        "url": url, "urls_actu": liste(s.get("pages")), "flux_excel": liste(s.get("flux")),
+                        "statut_excel": "", "inactive": False, "origine": "site", "ajoute_le": s.get("ajoute_le", "")})
+    for s in sources:
+        if normaliser_lien(s["url"]) in retraits:
+            s["inactive"], s["statut_excel"], s["retiree"] = True, "Retirée depuis le site", True
+    return sources if avec_inactives else [s for s in sources if not s["inactive"]]
 
 
 def variantes(terme):
@@ -262,27 +302,32 @@ def charger_mots_cles(cfg, classeur):
 
 
 def classer(texte, regles, cfg):
-    """Retourne (rubrique, tags) ou (None, []) si l'article est hors périmètre."""
+    """Retourne (rubrique, tags, groupes). Les mots-clés ne servent plus à
+    écarter un article : ils justifient sa présence et orientent sa rubrique.
+    rubrique vaut None si aucun mot-clé « fort » n'est présent (la rubrique
+    est alors choisie par la note de pertinence)."""
     texte = sans_accents(texte)
     non_suff = set(cfg.get("groupes_non_suffisants", []))
-    tags, groupes_forts = [], {}
+    tags, groupes_forts, groupes = [], {}, []
     for g, lib, rx in regles:
         if rx.search(texte):
             if lib not in tags:
                 tags.append(lib)
+            if g not in groupes:
+                groupes.append(g)
             if g not in non_suff:
                 groupes_forts[g] = groupes_forts.get(g, 0) + 1
-    if not groupes_forts:
-        return None, []
     # on retire les tags inclus dans un autre (« cyber resilience » ⊂ « Cyber Resilience Act »)
     bas = [t.lower() for t in tags]
     tags = [t for i, t in enumerate(tags) if not any(j != i and bas[i] in b for j, b in enumerate(bas))]
+    if not groupes_forts:
+        return None, tags[:8], groupes
     meilleure, score_max = None, 0
     for r in cfg["rubriques"]:
         score = sum(groupes_forts.get(g, 0) for g in r["groupes"])
         if score > score_max:
             meilleure, score_max = r["id"], score
-    return meilleure or cfg["rubriques"][0]["id"], tags[:8]
+    return meilleure or cfg["rubriques"][0]["id"], tags[:8], groupes
 
 
 NATURE_OFFICIELLE = re.compile(
@@ -477,9 +522,79 @@ def liens_page(html, url):
     return resultat
 
 
+# --------------------------------------------------------------------------- rattrapage (archives)
+
+MOTS_SUIVANT = re.compile(
+    r"^\s*(suivant(e)?|page suivante|next( page)?|older( posts| entries)?|weiter|nächste( seite)?|siguiente|"
+    r"successiv[oa]|avanti|volgende|nästa|neste|næste|seuraava|próxima|seguinte|następna|další|következő|"
+    r"επόμενη|›|»|→|>)\s*$", re.I)
+
+
+def page_suivante(html, url, rang):
+    """Lien vers la page d'archives suivante (pagination) ou None."""
+    soupe = BeautifulSoup(html, "html.parser")
+    lien = soupe.find(["link", "a"], rel=lambda r: r and "next" in (r if isinstance(r, list) else [r]))
+    if lien and lien.get("href"):
+        return urljoin(url, lien["href"])
+    for a in soupe.find_all("a", href=True):
+        txt = nettoyer_texte(a.get_text(" ")) or a.get("aria-label", "") or a.get("title", "")
+        if MOTS_SUIVANT.match(txt) or re.search(r"(next|suivant|weiter|siguiente)", a.get("aria-label", ""), re.I):
+            h = urljoin(url, a["href"])
+            if h != url and domaine(h) == domaine(url):
+                return h
+    # motif « page=N » ou « /page/N/ »
+    for a in soupe.find_all("a", href=True):
+        h = urljoin(url, a["href"])
+        if re.search(r"([?&](page|p|pg|seite|pagina)=%d\b|/page/%d/?$)" % (rang + 1, rang + 1), h):
+            return h
+    return None
+
+
+def paginer(client, url, premiere, erreurs, max_pages):
+    """Mode rattrapage : parcourt les pages d'archives tant qu'elles contiennent
+    des articles postérieurs à RATTRAPAGE_DEPUIS."""
+    arts, html, courant = [], premiere, url
+    for rang in range(1, max_pages):
+        suiv = page_suivante(html, courant, rang)
+        if not suiv:
+            break
+        try:
+            r = client.get(suiv)
+        except Exception as e:
+            erreurs.append("Archives %s : %s" % (suiv, str(e)[:80]))
+            break
+        trouves = liens_page(r.content, r.url)
+        dates = [a["date"] for a in trouves if a["date"]]
+        arts.extend(trouves)
+        if not trouves or (dates and max(dates) < RATTRAPAGE):
+            break
+        html, courant = r.content, r.url
+    return arts
+
+
+def flux_archives(client, f, deja, max_pages):
+    """Mode rattrapage pour un flux WordPress (?paged=2, 3…)."""
+    arts = []
+    for n in range(2, max_pages + 1):
+        u = f + ("&" if "?" in f else "?") + "paged=%d" % n
+        try:
+            lot = lire_flux(client.get(u).content, u)
+        except Exception:
+            break
+        nouveaux = [a for a in lot if a["lien"] not in deja]
+        if not nouveaux:
+            break
+        deja.update(a["lien"] for a in nouveaux)
+        arts.extend(nouveaux)
+        dates = [a["date"] for a in nouveaux if a["date"]]
+        if dates and max(dates) < RATTRAPAGE:
+            break
+    return arts
+
+
 # --------------------------------------------------------------------------- collecte d'une source
 
-def collecter_source(src, client, etat_prec):
+def collecter_source(src, client, etat_prec, max_pages=15):
     """Retourne (articles bruts, état de la source)."""
     etat = {
         "nom": src["nom"], "zone": src["zone"], "url": src["url"], "mode": "", "flux": "",
@@ -489,8 +604,12 @@ def collecter_source(src, client, etat_prec):
     arts, flux_lus, pages_lues, erreurs = [], [], [], []
     for f in src["flux_excel"]:
         try:
-            arts.extend(lire_flux(client.get(f).content, f))
+            lot = lire_flux(client.get(f).content, f)
+            arts.extend(lot)
             flux_lus.append(f)
+            dates = [a["date"] for a in lot if a["date"]]
+            if RATTRAPAGE and dates and min(dates) > RATTRAPAGE:
+                arts.extend(flux_archives(client, f, {a["lien"] for a in lot}, max_pages))
         except Exception as e:
             erreurs.append("Flux %s illisible : %s" % (f, str(e)[:100]))
 
@@ -506,6 +625,8 @@ def collecter_source(src, client, etat_prec):
         trouves = lire_flux(r.content, u) if est_flux(r.content) else liens_page(r.content, r.url)
         if not trouves:
             erreurs.append("Aucun lien d'article détecté sur %s (page probablement chargée en JavaScript)" % u)
+        elif RATTRAPAGE and not est_flux(r.content):
+            trouves += paginer(client, r.url, r.content, erreurs, max_pages)
         arts.extend(trouves)
         pages_lues.append(u)
 
@@ -541,6 +662,8 @@ def collecter_source(src, client, etat_prec):
             arts = liens_page(r.content, r.url)
             if not arts:
                 erreurs.append("Aucun lien d'article détecté sur %s (page probablement chargée en JavaScript)" % src["url"])
+            elif RATTRAPAGE:
+                arts += paginer(client, r.url, r.content, erreurs, max_pages)
             pages_lues.append(src["url"])
 
     mode = "rss+page" if flux_lus and pages_lues else ("rss" if flux_lus else "page")
@@ -637,6 +760,62 @@ def niveau_acces(etat):
     return "partielle" if etat.get("erreur") else "ok"
 
 
+def traduire_syntheses(trad):
+    """Traduit en anglais les analyses rédigées (data/syntheses.js) -> data/syntheses_en.js.
+    Les éléments pas encore traduits (budget atteint) restent en français et
+    seront complétés à la collecte suivante."""
+    chemin = os.path.join(DATA, "syntheses.js")
+    if not trad.actif or "en" not in trad.cibles or not os.path.exists(chemin):
+        return
+    texte = open(chemin, encoding="utf-8").read()
+    debut = texte.index("{")
+    source = json.loads(texte[debut:texte.rindex("}") + 1])
+    t = lambda x: (trad.traduire(x, "fr", "en") or x) if x else x
+    en = {"titre": t(source.get("titre")), "chapeau": t(source.get("chapeau")), "groupes": [], "glossaire": []}
+    for g in source.get("groupes", []):
+        eg = {"titre": t(g["titre"]), "fiches": []}
+        for f in g.get("fiches", []):
+            eg["fiches"].append(dict(f, titre=t(f["titre"]), accroche=t(f.get("accroche")),
+                                     paragraphes=[t(p) for p in f.get("paragraphes", [])],
+                                     sources=[dict(x, libelle=t(x.get("libelle"))) for x in f.get("sources", [])]))
+        en["groupes"].append(eg)
+    en["glossaire"] = [{"terme": x["terme"], "definition": t(x["definition"])} for x in source.get("glossaire", [])]
+    with open(os.path.join(DATA, "syntheses_en.js"), "w", encoding="utf-8") as f:
+        f.write("/* Traduction automatique de syntheses.js — régénérée à chaque collecte. */\n")
+        f.write("window.VEILLE_SYNTHESES_EN = %s;\n" % json.dumps(en, ensure_ascii=False, indent=1))
+
+
+# --------------------------------------------------------------------------- base de connaissance
+
+def charger_base(ids_existants):
+    """Éléments de config/base_connaissance.json -> articles du site.
+    Rédigés en français et en anglais ; jamais supprimés par la collecte."""
+    base = lire_json(os.path.join(RACINE, "config", "base_connaissance.json"), {})
+    jour = base.get("constituee_le") or AUJOURDHUI.isoformat()
+    sortie = []
+    for e in base.get("elements", []):
+        if not e.get("lien") or not e.get("titre_fr"):
+            continue
+        ident = "b" + hashlib.sha1((e["lien"] + "|" + e["titre_fr"]).encode("utf-8")).hexdigest()[:11]
+        amende = e.get("amende")
+        if amende and amende.get("montant_eur") is not None:
+            amende = {"montant_eur": amende["montant_eur"], "texte": amende.get("texte", ""),
+                      "plafond": bool(re.search(r"jusqu|up to|max", amende.get("texte", ""), re.I))}
+        else:
+            amende = None
+        sortie.append({
+            "id": ident, "base": True, "titre": e["titre_fr"], "resume": e.get("resume_fr", ""), "langue": "fr",
+            "trad": {"en": {"titre": e.get("titre_en") or e["titre_fr"], "resume": e.get("resume_en", "")}},
+            "lien": e["lien"], "date": e["date"], "date_estimee": bool(e.get("date_approx")),
+            "detecte_le": jour, "version": "base", "source": e.get("source", ""), "zone": e.get("zone", "Europe"),
+            "nature": e.get("nature", "presse"), "rubrique": e.get("rubrique", "reglementation"),
+            "statut": e.get("statut", ""), "tags": e.get("textes", [])[:8], "amende": amende,
+            "pertinence": e.get("pertinence", "moyenne"), "themes": [],
+            "pourquoi": {"fr": e.get("pourquoi_fr", ""), "en": e.get("pourquoi_en", "")},
+        })
+    return sortie
+
+
 # --------------------------------------------------------------------------- programme principal
 
 def main():
@@ -645,21 +824,29 @@ def main():
     toutes = charger_sources(cfg, classeur, avec_inactives=True)
     sources = [x for x in toutes if not x["inactive"]]
     regles = charger_mots_cles(cfg, classeur)
-    print("%d sources, %d mots-clés" % (len(sources), len(regles)))
+    print("%d sources, %d mots-clés%s" % (len(sources), len(regles),
+          (" — RATTRAPAGE depuis le %s" % RATTRAPAGE) if RATTRAPAGE else ""))
 
     ancien = lire_json(os.path.join(DATA, "actualites.json"), {})
-    articles = {a["id"]: a for a in ancien.get("articles", [])}
+    articles = {a["id"]: a for a in ancien.get("articles", []) if not a.get("base")}
     etats_prec = {e["url"]: e for e in lire_json(os.path.join(DATA, "etat_sources.json"), {}).get("sources", [])}
     vus = lire_json(os.path.join(DATA, "vus.json"), {})
+    versions = lire_json(os.path.join(DATA, "versions.json"), {}).get("versions", [])
+    id_version = MAINTENANT.strftime("%Y-%m-%d-%H%M")
+    if any(v.get("id") == id_version for v in versions):
+        id_version = MAINTENANT.strftime("%Y-%m-%d-%H%M%S")
 
     client = Client(cfg)
+    max_pages = cfg.get("rattrapage_pages_max", 15)
     with ThreadPoolExecutor(max_workers=cfg.get("requetes_paralleles", 8)) as pool:
         resultats = list(pool.map(lambda s: (s, *(
             collecter_legifrance(s, cfg, client) if "legifrance.gouv.fr" in s["url"]
-            else collecter_source(s, client, etats_prec.get(s["url"], {})))), sources))
+            else collecter_source(s, client, etats_prec.get(s["url"], {}), max_pages))), sources))
 
-    limite_premiere = AUJOURDHUI - dt.timedelta(days=cfg.get("jours_premiere_collecte", 60))
-    etats, nouveaux = [], 0
+    conservation = cfg.get("jours_conservation", 730)
+    limite_premiere = RATTRAPAGE or (AUJOURDHUI - dt.timedelta(days=cfg.get("jours_premiere_collecte", 60)))
+    plancher = dt.date.fromisoformat(cfg.get("date_debut_veille", "2026-01-01"))
+    etats, nouveaux_ids = [], []
     for src, arts, etat in resultats:
         cle_src = normaliser_lien(src["url"])
         premiere_fois = cle_src not in vus
@@ -671,16 +858,23 @@ def main():
             deja_vus.add(ident)
             if ident in articles:
                 continue
-            # Première visite d'une source : on ne publie que le récent daté,
-            # pour ne pas afficher d'anciens articles comme s'ils étaient neufs.
-            if premiere_fois and (not a["date"] or a["date"] < limite_premiere):
+            # Première visite (ou rattrapage) : on ne reprend que le daté postérieur à
+            # la date limite, pour ne pas présenter d'anciens articles comme neufs.
+            if (premiere_fois or RATTRAPAGE) and (not a["date"] or a["date"] < limite_premiere):
+                if not (RATTRAPAGE and nouveau_lien and not premiere_fois and not a["date"]):
+                    continue
+            if not premiere_fois and not nouveau_lien and (not a["date"] or a["date"] < limite_premiere):
+                continue  # lien déjà vu lors d'une collecte précédente et trop ancien : pas une nouveauté
+            if a["date"] and a["date"] < plancher:
+                continue  # antérieur au début de la base de connaissance
+            if a["date"] and a["date"] < AUJOURDHUI - dt.timedelta(days=conservation):
                 continue
-            if not premiere_fois and not nouveau_lien and not a["date"]:
-                continue
-            if a["date"] and a["date"] < AUJOURDHUI - dt.timedelta(days=cfg.get("jours_conservation", 365)):
-                continue
-            rubrique, tags = classer(a["titre"] + " " + a["resume"], regles, cfg)
-            if not rubrique:
+            texte = a["titre"] + " " + a["resume"]
+            rubrique, tags, groupes = classer(texte, regles, cfg)
+            # Aucun article n'est écarté pour absence de mot-clé. Seule exception :
+            # un lien SANS date et SANS aucun mot-clé trouvé sur une page web est
+            # le plus souvent un lien de menu (« Nos services »…) et non un article.
+            if not a["date"] and not groupes and not etat.get("mode", "").startswith("rss") and etat.get("mode") != "api":
                 continue
             articles[ident] = {
                 "id": ident,
@@ -690,52 +884,121 @@ def main():
                 "date": (a["date"] or AUJOURDHUI).isoformat(),
                 "date_estimee": a["date"] is None,
                 "detecte_le": AUJOURDHUI.isoformat(),
+                "version": id_version,
                 "source": src["nom"],
                 "zone": src["zone"],
                 "nature": nature_source(src),
-                "rubrique": rubrique,
+                "rubrique": rubrique or "autres",
+                "rubrique_mots_cles": bool(rubrique),
                 "tags": tags,
+                "groupes": groupes,
+                "amende": detecter_amende(texte, src["zone"]),
             }
+            nouveaux_ids.append(ident)
             retenus += 1
-        vus[cle_src] = sorted(deja_vus)[-3000:]
+        vus[cle_src] = sorted(deja_vus)[-5000:]
         etat["nb_retenus"] = retenus
         etat.update(acces=niveau_acces(etat), type=src["type"], nature=nature_source(src),
-                    nb_pages=len(src["urls_actu"]), nb_flux=len(src["flux_excel"]))
-        nouveaux += retenus
+                    nb_pages=len(src["urls_actu"]), nb_flux=len(src["flux_excel"]), origine=src.get("origine", "excel"),
+                    pages=src["urls_actu"], flux_liste=src["flux_excel"])
         etats.append(etat)
         print("  %-9s %3d trouvés  %3d retenus  %s%s" % (
             etat["mode"], etat["nb_trouves"], retenus, src["nom"][:60],
             ("  ! " + etat["erreur"]) if etat["erreur"] else ""))
 
-    # Sources au statut « Inactif » dans l'Excel : listées mais non interrogées
+    # Sources inactives (Excel) ou retirées depuis le site : listées mais non interrogées
     for src in toutes:
         if src["inactive"]:
+            msg = ("Retirée depuis le site : plus interrogée." if src.get("retiree")
+                   else "Statut « %s » dans l'Excel : source non interrogée." % src["statut_excel"])
             etats.append({"nom": src["nom"], "zone": src["zone"], "url": src["url"], "mode": "inactif",
-                          "acces": "inactive", "flux": "", "page": "", "nb_trouves": 0, "nb_retenus": 0,
-                          "erreur": "Statut « %s » dans l'Excel : source non interrogée." % src["statut_excel"],
-                          "type": src["type"], "nature": nature_source(src), "verifie_le": ""})
+                          "acces": "retiree" if src.get("retiree") else "inactive", "flux": "", "page": "",
+                          "nb_trouves": 0, "nb_retenus": 0, "erreur": msg, "type": src["type"],
+                          "nature": nature_source(src), "verifie_le": "", "origine": src.get("origine", "excel")})
 
-    # Nettoyage : ancienneté maximale et nombre maximal d'articles
-    seuil = (AUJOURDHUI - dt.timedelta(days=cfg.get("jours_conservation", 365))).isoformat()
-    liste = sorted((a for a in articles.values() if a["date"] >= seuil),
-                   key=lambda a: (a["date"], a["detecte_le"]), reverse=True)[:cfg.get("nb_max_articles", 3000)]
+    # Base de connaissance (jamais purgée) + nettoyage des articles collectés
+    base = charger_base(articles)
+    liens_base = {normaliser_lien(b["lien"]) for b in base}
+    seuil = (AUJOURDHUI - dt.timedelta(days=conservation)).isoformat()
+    collectes = [a for a in articles.values() if a["date"] >= seuil and normaliser_lien(a["lien"]) not in liens_base]
+    collectes = sorted(collectes, key=lambda a: (a["date"], a["detecte_le"]), reverse=True)[:cfg.get("nb_max_articles", 5000)]
+    for a in collectes:  # articles déjà présents avant cette version du script
+        a.setdefault("rubrique_mots_cles", a.get("rubrique") not in (None, "autres"))
+        a.setdefault("version", "")
+        if "amende" not in a:
+            a["amende"] = detecter_amende(a["titre"] + " " + a.get("resume", ""), a.get("zone", ""))
+    liste = sorted(collectes + base, key=lambda a: (a["date"], a["detecte_le"]), reverse=True)
 
     depot = os.environ.get("GITHUB_REPOSITORY")
     serveur = os.environ.get("GITHUB_SERVER_URL", "https://github.com")
     meta = {
         "titre": cfg["titre"], "surtitre": cfg.get("surtitre", ""), "sous_titre": cfg.get("sous_titre", ""),
-        "rubriques": [{k: r[k] for k in ("id", "titre", "chapeau")} for r in cfg["rubriques"]],
         "mise_a_jour": MAINTENANT.isoformat(timespec="minutes"),
+        "version": id_version,
         "nb_sources": len(sources),
-        "nb_nouveaux": nouveaux,
+        "nb_nouveaux": len(nouveaux_ids),
         "url_lancer_maj": ("%s/%s/actions/workflows/veille.yml" % (serveur, depot)) if depot else cfg.get("url_lancer_maj", ""),
+        "depot": depot or cfg.get("depot_github", ""),
+        "branche": os.environ.get("BRANCHE_VEILLE") or cfg.get("branche_github", "main"),
+        "serveur": serveur,
     }
+    # Traduction (gratuite, open source) des titres et résumés, puis des analyses rédigées
+    trad = Traducteur(cfg)
+    for a in liste:
+        trad.traduire_article(a)
+    traduire_syntheses(trad)
+    trad.enregistrer()
+    en_attente = sum(1 for a in liste if trad.actif and any(
+        c != a.get("langue") and c not in (a.get("trad") or {}) for c in trad.cibles))
+    meta["traduction"] = {"active": trad.actif, "moteur": bool(trad.moteur), "faites": trad.faits,
+                          "en_attente": en_attente, "erreur": trad.erreur}
+    print("Traduction : %d segments traduits, %d articles en attente%s" % (
+        trad.faits, en_attente, (" — " + trad.erreur) if trad.erreur else ""))
+
+    # Pertinence (après traduction : le modèle lit aussi le titre anglais)
+    pert = Pertinence(cfg)
+    n = pert.noter(liste)
+    print("Pertinence : %d articles notés (mode %s)%s" % (n, pert.mode, (" — " + pert.erreur) if pert.erreur else ""))
+    meta["pertinence"] = {"mode": pert.mode, "erreur": pert.erreur, "themes": pert.libelles(),
+                          "seuils": {k: v for k, v in pert.seuils.items() if not k.startswith("_")}}
+
+    rubriques = [dict(r) for r in cfg["rubriques"]]
+    if not any(r["id"] == "autres" for r in rubriques):
+        rubriques.append({"id": "autres", "titre": "Autres actualités à surveiller",
+                          "titre_en": "Other news to monitor",
+                          "chapeau": "Articles sans lien évident avec les thèmes prioritaires : gardés pour ne rien manquer.",
+                          "chapeau_en": "Articles with no obvious link to the priority themes: kept so that nothing is missed."})
+    meta["rubriques"] = [{k: r.get(k, "") for k in ("id", "titre", "chapeau", "titre_en", "chapeau_en")} for r in rubriques]
+    meta["libelles_en"] = cfg.get("libelles_en", {})
+    meta["sous_titre_en"] = cfg.get("sous_titre_en", "")
+    meta["surtitre_en"] = cfg.get("surtitre_en", "")
+
+    # Acronymes : forme canonique par article (pour le filtre du site) + registre global
+    for a in liste:
+        a["acronymes"] = [code for code, _ in extraire_acronymes(a["titre"] + " " + a.get("resume", ""), trad.glossaire)]
+    precedent = lire_json(os.path.join(DATA, "acronymes.json"), {})
+    registre = registre_acronymes(liste, trad.glossaire, precedent, AUJOURDHUI.isoformat())
+
+    # Historique des versions : une entrée par collecte
+    actives = [e for e in etats if e["acces"] not in ("inactive", "retiree")]
+    versions.append({
+        "id": id_version, "date": meta["mise_a_jour"], "nb_total": len(liste), "nb_nouveaux": len(nouveaux_ids),
+        "nouveaux": nouveaux_ids, "rattrapage": RATTRAPAGE.isoformat() if RATTRAPAGE else "",
+        "sources_lues": sum(1 for e in actives if e["acces"] in ("ok", "partielle")), "sources_actives": len(actives),
+        "declenchement": os.environ.get("GITHUB_EVENT_NAME", "local"),
+    })
+    meta["nb_versions"] = len(versions)
+
+    ecrire_json_et_js("acronymes", {"mise_a_jour": meta["mise_a_jour"], "glossaire": trad.glossaire,
+                                    "acronymes": registre}, "VEILLE_ACRONYMES")
     ecrire_json_et_js("actualites", {"meta": meta, "articles": liste}, "VEILLE_ACTUALITES")
     ecrire_json_et_js("etat_sources", {"mise_a_jour": meta["mise_a_jour"], "jours_premiere_collecte": cfg.get("jours_premiere_collecte", 60),
-                                       "jours_conservation": cfg.get("jours_conservation", 365), "sources": etats}, "VEILLE_ETAT_SOURCES")
+                                       "jours_conservation": conservation, "sources": etats}, "VEILLE_ETAT_SOURCES")
+    ecrire_json_et_js("versions", {"versions": versions}, "VEILLE_VERSIONS")
     ecrire_json_et_js("vus", vus, None)
-    print("\n%d nouveaux articles — %d au total." % (nouveaux, len(liste)))
-    actives = [e for e in etats if e["acces"] != "inactive"]
+    with open(os.path.join(DATA, "version_courante.txt"), "w") as f:
+        f.write(id_version)
+    print("\n%d nouveaux articles — %d au total (dont %d de la base de connaissance)." % (len(nouveaux_ids), len(liste), len(base)))
     print("%d/%d sources actives lues (%d partiellement)." % (
         sum(1 for e in actives if e["acces"] in ("ok", "partielle")), len(actives),
         sum(1 for e in actives if e["acces"] == "partielle")))

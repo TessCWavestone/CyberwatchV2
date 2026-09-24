@@ -1,0 +1,4 @@
+# Note de pertinence : petit modèle de langage open source multilingue (gratuit,
+# exécuté sur le serveur GitHub). torch (version processeur) est installé à part
+# dans le workflow. Si l'installation échoue, la note est calculée avec les mots-clés.
+sentence-transformers>=3.0

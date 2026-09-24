@@ -64,6 +64,7 @@
     <div class="tabs" role="tablist">
       <a class="tab" role="tab" href="#veille" data-tab-link="veille" data-i18n="tab_watch">Veille</a>
       <a class="tab" role="tab" href="#carte" data-tab-link="carte" data-i18n="tab_map">Carte</a>
+      <a class="tab" role="tab" href="#referentiel" data-tab-link="referentiel" data-i18n="tab_ref">Textes applicables</a>
       <a class="tab" role="tab" href="#sources" data-tab-link="sources" data-i18n="tab_sources">Sources</a>
     </div>
     <div class="nav-inner" id="nav"></div>
@@ -220,6 +221,32 @@
 </section>
 </div>
 
+<!-- =========================================================== RÉFÉRENTIEL -->
+<div class="tab-panel" data-tab="referentiel" hidden>
+<section class="section section-first" id="referentiel-section">
+  <header class="section-head">
+    <h2 data-i18n="ref_title">Textes applicables</h2>
+    <p class="section-lead" data-i18n="ref_lead"></p>
+    <p class="section-count" id="ref-resume"></p>
+  </header>
+  <div class="src-tools">
+    <select id="ref-zone" class="select" data-i18n-aria="th_zone"></select>
+    <select id="ref-cat" class="select" data-i18n-aria="ref_th_cat"></select>
+    <input type="search" id="ref-recherche" class="search search-sm" data-i18n-ph="ref_search_ph" autocomplete="off">
+    <button type="button" class="btn" id="ref-export" data-i18n="btn_excel_ref">Exporter (Excel)</button>
+  </div>
+  <div class="table-wrap">
+    <table class="src-table ref-table">
+      <thead>
+        <tr><th data-i18n="th_zone">Zone</th><th data-i18n="ref_th_cat">Catégorie</th><th data-i18n="ref_th_text">Texte</th><th data-i18n="ref_th_auth">Autorité</th><th data-i18n="ref_th_since">Applicable depuis</th><th data-i18n="ref_th_fine">Amende max.</th><th data-i18n="f_pert">Pertinence</th></tr>
+      </thead>
+      <tbody id="ref-lignes"></tbody>
+    </table>
+  </div>
+  <p class="empty" id="ref-vide" hidden data-i18n="ref_empty">Aucun texte pour ce filtre.</p>
+</section>
+</div>
+
 <!-- =============================================================== SOURCES -->
 <div class="tab-panel" data-tab="sources" hidden>
 <section class="section section-first" id="etat-sources">
@@ -346,6 +373,7 @@
 <script src="data/syntheses_en.js" onerror="window.VEILLE_SYNTHESES_EN=null"></script>
 <script src="data/acronymes.js" onerror="window.VEILLE_ACRONYMES=null"></script>
 <script src="data/versions.js" onerror="window.VEILLE_VERSIONS=null"></script>
+<script src="data/referentiel.js" onerror="window.VEILLE_REFERENTIEL=null"></script>
 <script src="script.js"></script>
 </body>
 </html>

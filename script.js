@@ -21,6 +21,14 @@
   var PERT     = META.pertinence || {};
   var THEMES   = PERT.themes || {};
   var ORDRE_PERT = { elevee: 0, moyenne: 1, faible: 2 };
+  var REF      = window.VEILLE_REFERENTIEL || { textes: [], categories: {} };
+  var REF_TEXTES = REF.textes || [];
+  function nomCategorie(c) { var x = (REF.categories || {})[String(c)]; return x ? (x[LANG] || x.fr) : String(c || ''); }
+  function refTexte(r) {
+    return { nom: LANG === 'en' ? (r.nom_en || r.nom) : r.nom, resume: LANG === 'en' ? (r.resume_en || r.resume_fr) : r.resume_fr,
+             pourquoi: LANG === 'en' ? (r.pourquoi_en || r.pourquoi_fr) : r.pourquoi_fr };
+  }
+  function refDepuis(v) { return !v || v === 'n.d.' ? '—' : (/^\d{4}-\d{2}-\d{2}$/.test(v) ? dateLongue(v) : v); }
 
   /* Rang de version de chaque article : base / anciens = 0, puis ordre des collectes */
   var RANG_VERSION = { base: 0, '': 0 };
@@ -42,6 +50,15 @@
     fr: {
       skip: 'Aller au contenu', btn_update: 'Lancer une mise à jour', btn_excel: 'Exporter la sélection (Excel)', btn_pdf: 'Exporter la sélection (PDF)',
       btn_pdf_all: 'Générer la veille complète (PDF)',
+      tab_ref: 'Textes applicables', ref_title: 'Textes applicables',
+      ref_lead: "Le socle des textes et référentiels qui s'appliquent aujourd'hui dans chaque pays, même sans actualité récente : lois cyber, données, données de santé, exigences imposées par les acheteurs de santé et par le secteur public à leurs fournisseurs, dispositifs médicaux, IA, sécurité des produits, entités critiques, certifications. Constitué par une recherche systématique (10 catégories × 19 zones), complétable à la main dans config/referentiel.json.",
+      ref_th_cat: 'Catégorie', ref_th_text: 'Texte', ref_th_auth: 'Autorité', ref_th_since: 'Applicable depuis', ref_th_fine: 'Amende max.',
+      ref_all_zones: 'Tous les pays et zones', ref_all_cats: 'Toutes les catégories', ref_search_ph: 'Filtrer (nom, acronyme, autorité…)',
+      ref_empty: 'Aucun texte pour ce filtre.', btn_excel_ref: 'Exporter (Excel)', ref_none: "Pas encore de référentiel : il apparaîtra après la prochaine collecte.",
+      ref_summary: function (n, z) { return n + ' textes applicables · ' + z + ' pays et zones'; },
+      map_ref: 'Textes applicables', ref_pdf: 'Annexe — Textes applicables par pays',
+      ref_csv_head: ['Pays / zone', 'Catégorie', 'Texte', 'Acronyme', 'Autorité', 'Applicable depuis', 'Amende max.', 'Pertinence', 'Résumé', 'Pourquoi', 'Lien'],
+
       version_label: 'Version de la veille', version_only: 'Seulement les nouveautés de cette version', version_git: 'Voir cette version sur GitHub',
       version_current: ' (actuelle)', version_base: 'Base de connaissance initiale',
       version_opt: function (d, n) { return d + ' · ' + n + (n > 1 ? ' nouveaux' : ' nouveau'); },
@@ -139,6 +156,15 @@
     en: {
       skip: 'Skip to content', btn_update: 'Run an update', btn_excel: 'Export selection (Excel)', btn_pdf: 'Export selection (PDF)',
       btn_pdf_all: 'Generate the full watch (PDF)',
+      tab_ref: 'Applicable texts', ref_title: 'Applicable texts',
+      ref_lead: 'The baseline of texts and frameworks that apply today in each country, even without recent news: cyber laws, data, health data, requirements set by healthcare buyers and by the public sector for their suppliers, medical devices, AI, product security, critical entities, certifications. Built by systematic research (10 categories × 19 areas); can be completed by hand in config/referentiel.json.',
+      ref_th_cat: 'Category', ref_th_text: 'Text', ref_th_auth: 'Authority', ref_th_since: 'Applies since', ref_th_fine: 'Max. fine',
+      ref_all_zones: 'All countries and areas', ref_all_cats: 'All categories', ref_search_ph: 'Filter (name, acronym, authority…)',
+      ref_empty: 'No text for this filter.', btn_excel_ref: 'Export (Excel)', ref_none: 'No baseline yet: it will appear after the next collection.',
+      ref_summary: function (n, z) { return n + ' applicable texts · ' + z + ' countries and areas'; },
+      map_ref: 'Applicable texts', ref_pdf: 'Annex — Applicable texts by country',
+      ref_csv_head: ['Country / area', 'Category', 'Text', 'Acronym', 'Authority', 'Applies since', 'Max. fine', 'Relevance', 'Summary', 'Why', 'Link'],
+
       version_label: 'Watch version', version_only: 'Only what this version added', version_git: 'View this version on GitHub',
       version_current: ' (current)', version_base: 'Initial knowledge base',
       version_opt: function (d, n) { return d + ' · ' + n + ' new'; },
@@ -416,7 +442,7 @@
 
   /* ================================================================ onglets */
 
-  var ONGLETS = ['veille', 'carte', 'sources'];
+  var ONGLETS = ['veille', 'carte', 'referentiel', 'sources'];
   function ongletDepuisHash() {
     var h = (location.hash || '').slice(1);
     if (ONGLETS.indexOf(h) !== -1) return h;
@@ -822,6 +848,67 @@
     f.addEventListener('change', filtrer); r.addEventListener('input', filtrer);
   }
 
+  /* ================================================================ textes applicables */
+
+  function renderReferentiel() {
+    var tbody = document.getElementById('ref-lignes');
+    var zs = document.getElementById('ref-zone'), cs = document.getElementById('ref-cat'), q = document.getElementById('ref-recherche');
+    if (!REF_TEXTES.length) { document.getElementById('ref-resume').textContent = t('ref_none'); return; }
+    var zones = {}; REF_TEXTES.forEach(function (r) { zones[r.zone] = 1; });
+    zs.appendChild(el('option', { value: '', text: t('ref_all_zones') }));
+    Object.keys(zones).sort(function (a, b) { return nomZone(a).localeCompare(nomZone(b), LANG); })
+      .forEach(function (z) { zs.appendChild(el('option', { value: z, text: nomZone(z) })); });
+    cs.appendChild(el('option', { value: '', text: t('ref_all_cats') }));
+    Object.keys(REF.categories || {}).forEach(function (c) { cs.appendChild(el('option', { value: c, text: c + '. ' + nomCategorie(c) })); });
+    var lignes = REF_TEXTES.slice().sort(function (a, b) {
+      return nomZone(a.zone).localeCompare(nomZone(b.zone), LANG) || (a.categorie - b.categorie);
+    }).map(function (r) {
+      var x = refTexte(r);
+      var tr = el('tr', { 'data-zone': r.zone, 'data-cat': String(r.categorie),
+        'data-texte': normaliser([x.nom, r.nom, r.acronyme, r.autorite, x.resume, nomZone(r.zone)].join(' ')) }, [
+        el('td', { text: nomZone(r.zone) }),
+        el('td', { className: 'ref-cat', text: nomCategorie(r.categorie) }),
+        el('td', null, [
+          el('a', { href: r.lien, target: '_blank', rel: 'noopener noreferrer', className: 'ref-nom', text: x.nom }),
+          r.acronyme ? el('span', { className: 'badge badge-sm badge-statut', text: r.acronyme }) : null,
+          x.resume ? el('span', { className: 'ref-resume', text: x.resume }) : null,
+          x.pourquoi ? el('span', { className: 'ref-why', text: '→ ' + x.pourquoi }) : null
+        ]),
+        el('td', { text: r.autorite || '—' }),
+        el('td', { text: refDepuis(r.applicable_depuis) }),
+        el('td', { className: 'remarque', text: r.amende_max || '—' }),
+        el('td', null, [r.pertinence ? el('span', { className: 'badge badge-sm badge-p badge-p-' + r.pertinence, text: t('pert_badge')[r.pertinence] }) : null])
+      ]);
+      tr._r = r; tbody.appendChild(tr); return tr;
+    });
+    function filtrer() {
+      var z = zs.value, c = cs.value, s2 = normaliser(q.value).trim(), n = 0;
+      lignes.forEach(function (tr) {
+        var ok = (!z || tr.getAttribute('data-zone') === z) && (!c || tr.getAttribute('data-cat') === c) && (!s2 || tr.getAttribute('data-texte').indexOf(s2) !== -1);
+        tr.hidden = !ok; if (ok) n++;
+      });
+      document.getElementById('ref-vide').hidden = n !== 0;
+    }
+    zs.addEventListener('change', filtrer); cs.addEventListener('change', filtrer); q.addEventListener('input', filtrer);
+    document.getElementById('ref-resume').textContent = t('ref_summary')(REF_TEXTES.length, Object.keys(zones).length);
+    document.getElementById('ref-export').addEventListener('click', function () {
+      var sel = lignes.filter(function (tr) { return !tr.hidden; }).map(function (tr) {
+        var r = tr._r, x = refTexte(r);
+        return [nomZone(r.zone), nomCategorie(r.categorie), x.nom, r.acronyme || '', r.autorite || '', r.applicable_depuis || '', r.amende_max || '',
+                r.pertinence ? t('pert_badge')[r.pertinence] : '', x.resume || '', x.pourquoi || '', r.lien];
+      });
+      telechargerCsv([t('ref_csv_head')].concat(sel), 'cyberwatch_textes_applicables_');
+    });
+  }
+  function telechargerCsv(lignes, prefixe) {
+    function cell(v) { v = String(v === undefined || v === null ? '' : v).replace(/\r?\n/g, ' '); return /[";]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+    var csv = '\ufeff' + lignes.map(function (l) { return l.map(cell).join(';'); }).join('\r\n');
+    var a = el('a', { href: URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })),
+                      download: prefixe + LANG + '_' + new Date().toISOString().slice(0, 10) + '.csv' });
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+
   /* ================================================================ carte */
 
   var RAMPE = ['#eef1f5', '#d6e3f0', '#a9c4e0', '#6f9ccb', '#3a6fa8', '#1f4e79'];
@@ -917,6 +1004,17 @@
       ]));
       if (!top.length) fiche.appendChild(el('p', { className: 'map-hint', text: t('map_none') }));
       else { var ol = el('ol', { className: 'map-items map-top' }); top.forEach(function (a) { ol.appendChild(ligneArticle(a, true)); }); fiche.appendChild(ol); }
+      var refs = REF_TEXTES.filter(function (r) { return r.zone === z; }).sort(function (a, b) { return a.categorie - b.categorie; });
+      if (refs.length) {
+        fiche.appendChild(el('h4', { className: 'map-ref-title', text: t('map_ref') + ' (' + refs.length + ')' }));
+        var ulr = el('ul', { className: 'map-ref' });
+        refs.forEach(function (r) {
+          var x = refTexte(r);
+          ulr.appendChild(el('li', null, [el('span', { className: 'map-ref-cat', text: nomCategorie(r.categorie) }),
+            el('a', { href: r.lien, target: '_blank', rel: 'noopener noreferrer', text: x.nom + (r.acronyme && x.nom.indexOf(r.acronyme) === -1 ? ' (' + r.acronyme + ')' : '') })]));
+        });
+        fiche.appendChild(ulr);
+      }
       liste.appendChild(el('div', { className: 'map-list-head' }, [
         el('h3', { text: t('map_all') + ' — ' + arts.length + (arts.length > 1 ? t('articles') : ' article') })
       ]));
@@ -955,6 +1053,7 @@
   var compteSources = sur('sources', renderEtat, { ok: 0, partielle: 0, ko: 0, autre: 0 });
   sur('acronymes', renderAcronymes);
   sur('carte', renderCarte);
+  sur('textes applicables', renderReferentiel);
 
   var cards       = Array.prototype.slice.call(document.querySelectorAll('#rubriques .card'));
   var sections    = Array.prototype.slice.call(document.querySelectorAll('#rubriques .section[data-section]'));
@@ -1284,6 +1383,25 @@
         parZ[z].sort(function (a, b) { return a.date < b.date ? 1 : -1; }).forEach(function (x) { rep.appendChild(itemPdf(x)); });
       });
     });
+    if (parZone && REF_TEXTES.length) {
+      rep.appendChild(el('h2', { className: 'pr-break', text: t('ref_pdf') + ' (' + REF_TEXTES.length + ')' }));
+      var parZ2 = {};
+      REF_TEXTES.forEach(function (r) { (parZ2[r.zone] = parZ2[r.zone] || []).push(r); });
+      Object.keys(parZ2).sort(function (a, b) { return nomZone(a).localeCompare(nomZone(b), LANG); }).forEach(function (z) {
+        rep.appendChild(el('h3', { text: nomZone(z) + ' (' + parZ2[z].length + ')' }));
+        parZ2[z].sort(function (a, b) { return a.categorie - b.categorie; }).forEach(function (r) {
+          var x = refTexte(r);
+          rep.appendChild(el('div', { className: 'pr-item' }, [
+            el('h4', { text: x.nom + (r.acronyme ? ' — ' + r.acronyme : '') }),
+            el('p', { className: 'pr-line', text: [nomCategorie(r.categorie), r.autorite, refDepuis(r.applicable_depuis), r.pertinence ? t('pert_badge')[r.pertinence] : ''].filter(Boolean).join(' · ') }),
+            r.amende_max ? el('p', { className: 'pr-fine', text: t('fine_cap') + r.amende_max }) : null,
+            x.resume ? el('p', { text: x.resume }) : null,
+            x.pourquoi ? el('p', { className: 'pr-why', text: t('why') + ' : ' + x.pourquoi }) : null,
+            el('p', { className: 'pr-link', text: r.lien })
+          ]));
+        });
+      });
+    }
     document.body.classList.add('printing-report');
     setTimeout(function () { window.print(); }, 80);
   }

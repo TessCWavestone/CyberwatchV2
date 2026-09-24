@@ -213,7 +213,7 @@ def charger_sources(cfg, classeur, avec_inactives=False):
     c = {
         "zone": col("zone"), "nom": col("nom"), "type": col("type"), "url": col("url"),
         "rss": col("rss"), "xml": col("xml"), "statut": col("statut"),
-        "actu": col("url", "actualit"),
+        "actu": col("url", "actualit"), "filtrage": col("filtrage"),
     }
     ignores = {s.lower() for s in cfg.get("statuts_ignores", [])}
     sources, deja = [], set()
@@ -235,6 +235,8 @@ def charger_sources(cfg, classeur, avec_inactives=False):
             "nom": nom, "zone": get("zone") or "—", "type": get("type"), "url": url,
             "urls_actu": list(dict.fromkeys(actus)), "flux_excel": list(dict.fromkeys(flux)), "statut_excel": get("statut"),
             "inactive": inactive, "origine": "excel",
+            # source très volumineuse (journal officiel…) : on ne garde que la pertinence moyenne ou élevée
+            "filtre_pertinence": "pertinence" in get("filtrage").lower(),
         })
     return appliquer_sources_manuelles(sources, deja, avec_inactives)
 
@@ -894,6 +896,8 @@ def main():
                 "groupes": groupes,
                 "amende": detecter_amende(texte, src["zone"]),
             }
+            if src.get("filtre_pertinence"):
+                articles[ident]["filtre_pertinence"] = True
             nouveaux_ids.append(ident)
             retenus += 1
         vus[cle_src] = sorted(deja_vus)[-5000:]
@@ -958,6 +962,15 @@ def main():
     # Pertinence (après traduction : le modèle lit aussi le titre anglais)
     pert = Pertinence(cfg)
     n = pert.noter(liste)
+    # Sources très volumineuses (journal officiel…) : seuls les textes jugés pertinents sont gardés
+    avant = len(liste)
+    liste = [a for a in liste if not (a.get("filtre_pertinence") and a.get("pertinence") == "faible"
+                                      and not a.get("rubrique_mots_cles"))]
+    if avant != len(liste):
+        gardes = {a["id"] for a in liste}
+        nouveaux_ids = [i for i in nouveaux_ids if i in gardes]
+        meta["nb_nouveaux"] = len(nouveaux_ids)
+        print("Sources volumineuses : %d textes de faible pertinence écartés." % (avant - len(liste)))
     print("Pertinence : %d articles notés (mode %s)%s" % (n, pert.mode, (" — " + pert.erreur) if pert.erreur else ""))
     meta["pertinence"] = {"mode": pert.mode, "erreur": pert.erreur, "themes": pert.libelles(),
                           "seuils": {k: v for k, v in pert.seuils.items() if not k.startswith("_")}}
@@ -995,6 +1008,11 @@ def main():
     ecrire_json_et_js("etat_sources", {"mise_a_jour": meta["mise_a_jour"], "jours_premiere_collecte": cfg.get("jours_premiere_collecte", 60),
                                        "jours_conservation": conservation, "sources": etats}, "VEILLE_ETAT_SOURCES")
     ecrire_json_et_js("versions", {"versions": versions}, "VEILLE_VERSIONS")
+    # Référentiel des textes applicables (config/referentiel.json, modifiable à la main) -> site
+    ref = lire_json(os.path.join(RACINE, "config", "referentiel.json"), {})
+    if ref:
+        with open(os.path.join(DATA, "referentiel.js"), "w", encoding="utf-8") as f:
+            f.write("window.VEILLE_REFERENTIEL = %s;\n" % json.dumps(ref, ensure_ascii=False))
     ecrire_json_et_js("vus", vus, None)
     with open(os.path.join(DATA, "version_courante.txt"), "w") as f:
         f.write(id_version)

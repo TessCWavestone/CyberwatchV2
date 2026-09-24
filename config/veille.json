@@ -41,7 +41,8 @@
       "groupes": [
         "Secteur santé : mots clés spécifiques",
         "Secteur santé : catégories de produits",
-        "Termes santé"
+        "Termes santé",
+        "Exigences fournisseurs (santé, secteur public)"
       ],
       "titre_en": "Health, diagnostics and medical devices",
       "chapeau_en": "Health and diagnostics news: IVDR, MDR, medical software, laboratories."
@@ -60,7 +61,8 @@
     "Nouveaux textes réglementaires",
     "Standards Cyber",
     "Secteur santé : catégories de produits",
-    "Termes génériques"
+    "Termes génériques",
+    "Exigences fournisseurs (santé, secteur public)"
   ],
   "_aide_mots_cles_supplementaires": "Mots-clés ajoutés à ceux de l'onglet Excel. Utile pour les sources non anglophones. Format : 'Libellé du tag': ['variante 1', 'variante 2'].",
   "mots_cles_supplementaires": {
@@ -190,6 +192,118 @@
         "öffentliche Konsultation",
         "call for evidence"
       ]
+    },
+    "Exigences fournisseurs (santé, secteur public)": {
+      "Exigences imposées aux fournisseurs": [
+        "supplier assurance",
+        "supplier requirements",
+        "assessment criteria",
+        "exigences fournisseurs",
+        "requisitos para proveedores",
+        "Anforderungen an Anbieter",
+        "leverancierseisen",
+        "leverantörskrav",
+        "wymagania dla dostawców"
+      ],
+      "Achats publics": [
+        "public procurement",
+        "procurement framework",
+        "tender",
+        "marchés publics",
+        "commande publique",
+        "contratación pública",
+        "licitación",
+        "öffentliche Vergabe",
+        "Vergaberecht",
+        "appalti pubblici",
+        "aanbesteding",
+        "offentlig upphandling",
+        "offentlige anskaffelser",
+        "offentlige udbud",
+        "zamówienia publiczne",
+        "veřejné zakázky",
+        "közbeszerzés",
+        "contratação pública",
+        "δημόσιες συμβάσεις",
+        "julkiset hankinnat"
+      ],
+      "Service national de santé": [
+        "national health service",
+        "NHS",
+        "servicio nacional de salud",
+        "sistema nacional de salud",
+        "Serviço Nacional de Saúde",
+        "servizio sanitario nazionale",
+        "hôpitaux publics",
+        "Krankenhaus",
+        "Krankenhäuser",
+        "ziekenhuis",
+        "sygehus",
+        "sjukhus",
+        "sykehus",
+        "szpital",
+        "nemocnic",
+        "kórház",
+        "νοσοκομεί",
+        "sairaala"
+      ],
+      "Technologies numériques en santé": [
+        "digital health technology",
+        "digital health technologies",
+        "health technology",
+        "e-santé",
+        "numérique en santé",
+        "digitale Gesundheitsanwendung",
+        "DiGA",
+        "salud digital",
+        "sanità digitale",
+        "digitale zorg",
+        "e-hälsa",
+        "e-helse",
+        "e-sundhed",
+        "e-zdrowie",
+        "elektronické zdravotnictví",
+        "e-egészségügy",
+        "terveysteknologia"
+      ],
+      "Référentiel / schéma de sécurité national": [
+        "security scheme",
+        "security framework",
+        "national security framework",
+        "schéma de sécurité",
+        "référentiel de sécurité",
+        "esquema nacional",
+        "esquema de seguridad",
+        "Sicherheitsstandard",
+        "Mindeststandard",
+        "quadro di sicurezza",
+        "beveiligingsnorm",
+        "säkerhetsskydd",
+        "sikkerhetskrav",
+        "normy bezpieczeństwa",
+        "bezpečnostní opatření",
+        "biztonsági követelmények"
+      ],
+      "Certification / qualification de sécurité": [
+        "certification",
+        "certified",
+        "accreditation",
+        "qualification",
+        "homologation",
+        "Zertifizierung",
+        "Testat",
+        "certificación",
+        "certificazione",
+        "qualificazione cloud",
+        "certificering",
+        "certifiering",
+        "sertifisering",
+        "certyfikacja",
+        "certifikace",
+        "tanúsítás",
+        "πιστοποίηση",
+        "sertifiointi"
+      ]
     }
   },
   "_aide_mots_courts": "Les mots-clés de 4 lettres ou moins écrits en MAJUSCULES (CRA, MDR, NIST…) sont cherchés en respectant la casse et en mot entier, pour éviter les faux positifs.",
@@ -226,7 +340,13 @@
     "RGPD": "GDPR",
     "Cahiers de laboratoire": "Laboratory notebooks",
     "Séquençage Nouvelle Génération": "Next-generation sequencing",
-    "Production de tests": "Test manufacturing"
+    "Production de tests": "Test manufacturing",
+    "Exigences imposées aux fournisseurs": "Supplier requirements",
+    "Achats publics": "Public procurement",
+    "Service national de santé": "National health service",
+    "Technologies numériques en santé": "Digital health technologies",
+    "Référentiel / schéma de sécurité national": "National security framework",
+    "Certification / qualification de sécurité": "Security certification"
   },
   "_aide_traduction": "Traduction automatique gratuite (Argos Translate, open source) des titres et résumés vers les langues 'cibles'. Les acronymes sont protégés et harmonisés via config/acronymes.json. 'max_segments_par_collecte' limite la durée d'une collecte : le reste est traduit le lendemain.",
   "traduction": {

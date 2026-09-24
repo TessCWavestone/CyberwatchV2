@@ -1,0 +1,5 @@
+{
+  "_aide": "Sources ajoutées ou retirées depuis le site (onglet Sources). Ce fichier est modifié par le site ; vous pouvez aussi l'éditer à la main. 'ajouts' : nouvelles sources (en plus de l'Excel). 'retraits' : sources de l'Excel ou ajoutées qui ne doivent plus être interrogées. Pris en compte à la collecte suivante.",
+  "ajouts": [],
+  "retraits": []
+}

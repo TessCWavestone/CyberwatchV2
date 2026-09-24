@@ -1,0 +1,144 @@
+{
+  "_aide": "Glossaire des acronymes pour la traduction. Chaque acronyme est d'abord protégé (jamais traduit), puis, s'il figure ici et que la langue source correspond, remplacé par l'équivalent officiel dans la langue cible. Pour un acronyme en alphabet non latin, l'original reste entre parenthèses : « GDPR (ΓΚΠΔ) ». Les noms d'organismes (BSI, ANSSI, NÚKIB, EAK…) ne sont pas listés : ils restent tels quels.",
+  "ΓΚΠΔ": {
+    "langues": [
+      "el"
+    ],
+    "en": "GDPR",
+    "fr": "RGPD"
+  },
+  "DSGVO": {
+    "langues": [
+      "de"
+    ],
+    "en": "GDPR",
+    "fr": "RGPD"
+  },
+  "RGPD": {
+    "langues": [
+      "fr",
+      "es",
+      "pt"
+    ],
+    "en": "GDPR",
+    "fr": "RGPD"
+  },
+  "RODO": {
+    "langues": [
+      "pl"
+    ],
+    "en": "GDPR",
+    "fr": "RGPD"
+  },
+  "AVG": {
+    "langues": [
+      "nl"
+    ],
+    "en": "GDPR",
+    "fr": "RGPD"
+  },
+  "GDPR": {
+    "en": "GDPR",
+    "fr": "RGPD"
+  },
+  "ΤΝ": {
+    "langues": [
+      "el"
+    ],
+    "en": "AI",
+    "fr": "IA"
+  },
+  "KI": {
+    "langues": [
+      "de"
+    ],
+    "en": "AI",
+    "fr": "IA"
+  },
+  "IA": {
+    "langues": [
+      "fr",
+      "es",
+      "it",
+      "pt"
+    ],
+    "en": "AI",
+    "fr": "IA"
+  },
+  "AI": {
+    "langues": [
+      "en",
+      "nl",
+      "sv",
+      "da",
+      "nb",
+      "fi",
+      "pl",
+      "cs",
+      "hu"
+    ],
+    "en": "AI",
+    "fr": "IA"
+  },
+  "UE": {
+    "langues": [
+      "fr",
+      "es",
+      "it",
+      "pt"
+    ],
+    "en": "EU",
+    "fr": "UE"
+  },
+  "EU": {
+    "langues": [
+      "en",
+      "de",
+      "nl",
+      "sv",
+      "da",
+      "nb",
+      "fi",
+      "pl",
+      "cs",
+      "hu"
+    ],
+    "en": "EU",
+    "fr": "UE"
+  },
+  "ΕΕ": {
+    "langues": [
+      "el"
+    ],
+    "en": "EU",
+    "fr": "UE"
+  },
+  "ΕΑΚ": {
+    "langues": [
+      "el"
+    ],
+    "en": "NCSA",
+    "fr": "NCSA"
+  },
+  "ΑΠΔΠΧ": {
+    "langues": [
+      "el"
+    ],
+    "en": "HDPA",
+    "fr": "HDPA"
+  },
+  "KI-Verordnung": {
+    "langues": [
+      "de"
+    ],
+    "en": "AI Act",
+    "fr": "règlement européen sur l'IA"
+  },
+  "NIS-2-Richtlinie": {
+    "langues": [
+      "de"
+    ],
+    "en": "NIS2 Directive",
+    "fr": "directive NIS2"
+  }
+}

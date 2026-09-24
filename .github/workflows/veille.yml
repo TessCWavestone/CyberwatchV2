@@ -1,4 +1,5 @@
-# Cyber Watch — collecte automatique quotidienne + publication du site.
+# Cyber Watch — collecte automatique chaque lundi à 7 h (heure de Paris)
+# + bouton « Run workflow » (ou « Lancer une mise à jour » sur le site).
 #
 # Version « dépôt dédié » : le site, les données et ce fichier sont tous sur main.
 
@@ -6,8 +7,17 @@ name: Cyber Watch - collecte
 
 on:
   schedule:
-    - cron: "0 5 * * *"      # tous les jours à 05:00 UTC (7h à Paris l'été, 6h l'hiver)
+    # GitHub ne connaît que l'heure UTC : deux créneaux le lundi (05:00 et 06:00 UTC).
+    # L'étape « Vérifier l'horaire » ne garde que celui qui tombe à 7 h à Paris
+    # (05:00 UTC en été, 06:00 UTC en hiver).
+    - cron: "0 5 * * 1"
+    - cron: "0 6 * * 1"
   workflow_dispatch:          # bouton « Run workflow » dans l'onglet Actions
+    inputs:
+      rattrapage_depuis:
+        description: "Rattrapage des archives depuis cette date (AAAA-MM-JJ). Laisser vide pour une collecte normale."
+        required: false
+        default: ""
 
 env:
   BRANCHE_VEILLE: main  # dépôt dédié : tout est sur la branche main
@@ -24,7 +34,7 @@ concurrency:
 jobs:
   collecte:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     environment:
       name: github-pages
       url: ${{ steps.publication.outputs.page_url }}
@@ -33,26 +43,69 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.BRANCHE_VEILLE }}
+          fetch-depth: 0
+
+      - name: Vérifier l'horaire (lundi 7 h, heure de Paris)
+        id: garde
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "lancer=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          heure=$(TZ=Europe/Paris date +%-H)
+          jour=$(TZ=Europe/Paris date +%Y-%m-%d)
+          derniere=$(cut -c1-10 data/version_courante.txt 2>/dev/null || echo "")
+          if [ "$heure" -ge 7 ] && [ "$derniere" != "$jour" ]; then
+            echo "lancer=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Créneau ignoré (il est ${heure} h à Paris, dernière collecte : ${derniere:-aucune})."
+            echo "lancer=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Installer Python
+        if: steps.garde.outputs.lancer == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Installer les dépendances
+        if: steps.garde.outputs.lancer == 'true'
         run: pip install -r requirements.txt
 
+      # Traduction (Argos Translate) et note de pertinence (sentence-transformers) :
+      # modèles open source gratuits. Si cette étape échoue, la collecte continue
+      # (textes en langue d'origine, note calculée avec les mots-clés).
+      - name: Installer les modèles open source (traduction, pertinence)
+        if: steps.garde.outputs.lancer == 'true'
+        continue-on-error: true
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-traduction.txt
+          pip install -r requirements-pertinence.txt
+
+      - name: Garder en cache les modèles (téléchargés une seule fois)
+        if: steps.garde.outputs.lancer == 'true'
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.local/share/argos-translate
+            ~/.local/cache/argos-translate
+            ~/.cache/huggingface
+          key: modeles-v2
+
       - name: Collecter les nouveaux articles
+        if: steps.garde.outputs.lancer == 'true'
         run: python collecte/collecte.py
         env:
+          RATTRAPAGE_DEPUIS: ${{ github.event.inputs.rattrapage_depuis }}
           # Identifiants de l'API Légifrance (PISTE), à créer dans
           # Settings > Secrets and variables > Actions. Facultatifs.
           LEGIFRANCE_CLIENT_ID: ${{ secrets.LEGIFRANCE_CLIENT_ID }}
           LEGIFRANCE_CLIENT_SECRET: ${{ secrets.LEGIFRANCE_CLIENT_SECRET }}
           LEGIFRANCE_ENV: ${{ vars.LEGIFRANCE_ENV }}
 
-      - name: Enregistrer les données sur la branche
+      - name: Enregistrer les données et marquer la version
+        if: steps.garde.outputs.lancer == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -60,20 +113,29 @@ jobs:
           if git diff --cached --quiet; then
             echo "Aucun changement."
           else
-            git commit -m "Veille : mise à jour du $(date -u +%Y-%m-%d)"
+            version=$(cat data/version_courante.txt)
+            git commit -m "Veille : version du ${version}"
+            # si une source a été ajoutée depuis le site pendant la collecte
+            git pull --rebase origin ${{ env.BRANCHE_VEILLE }}
             git push origin HEAD:${{ env.BRANCHE_VEILLE }}
+            # une étiquette par version : le site y renvoie pour consulter l'état complet
+            git tag "veille-${version}" && git push origin "veille-${version}" || true
           fi
 
       - name: Préparer le site (uniquement les fichiers publics)
+        if: steps.garde.outputs.lancer == 'true'
         run: |
           mkdir -p _site/data
           cp index.html style.css script.js _site/
           cp data/*.js _site/data/
 
       - uses: actions/configure-pages@v5
+        if: steps.garde.outputs.lancer == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.garde.outputs.lancer == 'true'
         with:
           path: _site
       - name: Publier sur GitHub Pages
+        if: steps.garde.outputs.lancer == 'true'
         id: publication
         uses: actions/deploy-pages@v4

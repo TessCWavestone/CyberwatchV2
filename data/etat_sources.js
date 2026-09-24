@@ -1,7 +1,7 @@
 window.VEILLE_ETAT_SOURCES = {
- "mise_a_jour": "2026-09-23T13:57+00:00",
+ "mise_a_jour": "2026-09-24T07:37+00:00",
  "jours_premiere_collecte": 60,
- "jours_conservation": 365,
+ "jours_conservation": 730,
  "sources": [
   {
    "nom": "BSI (Office fédéral allemand de la sécurité de l'information)",
@@ -10,15 +10,22 @@ window.VEILLE_ETAT_SOURCES = {
    "mode": "rss+page",
    "flux": "https://wid.cert-bund.de/content/public/securityAdvisory/rss",
    "nb_trouves": 265,
-   "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "erreur": "Archives https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html?gtp=461686_content%253D2 : 404 Client Error: Not Found for url: https://www.bsi.bund.de/DE/Service-Navi/Pre",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html",
-   "nb_retenus": 2,
-   "acces": "ok",
+   "nb_retenus": 263,
+   "acces": "partielle",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html"
+   ],
+   "flux_liste": [
+    "https://wid.cert-bund.de/content/public/securityAdvisory/rss"
+   ]
   },
   {
    "nom": "Bundesnetzagentur",
@@ -28,14 +35,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html",
-   "nb_retenus": 1,
+   "nb_retenus": 9,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Ministère fédéral de l'intérieur Autriche",
@@ -45,14 +57,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.bmi.gv.at/rss/bmi_presse.xml",
    "nb_trouves": 17,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 16,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.bmi.gv.at/rss/bmi_presse.xml"
+   ]
   },
   {
    "nom": "CERT",
@@ -62,14 +79,21 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.cert.at/cert-at.de.current.rss_2.0.xml",
    "nb_trouves": 50,
    "erreur": "Aucun lien d'article détecté sur https://www.cert.at/de/meldungen/aktuelles (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.cert.at/de/meldungen/aktuelles",
-   "nb_retenus": 0,
+   "nb_retenus": 19,
    "acces": "partielle",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.cert.at/de/meldungen/aktuelles"
+   ],
+   "flux_liste": [
+    "https://www.cert.at/cert-at.de.current.rss_2.0.xml"
+   ]
   },
   {
    "nom": "Agence pour la sécurité sociétale",
@@ -77,16 +101,23 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://samsik.dk/",
    "mode": "rss+page",
    "flux": "https://samsik.dk/category/cybersikkerhed/feed/",
-   "nb_trouves": 11,
+   "nb_trouves": 16,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://samsik.dk/nyheder/",
-   "nb_retenus": 1,
+   "nb_retenus": 8,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://samsik.dk/nyheder/"
+   ],
+   "flux_liste": [
+    "https://samsik.dk/category/cybersikkerhed/feed/"
+   ]
   },
   {
    "nom": "Centro Criptológico Nacional (CCN) - Cert",
@@ -96,30 +127,38 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://www.ccn-cert.cni.es/ inaccessible : 403 Client Error: Forbidden for url: https://www.ccn-cert.cni.es/",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": []
   },
   {
    "nom": "INCIBE",
    "zone": "Espagne",
    "url": "https://www.incibe.es/incibe-cert",
-   "mode": "page",
+   "mode": "erreur",
    "flux": "",
-   "nb_trouves": 12,
-   "erreur": "Page https://www.incibe.es/incibe-cert/publicaciones/guias-y-estudios inaccessible : HTTPSConnectionPool(host='www.incibe.es', port=443): Max retries exceeded with url: /incibe-cert/pub",
-   "verifie_le": "2026-09-23 13:57",
-   "page": "https://www.incibe.es/incibe-cert/blog",
+   "nb_trouves": 0,
+   "erreur": "Page https://www.incibe.es/incibe-cert/blog inaccessible : 503 Server Error: Service Unavailable for url: https://www.incibe.es/incibe-cert/blog ; Page https://www.incibe.es/incibe-cert/publicaciones/guias-y-estudios inaccessible : 503 Server Error: Service Unavailable for url: https://www.incibe.es/incibe-cert/publicaciones/guias ; Page https://www.incibe.es/incibe-cert inaccessible : 503 Server Error: Service Unavailable for url: https://www.incibe.es/incibe-cert",
+   "verifie_le": "2026-09-24 07:37",
    "nb_retenus": 0,
-   "acces": "partielle",
+   "acces": "ko",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.incibe.es/incibe-cert/blog",
+    "https://www.incibe.es/incibe-cert/publicaciones/guias-y-estudios"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "ENISA (European Union Agency for Cybersecurity)",
@@ -127,16 +166,22 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.enisa.europa.eu/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 71,
+   "nb_trouves": 719,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.enisa.europa.eu/news ; https://www.enisa.europa.eu/publications",
-   "nb_retenus": 0,
+   "nb_retenus": 13,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.enisa.europa.eu/news",
+    "https://www.enisa.europa.eu/publications"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "European Data",
@@ -144,16 +189,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://data.europa.eu/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 10,
+   "nb_trouves": 130,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://data.europa.eu/en/news-events/news",
-   "nb_retenus": 0,
+   "nb_retenus": 109,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://data.europa.eu/en/news-events/news"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Législation de l’UE - EUR-Lex",
@@ -163,14 +213,17 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://eur-lex.europa.eu/homepage.html?locale=fr (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://eur-lex.europa.eu/homepage.html?locale=fr",
    "nb_retenus": 0,
    "acces": "partielle",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": []
   },
   {
    "nom": "Commission Européenne - Cybersecurity",
@@ -178,16 +231,25 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://digital-strategy.ec.europa.eu/fr/policies/cybersecurity",
    "mode": "rss+page",
    "flux": "https://digital-strategy.ec.europa.eu/en/rss.xml",
-   "nb_trouves": 46,
+   "nb_trouves": 92,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://digital-strategy.ec.europa.eu/en/news ; https://digital-strategy.ec.europa.eu/en/library ; https://digital-strategy.ec.europa.eu/en/consultations",
-   "nb_retenus": 3,
+   "nb_retenus": 45,
    "acces": "ok",
    "type": "Site institutionnel officiel",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://digital-strategy.ec.europa.eu/en/news",
+    "https://digital-strategy.ec.europa.eu/en/library",
+    "https://digital-strategy.ec.europa.eu/en/consultations"
+   ],
+   "flux_liste": [
+    "https://digital-strategy.ec.europa.eu/en/rss.xml"
+   ]
   },
   {
    "nom": "EDPB (European Data Protection Board)",
@@ -195,16 +257,25 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.edpb.europa.eu/home_en",
    "mode": "rss+page",
    "flux": "https://www.edpb.europa.eu/feed/news_en ; https://www.edpb.europa.eu/feed/publications_en",
-   "nb_trouves": 30,
+   "nb_trouves": 80,
    "erreur": "Aucun lien d'article détecté sur https://www.edpb.europa.eu/news_en (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.edpb.europa.eu/news_en ; https://www.edpb.europa.eu/documents_en",
-   "nb_retenus": 4,
+   "nb_retenus": 58,
    "acces": "partielle",
    "type": "Autorité européenne officielle",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 2
+   "nb_flux": 2,
+   "origine": "excel",
+   "pages": [
+    "https://www.edpb.europa.eu/news_en",
+    "https://www.edpb.europa.eu/documents_en"
+   ],
+   "flux_liste": [
+    "https://www.edpb.europa.eu/feed/news_en",
+    "https://www.edpb.europa.eu/feed/publications_en"
+   ]
   },
   {
    "nom": "CERT-EU",
@@ -214,14 +285,20 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 26,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://cert.europa.eu/blog ; https://cert.europa.eu/publications/threat-intelligence/",
    "nb_retenus": 0,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://cert.europa.eu/blog",
+    "https://cert.europa.eu/publications/threat-intelligence/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Conseil de l'Union Européenne",
@@ -231,14 +308,22 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.consilium.europa.eu/en/rss/pressreleases.ashx",
    "nb_trouves": 20,
    "erreur": "Page https://www.consilium.europa.eu/fr/press/press-releases/ inaccessible : 403 Client Error: Forbidden for url: https://www.consilium.europa.eu/fr/press/press-releases/ ; Page https://www.consilium.europa.eu/fr/policies/cybersecurity/ inaccessible : 403 Client Error: Forbidden for url: https://www.consilium.europa.eu/fr/policies/cybersecurity/",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 0,
+   "nb_retenus": 20,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.consilium.europa.eu/fr/press/press-releases/",
+    "https://www.consilium.europa.eu/fr/policies/cybersecurity/"
+   ],
+   "flux_liste": [
+    "https://www.consilium.europa.eu/en/rss/pressreleases.ashx"
+   ]
   },
   {
    "nom": "Parlement Européen",
@@ -248,14 +333,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://www.europarl.europa.eu/news/en (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.europarl.europa.eu/news/en",
    "nb_retenus": 0,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.europarl.europa.eu/news/en"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "European Health and Digital Executive Agency",
@@ -263,16 +353,23 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://hadea.ec.europa.eu",
    "mode": "rss+page",
    "flux": "https://hadea.ec.europa.eu/node/2/rss_en",
-   "nb_trouves": 129,
+   "nb_trouves": 228,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://hadea.ec.europa.eu/news_en",
-   "nb_retenus": 2,
+   "nb_retenus": 127,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://hadea.ec.europa.eu/news_en"
+   ],
+   "flux_liste": [
+    "https://hadea.ec.europa.eu/node/2/rss_en"
+   ]
   },
   {
    "nom": "Agence des droits fondamentaux de l'UE (FRA)",
@@ -280,16 +377,22 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://fra.europa.eu/en",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 19,
+   "nb_trouves": 285,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://fra.europa.eu/en/news-and-events/news ; https://fra.europa.eu/en/media/press-releases",
-   "nb_retenus": 0,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://fra.europa.eu/en/news-and-events/news",
+    "https://fra.europa.eu/en/media/press-releases"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Medical Device Coordination Group",
@@ -299,14 +402,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 23,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en",
-   "nb_retenus": 1,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Experts officiels de la Commission Européenne",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Centre de cybersécurité de Traficom",
@@ -316,14 +424,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
    "nb_trouves": 500,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 12,
+   "nb_retenus": 85,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi"
+   ]
   },
   {
    "nom": "Légifrance",
@@ -333,13 +446,16 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "API Légifrance non configurée : ajoutez les secrets LEGIFRANCE_CLIENT_ID et LEGIFRANCE_CLIENT_SECRET dans GitHub (voir README).",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "nb_retenus": 0,
    "acces": "non_configuree",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": []
   },
   {
    "nom": "ANSSI (Agence Nationale de la Sécurité des SI)",
@@ -347,16 +463,23 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://cyber.gouv.fr/",
    "mode": "rss+page",
    "flux": "https://cyber.gouv.fr/actualites/rss/",
-   "nb_trouves": 30,
+   "nb_trouves": 60,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://cyber.gouv.fr/actualites/",
-   "nb_retenus": 2,
+   "nb_retenus": 48,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://cyber.gouv.fr/actualites/"
+   ],
+   "flux_liste": [
+    "https://cyber.gouv.fr/actualites/rss/"
+   ]
   },
   {
    "nom": "data.gouv.fr",
@@ -364,16 +487,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.data.gouv.fr/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 14,
+   "nb_trouves": 41,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.data.gouv.fr/posts",
-   "nb_retenus": 0,
+   "nb_retenus": 22,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.data.gouv.fr/posts"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "CNIL",
@@ -381,16 +509,25 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://cnil.fr/fr",
    "mode": "rss+page",
    "flux": "https://www.cnil.fr/fr/rss.xml",
-   "nb_trouves": 29,
+   "nb_trouves": 128,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.cnil.fr/fr/actualite ; https://www.cnil.fr/fr/tag/consultation ; https://www.cnil.fr/fr/tag/Sanction",
-   "nb_retenus": 6,
+   "nb_retenus": 88,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.cnil.fr/fr/actualite",
+    "https://www.cnil.fr/fr/tag/consultation",
+    "https://www.cnil.fr/fr/tag/Sanction"
+   ],
+   "flux_liste": [
+    "https://www.cnil.fr/fr/rss.xml"
+   ]
   },
   {
    "nom": "Autorité Nationale de Cybersécurité",
@@ -398,16 +535,22 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://cyber.gov.gr/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 75,
+   "nb_trouves": 135,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://cyber.gov.gr/nea-plirofories/grafeio-typoy/ ; https://cyber.gov.gr/category/anakoinoseis/",
-   "nb_retenus": 0,
+   "nb_retenus": 25,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://cyber.gov.gr/nea-plirofories/grafeio-typoy/",
+    "https://cyber.gov.gr/category/anakoinoseis/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Autorité de régulation des activités supervisées",
@@ -415,16 +558,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://sztfh.hu/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 9,
+   "nb_trouves": 124,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://sztfh.hu/hatosag/hirek/",
-   "nb_retenus": 0,
+   "nb_retenus": 14,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://sztfh.hu/hatosag/hirek/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Autorité de sécurité nationale",
@@ -432,16 +580,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://nsm.no/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 5,
+   "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://nsm.no/aktuelt/",
-   "nb_retenus": 0,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://nsm.no/aktuelt/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Centre National de Cybersécurité",
@@ -449,16 +602,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.ncsc.nl/",
    "mode": "rss",
    "flux": "https://feeds.ncsc.nl/nieuws.rss",
-   "nb_trouves": 351,
+   "nb_trouves": 352,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 2,
+   "nb_retenus": 97,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://feeds.ncsc.nl/nieuws.rss"
+   ]
   },
   {
    "nom": "Ministère du numérique",
@@ -466,16 +624,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.gov.pl/web/cyfryzacja",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 10,
+   "nb_trouves": 148,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.gov.pl/web/cyfryzacja/wiadomosci",
-   "nb_retenus": 4,
+   "nb_retenus": 135,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.gov.pl/web/cyfryzacja/wiadomosci"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Office national de la sécurité cybernétique et de l'information",
@@ -485,14 +648,21 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://nukib.gov.cz/rss.xml",
    "nb_trouves": 468,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://nukib.gov.cz/cs/infoservis/aktuality/",
-   "nb_retenus": 9,
+   "nb_retenus": 50,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://nukib.gov.cz/cs/infoservis/aktuality/"
+   ],
+   "flux_liste": [
+    "https://nukib.gov.cz/rss.xml"
+   ]
   },
   {
    "nom": "Centre National de Cybersécurité)",
@@ -502,14 +672,20 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml ; https://www.ncsc.gov.uk/api/1/services/v1/guidance-rss-feed.xml",
    "nb_trouves": 40,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 21,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 2
+   "nb_flux": 2,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml",
+    "https://www.ncsc.gov.uk/api/1/services/v1/guidance-rss-feed.xml"
+   ]
   },
   {
    "nom": "Agence pour la défense civile",
@@ -519,14 +695,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 49,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.ncsc.se/sv/aktuellt/",
-   "nb_retenus": 1,
+   "nb_retenus": 18,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.ncsc.se/sv/aktuellt/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "CERT SE",
@@ -536,14 +717,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.cert.se/feed.rss",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 4,
+   "nb_retenus": 6,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.cert.se/feed.rss"
+   ]
   },
   {
    "nom": "Office fédéral de la cybersécurité OFCS",
@@ -553,14 +739,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 68,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.ncsc.admin.ch/ncsc/fr/home/aktuell/im-fokus.html",
-   "nb_retenus": 0,
+   "nb_retenus": 68,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.ncsc.admin.ch/ncsc/fr/home/aktuell/im-fokus.html"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "IAPP",
@@ -568,16 +759,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://iapp.org/news/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 20,
+   "nb_trouves": 264,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://iapp.org/news/",
-   "nb_retenus": 0,
+   "nb_retenus": 256,
    "acces": "ok",
    "type": "newsletter",
    "nature": "presse",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://iapp.org/news/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Intrinsec Threat Landscape",
@@ -585,16 +781,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.intrinsec.com/en/cybercrime_threat_landscape_feb2023/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 50,
+   "nb_trouves": 507,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.intrinsec.com/blog",
-   "nb_retenus": 0,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "Prestataire de service",
    "nature": "presse",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.intrinsec.com/blog"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "EBA (DORA)",
@@ -602,16 +803,24 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.eba.europa.eu/publications-and-media/press-releases",
    "mode": "rss+page",
    "flux": "https://www.eba.europa.eu/news-press/news/rss.xml",
-   "nb_trouves": 38,
+   "nb_trouves": 292,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.eba.europa.eu/publications-and-media/press-releases ; https://www.eba.europa.eu/publications-and-media/publications",
-   "nb_retenus": 1,
+   "nb_retenus": 247,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.eba.europa.eu/publications-and-media/press-releases",
+    "https://www.eba.europa.eu/publications-and-media/publications"
+   ],
+   "flux_liste": [
+    "https://www.eba.europa.eu/news-press/news/rss.xml"
+   ]
   },
   {
    "nom": "ESMA",
@@ -619,16 +828,22 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.esma.europa.eu",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 67,
+   "nb_trouves": 1005,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.esma.europa.eu/press-news/esma-news ; https://www.esma.europa.eu/press-news/consultations",
-   "nb_retenus": 0,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.esma.europa.eu/press-news/esma-news",
+    "https://www.esma.europa.eu/press-news/consultations"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "BCE – TIBER-EU",
@@ -638,14 +853,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.ecb.europa.eu/rss/press.html",
    "nb_trouves": 15,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 0,
+   "nb_retenus": 15,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.ecb.europa.eu/rss/press.html"
+   ]
   },
   {
    "nom": "EMA (Agence européenne du médicament)",
@@ -653,16 +873,27 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.ema.europa.eu",
    "mode": "rss+page",
    "flux": "https://www.ema.europa.eu/en/news.xml ; https://www.ema.europa.eu/en/public-consultations.xml ; https://www.ema.europa.eu/en/regulatory-and-procedural-guideline.xml",
-   "nb_trouves": 209,
+   "nb_trouves": 355,
    "erreur": "Aucun lien d'article détecté sur https://www.ema.europa.eu/en/news-events/open-consultations (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.ema.europa.eu/en/news ; https://www.ema.europa.eu/en/news-events/whats-new ; https://www.ema.europa.eu/en/news-events/open-consultations",
-   "nb_retenus": 0,
+   "nb_retenus": 114,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 3
+   "nb_flux": 3,
+   "origine": "excel",
+   "pages": [
+    "https://www.ema.europa.eu/en/news",
+    "https://www.ema.europa.eu/en/news-events/whats-new",
+    "https://www.ema.europa.eu/en/news-events/open-consultations"
+   ],
+   "flux_liste": [
+    "https://www.ema.europa.eu/en/news.xml",
+    "https://www.ema.europa.eu/en/public-consultations.xml",
+    "https://www.ema.europa.eu/en/regulatory-and-procedural-guideline.xml"
+   ]
   },
   {
    "nom": "BEREC (télécoms)",
@@ -670,16 +901,25 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.berec.europa.eu",
    "mode": "rss+page",
    "flux": "https://www.berec.europa.eu/en/rss.xml",
-   "nb_trouves": 39,
+   "nb_trouves": 199,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.berec.europa.eu/en/news/latest-news ; https://www.berec.europa.eu/en/news/press-releases ; https://www.berec.europa.eu/en/public-consultations-calls-for-inputs",
-   "nb_retenus": 0,
+   "nb_retenus": 115,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.berec.europa.eu/en/news/latest-news",
+    "https://www.berec.europa.eu/en/news/press-releases",
+    "https://www.berec.europa.eu/en/public-consultations-calls-for-inputs"
+   ],
+   "flux_liste": [
+    "https://www.berec.europa.eu/en/rss.xml"
+   ]
   },
   {
    "nom": "Commission européenne — DG SANTE (santé publique, santé numérique)",
@@ -687,16 +927,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://health.ec.europa.eu/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 8,
+   "nb_trouves": 16,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://health.ec.europa.eu/latest-updates_en",
-   "nb_retenus": 0,
+   "nb_retenus": 8,
    "acces": "ok",
    "type": "Site institutionnel officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://health.ec.europa.eu/latest-updates_en"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "ARCEP",
@@ -704,16 +949,23 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.arcep.fr",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 78,
+   "nb_trouves": 234,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.arcep.fr/actualites/actualites-et-communiques.html ; https://www.arcep.fr/actualites/les-consultations-publiques.html ; https://www.arcep.fr/actualites/les-publications.html",
-   "nb_retenus": 0,
+   "nb_retenus": 43,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.arcep.fr/actualites/actualites-et-communiques.html",
+    "https://www.arcep.fr/actualites/les-consultations-publiques.html",
+    "https://www.arcep.fr/actualites/les-publications.html"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "ANFR",
@@ -723,14 +975,20 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 2,
    "erreur": "Aucun lien d'article détecté sur https://www.anfr.fr/liste-actualites (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.anfr.fr/liste-actualites ; https://www.anfr.fr/presse-anfr",
    "nb_retenus": 0,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.anfr.fr/liste-actualites",
+    "https://www.anfr.fr/presse-anfr"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "CERT Polska / NASK",
@@ -740,14 +998,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://cert.pl/ (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://cert.pl/",
    "nb_retenus": 0,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://cert.pl/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "The Record (Recorded Future)",
@@ -757,14 +1020,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://therecord.media/feed/",
    "nb_trouves": 5,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 0,
+   "nb_retenus": 5,
    "acces": "ok",
    "type": "",
    "nature": "presse",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://therecord.media/feed/"
+   ]
   },
   {
    "nom": "BleepingComputer",
@@ -772,16 +1040,24 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.bleepingcomputer.com",
    "mode": "rss+page",
    "flux": "https://www.bleepingcomputer.com/feed/",
-   "nb_trouves": 63,
-   "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
-   "page": "https://www.bleepingcomputer.com/news/legal/ ; https://www.bleepingcomputer.com/news/government/",
-   "nb_retenus": 0,
-   "acces": "ok",
+   "nb_trouves": 252,
+   "erreur": "Archives https://www.bleepingcomputer.com/news/legal/page/11/ : 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/ne ; Page https://www.bleepingcomputer.com/news/government/ inaccessible : 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/government/",
+   "verifie_le": "2026-09-24 07:37",
+   "page": "https://www.bleepingcomputer.com/news/legal/",
+   "nb_retenus": 192,
+   "acces": "partielle",
    "type": "",
    "nature": "presse",
    "nb_pages": 2,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.bleepingcomputer.com/news/legal/",
+    "https://www.bleepingcomputer.com/news/government/"
+   ],
+   "flux_liste": [
+    "https://www.bleepingcomputer.com/feed/"
+   ]
   },
   {
    "nom": "Digital Policy Alert",
@@ -791,14 +1067,20 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 32,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://digitalpolicyalert.org/activity-tracker ; https://digitalpolicyalert.org/analysis",
-   "nb_retenus": 0,
+   "nb_retenus": 10,
    "acces": "ok",
    "type": "",
    "nature": "presse",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://digitalpolicyalert.org/activity-tracker",
+    "https://digitalpolicyalert.org/analysis"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "GovCERT Austria",
@@ -808,14 +1090,20 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 6,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.govcert.gv.at/cert-warnungen.html ; https://www.govcert.gv.at/cert-tagesmeldungen.html",
    "nb_retenus": 0,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.govcert.gv.at/cert-warnungen.html",
+    "https://www.govcert.gv.at/cert-tagesmeldungen.html"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "news.belgium.be (communiqués du gouvernement fédéral belge)",
@@ -825,13 +1113,20 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Flux https://news.belgium.be/fr/feeds/all illisible : 403 Client Error: Forbidden for url: https://news.belgium.be/fr/feeds/all ; Page https://news.belgium.be/fr inaccessible : 403 Client Error: Forbidden for url: https://news.belgium.be/fr ; Page https://news.belgium.be/fr inaccessible : 403 Client Error: Forbidden for url: https://news.belgium.be/fr",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://news.belgium.be/fr"
+   ],
+   "flux_liste": [
+    "https://news.belgium.be/fr/feeds/all"
+   ]
   },
   {
    "nom": "Agence danoise du numérique (DIGST)",
@@ -839,16 +1134,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://digst.dk",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 10,
+   "nb_trouves": 29,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://digst.dk/nyheder/nyhedsarkiv/",
-   "nb_retenus": 1,
+   "nb_retenus": 13,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://digst.dk/nyheder/nyhedsarkiv/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Agencia Española de Protección de Datos (AEPD)",
@@ -857,15 +1157,22 @@ window.VEILLE_ETAT_SOURCES = {
    "mode": "page",
    "flux": "",
    "nb_trouves": 95,
-   "erreur": "Aucun lien d'article détecté sur https://www.aepd.es/informes-y-resoluciones/criterios-juridicos-aepd (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "erreur": "Archives https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa?page=1 : 403 Client Error: Forbidden for url: https://www.aepd.es/prensa-y-comunicacion/n ; Archives https://www.aepd.es/prensa-y-comunicacion/blog?page=1 : 403 Client Error: Forbidden for url: https://www.aepd.es/prensa-y-comunicacion/b ; Aucun lien d'article détecté sur https://www.aepd.es/informes-y-resoluciones/criterios-juridicos-aepd (page probablement chargée en JavaScript)",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa ; https://www.aepd.es/prensa-y-comunicacion/blog ; https://www.aepd.es/informes-y-resoluciones/criterios-juridicos-aepd",
    "nb_retenus": 0,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa",
+    "https://www.aepd.es/prensa-y-comunicacion/blog",
+    "https://www.aepd.es/informes-y-resoluciones/criterios-juridicos-aepd"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Ministry of Transport and Communications Finland",
@@ -875,14 +1182,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://lvm.fi/tiedotteet",
-   "nb_retenus": 2,
+   "nb_retenus": 18,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://lvm.fi/tiedotteet"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Secrétariat général de la défense et de la sécurité nationale (SGDSN)",
@@ -890,16 +1202,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.sgdsn.gouv.fr",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 10,
+   "nb_trouves": 30,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.sgdsn.gouv.fr/publications",
-   "nb_retenus": 0,
+   "nb_retenus": 18,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.sgdsn.gouv.fr/publications"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Hellenic Data Protection Authority",
@@ -907,16 +1224,22 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.dpa.gr",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 29,
+   "nb_trouves": 74,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.dpa.gr/el/enimerwtiko/deltia ; https://www.dpa.gr/el/enimerwtiko/prakseisArxis",
-   "nb_retenus": 0,
+   "nb_retenus": 37,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.dpa.gr/el/enimerwtiko/deltia",
+    "https://www.dpa.gr/el/enimerwtiko/prakseisArxis"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "National Cyber Security Center Hungary (NKI)",
@@ -926,14 +1249,21 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 20,
    "erreur": "Aucun lien d'article détecté sur https://nki.gov.hu/it-biztonsag/hirek/ (page probablement chargée en JavaScript) ; Aucun lien d'article détecté sur https://nki.gov.hu/it-biztonsag/kiadvanyok/ (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://nki.gov.hu/it-biztonsag/hirek/ ; https://nki.gov.hu/figyelmeztetesek/tajekoztatas/ ; https://nki.gov.hu/it-biztonsag/kiadvanyok/",
-   "nb_retenus": 0,
+   "nb_retenus": 10,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://nki.gov.hu/it-biztonsag/hirek/",
+    "https://nki.gov.hu/figyelmeztetesek/tajekoztatas/",
+    "https://nki.gov.hu/it-biztonsag/kiadvanyok/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Garante per la Protezione dei Dati Personali",
@@ -943,14 +1273,22 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.garanteprivacy.it/o/gpdp-rss/rss?t=news",
    "nb_trouves": 22,
    "erreur": "Aucun lien d'article détecté sur https://www.garanteprivacy.it/home/stampa-comunicazione/newsletter (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.garanteprivacy.it/comunicati-stampa ; https://www.garanteprivacy.it/home/stampa-comunicazione/newsletter",
-   "nb_retenus": 1,
+   "nb_retenus": 19,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.garanteprivacy.it/comunicati-stampa",
+    "https://www.garanteprivacy.it/home/stampa-comunicazione/newsletter"
+   ],
+   "flux_liste": [
+    "https://www.garanteprivacy.it/o/gpdp-rss/rss?t=news"
+   ]
   },
   {
    "nom": "Digitaliserings- og forvaltningsdepartementet (ministère norvégien du numérique)",
@@ -960,13 +1298,18 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://www.regjeringen.no/no/dep/dfd/ inaccessible : 403 Client Error: Forbidden for url: https://www.regjeringen.no/no/dep/dfd/ ; Page https://www.regjeringen.no/no/dep/dfd/ inaccessible : 403 Client Error: Forbidden for url: https://www.regjeringen.no/no/dep/dfd/",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.regjeringen.no/no/dep/dfd/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "UODO (Office for Personal Data Protection)",
@@ -976,14 +1319,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 845,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://uodo.gov.pl/pl/p/aktualnosci",
    "nb_retenus": 0,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://uodo.gov.pl/pl/p/aktualnosci"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Comissão Nacional de Proteção de Dados (CNPD)",
@@ -993,14 +1341,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 58,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.cnpd.pt/comunicacao-publica/noticias/",
-   "nb_retenus": 1,
+   "nb_retenus": 51,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.cnpd.pt/comunicacao-publica/noticias/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Department for Science, Innovation and Technology (DSIT)",
@@ -1010,14 +1363,23 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.gov.uk/search/news-and-communications.atom?organisations[]=department-for-science-innovation-and-technology ; https://www.gov.uk/search/policy-papers-and-consultations.atom?organisations[]=department-for-science-innovation-and-technology",
    "nb_trouves": 40,
    "erreur": "Aucun lien d'article détecté sur https://www.gov.uk/search/news-and-communications?organisations[]=department-for-science-innovation-and-technology (page probablement chargée en JavaScript) ; Aucun lien d'article détecté sur https://www.gov.uk/search/policy-papers-and-consultations?organisations[]=department-for-science-innovation-and-technology (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.gov.uk/search/news-and-communications?organisations[]=department-for-science-innovation-and-technology ; https://www.gov.uk/search/policy-papers-and-consultations?organisations[]=department-for-science-innovation-and-technology",
-   "nb_retenus": 0,
+   "nb_retenus": 40,
    "acces": "partielle",
    "type": "",
    "nature": "presse",
    "nb_pages": 2,
-   "nb_flux": 2
+   "nb_flux": 2,
+   "origine": "excel",
+   "pages": [
+    "https://www.gov.uk/search/news-and-communications?organisations[]=department-for-science-innovation-and-technology",
+    "https://www.gov.uk/search/policy-papers-and-consultations?organisations[]=department-for-science-innovation-and-technology"
+   ],
+   "flux_liste": [
+    "https://www.gov.uk/search/news-and-communications.atom?organisations[]=department-for-science-innovation-and-technology",
+    "https://www.gov.uk/search/policy-papers-and-consultations.atom?organisations[]=department-for-science-innovation-and-technology"
+   ]
   },
   {
    "nom": "Infosecurity Magazine (UK)",
@@ -1025,16 +1387,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.infosecurity-magazine.com/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 39,
+   "nb_trouves": 658,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.infosecurity-magazine.com/news/",
-   "nb_retenus": 1,
+   "nb_retenus": 298,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.infosecurity-magazine.com/news/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Swedish Authority for Privacy Protection (IMY)",
@@ -1042,16 +1409,24 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.imy.se",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 5,
+   "nb_trouves": 30,
    "erreur": "Flux https://www.imy.se/link/fa3ee3124ab14f12aba446eb3a35f46e.aspx?epsremainingpath=rss illisible : not well-formed (invalid token): line 26, column 15 ; Aucun lien d'article détecté sur https://www.imy.se/nyheter/ (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.imy.se/nyheter/ ; https://www.imy.se/publikationer/",
-   "nb_retenus": 0,
+   "nb_retenus": 4,
    "acces": "partielle",
    "type": "",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.imy.se/nyheter/",
+    "https://www.imy.se/publikationer/"
+   ],
+   "flux_liste": [
+    "https://www.imy.se/link/fa3ee3124ab14f12aba446eb3a35f46e.aspx?epsremainingpath=rss"
+   ]
   },
   {
    "nom": "Gazzetta Ufficiale",
@@ -1059,16 +1434,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.gazzettaufficiale.it",
    "mode": "rss",
    "flux": "https://www.gazzettaufficiale.it/rss/SG",
-   "nb_trouves": 20,
+   "nb_trouves": 18,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 0,
+   "nb_retenus": 18,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.gazzettaufficiale.it/rss/SG"
+   ]
   },
   {
    "nom": "Assemblée nationale - Dossiers législatifs",
@@ -1076,16 +1456,25 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers",
    "mode": "rss+page",
    "flux": "http://www2.assemblee-nationale.fr/feeds/detail/documents-parlementaires",
-   "nb_trouves": 35,
+   "nb_trouves": 385,
    "erreur": "Aucun lien d'article détecté sur https://www2.assemblee-nationale.fr/documents/liste/(type)/projets-loi (page probablement chargée en JavaScript) ; Aucun lien d'article détecté sur https://www2.assemblee-nationale.fr/documents/liste/(type)/ta (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.assemblee-nationale.fr/dyn/17/dossiers ; https://www2.assemblee-nationale.fr/documents/liste/(type)/projets-loi ; https://www2.assemblee-nationale.fr/documents/liste/(type)/ta",
-   "nb_retenus": 2,
+   "nb_retenus": 379,
    "acces": "partielle",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 3,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [
+    "https://www.assemblee-nationale.fr/dyn/17/dossiers",
+    "https://www2.assemblee-nationale.fr/documents/liste/(type)/projets-loi",
+    "https://www2.assemblee-nationale.fr/documents/liste/(type)/ta"
+   ],
+   "flux_liste": [
+    "http://www2.assemblee-nationale.fr/feeds/detail/documents-parlementaires"
+   ]
   },
   {
    "nom": "UKE (Urząd Komunikacji Elektronicznej)",
@@ -1093,16 +1482,22 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.uke.gov.pl/akt/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 16,
+   "nb_trouves": 128,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.uke.gov.pl/akt/ ; https://www.uke.gov.pl/blog/",
-   "nb_retenus": 3,
+   "nb_retenus": 21,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.uke.gov.pl/akt/",
+    "https://www.uke.gov.pl/blog/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "CMS Law - Bulgaria Legal Updates",
@@ -1112,14 +1507,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 31,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://cms.law/en/bgr/legal-updates",
    "nb_retenus": 0,
    "acces": "ok",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://cms.law/en/bgr/legal-updates"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Schoenherr - IT & Technology Law News",
@@ -1129,14 +1529,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 3,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.schoenherr.eu/capabilities/legal-areas/it-technology-law/news",
    "nb_retenus": 0,
    "acces": "ok",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.schoenherr.eu/capabilities/legal-areas/it-technology-law/news"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "DGKV - News",
@@ -1144,16 +1549,22 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.dgkv.com/news",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 13,
+   "nb_trouves": 87,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.dgkv.com/news ; https://www.dgkv.com/en/insights/publications",
-   "nb_retenus": 0,
+   "nb_retenus": 19,
    "acces": "ok",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
    "nb_pages": 2,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.dgkv.com/news",
+    "https://www.dgkv.com/en/insights/publications"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Wolf Theiss - Insights (Bulgaria)",
@@ -1163,14 +1574,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://www.wolftheiss.com/insights/ (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.wolftheiss.com/insights/",
    "nb_retenus": 0,
    "acces": "partielle",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.wolftheiss.com/insights/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Data Protection Report (Norton Rose Fulbright)",
@@ -1178,16 +1594,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.dataprotectionreport.com",
    "mode": "rss",
    "flux": "https://www.dataprotectionreport.com/feed/",
-   "nb_trouves": 10,
+   "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 30,
    "acces": "ok",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.dataprotectionreport.com/feed/"
+   ]
   },
   {
    "nom": "Cyber Security Coalition (Belgique)",
@@ -1195,16 +1616,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.cybersecuritycoalition.be/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 8,
+   "nb_trouves": 81,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.cybersecuritycoalition.be/news/",
-   "nb_retenus": 0,
+   "nb_retenus": 6,
    "acces": "ok",
    "type": "Association / coalition public-privé",
    "nature": "presse",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.cybersecuritycoalition.be/news/"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Security.NL",
@@ -1214,14 +1640,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.security.nl/rss/headlines.xml",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 49,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://www.security.nl/rss/headlines.xml"
+   ]
   },
   {
    "nom": "Tek Notícias (SAPO)",
@@ -1229,16 +1660,21 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://tek.sapo.pt/",
    "mode": "rss",
    "flux": "https://tek.sapo.pt/rss",
-   "nb_trouves": 24,
+   "nb_trouves": 360,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "",
-   "nb_retenus": 0,
+   "nb_retenus": 360,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
    "nb_pages": 0,
-   "nb_flux": 1
+   "nb_flux": 1,
+   "origine": "excel",
+   "pages": [],
+   "flux_liste": [
+    "https://tek.sapo.pt/rss"
+   ]
   },
   {
    "nom": "ÚOOÚ (Autorité tchèque de protection des données)",
@@ -1248,14 +1684,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 1,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://uoou.gov.cz/novinky",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://uoou.gov.cz/novinky"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "PFPDT / EDÖB (Préposé fédéral à la protection des données)",
@@ -1265,14 +1706,19 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 122,
    "erreur": "",
-   "verifie_le": "2026-09-23 13:57",
+   "verifie_le": "2026-09-24 07:37",
    "page": "https://www.edoeb.admin.ch/fr/breves",
-   "nb_retenus": 1,
+   "nb_retenus": 11,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
-   "nb_flux": 0
+   "nb_flux": 0,
+   "origine": "excel",
+   "pages": [
+    "https://www.edoeb.admin.ch/fr/breves"
+   ],
+   "flux_liste": []
   },
   {
    "nom": "Centre pour la cybersécurité Belge",
@@ -1287,7 +1733,8 @@ window.VEILLE_ETAT_SOURCES = {
    "erreur": "Statut « Inactif » dans l'Excel : source non interrogée.",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
-   "verifie_le": ""
+   "verifie_le": "",
+   "origine": "excel"
   },
   {
    "nom": "CFCS",
@@ -1302,7 +1749,8 @@ window.VEILLE_ETAT_SOURCES = {
    "erreur": "Statut « Inactif » dans l'Excel : source non interrogée.",
    "type": "",
    "nature": "presse",
-   "verifie_le": ""
+   "verifie_le": "",
+   "origine": "excel"
   },
   {
    "nom": "Swedish Civil Contingencies Agency (MSB)",
@@ -1317,7 +1765,8 @@ window.VEILLE_ETAT_SOURCES = {
    "erreur": "Statut « Inactif » dans l'Excel : source non interrogée.",
    "type": "",
    "nature": "officielle",
-   "verifie_le": ""
+   "verifie_le": "",
+   "origine": "excel"
   }
  ]
 };

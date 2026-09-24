@@ -30,6 +30,7 @@ d'abonnement, rien à payer.
 | `collecte/sources_issue.py`, `.github/workflows/sources.yml` | Applique les demandes d'ajout / retrait de source faites sans jeton | Personne |
 | `requirements-pertinence.txt` | Modèle de pertinence installé par GitHub | Personne |
 | `data/versions.js` / `.json` | Historique des collectes (une version par collecte) | Le script |
+| `config/referentiel.json` | Textes applicables par pays (grille de 10 catégories), affichés dans l'onglet « Textes applicables » | Vous, à la main si besoin. **Jamais écrasé** |
 
 ---
 
@@ -113,6 +114,12 @@ collaboratrices du dépôt (voir « Ajouter ou retirer une source » plus bas).
   fiche du pays avec ses 5 dernières réglementations, leur statut, leur amende
   et leur pertinence, puis tous ses articles), *Sources* (accessibilité de
   chaque source, ajout / retrait de sources, acronymes, méthode).
+- **Textes applicables** : onglet listant, pour chaque pays, le socle des
+  textes et référentiels en vigueur (même sans actualité récente), classés en
+  10 catégories, dont **les exigences des acheteurs de santé** (ex. référentiels
+  du service national de santé) et **la sécurité exigée des fournisseurs du
+  secteur public et du cloud**. Filtre par pays et catégorie, export Excel ;
+  repris dans la fiche pays de la carte et en annexe du PDF complet.
 - **Rien n'est écarté** : chaque article porte une pertinence (élevée,
   moyenne, faible) et un encadré « Pourquoi cet article est là » : thèmes
   proches (d'après le sens du texte) et mots-clés présents. Les mots-clés
@@ -191,7 +198,12 @@ même nom de fichier). Pour chaque source, la collecte essaie dans cet ordre :
 3. à défaut, la page de la colonne **URL**.
 
 La colonne **« Vérification »** (S) indique comment chaque lien a été
-trouvé. Les lignes dont le statut commence par « Inactif » sont ignorées.
+trouvé. La colonne **« Filtrage »** (T) : laissez-la vide pour tout garder ;
+mettez `pertinence` pour une source très volumineuse (journal officiel,
+ministère généraliste) : seuls ses textes de pertinence moyenne ou élevée sont
+gardés. Les sources au statut « Actif - à confirmer » sont bloquées pour
+l'outil de vérification mais peuvent l'être ou non pour le serveur GitHub :
+l'onglet Sources du site dit, après la collecte, si elles ont été lues. Les lignes dont le statut commence par « Inactif » sont ignorées.
 
 **Voir ce qui ne marche pas.** L'onglet **« Sources »** indique pour chaque source (accessible, partielle, inaccessible, ignorée) :
 

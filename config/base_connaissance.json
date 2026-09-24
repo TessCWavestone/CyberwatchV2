@@ -1,7 +1,29 @@
 {
- "_aide": "Base de connaissance initiale (réglementations et actualités depuis le 1er janvier 2026), constituée par recherche documentaire le 24/09/2026. Chaque élément a une source vérifiée. Vous pouvez ajouter, corriger ou retirer des éléments à la main : la collecte les reprend à chaque passage et ne les supprime jamais.",
+ "_aide": "Base de connaissance initiale (réglementations et actualités depuis le 1er janvier 2026), constituée par recherche documentaire le 24/09/2026. Chaque élément a une source vérifiée. Vous pouvez ajouter, corriger ou retirer des éléments à la main : la collecte les reprend à chaque passage et ne les supprime jamais. Complétée le 24/09/2026 par une recherche systématique (grille de 10 catégories × 19 zones).",
  "constituee_le": "2026-09-24",
  "elements": [
+  {
+   "titre_fr": "Bercy : événement de lancement de la mise en œuvre du CRA (ANSSI, ANFR, DGE)",
+   "titre_en": "Bercy: CRA implementation launch event (ANSSI, ANFR, DGE)",
+   "resume_fr": "Le 23 septembre 2026, la ministre déléguée à l'IA et au Numérique réunit l'ANSSI, l'ANFR et la DGE pour présenter la mise en œuvre française du CRA, appliqué progressivement de septembre 2026 à décembre 2027.",
+   "resume_en": "On 23 September 2026 the Minister for AI and Digital Affairs gathered ANSSI, ANFR and DGE to present France's CRA implementation, phased in from September 2026 to December 2027.",
+   "date": "2026-09-23",
+   "date_approx": false,
+   "zone": "France",
+   "lien": "https://presse.economie.gouv.fr/ip-mise-en-oeuvre-du-cyber-resilience-act-mercredi-23-septembre-2026/",
+   "source": "Ministère de l'Économie",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Confirme la gouvernance nationale du CRA (ANSSI, ANFR) pour les produits connectés hors DM.",
+   "pourquoi_en": "Confirms national CRA governance (ANSSI, ANFR) for non-device connected products.",
+   "categorie": 8
+  },
   {
    "titre_fr": "Suède : amende de 1,8 MSEK de l'IMY contre le prestataire Miljödata après une cyberattaque massive",
    "titre_en": "Sweden: IMY fines system provider Miljödata SEK 1.8 million after major cyberattack",
@@ -94,6 +116,29 @@
    "pourquoi_en": "An IVD manufacturer's Austrian entities (health sector) must comply from 1 October 2026 and register by end-2026."
   },
   {
+   "titre_fr": "Pologne : le CSIRT CeZ publie des recommandations de sécurité pour les fournisseurs de plateformes informatiques de santé",
+   "titre_en": "Poland: CSIRT CeZ publishes security recommendations for healthcare IT platform providers",
+   "resume_fr": "Le CSIRT du Centrum e-Zdrowia publie un document « en bref » destiné aux éditeurs de logiciels, fournisseurs de plateformes et opérateurs de systèmes utilisés dans les soins : MFA et gestion des droits, surveillance des recherches/téléchargements/exports anormaux, sécurité des API intégrées aux systèmes de santé (dont la plateforme P1), sauvegardes et gestion des clés, journalisation et détection d'incidents. Les établissements peuvent l'utiliser comme liste de contrôle pour évaluer leurs fournisseurs.",
+   "resume_en": "The CSIRT of Centrum e-Zdrowia published a short guide for software vendors, platform providers and operators of systems used in care: MFA and permission management, monitoring of abnormal searches/downloads/exports, security of APIs integrated with health systems (including the P1 platform), backups and key management, logging and incident detection. Healthcare providers can use it as a checklist to assess their vendors.",
+   "date": "2026-09-17",
+   "date_approx": false,
+   "zone": "Pologne",
+   "lien": "https://alertmedyczny.pl/csirt-cez-przygotowal-zalecenia-dla-dostawcow-oprogramowania-medycznego/",
+   "source": "Alert Medyczny",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "secteur",
+   "textes": [
+    "CSIRT CeZ recommendations",
+    "KSC"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Les hôpitaux et laboratoires polonais vont s'en servir pour évaluer la sécurité des logiciels et services connectés de leurs fournisseurs de DIV (middleware, connectivité, cloud).",
+   "pourquoi_en": "Polish hospitals and labs will use it to assess the security of their IVD suppliers' connected software and services (middleware, connectivity, cloud).",
+   "categorie": 4
+  },
+  {
    "titre_fr": "Pologne : fuite massive de la plateforme médicale MyDr – l'UODO lance des contrôles renforcés dans la santé",
    "titre_en": "Poland: massive MyDr medical platform leak – UODO launches intensified healthcare inspections",
    "resume_fr": "Une cyberattaque contre la plateforme de dossiers médicaux MyDr a exposé des données de santé (médicaments, prescriptions) concernant environ 19 millions de personnes et 12 000 établissements. Le président de l'UODO a annoncé des contrôles intensifiés des entités de santé d'ici la fin 2026, en réorientant son plan de contrôle 2026 vers les données médicales.",
@@ -158,6 +203,29 @@
    "pourquoi_en": "Check that Portuguese group entities have registered, otherwise they commit an offence."
   },
   {
+   "titre_fr": "Suisse : le Conseil national adopte la loi sur le dossier électronique de santé (DES)",
+   "titre_en": "Switzerland: National Council adopts the Electronic Health Record (EHR) law",
+   "resume_fr": "Le 15 septembre 2026, le Conseil national adopte (134 voix contre 53) le projet de dossier électronique de santé remplaçant le DEP, avec des exigences renforcées de protection et de sécurité des données, la publication du code source en open source si possible et une communauté nationale unique. Le texte passe au Conseil des États.",
+   "resume_en": "On 15 September 2026 the National Council adopted (134 to 53) the electronic health record bill replacing the EPR, with strengthened data protection and security, open-source publication of code where possible and a single national community. The bill now goes to the Council of States.",
+   "date": "2026-09-15",
+   "date_approx": false,
+   "zone": "Suisse",
+   "lien": "https://www.ictjournal.ch/news/2026-09-15/le-conseil-national-soutient-le-dossier-electronique-de-sante-update",
+   "source": "ICTjournal",
+   "nature": "presse",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "LDEP",
+    "Loi sur le dossier électronique de santé"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les résultats de laboratoire alimenteront le futur DES : exigences d'interopérabilité et de sécurité pour les systèmes connectés.",
+   "pourquoi_en": "Laboratory results will feed the future EHR: interoperability and security requirements for connected systems.",
+   "categorie": 3
+  },
+  {
    "titre_fr": "Pologne : bilan des sanctions UODO 2026 – durcissement et amendes de plusieurs millions de złotys",
    "titre_en": "Poland: 2026 UODO enforcement review – tougher stance and multi-million zloty fines",
    "resume_fr": "Une analyse de septembre 2026 recense les principales décisions de l'UODO en 2026, dont environ 5,9 M PLN pour collecte de pièces d'identité et environ 1 M PLN pour défaut d'indépendance du DPO. Les manquements récurrents portent sur les violations de données, la notification hors délai de 72 heures et l'insuffisance des mesures de sécurité.",
@@ -198,6 +266,29 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Les entités italiennes du groupe doivent être prêtes aux contrôles de l'ACN dès l'automne 2026.",
    "pourquoi_en": "Group entities in Italy must be ready for ACN audits from autumn 2026."
+  },
+  {
+   "titre_fr": "Suède : fin de la consultation relayée par la FMV sur le schéma européen de certification des services de sécurité managés (EUMSS)",
+   "titre_en": "Sweden: end of FMV-relayed consultation on the EU certification scheme for managed security services (EUMSS)",
+   "resume_fr": "La FMV, autorité nationale de certification de cybersécurité, a relayé la consultation publique sur le schéma de certification de l'ENISA pour les services de sécurité externalisés (EUMSS), ouverte jusqu'au 13 septembre 2026.",
+   "resume_en": "FMV, the national cybersecurity certification authority, relayed the public consultation on ENISA's certification scheme for outsourced security services (EUMSS), open until 13 September 2026.",
+   "date": "2026-09-13",
+   "date_approx": false,
+   "zone": "Suède",
+   "lien": "https://www.fmv.se/verksamhet/ovrig-verksamhet/nationella-myndigheten-for-cybersakerhetscertifiering/",
+   "source": "FMV",
+   "nature": "officielle",
+   "statut": "consultation",
+   "rubrique": "standards",
+   "textes": [
+    "Cybersecurity Act",
+    "EUMSS"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Pertinence indirecte : concerne les prestataires de services de sécurité managés auxquels le client pourrait recourir.",
+   "pourquoi_en": "Indirect relevance: concerns managed security service providers the client might use.",
+   "categorie": 10
   },
   {
    "titre_fr": "Data Act : obligation d'accès aux données dès la conception pour les produits connectés",
@@ -348,6 +439,50 @@
    "pourquoi_en": "Identifies the Greek contact for CRA reports on connected products sold in Greece."
   },
   {
+   "titre_fr": "Espagne : obligations de notification CRA sous 24 h, l'INCIBE comme canal d'appui",
+   "titre_en": "Spain: CRA 24-hour notification duties apply, INCIBE as support channel",
+   "resume_fr": "Depuis le 11 septembre 2026, fabricants, importateurs et distributeurs de produits comportant des éléments numériques doivent notifier sous 24 h vulnérabilités activement exploitées et incidents graves ; l'INCIBE est présenté comme canal central d'alerte et d'appui aux entreprises espagnoles.",
+   "resume_en": "Since 11 September 2026 manufacturers, importers and distributors of products with digital elements must notify actively exploited vulnerabilities and severe incidents within 24 hours; INCIBE is presented as the central alert and support channel for Spanish companies.",
+   "date": "2026-09-11",
+   "date_approx": false,
+   "zone": "Espagne",
+   "lien": "https://www.moncloa.com/2026/09/22/ley-ciberresiliencia-ue-ciberataques-24-horas-3435319/",
+   "source": "moncloa.com",
+   "nature": "presse",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Règlement (UE) 2024/2847 (CRA)"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Automates et logiciels hors champ DM/DIV (ex. agroalimentaire) relèvent du CRA.",
+   "pourquoi_en": "Instruments and software outside MD/IVD scope (e.g. food industry) fall under the CRA.",
+   "categorie": 8
+  },
+  {
+   "titre_fr": "Norvège : la Nkom rappelle les obligations de signalement CRA, pas encore intégrées dans l'accord EEE",
+   "titre_en": "Norway: Nkom reminds of CRA reporting obligations, not yet incorporated into the EEA Agreement",
+   "resume_fr": "Depuis le 11 septembre 2026, les fabricants doivent signaler les vulnérabilités activement exploitées et les incidents graves via la plateforme unique de l'ENISA (24 h / 72 h / 14 jours ou un mois). Le CRA n'étant pas encore intégré à l'EEE, les fabricants norvégiens doivent notifier les États membres de l'UE où leurs produits sont vendus.",
+   "resume_en": "Since 11 September 2026 manufacturers must report actively exploited vulnerabilities and severe incidents via ENISA's Single Reporting Platform (24 h / 72 h / 14 days or one month). As the CRA is not yet incorporated into the EEA, Norwegian manufacturers must notify the EU Member States where their products are sold.",
+   "date": "2026-09-11",
+   "date_approx": false,
+   "zone": "Norvège",
+   "lien": "https://nkom.no/aktuelt/skal-sikre-smartprodukter-bedre-fra-na-gjelder-nye-krav-til-rapportering",
+   "source": "Nkom",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Précise le décalage EEE : pour le marché norvégien, la notification passe par les autorités de l'UE tant que le CRA n'est pas intégré.",
+   "pourquoi_en": "Clarifies the EEA gap: for the Norwegian market, notification goes through EU authorities until the CRA is incorporated.",
+   "categorie": 8
+  },
+  {
    "titre_fr": "Directive responsabilité du fait des produits : état de la transposition avant l'échéance de décembre 2026",
    "titre_en": "Product Liability Directive: transposition status ahead of December 2026 deadline",
    "resume_fr": "Au 10 septembre 2026, seuls la Hongrie, la Croatie et la Lituanie avaient transposé la nouvelle directive (UE) 2024/2853, dont l'échéance est le 9 décembre 2026. Des divergences nationales apparaissent (risque de développement, présomptions de défectuosité, divulgation de preuves) ; le logiciel est désormais un produit.",
@@ -389,6 +524,50 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Préfigure les règles britanniques applicables à l'IA d'aide à l'interprétation intégrée aux DIV et logiciels de laboratoire.",
    "pourquoi_en": "Foreshadows UK rules for AI-based interpretation support embedded in IVDs and laboratory software."
+  },
+  {
+   "titre_fr": "Rép. tchèque : loi d'adaptation au CRA en route vers la Chambre ; ČOI pressentie comme autorité de surveillance du marché",
+   "titre_en": "Czech Republic: CRA adaptation bill heading to the Chamber; ČOI expected as market surveillance authority",
+   "resume_fr": "Alors que les obligations de notification du CRA s'appliquent depuis le 11 septembre 2026, le projet de loi tchèque d'adaptation a achevé la consultation et se dirige vers la Chambre des députés. Le NÚKIB est le CSIRT destinataire des notifications ; la surveillance du marché devrait revenir principalement à l'Inspection tchèque du commerce (ČOI).",
+   "resume_en": "With CRA reporting obligations applicable since 11 September 2026, the Czech adaptation bill has completed consultation and is heading to the Chamber of Deputies. NÚKIB is the CSIRT receiving notifications; market surveillance is expected to lie mainly with the Czech Trade Inspection (ČOI).",
+   "date": "2026-09-10",
+   "date_approx": false,
+   "zone": "Rép. Tchèque",
+   "lien": "https://www.gdpr.cz/cyber-resilience-act-v-ostrem-provozu-povinnosti-pro-software-vyrobce-i-prodejce-od-11-zari-2026",
+   "source": "GDPR.cz",
+   "nature": "presse",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Identifie les interlocuteurs tchèques (NÚKIB, ČOI) pour les produits connectés hors champ DM/DIV.",
+   "pourquoi_en": "Identifies Czech contacts (NÚKIB, ČOI) for connected products outside MD/IVD scope.",
+   "categorie": 8
+  },
+  {
+   "titre_fr": "Chambre des communes : débat sur le Health Bill",
+   "titre_en": "House of Commons: Health Bill debate",
+   "resume_fr": "Le Health Bill est débattu aux Communes le 7 septembre 2026. Contenu non vérifié (page Hansard inaccessible) : à analyser pour ses éventuelles dispositions sur les données et la gouvernance numérique du NHS.",
+   "resume_en": "The Health Bill was debated in the Commons on 7 September 2026. Content not verified (Hansard page not accessible): to be reviewed for possible data and NHS digital governance provisions.",
+   "date": "2026-09-07",
+   "date_approx": false,
+   "zone": "Royaume-Uni",
+   "lien": "https://hansard.parliament.uk/Commons/2026-09-07/debates/AE40791E-684B-46AA-B812-4C9803FDB724/HealthBill",
+   "source": "Hansard – UK Parliament",
+   "nature": "officielle",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "Health Bill"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Une réforme de la gouvernance du NHS peut modifier les interlocuteurs et exigences imposés aux fournisseurs.",
+   "pourquoi_en": "An NHS governance reform may change supplier-facing bodies and requirements.",
+   "categorie": 3
   },
   {
    "titre_fr": "CNIL : sanction de 500 000 € contre l'Hôpital privé de la Loire après une fuite de dossiers patients",
@@ -461,6 +640,32 @@
    "pourquoi_en": "Any GDPR sanction against a Dutch entity will be made public, raising the compliance stakes."
   },
   {
+   "titre_fr": "Cyber Security and Resilience Bill : examen en commission à la Chambre des lords",
+   "titre_en": "Cyber Security and Resilience Bill: Lords Committee stage",
+   "resume_fr": "Le projet de loi réformant les NIS Regulations 2018 entre en commission aux Lords le 1er septembre 2026. Il étend le périmètre aux fournisseurs de services managés (RMSP), aux centres de données et aux fournisseurs critiques désignés ; notification initiale sous 24 h, rapport complet sous 72 h ; amendes jusqu'à 17 M£ ou 4 % du CA mondial. Sanction royale attendue fin 2026, effets vers 2028 via la législation secondaire.",
+   "resume_en": "The bill reforming the NIS Regulations 2018 reached Lords Committee stage on 1 September 2026. It extends scope to relevant managed service providers (RMSP), data centres and designated critical suppliers; 24-hour initial notification, 72-hour full report; fines up to £17m or 4% of global turnover. Royal Assent expected late 2026, effect around 2028 via secondary legislation.",
+   "date": "2026-09-01",
+   "date_approx": false,
+   "zone": "Royaume-Uni",
+   "lien": "https://compliancehub.wiki/uk-cyber-security-resilience-bill-lords-committee-september-2026-msp-data-centre-scope/",
+   "source": "ComplianceHub.Wiki",
+   "nature": "presse",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "Cyber Security and Resilience Bill",
+    "NIS Regulations 2018"
+   ],
+   "amende": {
+    "montant_eur": null,
+    "texte": "Jusqu'à 17 M£ ou 4 % du CA mondial (projet)"
+   },
+   "pertinence": "elevee",
+   "pourquoi_fr": "Le mécanisme de « fournisseur critique désigné » peut viser un fournisseur de systèmes connectés et de services managés auprès d'opérateurs de santé.",
+   "pourquoi_en": "The 'designated critical supplier' mechanism may capture a supplier of connected systems and managed services to healthcare operators.",
+   "categorie": 1
+  },
+  {
    "titre_fr": "Finlande : rapport d'évaluation de la première année de la loi sur la cybersécurité",
    "titre_en": "Finland: first-year evaluation report of the Cybersecurity Act",
    "resume_fr": "Le 31 août 2026, le ministère des Transports et des Communications a publié l'évaluation de la loi sur la cybersécurité (transposition NIS2), appliquée depuis avril 2025. La loi est jugée claire et efficace, mais le manque de ressources des autorités limite la supervision ; les entités demandent davantage de guides et un guichet unique de notification des incidents.",
@@ -480,6 +685,30 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "Préfigure d'éventuels ajustements (guichet unique de notification, guides) de la loi NIS2 finlandaise.",
    "pourquoi_en": "Foreshadows possible adjustments (single reporting channel, guidance) to Finland's NIS2 law."
+  },
+  {
+   "titre_fr": "Pologne : le ministère du Numérique présente le paquet « Cyber piątka » pour les entreprises traitant des données médicales",
+   "titre_en": "Poland: Ministry of Digital Affairs presents the 'Cyber Five' package for companies processing medical data",
+   "resume_fr": "Après la fuite MyDr, le ministère du Numérique présente cinq propositions préliminaires : certification des entreprises traitant des données médicales adossée au système national de certification cyber, exigences techniques minimales pour les systèmes traitant des données médicales, information des patients sur les sous-traitants, alertes via mObywatel/mojeIKP, et obligations renforcées pour les grands sous-traitants (plus de 100 responsables de traitement ou 100 000 personnes) : notification rapide au CSIRT NASK, évaluations de sécurité fournies aux établissements, analyse de risque tous les deux ans.",
+   "resume_en": "After the MyDr breach, the Ministry of Digital Affairs presented five preliminary proposals: certification of companies processing medical data linked to the national cybersecurity certification system, minimum technical requirements for systems processing medical data, patient information on processors, alerts via mObywatel/mojeIKP, and stronger obligations for large processors (over 100 controllers or 100,000 individuals): rapid reporting to CSIRT NASK, security assessments provided to healthcare providers, risk analysis every two years.",
+   "date": "2026-08-31",
+   "date_approx": false,
+   "zone": "Pologne",
+   "lien": "https://www.prawo.pl/zdrowie/zaostrzone-kryteria-dla-firm-od-danych-medycznych-plany-resortu-cyfryzacji,1551857.html",
+   "source": "Prawo.pl",
+   "nature": "presse",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "KSC",
+    "RODO",
+    "Ustawa o krajowym systemie certyfikacji cyberbezpieczeństwa"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Un fournisseur de logiciels de laboratoire et de services cloud traitant des données de patients pour de nombreux établissements pourrait être soumis à certification et à des obligations de sous-traitant « à grande échelle ».",
+   "pourquoi_en": "A supplier of lab software and cloud services processing patient data for many providers could become subject to certification and 'large-scale processor' obligations.",
+   "categorie": 3
   },
   {
    "titre_fr": "Loi résilience (NIS2, REC, DORA) : toujours en attente d'examen en séance à l'Assemblée nationale",
@@ -593,6 +822,31 @@
    "pourquoi_en": "A single Greek regulator will oversee both GDPR and AI: compliance documentation for both should be aligned."
   },
   {
+   "titre_fr": "Pays-Bas : Cyberbeveiligingsregeling pour la santé publiée – conformité NEN 7510 / ISO 27001 et seuils de notification",
+   "titre_en": "Netherlands: Cybersecurity Regulation for healthcare published – NEN 7510 / ISO 27001 compliance and reporting thresholds",
+   "resume_fr": "Publiée au Staatscourant (n° 28763) le 14 août 2026, veille de l'entrée en vigueur de la Cyberbeveiligingswet, la regeling précise pour le secteur de la santé, y compris les fabricants de dispositifs médicaux, le devoir de diligence (présomption de conformité via NEN 7510, NEN-ISO/IEC 27001 et 27002 ou équivalent) et les seuils d'incidents significatifs (processus critiques indisponibles plus de 4 h, systèmes cruciaux compromis, fuite présumée de données sensibles, préjudice patient). Contrôle par l'IGJ, appui technique de Z-CERT.",
+   "resume_en": "Published in the Staatscourant (no. 28763) on 14 August 2026, the eve of the Cybersecurity Act's entry into force, the regulation sets for the health sector, including medical device manufacturers, the duty of care (presumption of conformity via NEN 7510, NEN-ISO/IEC 27001 and 27002 or equivalent) and significant-incident thresholds (critical processes down over 4 hours, crucial systems compromised, suspected special-category data leak, patient harm). Supervised by IGJ with Z-CERT technical support.",
+   "date": "2026-08-14",
+   "date_approx": false,
+   "zone": "Pays-Bas",
+   "lien": "https://zoek.officielebekendmakingen.nl/stcrt-2026-28763.html",
+   "source": "Staatscourant",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Cyberbeveiligingswet",
+    "Cyberbeveiligingsbesluit",
+    "NEN 7510",
+    "ISO/IEC 27001"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Les fabricants de dispositifs médicaux au-dessus des seuils de taille sont directement visés : NEN 7510 / ISO 27001 servent de référence de conformité et la notification des incidents s'applique.",
+   "pourquoi_en": "Medical device manufacturers above size thresholds are directly in scope: NEN 7510 / ISO 27001 are the compliance reference and incident reporting applies.",
+   "categorie": 1
+  },
+  {
    "titre_fr": "ETSI lance l'approbation de 17 normes européennes à l'appui du CRA",
    "titre_en": "ETSI launches approval of 17 European Standards supporting the CRA",
    "resume_fr": "Le 13 août 2026, l'ETSI a mis en enquête publique 17 projets finaux de normes verticales (série EN 304 xxx) destinées à devenir normes harmonisées CRA pour les produits importants et critiques. La procédure court jusqu'à mi-septembre à mi-novembre 2026.",
@@ -678,6 +932,29 @@
    "pourquoi_en": "Clarifies the medical device qualification boundary for generative AI software, useful for digital laboratory tools."
   },
   {
+   "titre_fr": "Pologne : le ministère du Numérique détaille la procédure de désignation des fournisseurs à haut risque (KSC)",
+   "titre_en": "Poland: Ministry of Digital Affairs details the high-risk vendor designation procedure (KSC)",
+   "resume_fr": "Le ministère explique la procédure prévue par la loi KSC modifiée : décision du ministre du Numérique après avis du Collège pour la cybersécurité (examen de 3 mois) et 14 jours pour les organisations de la société civile. La décision vise des types de produits, catégories de services ou processus TIC. Après publication au Monitor Polski, interdiction immédiate de mise en service et retrait sous 7 ans (4 ans pour les opérateurs télécoms). Aucune procédure engagée à ce jour ; toutes les entités KSC sont concernées.",
+   "resume_en": "The Ministry explains the procedure under the amended KSC Act: decision by the Minister of Digital Affairs after review by the Cybersecurity Board (3 months) and 14 days for civil society organisations. Decisions target product types, service categories or ICT processes. After publication in Monitor Polski, immediate ban on new deployment and withdrawal within 7 years (4 years for telecom operators). No proceedings started yet; all KSC entities are covered.",
+   "date": "2026-08-06",
+   "date_approx": false,
+   "zone": "Pologne",
+   "lien": "https://www.gov.pl/web/cyfryzacja/nowelizacja-ustawy-o-krajowym-systemie-cyberbezpieczenstwa-ksc---procedura-dot-listy-dostawcow-wysokiego-ryzyka",
+   "source": "Ministerstwo Cyfryzacji",
+   "nature": "officielle",
+   "statut": "lignes_directrices",
+   "rubrique": "reglementation",
+   "textes": [
+    "KSC",
+    "NIS2"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux polonais (entités KSC) pourraient devoir retirer des produits TIC désignés : risque sur la chaîne d'approvisionnement des automates et logiciels connectés.",
+   "pourquoi_en": "Polish hospitals (KSC entities) may have to withdraw designated ICT products: supply-chain risk for connected analysers and software.",
+   "categorie": 1
+  },
+  {
    "titre_fr": "Hongrie : après l'échéance d'audit NIS2, plans de remédiation à 90 jours et amendes jusqu'à 150 M HUF",
    "titre_en": "Hungary: after the NIS2 audit deadline, 90-day remediation plans and fines up to HUF 150m",
    "resume_fr": "Après l'échéance du 30 juin 2026, les organisations doivent soumettre un plan de remédiation dans les 90 jours suivant les constats d'audit (décret 418/2024 et règlement SZTFH 1/2025), puis se réauditer tous les deux ans. L'absence d'audit expose à une amende pouvant atteindre 2 % du chiffre d'affaires net ou 150 M HUF.",
@@ -698,6 +975,29 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Fixe les obligations post-audit (remédiation, réaudit) et le risque de sanction pour les entités hongroises.",
    "pourquoi_en": "Sets post-audit obligations (remediation, re-audit) and penalty exposure for Hungarian entities."
+  },
+  {
+   "titre_fr": "Hongrie : entrée en vigueur des dernières dispositions de la loi LXXV de 2025 d'application de l'AI Act",
+   "titre_en": "Hungary: remaining provisions of Act LXXV of 2025 implementing the AI Act enter into force",
+   "resume_fr": "Les articles 3(2) et 10 de la loi LXXV de 2025, dont les autres dispositions s'appliquent depuis le 1er décembre 2025, entrent en vigueur le 2 août 2026. La loi habilite le gouvernement à désigner l'autorité notifiante et l'autorité de surveillance du marché IA, la banque centrale étant compétente pour le secteur financier.",
+   "resume_en": "Sections 3(2) and 10 of Act LXXV of 2025, whose other provisions apply since 1 December 2025, enter into force on 2 August 2026. The Act empowers the government to designate the AI notifying and market surveillance authorities, with the central bank competent for the financial sector.",
+   "date": "2026-08-02",
+   "date_approx": false,
+   "zone": "Hongrie",
+   "lien": "https://cadeproject.org/updates/hungarys-ai-implementation-law-enters-into-force/",
+   "source": "CADE",
+   "nature": "presse",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "AI Act",
+    "Act LXXV of 2025"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Cadre national de supervision des systèmes d'IA, y compris d'aide à l'interprétation des résultats de laboratoire.",
+   "pourquoi_en": "National supervision framework for AI systems, including lab result interpretation support.",
+   "categorie": 7
   },
   {
    "titre_fr": "Référentiel HDS v2.1 annoncé par l'Agence du numérique en santé",
@@ -786,6 +1086,31 @@
    "pourquoi_en": "Legally binding timeline for AI compliance of IVDs and medical software: August 2028."
   },
   {
+   "titre_fr": "Espagne : le CCN met à jour 45 des 73 familles du catalogue CPSTIC",
+   "titre_en": "Spain: CCN updates 45 of 73 CPSTIC catalogue families",
+   "resume_fr": "Le CCN refond le catalogue CPSTIC (660 produits, dont 482 qualifiés pour les systèmes relevant de l'ENS) : exigences ENS moyen et haut unifiées, prise en compte des produits déployés dans le cloud (évaluation CICLON), matrices de traçabilité vers LINCE, CICLON et Critères communs.",
+   "resume_en": "CCN overhauled the CPSTIC catalogue (660 products, 482 qualified for ENS-scope systems): unified ENS Medium/High requirements, cloud-deployed products (CICLON evaluation), traceability matrices to LINCE, CICLON and Common Criteria.",
+   "date": "2026-07-27",
+   "date_approx": false,
+   "zone": "Espagne",
+   "lien": "https://www.ccn.cni.es/es/actualidad-ccn/1375-el-ccn-actualiza-45-de-las-73-familias-del-cpstic-para-simplificar-la-cualificacion-de-productos-de-seguridad-tic",
+   "source": "CCN",
+   "nature": "officielle",
+   "statut": "lignes_directrices",
+   "rubrique": "standards",
+   "textes": [
+    "ENS",
+    "CPSTIC",
+    "LINCE",
+    "CICLON"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Le secteur public (dont hôpitaux publics) s'appuie sur le CPSTIC pour qualifier les produits TIC déployés dans des systèmes ENS.",
+   "pourquoi_en": "The public sector (incl. public hospitals) relies on CPSTIC to qualify ICT products used in ENS systems.",
+   "categorie": 5
+  },
+  {
    "titre_fr": "ENISA : centre européen de soutien à la cybersécurité du secteur de la santé et guide d'achat pour hôpitaux",
    "titre_en": "ENISA: European Cybersecurity Support Centre for health and hospital procurement guidelines",
    "resume_fr": "Le 22 juillet 2026, l'ENISA a signé une convention de 6 M€ avec la Commission pour établir le centre européen de soutien à la cybersécurité des hôpitaux et prestataires de soins. Elle a publié des lignes directrices actualisées pour intégrer la cybersécurité dans les achats hospitaliers, y compris les dispositifs médicaux.",
@@ -849,6 +1174,78 @@
    "pourquoi_en": "Health is a CER sector: hospital customers or diagnostic suppliers may be designated and pass resilience requirements on to their suppliers."
   },
   {
+   "titre_fr": "Portugal : échéance de désignation des entités critiques (décret-loi 22/2025)",
+   "titre_en": "Portugal: deadline to designate critical entities (Decree-Law 22/2025)",
+   "resume_fr": "Les entités critiques des secteurs visés (dont la santé) devaient être désignées au plus tard le 17 juillet 2026, sous la coordination du Système de sécurité intérieure (SSI).",
+   "resume_en": "Critical entities in covered sectors (including health) were to be designated by 17 July 2026, coordinated by the Internal Security System (SSI).",
+   "date": "2026-07-17",
+   "date_approx": false,
+   "zone": "Portugal",
+   "lien": "https://www.dn.pt/sociedade/portugal-demorou-3-anos-a-transpor-diretiva-para-proteger-infraestruturas-cr%C3%ADticas-e-s%C3%B3-em-2026-a-vai-executar",
+   "source": "Diário de Notícias",
+   "nature": "presse",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "Decreto-Lei 22/2025",
+    "Directive (UE) 2022/2557 (CER)"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux et laboratoires désignés critiques imposeront des exigences de continuité aux fournisseurs de diagnostic.",
+   "pourquoi_en": "Hospitals and labs designated critical will impose continuity requirements on diagnostic suppliers.",
+   "categorie": 9
+  },
+  {
+   "date_approx": false,
+   "amende": {
+    "montant_eur": 10000000,
+    "texte": "jusqu'à 10 M€ pour défaut de mesures de gestion des risques"
+   },
+   "titre_fr": "Grèce : échéance du 17 juillet 2026 pour la désignation des entités critiques (loi 5236/2025, directive CER)",
+   "titre_en": "Greece: 17 July 2026 deadline for designating critical entities (Law 5236/2025, CER Directive)",
+   "resume_fr": "La loi 5236/2025 transposant la directive CER impose au Secrétariat général pour la protection des entités critiques d'identifier et désigner les entités critiques au plus tard le 17 juillet 2026, dont dans le secteur de la santé ; évaluation des risques 9 mois après notification, amendes de 1 à 10 M€.",
+   "resume_en": "Law 5236/2025 transposing the CER Directive requires the General Secretariat for the Protection of Critical Entities to identify and designate critical entities by 17 July 2026, including in the health sector; risk assessment 9 months after notification, fines from EUR 1M to 10M.",
+   "date": "2026-07-17",
+   "zone": "Grèce",
+   "lien": "https://www.ey.com/en_gr/technical/tax/tax-alerts/law-5236-2025-cer-directive-en",
+   "source": "EY Greece",
+   "nature": "cabinet",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "Loi 5236/2025",
+    "Directive CER (UE) 2022/2557"
+   ],
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux et laboratoires grecs désignés critiques exigeront davantage de résilience de leurs fournisseurs de diagnostic.",
+   "pourquoi_en": "Greek hospitals and laboratories designated as critical will require more resilience from their diagnostics suppliers.",
+   "categorie": 9
+  },
+  {
+   "titre_fr": "Finlande : entrée en application des obligations de la loi CER pour les acteurs sociaux et de santé désignés critiques",
+   "titre_en": "Finland: CER Act obligations apply to health and social care actors designated as critical",
+   "resume_fr": "Le ministère des Affaires sociales et de la Santé a désigné les premières entités critiques du secteur santé-social ; depuis le 17 juillet 2026 elles doivent notifier sans retard injustifié les perturbations importantes (notification initiale sous 24 h, rapport détaillé sous un mois si demandé). La Lupa- ja valvontavirasto assure la supervision.",
+   "resume_en": "The Ministry of Social Affairs and Health designated the first critical entities in the health and social sector; since 17 July 2026 they must report significant disruptions without undue delay (initial notification within 24 h, detailed report within one month if requested). Lupa- ja valvontavirasto supervises.",
+   "date": "2026-07-17",
+   "date_approx": false,
+   "zone": "Finlande",
+   "lien": "https://lvv.fi/-/kriittisiksi-nimettyjen-sote-toimijoiden-cer-lain-velvoitteet-voimaan-17.7.2026",
+   "source": "Lupa- ja valvontavirasto",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "secteur",
+   "textes": [
+    "CER-laki",
+    "CER"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux finlandais désignés critiques renforceront leurs exigences de continuité envers les fournisseurs d'équipements et de systèmes de laboratoire.",
+   "pourquoi_en": "Finnish hospitals designated as critical will strengthen continuity requirements towards suppliers of laboratory equipment and systems.",
+   "categorie": 9
+  },
+  {
    "titre_fr": "Rapport de la commission d'enquête de l'Assemblée nationale sur les dépendances numériques",
    "titre_en": "National Assembly inquiry report on digital dependencies",
    "resume_fr": "La commission d'enquête sur les dépendances structurelles et vulnérabilités du numérique (président Philippe Latombe, rapporteure Cyrielle Chatelain) a rendu son rapport le 16 juillet 2026. Il recommande notamment le passage de la commande publique informatique de l'État à l'open source à partir de 2030 et un contrôle public des grands centres de données ; la presse spécialisée rapporte aussi une proposition de clause de souveraineté dans la certification HDS.",
@@ -892,6 +1289,30 @@
    "pourquoi_en": "Identifies the Greek authority competent for high-risk AI embedded in IVDs sold in Greece."
   },
   {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Allemagne : le gouvernement adopte le GeDIG (loi sur les données et l'innovation numérique en santé)",
+   "titre_en": "Germany: cabinet adopts the GeDIG (Act on Data and Digital Innovation in Healthcare)",
+   "resume_fr": "Le Conseil des ministres a adopté le Gesetz für Daten und digitale Innovation im Gesundheitswesen : pouvoirs renforcés de la gematik sur la télématique (certification, réponse aux incidents), messagerie sécurisée (KIM, TI-M) à la place du fax, extension du DMP (ePA), mise en œuvre de l'EHDS, extension du centre de données de recherche. Mesures échelonnées 2027-2029 ; procédure parlementaire en cours.",
+   "resume_en": "The cabinet adopted the Gesetz für Daten und digitale Innovation im Gesundheitswesen: stronger gematik powers over the telematics infrastructure (certification, incident response), secure messaging (KIM, TI-M) replacing fax, extended ePA, EHDS implementation, extended research data centre. Measures phased 2027-2029; parliamentary procedure ongoing.",
+   "date": "2026-07-15",
+   "zone": "Allemagne",
+   "lien": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/kabinett-beschliesst-gedig-pm-15-07-2026",
+   "source": "Bundesministerium für Gesundheit",
+   "nature": "officielle",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "GeDIG",
+    "EHDS",
+    "SGB V"
+   ],
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Interopérabilité obligatoire, interdiction des barrières d'intégration par les fabricants de systèmes informatiques et mise en œuvre de l'EHDS : impact possible sur les logiciels de laboratoire connectés aux systèmes des hôpitaux allemands.",
+   "pourquoi_en": "Mandatory interoperability, ban on integration barriers by IT system manufacturers and EHDS implementation: possible impact on laboratory software connected to German hospital systems.",
+   "categorie": 3
+  },
+  {
    "titre_fr": "Révision MDR/IVDR : projet de rapport du Parlement européen",
    "titre_en": "MDR/IVDR revision: European Parliament draft report",
    "resume_fr": "Le 14 juillet 2026, le rapporteur Oliver Schenk a présenté en commission SANT son projet de rapport sur la proposition de révision ciblée des règlements MDR et IVDR (décembre 2025). Le vote en commission est prévu le 3 décembre 2026 et le Conseil vise une orientation générale fin 2026.",
@@ -933,6 +1354,29 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Le calendrier indique une adoption probable fin 2026, suivie de réglementations secondaires à suivre pour les fournisseurs du secteur santé.",
    "pourquoi_en": "The timetable points to likely adoption in late 2026, followed by secondary regulations that healthcare suppliers should track."
+  },
+  {
+   "titre_fr": "Suède : projet de loi sur la résilience des entités critiques (CER), entrée en vigueur proposée au 1er janvier 2027",
+   "titre_en": "Sweden: bill on the resilience of critical entities (CER), proposed entry into force 1 January 2027",
+   "resume_fr": "Le gouvernement a présenté la proposition 2025/26:303 transposant la directive CER : les entités critiques de 11 secteurs, dont la santé, devront renforcer leur capacité à prévenir, résister et limiter les perturbations et notifier certains incidents ; dispositions de supervision et sanctions, avec relèvement des sanctions au titre de la loi sur la protection de la sécurité. Entrée en vigueur proposée : 1er janvier 2027.",
+   "resume_en": "The government tabled bill 2025/26:303 transposing the CER Directive: critical entities in 11 sectors, including health, must strengthen their ability to prevent, resist and limit disruptions and report certain incidents; supervision and sanctions provisions, with higher penalties under the Protective Security Act. Proposed entry into force: 1 January 2027.",
+   "date": "2026-07-14",
+   "date_approx": false,
+   "zone": "Suède",
+   "lien": "https://www.regeringen.se/pressmeddelanden/2026/07/ny-lag-starker-samhallsviktiga-tjansters-motstandskraft/",
+   "source": "Regeringen",
+   "nature": "officielle",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "CER",
+    "Prop. 2025/26:303"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux et laboratoires désignés entités critiques exigeront davantage de continuité et de résilience de leurs fournisseurs d'automates, réactifs et logiciels.",
+   "pourquoi_en": "Hospitals and laboratories designated as critical entities will demand more continuity and resilience from their suppliers of analysers, reagents and software.",
+   "categorie": 9
   },
   {
    "titre_fr": "Hongrie : clôture de la première échéance d'audit cybersécurité NIS2 – 2 132 organisations sur 2 520 dans les temps",
@@ -1085,6 +1529,29 @@
    "pourquoi_en": "Adoption of the Dutch Cbw, which will set NIS2 obligations for Dutch subsidiaries, should accelerate."
   },
   {
+   "titre_fr": "SecNumCloud : lettre d'éditeurs de santé numérique contre une obligation généralisée au secteur",
+   "titre_en": "SecNumCloud: digital health companies' letter against a sector-wide obligation",
+   "resume_fr": "Cinq entreprises françaises de santé numérique écrivent le 8 juillet 2026 à la ministre déléguée au Numérique pour demander que SecNumCloud ne soit pas rendu obligatoire pour tout le secteur de la santé, craignant une obligation de fait via les appels d'offres publics, et proposent une approche par audit et score de risque.",
+   "resume_en": "On 8 July 2026 five French digital health companies wrote to the Digital Minister asking that SecNumCloud not become mandatory across healthcare, fearing a de facto requirement through public tenders, and proposed an audit and risk-score approach.",
+   "date": "2026-07-08",
+   "date_approx": false,
+   "zone": "France",
+   "lien": "https://tech-insider.org/fr/secnumcloud-sante-numerique-2026/",
+   "source": "Tech Insider",
+   "nature": "presse",
+   "statut": "autre",
+   "rubrique": "secteur",
+   "textes": [
+    "SecNumCloud",
+    "HDS"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Signal d'une possible exigence SecNumCloud dans les marchés hospitaliers pour les offres cloud et IA.",
+   "pourquoi_en": "Signals a possible SecNumCloud requirement in hospital tenders for cloud and AI offerings.",
+   "categorie": 5
+  },
+  {
    "titre_fr": "NIS2 Allemagne : le BSI accorde un délai supplémentaire d'enregistrement jusqu'au 31 juillet 2026",
    "titre_en": "NIS2 Germany: BSI grants a registration grace period until 31 July 2026",
    "resume_fr": "La loi NIS2UmsuCG est en vigueur depuis le 6 décembre 2025 ; l'échéance initiale d'enregistrement était début mars 2026. Fin mai 2026, environ 18 500 organisations seulement s'étaient enregistrées sur ~29 500 attendues, et le BSI a fixé une ultime échéance au 31 juillet 2026. Le non-respect expose à des amendes pouvant atteindre 500 000 €.",
@@ -1157,6 +1624,53 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "La part la plus lourde de l'amende sanctionne la supervision d'un sous-traitant, un point clé pour les chaînes de distribution et de service.",
    "pourquoi_en": "The largest part of the fine concerns processor oversight, a key issue for distribution and service chains."
+  },
+  {
+   "titre_fr": "Consultation IMDRF sur l'IA dans les dispositifs médicaux, relayée au Portugal (Infarmed)",
+   "titre_en": "IMDRF consultation on AI in medical devices, relayed in Portugal (Infarmed)",
+   "resume_fr": "Consultation publique de l'IMDRF (jusqu'au 10 juillet 2026), à laquelle l'Infarmed participe au sein de la délégation de l'UE, sur un cadre technique harmonisé de gestion du cycle de vie de l'IA dans les dispositifs médicaux.",
+   "resume_en": "IMDRF public consultation (until 10 July 2026), with Infarmed participating in the EU delegation, on a harmonised technical framework for AI lifecycle management in medical devices.",
+   "date": "2026-07-06",
+   "date_approx": false,
+   "zone": "Portugal",
+   "lien": "https://afp.com.pt/consulta-publica-sobre-inteligencia-artificial-em-dispositivos-medicos-decorre-ate-10-de-julho-noticias/",
+   "source": "AFP – Associação de Farmácias de Portugal",
+   "nature": "presse",
+   "statut": "consultation",
+   "rubrique": "standards",
+   "textes": [
+    "IMDRF"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Futur référentiel international pour les logiciels DIV intégrant de l'IA.",
+   "pourquoi_en": "Future international reference for AI-enabled IVD software.",
+   "categorie": 6
+  },
+  {
+   "titre_fr": "ANSSI : FAQ nationale sur le Cyber Resilience Act – la conformité s'impose sans attendre les normes",
+   "titre_en": "ANSSI: national FAQ on the Cyber Resilience Act – compliance applies without waiting for standards",
+   "resume_fr": "L'ANSSI publie une FAQ sur l'application du CRA en France : signalement des vulnérabilités activement exploitées sous 24 h dès le 11 septembre 2026, conformité complète en décembre 2027 ; ANSSI pour les organismes notifiés, CERT-FR pour les signalements, ANFR pour la surveillance du marché. Les dispositifs médicaux sont exclus du champ.",
+   "resume_en": "ANSSI published a FAQ on CRA application in France: 24h reporting of actively exploited vulnerabilities from 11 September 2026, full compliance in December 2027; ANSSI for notified bodies, CERT-FR for reports, ANFR for market surveillance. Medical devices are excluded.",
+   "date": "2026-07-06",
+   "date_approx": false,
+   "zone": "France",
+   "lien": "https://itsocial.fr/cybersecurite/cybersecurite-actualites/cyber-resilience-act-lanssi-rappelle-que-la-conformite-simpose-sans-attendre-les-normes/",
+   "source": "IT Social",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA"
+   ],
+   "amende": {
+    "montant_eur": 15000000,
+    "texte": "15 M€ ou 2,5 % du CA mondial (CRA)"
+   },
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les DIV sont exclus du CRA, mais les composants et logiciels connectés non-DM (passerelles, middleware hors DM, outils de connectivité) peuvent y être soumis.",
+   "pourquoi_en": "IVDs are out of CRA scope, but non-device connected components and software (gateways, non-device middleware, connectivity tools) may be in scope.",
+   "categorie": 8
   },
   {
    "titre_fr": "Pologne : le Sejm adopte la loi sur les systèmes d'intelligence artificielle (mise en œuvre de l'AI Act)",
@@ -1287,6 +1801,50 @@
    "pourquoi_en": "Helps anticipate the timing and final scope of ICT supplier restrictions."
   },
   {
+   "titre_fr": "Pologne : e-enregistrement central (CeR) obligatoire pour certaines prestations dès le 1er juillet 2026",
+   "titre_en": "Poland: central e-registration (CeR) mandatory for certain services from 1 July 2026",
+   "resume_fr": "L'e-enregistrement central devient obligatoire au 1er juillet 2026 pour les examens de prévention (cytologie, mammographie) et la cardiologie, puis pour 8 autres prestations spécialisées au 1er août. Neuf nouveaux documents EDM sont par ailleurs ajoutés en 2026.",
+   "resume_en": "Central e-registration becomes mandatory on 1 July 2026 for preventive exams (cytology, mammography) and cardiology, then for 8 further specialist services on 1 August. Nine new EDM documents are also added in 2026.",
+   "date": "2026-07-01",
+   "date_approx": false,
+   "zone": "Pologne",
+   "lien": "https://blog.osoz.pl/cyfryzacja-zdrowia-2026-projekty-daty-i-obowiazki",
+   "source": "Blog OSOZ",
+   "nature": "presse",
+   "statut": "en_vigueur",
+   "rubrique": "secteur",
+   "textes": [
+    "Ustawa o systemie informacji w ochronie zdrowia"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Contexte de l'intégration des systèmes d'information hospitaliers et de laboratoire avec la plateforme nationale P1.",
+   "pourquoi_en": "Context for integration of hospital and laboratory information systems with the national P1 platform.",
+   "categorie": 3
+  },
+  {
+   "titre_fr": "Rép. tchèque : lancement du système d'information ISCC du catalogue cloud computing",
+   "titre_en": "Czech Republic: launch of the ISCC cloud computing catalogue information system",
+   "resume_fr": "Le portail ISCC devient opérationnel le 1er juillet 2026 : les organismes publics peuvent y rechercher des fournisseurs cloud et les fournisseurs y déposer leurs demandes d'inscription.",
+   "resume_en": "The ISCC portal goes live on 1 July 2026: public bodies can search cloud providers and providers can submit listing applications.",
+   "date": "2026-07-01",
+   "date_approx": false,
+   "zone": "Rép. Tchèque",
+   "lien": "https://www.dia.gov.cz/cs/nase-cinnosti/na-cem-pracujeme/egovernment-cloud/aktuality",
+   "source": "DIA",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Zákon 365/2000 Sb."
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Canal d'inscription pour proposer des services cloud au secteur public tchèque.",
+   "pourquoi_en": "Listing channel to offer cloud services to the Czech public sector.",
+   "categorie": 5
+  },
+  {
    "titre_fr": "Omnibus numérique (RGPD) : blocage au Conseil à la fin de la présidence chypriote",
    "titre_en": "Digital Omnibus (GDPR): Council deadlock at the end of the Cyprus Presidency",
    "resume_fr": "Fin juin 2026, la présidence chypriote a retiré son texte de compromis sur le volet RGPD de l'omnibus numérique faute de majorité qualifiée ; la présidence irlandaise hérite du dossier depuis le 1er juillet 2026. Les sujets en suspens sont la définition des données personnelles, les demandes d'accès abusives et la notification des violations.",
@@ -1350,6 +1908,51 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "Les clients hospitaliers norvégiens soumis à la loi répercuteront des exigences de sécurité sur leurs fournisseurs de DIV et de logiciels.",
    "pourquoi_en": "Norwegian hospital customers under the Act will pass security requirements on to their IVD and software suppliers."
+  },
+  {
+   "titre_fr": "DSPT aligné sur le CAF : échéance de soumission 2025-26 au 30 juin 2026",
+   "titre_en": "CAF-aligned DSPT: 2025-26 submission deadline on 30 June 2026",
+   "resume_fr": "Le Data Security and Protection Toolkit (DSPT) 2025-26, désormais aligné sur le Cyber Assessment Framework (CAF) du NCSC, devait être soumis avant le 30 juin 2026 par les organisations concernées, y compris les fournisseurs ayant accès aux données et systèmes du NHS.",
+   "resume_en": "The 2025-26 Data Security and Protection Toolkit (DSPT), now aligned with the NCSC Cyber Assessment Framework (CAF), had to be submitted by 30 June 2026 by in-scope organisations, including suppliers with access to NHS data and systems.",
+   "date": "2026-06-30",
+   "date_approx": false,
+   "zone": "Royaume-Uni",
+   "lien": "https://ejnlabs.com/dspt-caf-aligned-nhs-suppliers/",
+   "source": "EJN Labs",
+   "nature": "cabinet",
+   "statut": "autre",
+   "rubrique": "secteur",
+   "textes": [
+    "DSPT",
+    "CAF"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Le DSPT est exigé des fournisseurs traitant des données du NHS ; l'alignement CAF relève le niveau d'exigence.",
+   "pourquoi_en": "DSPT is required from suppliers processing NHS data; CAF alignment raises the bar.",
+   "categorie": 4
+  },
+  {
+   "titre_fr": "PFPDT : 33e rapport d'activités 2025/2026",
+   "titre_en": "FDPIC: 33rd activity report 2025/2026",
+   "resume_fr": "Le 30 juin 2026, le Préposé fédéral à la protection des données publie son 33e rapport d'activités, qui pointe les risques systémiques des grands projets numériques et des cultures de direction freinant l'application de la protection des données.",
+   "resume_en": "On 30 June 2026 the Federal Data Protection Commissioner published its 33rd activity report, highlighting systemic risks in large digital projects and management cultures hindering data protection compliance.",
+   "date": "2026-06-30",
+   "date_approx": false,
+   "zone": "Suisse",
+   "lien": "https://www.edoeb.admin.ch/fr/rapport-dactivites-du-pfpdt",
+   "source": "PFPDT",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "nLPD"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Donne les priorités de contrôle de l'autorité suisse de protection des données.",
+   "pourquoi_en": "Shows the Swiss data protection authority's enforcement priorities.",
+   "categorie": 2
   },
   {
    "titre_fr": "Grèce : la HDPA inflige 160 000 € à deux sociétés pour des manquements liés à la vidéosurveillance",
@@ -1440,6 +2043,28 @@
    "pourquoi_en": "A new operational obligation for any entity processing personal data in the UK (patients, customers, employees)."
   },
   {
+   "titre_fr": "Espagne : le bac à sable réglementaire IA s'achève avec des guides pratiques sur les systèmes à haut risque",
+   "titre_en": "Spain: AI regulatory sandbox concludes with practical guides for high-risk systems",
+   "resume_fr": "Le sandbox IA mené par le gouvernement et la Commission européenne se clôt avec des recommandations techniques pour la conformité des systèmes d'IA à haut risque à l'AI Act. L'AESIA annonce leur diffusion et de nouveaux environnements d'essai.",
+   "resume_en": "The AI sandbox run by the government and the European Commission concluded with technical recommendations for high-risk AI system compliance with the AI Act. AESIA announced dissemination and new testing environments.",
+   "date": "2026-06-17",
+   "date_approx": false,
+   "zone": "Espagne",
+   "lien": "https://www.ituser.es/normativas/2026/06/el-sandbox-de-ia-culmina-con-guias-practicas-para-facilitar-el-cumplimiento-del-reglamento-europeo",
+   "source": "IT User",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "standards",
+   "textes": [
+    "AI Act"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les guides AESIA sont une référence pratique pour l'IA d'aide à l'interprétation, classée à haut risque via la réglementation DIV.",
+   "pourquoi_en": "AESIA guides are a practical reference for interpretation-support AI, high-risk via IVD regulation.",
+   "categorie": 7
+  },
+  {
    "titre_fr": "Cyber Security and Resilience Bill : adoption en troisième lecture aux Communes après report de session",
    "titre_en": "Cyber Security and Resilience Bill: Commons third reading after carry-over",
    "resume_fr": "Reporté sur la session 2026-27 (réintroduit le 14 mai 2026), le projet de loi a franchi l'étape du rapport et la troisième lecture aux Communes le 16 juin 2026. Il a été transmis à la Chambre des lords, où la première lecture a eu lieu le 17 juin 2026.",
@@ -1459,6 +2084,75 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Le texte approche de l'adoption : il faut anticiper les nouvelles obligations de signalement d'incident et de sécurité de la chaîne d'approvisionnement au Royaume-Uni.",
    "pourquoi_en": "The bill is nearing adoption: new UK incident-reporting and supply-chain security obligations should be anticipated."
+  },
+  {
+   "titre_fr": "Suède : adoption du règlement MCFFS 2026:11 sur les mesures de sécurité et la formation des dirigeants (NIS2), applicable au 1er octobre 2026",
+   "titre_en": "Sweden: MCFFS 2026:11 on security measures and management training (NIS2) adopted, applicable from 1 October 2026",
+   "resume_fr": "La MCF a adopté le 15 juin 2026 (publié le 18 juin) le règlement MCFFS 2026:11 qui précise les mesures de sécurité exigées des entités essentielles et importantes au titre de la loi cybersécurité : démarche systématique fondée sur les risques, rôles définis, revue par la direction au moins annuelle, référence à SS-ISO/IEC 27001:2022 et 27002:2022. Les fournisseurs doivent satisfaire un niveau équivalent ; les contrats (analyse de logiciels malveillants, notification d'incidents, divulgation de vulnérabilités, sous-traitants, effacement des données) doivent être complétés, y compris les contrats conclus avant le 1er octobre 2026.",
+   "resume_en": "MCF adopted MCFFS 2026:11 on 15 June 2026 (published 18 June), specifying the security measures required of essential and important entities under the Cybersecurity Act: systematic risk-based approach, defined roles, at least annual management review, reference to SS-ISO/IEC 27001:2022 and 27002:2022. Suppliers must meet an equivalent level; contracts (malware scanning, incident reporting, vulnerability disclosure, subcontractors, data deletion) must be supplemented, including contracts concluded before 1 October 2026.",
+   "date": "2026-06-15",
+   "date_approx": false,
+   "zone": "Suède",
+   "lien": "https://www.fra.se/download/18.1c31366219e925a606973/1782394568329/MCFFS-2026-11.pdf",
+   "source": "MCF / NCSC (FRA)",
+   "nature": "officielle",
+   "statut": "adopte",
+   "rubrique": "reglementation",
+   "textes": [
+    "MCFFS 2026:11",
+    "Cybersäkerhetslag (2025:1506)",
+    "NIS2"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Les hôpitaux et régions suédois (entités NIS2) devront imposer contractuellement ces exigences cyber à leurs fournisseurs de systèmes et automates connectés, et le fabricant lui-même peut être entité NIS2 (fabrication de DM/DIV).",
+   "pourquoi_en": "Swedish hospitals and regions (NIS2 entities) will have to impose these cyber requirements contractually on their suppliers of connected systems and analysers, and the manufacturer itself may be a NIS2 entity (MD/IVD manufacturing).",
+   "categorie": 1
+  },
+  {
+   "titre_fr": "Suède : l'IMY désignée autorité de surveillance du marché pour l'AI Act",
+   "titre_en": "Sweden: IMY appointed market surveillance authority for the AI Act",
+   "resume_fr": "Le gouvernement suédois a désigné l'Integritetsskyddsmyndigheten (IMY) comme autorité de surveillance du marché au titre du règlement européen sur l'IA, en coordination avec la PTS et la Finansinspektionen ; l'IMY commence ses travaux préparatoires.",
+   "resume_en": "The Swedish government appointed the Integritetsskyddsmyndigheten (IMY) as market surveillance authority under the EU AI Act, in coordination with PTS and Finansinspektionen; IMY is starting preparatory work.",
+   "date": "2026-06-15",
+   "date_approx": false,
+   "zone": "Suède",
+   "lien": "https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/",
+   "source": "IMY",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "AI Act"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Clarifie l'architecture de supervision de l'IA en Suède ; pour l'IA d'aide à l'interprétation intégrée à un DIV, l'articulation avec le Läkemedelsverket reste à suivre.",
+   "pourquoi_en": "Clarifies the AI supervisory architecture in Sweden; for AI-assisted interpretation embedded in an IVD, the interplay with Läkemedelsverket remains to be followed.",
+   "categorie": 7
+  },
+  {
+   "titre_fr": "Pays-Bas : l'AFM juge la loi d'exécution de l'AI Act réalisable mais demande des ajustements",
+   "titre_en": "Netherlands: AFM finds AI Act implementation bill workable but requests adjustments",
+   "resume_fr": "Le 12 juin 2026, l'AFM publie son évaluation d'exécution du projet de loi d'exécution de l'AI Act : texte réalisable, mais nécessité de capacités suffisantes, de compétences claires et d'une répartition précise des tâches entre superviseurs.",
+   "resume_en": "On 12 June 2026 the AFM published its implementation assessment of the AI Act implementation bill: workable, but requiring sufficient capacity, clear powers and a precise division of tasks between supervisors.",
+   "date": "2026-06-12",
+   "date_approx": false,
+   "zone": "Pays-Bas",
+   "lien": "https://www.afm.nl/nl-nl/sector/actueel/2026/jun/pb-uitvoeringstoets",
+   "source": "AFM",
+   "nature": "officielle",
+   "statut": "consultation",
+   "rubrique": "reglementation",
+   "textes": [
+    "AI Act",
+    "Uitvoeringswet AI-verordening"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Étape de la loi néerlandaise qui désignera les autorités compétentes pour l'IA médicale.",
+   "pourquoi_en": "Step in the Dutch law that will designate competent authorities for medical AI.",
+   "categorie": 7
   },
   {
    "titre_fr": "Allemagne : le Bundestag adopte la loi de mise en œuvre de l'AI Act (KI-MIG), Bundesnetzagentur désignée autorité de surveillance",
@@ -1505,6 +2199,32 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "Utile pour planifier une évaluation par tiers des produits importants ou critiques relevant du CRA.",
    "pourquoi_en": "Useful for planning third-party assessment of important or critical products under the CRA."
+  },
+  {
+   "titre_fr": "Hongrie : la loi d'application du CRA (loi CXXXV de 2025) désigne le SZTFH et fixe des amendes jusqu'à 15 M€",
+   "titre_en": "Hungary: CRA implementing Act CXXXV of 2025 designates SZTFH and sets fines up to EUR 15 million",
+   "resume_fr": "La loi CXXXV de 2025 met en œuvre le règlement (UE) 2024/2847 : le SZTFH est autorité de notification et de surveillance du marché. Les règles relatives à l'autorité de notification s'appliquent au 11 juin 2026 ; surveillance du marché et amendes au 11 décembre 2027. Amendes : jusqu'à 15 M€ ou 2,5 % du CA mondial (exigences essentielles), 10 M€ ou 2 %, 5 M€ ou 1 % ; plancher 500 000 HUF ; récidive au moins 1,5 fois l'amende précédente.",
+   "resume_en": "Act CXXXV of 2025 implements Regulation (EU) 2024/2847: SZTFH is notifying and market surveillance authority. Notifying-authority rules apply from 11 June 2026; market surveillance and fines from 11 December 2027. Fines: up to EUR 15m or 2.5% of global turnover (essential requirements), EUR 10m or 2%, EUR 5m or 1%; minimum HUF 500,000; repeat offences at least 1.5 times the previous fine.",
+   "date": "2026-06-11",
+   "date_approx": false,
+   "zone": "Hongrie",
+   "lien": "https://cms.law/en/hun/legal-updates/eu-cyber-resilience-act-s-implementing-provisions-published-in-the-hungarian-official-journal",
+   "source": "CMS",
+   "nature": "cabinet",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA",
+    "Act CXXXV of 2025"
+   ],
+   "amende": {
+    "montant_eur": 15000000,
+    "texte": "Jusqu'à 15 M€ ou 2,5 % du CA mondial annuel"
+   },
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Concerne les produits connectés hors champ DM/DIV (accessoires, logiciels non DM) mis sur le marché hongrois.",
+   "pourquoi_en": "Concerns connected products outside MD/IVD scope (accessories, non-MD software) placed on the Hungarian market.",
+   "categorie": 8
   },
   {
    "titre_fr": "Suède : seuls 21 fabricants de dispositifs médicaux enregistrés au titre de la nouvelle loi cyber",
@@ -1570,6 +2290,77 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Les logiciels d'IA d'aide à l'interprétation (IA à haut risque via IVDR) exposent à une responsabilité pénale en Italie en cas de mesures de sécurité insuffisantes.",
    "pourquoi_en": "AI-based interpretation software (high-risk AI via IVDR) creates criminal exposure in Italy if security measures are inadequate."
+  },
+  {
+   "titre_fr": "Norvège : consultation sur une nouvelle loi d'application de l'EHDS et la modification de la loi sur les dossiers patients",
+   "titre_en": "Norway: consultation on a new law implementing the EHDS and amending the Patient Records Act",
+   "resume_fr": "Le ministère de la Santé a mis en consultation (jusqu'au 28 septembre 2026) un projet de loi mettant en œuvre le règlement (UE) 2025/327 sur l'espace européen des données de santé et modifiant la pasientjournalloven, la helsepersonelloven et la helseregisterloven : accès des personnes à leurs données, usage primaire et secondaire.",
+   "resume_en": "The Ministry of Health opened a consultation (until 28 September 2026) on a draft law implementing Regulation (EU) 2025/327 on the European Health Data Space and amending the Patient Records Act, the Health Personnel Act and the Health Registries Act: individual access to data, primary and secondary use.",
+   "date": "2026-06-08",
+   "date_approx": false,
+   "zone": "Norvège",
+   "lien": "https://www.regjeringen.no/no/dokumenter/horingsbrev-forslag-til-ny-lov-om-det-europeiske-helsedataomradet/id3164607/",
+   "source": "Helse- og omsorgsdepartementet",
+   "nature": "officielle",
+   "statut": "consultation",
+   "rubrique": "reglementation",
+   "textes": [
+    "EHDS",
+    "Pasientjournalloven",
+    "Helseregisterloven"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Cadre national des futures exigences sur les systèmes de dossiers électroniques et l'échange des résultats de laboratoire en Norvège ; consultation encore ouverte.",
+   "pourquoi_en": "National framework for future requirements on EHR systems and exchange of laboratory results in Norway; consultation still open.",
+   "categorie": 3
+  },
+  {
+   "titre_fr": "Rép. tchèque : promulgation de la loi 166/2026 Sb. modifiant la loi sur les DM et DIV",
+   "titre_en": "Czech Republic: Act 166/2026 Coll. amending the medical devices and IVD act promulgated",
+   "resume_fr": "Le Président signe le 5 juin 2026 la novelle de la loi 375/2022 Sb. (publiée sous le n° 166/2026 Sb.) adaptant le droit tchèque au règlement (UE) 2024/1860 : signalement des interruptions ou arrêts d'approvisionnement, pouvoirs du ministère de la Santé en cas de pénurie, enquêtes du SÚKL, infractions et sanctions pour manquement aux obligations de notification.",
+   "resume_en": "The President signed on 5 June 2026 the amendment to Act 375/2022 Coll. (published as 166/2026 Coll.) aligning Czech law with Regulation (EU) 2024/1860: reporting of supply interruptions or discontinuations, Ministry of Health powers in shortages, SÚKL investigations, offences and penalties for failing notification duties.",
+   "date": "2026-06-05",
+   "date_approx": false,
+   "zone": "Rép. Tchèque",
+   "lien": "https://mzd.gov.cz/wp-content/uploads/2026/07/Legislativni-newsletter-07-2026.pdf",
+   "source": "Ministerstvo zdravotnictví",
+   "nature": "officielle",
+   "statut": "adopte",
+   "rubrique": "reglementation",
+   "textes": [
+    "Zákon 375/2022 Sb.",
+    "Zákon 166/2026 Sb.",
+    "IVDR",
+    "Règlement (UE) 2024/1860"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Obligation directe pour un fabricant de DIV présent en Rép. tchèque : notification des ruptures d'approvisionnement, sous peine de sanctions.",
+   "pourquoi_en": "Direct obligation for an IVD manufacturer in the Czech Republic: notification of supply interruptions, subject to penalties.",
+   "categorie": 6
+  },
+  {
+   "titre_fr": "Chambre des lords : débat sur l'Artificial Intelligence (Regulation) Bill",
+   "titre_en": "House of Lords: debate on the Artificial Intelligence (Regulation) Bill",
+   "resume_fr": "La Chambre des lords débat le 4 juin 2026 d'une proposition de loi sur la régulation de l'IA ([HL]). Le Royaume-Uni reste sans loi horizontale sur l'IA et suit une approche sectorielle.",
+   "resume_en": "The House of Lords debated a private member's AI Regulation Bill [HL] on 4 June 2026. The UK still has no horizontal AI law and follows a sector-led approach.",
+   "date": "2026-06-04",
+   "date_approx": false,
+   "zone": "Royaume-Uni",
+   "lien": "https://hansard.parliament.uk/Lords/2026-06-04/debates/0A1BCBAE-E906-4071-AA92-BCE005D57121/AIRegulationBill",
+   "source": "Hansard – UK Parliament",
+   "nature": "officielle",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "Artificial Intelligence (Regulation) Bill"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Signal politique : une loi IA britannique pourrait concerner les logiciels d'aide à l'interprétation.",
+   "pourquoi_en": "Political signal: a UK AI law could affect interpretation-support software.",
+   "categorie": 7
   },
   {
    "titre_fr": "Finlande : entrée en vigueur de la loi nationale d'application du Cyber Resilience Act",
@@ -1660,6 +2451,122 @@
    "pourquoi_en": "Threat context for assessing risk in the Spanish supply chain (distributors, SME subcontractors)."
   },
   {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Grèce : la loi 5305/2026 crée une liste noire nationale des sites malveillants",
+   "titre_en": "Greece: Law 5305/2026 creates a national blocklist of malicious websites",
+   "resume_fr": "La loi 5305/2026 (FEK A' 85 du 29 mai 2026), article 33, insère un article 4A dans la loi 5086/2024 (Autorité nationale de cybersécurité) instituant une liste noire nationale de sites web malveillants.",
+   "resume_en": "Law 5305/2026 (Gazette A' 85 of 29 May 2026), article 33, inserts article 4A into Law 5086/2024 (National Cybersecurity Authority) establishing a national blocklist of malicious websites.",
+   "date": "2026-05-29",
+   "zone": "Grèce",
+   "lien": "https://irglobal.com/article/nis2-in-greece-in-2026-law-5160-2024-the-national-cybersecurity-requirements-framework-and-management-accountability/",
+   "source": "IR Global (OIKONOMAKIS LAW)",
+   "nature": "cabinet",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Loi 5305/2026",
+    "Loi 5086/2024"
+   ],
+   "pertinence": "faible",
+   "pourquoi_fr": "Évolution du cadre cyber grec ; impact indirect (filtrage réseau) pour les filiales et clients grecs.",
+   "pourquoi_en": "Evolution of the Greek cyber framework; indirect impact (network filtering) for Greek subsidiaries and customers.",
+   "categorie": 1
+  },
+  {
+   "titre_fr": "Espagne : l'AEMPS rappelle l'obligation d'utiliser les quatre premiers modules EUDAMED à partir du 28 mai 2026",
+   "titre_en": "Spain: AEMPS reminds that the first four EUDAMED modules are mandatory from 28 May 2026",
+   "resume_fr": "L'AEMPS informe que les quatre premiers modules d'EUDAMED (acteurs, UDI/enregistrement des dispositifs, organismes notifiés et certificats, surveillance du marché) sont obligatoires à compter du 28 mai 2026, y compris pour les DIV.",
+   "resume_en": "AEMPS informs that the first four EUDAMED modules are mandatory from 28 May 2026, including for IVDs.",
+   "date": "2026-05-28",
+   "date_approx": false,
+   "zone": "Espagne",
+   "lien": "https://www.aemps.gob.es/informa/la-aemps-informa-de-que-los-primeros-cuatro-modulos-de-eudamed-seran-obligatorios-desde-el-28-de-mayo-de-2026/",
+   "source": "AEMPS",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Règlement (UE) 2017/746 (IVDR)",
+    "EUDAMED"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Obligation d'enregistrement directe pour un fabricant de DIV.",
+   "pourquoi_en": "Direct registration obligation for an IVD manufacturer.",
+   "categorie": 6
+  },
+  {
+   "titre_fr": "Portugal : résolution 102/2026 sur le cloud souverain de l'administration publique",
+   "titre_en": "Portugal: Resolution 102/2026 on sovereign cloud for public administration",
+   "resume_fr": "La résolution du Conseil des ministres 102/2026 impose aux entités publiques de classer leurs processus en quatre niveaux (neutre, courant, critique, stratégique) d'ici le 30 juin 2027 ; les données stratégiques devront être hébergées dans une infrastructure sous contrôle renforcé de l'État.",
+   "resume_en": "Council of Ministers Resolution 102/2026 requires public entities to classify processes into four tiers (neutral, current, critical, strategic) by 30 June 2027; strategic data must be hosted in infrastructure under reinforced State control.",
+   "date": "2026-05-28",
+   "date_approx": false,
+   "zone": "Portugal",
+   "lien": "https://eco.sapo.pt/2026/05/27/entidades-publicas-ficam-com-50-da-poupanca-apos-migracao-para-cloud-soberana/",
+   "source": "ECO",
+   "nature": "presse",
+   "statut": "adopte",
+   "rubrique": "reglementation",
+   "textes": [
+    "Resolução do Conselho de Ministros 102/2026"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Peut conditionner l'hébergement cloud des solutions vendues aux entités publiques, dont celles du SNS.",
+   "pourquoi_en": "May constrain cloud hosting of solutions sold to public entities, including SNS bodies.",
+   "categorie": 5
+  },
+  {
+   "titre_fr": "Portugal : l'Infarmed publie une circulaire sur l'entrée en fonctionnement d'EUDAMED au 28 mai 2026",
+   "titre_en": "Portugal: Infarmed circular on EUDAMED going live on 28 May 2026",
+   "resume_fr": "Circulaire informative de l'Infarmed sur l'obligation d'utiliser les premiers modules EUDAMED à partir du 28 mai 2026 et l'articulation avec le système national SIDM.",
+   "resume_en": "Infarmed information circular on mandatory use of the first EUDAMED modules from 28 May 2026 and alignment with the national SIDM system.",
+   "date": "2026-05-28",
+   "date_approx": false,
+   "zone": "Portugal",
+   "lien": "https://www.infarmed.pt/web/infarmed/infarmed/-/journal_content/56/15786/13056637",
+   "source": "Infarmed",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Règlement (UE) 2017/746 (IVDR)",
+    "EUDAMED",
+    "SIDM"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Obligation d'enregistrement pour les DIV mis sur le marché portugais.",
+   "pourquoi_en": "Registration duty for IVDs placed on the Portuguese market.",
+   "categorie": 6
+  },
+  {
+   "titre_fr": "EUDAMED : utilisation obligatoire de quatre modules pour les DM et DIV à partir du 28 mai 2026",
+   "titre_en": "EUDAMED: mandatory use of four modules for medical devices and IVDs from 28 May 2026",
+   "resume_fr": "Suite à l'avis de la Commission publié au JOUE le 27 novembre 2025, les modules Acteurs, UDI/Dispositifs, Organismes notifiés/Certificats et Surveillance du marché deviennent obligatoires le 28 mai 2026. Les dispositifs déjà sur le marché doivent être enregistrés avant le 28 novembre 2026, les certificats existants avant le 28 mai 2027 ; les nouveaux dispositifs avant leur mise sur le marché.",
+   "resume_en": "Following the Commission notice published in the OJEU on 27 November 2025, the Actor, UDI/Device, Notified Bodies/Certificates and Market Surveillance modules become mandatory on 28 May 2026. Devices already on the market must be registered by 28 November 2026, existing certificates by 28 May 2027; new devices before placing on the market.",
+   "date": "2026-05-28",
+   "date_approx": false,
+   "zone": "Europe",
+   "lien": "https://www.osborneclarke.com/insights/eu-triggers-mandatory-eudamed-use-diagnostics-and-medtech-may-2026",
+   "source": "Osborne Clarke",
+   "nature": "cabinet",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "IVDR",
+    "MDR",
+    "Règlement (UE) 2024/1860"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Obligation directe pour un fabricant de DIV : enregistrement des acteurs, dispositifs et certificats dans EUDAMED selon ces échéances.",
+   "pourquoi_en": "Direct obligation for an IVD manufacturer: registration of actors, devices and certificates in EUDAMED by these deadlines.",
+   "categorie": 6
+  },
+  {
    "titre_fr": "Hongrie : la NAIH inflige 50 M HUF à Mediaworks pour publication de données de sympathisants politiques",
    "titre_en": "Hungary: NAIH fines Mediaworks HUF 50m for publishing political supporters' data",
    "resume_fr": "L'autorité hongroise de protection des données (NAIH) a infligé une amende de 50 millions de forints à l'éditeur Mediaworks pour la publication de données personnelles de sympathisants du parti Tisza. Il s'agit de l'une des principales amendes RGPD hongroises de 2026.",
@@ -1748,6 +2655,28 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "Renforce la vigilance sur la traçabilité des accès aux données de santé dans les systèmes connectés aux hôpitaux portugais.",
    "pourquoi_en": "Increases scrutiny of access logging for health data in systems connected to Portuguese hospitals."
+  },
+  {
+   "titre_fr": "Belgique : l'AFMPS désignée autorité de surveillance du marché des systèmes d'IA en santé, plan d'action fédéral annoncé",
+   "titre_en": "Belgium: FAMHP to supervise the AI systems market in healthcare, federal action plan announced",
+   "resume_fr": "Le ministre de la Santé Frank Vandenbroucke annonce un plan d'action fédéral sur l'IA en santé pour l'après-été ; l'AFMPS devient autorité de surveillance du marché des systèmes d'IA (santé), le SPF Santé publique contrôlant l'usage de l'IA par les prestataires de soins.",
+   "resume_en": "Health Minister Frank Vandenbroucke announced a federal AI-in-healthcare action plan for after the summer; FAMHP becomes the market surveillance authority for (health) AI systems, with FPS Public Health overseeing AI use by care providers.",
+   "date": "2026-05-26",
+   "date_approx": false,
+   "zone": "Belgique",
+   "lien": "https://www.healthcare-executive.be/fr/actualites/e-health/ia-en-sante-vandenbroucke-prepare-un-plan-d-rsquo-action-federal-apres-l-rsquo-ete.html",
+   "source": "Healthcare Executive",
+   "nature": "presse",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "AI Act"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Les logiciels d'aide à l'interprétation fondés sur l'IA vendus en Belgique relèveraient de l'AFMPS au titre de l'AI Act.",
+   "pourquoi_en": "AI-based interpretation-support software sold in Belgium would fall under FAMHP supervision under the AI Act.",
+   "categorie": 7
   },
   {
    "titre_fr": "Italie : le Garante sanctionne The European House Ambrosetti (85 000 €) après une violation de données",
@@ -1950,6 +2879,28 @@
    "pourquoi_en": "Shows the ICO's concrete security expectations (monitoring, obsolescence, patching) that translate directly to industrial IT and installed instrument fleets."
   },
   {
+   "titre_fr": "Suède : quatre autorités chargées de préparer la mise en œuvre de l'EHDS",
+   "titre_en": "Sweden: four authorities tasked with preparing EHDS implementation",
+   "resume_fr": "Le gouvernement a confié à l'E-hälsomyndigheten, à l'IVO, au Läkemedelsverket et à la Socialstyrelsen une mission conjointe de préparation de l'espace européen des données de santé : répartition des responsabilités, désignation d'une autorité nationale de santé numérique, guichet unique pour les prestataires, usage secondaire des données ; rapport final attendu le 1er novembre 2026.",
+   "resume_en": "The government gave E-hälsomyndigheten, IVO, Läkemedelsverket and Socialstyrelsen a joint mandate to prepare the European Health Data Space: allocation of responsibilities, designation of a national digital health authority, single entry point for providers, secondary use of data; final report due 1 November 2026.",
+   "date": "2026-05-11",
+   "date_approx": false,
+   "zone": "Suède",
+   "lien": "https://www.ehalsomyndigheten.se/om-ehalsomyndigheten/aktuellt/nyheter/2026/sverige-forbereder-genomforandet-av-det-europeiska-halsodataomradet/",
+   "source": "E-hälsomyndigheten",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "secteur",
+   "textes": [
+    "EHDS"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "L'EHDS impose des exigences aux systèmes de dossiers de santé électroniques et à l'échange de résultats de laboratoire ; la répartition des rôles (dont surveillance du marché) conditionnera les exigences applicables aux logiciels de laboratoire.",
+   "pourquoi_en": "EHDS imposes requirements on EHR systems and on the exchange of laboratory results; the allocation of roles (including market surveillance) will shape requirements for laboratory software.",
+   "categorie": 3
+  },
+  {
    "titre_fr": "MHRA : projet de Medical Devices (Amendment) Regulations 2026 notifié à l'OMC",
    "titre_en": "MHRA: draft Medical Devices (Amendment) Regulations 2026 notified to the WTO",
    "resume_fr": "La MHRA a publié le 8 mai 2026 (notification OMC) le projet de règlement réformant le cadre britannique des dispositifs médicaux et DIV, avec une enquête d'impact ouverte jusqu'au 19 juin 2026. Le texte prévoit des voies de reconnaissance internationale (États-Unis, Canada, Australie, sans l'UE), une nouvelle classification des DIV alignée sur l'IMDRF, des exigences explicites de cybersécurité pour les logiciels et des plans de contrôle des changements prédéterminés (PCCP) ; adoption attendue fin 2026, avec des périodes transitoires (5 ans annoncés pour les DIV).",
@@ -1996,6 +2947,32 @@
    "pourquoi_en": "Sets new deadlines for AI interpretation aids embedded in IVDs and provides for alignment with the IVDR."
   },
   {
+   "titre_fr": "Portugal : échéance de désignation du responsable de cybersécurité (décret-loi 125/2025)",
+   "titre_en": "Portugal: deadline to appoint the cybersecurity officer (Decree-Law 125/2025)",
+   "resume_fr": "Le régime juridique de la cybersécurité (transposition NIS2) impose aux entités concernées de désigner un responsable de cybersécurité au plus tard le 4 mai 2026, et un point de contact permanent. Sanctions modulées jusqu'au 3 avril 2027.",
+   "resume_en": "The cybersecurity legal regime (NIS2 transposition) required in-scope entities to appoint a cybersecurity officer by 4 May 2026 and a permanent point of contact. Sanctions are modulated until 3 April 2027.",
+   "date": "2026-05-04",
+   "date_approx": false,
+   "zone": "Portugal",
+   "lien": "https://www.cnmf.pt/xms/files/03_Comunicacao/2026/Legal_Update_-_Regime_de_Ciberseguranca.pdf",
+   "source": "CNMF Advogados",
+   "nature": "cabinet",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "Decreto-Lei 125/2025",
+    "NIS2"
+   ],
+   "amende": {
+    "montant_eur": 10000000,
+    "texte": "10 M€ ou 2 % du CA mondial (entités essentielles)"
+   },
+   "pertinence": "elevee",
+   "pourquoi_fr": "Obligation applicable à une filiale portugaise relevant de NIS2 (fabrication de DM/DIV, santé) ; les clients hospitaliers évalueront aussi leur chaîne d'approvisionnement.",
+   "pourquoi_en": "Applies to a Portuguese subsidiary in NIS2 scope (MD/IVD manufacturing, health); hospital customers will also assess their supply chain.",
+   "categorie": 1
+  },
+  {
    "titre_fr": "Le Conseil fédéral lance la révision de la loi sur la sécurité de l'information (LSI)",
    "titre_en": "Federal Council launches revision of the Information Security Act (ISA)",
    "resume_fr": "En mai 2026, le Conseil fédéral a lancé une révision de la loi fédérale sur la sécurité de l'information afin de renforcer la sécurité de l'information au sein de la Confédération. La LSI est aussi le texte qui porte l'obligation de signaler les cyberattaques contre les infrastructures critiques.",
@@ -2036,6 +3013,75 @@
    "pertinence": "faible",
    "pourquoi_fr": "Ces mesures touchent indirectement la connectivité à distance des automates installés en Suisse, qui repose sur les opérateurs télécoms.",
    "pourquoi_en": "The measures indirectly affect remote connectivity of instruments installed in Switzerland, which relies on telecom operators."
+  },
+  {
+   "titre_fr": "Finlande : entrée en vigueur de la réforme de la loi sur l'usage secondaire des données de santé (toisiolaki)",
+   "titre_en": "Finland: amended Act on the secondary use of health data (toisiolaki) enters into force",
+   "resume_fr": "La réforme de la toisiolaki entre en vigueur le 1er mai 2026 : modèle d'autorisation décentralisé (Findata reste guichet pour les données multi-registres), approche de l'anonymat fondée sur les risques, facturation décentralisée, possibilité de traitement dans des environnements étrangers sûrs sous conditions de sécurité ; depuis le 1er janvier 2026, les essais cliniques et la recherche sur les dispositifs médicaux sortent du champ.",
+   "resume_en": "The reformed toisiolaki enters into force on 1 May 2026: decentralised permit model (Findata remains the entry point for multi-registry data), risk-based anonymity approach, decentralised billing, possible processing in safe foreign environments subject to security conditions; since 1 January 2026 clinical trials and medical device research are excluded from scope.",
+   "date": "2026-05-01",
+   "date_approx": false,
+   "zone": "Finlande",
+   "lien": "https://findata.fi/uutiset/toisiolaki-muuttuu-1-5-katso-kooste-tulevista-uudistuksista/",
+   "source": "Findata",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Toisiolaki",
+    "EHDS"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Encadre l'accès aux données de santé finlandaises pour la R&D et le développement d'IA ; l'exclusion des études sur DM modifie le régime applicable aux évaluations de performance.",
+   "pourquoi_en": "Governs access to Finnish health data for R&D and AI development; the exclusion of MD studies changes the regime for performance evaluations.",
+   "categorie": 3
+  },
+  {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Allemagne : le gouvernement adopte le projet de loi d'exécution du Cyber Resilience Act, le BSI désigné autorité de surveillance du marché",
+   "titre_en": "Germany: cabinet adopts the draft Cyber Resilience Act implementation law, BSI designated market surveillance authority",
+   "resume_fr": "Le Conseil des ministres fédéral a adopté le projet de CRA-Durchführungsgesetz : le BSI devient autorité de surveillance du marché et autorité notifiante des organismes d'évaluation de la conformité ; pas de nouvelles obligations pour les fabricants au-delà du règlement ; dispositifs d'aide aux PME et « laboratoire réel ».",
+   "resume_en": "The federal cabinet adopted the draft CRA-Durchführungsgesetz: the BSI becomes market surveillance authority and notifying authority for conformity assessment bodies; no new manufacturer obligations beyond the Regulation; SME support and a \"real lab\".",
+   "date": "2026-04-29",
+   "zone": "Allemagne",
+   "lien": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-cyberresilienz-2426502",
+   "source": "Bundesregierung",
+   "nature": "officielle",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA",
+    "Règlement (UE) 2024/2847",
+    "CRA-Durchführungsgesetz"
+   ],
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Désigne l'autorité allemande qui contrôlera les produits à éléments numériques ; les DM/DIV relevant du MDR/IVDR sont en principe exclus du CRA, mais les logiciels et composants connectés hors DM y restent soumis.",
+   "pourquoi_en": "Designates the German authority that will supervise products with digital elements; MDR/IVDR devices are in principle excluded from the CRA, but connected software and components that are not devices remain in scope.",
+   "categorie": 8
+  },
+  {
+   "titre_fr": "CER : la Commission saisit la CJUE contre sept États membres, dont la Pologne, pour non-transposition",
+   "titre_en": "CER: Commission refers seven Member States, including Poland, to the CJEU for non-transposition",
+   "resume_fr": "La Commission saisit la Cour de justice contre la Bulgarie, la France, le Luxembourg, les Pays-Bas, la Pologne, l'Espagne et la Suède pour défaut de transposition de la directive (UE) 2022/2557 sur la résilience des entités critiques (échéance du 17 octobre 2024), en demandant des sanctions financières.",
+   "resume_en": "The Commission refers Bulgaria, France, Luxembourg, the Netherlands, Poland, Spain and Sweden to the Court of Justice for failing to transpose Directive (EU) 2022/2557 on critical entities resilience (deadline 17 October 2024), seeking financial penalties.",
+   "date": "2026-04-29",
+   "date_approx": false,
+   "zone": "Europe",
+   "lien": "https://ec.europa.eu/commission/presscorner/detail/da/ip_26_910",
+   "source": "Commission européenne",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "CER"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "La santé est un secteur CER : la transposition polonaise (réforme de la loi sur la gestion de crise) désignera des entités critiques parmi les clients hospitaliers.",
+   "pourquoi_en": "Health is a CER sector: Poland's transposition (Crisis Management Act reform) will designate critical entities among hospital customers.",
+   "categorie": 9
   },
   {
    "titre_fr": "Cyber Essentials : nouvelles exigences (jeu de questions « Danzell ») applicables au 26 avril 2026",
@@ -2099,6 +3145,29 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Identifie l'IGJ comme autorité compétente pour l'IA intégrée aux DIV/DM aux Pays-Bas, à côté de l'AP.",
    "pourquoi_en": "Identifies the IGJ as the competent authority for AI embedded in IVDs/medical devices in the Netherlands, alongside the AP."
+  },
+  {
+   "titre_fr": "Pays-Bas : note du gouvernement sur le projet de loi d'exécution du Cyber Resilience Act",
+   "titre_en": "Netherlands: government memorandum on the Cyber Resilience Act implementation bill",
+   "resume_fr": "Le 22 avril 2026, le ministère des Affaires économiques transmet la note en réponse au rapport parlementaire sur la loi d'exécution du CRA, qui organise la surveillance du marché et les sanctions nationales.",
+   "resume_en": "On 22 April 2026 the Economic Affairs Ministry sent its memorandum responding to the parliamentary report on the CRA implementation bill, which organises national market surveillance and penalties.",
+   "date": "2026-04-22",
+   "date_approx": false,
+   "zone": "Pays-Bas",
+   "lien": "https://www.rijksoverheid.nl/documenten/2026/04/22/bijlagenotanaaraanleidingvanhetverslaguitvoeringswetcyberresilienceact",
+   "source": "Rijksoverheid",
+   "nature": "officielle",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA",
+    "Uitvoeringswet Verordening cyberweerbaarheid"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Fixe le cadre national de contrôle des produits connectés non-DM vendus aux Pays-Bas.",
+   "pourquoi_en": "Sets the national enforcement framework for non-device connected products sold in the Netherlands.",
+   "categorie": 8
   },
   {
    "titre_fr": "Le PFPDT alerte sur les risques des objets connectés pour la protection des données",
@@ -2276,6 +3345,54 @@
    "pourquoi_en": "Limited impact, except for any online or intermediary services operated in Portugal."
   },
   {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Autriche : règlement RKEV fixant les seuils d'identification des entités critiques (BGBl. II Nr. 91/2026)",
+   "titre_en": "Austria: RKEV regulation setting thresholds for identifying critical entities (BGBl. II Nr. 91/2026)",
+   "resume_fr": "Le règlement RKEV, publié le 14 avril 2026 et en vigueur le 15 avril 2026, définit les seuils sectoriels d'identification des entités critiques. Une entité identifiée comme critique devient automatiquement « entité essentielle » au titre du NISG 2026, quelle que soit sa taille.",
+   "resume_en": "The RKEV regulation, published on 14 April 2026 and in force on 15 April 2026, sets sector thresholds for identifying critical entities. An entity identified as critical automatically becomes an \"essential entity\" under NISG 2026 regardless of size.",
+   "date": "2026-04-15",
+   "zone": "Autriche",
+   "lien": "https://was-tun-wenn.at/blog/2026/09/11/rkeg-wie-und-wann-bekomme-ich-einen-bescheid-und-was-das-fuer-nisg-2026-bedeutet/",
+   "source": "WAS-TUN-WENN",
+   "nature": "presse",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "RKEV",
+    "RKEG",
+    "NISG 2026"
+   ],
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Élargit le nombre d'établissements de santé soumis au NISG 2026 et donc aux exigences de sécurité de la chaîne d'approvisionnement envers leurs fournisseurs.",
+   "pourquoi_en": "Increases the number of healthcare establishments subject to NISG 2026 and therefore to supply chain security requirements towards their suppliers.",
+   "categorie": 9
+  },
+  {
+   "titre_fr": "Décret n° 2026-272 (loi SREN, art. 31) : données sensibles de l'État dans le cloud, qualification SecNumCloud",
+   "titre_en": "Decree 2026-272 (SREN Act, art. 31): sensitive State data in the cloud, SecNumCloud qualification",
+   "resume_fr": "Le décret du 14 avril 2026 définit les données d'une sensibilité particulière des administrations, opérateurs et groupements d'intérêt public de l'État traitées par un cloud privé, qui doivent être hébergées par un prestataire offrant une protection contre les lois extraterritoriales (SecNumCloud). Six GIP sont assujettis, dont l'Agence du numérique en santé.",
+   "resume_en": "The decree of 14 April 2026 defines particularly sensitive data of State administrations, operators and public interest groupings processed in private cloud services, which must be hosted by a provider protected from extraterritorial laws (SecNumCloud). Six GIPs are covered, including the Digital Health Agency.",
+   "date": "2026-04-14",
+   "date_approx": false,
+   "zone": "France",
+   "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053900789",
+   "source": "Légifrance",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Décret n° 2026-272",
+    "Loi SREN",
+    "SecNumCloud"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les offres cloud (connectivité à distance, IA) vendues à des entités publiques de l'État traitant des données sensibles pourront devoir reposer sur un hébergement SecNumCloud.",
+   "pourquoi_en": "Cloud offerings (remote connectivity, AI) sold to State bodies processing sensitive data may need SecNumCloud-qualified hosting.",
+   "categorie": 5
+  },
+  {
    "titre_fr": "Italie : ACN publie les déterminations NIS 127434/2026 et 127437/2026 (nouveaux entrants, fournisseurs pertinents)",
    "titre_en": "Italy: ACN publishes NIS determinations 127434/2026 and 127437/2026 (new entities, relevant suppliers)",
    "resume_fr": "L'Agence italienne de cybersécurité nationale (ACN) a publié deux déterminations d'application du D.Lgs. 138/2024 (transposition NIS2). La 127434/2026 fixe un calendrier progressif pour les entités inscrites en 2026 (mesures de sécurité de base d'ici le 31 juillet 2027, référent CSIRT d'ici fin 2026) ; la 127437/2026 impose la communication de la liste des « fournisseurs NIS pertinents » (fenêtre du 15 avril au 31 mai 2026) et une catégorisation annuelle des activités.",
@@ -2295,6 +3412,73 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Les filiales italiennes entrant dans le périmètre NIS2 doivent déclarer leurs fournisseurs critiques, et un fabricant de DIV peut lui-même être désigné fournisseur pertinent par ses clients hospitaliers.",
    "pourquoi_en": "Italian subsidiaries in NIS2 scope must report critical suppliers, and an IVD manufacturer may itself be listed as a relevant supplier by its hospital customers."
+  },
+  {
+   "titre_fr": "Espagne : consultation sur l'extension de l'achat centralisé du SNS aux logiciels de santé, à l'IA et au cloud",
+   "titre_en": "Spain: consultation on extending SNS centralised procurement to health software, AI and cloud",
+   "resume_fr": "Le ministère de la Santé met en consultation (jusqu'au 30 avril 2026) une modification de l'ordre SND/682/2021 : logiciels de santé dont diagnostic, outils d'IA cliniques et administratifs, services cloud, télésurveillance, protection des réseaux et des dispositifs médicaux deviennent des biens d'achat centralisé gérés par l'INGESA.",
+   "resume_en": "The Ministry of Health opened consultation (until 30 April 2026) on amending Order SND/682/2021: health software including diagnostics, clinical and administrative AI tools, cloud services, remote monitoring, network and medical device protection become centrally procured goods managed by INGESA.",
+   "date": "2026-04-09",
+   "date_approx": false,
+   "zone": "Espagne",
+   "lien": "https://diariofarma.com/2026/04/09/sanidad-amplia-la-contratacion-centralizada-del-sns-al-software-sanitario-y-a-las-ia",
+   "source": "diariofarma",
+   "nature": "presse",
+   "statut": "consultation",
+   "rubrique": "secteur",
+   "textes": [
+    "Orden SND/682/2021"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Change le canal de vente des logiciels et solutions cloud de diagnostic au système national de santé espagnol.",
+   "pourquoi_en": "Changes the sales channel for diagnostic software and cloud solutions to the Spanish national health system.",
+   "categorie": 4
+  },
+  {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Allemagne : le BSI publie le catalogue de critères cloud C5:2026",
+   "titre_en": "Germany: BSI publishes the C5:2026 cloud criteria catalogue",
+   "resume_fr": "Le BSI a publié le C5:2026, nouvelle version de son catalogue d'exigences pour la sécurité du cloud : gestion des conteneurs, cryptographie post-quantique, confidential computing, séparation des locataires, gestion de la chaîne d'approvisionnement renforcée, alignement sur EUCS, ISO/IEC 27001:2022 et NIS2, format lisible par machine.",
+   "resume_en": "The BSI published C5:2026, the new version of its cloud security criteria catalogue: container management, post-quantum cryptography, confidential computing, tenant separation, stronger supply chain management, alignment with EUCS, ISO/IEC 27001:2022 and NIS2, machine-readable format.",
+   "date": "2026-04-07",
+   "zone": "Allemagne",
+   "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260407_C5_Cloud_Computing.html",
+   "source": "BSI",
+   "nature": "officielle",
+   "statut": "lignes_directrices",
+   "rubrique": "standards",
+   "textes": [
+    "C5:2026",
+    "§ 393 SGB V"
+   ],
+   "pertinence": "elevee",
+   "pourquoi_fr": "Le C5 (type 2) est exigé par le § 393 SGB V pour tout traitement cloud de données de santé dans le système d'assurance maladie légale ; les offres cloud/middleware vendues aux prestataires allemands devront suivre cette nouvelle version.",
+   "pourquoi_en": "C5 (type 2) is required by § 393 SGB V for any cloud processing of health data in the statutory health insurance system; cloud/middleware offerings sold to German providers will need to follow this new version.",
+   "categorie": 5
+  },
+  {
+   "titre_fr": "NHS : la DTAC v2 devient le formulaire obligatoire",
+   "titre_en": "NHS: DTAC v2 becomes the mandatory form",
+   "resume_fr": "À partir du 6 avril 2026, les fournisseurs de technologies de santé numériques doivent utiliser le nouveau formulaire DTAC v2 lors des évaluations par les organisations du NHS.",
+   "resume_en": "From 6 April 2026 digital health technology suppliers must use the new DTAC v2 form for assessments by NHS organisations.",
+   "date": "2026-04-06",
+   "date_approx": false,
+   "zone": "Royaume-Uni",
+   "lien": "https://www.periculo.co.uk/cyber-security-blog/dtac-version-2-what-digital-health-organisations-need-to-know-before-6th-april-2026",
+   "source": "Periculo",
+   "nature": "cabinet",
+   "statut": "en_vigueur",
+   "rubrique": "secteur",
+   "textes": [
+    "DTAC"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Condition d'accès aux marchés du NHS pour les logiciels de santé.",
+   "pourquoi_en": "Condition for NHS market access for digital health software.",
+   "categorie": 4
   },
   {
    "titre_fr": "Pologne : entrée en vigueur de la loi KSC (NIS2) – enregistrement avant le 3 octobre 2026",
@@ -2385,6 +3569,30 @@
    "pourquoi_en": "Illustrates UODO's strictness on data minimisation (e.g. copies of ID documents of customers or portal users)."
   },
   {
+   "titre_fr": "Rép. tchèque : le NÚKIB publie un manuel pour les entités du régime des obligations inférieures",
+   "titre_en": "Czech Republic: NÚKIB publishes a manual for entities under the lower-obligations regime",
+   "resume_fr": "Le NÚKIB publie un manuel expliquant les mesures de sécurité de la loi 264/2025 Sb. et du décret 410/2025 Sb. pour le régime des obligations inférieures : explications simplifiées, erreurs fréquentes, bonnes pratiques, modèle de mesures de sécurité (RH, accès, incidents, continuité).",
+   "resume_en": "NÚKIB publishes a manual explaining the security measures of Act 264/2025 Coll. and Decree 410/2025 Coll. for the lower-obligations regime: simplified explanations, common errors, good practices, template of security measures (HR, access, incidents, continuity).",
+   "date": "2026-03-31",
+   "date_approx": false,
+   "zone": "Rép. Tchèque",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2393-nukib-vydal-novy-manual-pro-subjekty-v-rezimu-nizsich-povinnosti/",
+   "source": "NÚKIB",
+   "nature": "officielle",
+   "statut": "lignes_directrices",
+   "rubrique": "reglementation",
+   "textes": [
+    "Zákon 264/2025 Sb.",
+    "Vyhláška 410/2025 Sb.",
+    "NIS2"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Référentiel utile pour les clients tchèques (hôpitaux, laboratoires) et pour la filiale locale si elle est régulée ; il inclut des exigences vis-à-vis des fournisseurs.",
+   "pourquoi_en": "Useful reference for Czech customers (hospitals, labs) and the local subsidiary if regulated; includes supplier-related requirements.",
+   "categorie": 1
+  },
+  {
    "titre_fr": "Finlande : amende de 5 000 € pour Suomen Numerokeskus (droit d'accès aux enregistrements d'appels)",
    "titre_en": "Finland: EUR 5,000 fine on Suomen Numerokeskus (access to call recordings)",
    "resume_fr": "Le 25 mars 2026, le médiateur à la protection des données a infligé une amende de 5 000 € à Suomen Numerokeskus Oy. L'entreprise refusait de manière répétée de fournir aux clients les enregistrements de leurs appels et les supprimait malgré les demandes, pratique établie sur plusieurs années.",
@@ -2431,6 +3639,31 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Montre le niveau des amendes espagnoles pour les données de santé, qui concerne les clients hospitaliers et leurs sous-traitants.",
    "pourquoi_en": "Shows the level of Spanish fines for health data, relevant to hospital customers and their processors."
+  },
+  {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Italie : la loi de délégation européenne 2025 (loi 36/2026) confie à l'ACN la surveillance du marché au titre du CRA",
+   "titre_en": "Italy: the 2025 European delegation law (Law 36/2026) makes ACN the CRA market surveillance authority",
+   "resume_fr": "La loi 36/2026 (publiée au Journal officiel le 25 mars 2026) habilite le gouvernement à adapter le droit italien au Cyber Resilience Act (art. 15, ACN autorité de surveillance du marché), au règlement (UE) 2025/37 sur la certification des services de sécurité gérés (art. 16) et au Cyber Solidarity Act (art. 17).",
+   "resume_en": "Law 36/2026 (published in the Official Gazette on 25 March 2026) empowers the government to adapt Italian law to the Cyber Resilience Act (art. 15, ACN as market surveillance authority), Regulation (EU) 2025/37 on managed security services certification (art. 16) and the Cyber Solidarity Act (art. 17).",
+   "date": "2026-03-25",
+   "zone": "Italie",
+   "lien": "https://www.avvisopubblico.it/home/home/cosa-facciamo/informare/osservatorio-parlamentare/attivita-legislativa/leggi-approvate/legge-36-2026-legge-di-delegazione-europea-2025/",
+   "source": "Avviso Pubblico",
+   "nature": "presse",
+   "statut": "adopte",
+   "rubrique": "reglementation",
+   "textes": [
+    "Legge 36/2026",
+    "CRA",
+    "Règlement (UE) 2025/37",
+    "Cyber Solidarity Act"
+   ],
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Prépare le décret d'application italien du CRA (sanctions, autorité) applicable aux logiciels et composants connectés hors dispositifs médicaux.",
+   "pourquoi_en": "Prepares the Italian CRA implementing decree (penalties, authority) applicable to connected software and components that are not medical devices.",
+   "categorie": 8
   },
   {
    "titre_fr": "Finlande : l'autorité Lupa- ja valvontavirasto supervise l'IA à haut risque en santé et social",
@@ -2543,6 +3776,53 @@
    "pourquoi_en": "Opportunity to check privacy notices for customer, patient and employee portals in Greece."
   },
   {
+   "titre_fr": "CNIL : délibération n° 2026-049 homologuant une annexe « sécurité » commune aux méthodologies de référence (recherche en santé)",
+   "titre_en": "CNIL: Deliberation 2026-049 approving a common security annex for reference methodologies (health research)",
+   "resume_fr": "La CNIL homologue le 19 mars 2026 une annexe sécurité unifiée pour les méthodologies de référence (MR) : chiffrement, cloisonnement, MFA pour l'accès aux données sensibles, traçabilité renforcée, codes non signifiants. Elle s'impose dès qu'une MR y renvoie ; sont visés promoteurs, établissements, industriels (pharma, medtech) et prestataires.",
+   "resume_en": "On 19 March 2026 the CNIL approved a unified security annex for reference methodologies (MR): encryption, segregation, MFA for sensitive data, enhanced logging, non-meaningful codes. It applies wherever an MR refers to it; sponsors, hospitals, industry (pharma, medtech) and providers are concerned.",
+   "date": "2026-03-19",
+   "date_approx": false,
+   "zone": "France",
+   "lien": "https://www.vigier-avocats.com/donnees-de-sante-cybersecurite-une-nouvelle-annexe-securite-incontournable/",
+   "source": "Vigier Avocats",
+   "nature": "cabinet",
+   "statut": "adopte",
+   "rubrique": "reglementation",
+   "textes": [
+    "RGPD",
+    "Loi Informatique et Libertés",
+    "MR CNIL"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Les études de performance et cliniques menées sur des données de santé en France devront respecter ces mesures de sécurité.",
+   "pourquoi_en": "Performance and clinical studies using health data in France must meet these security measures.",
+   "categorie": 3
+  },
+  {
+   "titre_fr": "Finlande : décision du médiateur à la protection des données sur le droit d'accès aux données clients sociales et de santé",
+   "titre_en": "Finland: Data Protection Ombudsman decision on the right of access to social and health care client data",
+   "resume_fr": "Le médiateur à la protection des données a rendu le 18 mars 2026 une décision relative au droit de la personne concernée de consulter ses données clients dans les services sociaux et de santé (publiée sur Finlex).",
+   "resume_en": "On 18 March 2026 the Data Protection Ombudsman issued a decision on the data subject's right to access their social and health care client data (published on Finlex).",
+   "date": "2026-03-18",
+   "date_approx": false,
+   "zone": "Finlande",
+   "lien": "https://www.finlex.fi/fi/viranomaiset/tietosuojavaltuutettu/2026/9",
+   "source": "Tietosuojavaltuutettu / Finlex",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "RGPD",
+    "Asiakastietolaki"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Jurisprudence sur l'accès aux données de santé, pouvant concerner les fonctions de consultation et de journalisation des systèmes d'information de santé.",
+   "pourquoi_en": "Case law on access to health data, which may concern access and logging functions of health information systems.",
+   "categorie": 2
+  },
+  {
    "titre_fr": "ANSSI : publication du Référentiel Cyber France (ReCyF) et d'outils d'accompagnement NIS 2",
    "titre_en": "ANSSI publishes the Référentiel Cyber France (ReCyF) and NIS 2 support tools",
    "resume_fr": "Le 17 mars 2026, l'ANSSI a présenté le ReCyF, document de travail listant les mesures recommandées pour atteindre les objectifs de sécurité de NIS 2, avec un référentiel de mesures de base pour les entités peu matures. Un comparateur permet de le rapprocher d'ISO 27001/27002 et du règlement d'exécution (UE) 2024/2690 ; le tout est disponible sur MesServicesCyber avec le pré-enregistrement.",
@@ -2563,6 +3843,29 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Le ReCyF est le référentiel attendu par l'ANSSI pour les entités NIS 2 du secteur santé et fabrication de DM/DIV, et il se rapproche d'un SMSI ISO 27001 existant.",
    "pourquoi_en": "ReCyF is the baseline ANSSI will expect from NIS 2 entities in health and medical/IVD device manufacturing, and it maps onto an existing ISO 27001 ISMS."
+  },
+  {
+   "titre_fr": "Espagne : le Conseil des ministres approuve le projet de loi de protection et de résilience des entités critiques (CER)",
+   "titre_en": "Spain: Council of Ministers approves the Critical Entities Protection and Resilience Bill (CER)",
+   "resume_fr": "Le gouvernement approuve le projet de loi transposant la directive (UE) 2022/2557 et l'envoie au Parlement. Secteurs couverts : énergie, santé, transport, eau, administration, alimentation, nucléaire, plus hydrogène, réseaux de chaleur, recherche, eaux usées. Coordination par le CNPREC ; catalogue tenu par le Secrétariat d'État à la Sécurité.",
+   "resume_en": "The government approved the bill transposing Directive (EU) 2022/2557 and sent it to Parliament. Sectors: energy, health, transport, water, public administration, food, nuclear, plus hydrogen, district heating, research, wastewater. Coordination by CNPREC; catalogue kept by the State Secretariat for Security.",
+   "date": "2026-03-17",
+   "date_approx": false,
+   "zone": "Espagne",
+   "lien": "https://pesi-seguridadindustrial.org/frontend/pNoticia/ley-prec-de-proteccion-y-resiliencia-de-entidades-criticas-aprobada-17mar2026_840",
+   "source": "PESI",
+   "nature": "presse",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "Directive (UE) 2022/2557 (CER)",
+    "Proyecto de Ley de Protección y Resiliencia de Entidades Críticas"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux désignés entités critiques répercuteront des exigences de résilience sur leurs fournisseurs.",
+   "pourquoi_en": "Hospitals designated as critical entities will pass resilience requirements on to suppliers.",
+   "categorie": 9
   },
   {
    "titre_fr": "Allemagne : publication du KRITIS-Dachgesetz au Journal officiel fédéral (BGBl. I 2026 n° 66)",
@@ -2607,6 +3910,29 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "Étape vers le report des obligations IA haut risque applicables aux DM/DIV intégrant de l'IA.",
    "pourquoi_en": "Step towards postponement of high-risk AI obligations applicable to AI-enabled medical/IVD devices."
+  },
+  {
+   "titre_fr": "Doctrine du numérique en santé 2026 publiée par la DNS et l'ANS",
+   "titre_en": "2026 Digital Health Doctrine published by DNS and ANS",
+   "resume_fr": "La Délégation au numérique en santé et l'ANS publient la doctrine 2026, cadre de référence des exigences (sécurité, interopérabilité, EEDS, IA, Pro Santé Connect) conditionnant notamment l'accès aux financements Ségur ; elle intègre NIS2 et la directive REC.",
+   "resume_en": "The Digital Health Delegation and ANS published the 2026 doctrine, the reference framework for security, interoperability, EHDS, AI and Pro Santé Connect requirements that conditions access to Ségur funding; it integrates NIS2 and the CER directive.",
+   "date": "2026-03-13",
+   "date_approx": false,
+   "zone": "France",
+   "lien": "https://application-sante-numerique.fr/blog/doctrine-numerique-sante-2026/",
+   "source": "application-sante-numerique.fr",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "secteur",
+   "textes": [
+    "Doctrine du numérique en santé 2026",
+    "Ségur du numérique en santé"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Référentiel que les acheteurs publics de santé attendent des éditeurs de logiciels connectés ; base des référencements Ségur.",
+   "pourquoi_en": "Reference framework public healthcare buyers expect from connected software publishers; basis for Ségur listing.",
+   "categorie": 4
   },
   {
    "titre_fr": "Vaud met en consultation une révision de sa loi sur la protection des données",
@@ -2696,6 +4022,52 @@
    "pourquoi_en": "This guidance applies directly to training and validating interpretation-support AI on French patient data."
   },
   {
+   "titre_fr": "Pays-Bas : BIO2 v1.3 adoptée – socle de sécurité de l'information de toutes les administrations, y compris envers les fournisseurs",
+   "titre_en": "Netherlands: BIO2 v1.3 adopted – baseline information security for all government layers, including suppliers",
+   "resume_fr": "La Baseline Informatiebeveiliging Overheid 2 v1.3 est adoptée le 5 mars 2026 et alignée sur la Cyberbeveiligingswet. Les mesures 5.20 à 5.24 imposent aux organismes publics d'intégrer les exigences BIO dans leurs contrats avec les fournisseurs selon le risque.",
+   "resume_en": "Baseline Information Security for Government 2 v1.3 was adopted on 5 March 2026, aligned with the Cybersecurity Act. Measures 5.20 to 5.24 require public bodies to embed BIO requirements in supplier contracts according to risk.",
+   "date": "2026-03-05",
+   "date_approx": false,
+   "zone": "Pays-Bas",
+   "lien": "https://www.bio-overheid.nl/nieuws/bio2-en-leveranciersmanagement",
+   "source": "CIP / bio-overheid.nl",
+   "nature": "officielle",
+   "statut": "adopte",
+   "rubrique": "standards",
+   "textes": [
+    "BIO2",
+    "Cyberbeveiligingswet"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les ventes à des organismes publics néerlandais (instituts, laboratoires publics) incluront des clauses de sécurité BIO2.",
+   "pourquoi_en": "Sales to Dutch public bodies (institutes, public laboratories) will include BIO2 security clauses.",
+   "categorie": 5
+  },
+  {
+   "titre_fr": "Suède : le Läkemedelsverket appelle les fabricants de médicaments et de dispositifs médicaux à s'enregistrer au titre de la loi cybersécurité",
+   "titre_en": "Sweden: Läkemedelsverket calls on medicine and medical device manufacturers to register under the Cybersecurity Act",
+   "resume_fr": "Le Läkemedelsverket, autorité de supervision NIS2 pour la fabrication de médicaments et de dispositifs médicaux et la R&D associée, rappelle que l'enregistrement est ouvert depuis février 2026 et doit être fait au plus vite ; chaque organisation doit déterminer si elle est concernée et mettre en place analyse de risques, mesures techniques et organisationnelles et procédure de notification d'incidents.",
+   "resume_en": "Läkemedelsverket, NIS2 supervisory authority for the manufacturing of medicines and medical devices and related R&D, reminds that registration has been open since February 2026 and should be done as soon as possible; each organisation must determine whether it is in scope and put in place risk analysis, technical and organisational measures and incident reporting.",
+   "date": "2026-03-04",
+   "date_approx": false,
+   "zone": "Suède",
+   "lien": "https://via.tt.se/pressmeddelande/4273116/anmal-din-verksamhet-enligt-cybersakerhetslagen?lang=sv",
+   "source": "Läkemedelsverket",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "Cybersäkerhetslag (2025:1506)",
+    "NIS2"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Autorité de supervision directe des fabricants de DM/DIV en Suède : une filiale ou un site suédois du client pourrait devoir s'enregistrer.",
+   "pourquoi_en": "Direct supervisory authority for MD/IVD manufacturers in Sweden: a Swedish subsidiary or site of the client may have to register.",
+   "categorie": 6
+  },
+  {
    "titre_fr": "Espagne : l'AEPD publie des orientations sur l'IA agentique et la protection des données",
    "titre_en": "Spain: AEPD publishes guidance on agentic AI and data protection",
    "resume_fr": "L'AEPD a publié un document d'orientation (76 pages) sur l'usage de l'intelligence artificielle agentique au regard du RGPD. Il traite de la gouvernance, de la base légale, de la minimisation, de la sécurité et du contrôle humain des agents autonomes.",
@@ -2716,6 +4088,32 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "Référence utile pour encadrer les agents IA internes ou intégrés aux logiciels de laboratoire traitant des données de santé.",
    "pourquoi_en": "Useful reference for governing internal AI agents or those embedded in lab software processing health data."
+  },
+  {
+   "titre_fr": "Décret n° 2026-153 : sanctions financières pour les services numériques en santé non conformes aux référentiels ANS",
+   "titre_en": "Decree 2026-153: financial penalties for digital health services not complying with ANS frameworks",
+   "resume_fr": "Le décret du 3 mars 2026 (JO du 4 mars, en vigueur le 5 mars) met en œuvre le III de l'article L.1470-6 du CSP : le ministre de la Santé, sur proposition de l'ANS, peut sanctionner les éditeurs de services numériques en santé ne respectant pas les référentiels d'interopérabilité, de sécurité et d'éthique. Plafond : 1 % du chiffre d'affaires réalisé en France, dans la limite de 1 M€, avec astreinte jusqu'à 1 000 €/jour.",
+   "resume_en": "The decree of 3 March 2026 (in force 5 March) implements Article L.1470-6 III of the Public Health Code: the Health Minister, on ANS proposal, may fine digital health service publishers that do not comply with interoperability, security and ethics frameworks. Cap: 1% of French turnover, up to EUR 1 million, plus daily penalties up to EUR 1,000.",
+   "date": "2026-03-03",
+   "date_approx": false,
+   "zone": "France",
+   "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053613395",
+   "source": "Légifrance",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Décret n° 2026-153",
+    "CSP L.1470-6"
+   ],
+   "amende": {
+    "montant_eur": 1000000,
+    "texte": "1 % du CA France, plafonné à 1 M€ ; astreinte jusqu'à 1 000 €/jour"
+   },
+   "pertinence": "elevee",
+   "pourquoi_fr": "Les logiciels de laboratoire et middleware connectés vendus en France sont des services numériques en santé : la non-conformité aux référentiels ANS (sécurité, interopérabilité) devient sanctionnable.",
+   "pourquoi_en": "Connected laboratory software and middleware sold in France are digital health services: non-compliance with ANS security and interoperability frameworks is now punishable.",
+   "categorie": 4
   },
   {
    "titre_fr": "Pologne : publication de la réforme de la loi KSC au Journal officiel (Dziennik Ustaw)",
@@ -2783,6 +4181,78 @@
    "pourquoi_en": "Completes the picture of 2026 ICO sanctions on sensitive data handling."
   },
   {
+   "date_approx": false,
+   "amende": {
+    "montant_eur": 500000,
+    "texte": "jusqu'à 500 000 € dans les cas graves"
+   },
+   "titre_fr": "Autriche : entrée en vigueur du RKEG (résilience des entités critiques)",
+   "titre_en": "Austria: RKEG (resilience of critical entities act) enters into force",
+   "resume_fr": "Le Resilienz kritischer Einrichtungen-Gesetz transposant la directive CER entre en vigueur le 1er mars 2026 : 11 secteurs dont la santé, analyse de risques 9 mois et plan de résilience 10 mois après désignation, notification d'incident sous 24 h, amendes jusqu'à 500 000 €. Autorité : ministère de l'Intérieur.",
+   "resume_en": "The Resilienz kritischer Einrichtungen-Gesetz transposing the CER Directive enters into force on 1 March 2026: 11 sectors including health, risk analysis within 9 months and resilience plan within 10 months of designation, 24-hour incident notification, fines up to EUR 500,000. Authority: Ministry of the Interior.",
+   "date": "2026-03-01",
+   "zone": "Autriche",
+   "lien": "https://www.ey.com/de_at/newsroom/2026/02/rkeg-neues-gesetz-2026",
+   "source": "EY Österreich",
+   "nature": "cabinet",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "RKEG",
+    "Directive CER (UE) 2022/2557"
+   ],
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux et laboratoires désignés critiques devront renforcer la résilience de leurs fournisseurs essentiels (continuité d'approvisionnement en réactifs, maintenance des automates).",
+   "pourquoi_en": "Hospitals and laboratories designated as critical will have to strengthen the resilience of their essential suppliers (continuity of reagent supply, analyser maintenance).",
+   "categorie": 9
+  },
+  {
+   "titre_fr": "Rép. tchèque : échéance du 1er mars 2026 pour la transmission des informations d'identification des fournisseurs de services essentiels (loi sur l'infrastructure critique)",
+   "titre_en": "Czech Republic: 1 March 2026 deadline for essential service providers to submit identification data (Critical Infrastructure Act)",
+   "resume_fr": "En application de la loi 266/2025 Sb. (transposition CER), les fournisseurs de services de base, dont la santé, devaient transmettre leurs informations d'identification au ministère de l'Intérieur avant le 1er mars 2026 ; le régime de l'ancienne loi 240/2000 Sb. s'appliquait jusqu'au 17 juillet 2026. Obligations : évaluation des risques, plan de résilience, contrôle de fiabilité du personnel, notification des incidents graves.",
+   "resume_en": "Under Act 266/2025 Coll. (CER transposition), essential service providers, including health, had to submit identification data to the Ministry of the Interior by 1 March 2026; the former Act 240/2000 Coll. regime applied until 17 July 2026. Obligations: risk assessment, resilience plan, staff reliability checks, reporting of serious incidents.",
+   "date": "2026-03-01",
+   "date_approx": false,
+   "zone": "Rép. Tchèque",
+   "lien": "https://rowan.legal/aktualne/cr-novy-zakon-o-kriticke-infrastrukture-je-ucinny/",
+   "source": "Rowan Legal",
+   "nature": "cabinet",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "Zákon 266/2025 Sb.",
+    "CER"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les hôpitaux désignés entités critiques répercuteront des exigences de résilience sur leurs fournisseurs d'équipements de diagnostic.",
+   "pourquoi_en": "Hospitals designated as critical entities will pass resilience requirements on to diagnostic equipment suppliers.",
+   "categorie": 9
+  },
+  {
+   "titre_fr": "Espagne : le CCN présente la certification LINCE comme certification nationale « légère » d'accès au CPSTIC",
+   "titre_en": "Spain: CCN presents LINCE as a 'lightweight' national certification for CPSTIC entry",
+   "resume_fr": "Au salon SICUR, le CCN rappelle que LINCE est la certification nationale légère d'évaluation de sécurité des produits TIC, voie d'entrée vers le catalogue CPSTIC.",
+   "resume_en": "At SICUR, CCN presented LINCE as the lightweight national ICT product security certification, the route into the CPSTIC catalogue.",
+   "date": "2026-02-27",
+   "date_approx": false,
+   "zone": "Espagne",
+   "lien": "https://www.seguritecnia.es/actualidad/lince-certificacion-ccn-sicur-2026-cpstic-estefania-linares_20260227.html",
+   "source": "Seguritecnia",
+   "nature": "presse",
+   "statut": "autre",
+   "rubrique": "standards",
+   "textes": [
+    "LINCE",
+    "CPSTIC"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Piste de certification pour des produits connectés vendus au secteur public espagnol.",
+   "pourquoi_en": "Certification path for connected products sold to the Spanish public sector.",
+   "categorie": 10
+  },
+  {
    "titre_fr": "Rép. tchèque : la loi d'adaptation à l'AI Act, après consultation interministérielle, attend l'examen du gouvernement",
    "titre_en": "Czech Republic: AI Act adaptation act awaits government discussion after interministerial consultation",
    "resume_fr": "Le projet de loi d'adaptation a achevé la procédure de commentaires interministérielle et attend l'examen du gouvernement ; ses dispositions clés visent le 2 août 2026. L'ÚNMZ est chargé de l'évaluation de la conformité et des organismes notifiés, la ČTÚ ayant une compétence générale résiduelle ; les PME bénéficient de plafonds de sanctions réduits.",
@@ -2845,6 +4315,28 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Cas directement transposable aux middleware de laboratoire : une mise à jour logicielle défaillante suffit à engager la responsabilité du fournisseur au titre de l'article 32.",
    "pourquoi_en": "Directly relevant to lab middleware: a faulty software update is enough to make the vendor liable under Article 32."
+  },
+  {
+   "titre_fr": "NHS : publication de la version 2 des Digital Technology Assessment Criteria (DTAC)",
+   "titre_en": "NHS: Digital Technology Assessment Criteria (DTAC) version 2 published",
+   "resume_fr": "NHS England publie la DTAC v2 : 25 % de questions en moins, suppression des doublons avec la réglementation des dispositifs médicaux et le DSPT, périmètre recentré sur les technologies de santé numériques logicielles. Le nouveau formulaire remplace l'ancien à compter du 6 avril 2026.",
+   "resume_en": "NHS England published DTAC v2: 25% fewer questions, overlaps with medical device regulation and the DSPT removed, scope focused on software-based digital health technologies. The new form replaces the previous one from 6 April 2026.",
+   "date": "2026-02-25",
+   "date_approx": false,
+   "zone": "Royaume-Uni",
+   "lien": "https://htn.co.uk/2026/02/25/digital-technology-assessment-criteria-refreshed-to-create-simpler-more-trusted-pathway-for-nhs-digital-innovation/",
+   "source": "HTN Health Tech News",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "secteur",
+   "textes": [
+    "DTAC"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "La DTAC est le référentiel d'évaluation exigé par les acheteurs du NHS pour les logiciels de santé (middleware, logiciels connectés).",
+   "pourquoi_en": "DTAC is the assessment baseline NHS buyers require for digital health software (middleware, connected software).",
+   "categorie": 4
   },
   {
    "titre_fr": "ICO : amende de 14,47 M£ contre Reddit pour défaut de vérification de l'âge",
@@ -3244,6 +4736,29 @@
    "pourquoi_en": "IVD manufacturers are explicitly within Fimea's NIS2 inspection scope, often combined with existing regulatory inspections."
   },
   {
+   "titre_fr": "Norvège : clôture de la consultation sur le règlement relatif à la certification de cybersécurité (NSM autorité nationale)",
+   "titre_en": "Norway: consultation closes on the cybersecurity certification regulation (NSM as national authority)",
+   "resume_fr": "La NSM a mis en consultation (18 décembre 2025 – 26 janvier 2026) un projet de forskrift mettant en œuvre la partie III du Cybersecurity Act (règlement (UE) 2019/881) sur la certification de cybersécurité, la NSM devenant autorité nationale de certification ; plus de 40 réponses reçues, adoption non encore annoncée.",
+   "resume_en": "NSM consulted (18 December 2025 – 26 January 2026) on a draft forskrift implementing Part III of the Cybersecurity Act (Regulation (EU) 2019/881) on cybersecurity certification, with NSM as national certification authority; 40+ responses received, adoption not yet announced.",
+   "date": "2026-01-26",
+   "date_approx": false,
+   "zone": "Norvège",
+   "lien": "https://nsm.no/aktuelt/horing-forskrift-om-cybersikkerhetssertifisering",
+   "source": "NSM",
+   "nature": "officielle",
+   "statut": "consultation",
+   "rubrique": "standards",
+   "textes": [
+    "Cybersecurity Act",
+    "EUCC"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Cadre des certifications européennes (EUCC) en Norvège, potentiellement exigées à terme dans les achats publics ou pour certains produits.",
+   "pourquoi_en": "Framework for EU certifications (EUCC) in Norway, potentially required in future in public procurement or for certain products.",
+   "categorie": 10
+  },
+  {
    "titre_fr": "EHDS : observations formelles du CEPD sur le projet d'acte d'exécution relatif au Comité EHDS",
    "titre_en": "EHDS: EDPS formal comments on the draft implementing act on the EHDS Board",
    "resume_fr": "Le 23 janvier 2026, le CEPD a publié des observations formelles sur le projet de règlement d'exécution de la Commission fixant les mesures de fonctionnement du Comité de l'espace européen des données de santé (article 92(11) du règlement EHDS). Les actes d'exécution EHDS sont attendus au plus tard en mars 2027.",
@@ -3264,6 +4779,53 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "L'EHDS encadrera l'usage secondaire des données de santé et les systèmes de DSE interfacés avec les middleware de laboratoire.",
    "pourquoi_en": "The EHDS will govern secondary use of health data and EHR systems interfacing with lab middleware."
+  },
+  {
+   "titre_fr": "NHS England : lettre ouverte aux fournisseurs et nouvelle phase d'engagement cyber de la chaîne d'approvisionnement",
+   "titre_en": "NHS England: open letter to suppliers and next phase of cyber supply chain engagement",
+   "resume_fr": "NHS England annonce qu'il contactera directement les fournisseurs, en priorité ceux qui soutiennent des services critiques de soins, pour examiner leurs contrôles de sécurité et demander des preuves. Les fournisseurs doivent se conformer à la Cyber Security Supply Chain Charter : correctifs, MFA, respect du DSPT, tests de reprise, supervision. Ce n'est pas un audit « réussite/échec » mais une démarche de remédiation proportionnée.",
+   "resume_en": "NHS England announced it will contact suppliers directly, prioritising those supporting critical care services, to review their security controls and request evidence. Suppliers must follow the Cyber Security Supply Chain Charter: patching, MFA, DSPT standards, recovery testing, monitoring. Not a pass/fail audit but proportionate remediation.",
+   "date": "2026-01-23",
+   "date_approx": false,
+   "zone": "Royaume-Uni",
+   "lien": "https://htn.co.uk/2026/01/23/nhs-england-seeks-to-build-on-cyber-security-supply-chain-charter-with-more-direct-proportionate-engagement-with-suppliers/",
+   "source": "HTN Health Tech News",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "secteur",
+   "textes": [
+    "Cyber Security Supply Chain Charter",
+    "DSPT"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Tout fournisseur de systèmes connectés aux établissements du NHS peut être sollicité pour prouver ses contrôles cyber.",
+   "pourquoi_en": "Any supplier of connected systems to NHS organisations may be asked to evidence its cyber controls.",
+   "categorie": 4
+  },
+  {
+   "titre_fr": "Pays-Bas : nouvelles normes NEN 7541 et NEN 7519 à l'appui de la Wegiz",
+   "titre_en": "Netherlands: new NEN 7541 and NEN 7519 standards supporting the Wegiz",
+   "resume_fr": "Le 23 janvier 2026, le ministère de la Santé annonce les normes NEN 7541 (mise à disposition électronique des images radiologiques et comptes rendus) et NEN 7519 (localisation des données de santé réparties entre organisations), qui soutiennent les échanges obligatoires au titre de la Wegiz.",
+   "resume_en": "On 23 January 2026 the Health Ministry announced NEN 7541 (electronic availability of radiology images and reports) and NEN 7519 (localisation of health data spread across organisations), supporting exchanges mandated under the Wegiz.",
+   "date": "2026-01-23",
+   "date_approx": false,
+   "zone": "Pays-Bas",
+   "lien": "https://www.datavoorgezondheid.nl/actueel/nieuws/2026/01/23/nieuwe-nen-normen-ondersteunen-databeschikbaarheid-en-wegiz-gegevensuitwisselingen",
+   "source": "Data voor gezondheid (VWS)",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "standards",
+   "textes": [
+    "Wegiz",
+    "NEN 7541",
+    "NEN 7519"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Indique la trajectoire de normalisation des échanges de données de santé que suivront à terme les résultats de laboratoire.",
+   "pourquoi_en": "Shows the standardisation path for health data exchange that laboratory results will eventually follow.",
+   "categorie": 3
   },
   {
    "titre_fr": "CNIL : sanction de 5 M€ contre France Travail pour défaut de sécurité",
@@ -3288,6 +4850,29 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "La CNIL confirme que la gestion des habilitations et la journalisation sont des exigences de l'article 32 du RGPD, applicables aux portails clients et partenaires.",
    "pourquoi_en": "The CNIL confirms that access-rights management and logging are GDPR Article 32 requirements, which apply to customer and partner portals."
+  },
+  {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Allemagne : BVMed publie une fiche sur l'obligation d'attestation C5 (§ 393 SGB V) pour le cloud en santé",
+   "titre_en": "Germany: BVMed publishes an information sheet on the C5 attestation obligation (§ 393 SGB V) for cloud in healthcare",
+   "resume_fr": "Fiche de la fédération BVMed : depuis le 1er juillet 2025, les services cloud traitant des données de santé pour des prestataires de l'assurance maladie légale doivent disposer d'une attestation C5 type 2 ; les prestataires s'appuyant sur ISO/IEC 27001 ou CCM 4.0 ont jusqu'au 1er juillet 2027. Les fabricants de DM sont concernés lorsqu'ils opèrent eux-mêmes des services cloud.",
+   "resume_en": "BVMed information sheet: since 1 July 2025, cloud services processing health data for statutory health insurance providers must hold a C5 type 2 attestation; providers relying on ISO/IEC 27001 or CCM 4.0 have until 1 July 2027. Medical device manufacturers are concerned when they operate cloud services themselves.",
+   "date": "2026-01-22",
+   "zone": "Allemagne",
+   "lien": "https://www.bvmed.de/verband/publikationen/infoblaetter/c5-testat-393-sgb-v-cloud-einsatz-im-gesundheitswesen",
+   "source": "BVMed",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "secteur",
+   "textes": [
+    "§ 393 SGB V",
+    "C5"
+   ],
+   "pertinence": "elevee",
+   "pourquoi_fr": "Vise directement les fabricants de dispositifs médicaux proposant des services cloud (connectivité à distance, middleware hébergé) à des laboratoires et hôpitaux allemands.",
+   "pourquoi_en": "Directly targets medical device manufacturers offering cloud services (remote connectivity, hosted middleware) to German laboratories and hospitals.",
+   "categorie": 3
   },
   {
    "titre_fr": "Proposition de révision du Cybersecurity Act (CSA2) : sécurité de la chaîne d'approvisionnement TIC",
@@ -3333,6 +4918,55 @@
    "pourquoi_en": "IVD device manufacturers are NIS2 entities: any change in scope, jurisdiction or requirements applies directly."
   },
   {
+   "titre_fr": "Belgique : publication et entrée en vigueur de la loi du 19 décembre 2025 sur la résilience des entités critiques",
+   "titre_en": "Belgium: publication and entry into force of the Act of 19 December 2025 on critical entity resilience",
+   "resume_fr": "La loi transposant la directive CER est publiée au Moniteur belge le 19 janvier 2026 et entre en vigueur le même jour (certaines dispositions au 8 avril 2026). Identification des entités critiques avant le 17 juillet 2026 ; les entités désignées doivent nommer un point de contact, évaluer leurs risques, adopter un plan de résilience et notifier les incidents sous 24 h. Amendes administratives de 500 à 125 000 €.",
+   "resume_en": "The Act transposing the CER directive was published on 19 January 2026 and entered into force the same day (some provisions on 8 April 2026). Critical entities to be identified by 17 July 2026; designated entities must appoint a contact point, assess risks, adopt a resilience plan and report incidents within 24 hours. Administrative fines of EUR 500 to 125,000.",
+   "date": "2026-01-19",
+   "date_approx": false,
+   "zone": "Belgique",
+   "lien": "https://refli.be/fr/lex/2026000133",
+   "source": "Refli (Moniteur belge)",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Loi du 19 décembre 2025 (CER)",
+    "Directive (UE) 2022/2557"
+   ],
+   "amende": {
+    "montant_eur": 125000,
+    "texte": "Amendes administratives de 500 € à 125 000 €"
+   },
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Des laboratoires et hôpitaux clients peuvent être désignés entités critiques et répercuter des exigences de résilience sur leurs fournisseurs.",
+   "pourquoi_en": "Client laboratories and hospitals may be designated critical entities and pass resilience requirements on to suppliers.",
+   "categorie": 9
+  },
+  {
+   "titre_fr": "Portugal : échéance de la stratégie nationale et de l'évaluation nationale des risques pour les entités critiques",
+   "titre_en": "Portugal: deadline for national strategy and national risk assessment for critical entities",
+   "resume_fr": "En application du décret-loi 22/2025 (transposition CER), la stratégie nationale de résilience des entités critiques et l'évaluation nationale des risques devaient être approuvées au plus tard le 17 janvier 2026.",
+   "resume_en": "Under Decree-Law 22/2025 (CER transposition), the national critical entities resilience strategy and national risk assessment were due by 17 January 2026.",
+   "date": "2026-01-17",
+   "date_approx": false,
+   "zone": "Portugal",
+   "lien": "https://www.dn.pt/sociedade/portugal-demorou-3-anos-a-transpor-diretiva-para-proteger-infraestruturas-cr%C3%ADticas-e-s%C3%B3-em-2026-a-vai-executar",
+   "source": "Diário de Notícias",
+   "nature": "presse",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "Decreto-Lei 22/2025",
+    "Directive (UE) 2022/2557 (CER)"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "La santé est un secteur CER ; prépare la désignation d'hôpitaux comme entités critiques.",
+   "pourquoi_en": "Health is a CER sector; prepares designation of hospitals as critical entities.",
+   "categorie": 9
+  },
+  {
    "titre_fr": "Suède : entrée en vigueur de la loi sur la cybersécurité (2025:1506) transposant NIS2",
    "titre_en": "Sweden: Cybersecurity Act (2025:1506) transposing NIS2 enters into force",
    "resume_fr": "La loi sur la cybersécurité (2025:1506) et son ordonnance (2025:1507) sont entrées en vigueur le 15 janvier 2026, remplaçant la loi NIS de 2018. Les entités couvertes doivent s'enregistrer auprès des autorités, mettre en place des mesures de sécurité appropriées, former leur direction et notifier les incidents significatifs.",
@@ -3352,6 +4986,50 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Les fabricants de dispositifs médicaux et de DIV implantés en Suède entrent dans le champ NIS2 et doivent s'enregistrer et appliquer les exigences de gestion des risques.",
    "pourquoi_en": "Medical device and IVD manufacturers established in Sweden fall within NIS2 scope and must register and apply risk-management requirements."
+  },
+  {
+   "titre_fr": "Portugal : les entités du SNS peuvent acheter des services cloud via le système d'acquisition dynamique de la SPMS",
+   "titre_en": "Portugal: SNS entities can buy cloud services through the SPMS dynamic purchasing system",
+   "resume_fr": "La SPMS annonce que les entités du SNS peuvent désormais acquérir des services de cloud computing au titre du SAD 1662/2025, réservé aux fournisseurs qualifiés.",
+   "resume_en": "SPMS announced that SNS entities can now procure cloud computing services under DPS 1662/2025, restricted to qualified suppliers.",
+   "date": "2026-01-15",
+   "date_approx": true,
+   "zone": "Portugal",
+   "lien": "https://www.spms.min-saude.pt/2026/01/entidades-do-sns-ja-podem-adquirir-servicos-cloud-ao-abrigo-de-sad/",
+   "source": "SPMS",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "secteur",
+   "textes": [
+    "SAD 1662/2025"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Canal d'achat public du cloud pour le SNS : conditionne l'offre cloud vendue aux hôpitaux portugais.",
+   "pourquoi_en": "Public cloud procurement route for the SNS: shapes cloud offers sold to Portuguese hospitals.",
+   "categorie": 4
+  },
+  {
+   "titre_fr": "Portugal : la SPMS présente le registre de santé électronique unique comme avenir de la santé publique",
+   "titre_en": "Portugal: SPMS presents the single electronic health record as the future of public health",
+   "resume_fr": "La SPMS publie une communication sur le registre de santé électronique unique (RSE Único) du SNS.",
+   "resume_en": "SPMS published a communication on the SNS single electronic health record (RSE Único).",
+   "date": "2026-01-15",
+   "date_approx": true,
+   "zone": "Portugal",
+   "lien": "https://www.spms.min-saude.pt/2026/01/registo-de-saude-eletronico-unico-determina-futuro-da-saude-publica/",
+   "source": "SPMS",
+   "nature": "officielle",
+   "statut": "autre",
+   "rubrique": "secteur",
+   "textes": [
+    "RSE Único"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "L'interopérabilité avec le dossier patient national conditionne l'intégration des résultats de laboratoire.",
+   "pourquoi_en": "Interoperability with the national record governs lab result integration.",
+   "categorie": 3
   },
   {
    "titre_fr": "SAMSIK appelle à sécuriser les caméras de surveillance connectées",
@@ -3399,6 +5077,28 @@
    "pourquoi_en": "The fine sets the CNIL's expected baseline (multi-factor authentication, detection) for any organisation processing large data volumes, processors included."
   },
   {
+   "titre_fr": "Belgique : cyberattaque contre l'hôpital AZ Monica (Anvers)",
+   "titre_en": "Belgium: cyberattack on AZ Monica hospital (Antwerp)",
+   "resume_fr": "Le 13 janvier 2026, une cyberattaque perturbe les campus d'Anvers et Deurne de l'hôpital AZ Monica : environ 70 opérations annulées, sept patients transférés, urgences en capacité réduite.",
+   "resume_en": "On 13 January 2026 a cyberattack disrupted AZ Monica hospital's Antwerp and Deurne campuses: about 70 surgeries cancelled, seven patients transferred, emergency department at reduced capacity.",
+   "date": "2026-01-13",
+   "date_approx": false,
+   "zone": "Belgique",
+   "lien": "https://en.wikipedia.org/wiki/2026_Belgian_hospital_cyberattack",
+   "source": "Wikipedia",
+   "nature": "presse",
+   "statut": "autre",
+   "rubrique": "secteur",
+   "textes": [
+    "NIS2"
+   ],
+   "amende": null,
+   "pertinence": "faible",
+   "pourquoi_fr": "Illustre la pression cyber sur les hôpitaux belges, qui renforcent leurs exigences envers les fournisseurs d'équipements connectés.",
+   "pourquoi_en": "Illustrates cyber pressure on Belgian hospitals, which are tightening requirements on connected-equipment suppliers.",
+   "categorie": 4
+  },
+  {
    "titre_fr": "Rép. tchèque : projet de loi d'adaptation à l'AI Act préparé par le ministère de l'Industrie (MPO)",
    "titre_en": "Czech Republic: draft AI Act adaptation law prepared by the Ministry of Industry (MPO)",
    "resume_fr": "Le MPO a préparé un projet de loi mettant en œuvre l'AI Act, qui désigne l'Office tchèque des télécommunications (ČTÚ) comme autorité de surveillance principale, avec la ČNB, l'ÚOOÚ, l'ÚNMZ et le NÚKIB. Il prévoit un bac à sable réglementaire opéré par l'Agence tchèque de normalisation et des délais de 90 à 120 jours pour les autorisations d'essai et d'exploitation de systèmes à haut risque.",
@@ -3418,6 +5118,74 @@
    "pertinence": "moyenne",
    "pourquoi_fr": "Identifie les autorités tchèques compétentes pour l'IA intégrée aux produits et logiciels d'un fabricant de DIV.",
    "pourquoi_en": "Identifies the Czech authorities competent for AI embedded in an IVD manufacturer's products and software."
+  },
+  {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Allemagne : mise à jour du B3S « Medizinische Versorgung » (version 1.3.1) pour la sécurité informatique des hôpitaux",
+   "titre_en": "Germany: update of the B3S \"Medizinische Versorgung\" (version 1.3.1) for hospital IT security",
+   "resume_fr": "La DKG a publié une version actualisée du standard de sécurité sectoriel B3S « Medizinische Versorgung » (v1.3.1), reconnu par le BSI et valable jusqu'en novembre 2028. Il sert de voie de preuve pour la sécurité informatique des hôpitaux (§ 391 SGB V, BSIG).",
+   "resume_en": "The DKG published an updated version of the sector-specific security standard B3S \"Medizinische Versorgung\" (v1.3.1), recognised by the BSI and valid until November 2028. It is the compliance path for hospital IT security (§ 391 SGB V, BSIG).",
+   "date": "2026-01-12",
+   "zone": "Allemagne",
+   "lien": "https://www.mydrg.de/myDRG_archives/it-in-der-medizin/branchenspezifischer-sicherheitsstandard-b3s-aktualisiert.html",
+   "source": "myDRG / DKG / BSI",
+   "nature": "presse",
+   "statut": "lignes_directrices",
+   "rubrique": "standards",
+   "textes": [
+    "B3S Medizinische Versorgung",
+    "§ 391 SGB V",
+    "BSIG"
+   ],
+   "pertinence": "elevee",
+   "pourquoi_fr": "Les hôpitaux allemands appliquent le B3S et répercutent ses exigences (dispositifs médicaux connectés, prestataires, accès distant) sur leurs fournisseurs d'automates et de logiciels de laboratoire.",
+   "pourquoi_en": "German hospitals apply the B3S and pass its requirements (connected medical devices, service providers, remote access) on to their suppliers of laboratory analysers and software.",
+   "categorie": 4
+  },
+  {
+   "date_approx": false,
+   "amende": null,
+   "titre_fr": "Italie : AGENAS lance la phase opérationnelle du programme national HTA des dispositifs médicaux 2026-2028",
+   "titre_en": "Italy: AGENAS launches the operational phase of the national HTA programme for medical devices 2026-2028",
+   "resume_fr": "Le PNHTA-DM 2026-2028 entre en phase opérationnelle (environ 13 M€ débloqués, financés par 0,75 % du chiffre d'affaires des ventes de DM au SSN) : 50 à 100 évaluations HTA prévues en 2026, accent sur les plateformes d'IA et les thérapies numériques ; les recommandations orienteront achats et remboursements du SSN.",
+   "resume_en": "The PNHTA-DM 2026-2028 enters its operational phase (about EUR 13M released, funded by 0.75% of turnover from device sales to the SSN): 50 to 100 HTA assessments planned in 2026, focus on AI platforms and digital therapies; recommendations will guide SSN procurement and reimbursement.",
+   "date": "2026-01-12",
+   "zone": "Italie",
+   "lien": "https://www.agenas.gov.it/aree-tematiche/comunicazione/primo-piano/2698-pnhta-dm-2026%E2%80%932028-sbloccate-le-risorse-del-fondo,-al-via-la-fase-operativa-del-sistema-nazionale-hta-sui-dispositivi-medici",
+   "source": "AGENAS",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "secteur",
+   "textes": [
+    "PNHTA-DM 2026-2028"
+   ],
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les DM et DIV vendus au SSN (dont les solutions d'IA) peuvent faire l'objet d'évaluations HTA influençant l'accès au marché public italien.",
+   "pourquoi_en": "Devices and IVDs sold to the SSN (including AI solutions) may undergo HTA assessments that influence access to the Italian public market.",
+   "categorie": 4
+  },
+  {
+   "titre_fr": "Norvège : le gouvernement annonce la mise en œuvre du CRA, la Nkom désignée autorité de surveillance",
+   "titre_en": "Norway: government announces CRA implementation, Nkom designated supervisory authority",
+   "resume_fr": "Le gouvernement norvégien a annoncé l'intégration du Cyber Resilience Act en droit norvégien par voie de règlement (forskrift) ; la Nkom sera chargée de la surveillance du marché, de la réception des notifications de vulnérabilités et d'incidents et de la désignation des organismes de contrôle.",
+   "resume_en": "The Norwegian government announced the incorporation of the Cyber Resilience Act into Norwegian law by regulation (forskrift); Nkom will handle market surveillance, receipt of vulnerability and incident notifications and designation of conformity bodies.",
+   "date": "2026-01-12",
+   "date_approx": false,
+   "zone": "Norvège",
+   "lien": "https://nkom.no/aktuelt/na-skal-digitale-produkter-sikres-bedre-mot-cyberangrep--viktig-steg-for-a-beskytte-norske-forbrukere",
+   "source": "Nkom",
+   "nature": "officielle",
+   "statut": "projet",
+   "rubrique": "reglementation",
+   "textes": [
+    "CRA"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les produits connectés non couverts par MDR/IVDR (accessoires, logiciels non-DM) vendus en Norvège seront soumis au CRA sous la surveillance de la Nkom.",
+   "pourquoi_en": "Connected products not covered by MDR/IVDR (accessories, non-MD software) sold in Norway will be subject to the CRA under Nkom supervision.",
+   "categorie": 8
   },
   {
    "titre_fr": "Datatilsynet publie ses priorités de contrôle 2026 : IA en santé, IoT de soins à domicile, grands sous-traitants",
@@ -3483,6 +5251,28 @@
    "pourquoi_en": "Policy context for AI in Portugal (funding, digital health), with no direct obligations."
   },
   {
+   "titre_fr": "Pologne : l'UODO annonce ses contrôles sectoriels 2026, dont les établissements de santé",
+   "titre_en": "Poland: UODO announces its 2026 sectoral inspections, including healthcare facilities",
+   "resume_fr": "L'autorité polonaise de protection des données annonce son plan de contrôles 2026 centré sur trois secteurs : établissements de santé (notamment vidéosurveillance et données d'enfants en pédiatrie), marketing et plateformes de livraison, en raison de la hausse des plaintes et violations signalées.",
+   "resume_en": "The Polish data protection authority announced its 2026 inspection plan focusing on three sectors: healthcare facilities (notably video surveillance and children's data in paediatrics), marketing and delivery platforms, due to rising complaints and reported breaches.",
+   "date": "2026-01-08",
+   "date_approx": false,
+   "zone": "Pologne",
+   "lien": "https://forsal.pl/biznes/aktualnosci/artykuly/10615827,plan-kontroli-uodo-2026-podmioty-medyczne-marketing-i-platformy-inte.html",
+   "source": "Forsal.pl",
+   "nature": "presse",
+   "statut": "autre",
+   "rubrique": "reglementation",
+   "textes": [
+    "RODO"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les contrôles UODO chez les clients de santé peuvent s'étendre aux sous-traitants traitant des données de patients.",
+   "pourquoi_en": "UODO inspections at healthcare customers may extend to processors handling patient data.",
+   "categorie": 2
+  },
+  {
    "titre_fr": "NIS2 Allemagne : ouverture du portail d'enregistrement du BSI",
    "titre_en": "NIS2 Germany: BSI registration portal goes live",
    "resume_fr": "Le BSI a ouvert son nouveau portail, deuxième étape de l'enregistrement NIS2 après la création d'un compte « Mein Unternehmenskonto ». Environ 29 500 entreprises et institutions fédérales doivent s'enregistrer comme entités NIS2 et notifier leurs incidents significatifs au BSI. Le portail sert de guichet unique (analyse de risques, mesures de sécurité, notification d'incidents).",
@@ -3526,6 +5316,29 @@
    "pertinence": "elevee",
    "pourquoi_fr": "Loi cyber britannique « équivalent NIS2 » qui touchera les fournisseurs de services managés et la chaîne d'approvisionnement des opérateurs essentiels, dont la santé.",
    "pourquoi_en": "The UK's NIS2-equivalent cyber law will affect managed service providers and the supply chain of essential operators, including healthcare."
+  },
+  {
+   "titre_fr": "Hongrie : entrée en vigueur d'un amendement réduisant le champ de la loi sur la cybersécurité",
+   "titre_en": "Hungary: amendment narrowing the scope of the Cybersecurity Act enters into force",
+   "resume_fr": "Depuis le 6 janvier 2026, les entreprises privées ne relèvent de la loi LXIX de 2024 que si elles sont moyennes entreprises au sens de la loi PME ou emploient au moins 50 personnes ou dépassent 10 M€ de chiffre d'affaires/bilan ; les entités « grandes » uniquement par leurs liens de groupe sont exclues et doivent demander leur radiation auprès du SZTFH.",
+   "resume_en": "Since 6 January 2026, private companies fall under Act LXIX of 2024 only if they are medium-sized under the SME Act or have at least 50 employees or over EUR 10 million turnover/balance sheet; entities 'large' only through group links are excluded and should request deregistration from SZTFH.",
+   "date": "2026-01-06",
+   "date_approx": false,
+   "zone": "Hongrie",
+   "lien": "https://www.bakermckenzie.com/en/insight/publications/2026/01/hungary-amendments-to-the-cybersecurity-act",
+   "source": "Baker McKenzie",
+   "nature": "cabinet",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Act LXIX of 2024",
+    "NIS2"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "À vérifier pour la filiale hongroise : son assujettissement dépend désormais de sa taille propre.",
+   "pourquoi_en": "To check for the Hungarian subsidiary: coverage now depends on its own size.",
+   "categorie": 1
   },
   {
    "titre_fr": "Nouvelle réserve nationale de dispositifs médicaux gérée par Lægemiddelstyrelsen",
@@ -3635,6 +5448,97 @@
    "pertinence": "faible",
    "pourquoi_fr": "Ces orientations sont utiles pour encadrer l'usage d'outils d'IA générative par les équipes suisses.",
    "pourquoi_en": "This guidance helps frame the use of generative AI tools by Swiss teams."
+  },
+  {
+   "titre_fr": "Suisse : entrée en application des clauses contractuelles standard de sécurité du SEPOS dans les achats de la Confédération",
+   "titre_en": "Switzerland: SEPOS standard security contract clauses apply to federal procurement",
+   "resume_fr": "Depuis le 1er janvier 2026, les services d'achat de la Confédération appliquent les clauses standard du SEPOS : les exigences de sécurité de l'information doivent figurer explicitement dans les appels d'offres et les contrats des fournisseurs, en réponse à l'incident Xplain.",
+   "resume_en": "Since 1 January 2026 federal procurement bodies apply SEPOS standard clauses: information security requirements must be explicit in tender documents and supplier contracts, following the Xplain incident.",
+   "date": "2026-01-01",
+   "date_approx": false,
+   "zone": "Suisse",
+   "lien": "https://www.vbs.admin.ch/fr/newnsb/3wFYzBM-h6ct9e1WtJQPl",
+   "source": "DDPS / SEPOS",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "LSI",
+    "Clauses standard SEPOS"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Toute fourniture à l'administration fédérale suisse (laboratoires fédéraux, armée, OFSP) comportera des obligations de sécurité contractuelles.",
+   "pourquoi_en": "Any supply to the Swiss federal administration (federal labs, army, FOPH) will carry contractual security obligations.",
+   "categorie": 5
+  },
+  {
+   "titre_fr": "Danemark : entrée en vigueur de la loi sur Digital Sundhed Danmark",
+   "titre_en": "Denmark: Act on Digital Sundhed Danmark enters into force",
+   "resume_fr": "La loi du 29 décembre 2025 crée Digital Sundhed Danmark, institution autonome réunissant MedCom, sundhed.dk, Sundhedsdatastyrelsen, le Nationalt Genom Center et des solutions informatiques régionales communes. Elle exploite l'infrastructure d'échange de données de santé, sert de point d'accès unique aux données pour la recherche, coordonne la cyber et la sécurité de l'information du système de santé et contribue aux standards informatiques de santé.",
+   "resume_en": "The Act of 29 December 2025 creates Digital Sundhed Danmark, an autonomous institution merging MedCom, sundhed.dk, Sundhedsdatastyrelsen, the National Genome Center and shared regional IT solutions. It runs the health data exchange infrastructure, acts as single access point for research data, coordinates cyber and information security across the health system and contributes to health IT standards.",
+   "date": "2026-01-01",
+   "date_approx": false,
+   "zone": "Danemark",
+   "lien": "https://www.retsinformation.dk/eli/lta/2025/1758/pdf",
+   "source": "Retsinformation",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "secteur",
+   "textes": [
+    "Lov om Digital Sundhed Danmark"
+   ],
+   "amende": null,
+   "pertinence": "elevee",
+   "pourquoi_fr": "Nouvel interlocuteur unique pour les standards d'échange (ex-MedCom) utilisés par les systèmes de laboratoire et pour la coordination cyber du secteur santé danois.",
+   "pourquoi_en": "New single counterpart for exchange standards (formerly MedCom) used by laboratory systems and for cyber coordination of the Danish health sector.",
+   "categorie": 3
+  },
+  {
+   "titre_fr": "Rép. tchèque : la réforme de la loi sur l'e-santé entre en vigueur (portail ezdravi.gov.cz, dossier de santé partagé)",
+   "titre_en": "Czech Republic: amended e-health act enters into force (ezdravi.gov.cz portal, shared health record)",
+   "resume_fr": "La novelle de la loi sur l'électronisation de la santé s'applique au 1er janvier 2026 : enregistrement obligatoire des prestataires dans les registres de base, lancement du portail national ezdravi.gov.cz, du dossier de santé partagé et des eŽádanky volontaires ; les éditeurs de logiciels doivent intégrer progressivement les services électroniques en lien avec le Centre national d'e-santé (NCEZ).",
+   "resume_en": "The amended e-health act applies from 1 January 2026: mandatory registration of providers in base registers, launch of the national ezdravi.gov.cz portal, the shared health record and voluntary eŽádanky; software vendors must progressively integrate the e-services with the National e-Health Centre (NCEZ).",
+   "date": "2026-01-01",
+   "date_approx": false,
+   "zone": "Rép. Tchèque",
+   "lien": "https://www.tribune.cz/vsechny-clanky/co-se-zmeni-od-ledna-2026-v-elektronickem-zdravotnictvi/",
+   "source": "Medical Tribune",
+   "nature": "presse",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Zákon o elektronizaci zdravotnictví",
+    "EHDS"
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Les logiciels de laboratoire connectés aux systèmes hospitaliers tchèques devront suivre les standards d'interopérabilité nationaux.",
+   "pourquoi_en": "Lab software connected to Czech hospital systems will need to follow national interoperability standards.",
+   "categorie": 3
+  },
+  {
+   "titre_fr": "Rép. tchèque : décret 505/2025 Sb. sur les exigences d'inscription au catalogue cloud computing de l'administration",
+   "titre_en": "Czech Republic: Decree 505/2025 Coll. on requirements for listing in the public-administration cloud catalogue",
+   "resume_fr": "Depuis le 1er janvier 2026, le décret 505/2025 Sb. fixe les exigences d'inscription au catalogue cloud computing géré par l'Agence numérique (DIA), avec de nouveaux formulaires obligatoires pour tous les niveaux de sécurité. Un guide des exigences de sécurité a suivi en mars 2026.",
+   "resume_en": "Since 1 January 2026, Decree 505/2025 Coll. sets requirements for listing in the cloud computing catalogue run by the Digital Agency (DIA), with new mandatory forms for all security levels. A security requirements guide followed in March 2026.",
+   "date": "2026-01-01",
+   "date_approx": false,
+   "zone": "Rép. Tchèque",
+   "lien": "https://www.dia.gov.cz/cs/nase-cinnosti/na-cem-pracujeme/egovernment-cloud/aktuality",
+   "source": "DIA",
+   "nature": "officielle",
+   "statut": "en_vigueur",
+   "rubrique": "reglementation",
+   "textes": [
+    "Zákon 365/2000 Sb.",
+    "Vyhláška 505/2025 Sb."
+   ],
+   "amende": null,
+   "pertinence": "moyenne",
+   "pourquoi_fr": "Un service cloud vendu à des organismes publics tchèques (dont hôpitaux publics) peut nécessiter l'inscription au catalogue et un niveau de sécurité.",
+   "pourquoi_en": "A cloud service sold to Czech public bodies (including public hospitals) may require catalogue listing and a security level.",
+   "categorie": 5
   }
  ]
 }

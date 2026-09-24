@@ -965,3 +965,16 @@ code { font-family: var(--mono); font-size: .9em; background: var(--surface-alt)
 .card-meta .card-date { white-space: nowrap; }
 .why p { line-height: 1.45; }
 @media (max-width: 720px) { .card-meta { flex-basis: auto; justify-content: flex-start; } }
+
+/* Textes applicables */
+.ref-table td { vertical-align: top; }
+.ref-nom { font-weight: 600; }
+.ref-table .badge-sm { margin-left: 6px; }
+.ref-resume { display: block; font-size: 12.5px; color: var(--text-mid); margin-top: 3px; }
+.ref-why { display: block; font-size: 12px; color: var(--accent); margin-top: 2px; }
+.ref-cat { font-size: 12.5px; color: var(--text-mid); }
+.map-ref-title { margin: 16px 0 6px; font-size: 14px; }
+.map-ref { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 24px; }
+.map-ref li { break-inside: avoid; padding: 4px 0; font-size: 13px; }
+.map-ref-cat { display: block; font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .04em; }
+@media (max-width: 720px) { .map-ref { columns: 1; } }

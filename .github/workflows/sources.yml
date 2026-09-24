@@ -1,0 +1,72 @@
+# Cyber Watch — ajout / retrait de source demandé depuis le site (sans jeton).
+#
+# Le site ouvre une « issue » GitHub pré-remplie, étiquetée « source ».
+#  - Si elle est ouverte par un propriétaire ou un collaborateur du dépôt, la
+#    modification est appliquée tout de suite.
+#  - Sinon, c'est une proposition : elle n'est appliquée que lorsqu'un
+#    collaborateur ajoute l'étiquette « approuvé ».
+# La modification est écrite dans config/sources_manuelles.json et prise en
+# compte à la collecte suivante.
+
+name: Cyber Watch - sources (demandes du site)
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: cyberwatch-sources
+  cancel-in-progress: false
+
+jobs:
+  appliquer:
+    if: >-
+      startsWith(github.event.issue.title, '[Source]') && (
+        (github.event.action == 'opened' && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)) ||
+        (github.event.action == 'labeled' && github.event.label.name == 'approuvé')
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Appliquer la demande
+        id: appli
+        env:
+          CORPS_ISSUE: ${{ github.event.issue.body }}
+          AUTEUR: ${{ github.actor }}
+        run: |
+          python collecte/sources_issue.py > resultat.txt && code=0 || code=$?
+          cat resultat.txt
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Enregistrer
+        if: steps.appli.outputs.code == '0'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/sources_manuelles.json
+          git diff --cached --quiet || git commit -m "Sources : demande #${{ github.event.issue.number }}"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Répondre et fermer la demande
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ steps.appli.outputs.code }}" = "0" ]; then
+            gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body-file resultat.txt
+            gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }}
+          else
+            gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body "La demande n'a pas pu être appliquée : $(cat resultat.txt)"
+          fi

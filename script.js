@@ -77,7 +77,8 @@
       why: 'Pourquoi cet article est là', why_themes: 'Thèmes proches : ', why_kw: 'Mots-clés présents : ',
       why_none: "Aucun mot-clé de la liste : gardé pour ne rien manquer (pertinence estimée d'après le sens du texte).",
       why_base: 'Base de connaissance (recherche documentaire du ', ech_title: 'Dates clés citées',
-      rkc_reserve: "Contenu réservé : article de la veille RKC (Wavestone). Son texte n'est pas publié sur ce site.", rkc_nolink: 'Article payant sans lien public : texte dans la veille RKC.',
+      rkc_reserve: "Article payant — contenu réservé. Son texte intégral est lu par la veille (pertinence, thèmes, amende, dates clés) mais n'est pas publié ici : il se trouve dans le fichier Word de la veille RKC.", rkc_nolink: 'Article payant sans lien public : texte dans le fichier Word de la veille RKC.',
+      rkc_libre: "Article signalé par la veille RKC : lisez-le sur le site source.", badge_payant: 'Payant', rkc_extrait: "Informations tirées du texte intégral (non publié) : pertinence, thèmes, amende et dates clés ci-dessus.",
       base_badge: 'Base 2026', new_badge: 'Nouveau', copy: 'Copier pour Teams', copied: 'Copié', copy_ok: 'Résumé copié', copy_ko: 'Copie impossible',
       source: 'Source', sources: 'Sources', keywords: 'Thèmes', syntheses: 'Analyses rédigées', glossary: 'Glossaire',
       conf: { confirme: 'Confirmé', nuance: 'Nuancé', rapporte: 'Rapporté' },
@@ -184,7 +185,8 @@
       why: 'Why this article is here', why_themes: 'Closest themes: ', why_kw: 'Keywords found: ',
       why_none: 'No keyword from the list: kept so that nothing is missed (relevance estimated from the meaning of the text).',
       why_base: 'Knowledge base (desk research of ', ech_title: 'Key dates mentioned',
-      rkc_reserve: 'Restricted content: article from the RKC watch (Wavestone). Its text is not published on this site.', rkc_nolink: 'Paywalled article with no public link: text in the RKC watch.',
+      rkc_reserve: 'Paywalled article — restricted content. Its full text is read by the watch (relevance, topics, fine, key dates) but not published here: it is in the RKC watch Word file.', rkc_nolink: 'Paywalled article with no public link: text in the RKC watch Word file.',
+      rkc_libre: 'Article flagged by the RKC watch: read it on the source website.', badge_payant: 'Paywalled', rkc_extrait: 'Information drawn from the full (unpublished) text: relevance, topics, fine and key dates above.',
       base_badge: '2026 base', new_badge: 'New', copy: 'Copy for Teams', copied: 'Copied', copy_ok: 'Summary copied', copy_ko: 'Copy failed',
       source: 'Source', sources: 'Sources', keywords: 'Topics', syntheses: 'Written analyses', glossary: 'Glossary',
       conf: { confirme: 'Confirmed', nuance: 'Qualified', rapporte: 'Reported' },
@@ -543,10 +545,11 @@
     if (a.statut && a.statut !== 'autre') ajout(foot, badge('badge-statut', libStatut(a.statut)));
     if (a.base) ajout(foot, badge('badge-base', t('base_badge')));
     if (a.nature === 'rkc') ajout(foot, badge('badge-rkc', libNature('rkc')));
+    if (a.payant) ajout(foot, badge('badge-fine badge-fine-cap', '🔒 ' + t('badge_payant')));
     if (tx.traduit && !a.base) ajout(foot, badge('badge-lang', (tx.de || '').toUpperCase() + '→' + LANG.toUpperCase(), t('translated_from') + (LANGUES[LANG][tx.de] || tx.de)));
     ajout(foot, el('button', { type: 'button', className: 'more', 'data-toggle': true, 'aria-expanded': 'false', text: t('read_more') + ' ›' }));
 
-    var hook = a.reserve ? t('rkc_reserve') : tx.aff.resume;
+    var hook = a.reserve ? (a.payant ? t('rkc_reserve') : t('rkc_libre')) : tx.aff.resume;
     var card = el('article', { className: 'card', id: id, 'data-pert': a.pertinence || 'faible' }, [
       el('div', { className: 'card-main', 'data-toggle': true }, [
         kicker(a),
@@ -569,7 +572,8 @@
         el('p', { className: 'why-title', text: t('why') }),
         el('p', { className: 'why-text', text: pourquoiTexte(a) }),
         a.base ? el('p', { className: 'why-meta', text: t('why_base') + dateLongue(a.detecte_le) + ')' }) : null,
-        a.amende ? el('p', { className: 'why-meta', text: texteAmende(a) }) : null
+        a.amende ? el('p', { className: 'why-meta', text: texteAmende(a) }) : null,
+        a.payant ? el('p', { className: 'why-meta', text: t('rkc_extrait') }) : null
       ]));
       if ((a.echeances || []).length) {
         var ul = el('ul', { className: 'ech-list' });
@@ -869,7 +873,8 @@
     function carteUne(c, principale) {
       var a = c.a, tx = textes(a), pe = c.u.echeance;
       var badges = el('div', { className: 'une-badges' }, [badgePert(a, true), badgeAmende(a, true),
-        a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null, a.base ? badge('badge-base badge-sm', t('base_badge')) : null]);
+        a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null, a.base ? badge('badge-base badge-sm', t('base_badge')) : null,
+        a.payant ? badge('badge-fine badge-fine-cap badge-sm', '🔒 ' + t('badge_payant')) : null]);
       return el('article', { className: 'une-card' + (principale ? ' une-main' : '') }, [
         el('div', { className: 'une-kicker' }, [ZONES[a.zone] ? el('span', { className: 'zone-code', text: codeZone(a.zone) }) : null, el('span', { text: dateLongue(a.date) + ' · ' + (a.source || '') })]),
         pe ? el('span', { className: 'une-deadline', text: '⏱ ' + (pe.approx ? t('approx') + ' ' : '') + dateLongue(pe.date) + ' · ' + t('in_days')(joursJusqua(pe.date)) }) : null,
@@ -1128,7 +1133,7 @@
       return el('li', null, [
         el('span', { className: 'map-date', text: dateLongue(a.date) }),
         a.lien ? el('a', { href: a.lien, target: '_blank', rel: 'noopener noreferrer', text: tx.aff.titre }) : el('strong', { text: tx.aff.titre }),
-        el('div', { className: 'map-badges' }, [badgePert(a, true), a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null, badgeAmende(a, true)]),
+        el('div', { className: 'map-badges' }, [badgePert(a, true), a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null, badgeAmende(a, true), a.payant ? badge('badge-fine badge-fine-cap badge-sm', '🔒 ' + t('badge_payant')) : null]),
         riche && tx.aff.resume && !a.reserve ? el('p', { className: 'tl-ctx', text: tx.aff.resume }) : null,
         el('span', { className: 'map-meta', text: a.source || '' })
       ]);

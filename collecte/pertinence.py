@@ -71,15 +71,27 @@ class Pertinence:
             return 0
         sims = None
         if self.modele is not None:
-            textes = []
-            for a in a_noter:
-                t = (a.get("_texte") or (a["titre"] + ". " + (a.get("resume") or "")))[:700]
-                en = (a.get("trad") or {}).get("en") or {}
-                if en.get("titre"):
-                    t += " / " + en["titre"]
-                textes.append(t)
+            # Un texte long (article payant de la veille RKC) est découpé en morceaux :
+            # chaque morceau est comparé aux thèmes et on garde le meilleur score.
+            textes, proprio = [], []
+            for k, a in enumerate(a_noter):
+                if a.get("_texte"):
+                    brut = a["_texte"]
+                    morceaux = [a["titre"] + ". " + brut[i:i + 600] for i in range(0, min(len(brut), 6000), 550)] or [brut]
+                else:
+                    t = (a["titre"] + ". " + (a.get("resume") or ""))[:700]
+                    en = (a.get("trad") or {}).get("en") or {}
+                    if en.get("titre"):
+                        t += " / " + en["titre"]
+                    morceaux = [t]
+                for m in morceaux:
+                    textes.append(m)
+                    proprio.append(k)
             vec = self.modele.encode(textes, normalize_embeddings=True, batch_size=32, show_progress_bar=False)
-            sims = vec @ self._vec_themes.T  # similarité cosinus article × phrase
+            brutes = vec @ self._vec_themes.T  # similarité cosinus morceau × phrase
+            sims = [None] * len(a_noter)
+            for ligne, k in zip(brutes, proprio):
+                sims[k] = ligne if sims[k] is None else [max(x, y) for x, y in zip(sims[k], ligne)]
         for k, a in enumerate(a_noter):
             groupes = a.get("groupes") or []
             fort = any(g not in self.non_suff for g in groupes)

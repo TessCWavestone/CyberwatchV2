@@ -30,6 +30,10 @@ d'abonnement, rien à payer.
 | `collecte/sources_issue.py`, `.github/workflows/sources.yml` | Applique les demandes d'ajout / retrait de source faites sans jeton | Personne |
 | `requirements-pertinence.txt` | Modèle de pertinence installé par GitHub | Personne |
 | `data/versions.js` / `.json` | Historique des collectes (une version par collecte) | Le script |
+| `collecte/echeances.py` | Repère les dates clés citées dans les textes (onglet « L'essentiel ») | Personne |
+| `collecte/rkc.py` | Lit les veilles RKC (mails et Word) déposées dans un dépôt privé | Personne |
+| `data/debats.js` / `.json` | Avis d'experts (onglet « Débats et signaux », non certifié), stockés à part | Le script |
+| `data/monde.js` | Fond de carte (contours des pays, données libres Natural Earth), téléchargé une fois | Le script |
 | `config/referentiel.json` | Textes applicables par pays (grille de 10 catégories), affichés dans l'onglet « Textes applicables » | Vous, à la main si besoin. **Jamais écrasé** |
 
 ---
@@ -99,7 +103,40 @@ source jusqu'au 1er janvier 2026. La base de connaissance
 automatiquement à chaque collecte. Ensuite, laissez ce champ vide : chaque
 collecte s'ajoute à la base existante.
 
-### Étape 7 : ajout de sources depuis le site (facultatif)
+### Étape 7 : brancher la veille RKC (facultatif, 10 minutes)
+
+Le site est public : les fichiers RKC (articles payants, veille interne
+Wavestone) ne doivent **jamais** être déposés dans ce dépôt. On les range dans
+un second dépôt **privé**, que la collecte lit sans jamais publier son contenu.
+Le site n'affiche que le titre, le lien, la date, la note et les thèmes.
+
+1. **Créer le dépôt privé** : **+ → New repository**, nom `cyberwatch-rkc`,
+   cochez **Private**, **Create repository**.
+2. **Y déposer chaque semaine** (Add file → Upload files, sous-dossiers libres) :
+   - le mail RKC : dans Outlook, ouvrez le mail → **Fichier → Enregistrer
+     sous** → format **Message Outlook (.msg)** (ou glissez le mail sur le
+     bureau : un .msg est créé) ;
+   - le fichier Word « Veille AAAA-MM-JJ.docx » (texte des articles payants).
+     Chaque article commence par son titre, en style **Titre** ou entièrement
+     en **gras**, suivi de son texte. Mettez la date dans le nom du fichier.
+3. **Créer un jeton de lecture** : photo de profil → **Settings → Developer
+   settings → Personal access tokens → Fine-grained tokens → Generate new
+   token**. *Repository access* : **Only select repositories** →
+   `cyberwatch-rkc` ; *Permissions → Contents* : **Read-only**. Durée maximale
+   1 an : notez la date pour le renouveler.
+4. **Le donner au dépôt du site** : dépôt de la veille → **Settings → Secrets
+   and variables → Actions** :
+   - onglet *Secrets* → `RKC_TOKEN` = le jeton ;
+   - onglet *Variables* → `RKC_DEPOT` = `votre-compte/cyberwatch-rkc`.
+5. La prochaine collecte lit les fichiers. L'onglet **Sources** affiche une
+   ligne « Veille RKC — dépôt privé » avec le nombre d'articles lus.
+
+Les liens des articles gratuits cités dans les mails sont repris tels quels
+(les liens Outlook « safelinks » sont nettoyés). Le script ne recherche pas
+les articles sur internet : si un lien est protégé, un humain qui clique y
+accède normalement.
+
+### Étape 8 : ajout de sources depuis le site (facultatif)
 
 Dans **Issues → Labels → New label**, créez l'étiquette `approuvé`. Elle sert à
 valider les propositions de source faites par des personnes qui ne sont pas
@@ -109,6 +146,29 @@ collaboratrices du dépôt (voir « Ajouter ou retirer une source » plus bas).
 
 ## Le site : onglets, langues, exports
 
+- **L'essentiel** (page d'accueil) : « À la une » (les 5 informations les plus
+  importantes) et « Dates clés » (frise des échéances à venir). Tout est
+  calculé par des règles fixes, sans IA payante : pertinence, échéance proche
+  (dates repérées automatiquement dans les textes, dans toutes les langues),
+  statut du texte, source officielle, amende, fraîcheur. Les dates « vers »
+  sont approximatives (mois seulement).
+- **Veille** : « Nouveautés » (30 derniers jours, 60 s'il y a peu d'articles)
+  et « Archives » (tout le reste depuis le 1er janvier 2026). Un seul bouton
+  « Affiner » ouvre les filtres ; le filtre « Thèmes » réunit acronymes et
+  mots-clés sans doublon (RGPD = GDPR).
+- **Débats et signaux (non certifié)** : avis d'experts, positions,
+  analyses prospectives, uniquement issus des sources dont le type est
+  « Avis d'experts (non certifié) » dans l'Excel. Stockés à part
+  (`data/debats.js`), ils n'apparaissent **jamais** dans la veille, la carte,
+  L'essentiel ou les textes applicables. Les « tendances » sont de simples
+  comptages de sujets (60 jours précédents → 60 derniers jours), sans
+  interprétation. Limites : pas de « ressenti » calculé ; les meilleures
+  sources d'analyse (Politico Pro, MLex, Contexte, LinkedIn) sont payantes ou
+  fermées aux robots.
+- **Carte** : vraie carte de l'Europe (et vue Monde). Le fond de carte (données
+  libres Natural Earth) est téléchargé lors de la première collecte sur GitHub
+  puis gardé dans `data/monde.js` ; en attendant, une carte simplifiée
+  s'affiche.
 - **Onglets** : *Veille* (articles et filtres), *Carte* (couleur = nombre
   d'articles ; le survol affiche la dernière réglementation ; un clic ouvre la
   fiche du pays avec ses 5 dernières réglementations, leur statut, leur amende

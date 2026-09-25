@@ -43,6 +43,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from traduction import Traducteur, extraire_acronymes, registre_acronymes  # noqa: E402
 from pertinence import Pertinence  # noqa: E402
 from amendes import detecter as detecter_amende  # noqa: E402
+import echeances  # noqa: E402
+import rkc  # noqa: E402
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(RACINE, "data")
@@ -344,6 +346,9 @@ NATURE_OFFICIELLE = re.compile(
 
 def nature_source(src):
     t = sans_accents(src["type"]).lower()
+    # « Avis d'experts (non certifié) » : section Débats et signaux, jamais mélangée à la veille
+    if "avis" in t or "opinion" in t or "expert" in t:
+        return "opinion"
     if "avocat" in t:
         return "cabinet"
     if "officiel" in t or "gouvernement" in t or NATURE_OFFICIELLE.search(domaine(src["url"])):
@@ -787,6 +792,28 @@ def traduire_syntheses(trad):
         f.write("window.VEILLE_SYNTHESES_EN = %s;\n" % json.dumps(en, ensure_ascii=False, indent=1))
 
 
+# --------------------------------------------------------------------------- fond de carte
+
+def telecharger_carte():
+    """Contours des pays (données libres Natural Earth via world-atlas), téléchargés
+    une seule fois puis gardés dans data/monde.js pour que le site fonctionne hors ligne."""
+    chemin = os.path.join(DATA, "monde.js")
+    if os.path.exists(chemin):
+        return
+    for url in ("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json",
+                "https://unpkg.com/world-atlas@2/countries-50m.json"):
+        try:
+            r = requests.get(url, timeout=60)
+            r.raise_for_status()
+            json.loads(r.text)
+            with open(chemin, "w", encoding="utf-8") as f:
+                f.write("window.VEILLE_MONDE = %s;\n" % r.text)
+            print("Fond de carte téléchargé (%d Ko)." % (len(r.text) // 1024))
+            return
+        except Exception as e:
+            print("Fond de carte indisponible depuis %s : %s" % (url, str(e)[:80]))
+
+
 # --------------------------------------------------------------------------- base de connaissance
 
 def charger_base(ids_existants):
@@ -831,6 +858,8 @@ def main():
 
     ancien = lire_json(os.path.join(DATA, "actualites.json"), {})
     articles = {a["id"]: a for a in ancien.get("articles", []) if not a.get("base")}
+    # Débats et signaux (avis d'experts) : stockés à part, jamais mélangés à la veille certifiée
+    debats = {a["id"]: a for a in lire_json(os.path.join(DATA, "debats.json"), {}).get("articles", [])}
     etats_prec = {e["url"]: e for e in lire_json(os.path.join(DATA, "etat_sources.json"), {}).get("sources", [])}
     vus = lire_json(os.path.join(DATA, "vus.json"), {})
     versions = lire_json(os.path.join(DATA, "versions.json"), {}).get("versions", [])
@@ -858,7 +887,7 @@ def main():
             ident = identifiant(a["lien"])
             nouveau_lien = ident not in deja_vus
             deja_vus.add(ident)
-            if ident in articles:
+            if ident in articles or ident in debats:
                 continue
             # Première visite (ou rattrapage) : on ne reprend que le daté postérieur à
             # la date limite, pour ne pas présenter d'anciens articles comme neufs.
@@ -878,7 +907,8 @@ def main():
             # le plus souvent un lien de menu (« Nos services »…) et non un article.
             if not a["date"] and not groupes and not etat.get("mode", "").startswith("rss") and etat.get("mode") != "api":
                 continue
-            articles[ident] = {
+            cible = debats if nature_source(src) == "opinion" else articles
+            cible[ident] = {
                 "id": ident,
                 "titre": a["titre"],
                 "lien": a["lien"],
@@ -897,8 +927,9 @@ def main():
                 "amende": detecter_amende(texte, src["zone"]),
             }
             if src.get("filtre_pertinence"):
-                articles[ident]["filtre_pertinence"] = True
-            nouveaux_ids.append(ident)
+                cible[ident]["filtre_pertinence"] = True
+            if cible is articles:
+                nouveaux_ids.append(ident)
             retenus += 1
         vus[cle_src] = sorted(deja_vus)[-5000:]
         etat["nb_retenus"] = retenus
@@ -919,6 +950,37 @@ def main():
                           "acces": "retiree" if src.get("retiree") else "inactive", "flux": "", "page": "",
                           "nb_trouves": 0, "nb_retenus": 0, "erreur": msg, "type": src["type"],
                           "nature": nature_source(src), "verifie_le": "", "origine": src.get("origine", "excel")})
+
+    # Veilles RKC (dépôt privé récupéré dans rkc/) : titre + lien publiés, texte gardé privé
+    arts_rkc, rapport_rkc = rkc.lire_rkc(os.path.join(RACINE, "rkc"), AUJOURDHUI)
+    n_rkc = 0
+    for r in arts_rkc:
+        ident = identifiant(r["lien"]) if r["lien"] else "r" + hashlib.sha1(r["titre"].encode("utf-8")).hexdigest()[:11]
+        if ident in articles or r["date"] < plancher:
+            continue
+        texte_prive = r["titre"] + ". " + r["texte"]
+        rubrique, tags, groupes = classer(texte_prive, regles, cfg)
+        articles[ident] = {
+            "id": ident, "titre": r["titre"], "lien": r["lien"], "resume": "", "reserve": True,
+            "payant": r["payant"], "date": r["date"].isoformat(), "date_estimee": False,
+            "detecte_le": AUJOURDHUI.isoformat(), "version": id_version,
+            "source": "Veille RKC (Wavestone)", "zone": r["zone"], "nature": "rkc",
+            "rubrique": rubrique or "autres", "rubrique_mots_cles": bool(rubrique), "tags": tags, "groupes": groupes,
+            "amende": detecter_amende(texte_prive, r["zone"]),
+            "echeances": [dict(e, extrait={}) for e in echeances.extraire({"fr": texte_prive}, r["date"], AUJOURDHUI)],
+            "_texte": texte_prive,  # privé : sert à la note de pertinence, retiré avant l'écriture
+        }
+        nouveaux_ids.append(ident)
+        n_rkc += 1
+    if rapport_rkc["fichiers"]:
+        print("Veille RKC : %d fichiers (%d mails, %d Word), %d nouveaux articles%s" % (
+            rapport_rkc["fichiers"], rapport_rkc["mails"], rapport_rkc["word"], n_rkc,
+            (" — erreurs : " + " ; ".join(rapport_rkc["erreurs"])) if rapport_rkc["erreurs"] else ""))
+        etats.append({"nom": "Veille RKC (Wavestone) — dépôt privé", "zone": "Europe", "url": "", "mode": "rkc",
+                      "acces": "partielle" if rapport_rkc["erreurs"] else "ok", "flux": "", "page": "",
+                      "nb_trouves": len(arts_rkc), "nb_retenus": n_rkc, "erreur": " ; ".join(rapport_rkc["erreurs"]),
+                      "type": "Veille interne", "nature": "rkc", "verifie_le": MAINTENANT.strftime("%Y-%m-%d %H:%M"),
+                      "origine": "rkc"})
 
     # Base de connaissance (jamais purgée) + nettoyage des articles collectés
     base = charger_base(articles)
@@ -961,6 +1023,11 @@ def main():
 
     # Pertinence (après traduction : le modèle lit aussi le titre anglais)
     pert = Pertinence(cfg)
+    liste_debats = sorted((a for a in debats.values() if a["date"] >= seuil), key=lambda a: a["date"], reverse=True)[:2000]
+    for a in liste_debats:
+        trad.traduire_article(a)
+    pert.noter(liste_debats)
+    liste_debats = [a for a in liste_debats if not (a.get("filtre_pertinence") and a.get("pertinence") == "faible")]
     n = pert.noter(liste)
     # Sources très volumineuses (journal officiel…) : seuls les textes jugés pertinents sont gardés
     avant = len(liste)
@@ -986,8 +1053,23 @@ def main():
     meta["sous_titre_en"] = cfg.get("sous_titre_en", "")
     meta["surtitre_en"] = cfg.get("surtitre_en", "")
 
+    # Dates clés (échéances) citées dans les textes : pour l'onglet « L'essentiel »
+    for a in liste + liste_debats:
+        if a.get("nature") == "rkc":
+            continue  # calculées une fois à partir du texte privé
+        textes = {a.get("langue") or "fr": a["titre"] + ". " + (a.get("resume") or "")}
+        for lg, tr in (a.get("trad") or {}).items():
+            textes[lg] = (tr.get("titre") or "") + ". " + (tr.get("resume") or "")
+        try:
+            d_art = dt.date.fromisoformat(a["date"])
+        except ValueError:
+            d_art = None
+        a["echeances"] = echeances.extraire(textes, d_art, AUJOURDHUI)
+    for a in liste + liste_debats:
+        a.pop("_texte", None)
+
     # Acronymes : forme canonique par article (pour le filtre du site) + registre global
-    for a in liste:
+    for a in liste + liste_debats:
         a["acronymes"] = [code for code, _ in extraire_acronymes(a["titre"] + " " + a.get("resume", ""), trad.glossaire)]
     precedent = lire_json(os.path.join(DATA, "acronymes.json"), {})
     registre = registre_acronymes(liste, trad.glossaire, precedent, AUJOURDHUI.isoformat())
@@ -1008,6 +1090,8 @@ def main():
     ecrire_json_et_js("etat_sources", {"mise_a_jour": meta["mise_a_jour"], "jours_premiere_collecte": cfg.get("jours_premiere_collecte", 60),
                                        "jours_conservation": conservation, "sources": etats}, "VEILLE_ETAT_SOURCES")
     ecrire_json_et_js("versions", {"versions": versions}, "VEILLE_VERSIONS")
+    ecrire_json_et_js("debats", {"mise_a_jour": meta["mise_a_jour"], "articles": liste_debats}, "VEILLE_DEBATS")
+    telecharger_carte()
     # Référentiel des textes applicables (config/referentiel.json, modifiable à la main) -> site
     ref = lire_json(os.path.join(RACINE, "config", "referentiel.json"), {})
     if ref:

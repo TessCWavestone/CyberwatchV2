@@ -4,352 +4,319 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cyber Watch</title>
-<meta name="description" content="Veille réglementaire cybersécurité, IA et dispositifs médicaux — collecte automatique. Regulatory watch on cybersecurity, AI and medical devices.">
+<meta name="description" content="Veille réglementaire cybersécurité, données, IA et dispositifs médicaux. Regulatory watch on cybersecurity, data, AI and medical devices.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#contenu" data-i18n="skip">Aller au contenu</a>
 
 <!--
-  Ce fichier ne contient ni articles ni textes écrits en dur : tout est construit
-  par script.js, en français ou en anglais (bouton FR / EN), à partir de :
-    data/actualites.js    -> articles collectés, traduits et notés (pertinence)
-    data/etat_sources.js  -> accessibilité de chaque source
-    data/versions.js      -> historique des collectes (une version par collecte)
-    data/syntheses.js     -> analyses rédigées (français, modifiable à la main)
-    data/syntheses_en.js  -> leur traduction anglaise (générée automatiquement)
+  Aucun texte d'article n'est écrit ici : tout est construit par script.js, en
+  français ou en anglais, à partir des fichiers de data/ :
+    actualites.js   veille certifiée (articles collectés + base de connaissance)
+    debats.js       avis d'experts (non certifié, toujours affiché à part)
+    referentiel.js  textes applicables par pays
+    etat_sources.js, versions.js, acronymes.js, syntheses.js, monde.js (fond de carte)
 -->
 
-<header class="site-header">
+<header class="masthead">
   <div class="wrap">
-    <div class="header-top">
-      <p class="eyebrow" id="surtitre">Veille réglementaire — Wavestone</p>
-      <div class="lang-switch" role="group" aria-label="Langue / Language">
-        <button type="button" class="lang-btn" data-lang="fr" lang="fr">FR</button>
-        <button type="button" class="lang-btn" data-lang="en" lang="en">EN</button>
+    <div class="mast-top">
+      <p class="mast-kicker" id="surtitre">Veille réglementaire — Wavestone</p>
+      <div class="mast-tools">
+        <div class="menu" id="menu-export">
+          <button type="button" class="btn btn-quiet" aria-haspopup="true" aria-expanded="false" data-menu data-i18n="btn_export">Exporter</button>
+          <div class="menu-list" role="menu" hidden>
+            <button type="button" role="menuitem" id="export-pdf-complet" data-i18n="btn_pdf_all">La veille complète (PDF)</button>
+            <button type="button" role="menuitem" id="export-pdf" data-i18n="btn_pdf">Les articles affichés (PDF)</button>
+            <button type="button" role="menuitem" id="export-csv" data-i18n="btn_excel">Les articles affichés (Excel)</button>
+          </div>
+        </div>
+        <a class="btn btn-quiet" id="lancer-maj" href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="btn_update">Lancer une mise à jour</a>
+        <div class="lang-switch" role="group" aria-label="Langue / Language">
+          <button type="button" class="lang-btn" data-lang="fr" lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" lang="en">EN</button>
+        </div>
       </div>
     </div>
-    <h1 id="titre">Cyber Watch</h1>
-    <p class="subtitle" id="sous-titre"></p>
-
-    <div class="update-bar">
-      <p class="update-info" id="update-info"></p>
-      <div class="update-actions">
-        <a class="btn btn-primary" id="lancer-maj" href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="btn_update">Lancer une mise à jour</a>
-        <button type="button" class="btn" id="export-csv" data-i18n="btn_excel">Exporter la sélection (Excel)</button>
-        <button type="button" class="btn" id="export-pdf" data-i18n="btn_pdf">Exporter la sélection (PDF)</button>
-        <button type="button" class="btn btn-strong" id="export-pdf-complet" data-i18n="btn_pdf_all">Générer la veille complète (PDF)</button>
-      </div>
-    </div>
-
-    <div class="version-bar">
-      <label class="version-label" for="version-select" data-i18n="version_label">Version de la veille</label>
-      <select id="version-select" class="select"></select>
-      <label class="switch" id="version-only-wrap"><input type="checkbox" id="version-only"><span data-i18n="version_only">Seulement les nouveautés de cette version</span></label>
-      <a class="version-link" id="version-link" href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="version_git">Voir cette version sur GitHub</a>
+    <h1 class="mast-title" id="titre">Cyber Watch</h1>
+    <p class="mast-sub" id="sous-titre"></p>
+    <div class="mast-edition">
+      <p id="edition"></p>
+      <label class="edition-select"><span data-i18n="version_label">Édition</span>
+        <select id="version-select"></select></label>
     </div>
     <p class="version-banner" id="version-banner" hidden></p>
-
-    <div class="stats" role="list">
-      <div class="stat" role="listitem"><span class="stat-num" data-stat="total">0</span><span class="stat-lab" data-i18n="stat_total">articles collectés</span></div>
-      <div class="stat" role="listitem"><span class="stat-num" data-stat="semaine">0</span><span class="stat-lab" data-i18n="stat_week">publiés ces 7 jours</span></div>
-      <div class="stat" role="listitem"><span class="stat-num" data-stat="pays">0</span><span class="stat-lab" data-i18n="stat_countries">pays et zones couverts</span></div>
-      <div class="stat" role="listitem"><span class="stat-num" data-stat="sources">0</span><span class="stat-lab" data-i18n="stat_sources">sources accessibles</span></div>
-    </div>
   </div>
 </header>
 
-<nav class="site-nav" aria-label="Onglets">
+<nav class="site-nav" aria-label="Rubriques du site">
   <div class="wrap">
     <div class="tabs" role="tablist">
+      <a class="tab" role="tab" href="#essentiel" data-tab-link="essentiel" data-i18n="tab_essentiel">L'essentiel</a>
       <a class="tab" role="tab" href="#veille" data-tab-link="veille" data-i18n="tab_watch">Veille</a>
       <a class="tab" role="tab" href="#carte" data-tab-link="carte" data-i18n="tab_map">Carte</a>
       <a class="tab" role="tab" href="#referentiel" data-tab-link="referentiel" data-i18n="tab_ref">Textes applicables</a>
+      <a class="tab tab-debats" role="tab" href="#debats" data-tab-link="debats" data-i18n="tab_debats">Débats et signaux</a>
       <a class="tab" role="tab" href="#sources" data-tab-link="sources" data-i18n="tab_sources">Sources</a>
     </div>
-    <div class="nav-inner" id="nav"></div>
   </div>
 </nav>
 
-<main id="contenu" class="wrap">
+<main id="contenu">
 
-<!-- ================================================================ VEILLE -->
-<div class="tab-panel" data-tab="veille">
+<!-- ============================================================ L'ESSENTIEL -->
+<div class="tab-panel" data-tab="essentiel">
+  <div class="wrap">
+    <section class="une" aria-labelledby="une-titre">
+      <header class="block-head">
+        <h2 id="une-titre" data-i18n="une_title">À la une</h2>
+        <p class="block-lead" data-i18n="une_lead"></p>
+      </header>
+      <div class="une-grid" id="une-grid"></div>
+      <p class="empty" id="une-vide" hidden data-i18n="une_empty"></p>
+    </section>
 
-<section class="panel" aria-labelledby="filtres-titre">
-  <div class="panel-head">
-    <h2 id="filtres-titre">
-      <button type="button" class="panel-toggle" id="toggle-filters" aria-expanded="true" aria-controls="facets">
-        <span class="chevron" aria-hidden="true"></span>
-        <span data-i18n="filters">Filtres</span>
-        <span class="active-count" id="active-count" hidden></span>
-      </button>
-    </h2>
-    <div class="panel-actions">
-      <label class="switch"><input type="checkbox" id="voir-originaux"><span data-i18n="show_originals">Afficher les textes d'origine</span></label>
-      <button type="button" class="btn" id="expand-all" data-i18n="expand_all">Tout déplier</button>
-      <button type="button" class="btn" id="collapse-all" data-i18n="collapse_all">Tout replier</button>
+    <section class="agenda" aria-labelledby="agenda-titre">
+      <header class="block-head">
+        <h2 id="agenda-titre" data-i18n="agenda_title">Dates clés</h2>
+        <p class="block-lead" data-i18n="agenda_lead"></p>
+      </header>
+      <div class="seg" role="group" id="agenda-horizon">
+        <button type="button" data-h="90" aria-pressed="true" data-i18n="h90">3 mois</button>
+        <button type="button" data-h="180" data-i18n="h180">6 mois</button>
+        <button type="button" data-h="365" data-i18n="h365">12 mois</button>
+        <button type="button" data-h="1100" data-i18n="hall">Tout</button>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+      <p class="empty" id="agenda-vide" hidden data-i18n="agenda_empty"></p>
+    </section>
+
+    <section class="chiffres" aria-labelledby="chiffres-titre">
+      <h2 id="chiffres-titre" class="sr-only" data-i18n="kpi_title">En chiffres</h2>
+      <div class="kpis" id="kpis"></div>
+    </section>
+  </div>
+</div>
+
+<!-- ================================================================= VEILLE -->
+<div class="tab-panel" data-tab="veille" hidden>
+  <div class="wrap">
+    <div class="toolbar">
+      <div class="seg seg-big" role="group" id="fenetre">
+        <button type="button" data-f="recent" aria-pressed="true"><span data-i18n="w_recent">Nouveautés</span> <span class="seg-n" id="n-recent"></span></button>
+        <button type="button" data-f="archives"><span data-i18n="w_archives">Archives</span> <span class="seg-n" id="n-archives"></span></button>
+      </div>
+      <div class="toolbar-right">
+        <input type="search" id="recherche" class="search" data-i18n-ph="search_ph" autocomplete="off" aria-label="Rechercher">
+        <button type="button" class="btn" id="toggle-filters" aria-expanded="false" aria-controls="facets">
+          <span data-i18n="filters">Affiner</span> <span class="active-count" id="active-count" hidden></span>
+        </button>
+        <select id="tri" class="select" aria-label="Tri">
+          <option value="date" data-i18n="sort_date">Plus récents</option>
+          <option value="pertinence" data-i18n="sort_pert">Plus pertinents</option>
+          <option value="amende" data-i18n="sort_fine">Plus fortes amendes</option>
+        </select>
+      </div>
     </div>
-  </div>
+    <p class="window-note" id="window-note"></p>
 
-  <div class="search-row">
-    <label class="search-label" for="recherche" data-i18n="search">Rechercher</label>
-    <input type="search" id="recherche" class="search" data-i18n-ph="search_ph" autocomplete="off">
-    <label class="search-label" for="tri" data-i18n="sort">Trier par</label>
-    <select id="tri" class="select">
-      <option value="date" data-i18n="sort_date">Date (plus récent d'abord)</option>
-      <option value="pertinence" data-i18n="sort_pert">Pertinence</option>
-      <option value="amende" data-i18n="sort_fine">Montant d'amende</option>
-    </select>
-  </div>
-
-  <div class="facets" id="facets">
-    <fieldset class="facet">
-      <legend data-i18n="f_period">Période de publication</legend>
-      <div class="chips">
-        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="7"><span data-i18n="p7">7 jours</span></label>
-        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="30"><span data-i18n="p30">30 jours</span></label>
-        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="90"><span data-i18n="p90">3 mois</span></label>
-        <label class="chip"><input type="radio" name="periode" data-facet="periode" value="" checked><span data-i18n="pall">Tout</span></label>
+    <div class="facets-panel" id="facets" hidden>
+      <div class="facets">
+        <fieldset class="facet"><legend data-i18n="f_pert">Pertinence</legend><div class="chips" id="fc-pert"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_zone">Pays / zone</legend><div class="chips" id="fc-zone"></div></fieldset>
+        <fieldset class="facet facet-wide"><legend data-i18n="f_theme">Thèmes</legend><div class="chips" id="fc-theme"></div>
+          <button type="button" class="linkbtn" id="more-themes" hidden></button></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_section">Rubrique</legend><div class="chips" id="fc-section"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_status">Statut du texte</legend><div class="chips" id="fc-statut"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_nature">Source</legend><div class="chips" id="fc-nature"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_fine">Amendes</legend><div class="chips" id="fc-amende"></div></fieldset>
       </div>
-    </fieldset>
-
-    <fieldset class="facet">
-      <legend data-i18n="f_pert">Pertinence</legend>
-      <div class="chips">
-        <label class="chip chip-p-elevee"><input type="checkbox" data-facet="pert" value="elevee"><span data-i18n="pe_elevee">Élevée</span></label>
-        <label class="chip chip-p-moyenne"><input type="checkbox" data-facet="pert" value="moyenne"><span data-i18n="pe_moyenne">Moyenne</span></label>
-        <label class="chip chip-p-faible"><input type="checkbox" data-facet="pert" value="faible"><span data-i18n="pe_faible">Faible</span></label>
+      <div class="facets-foot">
+        <label class="switch"><input type="checkbox" id="voir-originaux"><span data-i18n="show_originals">Textes d'origine (non traduits)</span></label>
+        <button type="button" class="btn btn-quiet" id="reset-filters" data-i18n="reset">Tout effacer</button>
       </div>
-    </fieldset>
+    </div>
 
-    <fieldset class="facet">
-      <legend data-i18n="f_fine">Amendes</legend>
-      <div class="chips">
-        <label class="chip"><input type="checkbox" data-facet="amende" value="prononcee"><span data-i18n="am_prononcee">Amende prononcée</span></label>
-        <label class="chip"><input type="checkbox" data-facet="amende" value="plafond"><span data-i18n="am_plafond">Amende maximale prévue</span></label>
-      </div>
-    </fieldset>
-
-    <fieldset class="facet">
-      <legend data-i18n="f_status">Statut du texte</legend>
-      <div class="chips" id="statut-chips"></div>
-    </fieldset>
-
-    <fieldset class="facet">
-      <legend data-i18n="f_nature">Nature de la source</legend>
-      <div class="chips">
-        <label class="chip chip-confirme"><input type="checkbox" data-facet="nature" value="officielle"><span data-i18n="n_officielle">Source officielle</span></label>
-        <label class="chip chip-nuance"><input type="checkbox" data-facet="nature" value="cabinet"><span data-i18n="n_cabinet">Cabinet d'avocats</span></label>
-        <label class="chip"><input type="checkbox" data-facet="nature" value="presse"><span data-i18n="n_presse">Presse &amp; autres</span></label>
-        <label class="chip"><input type="checkbox" data-facet="nature" value="synthese"><span data-i18n="n_synthese">Analyse rédigée</span></label>
-      </div>
-    </fieldset>
-
-    <fieldset class="facet facet-wide">
-      <legend data-i18n="f_section">Rubrique</legend>
-      <div class="chips" id="rubrique-chips"></div>
-    </fieldset>
-
-    <fieldset class="facet facet-wide">
-      <legend data-i18n="f_zone">Pays / zone</legend>
-      <div class="chips chips-scroll" id="zone-chips"></div>
-    </fieldset>
-
-    <fieldset class="facet facet-wide">
-      <legend data-i18n="f_acro">Acronyme</legend>
-      <div class="chips chips-scroll" id="acro-chips"></div>
-    </fieldset>
-
-    <fieldset class="facet facet-wide">
-      <legend data-i18n="f_tag">Mot-clé</legend>
-      <div class="chips chips-scroll" id="tag-chips"></div>
-    </fieldset>
-  </div>
-
-  <div class="panel-foot">
-    <button type="button" class="btn btn-ghost" id="reset-filters" data-i18n="reset">Réinitialiser les filtres</button>
-    <p class="hint" data-i18n="hint"></p>
     <p class="result-count" id="result-count" aria-live="polite"></p>
+    <p class="empty" id="empty-state" hidden data-i18n="empty">Aucun article ne correspond à ces filtres.</p>
+    <p class="empty" id="no-data" hidden data-i18n="no_data"></p>
+    <div id="rubriques"></div>
   </div>
-</section>
-
-<p class="empty" id="empty-state" hidden data-i18n="empty">Aucun article ne correspond à ces filtres.</p>
-<p class="empty" id="no-data" hidden data-i18n="no_data">Aucun article collecté pour l'instant. Lancez la première mise à jour : les articles apparaîtront ici.</p>
-
-<div id="rubriques"></div>
-
-<section class="section" id="glossaire" hidden>
-  <header class="section-head">
-    <p class="section-num">—</p>
-    <h2 data-i18n="glossary">Glossaire</h2>
-    <p class="section-lead" data-i18n="glossary_lead">Les textes et notions qui reviennent le plus dans cette veille.</p>
-  </header>
-  <ol class="glossary" id="glossary"></ol>
-</section>
-
 </div>
 
-<!-- ================================================================= CARTE -->
+<!-- ================================================================== CARTE -->
 <div class="tab-panel" data-tab="carte" hidden>
-<section class="section section-first" id="carte-section">
-  <header class="section-head">
-    <h2 data-i18n="map_title">Carte de la veille</h2>
-    <p class="section-lead" data-i18n="map_lead"></p>
-  </header>
-
-  <div class="map-tools">
-    <div class="chips" id="map-periode">
-      <label class="chip"><input type="radio" name="map-periode" value="7"><span data-i18n="p7">7 jours</span></label>
-      <label class="chip"><input type="radio" name="map-periode" value="30"><span data-i18n="p30">30 jours</span></label>
-      <label class="chip"><input type="radio" name="map-periode" value="90"><span data-i18n="p90">3 mois</span></label>
-      <label class="chip"><input type="radio" name="map-periode" value="" checked><span data-i18n="pall">Tout</span></label>
+  <div class="wrap">
+    <header class="block-head">
+      <h2 data-i18n="map_title">Carte de la veille</h2>
+      <p class="block-lead" data-i18n="map_lead"></p>
+    </header>
+    <div class="map-tools">
+      <div class="seg" role="group" id="map-vue">
+        <button type="button" data-v="europe" aria-pressed="true" data-i18n="map_europe">Europe</button>
+        <button type="button" data-v="monde" data-i18n="map_world">Monde</button>
+      </div>
+      <div class="seg" role="group" id="map-periode">
+        <button type="button" data-p="30" data-i18n="p30">30 jours</button>
+        <button type="button" data-p="90" data-i18n="p90">3 mois</button>
+        <button type="button" data-p="" aria-pressed="true" data-i18n="pall">Tout</button>
+      </div>
+      <div class="map-legend" id="map-legend" aria-hidden="true"></div>
     </div>
-    <div class="map-legend" id="map-legend" aria-hidden="true"></div>
+    <div class="map-layout">
+      <div class="map-stage" id="map-stage">
+        <svg id="map-svg" role="img" aria-labelledby="map-svg-title"><title id="map-svg-title">Carte</title></svg>
+        <div class="map-pills" id="map-pills"></div>
+        <div class="map-tooltip" id="map-tooltip" hidden></div>
+      </div>
+      <aside class="map-fiche" id="map-fiche">
+        <p class="map-hint" data-i18n="map_hint">Choisissez un pays sur la carte.</p>
+      </aside>
+    </div>
   </div>
-
-  <div class="map-layout">
-    <div class="tile-map" id="tile-map" role="group" data-i18n-aria="map_title"></div>
-    <div class="map-side" id="map-side"></div>
-  </div>
-  <div class="map-tooltip" id="map-tooltip" hidden></div>
-
-  <div class="map-fiche" id="map-fiche" hidden></div>
-  <div class="map-list" id="map-list">
-    <p class="map-hint" data-i18n="map_hint">Sélectionnez un pays sur la carte.</p>
-  </div>
-</section>
 </div>
 
-<!-- =========================================================== RÉFÉRENTIEL -->
+<!-- ============================================================ RÉFÉRENTIEL -->
 <div class="tab-panel" data-tab="referentiel" hidden>
-<section class="section section-first" id="referentiel-section">
-  <header class="section-head">
-    <h2 data-i18n="ref_title">Textes applicables</h2>
-    <p class="section-lead" data-i18n="ref_lead"></p>
-    <p class="section-count" id="ref-resume"></p>
-  </header>
-  <div class="src-tools">
-    <select id="ref-zone" class="select" data-i18n-aria="th_zone"></select>
-    <select id="ref-cat" class="select" data-i18n-aria="ref_th_cat"></select>
-    <input type="search" id="ref-recherche" class="search search-sm" data-i18n-ph="ref_search_ph" autocomplete="off">
-    <button type="button" class="btn" id="ref-export" data-i18n="btn_excel_ref">Exporter (Excel)</button>
+  <div class="wrap">
+    <header class="block-head">
+      <h2 data-i18n="ref_title">Textes applicables</h2>
+      <p class="block-lead" data-i18n="ref_lead"></p>
+      <p class="block-meta" id="ref-resume"></p>
+    </header>
+    <div class="toolbar">
+      <select id="ref-zone" class="select" aria-label="Zone"></select>
+      <select id="ref-cat" class="select" aria-label="Catégorie"></select>
+      <input type="search" id="ref-recherche" class="search" data-i18n-ph="ref_search_ph" autocomplete="off" aria-label="Filtrer">
+      <button type="button" class="btn btn-quiet" id="ref-export" data-i18n="btn_excel_ref">Exporter (Excel)</button>
+    </div>
+    <div id="ref-liste" class="ref-liste"></div>
+    <p class="empty" id="ref-vide" hidden data-i18n="ref_empty">Aucun texte pour ce filtre.</p>
   </div>
-  <div class="table-wrap">
-    <table class="src-table ref-table">
-      <thead>
-        <tr><th data-i18n="th_zone">Zone</th><th data-i18n="ref_th_cat">Catégorie</th><th data-i18n="ref_th_text">Texte</th><th data-i18n="ref_th_auth">Autorité</th><th data-i18n="ref_th_since">Applicable depuis</th><th data-i18n="ref_th_fine">Amende max.</th><th data-i18n="f_pert">Pertinence</th></tr>
-      </thead>
-      <tbody id="ref-lignes"></tbody>
-    </table>
-  </div>
-  <p class="empty" id="ref-vide" hidden data-i18n="ref_empty">Aucun texte pour ce filtre.</p>
-</section>
 </div>
 
-<!-- =============================================================== SOURCES -->
+<!-- ================================================================ DÉBATS -->
+<div class="tab-panel" data-tab="debats" hidden>
+  <div class="wrap">
+    <div class="avert" role="note">
+      <p class="avert-title" data-i18n="deb_warn_title">Section non certifiée</p>
+      <p data-i18n="deb_warn"></p>
+    </div>
+    <header class="block-head">
+      <h2 data-i18n="deb_title">Débats et signaux</h2>
+      <p class="block-lead" data-i18n="deb_lead"></p>
+    </header>
+    <section class="tendances" aria-labelledby="tend-titre">
+      <h3 id="tend-titre" data-i18n="deb_trends">Sujets qui montent chez les experts</h3>
+      <p class="block-meta" data-i18n="deb_trends_lead"></p>
+      <div id="tendances"></div>
+    </section>
+    <section aria-labelledby="deb-liste-titre">
+      <h3 id="deb-liste-titre" data-i18n="deb_list">Dernières prises de position</h3>
+      <div class="toolbar">
+        <input type="search" id="deb-recherche" class="search" data-i18n-ph="deb_search_ph" autocomplete="off" aria-label="Filtrer">
+      </div>
+      <div id="deb-liste" class="deb-liste"></div>
+      <p class="empty" id="deb-vide" hidden data-i18n="deb_empty"></p>
+    </section>
+  </div>
+</div>
+
+<!-- ================================================================ SOURCES -->
 <div class="tab-panel" data-tab="sources" hidden>
-<section class="section section-first" id="etat-sources">
-  <header class="section-head">
-    <h2 data-i18n="src_title">Sources de la veille</h2>
-    <p class="section-lead" data-i18n="src_lead">Toutes les sources de l'Excel et leur accessibilité lors de la dernière collecte. Une source « partielle » a été lue, mais au moins une de ses pages ou un de ses flux a échoué : le détail est dans la dernière colonne.</p>
-    <p class="section-count" id="etat-resume"></p>
-  </header>
+  <div class="wrap">
+    <section id="etat-sources">
+      <header class="block-head">
+        <h2 data-i18n="src_title">Sources de la veille</h2>
+        <p class="block-lead" data-i18n="src_lead"></p>
+        <p class="block-meta" id="etat-resume"></p>
+      </header>
+      <div class="src-stats" id="etat-stats"></div>
 
-  <div class="src-stats" id="etat-stats"></div>
+      <div class="src-manage">
+        <button type="button" class="btn btn-primary" id="src-ajouter" data-i18n="src_add">+ Ajouter une source</button>
+        <button type="button" class="btn btn-quiet" id="src-jeton" data-i18n="src_token">Jeton GitHub</button>
+        <span class="src-mode" id="src-mode"></span>
+      </div>
+      <form class="src-form" id="src-form" hidden novalidate>
+        <h3 data-i18n="src_form_title">Nouvelle source</h3>
+        <div class="form-grid">
+          <label><span data-i18n="sf_name">Nom de la source *</span><input type="text" name="nom" required maxlength="150"></label>
+          <label><span data-i18n="sf_zone">Pays / zone *</span><select name="zone" required id="sf-zone"></select></label>
+          <label><span data-i18n="sf_type">Type de source</span>
+            <select name="type">
+              <option value="Site gouvernemental officiel" data-i18n="n_officielle">Source officielle</option>
+              <option value="Cabinet d'avocats" data-i18n="n_cabinet">Cabinet d'avocats</option>
+              <option value="Presse spécialisée" data-i18n="n_presse">Presse et autres</option>
+              <option value="Avis d'experts (non certifié)" data-i18n="n_opinion">Avis d'experts (non certifié)</option>
+            </select></label>
+          <label class="wide"><span data-i18n="sf_url">Adresse du site *</span><input type="url" name="url" required placeholder="https://"></label>
+          <label class="wide"><span data-i18n="sf_feeds">Flux RSS (facultatif, un par ligne)</span><textarea name="flux" rows="2" placeholder="https://…/rss.xml"></textarea></label>
+          <label class="wide"><span data-i18n="sf_pages">Pages d'actualités datées (facultatif, une par ligne)</span><textarea name="pages" rows="2" placeholder="https://…/actualites"></textarea></label>
+        </div>
+        <p class="hint" data-i18n="sf_hint"></p>
+        <p class="form-error" id="src-form-err" hidden></p>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="sf_submit">Ajouter…</button>
+          <button type="button" class="btn btn-quiet" id="src-form-cancel" data-i18n="cancel">Annuler</button>
+        </div>
+      </form>
 
-  <div class="src-manage">
-    <button type="button" class="btn btn-primary" id="src-ajouter" data-i18n="src_add">+ Ajouter une source</button>
-    <button type="button" class="btn btn-ghost" id="src-jeton" data-i18n="src_token">Jeton GitHub (modification directe)</button>
-    <span class="src-mode" id="src-mode"></span>
+      <div class="toolbar">
+        <div class="seg" role="group" id="etat-filtres">
+          <button type="button" data-a="" aria-pressed="true" data-i18n="s_all">Toutes</button>
+          <button type="button" data-a="ok" data-i18n="s_ok">Accessibles</button>
+          <button type="button" data-a="partielle" data-i18n="s_partial">Partielles</button>
+          <button type="button" data-a="ko" data-i18n="s_ko">Inaccessibles</button>
+          <button type="button" data-a="autre" data-i18n="s_other">Ignorées</button>
+        </div>
+        <input type="search" id="etat-recherche" class="search" data-i18n-ph="src_search_ph" autocomplete="off" aria-label="Filtrer">
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="th_access">Accès</th><th data-i18n="th_source">Source</th><th data-i18n="th_zone">Zone</th><th data-i18n="th_read">Lecture</th><th class="num" data-i18n="th_found">Trouvés</th><th class="num" data-i18n="th_new">Nouveaux</th><th data-i18n="th_detail">Détail</th><th data-i18n="th_action">Action</th></tr></thead>
+          <tbody id="etat-lignes"></tbody>
+        </table>
+      </div>
+      <p class="empty" id="etat-vide" hidden data-i18n="src_empty">Aucune source ne correspond à ce filtre.</p>
+      <p class="block-meta" id="trad-status"></p>
+    </section>
+
+    <details class="annexe" id="acronymes">
+      <summary><span data-i18n="acro_title">Acronymes détectés</span> <span class="block-meta" id="acro-resume"></span></summary>
+      <p class="block-lead" data-i18n="acro_lead"></p>
+      <div class="toolbar">
+        <div class="seg" role="group" id="acro-filtres">
+          <button type="button" data-a="" aria-pressed="true" data-i18n="ac_all">Tous</button>
+          <button type="button" data-a="nouveau" data-i18n="ac_new">Nouveaux (7 jours)</button>
+          <button type="button" data-a="hors" data-i18n="ac_out">Conservés tels quels</button>
+        </div>
+        <input type="search" id="acro-recherche" class="search" data-i18n-ph="ac_search_ph" autocomplete="off" aria-label="Filtrer">
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="ac_th_acro">Acronyme</th><th data-i18n="ac_th_var">Variantes</th><th class="num" data-i18n="ac_th_n">Articles</th><th data-i18n="ac_th_lang">Langues</th><th data-i18n="ac_th_first">Vu la 1re fois</th><th data-i18n="ac_th_glo">Glossaire</th><th data-i18n="ac_th_ex">Exemple</th></tr></thead>
+          <tbody id="acro-lignes"></tbody>
+        </table>
+      </div>
+      <p class="empty" id="acro-vide" hidden data-i18n="ac_empty">Aucun acronyme pour ce filtre.</p>
+    </details>
+
+    <details class="annexe" id="methode" open>
+      <summary data-i18n="method">Méthode</summary>
+      <p class="block-lead" data-i18n="method_lead"></p>
+      <div class="method" id="method-blocks"></div>
+    </details>
   </div>
-
-  <form class="src-form" id="src-form" hidden novalidate>
-    <h3 data-i18n="src_form_title">Nouvelle source</h3>
-    <div class="form-grid">
-      <label><span data-i18n="sf_name">Nom de la source *</span><input type="text" name="nom" required maxlength="150"></label>
-      <label><span data-i18n="sf_zone">Pays / zone *</span><select name="zone" required id="sf-zone"></select></label>
-      <label><span data-i18n="sf_type">Type de source</span>
-        <select name="type">
-          <option value="Site gouvernemental officiel" data-i18n="n_officielle">Source officielle</option>
-          <option value="Cabinet d'avocats" data-i18n="n_cabinet">Cabinet d'avocats</option>
-          <option value="Presse spécialisée" data-i18n="n_presse">Presse &amp; autres</option>
-        </select></label>
-      <label class="wide"><span data-i18n="sf_url">Adresse du site *</span><input type="url" name="url" required placeholder="https://"></label>
-      <label class="wide"><span data-i18n="sf_feeds">Flux RSS (facultatif, un par ligne)</span><textarea name="flux" rows="2" placeholder="https://…/rss.xml"></textarea></label>
-      <label class="wide"><span data-i18n="sf_pages">Pages d'actualités datées (facultatif, une par ligne)</span><textarea name="pages" rows="2" placeholder="https://…/actualites"></textarea></label>
-    </div>
-    <p class="hint" data-i18n="sf_hint"></p>
-    <p class="form-error" id="src-form-err" hidden></p>
-    <div class="form-actions">
-      <button type="submit" class="btn btn-primary" data-i18n="sf_submit">Ajouter…</button>
-      <button type="button" class="btn btn-ghost" id="src-form-cancel" data-i18n="cancel">Annuler</button>
-    </div>
-  </form>
-
-  <div class="src-tools">
-    <div class="chips" id="etat-filtres">
-      <label class="chip"><input type="radio" name="etat-acces" value="" checked><span data-i18n="s_all">Toutes</span></label>
-      <label class="chip chip-confirme"><input type="radio" name="etat-acces" value="ok"><span data-i18n="s_ok">Accessibles</span></label>
-      <label class="chip chip-nuance"><input type="radio" name="etat-acces" value="partielle"><span data-i18n="s_partial">Partielles</span></label>
-      <label class="chip chip-rapporte"><input type="radio" name="etat-acces" value="ko"><span data-i18n="s_ko">Inaccessibles</span></label>
-      <label class="chip"><input type="radio" name="etat-acces" value="autre"><span data-i18n="s_other">Ignorées / non configurées</span></label>
-    </div>
-    <input type="search" id="etat-recherche" class="search search-sm" data-i18n-ph="src_search_ph" autocomplete="off">
-  </div>
-
-  <div class="table-wrap">
-    <table class="src-table">
-      <thead>
-        <tr><th data-i18n="th_access">Accès</th><th data-i18n="th_source">Source</th><th data-i18n="th_zone">Zone</th><th data-i18n="th_read">Lecture</th><th class="num" data-i18n="th_found">Trouvés</th><th class="num" data-i18n="th_new">Nouveaux</th><th data-i18n="th_detail">Détail</th><th data-i18n="th_action">Action</th></tr>
-      </thead>
-      <tbody id="etat-lignes"></tbody>
-    </table>
-  </div>
-  <p class="empty" id="etat-vide" hidden data-i18n="src_empty">Aucune source ne correspond à ce filtre.</p>
-  <p class="trad-status" id="trad-status"></p>
-</section>
-
-<section class="section" id="acronymes">
-  <header class="section-head">
-    <h2 data-i18n="acro_title">Acronymes détectés</h2>
-    <p class="section-lead" data-i18n="acro_lead">Tous les acronymes repérés dans les articles collectés, mis à jour à chaque collecte. Les acronymes ne sont jamais traduits. Ceux marqués « à compléter » n'ont pas d'équivalent dans le glossaire (config/acronymes.json) : c'est utile seulement s'il s'agit d'une variante nationale d'un sigle européen (comme ΓΚΠΔ pour GDPR).</p>
-    <p class="section-count" id="acro-resume"></p>
-  </header>
-  <div class="src-tools">
-    <div class="chips" id="acro-filtres">
-      <label class="chip"><input type="radio" name="acro-f" value="" checked><span data-i18n="ac_all">Tous</span></label>
-      <label class="chip"><input type="radio" name="acro-f" value="nouveau"><span data-i18n="ac_new">Nouveaux (7 jours)</span></label>
-      <label class="chip"><input type="radio" name="acro-f" value="hors"><span data-i18n="ac_out">Conservés tels quels</span></label>
-    </div>
-    <input type="search" id="acro-recherche" class="search search-sm" data-i18n-ph="ac_search_ph" autocomplete="off">
-  </div>
-  <div class="table-wrap">
-    <table class="src-table">
-      <thead>
-        <tr><th data-i18n="ac_th_acro">Acronyme</th><th data-i18n="ac_th_var">Variantes rencontrées</th><th class="num" data-i18n="ac_th_n">Articles</th><th data-i18n="ac_th_lang">Langues</th><th data-i18n="ac_th_first">Vu la 1re fois</th><th data-i18n="ac_th_glo">Glossaire</th><th data-i18n="ac_th_ex">Exemple</th></tr>
-      </thead>
-      <tbody id="acro-lignes"></tbody>
-    </table>
-  </div>
-  <p class="empty" id="acro-vide" hidden data-i18n="ac_empty">Aucun acronyme pour ce filtre.</p>
-</section>
-
-<section class="section" id="methode">
-  <header class="section-head">
-    <h2 data-i18n="method">Méthode</h2>
-    <p class="section-lead" data-i18n="method_lead">Comment les articles sont collectés, triés et traduits, sans intelligence artificielle payante.</p>
-  </header>
-  <div class="method" id="method-blocks"></div>
-</section>
 </div>
 
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p data-i18n="footer">Cyber Watch — Wavestone · collecte et traduction automatiques, gratuites.</p>
-    <p class="footer-note" data-i18n="footer_note">Site statique. Données dans le dossier data/, réglages dans config/.</p>
+    <p data-i18n="footer">Cyber Watch — Wavestone</p>
+    <p class="footer-note" data-i18n="footer_note"></p>
   </div>
 </footer>
 
@@ -361,19 +328,22 @@
     <div id="modal-corps"></div>
     <div class="form-actions">
       <button type="button" class="btn btn-primary" id="modal-ok"></button>
-      <button type="button" class="btn btn-ghost" id="modal-annuler" data-i18n="cancel">Annuler</button>
+      <button type="button" class="btn btn-quiet" id="modal-annuler" data-i18n="cancel">Annuler</button>
     </div>
   </div>
 </div>
+
 <div id="print-report" class="print-report" aria-hidden="true"></div>
 
 <script src="data/actualites.js"></script>
 <script src="data/etat_sources.js"></script>
-<script src="data/syntheses.js"></script>
+<script src="data/syntheses.js" onerror="window.VEILLE_SYNTHESES=null"></script>
 <script src="data/syntheses_en.js" onerror="window.VEILLE_SYNTHESES_EN=null"></script>
 <script src="data/acronymes.js" onerror="window.VEILLE_ACRONYMES=null"></script>
 <script src="data/versions.js" onerror="window.VEILLE_VERSIONS=null"></script>
 <script src="data/referentiel.js" onerror="window.VEILLE_REFERENTIEL=null"></script>
+<script src="data/debats.js" onerror="window.VEILLE_DEBATS=null"></script>
+<script src="data/monde.js" onerror="window.VEILLE_MONDE=null"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -73,7 +73,7 @@ class Pertinence:
         if self.modele is not None:
             textes = []
             for a in a_noter:
-                t = (a["titre"] + ". " + (a.get("resume") or ""))[:700]
+                t = (a.get("_texte") or (a["titre"] + ". " + (a.get("resume") or "")))[:700]
                 en = (a.get("trad") or {}).get("en") or {}
                 if en.get("titre"):
                     t += " / " + en["titre"]

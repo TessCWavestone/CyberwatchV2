@@ -61,6 +61,18 @@ jobs:
             echo "lancer=false" >> "$GITHUB_OUTPUT"
           fi
 
+      # Veille RKC : fichiers (mails .eml/.msg, Word) déposés dans un dépôt PRIVÉ.
+      # Facultatif : variable RKC_DEPOT (ex. mon-compte/cyberwatch-rkc) + secret RKC_TOKEN.
+      # Le dossier rkc/ n'est jamais publié ni enregistré dans ce dépôt public.
+      - name: Récupérer les veilles RKC (dépôt privé)
+        if: steps.garde.outputs.lancer == 'true' && vars.RKC_DEPOT != ''
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.RKC_DEPOT }}
+          token: ${{ secrets.RKC_TOKEN }}
+          path: rkc
+
       - name: Installer Python
         if: steps.garde.outputs.lancer == 'true'
         uses: actions/setup-python@v5
@@ -109,6 +121,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf rkc   # le contenu RKC ne doit jamais être publié
           git add data
           if git diff --cached --quiet; then
             echo "Aucun changement."

@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-09-25T14:56+00:00",
+ "mise_a_jour": "2026-09-28T12:10+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -172,7 +172,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "IA : la CNIL met à jour son outil de traçabilité des modèles publiés en source ouverte",
    "lien_exemple": "https://www.cnil.fr/fr/ia-la-cnil-met-jour-son-outil-de-tracabilite-des-modeles-publies-en-source-ouverte",
-   "nb_articles": 645,
+   "nb_articles": 425,
    "dans_glossaire": true,
    "fr": "IA"
   },
@@ -195,12 +195,13 @@ window.VEILLE_ACRONYMES = {
     "da",
     "cs",
     "es",
-    "el"
+    "el",
+    "de"
    ],
    "premier_vu": "2026-09-24",
    "exemple": "Acess to the publication: EU financial entities cybersecurity upgrade: DORA is now alive and kicking",
    "lien_exemple": "https://www.enisa.europa.eu/news/eu-financial-entities-cybersecurity-upgrade-dora-is-now-alive-and-kicking",
-   "nb_articles": 313,
+   "nb_articles": 288,
    "dans_glossaire": true,
    "fr": "UE"
   },
@@ -215,7 +216,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "The incoming BEREC Chair calls for joint efforts to build a future-proof digital Europe",
    "lien_exemple": "https://www.berec.europa.eu/en/news/latest-news/the-incoming-berec-chair-calls-for-joint-efforts-to-build-a-future-proof-digital-europe",
-   "nb_articles": 96,
+   "nb_articles": 95,
    "dans_glossaire": false,
    "fr": "BEREC"
   },
@@ -230,26 +231,24 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "[NEU] [hoch] IBM SPSS Analytic Server und SPSS Modeler: Mehrere Schwachstellen",
    "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3536",
-   "nb_articles": 87,
+   "nb_articles": 86,
    "dans_glossaire": false,
    "fr": "NEU"
   },
   {
-   "code": "US",
+   "code": "EBA",
    "variantes": [
-    "US"
+    "EBA"
    ],
    "langues": [
-    "en",
-    "da",
-    "it"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "US disrupts SocksEscort proxy network powered by Linux malware",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/us-disrupts-socksescort-proxy-network-powered-by-linux-malware/",
-   "nb_articles": 73,
+   "exemple": "The EBA identifies priorities for the review of MiCA",
+   "lien_exemple": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-identifies-priorities-review-mica",
+   "nb_articles": 63,
    "dans_glossaire": false,
-   "fr": "US"
+   "fr": "EBA"
   },
   {
    "code": "CNIL",
@@ -263,59 +262,9 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "Clôture de l’injonction prononcée à l’encontre de la société SOLOCAL MARKETING SERVICES",
    "lien_exemple": "https://www.cnil.fr/fr/cloture-injonction-solocal-marketing-services",
-   "nb_articles": 62,
+   "nb_articles": 59,
    "dans_glossaire": false,
    "fr": "CNIL"
-  },
-  {
-   "code": "EBA",
-   "variantes": [
-    "EBA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "The EBA identifies priorities for the review of MiCA",
-   "lien_exemple": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-identifies-priorities-review-mica",
-   "nb_articles": 62,
-   "dans_glossaire": false,
-   "fr": "EBA"
-  },
-  {
-   "code": "CRA",
-   "variantes": [
-    "CRA"
-   ],
-   "langues": [
-    "fr",
-    "sv",
-    "en",
-    "fi",
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
-   "nb_articles": 61,
-   "dans_glossaire": false,
-   "fr": "CRA"
-  },
-  {
-   "code": "UK",
-   "variantes": [
-    "UK"
-   ],
-   "langues": [
-    "en",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "UK fines water supplier $1.3M for exposing data of 664k customers",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/uk-fines-water-supplier-13m-for-exposing-data-of-664k-customers/",
-   "nb_articles": 61,
-   "dans_glossaire": false,
-   "fr": "UK"
   },
   {
    "code": "NIS2",
@@ -335,7 +284,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "Acess to the publication: Supporting NIS2 implementation through actionable guidance",
    "lien_exemple": "https://www.enisa.europa.eu/news/supporting-nis2-implementation-through-actionable-guidance",
-   "nb_articles": 59,
+   "nb_articles": 55,
    "dans_glossaire": false,
    "fr": "NIS2"
   },
@@ -353,7 +302,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "CISA en NCSC waarschuwen voor kwetsbaarheid in Arista VeloCloud",
    "lien_exemple": "https://www.security.nl/posting/954266/CISA+en+NCSC+waarschuwen+voor+kwetsbaarheid+in+Arista+VeloCloud?channel=rss",
-   "nb_articles": 54,
+   "nb_articles": 49,
    "dans_glossaire": false,
    "fr": "NCSC"
   },
@@ -376,30 +325,44 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "Jeux d’argent et de hasard : appliquer le RGPD aux traitements de données des joueurs",
    "lien_exemple": "https://www.cnil.fr/fr/jeux-argent-hasard-application-rgpd",
-   "nb_articles": 51,
+   "nb_articles": 48,
    "dans_glossaire": true,
    "fr": "RGPD"
   },
   {
-   "code": "IT",
+   "code": "CRA",
    "variantes": [
-    "IT"
+    "CRA"
    ],
    "langues": [
     "fr",
+    "sv",
     "en",
-    "pl",
-    "nl",
-    "hu",
-    "es",
-    "it"
+    "fi",
+    "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "IT solutions ( instructions) until June 2026",
-   "lien_exemple": "https://www.eba.europa.eu/sites/default/files/2026-07/6ce57e21-1560-43db-aaf4-a56b07650acc/IT%20solutions%20%28%20instructions%29%20until%20June%202026.DOCX",
-   "nb_articles": 44,
+   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "nb_articles": 45,
    "dans_glossaire": false,
-   "fr": "IT"
+   "fr": "CRA"
+  },
+  {
+   "code": "UK",
+   "variantes": [
+    "UK"
+   ],
+   "langues": [
+    "en",
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "UK fines water supplier $1.3M for exposing data of 664k customers",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/uk-fines-water-supplier-13m-for-exposing-data-of-664k-customers/",
+   "nb_articles": 40,
+   "dans_glossaire": false,
+   "fr": "UK"
   },
   {
    "code": "CERT",
@@ -449,25 +412,31 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "Kwetsbaarheid in F5 Networks BIG-IP APM met actief misbruik",
    "lien_exemple": "https://www.ncsc.nl/alerts/kwetsbaarheid-in-f5-networks-big-ip-apm-met-actief-misbruik",
-   "nb_articles": 34,
+   "nb_articles": 33,
    "dans_glossaire": false,
    "fr": "CVSS"
   },
   {
-   "code": "IAPP",
+   "code": "IT",
    "variantes": [
-    "IAPP"
+    "IT"
    ],
    "langues": [
+    "fr",
     "en",
-    "es"
+    "pl",
+    "nl",
+    "hu",
+    "es",
+    "it",
+    "fi"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Notes from the IAPP Canada: Stop using privacy as an excuse, treat it as an enabler",
-   "lien_exemple": "https://iapp.org/news/a/notes-from-the-iapp-canada-stop-using-privacy-as-an-excuse-treat-it-as-an-enabler",
-   "nb_articles": 26,
+   "exemple": "IT solutions ( instructions) until June 2026",
+   "lien_exemple": "https://www.eba.europa.eu/sites/default/files/2026-07/6ce57e21-1560-43db-aaf4-a56b07650acc/IT%20solutions%20%28%20instructions%29%20until%20June%202026.DOCX",
+   "nb_articles": 33,
    "dans_glossaire": false,
-   "fr": "IAPP"
+   "fr": "IT"
   },
   {
    "code": "CNPD",
@@ -485,28 +454,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 25,
    "dans_glossaire": false,
    "fr": "CNPD"
-  },
-  {
-   "code": "ENISA",
-   "variantes": [
-    "ENISA"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "pt",
-    "cs",
-    "fi",
-    "es",
-    "el",
-    "pl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Acess to the publication: ENISA NIS360 2024 report: A comprehensive look at cybersecurity maturity and criticality of NIS2 sectors",
-   "lien_exemple": "https://www.enisa.europa.eu/news/enisa-nis360-2024-report",
-   "nb_articles": 24,
-   "dans_glossaire": false,
-   "fr": "ENISA"
   },
   {
    "code": "ESMA",
@@ -557,139 +504,41 @@ window.VEILLE_ACRONYMES = {
    "fr": "DSA"
   },
   {
-   "code": "ANSSI",
+   "code": "NOR",
    "variantes": [
-    "ANSSI"
+    "NOR"
    ],
    "langues": [
     "fr"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "premier_vu": "2026-09-28",
+   "exemple": "Arrêté du 26 août 2026 modifiant l'arrêté du 21 février 2022 relatif au fonctionnement du système d'information des centres antipoison et de toxicovigilance (SICAP)",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054902614",
    "nb_articles": 21,
    "dans_glossaire": false,
-   "fr": "ANSSI"
+   "fr": "NOR"
   },
   {
-   "code": "NCSA",
+   "code": "ENISA",
    "variantes": [
-    "ΕΑΚ"
+    "ENISA"
    ],
    "langues": [
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Το Εργαλείο Αυτοαξιολόγησης Κυβερνοασφάλειας της ΕΑΚ πλέον και σε διαδικτυακή εφαρμογή",
-   "lien_exemple": "https://cyber.gov.gr/ergaleio-aytoaxiologisis-kyvernoasfaleias-tis-eak-pleon-kai-se-diadiktyaki-efarmogi/",
-   "nb_articles": 21,
-   "dans_glossaire": true,
-   "fr": "NCSA"
-  },
-  {
-   "code": "SQL",
-   "variantes": [
-    "SQL"
-   ],
-   "langues": [
-    "de",
+    "en",
+    "fr",
+    "pt",
+    "cs",
     "fi",
-    "sv",
-    "nl",
-    "en"
+    "es",
+    "el",
+    "pl"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "[NEU] [hoch] Adobe Connect: Mehrere Schwachstellen",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3516",
+   "exemple": "Acess to the publication: ENISA NIS360 2024 report: A comprehensive look at cybersecurity maturity and criticality of NIS2 sectors",
+   "lien_exemple": "https://www.enisa.europa.eu/news/enisa-nis360-2024-report",
    "nb_articles": 20,
    "dans_glossaire": false,
-   "fr": "SQL"
-  },
-  {
-   "code": "CISA",
-   "variantes": [
-    "CISA"
-   ],
-   "langues": [
-    "en",
-    "nl",
-    "sv",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CISA proposes new security requirements to protect govt, personal data",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/cisa-proposes-new-security-requirements-to-protect-govt-personal-data/",
-   "nb_articles": 19,
-   "dans_glossaire": false,
-   "fr": "CISA"
-  },
-  {
-   "code": "EDPB",
-   "variantes": [
-    "EDPB"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EDPB and EDPS Opine on Draft GDPR Amendments further to IV Simplification Omnibus Package",
-   "lien_exemple": "https://www.dgkv.com:443/insights/publications/edpb-and-edps-opine-on-draft-gdpr-amendments-further-to-iv-simplification-omnibus-package",
-   "nb_articles": 18,
-   "dans_glossaire": false,
-   "fr": "EDPB"
-  },
-  {
-   "code": "FBI",
-   "variantes": [
-    "FBI"
-   ],
-   "langues": [
-    "en",
-    "nl",
-    "hu",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "FBI seizes domain storing bank credentials stolen from U.S. victims",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fbi-seizes-domain-storing-bank-credentials-stolen-from-us-victims/",
-   "nb_articles": 18,
-   "dans_glossaire": false,
-   "fr": "FBI"
-  },
-  {
-   "code": "FTC",
-   "variantes": [
-    "FTC"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "nb"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "FTC: Instacart to refund $60M over deceptive subscription tactics",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/instacart-to-refund-60m-over-deceptive-subscription-tactics/",
-   "nb_articles": 18,
-   "dans_glossaire": false,
-   "fr": "FTC"
-  },
-  {
-   "code": "GNU",
-   "variantes": [
-    "GNU"
-   ],
-   "langues": [
-    "de",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[NEU] [UNGEPATCHT] [hoch] GNU Emacs: Schwachstelle ermöglicht Codeausführung",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3534",
-   "nb_articles": 18,
-   "dans_glossaire": false,
-   "fr": "GNU"
+   "fr": "ENISA"
   },
   {
    "code": "JUNE 2026",
@@ -723,21 +572,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "MHRA"
   },
   {
-   "code": "TI",
+   "code": "EDPB",
    "variantes": [
-    "TI"
+    "EDPB"
    ],
    "langues": [
-    "pt",
-    "es",
-    "de"
+    "en",
+    "fr",
+    "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Níveis elevados de stress e burnout: saúde mental de profissionais de TI acusa desgaste",
-   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/niveis-elevados-de-stress-e-burnout-saude-mental-de-profissionais-de-ti-acusa-desgaste/",
-   "nb_articles": 17,
+   "exemple": "EDPB and EDPS Opine on Draft GDPR Amendments further to IV Simplification Omnibus Package",
+   "lien_exemple": "https://www.dgkv.com:443/insights/publications/edpb-and-edps-opine-on-draft-gdpr-amendments-further-to-iv-simplification-omnibus-package",
+   "nb_articles": 16,
    "dans_glossaire": false,
-   "fr": "TI"
+   "fr": "EDPB"
   },
   {
    "code": "EMA",
@@ -756,85 +605,54 @@ window.VEILLE_ACRONYMES = {
    "fr": "EMA"
   },
   {
-   "code": "AGENZIA",
+   "code": "NCSA",
    "variantes": [
-    "AGENZIA"
+    "ΕΑΚ"
    ],
    "langues": [
-    "it"
+    "el"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
-   "nb_articles": 15,
-   "dans_glossaire": false,
-   "fr": "AGENZIA"
+   "exemple": "Το Εργαλείο Αυτοαξιολόγησης Κυβερνοασφάλειας της ΕΑΚ πλέον και σε διαδικτυακή εφαρμογή",
+   "lien_exemple": "https://cyber.gov.gr/ergaleio-aytoaxiologisis-kyvernoasfaleias-tis-eak-pleon-kai-se-diadiktyaki-efarmogi/",
+   "nb_articles": 16,
+   "dans_glossaire": true,
+   "fr": "NCSA"
   },
   {
-   "code": "DORA",
+   "code": "SQL",
    "variantes": [
-    "DORA"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Acess to the publication: EU financial entities cybersecurity upgrade: DORA is now alive and kicking",
-   "lien_exemple": "https://www.enisa.europa.eu/news/eu-financial-entities-cybersecurity-upgrade-dora-is-now-alive-and-kicking",
-   "nb_articles": 15,
-   "dans_glossaire": false,
-   "fr": "DORA"
-  },
-  {
-   "code": "FARMACO",
-   "variantes": [
-    "FARMACO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
-   "nb_articles": 15,
-   "dans_glossaire": false,
-   "fr": "FARMACO"
-  },
-  {
-   "code": "IBM",
-   "variantes": [
-    "IBM"
+    "SQL"
    ],
    "langues": [
     "de",
-    "pt",
-    "en",
-    "es",
-    "hu"
+    "fi",
+    "sv",
+    "nl",
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "[NEU] [hoch] IBM SPSS Analytic Server und SPSS Modeler: Mehrere Schwachstellen",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3536",
-   "nb_articles": 15,
+   "exemple": "[NEU] [hoch] Adobe Connect: Mehrere Schwachstellen",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3516",
+   "nb_articles": 16,
    "dans_glossaire": false,
-   "fr": "IBM"
+   "fr": "SQL"
   },
   {
-   "code": "ITALIANA",
+   "code": "GNU",
    "variantes": [
-    "ITALIANA"
+    "GNU"
    ],
    "langues": [
-    "it"
+    "de",
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
+   "exemple": "[NEU] [UNGEPATCHT] [hoch] GNU Emacs: Schwachstelle ermöglicht Codeausführung",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3534",
    "nb_articles": 15,
    "dans_glossaire": false,
-   "fr": "ITALIANA"
+   "fr": "GNU"
   },
   {
    "code": "OFCS",
@@ -850,6 +668,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 15,
    "dans_glossaire": false,
    "fr": "OFCS"
+  },
+  {
+   "code": "ANSSI",
+   "variantes": [
+    "ANSSI"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "nb_articles": 14,
+   "dans_glossaire": false,
+   "fr": "ANSSI"
   },
   {
    "code": "BSI",
@@ -883,19 +716,24 @@ window.VEILLE_ACRONYMES = {
    "fr": "CER"
   },
   {
-   "code": "DELLE",
+   "code": "IBM",
    "variantes": [
-    "DELLE"
+    "IBM"
    ],
    "langues": [
+    "de",
+    "pt",
+    "en",
+    "es",
+    "hu",
     "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "exemple": "[NEU] [hoch] IBM SPSS Analytic Server und SPSS Modeler: Mehrere Schwachstellen",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3536",
    "nb_articles": 14,
    "dans_glossaire": false,
-   "fr": "DELLE"
+   "fr": "IBM"
   },
   {
    "code": "JULY 2026",
@@ -928,55 +766,38 @@ window.VEILLE_ACRONYMES = {
    "fr": "RTS"
   },
   {
-   "code": "CEO",
+   "code": "TI",
    "variantes": [
-    "CEO"
+    "TI"
    ],
    "langues": [
-    "en",
     "pt",
-    "nl",
-    "es"
+    "es",
+    "de",
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Korea arrests CEO for adding DDoS feature to satellite receivers",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/korea-arrests-ceo-for-adding-ddos-feature-to-satellite-receivers/",
-   "nb_articles": 13,
+   "exemple": "Níveis elevados de stress e burnout: saúde mental de profissionais de TI acusa desgaste",
+   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/niveis-elevados-de-stress-e-burnout-saude-mental-de-profissionais-de-ti-acusa-desgaste/",
+   "nb_articles": 14,
    "dans_glossaire": false,
-   "fr": "CEO"
+   "fr": "TI"
   },
   {
-   "code": "DELLA",
+   "code": "ETSI",
    "variantes": [
-    "DELLA"
+    "ETSI"
    ],
    "langues": [
-    "it",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 13,
-   "dans_glossaire": false,
-   "fr": "DELLA"
-  },
-  {
-   "code": "G7",
-   "variantes": [
-    "G7"
-   ],
-   "langues": [
-    "fr",
     "en",
-    "it"
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Technologies émergentes et protection des mineurs : les autorités de protection des données du G7 s’accordent sur des principes clés",
-   "lien_exemple": "https://www.cnil.fr/fr/g7-technologies-protection-mineurs",
+   "exemple": "ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/etsi-proposes-17-cybersecurity/",
    "nb_articles": 13,
    "dans_glossaire": false,
-   "fr": "G7"
+   "fr": "ETSI"
   },
   {
    "code": "ITS",
@@ -1028,6 +849,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "EIOPA"
   },
   {
+   "code": "KSC",
+   "variantes": [
+    "KSC"
+   ],
+   "langues": [
+    "pl",
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nowelizacja ustawy o krajowym systemie cyberbezpieczeństwa (KSC) - Organy właściwe do spraw cyberbezpieczeństwa",
+   "lien_exemple": "https://www.gov.pl/web/cyfryzacja/nowelizacja-ustawy-o-krajowym-systemie-cyberbezpieczenstwa-ksc--organy-wlasciwe-do-spraw-cyberbezpieczenstwa",
+   "nb_articles": 12,
+   "dans_glossaire": false,
+   "fr": "KSC"
+  },
+  {
    "code": "PMR",
    "variantes": [
     "PMR"
@@ -1042,69 +879,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 12,
    "dans_glossaire": false,
    "fr": "PMR"
-  },
-  {
-   "code": "STAMPA",
-   "variantes": [
-    "STAMPA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "COMUNICATO STAMPA - Garante: illecita la diffusione delle conversazioni private di Raoul Bova. Sanzionato Fabrizio Corona, contenuti pubblicati per spettacolarizzazione e gossip",
-   "lien_exemple": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10287714",
-   "nb_articles": 12,
-   "dans_glossaire": false,
-   "fr": "STAMPA"
-  },
-  {
-   "code": "TEK",
-   "variantes": [
-    "TEK"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Analisa.pt leva agora o escrutínio ao Parlamento e já consegue fazer fact-check a debates em tempo real",
-   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/analisa-pt-leva-agora-o-escrutinio-ao-parlamento-e-ja-consegue-fazer-fact-check-a-debates-em-tempo-real/",
-   "nb_articles": 12,
-   "dans_glossaire": false,
-   "fr": "TEK"
-  },
-  {
-   "code": "CCN",
-   "variantes": [
-    "CCN"
-   ],
-   "langues": [
-    "es",
-    "fr",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "¿Sabes para qué funciona un SOC? Definición, cometidos y tipos de centros de operaciones de seguridad",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/sabes-para-que-funciona-un-soc-definicion-cometidos-y-tipos-de-centros-de-operaciones-de-seguridad_20260822.html",
-   "nb_articles": 11,
-   "dans_glossaire": false,
-   "fr": "CCN"
-  },
-  {
-   "code": "CMS",
-   "variantes": [
-    "CMS"
-   ],
-   "langues": [
-    "en",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Australian Cyber Agency Warns of Global CMS Exploitation Campaign",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/australia-warns-global-cms/",
-   "nb_articles": 11,
-   "dans_glossaire": false,
-   "fr": "CMS"
   },
   {
    "code": "CNCS",
@@ -1124,66 +898,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "CNCS"
   },
   {
-   "code": "DC",
+   "code": "DELLA",
    "variantes": [
-    "DC"
+    "DELLA"
    ],
    "langues": [
-    "en",
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "A view from DC: A sudden shift in gravity for AI politics",
-   "lien_exemple": "https://iapp.org/news/a/a-view-from-dc-a-sudden-shift-in-gravity-for-ai-politics",
-   "nb_articles": 11,
-   "dans_glossaire": false,
-   "fr": "DC"
-  },
-  {
-   "code": "DELL",
-   "variantes": [
-    "DELL"
-   ],
-   "langues": [
-    "it"
+    "it",
+    "pt"
    ],
    "premier_vu": "2026-09-24",
    "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
    "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
    "nb_articles": 11,
    "dans_glossaire": false,
-   "fr": "DELL"
-  },
-  {
-   "code": "IFA 2026",
-   "variantes": [
-    "IFA 2026"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Entrevista: “Nos próximos anos, a televisão vai sentir-te e tornar-se uma amiga”",
-   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/entrevista-nos-proximos-anos-a-televisao-vai-sentir-te-e-tornar-se-uma-amiga/",
-   "nb_articles": 11,
-   "dans_glossaire": false,
-   "fr": "IFA 2026"
-  },
-  {
-   "code": "KSC",
-   "variantes": [
-    "KSC"
-   ],
-   "langues": [
-    "pl",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nowelizacja ustawy o krajowym systemie cyberbezpieczeństwa (KSC) - Organy właściwe do spraw cyberbezpieczeństwa",
-   "lien_exemple": "https://www.gov.pl/web/cyfryzacja/nowelizacja-ustawy-o-krajowym-systemie-cyberbezpieczenstwa-ksc--organy-wlasciwe-do-spraw-cyberbezpieczenstwa",
-   "nb_articles": 11,
-   "dans_glossaire": false,
-   "fr": "KSC"
+   "fr": "DELLA"
   },
   {
    "code": "UKE",
@@ -1201,19 +929,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "UKE"
   },
   {
-   "code": "DGKV",
+   "code": "DELLE",
    "variantes": [
-    "DGKV"
+    "DELLE"
    ],
    "langues": [
-    "en"
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "DGKV and AmCham Host Compliance Briefing on Bulgaria’s Updated Cybersecurity Framework",
-   "lien_exemple": "https://dgkv.com:443/news/dgkv-am-cham-host-compliance-briefing-on-bulgaria-s-updated-cybersecurity-framework",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
    "nb_articles": 10,
    "dans_glossaire": false,
-   "fr": "DGKV"
+   "fr": "DELLE"
   },
   {
    "code": "EHDS",
@@ -1232,24 +960,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 10,
    "dans_glossaire": false,
    "fr": "EHDS"
-  },
-  {
-   "code": "ESG",
-   "variantes": [
-    "ESG"
-   ],
-   "langues": [
-    "hu",
-    "de",
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Az ESG és a kiberbiztonság mára egyenrangú stratégiai területekké váltak",
-   "lien_exemple": "https://sztfh.hu/az-esg-es-a-kiberbiztonsag-mara-egyenrangu-strategiai-teruletekke-valtak/",
-   "nb_articles": 10,
-   "dans_glossaire": false,
-   "fr": "ESG"
   },
   {
    "code": "NBSZ",
@@ -1298,76 +1008,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "NYHET"
   },
   {
-   "code": "VPN",
+   "code": "CCN",
    "variantes": [
-    "VPN"
+    "CCN"
    ],
    "langues": [
-    "en",
-    "nl",
+    "es",
     "fr",
-    "de",
-    "fi"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Privacy tech firms warn France’s encryption and VPN laws threaten privacy",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/privacy-tech-firms-warn-frances-encryption-and-vpn-laws-threaten-privacy/",
-   "nb_articles": 10,
-   "dans_glossaire": false,
-   "fr": "VPN"
-  },
-  {
-   "code": "AEPD",
-   "variantes": [
-    "AEPD"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AI Agent Carries Out Multi-Stage Data Theft Attack",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ai-agent-carries-out-multistage/",
+   "exemple": "¿Sabes para qué funciona un SOC? Definición, cometidos y tipos de centros de operaciones de seguridad",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/sabes-para-que-funciona-un-soc-definicion-cometidos-y-tipos-de-centros-de-operaciones-de-seguridad_20260822.html",
    "nb_articles": 9,
    "dans_glossaire": false,
-   "fr": "AEPD"
-  },
-  {
-   "code": "API",
-   "variantes": [
-    "API"
-   ],
-   "langues": [
-    "en",
-    "sv",
-    "pt",
-    "de",
-    "it",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/",
-   "nb_articles": 9,
-   "dans_glossaire": false,
-   "fr": "API"
-  },
-  {
-   "code": "AWS",
-   "variantes": [
-    "AWS"
-   ],
-   "langues": [
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Researchers Uncover Thousands of Leaked AWS Keys",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-thousands-eaked-aws/",
-   "nb_articles": 9,
-   "dans_glossaire": false,
-   "fr": "AWS"
+   "fr": "CCN"
   },
   {
    "code": "CHMP",
@@ -1385,50 +1040,56 @@ window.VEILLE_ACRONYMES = {
    "fr": "CHMP"
   },
   {
-   "code": "EUA",
+   "code": "DORA",
    "variantes": [
-    "EUA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Petal: Cabo submarino da Meta vai ligar EUA e França com uma capacidade de 1 petabit por segundo",
-   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/petal-cabo-submarino-da-meta-vai-ligar-eua-e-franca-com-uma-capacidade-de-1-petabit-por-segundo/",
-   "nb_articles": 9,
-   "dans_glossaire": false,
-   "fr": "EUA"
-  },
-  {
-   "code": "HADEA/2026",
-   "variantes": [
-    "HADEA/2026"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
-   "nb_articles": 9,
-   "dans_glossaire": false,
-   "fr": "HADEA/2026"
-  },
-  {
-   "code": "ICO",
-   "variantes": [
-    "ICO"
+    "DORA"
    ],
    "langues": [
     "en",
-    "fr"
+    "fr",
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "ICO Urges Police to Improve Data Governance in Facial Recognition Rollouts",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ico-police-data-governance-facial/",
+   "exemple": "Acess to the publication: EU financial entities cybersecurity upgrade: DORA is now alive and kicking",
+   "lien_exemple": "https://www.enisa.europa.eu/news/eu-financial-entities-cybersecurity-upgrade-dora-is-now-alive-and-kicking",
    "nb_articles": 9,
    "dans_glossaire": false,
-   "fr": "ICO"
+   "fr": "DORA"
+  },
+  {
+   "code": "ESG",
+   "variantes": [
+    "ESG"
+   ],
+   "langues": [
+    "hu",
+    "de",
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Az ESG és a kiberbiztonság mára egyenrangú stratégiai területekké váltak",
+   "lien_exemple": "https://sztfh.hu/az-esg-es-a-kiberbiztonsag-mara-egyenrangu-strategiai-teruletekke-valtak/",
+   "nb_articles": 9,
+   "dans_glossaire": false,
+   "fr": "ESG"
+  },
+  {
+   "code": "G7",
+   "variantes": [
+    "G7"
+   ],
+   "langues": [
+    "fr",
+    "en",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Technologies émergentes et protection des mineurs : les autorités de protection des données du G7 s’accordent sur des principes clés",
+   "lien_exemple": "https://www.cnil.fr/fr/g7-technologies-protection-mineurs",
+   "nb_articles": 9,
+   "dans_glossaire": false,
+   "fr": "G7"
   },
   {
    "code": "IFRS18",
@@ -1444,24 +1105,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 9,
    "dans_glossaire": false,
    "fr": "IFRS18"
-  },
-  {
-   "code": "MFA",
-   "variantes": [
-    "MFA"
-   ],
-   "langues": [
-    "el",
-    "en",
-    "fr",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Υποχρεωτική Ενεργοποίηση Πολυπαραγοντικής Ταυτοποίησης (MFA) για Microsoft Entra ID – Συμμόρφωση με NIS2 και Εθνικό Πλαίσιο Κυβερνοασφάλειας",
-   "lien_exemple": "https://cyber.gov.gr/ypochreotiki-energopoiisi-polyparagontikis-taytopoiisis-mfa-gia-microsoft-entra-id-symmorfosi-me-nis2-kai-ethniko-plaisio-kyvernoasfaleias/",
-   "nb_articles": 9,
-   "dans_glossaire": false,
-   "fr": "MFA"
   },
   {
    "code": "NIS",
@@ -1481,40 +1124,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "NIS"
   },
   {
-   "code": "ANACOM",
+   "code": "STAMPA",
    "variantes": [
-    "ANACOM"
+    "STAMPA"
    ],
    "langues": [
-    "pt"
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Cobertura de redes de alta velocidade em Portugal chega aos 96% no segundo trimestre",
-   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/cobertura-de-redes-de-alta-velocidade-em-portugal-chega-aos-96-no-segundo-trimestre/",
-   "nb_articles": 8,
+   "exemple": "COMUNICATO STAMPA - Garante: illecita la diffusione delle conversazioni private di Raoul Bova. Sanzionato Fabrizio Corona, contenuti pubblicati per spettacolarizzazione e gossip",
+   "lien_exemple": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10287714",
+   "nb_articles": 9,
    "dans_glossaire": false,
-   "fr": "ANACOM"
+   "fr": "STAMPA"
   },
   {
-   "code": "CE",
+   "code": "AEPD",
    "variantes": [
-    "CE"
+    "AEPD"
    ],
    "langues": [
-    "fi",
-    "sv",
+    "en",
     "fr",
-    "pt",
-    "nl",
-    "it",
-    "en"
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Kriittinen haavoittuvuus GitLab Community Edition- ja Enterprise Edition -tuotteissa",
-   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-25?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "exemple": "AI Agent Carries Out Multi-Stage Data Theft Attack",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ai-agent-carries-out-multistage/",
    "nb_articles": 8,
    "dans_glossaire": false,
-   "fr": "CE"
+   "fr": "AEPD"
   },
   {
    "code": "CEPD",
@@ -1532,6 +1171,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "CEPD"
   },
   {
+   "code": "CMS",
+   "variantes": [
+    "CMS"
+   ],
+   "langues": [
+    "en",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Australian Cyber Agency Warns of Global CMS Exploitation Campaign",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/australia-warns-global-cms/",
+   "nb_articles": 8,
+   "dans_glossaire": false,
+   "fr": "CMS"
+  },
+  {
    "code": "DM",
    "variantes": [
     "DM"
@@ -1545,57 +1200,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 8,
    "dans_glossaire": false,
    "fr": "DM"
-  },
-  {
-   "code": "ESR",
-   "variantes": [
-    "ESR"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3375",
-   "nb_articles": 8,
-   "dans_glossaire": false,
-   "fr": "ESR"
-  },
-  {
-   "code": "ETSI",
-   "variantes": [
-    "ETSI"
-   ],
-   "langues": [
-    "en",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/etsi-proposes-17-cybersecurity/",
-   "nb_articles": 8,
-   "dans_glossaire": false,
-   "fr": "ETSI"
-  },
-  {
-   "code": "F5",
-   "variantes": [
-    "F5"
-   ],
-   "langues": [
-    "de",
-    "sv",
-    "en",
-    "nl",
-    "fi",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[NEU] [kritisch] F5 BIG-IP APM: Schwachstelle ermöglicht Codeausführung",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3517",
-   "nb_articles": 8,
-   "dans_glossaire": false,
-   "fr": "F5"
   },
   {
    "code": "ICT",
@@ -1615,42 +1219,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 8,
    "dans_glossaire": false,
    "fr": "ICT"
-  },
-  {
-   "code": "IP",
-   "variantes": [
-    "IP"
-   ],
-   "langues": [
-    "en",
-    "fi",
-    "nl",
-    "fr",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "BEREC seeks stakeholder input on IP interconnection, M2M roaming and assessment of the general authorisation regime",
-   "lien_exemple": "https://www.berec.europa.eu/en/news/press-releases/berec-seeks-stakeholder-input-on-ip-interconnection-m2m-roaming-and-assessment-of-the-general-authorisation-regime",
-   "nb_articles": 8,
-   "dans_glossaire": false,
-   "fr": "IP"
-  },
-  {
-   "code": "NIST",
-   "variantes": [
-    "NIST"
-   ],
-   "langues": [
-    "en",
-    "es",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CISA and NIST Issue Guidance to Protect Cloud Identity Tokens",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/cisa-nist-cloud-identity-token/",
-   "nb_articles": 8,
-   "dans_glossaire": false,
-   "fr": "NIST"
   },
   {
    "code": "SNS",
@@ -1685,22 +1253,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SZTFH"
   },
   {
-   "code": "TIC",
-   "variantes": [
-    "TIC"
-   ],
-   "langues": [
-    "fr",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Cybersecurity Act 2 : les négociations avancent malgré les réserves des États membres sur la compétence de l'UE",
-   "lien_exemple": "https://www.jonesday.com/en/insights/2026/07/eu-cybersecurity-act-2-advances-amid-member-states-concerns-over-eu-competence",
-   "nb_articles": 8,
-   "dans_glossaire": false,
-   "fr": "TIC"
-  },
-  {
    "code": "ANS",
    "variantes": [
     "ANS"
@@ -1716,40 +1268,55 @@ window.VEILLE_ACRONYMES = {
    "fr": "ANS"
   },
   {
-   "code": "BIG-IP",
+   "code": "API",
    "variantes": [
-    "BIG-IP"
+    "API"
    ],
    "langues": [
-    "de",
-    "sv",
     "en",
-    "nl",
-    "fi",
+    "sv",
+    "pt",
+    "de",
+    "it",
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/",
+   "nb_articles": 7,
+   "dans_glossaire": false,
+   "fr": "API"
+  },
+  {
+   "code": "AWS",
+   "variantes": [
+    "AWS"
+   ],
+   "langues": [
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Researchers Uncover Thousands of Leaked AWS Keys",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-thousands-eaked-aws/",
+   "nb_articles": 7,
+   "dans_glossaire": false,
+   "fr": "AWS"
+  },
+  {
+   "code": "DELL",
+   "variantes": [
+    "DELL"
+   ],
+   "langues": [
     "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "[NEU] [kritisch] F5 BIG-IP APM: Schwachstelle ermöglicht Codeausführung",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3517",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
    "nb_articles": 7,
    "dans_glossaire": false,
-   "fr": "BIG-IP"
-  },
-  {
-   "code": "CEST",
-   "variantes": [
-    "CEST"
-   ],
-   "langues": [
-    "en",
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "From space to species: Discover our September data.europa academy webinar",
-   "lien_exemple": "https://data.europa.eu/en/news-events/news/space-species-discover-our-september-dataeuropa-academy-webinar",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "CEST"
+   "fr": "DELL"
   },
   {
    "code": "EC",
@@ -1767,53 +1334,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "EC"
   },
   {
-   "code": "EUHPP",
+   "code": "ICO",
    "variantes": [
-    "EUHPP"
+    "ICO"
    ],
    "langues": [
     "en",
-    "cs"
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Presentations and recording - EUHPP live webinar: Empowering People, Transforming Cancer Care: Advancing Health Literacy Across Europe (21 September 2026)",
-   "lien_exemple": "https://health.ec.europa.eu/latest-updates/presentations-and-recording-euhpp-live-webinar-empowering-people-transforming-cancer-care-advancing-2026-09-22_en",
+   "exemple": "ICO Urges Police to Improve Data Governance in Facial Recognition Rollouts",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ico-police-data-governance-facial/",
    "nb_articles": 7,
    "dans_glossaire": false,
-   "fr": "EUHPP"
-  },
-  {
-   "code": "KIDS",
-   "variantes": [
-    "KIDS"
-   ],
-   "langues": [
-    "en",
-    "fi",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EU KIDS Act to restrict social media platforms’ access to children in the EU",
-   "lien_exemple": "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "KIDS"
-  },
-  {
-   "code": "NASA",
-   "variantes": [
-    "NASA"
-   ],
-   "langues": [
-    "pt",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NASA encontra na Lua uma cratera que só aparece uma vez por século",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/nasa-encontra-na-lua-uma-cratera-que-so-aparece-uma-vez-por-seculo/",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "NASA"
+   "fr": "ICO"
   },
   {
    "code": "PFPDT",
@@ -1831,24 +1365,108 @@ window.VEILLE_ACRONYMES = {
    "fr": "PFPDT"
   },
   {
-   "code": "APM",
+   "code": "TIC",
    "variantes": [
-    "APM"
+    "TIC"
    ],
    "langues": [
-    "de",
-    "sv",
+    "fr",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Cybersecurity Act 2 : les négociations avancent malgré les réserves des États membres sur la compétence de l'UE",
+   "lien_exemple": "https://www.jonesday.com/en/insights/2026/07/eu-cybersecurity-act-2-advances-amid-member-states-concerns-over-eu-competence",
+   "nb_articles": 7,
+   "dans_glossaire": false,
+   "fr": "TIC"
+  },
+  {
+   "code": "US",
+   "variantes": [
+    "US"
+   ],
+   "langues": [
     "en",
-    "fi",
-    "nl",
+    "da",
     "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "[NEU] [kritisch] F5 BIG-IP APM: Schwachstelle ermöglicht Codeausführung",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3517",
+   "exemple": "US disrupts SocksEscort proxy network powered by Linux malware",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/us-disrupts-socksescort-proxy-network-powered-by-linux-malware/",
+   "nb_articles": 7,
+   "dans_glossaire": false,
+   "fr": "US"
+  },
+  {
+   "code": "VPN",
+   "variantes": [
+    "VPN"
+   ],
+   "langues": [
+    "en",
+    "nl",
+    "fr",
+    "de",
+    "fi"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Privacy tech firms warn France’s encryption and VPN laws threaten privacy",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/privacy-tech-firms-warn-frances-encryption-and-vpn-laws-threaten-privacy/",
+   "nb_articles": 7,
+   "dans_glossaire": false,
+   "fr": "VPN"
+  },
+  {
+   "code": "CE",
+   "variantes": [
+    "CE"
+   ],
+   "langues": [
+    "fi",
+    "sv",
+    "fr",
+    "pt",
+    "nl",
+    "it",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Kriittinen haavoittuvuus GitLab Community Edition- ja Enterprise Edition -tuotteissa",
+   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-25?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
    "nb_articles": 6,
    "dans_glossaire": false,
-   "fr": "APM"
+   "fr": "CE"
+  },
+  {
+   "code": "CELEX",
+   "variantes": [
+    "CELEX"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "CELEX:32026D04999: Council Decision of 22 September 2026 replacing a member of the Advisory Committee for the Coordination of Social Security Systems for Austria",
+   "lien_exemple": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D04999",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "CELEX"
+  },
+  {
+   "code": "CEST",
+   "variantes": [
+    "CEST"
+   ],
+   "langues": [
+    "en",
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "From space to species: Discover our September data.europa academy webinar",
+   "lien_exemple": "https://data.europa.eu/en/news-events/news/space-species-discover-our-september-dataeuropa-academy-webinar",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "CEST"
   },
   {
    "code": "CVMP",
@@ -1896,6 +1514,42 @@ window.VEILLE_ACRONYMES = {
    "fr": "ECB"
   },
   {
+   "code": "EUHPP",
+   "variantes": [
+    "EUHPP"
+   ],
+   "langues": [
+    "en",
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Presentations and recording - EUHPP live webinar: Empowering People, Transforming Cancer Care: Advancing Health Literacy Across Europe (21 September 2026)",
+   "lien_exemple": "https://health.ec.europa.eu/latest-updates/presentations-and-recording-euhpp-live-webinar-empowering-people-transforming-cancer-care-advancing-2026-09-22_en",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "EUHPP"
+  },
+  {
+   "code": "F5",
+   "variantes": [
+    "F5"
+   ],
+   "langues": [
+    "de",
+    "sv",
+    "en",
+    "nl",
+    "fi",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "[NEU] [kritisch] F5 BIG-IP APM: Schwachstelle ermöglicht Codeausführung",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3517",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "F5"
+  },
+  {
    "code": "GIMP",
    "variantes": [
     "GIMP"
@@ -1911,19 +1565,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "GIMP"
   },
   {
-   "code": "GKV",
+   "code": "HADEA/2026",
    "variantes": [
-    "GKV"
+    "HADEA/2026"
    ],
    "langues": [
-    "de"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Linnemann zeigt sich vor Abgeordneten entscheidungsfreudig",
-   "lien_exemple": "https://www.aerzteblatt.de/news/linnemann-zeigt-sich-vor-abgeordneten-entscheidungsfreudig-f6b94bd7-24a9-4d13-82b5-1ff632c61a79",
+   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
    "nb_articles": 6,
    "dans_glossaire": false,
-   "fr": "GKV"
+   "fr": "HADEA/2026"
   },
   {
    "code": "HDPA",
@@ -1941,38 +1595,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "HDPA"
   },
   {
-   "code": "ID",
+   "code": "IAPP",
    "variantes": [
-    "ID"
+    "IAPP"
    ],
    "langues": [
-    "el",
-    "nl",
-    "pt",
     "en",
-    "da"
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Υποχρεωτική Ενεργοποίηση Πολυπαραγοντικής Ταυτοποίησης (MFA) για Microsoft Entra ID – Συμμόρφωση με NIS2 και Εθνικό Πλαίσιο Κυβερνοασφάλειας",
-   "lien_exemple": "https://cyber.gov.gr/ypochreotiki-energopoiisi-polyparagontikis-taytopoiisis-mfa-gia-microsoft-entra-id-symmorfosi-me-nis2-kai-ethniko-plaisio-kyvernoasfaleias/",
+   "exemple": "Notes from the IAPP Canada: Stop using privacy as an excuse, treat it as an enabler",
+   "lien_exemple": "https://iapp.org/news/a/notes-from-the-iapp-canada-stop-using-privacy-as-an-excuse-treat-it-as-an-enabler",
    "nb_articles": 6,
    "dans_glossaire": false,
-   "fr": "ID"
-  },
-  {
-   "code": "IFA",
-   "variantes": [
-    "IFA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Project Swan é a nova prova de conceito da Lenovo e “estende as asas” para alargar o ecrã do portátil",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/project-swan-e-a-nova-prova-de-conceito-da-lenovo-e-estende-as-asas-para-alargar-o-ecra-do-portatil/",
-   "nb_articles": 6,
-   "dans_glossaire": false,
-   "fr": "IFA"
+   "fr": "IAPP"
   },
   {
    "code": "IMY",
@@ -1992,20 +1628,39 @@ window.VEILLE_ACRONYMES = {
    "fr": "IMY"
   },
   {
-   "code": "KC",
+   "code": "MFA",
    "variantes": [
-    "KC"
+    "MFA"
+   ],
+   "langues": [
+    "el",
+    "en",
+    "fr",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Υποχρεωτική Ενεργοποίηση Πολυπαραγοντικής Ταυτοποίησης (MFA) για Microsoft Entra ID – Συμμόρφωση με NIS2 και Εθνικό Πλαίσιο Κυβερνοασφάλειας",
+   "lien_exemple": "https://cyber.gov.gr/ypochreotiki-energopoiisi-polyparagontikis-taytopoiisis-mfa-gia-microsoft-entra-id-symmorfosi-me-nis2-kai-ethniko-plaisio-kyvernoasfaleias/",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "MFA"
+  },
+  {
+   "code": "NIST",
+   "variantes": [
+    "NIST"
    ],
    "langues": [
     "en",
-    "de"
+    "es",
+    "hu"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "2026 KC Legal Leaders: Stacy Harper",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YTVhMTM0NDgmZmlkPTE3MzUyNjgmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60232633328&f=Print&s=14&ci=107203&i=1368-1601&si=86204&fmi=673457046&e=Missouri*Lawyers*Media&d=116434&h=1&mbc=Q1QzL2E9NjAyMzI2MzMzMjgmcD0xNGUmdj0xJmhsaD1hNWExMzQ0OCZmaWQ9MTczNTI2OCZ4PXgzYksyT2lGSDJqc0YyR1h1UURLLUEmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735268&ai=338121&ac=338121_1787554818000&ck=ece7200bbaa71d7a__;Kys!!NEMsmePo_HYI!cWTHRJnDXtv6qEZKNGMdU_idBD-2Ocgk0bZaevoOp3_JyajwOZwK65CnkwUGtslUJxih9ib4SDCEguvJUiCWI9uj8EVX$",
+   "premier_vu": "2026-09-24",
+   "exemple": "CISA and NIST Issue Guidance to Protect Cloud Identity Tokens",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/cisa-nist-cloud-identity-token/",
    "nb_articles": 6,
    "dans_glossaire": false,
-   "fr": "KC"
+   "fr": "NIST"
   },
   {
    "code": "PME",
@@ -2038,23 +1693,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SAMSIK"
   },
   {
-   "code": "SOC",
-   "variantes": [
-    "SOC"
-   ],
-   "langues": [
-    "el",
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Δημόσια διαβούλευση για την οριστικοποίηση αναλυτικών τεχνικών προδιαγραφών του έργου «Ενοποιημένο Κέντρο Αναφοράς Κυβερνοασφάλειας», EL SOC.",
-   "lien_exemple": "https://cyber.gov.gr/dimosia-diavoyleysi-gia-tin-oristikopoiisi-analytikon-technikon-prodiagrafon-toy-ergoy-enopoiimeno-kentro-anaforas-kyvernoasfaleias-el-soc/",
-   "nb_articles": 6,
-   "dans_glossaire": false,
-   "fr": "SOC"
-  },
-  {
    "code": "ACN",
    "variantes": [
     "ACN"
@@ -2070,19 +1708,79 @@ window.VEILLE_ACRONYMES = {
    "fr": "ACN"
   },
   {
-   "code": "AML",
+   "code": "ADC",
    "variantes": [
-    "AML"
+    "ADC"
    ],
    "langues": [
-    "en"
+    "fi",
+    "en",
+    "de",
+    "nl",
+    "sv",
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "CHIP-AML22: improving the diagnosis and treatment of paediatric acute myeloid leukemia (AML)",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2004",
+   "exemple": "Citrix Netscaler ADC ja Gateway -tuotteissa kriittisiä haavoittuvuuksia",
+   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-23?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
    "nb_articles": 5,
    "dans_glossaire": false,
-   "fr": "AML"
+   "fr": "ADC"
+  },
+  {
+   "code": "ANACOM",
+   "variantes": [
+    "ANACOM"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Cobertura de redes de alta velocidade em Portugal chega aos 96% no segundo trimestre",
+   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/cobertura-de-redes-de-alta-velocidade-em-portugal-chega-aos-96-no-segundo-trimestre/",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "ANACOM"
+  },
+  {
+   "code": "APM",
+   "variantes": [
+    "APM"
+   ],
+   "langues": [
+    "de",
+    "sv",
+    "en",
+    "fi",
+    "nl",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "[NEU] [kritisch] F5 BIG-IP APM: Schwachstelle ermöglicht Codeausführung",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3517",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "APM"
+  },
+  {
+   "code": "BIG-IP",
+   "variantes": [
+    "BIG-IP"
+   ],
+   "langues": [
+    "de",
+    "sv",
+    "en",
+    "nl",
+    "fi",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "[NEU] [kritisch] F5 BIG-IP APM: Schwachstelle ermöglicht Codeausführung",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3517",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "BIG-IP"
   },
   {
    "code": "CA",
@@ -2100,23 +1798,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CA"
   },
   {
-   "code": "CEF",
-   "variantes": [
-    "CEF"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "fi"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CEF-Digital calls for smart cable systems and gateways closed",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1978",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "CEF"
-  },
-  {
    "code": "CERT-SE",
    "variantes": [
     "CERT-SE"
@@ -2132,22 +1813,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CERT-SE"
   },
   {
-   "code": "CISO",
-   "variantes": [
-    "CISO"
-   ],
-   "langues": [
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "The CISO's new privacy mandate in enterprise AI governance",
-   "lien_exemple": "https://iapp.org/news/a/the-ciso-s-new-privacy-mandate-in-enterprise-ai-governance",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "CISO"
-  },
-  {
    "code": "CJUE",
    "variantes": [
     "CJUE"
@@ -2161,107 +1826,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 5,
    "dans_glossaire": false,
    "fr": "CJUE"
-  },
-  {
-   "code": "DG",
-   "variantes": [
-    "DG"
-   ],
-   "langues": [
-    "en",
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "HaDEA signs new contracts under EU4Health to respond to virus outbreaks",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1999",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "DG"
-  },
-  {
-   "code": "DMA",
-   "variantes": [
-    "DMA"
-   ],
-   "langues": [
-    "pt",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Google admite piorar a pesquisa na Europa para cumprir lei antitrust da UE",
-   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/google-admite-piorar-a-pesquisa-na-europa-para-cumprir-lei-antitrust-da-ue/",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "DMA"
-  },
-  {
-   "code": "DNS",
-   "variantes": [
-    "DNS"
-   ],
-   "langues": [
-    "en",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "TrickBot Ditches HTTP for DNS Tunneling in Latest Variant",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/trickbot-dns-tunneling-c2/",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "DNS"
-  },
-  {
-   "code": "DPO",
-   "variantes": [
-    "DPO"
-   ],
-   "langues": [
-    "fr",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Délégué à la protection des données : identifier et gérer les conflits d’intérêts liés à la fonction de DPO",
-   "lien_exemple": "https://www.cnil.fr/fr/dpo-identifier-gerer-conflits-interets",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "DPO"
-  },
-  {
-   "code": "ECCC",
-   "variantes": [
-    "ECCC"
-   ],
-   "langues": [
-    "el",
-    "fi",
-    "es",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Νέες χρηματοδοτικές ευκαιρίες στον τομέα της κυβερνοασφάλειας από το Ευρωπαϊκό Κέντρο Αρμοδιοτήτων για την Κυβερνοασφάλεια (ECCC)",
-   "lien_exemple": "https://cyber.gov.gr/nees-chrimatodotikes-eykairies-ston-tomea-tis-kyvernoasfaleias-apo-to-eyropaiko-kentro-armodiotiton-gia-tin-kyvernoasfaleia-eccc/",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "ECCC"
-  },
-  {
-   "code": "EE",
-   "variantes": [
-    "EE"
-   ],
-   "langues": [
-    "fi",
-    "sv",
-    "nl",
-    "it",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Kriittinen haavoittuvuus GitLab Community Edition- ja Enterprise Edition -tuotteissa",
-   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-25?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "EE"
   },
   {
    "code": "ENS",
@@ -2280,68 +1844,38 @@ window.VEILLE_ACRONYMES = {
    "fr": "ENS"
   },
   {
-   "code": "EU/EEA",
+   "code": "ESR",
    "variantes": [
-    "EU/EEA"
+    "ESR"
    ],
    "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EU4Health grants improving and strengthening national surveillance systems",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2006",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "EU/EEA"
-  },
-  {
-   "code": "FORESTE",
-   "variantes": [
-    "FORESTE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "FORESTE"
-  },
-  {
-   "code": "LLM",
-   "variantes": [
-    "LLM"
-   ],
-   "langues": [
-    "en",
     "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Prompt Injection Remains Biggest LLM Risk, Despite Limited Incidents",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/prompt-injection-llm-risk/",
+   "exemple": "[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3375",
    "nb_articles": 5,
    "dans_glossaire": false,
-   "fr": "LLM"
+   "fr": "ESR"
   },
   {
-   "code": "OT",
+   "code": "IP",
    "variantes": [
-    "OT"
+    "IP"
    ],
    "langues": [
     "en",
-    "sv",
-    "es",
-    "hu"
+    "fi",
+    "nl",
+    "fr",
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
+   "exemple": "BEREC seeks stakeholder input on IP interconnection, M2M roaming and assessment of the general authorisation regime",
+   "lien_exemple": "https://www.berec.europa.eu/en/news/press-releases/berec-seeks-stakeholder-input-on-ip-interconnection-m2m-roaming-and-assessment-of-the-general-authorisation-regime",
    "nb_articles": 5,
    "dans_glossaire": false,
-   "fr": "OT"
+   "fr": "IP"
   },
   {
    "code": "PRAC",
@@ -2409,36 +1943,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "UODO"
   },
   {
-   "code": "AFFARI",
-   "variantes": [
-    "AFFARI"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "AFFARI"
-  },
-  {
-   "code": "ANFR",
-   "variantes": [
-    "ANFR"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "ANFR"
-  },
-  {
    "code": "AP",
    "variantes": [
     "AP"
@@ -2455,19 +1959,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "AP"
   },
   {
-   "code": "BMG",
+   "code": "CEF",
    "variantes": [
-    "BMG"
+    "CEF"
    ],
    "langues": [
-    "de"
+    "en",
+    "fr",
+    "fi"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Spitzengespräch zum Bürokratieabbau im BMG",
-   "lien_exemple": "https://www.bundesgesundheitsministerium.de/spitzengespraech-buerokratieabbau-pm-07-07-26",
+   "exemple": "CEF-Digital calls for smart cable systems and gateways closed",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1978",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "BMG"
+   "fr": "CEF"
   },
   {
    "code": "CET",
@@ -2485,37 +1991,23 @@ window.VEILLE_ACRONYMES = {
    "fr": "CET"
   },
   {
-   "code": "CIO",
+   "code": "CISA",
    "variantes": [
-    "CIO"
-   ],
-   "langues": [
-    "es",
-    "sv"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Miguel Torres (Prosegur): «La tecnología debe ser el puente y traductor entre el idioma galáctico de las TI y el idioma terrícola del negocio»",
-   "lien_exemple": "https://www.computing.es/mundo-digital/miguel-torres-prosegur-la-tecnologia-debe-ser-el-puente-y-traductor-entre-el-idioma-galactico-de-las-ti-y-el-idioma-terricola-del-negocio/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "CIO"
-  },
-  {
-   "code": "CRM",
-   "variantes": [
-    "CRM"
+    "CISA"
    ],
    "langues": [
     "en",
-    "el",
-    "es"
+    "nl",
+    "sv",
+    "hu",
+    "da"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Exposed AWS Access Key Linked to Data Breach Affecting 1500+ UK Charities",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/exposed-aws-key-data-charities/",
+   "exemple": "CISA proposes new security requirements to protect govt, personal data",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/cisa-proposes-new-security-requirements-to-protect-govt-personal-data/",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "CRM"
+   "fr": "CISA"
   },
   {
    "code": "CSC-EDIC",
@@ -2535,34 +2027,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "CSC-EDIC"
   },
   {
-   "code": "DEGLI",
+   "code": "DEI",
    "variantes": [
-    "DEGLI"
+    "DEI"
    ],
    "langues": [
-    "pt"
+    "it"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "premier_vu": "2026-09-25",
+   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "DEGLI"
+   "fr": "DEI"
   },
   {
-   "code": "DGE",
+   "code": "DG",
    "variantes": [
-    "DGE"
+    "DG"
    ],
    "langues": [
-    "fr"
+    "en",
+    "el"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "exemple": "HaDEA signs new contracts under EU4Health to respond to virus outbreaks",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1999",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "DGE"
+   "fr": "DG"
+  },
+  {
+   "code": "DMA",
+   "variantes": [
+    "DMA"
+   ],
+   "langues": [
+    "pt",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Google admite piorar a pesquisa na Europa para cumprir lei antitrust da UE",
+   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/google-admite-piorar-a-pesquisa-na-europa-para-cumprir-lei-antitrust-da-ue/",
+   "nb_articles": 4,
+   "dans_glossaire": false,
+   "fr": "DMA"
   },
   {
    "code": "DPC",
@@ -2582,67 +2091,72 @@ window.VEILLE_ACRONYMES = {
    "fr": "DPC"
   },
   {
-   "code": "ECONOMIA",
+   "code": "DPO",
    "variantes": [
-    "ECONOMIA"
+    "DPO"
    ],
    "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "ECONOMIA"
-  },
-  {
-   "code": "EMEA",
-   "variantes": [
-    "EMEA"
-   ],
-   "langues": [
-    "es",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Anthropic abre oficina en Madrid y nombra a Cristina Pitarch Country Manager para España",
-   "lien_exemple": "https://www.computing.es/noticias/anthropic-abre-oficina-en-madrid-y-nombra-a-cristina-pitarch-country-manager-para-espana/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "EMEA"
-  },
-  {
-   "code": "ESA",
-   "variantes": [
-    "ESA"
-   ],
-   "langues": [
-    "en",
-    "pt",
+    "fr",
     "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "ESA Statement on frontier AI models",
-   "lien_exemple": "https://www.eba.europa.eu/sites/default/files/2026-07/9c0d597c-79ff-482f-a3fe-d9ad66e96bac/JC%202026%2025_ESA%20Statement%20on%20frontier%20AI%20models_.pdf",
+   "exemple": "Délégué à la protection des données : identifier et gérer les conflits d’intérêts liés à la fonction de DPO",
+   "lien_exemple": "https://www.cnil.fr/fr/dpo-identifier-gerer-conflits-interets",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "ESA"
+   "fr": "DPO"
   },
   {
-   "code": "ESTERI",
+   "code": "ECCC",
    "variantes": [
-    "ESTERI"
+    "ECCC"
    ],
    "langues": [
-    "pt"
+    "el",
+    "fi",
+    "es",
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "exemple": "Νέες χρηματοδοτικές ευκαιρίες στον τομέα της κυβερνοασφάλειας από το Ευρωπαϊκό Κέντρο Αρμοδιοτήτων για την Κυβερνοασφάλεια (ECCC)",
+   "lien_exemple": "https://cyber.gov.gr/nees-chrimatodotikes-eykairies-ston-tomea-tis-kyvernoasfaleias-apo-to-eyropaiko-kentro-armodiotiton-gia-tin-kyvernoasfaleia-eccc/",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "ESTERI"
+   "fr": "ECCC"
+  },
+  {
+   "code": "EE",
+   "variantes": [
+    "EE"
+   ],
+   "langues": [
+    "fi",
+    "sv",
+    "nl",
+    "it",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Kriittinen haavoittuvuus GitLab Community Edition- ja Enterprise Edition -tuotteissa",
+   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-25?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "nb_articles": 4,
+   "dans_glossaire": false,
+   "fr": "EE"
+  },
+  {
+   "code": "EU/EEA",
+   "variantes": [
+    "EU/EEA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EU4Health grants improving and strengthening national surveillance systems",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2006",
+   "nb_articles": 4,
+   "dans_glossaire": false,
+   "fr": "EU/EEA"
   },
   {
    "code": "EUR",
@@ -2676,21 +2190,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "FAQ"
   },
   {
-   "code": "FINANZE",
-   "variantes": [
-    "FINANZE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "FINANZE"
-  },
-  {
    "code": "HTA",
    "variantes": [
     "HTA"
@@ -2705,40 +2204,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 4,
    "dans_glossaire": false,
    "fr": "HTA"
-  },
-  {
-   "code": "HTTP",
-   "variantes": [
-    "HTTP"
-   ],
-   "langues": [
-    "en",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "TrickBot Ditches HTTP for DNS Tunneling in Latest Variant",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/trickbot-dns-tunneling-c2/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "HTTP"
-  },
-  {
-   "code": "ISE",
-   "variantes": [
-    "ISE"
-   ],
-   "langues": [
-    "fi",
-    "sv",
-    "en",
-    "da"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Kriittinen haavoittuvuus Cisco Identity Services Engine -tuotteissa",
-   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-27?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "ISE"
   },
   {
    "code": "ISO/IEC 27001",
@@ -2756,20 +2221,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ISO/IEC 27001"
   },
   {
-   "code": "LG",
+   "code": "KIDS",
    "variantes": [
-    "LG"
+    "KIDS"
    ],
    "langues": [
-    "pt",
+    "en",
+    "fi",
     "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "LG responde a acusações sobre gravação de conversas nas Smart TVs e esclarece políticas de privacidade",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/lg-responde-a-acusacoes-sobre-gravacao-de-conversas-nas-smart-tvs-e-esclarece-politicas-de-privacidade/",
+   "exemple": "EU KIDS Act to restrict social media platforms’ access to children in the EU",
+   "lien_exemple": "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "LG"
+   "fr": "KIDS"
   },
   {
    "code": "MCF",
@@ -2803,84 +2269,39 @@ window.VEILLE_ACRONYMES = {
    "fr": "MR"
   },
   {
-   "code": "NVIDIA",
+   "code": "OT",
    "variantes": [
-    "NVIDIA"
+    "OT"
    ],
    "langues": [
     "en",
-    "es"
+    "sv",
+    "es",
+    "hu"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/safe-initiative-agentic-threat/",
+   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "NVIDIA"
+   "fr": "OT"
   },
   {
-   "code": "OS",
+   "code": "OWASP",
    "variantes": [
-    "OS"
+    "OWASP"
    ],
    "langues": [
-    "nl",
+    "pt",
     "en",
-    "pt"
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Meerdere kwetsbaarheden in WatchGuard Fireware OS Mobile Security",
-   "lien_exemple": "https://www.ncsc.nl/alerts/meerdere-kwetsbaarheden-in-watchguard-fireware-os-mobile-security",
+   "exemple": "OWASP AppSec Days reúne especialistas e profissionais de tecnologia para dois dias dedicados à segurança de aplicações",
+   "lien_exemple": "https://tek.sapo.pt/expert/artigos/owasp-appsec-days-reune-especialistas-e-profissionais-de-tecnologia-para-dois-dias-dedicados-a-seguranca-de-aplicacoes/",
    "nb_articles": 4,
    "dans_glossaire": false,
-   "fr": "OS"
-  },
-  {
-   "code": "PHP",
-   "variantes": [
-    "PHP"
-   ],
-   "langues": [
-    "en",
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "PHP Webshell Campaign Targets WordPress Through Critical WooCommerce Plugin Bug",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/woocommerce-wholesale-lead-capture/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "PHP"
-  },
-  {
-   "code": "Q2 2026",
-   "variantes": [
-    "Q2 2026"
-   ],
-   "langues": [
-    "cs",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Vydali jsme čtvrtletní přehled hrozeb NÚKIB - Q2 2026",
-   "lien_exemple": "https://nukib.gov.cz/cs/infoservis/aktuality/2442-vydali-jsme-ctvrtletni-prehled-hrozeb-nukib-q2-2026",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "Q2 2026"
-  },
-  {
-   "code": "QT",
-   "variantes": [
-    "QT"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[NEU] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3531",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "QT"
+   "fr": "OWASP"
   },
   {
    "code": "S46",
@@ -2914,93 +2335,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SANS"
   },
   {
-   "code": "SAP",
-   "variantes": [
-    "SAP"
-   ],
-   "langues": [
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EU probes SAP over anti-competitive ERP support practices",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/eu-probes-sap-over-anti-competitive-erp-support-practices/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "SAP"
-  },
-  {
-   "code": "SMS",
-   "variantes": [
-    "SMS"
-   ],
-   "langues": [
-    "pt",
-    "de",
-    "cs",
-    "da",
-    "fr",
-    "hu",
-    "en",
-    "es",
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Microsoft acaba com SMS e troca o sistema de autenticação por passkeys. Veja o que muda a 1 de setembro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/microsoft-acaba-com-sms-e-troca-o-sistema-de-autenticacao-por-passkeys-veja-o-que-muda-a-1-de-setembro/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "SMS"
-  },
-  {
-   "code": "SRP",
-   "variantes": [
-    "SRP"
-   ],
-   "langues": [
-    "fr",
-    "el",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CRA : la plateforme unique de signalement (SRP) de l'ENISA est lancée et les obligations de notification s'appliquent",
-   "lien_exemple": "https://www.enisa.europa.eu/news/the-cra-single-reporting-platform-is-launched",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "SRP"
-  },
-  {
-   "code": "SSH",
-   "variantes": [
-    "SSH"
-   ],
-   "langues": [
-    "en",
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Human Attacker Hits Machine-Speed Exploitation of Marimo RCE",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/human-attacker-machine-speed/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "SSH"
-  },
-  {
-   "code": "TCL",
-   "variantes": [
-    "TCL"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "RGB veio para ficar? Descubra o que os fabricantes de TV, e não só, trouxeram até à IFA 2026",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rgb-veio-para-ficar-descubra-o-que-os-fabricantes-de-tv-e-nao-so-trouxeram-ate-a-ifa/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "TCL"
-  },
-  {
    "code": "TSM",
    "variantes": [
     "TSM"
@@ -3014,22 +2348,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 4,
    "dans_glossaire": false,
    "fr": "TSM"
-  },
-  {
-   "code": "TV",
-   "variantes": [
-    "TV"
-   ],
-   "langues": [
-    "en",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Operation Switch Off dismantles major pirate TV streaming services",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/operation-switch-off-dismantles-major-pirate-tv-streaming-services/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "TV"
   },
   {
    "code": "WSIS",
@@ -3048,21 +2366,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "WSIS"
   },
   {
-   "code": "APT",
+   "code": "ANFR",
    "variantes": [
-    "APT"
+    "ANFR"
    ],
    "langues": [
-    "en",
-    "pl",
-    "hu"
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Researchers Link 'Jewelbug' Chinese APT to Hack-for-Hire Operations",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-link-chinese-apt-hack/",
+   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "APT"
+   "fr": "ANFR"
   },
   {
    "code": "ARS",
@@ -3111,21 +2427,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "BRICK"
   },
   {
-   "code": "C2",
-   "variantes": [
-    "C2"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Six npm Packages Read C2 Addresses From Ethereum Wallet",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/npm-packages-ethereum-wallet-c2/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "C2"
-  },
-  {
    "code": "CADA",
    "variantes": [
     "CADA"
@@ -3139,23 +2440,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "CADA"
-  },
-  {
-   "code": "CAPTCHA",
-   "variantes": [
-    "CAPTCHA"
-   ],
-   "langues": [
-    "fi",
-    "fr",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Varo väärennettyjä CAPTCHA-tarkistuksia verkkosivuilla",
-   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/varo-vaarennettyja-captcha-tarkistuksia-verkkosivuilla?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "CAPTCHA"
   },
   {
    "code": "CCB",
@@ -3173,6 +2457,39 @@ window.VEILLE_ACRONYMES = {
    "fr": "CCB"
   },
   {
+   "code": "CEO",
+   "variantes": [
+    "CEO"
+   ],
+   "langues": [
+    "en",
+    "pt",
+    "nl",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Korea arrests CEO for adding DDoS feature to satellite receivers",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/korea-arrests-ceo-for-adding-ddos-feature-to-satellite-receivers/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "CEO"
+  },
+  {
+   "code": "CFSP",
+   "variantes": [
+    "CFSP"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Statement by the High Representative on behalf of the EU on the alignment of certain countries concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/25/statement-by-the-high-representative-on-behalf-of-the-eu-on-the-alignment-of-certain-countries-concerning-restrictive-measures-in-respect-of-actions-undermining-or-threatening-the-territorial-integrity-sovereignty-and-independence-of-ukrain/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "CFSP"
+  },
+  {
    "code": "CHOSEN",
    "variantes": [
     "CHOSEN"
@@ -3187,6 +2504,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "CHOSEN"
+  },
+  {
+   "code": "CIO",
+   "variantes": [
+    "CIO"
+   ],
+   "langues": [
+    "es",
+    "sv"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Miguel Torres (Prosegur): «La tecnología debe ser el puente y traductor entre el idioma galáctico de las TI y el idioma terrícola del negocio»",
+   "lien_exemple": "https://www.computing.es/mundo-digital/miguel-torres-prosegur-la-tecnologia-debe-ser-el-puente-y-traductor-entre-el-idioma-galactico-de-las-ti-y-el-idioma-terricola-del-negocio/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "CIO"
   },
   {
    "code": "CPSTIC",
@@ -3220,57 +2553,9 @@ window.VEILLE_ACRONYMES = {
    "fr": "CREST"
   },
   {
-   "code": "CVE-2026-86218",
+   "code": "DECRETO",
    "variantes": [
-    "CVE-2026-86218"
-   ],
-   "langues": [
-    "de",
-    "nl",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Schwerwiegende Sicherheitslücke in N-able N-central - aktiv ausgenutzt",
-   "lien_exemple": "https://www.cert.at/de/aktuelles/2026/9/schwerwiegende-sicherheitslucke-in-n-able-n-central-aktiv-ausgenutzt",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "CVE-2026-86218"
-  },
-  {
-   "code": "CVE-2026-87902",
-   "variantes": [
-    "CVE-2026-87902"
-   ],
-   "langues": [
-    "nl",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Kwetsbaarheid in WordPress kan leiden tot servermisbruik: update nu",
-   "lien_exemple": "https://www.ncsc.nl/alerts/kwetsbaarheid-in-wordpress-kan-leiden-tot-servermisbruik-update-nu",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "CVE-2026-87902"
-  },
-  {
-   "code": "CXF",
-   "variantes": [
-    "CXF"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[UPDATE] [mittel] Apache CXF: Mehrere Schwachstellen",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1895",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "CXF"
-  },
-  {
-   "code": "DEI",
-   "variantes": [
-    "DEI"
+    "DECRETO"
    ],
    "langues": [
     "it"
@@ -3280,7 +2565,37 @@ window.VEILLE_ACRONYMES = {
    "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "DEI"
+   "fr": "DECRETO"
+  },
+  {
+   "code": "DGE",
+   "variantes": [
+    "DGE"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "DGE"
+  },
+  {
+   "code": "DHPC",
+   "variantes": [
+    "DHPC"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "DHPC – Clozapin",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/humanarzneimittel/market-surveillance/health-professional-communication--hpc-/dhpc-clozapin.html",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "DHPC"
   },
   {
    "code": "DNA",
@@ -3298,34 +2613,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "DNA"
   },
   {
-   "code": "DOJ",
+   "code": "DNS",
    "variantes": [
-    "DOJ"
+    "DNS"
    ],
    "langues": [
-    "en"
+    "en",
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "DOJ: Man hacked networks to pitch cybersecurity services",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/doj-man-hacked-networks-to-pitch-cybersecurity-services/",
+   "exemple": "TrickBot Ditches HTTP for DNS Tunneling in Latest Variant",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/trickbot-dns-tunneling-c2/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "DOJ"
-  },
-  {
-   "code": "DPA",
-   "variantes": [
-    "DPA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "The Spanish DPA fined Securitas Direct 100 000 EUR for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
-   "lien_exemple": "https://www.edpb.europa.eu/news/the-spanish-dpa-fined-securitas-direct-100-000-eur-for-making-the-exercise-of-data-subject_en",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "DPA"
+   "fr": "DNS"
   },
   {
    "code": "DSPT",
@@ -3358,21 +2659,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "EEDS"
   },
   {
-   "code": "EU-US",
-   "variantes": [
-    "EU-US"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EDPB requests review of EU-US Data Privacy Framework following Trump v. Slaughter",
-   "lien_exemple": "https://iapp.org/news/a/edpb-requests-review-of-eu-us-data-privacy-framework-following-trump-v-slaughter",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "EU-US"
-  },
-  {
    "code": "EUDAMED",
    "variantes": [
     "EUDAMED"
@@ -3388,19 +2674,34 @@ window.VEILLE_ACRONYMES = {
    "fr": "EUDAMED"
   },
   {
-   "code": "GT7",
+   "code": "FORESTE",
    "variantes": [
-    "GT7"
+    "FORESTE"
    ],
    "langues": [
-    "pt"
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Watch GT 7 e Watch D3 lideram nova vaga de wearables da Huawei para saúde, desporto e trabalho",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/watch-gt-7-e-watch-d3-lideram-nova-vaga-de-wearables-da-huawei-para-saude-desporto-e-trabalho/",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "GT7"
+   "fr": "FORESTE"
+  },
+  {
+   "code": "GKV",
+   "variantes": [
+    "GKV"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Linnemann zeigt sich vor Abgeordneten entscheidungsfreudig",
+   "lien_exemple": "https://www.aerzteblatt.de/news/linnemann-zeigt-sich-vor-abgeordneten-entscheidungsfreudig-f6b94bd7-24a9-4d13-82b5-1ff632c61a79",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "GKV"
   },
   {
    "code": "HDS",
@@ -3418,37 +2719,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "HDS"
   },
   {
-   "code": "HIV",
+   "code": "HTTP",
    "variantes": [
-    "HIV"
+    "HTTP"
    ],
    "langues": [
     "en",
-    "cs"
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "EU-funded projects decreasing the burden of viral hepatitis",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1984",
+   "exemple": "TrickBot Ditches HTTP for DNS Tunneling in Latest Variant",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/trickbot-dns-tunneling-c2/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "HIV"
-  },
-  {
-   "code": "HP",
-   "variantes": [
-    "HP"
-   ],
-   "langues": [
-    "pl",
-    "de",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "HP Inc Polska wzmacnia grono partnerów programu PWCyber",
-   "lien_exemple": "https://www.gov.pl/web/cyfryzacja/hp-inc-polska-wzmacnia-grono-partnerow-programu-pwcyber",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "HP"
+   "fr": "HTTP"
   },
   {
    "code": "HUF",
@@ -3466,19 +2750,23 @@ window.VEILLE_ACRONYMES = {
    "fr": "HUF"
   },
   {
-   "code": "IDC",
+   "code": "ID",
    "variantes": [
-    "IDC"
+    "ID"
    ],
    "langues": [
-    "pt"
+    "el",
+    "nl",
+    "pt",
+    "en",
+    "da"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "iPhone Ultra pode dar um novo impulso ao mercado dos dobráveis e liderar crescimento do segmento",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/iphone-dobravel-pode-dar-um-novo-impulso-ao-mercado-dos-dobraveis-e-liderar-crescimento-do-segmento/",
+   "exemple": "Υποχρεωτική Ενεργοποίηση Πολυπαραγοντικής Ταυτοποίησης (MFA) για Microsoft Entra ID – Συμμόρφωση με NIS2 και Εθνικό Πλαίσιο Κυβερνοασφάλειας",
+   "lien_exemple": "https://cyber.gov.gr/ypochreotiki-energopoiisi-polyparagontikis-taytopoiisis-mfa-gia-microsoft-entra-id-symmorfosi-me-nis2-kai-ethniko-plaisio-kyvernoasfaleias/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "IDC"
+   "fr": "ID"
   },
   {
    "code": "IGF",
@@ -3497,66 +2785,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "IGF"
   },
   {
-   "code": "IMPRESE",
+   "code": "ISE",
    "variantes": [
-    "IMPRESE"
+    "ISE"
    ],
    "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "IMPRESE"
-  },
-  {
-   "code": "ISO 27001",
-   "variantes": [
-    "ISO 27001"
-   ],
-   "langues": [
-    "fr",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ANSSI : publication du Référentiel Cyber France (ReCyF) et d'outils d'accompagnement NIS 2",
-   "lien_exemple": "https://cyber.gouv.fr/actualites/nis-2-lanssi-poursuit-et-renforce-sa-dynamique-daccompagnement/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "ISO 27001"
-  },
-  {
-   "code": "ITALY",
-   "variantes": [
-    "ITALY"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "ITALY"
-  },
-  {
-   "code": "JA",
-   "variantes": [
-    "JA"
-   ],
-   "langues": [
+    "fi",
+    "sv",
     "en",
-    "cs"
+    "da"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "How the EU is addressing its health workforce crisis - EU4Health Joint Action HEROES",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2024",
+   "exemple": "Kriittinen haavoittuvuus Cisco Identity Services Engine -tuotteissa",
+   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-27?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "JA"
+   "fr": "ISE"
   },
   {
    "code": "KI-MIG",
@@ -3572,6 +2816,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "KI-MIG"
+  },
+  {
+   "code": "KPTPO",
+   "variantes": [
+    "KPTPO"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Swissmedic Portal Release Notes – 23.09.2026",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/services/egov-services/smc-portal/release-notes/release-note-230926.html",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "KPTPO"
   },
   {
    "code": "KRITIS",
@@ -3590,50 +2849,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "KRITIS"
   },
   {
-   "code": "M365",
+   "code": "LLM",
    "variantes": [
-    "M365"
+    "LLM"
    ],
    "langues": [
     "en",
-    "fi"
+    "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Microsoft sued for allegedly tricking millions into Copilot M365 subscriptions",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/microsoft/microsoft-sued-for-allegedly-tricking-millions-into-copilot-m365-subscriptions/",
+   "exemple": "Prompt Injection Remains Biggest LLM Risk, Despite Limited Incidents",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/prompt-injection-llm-risk/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "M365"
-  },
-  {
-   "code": "MADE",
-   "variantes": [
-    "MADE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "MADE"
-  },
-  {
-   "code": "MEO",
-   "variantes": [
-    "MEO"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MEO oferece conectividade por satélite da Eutelsat em Portugal",
-   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/meo-oferece-conectividade-por-satelite-da-eutelsat-em-portugal/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "MEO"
+   "fr": "LLM"
   },
   {
    "code": "MISP",
@@ -3651,22 +2880,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "MISP"
-  },
-  {
-   "code": "MP",
-   "variantes": [
-    "MP"
-   ],
-   "langues": [
-    "pt",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Honor Magic 9 Pro Max chega em setembro com câmaras de 200 MP e um design ousado",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/honor-magic-9-pro-max-chega-em-setembro-com-camaras-de-200-mp-e-um-design-ousado/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "MP"
   },
   {
    "code": "NASK",
@@ -3717,65 +2930,37 @@ window.VEILLE_ACRONYMES = {
    "fr": "NSM"
   },
   {
-   "code": "NXTPAPER",
+   "code": "NVIDIA",
    "variantes": [
-    "NXTPAPER"
+    "NVIDIA"
    ],
    "langues": [
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/safe-initiative-agentic-threat/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "NVIDIA"
+  },
+  {
+   "code": "OS",
+   "variantes": [
+    "OS"
+   ],
+   "langues": [
+    "nl",
+    "en",
     "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "TCL quer que a IA faça parte do quotidiano em casa com televisores Mini LED e eletrodomésticos",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/tcl-quer-que-a-ia-faca-parte-do-quotidiano-em-casa-com-televisores-mini-led-e-eletrodomesticos/",
+   "exemple": "Meerdere kwetsbaarheden in WatchGuard Fireware OS Mobile Security",
+   "lien_exemple": "https://www.ncsc.nl/alerts/meerdere-kwetsbaarheden-in-watchguard-fireware-os-mobile-security",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "NXTPAPER"
-  },
-  {
-   "code": "NYDFS",
-   "variantes": [
-    "NYDFS"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NYDFS levies $250,000 fine on licensee for inadequate cyber risk assessment",
-   "lien_exemple": "https://www.dataprotectionreport.com/2026/08/nydfs-levies-250000-fine-on-licensee-for-inadequate-cyber-risk-assessment/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "NYDFS"
-  },
-  {
-   "code": "OLED",
-   "variantes": [
-    "OLED"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "OLED"
-  },
-  {
-   "code": "OWASP",
-   "variantes": [
-    "OWASP"
-   ],
-   "langues": [
-    "pt",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "OWASP AppSec Days reúne especialistas e profissionais de tecnologia para dois dias dedicados à segurança de aplicações",
-   "lien_exemple": "https://tek.sapo.pt/expert/artigos/owasp-appsec-days-reune-especialistas-e-profissionais-de-tecnologia-para-dois-dias-dedicados-a-seguranca-de-aplicacoes/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "OWASP"
+   "fr": "OS"
   },
   {
    "code": "P4M",
@@ -3808,22 +2993,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "PARENTI"
   },
   {
-   "code": "PC",
-   "variantes": [
-    "PC"
-   ],
-   "langues": [
-    "pt",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Esquece-se sempre de bloquear o PC quando se ausenta? O Windows pode fazer isso por si. Descubra como",
-   "lien_exemple": "https://tek.sapo.pt/how-to/artigos/esquece-se-sempre-de-bloquear-o-pc-quando-se-ausenta-o-windows-pode-fazer-isso-por-si-descubra-como/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "PC"
-  },
-  {
    "code": "PER",
    "variantes": [
     "PER"
@@ -3854,66 +3023,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "PESEL"
   },
   {
-   "code": "PQC",
+   "code": "PHP",
    "variantes": [
-    "PQC"
+    "PHP"
    ],
    "langues": [
     "en",
-    "fi",
-    "es"
+    "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "EU Roadmap on Post-Quantum Cryptography - Survey feedback",
-   "lien_exemple": "https://digital-strategy.ec.europa.eu/en/library/eu-roadmap-post-quantum-cryptography-survey-feedback",
+   "exemple": "PHP Webshell Campaign Targets WordPress Through Critical WooCommerce Plugin Bug",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/woocommerce-wholesale-lead-capture/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "PQC"
+   "fr": "PHP"
   },
   {
-   "code": "RAT",
+   "code": "Q2 2026",
    "variantes": [
-    "RAT"
+    "Q2 2026"
    ],
    "langues": [
+    "cs",
     "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "THost9 Android RAT Pairs Packed Loader With ADB Worm",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/thost9-android-rat-packed-loader/",
+   "exemple": "Vydali jsme čtvrtletní přehled hrozeb NÚKIB - Q2 2026",
+   "lien_exemple": "https://nukib.gov.cz/cs/infoservis/aktuality/2442-vydali-jsme-ctvrtletni-prehled-hrozeb-nukib-q2-2026",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "RAT"
+   "fr": "Q2 2026"
   },
   {
-   "code": "RCE",
+   "code": "QT",
    "variantes": [
-    "RCE"
+    "QT"
    ],
    "langues": [
-    "en"
+    "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+   "exemple": "[NEU] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3531",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "RCE"
-  },
-  {
-   "code": "RGB",
-   "variantes": [
-    "RGB"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Entrevista: “Nos próximos anos, a televisão vai sentir-te e tornar-se uma amiga”",
-   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/entrevista-nos-proximos-anos-a-televisao-vai-sentir-te-e-tornar-se-uma-amiga/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "RGB"
+   "fr": "QT"
   },
   {
    "code": "RP",
@@ -3929,23 +3083,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "RP"
-  },
-  {
-   "code": "S7",
-   "variantes": [
-    "S7"
-   ],
-   "langues": [
-    "fr",
-    "en",
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Grèce : l'Autorité nationale de cybersécurité alerte sur une activité malveillante visant les automates Siemens S7",
-   "lien_exemple": "https://cyber.gov.gr/category/anakoinoseis/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "S7"
   },
   {
    "code": "SA",
@@ -3981,51 +3118,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "SDK"
   },
   {
-   "code": "SE",
+   "code": "SOC",
    "variantes": [
-    "SE"
+    "SOC"
    ],
    "langues": [
-    "de",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[UPDATE] [mittel] Oracle Java SE: Mehrere Schwachstellen",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2897",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "SE"
-  },
-  {
-   "code": "SEC",
-   "variantes": [
-    "SEC"
-   ],
-   "langues": [
+    "el",
     "en",
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "SEC ends probe into MOVEit attacks impacting 95 million people",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/sec-ends-probe-into-moveit-attacks-impacting-95-million-people/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "SEC"
-  },
-  {
-   "code": "SEIDOR",
-   "variantes": [
-    "SEIDOR"
-   ],
-   "langues": [
     "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "SEIDOR e ISDI acercan al talento tech frente a las capacidades de la IA",
-   "lien_exemple": "https://www.computing.es/recursos-humanos/seidor-e-isdi-acercan-al-talento-tech-frente-a-las-capacidades-de-la-ia/",
+   "exemple": "Δημόσια διαβούλευση για την οριστικοποίηση αναλυτικών τεχνικών προδιαγραφών του έργου «Ενοποιημένο Κέντρο Αναφοράς Κυβερνοασφάλειας», EL SOC.",
+   "lien_exemple": "https://cyber.gov.gr/dimosia-diavoyleysi-gia-tin-oristikopoiisi-analytikon-technikon-prodiagrafon-toy-ergoy-enopoiimeno-kentro-anaforas-kyvernoasfaleias-el-soc/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "SEIDOR"
+   "fr": "SOC"
   },
   {
    "code": "SQL-Injection-Angriffe",
@@ -4043,36 +3150,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "SQL-Injection-Angriffe"
   },
   {
-   "code": "TETRA",
+   "code": "SRP",
    "variantes": [
-    "TETRA"
+    "SRP"
    ],
    "langues": [
-    "es"
+    "fr",
+    "el",
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Estudio de ciberseguridad en redes TETRA",
-   "lien_exemple": "https://www.incibe.es/incibe-cert/blog/estudio-ciberseguridad-redes-tetra",
+   "exemple": "CRA : la plateforme unique de signalement (SRP) de l'ENISA est lancée et les obligations de notification s'appliquent",
+   "lien_exemple": "https://www.enisa.europa.eu/news/the-cra-single-reporting-platform-is-launched",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "TETRA"
+   "fr": "SRP"
   },
   {
-   "code": "XSS",
+   "code": "TEK",
    "variantes": [
-    "XSS"
+    "TEK"
    ],
    "langues": [
-    "en",
-    "de",
-    "hu"
+    "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Ukraine arrests suspected admin of XSS Russian hacking forum",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/ukraine-arrests-suspected-admin-of-xss-russian-hacking-forum/",
+   "exemple": "Analisa.pt leva agora o escrutínio ao Parlamento e já consegue fazer fact-check a debates em tempo real",
+   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/analisa-pt-leva-agora-o-escrutinio-ao-parlamento-e-ja-consegue-fazer-fact-check-a-debates-em-tempo-real/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "XSS"
+   "fr": "TEK"
   },
   {
    "code": "ΔΕΘ",
@@ -4088,21 +3195,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "ΔΕΘ"
-  },
-  {
-   "code": "ACPR",
-   "variantes": [
-    "ACPR"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "L’ANSSI, l’ACPR et la Banque de France signent un accord de coopération",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/lanssi-lacpr-et-la-banque-de-france-signe-un-accord-de-cooperation/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "ACPR"
   },
   {
    "code": "AD",
@@ -4121,22 +3213,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "AD"
   },
   {
-   "code": "AEM",
-   "variantes": [
-    "AEM"
-   ],
-   "langues": [
-    "nl",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Adobe dicht kritieke kwetsbaarheden in Connect en AEM Forms",
-   "lien_exemple": "https://www.security.nl/posting/954325/Adobe+dicht+kritieke+kwetsbaarheden+in+Connect+en+AEM+Forms?channel=rss",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "AEM"
-  },
-  {
    "code": "AESIA",
    "variantes": [
     "AESIA"
@@ -4150,22 +3226,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "AESIA"
-  },
-  {
-   "code": "AG",
-   "variantes": [
-    "AG"
-   ],
-   "langues": [
-    "en",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "California AG sues 23andMe over 2023 breach exposing health data",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/california-ag-sues-23andme-over-2023-breach-exposing-health-data/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "AG"
   },
   {
    "code": "AIGG",
@@ -4198,21 +3258,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "AKOS"
   },
   {
-   "code": "AMD",
-   "variantes": [
-    "AMD"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Acer Nitro V 16 AI AMD: a prova de que não é preciso pagar uma fortuna para jogar a sério",
-   "lien_exemple": "https://tek.sapo.pt/analises/artigos/acer-nitro-v-16-ai-amd-a-prova-de-que-nao-e-preciso-pagar-uma-fortuna-para-jogar-a-serio/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "AMD"
-  },
-  {
    "code": "AMETIC",
    "variantes": [
     "AMETIC"
@@ -4228,19 +3273,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "AMETIC"
   },
   {
-   "code": "AMOLED",
+   "code": "AML",
    "variantes": [
-    "AMOLED"
+    "AML"
    ],
    "langues": [
-    "pt"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "TCL quer que a IA faça parte do quotidiano em casa com televisores Mini LED e eletrodomésticos",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/tcl-quer-que-a-ia-faca-parte-do-quotidiano-em-casa-com-televisores-mini-led-e-eletrodomesticos/",
+   "exemple": "CHIP-AML22: improving the diagnosis and treatment of paediatric acute myeloid leukemia (AML)",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2004",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "AMOLED"
+   "fr": "AML"
   },
   {
    "code": "AMÁLIA",
@@ -4271,21 +3316,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "APDSI"
-  },
-  {
-   "code": "APN",
-   "variantes": [
-    "APN"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "APN"
   },
   {
    "code": "APR",
@@ -4323,7 +3353,8 @@ window.VEILLE_ACRONYMES = {
     "B2B"
    ],
    "langues": [
-    "es"
+    "es",
+    "it"
    ],
    "premier_vu": "2026-09-24",
    "exemple": "Isabel Benavente (HPE): «Las marcas tecnológicas van a competir cada vez más por la confianza de los clientes»",
@@ -4348,39 +3379,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "BACS"
   },
   {
-   "code": "BBCC",
-   "variantes": [
-    "BBCC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "DGKV Participates in BBCC Tax & Regulatory Update 2026",
-   "lien_exemple": "https://dgkv.com:443/news/dgkv-participates-in-bbcc-tax-regulatory-update-2026",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "BBCC"
-  },
-  {
-   "code": "BEC",
-   "variantes": [
-    "BEC"
-   ],
-   "langues": [
-    "en",
-    "de",
-    "nl",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Black Axe Members Extradited to US Over Internet Fraud Claims",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/black-axe-members-extradited-us/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "BEC"
-  },
-  {
    "code": "BEYOND 2026",
    "variantes": [
     "BEYOND 2026"
@@ -4396,19 +3394,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "BEYOND 2026"
   },
   {
-   "code": "BMBFSFJ",
+   "code": "BMG",
    "variantes": [
-    "BMBFSFJ"
+    "BMG"
    ],
    "langues": [
     "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Fachkommission übergibt Rahmenlehrplan und Rahmenausbildungsplan für die bundeseinheitliche Pflegefachassistenzausbildung an BMBFSFJ und BMG",
-   "lien_exemple": "https://www.bundesgesundheitsministerium.de/uebergabe-rahmenplaene-fachkommission-nach-pflegeberufegesetz-30-06-26",
+   "exemple": "Spitzengespräch zum Bürokratieabbau im BMG",
+   "lien_exemple": "https://www.bundesgesundheitsministerium.de/spitzengespraech-buerokratieabbau-pm-07-07-26",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "BMBFSFJ"
+   "fr": "BMG"
   },
   {
    "code": "BSG",
@@ -4426,21 +3424,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "BSG"
   },
   {
-   "code": "BSL",
-   "variantes": [
-    "BSL"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "British Sign Language (BSL) 5-year plan: Department for Science, Innovation and Technology",
-   "lien_exemple": "https://www.gov.uk/government/publications/british-sign-language-5-year-plan-department-for-science-innovation-and-technology",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "BSL"
-  },
-  {
    "code": "C5",
    "variantes": [
     "C5"
@@ -4454,6 +3437,23 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "C5"
+  },
+  {
+   "code": "CAPTCHA",
+   "variantes": [
+    "CAPTCHA"
+   ],
+   "langues": [
+    "fi",
+    "fr",
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Varo väärennettyjä CAPTCHA-tarkistuksia verkkosivuilla",
+   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/varo-vaarennettyja-captcha-tarkistuksia-verkkosivuilla?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "CAPTCHA"
   },
   {
    "code": "CCP",
@@ -4486,94 +3486,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "CECP-EMA"
   },
   {
-   "code": "CEE",
+   "code": "CISO",
    "variantes": [
-    "CEE"
+    "CISO"
    ],
    "langues": [
-    "en"
+    "en",
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "DGKV Recognised Among CEE’s Leading Law Firms in Legal 500 Awards 2026 Shortlist",
-   "lien_exemple": "https://dgkv.com:443/news/dgkv-recognised-among-cee-s-leading-law-firms-in-legal-500-awards-2026-shortlist",
+   "exemple": "The CISO's new privacy mandate in enterprise AI governance",
+   "lien_exemple": "https://iapp.org/news/a/the-ciso-s-new-privacy-mandate-in-enterprise-ai-governance",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "CEE"
-  },
-  {
-   "code": "CHIP-AML22",
-   "variantes": [
-    "CHIP-AML22"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CHIP-AML22: improving the diagnosis and treatment of paediatric acute myeloid leukemia (AML)",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2004",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CHIP-AML22"
-  },
-  {
-   "code": "CIS",
-   "variantes": [
-    "CIS"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Joint letter of the CIS SCG and the CSC to the European Commission",
-   "lien_exemple": "https://www.edpb.europa.eu/csc/documents/letters/joint-letter-of-the-cis-scg-and-the-csc-to-the-european-commission_en",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CIS"
-  },
-  {
-   "code": "CLOSED",
-   "variantes": [
-    "CLOSED"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[CLOSED] Artificial intelligence: the CNIL opens a consultation on the creation of datasets for AI",
-   "lien_exemple": "https://www.cnil.fr/en/node/164423",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CLOSED"
-  },
-  {
-   "code": "CMA",
-   "variantes": [
-    "CMA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Competition and Markets Authority opened consultation on conduct requirement on Google governing publisher content attribution by search providers on choice screens",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43905-competition-and-markets-authority-opened-consultation-on-conduct-requirement-on-google-governing-publisher-content-attribution-by-search-providers-on-choice-screens",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CMA"
-  },
-  {
-   "code": "CMMC",
-   "variantes": [
-    "CMMC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "US Defense Contractors Admit Their Rising CMMC Scores May Not Be Accurate",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/us-defense-contractors-cmmc-scores/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CMMC"
+   "fr": "CISO"
   },
   {
    "code": "CNECT",
@@ -4622,36 +3548,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "COMP"
   },
   {
-   "code": "CON",
-   "variantes": [
-    "CON"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Sanidad impulsa \"TARDES CON PLAN\", una iniciativa para promover el ocio saludable en la infancia y la adolescencia",
-   "lien_exemple": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6934",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CON"
-  },
-  {
-   "code": "CRA9",
-   "variantes": [
-    "CRA9"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "7 Steps to Take Now: Meet the EU CRA 9/11/26 Reporting Deadline",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60328430126&f=News&s=14&ci=107203&i=0&si=15515&fmi=169677247&e=EE*Times&d=116434&mbc=Q1QzL2E9NjAzMjg0MzAxMjYmcD0xNGUmdj0xJng9Umt3c2dCZk9TWnY5NmdkTUxyeXBkdyZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735267&ai=338121&ac=338121_1788764891000&ck=d847bf1f3f8fceed__;Kw!!NEMsmePo_HYI!fCx6mz1Mh84_eWqJcaYIh-5MyJ2vFZOMu_e25chASlY_BIaWXR8WkyGbgzS8BrgZOWpewkzoUwhCde4DUg5uCXsJ5mm5$",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CRA9"
-  },
-  {
    "code": "CRD6",
    "variantes": [
     "CRD6"
@@ -4665,6 +3561,23 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "CRD6"
+  },
+  {
+   "code": "CRM",
+   "variantes": [
+    "CRM"
+   ],
+   "langues": [
+    "en",
+    "el",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Exposed AWS Access Key Linked to Data Breach Affecting 1500+ UK Charities",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/exposed-aws-key-data-charities/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "CRM"
   },
   {
    "code": "CRR",
@@ -4743,21 +3656,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CUPS"
   },
   {
-   "code": "CVE",
-   "variantes": [
-    "CVE"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Microsoft Shatters Patch Tuesday Record With 974 CVE Fixes in September 2026",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "CVE"
-  },
-  {
    "code": "CVE-2026-3783",
    "variantes": [
     "CVE-2026-3783"
@@ -4804,20 +3702,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-67279"
   },
   {
-   "code": "CVE-2026-85102",
+   "code": "CVE-2026-75650",
    "variantes": [
-    "CVE-2026-85102"
+    "CVE-2026-75650"
    ],
    "langues": [
-    "en",
-    "nl"
+    "nl",
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+   "exemple": "Ernstige kwetsbaarheid in Adobe Commerce en Magento actief misbruikt: update onmiddellijk",
+   "lien_exemple": "https://www.ncsc.nl/alerts/ernstige-kwetsbaarheid-in-adobe-commerce-en-magento-actief-misbruikt-update-onmiddellijk",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "CVE-2026-85102"
+   "fr": "CVE-2026-75650"
   },
   {
    "code": "CVE-2026-85706",
@@ -4851,6 +3749,71 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-86060"
   },
   {
+   "code": "CVE-2026-86218",
+   "variantes": [
+    "CVE-2026-86218"
+   ],
+   "langues": [
+    "de",
+    "nl",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Schwerwiegende Sicherheitslücke in N-able N-central - aktiv ausgenutzt",
+   "lien_exemple": "https://www.cert.at/de/aktuelles/2026/9/schwerwiegende-sicherheitslucke-in-n-able-n-central-aktiv-ausgenutzt",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-86218"
+  },
+  {
+   "code": "CVE-2026-87902",
+   "variantes": [
+    "CVE-2026-87902"
+   ],
+   "langues": [
+    "nl",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Kwetsbaarheid in WordPress kan leiden tot servermisbruik: update nu",
+   "lien_exemple": "https://www.ncsc.nl/alerts/kwetsbaarheid-in-wordpress-kan-leiden-tot-servermisbruik-update-nu",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-87902"
+  },
+  {
+   "code": "CVE-2026-88771",
+   "variantes": [
+    "CVE-2026-88771"
+   ],
+   "langues": [
+    "sv",
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Kritiska sårbarheter i Citrix NetScaler ADC och Citrix NetScaler Gateway",
+   "lien_exemple": "https://www.cert.se/2026/09/information-om-kritiska-sarbarheter-i-citrixnetscaler.html",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-88771"
+  },
+  {
+   "code": "CVE-2026-88772",
+   "variantes": [
+    "CVE-2026-88772"
+   ],
+   "langues": [
+    "sv",
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Kritiska sårbarheter i Citrix NetScaler ADC och Citrix NetScaler Gateway",
+   "lien_exemple": "https://www.cert.se/2026/09/information-om-kritiska-sarbarheter-i-citrixnetscaler.html",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-88772"
+  },
+  {
    "code": "CVE-2026-94127",
    "variantes": [
     "CVE-2026-94127"
@@ -4867,34 +3830,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-94127"
   },
   {
-   "code": "D3",
+   "code": "CXF",
    "variantes": [
-    "D3"
+    "CXF"
    ],
    "langues": [
-    "pt"
+    "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Watch GT 7 e Watch D3 lideram nova vaga de wearables da Huawei para saúde, desporto e trabalho",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/watch-gt-7-e-watch-d3-lideram-nova-vaga-de-wearables-da-huawei-para-saude-desporto-e-trabalho/",
+   "exemple": "[UPDATE] [mittel] Apache CXF: Mehrere Schwachstellen",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1895",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "D3"
-  },
-  {
-   "code": "DECRETO15",
-   "variantes": [
-    "DECRETO15"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 15 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04930/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DECRETO15"
+   "fr": "CXF"
   },
   {
    "code": "DECRETO16",
@@ -4912,21 +3860,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DECRETO16"
   },
   {
-   "code": "DECRETO8",
-   "variantes": [
-    "DECRETO8"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DECRETO8"
-  },
-  {
    "code": "DEP",
    "variantes": [
     "DEP"
@@ -4941,6 +3874,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "DEP"
+  },
+  {
+   "code": "DGKV",
+   "variantes": [
+    "DGKV"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "DGKV and AmCham Host Compliance Briefing on Bulgaria’s Updated Cybersecurity Framework",
+   "lien_exemple": "https://dgkv.com:443/news/dgkv-am-cham-host-compliance-briefing-on-bulgaria-s-updated-cybersecurity-framework",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "DGKV"
   },
   {
    "code": "DIGITAL-2025-SKILLS-08",
@@ -4973,6 +3921,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "DJI"
   },
   {
+   "code": "DKG",
+   "variantes": [
+    "DKG"
+   ],
+   "langues": [
+    "de",
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Zum Nachschauen: „gematik trifft DKG: Deep Dive ePA Implementierung“",
+   "lien_exemple": "https://www.gematik.de/newsroom/news-detail/zum-nachschauen-gematik-trifft-dkg-deep-dive-epa-implementierung",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "DKG"
+  },
+  {
    "code": "DKK",
    "variantes": [
     "DKK"
@@ -5003,36 +3967,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DL"
   },
   {
-   "code": "DLL",
-   "variantes": [
-    "DLL"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Grandoreiro Resurfaces in Mexico With New DLL Sideloading Campaign",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/grandoreiro-mexico-dll-sideloading/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DLL"
-  },
-  {
-   "code": "DOI",
-   "variantes": [
-    "DOI"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Psilocybin könnte Chemotherapie-induzierte periphere Neuropathie verhindern",
-   "lien_exemple": "https://www.aerzteblatt.de/news/psilocybin-konnte-chemotherapie-induzierte-periphere-neuropathie-verhindern-95a14394-79ee-4b69-b132-41216257c7be",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DOI"
-  },
-  {
    "code": "DOM",
    "variantes": [
     "DOM"
@@ -5047,6 +3981,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "DOM"
+  },
+  {
+   "code": "DPA",
+   "variantes": [
+    "DPA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "The Spanish DPA fined Securitas Direct 100 000 EUR for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
+   "lien_exemple": "https://www.edpb.europa.eu/news/the-spanish-dpa-fined-securitas-direct-100-000-eur-for-making-the-exercise-of-data-subject_en",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "DPA"
   },
   {
    "code": "DPM",
@@ -5079,21 +4028,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DREETS"
   },
   {
-   "code": "DSIT",
-   "variantes": [
-    "DSIT"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "UK Information Commission takes shape with non-executive board appointments; DSIT opens data-use consults",
-   "lien_exemple": "https://iapp.org/news/a/uk-information-commission-takes-shape-with-non-executive-board-appointments-dsit-opens-data-use-consults",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DSIT"
-  },
-  {
    "code": "DTAC",
    "variantes": [
     "DTAC"
@@ -5109,21 +4043,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DTAC"
   },
   {
-   "code": "DXOMARK",
-   "variantes": [
-    "DXOMARK"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nem todas as câmaras de smartphones estabilizam da mesma forma e os testes em cenários reais mostram porquê",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/nem-todas-as-camaras-de-smartphones-estabilizam-da-mesma-forma-e-os-testes-em-cenarios-reais-mostram-porque/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DXOMARK"
-  },
-  {
    "code": "EB525",
    "variantes": [
     "EB525"
@@ -5137,37 +4056,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "EB525"
-  },
-  {
-   "code": "EDPS",
-   "variantes": [
-    "EDPS"
-   ],
-   "langues": [
-    "en",
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EDPB and EDPS Opine on Draft GDPR Amendments further to IV Simplification Omnibus Package",
-   "lien_exemple": "https://www.dgkv.com:443/insights/publications/edpb-and-edps-opine-on-draft-gdpr-amendments-further-to-iv-simplification-omnibus-package",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "EDPS"
-  },
-  {
-   "code": "EDR",
-   "variantes": [
-    "EDR"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Akira Affiliate Crashes Ransomware After Attempting EDR Evasion",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/akira-affiliate-crashes-ransomware/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "EDR"
   },
   {
    "code": "EEE",
@@ -5198,37 +4086,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "EETT"
-  },
-  {
-   "code": "EEUU",
-   "variantes": [
-    "EEUU"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "¿Quiénes son los 5 cibercriminales más famosos de la historia?",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/cibercriminales-mas-famosos-mundo_20260827.html",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "EEUU"
-  },
-  {
-   "code": "EIC",
-   "variantes": [
-    "EIC"
-   ],
-   "langues": [
-    "pt",
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Workshop EIC Pathfinder Challenges 2026 quer ajudar a preparar uma proposta de sucesso",
-   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/workshop-eic-pathfinder-challenges-2026-quer-ajudar-a-preparar-uma-proposta-de-sucesso/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "EIC"
   },
   {
    "code": "ELA",
@@ -5263,34 +4120,35 @@ window.VEILLE_ACRONYMES = {
    "fr": "EMDN"
   },
   {
-   "code": "EPICA-DIPG",
+   "code": "EMEA",
    "variantes": [
-    "EPICA-DIPG"
+    "EMEA"
+   ],
+   "langues": [
+    "es",
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Anthropic abre oficina en Madrid y nombra a Cristina Pitarch Country Manager para España",
+   "lien_exemple": "https://www.computing.es/noticias/anthropic-abre-oficina-en-madrid-y-nombra-a-cristina-pitarch-country-manager-para-espana/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "EMEA"
+  },
+  {
+   "code": "EPF",
+   "variantes": [
+    "EPF"
    ],
    "langues": [
     "en"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Childhood Cancer Awareness Month 2026: Horizon Europe projects advancing novel treatments for rare and high-risk paediatric cancers",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2025",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "EPICA-DIPG"
-  },
-  {
-   "code": "EPSCO",
-   "variantes": [
-    "EPSCO"
-   ],
-   "langues": [
-    "de"
-   ],
    "premier_vu": "2026-09-24",
-   "exemple": "Bundesgesundheitsministerin Nina Warken beim EPSCO-Rat in Luxemburg",
-   "lien_exemple": "https://www.bundesgesundheitsministerium.de/warken-beim-epsco-rat-pm-16-06-2026",
+   "exemple": "European Peace Facility: Council increases support for the Djibouti Armed Forces to €20 million",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/22/european-peace-facility-council-increases-support-for-the-djibouti-armed-forces-to-20-million/",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "EPSCO"
+   "fr": "EPF"
   },
   {
    "code": "ERN",
@@ -5308,19 +4166,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ERN"
   },
   {
-   "code": "ESET",
+   "code": "ESA",
    "variantes": [
-    "ESET"
+    "ESA"
    ],
    "langues": [
-    "en"
+    "en",
+    "pt",
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "FamousSparrow Swaps SparrowDoor For New SparroWocky Backdoor",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/famoussparrow-sparrowocky-latin/",
+   "exemple": "ESA Statement on frontier AI models",
+   "lien_exemple": "https://www.eba.europa.eu/sites/default/files/2026-07/9c0d597c-79ff-482f-a3fe-d9ad66e96bac/JC%202026%2025_ESA%20Statement%20on%20frontier%20AI%20models_.pdf",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "ESET"
+   "fr": "ESA"
   },
   {
    "code": "ESX",
@@ -5385,49 +4245,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "EXTIA"
   },
   {
-   "code": "FAB",
+   "code": "FBI",
    "variantes": [
-    "FAB"
+    "FBI"
    ],
    "langues": [
-    "en"
+    "en",
+    "nl",
+    "hu",
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
+   "exemple": "FBI seizes domain storing bank credentials stolen from U.S. victims",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fbi-seizes-domain-storing-bank-credentials-stolen-from-us-victims/",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "FAB"
-  },
-  {
-   "code": "FCC",
-   "variantes": [
-    "FCC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "FCC rolls back cybersecurity rules for telcos, despite state-hacking risks",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fcc-rolls-back-cybersecurity-rules-for-telcos-despite-state-hacking-risks/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "FCC"
-  },
-  {
-   "code": "FCT",
-   "variantes": [
-    "FCT"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Estudo português mostra que rochas profundas podem funcionar como uma bateria gigante para energia renovável",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/estudo-portugues-mostra-que-rochas-profundas-podem-funcionar-como-uma-bateria-gigante-para-energia-renovavel/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "FCT"
+   "fr": "FBI"
   },
   {
    "code": "FDA",
@@ -5444,22 +4277,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "FDA"
-  },
-  {
-   "code": "FE",
-   "variantes": [
-    "FE"
-   ],
-   "langues": [
-    "pt",
-    "da"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Galaxy S26 FE é a porta de entrada para funcionalidades de IA da linha premium da Samsung",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/galaxy-s26-fe-e-a-porta-de-entrada-para-funcionalidades-de-ia-da-linha-premium-da-samsung/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "FE"
   },
   {
    "code": "FINESS",
@@ -5506,36 +4323,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "FRA"
-  },
-  {
-   "code": "FSB",
-   "variantes": [
-    "FSB"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Ciblage et compromission d’entités françaises par le Centre du service fédéral de sécurité de la fédération de Russie (FSB)",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/ciblage-et-compromission-dentites-francaises-par-le-fsb/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "FSB"
-  },
-  {
-   "code": "G20",
-   "variantes": [
-    "G20"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Financial Stability Board Sounds the Alarm Over Frontier AI Risks",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/financial-stability-board-alarm/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "G20"
   },
   {
    "code": "GIA",
@@ -5598,201 +4385,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "GP"
   },
   {
-   "code": "GPT5",
+   "code": "HP",
    "variantes": [
-    "GPT5"
+    "HP"
    ],
    "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/openai-daybreak-blue-red-gpt-cyber/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "GPT5"
-  },
-  {
-   "code": "GPT6",
-   "variantes": [
-    "GPT6"
-   ],
-   "langues": [
+    "pl",
+    "de",
     "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Guerra de preços nos tokens acelera lançamento de novos modelos mais baratos da OpenAI e Anthropic",
-   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/guerra-de-precos-nos-tokens-acelera-lancamento-de-novos-modelos-mais-baratos-da-openai-e-anthropic/",
+   "exemple": "HP Inc Polska wzmacnia grono partnerów programu PWCyber",
+   "lien_exemple": "https://www.gov.pl/web/cyfryzacja/hp-inc-polska-wzmacnia-grono-partnerow-programu-pwcyber",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "GPT6"
-  },
-  {
-   "code": "GS1900",
-   "variantes": [
-    "GS1900"
-   ],
-   "langues": [
-    "en",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Chinese hackers exploit WordPress, Zyxel flaws to steal govt data",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-multiple-technologies-to-steal-govt-data/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "GS1900"
-  },
-  {
-   "code": "H1 2026",
-   "variantes": [
-    "H1 2026"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Manufacturing Accounts for 22% of all Ransomware Victims",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/manufacturing-22-ransomware-victims/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "H1 2026"
-  },
-  {
-   "code": "HBO",
-   "variantes": [
-    "HBO"
-   ],
-   "langues": [
-    "pt",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "BingeBrowse transforma as suas subscrições de streaming de vídeo num videoclube em 3D",
-   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/bingebrowse-transforma-as-suas-subscricoes-de-streaming-de-video-num-videoclube-em-3d/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HBO"
-  },
-  {
-   "code": "HBV",
-   "variantes": [
-    "HBV"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EU-funded projects decreasing the burden of viral hepatitis",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1984",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HBV"
-  },
-  {
-   "code": "HCV",
-   "variantes": [
-    "HCV"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EU-funded projects decreasing the burden of viral hepatitis",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1984",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HCV"
-  },
-  {
-   "code": "HERA",
-   "variantes": [
-    "HERA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "HaDEA signs new contracts under EU4Health to respond to virus outbreaks",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1999",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HERA"
-  },
-  {
-   "code": "HEROES",
-   "variantes": [
-    "HEROES"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "How the EU is addressing its health workforce crisis - EU4Health Joint Action HEROES",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2024",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HEROES"
-  },
-  {
-   "code": "HILIGHT",
-   "variantes": [
-    "HILIGHT"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "HILIGHT is advancing microscope analysis with photonics",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2002",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HILIGHT"
-  },
-  {
-   "code": "HIPAA",
-   "variantes": [
-    "HIPAA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Why data mining is functionally required after a HIPAA breach",
-   "lien_exemple": "https://iapp.org/news/a/why-data-mining-is-functionally-required-after-a-hipaa-breach",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HIPAA"
-  },
-  {
-   "code": "HORIZON-CID-2026-01",
-   "variantes": [
-    "HORIZON-CID-2026-01"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Horizon Europe call on research and development in support of the clean industrial deal closed",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2019",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HORIZON-CID-2026-01"
-  },
-  {
-   "code": "HORIZON-CL4-2026-05",
-   "variantes": [
-    "HORIZON-CL4-2026-05"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Horizon Europe Digital call 2026: 7 proposals funded",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2000",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "HORIZON-CL4-2026-05"
+   "fr": "HP"
   },
   {
    "code": "HPV",
@@ -5809,6 +4416,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "HPV"
+  },
+  {
+   "code": "HR",
+   "variantes": [
+    "HR"
+   ],
+   "langues": [
+    "pl",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Od 1 lipca umówisz mammografię, test HPV HR i wizytę u kardiologa przez centralną e-rejestrację",
+   "lien_exemple": "https://www.cez.gov.pl/pl/page/o-nas/aktualnosci/od-1-lipca-umowisz-mammografie-test-hpv-hr-i-wizyte-u-kardiologa-przez",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "HR"
   },
   {
    "code": "HSE",
@@ -5842,22 +4465,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "HTACG"
   },
   {
-   "code": "IAB",
-   "variantes": [
-    "IAB"
-   ],
-   "langues": [
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "IAB expands its Diligence Platform to EU with upcoming launch in Germany",
-   "lien_exemple": "https://iapp.org/news/a/iab-expands-its-diligence-platform-to-eu-with-upcoming-launch-in-germany",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "IAB"
-  },
-  {
    "code": "IEC 27001",
    "variantes": [
     "IEC 27001"
@@ -5871,6 +4478,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "IEC 27001"
+  },
+  {
+   "code": "IFA",
+   "variantes": [
+    "IFA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Project Swan é a nova prova de conceito da Lenovo e “estende as asas” para alargar o ecrã do portátil",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/project-swan-e-a-nova-prova-de-conceito-da-lenovo-e-estende-as-asas-para-alargar-o-ecra-do-portatil/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "IFA"
+  },
+  {
+   "code": "IFA 2026",
+   "variantes": [
+    "IFA 2026"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Entrevista: “Nos próximos anos, a televisão vai sentir-te e tornar-se uma amiga”",
+   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/entrevista-nos-proximos-anos-a-televisao-vai-sentir-te-e-tornar-se-uma-amiga/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "IFA 2026"
   },
   {
    "code": "IFRS9",
@@ -5903,21 +4540,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "IGJ"
   },
   {
-   "code": "IMC",
-   "variantes": [
-    "IMC"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "IMC: Indicadores para la Mejora de la Ciberresiliencia",
-   "lien_exemple": "https://www.incibe.es/index.php/incibe-cert/guias-y-estudios/guias/imc-indicadores-para-la-mejora-de-la-ciberresiliencia",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "IMC"
-  },
-  {
    "code": "IMDRF",
    "variantes": [
     "IMDRF"
@@ -5931,21 +4553,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "IMDRF"
-  },
-  {
-   "code": "IMF",
-   "variantes": [
-    "IMF"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "When AI becomes the cyber attacker: Mythos and what comes next",
-   "lien_exemple": "https://www.dataprotectionreport.com/2026/05/when-ai-becomes-the-cyber-attacker-mythos-and-what-comes-next/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "IMF"
   },
   {
    "code": "IMMV",
@@ -5979,6 +4586,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "IMO"
   },
   {
+   "code": "IMPRESE",
+   "variantes": [
+    "IMPRESE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "IMPRESE"
+  },
+  {
    "code": "INA",
    "variantes": [
     "INA"
@@ -6010,6 +4632,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "INCIBE"
   },
   {
+   "code": "INTERNO",
+   "variantes": [
+    "INTERNO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'INTERNO - DECRETO 22 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A05078/SG",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "INTERNO"
+  },
+  {
    "code": "ISDA",
    "variantes": [
     "ISDA"
@@ -6023,6 +4660,37 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "ISDA"
+  },
+  {
+   "code": "ISO 27001",
+   "variantes": [
+    "ISO 27001"
+   ],
+   "langues": [
+    "fr",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ANSSI : publication du Référentiel Cyber France (ReCyF) et d'outils d'accompagnement NIS 2",
+   "lien_exemple": "https://cyber.gouv.fr/actualites/nis-2-lanssi-poursuit-et-renforce-sa-dynamique-daccompagnement/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "ISO 27001"
+  },
+  {
+   "code": "ITALY",
+   "variantes": [
+    "ITALY"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "ITALY"
   },
   {
    "code": "ITU",
@@ -6068,21 +4736,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "JRC"
-  },
-  {
-   "code": "KBV",
-   "variantes": [
-    "KBV"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "KBV stellt neue Impfkampagne vor: Material für Praxen verfügbar",
-   "lien_exemple": "https://www.aerzteblatt.de/news/kbv-stellt-neue-impfkampagne-vor-material-fur-praxen-verfugbar-441b66a4-0e7a-46b4-869e-5fef523fc3d4",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "KBV"
   },
   {
    "code": "KEV",
@@ -6162,37 +4815,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "KRONIK"
   },
   {
-   "code": "LAPIN",
-   "variantes": [
-    "LAPIN"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EU4Health projects tackling lung cancer prevention and screening",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1990",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "LAPIN"
-  },
-  {
-   "code": "LED",
-   "variantes": [
-    "LED"
-   ],
-   "langues": [
-    "pt",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "RGB veio para ficar? Descubra o que os fabricantes de TV, e não só, trouxeram até à IFA 2026",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rgb-veio-para-ficar-descubra-o-que-os-fabricantes-de-tv-e-nao-so-trouxeram-ate-a-ifa/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "LED"
-  },
-  {
    "code": "LEGGE18",
    "variantes": [
     "LEGGE18"
@@ -6206,6 +4828,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "LEGGE18"
+  },
+  {
+   "code": "LG",
+   "variantes": [
+    "LG"
+   ],
+   "langues": [
+    "pt",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "LG responde a acusações sobre gravação de conversas nas Smart TVs e esclarece políticas de privacidade",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/lg-responde-a-acusacoes-sobre-gravacao-de-conversas-nas-smart-tvs-e-esclarece-politicas-de-privacidade/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "LG"
   },
   {
    "code": "LINCE",
@@ -6223,22 +4861,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "LINCE"
   },
   {
-   "code": "LLP",
-   "variantes": [
-    "LLP"
-   ],
-   "langues": [
-    "de",
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Faegre Drinker Biddle & Reath LLP",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.faegredrinker.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxjuZPnDX$",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "LLP"
-  },
-  {
    "code": "LSI",
    "variantes": [
     "LSI"
@@ -6254,34 +4876,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "LSI"
   },
   {
-   "code": "M2M",
+   "code": "MADE",
    "variantes": [
-    "M2M"
+    "MADE"
    ],
    "langues": [
-    "en"
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "BEREC seeks stakeholder input on IP interconnection, M2M roaming and assessment of the general authorisation regime",
-   "lien_exemple": "https://www.berec.europa.eu/en/news/press-releases/berec-seeks-stakeholder-input-on-ip-interconnection-m2m-roaming-and-assessment-of-the-general-authorisation-regime",
+   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "M2M"
-  },
-  {
-   "code": "MCCE",
-   "variantes": [
-    "MCCE"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Boinas Grises: los cibersoldados de las Fuerzas Armadas españolas",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/boinas-grises-mcce-cibersoldados-fuerzas-armadas-espana_20260831.html",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "MCCE"
+   "fr": "MADE"
   },
   {
    "code": "MCFFS 2026",
@@ -6299,21 +4906,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "MCFFS 2026"
   },
   {
-   "code": "MDCG 2020-16",
-   "variantes": [
-    "MDCG 2020-16"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
-   "lien_exemple": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "MDCG 2020-16"
-  },
-  {
    "code": "MDR/IVDR",
    "variantes": [
     "MDR/IVDR"
@@ -6327,22 +4919,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "MDR/IVDR"
-  },
-  {
-   "code": "MITRE",
-   "variantes": [
-    "MITRE"
-   ],
-   "langues": [
-    "en",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/cyber-vendors-mitre-uk-testing/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "MITRE"
   },
   {
    "code": "MQ",
@@ -6390,20 +4966,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "MSS"
   },
   {
-   "code": "MW",
+   "code": "NASA",
    "variantes": [
-    "MW"
+    "NASA"
    ],
    "langues": [
     "pt",
-    "es"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Startup japonesa está a construir casas com braços robóticos que tratam das tarefas domésticas",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/startup-japonesa-esta-a-construir-casas-com-bracos-roboticos-que-tratam-das-tarefas-domesticas/",
+   "exemple": "NASA encontra na Lua uma cratera que só aparece uma vez por século",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/nasa-encontra-na-lua-uma-cratera-que-so-aparece-uma-vez-por-seculo/",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "MW"
+   "fr": "NASA"
   },
   {
    "code": "NATO",
@@ -6438,37 +5014,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NCC-EL_ScaleUP"
   },
   {
-   "code": "NFC",
-   "variantes": [
-    "NFC"
-   ],
-   "langues": [
-    "nl",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Belgische banken melden nieuwe NFC-relay fraudemethode",
-   "lien_exemple": "https://www.security.nl/posting/953956/Belgische+banken+melden+nieuwe+NFC-relay+fraudemethode?channel=rss",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "NFC"
-  },
-  {
-   "code": "NIKEZ",
-   "variantes": [
-    "NIKEZ"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Konference NIKEZ 2026 bude online – registrace spuštěna",
-   "lien_exemple": "https://mzd.gov.cz/konference-nikez-2026-bude-online-spoustime-registraci/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "NIKEZ"
-  },
-  {
    "code": "NISG 2026",
    "variantes": [
     "NISG 2026"
@@ -6484,36 +5029,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NISG 2026"
   },
   {
-   "code": "NOS",
-   "variantes": [
-    "NOS"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Regulador multa NOS em 350 mil euros por alteração unilateral de contratos dos clientes",
-   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/regulador-multa-nos-em-350-mil-euros-por-alteracao-unilateral-de-contratos-dos-clientes/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "NOS"
-  },
-  {
-   "code": "NPC",
-   "variantes": [
-    "NPC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "National Privacy Commission issued show-cause orders to Meta, Roblox, Reddit, and Discord over alleged non-compliance with registration requirements under Data Privacy Act",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43879-national-privacy-commission-announces-investigation-into-meta",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "NPC"
-  },
-  {
    "code": "NSA",
    "variantes": [
     "NSA"
@@ -6527,21 +5042,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "NSA"
-  },
-  {
-   "code": "NSO",
-   "variantes": [
-    "NSO"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "WhatsApp says it disrupted new NSO spyware phishing attacks",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/whatsapp-says-it-disrupted-new-nso-spyware-phishing-attacks/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "NSO"
   },
   {
    "code": "NVD",
@@ -6605,68 +5105,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ONU"
   },
   {
-   "code": "OP/0015",
-   "variantes": [
-    "OP/0015"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Call for tenders: Framework contracts to speed up the development of and access to next-generation therapeutics for infectious diseases",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1979",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "OP/0015"
-  },
-  {
-   "code": "OP/0020",
-   "variantes": [
-    "OP/0020"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "OP/0020"
-  },
-  {
-   "code": "OP/0041-PIN",
-   "variantes": [
-    "OP/0041-PIN"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Prior Information Notice: Harmonising the implementation of EU legal requirements in the fields of food and feed",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1983",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "OP/0041-PIN"
-  },
-  {
-   "code": "OPC",
-   "variantes": [
-    "OPC"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "OPC finds Grok chatbot and deepfakes violated Canada's privacy law",
-   "lien_exemple": "https://iapp.org/news/a/opc-finds-grok-chatbot-and-deepfakes-violated-canada-s-privacy-law",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "OPC"
-  },
-  {
    "code": "OPINION",
    "variantes": [
     "OPINION"
@@ -6698,22 +5136,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "OTP"
   },
   {
-   "code": "OTT",
-   "variantes": [
-    "OTT"
-   ],
-   "langues": [
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "BEREC publishes reports on OTT services and the Internet of Things, as well as guidance on the new international roaming rules",
-   "lien_exemple": "https://www.berec.europa.eu/en/news/press-releases/berec-publishes-reports-on-ott-services-and-the-internet-of-things-as-well-as-guidance-on-the-new-international-roaming-rules",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "OTT"
-  },
-  {
    "code": "OUCH",
    "variantes": [
     "OUCH"
@@ -6729,67 +5151,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "OUCH"
   },
   {
-   "code": "OWA",
-   "variantes": [
-    "OWA"
-   ],
-   "langues": [
-    "en",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Russian-Alligned TA488 Returns With Persistent Outlook Web Access Attack",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ta488-outlook-half-click-owareaper/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "OWA"
-  },
-  {
-   "code": "P80",
-   "variantes": [
-    "P80"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Mais leitura e menos distrações? TCL P80 Ultra propõe uma forma diferente de olhar para o ecrã (e para o smartphone)",
-   "lien_exemple": "https://tek.sapo.pt/analises/artigos/mais-leitura-e-menos-distracoes-p80-ultra-propoe-uma-forma-diferente-de-olhar-para-o-ecra-e-para-o-smartphone/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "P80"
-  },
-  {
-   "code": "PACS",
-   "variantes": [
-    "PACS"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Mise à jour du référentiel d’exigences PACS en version 2.0",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/mise-a-jour-du-referentiel-pacs/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "PACS"
-  },
-  {
-   "code": "PCI",
-   "variantes": [
-    "PCI"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Building Cyber Resilience Through Risk, Education and Service  - 10 Sep 2026 18:12 ...regulatory requirements such as ISO 27001, NIST SP 800-53, the CIS Controls, HIPAA , GDPR, CCPA and PCI DSS. Each framework has a different purpose, but organizatio",
-   "lien_exemple": "https://urldefense.com/v3/__https://techbullion.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxlwm87fy$",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "PCI"
-  },
-  {
    "code": "PDCO",
    "variantes": [
     "PDCO"
@@ -6803,37 +5164,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "PDCO"
-  },
-  {
-   "code": "PHOENIX",
-   "variantes": [
-    "PHOENIX"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Childhood Cancer Awareness Month 2026: Horizon Europe projects advancing novel treatments for rare and high-risk paediatric cancers",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2025",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "PHOENIX"
-  },
-  {
-   "code": "PIB",
-   "variantes": [
-    "PIB"
-   ],
-   "langues": [
-    "pt",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Como atrair 800 milhões, criar 1.600 startups, gerar 8.800 empregos e somar 8% ao PIB. E porque isso se decide esta semana",
-   "lien_exemple": "https://tek.sapo.pt/opiniao/artigos/como-atrair-800-milhoes-criar-1-600-startups-gerar-8-800-empregos-e-somar-8-ao-pib-e-porque-isso-se-decide-esta-semana/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "PIB"
   },
   {
    "code": "PIN",
@@ -6867,50 +5197,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "PLN"
   },
   {
-   "code": "PPE",
+   "code": "PQC",
    "variantes": [
-    "PPE"
+    "PQC"
    ],
    "langues": [
-    "en"
+    "en",
+    "fi",
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
+   "exemple": "EU Roadmap on Post-Quantum Cryptography - Survey feedback",
+   "lien_exemple": "https://digital-strategy.ec.europa.eu/en/library/eu-roadmap-post-quantum-cryptography-survey-feedback",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "PPE"
-  },
-  {
-   "code": "PPPA-2026-LAUNCHERS-GAMECHANGING",
-   "variantes": [
-    "PPPA-2026-LAUNCHERS-GAMECHANGING"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Game-changing innovation for European launch solutions: 3 proposals selected to receive €20 million",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2018",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "PPPA-2026-LAUNCHERS-GAMECHANGING"
-  },
-  {
-   "code": "PR",
-   "variantes": [
-    "PR"
-   ],
-   "langues": [
-    "es",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Sara García (MIOTI): «El peligro de la democratización de la IA es la ‘comoditización’ del mensaje: textos técnicamente perfectos, pero planos y predecibles»",
-   "lien_exemple": "https://www.computing.es/marketing/sara-garcia-mioti-el-peligro-de-la-democratizacion-de-la-ia-es-la-comoditizacion-del-mensaje-textos-tecnicamente-perfectos-pero-planos-y-predecibles/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "PR"
+   "fr": "PQC"
   },
   {
    "code": "PUE",
@@ -6944,21 +5245,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "PW"
   },
   {
-   "code": "Q2",
-   "variantes": [
-    "Q2"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Ransomware Surges in July After Q2 Lull",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ransomware-surges-july-q2-lull/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "Q2"
-  },
-  {
    "code": "R2",
    "variantes": [
     "R2"
@@ -6973,21 +5259,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "R2"
-  },
-  {
-   "code": "RAMP",
-   "variantes": [
-    "RAMP"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Securing Europe's critical raw materials: the RAMP partnership",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1982",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "RAMP"
   },
   {
    "code": "RDI",
@@ -7020,34 +5291,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "REC"
   },
   {
-   "code": "RELIEF",
+   "code": "S7",
    "variantes": [
-    "RELIEF"
+    "S7"
    ],
    "langues": [
-    "en"
+    "fr",
+    "en",
+    "el"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "EU4Health projects tackling lung cancer prevention and screening",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/1990",
+   "exemple": "Grèce : l'Autorité nationale de cybersécurité alerte sur une activité malveillante visant les automates Siemens S7",
+   "lien_exemple": "https://cyber.gov.gr/category/anakoinoseis/",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "RELIEF"
-  },
-  {
-   "code": "ROG",
-   "variantes": [
-    "ROG"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Asus estreia os seus primeiros routers Wi-Fi 8. Novos modelos chegam a Portugal em outubro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-estreia-os-seus-primeiros-routers-wi-fi-8-novos-modelos-chegam-a-portugal-em-outubro/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "ROG"
+   "fr": "S7"
   },
   {
    "code": "SALUTE",
@@ -7157,22 +5415,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SICHER"
   },
   {
-   "code": "SIEM",
-   "variantes": [
-    "SIEM"
-   ],
-   "langues": [
-    "it",
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Wazuh: PoC pubblico per lo sfruttamento della CVE-2026-71540",
-   "lien_exemple": "https://www.acn.gov.it/portale/w/wazuh-poc-pubblico-per-lo-sfruttamento-della-cve-2026-71540",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "SIEM"
-  },
-  {
    "code": "SIMM",
    "variantes": [
     "SIMM"
@@ -7186,21 +5428,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "SIMM"
-  },
-  {
-   "code": "SIMO",
-   "variantes": [
-    "SIMO"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Silicon Motion Technology (SIMO) Reaches First EU Cyber Resilience Act Compliance Milestone",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60331402691&f=News&s=14&ci=107203&i=0&si=54885&fmi=169659221&e=Yahoo*21*Finance&d=116434&mbc=Q1QzL2E9NjAzMzE0MDI2OTEmcD0xNGUmdj0xJng9WjdxT2g2elpBNlBqQ29DN2JMWXo4QSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735267&ai=338121&ac=338121_1788764891000&ck=f2a858723822b49d__;JSs!!NEMsmePo_HYI!fCx6mz1Mh84_eWqJcaYIh-5MyJ2vFZOMu_e25chASlY_BIaWXR8WkyGbgzS8BrgZOWpewkzoUwhCde4DUg5uCUasY_01$",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "SIMO"
   },
   {
    "code": "SITHS",
@@ -7218,34 +5445,27 @@ window.VEILLE_ACRONYMES = {
    "fr": "SITHS"
   },
   {
-   "code": "SOLACE",
+   "code": "SMS",
    "variantes": [
-    "SOLACE"
+    "SMS"
    ],
    "langues": [
-    "en"
+    "pt",
+    "de",
+    "cs",
+    "da",
+    "fr",
+    "hu",
+    "en",
+    "es",
+    "el"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "SOLACE: Improving lung cancer screening in Europe",
-   "lien_exemple": "https://hadea.ec.europa.eu/news/solace-improving-lung-cancer-screening-europe-2026-08-01_en",
+   "exemple": "Microsoft acaba com SMS e troca o sistema de autenticação por passkeys. Veja o que muda a 1 de setembro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/microsoft-acaba-com-sms-e-troca-o-sistema-de-autenticacao-por-passkeys-veja-o-que-muda-a-1-de-setembro/",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "SOLACE"
-  },
-  {
-   "code": "SPD",
-   "variantes": [
-    "SPD"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Nach Krebserkrankung: Länder wollen „Recht auf Vergessen“",
-   "lien_exemple": "https://www.aerzteblatt.de/news/nach-krebserkrankung-lander-wollen-recht-auf-vergessen-2a1b291d-fa9a-4593-b1e0-f6dfc1465730",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "SPD"
+   "fr": "SMS"
   },
   {
    "code": "SPMS",
@@ -7293,19 +5513,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "SREN"
   },
   {
-   "code": "STIC",
+   "code": "SSH",
    "variantes": [
-    "STIC"
+    "SSH"
    ],
    "langues": [
-    "es"
+    "en",
+    "nl"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Las XX Jornadas STIC marcan un hito con la edición más ambiciosa de su historia",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/las-xx-jornadas-stic-marcan-un-hito-con-la-edicion-mas-ambiciosa-de-su-historia_20260715.html",
+   "exemple": "Human Attacker Hits Machine-Speed Exploitation of Marimo RCE",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/human-attacker-machine-speed/",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "STIC"
+   "fr": "SSH"
   },
   {
    "code": "STIX",
@@ -7321,37 +5542,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "STIX"
-  },
-  {
-   "code": "SUV",
-   "variantes": [
-    "SUV"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CEER Exobot: Arábia Saudita revela o seu primeiro carro elétrico com 1.111 cavalos e um design único",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/ceer-exobot-arabia-saudita-revela-o-seu-primeiro-carro-eletrico-com-1-111-cavalos-e-um-design-unico/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "SUV"
-  },
-  {
-   "code": "TA488",
-   "variantes": [
-    "TA488"
-   ],
-   "langues": [
-    "en",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Russian-Alligned TA488 Returns With Persistent Outlook Web Access Attack",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ta488-outlook-half-click-owareaper/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "TA488"
   },
   {
    "code": "TAXII",
@@ -7384,53 +5574,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "TDC"
   },
   {
-   "code": "THEODORA",
-   "variantes": [
-    "THEODORA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Childhood Cancer Awareness Month 2026: Horizon Europe projects advancing novel treatments for rare and high-risk paediatric cancers",
-   "lien_exemple": "https://hadea.ec.europa.eu/node/2025",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "THEODORA"
-  },
-  {
-   "code": "TIA",
-   "variantes": [
-    "TIA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "[Closed] Transfer Impact Assessment (TIA): the CNIL Consults You on a Draft Guide",
-   "lien_exemple": "https://www.cnil.fr/en/node/164765",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "TIA"
-  },
-  {
-   "code": "TP",
-   "variantes": [
-    "TP"
-   ],
-   "langues": [
-    "en",
-    "pt",
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Zero-Day Flaw in TP-Link Cameras Enables Eavesdropping",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/zeroday-tplink-cameras/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "TP"
-  },
-  {
    "code": "TTC",
    "variantes": [
     "TTC"
@@ -7459,22 +5602,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "UDI"
-  },
-  {
-   "code": "UEFI",
-   "variantes": [
-    "UEFI"
-   ],
-   "langues": [
-    "en",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Eleven Vulnerable UEFI Shims Enable Secure Boot Bypass",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/uefi-shims-secure-boot-bypass/",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "UEFI"
   },
   {
    "code": "VRT",
@@ -7508,19 +5635,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "XR"
   },
   {
-   "code": "XT2",
+   "code": "XSS",
    "variantes": [
-    "XT2"
+    "XSS"
    ],
    "langues": [
-    "pt"
+    "en",
+    "de",
+    "hu"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Huawei Mate XT 2 aposta na privacidade e num ecrã de 10,2 polegadas em formato tripartido",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/huawei-mate-xt-2-aposta-na-privacidade-e-num-ecra-de-102-polegadas-em-formato-tripartido/",
+   "exemple": "Ukraine arrests suspected admin of XSS Russian hacking forum",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/ukraine-arrests-suspected-admin-of-xss-russian-hacking-forum/",
    "nb_articles": 2,
    "dans_glossaire": false,
-   "fr": "XT2"
+   "fr": "XSS"
   },
   {
    "code": "ÚNMZ",
@@ -7553,51 +5682,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ÚOOÚ"
   },
   {
-   "code": "A2",
-   "variantes": [
-    "A2"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "A2 e-tron: Audi ressuscita um ícone com o elétrico mais eficiente de sempre da marca",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/a2-e-tron-audi-ressuscita-um-icone-com-o-eletrico-mais-eficiente-de-sempre-da-marca/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "A2"
-  },
-  {
-   "code": "A20",
-   "variantes": [
-    "A20"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "iPhone 18 Pro e Pro Max com bateria reforçada, chip A20 Pro e abertura ajustável nas câmaras",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/iphone-18-pro-e-pro-max-com-bateria-reforcada-chip-a20-pro-e-abertura-ajustavel-nas-camaras/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "A20"
-  },
-  {
-   "code": "AAM/PPA",
-   "variantes": [
-    "AAM/PPA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04965/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "AAM/PPA"
-  },
-  {
    "code": "AB",
    "variantes": [
     "AB"
@@ -7611,21 +5695,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "AB"
-  },
-  {
-   "code": "ABC",
-   "variantes": [
-    "ABC"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Mar de las Heras, directora de Operaciones de Procesia, entre los directivos del año de ‘ABC’",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/mar-de-las-heras-de-procesia-entre-los-directivos-del-ano-de-abc_20260615.html",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ABC"
   },
   {
    "code": "ABW",
@@ -7644,21 +5713,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ABW"
   },
   {
-   "code": "ACM",
-   "variantes": [
-    "ACM"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "House of Representatives passed ACM Call-in Power Act amending the Competition Act of 1997 including merger control regulation (No. 36774)",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43891-house-of-representatives-passed-acm-call-in-power-act-amending-the-competition-act-of-1997-including-merger-control-regulation-no-36774",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ACM"
-  },
-  {
    "code": "ACN 155238",
    "variantes": [
     "ACN 155238"
@@ -7672,6 +5726,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ACN 155238"
+  },
+  {
+   "code": "ACPR",
+   "variantes": [
+    "ACPR"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "L’ANSSI, l’ACPR et la Banque de France signent un accord de coopération",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/lanssi-lacpr-et-la-banque-de-france-signe-un-accord-de-cooperation/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ACPR"
   },
   {
    "code": "ACR",
@@ -7734,68 +5803,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ADA"
   },
   {
-   "code": "ADB",
-   "variantes": [
-    "ADB"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "THost9 Android RAT Pairs Packed Loader With ADB Worm",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/thost9-android-rat-packed-loader/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ADB"
-  },
-  {
-   "code": "ADC",
-   "variantes": [
-    "ADC"
-   ],
-   "langues": [
-    "fi",
-    "en",
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Citrix Netscaler ADC ja Gateway -tuotteissa kriittisiä haavoittuvuuksia",
-   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-23?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ADC"
-  },
-  {
-   "code": "ADC3",
-   "variantes": [
-    "ADC3"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nabiax inicia la construcción de ADC3, su nuevo centro de datos en Alcalá de Henares",
-   "lien_exemple": "https://www.computing.es/infraestructuras/nabiax-inicia-la-construccion-de-adc3-su-nuevo-centro-de-datos-en-alcala-de-henares/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ADC3"
-  },
-  {
-   "code": "ADN",
-   "variantes": [
-    "ADN"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "DeepMind lança mapa preditivo que cobre todas as mutações possíveis no genoma humano",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/deepmind-lanca-mapa-preditivo-que-cobre-todas-as-mutacoes-possiveis-no-genoma-humano/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ADN"
-  },
-  {
    "code": "AE",
    "variantes": [
     "AE"
@@ -7824,6 +5831,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "AEC"
+  },
+  {
+   "code": "AEM",
+   "variantes": [
+    "AEM"
+   ],
+   "langues": [
+    "nl",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Adobe dicht kritieke kwetsbaarheden in Connect en AEM Forms",
+   "lien_exemple": "https://www.security.nl/posting/954325/Adobe+dicht+kritieke+kwetsbaarheden+in+Connect+en+AEM+Forms?channel=rss",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "AEM"
   },
   {
    "code": "AEMPS",
@@ -7856,6 +5879,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "AEVE"
   },
   {
+   "code": "AFFARI",
+   "variantes": [
+    "AFFARI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "AFFARI"
+  },
+  {
    "code": "AFM",
    "variantes": [
     "AFM"
@@ -7884,6 +5922,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "AFMPS"
+  },
+  {
+   "code": "AG",
+   "variantes": [
+    "AG"
+   ],
+   "langues": [
+    "en",
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "California AG sues 23andMe over 2023 breach exposing health data",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/california-ag-sues-23andme-over-2023-breach-exposing-health-data/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "AG"
   },
   {
    "code": "AGENAS",
@@ -7916,19 +5970,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "AGENDA"
   },
   {
-   "code": "AGRA",
+   "code": "AGENZIA",
    "variantes": [
-    "AGRA"
+    "AGENZIA"
    ],
    "langues": [
-    "es"
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Inetum cede al Banco de Alimentos de Asturias la aplicación AGRA",
-   "lien_exemple": "https://www.computing.es/erp/inetum-cede-al-banco-de-alimentos-de-asturias-la-aplicacion-agra/",
+   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "AGRA"
+   "fr": "AGENZIA"
   },
   {
    "code": "AI Act",
@@ -7976,36 +6030,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "AIFMD"
   },
   {
-   "code": "AIOS",
-   "variantes": [
-    "AIOS"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Hisense leva o V AIOS e a visão “Companion Living” à IFA 2026 e renova parceria com a UEFA até 2028",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/hisense-leva-o-v-aios-e-a-visao-companion-living-a-ifa-2026-e-renova-parceria-com-a-uefa-ate-2028/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "AIOS"
-  },
-  {
-   "code": "AIT-GUI",
-   "variantes": [
-    "AIT-GUI"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NASA Ground Control Software Flaw Enables Unauthenticated Commands",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/nasa-ground-control-software-flaw/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "AIT-GUI"
-  },
-  {
    "code": "AITD",
    "variantes": [
     "AITD"
@@ -8034,21 +6058,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "AIVD"
-  },
-  {
-   "code": "AKC",
-   "variantes": [
-    "AKC"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "VISEO adquiere la consultora italiana AKC",
-   "lien_exemple": "https://www.computing.es/mercado-ti/viseo-adquiere-la-consultora-italiana-akc/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "AKC"
   },
   {
    "code": "AL02/260615",
@@ -8096,21 +6105,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ALPI"
   },
   {
-   "code": "ALSIA",
-   "variantes": [
-    "ALSIA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04943/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ALSIA"
-  },
-  {
    "code": "AMA",
    "variantes": [
     "AMA"
@@ -8141,19 +6135,49 @@ window.VEILLE_ACRONYMES = {
    "fr": "AMALIA"
   },
   {
-   "code": "ANA",
+   "code": "AMBV",
    "variantes": [
-    "ANA"
+    "AMBV"
    ],
    "langues": [
-    "es"
+    "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "El CCN redefine la gestión de vulnerabilidades con la nueva versión de su herramienta ANA",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/organismos-ciberseguridad/el-ccn-actualiza-ana-para-reforzar-la-gestion-de-vulnerabilidades_20260702.html",
+   "premier_vu": "2026-09-28",
+   "exemple": "Swissmedic Portal Release Notes – 23.09.2026",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/services/egov-services/smc-portal/release-notes/release-note-230926.html",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "ANA"
+   "fr": "AMBV"
+  },
+  {
+   "code": "AMD",
+   "variantes": [
+    "AMD"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Acer Nitro V 16 AI AMD: a prova de que não é preciso pagar uma fortuna para jogar a sério",
+   "lien_exemple": "https://tek.sapo.pt/analises/artigos/acer-nitro-v-16-ai-amd-a-prova-de-que-nao-e-preciso-pagar-uma-fortuna-para-jogar-a-serio/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "AMD"
+  },
+  {
+   "code": "AMOLED",
+   "variantes": [
+    "AMOLED"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "TCL quer que a IA faça parte do quotidiano em casa com televisores Mini LED e eletrodomésticos",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/tcl-quer-que-a-ia-faca-parte-do-quotidiano-em-casa-com-televisores-mini-led-e-eletrodomesticos/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "AMOLED"
   },
   {
    "code": "ANATEL",
@@ -8186,21 +6210,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ANDICOM"
   },
   {
-   "code": "ANI",
-   "variantes": [
-    "ANI"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Workshop EIC Pathfinder Challenges 2026 quer ajudar a preparar uma proposta de sucesso",
-   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/workshop-eic-pathfinder-challenges-2026-quer-ajudar-a-preparar-uma-proposta-de-sucesso/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ANI"
-  },
-  {
    "code": "ANIA",
    "variantes": [
     "ANIA"
@@ -8214,22 +6223,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ANIA"
-  },
-  {
-   "code": "ANPD",
-   "variantes": [
-    "ANPD"
-   ],
-   "langues": [
-    "es",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Notas de la IAPP América Latina: De orientadora a fiscalizadora — agosto marca un punto de inflexión para la ANPD",
-   "lien_exemple": "https://iapp.org/news/a/notas-de-la-iapp-am-rica-latina-de-orientadora-a-fiscalizadora-agosto-marca-un-punto-de-inflexi-n-para-la-anpd",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ANPD"
   },
   {
    "code": "ANSM",
@@ -8260,21 +6253,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "AOS"
-  },
-  {
-   "code": "APB",
-   "variantes": [
-    "APB"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Não passes cartão à fraude: Associação de bancos alerta para burlas e quer promover comportamentos seguros",
-   "lien_exemple": "https://tek.sapo.pt/noticias/artigos/nao-passes-cartao-a-fraude-associacao-de-bancos-alerta-para-burlas-e-quer-promover-comportamentos-seguros/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "APB"
   },
   {
    "code": "APEX",
@@ -8322,6 +6300,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "APK"
   },
   {
+   "code": "APN",
+   "variantes": [
+    "APN"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "APN"
+  },
+  {
    "code": "APS",
    "variantes": [
     "APS"
@@ -8337,49 +6330,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "APS"
   },
   {
-   "code": "ARPANET",
+   "code": "APT",
    "variantes": [
-    "ARPANET"
+    "APT"
    ],
    "langues": [
-    "es"
+    "en",
+    "pl",
+    "hu"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "¿Sabes cuál fue el primer virus informático de la historia?",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/sabes-cual-fue-el-primer-virus-informatico-de-la-historia_20260819.html",
+   "exemple": "Researchers Link 'Jewelbug' Chinese APT to Hack-for-Hire Operations",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-link-chinese-apt-hack/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "ARPANET"
+   "fr": "APT"
   },
   {
-   "code": "ARR",
+   "code": "AT-Alert-Testauslösung",
    "variantes": [
-    "ARR"
+    "AT-Alert-Testauslösung"
    ],
    "langues": [
-    "en"
+    "de"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "RBRK: Subscription ARR up 33% and outlook raised amid strong demand for AI-driven cyber resilience",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60281218497&f=News&s=14&ci=107203&i=0&si=251314&fmi=660724092&e=TradingView&d=116434&mbc=Q1QzL2E9NjAyODEyMTg0OTcmcD0xNGUmdj0xJng9eFZwV1EyNkRIQkdFZXZLbHdrNWR6USZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1788159957000&ck=928e08717238ee79__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqlTQX7wp$",
+   "premier_vu": "2026-09-28",
+   "exemple": "Zivilschutz-Probealarm mittels AT-Alert und Sirene",
+   "lien_exemple": "https://www.bmi.gv.at/news.aspx?id=7059624556674A4A304B6F3D",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "ARR"
-  },
-  {
-   "code": "ARRI",
-   "variantes": [
-    "ARRI"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Honor Magic 9 Pro Max chega em setembro com câmaras de 200 MP e um design ousado",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/honor-magic-9-pro-max-chega-em-setembro-com-camaras-de-200-mp-e-um-design-ousado/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ARRI"
+   "fr": "AT-Alert-Testauslösung"
   },
   {
    "code": "ATT",
@@ -8487,21 +6467,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "BACINO"
   },
   {
-   "code": "BBC",
-   "variantes": [
-    "BBC"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Xbox admite que o “Project Helix” pode não ser uma única consola, mas uma família de dispositivos",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/xbox-admite-que-o-project-helix-pode-nao-ser-uma-unica-consola-mas-uma-familia-de-dispositivos/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "BBC"
-  },
-  {
    "code": "BBVA",
    "variantes": [
     "BBVA"
@@ -8532,36 +6497,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "BC-JAVA"
   },
   {
-   "code": "BCD-180",
-   "variantes": [
-    "BCD-180"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Žádost o informace ze dne 27.7.2026",
-   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-27-7-2026-2/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "BCD-180"
-  },
-  {
-   "code": "BDA",
-   "variantes": [
-    "BDA"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Anästhesieverbände entwickeln Handlungsanweisungen zum Umgang mit sexualisierter Belästigung",
-   "lien_exemple": "https://www.aerzteblatt.de/news/anasthesieverbande-entwickeln-handlungsanweisungen-zum-umgang-mit-sexualisierter-belastigung-82561ee0-6813-4a40-893a-9ec92d0ae5f1",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "BDA"
-  },
-  {
    "code": "BEAR",
    "variantes": [
     "BEAR"
@@ -8575,6 +6510,24 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "BEAR"
+  },
+  {
+   "code": "BEC",
+   "variantes": [
+    "BEC"
+   ],
+   "langues": [
+    "en",
+    "de",
+    "nl",
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Black Axe Members Extradited to US Over Internet Fraud Claims",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/black-axe-members-extradited-us/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "BEC"
   },
   {
    "code": "BEREC 2023",
@@ -8605,21 +6558,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "BEREC-ERGP"
-  },
-  {
-   "code": "BI",
-   "variantes": [
-    "BI"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "No preguntes. Espera a que te lo cuenten",
-   "lien_exemple": "https://www.computing.es/opinion/no-preguntes-espera-a-que-te-lo-cuenten/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "BI"
   },
   {
    "code": "BIND",
@@ -8697,19 +6635,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "BMASGPK"
   },
   {
-   "code": "BN12",
+   "code": "BMBFSFJ",
    "variantes": [
-    "BN12"
+    "BMBFSFJ"
    ],
    "langues": [
-    "pt"
+    "de"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Asus estreia os seus primeiros routers Wi-Fi 8. Novos modelos chegam a Portugal em outubro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-estreia-os-seus-primeiros-routers-wi-fi-8-novos-modelos-chegam-a-portugal-em-outubro/",
+   "exemple": "Fachkommission übergibt Rahmenlehrplan und Rahmenausbildungsplan für die bundeseinheitliche Pflegefachassistenzausbildung an BMBFSFJ und BMG",
+   "lien_exemple": "https://www.bundesgesundheitsministerium.de/uebergabe-rahmenplaene-fachkommission-nach-pflegeberufegesetz-30-06-26",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "BN12"
+   "fr": "BMBFSFJ"
   },
   {
    "code": "BNPP",
@@ -8740,21 +6678,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "BOE"
-  },
-  {
-   "code": "BOE-A-2026-19846",
-   "variantes": [
-    "BOE-A-2026-19846"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
-   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "BOE-A-2026-19846"
   },
   {
    "code": "BOE-A-2026-19849",
@@ -8800,6 +6723,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "BOS 2026"
+  },
+  {
+   "code": "BOSQUEL",
+   "variantes": [
+    "BOSQUEL"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Décision n° 2026/77/LE BOSQUEL AI FACTORY/1 du 2 septembre 2026 portant désignation de garants de la concertation préalable relative au projet « Le Bosquel AI Factory » de centre de calcul et son raccordement électrique sur la commune de Le Bosquel (80)",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054817358",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "BOSQUEL"
   },
   {
    "code": "BOSS",
@@ -8862,6 +6800,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "BSIG"
   },
   {
+   "code": "C135341",
+   "variantes": [
+    "C135341"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Batch recall – Elocom, Lösung zur Anwendung auf der Haut",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/humanarzneimittel/market-surveillance/qualitaetsmaengel-und-chargenrueckrufe/batch-recalls/chargenrueckruf-elocom-loesung-zur-anwendung-auf-der-haut.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "C135341"
+  },
+  {
    "code": "C2PA",
    "variantes": [
     "C2PA"
@@ -8892,21 +6845,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "C37"
   },
   {
-   "code": "C3S",
-   "variantes": [
-    "C3S"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Agosto bate recordes de temperatura e marca o verão mais quente de sempre na Europa Ocidental",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/agosto-bate-recordes-de-temperatura-e-marca-o-verao-mais-quente-de-sempre-na-europa-ocidental/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "C3S"
-  },
-  {
    "code": "C4",
    "variantes": [
     "C4"
@@ -8935,36 +6873,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CAF"
-  },
-  {
-   "code": "CAN-SPAM",
-   "variantes": [
-    "CAN-SPAM"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Verkada to pay $2.95 million for alleged CAN-SPAM Act violations",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/verkada-to-pay-295-million-for-alleged-can-spam-act-violations/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CAN-SPAM"
-  },
-  {
-   "code": "CAR-T-Zell-Therapie",
-   "variantes": [
-    "CAR-T-Zell-Therapie"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "CAR-T-Zell-Therapie: 1,5 Jahre medikamentenfreie Remission bei rheumatoider Arthritis",
-   "lien_exemple": "https://www.aerzteblatt.de/news/car-t-zell-therapie-15-jahre-medikamentenfreie-remission-bei-rheumatoider-arthritis-8c0b713a-c383-4b32-bafa-97c09d25d248",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CAR-T-Zell-Therapie"
   },
   {
    "code": "CAS",
@@ -9012,21 +6920,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CBS"
   },
   {
-   "code": "CCH",
-   "variantes": [
-    "CCH"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "VISEO adquiere la consultora italiana AKC",
-   "lien_exemple": "https://www.computing.es/mercado-ti/viseo-adquiere-la-consultora-italiana-akc/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CCH"
-  },
-  {
    "code": "CCM4",
    "variantes": [
     "CCM4"
@@ -9040,21 +6933,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CCM4"
-  },
-  {
-   "code": "CCN-CERT",
-   "variantes": [
-    "CCN-CERT"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "El CCN redefine la gestión de vulnerabilidades con la nueva versión de su herramienta ANA",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/organismos-ciberseguridad/el-ccn-actualiza-ana-para-reforzar-la-gestion-de-vulnerabilidades_20260702.html",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CCN-CERT"
   },
   {
    "code": "CCN-TEC",
@@ -9072,64 +6950,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "CCN-TEC"
   },
   {
-   "code": "CCPA",
+   "code": "CCS",
    "variantes": [
-    "CCPA"
+    "CCS"
    ],
    "langues": [
     "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "California authorities announce largest CCPA fine to date",
-   "lien_exemple": "https://iapp.org/news/a/california-authorities-announce-largest-ccpa-fine-to-date",
+   "premier_vu": "2026-09-28",
+   "exemple": "ETSI’s Committee for Critical Communications Systems elects officials",
+   "lien_exemple": "https://www.etsi.org/newsroom/news/etsis-committee-for-critical-communications-systems-elects-officials/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "CCPA"
-  },
-  {
-   "code": "CD19-CAR-T-Zell-Therapie",
-   "variantes": [
-    "CD19-CAR-T-Zell-Therapie"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "CAR-T-Zell-Therapie: 1,5 Jahre medikamentenfreie Remission bei rheumatoider Arthritis",
-   "lien_exemple": "https://www.aerzteblatt.de/news/car-t-zell-therapie-15-jahre-medikamentenfreie-remission-bei-rheumatoider-arthritis-8c0b713a-c383-4b32-bafa-97c09d25d248",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CD19-CAR-T-Zell-Therapie"
-  },
-  {
-   "code": "CDU",
-   "variantes": [
-    "CDU"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Linnemann zeigt sich vor Abgeordneten entscheidungsfreudig",
-   "lien_exemple": "https://www.aerzteblatt.de/news/linnemann-zeigt-sich-vor-abgeordneten-entscheidungsfreudig-f6b94bd7-24a9-4d13-82b5-1ff632c61a79",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CDU"
-  },
-  {
-   "code": "CDZ",
-   "variantes": [
-    "CDZ"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Informace pro žadatele výzvy CDZ IV",
-   "lien_exemple": "https://mzd.gov.cz/informace-pro-zadatele-vyzvy-cdz-iv/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CDZ"
+   "fr": "CCS"
   },
   {
    "code": "CE/EE",
@@ -9162,36 +6995,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CECP"
   },
   {
-   "code": "CEDE",
-   "variantes": [
-    "CEDE"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Lo que J.Forrester, S.Beer y Max Weber le enseñarían a un director de operaciones",
-   "lien_exemple": "https://www.computing.es/movilidad/lo-que-j-forrester-s-beer-y-max-weber-le-ensenarian-a-un-director-de-operaciones/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CEDE"
-  },
-  {
-   "code": "CEER",
-   "variantes": [
-    "CEER"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CEER Exobot: Arábia Saudita revela o seu primeiro carro elétrico com 1.111 cavalos e um design único",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/ceer-exobot-arabia-saudita-revela-o-seu-primeiro-carro-eletrico-com-1-111-cavalos-e-um-design-unico/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CEER"
-  },
-  {
    "code": "CEF-DIG-2026-CABLE-REPAIR-CAPACITIES",
    "variantes": [
     "CEF-DIG-2026-CABLE-REPAIR-CAPACITIES"
@@ -9205,21 +7008,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CEF-DIG-2026-CABLE-REPAIR-CAPACITIES"
-  },
-  {
-   "code": "CEKAS",
-   "variantes": [
-    "CEKAS"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Certifikace odborné způsobilosti adiktologických služeb",
-   "lien_exemple": "https://mzd.gov.cz/certifikace-odborne-zpusobilosti-adiktologickych-sluzeb/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CEKAS"
   },
   {
    "code": "CEN-CENELEC",
@@ -9327,21 +7115,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CESNET"
   },
   {
-   "code": "CFSP",
-   "variantes": [
-    "CFSP"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Statement by the High Representative on behalf of the EU on the alignment of certain countries concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
-   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/25/statement-by-the-high-representative-on-behalf-of-the-eu-on-the-alignment-of-certain-countries-concerning-restrictive-measures-in-respect-of-actions-undermining-or-threatening-the-territorial-integrity-sovereignty-and-independence-of-ukrain/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CFSP"
-  },
-  {
    "code": "CGI",
    "variantes": [
     "CGI"
@@ -9387,6 +7160,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CHIEF"
   },
   {
+   "code": "CHIP-AML22",
+   "variantes": [
+    "CHIP-AML22"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CHIP-AML22: improving the diagnosis and treatment of paediatric acute myeloid leukemia (AML)",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2004",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CHIP-AML22"
+  },
+  {
    "code": "CHM",
    "variantes": [
     "CHM"
@@ -9400,21 +7188,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CHM"
-  },
-  {
-   "code": "CHT",
-   "variantes": [
-    "CHT"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "CHT Security Receives Frost & Sullivan's 2026 Taiwan Company of the Year Recognition for Excellence in Cybersecurity Services",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60258809764&f=News&s=14&ci=107203&i=0&si=320256&fmi=672749632&e=TheInsiders.com.au&d=116434&mbc=Q1QzL2E9NjAyNTg4MDk3NjQmcD0xNGUmdj0xJng9REN4RTlDNVdkUTh2WVVhTnZSb3ZqQSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735268&ai=338121&ac=338121_1788159957000&ck=ca32e0a12eab3924__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqsdzBSZR$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CHT"
   },
   {
    "code": "CICLON",
@@ -9432,19 +7205,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "CICLON"
   },
   {
-   "code": "CIPN",
+   "code": "CIS",
    "variantes": [
-    "CIPN"
+    "CIS"
    ],
    "langues": [
-    "de"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Psilocybin könnte Chemotherapie-induzierte periphere Neuropathie verhindern",
-   "lien_exemple": "https://www.aerzteblatt.de/news/psilocybin-konnte-chemotherapie-induzierte-periphere-neuropathie-verhindern-95a14394-79ee-4b69-b132-41216257c7be",
+   "exemple": "Joint letter of the CIS SCG and the CSC to the European Commission",
+   "lien_exemple": "https://www.edpb.europa.eu/csc/documents/letters/joint-letter-of-the-cis-scg-and-the-csc-to-the-european-commission_en",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "CIPN"
+   "fr": "CIS"
   },
   {
    "code": "CISO 2026",
@@ -9490,6 +7263,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CK"
+  },
+  {
+   "code": "CLEAR",
+   "variantes": [
+    "CLEAR"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Avis relatif à la tarification de la denrée alimentaire destinée à des fins médicales spéciales CLINUTREN THICKENUP CLEAR visée à l'article L. 165-1 du code de la sécurité sociale",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838990",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CLEAR"
+  },
+  {
+   "code": "CLOSED",
+   "variantes": [
+    "CLOSED"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "[CLOSED] Artificial intelligence: the CNIL opens a consultation on the creation of datasets for AI",
+   "lien_exemple": "https://www.cnil.fr/en/node/164423",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CLOSED"
   },
   {
    "code": "CM2",
@@ -9627,6 +7430,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "COMITATO"
   },
   {
+   "code": "CON",
+   "variantes": [
+    "CON"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Sanidad impulsa \"TARDES CON PLAN\", una iniciativa para promover el ocio saludable en la infancia y la adolescencia",
+   "lien_exemple": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6934",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CON"
+  },
+  {
    "code": "CONNECT",
    "variantes": [
     "CONNECT"
@@ -9642,34 +7460,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "CONNECT"
   },
   {
-   "code": "COPD",
+   "code": "COPPS",
    "variantes": [
-    "COPD"
+    "COPPS"
    ],
    "langues": [
-    "de"
+    "en"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Lachtherapie könnte Dyspnoe bei COPD lindern",
-   "lien_exemple": "https://www.aerzteblatt.de/news/lachtherapie-konnte-dyspnoe-bei-copd-lindern-c1e11b2c-49ea-4340-9ca3-9a147070e443",
+   "premier_vu": "2026-09-28",
+   "exemple": "EU CSDP civilian missions: Council renews mandates of EUBAM Rafah and EUPOL COPPS until 30 June 2027",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/28/eu-csdp-civilian-missions-council-renews-mandates-of-eubam-rafah-and-eupol-copps-until-30-june-2027/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "COPD"
-  },
-  {
-   "code": "CORTES",
-   "variantes": [
-    "CORTES"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
-   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CORTES"
+   "fr": "COPPS"
   },
   {
    "code": "COVID19",
@@ -9717,21 +7520,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CPPC"
   },
   {
-   "code": "CQ",
-   "variantes": [
-    "CQ"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "CQ Health Morning Take: Medicare payments, HHS nomination in the spotlight",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9OWMzZWViJmZpZD0xNzM1MjY5JmNpZD1NVEEzTWpBeiZ1aWQ9TVRFMk5ETTA&a=60423437137&f=Print&s=14&ci=107203&i=335-1601&si=76330&fmi=673402986&e=CQ*Healthbeat&d=116434&h=1&mbc=Q1QzL2E9NjA0MjM0MzcxMzcmcD0xNGUmdj0xJmhsaD05YzNlZWImZmlkPTE3MzUyNjkmeD1HV1ZoLW9veEp3dm42bE9sdUxtN0lnJnUxPU5EJnUyPXVwLXVybjp1c2VyOlBBMTg2ODE2NTgy&fi=1735269&ai=338121&ac=338121_1789974489000&ck=af31a90eac2c9c2d__;Kw!!NEMsmePo_HYI!cC2gXvEnV8ud0G6ikrvMZOs9tOH1o7u0NpF37VXz22KjqqfoqDQBi1VhiJfbM5RIUAZuHVfZOQrkdJGFDidCUAxaEeAo$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CQ"
-  },
-  {
    "code": "CR",
    "variantes": [
     "CR"
@@ -9747,19 +7535,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "CR"
   },
   {
-   "code": "CRC",
+   "code": "CRA9",
    "variantes": [
-    "CRC"
+    "CRA9"
    ],
    "langues": [
     "en"
    ],
    "premier_vu": "2026-09-25",
-   "exemple": "August 18, 2026: Georgia Rural Health Gains Cyber Resilience Through Augusta University CRC and HITRUST Certification",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YTVhMTM0NDgmZmlkPTE3MzUyNjgmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60276302540&f=News&s=14&ci=107203&i=335-1601&si=87025&fmi=673373884&e=News*Bites*-*Private*Companies&d=116434&h=1&mbc=Q1QzL2E9NjAyNzYzMDI1NDAmcD0xNGUmdj0xJmhsaD1hNWExMzQ0OCZmaWQ9MTczNTI2OCZ4PThIUE14SlN6a1psQ0o5ejZNc0lSbHcmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735268&ai=338121&ac=338121_1788159957000&ck=521e6773096e5757__;KysrKw!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-Bvajrqv0qpUq6$",
+   "exemple": "7 Steps to Take Now: Meet the EU CRA 9/11/26 Reporting Deadline",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60328430126&f=News&s=14&ci=107203&i=0&si=15515&fmi=169677247&e=EE*Times&d=116434&mbc=Q1QzL2E9NjAzMjg0MzAxMjYmcD0xNGUmdj0xJng9Umt3c2dCZk9TWnY5NmdkTUxyeXBkdyZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735267&ai=338121&ac=338121_1788764891000&ck=d847bf1f3f8fceed__;Kw!!NEMsmePo_HYI!fCx6mz1Mh84_eWqJcaYIh-5MyJ2vFZOMu_e25chASlY_BIaWXR8WkyGbgzS8BrgZOWpewkzoUwhCde4DUg5uCXsJ5mm5$",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "CRC"
+   "fr": "CRA9"
   },
   {
    "code": "CRD",
@@ -9837,6 +7625,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CSC"
   },
   {
+   "code": "CSDP",
+   "variantes": [
+    "CSDP"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "EU CSDP civilian missions: Council renews mandates of EUBAM Rafah and EUPOL COPPS until 30 June 2027",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/28/eu-csdp-civilian-missions-council-renews-mandates-of-eubam-rafah-and-eupol-copps-until-30-june-2027/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CSDP"
+  },
+  {
    "code": "CSE",
    "variantes": [
     "CSE"
@@ -9880,21 +7683,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CSK"
-  },
-  {
-   "code": "CSV",
-   "variantes": [
-    "CSV"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Google facilita a mudança entre gestores de palavras-passe no Android e inclui transferência de passkeys",
-   "lien_exemple": "https://tek.sapo.pt/mobile/apps/artigos/google-facilita-a-mudanca-entre-gestores-de-palavras-passe-no-android-e-inclui-transferencia-de-passkeys/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CSV"
   },
   {
    "code": "CTIS",
@@ -10360,21 +8148,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CVE-2026-33384"
-  },
-  {
-   "code": "CVE-2026-33385",
-   "variantes": [
-    "CVE-2026-33385"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Vulnerability in Quick.CMS software",
-   "lien_exemple": "https://cert.pl/en/posts/2026/07/CVE-2026-33385/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CVE-2026-33385"
   },
   {
    "code": "CVE-2026-33386",
@@ -12042,21 +9815,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-71540"
   },
   {
-   "code": "CVE-2026-75650",
-   "variantes": [
-    "CVE-2026-75650"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Ernstige kwetsbaarheid in Adobe Commerce en Magento actief misbruikt: update onmiddellijk",
-   "lien_exemple": "https://www.ncsc.nl/alerts/ernstige-kwetsbaarheid-in-adobe-commerce-en-magento-actief-misbruikt-update-onmiddellijk",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CVE-2026-75650"
-  },
-  {
    "code": "CVE-2026-76460",
    "variantes": [
     "CVE-2026-76460"
@@ -12207,6 +9965,96 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-82078"
   },
   {
+   "code": "CVE-2026-82928",
+   "variantes": [
+    "CVE-2026-82928"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Vulnerabilities in F&F Filipowski mH-DEVELOPER devices",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-82928/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-82928"
+  },
+  {
+   "code": "CVE-2026-82930",
+   "variantes": [
+    "CVE-2026-82930"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Vulnerabilities in F&F Filipowski mH-DEVELOPER devices",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-82928/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-82930"
+  },
+  {
+   "code": "CVE-2026-82932",
+   "variantes": [
+    "CVE-2026-82932"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Vulnerabilities in F&F Filipowski mH-DEVELOPER devices",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-82928/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-82932"
+  },
+  {
+   "code": "CVE-2026-82933",
+   "variantes": [
+    "CVE-2026-82933"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Vulnerabilities in F&F Filipowski mH-DEVELOPER devices",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-82928/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-82933"
+  },
+  {
+   "code": "CVE-2026-82935",
+   "variantes": [
+    "CVE-2026-82935"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Vulnerabilities in F&F Filipowski mH-DEVELOPER devices",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-82928/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-82935"
+  },
+  {
+   "code": "CVE-2026-82936",
+   "variantes": [
+    "CVE-2026-82936"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Vulnerabilities in F&F Filipowski mH-DEVELOPER devices",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-82928/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-82936"
+  },
+  {
    "code": "CVE-2026-8335",
    "variantes": [
     "CVE-2026-8335"
@@ -12282,6 +10130,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-85047"
   },
   {
+   "code": "CVE-2026-85102",
+   "variantes": [
+    "CVE-2026-85102"
+   ],
+   "langues": [
+    "en",
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-85102"
+  },
+  {
    "code": "CVE-2026-85103",
    "variantes": [
     "CVE-2026-85103"
@@ -12295,6 +10159,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CVE-2026-85103"
+  },
+  {
+   "code": "CVE-2026-85542",
+   "variantes": [
+    "CVE-2026-85542"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "IBM: rilevato sfruttamento in rete della CVE-2026-85542",
+   "lien_exemple": "https://www.acn.gov.it/portale/w/ibm-rilevato-sfruttamento-in-rete-della-cve-2026-85542",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-85542"
   },
   {
    "code": "CVE-2026-87491",
@@ -12477,36 +10356,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CZ"
   },
   {
-   "code": "D2T-RA",
-   "variantes": [
-    "D2T-RA"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "CAR-T-Zell-Therapie: 1,5 Jahre medikamentenfreie Remission bei rheumatoider Arthritis",
-   "lien_exemple": "https://www.aerzteblatt.de/news/car-t-zell-therapie-15-jahre-medikamentenfreie-remission-bei-rheumatoider-arthritis-8c0b713a-c383-4b32-bafa-97c09d25d248",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "D2T-RA"
-  },
-  {
-   "code": "DA",
-   "variantes": [
-    "DA"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Drogisterijketen DA lekt persoonlijke gegevens van 256.000 klanten",
-   "lien_exemple": "https://www.security.nl/posting/953838/Drogisterijketen+DA+lekt+persoonlijke+gegevens+van+256_000+klanten?channel=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DA"
-  },
-  {
    "code": "DACH-Recruiting-Domains",
    "variantes": [
     "DACH-Recruiting-Domains"
@@ -12627,21 +10476,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DDPS"
   },
   {
-   "code": "DECRETO",
-   "variantes": [
-    "DECRETO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DECRETO"
-  },
-  {
    "code": "DECRETO10",
    "variantes": [
     "DECRETO10"
@@ -12655,6 +10489,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DECRETO10"
+  },
+  {
+   "code": "DECRETO15",
+   "variantes": [
+    "DECRETO15"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 15 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04930/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "DECRETO15"
   },
   {
    "code": "DECRETO20",
@@ -12687,6 +10536,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "DECRETO22"
   },
   {
+   "code": "DECRETO26",
+   "variantes": [
+    "DECRETO26"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI - DECRETO 26 agosto 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05000/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "DECRETO26"
+  },
+  {
+   "code": "DECRETO8",
+   "variantes": [
+    "DECRETO8"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "DECRETO8"
+  },
+  {
    "code": "DECRETO9",
    "variantes": [
     "DECRETO9"
@@ -12700,6 +10579,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DECRETO9"
+  },
+  {
+   "code": "DEGLI",
+   "variantes": [
+    "DEGLI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "DEGLI"
   },
   {
    "code": "DELIBERA4",
@@ -12746,21 +10640,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DGA"
-  },
-  {
-   "code": "DGAI",
-   "variantes": [
-    "DGAI"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Anästhesieverbände entwickeln Handlungsanweisungen zum Umgang mit sexualisierter Belästigung",
-   "lien_exemple": "https://www.aerzteblatt.de/news/anasthesieverbande-entwickeln-handlungsanweisungen-zum-umgang-mit-sexualisierter-belastigung-82561ee0-6813-4a40-893a-9ec92d0ae5f1",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DGAI"
   },
   {
    "code": "DGCCRF",
@@ -12838,21 +10717,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DGSPJ"
   },
   {
-   "code": "DH",
-   "variantes": [
-    "DH"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Fair Trade Commission commenced pre-review of Uber's proposed acquisition of Delivery Hero",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43896-fair-trade-commission-commenced-pre-review-of-ubers-proposed-acquisition-of-delivery-hero",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DH"
-  },
-  {
    "code": "DIA",
    "variantes": [
     "DIA"
@@ -12869,34 +10733,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "DIA"
   },
   {
-   "code": "DIN-A2-Format",
+   "code": "DIFESA",
    "variantes": [
-    "DIN-A2-Format"
+    "DIFESA"
    ],
    "langues": [
-    "de"
+    "it"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "KBV stellt neue Impfkampagne vor: Material für Praxen verfügbar",
-   "lien_exemple": "https://www.aerzteblatt.de/news/kbv-stellt-neue-impfkampagne-vor-material-fur-praxen-verfugbar-441b66a4-0e7a-46b4-869e-5fef523fc3d4",
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DELLA DIFESA - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05026/SG",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "DIN-A2-Format"
-  },
-  {
-   "code": "DIR-822A",
-   "variantes": [
-    "DIR-822A"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "D-Link waarschuwt voor kritieke kwetsbaarheid in wifi-router",
-   "lien_exemple": "https://www.security.nl/posting/954188/D-Link+waarschuwt+voor+kritieke+kwetsbaarheid+in+wifi-router?channel=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DIR-822A"
+   "fr": "DIFESA"
   },
   {
    "code": "DIRECT",
@@ -12914,21 +10763,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DIRECT"
   },
   {
-   "code": "DIY",
-   "variantes": [
-    "DIY"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Construa as suas próprias aventuras e partilhe níveis com outros jogadores em DIY Dadish",
-   "lien_exemple": "https://tek.sapo.pt/mobile/apps/artigos/construa-as-suas-proprias-aventuras-e-partilhe-niveis-com-outros-jogadores-em-diy-dadish/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DIY"
-  },
-  {
    "code": "DKCERT",
    "variantes": [
     "DKCERT"
@@ -12942,37 +10776,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DKCERT"
-  },
-  {
-   "code": "DKG",
-   "variantes": [
-    "DKG"
-   ],
-   "langues": [
-    "de",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Zum Nachschauen: „gematik trifft DKG: Deep Dive ePA Implementierung“",
-   "lien_exemple": "https://www.gematik.de/newsroom/news-detail/zum-nachschauen-gematik-trifft-dkg-deep-dive-epa-implementierung",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DKG"
-  },
-  {
-   "code": "DMCA",
-   "variantes": [
-    "DMCA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Docker-OSX image used for security research hit by Apple DMCA takedown",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/docker-osx-image-used-for-security-research-hit-by-apple-dmca-takedown/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DMCA"
   },
   {
    "code": "DMP",
@@ -13020,21 +10823,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DNI"
   },
   {
-   "code": "DNVF",
-   "variantes": [
-    "DNVF"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Wie Versorgungsforschung das deutsche Gesundheitswesen leistungsfähiger machen kann",
-   "lien_exemple": "https://www.aerzteblatt.de/news/wie-versorgungsforschung-das-deutsche-gesundheitswesen-leistungsfahiger-machen-kann-11500ab6-c3b6-42fc-9986-c68c399536da",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DNVF"
-  },
-  {
    "code": "DOP",
    "variantes": [
     "DOP"
@@ -13050,21 +10838,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DOP"
   },
   {
-   "code": "DOWN",
-   "variantes": [
-    "DOWN"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "TAKE IT DOWN Act: How to comply as the FTC begins enforcement",
-   "lien_exemple": "https://iapp.org/news/a/take-it-down-act-how-to-comply-as-the-ftc-begins-enforcement",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DOWN"
-  },
-  {
    "code": "DP",
    "variantes": [
     "DP"
@@ -13078,36 +10851,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DP"
-  },
-  {
-   "code": "DPDPA",
-   "variantes": [
-    "DPDPA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Notes from the Asia-Pacific region: AI ambitions, DPDPA compliance and new digital governance frameworks",
-   "lien_exemple": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-ai-ambitions-dpdpa-compliance-and-new-digital-governance-frameworks",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DPDPA"
-  },
-  {
-   "code": "DPF",
-   "variantes": [
-    "DPF"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "After Slaughter: FTC independence and EU-US DPF face potential challenges",
-   "lien_exemple": "https://iapp.org/news/a/after-slaughter-ftc-independence-and-eu-us-dpf-face-potential-challenges",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DPF"
   },
   {
    "code": "DPI",
@@ -13153,21 +10896,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DRIMO"
-  },
-  {
-   "code": "DROP",
-   "variantes": [
-    "DROP"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CalPrivacy discusses DROP enforcement, data broker fee hike",
-   "lien_exemple": "https://iapp.org/news/a/calprivacy-discusses-drop-enforcement-data-broker-fee-hike",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DROP"
   },
   {
    "code": "DROUGHTS",
@@ -13245,6 +10973,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "DSB"
   },
   {
+   "code": "DSIT",
+   "variantes": [
+    "DSIT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "UK Information Commission takes shape with non-executive board appointments; DSIT opens data-use consults",
+   "lien_exemple": "https://iapp.org/news/a/uk-information-commission-takes-shape-with-non-executive-board-appointments-dsit-opens-data-use-consults",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "DSIT"
+  },
+  {
    "code": "DSM",
    "variantes": [
     "DSM"
@@ -13258,21 +11001,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DSM"
-  },
-  {
-   "code": "DSS",
-   "variantes": [
-    "DSS"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Building Cyber Resilience Through Risk, Education and Service  - 10 Sep 2026 18:12 ...regulatory requirements such as ISO 27001, NIST SP 800-53, the CIS Controls, HIPAA , GDPR, CCPA and PCI DSS. Each framework has a different purpose, but organizatio",
-   "lien_exemple": "https://urldefense.com/v3/__https://techbullion.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxlwm87fy$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DSS"
   },
   {
    "code": "DWR-X1820",
@@ -13303,36 +11031,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DXC"
-  },
-  {
-   "code": "E2",
-   "variantes": [
-    "E2"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Geely chega a Portugal pela mão da Salvador Caetano com três modelos elétricos e híbridos plug-in",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/geely-chega-a-portugal-pela-mao-da-salvador-caetano-com-tres-modelos-eletricos-e-hibridos-plug-in/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "E2"
-  },
-  {
-   "code": "E5",
-   "variantes": [
-    "E5"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Geely chega a Portugal pela mão da Salvador Caetano com três modelos elétricos e híbridos plug-in",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/geely-chega-a-portugal-pela-mao-da-salvador-caetano-com-tres-modelos-eletricos-e-hibridos-plug-in/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "E5"
   },
   {
    "code": "EBA 2025",
@@ -13395,51 +11093,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "EBCP"
   },
   {
-   "code": "ECA",
-   "variantes": [
-    "ECA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Brazil's Digital ECA: Rethinking monetization and design in games",
-   "lien_exemple": "https://iapp.org/news/a/brazil-s-digital-eca-rethinking-monetization-and-design-in-games",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ECA"
-  },
-  {
-   "code": "ECC",
-   "variantes": [
-    "ECC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Sky ECC encrypted service distributors arrested in Spain, Netherlands",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/sky-ecc-encrypted-service-distributors-arrested-in-spain-netherlands/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ECC"
-  },
-  {
-   "code": "ECDC",
-   "variantes": [
-    "ECDC"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Pozvánka na webinář ECDC o péči o migranty v oblasti HIV, TBC, virových hepatitid a STI",
-   "lien_exemple": "https://mzd.gov.cz/pozvanka-na-webinar-ecdc-o-peci-o-migranty-v-oblasti-hiv-tbc-virovych-hepatitid-a-sti/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ECDC"
-  },
-  {
    "code": "ECF",
    "variantes": [
     "ECF"
@@ -13470,21 +11123,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ECFIN"
   },
   {
-   "code": "ECG",
-   "variantes": [
-    "ECG"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Primeiras impressões: Huawei Watch GT 7 e GT 7 Pro equilibram elegância clássica com resistência desportiva",
-   "lien_exemple": "https://tek.sapo.pt/analises/artigos/primeiras-impressoes-huawei-watch-gt-7-e-gt-7-pro-equilibram-elegancia-classica-com-resistencia-desportiva/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ECG"
-  },
-  {
    "code": "ECI",
    "variantes": [
     "ECI"
@@ -13500,19 +11138,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "ECI"
   },
   {
-   "code": "ECMWF",
+   "code": "ECONOMIA",
    "variantes": [
-    "ECMWF"
+    "ECONOMIA"
    ],
    "langues": [
-    "pt"
+    "it"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Agosto bate recordes de temperatura e marca o verão mais quente de sempre na Europa Ocidental",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/agosto-bate-recordes-de-temperatura-e-marca-o-verao-mais-quente-de-sempre-na-europa-ocidental/",
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "ECMWF"
+   "fr": "ECONOMIA"
   },
   {
    "code": "ECSC 2026",
@@ -13620,19 +11258,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "EDPB-CEPD"
   },
   {
-   "code": "EDT",
+   "code": "EDPS",
    "variantes": [
-    "EDT"
+    "EDPS"
    ],
    "langues": [
-    "en"
+    "en",
+    "pt"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "16:09 EDT Rubrik reports Q2 adjusted EPS 20c, consensus 4c",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YWFhOGFjNWEmZmlkPTE3MzUyNjYmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60280470121&f=News&s=14&ci=107203&i=335-1601-1930&si=80636&fmi=673817587&e=Theflyonthewall.com&d=116434&h=1&mbc=Q1QzL2E9NjAyODA0NzAxMjEmcD0xNGUmdj0xJmhsaD1hYWE4YWM1YSZmaWQ9MTczNTI2NiZ4PWRLQy1hdnc3VmdIb25UMWNaZzdYN2cmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735266&ai=338121&ac=338121_1788159957000&ck=b381458f26694bd6__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqiyKn3_8$",
+   "premier_vu": "2026-09-24",
+   "exemple": "EDPB and EDPS Opine on Draft GDPR Amendments further to IV Simplification Omnibus Package",
+   "lien_exemple": "https://www.dgkv.com:443/insights/publications/edpb-and-edps-opine-on-draft-gdpr-amendments-further-to-iv-simplification-omnibus-package",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "EDT"
+   "fr": "EDPS"
   },
   {
    "code": "EEAP",
@@ -13680,6 +11319,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "EETO"
   },
   {
+   "code": "EEUU",
+   "variantes": [
+    "EEUU"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "¿Quiénes son los 5 cibercriminales más famosos de la historia?",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/cibercriminales-mas-famosos-mundo_20260827.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EEUU"
+  },
+  {
    "code": "EGG",
    "variantes": [
     "EGG"
@@ -13725,21 +11379,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "EHESS24"
   },
   {
-   "code": "EHR",
-   "variantes": [
-    "EHR"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Ireland Emerges as One of the Worlds Most Active EHR Growth Markets, Black Book Research Reports",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60216938985&f=News&s=14&ci=107203&i=0&si=377366&fmi=674444780&e=Lifestyle.TheDam.fm&d=116434&mbc=Q1QzL2E9NjAyMTY5Mzg5ODUmcD0xNGUmdj0xJng9RERJQ3VvMkJCVE9UVTlBRHZoWnRiQSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735268&ai=338121&ac=338121_1787554818000&ck=1a3f859c882c1813__;!!NEMsmePo_HYI!cWTHRJnDXtv6qEZKNGMdU_idBD-2Ocgk0bZaevoOp3_JyajwOZwK65CnkwUGtslUJxih9ib4SDCEguvJUiCWIz765ADX$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "EHR"
-  },
-  {
    "code": "EIB",
    "variantes": [
     "EIB"
@@ -13753,6 +11392,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "EIB"
+  },
+  {
+   "code": "EIC",
+   "variantes": [
+    "EIC"
+   ],
+   "langues": [
+    "pt",
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Workshop EIC Pathfinder Challenges 2026 quer ajudar a preparar uma proposta de sucesso",
+   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/workshop-eic-pathfinder-challenges-2026-quer-ajudar-a-preparar-uma-proposta-de-sucesso/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EIC"
   },
   {
    "code": "EISMEA",
@@ -13813,21 +11468,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ELI"
-  },
-  {
-   "code": "EM-i",
-   "variantes": [
-    "EM-i"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Geely chega a Portugal pela mão da Salvador Caetano com três modelos elétricos e híbridos plug-in",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/geely-chega-a-portugal-pela-mao-da-salvador-caetano-com-tres-modelos-eletricos-e-hibridos-plug-in/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "EM-i"
   },
   {
    "code": "EMA-FDA",
@@ -13905,21 +11545,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "EN 304"
   },
   {
-   "code": "ENCFORGE",
-   "variantes": [
-    "ENCFORGE"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "JadePuffer Returns With Ransomware Designed to Wipe AI Models",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/jadepuffer-ai-model-ransomware/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ENCFORGE"
-  },
-  {
    "code": "ENDS",
    "variantes": [
     "ENDS"
@@ -13950,49 +11575,34 @@ window.VEILLE_ACRONYMES = {
    "fr": "ENSOC"
   },
   {
-   "code": "EOS",
+   "code": "EPICA-DIPG",
    "variantes": [
-    "EOS"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EOS R8 Mark II é nova full frame leve da Canon pensada para viajar, agora também com imagens 3D",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/eos-r8-mark-ii-e-nova-full-frame-leve-da-canon-pensada-para-viajar-agora-tambem-com-imagens-3d/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "EOS"
-  },
-  {
-   "code": "EPF",
-   "variantes": [
-    "EPF"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "European Peace Facility: Council increases support for the Djibouti Armed Forces to €20 million",
-   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/22/european-peace-facility-council-increases-support-for-the-djibouti-armed-forces-to-20-million/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "EPF"
-  },
-  {
-   "code": "EPS",
-   "variantes": [
-    "EPS"
+    "EPICA-DIPG"
    ],
    "langues": [
     "en"
    ],
    "premier_vu": "2026-09-25",
-   "exemple": "16:09 EDT Rubrik reports Q2 adjusted EPS 20c, consensus 4c",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YWFhOGFjNWEmZmlkPTE3MzUyNjYmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60280470121&f=News&s=14&ci=107203&i=335-1601-1930&si=80636&fmi=673817587&e=Theflyonthewall.com&d=116434&h=1&mbc=Q1QzL2E9NjAyODA0NzAxMjEmcD0xNGUmdj0xJmhsaD1hYWE4YWM1YSZmaWQ9MTczNTI2NiZ4PWRLQy1hdnc3VmdIb25UMWNaZzdYN2cmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735266&ai=338121&ac=338121_1788159957000&ck=b381458f26694bd6__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqiyKn3_8$",
+   "exemple": "Childhood Cancer Awareness Month 2026: Horizon Europe projects advancing novel treatments for rare and high-risk paediatric cancers",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2025",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "EPS"
+   "fr": "EPICA-DIPG"
+  },
+  {
+   "code": "EPSCO",
+   "variantes": [
+    "EPSCO"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Bundesgesundheitsministerin Nina Warken beim EPSCO-Rat in Luxemburg",
+   "lien_exemple": "https://www.bundesgesundheitsministerium.de/warken-beim-epsco-rat-pm-16-06-2026",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EPSCO"
   },
   {
    "code": "EPTC",
@@ -14053,36 +11663,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "EROD"
-  },
-  {
-   "code": "ERP",
-   "variantes": [
-    "ERP"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EU probes SAP over anti-competitive ERP support practices",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/eu-probes-sap-over-anti-competitive-erp-support-practices/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ERP"
-  },
-  {
-   "code": "ERS",
-   "variantes": [
-    "ERS"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Lachtherapie könnte Dyspnoe bei COPD lindern",
-   "lien_exemple": "https://www.aerzteblatt.de/news/lachtherapie-konnte-dyspnoe-bei-copd-lindern-c1e11b2c-49ea-4340-9ca3-9a147070e443",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ERS"
   },
   {
    "code": "ES",
@@ -14160,6 +11740,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ESSS"
   },
   {
+   "code": "ESTERI",
+   "variantes": [
+    "ESTERI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ESTERI"
+  },
+  {
    "code": "ETF",
    "variantes": [
     "ETF"
@@ -14175,6 +11770,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "ETF"
   },
   {
+   "code": "EU-US",
+   "variantes": [
+    "EU-US"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EDPB requests review of EU-US Data Privacy Framework following Trump v. Slaughter",
+   "lien_exemple": "https://iapp.org/news/a/edpb-requests-review-of-eu-us-data-privacy-framework-following-trump-v-slaughter",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EU-US"
+  },
+  {
+   "code": "EU28",
+   "variantes": [
+    "EU28"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Interoperable Europe: Building seamless digital public services across the EU",
+   "lien_exemple": "https://data.europa.eu/en/news-events/news/interoperable-europe-building-seamless-digital-public-services-across-eu",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EU28"
+  },
+  {
    "code": "EU5G",
    "variantes": [
     "EU5G"
@@ -14188,6 +11813,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "EU5G"
+  },
+  {
+   "code": "EUA",
+   "variantes": [
+    "EUA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Petal: Cabo submarino da Meta vai ligar EUA e França com uma capacidade de 1 petabit por segundo",
+   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/petal-cabo-submarino-da-meta-vai-ligar-eua-e-franca-com-uma-capacidade-de-1-petabit-por-segundo/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EUA"
+  },
+  {
+   "code": "EUBAM",
+   "variantes": [
+    "EUBAM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "EU CSDP civilian missions: Council renews mandates of EUBAM Rafah and EUPOL COPPS until 30 June 2027",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/28/eu-csdp-civilian-missions-council-renews-mandates-of-eubam-rafah-and-eupol-copps-until-30-june-2027/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EUBAM"
   },
   {
    "code": "EUCS",
@@ -14233,6 +11888,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "EUNOMIA"
+  },
+  {
+   "code": "EUPOL",
+   "variantes": [
+    "EUPOL"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "EU CSDP civilian missions: Council renews mandates of EUBAM Rafah and EUPOL COPPS until 30 June 2027",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/28/eu-csdp-civilian-missions-council-renews-mandates-of-eubam-rafah-and-eupol-copps-until-30-june-2027/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "EUPOL"
   },
   {
    "code": "EUR2",
@@ -14385,34 +12055,49 @@ window.VEILLE_ACRONYMES = {
    "fr": "EZD"
   },
   {
-   "code": "F1",
+   "code": "FAB",
    "variantes": [
-    "F1"
+    "FAB"
    ],
    "langues": [
-    "es"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "La tecnología geoespacial impulsa el nuevo circuito de F1 de Madrid y la gestión urbana de Fuenlabrada",
-   "lien_exemple": "https://www.computing.es/movilidad/la-tecnologia-geoespacial-impulsa-el-nuevo-circuito-de-f1-de-madrid-y-la-gestion-urbana-de-fuenlabrada/",
+   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "F1"
+   "fr": "FAB"
   },
   {
-   "code": "FC",
+   "code": "FACTORY/1",
    "variantes": [
-    "FC"
+    "FACTORY/1"
    ],
    "langues": [
-    "es"
+    "fr"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Google Gemini y Google Pixel, nuevos partners del FC Barcelona",
-   "lien_exemple": "https://www.computing.es/movilidad/google-gemini-y-google-pixel-nuevos-partners-del-fc-barcelona/",
+   "premier_vu": "2026-09-28",
+   "exemple": "Décision n° 2026/77/LE BOSQUEL AI FACTORY/1 du 2 septembre 2026 portant désignation de garants de la concertation préalable relative au projet « Le Bosquel AI Factory » de centre de calcul et son raccordement électrique sur la commune de Le Bosquel (80)",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054817358",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "FC"
+   "fr": "FACTORY/1"
+  },
+  {
+   "code": "FARMACO",
+   "variantes": [
+    "FARMACO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "FARMACO"
   },
   {
    "code": "FCSAL",
@@ -14443,6 +12128,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "FDI"
+  },
+  {
+   "code": "FE",
+   "variantes": [
+    "FE"
+   ],
+   "langues": [
+    "pt",
+    "da"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Galaxy S26 FE é a porta de entrada para funcionalidades de IA da linha premium da Samsung",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/galaxy-s26-fe-e-a-porta-de-entrada-para-funcionalidades-de-ia-da-linha-premium-da-samsung/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "FE"
   },
   {
    "code": "FEK",
@@ -14490,34 +12191,34 @@ window.VEILLE_ACRONYMES = {
    "fr": "FIFA"
   },
   {
-   "code": "FIN9",
+   "code": "FINANZE",
    "variantes": [
-    "FIN9"
+    "FINANZE"
    ],
    "langues": [
-    "en"
+    "it"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Four FIN9 hackers indicted for cyberattacks causing $71M in losses",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/four-fin9-hackers-indicted-for-cyberattacks-causing-71m-in-losses/",
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "FIN9"
+   "fr": "FINANZE"
   },
   {
-   "code": "FLEX",
+   "code": "FITD",
    "variantes": [
-    "FLEX"
+    "FITD"
    ],
    "langues": [
-    "pt"
+    "it"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Novos satélites europeus já iniciaram missão no espaço. Sentinel-3C verifica oceanos e FLEX espreita o “brilho” das plantas",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/novos-satelites-europeus-ja-iniciaram-missao-no-espaco-sentinel-3c-verifica-oceanos-e-flex-espreita-o-brilho-das-plantas/",
+   "premier_vu": "2026-09-28",
+   "exemple": "FITD Press release 27 03 2026 Banca Progetto",
+   "lien_exemple": "https://www.eba.europa.eu/sites/default/files/2026-07/aa544c4a-a9be-4f58-94a9-e450ceb8a087/FITD_Press_release_27_03_2026_Banca_Progetto.pdf",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "FLEX"
+   "fr": "FITD"
   },
   {
    "code": "FLOODS",
@@ -14548,21 +12249,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "FMV"
-  },
-  {
-   "code": "FN",
-   "variantes": [
-    "FN"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Žádost o informace ze dne 12.8.2026",
-   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-12-8-2026/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "FN"
   },
   {
    "code": "FR",
@@ -14610,6 +12296,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "FRTB"
   },
   {
+   "code": "FSB",
+   "variantes": [
+    "FSB"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Ciblage et compromission d’entités françaises par le Centre du service fédéral de sécurité de la fédération de Russie (FSB)",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/ciblage-et-compromission-dentites-francaises-par-le-fsb/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "FSB"
+  },
+  {
    "code": "FSE",
    "variantes": [
     "FSE"
@@ -14640,36 +12341,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "FTTP"
   },
   {
-   "code": "FV33",
-   "variantes": [
-    "FV33"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Enddarmtumoren: Neue endoskopische Technik ermöglicht tiefere Resektion",
-   "lien_exemple": "https://www.aerzteblatt.de/news/enddarmtumoren-neue-endoskopische-technik-ermoglicht-tiefere-resektion-dedd4e62-253c-405e-b3a5-f290d084071e",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "FV33"
-  },
-  {
-   "code": "FV56",
-   "variantes": [
-    "FV56"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nahrungsmittelunverträglichkeiten: KI-gestützte App könnte Beschwerden reduzieren",
-   "lien_exemple": "https://www.aerzteblatt.de/news/nahrungsmittelunvertraglichkeiten-ki-gestutzte-app-konnte-beschwerden-reduzieren-d7319fbd-b64c-47e6-b62c-1f77b591e175",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "FV56"
-  },
-  {
    "code": "FW",
    "variantes": [
     "FW"
@@ -14683,6 +12354,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "FW"
+  },
+  {
+   "code": "G20",
+   "variantes": [
+    "G20"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Financial Stability Board Sounds the Alarm Over Frontier AI Risks",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/financial-stability-board-alarm/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "G20"
   },
   {
    "code": "G7 2026",
@@ -14730,36 +12416,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "GARANTE"
   },
   {
-   "code": "GB",
-   "variantes": [
-    "GB"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Nova workstation móvel da HP dispensa a cloud para processar modelos de IA até 300 mil milhões de parâmetros",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/nova-workstation-movel-da-hp-dispensa-a-cloud-para-processar-modelos-de-ia-ate-300-mil-milhoes-de-parametros/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GB"
-  },
-  {
-   "code": "GBP12",
-   "variantes": [
-    "GBP12"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "TikTok withdrew appeal against Information Commissioner's Office fine over children's data processing, rendering GBP 12.7 million penalty notice final",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43955-tiktok-withdrew-appeal-against-information-commissioners-office-fine-over-childrens-data-processing-rendering-gbp-127-million-penalty-notice-final",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GBP12"
-  },
-  {
    "code": "GC3",
    "variantes": [
     "GC3"
@@ -14805,21 +12461,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "GCHQ"
   },
   {
-   "code": "GCP",
-   "variantes": [
-    "GCP"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "How One Kubernetes YAML Can Hand Over a GCP Organization",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/how-one-kubernetes-yaml-can-hand-over-a-gcp-organization/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GCP"
-  },
-  {
    "code": "GDC",
    "variantes": [
     "GDC"
@@ -14835,21 +12476,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "GDC"
   },
   {
-   "code": "GFT",
-   "variantes": [
-    "GFT"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Deutsche Bank moderniza su core bancario con GFT",
-   "lien_exemple": "https://www.computing.es/mundo-digital/deutsche-bank-moderniza-su-core-bancario-con-gft/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GFT"
-  },
-  {
    "code": "GHAPPIER",
    "variantes": [
     "GHAPPIER"
@@ -14863,21 +12489,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "GHAPPIER"
-  },
-  {
-   "code": "GHI",
-   "variantes": [
-    "GHI"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Závěrečné zasedání Společné akce pro globální zdraví v Praze",
-   "lien_exemple": "https://mzd.gov.cz/zaverecne-zasedani-spolecne-akce-pro-globalni-zdravi-v-praze/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GHI"
   },
   {
    "code": "GIE",
@@ -14938,21 +12549,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "GL 2026"
-  },
-  {
-   "code": "GM",
-   "variantes": [
-    "GM"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "FTC orders GM to stop collecting and selling driver’s data",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/ftc-orders-gm-to-stop-collecting-and-selling-drivers-data/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GM"
   },
   {
    "code": "GMP",
@@ -15030,34 +12626,34 @@ window.VEILLE_ACRONYMES = {
    "fr": "GPAI"
   },
   {
-   "code": "GPT",
+   "code": "GPMV-IVD",
    "variantes": [
-    "GPT"
+    "GPMV-IVD"
    ],
    "langues": [
-    "pt"
+    "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "OpenAI aposta os trunfos no GPT‑6 Astra, o seu modelo mais poderoso (e que garante ser seguro)",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/openai-aposta-os-trunfos-no-gpt-6-astra-o-seu-modelo-mais-poderoso-e-que-garante-ser-seguro/",
+   "premier_vu": "2026-09-28",
+   "exemple": "New guideline «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/reporting-incidents---fscas/users---operators.html",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "GPT"
+   "fr": "GPMV-IVD"
   },
   {
-   "code": "GPT20",
+   "code": "GPT5",
    "variantes": [
-    "GPT20"
+    "GPT5"
    ],
    "langues": [
     "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Researchers Build WordPress Exploit Using OpenAI's GPT",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-wordpress-exploit/",
+   "exemple": "OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/openai-daybreak-blue-red-gpt-cyber/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "GPT20"
+   "fr": "GPT5"
   },
   {
    "code": "GPU",
@@ -15075,64 +12671,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "GPU"
   },
   {
-   "code": "GR1X",
+   "code": "GS1900",
    "variantes": [
-    "GR1X"
+    "GS1900"
    ],
    "langues": [
-    "pt"
+    "en",
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
+   "exemple": "Chinese hackers exploit WordPress, Zyxel flaws to steal govt data",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-multiple-technologies-to-steal-govt-data/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "GR1X"
-  },
-  {
-   "code": "GRU",
-   "variantes": [
-    "GRU"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "U.S. indicts Russian GRU hacker, offers $10 million reward",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/us-indicts-russian-gru-hacker-offers-10-million-reward/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GRU"
-  },
-  {
-   "code": "GT-BN98",
-   "variantes": [
-    "GT-BN98"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Asus estreia os seus primeiros routers Wi-Fi 8. Novos modelos chegam a Portugal em outubro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-estreia-os-seus-primeiros-routers-wi-fi-8-novos-modelos-chegam-a-portugal-em-outubro/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GT-BN98"
-  },
-  {
-   "code": "GTA6",
-   "variantes": [
-    "GTA6"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "GTA 6 volta a mostrar a dupla de protagonistas em momentos de ação com direito ao palco da Netflix",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/gta-6-volta-a-mostrar-a-dupla-de-protagonistas-em-momentos-de-acao-com-direito-ao-palco-da-netflix/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GTA6"
+   "fr": "GS1900"
   },
   {
    "code": "GUBERNA",
@@ -15148,36 +12700,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "GUBERNA"
-  },
-  {
-   "code": "GX",
-   "variantes": [
-    "GX"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Opera GX Flaw Let Sites Auto-Install Mods to Steal Data",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/opera-gx-flaw-gx-mods-css/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GX"
-  },
-  {
-   "code": "GXC",
-   "variantes": [
-    "GXC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Spain dismantles “GXC Team” cybercrime syndicate, arrests leader",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/spain-dismantles-gxc-team-cybercrime-syndicate-arrests-leader/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GXC"
   },
   {
    "code": "GÉANT",
@@ -15210,21 +12732,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "H1 2027"
   },
   {
-   "code": "H2",
-   "variantes": [
-    "H2"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Robots humanoides entram na pista de dança e impressionam numa atuação com 120 bailarinos em Xangai",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/robots-humanoides-entram-na-pista-de-danca-e-impressionam-numa-atuacao-com-120-bailarinos-em-xangai/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "H2"
-  },
-  {
    "code": "HADEA/2025",
    "variantes": [
     "HADEA/2025"
@@ -15255,21 +12762,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "HAS-CNIL"
   },
   {
-   "code": "HB 380",
-   "variantes": [
-    "HB 380"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Delaware enacts HB 380: Key updates to the Delaware Personal Data Privacy Act",
-   "lien_exemple": "https://iapp.org/news/a/delaware-enacts-hb-380-key-updates-to-the-delaware-personal-data-privacy-act",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "HB 380"
-  },
-  {
    "code": "HBA",
    "variantes": [
     "HBA"
@@ -15283,6 +12775,37 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "HBA"
+  },
+  {
+   "code": "HBO",
+   "variantes": [
+    "HBO"
+   ],
+   "langues": [
+    "pt",
+    "hu"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "BingeBrowse transforma as suas subscrições de streaming de vídeo num videoclube em 3D",
+   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/bingebrowse-transforma-as-suas-subscricoes-de-streaming-de-video-num-videoclube-em-3d/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HBO"
+  },
+  {
+   "code": "HBV",
+   "variantes": [
+    "HBV"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EU-funded projects decreasing the burden of viral hepatitis",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1984",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HBV"
   },
   {
    "code": "HCL",
@@ -15300,6 +12823,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "HCL"
   },
   {
+   "code": "HCV",
+   "variantes": [
+    "HCV"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EU-funded projects decreasing the burden of viral hepatitis",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1984",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HCV"
+  },
+  {
    "code": "HE46",
    "variantes": [
     "HE46"
@@ -15313,6 +12851,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "HE46"
+  },
+  {
+   "code": "HERA",
+   "variantes": [
+    "HERA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "HaDEA signs new contracts under EU4Health to respond to virus outbreaks",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1999",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HERA"
+  },
+  {
+   "code": "HEROES",
+   "variantes": [
+    "HEROES"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "How the EU is addressing its health workforce crisis - EU4Health Joint Action HEROES",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2024",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HEROES"
   },
   {
    "code": "HETT 2026",
@@ -15330,49 +12898,50 @@ window.VEILLE_ACRONYMES = {
    "fr": "HETT 2026"
   },
   {
-   "code": "HHS",
+   "code": "HFI",
    "variantes": [
-    "HHS"
+    "HFI"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "DHPC – Remsima® (Infliximab)",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/humanarzneimittel/market-surveillance/health-professional-communication--hpc-/dhpc-remsima-infliximab.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HFI"
+  },
+  {
+   "code": "HILIGHT",
+   "variantes": [
+    "HILIGHT"
    ],
    "langues": [
     "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "HHS and state AGs fine ambulance firm over $500,000, require enhanced security, privacy, and data minimization practices",
-   "lien_exemple": "https://www.dataprotectionreport.com/2026/03/hhs-and-state-ags-fine-ambulance-firm-over-500000-require-enhanced-security-privacy-and-data-minimization-practices/",
+   "exemple": "HILIGHT is advancing microscope analysis with photonics",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2002",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "HHS"
+   "fr": "HILIGHT"
   },
   {
-   "code": "HITRUST",
+   "code": "HIV",
    "variantes": [
-    "HITRUST"
+    "HIV"
    ],
    "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "August 18, 2026: Georgia Rural Health Gains Cyber Resilience Through Augusta University CRC and HITRUST Certification",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YTVhMTM0NDgmZmlkPTE3MzUyNjgmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60276302540&f=News&s=14&ci=107203&i=335-1601&si=87025&fmi=673373884&e=News*Bites*-*Private*Companies&d=116434&h=1&mbc=Q1QzL2E9NjAyNzYzMDI1NDAmcD0xNGUmdj0xJmhsaD1hNWExMzQ0OCZmaWQ9MTczNTI2OCZ4PThIUE14SlN6a1psQ0o5ejZNc0lSbHcmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735268&ai=338121&ac=338121_1788159957000&ck=521e6773096e5757__;KysrKw!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-Bvajrqv0qpUq6$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "HITRUST"
-  },
-  {
-   "code": "HIV/AIDS",
-   "variantes": [
-    "HIV/AIDS"
-   ],
-   "langues": [
+    "en",
     "cs"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Výzva k předkládání žádostí o přidělení finančních prostředků v rámci dotačního programu Národní program řešení problematiky HIV/AIDS pro rok 2027",
-   "lien_exemple": "https://mzd.gov.cz/vyzva-narodni-program-reseni-problematiky-hiv-aids-2027/",
+   "exemple": "EU-funded projects decreasing the burden of viral hepatitis",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1984",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "HIV/AIDS"
+   "fr": "HIV"
   },
   {
    "code": "HL",
@@ -15435,6 +13004,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "HMPC"
   },
   {
+   "code": "HN",
+   "variantes": [
+    "HN"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Avis relatif à la tarification des denrées alimentaires destinées à des fins médicales spéciales PEPTAMEN et PEPTAMEN HN visées à l'article L. 165-1 du code de la sécurité sociale",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838992",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HN"
+  },
+  {
+   "code": "HORIZON-CID-2026-01",
+   "variantes": [
+    "HORIZON-CID-2026-01"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Horizon Europe call on research and development in support of the clean industrial deal closed",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2019",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HORIZON-CID-2026-01"
+  },
+  {
    "code": "HORIZON-CL4-2025-01",
    "variantes": [
     "HORIZON-CL4-2025-01"
@@ -15465,19 +13064,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "HORIZON-CL4-2025-02"
   },
   {
-   "code": "HPE",
+   "code": "HORIZON-CL4-2026-05",
    "variantes": [
-    "HPE"
+    "HORIZON-CL4-2026-05"
    ],
    "langues": [
-    "es"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Isabel Benavente (HPE): «Las marcas tecnológicas van a competir cada vez más por la confianza de los clientes»",
-   "lien_exemple": "https://www.computing.es/marketing/isabel-benavente-hpe-la-autenticidad-y-el-liderazgo-con-rigor-son-las-claves-para-destacar-frente-al-ruido-tecnologico/",
+   "exemple": "Horizon Europe Digital call 2026: 7 proposals funded",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2000",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "HPE"
+   "fr": "HORIZON-CL4-2026-05"
   },
   {
    "code": "HPLIP",
@@ -15493,21 +13092,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "HPLIP"
-  },
-  {
-   "code": "HR",
-   "variantes": [
-    "HR"
-   ],
-   "langues": [
-    "pl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Od 1 lipca umówisz mammografię, test HPV HR i wizytę u kardiologa przez centralną e-rejestrację",
-   "lien_exemple": "https://www.cez.gov.pl/pl/page/o-nas/aktualnosci/od-1-lipca-umowisz-mammografie-test-hpv-hr-i-wizyte-u-kardiologa-przez",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "HR"
   },
   {
    "code": "HSL",
@@ -15538,21 +13122,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "HVD"
-  },
-  {
-   "code": "HZS",
-   "variantes": [
-    "HZS"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Oznámení o plném zprovoznění Portálu kritické infrastruktury",
-   "lien_exemple": "https://mzd.gov.cz/oznameni-o-plnem-zprovozneni-portalu-kriticke-infrastruktury/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "HZS"
   },
   {
    "code": "IA 132",
@@ -15600,6 +13169,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "IA360"
   },
   {
+   "code": "IAB",
+   "variantes": [
+    "IAB"
+   ],
+   "langues": [
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "IAB expands its Diligence Platform to EU with upcoming launch in Germany",
+   "lien_exemple": "https://iapp.org/news/a/iab-expands-its-diligence-platform-to-eu-with-upcoming-launch-in-germany",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "IAB"
+  },
+  {
    "code": "IANS",
    "variantes": [
     "IANS"
@@ -15630,34 +13215,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "IAON"
   },
   {
-   "code": "IC3",
+   "code": "IARC",
    "variantes": [
-    "IC3"
+    "IARC"
    ],
    "langues": [
     "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "FBI Warns of Deepfake Videos Impersonating IC3 Leadership",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/fbi-deepfake-videos-ic3/",
+   "premier_vu": "2026-09-28",
+   "exemple": "EUCervScreen QA: Updating guidelines for cervical cancer screening",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2028",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "IC3"
-  },
-  {
-   "code": "ICS",
-   "variantes": [
-    "ICS"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ICS Operators Warned of AI-Driven Attacks on Siemens PLCs",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ics-ai-attacks-siemens/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ICS"
+   "fr": "IARC"
   },
   {
    "code": "ICU",
@@ -15673,6 +13243,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ICU"
+  },
+  {
+   "code": "IDC",
+   "variantes": [
+    "IDC"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "iPhone Ultra pode dar um novo impulso ao mercado dos dobráveis e liderar crescimento do segmento",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/iphone-dobravel-pode-dar-um-novo-impulso-ao-mercado-dos-dobraveis-e-liderar-crescimento-do-segmento/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "IDC"
   },
   {
    "code": "IDEAS",
@@ -15750,36 +13335,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "IEEE"
   },
   {
-   "code": "IFEMA",
-   "variantes": [
-    "IFEMA"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "La tecnología geoespacial impulsa el nuevo circuito de F1 de Madrid y la gestión urbana de Fuenlabrada",
-   "lien_exemple": "https://www.computing.es/movilidad/la-tecnologia-geoespacial-impulsa-el-nuevo-circuito-de-f1-de-madrid-y-la-gestion-urbana-de-fuenlabrada/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "IFEMA"
-  },
-  {
-   "code": "IFR",
-   "variantes": [
-    "IFR"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nova fábrica na China pretende produzir mais robots humanoides num ano do que se venderam em 2025 globalmente",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/nova-fabrica-na-china-pretende-produzir-mais-robots-humanoides-num-ano-do-que-se-venderam-em-2025-globalmente/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "IFR"
-  },
-  {
    "code": "IFRS",
    "variantes": [
     "IFRS"
@@ -15793,6 +13348,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "IFRS"
+  },
+  {
+   "code": "IMC",
+   "variantes": [
+    "IMC"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "IMC: Indicadores para la Mejora de la Ciberresiliencia",
+   "lien_exemple": "https://www.incibe.es/index.php/incibe-cert/guias-y-estudios/guias/imc-indicadores-para-la-mejora-de-la-ciberresiliencia",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "IMC"
+  },
+  {
+   "code": "IMF",
+   "variantes": [
+    "IMF"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "When AI becomes the cyber attacker: Mythos and what comes next",
+   "lien_exemple": "https://www.dataprotectionreport.com/2026/05/when-ai-becomes-the-cyber-attacker-mythos-and-what-comes-next/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "IMF"
   },
   {
    "code": "INESIA",
@@ -15886,36 +13471,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "INSPIRE"
   },
   {
-   "code": "INTERNO",
-   "variantes": [
-    "INTERNO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'INTERNO - DECRETO 22 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A05078/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "INTERNO"
-  },
-  {
-   "code": "INTERPOL",
-   "variantes": [
-    "INTERPOL"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "INTERPOL ‘Operation Ramz’ seizes 53 malware, phishing servers",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/interpol-operation-ramz-seizes-53-malware-phishing-servers/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "INTERPOL"
-  },
-  {
    "code": "INÉS",
    "variantes": [
     "INÉS"
@@ -15975,52 +13530,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "IPCEI"
-  },
-  {
-   "code": "IPIDEA",
-   "variantes": [
-    "IPIDEA"
-   ],
-   "langues": [
-    "en",
-    "fi"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Google disrupts IPIDEA residential proxy networks fueled by malware",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/google-disrupts-ipidea-residential-proxy-networks-fueled-by-malware/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "IPIDEA"
-  },
-  {
-   "code": "IPMA",
-   "variantes": [
-    "IPMA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Termómetros vão chegar aos 38º este fim de semana: IPMA avisa para temperaturas “acima do normal”",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/termometros-vao-chegar-aos-38o-este-fim-de-semana-ipma-avisa-para-temperaturas-acima-do-normal/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "IPMA"
-  },
-  {
-   "code": "IPTV",
-   "variantes": [
-    "IPTV"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "New RemControl Android banking malware targets users in Europe and Canada",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/new-remcontrol-android-banking-malware-targets-users-in-europe-and-canada/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "IPTV"
   },
   {
    "code": "IQVIA",
@@ -16218,36 +13727,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ISO/IEC 27000"
   },
   {
-   "code": "ISPA",
-   "variantes": [
-    "ISPA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Investigadores portugueses ajudam a distinguir quem joga “por gosto” e quem já não consegue parar",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/investigadores-portugueses-ajudam-a-distinguir-quem-joga-por-gosto-e-quem-ja-nao-consegue-parar/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ISPA"
-  },
-  {
-   "code": "ISS",
-   "variantes": [
-    "ISS"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ISS Live Tracker: veja em tempo real onde está a Estação Espacial Internacional e quando passa por cima de si",
-   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/iss-live-tracker-veja-em-tempo-real-onde-esta-a-estacao-espacial-internacional-e-quando-passa-por-cima-de-si/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ISS"
-  },
-  {
    "code": "ISTITUTO",
    "variantes": [
     "ISTITUTO"
@@ -16276,6 +13755,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "IT-OT"
+  },
+  {
+   "code": "ITALIANA",
+   "variantes": [
+    "ITALIANA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ITALIANA"
   },
   {
    "code": "ITU22",
@@ -16338,19 +13832,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "IVO"
   },
   {
-   "code": "IWF",
+   "code": "JA",
    "variantes": [
-    "IWF"
+    "JA"
    ],
    "langues": [
-    "en"
+    "en",
+    "cs"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "NCA Issues Warning to Parents As Shared Child Photos Exploited by AI Tools",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/nca-warn-parents-volume/",
+   "exemple": "How the EU is addressing its health workforce crisis - EU4Health Joint Action HEROES",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2024",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "IWF"
+   "fr": "JA"
   },
   {
    "code": "JCA",
@@ -16383,21 +13878,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "JCE"
   },
   {
-   "code": "JD",
-   "variantes": [
-    "JD"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Alertas sobre IA são uma “conspiração” para Trump. Vice-presidente dos EUA admite riscos, mas desconfia das empresas",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/alertas-sobre-ia-sao-uma-conspiracao-para-trump-vice-presidente-dos-eua-admite-riscos-mas-desconfia-das-empresas/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "JD"
-  },
-  {
    "code": "JO",
    "variantes": [
     "JO"
@@ -16411,6 +13891,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "JO"
+  },
+  {
+   "code": "JOIN",
+   "variantes": [
+    "JOIN"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "CELEX:52026AE0590: Opinion of the European Economic and Social Committee – Joint Communication to the European Parliament and the Council strengthening EU economic security (JOIN(2025) 977 final)",
+   "lien_exemple": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AE0590",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "JOIN"
   },
   {
    "code": "JPG",
@@ -16428,21 +13923,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "JPG"
   },
   {
-   "code": "JSON",
-   "variantes": [
-    "JSON"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "WordPress Plugins Compromised Without a Single File Change",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/bdthemes-wordpress-poisoned-api/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "JSON"
-  },
-  {
    "code": "JU",
    "variantes": [
     "JU"
@@ -16456,21 +13936,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "JU"
-  },
-  {
-   "code": "JUSTICIA",
-   "variantes": [
-    "JUSTICIA"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
-   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "JUSTICIA"
   },
   {
    "code": "KAON",
@@ -16504,34 +13969,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "KB"
   },
   {
-   "code": "KB5124010",
+   "code": "KBV",
    "variantes": [
-    "KB5124010"
+    "KBV"
    ],
    "langues": [
-    "en"
+    "de"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Windows 11 KB5124010 update released with 46 changes and fixes",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124010-update-released-with-46-changes-and-fixes/",
+   "premier_vu": "2026-09-25",
+   "exemple": "KBV stellt neue Impfkampagne vor: Material für Praxen verfügbar",
+   "lien_exemple": "https://www.aerzteblatt.de/news/kbv-stellt-neue-impfkampagne-vor-material-fur-praxen-verfugbar-441b66a4-0e7a-46b4-869e-5fef523fc3d4",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "KB5124010"
-  },
-  {
-   "code": "KFTC",
-   "variantes": [
-    "KFTC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Fair Trade Commission commenced pre-review of Uber's proposed acquisition of Delivery Hero",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43896-fair-trade-commission-commenced-pre-review-of-ubers-proposed-acquisition-of-delivery-hero",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "KFTC"
+   "fr": "KBV"
   },
   {
    "code": "KHO",
@@ -16564,21 +14014,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "KIO"
   },
   {
-   "code": "KNVB",
-   "variantes": [
-    "KNVB"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Onderzoek roept vragen op over digitale identificatie voetbaltickets",
-   "lien_exemple": "https://www.security.nl/posting/953916/Onderzoek+roept+vragen+op+over+digitale+identificatie+voetbaltickets?channel=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "KNVB"
-  },
-  {
    "code": "KOB",
    "variantes": [
     "KOB"
@@ -16592,51 +14027,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "KOB"
-  },
-  {
-   "code": "KOMPAS",
-   "variantes": [
-    "KOMPAS"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Jak nastavit domácí péči podle skutečných potřeb pacientů? Projekt KOMPAS hledá odpověď",
-   "lien_exemple": "https://mzd.gov.cz/kompas-projekt-ktery-meni-podobu-domaci-pece-v-cesku-2/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "KOMPAS"
-  },
-  {
-   "code": "KOSA",
-   "variantes": [
-    "KOSA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "US Senate Commerce approves KOSA, children's AI safety bills",
-   "lien_exemple": "https://iapp.org/news/a/us-senate-committee-approves-kosa-children-s-ai-safety-bills",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "KOSA"
-  },
-  {
-   "code": "KPI",
-   "variantes": [
-    "KPI"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "O KPI que escolheu hoje já está a moldar comportamentos que ainda não viu. Provavelmente não vai gostar.",
-   "lien_exemple": "https://tek.sapo.pt/opiniao/artigos/o-kpi-que-escolheu-hoje-ja-esta-a-moldar-comportamentos-que-ainda-nao-viu-provavelmente-nao-vai-gostar/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "KPI"
   },
   {
    "code": "KRC",
@@ -16699,21 +14089,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "KS-SOMED"
   },
   {
-   "code": "KT",
-   "variantes": [
-    "KT"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Korea’s Largest Telco KT Fined $38m After Femtocell Campaign",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/koreas-largest-telco-kt-fine-39m/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "KT"
-  },
-  {
    "code": "KTM",
    "variantes": [
     "KTM"
@@ -16727,6 +14102,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "KTM"
+  },
+  {
+   "code": "KYHA",
+   "variantes": [
+    "KYHA"
+   ],
+   "langues": [
+    "fi"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Tekoäly ensimmäistä kertaa hyökkäyksen kohteena Kansallisessa kyberharjoituksessa",
+   "lien_exemple": "https://lvm.fi/-/tekoaly-ensimmaista-kertaa-hyokkayksen-kohteena-kansallisessa-kyberharjoituksessa",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "KYHA"
   },
   {
    "code": "LAN",
@@ -16744,19 +14134,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "LAN"
   },
   {
-   "code": "LAS",
+   "code": "LAPIN",
    "variantes": [
-    "LAS"
+    "LAPIN"
    ],
    "langues": [
-    "es"
+    "en"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
-   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
+   "premier_vu": "2026-09-24",
+   "exemple": "EU4Health projects tackling lung cancer prevention and screening",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1990",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "LAS"
+   "fr": "LAPIN"
   },
   {
    "code": "LAUNDRY",
@@ -16774,6 +14164,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "LAUNDRY"
   },
   {
+   "code": "LAVORO",
+   "variantes": [
+    "LAVORO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DEL LAVORO E DELLE POLITICHE SOCIALI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A04988/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "LAVORO"
+  },
+  {
    "code": "LDAP",
    "variantes": [
     "LDAP"
@@ -16789,19 +14194,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "LDAP"
   },
   {
-   "code": "LEO",
+   "code": "LED",
    "variantes": [
-    "LEO"
+    "LED"
    ],
    "langues": [
-    "pt"
+    "pt",
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "MEO oferece conectividade por satélite da Eutelsat em Portugal",
-   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/meo-oferece-conectividade-por-satelite-da-eutelsat-em-portugal/",
+   "exemple": "RGB veio para ficar? Descubra o que os fabricantes de TV, e não só, trouxeram até à IFA 2026",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rgb-veio-para-ficar-descubra-o-que-os-fabricantes-de-tv-e-nao-so-trouxeram-ate-a-ifa/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "LEO"
+   "fr": "LED"
   },
   {
    "code": "LGBTQI",
@@ -16817,21 +14223,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "LGBTQI"
-  },
-  {
-   "code": "LGPD",
-   "variantes": [
-    "LGPD"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Beyond the fine: What the TikTok case reveals about LGPD enforcement",
-   "lien_exemple": "https://iapp.org/news/a/beyond-the-fine-what-the-tiktok-case-reveals-about-lgpd-enforcement",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LGPD"
   },
   {
    "code": "LINEA2",
@@ -16862,6 +14253,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "LIVE"
+  },
+  {
+   "code": "LLP",
+   "variantes": [
+    "LLP"
+   ],
+   "langues": [
+    "de",
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Faegre Drinker Biddle & Reath LLP",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.faegredrinker.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxjuZPnDX$",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "LLP"
   },
   {
    "code": "LMS",
@@ -16924,66 +14331,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "LO"
   },
   {
-   "code": "LPDDR6",
-   "variantes": [
-    "LPDDR6"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LPDDR6"
-  },
-  {
-   "code": "LTE",
-   "variantes": [
-    "LTE"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Garmin fēnix 9 Pro chega com mais autonomia e conectividade para aventuras longe do smartphone",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/garmin-fenix-9-pro-chega-com-mais-autonomia-e-conectividade-para-aventuras-longe-do-smartphone/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LTE"
-  },
-  {
-   "code": "LTPO",
-   "variantes": [
-    "LTPO"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Titânio, ecrãs LTPO, câmaras de 48 MP e 5.800 mAh podem ser o retrato do futuro iPhone Ultra",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/titanio-ecras-ltpo-camaras-de-48-mp-e-5-800-mah-podem-ser-o-retrato-do-futuro-iphone-ultra/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LTPO"
-  },
-  {
-   "code": "LTS",
-   "variantes": [
-    "LTS"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Canonical levert tegen betaling 5 jaar extra updates voor Ubuntu 16.04 LTS",
-   "lien_exemple": "https://www.security.nl/posting/953591/Canonical+levert+tegen+betaling+5+jaar+extra+updates+voor+Ubuntu+16_04+LTS?channel=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LTS"
-  },
-  {
    "code": "LVM",
    "variantes": [
     "LVM"
@@ -17029,34 +14376,35 @@ window.VEILLE_ACRONYMES = {
    "fr": "M/606"
   },
   {
-   "code": "M16",
+   "code": "M2M",
    "variantes": [
-    "M16"
+    "M2M"
    ],
    "langues": [
-    "pt"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
+   "exemple": "BEREC seeks stakeholder input on IP interconnection, M2M roaming and assessment of the general authorisation regime",
+   "lien_exemple": "https://www.berec.europa.eu/en/news/press-releases/berec-seeks-stakeholder-input-on-ip-interconnection-m2m-roaming-and-assessment-of-the-general-authorisation-regime",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "M16"
+   "fr": "M2M"
   },
   {
-   "code": "MADRING",
+   "code": "M365",
    "variantes": [
-    "MADRING"
+    "M365"
    ],
    "langues": [
-    "es"
+    "en",
+    "fi"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Más allá del asfalto: Lo que descubrí en mi debut en la Fórmula 1 de la mano de IBM",
-   "lien_exemple": "https://www.computing.es/analytics/mas-alla-del-asfalto-lo-que-descubri-en-mi-debut-en-la-formula-1-de-la-mano-de-ibm/",
+   "exemple": "Microsoft sued for allegedly tricking millions into Copilot M365 subscriptions",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/microsoft/microsoft-sued-for-allegedly-tricking-millions-into-copilot-m365-subscriptions/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "MADRING"
+   "fr": "M365"
   },
   {
    "code": "MAG",
@@ -17089,6 +14437,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "MARKET"
   },
   {
+   "code": "MCCE",
+   "variantes": [
+    "MCCE"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Boinas Grises: los cibersoldados de las Fuerzas Armadas españolas",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/boinas-grises-mcce-cibersoldados-fuerzas-armadas-espana_20260831.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "MCCE"
+  },
+  {
    "code": "MCO",
    "variantes": [
     "MCO"
@@ -17104,6 +14467,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "MCO"
   },
   {
+   "code": "MCX",
+   "variantes": [
+    "MCX"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "ETSI OpenSlice 2026Q2 Advances Open Network Automation and Expands Ecosystem for Future Digital Services",
+   "lien_exemple": "https://www.etsi.org/newsroom/news/etsi-openslice-2026q2-advances-open-network-automation-and-expands-ecosystem-for-future-digital-services/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "MCX"
+  },
+  {
    "code": "MDCG",
    "variantes": [
     "MDCG"
@@ -17117,6 +14495,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "MDCG"
+  },
+  {
+   "code": "MDCG 2020-16",
+   "variantes": [
+    "MDCG 2020-16"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
+   "lien_exemple": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "MDCG 2020-16"
   },
   {
    "code": "MDCG 2021-24",
@@ -17314,19 +14707,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "MIPMED"
   },
   {
-   "code": "MIT",
+   "code": "MITRE",
    "variantes": [
-    "MIT"
+    "MITRE"
    ],
    "langues": [
-    "pt"
+    "en",
+    "hu"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "MIT transforma bactérias em “transístores” para criar circuitos vivos",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/mit-transforma-bacterias-em-transistores-para-criar-circuitos-vivos/",
+   "exemple": "Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/cyber-vendors-mitre-uk-testing/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "MIT"
+   "fr": "MITRE"
   },
   {
    "code": "MIVD",
@@ -17359,21 +14753,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "MKB"
   },
   {
-   "code": "MMA",
-   "variantes": [
-    "MMA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Um humano contra um robot numa jaula de MMA: a “patada” que se tornou viral",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/um-humano-contra-um-robot-numa-jaula-de-mma-a-patada-que-se-tornou-viral/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MMA"
-  },
-  {
    "code": "MNOK",
    "variantes": [
     "MNOK"
@@ -17404,21 +14783,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "MONAKA"
   },
   {
-   "code": "MOONS",
-   "variantes": [
-    "MOONS"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MOONS abre mil olhos sobre o Universo com uma importante contribuição portuguesa",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/moons-abre-mil-olhos-sobre-o-universo-com-uma-importante-contribuicao-portuguesa/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MOONS"
-  },
-  {
    "code": "MOSAIC",
    "variantes": [
     "MOSAIC"
@@ -17434,34 +14798,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "MOSAIC"
   },
   {
-   "code": "MOÚ",
+   "code": "MP",
    "variantes": [
-    "MOÚ"
+    "MP"
    ],
    "langues": [
-    "cs"
+    "pt",
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Masarykův onkologický ústav",
-   "lien_exemple": "https://mzd.gov.cz/masarykuv-onkologicky-ustav/",
+   "exemple": "Honor Magic 9 Pro Max chega em setembro com câmaras de 200 MP e um design ousado",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/honor-magic-9-pro-max-chega-em-setembro-com-camaras-de-200-mp-e-um-design-ousado/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "MOÚ"
-  },
-  {
-   "code": "MPCS",
-   "variantes": [
-    "MPCS"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nunsys Group amplía sus servicios documentales incorporando la división especializada de Esedeá Documental",
-   "lien_exemple": "https://www.computing.es/mercado-ti/nunsys-group-amplia-sus-servicios-documentales-incorporando-la-division-especializada-de-esedea-documental/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MPCS"
+   "fr": "MP"
   },
   {
    "code": "MPF",
@@ -17477,6 +14827,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "MPF"
+  },
+  {
+   "code": "MPLO",
+   "variantes": [
+    "MPLO"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "I-SMI.TI.22e Notifications according to Article 41, MPLO",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/humanarzneimittel/bewilligungen_zertifikate/authorisations/inspectorates.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "MPLO"
   },
   {
    "code": "MPO",
@@ -17569,21 +14934,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "MRP"
   },
   {
-   "code": "MSP",
-   "variantes": [
-    "MSP"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Risolte vulnerabilità in prodotti ManageEngine",
-   "lien_exemple": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-manageengine-1",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MSP"
-  },
-  {
    "code": "MSSG",
    "variantes": [
     "MSSG"
@@ -17599,67 +14949,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "MSSG"
   },
   {
-   "code": "MTG",
-   "variantes": [
-    "MTG"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Novo satélite MTG vai mostrar a atmosfera em tempo real para ajudar a prever tempestades",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/novo-satelite-mtg-vai-mostrar-a-atmosfera-em-tempo-real-para-ajudar-a-prever-tempestades/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MTG"
-  },
-  {
-   "code": "MTG-I2",
-   "variantes": [
-    "MTG-I2"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Novo satélite MTG vai mostrar a atmosfera em tempo real para ajudar a prever tempestades",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/novo-satelite-mtg-vai-mostrar-a-atmosfera-em-tempo-real-para-ajudar-a-prever-tempestades/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MTG-I2"
-  },
-  {
-   "code": "MV",
-   "variantes": [
-    "MV"
-   ],
-   "langues": [
-    "cs",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Oznámení o plném zprovoznění Portálu kritické infrastruktury",
-   "lien_exemple": "https://mzd.gov.cz/oznameni-o-plnem-zprovozneni-portalu-kriticke-infrastruktury/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MV"
-  },
-  {
-   "code": "MVP",
-   "variantes": [
-    "MVP"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Google antecipa lançamento do primeiro satélite do Project Suncatcher para testar centros de dados no espaço",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/google-antecipa-lancamento-do-primeiro-satelite-do-project-suncatcher-para-testar-centros-de-dados-no-espaco/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MVP"
-  },
-  {
    "code": "MWDB",
    "variantes": [
     "MWDB"
@@ -17673,51 +14962,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "MWDB"
-  },
-  {
-   "code": "MZ",
-   "variantes": [
-    "MZ"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Žádost o informace ze dne 26.7.2026",
-   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-26-7-2026/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MZ"
-  },
-  {
-   "code": "N26",
-   "variantes": [
-    "N26"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Quartz é uma fintech criada por dois portugueses em Londres com “raízes” de engenharia em Portugal",
-   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/quartz-e-uma-fintech-criada-por-dois-portugueses-em-londres-com-raizes-de-engenharia-em-portugal/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "N26"
-  },
-  {
-   "code": "NAI",
-   "variantes": [
-    "NAI"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NAI issues 'dos and don'ts' guidance for AI, agentic workflows in adtech",
-   "lien_exemple": "https://iapp.org/news/a/nai-isssues-dos-and-don-ts-guidance-for-ai-agentic-workflows-in-adtech",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NAI"
   },
   {
    "code": "NAIH",
@@ -17750,21 +14994,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NASK-PIB"
   },
   {
-   "code": "NATEEVO",
-   "variantes": [
-    "NATEEVO"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NATEEVO nombra a Pedro Latasa nuevo CEO de la empresa en una etapa alineada con el Grupo VASS",
-   "lien_exemple": "https://www.computing.es/mercado-ti/nateevo-nombra-a-pedro-latasa-nuevo-ceo-de-la-empresa-en-una-etapa-alineada-con-el-grupo-vass/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NATEEVO"
-  },
-  {
    "code": "NAVO",
    "variantes": [
     "NAVO"
@@ -17793,37 +15022,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "NBC"
-  },
-  {
-   "code": "NCA",
-   "variantes": [
-    "NCA"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NCA Issues Warning to Parents As Shared Child Photos Exploited by AI Tools",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/nca-warn-parents-volume/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NCA"
-  },
-  {
-   "code": "NCC",
-   "variantes": [
-    "NCC"
-   ],
-   "langues": [
-    "en",
-    "fi"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Ransomware Attacks Reach Record High for 2026",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ransomware-attacks-reach-record/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NCC"
   },
   {
    "code": "NCCR",
@@ -17916,21 +15114,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NEN-ISO"
   },
   {
-   "code": "NEO",
-   "variantes": [
-    "NEO"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Lo que J.Forrester, S.Beer y Max Weber le enseñarían a un director de operaciones",
-   "lien_exemple": "https://www.computing.es/movilidad/lo-que-j-forrester-s-beer-y-max-weber-le-ensenarian-a-un-director-de-operaciones/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NEO"
-  },
-  {
    "code": "NEOS",
    "variantes": [
     "NEOS"
@@ -17959,21 +15142,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "NEUROQIA"
-  },
-  {
-   "code": "NEWORDER",
-   "variantes": [
-    "NEWORDER"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "NEWORDER brings Lasso Security agentic AI protection to South Africa amid regulatory pressure",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60309142360&f=News&s=14&ci=107203&i=0&si=234585&fmi=656404366&e=Head*Topics&d=116434&mbc=Q1QzL2E9NjAzMDkxNDIzNjAmcD0xNGUmdj0xJng9b1NWdWpzenpIUEFOZnRFZERRbXB6QSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1788764891000&ck=354cc25fc0c8a97e__;Kw!!NEMsmePo_HYI!fCx6mz1Mh84_eWqJcaYIh-5MyJ2vFZOMu_e25chASlY_BIaWXR8WkyGbgzS8BrgZOWpewkzoUwhCde4DUg5uCZHFv3Nu$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NEWORDER"
   },
   {
    "code": "NG",
@@ -18112,21 +15280,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NIHR"
   },
   {
-   "code": "NIKEZ 2026",
-   "variantes": [
-    "NIKEZ 2026"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Konference NIKEZ 2026 bude online – registrace spuštěna",
-   "lien_exemple": "https://mzd.gov.cz/konference-nikez-2026-bude-online-spoustime-registraci/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NIKEZ 2026"
-  },
-  {
    "code": "NIS 127434",
    "variantes": [
     "NIS 127434"
@@ -18217,21 +15370,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NIX"
   },
   {
-   "code": "NL",
-   "variantes": [
-    "NL"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Energy Storage NL",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.energystoragenl.nl__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxp3TKkxR$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NL"
-  },
-  {
    "code": "NLL",
    "variantes": [
     "NLL"
@@ -18262,34 +15400,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "NLP"
   },
   {
-   "code": "NMS",
+   "code": "NOS",
    "variantes": [
-    "NMS"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Národní monitorovací středisko pro závislosti – základní informace",
-   "lien_exemple": "https://mzd.gov.cz/narodni-monitorovaci-stredisko-pro-zavislosti-zakladni-informace/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NMS"
-  },
-  {
-   "code": "NOVA",
-   "variantes": [
-    "NOVA"
+    "NOS"
    ],
    "langues": [
     "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Estudo português mostra que rochas profundas podem funcionar como uma bateria gigante para energia renovável",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/estudo-portugues-mostra-que-rochas-profundas-podem-funcionar-como-uma-bateria-gigante-para-energia-renovavel/",
+   "exemple": "Regulador multa NOS em 350 mil euros por alteração unilateral de contratos dos clientes",
+   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/regulador-multa-nos-em-350-mil-euros-por-alteracao-unilateral-de-contratos-dos-clientes/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "NOVA"
+   "fr": "NOS"
   },
   {
    "code": "NOYB",
@@ -18382,49 +15505,34 @@ window.VEILLE_ACRONYMES = {
    "fr": "NTT"
   },
   {
-   "code": "NZ",
+   "code": "NXTPAPER",
    "variantes": [
-    "NZ"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Notes from the Asia-Pacific region: 2026 survey finds children's data, AI continue to top NZ privacy concerns",
-   "lien_exemple": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-2026-survey-finds-children-s-data-ai-continue-to-top-nz-privacy-concerns",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NZ"
-  },
-  {
-   "code": "O3",
-   "variantes": [
-    "O3"
+    "NXTPAPER"
    ],
    "langues": [
     "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Xiaomi entra na corrida dos dobráveis com formato “wide”. Novo smartphone estreia-se na China",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/xiaomi-entra-na-corrida-dos-dobraveis-com-formato-wide-novo-smartphone-estreia-se-na-china/",
+   "exemple": "TCL quer que a IA faça parte do quotidiano em casa com televisores Mini LED e eletrodomésticos",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/tcl-quer-que-a-ia-faca-parte-do-quotidiano-em-casa-com-televisores-mini-led-e-eletrodomesticos/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "O3"
+   "fr": "NXTPAPER"
   },
   {
-   "code": "OAIC",
+   "code": "NYDFS",
    "variantes": [
-    "OAIC"
+    "NYDFS"
    ],
    "langues": [
     "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Notes from the Asia-Pacific region: OAIC actions signal growing focus on accountability, governance",
-   "lien_exemple": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-oaic-actions-signal-growing-focus-on-accountability-governance",
+   "exemple": "NYDFS levies $250,000 fine on licensee for inadequate cyber risk assessment",
+   "lien_exemple": "https://www.dataprotectionreport.com/2026/08/nydfs-levies-250000-fine-on-licensee-for-inadequate-cyber-risk-assessment/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "OAIC"
+   "fr": "NYDFS"
   },
   {
    "code": "OCDE",
@@ -18441,21 +15549,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "OCDE"
-  },
-  {
-   "code": "ODILO",
-   "variantes": [
-    "ODILO"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "La española ODILO inicia una nueva etapa como Letmino",
-   "lien_exemple": "https://www.computing.es/marketing/la-espanola-odilo-inicia-una-nueva-etapa-como-letmino/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ODILO"
   },
   {
    "code": "ODM",
@@ -18503,34 +15596,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "OEE"
   },
   {
-   "code": "OET",
+   "code": "OLED",
    "variantes": [
-    "OET"
+    "OLED"
    ],
    "langues": [
-    "en"
+    "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Federal Communications Commission's Public Safety and Homeland Security Bureau and Office of Engineering and Technology closes consultation on prohibiting importation and marketing of covered communications and video surveillance equipment produced by Anzu",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43120-federal-communications-commissions-public-safety-and-homeland-security-bureau-and-office-of-engineering-and-technology-closes-consultation-on-prohibiting-importation-and-marketing-of-covered-communications-and-video-surveillance-equipment-produced-b",
+   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "OET"
-  },
-  {
-   "code": "OFAC",
-   "variantes": [
-    "OFAC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "OFAC Sanctions Chinese Scam Platform Xinbi Guarantee",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ofac-sanctions-chinese-scam/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "OFAC"
+   "fr": "OLED"
   },
   {
    "code": "OLIVIA",
@@ -18653,6 +15731,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "OP/0007"
   },
   {
+   "code": "OP/0015",
+   "variantes": [
+    "OP/0015"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Call for tenders: Framework contracts to speed up the development of and access to next-generation therapeutics for infectious diseases",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1979",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "OP/0015"
+  },
+  {
    "code": "OP/0019",
    "variantes": [
     "OP/0019"
@@ -18666,6 +15759,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "OP/0019"
+  },
+  {
+   "code": "OP/0020",
+   "variantes": [
+    "OP/0020"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "OP/0020"
   },
   {
    "code": "OP/0021",
@@ -18698,6 +15806,38 @@ window.VEILLE_ACRONYMES = {
    "fr": "OP/0038-PIN"
   },
   {
+   "code": "OP/0041-PIN",
+   "variantes": [
+    "OP/0041-PIN"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Prior Information Notice: Harmonising the implementation of EU legal requirements in the fields of food and feed",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1983",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "OP/0041-PIN"
+  },
+  {
+   "code": "OPC",
+   "variantes": [
+    "OPC"
+   ],
+   "langues": [
+    "en",
+    "fr",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "OPC finds Grok chatbot and deepfakes violated Canada's privacy law",
+   "lien_exemple": "https://iapp.org/news/a/opc-finds-grok-chatbot-and-deepfakes-violated-canada-s-privacy-law",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "OPC"
+  },
+  {
    "code": "OPI",
    "variantes": [
     "OPI"
@@ -18713,36 +15853,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "OPI"
   },
   {
-   "code": "OPPO",
-   "variantes": [
-    "OPPO"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "OPPO"
-  },
-  {
-   "code": "OPSWAT",
-   "variantes": [
-    "OPSWAT"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Zero-Day Flaw in TP-Link Cameras Enables Eavesdropping",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/zeroday-tplink-cameras/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "OPSWAT"
-  },
-  {
    "code": "ORF",
    "variantes": [
     "ORF"
@@ -18756,21 +15866,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ORF"
-  },
-  {
-   "code": "OS5",
-   "variantes": [
-    "OS5"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nothing OS 5.0: tudo o que muda na maior atualização do sistema operativo da Nothing até agora",
-   "lien_exemple": "https://tek.sapo.pt/mobile/android/artigos/nothing-os-5-0-tudo-o-que-muda-na-maior-atualizacao-do-sistema-operativo-da-nothing-ate-agora/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "OS5"
   },
   {
    "code": "OSAE",
@@ -18834,6 +15929,38 @@ window.VEILLE_ACRONYMES = {
    "fr": "OTS0079"
   },
   {
+   "code": "OTT",
+   "variantes": [
+    "OTT"
+   ],
+   "langues": [
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "BEREC publishes reports on OTT services and the Internet of Things, as well as guidance on the new international roaming rules",
+   "lien_exemple": "https://www.berec.europa.eu/en/news/press-releases/berec-publishes-reports-on-ott-services-and-the-internet-of-things-as-well-as-guidance-on-the-new-international-roaming-rules",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "OTT"
+  },
+  {
+   "code": "OWA",
+   "variantes": [
+    "OWA"
+   ],
+   "langues": [
+    "en",
+    "hu"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Russian-Alligned TA488 Returns With Persistent Outlook Web Access Attack",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ta488-outlook-half-click-owareaper/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "OWA"
+  },
+  {
    "code": "P1",
    "variantes": [
     "P1"
@@ -18847,51 +15974,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "P1"
-  },
-  {
-   "code": "P14",
-   "variantes": [
-    "P14"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "P14"
-  },
-  {
-   "code": "P16",
-   "variantes": [
-    "P16"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "P16"
-  },
-  {
-   "code": "P2P",
-   "variantes": [
-    "P2P"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "International Operation Disrupts Sality P2P Botnet",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/international-operation-disrupts/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "P2P"
   },
   {
    "code": "P3DH",
@@ -18940,19 +16022,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "PA"
   },
   {
-   "code": "PAM",
+   "code": "PACS",
    "variantes": [
-    "PAM"
+    "PACS"
    ],
    "langues": [
-    "en"
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Cryptominer Abuses Linux PAM to Hide From SOC Analysts",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/xmrig-linux-pam-forensic/",
+   "exemple": "Mise à jour du référentiel d’exigences PACS en version 2.0",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/mise-a-jour-du-referentiel-pacs/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "PAM"
+   "fr": "PACS"
   },
   {
    "code": "PAN-OS",
@@ -19017,36 +16099,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "PCRE2"
   },
   {
-   "code": "PDE",
-   "variantes": [
-    "PDE"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Incident Reporting Under the EU Cyber Resilience Act  - Jon Bartley - 12 Sep 2026 03:08 Background The EU Cyber Resilience Act (the \"CRA\") imposes mandatory cybersecurity requirements on products with digital elements (\"PDE\") across their entire life",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.rpclegal.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxgJitajq$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PDE"
-  },
-  {
-   "code": "PDT",
-   "variantes": [
-    "PDT"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Onderzoek roept vragen op over digitale identificatie voetbaltickets",
-   "lien_exemple": "https://www.security.nl/posting/953916/Onderzoek+roept+vragen+op+over+digitale+identificatie+voetbaltickets?channel=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PDT"
-  },
-  {
    "code": "PECR",
    "variantes": [
     "PECR"
@@ -19077,34 +16129,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "PEH"
   },
   {
-   "code": "PERTE",
+   "code": "PEPTAMEN",
    "variantes": [
-    "PERTE"
+    "PEPTAMEN"
    ],
    "langues": [
-    "es"
+    "fr"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "La SETT y el Parque Tecnológico de Andalucía se alían para impulsar el futuro Centro de Semiconductores en Málaga",
-   "lien_exemple": "https://www.computing.es/noticias/la-sett-y-el-parque-tecnologico-de-andalucia-se-alian-para-impulsar-el-futuro-centro-de-semiconductores-en-malaga/",
+   "premier_vu": "2026-09-28",
+   "exemple": "Avis relatif à la tarification des denrées alimentaires destinées à des fins médicales spéciales PEPTAMEN et PEPTAMEN HN visées à l'article L. 165-1 du code de la sécurité sociale",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838992",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "PERTE"
-  },
-  {
-   "code": "PETRA",
-   "variantes": [
-    "PETRA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "PETRA é um robot submarino que leva a engenharia portuguesa a 6.000 metros de profundidade",
-   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/petra-e-um-robot-submarino-que-leva-a-engenharia-portuguesa-a-6-000-metros-de-profundidade/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PETRA"
+   "fr": "PEPTAMEN"
   },
   {
    "code": "PFG7",
@@ -19167,19 +16204,35 @@ window.VEILLE_ACRONYMES = {
    "fr": "PH"
   },
   {
-   "code": "PIF",
+   "code": "PHOENIX",
    "variantes": [
-    "PIF"
+    "PHOENIX"
    ],
    "langues": [
-    "pt"
+    "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CEER Exobot: Arábia Saudita revela o seu primeiro carro elétrico com 1.111 cavalos e um design único",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/ceer-exobot-arabia-saudita-revela-o-seu-primeiro-carro-eletrico-com-1-111-cavalos-e-um-design-unico/",
+   "premier_vu": "2026-09-25",
+   "exemple": "Childhood Cancer Awareness Month 2026: Horizon Europe projects advancing novel treatments for rare and high-risk paediatric cancers",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2025",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "PIF"
+   "fr": "PHOENIX"
+  },
+  {
+   "code": "PIB",
+   "variantes": [
+    "PIB"
+   ],
+   "langues": [
+    "pt",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Como atrair 800 milhões, criar 1.600 startups, gerar 8.800 empregos e somar 8% ao PIB. E porque isso se decide esta semana",
+   "lien_exemple": "https://tek.sapo.pt/opiniao/artigos/como-atrair-800-milhoes-criar-1-600-startups-gerar-8-800-empregos-e-somar-8-ao-pib-e-porque-isso-se-decide-esta-semana/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "PIB"
   },
   {
    "code": "PIK3CA",
@@ -19212,51 +16265,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "PIPC"
   },
   {
-   "code": "PISA",
-   "variantes": [
-    "PISA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Portugal recua nos resultados do PISA. Especialistas alertam para o impacto do uso excessivo de ecrãs nos jovens",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/portugal-recua-nos-resultados-do-pisa-especialistas-alertam-para-o-impacto-do-uso-excessivo-de-ecras-nos-jovens/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PISA"
-  },
-  {
-   "code": "PIVOT",
-   "variantes": [
-    "PIVOT"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/cyber-vendors-mitre-uk-testing/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PIVOT"
-  },
-  {
-   "code": "PKV",
-   "variantes": [
-    "PKV"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Linnemann zeigt sich vor Abgeordneten entscheidungsfreudig",
-   "lien_exemple": "https://www.aerzteblatt.de/news/linnemann-zeigt-sich-vor-abgeordneten-entscheidungsfreudig-f6b94bd7-24a9-4d13-82b5-1ff632c61a79",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PKV"
-  },
-  {
    "code": "PL",
    "variantes": [
     "PL"
@@ -19270,21 +16278,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "PL"
-  },
-  {
-   "code": "PL12",
-   "variantes": [
-    "PL12"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PL12"
   },
   {
    "code": "PLAN",
@@ -19302,21 +16295,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "PLAN"
   },
   {
-   "code": "PLAY 2026",
-   "variantes": [
-    "PLAY 2026"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Logitech G PLAY 2026: Equipamentos PRO para eSports e o regresso dos microfones Yeti em destaque entre as novidades",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/logitech-g-play-2026-equipamentos-pro-para-esports-e-o-regresso-dos-microfones-yeti-em-destaque-entre-as-novidades/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PLAY 2026"
-  },
-  {
    "code": "PLC",
    "variantes": [
     "PLC"
@@ -19330,21 +16308,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "PLC"
-  },
-  {
-   "code": "PM",
-   "variantes": [
-    "PM"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "OpenAI Agent Hacks Australian Medicare Portal",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/openai-hacks-australian-medicare/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PM"
   },
   {
    "code": "PNHTA-DM",
@@ -19392,19 +16355,50 @@ window.VEILLE_ACRONYMES = {
    "fr": "POG"
   },
   {
-   "code": "PRO",
+   "code": "PPE",
    "variantes": [
-    "PRO"
+    "PPE"
    ],
    "langues": [
-    "pt"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Logitech G PLAY 2026: Equipamentos PRO para eSports e o regresso dos microfones Yeti em destaque entre as novidades",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/logitech-g-play-2026-equipamentos-pro-para-esports-e-o-regresso-dos-microfones-yeti-em-destaque-entre-as-novidades/",
+   "exemple": "Call for tenders: Capacity reservation for personal protective equipment pilot (EU FAB+ PPE)",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1987",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "PRO"
+   "fr": "PPE"
+  },
+  {
+   "code": "PPPA-2026-LAUNCHERS-GAMECHANGING",
+   "variantes": [
+    "PPPA-2026-LAUNCHERS-GAMECHANGING"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Game-changing innovation for European launch solutions: 3 proposals selected to receive €20 million",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2018",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "PPPA-2026-LAUNCHERS-GAMECHANGING"
+  },
+  {
+   "code": "PR",
+   "variantes": [
+    "PR"
+   ],
+   "langues": [
+    "es",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Sara García (MIOTI): «El peligro de la democratización de la IA es la ‘comoditización’ del mensaje: textos técnicamente perfectos, pero planos y predecibles»",
+   "lien_exemple": "https://www.computing.es/marketing/sara-garcia-mioti-el-peligro-de-la-democratizacion-de-la-ia-es-la-comoditizacion-del-mensaje-textos-tecnicamente-perfectos-pero-planos-y-predecibles/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "PR"
   },
   {
    "code": "PROS",
@@ -19437,36 +16431,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "PRTG"
   },
   {
-   "code": "PSC",
-   "variantes": [
-    "PSC"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Primär sklerosierende Cholangitis: Medikamentöse Therapie zeigt in Phase-3-Studie Wirkung",
-   "lien_exemple": "https://www.aerzteblatt.de/news/primar-sklerosierende-cholangitis-medikamentose-therapie-zeigt-in-phase-3-studie-wirkung-55579fae-95c0-4560-ab34-78ac29ad4cd3",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PSC"
-  },
-  {
-   "code": "PSHSB",
-   "variantes": [
-    "PSHSB"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Federal Communications Commission's Public Safety and Homeland Security Bureau and Office of Engineering and Technology closes consultation on prohibiting importation and marketing of covered communications and video surveillance equipment produced by Anzu",
-   "lien_exemple": "https://digitalpolicyalert.org/event/43120-federal-communications-commissions-public-safety-and-homeland-security-bureau-and-office-of-engineering-and-technology-closes-consultation-on-prohibiting-importation-and-marketing-of-covered-communications-and-video-surveillance-equipment-produced-b",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PSHSB"
-  },
-  {
    "code": "PSI",
    "variantes": [
     "PSI"
@@ -19495,21 +16459,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "PSUSA/00010431"
-  },
-  {
-   "code": "PT",
-   "variantes": [
-    "PT"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Geração STEM .PT tem bolsas de 5 mil euros para apoiar o talento feminino nas áreas da ciência e tecnologia",
-   "lien_exemple": "https://tek.sapo.pt/expert/artigos/geracao-stem-pt-tem-bolsas-de-5-mil-euros-para-apoiar-o-talento-feminino-nas-areas-da-ciencia-e-tecnologia/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PT"
   },
   {
    "code": "PTS",
@@ -19603,6 +16552,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "Q1 2027"
   },
   {
+   "code": "Q2",
+   "variantes": [
+    "Q2"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Ransomware Surges in July After Q2 Lull",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ransomware-surges-july-q2-lull/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "Q2"
+  },
+  {
    "code": "Q3 2026",
    "variantes": [
     "Q3 2026"
@@ -19649,6 +16613,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "Q4 2025"
   },
   {
+   "code": "QA",
+   "variantes": [
+    "QA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "EUCervScreen QA: Updating guidelines for cervical cancer screening",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2028",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "QA"
+  },
+  {
    "code": "QARC",
    "variantes": [
     "QARC"
@@ -19677,36 +16656,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "QNRCS"
-  },
-  {
-   "code": "QTFY",
-   "variantes": [
-    "QTFY"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "QTFY"
-  },
-  {
-   "code": "R1",
-   "variantes": [
-    "R1"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ROG Xbox Ally X20 já tem data de chegada (e traz companhia). Pré-encomendas estão abertas",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rog-xbox-ally-x20-ja-tem-data-de-chegada-e-traz-companhia-pre-encomendas-estao-abertas/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "R1"
   },
   {
    "code": "R155",
@@ -19739,21 +16688,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "R156"
   },
   {
-   "code": "R8",
-   "variantes": [
-    "R8"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "EOS R8 Mark II é nova full frame leve da Canon pensada para viajar, agora também com imagens 3D",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/eos-r8-mark-ii-e-nova-full-frame-leve-da-canon-pensada-para-viajar-agora-tambem-com-imagens-3d/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "R8"
-  },
-  {
    "code": "RADIUS",
    "variantes": [
     "RADIUS"
@@ -19784,19 +16718,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "RAISE"
   },
   {
-   "code": "RAM",
+   "code": "RAMP",
    "variantes": [
-    "RAM"
+    "RAMP"
    ],
    "langues": [
-    "pt"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Google impõe novos limites de memória no Android à medida que o “RAMageddon” muda as regras da indústria",
-   "lien_exemple": "https://tek.sapo.pt/mobile/apps/artigos/google-impoe-novos-limites-de-memoria-no-android-a-medida-que-o-ramageddon-muda-as-regras-da-industria/",
+   "exemple": "Securing Europe's critical raw materials: the RAMP partnership",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1982",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "RAM"
+   "fr": "RAMP"
   },
   {
    "code": "RAQ",
@@ -19844,21 +16778,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "RASC"
   },
   {
-   "code": "RBRK",
-   "variantes": [
-    "RBRK"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "RBRK: Subscription ARR up 33% and outlook raised amid strong demand for AI-driven cyber resilience",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60281218497&f=News&s=14&ci=107203&i=0&si=251314&fmi=660724092&e=TradingView&d=116434&mbc=Q1QzL2E9NjAyODEyMTg0OTcmcD0xNGUmdj0xJng9eFZwV1EyNkRIQkdFZXZLbHdrNWR6USZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1788159957000&ck=928e08717238ee79__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqlTQX7wp$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RBRK"
-  },
-  {
    "code": "RCC",
    "variantes": [
     "RCC"
@@ -19872,21 +16791,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "RCC"
-  },
-  {
-   "code": "RCE14",
-   "variantes": [
-    "RCE14"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Human Attacker Hits Machine-Speed Exploitation of Marimo RCE",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/human-attacker-machine-speed/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RCE14"
   },
   {
    "code": "RD",
@@ -19919,21 +16823,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "RDB"
   },
   {
-   "code": "RDS",
-   "variantes": [
-    "RDS"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Microsoft Releases Emergency Patch to Fix RDS Vulnerability",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/microsoft-releases-emergency-patch/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RDS"
-  },
-  {
    "code": "REGIS-TR",
    "variantes": [
     "REGIS-TR"
@@ -19949,19 +16838,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "REGIS-TR"
   },
   {
-   "code": "REGZA",
+   "code": "RELIEF",
    "variantes": [
-    "REGZA"
+    "RELIEF"
    ],
    "langues": [
-    "pt"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "RGB veio para ficar? Descubra o que os fabricantes de TV, e não só, trouxeram até à IFA 2026",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rgb-veio-para-ficar-descubra-o-que-os-fabricantes-de-tv-e-nao-so-trouxeram-ate-a-ifa/",
+   "exemple": "EU4Health projects tackling lung cancer prevention and screening",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/1990",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "REGZA"
+   "fr": "RELIEF"
   },
   {
    "code": "REP",
@@ -19979,36 +16868,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "REP"
   },
   {
-   "code": "REPMUS",
-   "variantes": [
-    "REPMUS"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "REPMUS 2026: Portugal volta a ser palco do maior exercício de testes a robots, drones e sistemas de defesa não tripulados",
-   "lien_exemple": "https://tek.sapo.pt/expert/artigos/repmus-2026-portugal-volta-a-ser-palco-do-maior-exercicio-de-testes-a-robots-drones-e-sistemas-de-defesa-nao-tripulados/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "REPMUS"
-  },
-  {
-   "code": "REPMUS 2026",
-   "variantes": [
-    "REPMUS 2026"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "REPMUS 2026: Portugal volta a ser palco do maior exercício de testes a robots, drones e sistemas de defesa não tripulados",
-   "lien_exemple": "https://tek.sapo.pt/expert/artigos/repmus-2026-portugal-volta-a-ser-palco-do-maior-exercicio-de-testes-a-robots-drones-e-sistemas-de-defesa-nao-tripulados/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "REPMUS 2026"
-  },
-  {
    "code": "REST",
    "variantes": [
     "REST"
@@ -20022,21 +16881,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "REST"
-  },
-  {
-   "code": "RF",
-   "variantes": [
-    "RF"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Datos biométricos y autodeterminación informativa en la Resolución N.º 029–2026–RF de la Prodhab de Costa Rica",
-   "lien_exemple": "https://iapp.org/news/a/datos-biom-tricos-y-autodeterminaci-n-informativa-en-la-resoluci-n-n-029-2026-rf-de-la-prodhab",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RF"
   },
   {
    "code": "RH",
@@ -20112,21 +16956,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "RKIDV"
-  },
-  {
-   "code": "RMM",
-   "variantes": [
-    "RMM"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Phishing Campaign Abuses eCards to Deploy RMM Tools",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/seasonalinvite-phishing-ecards-rmm/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RMM"
   },
   {
    "code": "RMSP",
@@ -20249,21 +17078,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "RRF"
   },
   {
-   "code": "RSA",
-   "variantes": [
-    "RSA"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Žádost o informace ze dne 16.8.2026",
-   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-16-8-2026/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RSA"
-  },
-  {
    "code": "RSE",
    "variantes": [
     "RSE"
@@ -20354,21 +17168,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "RTR"
   },
   {
-   "code": "RTX",
-   "variantes": [
-    "RTX"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RTX"
-  },
-  {
    "code": "RTX 5070",
    "variantes": [
     "RTX 5070"
@@ -20412,81 +17211,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "RUSI"
-  },
-  {
-   "code": "RVVI",
-   "variantes": [
-    "RVVI"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Sběr vybraných výsledků v aplikaci SKV – Systém Kvalitních Výsledků",
-   "lien_exemple": "https://mzd.gov.cz/sber-vybranych-vysledku-v-aplikaci-skv-system-kvalitnich-vysledku-9/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RVVI"
-  },
-  {
-   "code": "RYANT",
-   "variantes": [
-    "RYANT"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Žádost o informace ze dne 6.8.2026",
-   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-6-8-2026/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RYANT"
-  },
-  {
-   "code": "S/4HANA",
-   "variantes": [
-    "S/4HANA"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Grupo Entrepinares migra su gestión empresarial a SAP S/4HANA",
-   "lien_exemple": "https://www.computing.es/erp/grupo-entrepinares-migra-su-gestion-empresarial-a-sap-s-4hana/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "S/4HANA"
-  },
-  {
-   "code": "S26",
-   "variantes": [
-    "S26"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Galaxy S26 FE é a porta de entrada para funcionalidades de IA da linha premium da Samsung",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/galaxy-s26-fe-e-a-porta-de-entrada-para-funcionalidades-de-ia-da-linha-premium-da-samsung/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "S26"
-  },
-  {
-   "code": "S27",
-   "variantes": [
-    "S27"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "S27"
   },
   {
    "code": "S46 23",
@@ -20699,6 +17423,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "SCG"
   },
   {
+   "code": "SE",
+   "variantes": [
+    "SE"
+   ],
+   "langues": [
+    "de",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "[UPDATE] [mittel] Oracle Java SE: Mehrere Schwachstellen",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2897",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "SE"
+  },
+  {
    "code": "SEA-SPINE",
    "variantes": [
     "SEA-SPINE"
@@ -20714,34 +17454,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "SEA-SPINE"
   },
   {
-   "code": "SECURITY",
+   "code": "SEIDOR",
    "variantes": [
-    "SECURITY"
+    "SEIDOR"
    ],
    "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "SECURITY Cohesity extends resilience to AI agents, plans to automate cyber resilience September 16, 2026",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60418603514&f=News&s=14&ci=107203&i=286&si=235262&fmi=656671901&e=Blocks**A26*Files&d=116434&mbc=Q1QzL2E9NjA0MTg2MDM1MTQmcD0xNGUmdj0xJng9c3o0cm9ieWFGSnpEeXlNWnJuSl9zUSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1789974489000&ck=829718e1deac3adf__;KyUr!!NEMsmePo_HYI!cC2gXvEnV8ud0G6ikrvMZOs9tOH1o7u0NpF37VXz22KjqqfoqDQBi1VhiJfbM5RIUAZuHVfZOQrkdJGFDidCUNUbLV7U$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SECURITY"
-  },
-  {
-   "code": "SEED",
-   "variantes": [
-    "SEED"
-   ],
-   "langues": [
-    "pt"
+    "es"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Este televisor “desdobrável” combina MicroLED com um design de luxo e um preço (quase) à altura de um Bugatti",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/este-televisor-desdobravel-combina-microled-com-um-design-de-luxo-e-um-preco-quase-a-altura-de-um-bugatti/",
+   "exemple": "SEIDOR e ISDI acercan al talento tech frente a las capacidades de la IA",
+   "lien_exemple": "https://www.computing.es/recursos-humanos/seidor-e-isdi-acercan-al-talento-tech-frente-a-las-capacidades-de-la-ia/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "SEED"
+   "fr": "SEIDOR"
   },
   {
    "code": "SEMICON",
@@ -20757,21 +17482,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SEMICON"
-  },
-  {
-   "code": "SEO",
-   "variantes": [
-    "SEO"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Gambling Goblin Turns Brazilian Government Sites Into SEO Weapons",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/gambling-goblin-brazilian/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SEO"
   },
   {
    "code": "SEPOS",
@@ -20819,21 +17529,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SESAM"
   },
   {
-   "code": "SETT",
-   "variantes": [
-    "SETT"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "La SETT y el Parque Tecnológico de Andalucía se alían para impulsar el futuro Centro de Semiconductores en Málaga",
-   "lien_exemple": "https://www.computing.es/noticias/la-sett-y-el-parque-tecnologico-de-andalucia-se-alian-para-impulsar-el-futuro-centro-de-semiconductores-en-malaga/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SETT"
-  },
-  {
    "code": "SGDSN",
    "variantes": [
     "SGDSN"
@@ -20879,6 +17574,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "SI-SAMU"
   },
   {
+   "code": "SICAP",
+   "variantes": [
+    "SICAP"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Arrêté du 26 août 2026 modifiant l'arrêté du 21 février 2022 relatif au fonctionnement du système d'information des centres antipoison et de toxicovigilance (SICAP)",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054902614",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "SICAP"
+  },
+  {
    "code": "SICUR",
    "variantes": [
     "SICUR"
@@ -20909,19 +17619,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "SIDM"
   },
   {
-   "code": "SIM",
+   "code": "SIEM",
    "variantes": [
-    "SIM"
+    "SIEM"
    ],
    "langues": [
+    "it",
     "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Former telecom manager admits to doing SIM swaps for $1,000",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/former-telecom-manager-admits-to-doing-sim-swaps-for-1-000/",
+   "premier_vu": "2026-09-25",
+   "exemple": "Wazuh: PoC pubblico per lo sfruttamento della CVE-2026-71540",
+   "lien_exemple": "https://www.acn.gov.it/portale/w/wazuh-poc-pubblico-per-lo-sfruttamento-della-cve-2026-71540",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "SIM"
+   "fr": "SIEM"
   },
   {
    "code": "SIMATIC",
@@ -20937,6 +17648,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SIMATIC"
+  },
+  {
+   "code": "SIMO",
+   "variantes": [
+    "SIMO"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Silicon Motion Technology (SIMO) Reaches First EU Cyber Resilience Act Compliance Milestone",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60331402691&f=News&s=14&ci=107203&i=0&si=54885&fmi=169659221&e=Yahoo*21*Finance&d=116434&mbc=Q1QzL2E9NjAzMzE0MDI2OTEmcD0xNGUmdj0xJng9WjdxT2g2elpBNlBqQ29DN2JMWXo4QSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735267&ai=338121&ac=338121_1788764891000&ck=f2a858723822b49d__;JSs!!NEMsmePo_HYI!fCx6mz1Mh84_eWqJcaYIh-5MyJ2vFZOMu_e25chASlY_BIaWXR8WkyGbgzS8BrgZOWpewkzoUwhCde4DUg5uCUasY_01$",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "SIMO"
   },
   {
    "code": "SINFI",
@@ -20997,21 +17723,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SKR"
-  },
-  {
-   "code": "SKV",
-   "variantes": [
-    "SKV"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Sběr vybraných výsledků v aplikaci SKV – Systém Kvalitních Výsledků",
-   "lien_exemple": "https://mzd.gov.cz/sber-vybranych-vysledku-v-aplikaci-skv-system-kvalitnich-vysledku-9/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SKV"
   },
   {
    "code": "SMA",
@@ -21089,21 +17800,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SND/682/2021"
   },
   {
-   "code": "SNMP",
-   "variantes": [
-    "SNMP"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Russian State Hackers Target Vulnerable Routers Worldwide, Joint Advisory Warns",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/russian-state-hackers-vulnerable/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SNMP"
-  },
-  {
    "code": "SOAR",
    "variantes": [
     "SOAR"
@@ -21117,21 +17813,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SOAR"
-  },
-  {
-   "code": "SOC2",
-   "variantes": [
-    "SOC2"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "With the Rise of AI Agents, SOC 2 Should Adapt or Risk Irrelevance",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SOC2"
   },
   {
    "code": "SOCIAL",
@@ -21149,19 +17830,34 @@ window.VEILLE_ACRONYMES = {
    "fr": "SOCIAL"
   },
   {
-   "code": "SOCKS5",
+   "code": "SOCIALI",
    "variantes": [
-    "SOCKS5"
+    "SOCIALI"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DEL LAVORO E DELLE POLITICHE SOCIALI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A04988/SG",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "SOCIALI"
+  },
+  {
+   "code": "SOLACE",
+   "variantes": [
+    "SOLACE"
    ],
    "langues": [
     "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/",
+   "exemple": "SOLACE: Improving lung cancer screening in Europe",
+   "lien_exemple": "https://hadea.ec.europa.eu/news/solace-improving-lung-cancer-screening-europe-2026-08-01_en",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "SOCKS5"
+   "fr": "SOLACE"
   },
   {
    "code": "SOLOCAL",
@@ -21179,21 +17875,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SOLOCAL"
   },
   {
-   "code": "SOS",
-   "variantes": [
-    "SOS"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Garmin fēnix 9 Pro chega com mais autonomia e conectividade para aventuras longe do smartphone",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/garmin-fenix-9-pro-chega-com-mais-autonomia-e-conectividade-para-aventuras-longe-do-smartphone/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SOS"
-  },
-  {
    "code": "SOU 2025",
    "variantes": [
     "SOU 2025"
@@ -21207,21 +17888,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SOU 2025"
-  },
-  {
-   "code": "SP 800-53",
-   "variantes": [
-    "SP 800-53"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Building Cyber Resilience Through Risk, Education and Service  - 10 Sep 2026 18:12 ...regulatory requirements such as ISO 27001, NIST SP 800-53, the CIS Controls, HIPAA , GDPR, CCPA and PCI DSS. Each framework has a different purpose, but organizatio",
-   "lien_exemple": "https://urldefense.com/v3/__https://techbullion.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxlwm87fy$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SP 800-53"
   },
   {
    "code": "SPACE-HADEA",
@@ -21344,21 +18010,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SS-ISO"
   },
   {
-   "code": "SSD",
-   "variantes": [
-    "SSD"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nunca desfragmente o seu disco SSD. Faça antes isto para o manter em forma",
-   "lien_exemple": "https://tek.sapo.pt/how-to/artigos/nunca-desfragmente-o-seu-disco-ssd-faca-antes-isto-para-o-manter-em-forma/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SSD"
-  },
-  {
    "code": "SSI",
    "variantes": [
     "SSI"
@@ -21450,21 +18101,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SSSCIP"
   },
   {
-   "code": "STEM",
-   "variantes": [
-    "STEM"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Geração STEM .PT tem bolsas de 5 mil euros para apoiar o talento feminino nas áreas da ciência e tecnologia",
-   "lien_exemple": "https://tek.sapo.pt/expert/artigos/geracao-stem-pt-tem-bolsas-de-5-mil-euros-para-apoiar-o-talento-feminino-nas-areas-da-ciencia-e-tecnologia/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "STEM"
-  },
-  {
    "code": "STER",
    "variantes": [
     "STER"
@@ -21478,36 +18114,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "STER"
-  },
-  {
-   "code": "STI",
-   "variantes": [
-    "STI"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Pozvánka na webinář ECDC o péči o migranty v oblasti HIV, TBC, virových hepatitid a STI",
-   "lien_exemple": "https://mzd.gov.cz/pozvanka-na-webinar-ecdc-o-peci-o-migranty-v-oblasti-hiv-tbc-virovych-hepatitid-a-sti/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "STI"
-  },
-  {
-   "code": "SU7",
-   "variantes": [
-    "SU7"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Xiaomi 18 Fold, nova geração do SU7 e a expansão da Mijia na estreia da marca na IFA 2026",
-   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/xiaomi-18-fold-nova-geracao-do-su7-e-a-expansao-da-mijia-na-estreia-da-marca-na-ifa-2026/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SU7"
   },
   {
    "code": "SUE",
@@ -21555,21 +18161,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SULLE"
   },
   {
-   "code": "SVG",
-   "variantes": [
-    "SVG"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/fake-voicemail-svg-files-bypass/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SVG"
-  },
-  {
    "code": "SVILUPPO",
    "variantes": [
     "SVILUPPO"
@@ -21615,6 +18206,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "SÚKL"
   },
   {
+   "code": "TA488",
+   "variantes": [
+    "TA488"
+   ],
+   "langues": [
+    "en",
+    "hu"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Russian-Alligned TA488 Returns With Persistent Outlook Web Access Attack",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ta488-outlook-half-click-owareaper/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "TA488"
+  },
+  {
    "code": "TAF",
    "variantes": [
     "TAF"
@@ -21628,21 +18235,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "TAF"
-  },
-  {
-   "code": "TAKE",
-   "variantes": [
-    "TAKE"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "TAKE IT DOWN Act: How to comply as the FTC begins enforcement",
-   "lien_exemple": "https://iapp.org/news/a/take-it-down-act-how-to-comply-as-the-ftc-begins-enforcement",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TAKE"
   },
   {
    "code": "TARDES",
@@ -21675,34 +18267,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "TAXI2"
   },
   {
-   "code": "TB",
+   "code": "TC",
    "variantes": [
-    "TB"
+    "TC"
    ],
    "langues": [
-    "nl"
+    "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ShinyHunters claimt gegevens van FBI-medewerkers te hebben buitgemaakt",
-   "lien_exemple": "https://www.security.nl/posting/954245/ShinyHunters+claimt+gegevens+van+FBI-medewerkers+te+hebben+buitgemaakt?channel=rss",
+   "premier_vu": "2026-09-28",
+   "exemple": "ETSI’s Committee for Critical Communications Systems elects officials",
+   "lien_exemple": "https://www.etsi.org/newsroom/news/etsis-committee-for-critical-communications-systems-elects-officials/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "TB"
-  },
-  {
-   "code": "TBC",
-   "variantes": [
-    "TBC"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Pozvánka na webinář ECDC o péči o migranty v oblasti HIV, TBC, virových hepatitid a STI",
-   "lien_exemple": "https://mzd.gov.cz/pozvanka-na-webinar-ecdc-o-peci-o-migranty-v-oblasti-hiv-tbc-virovych-hepatitid-a-sti/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TBC"
+   "fr": "TC"
   },
   {
    "code": "TCAE",
@@ -21750,6 +18327,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "TCG"
   },
   {
+   "code": "TCL",
+   "variantes": [
+    "TCL"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "RGB veio para ficar? Descubra o que os fabricantes de TV, e não só, trouxeram até à IFA 2026",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rgb-veio-para-ficar-descubra-o-que-os-fabricantes-de-tv-e-nao-so-trouxeram-ate-a-ifa/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "TCL"
+  },
+  {
    "code": "TEHDAS2",
    "variantes": [
     "TEHDAS2"
@@ -21780,6 +18372,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "TEMU"
   },
   {
+   "code": "TETRA",
+   "variantes": [
+    "TETRA"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Estudio de ciberseguridad en redes TETRA",
+   "lien_exemple": "https://www.incibe.es/incibe-cert/blog/estudio-ciberseguridad-redes-tetra",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "TETRA"
+  },
+  {
    "code": "TEWV",
    "variantes": [
     "TEWV"
@@ -21793,6 +18400,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "TEWV"
+  },
+  {
+   "code": "THEODORA",
+   "variantes": [
+    "THEODORA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Childhood Cancer Awareness Month 2026: Horizon Europe projects advancing novel treatments for rare and high-risk paediatric cancers",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2025",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "THEODORA"
   },
   {
    "code": "TI 2026",
@@ -21825,49 +18447,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "TI-M"
   },
   {
-   "code": "TIBER",
+   "code": "TIA",
    "variantes": [
-    "TIBER"
+    "TIA"
    ],
    "langues": [
-    "fr"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Voir la publication : TLPT / TIBER : transformer les exigences DORA en levier de résilience cyber",
-   "lien_exemple": "https://www.intrinsec.com/tlpt-tiber-dora-conformite-entites-critiques/",
+   "exemple": "[Closed] Transfer Impact Assessment (TIA): the CNIL Consults You on a Draft Guide",
+   "lien_exemple": "https://www.cnil.fr/en/node/164765",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "TIBER"
-  },
-  {
-   "code": "TIME",
-   "variantes": [
-    "TIME"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "LastPass: Rapuncel infostealer schakelt antivirussoftware uit en steelt gegevens",
-   "lien_exemple": "https://www.security.nl/posting/954159/LastPass%3A+Rapuncel+infostealer+schakelt+antivirussoftware+uit+en+steelt+gegevens?channel=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TIME"
-  },
-  {
-   "code": "TLPT",
-   "variantes": [
-    "TLPT"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Voir la publication : TLPT / TIBER : transformer les exigences DORA en levier de résilience cyber",
-   "lien_exemple": "https://www.intrinsec.com/tlpt-tiber-dora-conformite-entites-critiques/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TLPT"
+   "fr": "TIA"
   },
   {
    "code": "TORINO",
@@ -21898,6 +18490,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "TPV"
+  },
+  {
+   "code": "TR 104",
+   "variantes": [
+    "TR 104"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "ETSI identifies limitations of quantum random number generators",
+   "lien_exemple": "https://www.etsi.org/newsroom/press-releases/etsis-identifies-limitations-of-quantum-random-number-generators/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "TR 104"
   },
   {
    "code": "TR-03171",
@@ -21990,36 +18597,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "TRACE"
   },
   {
-   "code": "TRM",
-   "variantes": [
-    "TRM"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "US Sanctions Iranian $6bn Crypto “Exchange” Shelbit",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/us-sanctions-iranian-6bn-crypto/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TRM"
-  },
-  {
-   "code": "TSMC",
-   "variantes": [
-    "TSMC"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TSMC"
-  },
-  {
    "code": "TSV 20260018",
    "variantes": [
     "TSV 20260018"
@@ -22080,21 +18657,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "TWINT"
   },
   {
-   "code": "TÜV",
-   "variantes": [
-    "TÜV"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Hisense leva tecnologia RGB MiniLED evo com Chromagic 2.0 à sua gama de TVs na IFA",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/hisense-leva-tecnologia-rgb-miniled-evo-com-chromagic-2-0-a-sua-gama-de-tvs-na-ifa/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TÜV"
-  },
-  {
    "code": "UA",
    "variantes": [
     "UA"
@@ -22110,21 +18672,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "UA"
   },
   {
-   "code": "UAT-7810",
-   "variantes": [
-    "UAT-7810"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "China-Linked APT Expands Proxy Network With New Malware",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/uat-7810-china-apt-orb-proxy/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "UAT-7810"
-  },
-  {
    "code": "UBB",
    "variantes": [
     "UBB"
@@ -22138,21 +18685,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "UBB"
-  },
-  {
-   "code": "UBTECH",
-   "variantes": [
-    "UBTECH"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nova fábrica na China pretende produzir mais robots humanoides num ano do que se venderam em 2025 globalmente",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/nova-fabrica-na-china-pretende-produzir-mais-robots-humanoides-num-ano-do-que-se-venderam-em-2025-globalmente/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "UBTECH"
   },
   {
    "code": "UCL",
@@ -22185,19 +18717,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "UE/EEE"
   },
   {
-   "code": "UEFA",
+   "code": "UEFI",
    "variantes": [
-    "UEFA"
+    "UEFI"
    ],
    "langues": [
-    "pt"
+    "en",
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Hisense leva o V AIOS e a visão “Companion Living” à IFA 2026 e renova parceria com a UEFA até 2028",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/hisense-leva-o-v-aios-e-a-visao-companion-living-a-ifa-2026-e-renova-parceria-com-a-uefa-ate-2028/",
+   "exemple": "Eleven Vulnerable UEFI Shims Enable Secure Boot Bypass",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/uefi-shims-secure-boot-bypass/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "UEFA"
+   "fr": "UEFI"
   },
   {
    "code": "UHF",
@@ -22213,21 +18746,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "UHF"
-  },
-  {
-   "code": "UI9",
-   "variantes": [
-    "UI9"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Galaxy S26 FE é a porta de entrada para funcionalidades de IA da linha premium da Samsung",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/galaxy-s26-fe-e-a-porta-de-entrada-para-funcionalidades-de-ia-da-linha-premium-da-samsung/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "UI9"
   },
   {
    "code": "UKE25",
@@ -22258,21 +18776,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "UKHSA"
-  },
-  {
-   "code": "UL",
-   "variantes": [
-    "UL"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Inside UL - UL.com",
-   "lien_exemple": "https://urldefense.com/v3/__https://www.ul.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxhx5Kf0v$",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "UL"
   },
   {
    "code": "UMAS",
@@ -22320,21 +18823,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "UNESCO"
   },
   {
-   "code": "UNISOC",
-   "variantes": [
-    "UNISOC"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "UNISOC Modem Flaw Enables Remote Code Execution via Video Calls",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/unisoc-modem-flaw-rce-calls/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "UNISOC"
-  },
-  {
    "code": "UODO 2026",
    "variantes": [
     "UODO 2026"
@@ -22350,21 +18838,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "UODO 2026"
   },
   {
-   "code": "US2",
-   "variantes": [
-    "US2"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Alleged Scattered Spider Member Extradited to US",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/scattered-spider-member-extradited/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "US2"
-  },
-  {
    "code": "USB",
    "variantes": [
     "USB"
@@ -22378,21 +18851,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "USB"
-  },
-  {
-   "code": "USB-C",
-   "variantes": [
-    "USB-C"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Philips estreia monitor com ecrã curvo ultrawide de 34 polegadas com 200 Hz e iluminação Ambiglow com IA",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/philips-lanca-monitor-de-gaming-com-ecra-curvo-ultrawide-de-34-polegadas-com-200-hz-e-iluminacao-ambiglow-com-ia/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "USB-C"
   },
   {
    "code": "UST",
@@ -22455,66 +18913,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "V8"
   },
   {
-   "code": "V900",
-   "variantes": [
-    "V900"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Alibaba mostra “músculo” em IA às vésperas da cimeira Trump-Xi Jinping, com novo chip e planos para modelo de 10 biliões de parâmetros",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/alibaba-mostra-musculo-em-ia-as-vesperas-da-cimeira-trump-xi-com-novo-chip-e-planos-para-modelo-de-10-bilioes-de-parametros/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "V900"
-  },
-  {
-   "code": "VA",
-   "variantes": [
-    "VA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Philips estreia monitor com ecrã curvo ultrawide de 34 polegadas com 200 Hz e iluminação Ambiglow com IA",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/philips-lanca-monitor-de-gaming-com-ecra-curvo-ultrawide-de-34-polegadas-com-200-hz-e-iluminacao-ambiglow-com-ia/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VA"
-  },
-  {
-   "code": "VASS",
-   "variantes": [
-    "VASS"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NATEEVO nombra a Pedro Latasa nuevo CEO de la empresa en una etapa alineada con el Grupo VASS",
-   "lien_exemple": "https://www.computing.es/mercado-ti/nateevo-nombra-a-pedro-latasa-nuevo-ceo-de-la-empresa-en-una-etapa-alineada-con-el-grupo-vass/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VASS"
-  },
-  {
-   "code": "VCO",
-   "variantes": [
-    "VCO"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Arista patches actively exploited VeloCloud Orchestrator zero-day",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VCO"
-  },
-  {
    "code": "VDI",
    "variantes": [
     "VDI"
@@ -22530,21 +18928,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "VDI"
   },
   {
-   "code": "VDR",
-   "variantes": [
-    "VDR"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "FedRAMP VDR & VER: Daily Scans Are Only the Beginning",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VDR"
-  },
-  {
    "code": "VDS",
    "variantes": [
     "VDS"
@@ -22558,21 +18941,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "VDS"
-  },
-  {
-   "code": "VER",
-   "variantes": [
-    "VER"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "FedRAMP VDR & VER: Daily Scans Are Only the Beginning",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VER"
   },
   {
    "code": "VGVP",
@@ -22603,36 +18971,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "VHCN"
-  },
-  {
-   "code": "VINCE-NT",
-   "variantes": [
-    "VINCE-NT"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CISA Upgrades Vulnerability Reporting Platform with More Automation",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/cisa-upgrades-vulnerability/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VINCE-NT"
-  },
-  {
-   "code": "VISEO",
-   "variantes": [
-    "VISEO"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "VISEO adquiere la consultora italiana AKC",
-   "lien_exemple": "https://www.computing.es/mercado-ti/viseo-adquiere-la-consultora-italiana-akc/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VISEO"
   },
   {
    "code": "VLOSE",
@@ -22680,21 +19018,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "VRAM"
   },
   {
-   "code": "VS",
-   "variantes": [
-    "VS"
-   ],
-   "langues": [
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Nieuwe golf malafide npm packages toegeschreven aan Noord-Koreaanse WaterPlum groepering",
-   "lien_exemple": "https://www.security.nl/posting/954145/Nieuwe+golf+malafide+npm+packages+toegeschreven+aan+Noord-Koreaanse+WaterPlum+groepering?channel=rss",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VS"
-  },
-  {
    "code": "VSX",
    "variantes": [
     "VSX"
@@ -22725,21 +19048,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "VWS"
   },
   {
-   "code": "VZP",
-   "variantes": [
-    "VZP"
-   ],
-   "langues": [
-    "cs"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Žádost o informace ze dne 4.8.2026",
-   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-4-8-2026/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "VZP"
-  },
-  {
    "code": "WACC",
    "variantes": [
     "WACC"
@@ -22768,21 +19076,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "WAVEO"
-  },
-  {
-   "code": "WDS",
-   "variantes": [
-    "WDS"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Microsoft plans to deprecate Windows Deployment Services",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-deprecate-windows-deployment-services-after-windows-server-2025/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "WDS"
   },
   {
    "code": "WEBCON",
@@ -22833,21 +19126,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "WKO"
   },
   {
-   "code": "WLTP",
-   "variantes": [
-    "WLTP"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "A2 e-tron: Audi ressuscita um ícone com o elétrico mais eficiente de sempre da marca",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/a2-e-tron-audi-ressuscita-um-icone-com-o-eletrico-mais-eficiente-de-sempre-da-marca/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "WLTP"
-  },
-  {
    "code": "WNC",
    "variantes": [
     "WNC"
@@ -22863,22 +19141,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "WNC"
   },
   {
-   "code": "WP",
-   "variantes": [
-    "WP"
-   ],
-   "langues": [
-    "en",
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Automattic blocks WP Engine’s access to WordPress resources",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/automattic-blocks-wp-engines-access-to-wordpress-resources/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "WP"
-  },
-  {
    "code": "WP5",
    "variantes": [
     "WP5"
@@ -22892,21 +19154,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "WP5"
-  },
-  {
-   "code": "WQHD",
-   "variantes": [
-    "WQHD"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Philips estreia monitor com ecrã curvo ultrawide de 34 polegadas com 200 Hz e iluminação Ambiglow com IA",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/philips-lanca-monitor-de-gaming-com-ecra-curvo-ultrawide-de-34-polegadas-com-200-hz-e-iluminacao-ambiglow-com-ia/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "WQHD"
   },
   {
    "code": "WRC",
@@ -22939,21 +19186,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "WRC27"
   },
   {
-   "code": "WSA",
-   "variantes": [
-    "WSA"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "WSA Portugal tem candidaturas abertas para projetos com impacto",
-   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/wsa-portugal-tem-candidaturas-abertas-para-projetos-com-impacto/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "WSA"
-  },
-  {
    "code": "WSJ",
    "variantes": [
     "WSJ"
@@ -22969,36 +19201,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "WSJ"
   },
   {
-   "code": "WWH",
-   "variantes": [
-    "WWH"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "WWH-Club credit card market admins arrested after cash spending spree",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/wwh-club-credit-card-market-admins-arrested-after-cash-spending-spree/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "WWH"
-  },
-  {
-   "code": "X10",
-   "variantes": [
-    "X10"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "X10"
-  },
-  {
    "code": "X11",
    "variantes": [
     "X11"
@@ -23012,36 +19214,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "X11"
-  },
-  {
-   "code": "X20",
-   "variantes": [
-    "X20"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ROG Xbox Ally X20 já tem data de chegada (e traz companhia). Pré-encomendas estão abertas",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rog-xbox-ally-x20-ja-tem-data-de-chegada-e-traz-companhia-pre-encomendas-estao-abertas/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "X20"
-  },
-  {
-   "code": "X9",
-   "variantes": [
-    "X9"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
-   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "X9"
   },
   {
    "code": "XAI",
@@ -23104,21 +19276,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "XML-External-Entity-Angriffe"
   },
   {
-   "code": "XREAL",
-   "variantes": [
-    "XREAL"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ROG Xbox Ally X20 já tem data de chegada (e traz companhia). Pré-encomendas estão abertas",
-   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rog-xbox-ally-x20-ja-tem-data-de-chegada-e-traz-companhia-pre-encomendas-estao-abertas/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "XREAL"
-  },
-  {
    "code": "XZ",
    "variantes": [
     "XZ"
@@ -23134,19 +19291,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "XZ"
   },
   {
-   "code": "YAML",
+   "code": "ZCS",
    "variantes": [
-    "YAML"
+    "ZCS"
    ],
    "langues": [
-    "en"
+    "it"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "How One Kubernetes YAML Can Hand Over a GCP Organization",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/how-one-kubernetes-yaml-can-hand-over-a-gcp-organization/",
+   "premier_vu": "2026-09-28",
+   "exemple": "Risolte vulnerabilità in Zimbra Collaboration Suite",
+   "lien_exemple": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-zimbra-collaboration-suite",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "YAML"
+   "fr": "ZCS"
   },
   {
    "code": "ZENITH",
@@ -23164,81 +19321,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ZENITH"
   },
   {
-   "code": "ZESTUM",
-   "variantes": [
-    "ZESTUM"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Ver, ouvir e agora cheirar: nova Scentbar transporta aromas para os videojogos (e não só)",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/ver-ouvir-e-agora-cheirar-nova-scentbar-transporta-aromas-para-os-videojogos-e-nao-so/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ZESTUM"
-  },
-  {
-   "code": "ZWO",
-   "variantes": [
-    "ZWO"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Competição mostra as imagens astronómicas do ano e há um português entre os vencedores",
-   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/competicao-mostra-as-imagens-astronomicas-do-ano-e-ha-um-portugues-entre-os-vencedores/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ZWO"
-  },
-  {
-   "code": "ΑΝ",
-   "variantes": [
-    "ΑΝ"
-   ],
-   "langues": [
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Απόρριψη προσφυγής αλλοδαπού για διαγραφή του από τον Εθνικό Κατάλογο Ανεπιθύμητων Αλλοδαπών (Ε.Κ.ΑΝ.Α.)",
-   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/aporripsi-prosfygis-allodapoy-gia-diagrafi-toy-apo-ton-ethniko-katalogo",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ΑΝ"
-  },
-  {
-   "code": "ΑΠΑ",
-   "variantes": [
-    "ΑΠΑ"
-   ],
-   "langues": [
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Σε λειτουργία η Ηλεκτρονική Πλατφόρμα Αξιολόγησης Επιπέδου Κυβερνοασφάλειας αποκλειστικά φορέων της Αρχής Πολιτικής Αεροπορίας (ΑΠΑ)",
-   "lien_exemple": "https://cyber.gov.gr/se-leitoyrgia-i-ilektroniki-platforma-axiologisis-epipedoy-kyvernoasfaleias-apokleistika-foreon-tis-archis-politikis-aeroporias-apa/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ΑΠΑ"
-  },
-  {
-   "code": "ΑΨΑ",
-   "variantes": [
-    "ΑΨΑ"
-   ],
-   "langues": [
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Στρατηγικά θέματα κυβερνοασφάλειας στο επίκεντρο της διήμερης θεσμικής συνάντησης ΑΨΑ-ΕΑΚ",
-   "lien_exemple": "https://cyber.gov.gr/stratigika-themata-kyvernoasfaleias-sto-epikentro-tis-diimeris-thesmikis-synantisis-apsa-eak/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ΑΨΑ"
-  },
-  {
    "code": "ΔΤ",
    "variantes": [
     "ΔΤ"
@@ -23252,21 +19334,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ΔΤ"
-  },
-  {
-   "code": "ΕΕΤΑΑ",
-   "variantes": [
-    "ΕΕΤΑΑ"
-   ],
-   "langues": [
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Απόφαση για περιστατικό παραβίασης προσωπικών δεδομένων ΕΕΤΑΑ με την ιδιότητά του εκτελούντος την επεξεργασία για λογαριασμό του υπευθύνου επεξεργασίας ΥΚΟΙΣΟ",
-   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/apofasi-gia-peristatiko-parabiasis-prosopikon-dedomenon-eetaa-me-tin",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ΕΕΤΑΑ"
   },
   {
    "code": "ΕΡΤ1",
@@ -23284,21 +19351,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ΕΡΤ1"
   },
   {
-   "code": "ΗΔΥΚΑ",
-   "variantes": [
-    "ΗΔΥΚΑ"
-   ],
-   "langues": [
-    "el"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "«Η ασφάλεια των διεπαφών των συστήματων δεν μπορεί να αποτελεί μεταγενέστερη προσθήκη» Όλα όσα δήλωσε ο Διοικητής της ΕΑΚ Μ. Μπλέτσας σε εκδήλωση της ΗΔΥΚΑ",
-   "lien_exemple": "https://cyber.gov.gr/i-asfaleia-ton-diepafon-ton-systimaton-den-mporei-na-apotelei-metagenesteri-prosthiki-ola-osa-dilose-o-dioikitis-tis-eak-m-mpletsas-se-ekdilosi-tis-idyka/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ΗΔΥΚΑ"
-  },
-  {
    "code": "ΜΕΤΑ",
    "variantes": [
     "ΜΕΤΑ"
@@ -23314,49 +19366,49 @@ window.VEILLE_ACRONYMES = {
    "fr": "ΜΕΤΑ"
   },
   {
-   "code": "ΠΔ",
+   "code": "A2",
    "variantes": [
-    "ΠΔ"
+    "A2"
    ],
    "langues": [
-    "el"
+    "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Γνωμοδότηση επί σχεδίου ΠΔ του Υπουργείου Ναυτιλίας και Νησιωτικής Πολιτικής",
-   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/gnomodotisi-epi-shedioy-pd-toy-ypoyrgeioy-naytilias-kai-nisiotikis",
-   "nb_articles": 1,
+   "exemple": "A2 e-tron: Audi ressuscita um ícone com o elétrico mais eficiente de sempre da marca",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/a2-e-tron-audi-ressuscita-um-icone-com-o-eletrico-mais-eficiente-de-sempre-da-marca/",
+   "nb_articles": 0,
    "dans_glossaire": false,
-   "fr": "ΠΔ"
+   "fr": "A2"
   },
   {
-   "code": "ΣΕΠΕ",
+   "code": "A20",
    "variantes": [
-    "ΣΕΠΕ"
+    "A20"
    ],
    "langues": [
-    "el"
+    "pt"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "«Στρατηγική προτεραιότητα η Κυβερνοασφάλεια σε Άμυνα και Τεχνολογία» – Παρέμβαση του Διοικητή της ΕΑΚ Μ. Μπλέτσα στο συνέδριο του ΣΕΠΕ",
-   "lien_exemple": "https://cyber.gov.gr/stratigiki-proteraiotita-i-kyvernoasfaleia-se-amyna-kai-technologia-paremvasi-toy-dioikiti-tis-eak-m-mpletsa-sto-synedrio-toy-sepe/",
-   "nb_articles": 1,
+   "exemple": "iPhone 18 Pro e Pro Max com bateria reforçada, chip A20 Pro e abertura ajustável nas câmaras",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/iphone-18-pro-e-pro-max-com-bateria-reforcada-chip-a20-pro-e-abertura-ajustavel-nas-camaras/",
+   "nb_articles": 0,
    "dans_glossaire": false,
-   "fr": "ΣΕΠΕ"
+   "fr": "A20"
   },
   {
-   "code": "ΥΚΟΙΣΟ",
+   "code": "AAM/PPA",
    "variantes": [
-    "ΥΚΟΙΣΟ"
+    "AAM/PPA"
    ],
    "langues": [
-    "el"
+    "it"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Απόφαση για περιστατικό παραβίασης προσωπικών δεδομένων ΕΕΤΑΑ με την ιδιότητά του εκτελούντος την επεξεργασία για λογαριασμό του υπευθύνου επεξεργασίας ΥΚΟΙΣΟ",
-   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/apofasi-gia-peristatiko-parabiasis-prosopikon-dedomenon-eetaa-me-tin",
-   "nb_articles": 1,
+   "premier_vu": "2026-09-25",
+   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04965/SG",
+   "nb_articles": 0,
    "dans_glossaire": false,
-   "fr": "ΥΚΟΙΣΟ"
+   "fr": "AAM/PPA"
   },
   {
    "code": "ABB",
@@ -23374,6 +19426,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ABB"
   },
   {
+   "code": "ABC",
+   "variantes": [
+    "ABC"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Mar de las Heras, directora de Operaciones de Procesia, entre los directivos del año de ‘ABC’",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/mar-de-las-heras-de-procesia-entre-los-directivos-del-ano-de-abc_20260615.html",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ABC"
+  },
+  {
    "code": "ABN",
    "variantes": [
     "ABN"
@@ -23387,6 +19454,66 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "ABN"
+  },
+  {
+   "code": "ACM",
+   "variantes": [
+    "ACM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "House of Representatives passed ACM Call-in Power Act amending the Competition Act of 1997 including merger control regulation (No. 36774)",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43891-house-of-representatives-passed-acm-call-in-power-act-amending-the-competition-act-of-1997-including-merger-control-regulation-no-36774",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ACM"
+  },
+  {
+   "code": "ADB",
+   "variantes": [
+    "ADB"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "THost9 Android RAT Pairs Packed Loader With ADB Worm",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/thost9-android-rat-packed-loader/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ADB"
+  },
+  {
+   "code": "ADC3",
+   "variantes": [
+    "ADC3"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nabiax inicia la construcción de ADC3, su nuevo centro de datos en Alcalá de Henares",
+   "lien_exemple": "https://www.computing.es/infraestructuras/nabiax-inicia-la-construccion-de-adc3-su-nuevo-centro-de-datos-en-alcala-de-henares/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ADC3"
+  },
+  {
+   "code": "ADN",
+   "variantes": [
+    "ADN"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "DeepMind lança mapa preditivo que cobre todas as mutações possíveis no genoma humano",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/deepmind-lanca-mapa-preditivo-que-cobre-todas-as-mutacoes-possiveis-no-genoma-humano/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ADN"
   },
   {
    "code": "ADS",
@@ -23432,6 +19559,81 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "AGH"
+  },
+  {
+   "code": "AGRA",
+   "variantes": [
+    "AGRA"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Inetum cede al Banco de Alimentos de Asturias la aplicación AGRA",
+   "lien_exemple": "https://www.computing.es/erp/inetum-cede-al-banco-de-alimentos-de-asturias-la-aplicacion-agra/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "AGRA"
+  },
+  {
+   "code": "AIOS",
+   "variantes": [
+    "AIOS"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Hisense leva o V AIOS e a visão “Companion Living” à IFA 2026 e renova parceria com a UEFA até 2028",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/hisense-leva-o-v-aios-e-a-visao-companion-living-a-ifa-2026-e-renova-parceria-com-a-uefa-ate-2028/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "AIOS"
+  },
+  {
+   "code": "AIT-GUI",
+   "variantes": [
+    "AIT-GUI"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NASA Ground Control Software Flaw Enables Unauthenticated Commands",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/nasa-ground-control-software-flaw/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "AIT-GUI"
+  },
+  {
+   "code": "AKC",
+   "variantes": [
+    "AKC"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "VISEO adquiere la consultora italiana AKC",
+   "lien_exemple": "https://www.computing.es/mercado-ti/viseo-adquiere-la-consultora-italiana-akc/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "AKC"
+  },
+  {
+   "code": "ALSIA",
+   "variantes": [
+    "ALSIA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04943/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ALSIA"
   },
   {
    "code": "AMIGDALA",
@@ -23492,6 +19694,67 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "AMRO"
+  },
+  {
+   "code": "ANA",
+   "variantes": [
+    "ANA"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "El CCN redefine la gestión de vulnerabilidades con la nueva versión de su herramienta ANA",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/organismos-ciberseguridad/el-ccn-actualiza-ana-para-reforzar-la-gestion-de-vulnerabilidades_20260702.html",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ANA"
+  },
+  {
+   "code": "ANI",
+   "variantes": [
+    "ANI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Workshop EIC Pathfinder Challenges 2026 quer ajudar a preparar uma proposta de sucesso",
+   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/workshop-eic-pathfinder-challenges-2026-quer-ajudar-a-preparar-uma-proposta-de-sucesso/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ANI"
+  },
+  {
+   "code": "ANPD",
+   "variantes": [
+    "ANPD"
+   ],
+   "langues": [
+    "es",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Notas de la IAPP América Latina: De orientadora a fiscalizadora — agosto marca un punto de inflexión para la ANPD",
+   "lien_exemple": "https://iapp.org/news/a/notas-de-la-iapp-am-rica-latina-de-orientadora-a-fiscalizadora-agosto-marca-un-punto-de-inflexi-n-para-la-anpd",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ANPD"
+  },
+  {
+   "code": "APB",
+   "variantes": [
+    "APB"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Não passes cartão à fraude: Associação de bancos alerta para burlas e quer promover comportamentos seguros",
+   "lien_exemple": "https://tek.sapo.pt/noticias/artigos/nao-passes-cartao-a-fraude-associacao-de-bancos-alerta-para-burlas-e-quer-promover-comportamentos-seguros/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "APB"
   },
   {
    "code": "APPI",
@@ -23555,6 +19818,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "AR-in-a-Box"
   },
   {
+   "code": "ARPANET",
+   "variantes": [
+    "ARPANET"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "¿Sabes cuál fue el primer virus informático de la historia?",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/sabes-cual-fue-el-primer-virus-informatico-de-la-historia_20260819.html",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ARPANET"
+  },
+  {
+   "code": "ARR",
+   "variantes": [
+    "ARR"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "RBRK: Subscription ARR up 33% and outlook raised amid strong demand for AI-driven cyber resilience",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60281218497&f=News&s=14&ci=107203&i=0&si=251314&fmi=660724092&e=TradingView&d=116434&mbc=Q1QzL2E9NjAyODEyMTg0OTcmcD0xNGUmdj0xJng9eFZwV1EyNkRIQkdFZXZLbHdrNWR6USZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1788159957000&ck=928e08717238ee79__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqlTQX7wp$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ARR"
+  },
+  {
+   "code": "ARRI",
+   "variantes": [
+    "ARRI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Honor Magic 9 Pro Max chega em setembro com câmaras de 200 MP e um design ousado",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/honor-magic-9-pro-max-chega-em-setembro-com-camaras-de-200-mp-e-um-design-ousado/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ARRI"
+  },
+  {
    "code": "ASU",
    "variantes": [
     "ASU"
@@ -23585,6 +19893,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "BAS"
   },
   {
+   "code": "BBC",
+   "variantes": [
+    "BBC"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Xbox admite que o “Project Helix” pode não ser uma única consola, mas uma família de dispositivos",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/xbox-admite-que-o-project-helix-pode-nao-ser-uma-unica-consola-mas-uma-familia-de-dispositivos/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BBC"
+  },
+  {
+   "code": "BBCC",
+   "variantes": [
+    "BBCC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "DGKV Participates in BBCC Tax & Regulatory Update 2026",
+   "lien_exemple": "https://dgkv.com:443/news/dgkv-participates-in-bbcc-tax-regulatory-update-2026",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BBCC"
+  },
+  {
    "code": "BCD",
    "variantes": [
     "BCD"
@@ -23598,6 +19936,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "BCD"
+  },
+  {
+   "code": "BCD-180",
+   "variantes": [
+    "BCD-180"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Žádost o informace ze dne 27.7.2026",
+   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-27-7-2026-2/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BCD-180"
+  },
+  {
+   "code": "BDA",
+   "variantes": [
+    "BDA"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Anästhesieverbände entwickeln Handlungsanweisungen zum Umgang mit sexualisierter Belästigung",
+   "lien_exemple": "https://www.aerzteblatt.de/news/anasthesieverbande-entwickeln-handlungsanweisungen-zum-umgang-mit-sexualisierter-belastigung-82561ee0-6813-4a40-893a-9ec92d0ae5f1",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BDA"
   },
   {
    "code": "BEA",
@@ -23645,6 +20013,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "BGK"
   },
   {
+   "code": "BI",
+   "variantes": [
+    "BI"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "No preguntes. Espera a que te lo cuenten",
+   "lien_exemple": "https://www.computing.es/opinion/no-preguntes-espera-a-que-te-lo-cuenten/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BI"
+  },
+  {
    "code": "BLT",
    "variantes": [
     "BLT"
@@ -23673,6 +20056,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "BMI"
+  },
+  {
+   "code": "BN12",
+   "variantes": [
+    "BN12"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Asus estreia os seus primeiros routers Wi-Fi 8. Novos modelos chegam a Portugal em outubro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-estreia-os-seus-primeiros-routers-wi-fi-8-novos-modelos-chegam-a-portugal-em-outubro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BN12"
+  },
+  {
+   "code": "BOE-A-2026-19846",
+   "variantes": [
+    "BOE-A-2026-19846"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
+   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BOE-A-2026-19846"
   },
   {
    "code": "BRAF",
@@ -23720,6 +20133,81 @@ window.VEILLE_ACRONYMES = {
    "fr": "BSG 2026"
   },
   {
+   "code": "BSL",
+   "variantes": [
+    "BSL"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "British Sign Language (BSL) 5-year plan: Department for Science, Innovation and Technology",
+   "lien_exemple": "https://www.gov.uk/government/publications/british-sign-language-5-year-plan-department-for-science-innovation-and-technology",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BSL"
+  },
+  {
+   "code": "C2",
+   "variantes": [
+    "C2"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Six npm Packages Read C2 Addresses From Ethereum Wallet",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/npm-packages-ethereum-wallet-c2/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "C2"
+  },
+  {
+   "code": "C3S",
+   "variantes": [
+    "C3S"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Agosto bate recordes de temperatura e marca o verão mais quente de sempre na Europa Ocidental",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/agosto-bate-recordes-de-temperatura-e-marca-o-verao-mais-quente-de-sempre-na-europa-ocidental/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "C3S"
+  },
+  {
+   "code": "CAN-SPAM",
+   "variantes": [
+    "CAN-SPAM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Verkada to pay $2.95 million for alleged CAN-SPAM Act violations",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/verkada-to-pay-295-million-for-alleged-can-spam-act-violations/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CAN-SPAM"
+  },
+  {
+   "code": "CAR-T-Zell-Therapie",
+   "variantes": [
+    "CAR-T-Zell-Therapie"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "CAR-T-Zell-Therapie: 1,5 Jahre medikamentenfreie Remission bei rheumatoider Arthritis",
+   "lien_exemple": "https://www.aerzteblatt.de/news/car-t-zell-therapie-15-jahre-medikamentenfreie-remission-bei-rheumatoider-arthritis-8c0b713a-c383-4b32-bafa-97c09d25d248",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CAR-T-Zell-Therapie"
+  },
+  {
    "code": "CCDCOE",
    "variantes": [
     "CCDCOE"
@@ -23733,6 +20221,141 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "CCDCOE"
+  },
+  {
+   "code": "CCH",
+   "variantes": [
+    "CCH"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "VISEO adquiere la consultora italiana AKC",
+   "lien_exemple": "https://www.computing.es/mercado-ti/viseo-adquiere-la-consultora-italiana-akc/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CCH"
+  },
+  {
+   "code": "CCN-CERT",
+   "variantes": [
+    "CCN-CERT"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "El CCN redefine la gestión de vulnerabilidades con la nueva versión de su herramienta ANA",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/organismos-ciberseguridad/el-ccn-actualiza-ana-para-reforzar-la-gestion-de-vulnerabilidades_20260702.html",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CCN-CERT"
+  },
+  {
+   "code": "CCPA",
+   "variantes": [
+    "CCPA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "California authorities announce largest CCPA fine to date",
+   "lien_exemple": "https://iapp.org/news/a/california-authorities-announce-largest-ccpa-fine-to-date",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CCPA"
+  },
+  {
+   "code": "CD19-CAR-T-Zell-Therapie",
+   "variantes": [
+    "CD19-CAR-T-Zell-Therapie"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "CAR-T-Zell-Therapie: 1,5 Jahre medikamentenfreie Remission bei rheumatoider Arthritis",
+   "lien_exemple": "https://www.aerzteblatt.de/news/car-t-zell-therapie-15-jahre-medikamentenfreie-remission-bei-rheumatoider-arthritis-8c0b713a-c383-4b32-bafa-97c09d25d248",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CD19-CAR-T-Zell-Therapie"
+  },
+  {
+   "code": "CDU",
+   "variantes": [
+    "CDU"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Linnemann zeigt sich vor Abgeordneten entscheidungsfreudig",
+   "lien_exemple": "https://www.aerzteblatt.de/news/linnemann-zeigt-sich-vor-abgeordneten-entscheidungsfreudig-f6b94bd7-24a9-4d13-82b5-1ff632c61a79",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CDU"
+  },
+  {
+   "code": "CDZ",
+   "variantes": [
+    "CDZ"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Informace pro žadatele výzvy CDZ IV",
+   "lien_exemple": "https://mzd.gov.cz/informace-pro-zadatele-vyzvy-cdz-iv/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CDZ"
+  },
+  {
+   "code": "CEDE",
+   "variantes": [
+    "CEDE"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Lo que J.Forrester, S.Beer y Max Weber le enseñarían a un director de operaciones",
+   "lien_exemple": "https://www.computing.es/movilidad/lo-que-j-forrester-s-beer-y-max-weber-le-ensenarian-a-un-director-de-operaciones/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CEDE"
+  },
+  {
+   "code": "CEE",
+   "variantes": [
+    "CEE"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "DGKV Recognised Among CEE’s Leading Law Firms in Legal 500 Awards 2026 Shortlist",
+   "lien_exemple": "https://dgkv.com:443/news/dgkv-recognised-among-cee-s-leading-law-firms-in-legal-500-awards-2026-shortlist",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CEE"
+  },
+  {
+   "code": "CEER",
+   "variantes": [
+    "CEER"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CEER Exobot: Arábia Saudita revela o seu primeiro carro elétrico com 1.111 cavalos e um design único",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/ceer-exobot-arabia-saudita-revela-o-seu-primeiro-carro-eletrico-com-1-111-cavalos-e-um-design-unico/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CEER"
   },
   {
    "code": "CEIDG",
@@ -23750,6 +20373,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CEIDG"
   },
   {
+   "code": "CEKAS",
+   "variantes": [
+    "CEKAS"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Certifikace odborné způsobilosti adiktologických služeb",
+   "lien_exemple": "https://mzd.gov.cz/certifikace-odborne-zpusobilosti-adiktologickych-sluzeb/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CEKAS"
+  },
+  {
    "code": "CHF",
    "variantes": [
     "CHF"
@@ -23763,6 +20401,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "CHF"
+  },
+  {
+   "code": "CHT",
+   "variantes": [
+    "CHT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "CHT Security Receives Frost & Sullivan's 2026 Taiwan Company of the Year Recognition for Excellence in Cybersecurity Services",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60258809764&f=News&s=14&ci=107203&i=0&si=320256&fmi=672749632&e=TheInsiders.com.au&d=116434&mbc=Q1QzL2E9NjAyNTg4MDk3NjQmcD0xNGUmdj0xJng9REN4RTlDNVdkUTh2WVVhTnZSb3ZqQSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735268&ai=338121&ac=338121_1788159957000&ck=ca32e0a12eab3924__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqsdzBSZR$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CHT"
   },
   {
    "code": "CI/CD",
@@ -23780,6 +20433,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CI/CD"
   },
   {
+   "code": "CIPN",
+   "variantes": [
+    "CIPN"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Psilocybin könnte Chemotherapie-induzierte periphere Neuropathie verhindern",
+   "lien_exemple": "https://www.aerzteblatt.de/news/psilocybin-konnte-chemotherapie-induzierte-periphere-neuropathie-verhindern-95a14394-79ee-4b69-b132-41216257c7be",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CIPN"
+  },
+  {
    "code": "CIRAN",
    "variantes": [
     "CIRAN"
@@ -23793,6 +20461,66 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "CIRAN"
+  },
+  {
+   "code": "CMA",
+   "variantes": [
+    "CMA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Competition and Markets Authority opened consultation on conduct requirement on Google governing publisher content attribution by search providers on choice screens",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43905-competition-and-markets-authority-opened-consultation-on-conduct-requirement-on-google-governing-publisher-content-attribution-by-search-providers-on-choice-screens",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CMA"
+  },
+  {
+   "code": "CMMC",
+   "variantes": [
+    "CMMC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "US Defense Contractors Admit Their Rising CMMC Scores May Not Be Accurate",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/us-defense-contractors-cmmc-scores/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CMMC"
+  },
+  {
+   "code": "COPD",
+   "variantes": [
+    "COPD"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Lachtherapie könnte Dyspnoe bei COPD lindern",
+   "lien_exemple": "https://www.aerzteblatt.de/news/lachtherapie-konnte-dyspnoe-bei-copd-lindern-c1e11b2c-49ea-4340-9ca3-9a147070e443",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "COPD"
+  },
+  {
+   "code": "CORTES",
+   "variantes": [
+    "CORTES"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
+   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CORTES"
   },
   {
    "code": "CPCE",
@@ -23825,6 +20553,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "CPEI"
   },
   {
+   "code": "CQ",
+   "variantes": [
+    "CQ"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "CQ Health Morning Take: Medicare payments, HHS nomination in the spotlight",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9OWMzZWViJmZpZD0xNzM1MjY5JmNpZD1NVEEzTWpBeiZ1aWQ9TVRFMk5ETTA&a=60423437137&f=Print&s=14&ci=107203&i=335-1601&si=76330&fmi=673402986&e=CQ*Healthbeat&d=116434&h=1&mbc=Q1QzL2E9NjA0MjM0MzcxMzcmcD0xNGUmdj0xJmhsaD05YzNlZWImZmlkPTE3MzUyNjkmeD1HV1ZoLW9veEp3dm42bE9sdUxtN0lnJnUxPU5EJnUyPXVwLXVybjp1c2VyOlBBMTg2ODE2NTgy&fi=1735269&ai=338121&ac=338121_1789974489000&ck=af31a90eac2c9c2d__;Kw!!NEMsmePo_HYI!cC2gXvEnV8ud0G6ikrvMZOs9tOH1o7u0NpF37VXz22KjqqfoqDQBi1VhiJfbM5RIUAZuHVfZOQrkdJGFDidCUAxaEeAo$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CQ"
+  },
+  {
+   "code": "CRC",
+   "variantes": [
+    "CRC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "August 18, 2026: Georgia Rural Health Gains Cyber Resilience Through Augusta University CRC and HITRUST Certification",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YTVhMTM0NDgmZmlkPTE3MzUyNjgmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60276302540&f=News&s=14&ci=107203&i=335-1601&si=87025&fmi=673373884&e=News*Bites*-*Private*Companies&d=116434&h=1&mbc=Q1QzL2E9NjAyNzYzMDI1NDAmcD0xNGUmdj0xJmhsaD1hNWExMzQ0OCZmaWQ9MTczNTI2OCZ4PThIUE14SlN6a1psQ0o5ejZNc0lSbHcmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735268&ai=338121&ac=338121_1788159957000&ck=521e6773096e5757__;KysrKw!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-Bvajrqv0qpUq6$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CRC"
+  },
+  {
    "code": "CREPS",
    "variantes": [
     "CREPS"
@@ -23853,6 +20611,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "CSN"
+  },
+  {
+   "code": "CSV",
+   "variantes": [
+    "CSV"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Google facilita a mudança entre gestores de palavras-passe no Android e inclui transferência de passkeys",
+   "lien_exemple": "https://tek.sapo.pt/mobile/apps/artigos/google-facilita-a-mudanca-entre-gestores-de-palavras-passe-no-android-e-inclui-transferencia-de-passkeys/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CSV"
+  },
+  {
+   "code": "CVE",
+   "variantes": [
+    "CVE"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Microsoft Shatters Patch Tuesday Record With 974 CVE Fixes in September 2026",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CVE"
   },
   {
    "code": "CVE-2020-12812",
@@ -24096,6 +20884,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "CVE-2026-31431"
+  },
+  {
+   "code": "CVE-2026-33385",
+   "variantes": [
+    "CVE-2026-33385"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Vulnerability in Quick.CMS software",
+   "lien_exemple": "https://cert.pl/en/posts/2026/07/CVE-2026-33385/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-33385"
   },
   {
    "code": "CVE-2026-33825",
@@ -24519,6 +21322,67 @@ window.VEILLE_ACRONYMES = {
    "fr": "D/E"
   },
   {
+   "code": "D2T-RA",
+   "variantes": [
+    "D2T-RA"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "CAR-T-Zell-Therapie: 1,5 Jahre medikamentenfreie Remission bei rheumatoider Arthritis",
+   "lien_exemple": "https://www.aerzteblatt.de/news/car-t-zell-therapie-15-jahre-medikamentenfreie-remission-bei-rheumatoider-arthritis-8c0b713a-c383-4b32-bafa-97c09d25d248",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "D2T-RA"
+  },
+  {
+   "code": "D3",
+   "variantes": [
+    "D3"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Watch GT 7 e Watch D3 lideram nova vaga de wearables da Huawei para saúde, desporto e trabalho",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/watch-gt-7-e-watch-d3-lideram-nova-vaga-de-wearables-da-huawei-para-saude-desporto-e-trabalho/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "D3"
+  },
+  {
+   "code": "DA",
+   "variantes": [
+    "DA"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Drogisterijketen DA lekt persoonlijke gegevens van 256.000 klanten",
+   "lien_exemple": "https://www.security.nl/posting/953838/Drogisterijketen+DA+lekt+persoonlijke+gegevens+van+256_000+klanten?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DA"
+  },
+  {
+   "code": "DC",
+   "variantes": [
+    "DC"
+   ],
+   "langues": [
+    "en",
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "A view from DC: A sudden shift in gravity for AI politics",
+   "lien_exemple": "https://iapp.org/news/a/a-view-from-dc-a-sudden-shift-in-gravity-for-ai-politics",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DC"
+  },
+  {
    "code": "DEBRA",
    "variantes": [
     "DEBRA"
@@ -24547,6 +21411,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "DFS"
+  },
+  {
+   "code": "DGAI",
+   "variantes": [
+    "DGAI"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Anästhesieverbände entwickeln Handlungsanweisungen zum Umgang mit sexualisierter Belästigung",
+   "lien_exemple": "https://www.aerzteblatt.de/news/anasthesieverbande-entwickeln-handlungsanweisungen-zum-umgang-mit-sexualisierter-belastigung-82561ee0-6813-4a40-893a-9ec92d0ae5f1",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DGAI"
+  },
+  {
+   "code": "DH",
+   "variantes": [
+    "DH"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Fair Trade Commission commenced pre-review of Uber's proposed acquisition of Delivery Hero",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43896-fair-trade-commission-commenced-pre-review-of-ubers-proposed-acquisition-of-delivery-hero",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DH"
   },
   {
    "code": "DHTMLX",
@@ -24609,6 +21503,81 @@ window.VEILLE_ACRONYMES = {
    "fr": "DIGITAL-2026-SKILLS-10"
   },
   {
+   "code": "DIN-A2-Format",
+   "variantes": [
+    "DIN-A2-Format"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "KBV stellt neue Impfkampagne vor: Material für Praxen verfügbar",
+   "lien_exemple": "https://www.aerzteblatt.de/news/kbv-stellt-neue-impfkampagne-vor-material-fur-praxen-verfugbar-441b66a4-0e7a-46b4-869e-5fef523fc3d4",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DIN-A2-Format"
+  },
+  {
+   "code": "DIR-822A",
+   "variantes": [
+    "DIR-822A"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "D-Link waarschuwt voor kritieke kwetsbaarheid in wifi-router",
+   "lien_exemple": "https://www.security.nl/posting/954188/D-Link+waarschuwt+voor+kritieke+kwetsbaarheid+in+wifi-router?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DIR-822A"
+  },
+  {
+   "code": "DIY",
+   "variantes": [
+    "DIY"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Construa as suas próprias aventuras e partilhe níveis com outros jogadores em DIY Dadish",
+   "lien_exemple": "https://tek.sapo.pt/mobile/apps/artigos/construa-as-suas-proprias-aventuras-e-partilhe-niveis-com-outros-jogadores-em-diy-dadish/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DIY"
+  },
+  {
+   "code": "DLL",
+   "variantes": [
+    "DLL"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Grandoreiro Resurfaces in Mexico With New DLL Sideloading Campaign",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/grandoreiro-mexico-dll-sideloading/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DLL"
+  },
+  {
+   "code": "DMCA",
+   "variantes": [
+    "DMCA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Docker-OSX image used for security research hit by Apple DMCA takedown",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/docker-osx-image-used-for-security-research-hit-by-apple-dmca-takedown/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DMCA"
+  },
+  {
    "code": "DMEA",
    "variantes": [
     "DMEA"
@@ -24639,6 +21608,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "DMEA 2026"
   },
   {
+   "code": "DNVF",
+   "variantes": [
+    "DNVF"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Wie Versorgungsforschung das deutsche Gesundheitswesen leistungsfähiger machen kann",
+   "lien_exemple": "https://www.aerzteblatt.de/news/wie-versorgungsforschung-das-deutsche-gesundheitswesen-leistungsfahiger-machen-kann-11500ab6-c3b6-42fc-9986-c68c399536da",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DNVF"
+  },
+  {
+   "code": "DOI",
+   "variantes": [
+    "DOI"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Psilocybin könnte Chemotherapie-induzierte periphere Neuropathie verhindern",
+   "lien_exemple": "https://www.aerzteblatt.de/news/psilocybin-konnte-chemotherapie-induzierte-periphere-neuropathie-verhindern-95a14394-79ee-4b69-b132-41216257c7be",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DOI"
+  },
+  {
+   "code": "DOJ",
+   "variantes": [
+    "DOJ"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "DOJ: Man hacked networks to pitch cybersecurity services",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/doj-man-hacked-networks-to-pitch-cybersecurity-services/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DOJ"
+  },
+  {
    "code": "DORA14",
    "variantes": [
     "DORA14"
@@ -24652,6 +21666,81 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "DORA14"
+  },
+  {
+   "code": "DOWN",
+   "variantes": [
+    "DOWN"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "TAKE IT DOWN Act: How to comply as the FTC begins enforcement",
+   "lien_exemple": "https://iapp.org/news/a/take-it-down-act-how-to-comply-as-the-ftc-begins-enforcement",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DOWN"
+  },
+  {
+   "code": "DPDPA",
+   "variantes": [
+    "DPDPA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Notes from the Asia-Pacific region: AI ambitions, DPDPA compliance and new digital governance frameworks",
+   "lien_exemple": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-ai-ambitions-dpdpa-compliance-and-new-digital-governance-frameworks",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DPDPA"
+  },
+  {
+   "code": "DPF",
+   "variantes": [
+    "DPF"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "After Slaughter: FTC independence and EU-US DPF face potential challenges",
+   "lien_exemple": "https://iapp.org/news/a/after-slaughter-ftc-independence-and-eu-us-dpf-face-potential-challenges",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DPF"
+  },
+  {
+   "code": "DROP",
+   "variantes": [
+    "DROP"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CalPrivacy discusses DROP enforcement, data broker fee hike",
+   "lien_exemple": "https://iapp.org/news/a/calprivacy-discusses-drop-enforcement-data-broker-fee-hike",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DROP"
+  },
+  {
+   "code": "DSS",
+   "variantes": [
+    "DSS"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Building Cyber Resilience Through Risk, Education and Service  - 10 Sep 2026 18:12 ...regulatory requirements such as ISO 27001, NIST SP 800-53, the CIS Controls, HIPAA , GDPR, CCPA and PCI DSS. Each framework has a different purpose, but organizatio",
+   "lien_exemple": "https://urldefense.com/v3/__https://techbullion.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxlwm87fy$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DSS"
   },
   {
    "code": "DSSC",
@@ -24684,6 +21773,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "DTC"
   },
   {
+   "code": "DXOMARK",
+   "variantes": [
+    "DXOMARK"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nem todas as câmaras de smartphones estabilizam da mesma forma e os testes em cenários reais mostram porquê",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/nem-todas-as-camaras-de-smartphones-estabilizam-da-mesma-forma-e-os-testes-em-cenarios-reais-mostram-porque/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DXOMARK"
+  },
+  {
+   "code": "E2",
+   "variantes": [
+    "E2"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Geely chega a Portugal pela mão da Salvador Caetano com três modelos elétricos e híbridos plug-in",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/geely-chega-a-portugal-pela-mao-da-salvador-caetano-com-tres-modelos-eletricos-e-hibridos-plug-in/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "E2"
+  },
+  {
+   "code": "E5",
+   "variantes": [
+    "E5"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Geely chega a Portugal pela mão da Salvador Caetano com três modelos elétricos e híbridos plug-in",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/geely-chega-a-portugal-pela-mao-da-salvador-caetano-com-tres-modelos-eletricos-e-hibridos-plug-in/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "E5"
+  },
+  {
    "code": "EBA/GL/2020",
    "variantes": [
     "EBA/GL/2020"
@@ -24714,6 +21848,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "EBΑ"
   },
   {
+   "code": "ECA",
+   "variantes": [
+    "ECA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Brazil's Digital ECA: Rethinking monetization and design in games",
+   "lien_exemple": "https://iapp.org/news/a/brazil-s-digital-eca-rethinking-monetization-and-design-in-games",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ECA"
+  },
+  {
+   "code": "ECC",
+   "variantes": [
+    "ECC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Sky ECC encrypted service distributors arrested in Spain, Netherlands",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/sky-ecc-encrypted-service-distributors-arrested-in-spain-netherlands/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ECC"
+  },
+  {
+   "code": "ECDC",
+   "variantes": [
+    "ECDC"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Pozvánka na webinář ECDC o péči o migranty v oblasti HIV, TBC, virových hepatitid a STI",
+   "lien_exemple": "https://mzd.gov.cz/pozvanka-na-webinar-ecdc-o-peci-o-migranty-v-oblasti-hiv-tbc-virovych-hepatitid-a-sti/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ECDC"
+  },
+  {
    "code": "ECDC12",
    "variantes": [
     "ECDC12"
@@ -24729,6 +21908,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "ECDC12"
   },
   {
+   "code": "ECG",
+   "variantes": [
+    "ECG"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Primeiras impressões: Huawei Watch GT 7 e GT 7 Pro equilibram elegância clássica com resistência desportiva",
+   "lien_exemple": "https://tek.sapo.pt/analises/artigos/primeiras-impressoes-huawei-watch-gt-7-e-gt-7-pro-equilibram-elegancia-classica-com-resistencia-desportiva/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ECG"
+  },
+  {
+   "code": "ECMWF",
+   "variantes": [
+    "ECMWF"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Agosto bate recordes de temperatura e marca o verão mais quente de sempre na Europa Ocidental",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/agosto-bate-recordes-de-temperatura-e-marca-o-verao-mais-quente-de-sempre-na-europa-ocidental/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ECMWF"
+  },
+  {
    "code": "EDPB-EDPS",
    "variantes": [
     "EDPB-EDPS"
@@ -24742,6 +21951,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "EDPB-EDPS"
+  },
+  {
+   "code": "EDR",
+   "variantes": [
+    "EDR"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Akira Affiliate Crashes Ransomware After Attempting EDR Evasion",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/akira-affiliate-crashes-ransomware/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "EDR"
+  },
+  {
+   "code": "EDT",
+   "variantes": [
+    "EDT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "16:09 EDT Rubrik reports Q2 adjusted EPS 20c, consensus 4c",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YWFhOGFjNWEmZmlkPTE3MzUyNjYmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60280470121&f=News&s=14&ci=107203&i=335-1601-1930&si=80636&fmi=673817587&e=Theflyonthewall.com&d=116434&h=1&mbc=Q1QzL2E9NjAyODA0NzAxMjEmcD0xNGUmdj0xJmhsaD1hYWE4YWM1YSZmaWQ9MTczNTI2NiZ4PWRLQy1hdnc3VmdIb25UMWNaZzdYN2cmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735266&ai=338121&ac=338121_1788159957000&ck=b381458f26694bd6__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqiyKn3_8$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "EDT"
   },
   {
    "code": "EEA",
@@ -24789,6 +22028,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "EFSD"
   },
   {
+   "code": "EHR",
+   "variantes": [
+    "EHR"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Ireland Emerges as One of the Worlds Most Active EHR Growth Markets, Black Book Research Reports",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60216938985&f=News&s=14&ci=107203&i=0&si=377366&fmi=674444780&e=Lifestyle.TheDam.fm&d=116434&mbc=Q1QzL2E9NjAyMTY5Mzg5ODUmcD0xNGUmdj0xJng9RERJQ3VvMkJCVE9UVTlBRHZoWnRiQSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735268&ai=338121&ac=338121_1787554818000&ck=1a3f859c882c1813__;!!NEMsmePo_HYI!cWTHRJnDXtv6qEZKNGMdU_idBD-2Ocgk0bZaevoOp3_JyajwOZwK65CnkwUGtslUJxih9ib4SDCEguvJUiCWIz765ADX$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "EHR"
+  },
+  {
    "code": "EIS",
    "variantes": [
     "EIS"
@@ -24834,6 +22088,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ELSA"
   },
   {
+   "code": "EM-i",
+   "variantes": [
+    "EM-i"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Geely chega a Portugal pela mão da Salvador Caetano com três modelos elétricos e híbridos plug-in",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/geely-chega-a-portugal-pela-mao-da-salvador-caetano-com-tres-modelos-eletricos-e-hibridos-plug-in/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "EM-i"
+  },
+  {
    "code": "EMEA 2026",
    "variantes": [
     "EMEA 2026"
@@ -24865,6 +22134,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "EMS"
   },
   {
+   "code": "ENCFORGE",
+   "variantes": [
+    "ENCFORGE"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "JadePuffer Returns With Ransomware Designed to Wipe AI Models",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/jadepuffer-ai-model-ransomware/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ENCFORGE"
+  },
+  {
    "code": "EO",
    "variantes": [
     "EO"
@@ -24878,6 +22162,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "EO"
+  },
+  {
+   "code": "EOS",
+   "variantes": [
+    "EOS"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EOS R8 Mark II é nova full frame leve da Canon pensada para viajar, agora também com imagens 3D",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/eos-r8-mark-ii-e-nova-full-frame-leve-da-canon-pensada-para-viajar-agora-tambem-com-imagens-3d/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "EOS"
   },
   {
    "code": "EPMM",
@@ -24896,6 +22195,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "EPMM"
   },
   {
+   "code": "EPS",
+   "variantes": [
+    "EPS"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "16:09 EDT Rubrik reports Q2 adjusted EPS 20c, consensus 4c",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YWFhOGFjNWEmZmlkPTE3MzUyNjYmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60280470121&f=News&s=14&ci=107203&i=335-1601-1930&si=80636&fmi=673817587&e=Theflyonthewall.com&d=116434&h=1&mbc=Q1QzL2E9NjAyODA0NzAxMjEmcD0xNGUmdj0xJmhsaD1hYWE4YWM1YSZmaWQ9MTczNTI2NiZ4PWRLQy1hdnc3VmdIb25UMWNaZzdYN2cmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735266&ai=338121&ac=338121_1788159957000&ck=b381458f26694bd6__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqiyKn3_8$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "EPS"
+  },
+  {
+   "code": "ERP",
+   "variantes": [
+    "ERP"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EU probes SAP over anti-competitive ERP support practices",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/eu-probes-sap-over-anti-competitive-erp-support-practices/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ERP"
+  },
+  {
    "code": "ERPD",
    "variantes": [
     "ERPD"
@@ -24909,6 +22238,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "ERPD"
+  },
+  {
+   "code": "ERS",
+   "variantes": [
+    "ERS"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Lachtherapie könnte Dyspnoe bei COPD lindern",
+   "lien_exemple": "https://www.aerzteblatt.de/news/lachtherapie-konnte-dyspnoe-bei-copd-lindern-c1e11b2c-49ea-4340-9ca3-9a147070e443",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ERS"
+  },
+  {
+   "code": "ESET",
+   "variantes": [
+    "ESET"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "FamousSparrow Swaps SparrowDoor For New SparroWocky Backdoor",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/famoussparrow-sparrowocky-latin/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ESET"
   },
   {
    "code": "ESRS",
@@ -24971,6 +22330,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "EΣΠΔ"
   },
   {
+   "code": "F1",
+   "variantes": [
+    "F1"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "La tecnología geoespacial impulsa el nuevo circuito de F1 de Madrid y la gestión urbana de Fuenlabrada",
+   "lien_exemple": "https://www.computing.es/movilidad/la-tecnologia-geoespacial-impulsa-el-nuevo-circuito-de-f1-de-madrid-y-la-gestion-urbana-de-fuenlabrada/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "F1"
+  },
+  {
+   "code": "FC",
+   "variantes": [
+    "FC"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Google Gemini y Google Pixel, nuevos partners del FC Barcelona",
+   "lien_exemple": "https://www.computing.es/movilidad/google-gemini-y-google-pixel-nuevos-partners-del-fc-barcelona/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FC"
+  },
+  {
    "code": "FCA",
    "variantes": [
     "FCA"
@@ -24986,6 +22375,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "FCA"
   },
   {
+   "code": "FCC",
+   "variantes": [
+    "FCC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "FCC rolls back cybersecurity rules for telcos, despite state-hacking risks",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fcc-rolls-back-cybersecurity-rules-for-telcos-despite-state-hacking-risks/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FCC"
+  },
+  {
    "code": "FCSC",
    "variantes": [
     "FCSC"
@@ -24999,6 +22403,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "FCSC"
+  },
+  {
+   "code": "FCT",
+   "variantes": [
+    "FCT"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Estudo português mostra que rochas profundas podem funcionar como uma bateria gigante para energia renovável",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/estudo-portugues-mostra-que-rochas-profundas-podem-funcionar-como-uma-bateria-gigante-para-energia-renovavel/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FCT"
   },
   {
    "code": "FEBRUARY 2026",
@@ -25046,6 +22465,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "FIC"
   },
   {
+   "code": "FIN9",
+   "variantes": [
+    "FIN9"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Four FIN9 hackers indicted for cyberattacks causing $71M in losses",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/four-fin9-hackers-indicted-for-cyberattacks-causing-71m-in-losses/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FIN9"
+  },
+  {
    "code": "FINMISP",
    "variantes": [
     "FINMISP"
@@ -25076,6 +22510,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "FKG"
   },
   {
+   "code": "FLEX",
+   "variantes": [
+    "FLEX"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Novos satélites europeus já iniciaram missão no espaço. Sentinel-3C verifica oceanos e FLEX espreita o “brilho” das plantas",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/novos-satelites-europeus-ja-iniciaram-missao-no-espaco-sentinel-3c-verifica-oceanos-e-flex-espreita-o-brilho-das-plantas/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FLEX"
+  },
+  {
    "code": "FMA",
    "variantes": [
     "FMA"
@@ -25089,6 +22538,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "FMA"
+  },
+  {
+   "code": "FN",
+   "variantes": [
+    "FN"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Žádost o informace ze dne 12.8.2026",
+   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-12-8-2026/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FN"
   },
   {
    "code": "FRATEL",
@@ -25106,6 +22570,53 @@ window.VEILLE_ACRONYMES = {
    "fr": "FRATEL"
   },
   {
+   "code": "FTC",
+   "variantes": [
+    "FTC"
+   ],
+   "langues": [
+    "en",
+    "fr",
+    "nb"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "FTC: Instacart to refund $60M over deceptive subscription tactics",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/instacart-to-refund-60m-over-deceptive-subscription-tactics/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FTC"
+  },
+  {
+   "code": "FV33",
+   "variantes": [
+    "FV33"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Enddarmtumoren: Neue endoskopische Technik ermöglicht tiefere Resektion",
+   "lien_exemple": "https://www.aerzteblatt.de/news/enddarmtumoren-neue-endoskopische-technik-ermoglicht-tiefere-resektion-dedd4e62-253c-405e-b3a5-f290d084071e",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FV33"
+  },
+  {
+   "code": "FV56",
+   "variantes": [
+    "FV56"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nahrungsmittelunverträglichkeiten: KI-gestützte App könnte Beschwerden reduzieren",
+   "lien_exemple": "https://www.aerzteblatt.de/news/nahrungsmittelunvertraglichkeiten-ki-gestutzte-app-konnte-beschwerden-reduzieren-d7319fbd-b64c-47e6-b62c-1f77b591e175",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FV56"
+  },
+  {
    "code": "GA",
    "variantes": [
     "GA"
@@ -25121,6 +22632,81 @@ window.VEILLE_ACRONYMES = {
    "fr": "GA"
   },
   {
+   "code": "GB",
+   "variantes": [
+    "GB"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Nova workstation móvel da HP dispensa a cloud para processar modelos de IA até 300 mil milhões de parâmetros",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/nova-workstation-movel-da-hp-dispensa-a-cloud-para-processar-modelos-de-ia-ate-300-mil-milhoes-de-parametros/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GB"
+  },
+  {
+   "code": "GBP12",
+   "variantes": [
+    "GBP12"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "TikTok withdrew appeal against Information Commissioner's Office fine over children's data processing, rendering GBP 12.7 million penalty notice final",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43955-tiktok-withdrew-appeal-against-information-commissioners-office-fine-over-childrens-data-processing-rendering-gbp-127-million-penalty-notice-final",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GBP12"
+  },
+  {
+   "code": "GCP",
+   "variantes": [
+    "GCP"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "How One Kubernetes YAML Can Hand Over a GCP Organization",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/how-one-kubernetes-yaml-can-hand-over-a-gcp-organization/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GCP"
+  },
+  {
+   "code": "GFT",
+   "variantes": [
+    "GFT"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Deutsche Bank moderniza su core bancario con GFT",
+   "lien_exemple": "https://www.computing.es/mundo-digital/deutsche-bank-moderniza-su-core-bancario-con-gft/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GFT"
+  },
+  {
+   "code": "GHI",
+   "variantes": [
+    "GHI"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Závěrečné zasedání Společné akce pro globální zdraví v Praze",
+   "lien_exemple": "https://mzd.gov.cz/zaverecne-zasedani-spolecne-akce-pro-globalni-zdravi-v-praze/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GHI"
+  },
+  {
    "code": "GLS",
    "variantes": [
     "GLS"
@@ -25134,6 +22720,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "GLS"
+  },
+  {
+   "code": "GM",
+   "variantes": [
+    "GM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "FTC orders GM to stop collecting and selling driver’s data",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/ftc-orders-gm-to-stop-collecting-and-selling-drivers-data/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GM"
   },
   {
    "code": "GOV",
@@ -25166,6 +22767,126 @@ window.VEILLE_ACRONYMES = {
    "fr": "GPA"
   },
   {
+   "code": "GPT",
+   "variantes": [
+    "GPT"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "OpenAI aposta os trunfos no GPT‑6 Astra, o seu modelo mais poderoso (e que garante ser seguro)",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/openai-aposta-os-trunfos-no-gpt-6-astra-o-seu-modelo-mais-poderoso-e-que-garante-ser-seguro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GPT"
+  },
+  {
+   "code": "GPT20",
+   "variantes": [
+    "GPT20"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Researchers Build WordPress Exploit Using OpenAI's GPT",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-wordpress-exploit/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GPT20"
+  },
+  {
+   "code": "GPT6",
+   "variantes": [
+    "GPT6"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Guerra de preços nos tokens acelera lançamento de novos modelos mais baratos da OpenAI e Anthropic",
+   "lien_exemple": "https://tek.sapo.pt/noticias/internet/artigos/guerra-de-precos-nos-tokens-acelera-lancamento-de-novos-modelos-mais-baratos-da-openai-e-anthropic/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GPT6"
+  },
+  {
+   "code": "GR1X",
+   "variantes": [
+    "GR1X"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GR1X"
+  },
+  {
+   "code": "GRU",
+   "variantes": [
+    "GRU"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "U.S. indicts Russian GRU hacker, offers $10 million reward",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/us-indicts-russian-gru-hacker-offers-10-million-reward/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GRU"
+  },
+  {
+   "code": "GT-BN98",
+   "variantes": [
+    "GT-BN98"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Asus estreia os seus primeiros routers Wi-Fi 8. Novos modelos chegam a Portugal em outubro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-estreia-os-seus-primeiros-routers-wi-fi-8-novos-modelos-chegam-a-portugal-em-outubro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GT-BN98"
+  },
+  {
+   "code": "GT7",
+   "variantes": [
+    "GT7"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Watch GT 7 e Watch D3 lideram nova vaga de wearables da Huawei para saúde, desporto e trabalho",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/watch-gt-7-e-watch-d3-lideram-nova-vaga-de-wearables-da-huawei-para-saude-desporto-e-trabalho/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GT7"
+  },
+  {
+   "code": "GTA6",
+   "variantes": [
+    "GTA6"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "GTA 6 volta a mostrar a dupla de protagonistas em momentos de ação com direito ao palco da Netflix",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/gta-6-volta-a-mostrar-a-dupla-de-protagonistas-em-momentos-de-acao-com-direito-ao-palco-da-netflix/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GTA6"
+  },
+  {
    "code": "GW1101-1D",
    "variantes": [
     "GW1101-1D"
@@ -25181,6 +22902,66 @@ window.VEILLE_ACRONYMES = {
    "fr": "GW1101-1D"
   },
   {
+   "code": "GX",
+   "variantes": [
+    "GX"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Opera GX Flaw Let Sites Auto-Install Mods to Steal Data",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/opera-gx-flaw-gx-mods-css/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GX"
+  },
+  {
+   "code": "GXC",
+   "variantes": [
+    "GXC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Spain dismantles “GXC Team” cybercrime syndicate, arrests leader",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/spain-dismantles-gxc-team-cybercrime-syndicate-arrests-leader/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GXC"
+  },
+  {
+   "code": "H1 2026",
+   "variantes": [
+    "H1 2026"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Manufacturing Accounts for 22% of all Ransomware Victims",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/manufacturing-22-ransomware-victims/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "H1 2026"
+  },
+  {
+   "code": "H2",
+   "variantes": [
+    "H2"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Robots humanoides entram na pista de dança e impressionam numa atuação com 120 bailarinos em Xangai",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/robots-humanoides-entram-na-pista-de-danca-e-impressionam-numa-atuacao-com-120-bailarinos-em-xangai/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "H2"
+  },
+  {
    "code": "HAM",
    "variantes": [
     "HAM"
@@ -25194,6 +22975,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "HAM"
+  },
+  {
+   "code": "HB 380",
+   "variantes": [
+    "HB 380"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Delaware enacts HB 380: Key updates to the Delaware Personal Data Privacy Act",
+   "lien_exemple": "https://iapp.org/news/a/delaware-enacts-hb-380-key-updates-to-the-delaware-personal-data-privacy-act",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HB 380"
   },
   {
    "code": "HDDT",
@@ -25241,6 +23037,66 @@ window.VEILLE_ACRONYMES = {
    "fr": "HE"
   },
   {
+   "code": "HHS",
+   "variantes": [
+    "HHS"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "HHS and state AGs fine ambulance firm over $500,000, require enhanced security, privacy, and data minimization practices",
+   "lien_exemple": "https://www.dataprotectionreport.com/2026/03/hhs-and-state-ags-fine-ambulance-firm-over-500000-require-enhanced-security-privacy-and-data-minimization-practices/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HHS"
+  },
+  {
+   "code": "HIPAA",
+   "variantes": [
+    "HIPAA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Why data mining is functionally required after a HIPAA breach",
+   "lien_exemple": "https://iapp.org/news/a/why-data-mining-is-functionally-required-after-a-hipaa-breach",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HIPAA"
+  },
+  {
+   "code": "HITRUST",
+   "variantes": [
+    "HITRUST"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "August 18, 2026: Georgia Rural Health Gains Cyber Resilience Through Augusta University CRC and HITRUST Certification",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YTVhMTM0NDgmZmlkPTE3MzUyNjgmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60276302540&f=News&s=14&ci=107203&i=335-1601&si=87025&fmi=673373884&e=News*Bites*-*Private*Companies&d=116434&h=1&mbc=Q1QzL2E9NjAyNzYzMDI1NDAmcD0xNGUmdj0xJmhsaD1hNWExMzQ0OCZmaWQ9MTczNTI2OCZ4PThIUE14SlN6a1psQ0o5ejZNc0lSbHcmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735268&ai=338121&ac=338121_1788159957000&ck=521e6773096e5757__;KysrKw!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-Bvajrqv0qpUq6$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HITRUST"
+  },
+  {
+   "code": "HIV/AIDS",
+   "variantes": [
+    "HIV/AIDS"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Výzva k předkládání žádostí o přidělení finančních prostředků v rámci dotačního programu Národní program řešení problematiky HIV/AIDS pro rok 2027",
+   "lien_exemple": "https://mzd.gov.cz/vyzva-narodni-program-reseni-problematiky-hiv-aids-2027/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HIV/AIDS"
+  },
+  {
    "code": "HONDIUS",
    "variantes": [
     "HONDIUS"
@@ -25254,6 +23110,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "HONDIUS"
+  },
+  {
+   "code": "HPE",
+   "variantes": [
+    "HPE"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Isabel Benavente (HPE): «Las marcas tecnológicas van a competir cada vez más por la confianza de los clientes»",
+   "lien_exemple": "https://www.computing.es/marketing/isabel-benavente-hpe-la-autenticidad-y-el-liderazgo-con-rigor-son-las-claves-para-destacar-frente-al-ruido-tecnologico/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HPE"
   },
   {
    "code": "HRV",
@@ -25316,6 +23187,81 @@ window.VEILLE_ACRONYMES = {
    "fr": "HTML"
   },
   {
+   "code": "HZS",
+   "variantes": [
+    "HZS"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Oznámení o plném zprovoznění Portálu kritické infrastruktury",
+   "lien_exemple": "https://mzd.gov.cz/oznameni-o-plnem-zprovozneni-portalu-kriticke-infrastruktury/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HZS"
+  },
+  {
+   "code": "IC3",
+   "variantes": [
+    "IC3"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "FBI Warns of Deepfake Videos Impersonating IC3 Leadership",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/fbi-deepfake-videos-ic3/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IC3"
+  },
+  {
+   "code": "ICS",
+   "variantes": [
+    "ICS"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ICS Operators Warned of AI-Driven Attacks on Siemens PLCs",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ics-ai-attacks-siemens/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ICS"
+  },
+  {
+   "code": "IFEMA",
+   "variantes": [
+    "IFEMA"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "La tecnología geoespacial impulsa el nuevo circuito de F1 de Madrid y la gestión urbana de Fuenlabrada",
+   "lien_exemple": "https://www.computing.es/movilidad/la-tecnologia-geoespacial-impulsa-el-nuevo-circuito-de-f1-de-madrid-y-la-gestion-urbana-de-fuenlabrada/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IFEMA"
+  },
+  {
+   "code": "IFR",
+   "variantes": [
+    "IFR"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nova fábrica na China pretende produzir mais robots humanoides num ano do que se venderam em 2025 globalmente",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/nova-fabrica-na-china-pretende-produzir-mais-robots-humanoides-num-ano-do-que-se-venderam-em-2025-globalmente/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IFR"
+  },
+  {
    "code": "IGES",
    "variantes": [
     "IGES"
@@ -25344,6 +23290,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "IMMA"
+  },
+  {
+   "code": "INTERPOL",
+   "variantes": [
+    "INTERPOL"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "INTERPOL ‘Operation Ramz’ seizes 53 malware, phishing servers",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/interpol-operation-ramz-seizes-53-malware-phishing-servers/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "INTERPOL"
   },
   {
    "code": "IOC",
@@ -25376,6 +23337,52 @@ window.VEILLE_ACRONYMES = {
    "fr": "IOPEU"
   },
   {
+   "code": "IPIDEA",
+   "variantes": [
+    "IPIDEA"
+   ],
+   "langues": [
+    "en",
+    "fi"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Google disrupts IPIDEA residential proxy networks fueled by malware",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/google-disrupts-ipidea-residential-proxy-networks-fueled-by-malware/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IPIDEA"
+  },
+  {
+   "code": "IPMA",
+   "variantes": [
+    "IPMA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Termómetros vão chegar aos 38º este fim de semana: IPMA avisa para temperaturas “acima do normal”",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/termometros-vao-chegar-aos-38o-este-fim-de-semana-ipma-avisa-para-temperaturas-acima-do-normal/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IPMA"
+  },
+  {
+   "code": "IPTV",
+   "variantes": [
+    "IPTV"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "New RemControl Android banking malware targets users in Europe and Canada",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/new-remcontrol-android-banking-malware-targets-users-in-europe-and-canada/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IPTV"
+  },
+  {
    "code": "IRB",
    "variantes": [
     "IRB"
@@ -25404,6 +23411,51 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "IRRBB"
+  },
+  {
+   "code": "ISPA",
+   "variantes": [
+    "ISPA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Investigadores portugueses ajudam a distinguir quem joga “por gosto” e quem já não consegue parar",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/investigadores-portugueses-ajudam-a-distinguir-quem-joga-por-gosto-e-quem-ja-nao-consegue-parar/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ISPA"
+  },
+  {
+   "code": "ISS",
+   "variantes": [
+    "ISS"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ISS Live Tracker: veja em tempo real onde está a Estação Espacial Internacional e quando passa por cima de si",
+   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/iss-live-tracker-veja-em-tempo-real-onde-esta-a-estacao-espacial-internacional-e-quando-passa-por-cima-de-si/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ISS"
+  },
+  {
+   "code": "IWF",
+   "variantes": [
+    "IWF"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NCA Issues Warning to Parents As Shared Child Photos Exploited by AI Tools",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/nca-warn-parents-volume/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IWF"
   },
   {
    "code": "JANUARY 2026",
@@ -25436,6 +23488,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "JBRC"
   },
   {
+   "code": "JD",
+   "variantes": [
+    "JD"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Alertas sobre IA são uma “conspiração” para Trump. Vice-presidente dos EUA admite riscos, mas desconfia das empresas",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/alertas-sobre-ia-sao-uma-conspiracao-para-trump-vice-presidente-dos-eua-admite-riscos-mas-desconfia-das-empresas/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "JD"
+  },
+  {
+   "code": "JSON",
+   "variantes": [
+    "JSON"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "WordPress Plugins Compromised Without a Single File Change",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/bdthemes-wordpress-poisoned-api/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "JSON"
+  },
+  {
+   "code": "JUSTICIA",
+   "variantes": [
+    "JUSTICIA"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
+   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "JUSTICIA"
+  },
+  {
    "code": "KASPR",
    "variantes": [
     "KASPR"
@@ -25449,6 +23546,52 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "KASPR"
+  },
+  {
+   "code": "KB5124010",
+   "variantes": [
+    "KB5124010"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Windows 11 KB5124010 update released with 46 changes and fixes",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124010-update-released-with-46-changes-and-fixes/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KB5124010"
+  },
+  {
+   "code": "KC",
+   "variantes": [
+    "KC"
+   ],
+   "langues": [
+    "en",
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "2026 KC Legal Leaders: Stacy Harper",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&p=SC9obGg9YTVhMTM0NDgmZmlkPTE3MzUyNjgmY2lkPU1UQTNNakF6JnVpZD1NVEUyTkRNMA&a=60232633328&f=Print&s=14&ci=107203&i=1368-1601&si=86204&fmi=673457046&e=Missouri*Lawyers*Media&d=116434&h=1&mbc=Q1QzL2E9NjAyMzI2MzMzMjgmcD0xNGUmdj0xJmhsaD1hNWExMzQ0OCZmaWQ9MTczNTI2OCZ4PXgzYksyT2lGSDJqc0YyR1h1UURLLUEmdTE9TkQmdTI9dXAtdXJuOnVzZXI6UEExODY4MTY1ODI&fi=1735268&ai=338121&ac=338121_1787554818000&ck=ece7200bbaa71d7a__;Kys!!NEMsmePo_HYI!cWTHRJnDXtv6qEZKNGMdU_idBD-2Ocgk0bZaevoOp3_JyajwOZwK65CnkwUGtslUJxih9ib4SDCEguvJUiCWI9uj8EVX$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KC"
+  },
+  {
+   "code": "KFTC",
+   "variantes": [
+    "KFTC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Fair Trade Commission commenced pre-review of Uber's proposed acquisition of Delivery Hero",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43896-fair-trade-commission-commenced-pre-review-of-ubers-proposed-acquisition-of-delivery-hero",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KFTC"
   },
   {
    "code": "KHAG",
@@ -25466,6 +23609,66 @@ window.VEILLE_ACRONYMES = {
    "fr": "KHAG"
   },
   {
+   "code": "KNVB",
+   "variantes": [
+    "KNVB"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Onderzoek roept vragen op over digitale identificatie voetbaltickets",
+   "lien_exemple": "https://www.security.nl/posting/953916/Onderzoek+roept+vragen+op+over+digitale+identificatie+voetbaltickets?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KNVB"
+  },
+  {
+   "code": "KOMPAS",
+   "variantes": [
+    "KOMPAS"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Jak nastavit domácí péči podle skutečných potřeb pacientů? Projekt KOMPAS hledá odpověď",
+   "lien_exemple": "https://mzd.gov.cz/kompas-projekt-ktery-meni-podobu-domaci-pece-v-cesku-2/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KOMPAS"
+  },
+  {
+   "code": "KOSA",
+   "variantes": [
+    "KOSA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "US Senate Commerce approves KOSA, children's AI safety bills",
+   "lien_exemple": "https://iapp.org/news/a/us-senate-committee-approves-kosa-children-s-ai-safety-bills",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KOSA"
+  },
+  {
+   "code": "KPI",
+   "variantes": [
+    "KPI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "O KPI que escolheu hoje já está a moldar comportamentos que ainda não viu. Provavelmente não vai gostar.",
+   "lien_exemple": "https://tek.sapo.pt/opiniao/artigos/o-kpi-que-escolheu-hoje-ja-esta-a-moldar-comportamentos-que-ainda-nao-viu-provavelmente-nao-vai-gostar/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KPI"
+  },
+  {
    "code": "KPMG",
    "variantes": [
     "KPMG"
@@ -25481,6 +23684,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "KPMG"
   },
   {
+   "code": "KT",
+   "variantes": [
+    "KT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Korea’s Largest Telco KT Fined $38m After Femtocell Campaign",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/koreas-largest-telco-kt-fine-39m/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "KT"
+  },
+  {
+   "code": "LAS",
+   "variantes": [
+    "LAS"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Real Decreto 737/2026, de 23 de septiembre, sobre reconocimiento como cotizados a la Seguridad Social de los periodos de actividad ejercidos como ministros de culto de las iglesias pertenecientes a la Federación de Entidades Religiosas Evangélicas de España con anterioridad a su integración en el Régimen General de la Seguridad Social.",
+   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19846",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LAS"
+  },
+  {
+   "code": "LEO",
+   "variantes": [
+    "LEO"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MEO oferece conectividade por satélite da Eutelsat em Portugal",
+   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/meo-oferece-conectividade-por-satelite-da-eutelsat-em-portugal/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LEO"
+  },
+  {
    "code": "LEX",
    "variantes": [
     "LEX"
@@ -25494,6 +23742,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "LEX"
+  },
+  {
+   "code": "LGPD",
+   "variantes": [
+    "LGPD"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Beyond the fine: What the TikTok case reveals about LGPD enforcement",
+   "lien_exemple": "https://iapp.org/news/a/beyond-the-fine-what-the-tiktok-case-reveals-about-lgpd-enforcement",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LGPD"
   },
   {
    "code": "LIHE",
@@ -25526,6 +23789,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "LPD"
   },
   {
+   "code": "LPDDR6",
+   "variantes": [
+    "LPDDR6"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LPDDR6"
+  },
+  {
    "code": "LSIP",
    "variantes": [
     "LSIP"
@@ -25556,6 +23834,66 @@ window.VEILLE_ACRONYMES = {
    "fr": "LTC"
   },
   {
+   "code": "LTE",
+   "variantes": [
+    "LTE"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Garmin fēnix 9 Pro chega com mais autonomia e conectividade para aventuras longe do smartphone",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/garmin-fenix-9-pro-chega-com-mais-autonomia-e-conectividade-para-aventuras-longe-do-smartphone/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LTE"
+  },
+  {
+   "code": "LTPO",
+   "variantes": [
+    "LTPO"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Titânio, ecrãs LTPO, câmaras de 48 MP e 5.800 mAh podem ser o retrato do futuro iPhone Ultra",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/titanio-ecras-ltpo-camaras-de-48-mp-e-5-800-mah-podem-ser-o-retrato-do-futuro-iphone-ultra/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LTPO"
+  },
+  {
+   "code": "LTS",
+   "variantes": [
+    "LTS"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Canonical levert tegen betaling 5 jaar extra updates voor Ubuntu 16.04 LTS",
+   "lien_exemple": "https://www.security.nl/posting/953591/Canonical+levert+tegen+betaling+5+jaar+extra+updates+voor+Ubuntu+16_04+LTS?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LTS"
+  },
+  {
+   "code": "M16",
+   "variantes": [
+    "M16"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "M16"
+  },
+  {
    "code": "MAC",
    "variantes": [
     "MAC"
@@ -25584,6 +23922,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "MACRON"
+  },
+  {
+   "code": "MADRING",
+   "variantes": [
+    "MADRING"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Más allá del asfalto: Lo que descubrí en mi debut en la Fórmula 1 de la mano de IBM",
+   "lien_exemple": "https://www.computing.es/analytics/mas-alla-del-asfalto-lo-que-descubri-en-mi-debut-en-la-formula-1-de-la-mano-de-ibm/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MADRING"
   },
   {
    "code": "MARCH 2026",
@@ -25692,6 +24045,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "MDL"
   },
   {
+   "code": "MEO",
+   "variantes": [
+    "MEO"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MEO oferece conectividade por satélite da Eutelsat em Portugal",
+   "lien_exemple": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/meo-oferece-conectividade-por-satelite-da-eutelsat-em-portugal/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MEO"
+  },
+  {
    "code": "MISP-SE",
    "variantes": [
     "MISP-SE"
@@ -25705,6 +24073,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "MISP-SE"
+  },
+  {
+   "code": "MIT",
+   "variantes": [
+    "MIT"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MIT transforma bactérias em “transístores” para criar circuitos vivos",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/mit-transforma-bacterias-em-transistores-para-criar-circuitos-vivos/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MIT"
+  },
+  {
+   "code": "MMA",
+   "variantes": [
+    "MMA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Um humano contra um robot numa jaula de MMA: a “patada” que se tornou viral",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/um-humano-contra-um-robot-numa-jaula-de-mma-a-patada-que-se-tornou-viral/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MMA"
   },
   {
    "code": "MOI",
@@ -25737,6 +24135,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "MOOC"
   },
   {
+   "code": "MOONS",
+   "variantes": [
+    "MOONS"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MOONS abre mil olhos sobre o Universo com uma importante contribuição portuguesa",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/moons-abre-mil-olhos-sobre-o-universo-com-uma-importante-contribuicao-portuguesa/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MOONS"
+  },
+  {
+   "code": "MOÚ",
+   "variantes": [
+    "MOÚ"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Masarykův onkologický ústav",
+   "lien_exemple": "https://mzd.gov.cz/masarykuv-onkologicky-ustav/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MOÚ"
+  },
+  {
    "code": "MPA",
    "variantes": [
     "MPA"
@@ -25750,6 +24178,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "MPA"
+  },
+  {
+   "code": "MPCS",
+   "variantes": [
+    "MPCS"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nunsys Group amplía sus servicios documentales incorporando la división especializada de Esedeá Documental",
+   "lien_exemple": "https://www.computing.es/mercado-ti/nunsys-group-amplia-sus-servicios-documentales-incorporando-la-division-especializada-de-esedea-documental/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MPCS"
   },
   {
    "code": "MSC",
@@ -25767,6 +24210,67 @@ window.VEILLE_ACRONYMES = {
    "fr": "MSC"
   },
   {
+   "code": "MSP",
+   "variantes": [
+    "MSP"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Risolte vulnerabilità in prodotti ManageEngine",
+   "lien_exemple": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-manageengine-1",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MSP"
+  },
+  {
+   "code": "MTG",
+   "variantes": [
+    "MTG"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Novo satélite MTG vai mostrar a atmosfera em tempo real para ajudar a prever tempestades",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/novo-satelite-mtg-vai-mostrar-a-atmosfera-em-tempo-real-para-ajudar-a-prever-tempestades/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MTG"
+  },
+  {
+   "code": "MTG-I2",
+   "variantes": [
+    "MTG-I2"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Novo satélite MTG vai mostrar a atmosfera em tempo real para ajudar a prever tempestades",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/novo-satelite-mtg-vai-mostrar-a-atmosfera-em-tempo-real-para-ajudar-a-prever-tempestades/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MTG-I2"
+  },
+  {
+   "code": "MV",
+   "variantes": [
+    "MV"
+   ],
+   "langues": [
+    "cs",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Oznámení o plném zprovoznění Portálu kritické infrastruktury",
+   "lien_exemple": "https://mzd.gov.cz/oznameni-o-plnem-zprovozneni-portalu-kriticke-infrastruktury/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MV"
+  },
+  {
    "code": "MVB",
    "variantes": [
     "MVB"
@@ -25782,6 +24286,37 @@ window.VEILLE_ACRONYMES = {
    "fr": "MVB"
   },
   {
+   "code": "MVP",
+   "variantes": [
+    "MVP"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Google antecipa lançamento do primeiro satélite do Project Suncatcher para testar centros de dados no espaço",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/google-antecipa-lancamento-do-primeiro-satelite-do-project-suncatcher-para-testar-centros-de-dados-no-espaco/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MVP"
+  },
+  {
+   "code": "MW",
+   "variantes": [
+    "MW"
+   ],
+   "langues": [
+    "pt",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Startup japonesa está a construir casas com braços robóticos que tratam das tarefas domésticas",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/startup-japonesa-esta-a-construir-casas-com-bracos-roboticos-que-tratam-das-tarefas-domesticas/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MW"
+  },
+  {
    "code": "MWC",
    "variantes": [
     "MWC"
@@ -25795,6 +24330,97 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "MWC"
+  },
+  {
+   "code": "MZ",
+   "variantes": [
+    "MZ"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Žádost o informace ze dne 26.7.2026",
+   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-26-7-2026/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MZ"
+  },
+  {
+   "code": "N26",
+   "variantes": [
+    "N26"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Quartz é uma fintech criada por dois portugueses em Londres com “raízes” de engenharia em Portugal",
+   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/quartz-e-uma-fintech-criada-por-dois-portugueses-em-londres-com-raizes-de-engenharia-em-portugal/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "N26"
+  },
+  {
+   "code": "NAI",
+   "variantes": [
+    "NAI"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NAI issues 'dos and don'ts' guidance for AI, agentic workflows in adtech",
+   "lien_exemple": "https://iapp.org/news/a/nai-isssues-dos-and-don-ts-guidance-for-ai-agentic-workflows-in-adtech",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NAI"
+  },
+  {
+   "code": "NATEEVO",
+   "variantes": [
+    "NATEEVO"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NATEEVO nombra a Pedro Latasa nuevo CEO de la empresa en una etapa alineada con el Grupo VASS",
+   "lien_exemple": "https://www.computing.es/mercado-ti/nateevo-nombra-a-pedro-latasa-nuevo-ceo-de-la-empresa-en-una-etapa-alineada-con-el-grupo-vass/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NATEEVO"
+  },
+  {
+   "code": "NCA",
+   "variantes": [
+    "NCA"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NCA Issues Warning to Parents As Shared Child Photos Exploited by AI Tools",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/nca-warn-parents-volume/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NCA"
+  },
+  {
+   "code": "NCC",
+   "variantes": [
+    "NCC"
+   ],
+   "langues": [
+    "en",
+    "fi"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Ransomware Attacks Reach Record High for 2026",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ransomware-attacks-reach-record/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NCC"
   },
   {
    "code": "NCC-CZ",
@@ -25917,6 +24543,127 @@ window.VEILLE_ACRONYMES = {
    "fr": "NEAK"
   },
   {
+   "code": "NEO",
+   "variantes": [
+    "NEO"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Lo que J.Forrester, S.Beer y Max Weber le enseñarían a un director de operaciones",
+   "lien_exemple": "https://www.computing.es/movilidad/lo-que-j-forrester-s-beer-y-max-weber-le-ensenarian-a-un-director-de-operaciones/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NEO"
+  },
+  {
+   "code": "NEWORDER",
+   "variantes": [
+    "NEWORDER"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "NEWORDER brings Lasso Security agentic AI protection to South Africa amid regulatory pressure",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60309142360&f=News&s=14&ci=107203&i=0&si=234585&fmi=656404366&e=Head*Topics&d=116434&mbc=Q1QzL2E9NjAzMDkxNDIzNjAmcD0xNGUmdj0xJng9b1NWdWpzenpIUEFOZnRFZERRbXB6QSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1788764891000&ck=354cc25fc0c8a97e__;Kw!!NEMsmePo_HYI!fCx6mz1Mh84_eWqJcaYIh-5MyJ2vFZOMu_e25chASlY_BIaWXR8WkyGbgzS8BrgZOWpewkzoUwhCde4DUg5uCZHFv3Nu$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NEWORDER"
+  },
+  {
+   "code": "NFC",
+   "variantes": [
+    "NFC"
+   ],
+   "langues": [
+    "nl",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Belgische banken melden nieuwe NFC-relay fraudemethode",
+   "lien_exemple": "https://www.security.nl/posting/953956/Belgische+banken+melden+nieuwe+NFC-relay+fraudemethode?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NFC"
+  },
+  {
+   "code": "NIKEZ",
+   "variantes": [
+    "NIKEZ"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Konference NIKEZ 2026 bude online – registrace spuštěna",
+   "lien_exemple": "https://mzd.gov.cz/konference-nikez-2026-bude-online-spoustime-registraci/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NIKEZ"
+  },
+  {
+   "code": "NIKEZ 2026",
+   "variantes": [
+    "NIKEZ 2026"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Konference NIKEZ 2026 bude online – registrace spuštěna",
+   "lien_exemple": "https://mzd.gov.cz/konference-nikez-2026-bude-online-spoustime-registraci/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NIKEZ 2026"
+  },
+  {
+   "code": "NL",
+   "variantes": [
+    "NL"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Energy Storage NL",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.energystoragenl.nl__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxp3TKkxR$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NL"
+  },
+  {
+   "code": "NMS",
+   "variantes": [
+    "NMS"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Národní monitorovací středisko pro závislosti – základní informace",
+   "lien_exemple": "https://mzd.gov.cz/narodni-monitorovaci-stredisko-pro-zavislosti-zakladni-informace/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NMS"
+  },
+  {
+   "code": "NOVA",
+   "variantes": [
+    "NOVA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Estudo português mostra que rochas profundas podem funcionar como uma bateria gigante para energia renovável",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/estudo-portugues-mostra-que-rochas-profundas-podem-funcionar-como-uma-bateria-gigante-para-energia-renovavel/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NOVA"
+  },
+  {
    "code": "NOVIS",
    "variantes": [
     "NOVIS"
@@ -25932,6 +24679,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "NOVIS"
   },
   {
+   "code": "NPC",
+   "variantes": [
+    "NPC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "National Privacy Commission issued show-cause orders to Meta, Roblox, Reddit, and Discord over alleged non-compliance with registration requirements under Data Privacy Act",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43879-national-privacy-commission-announces-investigation-into-meta",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NPC"
+  },
+  {
    "code": "NPM",
    "variantes": [
     "NPM"
@@ -25945,6 +24707,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "NPM"
+  },
+  {
+   "code": "NSO",
+   "variantes": [
+    "NSO"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "WhatsApp says it disrupted new NSO spyware phishing attacks",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/whatsapp-says-it-disrupted-new-nso-spyware-phishing-attacks/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NSO"
   },
   {
    "code": "NXT",
@@ -25992,6 +24769,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "NYCRR"
   },
   {
+   "code": "NZ",
+   "variantes": [
+    "NZ"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Notes from the Asia-Pacific region: 2026 survey finds children's data, AI continue to top NZ privacy concerns",
+   "lien_exemple": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-2026-survey-finds-children-s-data-ai-continue-to-top-nz-privacy-concerns",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NZ"
+  },
+  {
+   "code": "O3",
+   "variantes": [
+    "O3"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Xiaomi entra na corrida dos dobráveis com formato “wide”. Novo smartphone estreia-se na China",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/xiaomi-entra-na-corrida-dos-dobraveis-com-formato-wide-novo-smartphone-estreia-se-na-china/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "O3"
+  },
+  {
+   "code": "OAIC",
+   "variantes": [
+    "OAIC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Notes from the Asia-Pacific region: OAIC actions signal growing focus on accountability, governance",
+   "lien_exemple": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-oaic-actions-signal-growing-focus-on-accountability-governance",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "OAIC"
+  },
+  {
    "code": "OCX",
    "variantes": [
     "OCX"
@@ -26005,6 +24827,51 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "OCX"
+  },
+  {
+   "code": "ODILO",
+   "variantes": [
+    "ODILO"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "La española ODILO inicia una nueva etapa como Letmino",
+   "lien_exemple": "https://www.computing.es/marketing/la-espanola-odilo-inicia-una-nueva-etapa-como-letmino/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ODILO"
+  },
+  {
+   "code": "OET",
+   "variantes": [
+    "OET"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Federal Communications Commission's Public Safety and Homeland Security Bureau and Office of Engineering and Technology closes consultation on prohibiting importation and marketing of covered communications and video surveillance equipment produced by Anzu",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43120-federal-communications-commissions-public-safety-and-homeland-security-bureau-and-office-of-engineering-and-technology-closes-consultation-on-prohibiting-importation-and-marketing-of-covered-communications-and-video-surveillance-equipment-produced-b",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "OET"
+  },
+  {
+   "code": "OFAC",
+   "variantes": [
+    "OFAC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "OFAC Sanctions Chinese Scam Platform Xinbi Guarantee",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ofac-sanctions-chinese-scam/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "OFAC"
   },
   {
    "code": "OH",
@@ -26097,6 +24964,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "OP/0021-PIN"
   },
   {
+   "code": "OPPO",
+   "variantes": [
+    "OPPO"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "OPPO"
+  },
+  {
+   "code": "OPSWAT",
+   "variantes": [
+    "OPSWAT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Zero-Day Flaw in TP-Link Cameras Enables Eavesdropping",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/zeroday-tplink-cameras/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "OPSWAT"
+  },
+  {
+   "code": "OS5",
+   "variantes": [
+    "OS5"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nothing OS 5.0: tudo o que muda na maior atualização do sistema operativo da Nothing até agora",
+   "lien_exemple": "https://tek.sapo.pt/mobile/android/artigos/nothing-os-5-0-tudo-o-que-muda-na-maior-atualizacao-do-sistema-operativo-da-nothing-ate-agora/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "OS5"
+  },
+  {
    "code": "OSS",
    "variantes": [
     "OSS"
@@ -26110,6 +25022,66 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "OSS"
+  },
+  {
+   "code": "P14",
+   "variantes": [
+    "P14"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "P14"
+  },
+  {
+   "code": "P16",
+   "variantes": [
+    "P16"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "P16"
+  },
+  {
+   "code": "P2P",
+   "variantes": [
+    "P2P"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "International Operation Disrupts Sality P2P Botnet",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/international-operation-disrupts/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "P2P"
+  },
+  {
+   "code": "P80",
+   "variantes": [
+    "P80"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Mais leitura e menos distrações? TCL P80 Ultra propõe uma forma diferente de olhar para o ecrã (e para o smartphone)",
+   "lien_exemple": "https://tek.sapo.pt/analises/artigos/mais-leitura-e-menos-distracoes-p80-ultra-propoe-uma-forma-diferente-de-olhar-para-o-ecra-e-para-o-smartphone/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "P80"
   },
   {
    "code": "PAC4J",
@@ -26127,6 +25099,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "PAC4J"
   },
   {
+   "code": "PAM",
+   "variantes": [
+    "PAM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Cryptominer Abuses Linux PAM to Hide From SOC Analysts",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/xmrig-linux-pam-forensic/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PAM"
+  },
+  {
    "code": "PAN-OS-ohjelmiston",
    "variantes": [
     "PAN-OS-ohjelmiston"
@@ -26140,6 +25127,202 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "PAN-OS-ohjelmiston"
+  },
+  {
+   "code": "PC",
+   "variantes": [
+    "PC"
+   ],
+   "langues": [
+    "pt",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Esquece-se sempre de bloquear o PC quando se ausenta? O Windows pode fazer isso por si. Descubra como",
+   "lien_exemple": "https://tek.sapo.pt/how-to/artigos/esquece-se-sempre-de-bloquear-o-pc-quando-se-ausenta-o-windows-pode-fazer-isso-por-si-descubra-como/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PC"
+  },
+  {
+   "code": "PCI",
+   "variantes": [
+    "PCI"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Building Cyber Resilience Through Risk, Education and Service  - 10 Sep 2026 18:12 ...regulatory requirements such as ISO 27001, NIST SP 800-53, the CIS Controls, HIPAA , GDPR, CCPA and PCI DSS. Each framework has a different purpose, but organizatio",
+   "lien_exemple": "https://urldefense.com/v3/__https://techbullion.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxlwm87fy$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PCI"
+  },
+  {
+   "code": "PDE",
+   "variantes": [
+    "PDE"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Incident Reporting Under the EU Cyber Resilience Act  - Jon Bartley - 12 Sep 2026 03:08 Background The EU Cyber Resilience Act (the \"CRA\") imposes mandatory cybersecurity requirements on products with digital elements (\"PDE\") across their entire life",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.rpclegal.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxgJitajq$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PDE"
+  },
+  {
+   "code": "PDT",
+   "variantes": [
+    "PDT"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Onderzoek roept vragen op over digitale identificatie voetbaltickets",
+   "lien_exemple": "https://www.security.nl/posting/953916/Onderzoek+roept+vragen+op+over+digitale+identificatie+voetbaltickets?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PDT"
+  },
+  {
+   "code": "PERTE",
+   "variantes": [
+    "PERTE"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "La SETT y el Parque Tecnológico de Andalucía se alían para impulsar el futuro Centro de Semiconductores en Málaga",
+   "lien_exemple": "https://www.computing.es/noticias/la-sett-y-el-parque-tecnologico-de-andalucia-se-alian-para-impulsar-el-futuro-centro-de-semiconductores-en-malaga/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PERTE"
+  },
+  {
+   "code": "PETRA",
+   "variantes": [
+    "PETRA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "PETRA é um robot submarino que leva a engenharia portuguesa a 6.000 metros de profundidade",
+   "lien_exemple": "https://tek.sapo.pt/noticias/ciencia/artigos/petra-e-um-robot-submarino-que-leva-a-engenharia-portuguesa-a-6-000-metros-de-profundidade/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PETRA"
+  },
+  {
+   "code": "PIF",
+   "variantes": [
+    "PIF"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CEER Exobot: Arábia Saudita revela o seu primeiro carro elétrico com 1.111 cavalos e um design único",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/ceer-exobot-arabia-saudita-revela-o-seu-primeiro-carro-eletrico-com-1-111-cavalos-e-um-design-unico/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PIF"
+  },
+  {
+   "code": "PISA",
+   "variantes": [
+    "PISA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Portugal recua nos resultados do PISA. Especialistas alertam para o impacto do uso excessivo de ecrãs nos jovens",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/portugal-recua-nos-resultados-do-pisa-especialistas-alertam-para-o-impacto-do-uso-excessivo-de-ecras-nos-jovens/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PISA"
+  },
+  {
+   "code": "PIVOT",
+   "variantes": [
+    "PIVOT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/cyber-vendors-mitre-uk-testing/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PIVOT"
+  },
+  {
+   "code": "PKV",
+   "variantes": [
+    "PKV"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Linnemann zeigt sich vor Abgeordneten entscheidungsfreudig",
+   "lien_exemple": "https://www.aerzteblatt.de/news/linnemann-zeigt-sich-vor-abgeordneten-entscheidungsfreudig-f6b94bd7-24a9-4d13-82b5-1ff632c61a79",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PKV"
+  },
+  {
+   "code": "PL12",
+   "variantes": [
+    "PL12"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PL12"
+  },
+  {
+   "code": "PLAY 2026",
+   "variantes": [
+    "PLAY 2026"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Logitech G PLAY 2026: Equipamentos PRO para eSports e o regresso dos microfones Yeti em destaque entre as novidades",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/logitech-g-play-2026-equipamentos-pro-para-esports-e-o-regresso-dos-microfones-yeti-em-destaque-entre-as-novidades/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PLAY 2026"
+  },
+  {
+   "code": "PM",
+   "variantes": [
+    "PM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "OpenAI Agent Hacks Australian Medicare Portal",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/openai-hacks-australian-medicare/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PM"
   },
   {
    "code": "PPDS",
@@ -26187,6 +25370,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "PRIME"
   },
   {
+   "code": "PRO",
+   "variantes": [
+    "PRO"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Logitech G PLAY 2026: Equipamentos PRO para eSports e o regresso dos microfones Yeti em destaque entre as novidades",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/logitech-g-play-2026-equipamentos-pro-para-esports-e-o-regresso-dos-microfones-yeti-em-destaque-entre-as-novidades/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PRO"
+  },
+  {
+   "code": "PSC",
+   "variantes": [
+    "PSC"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Primär sklerosierende Cholangitis: Medikamentöse Therapie zeigt in Phase-3-Studie Wirkung",
+   "lien_exemple": "https://www.aerzteblatt.de/news/primar-sklerosierende-cholangitis-medikamentose-therapie-zeigt-in-phase-3-studie-wirkung-55579fae-95c0-4560-ab34-78ac29ad4cd3",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PSC"
+  },
+  {
    "code": "PSD2",
    "variantes": [
     "PSD2"
@@ -26200,6 +25413,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "PSD2"
+  },
+  {
+   "code": "PSHSB",
+   "variantes": [
+    "PSHSB"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Federal Communications Commission's Public Safety and Homeland Security Bureau and Office of Engineering and Technology closes consultation on prohibiting importation and marketing of covered communications and video surveillance equipment produced by Anzu",
+   "lien_exemple": "https://digitalpolicyalert.org/event/43120-federal-communications-commissions-public-safety-and-homeland-security-bureau-and-office-of-engineering-and-technology-closes-consultation-on-prohibiting-importation-and-marketing-of-covered-communications-and-video-surveillance-equipment-produced-b",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PSHSB"
+  },
+  {
+   "code": "PT",
+   "variantes": [
+    "PT"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Geração STEM .PT tem bolsas de 5 mil euros para apoiar o talento feminino nas áreas da ciência e tecnologia",
+   "lien_exemple": "https://tek.sapo.pt/expert/artigos/geracao-stem-pt-tem-bolsas-de-5-mil-euros-para-apoiar-o-talento-feminino-nas-areas-da-ciencia-e-tecnologia/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PT"
   },
   {
    "code": "Q4/2025",
@@ -26217,6 +25460,216 @@ window.VEILLE_ACRONYMES = {
    "fr": "Q4/2025"
   },
   {
+   "code": "QTFY",
+   "variantes": [
+    "QTFY"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "QTFY"
+  },
+  {
+   "code": "R1",
+   "variantes": [
+    "R1"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ROG Xbox Ally X20 já tem data de chegada (e traz companhia). Pré-encomendas estão abertas",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rog-xbox-ally-x20-ja-tem-data-de-chegada-e-traz-companhia-pre-encomendas-estao-abertas/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "R1"
+  },
+  {
+   "code": "R8",
+   "variantes": [
+    "R8"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EOS R8 Mark II é nova full frame leve da Canon pensada para viajar, agora também com imagens 3D",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/eos-r8-mark-ii-e-nova-full-frame-leve-da-canon-pensada-para-viajar-agora-tambem-com-imagens-3d/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "R8"
+  },
+  {
+   "code": "RAM",
+   "variantes": [
+    "RAM"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Google impõe novos limites de memória no Android à medida que o “RAMageddon” muda as regras da indústria",
+   "lien_exemple": "https://tek.sapo.pt/mobile/apps/artigos/google-impoe-novos-limites-de-memoria-no-android-a-medida-que-o-ramageddon-muda-as-regras-da-industria/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RAM"
+  },
+  {
+   "code": "RAT",
+   "variantes": [
+    "RAT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "THost9 Android RAT Pairs Packed Loader With ADB Worm",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/thost9-android-rat-packed-loader/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RAT"
+  },
+  {
+   "code": "RBRK",
+   "variantes": [
+    "RBRK"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "RBRK: Subscription ARR up 33% and outlook raised amid strong demand for AI-driven cyber resilience",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60281218497&f=News&s=14&ci=107203&i=0&si=251314&fmi=660724092&e=TradingView&d=116434&mbc=Q1QzL2E9NjAyODEyMTg0OTcmcD0xNGUmdj0xJng9eFZwV1EyNkRIQkdFZXZLbHdrNWR6USZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1788159957000&ck=928e08717238ee79__;!!NEMsmePo_HYI!ZQYxD5QXQwzUPenV_rxtqOcns9ZM7bhFUfeqwg-SrvByg8uqTkH_6oDcA2jyP7DCqIIKKRxLUyXo5J-BvajrqlTQX7wp$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RBRK"
+  },
+  {
+   "code": "RCE",
+   "variantes": [
+    "RCE"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RCE"
+  },
+  {
+   "code": "RCE14",
+   "variantes": [
+    "RCE14"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Human Attacker Hits Machine-Speed Exploitation of Marimo RCE",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/human-attacker-machine-speed/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RCE14"
+  },
+  {
+   "code": "RDS",
+   "variantes": [
+    "RDS"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Microsoft Releases Emergency Patch to Fix RDS Vulnerability",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/microsoft-releases-emergency-patch/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RDS"
+  },
+  {
+   "code": "REGZA",
+   "variantes": [
+    "REGZA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "RGB veio para ficar? Descubra o que os fabricantes de TV, e não só, trouxeram até à IFA 2026",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rgb-veio-para-ficar-descubra-o-que-os-fabricantes-de-tv-e-nao-so-trouxeram-ate-a-ifa/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "REGZA"
+  },
+  {
+   "code": "REPMUS",
+   "variantes": [
+    "REPMUS"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "REPMUS 2026: Portugal volta a ser palco do maior exercício de testes a robots, drones e sistemas de defesa não tripulados",
+   "lien_exemple": "https://tek.sapo.pt/expert/artigos/repmus-2026-portugal-volta-a-ser-palco-do-maior-exercicio-de-testes-a-robots-drones-e-sistemas-de-defesa-nao-tripulados/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "REPMUS"
+  },
+  {
+   "code": "REPMUS 2026",
+   "variantes": [
+    "REPMUS 2026"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "REPMUS 2026: Portugal volta a ser palco do maior exercício de testes a robots, drones e sistemas de defesa não tripulados",
+   "lien_exemple": "https://tek.sapo.pt/expert/artigos/repmus-2026-portugal-volta-a-ser-palco-do-maior-exercicio-de-testes-a-robots-drones-e-sistemas-de-defesa-nao-tripulados/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "REPMUS 2026"
+  },
+  {
+   "code": "RF",
+   "variantes": [
+    "RF"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Datos biométricos y autodeterminación informativa en la Resolución N.º 029–2026–RF de la Prodhab de Costa Rica",
+   "lien_exemple": "https://iapp.org/news/a/datos-biom-tricos-y-autodeterminaci-n-informativa-en-la-resoluci-n-n-029-2026-rf-de-la-prodhab",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RF"
+  },
+  {
+   "code": "RGB",
+   "variantes": [
+    "RGB"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Entrevista: “Nos próximos anos, a televisão vai sentir-te e tornar-se uma amiga”",
+   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/entrevista-nos-proximos-anos-a-televisao-vai-sentir-te-e-tornar-se-uma-amiga/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RGB"
+  },
+  {
    "code": "RHÖN",
    "variantes": [
     "RHÖN"
@@ -26230,6 +25683,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "RHÖN"
+  },
+  {
+   "code": "RMM",
+   "variantes": [
+    "RMM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Phishing Campaign Abuses eCards to Deploy RMM Tools",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/seasonalinvite-phishing-ecards-rmm/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RMM"
   },
   {
    "code": "RNA",
@@ -26262,6 +25730,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "RNS"
   },
   {
+   "code": "ROG",
+   "variantes": [
+    "ROG"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Asus estreia os seus primeiros routers Wi-Fi 8. Novos modelos chegam a Portugal em outubro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-estreia-os-seus-primeiros-routers-wi-fi-8-novos-modelos-chegam-a-portugal-em-outubro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ROG"
+  },
+  {
    "code": "RS-485",
    "variantes": [
     "RS-485"
@@ -26275,6 +25758,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "RS-485"
+  },
+  {
+   "code": "RSA",
+   "variantes": [
+    "RSA"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Žádost o informace ze dne 16.8.2026",
+   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-16-8-2026/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RSA"
   },
   {
    "code": "RSAC",
@@ -26305,6 +25803,112 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "RSAC 2026"
+  },
+  {
+   "code": "RTX",
+   "variantes": [
+    "RTX"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Asus confirma versão final dos ProArt P16, P14 e GR1X com Nvidia RTX Spark e chegada prevista para outubro",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/asus-confirma-versao-final-dos-proart-p16-p14-e-gr1x-com-nvidia-rtx-spark-e-chegada-prevista-para-outubro/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RTX"
+  },
+  {
+   "code": "RVVI",
+   "variantes": [
+    "RVVI"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Sběr vybraných výsledků v aplikaci SKV – Systém Kvalitních Výsledků",
+   "lien_exemple": "https://mzd.gov.cz/sber-vybranych-vysledku-v-aplikaci-skv-system-kvalitnich-vysledku-9/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RVVI"
+  },
+  {
+   "code": "RYANT",
+   "variantes": [
+    "RYANT"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Žádost o informace ze dne 6.8.2026",
+   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-6-8-2026/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RYANT"
+  },
+  {
+   "code": "S/4HANA",
+   "variantes": [
+    "S/4HANA"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Grupo Entrepinares migra su gestión empresarial a SAP S/4HANA",
+   "lien_exemple": "https://www.computing.es/erp/grupo-entrepinares-migra-su-gestion-empresarial-a-sap-s-4hana/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "S/4HANA"
+  },
+  {
+   "code": "S26",
+   "variantes": [
+    "S26"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Galaxy S26 FE é a porta de entrada para funcionalidades de IA da linha premium da Samsung",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/galaxy-s26-fe-e-a-porta-de-entrada-para-funcionalidades-de-ia-da-linha-premium-da-samsung/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "S26"
+  },
+  {
+   "code": "S27",
+   "variantes": [
+    "S27"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Tudo o que se sabe (para já) sobre a futura família Samsung Galaxy S27",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/tudo-o-que-se-sabe-para-ja-sobre-a-futura-familia-samsung-galaxy-s27/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "S27"
+  },
+  {
+   "code": "SAP",
+   "variantes": [
+    "SAP"
+   ],
+   "langues": [
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "EU probes SAP over anti-competitive ERP support practices",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/eu-probes-sap-over-anti-competitive-erp-support-practices/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SAP"
   },
   {
    "code": "SARL",
@@ -26398,6 +26002,52 @@ window.VEILLE_ACRONYMES = {
    "fr": "SD-WAN"
   },
   {
+   "code": "SEC",
+   "variantes": [
+    "SEC"
+   ],
+   "langues": [
+    "en",
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "SEC ends probe into MOVEit attacks impacting 95 million people",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/sec-ends-probe-into-moveit-attacks-impacting-95-million-people/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SEC"
+  },
+  {
+   "code": "SECURITY",
+   "variantes": [
+    "SECURITY"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "SECURITY Cohesity extends resilience to AI agents, plans to automate cyber resilience September 16, 2026",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.newsdesk.lexisnexis.com/click/?t=4&a=60418603514&f=News&s=14&ci=107203&i=286&si=235262&fmi=656671901&e=Blocks**A26*Files&d=116434&mbc=Q1QzL2E9NjA0MTg2MDM1MTQmcD0xNGUmdj0xJng9c3o0cm9ieWFGSnpEeXlNWnJuSl9zUSZ1MT1ORCZ1Mj11cC11cm46dXNlcjpQQTE4NjgxNjU4Mg&fi=1735266&ai=338121&ac=338121_1789974489000&ck=829718e1deac3adf__;KyUr!!NEMsmePo_HYI!cC2gXvEnV8ud0G6ikrvMZOs9tOH1o7u0NpF37VXz22KjqqfoqDQBi1VhiJfbM5RIUAZuHVfZOQrkdJGFDidCUNUbLV7U$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SECURITY"
+  },
+  {
+   "code": "SEED",
+   "variantes": [
+    "SEED"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Este televisor “desdobrável” combina MicroLED com um design de luxo e um preço (quase) à altura de um Bugatti",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/este-televisor-desdobravel-combina-microled-com-um-design-de-luxo-e-um-preco-quase-a-altura-de-um-bugatti/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SEED"
+  },
+  {
    "code": "SEMIC",
    "variantes": [
     "SEMIC"
@@ -26413,6 +26063,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "SEMIC"
   },
   {
+   "code": "SEO",
+   "variantes": [
+    "SEO"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Gambling Goblin Turns Brazilian Government Sites Into SEO Weapons",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/gambling-goblin-brazilian/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SEO"
+  },
+  {
    "code": "SEPA",
    "variantes": [
     "SEPA"
@@ -26426,6 +26091,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "SEPA"
+  },
+  {
+   "code": "SETT",
+   "variantes": [
+    "SETT"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "La SETT y el Parque Tecnológico de Andalucía se alían para impulsar el futuro Centro de Semiconductores en Málaga",
+   "lien_exemple": "https://www.computing.es/noticias/la-sett-y-el-parque-tecnologico-de-andalucia-se-alian-para-impulsar-el-futuro-centro-de-semiconductores-en-malaga/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SETT"
   },
   {
    "code": "SIA",
@@ -26456,6 +26136,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "SIGA"
+  },
+  {
+   "code": "SIM",
+   "variantes": [
+    "SIM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Former telecom manager admits to doing SIM swaps for $1,000",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/former-telecom-manager-admits-to-doing-sim-swaps-for-1-000/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SIM"
+  },
+  {
+   "code": "SKV",
+   "variantes": [
+    "SKV"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Sběr vybraných výsledků v aplikaci SKV – Systém Kvalitních Výsledků",
+   "lien_exemple": "https://mzd.gov.cz/sber-vybranych-vysledku-v-aplikaci-skv-system-kvalitnich-vysledku-9/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SKV"
   },
   {
    "code": "SLB",
@@ -26503,6 +26213,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "SMV"
   },
   {
+   "code": "SNMP",
+   "variantes": [
+    "SNMP"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Russian State Hackers Target Vulnerable Routers Worldwide, Joint Advisory Warns",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/russian-state-hackers-vulnerable/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SNMP"
+  },
+  {
+   "code": "SOC2",
+   "variantes": [
+    "SOC2"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "With the Rise of AI Agents, SOC 2 Should Adapt or Risk Irrelevance",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SOC2"
+  },
+  {
+   "code": "SOCKS5",
+   "variantes": [
+    "SOCKS5"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SOCKS5"
+  },
+  {
    "code": "SOLR2",
    "variantes": [
     "SOLR2"
@@ -26516,6 +26271,51 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "SOLR2"
+  },
+  {
+   "code": "SOS",
+   "variantes": [
+    "SOS"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Garmin fēnix 9 Pro chega com mais autonomia e conectividade para aventuras longe do smartphone",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/garmin-fenix-9-pro-chega-com-mais-autonomia-e-conectividade-para-aventuras-longe-do-smartphone/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SOS"
+  },
+  {
+   "code": "SP 800-53",
+   "variantes": [
+    "SP 800-53"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Building Cyber Resilience Through Risk, Education and Service  - 10 Sep 2026 18:12 ...regulatory requirements such as ISO 27001, NIST SP 800-53, the CIS Controls, HIPAA , GDPR, CCPA and PCI DSS. Each framework has a different purpose, but organizatio",
+   "lien_exemple": "https://urldefense.com/v3/__https://techbullion.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxlwm87fy$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SP 800-53"
+  },
+  {
+   "code": "SPD",
+   "variantes": [
+    "SPD"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Nach Krebserkrankung: Länder wollen „Recht auf Vergessen“",
+   "lien_exemple": "https://www.aerzteblatt.de/news/nach-krebserkrankung-lander-wollen-recht-auf-vergessen-2a1b291d-fa9a-4593-b1e0-f6dfc1465730",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SPD"
   },
   {
    "code": "SPE",
@@ -26533,6 +26333,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "SPE"
   },
   {
+   "code": "SSD",
+   "variantes": [
+    "SSD"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nunca desfragmente o seu disco SSD. Faça antes isto para o manter em forma",
+   "lien_exemple": "https://tek.sapo.pt/how-to/artigos/nunca-desfragmente-o-seu-disco-ssd-faca-antes-isto-para-o-manter-em-forma/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SSD"
+  },
+  {
    "code": "SSO",
    "variantes": [
     "SSO"
@@ -26548,6 +26363,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "SSO"
   },
   {
+   "code": "STEM",
+   "variantes": [
+    "STEM"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Geração STEM .PT tem bolsas de 5 mil euros para apoiar o talento feminino nas áreas da ciência e tecnologia",
+   "lien_exemple": "https://tek.sapo.pt/expert/artigos/geracao-stem-pt-tem-bolsas-de-5-mil-euros-para-apoiar-o-talento-feminino-nas-areas-da-ciencia-e-tecnologia/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "STEM"
+  },
+  {
+   "code": "STI",
+   "variantes": [
+    "STI"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Pozvánka na webinář ECDC o péči o migranty v oblasti HIV, TBC, virových hepatitid a STI",
+   "lien_exemple": "https://mzd.gov.cz/pozvanka-na-webinar-ecdc-o-peci-o-migranty-v-oblasti-hiv-tbc-virovych-hepatitid-a-sti/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "STI"
+  },
+  {
+   "code": "STIC",
+   "variantes": [
+    "STIC"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Las XX Jornadas STIC marcan un hito con la edición más ambiciosa de su historia",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/las-xx-jornadas-stic-marcan-un-hito-con-la-edicion-mas-ambiciosa-de-su-historia_20260715.html",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "STIC"
+  },
+  {
    "code": "STYGR",
    "variantes": [
     "STYGR"
@@ -26561,6 +26421,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "STYGR"
+  },
+  {
+   "code": "SU7",
+   "variantes": [
+    "SU7"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Xiaomi 18 Fold, nova geração do SU7 e a expansão da Mijia na estreia da marca na IFA 2026",
+   "lien_exemple": "https://tek.sapo.pt/noticias/negocios/artigos/xiaomi-18-fold-nova-geracao-do-su7-e-a-expansao-da-mijia-na-estreia-da-marca-na-ifa-2026/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SU7"
   },
   {
    "code": "SUPER",
@@ -26591,6 +26466,81 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "SUSE"
+  },
+  {
+   "code": "SUV",
+   "variantes": [
+    "SUV"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CEER Exobot: Arábia Saudita revela o seu primeiro carro elétrico com 1.111 cavalos e um design único",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/ceer-exobot-arabia-saudita-revela-o-seu-primeiro-carro-eletrico-com-1-111-cavalos-e-um-design-unico/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SUV"
+  },
+  {
+   "code": "SVG",
+   "variantes": [
+    "SVG"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/fake-voicemail-svg-files-bypass/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SVG"
+  },
+  {
+   "code": "TAKE",
+   "variantes": [
+    "TAKE"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "TAKE IT DOWN Act: How to comply as the FTC begins enforcement",
+   "lien_exemple": "https://iapp.org/news/a/take-it-down-act-how-to-comply-as-the-ftc-begins-enforcement",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TAKE"
+  },
+  {
+   "code": "TB",
+   "variantes": [
+    "TB"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ShinyHunters claimt gegevens van FBI-medewerkers te hebben buitgemaakt",
+   "lien_exemple": "https://www.security.nl/posting/954245/ShinyHunters+claimt+gegevens+van+FBI-medewerkers+te+hebben+buitgemaakt?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TB"
+  },
+  {
+   "code": "TBC",
+   "variantes": [
+    "TBC"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Pozvánka na webinář ECDC o péči o migranty v oblasti HIV, TBC, virových hepatitid a STI",
+   "lien_exemple": "https://mzd.gov.cz/pozvanka-na-webinar-ecdc-o-peci-o-migranty-v-oblasti-hiv-tbc-virovych-hepatitid-a-sti/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TBC"
   },
   {
    "code": "TDD",
@@ -26668,6 +26618,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "TI2"
   },
   {
+   "code": "TIBER",
+   "variantes": [
+    "TIBER"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Voir la publication : TLPT / TIBER : transformer les exigences DORA en levier de résilience cyber",
+   "lien_exemple": "https://www.intrinsec.com/tlpt-tiber-dora-conformite-entites-critiques/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TIBER"
+  },
+  {
    "code": "TIETO 2026",
    "variantes": [
     "TIETO 2026"
@@ -26681,6 +26646,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "TIETO 2026"
+  },
+  {
+   "code": "TIME",
+   "variantes": [
+    "TIME"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "LastPass: Rapuncel infostealer schakelt antivirussoftware uit en steelt gegevens",
+   "lien_exemple": "https://www.security.nl/posting/954159/LastPass%3A+Rapuncel+infostealer+schakelt+antivirussoftware+uit+en+steelt+gegevens?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TIME"
+  },
+  {
+   "code": "TLPT",
+   "variantes": [
+    "TLPT"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Voir la publication : TLPT / TIBER : transformer les exigences DORA en levier de résilience cyber",
+   "lien_exemple": "https://www.intrinsec.com/tlpt-tiber-dora-conformite-entites-critiques/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TLPT"
   },
   {
    "code": "TOCTOU",
@@ -26698,6 +26693,38 @@ window.VEILLE_ACRONYMES = {
    "fr": "TOCTOU"
   },
   {
+   "code": "TP",
+   "variantes": [
+    "TP"
+   ],
+   "langues": [
+    "en",
+    "pt",
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Zero-Day Flaw in TP-Link Cameras Enables Eavesdropping",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/zeroday-tplink-cameras/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TP"
+  },
+  {
+   "code": "TRM",
+   "variantes": [
+    "TRM"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "US Sanctions Iranian $6bn Crypto “Exchange” Shelbit",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/us-sanctions-iranian-6bn-crypto/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TRM"
+  },
+  {
    "code": "TRUST",
    "variantes": [
     "TRUST"
@@ -26711,6 +26738,127 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "TRUST"
+  },
+  {
+   "code": "TSMC",
+   "variantes": [
+    "TSMC"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TSMC"
+  },
+  {
+   "code": "TV",
+   "variantes": [
+    "TV"
+   ],
+   "langues": [
+    "en",
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Operation Switch Off dismantles major pirate TV streaming services",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/operation-switch-off-dismantles-major-pirate-tv-streaming-services/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TV"
+  },
+  {
+   "code": "TÜV",
+   "variantes": [
+    "TÜV"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Hisense leva tecnologia RGB MiniLED evo com Chromagic 2.0 à sua gama de TVs na IFA",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/hisense-leva-tecnologia-rgb-miniled-evo-com-chromagic-2-0-a-sua-gama-de-tvs-na-ifa/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TÜV"
+  },
+  {
+   "code": "UAT-7810",
+   "variantes": [
+    "UAT-7810"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "China-Linked APT Expands Proxy Network With New Malware",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/uat-7810-china-apt-orb-proxy/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "UAT-7810"
+  },
+  {
+   "code": "UBTECH",
+   "variantes": [
+    "UBTECH"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nova fábrica na China pretende produzir mais robots humanoides num ano do que se venderam em 2025 globalmente",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/nova-fabrica-na-china-pretende-produzir-mais-robots-humanoides-num-ano-do-que-se-venderam-em-2025-globalmente/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "UBTECH"
+  },
+  {
+   "code": "UEFA",
+   "variantes": [
+    "UEFA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Hisense leva o V AIOS e a visão “Companion Living” à IFA 2026 e renova parceria com a UEFA até 2028",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/hisense-leva-o-v-aios-e-a-visao-companion-living-a-ifa-2026-e-renova-parceria-com-a-uefa-ate-2028/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "UEFA"
+  },
+  {
+   "code": "UI9",
+   "variantes": [
+    "UI9"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Galaxy S26 FE é a porta de entrada para funcionalidades de IA da linha premium da Samsung",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/galaxy-s26-fe-e-a-porta-de-entrada-para-funcionalidades-de-ia-da-linha-premium-da-samsung/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "UI9"
+  },
+  {
+   "code": "UL",
+   "variantes": [
+    "UL"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Inside UL - UL.com",
+   "lien_exemple": "https://urldefense.com/v3/__https://www.ul.com__;!!NEMsmePo_HYI!YKPnYlX03BMLPLl_GqhnavABmtG4RJJkaMhnrjR53o3ArnH3ioH2cosAewBZSWA3uks4Y-_4CkQXGbIR4yJJxhx5Kf0v$",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "UL"
   },
   {
    "code": "UNICEF",
@@ -26728,6 +26876,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "UNICEF"
   },
   {
+   "code": "UNISOC",
+   "variantes": [
+    "UNISOC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "UNISOC Modem Flaw Enables Remote Code Execution via Video Calls",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/unisoc-modem-flaw-rce-calls/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "UNISOC"
+  },
+  {
    "code": "URL",
    "variantes": [
     "URL"
@@ -26743,6 +26906,156 @@ window.VEILLE_ACRONYMES = {
    "fr": "URL"
   },
   {
+   "code": "US2",
+   "variantes": [
+    "US2"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Alleged Scattered Spider Member Extradited to US",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/scattered-spider-member-extradited/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "US2"
+  },
+  {
+   "code": "USB-C",
+   "variantes": [
+    "USB-C"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Philips estreia monitor com ecrã curvo ultrawide de 34 polegadas com 200 Hz e iluminação Ambiglow com IA",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/philips-lanca-monitor-de-gaming-com-ecra-curvo-ultrawide-de-34-polegadas-com-200-hz-e-iluminacao-ambiglow-com-ia/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "USB-C"
+  },
+  {
+   "code": "V900",
+   "variantes": [
+    "V900"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Alibaba mostra “músculo” em IA às vésperas da cimeira Trump-Xi Jinping, com novo chip e planos para modelo de 10 biliões de parâmetros",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/alibaba-mostra-musculo-em-ia-as-vesperas-da-cimeira-trump-xi-com-novo-chip-e-planos-para-modelo-de-10-bilioes-de-parametros/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "V900"
+  },
+  {
+   "code": "VA",
+   "variantes": [
+    "VA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Philips estreia monitor com ecrã curvo ultrawide de 34 polegadas com 200 Hz e iluminação Ambiglow com IA",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/philips-lanca-monitor-de-gaming-com-ecra-curvo-ultrawide-de-34-polegadas-com-200-hz-e-iluminacao-ambiglow-com-ia/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VA"
+  },
+  {
+   "code": "VASS",
+   "variantes": [
+    "VASS"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NATEEVO nombra a Pedro Latasa nuevo CEO de la empresa en una etapa alineada con el Grupo VASS",
+   "lien_exemple": "https://www.computing.es/mercado-ti/nateevo-nombra-a-pedro-latasa-nuevo-ceo-de-la-empresa-en-una-etapa-alineada-con-el-grupo-vass/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VASS"
+  },
+  {
+   "code": "VCO",
+   "variantes": [
+    "VCO"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Arista patches actively exploited VeloCloud Orchestrator zero-day",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VCO"
+  },
+  {
+   "code": "VDR",
+   "variantes": [
+    "VDR"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "FedRAMP VDR & VER: Daily Scans Are Only the Beginning",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VDR"
+  },
+  {
+   "code": "VER",
+   "variantes": [
+    "VER"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "FedRAMP VDR & VER: Daily Scans Are Only the Beginning",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VER"
+  },
+  {
+   "code": "VINCE-NT",
+   "variantes": [
+    "VINCE-NT"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CISA Upgrades Vulnerability Reporting Platform with More Automation",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/cisa-upgrades-vulnerability/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VINCE-NT"
+  },
+  {
+   "code": "VISEO",
+   "variantes": [
+    "VISEO"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "VISEO adquiere la consultora italiana AKC",
+   "lien_exemple": "https://www.computing.es/mercado-ti/viseo-adquiere-la-consultora-italiana-akc/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VISEO"
+  },
+  {
    "code": "VM",
    "variantes": [
     "VM"
@@ -26756,6 +27069,51 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "VM"
+  },
+  {
+   "code": "VS",
+   "variantes": [
+    "VS"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Nieuwe golf malafide npm packages toegeschreven aan Noord-Koreaanse WaterPlum groepering",
+   "lien_exemple": "https://www.security.nl/posting/954145/Nieuwe+golf+malafide+npm+packages+toegeschreven+aan+Noord-Koreaanse+WaterPlum+groepering?channel=rss",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VS"
+  },
+  {
+   "code": "VZP",
+   "variantes": [
+    "VZP"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Žádost o informace ze dne 4.8.2026",
+   "lien_exemple": "https://mzd.gov.cz/zadost-o-informace-ze-dne-4-8-2026/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "VZP"
+  },
+  {
+   "code": "WDS",
+   "variantes": [
+    "WDS"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Microsoft plans to deprecate Windows Deployment Services",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-deprecate-windows-deployment-services-after-windows-server-2025/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "WDS"
   },
   {
    "code": "WEF",
@@ -26833,6 +27191,187 @@ window.VEILLE_ACRONYMES = {
    "fr": "WIPO"
   },
   {
+   "code": "WLTP",
+   "variantes": [
+    "WLTP"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "A2 e-tron: Audi ressuscita um ícone com o elétrico mais eficiente de sempre da marca",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/a2-e-tron-audi-ressuscita-um-icone-com-o-eletrico-mais-eficiente-de-sempre-da-marca/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "WLTP"
+  },
+  {
+   "code": "WP",
+   "variantes": [
+    "WP"
+   ],
+   "langues": [
+    "en",
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Automattic blocks WP Engine’s access to WordPress resources",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/automattic-blocks-wp-engines-access-to-wordpress-resources/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "WP"
+  },
+  {
+   "code": "WQHD",
+   "variantes": [
+    "WQHD"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Philips estreia monitor com ecrã curvo ultrawide de 34 polegadas com 200 Hz e iluminação Ambiglow com IA",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/philips-lanca-monitor-de-gaming-com-ecra-curvo-ultrawide-de-34-polegadas-com-200-hz-e-iluminacao-ambiglow-com-ia/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "WQHD"
+  },
+  {
+   "code": "WSA",
+   "variantes": [
+    "WSA"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "WSA Portugal tem candidaturas abertas para projetos com impacto",
+   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/wsa-portugal-tem-candidaturas-abertas-para-projetos-com-impacto/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "WSA"
+  },
+  {
+   "code": "WWH",
+   "variantes": [
+    "WWH"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "WWH-Club credit card market admins arrested after cash spending spree",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/legal/wwh-club-credit-card-market-admins-arrested-after-cash-spending-spree/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "WWH"
+  },
+  {
+   "code": "X10",
+   "variantes": [
+    "X10"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "X10"
+  },
+  {
+   "code": "X20",
+   "variantes": [
+    "X20"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ROG Xbox Ally X20 já tem data de chegada (e traz companhia). Pré-encomendas estão abertas",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rog-xbox-ally-x20-ja-tem-data-de-chegada-e-traz-companhia-pre-encomendas-estao-abertas/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "X20"
+  },
+  {
+   "code": "X9",
+   "variantes": [
+    "X9"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Oppo Find X10 Pro Max vai estrear o novo MediaTek Dimensity 9600 Pro de 2 nm",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/oppo-find-x10-pro-max-vai-estrear-o-novo-mediatek-dimensity-9600-pro-de-2-nm/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "X9"
+  },
+  {
+   "code": "XREAL",
+   "variantes": [
+    "XREAL"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ROG Xbox Ally X20 já tem data de chegada (e traz companhia). Pré-encomendas estão abertas",
+   "lien_exemple": "https://tek.sapo.pt/multimedia/artigos/rog-xbox-ally-x20-ja-tem-data-de-chegada-e-traz-companhia-pre-encomendas-estao-abertas/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "XREAL"
+  },
+  {
+   "code": "XT2",
+   "variantes": [
+    "XT2"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Huawei Mate XT 2 aposta na privacidade e num ecrã de 10,2 polegadas em formato tripartido",
+   "lien_exemple": "https://tek.sapo.pt/mobile/equipamentos/artigos/huawei-mate-xt-2-aposta-na-privacidade-e-num-ecra-de-102-polegadas-em-formato-tripartido/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "XT2"
+  },
+  {
+   "code": "YAML",
+   "variantes": [
+    "YAML"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "How One Kubernetes YAML Can Hand Over a GCP Organization",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/how-one-kubernetes-yaml-can-hand-over-a-gcp-organization/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "YAML"
+  },
+  {
+   "code": "ZESTUM",
+   "variantes": [
+    "ZESTUM"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Ver, ouvir e agora cheirar: nova Scentbar transporta aromas para os videojogos (e não só)",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/ver-ouvir-e-agora-cheirar-nova-scentbar-transporta-aromas-para-os-videojogos-e-nao-so/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ZESTUM"
+  },
+  {
    "code": "ZIP",
    "variantes": [
     "ZIP"
@@ -26848,6 +27387,66 @@ window.VEILLE_ACRONYMES = {
    "fr": "ZIP"
   },
   {
+   "code": "ZWO",
+   "variantes": [
+    "ZWO"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Competição mostra as imagens astronómicas do ano e há um português entre os vencedores",
+   "lien_exemple": "https://tek.sapo.pt/extras/site-do-dia/artigos/competicao-mostra-as-imagens-astronomicas-do-ano-e-ha-um-portugues-entre-os-vencedores/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ZWO"
+  },
+  {
+   "code": "ΑΝ",
+   "variantes": [
+    "ΑΝ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Απόρριψη προσφυγής αλλοδαπού για διαγραφή του από τον Εθνικό Κατάλογο Ανεπιθύμητων Αλλοδαπών (Ε.Κ.ΑΝ.Α.)",
+   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/aporripsi-prosfygis-allodapoy-gia-diagrafi-toy-apo-ton-ethniko-katalogo",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΑΝ"
+  },
+  {
+   "code": "ΑΠΑ",
+   "variantes": [
+    "ΑΠΑ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Σε λειτουργία η Ηλεκτρονική Πλατφόρμα Αξιολόγησης Επιπέδου Κυβερνοασφάλειας αποκλειστικά φορέων της Αρχής Πολιτικής Αεροπορίας (ΑΠΑ)",
+   "lien_exemple": "https://cyber.gov.gr/se-leitoyrgia-i-ilektroniki-platforma-axiologisis-epipedoy-kyvernoasfaleias-apokleistika-foreon-tis-archis-politikis-aeroporias-apa/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΑΠΑ"
+  },
+  {
+   "code": "ΑΨΑ",
+   "variantes": [
+    "ΑΨΑ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Στρατηγικά θέματα κυβερνοασφάλειας στο επίκεντρο της διήμερης θεσμικής συνάντησης ΑΨΑ-ΕΑΚ",
+   "lien_exemple": "https://cyber.gov.gr/stratigika-themata-kyvernoasfaleias-sto-epikentro-tis-diimeris-thesmikis-synantisis-apsa-eak/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΑΨΑ"
+  },
+  {
    "code": "ΕΑΚ-ΕNISA",
    "variantes": [
     "ΕΑΚ-ΕNISA"
@@ -26861,6 +27460,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "ΕΑΚ-ΕNISA"
+  },
+  {
+   "code": "ΕΕΤΑΑ",
+   "variantes": [
+    "ΕΕΤΑΑ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Απόφαση για περιστατικό παραβίασης προσωπικών δεδομένων ΕΕΤΑΑ με την ιδιότητά του εκτελούντος την επεξεργασία για λογαριασμό του υπευθύνου επεξεργασίας ΥΚΟΙΣΟ",
+   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/apofasi-gia-peristatiko-parabiasis-prosopikon-dedomenon-eetaa-me-tin",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΕΕΤΑΑ"
   },
   {
    "code": "ΕΚΑΔ",
@@ -26921,6 +27535,66 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "ΕΣΠΔ 2026"
+  },
+  {
+   "code": "ΗΔΥΚΑ",
+   "variantes": [
+    "ΗΔΥΚΑ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "«Η ασφάλεια των διεπαφών των συστήματων δεν μπορεί να αποτελεί μεταγενέστερη προσθήκη» Όλα όσα δήλωσε ο Διοικητής της ΕΑΚ Μ. Μπλέτσας σε εκδήλωση της ΗΔΥΚΑ",
+   "lien_exemple": "https://cyber.gov.gr/i-asfaleia-ton-diepafon-ton-systimaton-den-mporei-na-apotelei-metagenesteri-prosthiki-ola-osa-dilose-o-dioikitis-tis-eak-m-mpletsas-se-ekdilosi-tis-idyka/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΗΔΥΚΑ"
+  },
+  {
+   "code": "ΠΔ",
+   "variantes": [
+    "ΠΔ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Γνωμοδότηση επί σχεδίου ΠΔ του Υπουργείου Ναυτιλίας και Νησιωτικής Πολιτικής",
+   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/gnomodotisi-epi-shedioy-pd-toy-ypoyrgeioy-naytilias-kai-nisiotikis",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΠΔ"
+  },
+  {
+   "code": "ΣΕΠΕ",
+   "variantes": [
+    "ΣΕΠΕ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "«Στρατηγική προτεραιότητα η Κυβερνοασφάλεια σε Άμυνα και Τεχνολογία» – Παρέμβαση του Διοικητή της ΕΑΚ Μ. Μπλέτσα στο συνέδριο του ΣΕΠΕ",
+   "lien_exemple": "https://cyber.gov.gr/stratigiki-proteraiotita-i-kyvernoasfaleia-se-amyna-kai-technologia-paremvasi-toy-dioikiti-tis-eak-m-mpletsa-sto-synedrio-toy-sepe/",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΣΕΠΕ"
+  },
+  {
+   "code": "ΥΚΟΙΣΟ",
+   "variantes": [
+    "ΥΚΟΙΣΟ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Απόφαση για περιστατικό παραβίασης προσωπικών δεδομένων ΕΕΤΑΑ με την ιδιότητά του εκτελούντος την επεξεργασία για λογαριασμό του υπευθύνου επεξεργασίας ΥΚΟΙΣΟ",
+   "lien_exemple": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/apofasi-gia-peristatiko-parabiasis-prosopikon-dedomenon-eetaa-me-tin",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ΥΚΟΙΣΟ"
   },
   {
    "code": "ΥΠΔ",

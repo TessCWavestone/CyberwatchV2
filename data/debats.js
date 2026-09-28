@@ -1,158 +1,6 @@
 window.VEILLE_DEBATS = {
- "mise_a_jour": "2026-09-25T14:56+00:00",
+ "mise_a_jour": "2026-09-28T12:10+00:00",
  "articles": [
-  {
-   "id": "f17d8e4cdedc",
-   "titre": "APAC Life Sciences and Health Care Webinar Series - Spotlight on the U.S. - Session 11",
-   "lien": "https://www.hlc.com/en/events/apac-life-sciences-and-health-care-webinar-session-11",
-   "resume": "Webinar No. 11 – Life Sciences Deals: Licensing, Co-Development and Strategic Collaborations",
-   "date": "2026-10-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.543,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "APAC"
-   ]
-  },
-  {
-   "id": "73bd3a2981dd",
-   "titre": "M&A Boot Camp training series",
-   "lien": "https://www.hlc.com/en/events/m-a-boot-camp-training-series-2026",
-   "resume": "Welcome to the event page for Hogan Lovells Cadwalader's 2026 M&A Boot Camp, an annual introductory M&A legal training series for law students, junior lawyers, junior bankers, and...",
-   "date": "2026-10-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.267,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "ad281aafde02",
-   "titre": "Horizons Zurich 2026",
-   "lien": "https://www.hlc.com/en/events/horizons-zurich-2026",
-   "resume": "European Horizons: Navigating the Future of Life Sciences Regulation",
-   "date": "2026-09-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.379,
-   "pertinence": "faible",
-   "themes": [
-    "cra",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "5d0a6b732369",
-   "titre": "Registration - EUHPP Live Webinar: Pollen season on the rise: are we ready for the next respiratory challenge? (27 October 2026, 14:00-15:00)",
-   "lien": "https://health.ec.europa.eu/node/17686",
-   "resume": "Registration - EUHPP Live Webinar: Pollen season on the rise: are we ready for the next respiratory challenge? (27 October 2026, 14:00-15:00)",
-   "date": "2026-09-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Medical Device Coordination Group",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.276,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-10-27",
-     "approx": false,
-     "extrait": {
-      "en": "…Webinar: Pollen season on the rise: are we ready for the next respiratory challenge? (27 October 2026, 14:00-15:00). Registration - EUHPP Live Webinar: Pollen season on the rise: are we…"
-     }
-    }
-   ],
-   "acronymes": [
-    "EUHPP"
-   ]
-  },
-  {
-   "id": "dfbbe255cfcc",
-   "titre": "Registration - EUHPP Live Webinar: Pollen season on the rise: are we ready for the next respiratory challenge? (27 October 2026, 14:00-15:00)",
-   "lien": "https://health.ec.europa.eu/latest-updates/registration-euhpp-live-webinar-pollen-season-rise-are-we-ready-next-respiratory-challenge-27-2026-09-24_en",
-   "resume": "News announcement 24 September 2026 Registration - EUHPP Live Webinar: Pollen season on the rise: are we ready for the next respiratory challenge? (27 October 2026, 14:00-15:00) 1 min read",
-   "date": "2026-09-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Medical Device Coordination Group",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.283,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-10-27",
-     "approx": false,
-     "extrait": {
-      "en": "…Webinar: Pollen season on the rise: are we ready for the next respiratory challenge? (27 October 2026, 14:00-15:00). News announcement 24 September 2026 Registration - EUHPP Live Webinar:…"
-     }
-    }
-   ],
-   "acronymes": [
-    "EUHPP"
-   ]
-  },
   {
    "id": "cf9dee9a8108",
    "titre": "Simplification for whom? Open letter to EU Member States to uphold GDPR protections in Digital Omnibus on Data",
@@ -178,610 +26,28 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.65,
-   "pertinence": "elevee",
+   "score": 0.61,
+   "pertinence": "moyenne",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "GDPR",
     "AI"
-   ]
-  },
-  {
-   "id": "e5d8a6b55c1e",
-   "titre": "It’s Just Math: Recent Legislative Trend Reignites Debate About the Bounds of Biometric Data",
-   "lien": "https://fpf.org/blog/its-just-math-recent-legislative-trend-reignites-debate-about-the-bounds-of-biometric-data/",
-   "resume": "Special thanks to FPF’s Rafal Fryc (former U.S. Policy Intern), Tatiana Rice (Senior Director for U.S. Legislation), and Jim Siegl (Senior Fellow) for research support and feedback A new exemption being proposed and considered in state legislatures across the country is resurfacing old debates around the contours of what constitutes biometric data. Biometric data has [&#8230;]",
-   "date": "2026-09-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.459,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "ca082b7335da",
-   "titre": "Hogan Lovells Cadwalader advises Anavex Life Sciences on annual meeting victory",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-advises-anavex-life-sciences-on-annual-meeting-victory",
-   "resume": "Boston, Denver, New York, Philadelphia &ndash; A Hogan Lovells Cadwalader team advised Anavex Life Sciences Corp. (Nasdaq: AVXL), a clinical-stage biopharmaceutical company focused on...",
-   "date": "2026-09-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.245,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AVXL"
-   ]
-  },
-  {
-   "id": "e178ae13c801",
-   "titre": "The Art of the Deal: Merger Remedies in the Trump Era",
-   "lien": "https://www.hlc.com/en/events/the-art-of-the-deal-merger-remedies-in-the-trump-era",
-   "resume": "In strategic M&A transactions, competition authorities may require certain remedies to address competitive harm resulting from the merger. In this webinar, we will explore tools merging ...",
-   "date": "2026-09-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.263,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "4ace51e9928e",
-   "titre": "EDRi-gram, 23 September 2026",
-   "lien": "https://edri.org/our-work/edri-gram-23-september-2026/",
-   "resume": "What has the EDRi network been up to over the past few weeks? Find out the latest digital rights news in our bi-weekly newsletter. In this edition: Turning up the heat – Commission backs social media bans, Apple held accountable, summer to-dos, & more! The post EDRi-gram, 23 September 2026 appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.408,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "normes"
+   "score_bruit": 0.33,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "8448f6885e8a",
-   "titre": "Freedom Not Fear 2026",
-   "lien": "https://edri.org/take-action/events/freedom-not-fear-2026/",
-   "resume": "Freedom not Fear (fnf) is an annual self-organised conference on privacy and digital rights. People from all across Europe meet and work towards more freedom in the digitalised world, plan actions against increasing surveillance and other attacks on civil rights. The post Freedom Not Fear 2026 appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.421,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "6b35676940e8",
-   "titre": "Serbia’s spyware scandal is also the EU’s problem",
-   "lien": "https://edri.org/our-work/serbias-spyware-scandal-is-also-the-eus-problem/",
-   "resume": "At least 14 people in Serbia have been targeted with spyware since the beginning of 2026, according to new findings by EDRi member SHARE Foundation. The targets include members of the student movement, activists, a member of parliament from the opposition party and a local councillor. These findings comecame to light amid growing pressure on Serbia’s pro-democracy movement. The EU’s failure to address spyware at…",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.49,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "SHARE"
-   ]
-  },
-  {
-   "id": "499da0a59729",
-   "titre": "What you need to know about the EU’s new digital deportation regime",
-   "lien": "https://edri.org/our-work/what-you-need-to-know-about-the-eus-new-digital-deportation-regime/",
-   "resume": "On 17 June, the European Parliament approved the new deportation law (called the “Return” Regulation) which aims to track undocumented people down and deport them from the EU in large numbers. The Regulation boosts the surveillance powers and digital control of national authorities and will rely heavily on technologies and data collection in their enforcement. This blog outlines the various digital tools and…",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.428,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "888ac924b453",
-   "titre": "New FPF Report Analyzes the Rise in Chatbot Legislation & What’s Ahead",
-   "lien": "https://fpf.org/press-releases/new-fpf-report-analyzes-the-rise-in-chatbot-legislation-whats-ahead/",
-   "resume": "As lawmakers look to regulate how AI systems interact with minors, new report breaks down key state and federal chatbot policy developments WASHINGTON, D.C. – The Future of Privacy Forum (FPF), a global non-profit focused on data protection, AI, and emerging technologies, today released a new report analyzing one of the most active areas of [&#8230;]",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.538,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI"
-   ]
-  },
-  {
-   "id": "692716690e4f",
-   "titre": "UK FCA publishes results of multi-firm review on frontier AI and cyber resilience",
-   "lien": "https://www.hlc.com/en/publications/uk-fca-publishes-results-of-multifirm-review-on-frontier-ai-and-cyber-resilience",
-   "resume": "On 2 September, the FCA published the results of its multi-firm review on how it considers frontier AI can affect cyber resilience, governance and vulnerability management. The review...",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "cyber resilience"
-   ],
-   "groupes": [
-    "Réglementations Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.721,
-   "pertinence": "elevee",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "UK",
-    "FCA",
-    "AI"
-   ]
-  },
-  {
-   "id": "7228072baf15",
-   "titre": "Early access to pharmaceutical products in major European markets",
-   "lien": "https://www.hlc.com/en/publications/early-access-to-pharmaceutical-products-in-major-european-markets",
-   "resume": "Providing patients with access to medical products outside the traditional clinical trial setting and before, or in certain circumstances around, commercial availability can raise complex...",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Clinical trial"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.652,
-   "pertinence": "elevee",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "c73acc4e505c",
-   "titre": "Call for Nominations: 17th Annual Privacy Papers for Policymakers Awards",
-   "lien": "https://fpf.org/blog/call-for-nominations-17th-annual-privacy-papers-for-policymakers-awards/",
-   "resume": "The 17th Privacy Papers for Policymakers call for submissions is now open until October 16, 2026. FPF’s Privacy Papers for Policymakers Award recognizes leading privacy research and analytical scholarship relevant to policymakers in the U.S. and internationally. The award highlights important work that analyzes current and emerging privacy issues and proposes achievable short-term solutions or means [&#8230;]",
-   "date": "2026-09-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.434,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-10-16",
-     "approx": false,
-     "extrait": {
-      "en": "…Awards. The 17th Privacy Papers for Policymakers call for submissions is now open until October 16, 2026. FPF’s Privacy Papers for Policymakers Award recognizes leading privacy research and…"
-     }
-    }
-   ],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "dbc9bd0fff51",
-   "titre": "Frontier AI is reshaping the UK FCA’s expectations of resilience",
-   "lien": "https://www.hlc.com/en/publications/frontier-ai-is-reshaping-the-uk-fcas-expectations-of-resilience",
-   "resume": "On 2 September 2026, the FCA published the results of its multi-firm review on how it considers frontier AI can affect cyber resilience, governance and vulnerability management. The review...",
-   "date": "2026-09-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "cyber resilience"
-   ],
-   "groupes": [
-    "Réglementations Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.715,
-   "pertinence": "elevee",
-   "themes": [
-    "cra",
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-09-02",
-     "approx": false,
-     "extrait": {
-      "en": "Frontier AI is reshaping the UK FCA’s expectations of resilience. On 2 September 2026, the FCA published the results of its multi-firm review on how it considers frontier AI…"
-     }
-    }
-   ],
-   "acronymes": [
-    "AI",
-    "UK",
-    "FCA"
-   ]
-  },
-  {
-   "id": "5e31ebc428c8",
-   "titre": "Your HIPAA compliance program is about to change",
-   "lien": "https://www.hlc.com/en/publications/your-hipaa-compliance-program-is-about-to-change",
-   "resume": "For years, HIPAA Privacy Rule compliance has been a relatively stable exercise. That may be about to change. The U.S. Department of Health and Human Services (HHS) appears poised to...",
-   "date": "2026-09-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "HIPAA"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.505,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "HIPAA",
-    "HHS"
-   ]
-  },
-  {
-   "id": "5e55981638fd",
-   "titre": "EU Kids Act: the EU Commission takes the lead on the protection of minors online",
-   "lien": "https://www.hlc.com/en/publications/eu-kids-act-the-eu-commission-takes-the-lead-on-the-protection-of-minors-online",
-   "resume": "In her State of the Union address delivered in Strasbourg on 16 September 2026, the President of the European Commission announced that a proposal for a regulation dedicated to the...",
-   "date": "2026-09-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.422,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "9eabcbb81345",
-   "titre": "Hogan Lovells Cadwalader advises founders of Proj. Eco Engineering on the sale to White Lab",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-advises-founders-of-proj-eco-engineering-on-the-sale-to-white-bridge-investments",
-   "resume": "Global law firm Hogan Lovells Cadwalader has advised the founders of Proj.Eco Engineering on the sale of 100% of the company&rsquo;s share capital to White Lab, portfolio company of White...",
-   "date": "2026-09-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.228,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "16dcf57bc11f",
-   "titre": "FDA signals more inspections, scrutiny of clinical trials outside the U.S.",
-   "lien": "https://www.hlc.com/en/publications/fda-signals-more-inspections-scrutiny-of-clinical-trials-outside-the-us",
-   "resume": "Michael Davis and Karim Mikhail, named last week as permanent directors of the U.S. Food and Drug Administration (FDA) Center for Drug Evaluation and Research (CDER) and the Center for...",
-   "date": "2026-09-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Clinical trial"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.629,
-   "pertinence": "elevee",
-   "themes": [
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "CDER"
-   ]
-  },
-  {
-   "id": "a066713678c5",
-   "titre": "Practical Uses of AI in Matters Today",
-   "lien": "https://www.hlc.com/en/events/practical-uses-of-ai-in-matters-today",
-   "resume": "CLE",
-   "date": "2026-09-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.737,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "CLE"
-   ]
-  },
-  {
-   "id": "f9d9a26a2eaa",
-   "titre": "Navigating China-Origin Life Sciences Transactions: Structures, Regulations, and Risks",
-   "lien": "https://www.hlc.com/en/events/partnering-with-chinese-companies-trends-and-considerations-for-life-sciences-transactions",
-   "resume": "CLE",
-   "date": "2026-09-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.292,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "7e2ac984ad8c",
-   "titre": "GIR Live: India 2026",
-   "lien": "https://www.hlc.com/en/events/gir-live-india-2026",
-   "resume": "Kush participated in GIR Live India 2026, Global Investigations Review's inaugural India conference, held in New Delhi on 15 September 2026. He joined a panel of leading investigations,...",
-   "date": "2026-09-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.251,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "GIR"
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "bruit": [
+    "vœux / prix / RH"
    ]
   },
   {
@@ -811,18 +77,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.867,
+   "score": 0.827,
    "pertinence": "elevee",
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "ENISA",
     "CRA"
-   ]
+   ],
+   "score_bruit": 0.417,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA"
   },
   {
    "id": "8e2f9438e3b5",
@@ -856,12 +129,12 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.664,
+   "score": 0.624,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "MDR",
@@ -869,7 +142,16 @@ window.VEILLE_DEBATS = {
     "EU",
     "AI",
     "MDR/IVDR"
-   ]
+   ],
+   "score_bruit": 0.388,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : AI Act, IVDR, MDR (dispositifs médicaux)"
   },
   {
    "id": "7db8ca28be0c",
@@ -894,49 +176,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.833,
+   "score": 0.793,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "EU"
-   ]
-  },
-  {
-   "id": "443b8184cbf6",
-   "titre": "EU-US transatlantic trade relationship: state of play",
-   "lien": "https://www.medtecheurope.org/2026/09/11/eu-us-transatlantic-trade-relationship-state-of-play/",
-   "resume": "Following the EU’s adoption of measures implementing its tariff commitments towards the US, based on the framework outlined under the 2025 EU–US joint statement, remaining EU tariffs on industrial goods, among other measures, have been eliminated. This includes relevant trade codes for medtech, especially under chapter 90. The tariff outlook for EU medical technologies is […] The post EU-US transatlantic trade…",
-   "date": "2026-09-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.329,
-   "pertinence": "faible",
-   "themes": [
-    "large",
-    "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU-US",
-    "EU",
-    "US"
-   ]
+   "score_bruit": 0.541,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "consultation"
   },
   {
    "id": "a603c9e24ae6",
@@ -963,42 +221,14 @@ window.VEILLE_DEBATS = {
     "cra",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "8cdd0d1f40e4",
-   "titre": "FDA-SEC information sharing heightens focus on life science company disclosures",
-   "lien": "https://www.hlc.com/en/publications/fdasec-information-sharing-heightens-focus-on-life-science-company-disclosures",
-   "resume": "The U.S. Securities and Exchange Commission (SEC) and the U.S. Food and Drug Administration (FDA) have signed a Memorandum of Understanding ( MOU ) establishing a cooperative framework for...",
-   "date": "2026-09-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.444,
-   "pertinence": "moyenne",
-   "themes": [
-    "pharma_industrie",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA-SEC",
-    "SEC",
-    "FDA",
-    "MOU"
-   ]
+   "acronymes": [],
+   "score_bruit": 0.23,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "49c9c2ffbd61",
@@ -1023,175 +253,23 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.605,
+   "score": 0.585,
    "pertinence": "elevee",
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "SOTEU"
-   ]
-  },
-  {
-   "id": "7d4dfb7c323a",
-   "titre": "News Microgeneration: the evolution of electricity 04 September 2026",
-   "lien": "https://www.hlc.com/en/publications/microgeneration-the-evolution-of-electricity",
-   "resume": "",
-   "date": "2026-09-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.356,
-   "pertinence": "faible",
-   "themes": [
-    "nis2",
-    "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "23432f6a3fb3",
-   "titre": "EDRi stands in solidarity with Autistici/Inventati after “terrorist” designation by the US government",
-   "lien": "https://edri.org/our-work/edri-solidarity-statement-autistici-inventati/",
-   "resume": "The United States government has designated the Italian non-profit organisation Autistici/Inventati as a \"Specially Designated Global Terrorist\" for providing digital infrastructure to supposedly “violent far-left militants.” This targeting of A/I is also an attack on independent internet infrastructure, fundamental rights of multiple collectives, safe and secure communications, democratic anti-authoritarian…",
-   "date": "2026-09-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.497,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "US",
-    "A/I"
-   ]
-  },
-  {
-   "id": "a386f176cfd3",
-   "titre": "Updating the Delaware Personal Data Privacy Act: The “First State” Becomes the Latest to Get a Privacy Refresh",
-   "lien": "https://fpf.org/blog/updating-the-delaware-personal-data-privacy-act-the-first-state-becomes-the-latest-to-get-a-privacy-refresh/",
-   "resume": "Delaware has become the latest state to update its comprehensive privacy law after Governor Meyer signed HB 380 on September 2, amending the Delaware Personal Data Privacy Act (DPDPA). More than half of the 23 states with comprehensive privacy laws have now amended their laws. The bill makes significant revisions to the DPDPA, including—&#160; These [&#8230;]",
-   "date": "2026-09-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision",
-    "Sanction"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires",
-    "Termes génériques"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.437,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "HB 380",
-    "DPDPA"
-   ]
-  },
-  {
-   "id": "75b521c2fd26",
-   "titre": "14 students and opposition politicians targeted by spyware in Serbia",
-   "lien": "https://edri.org/our-work/students-and-opposition-politicians-targeted-by-spyware-in-serbia/",
-   "resume": "EDRi member SHARE Foundation has confirmed that at least 14 people in Serbia were targeted with advanced spyware since the beginning of 2026 – the largest documented wave of such surveillance in the country to date. Those targeted include members of the student movement, activists, a member of parliament, and a local councilor, all from opposition parties. The timing the of spyware attacks coincides with the local…",
-   "date": "2026-09-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.435,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SHARE"
-   ]
-  },
-  {
-   "id": "dd3230fe9b07",
-   "titre": "Fisher II: a new failure to prevent offence for online platforms",
-   "lien": "https://www.hlc.com/en/publications/fisher-ii-a-new-failure-to-prevent-offence-for-online-platforms",
-   "resume": "In his report Fraud in the Digital Age, Jonathan Fisher KC proposes a new offence under which providers of regulated user-to-user services under the Online Safety Act 2023 would face...",
-   "date": "2026-09-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.527,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "KC"
-   ]
+   "score_bruit": 0.269,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet"
   },
   {
    "id": "98e1ff50d35f",
@@ -1217,392 +295,17 @@ window.VEILLE_DEBATS = {
     "ia",
     "pharma_industrie"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "bdf080321784",
-   "titre": "Ukraine’s Upcoming 5G Auction: Trust, Rules, Money",
-   "lien": "https://ecipe.org/insights/ukraine-5g-auction/",
-   "resume": "For most of the past two years, Ukraine’s telecommunications policy has been viewed through the lens of wartime resilience. Keeping networks operating amid missile attacks, restoring damaged infrastructure and ensuring continuity of government communications understandably took precedence over longer-term questions … Continued",
-   "date": "2026-08-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.418,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "36ace4f43a14",
-   "titre": "The Black Sea Region – NATO’s Strategic Test",
-   "lien": "https://ecipe.org/insights/black-sea-region-nato-strategic-test/",
-   "resume": "The security environment in the Black Sea region continues to deteriorate. Russian attacks on Ukrainian ports and maritime infrastructure, together with incidents affecting NATO Allies and European partners across the region, show that the risks are increasingly extending beyond the … Continued",
-   "date": "2026-08-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.421,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "NATO"
-   ]
-  },
-  {
-   "id": "9d924cef626f",
-   "titre": "Indonesia's Personal Data Protection Law implementing regulation arrives quietly: A first look at GR 33/2026",
-   "lien": "https://www.hlc.com/en/publications/indonesias-personal-data-protection-law-implementing-regulation-arrives-quietly",
-   "resume": "Indonesia has finally published the implementing regulation for its Personal Data Protection Law (PDP Law). Government Regulation No. 33 of 2026 (GR 33/2026) was enacted on 16 July 2026,...",
-   "date": "2026-08-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "implementing regulation"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.537,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "GR33",
-    "PDP"
-   ]
-  },
-  {
-   "id": "b8b54c9deb5d",
-   "titre": "AI in AML compliance: Navigating human intervention under the AML regulation",
-   "lien": "https://www.hlc.com/en/publications/ai-in-aml-compliance-navigating-human-intervention-under-the-aml-regulation",
-   "resume": "AI is rapidly moving from experimentation to operational use in anti-money laundering and counter-terrorism financing (AML/CTF) compliance. Financial institutions are increasingly exploring ...",
-   "date": "2026-08-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.601,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "AML",
-    "AML/CTF"
-   ]
-  },
-  {
-   "id": "94f118ad7e1a",
-   "titre": "The Data Chronicles | Digital integration: Where data strategy meets antitrust",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-digital-integration-where-data-strategy-meets-antitrust",
-   "resume": "As data becomes an increasingly valuable business asset, organizations must navigate the growing intersection between data strategy and antitrust and competition law. In this episode of The ...",
-   "date": "2026-08-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.472,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "f25250f70a57",
-   "titre": "Artificial intelligence agents: Legal considerations August 2026",
-   "lien": "https://www.hlc.com/en/publications/artificial-intelligence-agents-legal-considerations-august-2026",
-   "resume": "Delegating tasks and decisions to artificial intelligence systems (\" AI \") based on basic instructions is one of the most significant changes in the way we work in recent years....",
-   "date": "2026-08-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.78,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "311029a30961",
-   "titre": "FDA releases new guidance documents on when to submit an ANDA or 505(b)(2) application and on therapeutic equivalence evaluations",
-   "lien": "https://www.hlc.com/en/publications/fda-releases-new-guidance-documents-on-when-to-submit-an-anda-or-505b2-application",
-   "resume": "Last week, FDA issued two new guidance documents. The first was a revision to the draft guidance document describing when to submit an ANDA or 505(b)(2) application. It provides...",
-   "date": "2026-08-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.511,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "ANDA"
-   ]
-  },
-  {
-   "id": "85abf37b9580",
-   "titre": "Hogan Lovells Cadwalader advises Cube Infrastructure Managers on the sale of firstcolo to CVC DIF",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-beraet-cube-infrastructure-managers-beim-verkauf-von-firstcolo-an-cvc-dif",
-   "resume": "Global law firm Hogan Lovells Cadwalader has advised Cube Infrastructure Managers on the sale of firstcolo to CVC DIF. The transaction is expected to close by the end of September 2026,...",
-   "date": "2026-08-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.249,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-09-01",
-     "approx": true,
-     "extrait": {
-      "en": "…on the sale of firstcolo to CVC DIF. The transaction is expected to close by the end of September 2026,..."
-     }
-    }
-   ],
-   "acronymes": [
-    "DIF"
-   ]
-  },
-  {
-   "id": "cda63e1cb380",
-   "titre": "FPF at the Singapore Data Festival 2026: Agentic AI, Biometrics, and the Future of Digital Trust in APAC",
-   "lien": "https://fpf.org/blog/fpf-at-the-singapore-data-festival-2026-agentic-ai-biometrics-and-the-future-of-digital-trust-in-apac/",
-   "resume": "Co-authors: Lauren Koek and Valentina Curatella, FPF APAC Interns From July 20 to 24, 2026, the Future of Privacy Forum (FPF) participated in the inaugural Singapore Data Festival (SDF), hosted by Singapore’s Personal Data Protection Commission (PDPC) and Infocomm Media Development Authority (IMDA). Succeeding the PDPC’s annual Personal Data Protection Week, the SDF convened around [&#8230;]",
-   "date": "2026-08-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.445,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI",
-    "APAC",
-    "SDF",
-    "PDPC",
-    "IMDA"
-   ]
-  },
-  {
-   "id": "4821131bfc3a",
-   "titre": "FTC proposes enforcement policy on personalized pricing and consumer data",
-   "lien": "https://www.hlc.com/en/publications/ftc-proposes-enforcement-policy-on-personalized-pricing-and-consumer-data",
-   "resume": "The Federal Trade Commission (FTC) is seeking public comment on a proposed enforcement policy statement addressing “personalized pricing,” or the use of consumer data to set...",
-   "date": "2026-08-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.448,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FTC"
-   ]
-  },
-  {
-   "id": "fa13a4b751ec",
-   "titre": "The Data Chronicles: Asia Spotlight Episode 2 – Regulating artificial intelligence in APAC",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-asia-spotlight-episode-2-regulating-artificial-intelligence-in-apac",
-   "resume": "In this second episode of APAC Spotlight, host Charmian Aw and Hogan Lovells Cadwalader associate Ciara O'Leary explore the rapidly evolving landscape of AI regulation across Asia-Pacific....",
-   "date": "2026-08-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.54,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "APAC",
-    "AI"
-   ]
-  },
-  {
-   "id": "acfd04d1c708",
-   "titre": "Clinical trials in the Netherlands: From factory to trial participant",
-   "lien": "https://www.hlc.com/en/publications/clinical-trials-in-the-netherlands-from-factory-to-trial-participant",
-   "resume": "The Dutch Medicines Act governs, among other things, the manufacture, import, wholesale distribution, marketing, labelling, prescription, and advertising of medicinal products. While...",
-   "date": "2026-08-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Clinical trial"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.619,
-   "pertinence": "elevee",
-   "themes": [
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.369,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "fe514524db79",
@@ -1626,13 +329,13 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.581,
-   "pertinence": "elevee",
+   "score": 0.541,
+   "pertinence": "moyenne",
    "themes": [
     "sante_donnees",
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "Q2/ 2026",
@@ -1641,313 +344,12 @@ window.VEILLE_DEBATS = {
     "Q3",
     "Q2",
     "Q4"
-   ]
-  },
-  {
-   "id": "58063f5026eb",
-   "titre": "Clean-Up on Aisle Three: New Jersey Becomes Third State to Regulate Data-Driven Pricing This Year",
-   "lien": "https://fpf.org/blog/clean-up-on-aisle-three-new-jersey-becomes-third-state-to-regulate-data-driven-pricing-this-year/",
-   "resume": "Few areas of privacy and technology policy have attracted as much legislative attention this year as data-driven pricing or “surveillance pricing.” On August 4, the Senate Judiciary Committee held a hearing—“Your Data, Their Profit: The Consumer Cost of AI Surveillance Pricing”—highlighting the intense scrutiny on these practices by policymakers. In 2026 alone, FPF tracked the [&#8230;]",
-   "date": "2026-08-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.472,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "FPF"
-   ]
-  },
-  {
-   "id": "996a4538d20b",
-   "titre": "China eases up compliance obligations for smaller operations and proposes higher standards for large businesses: What this means for MNCs",
-   "lien": "https://www.hlc.com/en/publications/china-eases-up-compliance-obligations-for-smaller-operations-and-proposes-higher-standards",
-   "resume": "China is moving toward a more tiered approach to personal information regulation. On 22 July 2026, the Cyberspace Administration of China and the Ministry of Public Security issued the...",
-   "date": "2026-08-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.489,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "197d86d2d9fa",
-   "titre": "The National Fraud Enforcement Division takes shape: What the new division means for companies",
-   "lien": "https://www.hlc.com/en/publications/the-national-fraud-enforcement-division-takes-shape-what-the-new-division-means-for-companies",
-   "resume": "On August 13, 2026, Assistant Attorney General Colin M. McDonald issued a memorandum outlining enforcement priorities (the Memorandum) for the newly constituted National Fraud Enforcement...",
-   "date": "2026-08-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.498,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-08-13",
-     "approx": false,
-     "extrait": {
-      "en": "…Fraud Enforcement Division takes shape: What the new division means for companies. On August 13, 2026, Assistant Attorney General Colin M. McDonald issued a memorandum outlining enforcement…"
-     }
-    }
-   ],
-   "acronymes": []
-  },
-  {
-   "id": "42beb47b91d8",
-   "titre": "Hogan Lovells Cadwalader advises Equitix on an investment in a second portfolio of Enpal B.V.",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-beraet-equitix-bei-der-investition-in-ein-zweites-portfolio-von-enpal-bv",
-   "resume": "Global law firm Hogan Lovells Cadwalader has advised Equitix on a further investment in a second portfolio of German energy solution provider Enpal B.V.",
-   "date": "2026-08-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.157,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "d87dcd310ec4",
-   "titre": "Awaiting Indonesia's Personal Data Protection Authority: A constitutional push for a hard deadline",
-   "lien": "https://www.hlc.com/en/publications/awaiting-indonesias-personal-data-protection-authority-a-constitutional-push-for-a-hard-deadline",
-   "resume": "Nearly four years after Indonesia enacted Law No. 27 of 2022 on Personal Data Protection (PDP Law), the country's long-awaited Personal Data Protection Authority (PDPA) has yet to be...",
-   "date": "2026-08-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.423,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "data_act"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PDP",
-    "PDPA"
-   ]
-  },
-  {
-   "id": "730a413a26b9",
-   "titre": "New UK MHRA guidance on ambient voice technology products",
-   "lien": "https://www.hlc.com/en/publications/new-uk-mhra-guidance-on-ambient-voice-technology-products",
-   "resume": "The UK Medicines and Health care products Regulatory Agency (MHRA) published new guidance on 29 July 2026 on the regulation of ambient voice technology (AVT) products (the AVT Guidance)....",
-   "date": "2026-08-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.409,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "UK",
-    "MHRA",
-    "AVT"
-   ]
-  },
-  {
-   "id": "4614cf4cc53b",
-   "titre": "The Data Chronicles | Who gets to judge? The hidden power shift behind AI adoption",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-who-gets-to-judge-the-hidden-power-shift-behind-ai-adoption",
-   "resume": "In this episode of The Data Chronicles, host Scott Loughlin sits down with Avi Goldfarb, the Rotman Chair in Artificial Intelligence and Healthcare at the University of Toronto and...",
-   "date": "2026-08-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.651,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "6c9f4ee1ae8a",
-   "titre": "Breaking news for breakthrough devices: CMS proposes RAPID Pathway",
-   "lien": "https://www.hlc.com/en/publications/breaking-news-for-breakthrough-devices-cms-proposes-rapid-pathway",
-   "resume": "On August 7, 2026, the Centers for Medicare & Medicaid Services (CMS) issued a notice with comment period proposing the “Regulatory Alignment for Predictable and Immediate Device...",
-   "date": "2026-08-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.449,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CMS",
-    "RAPID"
-   ]
-  },
-  {
-   "id": "e2c04918f7ba",
-   "titre": "Predictions realized: Regulators and enforcement authorities dial up the heat on prediction markets while event contracts expand into clinical trial outcomes and FDA approvals - what companies need to know",
-   "lien": "https://www.hlc.com/en/publications/predictions-realized-regulators-and-enforcement-authorities-dial-up-the-heat-on-prediction-markets",
-   "resume": "The federal government’s approach to regulating prediction markets is beginning to take shape, and companies – particularly those in life sciences and health care – should take note. Since...",
-   "date": "2026-08-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Clinical trial"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.546,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "8aa3a9693e58",
-   "titre": "Hogan Lovells Cadwalader advises The Mobility House on the combination of its North America business with PowerFlex",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-advises-the-mobility-house-on-the-combination-of-its-north-america-business-with-powerflex",
-   "resume": "Munich/ Silicon Valley &ndash; Global law firm Hogan Lovells Cadwalader has advised The Mobility House on the combination of its North America business with PowerFlex, creating North...",
-   "date": "2026-08-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.279,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.243,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "c38d5df0a85a",
@@ -1973,163 +375,21 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CADA",
     "AI",
     "EU"
-   ]
-  },
-  {
-   "id": "5156c7872a3e",
-   "titre": "Hogan Lovells Cadwalader advises SPREAD AI on a strategic investment by Lockheed Martin Ventures",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-advises-spread-ai-on-a-strategic-investment-by-lockheed-martin-ventures",
-   "resume": "Global law firm Hogan Lovells Cadwalader has advised Berlin-based SPREAD GmbH (SPREAD AI) on a strategic investment by Lockheed Martin Ventures, the venture capital arm of Lockheed Martin....",
-   "date": "2026-08-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.311,
-   "pertinence": "faible",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SPREAD",
-    "AI"
-   ]
-  },
-  {
-   "id": "7050f71e0856",
-   "titre": "China continues to strengthen regulation of Artificial Intelligence (AI) in the Life Sciences sectors: New compliance challenges for businesses",
-   "lien": "https://www.hlc.com/en/publications/china-continues-to-strengthen-regulation-of-artificial-intelligence-ai-in-the-life-sciences-sectors",
-   "resume": "In recent years, artificial intelligence (AI) technologies have rapidly penetrated the life sciences industries and have been widely applied in areas such as new drug research and...",
-   "date": "2026-08-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.586,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
+   "score_bruit": 0.346,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "539e3736c5a9",
-   "titre": "Navigating China's regulatory landscape for AI applications in the financial industry",
-   "lien": "https://www.hlc.com/en/publications/navigating-chinas-regulatory-landscape-for-ai-applications-in-the-financial-industry",
-   "resume": "Executive summary In China, financial institutions are already subject to a multi-layered regulatory framework governing data security and AI technologies, comprising:: (i) horizontal AI and ...",
-   "date": "2026-08-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.549,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "1988a3283146",
-   "titre": "OCC follows FDIC in proposing more practical rules for sharing confidential supervisory information",
-   "lien": "https://www.hlc.com/en/publications/occ-follows-fdic-in-proposing-more-practical-rules-for-sharing-confidential-supervisory-information",
-   "resume": "Earlier this week, the Office of the Comptroller of the Currency (“OCC”) issued a notice of proposed rulemaking (“NPR”) to amend its rules regarding disclosure of...",
-   "date": "2026-08-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.447,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "OCC",
-    "FDIC",
-    "NPR"
-   ]
-  },
-  {
-   "id": "4b994d552c98",
-   "titre": "HRSA announces updated 340B Rebate Model Pilot Program, limited to drugs subject to a Maximum Fair Price (MFP) for 2026 and 2027",
-   "lien": "https://www.hlc.com/en/publications/hrsa-announces-updated-340b-rebate-model-pilot-program-for-2026-and-2027",
-   "resume": "On August 3, 2026, the Health Resources and Services Administration (HRSA) published a notice in the Federal Register (2026 Notice) announcing a new 340B Rebate Model Pilot Program (Pilot...",
-   "date": "2026-08-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.329,
-   "pertinence": "faible",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "HRSA",
-    "MFP"
-   ]
+   "motif": "texte clé : Cloud and AI Development Act (CADA)",
+   "statut": "projet"
   },
   {
    "id": "38c13c78761a",
@@ -2155,13 +415,13 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.685,
+   "score": 0.645,
    "pertinence": "elevee",
    "themes": [
     "dm_div",
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "UK",
@@ -2169,135 +429,13 @@ window.VEILLE_DEBATS = {
     "MHRA",
     "AVT",
     "NHS"
-   ]
-  },
-  {
-   "id": "bd779f787ab7",
-   "titre": "FPF and Leading Companies Release Risk Assessment Framework and Updated Best Practices for AI in Hiring & Employment",
-   "lien": "https://fpf.org/press-releases/fpf-and-leading-companies-release-risk-assessment-framework-and-updated-best-practices-for-ai-in-hiring-employment/",
-   "resume": "Expert working group updates 2023 report to account for the rise of generative AI; will host a webinar on September 28 to present an overview of best practices and risk framework WASHINGTON, D.C. – The Future of Privacy Forum (FPF), with Dayforce, LinkedIn, UKG, Workday, and Beamery – leading HR, payroll, and employment software developers [&#8230;]",
-   "date": "2026-08-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "best practice"
    ],
-   "groupes": [
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.719,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI",
-    "UKG",
-    "HR"
-   ]
-  },
-  {
-   "id": "e0ee46048c91",
-   "titre": "FPF Statement on the Senior Chatbot Protection Bill",
-   "lien": "https://fpf.org/blog/fpf-statement-on-the-senior-chatbot-protection-bill/",
-   "resume": "As artificial intelligence chatbots and voice assistants become increasingly integrated into the daily support networks of older adults, baseline consumer protections and transparency measures are essential to ensure these tools foster independence and interpersonal trust rather than introduce new risks. It is encouraging to see Congress recognizing the unique intersections of privacy and data protections, [&#8230;]",
-   "date": "2026-08-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.507,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "710cc3e2e6c2",
-   "titre": "Data sovereignty in global operations",
-   "lien": "https://www.hlc.com/en/publications/data-sovereignty-in-global-operations",
-   "resume": "The modern digital economy and data supply chain have been shaped by the ease and technical and commercial advantages of moving data and digital services across borders. Modern...",
-   "date": "2026-08-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.54,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "e2e13dfd2ce4",
-   "titre": "CEO still in the crosshairs despite declination for the company: Lessons from the first health care declination under the new CEP",
-   "lien": "https://www.hlc.com/en/publications/ceo-still-in-the-crosshairs-despite-declination-for-the-company-lessons-from-the-first-health-care",
-   "resume": "On July 28, 2026, the U.S. Department of Justice (DOJ) announced the resolution of a multi-year criminal health care fraud investigation into Campus Eye Management Holdings LLC and its...",
-   "date": "2026-08-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.338,
-   "pertinence": "faible",
-   "themes": [
-    "dm_div",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CEO",
-    "CEP",
-    "DOJ"
-   ]
+   "score_bruit": 0.31,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices"
   },
   {
    "id": "6fc11e1ddde7",
@@ -2324,41 +462,18 @@ window.VEILLE_DEBATS = {
     "cra",
     "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "CSA"
-   ]
-  },
-  {
-   "id": "2bb5049eff97",
-   "titre": "Agentic AI in Cybersecurity: Emerging threats and how you can prepare",
-   "lien": "https://www.hlc.com/en/publications/agentic-ai-in-cybersecurity-emerging-threats-and-how-you-can-prepare",
-   "resume": "AI has already been making significant impact on both offensive and defensive cybersecurity capabilities, but the offensive use of AI is entering a new phase: agentic, autonomous systems...",
-   "date": "2026-08-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.665,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
+   "score_bruit": 0.341,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet"
   },
   {
    "id": "fd724b67e7ac",
@@ -2383,17 +498,24 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.85,
+   "score": 0.81,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "EU"
-   ]
+   ],
+   "score_bruit": 0.514,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "14ef8c447a42",
@@ -2420,176 +542,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.724,
+   "score": 0.684,
    "pertinence": "elevee",
    "themes": [
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "CRA"
-   ]
-  },
-  {
-   "id": "57d9fd90c240",
-   "titre": "Singapore's PDPC finalises guidance on the use of personal data in generative AI",
-   "lien": "https://www.hlc.com/en/publications/singapores-pdpc-finalises-guidance-on-the-use-of-personal-data-in-generative-ai",
-   "resume": "Singapore's Personal Data Protection Commission (\" PDPC \") has issued its final Advisory Guidelines on Use of Personal Data in Generative AI 1 (\" Guidelines \"), marking a significant development ...",
-   "date": "2026-07-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "guideline"
    ],
-   "groupes": [
-    "Standards Cyber"
+   "score_bruit": 0.327,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
    ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.54,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PDPC",
-    "AI",
-    "AI1"
-   ]
-  },
-  {
-   "id": "1c6aa4da5ce7",
-   "titre": "IMDA introduces new \"Chatbot Info Card\" for generative AI chatbots",
-   "lien": "https://www.hlc.com/en/publications/imda-introduces-new-chatbot-info-card-for-generative-ai-chatbots",
-   "resume": "At the inaugural Singapore Data Festival on 20 July 2026, Singapore's IMDA introduced the Transparency Guidelines for Generative AI Chatbots (Guidelines) 1 . The voluntary Guidelines...",
-   "date": "2026-07-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "guideline"
-   ],
-   "groupes": [
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.525,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IMDA",
-    "AI"
-   ]
-  },
-  {
-   "id": "b919deae31d0",
-   "titre": "Hogan Lovells Cadwalader advises Volue AS on the acquisition of FlexPowerHub",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-advises-volue-as-on-the-acquisition-of-flexpowerhub",
-   "resume": "Frankfurt &ndash; Global law firm Hogan Lovells Cadwalader has advised Volue AS, a global leader in electrification and energy technology, on the acquisition of Salzburg-based technology...",
-   "date": "2026-07-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.282,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AS"
-   ]
-  },
-  {
-   "id": "b3157eacdd06",
-   "titre": "Banking agencies coordinate handling of highly sensitive examination information",
-   "lien": "https://www.hlc.com/en/publications/banking-agencies-coordinate-handling-of-highly-sensitive-examination-information",
-   "resume": "On July 16, 2026, The Federal Reserve Board (“FRB”), Federal Deposit Insurance Corporation (“FDIC”) and Office of the Comptroller of the Currency (“OCC”...",
-   "date": "2026-07-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.407,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FRB",
-    "FDIC",
-    "OCC"
-   ]
-  },
-  {
-   "id": "6e1b76774694",
-   "titre": "Thailand refines rules on data subject access rights",
-   "lien": "https://www.hlc.com/en/publications/thailand-refines-rules-on-data-subject-access-rights",
-   "resume": "Thailand’s Personal Data Protection Committee (“ PDPC ”) has issued a new notification prescribing detailed rules on how data controllers must handle data subject requests...",
-   "date": "2026-07-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.499,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PDPC"
-   ]
+   "motif": "texte clé : CRA",
+   "statut": "lignes_directrices"
   },
   {
    "id": "a8c673be3df7",
@@ -2614,17 +586,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.73,
+   "score": 0.69,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
+   ],
+   "score_bruit": 0.298,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "adopte"
   },
   {
    "id": "713bebe7c61c",
@@ -2650,144 +630,27 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.572,
+   "score": 0.532,
    "pertinence": "elevee",
    "themes": [
     "donnees",
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
     "AI",
     "AP"
-   ]
-  },
-  {
-   "id": "20676774b1b4",
-   "titre": "Spain moves to shield drug pricing confidentiality in Medicinal Products Act",
-   "lien": "https://www.hlc.com/en/publications/spain-moves-to-shield-drug-pricing-confidentiality-in-medicinal-products-act",
-   "resume": "Spain's Parliament has approved a reform of Article 97 of the Spanish Medicinal Products Act that would, once published in the Official State Gazette (BOE) and in force, expressly protect...",
-   "date": "2026-07-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.412,
-   "pertinence": "moyenne",
-   "themes": [
-    "pharma_industrie",
-    "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "BOE"
-   ]
-  },
-  {
-   "id": "c4882fa7f069",
-   "titre": "CLE: Current Trends in FDA Regulation and Enforcement",
-   "lien": "https://www.hlc.com/en/events/cle-current-trends-in-fda-regulation-and-enforcement",
-   "resume": "This program will cover FDA’s new QMSR regulation and the impact that it is having on FDA enforcement actions. The session will also cover new Pharma regulatory trends and enforcement ...",
-   "date": "2026-07-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.463,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "acheteurs_sante"
+   "score_bruit": 0.333,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CLE",
-    "FDA",
-    "QMSR"
-   ]
-  },
-  {
-   "id": "4c21d5af8357",
-   "titre": "What does the GKV-BStabG Reform Change for Pharma Pricing & Reimbursement in Germany? And the Reforms Are Not Over: What to Expect From the New German Minister of Health and the Pharma Dialogue?",
-   "lien": "https://www.insideeulifesciences.com/2026/07/29/what-does-the-gkv-bstabg-reform-change-for-pharma-pricing-reimbursement-in-germany/",
-   "resume": "Tomorrow, on 30 July 2026, the “GKV-Beitragssatzstabilisierungsgesetz” (GKV-BStabG) will enter into force, marking the culmination of a fast-paced and politically contentious legislative process. The reform, which has attracted significant attention, introduces a broad package of cost-containment measures across the statutory health insurance (GKV) system. Several of these specifically target pharmaceutical spending…",
-   "date": "2026-07-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.37,
-   "pertinence": "faible",
-   "themes": [
-    "donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "GKV-BStabG",
-    "GKV"
-   ]
-  },
-  {
-   "id": "f63fbca8114e",
-   "titre": "Steering into Price Control: Why the CMA’s App-Store Proposals Go beyond What is Necessary",
-   "lien": "https://ecipe.org/insights/uk-cma-price-control/",
-   "resume": "There is a conceptual problem right at the heart of the consultations on proposed steering conduct requirements (CRs) for Apple and Google by the Competition and Markets Authority (CMA) in the UK. On the one hand, the CMA presents the … Continued",
-   "date": "2026-07-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.433,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CMA",
-    "UK"
-   ]
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices"
   },
   {
    "id": "1e37fbdedae7",
@@ -2813,12 +676,12 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.806,
+   "score": 0.766,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [
     {
      "date": "2027-12-01",
@@ -2838,255 +701,15 @@ window.VEILLE_DEBATS = {
    "acronymes": [
     "AI",
     "EU"
-   ]
-  },
-  {
-   "id": "b87c2c7cba27",
-   "titre": "Thailand introduces fast-track process for urgent online content removal",
-   "lien": "https://www.hlc.com/en/publications/thailand-introduces-fasttrack-process-for-urgent-online-content-removal",
-   "resume": "Thailand's Ministry of Digital Economy and Society (\"MDES\") has introduced an expedited court procedure for the suspension or removal of online content in cases of urgent necessity. Under a ...",
-   "date": "2026-07-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.402,
-   "pertinence": "moyenne",
-   "themes": [
-    "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "MDES"
-   ]
-  },
-  {
-   "id": "007665e614df",
-   "titre": "Coffee with Experts | New PCC and CV Designation Rules and Practical Implications",
-   "lien": "https://www.hlc.com/en/events/coffee-with-experts-new-pcc-designation-rules-and-practical-implications",
-   "resume": "On July 28, Hogan Lovells Cadwalader hosted the Compliance Women Committee – São Paulo breakfast event, \"Coffee with Experts: New PCC and CV Designation Rules and Practical...",
-   "date": "2026-07-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.302,
-   "pertinence": "faible",
-   "themes": [
-    "normes"
+   "score_bruit": 0.321,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PCC"
-   ]
-  },
-  {
-   "id": "3d4277615909",
-   "titre": "Psychedelic drug trial design clarified in FDA final guidance",
-   "lien": "https://www.hlc.com/en/publications/psychedelic-drug-trial-design-clarified-in-fda-final-guidance",
-   "resume": "The U.S. Food and Drug Administration (FDA) has finalized guidance on clinical investigations for psychedelic drugs, clarifying trial issues including study design, data collection, and...",
-   "date": "2026-07-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.401,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "2515be3ce992",
-   "titre": "Pharmaceutical advertising under the EU pharma law package",
-   "lien": "https://www.hlc.com/en/publications/pharmaceutical-advertising-under-the-eu-pharma-law-package",
-   "resume": "The revision of the EU pharmaceutical legislation is close to final, with adoption of the revised legal framework expected by fall of 2026. Although a 24-month transition period is...",
-   "date": "2026-07-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.486,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "caa572edfd56",
-   "titre": "French legal and regulatory update – June 2026",
-   "lien": "https://www.hlc.com/en/publications/french-legal-and-regulatory-update-june-2026",
-   "resume": "Spotlight : Fast-fashion ; Anti-fraud law ; New European Design Regime ; Shortages of medicinal products ; Investment in the hydroelectricity sector Explore all our news by topic :...",
-   "date": "2026-07-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "regulatory update"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.42,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "2ffdb7e01ae1",
-   "titre": "FPF Submits Comments to Inform Colorado Automated Decision-Making Technology and Chatbot Rulemaking Processes",
-   "lien": "https://fpf.org/blog/fpf-submits-comments-to-inform-colorado-automated-decision-making-technology-and-chatbot-rulemaking-processes/",
-   "resume": "On July 13, FPF submitted comments in response to the Colorado Department of Justice’s (the Department’s) pre-rulemaking process for the Colorado Automated Decision-making Act (SB 189) and the Chatbot Safety Act (HB 1263). As lawmakers continue to calibrate a proportionate approach to consumer protection from risks of AI-related harms, Colorado&#8217;s two new laws each take [&#8230;]",
-   "date": "2026-07-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.468,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "SB 189",
-    "HB 1263",
-    "AI"
-   ]
-  },
-  {
-   "id": "c32c6e5346c7",
-   "titre": "Insights and Analysis The human element: Where the CJC's AI consultation draws the line 24 July 2026",
-   "lien": "https://www.hlc.com/en/publications/the-human-element-where-the-cjcs-ai-consultation-draws-the-line",
-   "resume": "",
-   "date": "2026-07-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.514,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CJC",
-    "AI"
-   ]
-  },
-  {
-   "id": "6d1fd7be44a3",
-   "titre": "FPF Releases New Issue Brief on U.S. “Data Broker” Regulatory Landscape",
-   "lien": "https://fpf.org/blog/fpf-releases-new-issue-brief-on-u-s-data-broker-regulatory-landscape/",
-   "resume": "Data brokers have been the subject of intense scrutiny in recent years, including through critical media coverage, public hearings, private lawsuits, regulatory enforcement actions, and new state and federal regulatory frameworks. Despite all this public attention, there is little consensus as to who is a “data broker,” what risks and benefits are associated with data [&#8230;]",
-   "date": "2026-07-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.507,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
+   "motif": "texte clé : AI Act",
+   "statut": "adopte"
   },
   {
    "id": "a633e6ee6fb1",
@@ -3111,18 +734,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.756,
+   "score": 0.716,
    "pertinence": "elevee",
    "themes": [
     "data_act",
     "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "NIS2"
-   ]
+   ],
+   "score_bruit": 0.313,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "NIS2"
+   ],
+   "motif": "texte clé : NIS2"
   },
   {
    "id": "851ef646e66c",
@@ -3146,172 +776,28 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.574,
-   "pertinence": "elevee",
+   "score": 0.554,
+   "pertinence": "moyenne",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EDPB",
     "AI"
-   ]
-  },
-  {
-   "id": "6522d05662ca",
-   "titre": "Introducing our Asia-Pacific and Middle East Privacy Legislation Tracker",
-   "lien": "https://www.hlc.com/en/publications/introducing-our-asiapacific-and-middle-east-privacy-legislation-tracker",
-   "resume": "As privacy and data protection frameworks continue to evolve, organizations face an increasingly complex regulatory landscape. Clear, practical insight is critical to assessing obligations, ...",
-   "date": "2026-07-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.572,
-   "pertinence": "elevee",
-   "themes": [
-    "fournisseurs_publics",
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "cfa900abe3e0",
-   "titre": "The Data Chronicles: Asia spotlight",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-asia-spotlight",
-   "resume": "In this first episode of APAC Spotlight, host Charmian Aw and the Hogan Lovells Cadwalader APAC Data, Privacy and Cybersecurity team explore one of the defining issues in today's...",
-   "date": "2026-07-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.402,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "nis2"
+   "score_bruit": 0.356,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "APAC"
-   ]
-  },
-  {
-   "id": "f51f9fc02302",
-   "titre": "IAPP Asia and Singapore Data Festival 2026 Reception",
-   "lien": "https://www.hlc.com/en/events/iapp-asia-and-singapore-data-festival-2026-reception",
-   "resume": "Join us for our IAPP Asia and Singapore Data Festival 2026 reception!",
-   "date": "2026-07-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.354,
-   "pertinence": "faible",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
+   "motif": "texte clé : RGPD / GDPR",
+   "bruit": [
+    "événements / webinaires"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IAPP"
-   ]
-  },
-  {
-   "id": "bb68a4b86038",
-   "titre": "CMS issues Proposed Guidance governing maximum fair price effectuation for IPAY 2028, with a focus on Part B drugs",
-   "lien": "https://www.hlc.com/en/publications/cms-issues-proposed-guidance-governing-maximum-fair-price-effectuation-for-ipay-2028",
-   "resume": "On July 16, 2026, the Centers for Medicare & Medicaid Services (CMS) issued proposed guidance (Proposed Guidance) regarding the “effectuation” of the maximum fair price (MFP) under the...",
-   "date": "2026-07-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.43,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CMS",
-    "IPAY 2028",
-    "MFP"
-   ]
-  },
-  {
-   "id": "1cec3cf4d86a",
-   "titre": "News ADIC v. EMG & new ILPA guidelines: What are the implications when structuring a continuation fund? 22 July 2026",
-   "lien": "https://www.hlc.com/en/publications/adic-v-emg-new-ilpa-guidelines-what-implications-when-structuring-a-continuation-fund",
-   "resume": "",
-   "date": "2026-07-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "guideline"
-   ],
-   "groupes": [
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.48,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ADIC",
-    "EMG",
-    "ILPA"
-   ]
+   "statut": "adopte"
   },
   {
    "id": "2931491c7dd4",
@@ -3341,50 +827,27 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.64,
+   "score": 0.6,
    "pertinence": "elevee",
    "themes": [
     "donnees",
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EDPB",
     "GDPR",
     "V1"
-   ]
-  },
-  {
-   "id": "5533f5e658ad",
-   "titre": "New AI and data governance initiatives introduced at Singapore Data Festival 2026",
-   "lien": "https://www.hlc.com/en/publications/new-ai-and-data-governance-initiatives-introduced-at-singapore-data-festival-2026",
-   "resume": "The Singapore Data Festival (\" SDF \"), held on 20 July 2026, brought together policymakers, regulators, industry leaders and researchers to discuss the role of data and artificial...",
-   "date": "2026-07-21",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.486,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "SDF"
-   ]
+   "score_bruit": 0.275,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "consultation"
   },
   {
    "id": "bba5b8a62111",
@@ -3409,12 +872,18 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "FDA",
     "NEJM"
-   ]
+   ],
+   "score_bruit": 0.338,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet"
   },
   {
    "id": "dffa9b49e601",
@@ -3441,142 +910,19 @@ window.VEILLE_DEBATS = {
     "cra",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "US",
     "EBSP"
-   ]
-  },
-  {
-   "id": "acc451b96d89",
-   "titre": "New Survey: Privacy Concerns Are A Top Barrier to AgeTech Adoption Among Older Adults",
-   "lien": "https://fpf.org/blog/new-survey-privacy-concerns-are-a-top-barrier-to-agetech-adoption-among-older-adults/",
-   "resume": "Rapidly growing agetech industry has a significant opportunity to close trust gap, increase product adoption with increased transparency WASHINGTON, D.C. — (July 20, 2026) — The Future of Privacy Forum (FPF) — a global non-profit focused on data protection, AI, and emerging technologies — today released findings from a comprehensive March 2026 survey about how [&#8230;]",
-   "date": "2026-07-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.489,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI"
-   ]
-  },
-  {
-   "id": "c587c91b5d79",
-   "titre": "The Commission’s DMA Specification Decisions on Google: A Case of Regulatory Privilege Escalation",
-   "lien": "https://ecipe.org/insights/commissions-dma-specification-decisions-on-google/",
-   "resume": "It is understood and accepted by most experts and observers that platform companies like Apple, Google, and Meta are large, systemic, and should be subject to competition disciplines. It is therefore a mystery that, time and again, the European Commission … Continued",
-   "date": "2026-07-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.498,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DMA"
-   ]
-  },
-  {
-   "id": "42dea80ebaf0",
-   "titre": "#PrivacyCamp26: Call for sessions",
-   "lien": "https://edri.org/our-work/privacycamp26-call-for-sessions/",
-   "resume": "Privacy Camp hosts its 14th edition on 13 October 2026, in Brussels and online. For people living in Europe and across the globe, the impact technology has on our lives becomes ever more acute, ever more heavy and impossible to deny. Digital technologies shape how people work, organise, communicate, access services, cross borders, learn, create and resist. They can support community power and collective care. They…",
-   "date": "2026-07-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.451,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-10-13",
-     "approx": false,
-     "extrait": {
-      "en": "#PrivacyCamp26: Call for sessions. Privacy Camp hosts its 14th edition on 13 October 2026, in Brussels and online. For people living in Europe and across the globe, the impact…"
-     }
-    }
-   ],
-   "acronymes": []
-  },
-  {
-   "id": "50b69301d94a",
-   "titre": "EDRi-gram, 16 July 2026",
-   "lien": "https://edri.org/our-work/edri-gram-16-july-2026/",
-   "resume": "What has the EDRi network been up to over the past few weeks? Find out the latest digital rights news in our bi-weekly newsletter. In this edition: Turning up the heat – Commission backs social media bans, Apple held accountable, summer to-dos, & more! The post EDRi-gram, 16 July 2026 appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-07-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.403,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.206,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet"
   },
   {
    "id": "c71e3215f1e6",
@@ -3603,11 +949,17 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
+   ],
+   "score_bruit": 0.366,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation"
   },
   {
    "id": "a7e328075acf",
@@ -3634,11 +986,16 @@ window.VEILLE_DEBATS = {
     "cra",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "FDN"
-   ]
+   ],
+   "score_bruit": 0.235,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "9a9e29660678",
@@ -3666,18 +1023,28 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.678,
+   "score": 0.638,
    "pertinence": "elevee",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI",
     "GDPR"
-   ]
+   ],
+   "score_bruit": 0.233,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : AI Act, RGPD / GDPR, Cybersecurity Act / certification UE",
+   "statut": "adopte"
   },
   {
    "id": "8fea9ccae151",
@@ -3703,465 +1070,16 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
-  },
-  {
-   "id": "f83051fcc8ec",
-   "titre": "Navigating Cross-Border Data Transfers in the APAC Region: An Analysis of Developments from 2023 to 2026",
-   "lien": "https://fpf.org/blog/navigating-cross-border-data-transfers-in-the-asean-region-an-analysis-of-developments-from-2023-to-2026/",
-   "resume": "Today, the Future of Privacy Forum (FPF) published an Issue Brief comparatively analyzing developments in cross-border data transfer regulations in the Asia-Pacific (APAC) from 2023 to 2026. Titled Navigating Cross-Border Data Transfers in the APAC Region: An Analysis of Developments from 2023 to 2026, the Issue Brief examines the rapidly evolving landscape of cross-border data transfers [&#8230;]",
-   "date": "2026-07-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.544,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "APAC",
-    "FPF"
-   ]
-  },
-  {
-   "id": "3715a59c72da",
-   "titre": "Unprecedented FCC enforcement of “Team Telecom” agreement is a wake-up call to prioritize national security compliance efforts",
-   "lien": "https://www.hlc.com/en/publications/unprecedented-fcc-enforcement-of-team-telecom-agreement-is-a-wakeup-call",
-   "resume": "This article was originally published in Pratt’s Privacy & Cybersecurity Law Report. Companies with foreign ownership or subject to national security agreements should promptly...",
-   "date": "2026-07-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.547,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FCC"
-   ]
-  },
-  {
-   "id": "7598dc4698c9",
-   "titre": "CMS signals intent to revamp how it pays for clinical software and AI",
-   "lien": "https://www.hlc.com/en/news/cms-signals-intent-to-revamp-how-it-pays-for-clinical-software-and-ai",
-   "resume": "Partner Cybil Roehrenbeck discusses CMS&rsquo; proposed changes to reimbursement for clinical software and AI with STAT. She highlights the significance of CMS signaling a more structured...",
-   "date": "2026-07-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.423,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CMS",
-    "AI",
-    "STAT"
-   ]
-  },
-  {
-   "id": "c464f483ed39",
-   "titre": "FPF Submits Comments to Inform California Children’s Social Media Protections Rulemaking Process",
-   "lien": "https://fpf.org/blog/fpf-submits-comments-to-inform-california-childrens-social-media-protections-rulemaking-process/",
-   "resume": "Co-authored by Jack Maketa, U.S. Legislation Intern On June 30, the Future of Privacy Forum (FPF) submitted comments in response to the California Department of Justice’s (the Department’s) ongoing rulemaking process for the “Protecting Our Kids from Social Media Addiction Act” (the Act or SB 976). Signed into law in 2024, SB 976 bars operators [&#8230;]",
-   "date": "2026-07-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.472,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "SB 976"
-   ]
-  },
-  {
-   "id": "6253bf51c874",
-   "titre": "Thailand issues AI guidelines for telecommunications services",
-   "lien": "https://www.hlc.com/en/publications/thailand-issues-ai-guidelines-for-telecommunications-services",
-   "resume": "On 2 July 2026, Thailand’s National Broadcasting and Telecommunications Commission (“ NBTC ”) published the Guidelines on the Use of Artificial Intelligence for...",
-   "date": "2026-07-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "guideline"
-   ],
-   "groupes": [
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.584,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "NBTC"
-   ]
-  },
-  {
-   "id": "ec768e627c6e",
-   "titre": "Digital Rights and Equality Symposium",
-   "lien": "https://edri.org/take-action/events/digital-rights-and-equality-symposium/",
-   "resume": "Oxfam Ireland is hosting the Digital Rights and Equality Symposium on 21 October 2026 at O’Reilly Hall, University College Dublin. This all-day event will bring together policymakers, regulators, civil society and private sector leaders from Ireland and internationally to address a central question: how do we ensure the digital transformation reduces—rather than deepens—inequality? The post Digital Rights and…",
-   "date": "2026-07-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.423,
-   "pertinence": "moyenne",
-   "themes": [
-    "large",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-10-21",
-     "approx": false,
-     "extrait": {
-      "en": "…Symposium. Oxfam Ireland is hosting the Digital Rights and Equality Symposium on 21 October 2026 at O’Reilly Hall, University College Dublin. This all-day event will bring together…"
-     }
-    }
-   ],
-   "acronymes": []
-  },
-  {
-   "id": "674916a47d6d",
-   "titre": "Thailand PDPC consults on sector-specific PDPA guidelines",
-   "lien": "https://www.hlc.com/en/publications/thailand-pdpc-consults-on-sectorspecific-pdpa-guidelines",
-   "resume": "Thailand’s Personal Data Protection Commission (“ PDPC ”) has launched a public consultation on draft sector-specific guidelines (“ Draft Guidelines ”) under...",
-   "date": "2026-07-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "public consultation",
-    "guideline"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires",
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.473,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PDPC",
-    "PDPA"
-   ]
-  },
-  {
-   "id": "f66fea0bbf53",
-   "titre": "Malaysia consults on AI Governance Bill",
-   "lien": "https://www.hlc.com/en/publications/malaysia-consults-on-ai-governance-bill",
-   "resume": "On 10 July 2026, Malaysia’s National AI Office (“ NAIO ”) released a public consultation paper on its proposed AI Governance Bill, marking an important step towards...",
-   "date": "2026-07-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "public consultation",
-    "consultation paper"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.589,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "NAIO"
-   ]
-  },
-  {
-   "id": "fe08e867d296",
-   "titre": "Boosting EU competitiveness in life sciences: Speed, incentives and innovation support",
-   "lien": "https://www.hlc.com/en/publications/boosting-eu-competitiveness-in-life-sciences-speed-incentives-and-innovation-support",
-   "resume": "The EU has launched a coordinated wave of legislative and policy initiatives to boost its life sciences sector.",
-   "date": "2026-07-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.377,
-   "pertinence": "faible",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "f9fc0b1040fe",
-   "titre": "FCA’s Mills Review on Artificial Intelligence in retail financial services: More regulatory changes ahead",
-   "lien": "https://www.hlc.com/en/publications/fcas-mills-review-on-artificial-intelligence-in-retail-financial-services-more-regulatory-changes",
-   "resume": "On 6 July 2026, the FCA published the Mills Review into the impact of AI on retail financial services (the “ Review ”). The Review is described as setting out “a...",
-   "date": "2026-07-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.544,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FCA",
-    "AI"
-   ]
-  },
-  {
-   "id": "b98776b0adaa",
-   "titre": "Heightened enforcement of consumer protection laws in Vietnam: Digital platforms and influencer marketing in focus",
-   "lien": "https://www.hlc.com/en/publications/heightened-enforcement-of-consumer-protection-laws-in-vietnam-digital-platforms-and-influencer",
-   "resume": "The Vietnam Competition Commission (“ VCC ”), under the Ministry of Industry and Trade (“ MOIT ”), issues new penalties under the 2023 Law on Protection of Consumer...",
-   "date": "2026-07-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.496,
-   "pertinence": "moyenne",
-   "themes": [
-    "large",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "MOIT"
-   ]
-  },
-  {
-   "id": "26bf1980f5e8",
-   "titre": "Data Brokers & Beyond: Navigating New Jersey’s Data Broker & “Data Collector” Registration Law",
-   "lien": "https://fpf.org/blog/data-brokers-beyond-navigating-new-jerseys-data-broker-data-collector-registration-law/",
-   "resume": "Co-authored with Kelly Brandmeyer, FPF U.S. Policy Intern In a two-day span from June 28 to June 30, the New Jersey legislature introduced and passed A5328, amending New Jersey’s comprehensive privacy law and establishing new data broker and “data collector” registration requirements. The new data broker law has a uniquely broad scope and high financial [&#8230;]",
-   "date": "2026-07-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.423,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "A5328"
-   ]
-  },
-  {
-   "id": "7b726e20b292",
-   "titre": "Hogan Lovells Cadwalader advises Blue Owl and Moor Park on £1.3 billion acquisition of Spire Healthcare hospital portfolio",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-advises-blue-owl-and-moor-park-on-13-billion-acquisition-of-spire-healthcare-hospital-portfolio",
-   "resume": "London, 10 July 2026 &ndash; Global law firm Hogan Lovells Cadwalader has advised Blue Owl Capital and Moor Park Capital Partners (&ldquo;Moor Park&rdquo;) on the acquisition of a...",
-   "date": "2026-07-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.421,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "5a29176738ca",
-   "titre": "FPF Hosts Frontiers Workshop on Privacy, AI, and Emerging Infrastructure",
-   "lien": "https://fpf.org/blog/fpf-hosts-frontiers-workshop-on-privacy-ai-and-emerging-infrastructure/",
-   "resume": "On June 10, 2026, the FPF Center for Artificial Intelligence convened a Frontiers Workshop in Washington, DC. Held as part of FPF’s National Science Foundation (NSF) and the Department of Energy (DoE)-funded Privacy-Enhancing Technologies (PETs) Research Coordination Network, the workshop brought together privacy and frontier AI practitioners to examine challenges at the intersection of data [&#8230;]",
-   "date": "2026-07-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.435,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI",
-    "DC",
-    "NSF"
-   ]
+   "score_bruit": 0.253,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "50729a075a89",
@@ -4186,270 +1104,19 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "QD-TTg"
-   ]
-  },
-  {
-   "id": "bf6d7c544048",
-   "titre": "Thailand PDPC consults on first healthcare-specific data protection guideline",
-   "lien": "https://www.hlc.com/en/publications/thailand-pdpc-consults-on-first-healthcarespecific-data-protection-guideline",
-   "resume": "Thailand’s Personal Data Protection Commission (“ PDPC ”) has released a draft guideline on personal data protection for the healthcare sector for public consultation...",
-   "date": "2026-07-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "public consultation",
-    "guideline",
-    "Santé"
    ],
-   "groupes": [
-    "Nouveaux textes réglementaires",
-    "Standards Cyber",
-    "Termes santé"
+   "score_bruit": 0.519,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.647,
-   "pertinence": "elevee",
-   "themes": [
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PDPC"
-   ]
-  },
-  {
-   "id": "5fe76ae4758d",
-   "titre": "Hogan Lovells Cadwalader advises Allianz Value on Italy's first telemedicine-enabled community healthcare facility",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-advises-allianz-value-on-italys-first-telemedicineenabled-community-healthcare-facility",
-   "resume": "Global law firm Hogan Lovells Cadwalader advised Allianz Value, Allianz Italy's company dedicated to healthcare services and projects, on the launch of Italy's first telemedicine-enabled...",
-   "date": "2026-07-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.502,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "5c2f79f76036",
-   "titre": "Combined studies for medicinal products, medical devices and/or in-vitro diagnostics in the EU: COMBINE project enters Phase 2",
-   "lien": "https://www.hlc.com/en/publications/combined-studies-for-medicinal-products-medical-devices-andor-invitro-diagnostics-in-the-eu-combine",
-   "resume": "On 26 June, the European Commission and the participating EU Member States announced the launch of Phase 2 of the COMBINE pilot project for the coordinated assessment of combined studies.",
-   "date": "2026-07-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Dispositifs médicaux"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.599,
-   "pertinence": "elevee",
-   "themes": [
-    "sante_donnees",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "COMBINE"
-   ]
-  },
-  {
-   "id": "e65d75a41094",
-   "titre": "Policy roundtable on Robotic-Assisted Surgery",
-   "lien": "https://www.medtecheurope.org/2026/07/09/policy-roundtable-on-robotic-assisted-surgery/",
-   "resume": "What does it take to bring robotic surgery to every patient who needs it? Funding gaps. Reimbursement barriers. Health systems unprepared to scale. The technology is ready – the policy framework isn’t. On 7 September 2026, the MedTech Europe Robotic-Assisted Surgery Sector Group, in partnership with the European Economic and Social Committee (EESC), is convening […] The post Policy roundtable on Robotic-Assisted…",
-   "date": "2026-07-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.434,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-09-07",
-     "approx": false,
-     "extrait": {
-      "en": "…systems unprepared to scale. The technology is ready – the policy framework isn’t. On 7 September 2026, the MedTech Europe Robotic-Assisted Surgery Sector Group, in partnership with the…"
-     }
-    }
-   ],
-   "acronymes": [
-    "EESC"
-   ]
-  },
-  {
-   "id": "3a504e806800",
-   "titre": "Society for Corporate Governance 2026 National Conference",
-   "lien": "https://www.hlc.com/en/events/society-for-corporate-governance-2026-national-conference",
-   "resume": "Hogan Lovells is proud to be a sponsor of the Society for Corporate Governance 2026 National Conference.",
-   "date": "2026-07-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.335,
-   "pertinence": "faible",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "ff32e96000b8",
-   "titre": "Joint Statement: Pegasus in the European Parliament, the EU Must Act Now",
-   "lien": "https://edri.org/our-work/joint-statement-pegasus-in-the-european-parliament-the-eu-must-act-now/",
-   "resume": "A joint statement with civil society organisations and individual signatories is calling on the EU institutions to regulate spyware technologies after the 2026 Citizen Lab revelations. The post Joint Statement: Pegasus in the European Parliament, the EU Must Act Now appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-07-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.546,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "data_act"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "045ab06814c4",
-   "titre": "The Numbers Are In: What Financing has the Nagoya Protocol Delivered for Biodiversity After a Decade?",
-   "lien": "https://www.insideeulifesciences.com/2026/07/06/the-numbers-are-in-what-financing-has-the-nagoya-protocol-delivered-for-biodiversity-after-a-decade/",
-   "resume": "Bart Van Vooren and Yuliya Gevrenova The Nagoya Protocol was adopted under the Convention on Biological Diversity (“CBD”) and is built on the idea that the commercial use of materials from nature (“genetic resources”) should translate into fair and equitable benefits for countries providing and protecting nature in their jurisdictions. For the first time since... Continue Reading…",
-   "date": "2026-07-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.368,
-   "pertinence": "faible",
-   "themes": [
-    "nis2",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CBD"
-   ]
-  },
-  {
-   "id": "6164270805be",
-   "titre": "Singapore consults on new Digital Infrastructure Bill",
-   "lien": "https://www.hlc.com/en/publications/singapore-consults-on-new-digital-infrastructure-bill",
-   "resume": "Singapore is proposing a new regulatory regime for operators of major data centres and cloud services, reflecting the increasingly critical role these services play in supporting...",
-   "date": "2026-07-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.493,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "4eec4628b124",
@@ -4474,75 +1141,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.691,
+   "score": 0.651,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "ETDA"
-   ]
-  },
-  {
-   "id": "d519c3749db2",
-   "titre": "Brazil delays SISGEN 3.0 Foreign-User Functionality while Government Advances alternative pathway for foreign ABS Compliance",
-   "lien": "https://www.insideeulifesciences.com/2026/07/03/brazil-delays-sisgen-3-0-foreign-user-functionality-while-government-advances-alternative-pathway-for-foreign-abs-compliance/",
-   "resume": "Anderson Ribeiro, Aline Ferreira and Henryk Trelinski of Souto Correa Advogados contributed to the preparation of this article. Foreign companies have long faced a practical challenge under Brazil’s access and benefit-sharing (“ABS”) regime: although registration obligations apply to activities involving Brazilian genetic heritage, foreign legal entities still cannot register directly in SisGen, Brazil’s electronic…",
-   "date": "2026-07-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.348,
-   "pertinence": "faible",
-   "themes": [
-    "ia",
-    "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SISGEN3",
-    "ABS"
-   ]
-  },
-  {
-   "id": "004bd420c5c3",
-   "titre": "Hogan Lovells Cadwalader advises Basic-Fit on the acquisition of wellyou",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-cadwalader-beraet-basic-fit-beim-erwerb-von-wellyou",
-   "resume": "Global law firm Hogan Lovells Cadwalader has advised the Dutch fitness company Basic-Fit on its acquisition of health club chain wellyou for a purchase price of &euro;52 million.",
-   "date": "2026-07-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.325,
-   "pertinence": "faible",
-   "themes": [
-    "acheteurs_sante"
+   "score_bruit": 0.331,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : AI Act",
+   "statut": "projet"
   },
   {
    "id": "4ccf6ac9e7f7",
@@ -4570,85 +1187,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.697,
+   "score": 0.657,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "IVD",
     "IVDR",
     "EU"
-   ]
-  },
-  {
-   "id": "37c3fce86ffd",
-   "titre": "Proposed US Section 301 tariff action: implications for medical technologies",
-   "lien": "https://www.medtecheurope.org/2026/07/02/proposed-us-section-301-tariff-action-implications-for-medical-technologies/",
-   "resume": "On 2 June 2026, the Office of the United States Trade Representative published its determinations and proposed tariff action for public comment following Section 301 investigations concerning forced labour import restrictions across a number of US trading partners, including the European Union. The proposal foresees additional duties of 10% on imports from the European Union […] The post Proposed US Section 301…",
-   "date": "2026-07-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.404,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "US"
-   ]
-  },
-  {
-   "id": "3dd0afcbfa7b",
-   "titre": "EU Joint Clinical Assessment for medical technologies – Ready to launch?",
-   "lien": "https://www.medtecheurope.org/2026/07/02/eu-joint-clinical-assessment-for-medical-technologies-ready-to-launch/",
-   "resume": "The EU Health Technology Assessment Regulation (EU HTAR) became applicable in January 2025 and is materialising for a selection of high-risk medical devices this year. The Member State representatives (HTA Coordination Group) driving the implementation of the EU HTAR have recently agreed to select the first two cardiac implantable medical devices to undergo Joint Clinical […] The post EU Joint Clinical Assessment…",
-   "date": "2026-07-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Dispositifs médicaux",
-    "Technologies numériques en santé"
+   "score_bruit": 0.324,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
    ],
-   "groupes": [
-    "Termes santé",
-    "Exigences fournisseurs (santé, secteur public)"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.614,
-   "pertinence": "elevee",
-   "themes": [
-    "cra",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "HTAR",
-    "HTA"
-   ]
+   "motif": "texte clé : IVDR"
   },
   {
    "id": "f1930213ea4d",
@@ -4674,19 +1231,29 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.845,
+   "score": 0.805,
    "pertinence": "elevee",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EC-EU",
     "REP",
     "MDR",
     "IVDR"
-   ]
+   ],
+   "score_bruit": 0.324,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)",
+    "Normes européennes harmonisées (CEN-CENELEC, ETSI)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux), Normes européennes harmonisées (CEN-CENELEC, ETSI)",
+   "statut": "adopte"
   },
   {
    "id": "1e33ff7bdfed",
@@ -4712,17 +1279,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.803,
+   "score": 0.763,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "TEHDAS2",
     "EHDS"
-   ]
+   ],
+   "score_bruit": 0.313,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "EHDS"
+   ],
+   "motif": "texte clé : EHDS",
+   "statut": "consultation"
   },
   {
    "id": "da89b42df590",
@@ -4748,200 +1323,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.648,
+   "score": 0.608,
    "pertinence": "elevee",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "MDSAP",
     "MDR/IVDR",
     "US",
     "FDA"
-   ]
-  },
-  {
-   "id": "c01351dd467b",
-   "titre": "Access to Medical Technology",
-   "lien": "https://www.medtecheurope.org/access-to-medical-technology/",
-   "resume": "",
-   "date": "2026-07-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.718,
-   "pertinence": "elevee",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "ce87adfd9867",
-   "titre": "Now or never: why the Digital Euro must not fail on privacy",
-   "lien": "https://edri.org/our-work/now-or-never-why-the-digital-euro-must-not-fail-on-privacy/",
-   "resume": "Europe is developing a Digital Euro to reduce its reliance on US-controlled payment systems and give citizens a privacy-friendly digital payment option. Epicenter.works and other civil society groups support the project but argue that strong privacy protections must be built into its technology, not just promised on paper, to ensure public trust and protect fundamental rights. The vote of the ECON Committee signals…",
-   "date": "2026-07-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.559,
-   "pertinence": "elevee",
-   "themes": [
-    "cra",
-    "data_act"
+   "score_bruit": 0.37,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "US",
-    "ECON"
-   ]
-  },
-  {
-   "id": "00e174831fbd",
-   "titre": "The EU spends billions on AI, but can anyone track the money?",
-   "lien": "https://edri.org/our-work/the-eu-spends-billions-on-ai-but-can-anyone-track-the-money/",
-   "resume": "The European Union has pledged billions to establish itself as a global leader in artificial intelligence (AI). However, there is a significant transparency gap between the political announcements and the actual flow of money. ‘From Frameworks to Factories’, a new report by Open Future , maps the EU's AI investment architecture and asks a simple question: Can the money be followed? The post The EU spends billions on…",
-   "date": "2026-07-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.584,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "AI"
-   ]
-  },
-  {
-   "id": "65655af1bac8",
-   "titre": "IGF 2026 – Internet Governance Forum",
-   "lien": "https://edri.org/take-action/events/igf-2026-internet-governance-forum/",
-   "resume": "The 21st annual meeting of the Internet Governance Forum will be held in Nairobi, Kenya, marking the first gathering of the global multistakeholder community since the UN General Assembly's decision to establish the IGF as a permanent UN forum. The post IGF 2026 – Internet Governance Forum appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-06-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.428,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IGF 2026",
-    "IGF"
-   ]
-  },
-  {
-   "id": "6fc6de268730",
-   "titre": "Brussels Privacy Symposium 2026",
-   "lien": "https://edri.org/take-action/events/brussels-privacy-symposium-2026/",
-   "resume": "Marking its 10th anniversary edition, the Brussels Privacy Symposium celebrates a decade of examining, unpacking, and driving substantive data protection scholarship and thought leadership. The post Brussels Privacy Symposium 2026 appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-06-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.505,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "eaf090a0d7b9",
-   "titre": "Bitkom Privacy Conference (#pco26)",
-   "lien": "https://edri.org/take-action/events/bitkom-privacy-conference-pco26/",
-   "resume": "The Bitkom Privacy Conference brings together leading privacy experts from supervisory authorities, companies, academia, and start-ups to discuss current regulatory developments and strategic perspectives for a future-proof approach to data protection. The post Bitkom Privacy Conference (#pco26) appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-06-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.471,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "data_act"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : IVDR"
   },
   {
    "id": "7f706370e522",
@@ -4968,41 +1369,17 @@ window.VEILLE_DEBATS = {
     "donnees",
     "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
-  },
-  {
-   "id": "1d6b7a44d509",
-   "titre": "The AI Risk Nobody Is Regulating: Market Gatekeeping",
-   "lien": "https://ecipe.org/insights/ai-risk-nobody-is-regulating/",
-   "resume": "By Heidi Lund, a Senior Adviser at the National Board of Trade Sweden and author of the study Collective Societal Risks: A Blind Spot in AI Governance which examines how AI-driven collective societal risks may affect consumers, market access and … Continued",
-   "date": "2026-06-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.608,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
+   "score_bruit": 0.27,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "adopte"
   },
   {
    "id": "0a704f23e9a1",
@@ -5029,43 +1406,17 @@ window.VEILLE_DEBATS = {
     "large",
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "DMA"
-   ]
-  },
-  {
-   "id": "a79a0f9ea4fc",
-   "titre": "President Trump’s dual quantum Executive Orders seek to ignite quantum innovation and modernize U.S. digital security",
-   "lien": "https://www.hlc.com/en/publications/president-trumps-dual-quantum-executive-orders-seek-to-ignite-quantum-innovation",
-   "resume": "President Trump’s dual Executive Orders on quantum technology mark an assertive push to position the United States at the forefront of the emerging “quantum revolution,”...",
-   "date": "2026-06-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "executive order"
    ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.369,
-   "pertinence": "faible",
-   "themes": [
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.328,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "10dc9d270da2",
@@ -5090,286 +1441,21 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.534,
+   "score": 0.514,
    "pertinence": "moyenne",
    "themes": [
     "cra",
     "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "638d36be071a",
-   "titre": "Redispensing unused medicinal products under the EU pharma law package",
-   "lien": "https://www.hlc.com/en/publications/redispensing-unused-medicinal-products-under-the-eu-pharma-law-package",
-   "resume": "The revision of the EU pharmaceutical legislation is close to final, with adoption of the revised legal framework expected by fall of 2026. Although a 24-month transition period is...",
-   "date": "2026-06-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.468,
-   "pertinence": "moyenne",
-   "themes": [
-    "pharma_industrie",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "5ac9dbff85fd",
-   "titre": "The constitutional censure of the cumulative enforcement regime of Article L. 34-5 of the CPCE: analysis of the consequences of Decision no. 2026-1210 QPC of 25 June 2026 (Société Orange SA)",
-   "lien": "https://www.hlc.com/en/publications/the-constitutional-censure-of-the-cumulative-enforcement-regime-of-article-l-345-of-the-cpce",
-   "resume": "By its Decision no. 2026-1210 QPC of 25 June 2026 (Société Orange SA), the French Constitutional Council (Conseil constitutionnel) held that the sixth, eighth and penultimate...",
-   "date": "2026-06-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.436,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CPCE",
-    "QPC",
-    "SA"
-   ]
-  },
-  {
-   "id": "561c53ef72ab",
-   "titre": "FDA moves to accelerate US clinical development as OIG weighs new protection for trial participant remuneration",
-   "lien": "https://www.hlc.com/en/publications/fda-moves-to-accelerate-us-clinical-development-as-oig-weighs-new-protection",
-   "resume": "Update, September 21, 2026: On September 15, 2026, FDA announced the final design of the expedited IND pilot program discussed in this alert and began accepting applications. Sponsors apply ...",
-   "date": "2026-06-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.431,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [
-    {
-     "date": "2026-09-15",
-     "approx": false,
-     "extrait": {
-      "en": "…weighs new protection for trial participant remuneration. Update, September 21, 2026: On September 15, 2026, FDA announced the final design of the expedited IND pilot program discussed in this…"
-     }
-    },
-    {
-     "date": "2026-09-21",
-     "approx": false,
-     "extrait": {
-      "en": "…development as OIG weighs new protection for trial participant remuneration. Update, September 21, 2026: On September 15, 2026, FDA announced the final design of the expedited IND pilot…"
-     }
-    }
-   ],
-   "acronymes": [
-    "FDA",
-    "US",
-    "OIG",
-    "IND"
-   ]
-  },
-  {
-   "id": "aae61e45fd1a",
-   "titre": "FPF’s 2026 DC Privacy Forum: Leading Voices in AI, Privacy and Emerging Technology",
-   "lien": "https://fpf.org/blog/fpfs-2026-dc-privacy-forum-leading-voices-in-ai-privacy-and-emerging-technology/",
-   "resume": "By Paige Garvin, FPF Communications Intern The Future of Privacy Forum hosted its third annual DC Privacy Forum: Advancing Principled Data Protection, AI, and Digital Governance Practices on June 10th, 2026. This year&#8217;s Forum gathered government officials, academics, civil society representatives, and privacy professionals to discuss developments in AI governance, privacy regulation, youth online safety,…",
-   "date": "2026-06-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.429,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "DC",
-    "AI"
-   ]
-  },
-  {
-   "id": "75536e89acaf",
-   "titre": "IMDA discussion paper explores legal responsibility for AI agents",
-   "lien": "https://www.hlc.com/en/publications/imda-discussion-paper-explores-legal-responsibility-for-ai-agents",
-   "resume": "The Infocomm Media Development Authority of Singapore ( IMDA ) has published a discussion paper ( Paper ) examining how legal responsibility should be allocated when AI agents act autonomously, ...",
-   "date": "2026-06-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.696,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IMDA",
-    "AI"
-   ]
-  },
-  {
-   "id": "0848c3d15022",
-   "titre": "Antimicrobials under the EU Pharma Law Package – What can innovators and marketing authorisation applicants do now?",
-   "lien": "https://www.hlc.com/en/publications/antimicrobials-under-the-eu-pharma-law-package-what-can-innovators-and-marketing-authorisation",
-   "resume": "The revision of the pharmaceutical legislation in the European Union is nearly finalised, and the new legal framework (“EU General Pharmaceutical Law”) is expected to be adopted by autumn...",
-   "date": "2026-06-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.46,
-   "pertinence": "moyenne",
-   "themes": [
-    "pharma_industrie",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "f95b7bb55f4f",
-   "titre": "Singapore Ministry of Law issues guide for using generative AI in the legal sector",
-   "lien": "https://www.hlc.com/en/publications/singapore-ministry-of-law-issues-guide-for-using-generative-ai-in-the-legal-sector",
-   "resume": "On 6 March 2026, Singapore’s Ministry of Law (“ MinLaw ”) published the Guide for Using Generative AI in the Legal Sector (the “ Guide ”) , setting out general ...",
-   "date": "2026-06-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.541,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "20737ff38e9b",
-   "titre": "French Legal and Regulatory Update – May 2026",
-   "lien": "https://www.hlc.com/en/publications/french-legal-and-regulatory-update-may-2026",
-   "resume": "Spotlight : The Law on Simplifying Economic Life has been published – explore our teams' insights in the Corporate, Life Sciences and Public Law sections. Explore all our news by...",
-   "date": "2026-06-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "standards",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "regulatory update"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.45,
-   "pertinence": "moyenne",
-   "themes": [
-    "normes",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "acronymes": [],
+   "score_bruit": 0.324,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices"
   },
   {
    "id": "d9ee9741ca9a",
@@ -5395,13 +1481,20 @@ window.VEILLE_DEBATS = {
     "data_act",
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI",
     "CADA"
-   ]
+   ],
+   "score_bruit": 0.293,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
+   ],
+   "motif": "texte clé : Cloud and AI Development Act (CADA)"
   },
   {
    "id": "7a8e433a3039",
@@ -5423,235 +1516,22 @@ window.VEILLE_DEBATS = {
    "filtre_pertinence": true,
    "langue": "en",
    "score": 0.405,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "cra",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "478b5873e216",
-   "titre": "Understanding Data Embassies and Corridors",
-   "lien": "https://fpf.org/blog/understanding-data-embassies-and-corridors/",
-   "resume": "The following is a guest post to the FPF blog authored by Yeong Zee Kin, Chief Executive of the Singapore Academy of Law and FPF Senior Fellow. The guest post reflects the opinion of the author only and does not necessarily reflect the position or views of FPF and our stakeholder communities. FPF provides this [&#8230;]",
-   "date": "2026-06-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.412,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "fournisseurs_publics"
+   "acronymes": [],
+   "score_bruit": 0.322,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "babccbb44047",
-   "titre": "CMS issues first proposed rule for the IRA’s Drug Price Negotiation Program, for IPAY 2029 and beyond",
-   "lien": "https://www.hlc.com/en/publications/cms-issues-first-proposed-rule-for-the-iras-drug-price-negotiation-program-for-ipay-2029-and-beyond",
-   "resume": "On June 12, 2026, the Centers for Medicare & Medicaid Services (CMS) issued its first proposed rule (Proposed Rule) to codify regulations governing the Inflation Reduction Act (IRA)...",
-   "date": "2026-06-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.408,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CMS",
-    "IRA",
-    "IPAY 2029"
-   ]
-  },
-  {
-   "id": "7019019f0675",
-   "titre": "Orphan market exclusivity under the EU pharma law package – what can innovators do now",
-   "lien": "https://www.hlc.com/en/publications/orphan-market-exclusivity-under-the-eu-pharma-law-package-what-can-innovators-do-now",
-   "resume": "The revision of the EU pharmaceutical legislation is close to final, with adoption of the revised legal framework expected by fall of 2026. Although a 24-month transition period is...",
-   "date": "2026-06-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.498,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "8c67a985e0a4",
-   "titre": "Transferable Exclusivity Voucher for priority antimicrobials under the EU Pharma Law Package – What can innovators do now?",
-   "lien": "https://www.hlc.com/en/publications/transferable-exclusivity-voucher-for-priority-antimicrobials",
-   "resume": "The revision of the pharmaceutical legislation in the European Union (EU) is close to final, and the new legal framework, the \"EU General Pharmaceutical Law,\" is expected to be...",
-   "date": "2026-06-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.486,
-   "pertinence": "moyenne",
-   "themes": [
-    "pharma_industrie",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "4d0fc9e28482",
-   "titre": "FDA’s draft Q&A guidance on patent submission forms: A few practical tips worth noting",
-   "lien": "https://www.hlc.com/en/publications/fdas-draft-qa-guidance-on-patent-submission-forms-a-few-practical-tips-worth-noting",
-   "resume": "In June 2026, FDA's Center for Drug Evaluation and Research issued draft guidance addressing common questions about Forms FDA 3542a and FDA 3542—the forms NDA applicants and NDA holders use ...",
-   "date": "2026-06-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "standards",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.409,
-   "pertinence": "moyenne",
-   "themes": [
-    "normes",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "FDA 3542",
-    "NDA"
-   ]
-  },
-  {
-   "id": "6722a0935b50",
-   "titre": "Hogan Lovells advises The Mobility House on the sale of its Solutions business unit to Edenred",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-the-mobility-house-beim-verkauf-des-geschaeftsbereichs-solutions-an-edenred",
-   "resume": "Munich – Global law firm Hogan Lovells has advised The Mobility House GmbH on the sale of its business unit Solutions to French company Edenred, a leading global B2B...",
-   "date": "2026-06-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.242,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "B2B"
-   ]
-  },
-  {
-   "id": "6361875a70f7",
-   "titre": "Regulatory exclusivity timelines under the EU pharma law package – what can innovators do now",
-   "lien": "https://www.hlc.com/en/publications/regulatory-exclusivity-timelines-under-the-eu-pharma-law-package-what-can-innovators-do-now",
-   "resume": "The revision of the pharmaceutical legislation in the European Union is close to final, and the new legal framework is expected to be adopted by fall of 2026. Although a 24-month transition ...",
-   "date": "2026-06-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "revision"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.491,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet"
   },
   {
    "id": "1196a0e84e76",
@@ -5676,41 +1556,18 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CNIL",
     "MR-001",
     "MR-003"
-   ]
-  },
-  {
-   "id": "9ea6d1733db5",
-   "titre": "Time to assess BIOSECURE risk: 1260H listings add urgency to pharmaceutical contracting decisions",
-   "lien": "https://www.hlc.com/en/publications/time-to-assess-biosecure-risk-1260h-listings-add-urgency-to-pharmaceutical-contracting-decisions",
-   "resume": "Earlier this week, the Department of War released its 2026 annual update to the 1260H list of Chinese military companies, listing five biotechnology companies, including WuXi AppTec Co.,...",
-   "date": "2026-06-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.487,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "pharma_industrie"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.26,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "ec27ca7f8476",
@@ -5736,75 +1593,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.727,
+   "score": 0.687,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "EU"
-   ]
-  },
-  {
-   "id": "80ffba5bb580",
-   "titre": "Vietnam’s AI law now in force",
-   "lien": "https://www.hlc.com/en/publications/vietnams-ai-law-now-in-force",
-   "resume": "A risk-based regime with extraterritorial reach and regulatory sandboxes.",
-   "date": "2026-06-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.61,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "10a417cc703f",
-   "titre": "The Data Chronicles | The narrowing window for AI policy: Why bold action matters",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-the-narrowing-window-for-ai-policy-why-bold-action-matters",
-   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by Hogan Lovells partner Cybil Roehrenbeck to explore a pivotal moment in U.S. AI regulation and what it signals about...",
-   "date": "2026-06-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.516,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
+   "score_bruit": 0.482,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "7c1b6fa6ac64",
@@ -5832,12 +1638,12 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.912,
+   "score": 0.872,
    "pertinence": "elevee",
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [
     {
      "date": "2026-09-11",
@@ -5850,67 +1656,16 @@ window.VEILLE_DEBATS = {
    "acronymes": [
     "EU",
     "CRA"
-   ]
-  },
-  {
-   "id": "f711e4149efa",
-   "titre": "Packaging, PFAS, carbon footprint: How can health care industries prepare for upcoming regulatory deadlines?",
-   "lien": "https://www.hlc.com/en/publications/packaging-pfas-carbon-footprint-how-can-healthcare-industries-prepare-for-upcoming-regulatory-deadli",
-   "resume": "Health care industries have long operated within a framework where certain sector-specific constraints (such as patient safety, sterility and traceability) justified targeted adjustments...",
-   "date": "2026-06-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.566,
-   "pertinence": "elevee",
-   "themes": [
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PFAS"
-   ]
-  },
-  {
-   "id": "1ff41add3e95",
-   "titre": "Future of Privacy Forum Releases Comprehensive Report On Algorithmic Personalization in Youth Online Experiences",
-   "lien": "https://fpf.org/blog/future-of-privacy-forum-releases-comprehensive-report-on-algorithmic-personalization-in-youth-online-experiences/",
-   "resume": "As policymakers continue to debate youth online safety regulations, a new FPF report assesses the role of data-driven personalization and its implications for emerging policy and product design WASHINGTON, D.C. — (June 10, 2026) — The Future of Privacy Forum — a global non-profit focused on data protection, AI, and emerging technologies —today released Personalization [&#8230;]",
-   "date": "2026-06-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.547,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "dm_div"
+   "score_bruit": 0.497,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI"
+   "motif": "texte clé : CRA",
+   "bruit": [
+    "vulnérabilités / alertes techniques"
    ]
   },
   {
@@ -5939,77 +1694,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.754,
+   "score": 0.714,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI"
-   ]
-  },
-  {
-   "id": "97d988e5da6d",
-   "titre": "FDA endorses prior knowledge use in gene therapy development",
-   "lien": "https://www.hlc.com/en/publications/fda-endorses-prior-knowledge-use-in-gene",
-   "resume": "Last week, the U.S. Food and Drug Administration (FDA) issued draft guidance on “Leveraging Prior Knowledge in the Development of Human Gene Therapy Products Incorporating Genome Editing,”...",
-   "date": "2026-06-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.456,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "480b7ee60d73",
-   "titre": "Economic simplification act: long-awaited reform and positive developments for clinical research in France",
-   "lien": "https://www.hlc.com/en/publications/economic-simplification-act-longawaited-reform-and-positive-developments-for-clinical-research",
-   "resume": "Law No. 2026-403 of 26 May 2026 on the simplification of economic activity introduces several measures that have long been awaited by stakeholders in the healthcare sector. Against a...",
-   "date": "2026-06-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
+   "score_bruit": 0.358,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.564,
-   "pertinence": "elevee",
-   "themes": [
-    "donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : AI Act",
+   "statut": "projet"
   },
   {
    "id": "47a570713409",
@@ -6035,84 +1737,27 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.767,
+   "score": 0.727,
    "pertinence": "elevee",
    "themes": [
     "nis2",
     "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "ENISA",
     "ICT"
-   ]
-  },
-  {
-   "id": "a6679e6017b6",
-   "titre": "Conformity assessment of continuously learning AI-based medical devices in the EU",
-   "lien": "https://www.hlc.com/en/publications/conformity-assessment-of-continuously-learning-aibased-medical-devices-in-the-eu",
-   "resume": "The conformity assessment of AI-based medical devices (“ AIMD ”) raises questions for companies developing and marketing such devices. This is true in particular for AIMDs that continue to...",
-   "date": "2026-06-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Dispositifs médicaux"
    ],
-   "groupes": [
-    "Termes santé"
+   "score_bruit": 0.474,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
    ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.625,
-   "pertinence": "elevee",
-   "themes": [
-    "ia",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "EU",
-    "AIMD"
-   ]
-  },
-  {
-   "id": "b8b7cc3ad16f",
-   "titre": "AI agents under antitrust and consumer protection scrutiny: Risks and opportunities for compliance",
-   "lien": "https://www.hlc.com/en/publications/ai-agents-under-antitrust-and-consumer-protection-scrutiny-risks-and-opportunities-for-compliance",
-   "resume": "Generative artificial intelligence (“Generative AI” and “AI”, respectively) is under growing scrutiny from regulators and policy makers. 1 Its potential to...",
-   "date": "2026-06-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.723,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet"
   },
   {
    "id": "3ffe210c422f",
@@ -6136,18 +1781,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.555,
+   "score": 0.515,
    "pertinence": "elevee",
    "themes": [
     "cra",
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EUDAMED",
     "EU"
-   ]
+   ],
+   "score_bruit": 0.309,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR"
   },
   {
    "id": "c41729c4b8a3",
@@ -6175,19 +1827,27 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.603,
+   "score": 0.563,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees",
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "MDR/IVDR",
     "MDR",
     "IVDR"
-   ]
+   ],
+   "score_bruit": 0.362,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)"
   },
   {
    "id": "85b37950908e",
@@ -6208,109 +1868,23 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "langue": "en",
    "score": 0.469,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "donnees",
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI"
-   ]
-  },
-  {
-   "id": "136aa653b950",
-   "titre": "Key IHI support and upcoming opportunities",
-   "lien": "https://www.medtecheurope.org/2026/06/04/key-ihi-support-and-upcoming-opportunities/",
-   "resume": "Field Manual on scaling innovations Scaling innovations for long-term impact is challenging. To support projects, the Innovative Health Initiative (IHI) has developed a Field Manual on scaling innovations emerging from public-private partnerships. This practical guide offers a structured framework to develop robust exploitation plans, value propositions, and business cases. Drawing on the experience of several […]…",
-   "date": "2026-06-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.43,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IHI"
-   ]
-  },
-  {
-   "id": "4938f5c3f554",
-   "titre": "Innovative Health Initiative (IHI) – The flagship partnership for healthcare research & innovation in Europe",
-   "lien": "https://www.medtecheurope.org/innovative-health-initiative-ihi-the-flagship-partnership-for-healthcare-research-innovation-in-europe/",
-   "resume": "",
-   "date": "2026-06-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
+   "score_bruit": 0.309,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
    ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.619,
-   "pertinence": "elevee",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IHI"
-   ]
-  },
-  {
-   "id": "276298836015",
-   "titre": "Another Attack on Europe’s Single Market",
-   "lien": "https://ecipe.org/insights/another-attack-on-europes-single-market/",
-   "resume": "Germany’s Uber Ruling Shows Why Regulatory Protectionism Endures Europe’s leaders cannot stop talking about competitiveness. Every European Council meeting seems to produce new declarations about strengthening the Single Market, boosting productivity, accelerating the green transition, and fostering innovation. Yet, across … Continued",
-   "date": "2026-06-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.425,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : Cybersecurity Act / certification UE"
   },
   {
    "id": "a12297a020e9",
@@ -6334,16 +1908,26 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.594,
+   "score": 0.554,
    "pertinence": "elevee",
    "themes": [
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CSA2"
+   ],
+   "score_bruit": 0.357,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "bruit": [
+    "télécoms"
    ]
   },
   {
@@ -6371,449 +1955,18 @@ window.VEILLE_DEBATS = {
     "cra",
     "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "COM"
-   ]
-  },
-  {
-   "id": "b290588f0d40",
-   "titre": "Comparing Enacted App Store Accountability Acts",
-   "lien": "https://fpf.org/blog/comparing-enacted-app-store-accountability-acts/",
-   "resume": "On May 28, 2026, the 5th Circuit granted a stay on the preliminary injunction blocking enforcement of Texas’s App Store Accountability Act (ASAA)—meaning the law is now in effect while litigation on the merits continues. In 2025, Utah, Texas, and Louisiana enacted App Store Accountability Acts (ASAAs) which impose novel and significant age assurance obligations [&#8230;]",
-   "date": "2026-06-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.428,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ASAA"
-   ]
-  },
-  {
-   "id": "52d7ce275c9c",
-   "titre": "From principles to practice: Maturing AI supervision in Singapore’s Financial Sector",
-   "lien": "https://www.hlc.com/en/publications/from-principles-to-practice-maturing-ai-supervision-in-singapores-financial-sector",
-   "resume": "Regulatory guidance on the use of artificial intelligence (AI) by financial institutions (FIs) in Singapore has evolved significantly in recent years. Two recent guidance documents are...",
-   "date": "2026-06-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.562,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
+   "score_bruit": 0.226,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "43c7aed23e81",
-   "titre": "New harmonised EU template for participant recruitment and informed consent in clinical trials",
-   "lien": "https://www.hlc.com/en/publications/new-harmonised-eu-template-for-participant-recruitment-and-informed-consent-in-clinical-trials",
-   "resume": "A new harmonised template ( Version 2.0 ) for participant recruitment and informed consent is now available for all clinical trials conducted in the EU/EEA. The template has been developed by ...",
-   "date": "2026-06-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Clinical trial"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.532,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "EU/EEA"
-   ]
-  },
-  {
-   "id": "52df14767376",
-   "titre": "EU Biotech Act II: One Week Remaining to Shape the Commission’s Approach",
-   "lien": "https://www.insideeulifesciences.com/2026/06/03/eu-biotech-act-ii-less-than-10-days-to-shape-the-commissions-approach/",
-   "resume": "The European Commission’s Call for Evidence on the upcoming Biotech Act II is open until 10 June 2026, with one week remaining for companies to provide input. Companies should consider engaging now to help shape the outcome. The initiative is expected to have a broad impact across sectors including chemicals, agriculture, agri-biotech, food and feed,... Continue Reading…",
-   "date": "2026-06-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "Consultation publique"
-   ],
-   "groupes": [
-    "Termes génériques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.389,
-   "pertinence": "faible",
-   "themes": [
-    "ia",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "1435b0309182",
-   "titre": "Singapore PDPC issues proposed guidelines on use of personal data in generative AI",
-   "lien": "https://www.hlc.com/en/publications/singapore-pdpc-issues-proposed-guidelines-on-use-of-personal-data-in-generative-ai",
-   "resume": "On 2 June 2026, Singapore’s Personal Data Protection Commission (“ PDPC ”) issued proposed guidelines on the use of personal data in generative artificial intelligence...",
-   "date": "2026-06-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "guideline"
-   ],
-   "groupes": [
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.537,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PDPC",
-    "AI"
-   ]
-  },
-  {
-   "id": "ab07889e8807",
-   "titre": "Statement: End complicity with ISS World Europe",
-   "lien": "https://edri.org/our-work/statement-end-complicity-with-iss-world-europe/",
-   "resume": "ISS World Europe is an annual surveillance industry trade fair where the most invasive technologies for mass surveillance, data harvesting and tracking of individuals are traded and promoted. Such a marketplace for digital repression tools, connected to companies directly involved in war crimes, human rights violations, and the genocide in Gaza, should have no place in the EU. Civil society is calling on the EU to…",
-   "date": "2026-06-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.502,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ISS",
-    "EU"
-   ]
-  },
-  {
-   "id": "02346b91db07",
-   "titre": "The Data Chronicles | 2026 state legislative updates",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-2026-state-legislative-updates",
-   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by Hogan Lovells senior associate Harsimar Dhanoa to break down the latest wave of 2026 U.S. state legislative activity ...",
-   "date": "2026-06-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.408,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "161746a2e56c",
-   "titre": "FDA extends comment period for real-time clinical trials pilot, AI use in studies (updated)",
-   "lien": "https://www.hlc.com/en/publications/fda-extends-comment-period-for-realtime",
-   "resume": "The U.S. Food and Drug Administration (FDA) announced a “real-time clinical trials” (RTCT) pilot program to permit agency reviewers to review study data simultaneously with its...",
-   "date": "2026-06-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Clinical trial"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.524,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "AI",
-    "RTCT"
-   ]
-  },
-  {
-   "id": "7a40cce1dc0d",
-   "titre": "The Netherlands tightens telemarketing rules: consent becomes the new standard",
-   "lien": "https://www.hlc.com/en/publications/the-netherlands-tightens-telemarketing-rules-consent-becomes-the-new-standard",
-   "resume": "The Netherlands is raising the bar for telemarketing: existing customer relationships will no longer automatically permit marketing calls. From 1 July 2026, companies calling consumer...",
-   "date": "2026-06-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.391,
-   "pertinence": "faible",
-   "themes": [
-    "large",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "1a327910035b",
-   "titre": "No Silver Bullet, But a Silver Lining? PETs and International Data Transfers",
-   "lien": "https://fpf.org/blog/no-silver-bullet-but-a-silver-lining-pets-and-international-data-transfers/",
-   "resume": "Is there a role for Privacy Enhancing Technologies (PETs) to play in the context of international data transfers? The answer to this question could be one of the keys to unlock trusted cross-border data flows at scale in the age of AI. This was the topic explored in a session organized by the Future of [&#8230;]",
-   "date": "2026-05-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.515,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "167caa3760c7",
-   "titre": "Career Choice in the AI Age: What Next for Privacy and Data Professionals?",
-   "lien": "https://fpf.org/blog/career-choice-in-the-ai-age-what-next-for-privacy-and-data-professionals/",
-   "resume": "When I was in college, privacy existed but the privacy profession did not.&#160;Some cynics might say that the reverse is true now, but the reality is more complex: even amidst mounting pressures on individual privacy, there are arguably more privacy protections enshrined into law around the world than ever before.&#160; One point, though, is beyond [&#8230;]",
-   "date": "2026-05-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.478,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "bfaa6741709d",
-   "titre": "What’s behind the EU’s digitalisation push? Surveillance, control and exclusion",
-   "lien": "https://edri.org/our-work/whats-behind-the-eus-digitalisation-push-surveillance-control-and-exclusion/",
-   "resume": "The EU institutions have been engaged in a broad and wholesale digitalisation project but underneath the rhetoric of efficiency, modernisation, and citizen empowerment lies a more troubling reality. It is not a mere technical upgrade of public services, but a political choice, long in the making, to forego care and rights of individuals in favour of normalising surveillance, control and exclusion of the most…",
-   "date": "2026-05-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.498,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "2bcdfa8de6fa",
-   "titre": "Inside Italy’s low-cost spyware economy",
-   "lien": "https://edri.org/our-work/inside-italys-low-cost-spyware-economy/",
-   "resume": "Commercial spyware in Europe has recently made headlines with the now notorious names of Pegasus and Graphite, the expensive, exploitation-driven products at the top end of the market. Much less known is the wide underworld ecosystem of low-cost spyware vendors, often targeting citizens via their smartphones. EDRi member Osservatorio Nessuno has investigated and analysed two separate products, Spyrtacus and…",
-   "date": "2026-05-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.483,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "031b7dcb2269",
-   "titre": "FPF Releases Practitioner Guides on Privacy Enhancing Technologies for Education Stakeholders",
-   "lien": "https://fpf.org/blog/fpf-releases-practitioner-guides-on-privacy-enhancing-technologies-for-education-stakeholders/",
-   "resume": "The Future of Privacy Forum (FPF) has released a suite of practitioner resources on Privacy Enhancing Technologies (PETs) for the education sector. Building on FPF&#8217;s 2025 landscape analysis of PETs adoption by State Education Agencies, the new resources move from landscape analysis to implementation considerations — providing audience-specific guidance for the three practitioner communities most [&#8230;]",
-   "date": "2026-05-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "standards",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.447,
-   "pertinence": "moyenne",
-   "themes": [
-    "normes",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
+   "motif": "texte clé : Cybersecurity Act / certification UE"
   },
   {
    "id": "80ec7e888cd5",
@@ -6827,7 +1980,7 @@ window.VEILLE_DEBATS = {
    "source": "Hogan Lovells (HLC) - Our thinking",
    "zone": "Worldwide",
    "nature": "opinion",
-   "rubrique": "secteur",
+   "rubrique": "reglementation",
    "rubrique_mots_cles": false,
    "tags": [
     "guideline"
@@ -6837,174 +1990,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.541,
-   "pertinence": "moyenne",
+   "score": 0.521,
+   "pertinence": "elevee",
    "themes": [
     "sante_donnees",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EDPB"
-   ]
-  },
-  {
-   "id": "dbc9b575f737",
-   "titre": "Digital Rights Monthly Socials",
-   "lien": "https://edri.org/take-action/events/digital-rights-monthly-socials/",
-   "resume": "Connect with the global digital rights community at the monthly Digital Rights Social, hosted by Team CommUNITY on their virtual Mattermost platform The post Digital Rights Monthly Socials appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-05-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.431,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "964d11405327",
-   "titre": "DRAPAC26 – Digital Rights Asia-Pacific Assembly",
-   "lien": "https://edri.org/take-action/events/drapac26-digital-rights-asia-pacific-assembly/",
-   "resume": "The 2026 Digital Rights Asia-Pacific Assembly (DRAPAC26) brings together changemakers from across the region working at the intersection of digital rights, human rights, and technology. The post DRAPAC26 – Digital Rights Asia-Pacific Assembly appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-05-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.425,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "large"
+   "score_bruit": 0.348,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DRAPAC26"
-   ]
-  },
-  {
-   "id": "dd9c8f15edc4",
-   "titre": "Resistance Lab: Making and distributing media under surveillance",
-   "lien": "https://edri.org/take-action/events/resistance-lab-making-and-distributing-media-under-surveillance/",
-   "resume": "Join Interrupting Criminalization's Abolition Journalism Fellow Lewis Raven Wallace, digital security firm Safety Sync Group, and fellow journalists and media makers for a resistance lab. The post Resistance Lab: Making and distributing media under surveillance appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-05-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.501,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "69583484f88c",
-   "titre": "SB 5 in Five: What to Know About Connecticut’s New AI Law",
-   "lien": "https://fpf.org/blog/sb-5-in-five-what-to-know-about-connecticuts-new-ai-law/",
-   "resume": "Connecticut’s SB 5 fits a lot of AI obligations into a small bill number. This week, Governor Lamont (D) signed the 39-section bill into law, creating new requirements across several fast-moving areas of AI policy, including companion chatbots, automated employment decision tools (AEDTs), social media, and provenance data. The law also includes provisions related to [&#8230;]",
-   "date": "2026-05-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.552,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SB5",
-    "AI"
-   ]
-  },
-  {
-   "id": "1ed88fd5ea5f",
-   "titre": "Third Time’s the Charm: Connecticut Enacts Annual Privacy Update",
-   "lien": "https://fpf.org/blog/third-times-the-charm-connecticut-enacts-annual-privacy-update/",
-   "resume": "The Connecticut Data Privacy Act (CTDPA) has been revised multiple times since being enacted in 2022: SB 3 added heightened protections for consumer health data and for minors in 2023; and SB 1295 in 2025 expanded the law&#8217;s scope, updated and added consumer rights, modified the data minimization and purpose limitation requirements, prescribed impact assessment [&#8230;]",
-   "date": "2026-05-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.478,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "data_act"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CTDPA",
-    "SB3",
-    "SB 1295"
-   ]
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices"
   },
   {
    "id": "a1f0bde72bab",
@@ -7031,285 +2035,24 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.78,
+   "score": 0.74,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI"
-   ]
-  },
-  {
-   "id": "cc42a4e1fb38",
-   "titre": "FDA one-day inspections pilot: What to expect and how to prepare",
-   "lien": "https://www.hlc.com/en/publications/fda-oneday-inspections-pilot-what-to-expect",
-   "resume": "The U.S. Food and Drug Administration (FDA) recently announced the launch of a pilot program involving abbreviated, one-day inspectional assessments at manufacturing and other lower-risk...",
-   "date": "2026-05-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.466,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "a0ef07010cb5",
-   "titre": "Pillars of pharmaceutical IP: Regulatory exclusivity regime in China",
-   "lien": "https://www.hlc.com/en/publications/pillars-of-pharmaceutical-ip-regulatory-exclusivity-regime",
-   "resume": "On May 15, 2026, China's National Medical Products Administration (NMPA) officially issued and implemented the Implementation Measures for the Protection of Pharmaceutical Trial Data (the...",
-   "date": "2026-05-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.425,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "donnees"
+   "score_bruit": 0.494,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IP",
-    "NMPA"
-   ]
-  },
-  {
-   "id": "c351c6265e71",
-   "titre": "Drug repurposing: FDA extends comment period on addressing unmet medical needs (updated)",
-   "lien": "https://www.hlc.com/en/publications/drug-repurposing-fda-seeks-comments-on-how-to-address-unmet-medical-needs",
-   "resume": "The U.S. Food and Drug Administration (FDA) issued a request for information (RFI) seeking public input on how it can better facilitate drug repurposing to address unmet needs, including...",
-   "date": "2026-05-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.396,
-   "pertinence": "faible",
-   "themes": [
-    "dm_div",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "RFI"
-   ]
-  },
-  {
-   "id": "21ed0851e063",
-   "titre": "French Legal and Regulatory Update – April 2026",
-   "lien": "https://www.hlc.com/en/publications/french-legal-and-regulatory-update-april-2026",
-   "resume": "Spotlight – Provisions regarding commercial leases in the Law on the Simplification of Economic Life ; Simplification of the litigation procedure for certain projects on environmental...",
-   "date": "2026-05-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "regulatory update"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.518,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "b12c329f42aa",
-   "titre": "FDA establishes enforcement priorities policy for unauthorized ENDS and nicotine pouch products",
-   "lien": "https://www.hlc.com/en/publications/fda-establishes-enforcement-priorities-policy-for-unauthorized-ends-and-nicotine-pouch-products",
-   "resume": "FDA recently issued new guidance for industry , Enforcement Priorities for Certain New Tobacco Products Marketed Without Premarket Authorization , describing its current enforcement...",
-   "date": "2026-05-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.442,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "ENDS"
-   ]
-  },
-  {
-   "id": "d852e3a40095",
-   "titre": "The World Health Organization’s Emerging Pathogen Access System: Implications for Commercial Infectious Disease R&D",
-   "lien": "https://www.insideeulifesciences.com/2026/05/23/the-world-health-organizations-emerging-pathogen-access-system-implications-for-commercial-infectious-disease-rd/",
-   "resume": "Over the past week, at the 79th World Health Assembly (“WHA”) in Geneva, governments have been debating one of the most consequential but still poorly understood elements of the World Health Organization (“WHO”) Pandemic Agreement that was adopted in May 2025: the Pathogen Access and Benefit-Sharing (“PABS”) System. Since then, negotiations on the PABS have... Continue Reading…",
-   "date": "2026-05-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.475,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "WHA",
-    "WHO",
-    "PABS"
-   ]
-  },
-  {
-   "id": "883887fef7ff",
-   "titre": "Hogan Lovells advises Aareon on the acquisition of easimo",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-aareon-beim-erwerb-von-easimo",
-   "resume": "Global law firm Hogan Lovells has advised Aareon Holding GmbH, a leading European provider of software solutions for the real estate industry, on the acquisition of all shares in easimo...",
-   "date": "2026-05-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.252,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "6f1ad8fba0a7",
-   "titre": "\"Thanks... Good Talk\" Shortcast",
-   "lien": "https://www.hlc.com/en/publications/thanks-good-talk-shortcast",
-   "resume": "Ivan Zapien focuses his shortcast on the issues, people, and culture that help shape Washington, D.C.",
-   "date": "2026-05-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.322,
-   "pertinence": "faible",
-   "themes": [
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "ef4a5576f161",
-   "titre": "“Fight for Us, Not for Them”: A Public Interest Vision for EU Tech Policy — programme and new speakers announced",
-   "lien": "https://edri.org/our-work/fight-for-us-not-for-them-a-public-interest-vision-for-eu-tech-policy-new-speakers-announced/",
-   "resume": "As EU digital policy faces growing pressure from deregulation and “simplification” agendas, civil society experts, lawmakers, regulators, and journalists are coming together in Brussels and online to make the case for a bold public-interest vision of technology policy: one that protects people, communities, democracy, and our fundamental rights. The post “Fight for Us, Not for Them”: A Public Interest Vision for EU…",
-   "date": "2026-05-21",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.529,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "motif": "texte clé : AI Act",
+   "statut": "consultation"
   },
   {
    "id": "23b1e18d68e0",
@@ -7336,50 +2079,24 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.704,
+   "score": 0.664,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI"
-   ]
-  },
-  {
-   "id": "06ab767882eb",
-   "titre": "MHRA publishes new draft rare disease therapies regulatory framework and consultation",
-   "lien": "https://www.hlc.com/en/publications/mhra-publishes-new-draft-rare-disease-therapies",
-   "resume": "The UK Medicines and Healthcare products Regulatory Agency (MHRA) published its draft Rare Disease Therapies Regulatory Framework on 21 May 2026 here . The Framework introduces a new,...",
-   "date": "2026-05-21",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
    ],
-   "groupes": [
-    "Termes santé"
+   "score_bruit": 0.326,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.592,
-   "pertinence": "elevee",
-   "themes": [
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "MHRA",
-    "UK"
-   ]
+   "motif": "texte clé : AI Act",
+   "statut": "projet"
   },
   {
    "id": "2af5a7d97314",
@@ -7405,45 +2122,17 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "LED"
-   ]
-  },
-  {
-   "id": "afafd1a0120f",
-   "titre": "ABA’s Antitrust in Healthcare Conference",
-   "lien": "https://www.hlc.com/en/events/abas-antitrust-in-healthcare-conference",
-   "resume": "Jennifer Fleury will participate in the panel “The Art of the Case: Litigators’ Lessons” at the ABA’s Antitrust in Healthcare Conference on May 20th in Washington,...",
-   "date": "2026-05-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
    ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.523,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ABA"
-   ]
+   "score_bruit": 0.276,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "38cc65510ee5",
@@ -7469,12 +2158,12 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.653,
+   "score": 0.613,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
@@ -7482,7 +2171,14 @@ window.VEILLE_DEBATS = {
     "CAIA",
     "ADM",
     "CADMA"
-   ]
+   ],
+   "score_bruit": 0.249,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "aa2b070bb7d3",
@@ -7510,80 +2206,22 @@ window.VEILLE_DEBATS = {
     "plafond": false
    },
    "langue": "en",
-   "score": 0.511,
+   "score": 0.491,
    "pertinence": "moyenne",
    "themes": [
     "donnees",
     "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CNIL"
-   ]
-  },
-  {
-   "id": "c18428409b58",
-   "titre": "China’s Interim Measures for the Administration of Anthropomorphic AI Interaction Services: A New Phase in the Regulation of Human–AI Interaction",
-   "lien": "https://www.hlc.com/en/publications/chinas-interim-measures-for-the-administration-of-anthropomorphic-ai-interaction-services",
-   "resume": "On April 10, 2026, the Cyberspace Administration of China, together with the National Development and Reform Commission, the Ministry of Industry and Information Technology, the Ministry of ...",
-   "date": "2026-05-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.601,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "28ea4ad1065f",
-   "titre": "Malaysia issues three data protection risk management guides",
-   "lien": "https://www.hlc.com/en/publications/malaysia-issues-three-data-protection-risk-management-guides",
-   "resume": "Malaysia’s Personal Data Protection Commissioner (“PDPC”) has recently issued three new guidelines clarifying key concepts under the Personal Data Protection Act 2010...",
-   "date": "2026-05-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "guideline"
-   ],
-   "groupes": [
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.54,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "PDPC"
-   ]
+   "score_bruit": 0.294,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "ee493df61253",
@@ -7609,110 +2247,17 @@ window.VEILLE_DEBATS = {
     "cra",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
-  },
-  {
-   "id": "e4ba5ede4a1a",
-   "titre": "European Commission Publishes “ESRS 2.0” for Public Consultation: Draft Closely Follows EFRAG’s Technical Advice with Additional Simplifications for Companies",
-   "lien": "https://www.insideeulifesciences.com/2026/05/15/european-commission-publishes-esrs-2-0-for-public-consultation-draft-closely-follows-efrags-technical-advice-with-additional-simplifications-for-companies/",
-   "resume": "The European Commission (“Commission”) has launched a four-week feedback period — open until June 3, 2026 — on a draft delegated act to revise the European Sustainability Reporting Standards (“ESRS 2.0”). Ultimately, EU companies in scope of the EU’s Corporate Sustainability Reporting Directive (“CSRD”) will have to draft their annual sustainability statements in accordance with... Continue Reading…",
-   "date": "2026-05-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "public consultation"
    ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.511,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ESRS2",
-    "EFRAG",
-    "EU",
-    "CSRD"
-   ]
-  },
-  {
-   "id": "f980aa37770b",
-   "titre": "2026 LSTA and LMA New York Joint Conference",
-   "lien": "https://www.hlc.com/en/events/2026-lsta-and-lma-new-york-joint-conference",
-   "resume": "This content-rich conference brings together top lenders, investors, borrowers, and market strategists for a day of insight, analysis, and forward-looking discussion.&nbsp; Attendees will...",
-   "date": "2026-05-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.352,
-   "pertinence": "faible",
-   "themes": [
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "LSTA",
-    "LMA"
-   ]
-  },
-  {
-   "id": "97c240db870b",
-   "titre": "Ireland investigates Meta for breaching the DSA – a year on from our complaint",
-   "lien": "https://edri.org/our-work/ireland-investigates-meta-for-breaching-the-dsa-a-year-on-from-our-complaint/",
-   "resume": "The Irish Digital Services Coordinator Coimisiún na Meán (CnaM) has announced a formal investigation last week into whether Meta breaches the DSA’s obligation to offer users access to alternative news feeds without profiling – a promising step towards tackling toxic platform design. The investigation comes after Bits of Freedom, EDRi, GFF and Convocation Research + Design filed a complaint about the issue. At the…",
-   "date": "2026-05-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.426,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DSA",
-    "GFF"
-   ]
+   "score_bruit": 0.256,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet"
   },
   {
    "id": "f09a1609a73f",
@@ -7739,83 +2284,29 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.704,
-   "pertinence": "elevee",
+   "score": 0.664,
+   "pertinence": "moyenne",
    "themes": [
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "UK",
     "MHRA"
-   ]
-  },
-  {
-   "id": "f700aed49535",
-   "titre": "Opening Android, Closing Competition? The DMA’s AI Interoperability Paradox",
-   "lien": "https://ecipe.org/insights/dma-ai-interoperability-paradox/",
-   "resume": "Last month, we argued in an ECIPE Insight that the Digital Markets Act (DMA) is not so much promoting competition anymore but rather actively trying to re-design products and shape system architecture. This new style of DMA intervention, however, comes … Continued",
-   "date": "2026-05-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.421,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DMA",
-    "AI",
-    "ECIPE"
-   ]
-  },
-  {
-   "id": "13fd161d95ea",
-   "titre": "The EU Commission’s Approach to Age Verification: Mobile Apps, DSA Enforcement, and Challenging National Social Media Bans",
-   "lien": "https://fpf.org/blog/the-eu-commissions-approach-to-age-verification-mobile-apps-dsa-enforcement-and-challenging-national-social-media-bans/",
-   "resume": "On 29 April 2026, the European Commission published its Recommendation for a common approach for EU-wide age verification technologies, a non-binding policy document with the aim of harmonizing future measures for the protection of children online.&#160; This blog post outlines the Commission’s emerging strategic approach to the implementation of EU-wide age verification measures, provides an [&#8230;]",
-   "date": "2026-05-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.458,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "data_act"
+   "score_bruit": 0.286,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "DSA"
-   ]
+   "motif": "texte clé : IVDR",
+   "bruit": [
+    "marchés / entreprises"
+   ],
+   "statut": "projet"
   },
   {
    "id": "6370cf69a09c",
@@ -7840,16 +2331,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.762,
+   "score": 0.722,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "EU"
+   ],
+   "score_bruit": 0.493,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "bruit": [
+    "finance / banque"
    ]
   },
   {
@@ -7874,205 +2375,27 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.633,
+   "score": 0.593,
    "pertinence": "elevee",
    "themes": [
     "nis2",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "CSA2",
     "WTO",
     "MOFCOM"
-   ]
-  },
-  {
-   "id": "c8773944444a",
-   "titre": "Navigating automation, robotics, AI, and data in a QMSR-driven manufacturing world",
-   "lien": "https://www.hlc.com/en/publications/navigating-automation-robotics-ai-and-data-in-a-qmsrdriven-manufacturing-world",
-   "resume": "We spend a lot of time with manufacturing leaders, quality teams, and in-house counsel who are all talking about the same basic issue, just from different angles: automation, AI, data, and...",
-   "date": "2026-05-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.465,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "pharma_industrie"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "QMSR"
-   ]
-  },
-  {
-   "id": "81965bdb81ab",
-   "titre": "CMS Health Tech Ecosystem moves from vision to deployment",
-   "lien": "https://www.hlc.com/en/publications/cms-health-tech-ecosystem-moves-from-vision-to-deployment",
-   "resume": "The U.S. Centers for Medicare and Medicaid Services (CMS) recently hosted its “HealthTech Ecosystem Live! First Wave” Launch, during which the agency announced the first apps that it is...",
-   "date": "2026-05-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.408,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "dm_div"
+   "score_bruit": 0.298,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CMS"
-   ]
-  },
-  {
-   "id": "e6f32582d113",
-   "titre": "FDA AI tool Elsa 4.0 and HALO unveiled",
-   "lien": "https://www.hlc.com/en/publications/fda-ai-tool-elsa-40-and-halo-unveiled",
-   "resume": "FDA announced version 4.0 of Elsa, its internal AI chatbot for staff, and a new internal data platform called Harmonized AI & Lifecycle Operations for Data (“HALO”), which consolidates...",
-   "date": "2026-05-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.469,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "AI",
-    "HALO"
-   ]
-  },
-  {
-   "id": "8181ae1c74f6",
-   "titre": "Hogan Lovells advises Angelini Pharma as it acquires Catalyst Pharmaceuticals for US$4.1 billion",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-advises-angelini-pharma",
-   "resume": "New York, Milan &ndash; Global law firm Hogan Lovells has advised international pharmaceutical company Angelini Pharma S.p.A. (&ldquo;Angelini Pharma&rdquo;) on its pending acquisition of...",
-   "date": "2026-05-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.323,
-   "pertinence": "faible",
-   "themes": [
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "US"
-   ]
-  },
-  {
-   "id": "47b5238113e8",
-   "titre": "The concept of human oversight over AI in medical devices",
-   "lien": "https://www.hlc.com/en/publications/the-concept-of-human-oversight-over-ai-in-medical-devices",
-   "resume": "For AI-based medical devices (AIMDs), one of the crucial questions arising is how to ensure that users of the AIMD (e.g., physicians) can still ultimately oversee and steer diagnostic and...",
-   "date": "2026-05-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Dispositifs médicaux"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.861,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "AIMD"
-   ]
-  },
-  {
-   "id": "0a6655bab14d",
-   "titre": "U.S.–UK Pharmaceutical Pricing Agreement: Learnings from the Published Text",
-   "lien": "https://www.insideeulifesciences.com/2026/05/08/u-s-uk-pharmaceutical-pricing-agreement-learnings-from-the-published-text/",
-   "resume": "On 2 April 2026, the UK Government published text memorializing its agreement with the U.S. in relation to pharmaceutical pricing. The UK now refers to this as an “arrangement” (“U.S.-UK Pharmaceutical Pricing Arrangement”). Our blog post from December discussed the in-principle heads of terms for the deal announced in December 2025, with various details marked... Continue Reading…",
-   "date": "2026-05-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.334,
-   "pertinence": "faible",
-   "themes": [
-    "dm_div",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "UK"
-   ]
+   "motif": "texte clé : Cybersecurity Act / certification UE"
   },
   {
    "id": "05a05ce28ba5",
@@ -8099,17 +2422,24 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.745,
+   "score": 0.705,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
+   ],
+   "score_bruit": 0.42,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "796597175a35",
@@ -8134,69 +2464,16 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
-  },
-  {
-   "id": "f22e0a286d9d",
-   "titre": "Phishing Unveiled: MFA Bypass & Downgrade, Mitigations & Defenses",
-   "lien": "https://www.hlc.com/en/events/phishing-unveiled-mfa-bypass-downgrade-mitigations-defenses",
-   "resume": "Phishing remains one of the most persistent and effective tactics in the cyber threat landscape, continuously evolving to exploit human behavior and organizational vulnerabilities.",
-   "date": "2026-05-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.525,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "MFA"
-   ]
-  },
-  {
-   "id": "b1254426fc31",
-   "titre": "Whose Role is it Anyway? Scenarios for Incident Response Stakeholders",
-   "lien": "https://www.hlc.com/en/events/whose-role-is-it-anyway-scenarios-for-incident-response-stakeholders",
-   "resume": "Interactive Incident Response Scenario Workshop",
-   "date": "2026-05-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.391,
-   "pertinence": "faible",
-   "themes": [
-    "large",
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.296,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "5947df68d889",
@@ -8222,15 +2499,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.679,
-   "pertinence": "elevee",
+   "score": 0.639,
+   "pertinence": "moyenne",
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
+   ],
+   "score_bruit": 0.328,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Data Act"
+   ],
+   "motif": "texte clé : Data Act",
+   "bruit": [
+    "marchés / entreprises"
    ]
   },
   {
@@ -8257,18 +2544,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.806,
+   "score": 0.766,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "TEHDAS2",
     "EHDS",
     "AI"
-   ]
+   ],
+   "score_bruit": 0.313,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "EHDS"
+   ],
+   "motif": "texte clé : EHDS",
+   "statut": "en_vigueur"
   },
   {
    "id": "986095d5b23c",
@@ -8295,141 +2590,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.725,
+   "score": 0.685,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "EU"
-   ]
-  },
-  {
-   "id": "c476c84f057a",
-   "titre": "MedTech Europe participation at WHO governance meetings: WHA79 and EB159",
-   "lien": "https://www.medtecheurope.org/2026/05/07/medtech-europe-participation-at-who-governance-meetings-wha79-and-eb159/",
-   "resume": "May 2026 will be a key moment for global health policy, with the 79th World Health Assembly (WHA79, 18- 23 May 2026) and the 159th session of the Executive Board (EB159, 25026 May) taking place under the World Health Organisation. MedTech Europe will attend these meetings through the Global Medical Technology Alliance (GMTA), contributing to […] The post MedTech Europe participation at WHO governance meetings: WHA79…",
-   "date": "2026-05-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.468,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "WHO",
-    "WHA79",
-    "EB159",
-    "GMTA"
-   ]
-  },
-  {
-   "id": "444b7955a638",
-   "titre": "Europe’s new Anti-Corruption Directive and the shift toward smarter integrity systems",
-   "lien": "https://www.medtecheurope.org/2026/05/07/europes-new-anti-corruption-directive-and-the-shift-toward-smarter-integrity-systems/",
-   "resume": "The European Union has reached a decisive milestone in its anti-corruption agenda. On 21 April 2026, the Council of the European Union formally adopted a Directive establishing an EU-wide framework to prevent and combat corruption. The Directive harmonises the definition of corruption offences across Member States and establishes common minimum rules on penalties, investigation, and […] The post Europe’s new…",
-   "date": "2026-05-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.41,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques",
-    "nis2"
+   "score_bruit": 0.372,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "Cybersecurity Act / certification UE"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "a93259360230",
-   "titre": "New EU rules: more business predictability and transparency in medtech conformity assessment",
-   "lien": "https://www.medtecheurope.org/2026/05/07/new-eu-rules-more-business-predictability-and-transparency-in-medtech-conformity-assessment/",
-   "resume": "Brussels, 07 May 2026 – Europe’s conformity assessment system has long been criticised for unpredictability, inconsistency, and administrative burden. The European Commission’s Implementing Regulation (EU) 2026/977 of 4 May 2026 aims to address that directly by laying down uniform quality management and procedural requirements for the conformity assessment activities carried out by a notified body. MedTech Europe…",
-   "date": "2026-05-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "implementing regulation"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.488,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "eee3e9a4ac08",
-   "titre": "Anti-corruption and anti-bribery",
-   "lien": "https://www.medtecheurope.org/privacy-liability-and-collective-redress/anti-corruption-and-anti-bribery/",
-   "resume": "",
-   "date": "2026-05-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.389,
-   "pertinence": "faible",
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : AI Act, Cybersecurity Act / certification UE"
   },
   {
    "id": "91c6f3361182",
@@ -8455,200 +2634,28 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.703,
+   "score": 0.663,
    "pertinence": "elevee",
    "themes": [
     "ia",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "UK",
     "DUAA",
     "GDPR"
-   ]
-  },
-  {
-   "id": "cc9fc85e9f13",
-   "titre": "Hogan Lovells advises SPREAD AI on USD 30m Series-B financing round",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-spread-ai-bei-einer-serie-b-finanzierungsrunde-in-hoehe-von-30-mio-usd",
-   "resume": "Frankfurt &ndash;&nbsp;Global law firm Hogan Lovells has advised Berlin-based AI company SPREAD AI on a USD 30 million Series-B financing round.",
-   "date": "2026-05-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.4,
-   "pertinence": "faible",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SPREAD",
-    "AI",
-    "USD",
-    "USD30"
-   ]
-  },
-  {
-   "id": "4fc8bcabb0fe",
-   "titre": "Hogan Lovells advises Avelios on a strategic investment by Fresenius",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-avelios-bei-einem-strategischen-investment-von-fresenius",
-   "resume": "Munich &ndash;&nbsp;Global law firm Hogan Lovells has advised Avelios Medical GmbH on a strategic investment by Fresenius.",
-   "date": "2026-05-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.244,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "0c00741c2858",
-   "titre": "China’s new regulations complicate compliance landscape for multinationals",
-   "lien": "https://www.hlc.com/en/publications/chinas-new-regulations-complicate-compliance-landscape-for-multinationals",
-   "resume": "China's State Council (the “ State Council ”) recently issued two State Council administrative regulations that expand the compliance dimensions multinationals shall navigate when ...",
-   "date": "2026-05-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "new regulation"
+   "score_bruit": 0.32,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
    ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.514,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "0ce70b271779",
-   "titre": "House committee report signals limits on foreign clinical data",
-   "lien": "https://www.hlc.com/en/publications/house-committee-report-signals-limits-on-foreign-clinical-data",
-   "resume": "On April 29, 2026, the House Appropriations Committee advanced the Fiscal Year 2027 Agriculture, Rural Development, Food and Drug Administration, and Related Agencies Appropriations...",
-   "date": "2026-05-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.42,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "1f1e87061f10",
-   "titre": "Taking stock: The Impact of the India AI Impact Summit 2026",
-   "lien": "https://fpf.org/blog/taking-stock-the-impact-of-the-india-ai-impact-summit-2026/",
-   "resume": "India&#8217;s hosting of the AI Impact Summit 2026 was an ambitious undertaking. With 600,000 attendees and 92 signatories to the New Delhi Declaration, the Summit was a showcase of a Global South country taking a leading role in shaping the AI governance agenda. The Summit’s official framing centered on infrastructure, compute, and equitable access to [&#8230;]",
-   "date": "2026-05-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.577,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "515531322217",
-   "titre": "Hogan Lovells advises HealthCare Royalty Partners on Apnimed’s US$150 million debt financing",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-advises-healthcare-royalty-partners-on-apnimeds-us150-million-debt-financing",
-   "resume": "Philadelphia, Washington, D.C. &ndash; Global law firm Hogan Lovells has advised HealthCare Royalty Partners (HCRx) in connection with a senior secured credit facility for up to US$150...",
-   "date": "2026-05-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.469,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "US"
-   ]
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices"
   },
   {
    "id": "0601fb721679",
@@ -8676,18 +2683,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.589,
+   "score": 0.549,
    "pertinence": "elevee",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "MDR",
     "IVDR"
-   ]
+   ],
+   "score_bruit": 0.251,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "statut": "adopte"
   },
   {
    "id": "6ca23f9a6a08",
@@ -8715,18 +2730,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.664,
+   "score": 0.624,
    "pertinence": "elevee",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "MDR",
     "IVDR"
-   ]
+   ],
+   "score_bruit": 0.266,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)"
   },
   {
    "id": "fc872a00306c",
@@ -8754,18 +2777,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.745,
+   "score": 0.705,
    "pertinence": "elevee",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "MDR/IVDR",
     "MDR",
     "IVDR"
-   ]
+   ],
+   "score_bruit": 0.302,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)"
   },
   {
    "id": "0fef48d02162",
@@ -8792,13 +2823,18 @@ window.VEILLE_DEBATS = {
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DMA",
     "ECIPE",
     "EU"
-   ]
+   ],
+   "score_bruit": 0.371,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "e8704672140f",
@@ -8819,190 +2855,23 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "langue": "en",
    "score": 0.483,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "UK"
-   ]
-  },
-  {
-   "id": "397b1052db5f",
-   "titre": "Hogan Lovells advises Naxicap and ITAL Express Holding on the acquisition of Diederichs Karosserieteile GmbH",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-naxicap-und-ital-express-beim-erwerb-der-diederichs-karosserieteile-gmbh",
-   "resume": "Frankfurt &ndash; Global law firm Hogan Lovells has advised French private equity firm Naxicap Partners and its portfolio company ITAL Express Holding on the acquisition of Diederichs...",
-   "date": "2026-05-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.231,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ITAL"
-   ]
-  },
-  {
-   "id": "ace9ca3ee449",
-   "titre": "Q1/ 2026 - Life Sciences Law Update",
-   "lien": "https://www.hlc.com/en/publications/q1-2026-life-sciences-law-update",
-   "resume": "The Q1 and Q3 Life Science and Health Care Law Update covers key trends in the EU only while the other reports (on Q2 and Q4) cover key trends in the EU as well as in the Big Five (Germany, ...",
-   "date": "2026-05-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.47,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "Q1/ 2026",
-    "Q1",
-    "Q3",
-    "EU",
-    "Q2",
-    "Q4"
-   ]
-  },
-  {
-   "id": "14177e8d2b06",
-   "titre": "Reducing tariff costs for research equipment: A guide to the Scientific Instrument Exception",
-   "lien": "https://www.hlc.com/en/publications/reducing-tariff-costs-for-research-equipment-a-guide-to-the-scientific-instrument-exception",
-   "resume": "As shifting U.S. tariff policies continue to impact global trade dynamics, many importers face pressure to manage rising duties. For educational and research institutions, as well as the...",
-   "date": "2026-05-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.398,
-   "pertinence": "faible",
-   "themes": [
-    "donnees",
-    "large"
+   "score_bruit": 0.268,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "2b5ff31bf94a",
-   "titre": "Supreme Court hears ‘skinny labeling’ drug patent infringement case",
-   "lien": "https://www.hlc.com/en/publications/supreme-court-hears-skinny-labeling-drug-patent-infringement-case",
-   "resume": "On April 29, the U.S. Supreme Court held oral arguments in the Hikma v. Amarin “skinny labeling” case, which considers the pleading standard for claims of “active inducement” of patent...",
-   "date": "2026-05-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.293,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "f7e8ab3c99c6",
-   "titre": "Federal marijuana rescheduling arrives",
-   "lien": "https://www.hlc.com/en/publications/federal-marijuana-rescheduling-arrives",
-   "resume": "On April 22, 2026, the Acting U.S. Attorney General ordered two categories of marijuana moved from Schedule I to Schedule III of the Controlled Substances Act (CSA): FDA-approved drug...",
-   "date": "2026-05-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.334,
-   "pertinence": "faible",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CSA",
-    "FDA"
-   ]
-  },
-  {
-   "id": "9bc761ef2cc1",
-   "titre": "Announcing the Summit “Fight for Us, not for Them”: A public interest vision for EU tech policy",
-   "lien": "https://edri.org/our-work/announcing-the-summit-fight-for-us-not-for-them-a-public-interest-vision-for-eu-tech-policy/",
-   "resume": "Europe’s approach to governance for advancing technology in the digital age is under pressure, with “simplification” proposals hitting the heart of core digital protections. At the same time, civil society is uniquely positioned to co-develop the EU’s vision for public-interest tech laws, policies and practices. Today, civil society organisations announce a strategic convening between European lawmakers, regulators,…",
-   "date": "2026-04-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.502,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "motif": "texte clé : RGPD / GDPR"
   },
   {
    "id": "dd3dbaf652a0",
@@ -9029,11 +2898,16 @@ window.VEILLE_DEBATS = {
     "large",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DMA"
-   ]
+   ],
+   "score_bruit": 0.268,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "e10c379ebb53",
@@ -9055,76 +2929,23 @@ window.VEILLE_DEBATS = {
    "filtre_pertinence": true,
    "langue": "en",
    "score": 0.671,
-   "pertinence": "elevee",
+   "pertinence": "moyenne",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "LLM"
-   ]
-  },
-  {
-   "id": "ab0260f97b29",
-   "titre": "Practical considerations for using AI in analyzing clinical data and preparing FDA submissions",
-   "lien": "https://www.hlc.com/en/publications/practical-considerations-for-using-ai-in-analyzing-clinical-data-and-preparing-fda-submissions",
-   "resume": "Over the past year, we have carefully considered whether — and how — life sciences companies can use AI tools in their clinical development for medical products and regulatory...",
-   "date": "2026-04-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.602,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "FDA"
-   ]
-  },
-  {
-   "id": "40b48c645543",
-   "titre": "FDA draft guidance operationalizes animal testing phaseout",
-   "lien": "https://www.hlc.com/en/publications/fda-draft-guidance-operationalizes-animal-testing-phaseout",
-   "resume": "Following the U.S. Food and Drug Administration's (FDA) April 2025 roadmap to reduce reliance on animal testing in preclinical safety studies, which stated that it would develop pathways...",
-   "date": "2026-04-30",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.426,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "normes"
+   "score_bruit": 0.418,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "a85117d6b19a",
@@ -9153,13 +2974,13 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.791,
+   "score": 0.751,
    "pertinence": "elevee",
    "themes": [
     "ia",
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
@@ -9167,7 +2988,16 @@ window.VEILLE_DEBATS = {
     "AIA",
     "EU",
     "IVDR1"
-   ]
+   ],
+   "score_bruit": 0.458,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : AI Act, IVDR, MDR (dispositifs médicaux)"
   },
   {
    "id": "1253424d4e4f",
@@ -9189,16 +3019,21 @@ window.VEILLE_DEBATS = {
    "filtre_pertinence": true,
    "langue": "en",
    "score": 0.649,
-   "pertinence": "elevee",
+   "pertinence": "moyenne",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "EUR"
-   ]
+   ],
+   "score_bruit": 0.403,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "582861b78449",
@@ -9220,14 +3055,22 @@ window.VEILLE_DEBATS = {
    "filtre_pertinence": true,
    "langue": "en",
    "score": 0.452,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "cra",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
+   "acronymes": [],
+   "score_bruit": 0.295,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "consultation"
   },
   {
    "id": "fbbf3ed27436",
@@ -9253,47 +3096,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.723,
+   "score": 0.683,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "04fa587fd243",
-   "titre": "It’s not just spyware scandals: EU is funding the industry that spies on Europeans",
-   "lien": "https://edri.org/our-work/its-not-just-spyware-scandals-eu-is-funding-the-industry-that-spies-on-europeans/",
-   "resume": "Spyware, an extremely potent technology that turns a personal device into a constant surveillance instrument, was used by the Greek secret services to target dozens of people, including journalists, politicians and business executives. The Greek case marks arguably the first time that the executives of a spyware manufacturer – Intellexa, who developed Predator – will face criminal accountability. Although it did not…",
-   "date": "2026-04-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.589,
-   "pertinence": "elevee",
-   "themes": [
-    "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "score_bruit": 0.455,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "b69302ae9a43",
@@ -9317,140 +3137,23 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.785,
+   "score": 0.745,
    "pertinence": "elevee",
    "themes": [
     "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CSA2"
-   ]
-  },
-  {
-   "id": "a26da94efd6a",
-   "titre": "Celebrating Another Year of Privacy and AI Governance: FPF at the 2026 IAPP Global Summit",
-   "lien": "https://fpf.org/blog/celebrating-another-year-of-privacy-and-ai-governance-fpf-at-the-2026-iapp-global-summit/",
-   "resume": "Authored by FPF Communications Intern Celeste Valentino FPF experts participated in the 2026 IAPP Global Summit and hosted FPF privacy executive convenings in Washington, D.C. from March 31 to April 2. As a major gathering for privacy professionals, the event featured a heavy schedule of workshops and panels focused on the intersection of U.S. and [&#8230;]",
-   "date": "2026-04-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.505,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "FPF",
-    "IAPP"
-   ]
-  },
-  {
-   "id": "85173864c6f1",
-   "titre": "Hogan Lovells advises Wtech Fire Group Limited, at the time of closing a portfolio company of the private equity fund WATERLAND, on the acquisition of Feuerfuchs Brandschutz GmbH",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-wtech-fire-group-limited-zum-zeitpunkt-des-vollzugs-eine-portfoliogesellschaft-des-private-equity-fonds-waterland-beim-erwerb-der-feuerfuchs-brandschutz-gmbh",
-   "resume": "Global law firm Hogan Lovells advised Wtech Fire Group Limited, a provider of fire protection solutions and, at the time of closing a portfolio company of the private equity fund WATERLAND, ...",
-   "date": "2026-04-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.204,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "3a6342469e02",
-   "titre": "EU pilot programme for breakthrough medical devices: applications open",
-   "lien": "https://www.hlc.com/en/publications/eu-pilot-programme-for-breakthrough-medical-devices",
-   "resume": "The first phase of the European Medicines Agency (EMA) pilot programme providing expert panel advice for developers of breakthrough medical devices is now open and accepting applications...",
-   "date": "2026-04-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Dispositifs médicaux"
+   "score_bruit": 0.405,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
    ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.622,
-   "pertinence": "elevee",
-   "themes": [
-    "acheteurs_sante",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "EMA"
-   ]
-  },
-  {
-   "id": "377a7f0b9239",
-   "titre": "Germany plans significant cuts in drug pricing and reimbursement – How would the GKV-Beitragssatzstabilisierungsgesetz impact pharmaceutical companies?",
-   "lien": "https://www.insideeulifesciences.com/2026/04/28/germany-plans-significant-cuts-in-drug-pricing-and-reimbursement/",
-   "resume": "I. Background – From Pharma-Dialogue to Compulsory Price Cuts Tomorrow, on 29 April 2026, the German Government is expected to adopt a new law to stabilize the finances of the statutory health insurances. This draft law titled “GKV-Beitragssatzstabilisierungsgesetz” (GKV-BStabG) proposes manifold cost-containment measures that would also significantly impact pharmaceutical companies. As such, the new law... Continue…",
-   "date": "2026-04-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.357,
-   "pertinence": "faible",
-   "themes": [
-    "acheteurs_sante",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "GKV",
-    "GKV-BStabG"
-   ]
+   "motif": "texte clé : Cybersecurity Act / certification UE"
   },
   {
    "id": "bc86a60fa79a",
@@ -9474,82 +3177,23 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.487,
+   "score": 0.467,
    "pertinence": "moyenne",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DPA",
     "ADM"
-   ]
-  },
-  {
-   "id": "fc02d0fce219",
-   "titre": "More Parties, More Risks, More Opportunity? Evolving Governance to Support Cyber Resilience Amidst Evolving Policy and Technological Change",
-   "lien": "https://fpf.org/blog/more-parties-more-risks-more-opportunity-evolving-governance-to-support-cyber-resilience-amidst-evolving-policy-and-technological-change/",
-   "resume": "*Special thanks to Jim Siegl and Jocelyn Aqua for their advice and expertise. Summary: Artificial Intelligence (AI) presents fundamental opportunities and challenges for defense of increasingly complex digital ecosystems amid rising attack costs, fragmented regulation, and evolving industry practices. A coordinated response across the public and private sectors, including smart deployment of AI tools for [&#8230;]",
-   "date": "2026-04-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "cyber resilience"
    ],
-   "groupes": [
-    "Réglementations Cyber"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.788,
-   "pertinence": "elevee",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "f15b459c0188",
-   "titre": "Trump promotes psychedelic drug availability but legal issues remain",
-   "lien": "https://www.hlc.com/en/publications/trump-promotes-psychedelic-drug-availability",
-   "resume": "Recent U.S. government actions including an Executive Order (EO) on treating serious mental illness herald greater opportunities for psychedelic drug candidates to move from clinical...",
-   "date": "2026-04-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "executive order"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.304,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EO"
-   ]
+   "score_bruit": 0.256,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet"
   },
   {
    "id": "43ea37aee96a",
@@ -9578,85 +3222,28 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.755,
+   "score": 0.715,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI",
     "MDR",
     "AIA"
-   ]
-  },
-  {
-   "id": "f86de10cf9f9",
-   "titre": "China’s medical insurance enforcement in 2026: New rules, active campaign, and implications for pharmaceutical companies",
-   "lien": "https://www.hlc.com/en/publications/chinas-medical-insurance-enforcement-in-2026-new-rules-active-campaign-and-implications",
-   "resume": "In early 2026, China's National Healthcare Security Administration (“NHSA”) issued the Implementing Rules of the Regulation on the Supervision of the Use of Medical Insurance Funds ...",
-   "date": "2026-04-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
    ],
-   "groupes": [
-    "Termes santé"
+   "score_bruit": 0.483,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "MDR (dispositifs médicaux)"
    ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.566,
-   "pertinence": "elevee",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "NHSA"
-   ]
-  },
-  {
-   "id": "9c6103346292",
-   "titre": "FDA’s evolving CBD position meets the CMS substance access pilot",
-   "lien": "https://www.hlc.com/en/publications/fdas-evolving-cbd-position-meets-the-cms-substance-access-pilot",
-   "resume": "On April 1, 2026, FDA Commissioner Marty Makary took the unusual step of announcing in a letter that FDA will not enforce its own drug-approval and labeling requirements against a...",
-   "date": "2026-04-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.452,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "CBD",
-    "CMS"
-   ]
+   "motif": "texte clé : AI Act, MDR (dispositifs médicaux)",
+   "statut": "adopte"
   },
   {
    "id": "e9c47a35c1ad",
@@ -9681,52 +3268,27 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.667,
+   "score": 0.627,
    "pertinence": "elevee",
    "themes": [
     "fournisseurs_publics",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "SECURE",
     "FPF",
     "VP"
-   ]
-  },
-  {
-   "id": "937e82c74ea3",
-   "titre": "FPF on the Securing and Establishing Consumer Uniform Rights and Enforcement Over Data (“SECURE Data”) Act",
-   "lien": "https://fpf.org/blog/fpf-on-the-securing-and-establishing-consumer-uniform-rights-and-enforcement-over-data-secure-data-act/",
-   "resume": "The U.S. is overdue to adopt comprehensive federal consumer privacy legislation. Baseline protections for personal information in a federal privacy law would provide an essential foundation for progress on other Congressional priorities, including AI governance and youth online safety, and it’s encouraging to see Congress renewing its attention to this topic. In the absence of [&#8230;]",
-   "date": "2026-04-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.586,
-   "pertinence": "elevee",
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "SECURE",
-    "AI"
-   ]
+   "score_bruit": 0.256,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Data Act"
+   ],
+   "motif": "texte clé : Data Act",
+   "statut": "projet"
   },
   {
    "id": "3577429f9c7e",
@@ -9747,14 +3309,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "langue": "en",
    "score": 0.573,
-   "pertinence": "elevee",
+   "pertinence": "moyenne",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
+   ],
+   "score_bruit": 0.262,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "bruit": [
+    "événements / webinaires"
    ]
   },
   {
@@ -9781,105 +3353,17 @@ window.VEILLE_DEBATS = {
     "ia",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CNIL"
-   ]
-  },
-  {
-   "id": "39e675fce26e",
-   "titre": "China tightens criminal enforcement of bribery: What it means for health care companies",
-   "lien": "https://www.hlc.com/en/publications/china-tightens-criminal-enforcement-of-bribery-what-it-means-for-health-care-companies",
-   "resume": "On April 10, 2026, China's Supreme People's Court (\"SPC\") and the Supreme People's Procuratorate (\"SPP\") jointly issued the Interpretation (II) on Several Issues Concerning the Application...",
-   "date": "2026-04-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.392,
-   "pertinence": "faible",
-   "themes": [
-    "donnees",
-    "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SPC",
-    "SPP"
-   ]
-  },
-  {
-   "id": "4e42c6e5d566",
-   "titre": "FDA signals heightened enforcement focus on ClinicalTrials.gov compliance",
-   "lien": "https://www.hlc.com/en/publications/fda-signals-heightened-enforcement-focus-on-clinicaltrialsgov-compliance",
-   "resume": "The U.S. Food and Drug Administration (FDA) recently reminded more than 2,200 clinical trial sponsors to submit clinical trial results to ClinicalTrials.gov. The reminders follow an agency...",
-   "date": "2026-04-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Clinical trial"
-   ],
-   "groupes": [
-    "Secteur santé : mots clés spécifiques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.54,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "854e64840dde",
-   "titre": "The Data Chronicles | Cyber developments in the EU and U.K.",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-cyber-developments-in-the-eu-and-uk",
-   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by Hogan Lovells partners Dan Whitehead and Dr. Henrik Hanssen to examine how evolving cybersecurity regimes in the...",
-   "date": "2026-04-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.513,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "score_bruit": 0.273,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices"
   },
   {
    "id": "c3ab7bda4be4",
@@ -9903,17 +3387,27 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.634,
-   "pertinence": "elevee",
+   "score": 0.594,
+   "pertinence": "moyenne",
    "themes": [
     "dm_div",
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "EMA"
+   ],
+   "score_bruit": 0.377,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "bruit": [
+    "marchés / entreprises"
    ]
   },
   {
@@ -9942,18 +3436,28 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.711,
+   "score": 0.671,
    "pertinence": "elevee",
    "themes": [
     "donnees",
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
     "AI"
-   ]
+   ],
+   "score_bruit": 0.319,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : AI Act, RGPD / GDPR, Cybersecurity Act / certification UE",
+   "statut": "projet"
   },
   {
    "id": "a548fe27b8f1",
@@ -9979,77 +3483,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.758,
+   "score": 0.718,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "9bffb949cbab",
-   "titre": "The Court of Justice of the European Union condemns France’s police profiling practices",
-   "lien": "https://edri.org/our-work/the-court-of-justice-of-the-european-union-condemns-frances-police-profiling-practices/",
-   "resume": "On 19 March 2026, the EU court ruled that France's law allowing law enforcement data collection is disproportionate and in violation of EU rules, as raised by public interest groups like La Quadrature du Net. This is another illegal feature in the French police databases, which must be urgently dismantled. The post The Court of Justice of the European Union condemns France’s police profiling practices appeared first…",
-   "date": "2026-04-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.424,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "8ed3761c27e8",
-   "titre": "Safeguarding democratic lawmaking: EDRi’s contribution to Commission consultation on Better Regulations",
-   "lien": "https://edri.org/our-work/safeguarding-democratic-lawmaking-edris-contribution-to-commission-consultation-on-better-regulations/",
-   "resume": "The European Commission has opened a consultation on its Better Regulation framework. In its response, EDRi raises concerns about the lack of proper impact assessment and the false sense of urgency. Instead of strengthening democratic processes, the current reform risks practices that reduce transparency and limit participation. The post Safeguarding democratic lawmaking: EDRi’s contribution to Commission…",
-   "date": "2026-04-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.433,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques",
-    "fournisseurs_publics"
+   "score_bruit": 0.517,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "a8e5c54d23fd",
@@ -10077,18 +3528,27 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.659,
+   "score": 0.619,
    "pertinence": "elevee",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "GDPR",
     "AI"
-   ]
+   ],
+   "score_bruit": 0.208,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Data Act",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Data Act, Cybersecurity Act / certification UE"
   },
   {
    "id": "118d6392815c",
@@ -10110,44 +3570,24 @@ window.VEILLE_DEBATS = {
    "filtre_pertinence": true,
    "langue": "en",
    "score": 0.469,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "cra",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
-  },
-  {
-   "id": "6b8207aebd0f",
-   "titre": "#PrivacyCamp25: Event summary",
-   "lien": "https://edri.org/our-work/privacycamp25-event-summary/",
-   "resume": "On 30 September 2025, policymakers, activists, human rights defenders and academics from Europe and beyond gathered in Brussels and online for Privacy Camp 2025. Together, we explored the theme Resilience and Resistance in Times of Deregulation and Authoritarianism. The post #PrivacyCamp25: Event summary appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-04-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.48,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.372,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet"
   },
   {
    "id": "a57e4e4f244f",
@@ -10174,103 +3614,17 @@ window.VEILLE_DEBATS = {
     "donnees",
     "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DMA",
     "EU"
-   ]
-  },
-  {
-   "id": "f81bb589643b",
-   "titre": "EFFecting Change: Can’t Stop the Signal",
-   "lien": "https://edri.org/take-action/events/effecting-change-cant-stop-the-signal/",
-   "resume": "Join EFF and Amnesty International for a deep dive into the black hole of internet censorship, and learn how journalists, emergency responders, and ordinary people can persist. Live discussion followed by by Q&A. The post EFFecting Change: Can’t Stop the Signal appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-04-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.403,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EFF"
-   ]
-  },
-  {
-   "id": "7452d12c44bc",
-   "titre": "The Price is Right: Responsible Uses of Personal Data in Pricing",
-   "lien": "https://fpf.org/blog/the-price-is-right-responsible-uses-of-personal-data-in-pricing/",
-   "resume": "The way prices are set is changing: more accessible data, sophisticated algorithms, and ubiquitous online shopping have given retailers the ability to automatically tailor offers to customers in real-time or near-real-time based on increasing amounts of data about markets and consumers. A number of pricing strategies involving personal data, market data, and advanced machine learning—what [&#8230;]",
-   "date": "2026-04-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.456,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "8bdc4267547f",
-   "titre": "The DMA Is Not Fixing Competition, It’s Redesigning It",
-   "lien": "https://ecipe.org/insights/dma-redesigning-competition/",
-   "resume": "The Digital Markets Act (DMA) may be a young regulation but, curiously, is already showing signs of being misaligned with actual market realities. As the Act was introduced, there was an immediate implementation agenda that followed on the heels of … Continued",
-   "date": "2026-04-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.44,
-   "pertinence": "moyenne",
-   "themes": [
-    "large",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DMA"
-   ]
+   "score_bruit": 0.246,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "2c036248e27e",
@@ -10296,17 +3650,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.704,
+   "score": 0.664,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
+   ],
+   "score_bruit": 0.288,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "524835d9a7f2",
@@ -10330,139 +3691,22 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.538,
+   "score": 0.498,
    "pertinence": "moyenne",
    "themes": [
     "acheteurs_sante",
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
-  },
-  {
-   "id": "e26b248de27a",
-   "titre": "A step forward for the EU-Mercosur Trade Agreement: trade provisions to kick in as of 1 May 2026",
-   "lien": "https://www.medtecheurope.org/2026/04/07/a-step-forward-for-the-eu-mercosur-trade-agreement-trade-provisions-to-kick-in-as-of-1-may-2026/",
-   "resume": "Following two recent Council decisions authorising the signature of the EU–Mercosur Partnership Agreement (EMPA) and the Interim Trade Agreement (iTA), and the European Parliament’s decision to request an opinion from the European Court of Justice (ECJ) on the legality of the texts, the European Commission has confirmed that it will proceed with the provisional application […] The post A step forward for the…",
-   "date": "2026-04-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.295,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "EMPA",
-    "ECJ"
-   ]
-  },
-  {
-   "id": "82e27a88aaba",
-   "titre": "Innovative Health Initiative: turn ideas into impactful collaborations with call 12",
-   "lien": "https://www.medtecheurope.org/2026/04/07/innovative-health-initiative-turn-ideas-into-impactful-collaborations-with-call-12/",
-   "resume": "The Innovative Health Initiative (IHI) is the world’s largest cross‑sector public‑private partnership between the pharma and medical technology sectors and the European Commission dedicated to health research and innovation. As the IHI continues to advance collaborative projects, its latest single-stage applicant-driven call for proposals – IHI call 12 – is now open, with a submission […] The post Innovative Health…",
-   "date": "2026-04-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.428,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IHI"
-   ]
-  },
-  {
-   "id": "ca851415d741",
-   "titre": "European Parliament vote advances EU–US tariff implementation",
-   "lien": "https://www.medtecheurope.org/2026/04/07/european-parliament-vote-advances-eu-us-tariff-implementation/",
-   "resume": "On 26 March 2026, the European Parliament approved two legislative proposals to implement the tariff-related commitments of the EU–US trade deal agreed in July 2025 (Turnberry deal), marking an important milestone in the process. In a plenary vote, Members of the European Parliament backed the measures by a wide margin. The proposals, tabled by the […] The post European Parliament vote advances EU–US tariff…",
-   "date": "2026-04-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "legislative proposal"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.298,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "US"
-   ]
-  },
-  {
-   "id": "85750bea6a7e",
-   "titre": "U.S. Section 301 investigations: implications for medical technology and transatlantic trade",
-   "lien": "https://www.medtecheurope.org/2026/04/07/u-s-section-301-investigations-implications-for-medical-technology-and-transatlantic-trade/",
-   "resume": "The Office of the United States Trade Representative (USTR) has recently initiated two investigations under Section 301 of the Trade Act of 1974, examining trade practices across a range of economies, including the EU, Switzerland, Norway and the United Kingdom. The first investigation focuses on structural excess capacity and production in manufacturing sectors. Economies falling […] The post U.S. Section 301…",
-   "date": "2026-04-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.437,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "USTR",
-    "EU"
-   ]
+   "score_bruit": 0.231,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "ab176b19f598",
@@ -10491,48 +3735,28 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.556,
+   "score": 0.516,
    "pertinence": "elevee",
    "themes": [
     "dm_div",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CE",
     "UK",
     "MHRA",
     "EU"
-   ]
-  },
-  {
-   "id": "e0aa8b58d39e",
-   "titre": "A strategic milestone: EU-Australia Free Trade Agreement finalised",
-   "lien": "https://www.medtecheurope.org/2026/04/07/a-strategic-milestone-eu-australia-free-trade-agreement-finalised/",
-   "resume": "The EU and Australia recently concluded negotiations on the EU-Australia Free Trade Agreement (FTA) in March 2026, bringing to a close almost nine years of negotiations. The agreement will eliminate over 99% of tariffs on EU exports to Australia, enhance access to critical raw materials, and strengthen the EU’s strategic ties with the Indo-Pacific region. […] The post A strategic milestone: EU-Australia Free Trade…",
-   "date": "2026-04-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.251,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "FTA"
-   ]
+   ],
+   "score_bruit": 0.237,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "statut": "consultation"
   },
   {
    "id": "3193abde4894",
@@ -10558,19 +3782,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.692,
+   "score": 0.652,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "MDR/IVDR",
     "MDR",
     "IVDR"
-   ]
+   ],
+   "score_bruit": 0.331,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR"
   },
   {
    "id": "9fd5fd61a676",
@@ -10594,45 +3825,23 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.604,
+   "score": 0.564,
    "pertinence": "elevee",
    "themes": [
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "FDA"
-   ]
-  },
-  {
-   "id": "854869f4adea",
-   "titre": "Brazil declares Açaí a National Fruit: What Are the Real Practical Implications for EU Companies?",
-   "lien": "https://www.insideeulifesciences.com/2026/04/03/brazil-declares-acai-a-national-fruit-what-are-the-real-practical-implications-for-eu-companies/",
-   "resume": "On January 8, 2026, Brazil published Law 15,330/2026, officially recognizing açaí berry as a Brazilian national fruit in a bid to protect it from so-called “biopiracy”, i.e., the illegal exploitation of genetic resources and traditional knowledge (“ATK”). Açaí berry is a ‘superfood’ rich in nutrients which grows almost exclusively along the Amazon River, and particularly... Continue Reading…",
-   "date": "2026-04-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.233,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "ATK"
-   ]
+   ],
+   "score_bruit": 0.398,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices"
   },
   {
    "id": "e062b92bb623",
@@ -10659,103 +3868,17 @@ window.VEILLE_DEBATS = {
     "large",
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "US",
     "EU"
-   ]
-  },
-  {
-   "id": "580406aa059e",
-   "titre": "A practical guide to joint investigations: lessons learned from one year of the Civic Journalism Coalition",
-   "lien": "https://edri.org/our-work/a-practical-guide-to-joint-investigations-lessons-learned-from-one-year-of-the-civic-journalism-coalition/",
-   "resume": "One year ago, EDRi, European Center for Not-for-Profit Law (ECNL) and Lighthouse Reports launched the Civic Journalism Coalition with the aim of connecting investigative journalists with digital rights and civil society organisations. Today, that partnership is yielding tangible results, from journalistic investigations to a new practical guide for collaboration. Here is an overview of the activities -…",
-   "date": "2026-04-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.405,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques",
-    "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ECNL"
-   ]
-  },
-  {
-   "id": "2fbb64b2bebd",
-   "titre": "The Data Chronicles | AI disputes and enforcement in the U.S.",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-ai-disputes-and-enforcement-in-the-us",
-   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by Hogan Lovells partners Vassi Iliadis and Bret Cohen to examine how AI-related risk actually materializes once it...",
-   "date": "2026-04-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.516,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "b49fb618e961",
-   "titre": "Predatorgate: Breaking the chain of impunity of the spyware underworld",
-   "lien": "https://edri.org/our-work/predatorgate-breaking-the-chain-of-impunity-of-the-spyware-underworld/",
-   "resume": "Greek courts have issued a landmark criminal first-instance conviction in the Predatorgate scandal, finding four individuals linked to the spyware vendor Intellexa guilty of unlawful surveillance, with cumulative sentences of 126 years and 8 months. Courts must now establish responsibility for who ordered this espionage. The case also resonates across the EU, challenging the widespread impunity of vendors and…",
-   "date": "2026-04-01",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.459,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "score_bruit": 0.312,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "b7416e14a1d9",
@@ -10781,42 +3904,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.632,
+   "score": 0.592,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "9f8147227f60",
-   "titre": "​​South Carolina enacts age-appropriate design code with significant requirements for online platforms​",
-   "lien": "https://www.hlc.com/en/publications/south-carolina-enacts-ageappropriate-design-code-with-significant-requirements-for-online-platforms",
-   "resume": "On February 5, 2026, South Carolina Governor Henry McMaster signed the Age-Appropriate Code Design ( H 3431 , the “Act”) into law, making South Carolina the fifth state to enact...",
-   "date": "2026-03-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.296,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   ],
+   "score_bruit": 0.34,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "f2602b30ac42",
@@ -10837,104 +3942,27 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "langue": "en",
    "score": 0.602,
-   "pertinence": "elevee",
+   "pertinence": "moyenne",
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "PRODUCT",
     "EU 2024",
     "PLD 2024"
+   ],
+   "score_bruit": 0.317,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Directive responsabilité produits (PLD)"
+   ],
+   "motif": "texte clé : Directive responsabilité produits (PLD)",
+   "bruit": [
+    "marchés / entreprises"
    ]
-  },
-  {
-   "id": "a4eb21fa9dce",
-   "titre": "Hogan Lovells advises Clue on a strategic investment by Verdane",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-clue-bei-einem-strategischen-investment-von-verdane",
-   "resume": "Led by Thiemo Woertge and Lucie Arntz, global law firm Hogan Lovells has advised Berlin-based FemTech scale-up Clue (BioWink GmbH) on a strategic investment by Verdane.",
-   "date": "2026-03-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.237,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "c0f4758c69da",
-   "titre": "The Data Chronicles | DOJ’s cybersecurity fraud initiative",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-dojs-cybersecurity-fraud-initiative-",
-   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by Hogan Lovells partners Stephanie Yonekura and Jonathan Diesenhaus to examine how the U.S. Department of Justice is...",
-   "date": "2026-03-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.455,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DOJ"
-   ]
-  },
-  {
-   "id": "5dac4c350f4b",
-   "titre": "Balancing transparency and access: Controversy over confidential medicinal product pricing in Spain",
-   "lien": "https://www.hlc.com/en/publications/balancing-transparency-and-access-controversy-over-confidential-medicinal-product-pricing-in-spain",
-   "resume": "The debate over the confidentiality versus transparency of net medicinal product prices in Spain has intensified amid recent legislative proposals and ongoing judicial review, highlighting...",
-   "date": "2026-03-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "legislative proposal"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.44,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
   },
   {
    "id": "b07edebd6bd2",
@@ -10960,111 +3988,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.551,
+   "score": 0.511,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "8afbdc3d885d",
-   "titre": "FTC launches task force to promote competition and consumer protection enforcement in the healthcare industry",
-   "lien": "https://www.hlc.com/en/publications/ftc-launches-task-force-to-promote-competition-and-consumer-protection-enforcement-in-the-healthcare",
-   "resume": "On March 20, 2026 the Federal Trade Commission (FTC) announced the creation of a Healthcare Task Force that will “engage in a coordinated, integrated approach to healthcare...",
-   "date": "2026-03-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
    ],
-   "groupes": [
-    "Termes santé"
+   "score_bruit": 0.344,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.54,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FTC"
-   ]
-  },
-  {
-   "id": "1fd4857c071d",
-   "titre": "FDA finalizes guidance on weight-loss devices: Five things manufacturers need to know",
-   "lien": "https://www.hlc.com/en/publications/fda-finalizes-guidance-on-weightloss-devices-five-things-manufacturers-need-to-know",
-   "resume": "FDA's approach to regulating weight-loss devices has evolved for more than a decade. In final guidance published in March 2026, FDA brings together clinical and non-clinical recommendations ...",
-   "date": "2026-03-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.464,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "41825ff2849b",
-   "titre": "Privacy Protections Coming Sooner Rather Than Later to the Sooner State",
-   "lien": "https://fpf.org/blog/privacy-protections-coming-sooner-rather-than-later-to-the-sooner-state/",
-   "resume": "Oklahoma has become the latest U.S. state to enact a comprehensive consumer privacy law after Governor Stitt signed SB 546 into law on March 20. This ends two long legislative droughts: First, this is the long-awaited 20th state comprehensive privacy law and the first since the Rhode Island Data Transparency and Privacy Protection Act was [&#8230;]",
-   "date": "2026-03-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.421,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SB 546"
-   ]
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "01357a973114",
@@ -11089,107 +4030,24 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.708,
+   "score": 0.668,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI"
-   ]
-  },
-  {
-   "id": "9bc48e5ec24e",
-   "titre": "Hogan Lovells advises JTL-Software on acquisition of FOC Solutions",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-jtl-software-bei-uebernahme-von-foc-solutions",
-   "resume": "Led by Dr. Jan Feigen and Dr. Philipp Str&uuml;mpell, global law firm Hogan Lovells has advised JTL-Software-GmbH, a provider of innovative e-commerce and multichannel solutions, on the...",
-   "date": "2026-03-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.292,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "JTL",
-    "FOC",
-    "JTL-Software-GmbH"
-   ]
-  },
-  {
-   "id": "48c78251c5d6",
-   "titre": "Navigating Autonomy and Privacy in Emerging AgeTech: Insights from the FPF Roundtable",
-   "lien": "https://fpf.org/blog/navigating-autonomy-and-privacy-in-emerging-agetech-insights-from-the-fpf-roundtable/",
-   "resume": "As AgeTech expands into homes across the country—seeking to enable older adults to live independently longer—fundamental questions about autonomy, privacy, and trust are coming into sharper focus. How do we balance caregiver support with individual privacy? Should data pertaining to older adults be treated as “sensitive?” And in a fragmented privacy and consumer protection landscape, [&#8230;]",
-   "date": "2026-03-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.426,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div",
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "41ec17c61ea0",
-   "titre": "FTC COPPA workshop and policy statement promote flexibility for use of age verification technologies",
-   "lien": "https://www.hlc.com/en/publications/ftc-coppa-workshop-and-policy-statement-promote-flexibility-for-use-of-age-verification-technologies",
-   "resume": "On February 25, 2026, the Federal Trade Commission (FTC) issued an enforcement policy statement announcing a new enforcement posture under the Children's Online Privacy Protection Act...",
-   "date": "2026-03-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.507,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "fournisseurs_publics"
+   "score_bruit": 0.361,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FTC",
-    "COPPA"
-   ]
+   "motif": "texte clé : AI Act",
+   "statut": "projet"
   },
   {
    "id": "7b382fff67ec",
@@ -11216,104 +4074,17 @@ window.VEILLE_DEBATS = {
     "cra",
     "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DSA",
     "ECNL"
-   ]
-  },
-  {
-   "id": "190c8cbd899e",
-   "titre": "Artificial Insecurity: how AI tools compromise confidentiality",
-   "lien": "https://edri.org/our-work/artificial-insecurity-how-ai-tools-compromise-confidentiality/",
-   "resume": "Whatever you think about the promises or perils of AI, it’s becoming increasingly impossible to ignore that these tools are beset by glaring security vulnerabilities. From exposing user data to facilitating hacks, from undermining information integrity to creating supply chain vulnerabilities, AI tools are underpinned, and undermined, by dodgy security practices. As we’ll explore in this series, this has grave…",
-   "date": "2026-03-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.62,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "474bd001cc18",
-   "titre": "DSA vs. Reality: Are children safer online?",
-   "lien": "https://edri.org/our-work/dsa-vs-reality-are-children-safer-online/",
-   "resume": "How can social media be safer for people of all ages? During the hearing held in the European Parliament on 24th February, civil society experts led by Panoptykon debated possible solutions with Members of the European Parliament (MEPs) and officials from the European Commission. Yet YouTube, TikTok, and Meta dodged having to answer difficult questions. The post DSA vs. Reality: Are children safer online? appeared…",
-   "date": "2026-03-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.425,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DSA"
-   ]
-  },
-  {
-   "id": "0dc688396298",
-   "titre": "Incentives or Obligations? The U.S. Regulatory Approach to Voluntary AI Governance Standards",
-   "lien": "https://fpf.org/blog/incentives-or-obligations-the-u-s-regulatory-approach-to-voluntary-ai-governance-standards/",
-   "resume": "By FPF Legal Intern Rafal Fryc As artificial intelligence gets increasingly deployed across every sector of the economy, regulators find themselves grappling with a fundamental challenge: how to govern a technology that defies traditional regulatory frameworks and changes faster than legislation can keep pace. One increasingly common approach can be found outside the text of [&#8230;]",
-   "date": "2026-03-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.697,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "FPF"
-   ]
+   "score_bruit": 0.456,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "a2d27d0052c7",
@@ -11339,44 +4110,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.54,
-   "pertinence": "moyenne",
+   "score": 0.5,
+   "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "99c3a2606404",
-   "titre": "Hogan Lovells advises Octopus Energy Generation on the acquisition of a majority stake in metiundo",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-octopus-energy-generation-beim-erwerb-einer-mehrheitsbeteiligung-an-metiundo",
-   "resume": "Led by Frankfurt partner Maximilian Broermann, global law firm Hogan Lovells has advised UK-based Octopus Energy Generation on the acquisition of a majority stake in German metiundo GmbH, a ...",
-   "date": "2026-03-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.273,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "UK"
-   ]
+   ],
+   "score_bruit": 0.306,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "7eb12d21e1a5",
@@ -11405,82 +4156,25 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.787,
+   "score": 0.747,
    "pertinence": "elevee",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
     "AI"
-   ]
-  },
-  {
-   "id": "36d935015baf",
-   "titre": "Europe’s Tax Bureaucracies Chase Digital Taxes While EUR 1 Trillion in VAT Revenue Lies Untapped",
-   "lien": "https://ecipe.org/insights/europes-tax-bureaucracies/",
-   "resume": "For nearly a decade, policymakers across Europe have pursued a new frontier in taxation: digital services taxes (DSTs). The political narrative has been clear, large digital firms must pay their “fair share”. The economic results, however, have been far less impressive. … Continued",
-   "date": "2026-03-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.44,
-   "pertinence": "moyenne",
-   "themes": [
-    "large",
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EUR1",
-    "VAT"
-   ]
-  },
-  {
-   "id": "b644955a63e7",
-   "titre": "FPF Privacy Papers for Policymakers: Impactful Privacy and AI Scholarship for a Digital Future",
-   "lien": "https://fpf.org/blog/fpf-privacy-papers-for-policymakers-impactful-privacy-and-ai-scholarship-for-a-digital-future/",
-   "resume": "FPF recently concluded its 16th Annual Privacy Papers for Policymakers (PPPM) events, hosting two dynamic virtual ceremonies on March 4 and March 11, 2026. This year’s program centered on the most pressing areas in privacy and AI governance, bringing together global awardees to discuss their research with leading discussants from industry, academia, and civil society. [&#8230;]",
-   "date": "2026-03-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.453,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
+   "score_bruit": 0.412,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI",
-    "PPPM"
-   ]
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE"
   },
   {
    "id": "30a841a59859",
@@ -11507,129 +4201,16 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DFA"
-   ]
-  },
-  {
-   "id": "318bd02703f2",
-   "titre": "Africa’s Data Protection Reforms: A Continental Perspective on the Drivers of Change in Legal Frameworks",
-   "lien": "https://fpf.org/blog/africas-data-protection-reforms-a-continental-perspective-on-the-drivers-of-change-in-legal-frameworks/",
-   "resume": "1. Introduction Within an evolving digital landscape, several African jurisdictions have proposed a variety of reforms to existing and novel legal frameworks that regulate the processing of personal data, and the development and deployment of new technologies. Across the continent, there is a growing consensus among legislators on the need to create a regulatory environment [&#8230;]",
-   "date": "2026-03-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.489,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "592dbdf65c65",
-   "titre": "FTC seeks public comment on potential changes to Negative Option Rule",
-   "lien": "https://www.hlc.com/en/publications/ftc-seeks-public-comment-on-potential-changes-to-negative-option-rule",
-   "resume": "On March 11, 2026, the Federal Trade Commission (FTC) announced an Advance Notice of Proposed Rulemaking (ANPRM) addressing “negative option” practices – arrangements where a consumer's...",
-   "date": "2026-03-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.373,
-   "pertinence": "faible",
-   "themes": [
-    "fournisseurs_publics",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FTC",
-    "ANPRM"
-   ]
-  },
-  {
-   "id": "392b8d0cd6be",
-   "titre": "Fewer rules, more innovation? The miscalculation of the new Brussels",
-   "lien": "https://edri.org/our-work/fewer-rules-more-innovation-the-miscalculation-of-the-new-brussels/",
-   "resume": "Is European regulation really holding back innovation, or is it a strategic asset that we are about to sell off? This piece debunks the official narrative of a European Commission that claims to be “learning to regulate better”. Through incisive analysis, it warns that the fear of falling behind in the artificial intelligence race is pushing Brussels to sacrifice fundamental rights in the name of a misunderstood…",
-   "date": "2026-03-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.407,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "ba93856db87c",
-   "titre": "The Chatbot Moment: Mapping the Emerging 2026 U.S. Chatbot Legislative Landscape",
-   "lien": "https://fpf.org/blog/the-chatbot-moment-mapping-the-emerging-2026-u-s-chatbot-legislative-landscape/",
-   "resume": "Special thanks to Rafal Fryc, U.S. Legislation Intern, for his research and development of the resources referenced. If there is one area of AI policy that lawmakers seem particularly eager to regulate in 2026, it’s chatbots. As state legislative sessions ramp up across the country, policymakers at both the state and federal levels have introduced [&#8230;]",
-   "date": "2026-03-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.477,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
+   "score_bruit": 0.193,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "594d7456f012",
@@ -11655,163 +4236,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.654,
+   "score": 0.614,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "44ef49423b7a",
-   "titre": "FDA issues guidance on responding to Form 483 observations for CGMP drug inspections",
-   "lien": "https://www.hlc.com/en/publications/fda-issues-guidance-on-responding-to",
-   "resume": "The U.S. Food and Drug Administration (FDA) published a draft guidance —the first of its kind—consolidating its expectations for how drug manufacturers should respond to Form 483...",
-   "date": "2026-03-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.491,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "CGMP"
-   ]
-  },
-  {
-   "id": "894127ad38ba",
-   "titre": "Life Sciences & Health Care Horizons 2026",
-   "lien": "https://www.hlc.com/en/publications/life-sciences-health-care-horizons-2026",
-   "resume": "The life sciences & health care (LSHC) sector enters 2026 in a mode of regulatory acceleration. AI is no longer on the horizon: it is embedded across the entire medical product...",
-   "date": "2026-03-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.483,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "acheteurs_sante"
+   "score_bruit": 0.375,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "LSHC",
-    "AI"
-   ]
-  },
-  {
-   "id": "4a8b87450a27",
-   "titre": "EDRi files DSA complaint against YouTube for undermining user autonomy",
-   "lien": "https://edri.org/our-work/edri-files-dsa-complaint-against-youtube-for-undermining-user-autonomy/",
-   "resume": "EDRi has filed a complaint with the Belgian Digital Services Coordinator against YouTube under the Digital Service Act (DSA), challenging the legality of the recommender system options offered by the platform. EDRi requests a thorough investigation and effective enforcement measures. The post EDRi files DSA complaint against YouTube for undermining user autonomy appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-03-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.446,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DSA"
-   ]
-  },
-  {
-   "id": "133c5b636f64",
-   "titre": "Hogan Lovells advises JustPlay on sale to NCSOFT",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-justplay-beim-verkauf-an-ncsoft",
-   "resume": "Led by Munich partner Dr. Nikolas Zirngibl, global law firm Hogan Lovells has advised the shareholders of JustPlay GmbH on the sale of a 70% stake in the company to South Korea&rsquo;s...",
-   "date": "2026-03-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.228,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "NCSOFT"
-   ]
-  },
-  {
-   "id": "2cfe714e7f7d",
-   "titre": "Hogan Lovells advises Phoenix Contact on exit from automotive OEM business",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-phoenix-contact-beim-ausstieg-aus-dem-automobil-oem-geschaeft",
-   "resume": "Led by Dusseldorf partner Jens Uhlendorf, global law firm Hogan Lovells has advised Phoenix Contact E-Mobility GmbH on its strategic exit from the OEM automotive passenger car business.",
-   "date": "2026-03-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.215,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "OEM"
-   ]
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "59ff1643d97f",
@@ -11836,42 +4278,18 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
-  },
-  {
-   "id": "1cd19e63d529",
-   "titre": "Bundling’s other test: When AKS-friendly discounts create antitrust risk",
-   "lien": "https://www.hlc.com/en/publications/bundlings-other-test-when-aksfriendly-discounts-create-antitrust-risk",
-   "resume": "A recent advisory opinion from the U.S. Department of Health and Human Services Office of Inspector General (OIG) may give manufacturers more daylight to structure bundled discounts under...",
-   "date": "2026-03-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.491,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AKS",
-    "OIG"
-   ]
+   "score_bruit": 0.24,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE"
   },
   {
    "id": "9a3da57e0c97",
@@ -11898,12 +4316,17 @@ window.VEILLE_DEBATS = {
     "ia",
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "ECIPE"
-   ]
+   ],
+   "score_bruit": 0.318,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "568f6feae1f4",
@@ -11929,198 +4352,16 @@ window.VEILLE_DEBATS = {
     "ia",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI"
-   ]
-  },
-  {
-   "id": "54aeb7193e32",
-   "titre": "Thailand adopts binding corporate rules for intra-group data transfers",
-   "lien": "https://www.hlc.com/en/publications/thailand-adopts-binding-corporate-rules-for-intragroup-data-transfers",
-   "resume": "On 17 February 2026, Thailand's Regulation on the Examination and Certification of Binding Corporate Rules within the Same Affiliated Business or the Same Group of Undertakings B.E....",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "Certification / qualification de sécurité"
    ],
-   "groupes": [
-    "Exigences fournisseurs (santé, secteur public)"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.497,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "58af0a007455",
-   "titre": "NRF Retail Law Summit 2026",
-   "lien": "https://www.hlc.com/en/events/nrf-retail-law-summit-2026",
-   "resume": "Hogan Lovells sponsored this session, which focused on agentic ecommerce tools that autonomously execute transactions and optimize retail operations, which are rapidly gaining traction as...",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.328,
-   "pertinence": "faible",
-   "themes": [
-    "fournisseurs_publics",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "NRF"
-   ]
-  },
-  {
-   "id": "d3fb522ca0e9",
-   "titre": "EU–US trade framework: developments on US tariff measures",
-   "lien": "https://www.medtecheurope.org/2026/03/05/eu-us-trade-framework-developments-on-us-tariff-measures/",
-   "resume": "On 20 February 2026, the US Supreme Court ruled that the International Emergency Economic Powers Act (IEEPA) does not provide legal authority to impose tariffs. The US Administration subsequently introduced 10% global tariffs under Section 122 of the Trade Act of 1974. Section 122 provides a legal basis for temporary tariff measures, limited to 150 […] The post EU–US trade framework: developments on US tariff…",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.356,
-   "pertinence": "faible",
-   "themes": [
-    "ia",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "US",
-    "IEEPA"
-   ]
-  },
-  {
-   "id": "fa7f05b14a0f",
-   "titre": "MedTech Europe joins first in‑person HERA Industrial Cooperation Forum",
-   "lien": "https://www.medtecheurope.org/2026/03/05/medtech-europe-joins-first-in-person-hera-industrial-cooperation-forum/",
-   "resume": "On 6 February 2026, MedTech Europe participated in the first in-person meeting of the HERA Industrial Cooperation Forum. Under its renewed mandate, the Forum aims to reinforce the participation of industry and EU Member States, creating a structured platform for dialogue between diverse stakeholders and European institutions on issues related to medical countermeasures (MCM). During […] The post MedTech Europe joins…",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.384,
-   "pertinence": "faible",
-   "themes": [
-    "sante_donnees",
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "HERA",
-    "EU",
-    "MCM"
-   ]
-  },
-  {
-   "id": "86f3ffb3a6dd",
-   "titre": "EU–Switzerland relations: renewed momentum on mutual recognition",
-   "lien": "https://www.medtecheurope.org/2026/03/05/eu-switzerland-relations-renewed-momentum-on-mutual-recognition/",
-   "resume": "On 2 March 2026, the European Union and Switzerland signed a broad package of agreements aimed at strengthening cooperation and providing a more stable framework for market access. The package updates several existing agreements, including the Mutual Recognition Agreement (MRA). It provides for an update of the MRA and its Annex. The Annex sets out […] The post EU–Switzerland relations: renewed momentum on mutual…",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.33,
-   "pertinence": "faible",
-   "themes": [
-    "infra_critiques",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "MRA"
-   ]
-  },
-  {
-   "id": "ed136b5aaf20",
-   "titre": "IHI call 12 preparation: explore in-kind contributions and contributing partners",
-   "lien": "https://www.medtecheurope.org/2026/03/05/ihi-call-12-preparation-explore-in-kind-contributions-and-contributing-partners/",
-   "resume": "The Innovative Health Initiative (IHI) office supports consortia preparing proposals for the call 12 – a single-stage, applicant-driven call – by offering a wide range of practical resources to help them submit strong proposals. One of these resources is the upcoming webinar on 11 March 2026, titled “Lifting the lid on in-kind contributions”. The session […] The post IHI call 12 preparation: explore in-kind…",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.431,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IHI"
-   ]
+   "score_bruit": 0.31,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "553d69f046fd",
@@ -12146,141 +4387,21 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.6,
+   "score": 0.56,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees",
     "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "98a73a7a6a5e",
-   "titre": "Implementing Act on Notified Bodies requirements: a pragmatic first step to restore predictability",
-   "lien": "https://www.medtecheurope.org/2026/03/05/implementing-act-on-notified-bodies/",
-   "resume": "Short-term measures are needed to stabilise the way in which Europe regulates medical technologies. It is critical to ensure that medical technologies can reach patients in a timely manner. Companies also need to know how to plan in their resources and how long they need until they can get certified and deliver medical technologies to […] The post Implementing Act on Notified Bodies requirements: a pragmatic first…",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "Certification / qualification de sécurité"
-   ],
-   "groupes": [
-    "Exigences fournisseurs (santé, secteur public)"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.6,
-   "pertinence": "elevee",
-   "themes": [
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "7b600f437e64",
-   "titre": "One market, one voice: industry calls for common rules in Circular Economy Act",
-   "lien": "https://www.medtecheurope.org/2026/03/05/one-market-one-voice-industry-calls-for-common-rules-in-circular-economy-act/",
-   "resume": "MedTech Europe joins 65 industry associations in their call for an internal market legal basis to drive waste management step-change in the New Circular Economy Act announced for Q3/2026. Today’s waste management landscape across the EU remains extremely fragmented, marked by uneven performance and divergent national regulatory frameworks. The upcoming Act is an opportunity to […] The post One market, one voice:…",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.393,
-   "pertinence": "faible",
-   "themes": [
-    "cra",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "Q3/2026",
-    "EU"
-   ]
-  },
-  {
-   "id": "18ca96a840b2",
-   "titre": "Circularity in healthcare",
-   "lien": "https://www.medtecheurope.org/sustainability-and-environment/circularity-in-healthcare/",
-   "resume": "",
-   "date": "2026-03-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.582,
-   "pertinence": "elevee",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "3ccf6a7c610c",
-   "titre": "Outsourcing crime control: How EU anti-money laundering rules threaten financial privacy",
-   "lien": "https://edri.org/our-work/outsourcing-crime-control-how-eu-anti-money-laundering-rules-threaten-financial-privacy/",
-   "resume": "Privacy First is drawing attention to the risks to financial privacy and fundament rights arising from the European Union’s anti-money laundering and counter-terrorist financing (AML/CFT) framework. Over the past decade, the EU has increasingly shifted the responsibility of detecting financial crime from public authorities to banks, bookkeepers and other companies (called“obliged entities”). With a completely…",
-   "date": "2026-03-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.549,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "AML/CFT"
-   ]
+   "acronymes": [],
+   "score_bruit": 0.288,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation"
   },
   {
    "id": "f888d32a1df0",
@@ -12306,46 +4427,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.631,
+   "score": 0.591,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "5a590e49cba4",
-   "titre": "Hogan Lovells reports record results for the third consecutive year, announcing nearly US$3.3 billion in gross revenue for FY2025, consolidating its 6-year drive of sustainable growth",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-reports-record-results-for-the-third-consecutive-year",
-   "resume": "Firm credits its balanced global platform, with strength and growth across key G20 markets, as well as a very solid year for the firm in the U.S. market.",
-   "date": "2026-03-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.198,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "US",
-    "FY2025",
-    "G20"
-   ]
+   ],
+   "score_bruit": 0.332,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act"
   },
   {
    "id": "8952fc95a8fc",
@@ -12372,166 +4471,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.78,
+   "score": 0.74,
    "pertinence": "elevee",
    "themes": [
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "CRA"
-   ]
-  },
-  {
-   "id": "4b7537450fe0",
-   "titre": "Pros and cons of FDA’s push for nonprescription drugs",
-   "lien": "https://www.hlc.com/en/news/pros-and-cons-of-fdas-push-for-nonprescription-drugs",
-   "resume": "In this Law360 article, Heidi Gertner, Elizabeth Jungman and Eva Schifini examine the FDA&rsquo;s renewed push to expand access to nonprescription drugs under Commissioner Martin Makary,...",
-   "date": "2026-03-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.386,
-   "pertinence": "faible",
-   "themes": [
-    "pharma_industrie",
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "97493ddc8c0c",
-   "titre": "Navigating the new UN High Seas Treaty: Key Compliance Risks for Life Sciences Companies",
-   "lien": "https://www.insideeulifesciences.com/2026/03/03/navigating-the-new-un-high-seas-treaty-key-compliance-risks-for-life-sciences-companies/",
-   "resume": "On January 17th, 2026, the Biodiversity Beyond National Jurisdiction (“BBNJ”) Agreement, also known as the “High Seas Treaty”, entered into force. For the first time, companies that use marine genetic resources (“MGRs”) and digital sequence information (“DSI”) originating from areas beyond national jurisdiction may be required to share monetary and non-monetary benefits at a global... Continue Reading…",
-   "date": "2026-03-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.39,
-   "pertinence": "faible",
-   "themes": [
-    "acheteurs_sante",
-    "donnees"
+   "score_bruit": 0.396,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "BBNJ",
-    "DSI"
-   ]
-  },
-  {
-   "id": "c15ce04c17bf",
-   "titre": "A Grand European Deal for Human Rights – and Against Bureaucracy",
-   "lien": "https://ecipe.org/insights/grand-european-deal-against-bureaucracy/",
-   "resume": "44 percent. 110 percent. Below 1 percent. That is the real regulatory arithmetic facing Europe. Human rights and environmental due diligence typically cost companies a fraction of a percentage point of turnover. Intra-EU regulatory fragmentation, by contrast, acts like an … Continued",
-   "date": "2026-02-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.426,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "6943a056d7a2",
-   "titre": "FTC proposes to settle with Express Scripts: What it means for manufacturers",
-   "lien": "https://www.hlc.com/en/publications/ftc-proposes-to-settle-with-express-scripts-what-it-means-for-manufacturers",
-   "resume": "On February 4, 2026, the Federal Trade Commission (FTC) proposed to settle its enforcement action against leading pharmacy benefit manager (PBM) Express Scripts, going beyond the insulin...",
-   "date": "2026-02-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.32,
-   "pertinence": "faible",
-   "themes": [
-    "large",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FTC",
-    "PBM"
-   ]
-  },
-  {
-   "id": "d3a01f4c3dea",
-   "titre": "Hogan Lovells advises Avelios on a strategic investment by SAP",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-avelios-bei-einem-strategischen-investment-von-sap",
-   "resume": "Led by Munich partner Peter Huber global law firm Hogan Lovells has advised Avelios Medical GmbH on a strategic investment by SAP.&nbsp;",
-   "date": "2026-02-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.242,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "SAP"
-   ]
+   "motif": "texte clé : CRA",
+   "statut": "projet"
   },
   {
    "id": "7f2efca6663f",
@@ -12558,12 +4517,17 @@ window.VEILLE_DEBATS = {
     "large",
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "CSA",
     "EU"
-   ]
+   ],
+   "score_bruit": 0.366,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "c42ad0152958",
@@ -12589,132 +4553,26 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.64,
+   "score": 0.6,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI"
-   ]
-  },
-  {
-   "id": "41b025c8d234",
-   "titre": "Hogan Lovells advises Andera Partners on mezzanine investment in Austrian exceet Card Group",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-andera-partners-bei-mezzanine-investment-in-exceet-card-group",
-   "resume": "Led by Frankfurt partner Dr. Christoph Naumann, global law firm Hogan Lovells has advised French Andera Partners, a leading European private equity investor, on a mezzanine investment by...",
-   "date": "2026-02-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.22,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "0c991868908d",
-   "titre": "South Korea considers updates to data and cyber laws",
-   "lien": "https://www.hlc.com/en/publications/south-korea-considers-updates-to-data-and-cyber-laws",
-   "resume": "Recent large‑scale data breaches across major sectors in Korea, including across the telecommunications, retail, and finance sector, have prompted swift and coordinated response from...",
-   "date": "2026-02-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "cyber law"
    ],
-   "groupes": [
-    "Réglementations Cyber"
+   "score_bruit": 0.355,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
    ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.553,
-   "pertinence": "elevee",
-   "themes": [
-    "nis2",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "0e48cb3d7640",
-   "titre": "FDA issues guidance on “plausible mechanism” approvals, declares single pivotal trials with confirmatory evidence as new default for all drugs & biologics",
-   "lien": "https://www.hlc.com/en/publications/fda-issues-guidance-on-plausible-mechanism-approvals",
-   "resume": "On Monday, the U.S. Food and Drug Administration (FDA) published draft guidance formalizing a “plausible mechanism” approval framework for individualized therapies, particularly genome...",
-   "date": "2026-02-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.511,
-   "pertinence": "moyenne",
-   "themes": [
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
-  },
-  {
-   "id": "b9d431df7c8c",
-   "titre": "Dutch DPA sets its course for 2026–2028 with three strategic priorities",
-   "lien": "https://www.hlc.com/en/publications/dutch-dpa-sets-its-course-for-20262028-with-three-strategic-priorities",
-   "resume": "On January 30, the Dutch Data Protection Authority (“AP”) published its Annual Plan 2026, unveiling three strategic priorities for its work across 2026–2028: mass...",
-   "date": "2026-02-24",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.396,
-   "pertinence": "faible",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "DPA",
-    "AP"
+   "motif": "texte clé : AI Act",
+   "bruit": [
+    "vulnérabilités / alertes techniques"
    ]
   },
   {
@@ -12741,11 +4599,16 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU"
-   ]
+   ],
+   "score_bruit": 0.341,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "5f126eca1667",
@@ -12772,280 +4635,14 @@ window.VEILLE_DEBATS = {
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "c102e20b4d3f",
-   "titre": "Q&A With FPF Vice President for U.S. Policy, Matthew Reisman",
-   "lien": "https://fpf.org/blog/qa-with-fpf-vice-president-for-u-s-policy-matthew-reisman/",
-   "resume": "In a new Q&#38;A, our Vice President for U.S. Policy, Matthew Reisman, takes a deeper look at the privacy landscape, particularly his interests in the space, what to look forward to in the U.S. and AI sector, and what is key for stakeholders to pay attention to. What brought you into the privacy and data [&#8230;]",
-   "date": "2026-02-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.441,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI"
-   ]
-  },
-  {
-   "id": "afecc64906e7",
-   "titre": "U.S. Supreme Court invalidates IEEPA tariffs, reshaping the Administration’s trade toolkit",
-   "lien": "https://www.hlc.com/en/publications/us-supreme-court-invalidates-ieepa-tariffs-reshaping-the-administrations-trade-toolkit",
-   "resume": "On February 20, 2026, the U.S. Supreme Court issued a landmark decision holding that the International Emergency Economic Powers Act (IEEPA) does not authorize the President to impose...",
-   "date": "2026-02-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.343,
-   "pertinence": "faible",
-   "themes": [
-    "ia",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IEEPA"
-   ]
-  },
-  {
-   "id": "ffbd0670d94e",
-   "titre": "Financialization of the health sector – Recent political, regulatory and judiciary developments in France",
-   "lien": "https://www.hlc.com/en/publications/financialization-of-the-health-sector-recent-political-regulatory-and-judiciary-developments",
-   "resume": "The gradual opening of private practice companies to external capital, authorised since Law No. 90-1258 of 31 December 1990, has profoundly reshaped the landscape of regulated professions....",
-   "date": "2026-02-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.448,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "0c23e5e85fac",
-   "titre": "The Battle for Regulatory Leadership in the Indo-Pacific: From 2016 Rule-Writing to Today’s Multipolar Reality",
-   "lien": "https://ecipe.org/insights/regulatory-leadership-in-the-indo-pacific/",
-   "resume": "In the Indo-Pacific, trade agreements have never been just about tariffs. They are vehicles to set standards and rules; to decide who sets the templates for digital trade, state-owned enterprises, labour and environmental rules, quality standards, investment protection, and the … Continued",
-   "date": "2026-02-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.434,
-   "pertinence": "moyenne",
-   "themes": [
-    "large",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "accb212e990a",
-   "titre": "From Proposal to Passage: Enacted U.S. AI Laws, 2023–2025",
-   "lien": "https://fpf.org/blog/from-proposal-to-passage-enacted-u-s-ai-laws-2023-2025/",
-   "resume": "Over the past three years, lawmakers across the United States have increasingly enacted AI-related laws that shape the development and deployment of AI systems. Between 2023 and 2025, the Future of Privacy Forum tracked 27 pieces of enacted AI-related legislation across 14 states, along with one federal law (the TAKE IT DOWN Act) that carry [&#8230;]",
-   "date": "2026-02-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.763,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "TAKE",
-    "IT",
-    "DOWN"
-   ]
-  },
-  {
-   "id": "9af95e8e2120",
-   "titre": "FDA Town Hall Sheds New Light on Updated General Wellness Policy",
-   "lien": "https://www.hlc.com/en/publications/fda-town-hall-sheds-new-light-on-updated-general-wellness-policy",
-   "resume": "On February 11, 2026, the U.S. Food and Drug Administration's (FDA) Center for Devices and Radiological Health (CDRH) held a Town Hall to address industry questions and provide further...",
-   "date": "2026-02-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.393,
-   "pertinence": "faible",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "CDRH"
-   ]
-  },
-  {
-   "id": "7331a52372ed",
-   "titre": "Ofgem launches consultation on reforms to overhaul demand connections - with data centres firmly in focus",
-   "lien": "https://www.hlc.com/en/publications/ofgem-launches-consultation-on-reforms-to-overhaul-demand-connections-with-data-centres",
-   "resume": "On 13 February 2026 Ofgem published its Call for Input on Demand Connections Reform, signalling the most significant overhaul of demand connection rules in decades.",
-   "date": "2026-02-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.373,
-   "pertinence": "faible",
-   "themes": [
-    "data_act",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "755f407e57d2",
-   "titre": "Czech ministry apologizes to journalist for blanket collection of mobile phone data",
-   "lien": "https://edri.org/our-work/czech-ministry-apologizes-to-journalist-for-blanket-collection-of-mobile-phone-data/",
-   "resume": "The Czech Supreme Court has ruled that the legal regulation of blanket collection of electronic communications data (known as data retention) violates European Union law in a \"long-term and particularly serious manner.\" This decision is the result of a multi-year campaign by the organization IuRe. However, the responsible minister has not yet taken steps to end blanket collection. The post Czech ministry apologizes…",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.438,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "446e956a0b59",
-   "titre": "Europe’s digital sovereignty starts with open source",
-   "lien": "https://edri.org/our-work/europes-digital-sovereignty-starts-with-open-source/",
-   "resume": "EDRi submitted a response to the EU’s new open source digital strategy. We argue that free and open source software is not a niche technical choice, but a strategic foundation for Europe’s resilience, competitiveness and democratic autonomy. The post Europe’s digital sovereignty starts with open source appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.498,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "acronymes": [],
+   "score_bruit": 0.339,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "90d6b46bd6f6",
@@ -13072,11 +4669,16 @@ window.VEILLE_DEBATS = {
     "data_act",
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "US"
-   ]
+   ],
+   "score_bruit": 0.274,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "408e6e51bba4",
@@ -13101,75 +4703,23 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.514,
+   "score": 0.494,
    "pertinence": "moyenne",
    "themes": [
     "fournisseurs_publics",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DSA"
-   ]
-  },
-  {
-   "id": "60312c7c224b",
-   "titre": "European Commission’s plans will lead to worse regulations",
-   "lien": "https://edri.org/our-work/european-commissions-plans-will-lead-to-worse-regulations/",
-   "resume": "EDRi is deeply concerned that the European Commission’s current plans to amend the Better Regulation framework will lead to worse lawmaking, not better. In its submission to the Commission, EDRi shares recommendations to ensure balanced representation, fairness, transparency, and meaningful safeguards in EU lawmaking. The post European Commission’s plans will lead to worse regulations appeared first on European…",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.464,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "670de68a3a8d",
-   "titre": "“Economic Security” Done Badly Will Make Us Less Economically Secure",
-   "lien": "https://ecipe.org/insights/economic-security-done-badly/",
-   "resume": "A truth that goes against the current intellectual climate is that modern economies are the most resilient in history. They are so adaptable that the shock of a global pandemic was rapidly overcome, and Europe successfully diversified from its single … Continued",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.541,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.267,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices"
   },
   {
    "id": "03183b79b41f",
@@ -13195,12 +4745,17 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "CJEU"
-   ]
+   ],
+   "score_bruit": 0.321,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "d605f6d4c1dd",
@@ -13228,136 +4783,27 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.689,
+   "score": 0.649,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI",
     "GDPR",
     "DSA"
-   ]
-  },
-  {
-   "id": "a80c3091ec86",
-   "titre": "Smart Market Entry: Hogan Lovells advises Calisen on the financing of its €100 million smart metering partnership with Energy Metering",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-calisen-bei-der-finanzierung-einer-eur100-millionen-smart-metering-partnerschaft-mit-energy-metering",
-   "resume": "Led by partner Dr. Carla Luh, global law firm Hogan Lovells has advised Calisen on the financing of its landmark smart metering partnership with Energy Metering Germany (EMG), a competitive ...",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.342,
-   "pertinence": "faible",
-   "themes": [
-    "fournisseurs_publics"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EMG"
-   ]
-  },
-  {
-   "id": "a058b8abdc36",
-   "titre": "Hogan Lovells advises Organigram on the acquisition of Sanity Group",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-organigram-bei-uebernahme-der-sanity-group",
-   "resume": "Led by Munich-based partner Dr. Nikolas Zirngibl and senior associate Dr. Dominik Lang, global law firm Hogan Lovells has advised Canadian Organigram Global Inc., a leading licensed...",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.308,
-   "pertinence": "faible",
-   "themes": [
-    "acheteurs_sante"
+   "score_bruit": 0.362,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "RGPD / GDPR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "b789cba356ea",
-   "titre": "NIH bans research with human fetal tissue from elective abortions",
-   "lien": "https://www.hlc.com/en/publications/nih-bans-research-with-human-fetal-tissue-from-elective-abortions",
-   "resume": "The National Institutes of Health (NIH) recently issued NOT-OD-26-208 (the Notice), prohibiting the use of NIH funds for research that uses human fetal tissue (HFT) from elective abortions. ...",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.355,
-   "pertinence": "faible",
-   "themes": [
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "NIH",
-    "NOT-OD-26-208",
-    "HFT"
-   ]
-  },
-  {
-   "id": "ec6e33a010bc",
-   "titre": "Rare disease round-up: FDA efforts to advance treatments",
-   "lien": "https://www.hlc.com/en/publications/rare-disease-roundup-fda-efforts-to-advance-treatments",
-   "resume": "The U.S. Food and Drug Administration (FDA) will host “Rare Disease Day 2026” on February 23, aiming to engage with patients and the broader community to advance development of rare disease ...",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.372,
-   "pertinence": "faible",
-   "themes": [
-    "dm_div",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA"
-   ]
+   "motif": "texte clé : AI Act, RGPD / GDPR"
   },
   {
    "id": "0c22a63f92e3",
@@ -13382,19 +4828,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.582,
-   "pertinence": "elevee",
+   "score": 0.542,
+   "pertinence": "moyenne",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "UK",
     "MHRA",
     "CE",
     "EU"
-   ]
+   ],
+   "score_bruit": 0.213,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation"
   },
   {
    "id": "f085b830eec8",
@@ -13419,229 +4871,25 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.6,
+   "score": 0.56,
    "pertinence": "elevee",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "UK",
     "MHRA",
     "CE",
     "GB"
-   ]
-  },
-  {
-   "id": "9c5eaa9222d6",
-   "titre": "India introduces mandatory labelling for AI and 3-hour takedown for illegal content",
-   "lien": "https://www.hlc.com/en/publications/india-introduces-mandatory-labelling-for-ai-and-3hour-takedown-for-illegal-content",
-   "resume": "On 10 February 2026, India’s Ministry of Electronics and Information Technology (“ MeitY ”) notified amendments to the Information Technology (Intermediary Guidelines and...",
-   "date": "2026-02-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "amendment",
-    "guideline"
    ],
-   "groupes": [
-    "Nouveaux textes réglementaires",
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.627,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "66d62be5f920",
-   "titre": "Digitalizing the Future of Energy: Hogan Lovells advises Volue on acquisition of HAKOM",
-   "lien": "https://www.hlc.com/en/news/digitalizing-the-future-of-energy_hogan-lovells-beraet-volue-beim-erwerb-von-hakom",
-   "resume": "Led by Frankfurt partner Maximilian Broermann, global law firm Hogan Lovells has advised Volue AS, a leading technology provider in the field of the energy transition and a portfolio...",
-   "date": "2026-02-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.264,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "HAKOM",
-    "AS"
-   ]
-  },
-  {
-   "id": "9bb9f58dfdfe",
-   "titre": "How the EU Biotech Act aims to foster biotech innovation in Europe",
-   "lien": "https://www.hlc.com/en/publications/how-the-eu-biotech-act-aims-to-foster-biotech-innovation-in-europe",
-   "resume": "On 16 December 2025, the European Commission proposed a package of measures to improve resilience, competitiveness, and safety of the EU health sector. One of these measures is the proposal ...",
-   "date": "2026-02-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.447,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "4453b5a97616",
-   "titre": "Mecomed and MedTech Europe bring global and regional leaders at WHX Dubai 2026 to advance medtech collaboration and policy alignment",
-   "lien": "https://www.medtecheurope.org/2026/02/12/mecomed-and-medtech-europe-bring-global-and-regional-leaders-at-whx-dubai-2026-to-advance-medtech-collaboration-and-policy-alignment/",
-   "resume": "February 11, 2026: Dubai, United Arab Emirates – Mecomed, the Medical Technology Association in the Middle East and Africa, and MedTech Europe, the European trade association for medical technology industry, today brought together global and regional stakeholders for an exclusive Mecomed & MedTech Europe exchange during WHX Dubai, a global platform for the international MedTech […] The post Mecomed and MedTech…",
-   "date": "2026-02-12",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.334,
-   "pertinence": "faible",
-   "themes": [
-    "acheteurs_sante",
-    "data_act"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "WHX"
-   ]
-  },
-  {
-   "id": "d13ddd4d5941",
-   "titre": "Information Integrity & Wikipedia: How community-governed platforms can inform future policy-making.",
-   "lien": "https://edri.org/take-action/events/information-integrity-wikipedia-how-community-governed-platforms-can-inform-future-policy-making/",
-   "resume": "The event will give the opportunity to the researchers, the University of Amsterdam and Eurecat – Centre Tecnològic de Catalunya, to showcase the results of their analyses, presenting the policy options that can inform future policy-making. The post Information Integrity & Wikipedia: How community-governed platforms can inform future policy-making. appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-02-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.435,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "3011b98a866d",
-   "titre": "Against Technosolutionism: Governing Platforms as Systems of Care",
-   "lien": "https://edri.org/take-action/events/against-technosolutionism-governing-platforms-as-systems-of-care/",
-   "resume": "Why do our digital systems break people? Conversational AI tools like Grok or ChatGPT are promoted as a means to democratize knowledge and expand access to information. In practice, however, they have also made sexual harassment easier, reproduced harmful stereotypes, and, in some cases, encouraged people to self-harm rather than helping them. These outcomes are not rare glitches. They reveal how conversational AI…",
-   "date": "2026-02-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.511,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "a543ccda431b",
-   "titre": "Conference Digital Commons: Infrastructures, Design, and the Ethics of Autonomy",
-   "lien": "https://edri.org/take-action/events/conference-digital-commons-infrastructures-design-and-the-ethics-of-autonomy/",
-   "resume": "Digital Commons: Infrastructures, Design, and the Ethics of Autonomy is an international conference exploring how digital infrastructures shape contemporary life, and how communities, researchers, and technologists imagine and build alternatives. The post Conference Digital Commons: Infrastructures, Design, and the Ethics of Autonomy appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-02-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.407,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.265,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation"
   },
   {
    "id": "d9200aced789",
@@ -13668,17 +4916,26 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.821,
+   "score": 0.781,
    "pertinence": "elevee",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
     "EU"
-   ]
+   ],
+   "score_bruit": 0.283,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "statut": "projet"
   },
   {
    "id": "3b3d6722a2c8",
@@ -13704,48 +4961,26 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.739,
+   "score": 0.699,
    "pertinence": "elevee",
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "AI",
     "EU"
-   ]
-  },
-  {
-   "id": "1582f09569ce",
-   "titre": "EPA’s “Year One” PFAS actions: Where things stand and what to watch",
-   "lien": "https://www.hlc.com/en/publications/epas-year-one-pfas-actions-where-things-stand-and-what-to-watch",
-   "resume": "On February 6, 2026, the U.S. Environmental Protection Agency (EPA) issued a press release highlighting “major year one PFAS actions” under the Trump Administration. The press...",
-   "date": "2026-02-11",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.338,
-   "pertinence": "faible",
-   "themes": [
-    "donnees",
-    "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EPA",
-    "PFAS"
-   ]
+   "score_bruit": 0.478,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : AI Act, Cybersecurity Act / certification UE",
+   "statut": "projet"
   },
   {
    "id": "193103f3f3a8",
@@ -13759,7 +4994,7 @@ window.VEILLE_DEBATS = {
    "source": "EDRi (European Digital Rights)",
    "zone": "Europe",
    "nature": "opinion",
-   "rubrique": "secteur",
+   "rubrique": "reglementation",
    "rubrique_mots_cles": false,
    "tags": [],
    "groupes": [],
@@ -13767,196 +5002,22 @@ window.VEILLE_DEBATS = {
    "filtre_pertinence": true,
    "langue": "en",
    "score": 0.482,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "0eed2352d5ad",
-   "titre": "Rethinking European Technological Sovereignty: From Regulatory Control to Capability Building",
-   "lien": "https://ecipe.org/insights/rethinking-european-technological-sovereignty/",
-   "resume": "A combination of developments and factors are leading several European leaders to favour new and old-new industrial policies. Policymakers have become increasingly quick to identify intervention points and to justify targeted state involvement in strategic sectors. In the EU, this … Continued",
-   "date": "2026-02-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "ECIPE (European Centre for International Political Economy)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.515,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "fournisseurs_publics"
+   "acronymes": [],
+   "score_bruit": 0.325,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "76c0417980d5",
-   "titre": "False Claims Act Guide 2026",
-   "lien": "https://www.hlc.com/en/publications/false-claims-act-guide-2026",
-   "resume": "The 10th Anniversary of the False Claims Act Guide 2026 – Year in review and looking ahead comes at a pivotal moment for False Claims Act (FCA) enforcement. The past year brought...",
-   "date": "2026-02-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.337,
-   "pertinence": "faible",
-   "themes": [
-    "nis2",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FCA"
-   ]
-  },
-  {
-   "id": "fb4f40d4f1e5",
-   "titre": "Doing Business in the United States 2026",
-   "lien": "https://www.hlc.com/en/publications/doing-business-in-the-united-states-2026",
-   "resume": "The U.S. is one of the most business-friendly jurisdictions globally, with low regulatory barriers, quick and straightforward business entity setup, and employer-friendly labor laws. Its...",
-   "date": "2026-02-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.344,
-   "pertinence": "faible",
-   "themes": [
-    "fournisseurs_publics",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "87f0be50651f",
-   "titre": "Latest congressional spending package includes important updates for orphan disease and pediatric drug development",
-   "lien": "https://www.hlc.com/en/publications/important-updates-for-orphan-disease-and-pediatric-drug-development",
-   "resume": "On February 3, 2026, President Trump signed into law the Mikaela Naylon Give Kids A Chance Act as part of the Consolidated Appropriations Act (CAA) of 2026 . The CAA codifies FDA's...",
-   "date": "2026-02-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.324,
-   "pertinence": "faible",
-   "themes": [
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CAA",
-    "FDA"
-   ]
-  },
-  {
-   "id": "d8b383b160db",
-   "titre": "EU Court Confirms No Presumption of Confidentiality for Member State Votes: Covington Prevails in Case C‑540/23 P",
-   "lien": "https://www.insideeulifesciences.com/2026/02/10/eu-court-confirms-no-presumption-of-confidentiality-for-member-state-votes-covington-prevails-in-case-c%e2%80%91540-23-p/",
-   "resume": "In short On February 5, 2026, the European Court of Justice (ECJ) dismissed the European Commission’s appeal in Case C-540/23 P, confirming the Judgment of the General Court in Case T-201/21, Covington & Burling and Van Vooren v Commission. The Court confirmed that Member States’ votes when adopting administrative EU acts are not subject to... Continue Reading…",
-   "date": "2026-02-10",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.375,
-   "pertinence": "faible",
-   "themes": [
-    "infra_critiques",
-    "data_act"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "ECJ"
-   ]
-  },
-  {
-   "id": "ddc0634412ac",
-   "titre": "EDRi welcomes EU preliminary findings on TikTok’s addictive platform design",
-   "lien": "https://edri.org/our-work/edri-welcomes-eu-preliminary-findings-on-tiktoks-addictive-platform-design/",
-   "resume": "The European Commission preliminarily found that TikTok was in breach of the Digital Services Act (DSA) due to the addictive design of its platform. EDRi welcomes this decision and urges TikTok to swiftly mitigate the risks to which its users are exposed. The post EDRi welcomes EU preliminary findings on TikTok’s addictive platform design appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-02-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.411,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU",
-    "DSA"
-   ]
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet"
   },
   {
    "id": "11644bf6e551",
@@ -13982,74 +5043,16 @@ window.VEILLE_DEBATS = {
    "themes": [
     "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "DMA"
-   ]
-  },
-  {
-   "id": "536e2bb9a34d",
-   "titre": "UAE Introduces New Child Digital Safety Law - What Online Platforms Need to Know",
-   "lien": "https://www.hlc.com/en/publications/uae-introduces-new-child-digital-safety-law-what-online-platforms-need-to-know",
-   "resume": "The United Arab Emirates (“ UAE ”) has introduced a new and wide-reaching framework for protecting children online under Federal Decree-Law No. 26 of 2025 Regarding Child Digital...",
-   "date": "2026-02-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.451,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "UAE"
-   ]
-  },
-  {
-   "id": "4a9f9aafe821",
-   "titre": "Key updates on the amended cybersecurity law of China",
-   "lien": "https://www.hlc.com/en/publications/key-updates-on-the-amended-cybersecurity-law-of-china",
-   "resume": "On October 28, 2025, China adopted the first major amendments to the 2017 Cybersecurity Law, which took effect on January 1, 2026. The revised Law establishes an additional tiered penalty...",
-   "date": "2026-02-09",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "amendment",
-    "Sanction"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires",
-    "Termes génériques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.631,
-   "pertinence": "elevee",
-   "themes": [
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "score_bruit": 0.313,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "e879cd195249",
@@ -14071,43 +5074,18 @@ window.VEILLE_DEBATS = {
    "filtre_pertinence": true,
    "langue": "en",
    "score": 0.56,
-   "pertinence": "elevee",
+   "pertinence": "moyenne",
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "3a944921ff50",
-   "titre": "From Chatbot to Checkout: Who Pays When Transactional Agents Play?",
-   "lien": "https://fpf.org/blog/from-chatbot-to-checkout-who-pays-when-transactional-agents-play/",
-   "resume": "Disclaimer: Please note that nothing below should be construed as legal advice.&#160; If 2025 was the year of agentic systems, 2026 may be the year these technologies reshape e-commerce. Agentic AI systems are defined by the ability to complete more complex, multi-step tasks, and exhibit greater autonomy over how to achieve user goals. As these [&#8230;]",
-   "date": "2026-02-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.505,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
+   "acronymes": [],
+   "score_bruit": 0.374,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "826da4a29d3d",
@@ -14128,375 +5106,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "langue": "en",
    "score": 0.495,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "UK",
     "DUAA"
-   ]
-  },
-  {
-   "id": "994807ba1b6a",
-   "titre": "The Biotech Act Recognises and Supports “Strategic Projects” And “High Impact Strategic Projects” to Reinforce the Union Biotechnology Sector",
-   "lien": "https://www.insideeulifesciences.com/2026/02/06/the-biotech-act-recognises-and-supports-strategic-projects-and-high-impact-strategic-projects-to-reinforce-the-union-biotechnology-sector/",
-   "resume": "Introduction As discussed in our previous blogpost (link), on 16 December 2025, the European Commission (“Commission”) released its Proposal for the European Biotech Act (“Biotech Act”) (see here). This blogpost focuses on Chapter II of the Proposal (“Union Health Biotechnology and Biomanufacturing”), which introduces a framework for the recognition of “health biotechnology strategic projects” (“Strategic...…",
-   "date": "2026-02-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.407,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques",
-    "nis2"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "2944e09da966",
-   "titre": "FPF Retrospective: U.S. Privacy Enforcement in 2025",
-   "lien": "https://fpf.org/blog/fpf-retrospective-u-s-privacy-enforcement-in-2025/",
-   "resume": "The U.S. privacy law landscape continues to mature as new laws go into effect, cure periods expire, and regulators interpret the law through enforcement actions and guidance. State attorneys general and the Federal Trade Commission act as the country’s de facto privacy regulators, regularly bringing enforcement actions under legal authorities both old and new. For [&#8230;]",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.499,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
+   "score_bruit": 0.234,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "6e9d5b67825e",
-   "titre": "Hogan Lovells advises Volue on the acquisition of Quorum",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-volue-beim-erwerb-von-quorum",
-   "resume": "Led by Frankfurt partner Maximilian Broermann global law firm Hogan Lovells has advised energy software provider Volue, the leader in electrification software, on the acquisition of British ...",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.283,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "18dacb00ddea",
-   "titre": "Hogan Lovells advises JTL Group on acquisition of ninepoint interface",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-jtl-gruppe-bei-uebernahme-von-ninepoint-schnittstelle",
-   "resume": "Led by Dr. Jan Feigen and Dr. Philipp Str&uuml;mpell, global law firm Hogan Lovells has advised JTL, a provider of innovative e-commerce and multichannel solutions, during the acquisition...",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.231,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "JTL"
-   ]
-  },
-  {
-   "id": "18d7bdb71ebd",
-   "titre": "Ready for the next MedTech Forum? Registrations for The MedTech Forum 2026 are open",
-   "lien": "https://www.medtecheurope.org/2026/02/05/ready-for-the-next-medtech-forum-registrations-for-the-medtech-forum-2026-are-open/",
-   "resume": "Registrations for The MedTech Forum 2026 are officially open. Europe’s largest health and medical technology conference will take place in Stockholm from 11 to 13 May 2026. It will gather the medical technology community for three days filled with inspiring talks, expert insights, and networking opportunities within the healthcare ecosystem. By securing your spot early, you […] The post Ready for the next MedTech…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.546,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "1b428465e60b",
-   "titre": "European Commission’s high-level conference on medical devices: innovation and patient safety",
-   "lien": "https://www.medtecheurope.org/2026/02/05/european-commissions-high-level-conference-on-medical-devices-innovation-and-patient-safety/",
-   "resume": "The European Commission is organising a High-Level Conference on medical devices on 16 March 2026 in Brussels. This important event will feature a wide range of participants, including the Commissioner for Health, Olivér Várhelyi, representatives from EU regulatory authorities, representatives from the Council and the European Parliament and experts from EU stakeholders’ associations. The conference […] The post…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Dispositifs médicaux"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.657,
-   "pertinence": "elevee",
-   "themes": [
-    "sante_donnees",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "5cd42ce23b44",
-   "titre": "EU–India Free Trade Agreement: key implications for the medical technology sector",
-   "lien": "https://www.medtecheurope.org/2026/02/05/eu-india-free-trade-agreement-key-implications-for-the-medical-technology-sector/",
-   "resume": "The conclusion of negotiations on the EU–India Free Trade Agreement marks an important step forward for medical technology trade between the European Union and India, with implications for patient access, market access and competitiveness. A central element of the agreement that is beneficial for the medical technology sector is the elimination of tariffs on the […] The post EU–India Free Trade Agreement: key…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.414,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "6747f6e90720",
-   "titre": "MedTech Europe at WHX Dubai 2026: advancing international dialogue with Mecomed",
-   "lien": "https://www.medtecheurope.org/2026/02/05/medtech-europe-at-whx-dubai-2026-advancing-international-dialogue-with-mecomed/",
-   "resume": "MedTech Europe will be present at WHX Dubai 2026, formerly Arab Health, engaging with policymakers, regulators and stakeholders from across the Middle East, Africa and beyond on issues shaping the medical technology sector. During WHX Dubai, MedTech Europe will contribute to discussions on regulatory frameworks, international alignment and market access, with a focus on how […] The post MedTech Europe at WHX Dubai…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.354,
-   "pertinence": "faible",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "WHX"
-   ]
-  },
-  {
-   "id": "83f95bca7f9f",
-   "titre": "Everything you need to know about Innovative Health Initiative (IHI) contributing partners",
-   "lien": "https://www.medtecheurope.org/2026/02/05/everything-you-need-to-know-about-innovative-health-initiative-ihi-contributing-partners/",
-   "resume": "On 11 February 2026, the Innovative Health Initiative (IHI) Office will host a webinar titled “Everything you need to know about IHI contributing partners”, ideal for organisations that are not affiliated to a private member and are looking to strategically support IHI in a specific research area and shape new IHI projects and also for […] The post Everything you need to know about Innovative Health Initiative (IHI)…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.382,
-   "pertinence": "faible",
-   "themes": [
-    "ia",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IHI"
-   ]
-  },
-  {
-   "id": "7f168436e3dc",
-   "titre": "Driving innovation in health: Innovative Health Initiative (IHI) call 12 now open",
-   "lien": "https://www.medtecheurope.org/2026/02/05/driving-innovation-in-health-innovative-health-initiative-ihi-call-12-now-open/",
-   "resume": "On 15 January 2026, IHI call 12 was launched, with a deadline of 21 April 2026 (17:00 Brussels time) for applicants to submit their full proposal. IHI call 12 is a single-stage, applicant-driven call with five topics aligned with the specific objectives of the IHI Strategic Research and Innovation Agenda (SRIA). You can learn more […] The post Driving innovation in health: Innovative Health Initiative (IHI) call 12…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.38,
-   "pertinence": "faible",
-   "themes": [
-    "ia",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IHI",
-    "SRIA"
-   ]
-  },
-  {
-   "id": "e9d0b8cc3af6",
-   "titre": "Just released: Seventh Value-Based Procurement Conference report",
-   "lien": "https://www.medtecheurope.org/2026/02/05/just-released-seventh-value-based-procurement-conference-report/",
-   "resume": "The post-conference report of the 7th European Value-Based Procurement Conference is now available, summarising key discussions from the event. The conference was held on 9 December 2025 in Brussels. Read the full report and learn how scaling up Value-Based Procurement in Europe is driving better outcomes for patients and society. For more information, please contact […] The post Just released: Seventh Value-Based…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.491,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "c47bd0c75fd7",
-   "titre": "CVS engages with external stakeholders at PCMA congress and IPCAA meeting",
-   "lien": "https://www.medtecheurope.org/2026/02/05/cvs-engages-with-external-stakeholders-at-pcma-congress-and-ipcaa-meeting/",
-   "resume": "In January 2026, the Conference Vetting System (CVS) team participated in a roundtable at the Professional Convention Management Association (PCMA) congress in Philadelphia, USA, and joined several panel sessions at the International Pharmaceutical Congress Advisory Association (IPCAA) meeting in Brussels. These congresses provide a fantastic opportunity to exchange ideas with medical societies and Professional…",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.418,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CVS",
-    "PCMA",
-    "IPCAA",
-    "USA"
-   ]
+   "motif": "texte clé : RGPD / GDPR"
   },
   {
    "id": "74862f8fb1cd",
@@ -14522,194 +5149,26 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.776,
+   "score": 0.736,
    "pertinence": "elevee",
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "MDR",
     "IVDR"
-   ]
-  },
-  {
-   "id": "0f5861b959dc",
-   "titre": "Interactions with the Medical Community",
-   "lien": "https://www.medtecheurope.org/interactions-with-the-medical-community/",
-   "resume": "",
-   "date": "2026-02-05",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.586,
-   "pertinence": "elevee",
-   "themes": [
-    "sante_donnees",
-    "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "61413705416f",
-   "titre": "Open Letter: Civil society concerned about extensive and indiscriminate data retention regime in Switzerland",
-   "lien": "https://edri.org/our-work/open-letter-civil-society-concerned-about-extensive-and-indiscriminate-data-retention-regime-in-switzerland/",
-   "resume": "19 civil society organisations have penned a letter to the Swiss Federal Department of Justice and Police (FDJP) to express serious concerns about their plans to extend the Swiss Data Retention regime. They call on the Federal Councilor to align Swiss legislation with the highest standards of protection for people’s privacy. The post Open Letter: Civil society concerned about extensive and indiscriminate data…",
-   "date": "2026-02-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.442,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "cra"
+   "score_bruit": 0.293,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDJP"
-   ]
-  },
-  {
-   "id": "773755a60bba",
-   "titre": "#DIDit: EDRi members spark movement for alternatives to Big Tech",
-   "lien": "https://edri.org/our-work/didit-edri-members-spark-movement-for-alternatives-to-big-tech/",
-   "resume": "At the 39th Chaos Communication Congress (39C3), German author Marc-Uwe Kling helped launch the idea of a monthly “Digital Independence Day” with a broad coalition of civil society organisations. On the first Sunday of each month, participants explore alternatives to dominant digital platforms, share experiences using #DIDit, and support one another through volunteer-led online and in-person meet-ups. To date, 189…",
-   "date": "2026-02-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.403,
-   "pertinence": "moyenne",
-   "themes": [
-    "large",
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "9644db50918c",
-   "titre": "The EU Commission is gutting net neutrality",
-   "lien": "https://edri.org/our-work/the-eu-commission-is-gutting-net-neutrality/",
-   "resume": "The European Commission’s new Digital Networks Act threatens to dismantle nearly a decade of net neutrality protections in Europe. What is being presented as a technical update could actually give politicians control power over the open internet, create paid fast lanes, and weaken independent regulators. The post The EU Commission is gutting net neutrality appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-02-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.515,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "9f5a11d32c2f",
-   "titre": "Hogan Lovells publishes third edition of Asia-Pacific Regulatory Tracker",
-   "lien": "https://www.hlc.com/en/publications/hogan-lovells-publishes-third-edition-of-asiapacific-regulatory-tracker",
-   "resume": "Data protection laws across the Asia-Pacific region continue to evolve rapidly, creating increasing complexity for organizations operating across multiple markets. To help businesses stay...",
-   "date": "2026-02-04",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.439,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "e123b8a036d2",
-   "titre": "Brazil–EU data adequacy: What regulators, policymakers and industry are really saying",
-   "lien": "https://www.hlc.com/en/publications/brazileu-data-adequacy-what-regulators-policymakers-and-industry-are-really-saying",
-   "resume": "Brazil and the European Union have taken a historic step in international data protection with the formalization of mutual adequacy decisions that simplify cross-border personal data...",
-   "date": "2026-02-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.438,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)",
+   "statut": "projet"
   },
   {
    "id": "0a50b70773c4",
@@ -14733,73 +5192,24 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.605,
-   "pertinence": "elevee",
+   "score": 0.565,
+   "pertinence": "moyenne",
    "themes": [
     "acheteurs_sante",
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "FDA",
     "QMSR",
     "CP 7382"
-   ]
-  },
-  {
-   "id": "e8caeee25049",
-   "titre": "Hogan Lovells advises Recordati on its strategic collaboration with Moderna",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-advises-recordati-on-its-strategic-collaboration-with-moderna",
-   "resume": "Global law firm Hogan Lovells has advised Recordati on its strategic collaboration and license agreement with Moderna to develop and commercialize worldwide mRNA-3927, an investigational...",
-   "date": "2026-02-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.246,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "4d7e67c268ae",
-   "titre": "New device QMSR includes significant changes for combination products",
-   "lien": "https://www.hlc.com/en/publications/new-device-qmsr-includes-significant-changes-for-combination-products",
-   "resume": "The new Quality Management System Regulation (QMSR) that became effective on February 2, 2026, includes significant changes in the regulatory framework for combination drug-device and...",
-   "date": "2026-02-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.552,
-   "pertinence": "elevee",
-   "themes": [
-    "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "QMSR"
-   ]
+   "score_bruit": 0.285,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "48517000dedd",
@@ -14823,15 +5233,20 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.611,
+   "score": 0.591,
    "pertinence": "elevee",
    "themes": [
     "sante_donnees",
     "acheteurs_sante"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
-   "acronymes": []
+   "acronymes": [],
+   "score_bruit": 0.209,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "245147982189",
@@ -14858,358 +5273,25 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "filtre_pertinence": true,
    "langue": "en",
-   "score": 0.631,
+   "score": 0.591,
    "pertinence": "elevee",
    "themes": [
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
     "AI"
-   ]
-  },
-  {
-   "id": "65ebb49d0a1f",
-   "titre": "The Data Chronicles – AI, IP & enforcement — Fair use, DMCA shifts, and what comes next",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-ai-ip-enforcement-fair-use-dmca-shifts-and-what-comes-next",
-   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by partners Anna Kurian Shaw and Lauren Cury to unpack how fast‑moving AI innovation is reshaping intellectual property ...",
-   "date": "2026-01-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.469,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "data_act"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "IP",
-    "DMCA"
-   ]
-  },
-  {
-   "id": "94b326ba1a44",
-   "titre": "Hogan Lovells advises Kaia Health on $285 million sale to Sword Health",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-beraet-kaia-health-beim-verkauf-an-sword-health-fuer-285-millionen-usdollar",
-   "resume": "Led by partners Adrienne Ellman, New York, and Peter Huber, Munich, global law firm Hogan Lovells has advised Kaia Health, a digital health company focused on musculoskeletal (MSK) and...",
-   "date": "2026-01-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.425,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante"
+   "score_bruit": 0.384,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "MSK"
-   ]
-  },
-  {
-   "id": "34d8ba209ffa",
-   "titre": "Q4/ 2025 - Life Sciences Law Update",
-   "lien": "https://www.hlc.com/en/publications/q1-and-q3-life-science-and-health-care-law-update",
-   "resume": "The Q1 and Q3 Life Science and Health Care Law Update covers key trends in the EU only while the other reports (on Q2 and Q4) cover key trends in the EU as well as in the Big Five (France,...",
-   "date": "2026-01-29",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.458,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "Q4/ 2025",
-    "Q1",
-    "Q3",
-    "EU",
-    "Q2",
-    "Q4"
-   ]
-  },
-  {
-   "id": "2c78dfaab43e",
-   "titre": "6 Privacy Tips for the Generative AI Era",
-   "lien": "https://fpf.org/blog/6-privacy-tips-for-the-generative-ai-era/",
-   "resume": "Data Privacy Day, or Data Protection Day in Europe, is recognized annually on January 28 to mark the anniversary of Convention 108, the first binding international treaty to protect personal data. The Council of Europe initiated the day in 2006, with the first official celebration held on January 28, 2007, marking this year as the [&#8230;]",
-   "date": "2026-01-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.442,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI"
-   ]
-  },
-  {
-   "id": "b9c703d19b95",
-   "titre": "Data Privacy Day 2026 at Hogan Lovells",
-   "lien": "https://www.hlc.com/en/events/data-privacy-day-2026-at-hogan-lovells",
-   "resume": "On 28 January, the IAPP KnowledgeNet Washington, D.C. chapter is hosting two programs at Hogan Lovells in recognition of Data Privacy Day. The programs will feature Hogan Lovells colleagues ...",
-   "date": "2026-01-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.338,
-   "pertinence": "faible",
-   "themes": [
-    "nis2",
-    "sante_donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "IAPP"
-   ]
-  },
-  {
-   "id": "2c68fea4c30b",
-   "titre": "JPM 2026: Panelists advise on early-stage financing, IP strategy, and VC expectations for leadership",
-   "lien": "https://www.hlc.com/en/publications/jpm-2026-panelists-advise-on-earlystage-financing-ip-strategy-and-vc-expectations-for-leadership",
-   "resume": "Speaking at the 2026 J.P. Morgan Healthcare Conference, John Osborn, senior advisor in the Hogan Lovells life sciences and financial services practices, moderated a panel discussion with...",
-   "date": "2026-01-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.504,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "JPM 2026",
-    "IP"
-   ]
-  },
-  {
-   "id": "58c9d1cd6e33",
-   "titre": "What Trump’s Executive Order means for cannabis research",
-   "lien": "https://www.hlc.com/en/publications/what-trumps-executive-order-means-for-cannabis-research",
-   "resume": "On December 18, 2025, President Trump signed an Executive Order (the “EO”) directing the Department of Justice (DOJ) to complete the rulemaking process related to rescheduling marijuana to...",
-   "date": "2026-01-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "executive order"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.275,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EO",
-    "DOJ"
-   ]
-  },
-  {
-   "id": "4cf75d45ce33",
-   "titre": "German Government launches new Pharma & MedTech Dialogue – Broad agenda, big hopes but unclear prospects",
-   "lien": "https://www.insideeulifesciences.com/2026/01/28/german-government-launches-new-pharma-and-medtech-dialogue/",
-   "resume": "Germany has kicked off a new Pharma and MedTech Dialogue that aims to develop new policies and regulatory reform proposals to re‑establish Germany as a competitive, innovation‑friendly location for life sciences R&D and manufacturing. The outcome of this dialogue shall be the basis for a new German Pharma and MedTech Strategy. I. The Pharma &... Continue Reading…",
-   "date": "2026-01-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.354,
-   "pertinence": "faible",
-   "themes": [
-    "sante_donnees",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "1c60e56ae001",
-   "titre": "FPF Releases Updated Infographic on Age Assurance Technologies, Emerging Standards, and Risk Management",
-   "lien": "https://fpf.org/blog/fpf-releases-updated-infographic-on-age-assurance-technologies-emerging-standards-and-risk-management/",
-   "resume": "The Future of Privacy Forum is releasing an updated version of its Age Assurance: Technologies and Tradeoffs infographic, reflecting how rapidly the technical and policy landscape has evolved over the past year. As lawmakers, platforms, and regulators increasingly converge on age assurance as a governance tool, the updated infographic sharpens the focus on proportionality, privacy [&#8230;]",
-   "date": "2026-01-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.414,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "5a504898c1f8",
-   "titre": "Singapore launches first global Agentic AI governance framework",
-   "lien": "https://www.hlc.com/en/publications/singapore-launches-first-global-agentic-ai-governance-framework",
-   "resume": "On 22 January 2026, Singapore unveiled the Model AI Governance Framework for Agentic AI ( MGF ) at the World Economic Forum 2026, reinforcing its commitment to keeping pace with rapid...",
-   "date": "2026-01-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.512,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "AI",
-    "MGF"
-   ]
-  },
-  {
-   "id": "23e28dbedbdf",
-   "titre": "Hong Kong’s proposed cybercrime reform – What businesses need to know",
-   "lien": "https://www.hlc.com/en/publications/hong-kongs-proposed-cybercrime-reform-what-businesses-need-to-know",
-   "resume": "Cybercrime in Hong Kong is becoming more sophisticated, and the Hong Kong authorities are responding. A new Law Reform Commission report has proposed sweeping changes that could...",
-   "date": "2026-01-27",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.481,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : RGPD / GDPR"
   },
   {
    "id": "628e2af51339",
@@ -15230,17 +5312,24 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "langue": "en",
    "score": 0.507,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "acheteurs_sante",
     "dm_div"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "GMP",
     "IGJ"
-   ]
+   ],
+   "score_bruit": 0.254,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "BPF / GMP Annexe 11 et 22"
+   ],
+   "motif": "texte clé : BPF / GMP Annexe 11 et 22"
   },
   {
    "id": "d4d5a1d0e34f",
@@ -15266,284 +5355,18 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "AI",
     "DSA"
-   ]
-  },
-  {
-   "id": "71f3a007f9e5",
-   "titre": "Future of Privacy Forum to Honor Top Scholarship at Annual Privacy Papers for Policymakers Event",
-   "lien": "https://fpf.org/blog/future-of-privacy-forum-to-honor-top-scholarship-at-annual-privacy-papers-for-policymakers-event/",
-   "resume": "Washington D.C. — (January 26th, 2026) — Today, the Future of Privacy Forum (FPF) — a global non-profit that advances principled and pragmatic data protection, AI, and digital governance practices — announced the winners of its 16th annual Privacy Papers for Policymakers (PPPM) Awards. The PPPM Awards recognize leading research and analytical scholarship in privacy [&#8230;]",
-   "date": "2026-01-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.413,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF",
-    "AI",
-    "PPPM"
-   ]
-  },
-  {
-   "id": "086e6bc137ba",
-   "titre": "ABS Enforcement Expected in Spain: Spain Adopted a National Plan to Enforce Access and Benefit-Sharing Rules",
-   "lien": "https://www.insideeulifesciences.com/2026/01/26/abs-enforcement-expected-in-spain-spain-adopted-a-national-plan-to-enforce-access-and-benefit-sharing-rules/",
-   "resume": "On November 5, 2025, the Spanish Ministry for Ecological Transition and Demographic Challenge (“MITECO”) adopted a Resolution setting out the National Plan for the control of compliance with access and benefit-sharing (“ABS”) obligations under Regulation 511/2014 implementing the Nagoya Protocol in the European Union. The National Plan sets out a “risk-based” control system to ensure... Continue Reading…",
-   "date": "2026-01-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Inside EU Life Sciences (blog Covington & Burling)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.411,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "ABS",
-    "MITECO"
-   ]
-  },
-  {
-   "id": "44842367244d",
-   "titre": "FPF Releases an Updated Issue Brief on Vietnam’s Law on Protection of Personal Data and the Law on Data",
-   "lien": "https://fpf.org/blog/fpf-releases-updated-issue-brief-on-vietnams-law-on-protection-of-personal-data-and-the-law-on-data/",
-   "resume": "This Issue Brief has been updated to reflect the latest changes introduced by Decree 356/2025, the implementing decree to Vietnam’s Personal Data Protection Law, which was enacted on 31 December 2025. Vietnam is undergoing a sweeping transformation of its data protection and governance framework. Over the past two years, the country has accelerated its efforts to [&#8230;]",
-   "date": "2026-01-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.503,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "f899307ddaae",
-   "titre": "Innovation and Data Privacy Are Not Natural Enemies: Insights from Korea’s Experience",
-   "lien": "https://fpf.org/blog/innovation-and-data-privacy-are-not-natural-enemies-insights-from-koreas-experience/",
-   "resume": "The following is a guest post to the FPF blog authored by Dr. Haksoo Ko, Professor at Seoul National University School of Law, FPF Senior Fellow and former Chairperson of South Korea’s Personal Information Protection Commission. The guest post reflects the opinion of the author only and does not necessarily reflect the position or views [&#8230;]",
-   "date": "2026-01-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.441,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FPF"
-   ]
-  },
-  {
-   "id": "c76615397cff",
-   "titre": "Follow the Sun | Global perspectives on data, privacy & cybersecurity",
-   "lien": "https://www.hlc.com/en/publications/follow-the-sun-global-perspectives-on-data-privacy-cybersecurity",
-   "resume": "Digital risks and opportunities now move as quickly as the world turns. Data, privacy, and cybersecurity challenges surface across markets and time zones — and organizations need...",
-   "date": "2026-01-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.588,
-   "pertinence": "elevee",
-   "themes": [
-    "dm_div",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "e5c6352dc5d4",
-   "titre": "Proactive and forward-looking disclosure risks for pharma",
-   "lien": "https://www.hlc.com/en/publications/proactive-and-forwardlooking-disclosure-risks-for-pharma",
-   "resume": "Jennifer Windom and Bolton Smith present the risks and considerations pharmaceutical and life sciences companies have to take when making proactive and forward-looking disclosure...",
-   "date": "2026-01-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.469,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "3179d7d68c8f",
-   "titre": "Fighting for algorithmic justice: lessons learned in working closely with affected people",
-   "lien": "https://edri.org/our-work/fighting-for-algorithmic-justice-lessons-learned-in-working-closely-with-affected-people/",
-   "resume": "Bits of Freedom shares lessons learned while working on “Amsterdam Top400”, an invasive municipality project which involved the use of predictive policing and led to unwanted interference in the private lives of young people. Together with a coalition of professionals from different background and affected individuals, they explored the possibility of holding the municipality of Amsterdam accountable for violations…",
-   "date": "2026-01-21",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.414,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "284e5678094b",
-   "titre": "EDRi launches new resource to document abuses and support a full ban on spyware in Europe",
-   "lien": "https://edri.org/our-work/edri-launches-a-spyware-document-pool-to-document-abuses-and-support-a-full-ban-on-spyware-in-europe/",
-   "resume": "Spyware continues to spread across Europe despite years of scandals and undisputable evidence of fundamental rights violations. As the European Commission remains inactive, civil society, journalists and some lawmakers at the European Parliament are stepping up pressure for accountability. In this context, EDRi is launching a document pool to centralise resources that tracks abuse and support the growing push for a…",
-   "date": "2026-01-21",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.546,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques",
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "976180d6f2ee",
-   "titre": "CNAF’s discriminatory scoring algorithm: 10 new organisations join the case before the Conseil d’État in France",
-   "lien": "https://edri.org/our-work/cnafs-discriminatory-scoring-algorithm-10-new-organisations-join-the-case-before-the-conseil-detat-in-france/",
-   "resume": "10 organisation, including EDRi, have joined an ongoing coalition effort to challenge the discriminatory algorithms used by the family branch of the French welfare system (CNAF). In the current deregulation spree by the European Commission, this legal action represents resistance to the rollback of fundamental rights protections and the increase of rights infringing legislation. Read an update about the strengthened…",
-   "date": "2026-01-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.417,
-   "pertinence": "moyenne",
-   "themes": [
-    "infra_critiques",
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CNAF"
-   ]
+   "score_bruit": 0.363,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": ""
   },
   {
    "id": "6da06edd07ea",
@@ -15564,17 +5387,25 @@ window.VEILLE_DEBATS = {
    "amende": null,
    "langue": "en",
    "score": 0.482,
-   "pertinence": "moyenne",
+   "pertinence": "elevee",
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "BCR",
     "EDPB",
     "BCR-P"
-   ]
+   ],
+   "score_bruit": 0.37,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "projet"
   },
   {
    "id": "0bb46f7b252f",
@@ -15601,591 +5432,24 @@ window.VEILLE_DEBATS = {
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.834,
+   "score": 0.794,
    "pertinence": "elevee",
    "themes": [
     "cra"
    ],
-   "pertinence_v": "f2147c8cecmodele",
+   "pertinence_v": "v4-5be8160b4amodele",
    "echeances": [],
    "acronymes": [
     "EU",
     "CRA"
-   ]
-  },
-  {
-   "id": "a6f48274f229",
-   "titre": "JPM 2026: How to expand internationally while ensuring regulatory compliance",
-   "lien": "https://www.hlc.com/en/publications/jpm-2026-how-to-expand-internationally-while-ensuring-regulatory-compliance",
-   "resume": "As life sciences companies expand internationally, regulatory readiness must evolve into a strategic capability that supports global business planning and innovation. Speaking at the 2026...",
-   "date": "2026-01-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.355,
-   "pertinence": "faible",
-   "themes": [
-    "fournisseurs_publics",
-    "large"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "JPM 2026"
-   ]
-  },
-  {
-   "id": "2a0bf3c1160a",
-   "titre": "OIG says Discount Safe Harbor protects some market share discounts, confirms scope of protection for bundled discounts in noteworthy advisory opinion",
-   "lien": "https://www.hlc.com/en/publications/oig-says-discount-safe-harbor-protects-some-market-share-discounts",
-   "resume": "In an advisory opinion published at the end of 2025, the U.S. Department of Health and Human Services Office of Inspector General (OIG) addressed—to a degree—several longstanding questions...",
-   "date": "2026-01-20",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.497,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "donnees"
+   "score_bruit": 0.433,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
    ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "OIG"
-   ]
-  },
-  {
-   "id": "40cf7f74e3dd",
-   "titre": "Spyware Document Pool",
-   "lien": "https://edri.org/our-work/spyware-document-pool/",
-   "resume": "Spyware is one of the most serious threats to fundamental rights, democracy and civic space across Europe. This document pool brings together EDRi’s 25 analysis, advocacy, research, and curated third-party resources as part of our push for a full EU-wide ban on spyware. The post Spyware Document Pool appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-01-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.587,
-   "pertinence": "elevee",
-   "themes": [
-    "cra"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "EU"
-   ]
-  },
-  {
-   "id": "cfe5e54cd130",
-   "titre": "The Decree amending, adding, and repealing various provisions of the General Health Law was published in the federal official gazette",
-   "lien": "https://www.hlc.com/en/publications/the-decree-amending-adding-and-repealing-various-provisions-of-the-general-health-law-was-published",
-   "resume": "On January 15th, 2026, the Decree amending, adding, and repealing various provisions of the General Health Law (“Amendment”) was published in the Federal Official Gazette. While the...",
-   "date": "2026-01-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "amendment"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.422,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "dbdc8a2bd84f",
-   "titre": "Hogan Lovells advises Farmacosmo and founder Andrea Bianchi on the sale of a 55% stake of Baubau S.r.l. to Pet Being",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-advises-farmacosmo-and-founder-andrea-bianchi-on-the-sale-of-a-55-stake-of-baubau-srl-to-pet-being",
-   "resume": "Global law firm Hogan Lovells has advised Farmacosmo S.p.A. &ndash; a company listed on Euronext Growth Milan &ndash; and founder Andrea Bianchi on the sale of a 55% stake in the share...",
-   "date": "2026-01-19",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.283,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "13e9ee4ad126",
-   "titre": "Se publica en el Diario Oficial de la Federación el Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley General de Salud",
-   "lien": "https://www.hlc.com/en/publications/se-publica-en-el-diario-oficial-de-la-federacion-el-decreto-por-el-que-se-reforman",
-   "resume": "El 15 de enero de 2026 se publicó en el Diario Oficial de la Federación el Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley General de...",
-   "date": "2026-01-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "es",
-   "score": 0.437,
-   "pertinence": "moyenne",
-   "themes": [
-    "donnees",
-    "normes"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "613baa979855",
-   "titre": "The Data Chronicles | Data Brokers | State patchwork, federal pressure, and emerging risks",
-   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-data-brokers-state-patchwork-federal-pressure-and-emerging-risks",
-   "resume": "Data brokers sit at the center of a fast-shifting legal landscape. In this episode of The Data Chronicles, host Scott Loughlin is joined by counsel Khaled Mowad and senior associate Sophie...",
-   "date": "2026-01-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.499,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "259089abd2bd",
-   "titre": "JPM 2026: FDA panelists prioritize faster approvals, national security, AI, and more",
-   "lien": "https://www.hlc.com/en/publications/jpm-2026-fda-panelists-prioritize-faster-approvals-national-security-ai-and-more",
-   "resume": "Speaking at the 2026 J.P. Morgan Healthcare Conference, Hogan Lovells global regulatory partners Elizabeth Jungman and Brian Carey moderated a panel discussion with U.S. Food and Drug...",
-   "date": "2026-01-16",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Santé"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.527,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "JPM 2026",
-    "FDA",
-    "AI"
-   ]
-  },
-  {
-   "id": "e1c43cbbd73f",
-   "titre": "Connected Life Brochure 2026",
-   "lien": "https://www.hlc.com/en/publications/connected-life-brochure-2026",
-   "resume": "Digital ecosystems are rapidly transforming how we live, work, and interact. From smart cities and connected vehicles to wearables, immersive sports venues, and connected medical devices,...",
-   "date": "2026-01-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Dispositifs médicaux"
-   ],
-   "groupes": [
-    "Termes santé"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.557,
-   "pertinence": "elevee",
-   "themes": [
-    "acheteurs_sante",
-    "large"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "f47f04a5760c",
-   "titre": "QFC, DIFC and ADGM advance regional data protection cooperation through mutual adequacy recognition",
-   "lien": "https://www.hlc.com/en/publications/qfc-difc-and-adgm-advance-regional-data-protection-cooperation-through-mutual-adequacy-recognition",
-   "resume": "The Qatar Financial Centre (QFC), Dubai International Financial Centre (DIFC), and Abu Dhabi Global Market (ADGM) have taken a significant step forward in regional regulatory cooperation by ...",
-   "date": "2026-01-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.374,
-   "pertinence": "faible",
-   "themes": [
-    "fournisseurs_publics",
-    "infra_critiques"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "QFC",
-    "DIFC",
-    "ADGM"
-   ]
-  },
-  {
-   "id": "229dcca80d02",
-   "titre": "Singapore to expand public sector data sharing law",
-   "lien": "https://www.hlc.com/en/publications/singapore-to-expand-public-sector-data-sharing-law",
-   "resume": "On 12 January 2026, Singapore's Parliament passed the Public Sector (Governance) (Amendment) Bill 2025 (the Bill), which seeks to expand the data sharing framework under the Public...",
-   "date": "2026-01-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "amendment"
-   ],
-   "groupes": [
-    "Nouveaux textes réglementaires"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.47,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "bd415582160a",
-   "titre": "Mobile line registration in Mexico: Who is affected by the new regulatory obligations?",
-   "lien": "https://www.hlc.com/en/publications/mobile-line-registration-in-mexico-who-is-affected-by-the-new-regulatory-obligations",
-   "resume": "Pursuant to article 104 of the recently enacted 2025 Telecommunications and Broadcasting Law, the CRT issued Guidelines establishing mandatory requirements to link mobile telephone lines to ...",
-   "date": "2026-01-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "guideline"
-   ],
-   "groupes": [
-    "Standards Cyber"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.464,
-   "pertinence": "moyenne",
-   "themes": [
-    "large",
-    "donnees"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CRT"
-   ]
-  },
-  {
-   "id": "ad11c53bff2c",
-   "titre": "Global Bribery, Investigations and Enforcement Outlook 2026",
-   "lien": "https://www.hlc.com/en/publications/global-bribery-investigations-and-enforcement-outlook-2026",
-   "resume": "The enforcement risks facing multinationals – and, by extension, their legal and compliance leaders – are multiplying. In recent years, anti-bribery concerns have been joined by ...",
-   "date": "2026-01-13",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.506,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "nis2"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
-  },
-  {
-   "id": "673f2aae5864",
-   "titre": "The RAISE Act vs. SB 53: A Tale of Two Frontier AI Laws",
-   "lien": "https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/",
-   "resume": "What the enactment of New York’s RAISE Act reveals compared to California’s SB 53, the nation’s first frontier AI law On December 19, New York Governor Hochul (D) signed the Responsible AI Safety and Education (RAISE) Act, ending months of uncertainty after the bill passed the legislature in June and making New York the second [&#8230;]",
-   "date": "2026-01-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Future of Privacy Forum (FPF)",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.552,
-   "pertinence": "elevee",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "RAISE",
-    "SB53",
-    "AI"
-   ]
-  },
-  {
-   "id": "549d94202c03",
-   "titre": "JPM 2026: AI compliance and BIOSECURE top list of device supply chain concerns",
-   "lien": "https://www.hlc.com/en/publications/ai-compliance-and-biosecure-top-list-of-device",
-   "resume": "As life sciences companies expand internationally, regulatory readiness must evolve into a strategic capability that supports global business planning and innovation. On January 12, our Fire...",
-   "date": "2026-01-08",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.587,
-   "pertinence": "elevee",
-   "themes": [
-    "acheteurs_sante",
-    "ia"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "JPM 2026",
-    "AI"
-   ]
-  },
-  {
-   "id": "be87b357041c",
-   "titre": "Call for comments: FDA wants feedback on the distinct classification of existing device accessories into Class I",
-   "lien": "https://www.hlc.com/en/publications/call-for-comments-fda-wants-feedback-on-the-distinct-classification-of-existing-device-accessories",
-   "resume": "FDA's Center for Devices and Radiological Health (CDRH) issued a request for public comment on December 5, 2025, seeking feedback on the distinct classification of existing medical...",
-   "date": "2026-01-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.578,
-   "pertinence": "elevee",
-   "themes": [
-    "dm_div"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "FDA",
-    "CDRH"
-   ]
-  },
-  {
-   "id": "0a8d8b38dfaf",
-   "titre": "China announces audit reporting requirements for minors’ data",
-   "lien": "https://www.hlc.com/en/publications/china-announces-audit-reporting-requirements-for-minors-data",
-   "resume": "On December 29, 2025, the Cyberspace Administration of China (CAC) issued the Announcement on the Reporting of Minors' Personal Information Protection Compliance Audit Status, which...",
-   "date": "2026-01-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.442,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "CAC"
-   ]
-  },
-  {
-   "id": "332951cfa120",
-   "titre": "JPM 2026: CRE obligations in life sciences partnering agreements",
-   "lien": "https://www.hlc.com/en/publications/jpm-2026-cre-clauses-in-life-sciences-contracts",
-   "resume": "With novel regulatory frameworks, market dynamics, and supply chain pressures influencing life sciences & health care deal structures and partnership models, biopharmaceutical companies ...",
-   "date": "2026-01-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.441,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": [
-    "JPM 2026",
-    "CRE"
-   ]
-  },
-  {
-   "id": "858de0be111a",
-   "titre": "Hogan Lovells welcomes 2026 with partner and counsel promotions across the Americas, Europe, and Asia-Pacific",
-   "lien": "https://www.hlc.com/en/news/hogan-lovells-welcomes-2026-with-partner-and-counsel-promotions-across-the-americas-europe-and-asiapacific",
-   "resume": "6 January 2026 &ndash; Global law firm Hogan Lovells announced the promotion of 28 lawyers to partner and 53 to counsel effective 1 January.&nbsp;",
-   "date": "2026-01-06",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Hogan Lovells (HLC) - Our thinking",
-   "zone": "Worldwide",
-   "nature": "opinion",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.227,
-   "pertinence": "faible",
-   "themes": [],
-   "pertinence_v": "f2147c8cecmodele",
-   "echeances": [],
-   "acronymes": []
+   "motif": "texte clé : CRA"
   }
  ]
 };

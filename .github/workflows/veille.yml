@@ -82,7 +82,10 @@ jobs:
 
       - name: Installer les dépendances
         if: steps.garde.outputs.lancer == 'true'
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          # police libre DejaVu pour l'export PDF (accents, polonais, tchèque, grec…)
+          sudo apt-get install -y -qq fonts-dejavu-core > /dev/null || true
 
       # Traduction (Argos Translate) et note de pertinence (sentence-transformers) :
       # modèles open source gratuits. Si cette étape échoue, la collecte continue
@@ -110,11 +113,7 @@ jobs:
         run: python collecte/collecte.py
         env:
           RATTRAPAGE_DEPUIS: ${{ github.event.inputs.rattrapage_depuis }}
-          # Identifiants de l'API Légifrance (PISTE), à créer dans
-          # Settings > Secrets and variables > Actions. Facultatifs.
-          LEGIFRANCE_CLIENT_ID: ${{ secrets.LEGIFRANCE_CLIENT_ID }}
-          LEGIFRANCE_CLIENT_SECRET: ${{ secrets.LEGIFRANCE_CLIENT_SECRET }}
-          LEGIFRANCE_ENV: ${{ vars.LEGIFRANCE_ENV }}
+          # Journal officiel français : données ouvertes de la DILA, aucun identifiant nécessaire.
 
       - name: Enregistrer les données et marquer la version
         if: steps.garde.outputs.lancer == 'true'
@@ -141,6 +140,7 @@ jobs:
           mkdir -p _site/data
           cp index.html style.css script.js _site/
           cp data/*.js _site/data/
+          cp data/*.pdf _site/data/ 2>/dev/null || true
 
       - uses: actions/configure-pages@v5
         if: steps.garde.outputs.lancer == 'true'

@@ -1,4 +1,6 @@
-# Cyber Watch — ajout / retrait de source demandé depuis le site (sans jeton).
+# Cyber Watch — demandes faites depuis le site (sans jeton) : ajout / retrait de
+# source (issue « [Source] ») et avis sur un article (issue « [Avis] » : boutons
+# « Important » / « Pas pertinent », enregistrés dans config/retours.json).
 #
 # Le site ouvre une « issue » GitHub pré-remplie, étiquetée « source ».
 #  - Si elle est ouverte par un propriétaire ou un collaborateur du dépôt, la
@@ -25,7 +27,7 @@ concurrency:
 jobs:
   appliquer:
     if: >-
-      startsWith(github.event.issue.title, '[Source]') && (
+      (startsWith(github.event.issue.title, '[Source]') || startsWith(github.event.issue.title, '[Avis]')) && (
         (github.event.action == 'opened' && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)) ||
         (github.event.action == 'labeled' && github.event.label.name == 'approuvé')
       )
@@ -55,8 +57,8 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add config/sources_manuelles.json
-          git diff --cached --quiet || git commit -m "Sources : demande #${{ github.event.issue.number }}"
+          git add config/sources_manuelles.json config/retours.json 2>/dev/null || git add config/sources_manuelles.json
+          git diff --cached --quiet || git commit -m "Site : demande #${{ github.event.issue.number }}"
           git pull --rebase origin main
           git push origin HEAD:main
 

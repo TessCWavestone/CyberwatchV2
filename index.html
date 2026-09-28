@@ -77,6 +77,19 @@
       <p class="empty" id="une-vide" hidden data-i18n="une_empty"></p>
     </section>
 
+    <section class="textes-mois" aria-labelledby="tm-titre">
+      <header class="block-head">
+        <h2 id="tm-titre" data-i18n="tm_title">Nouvelles réglementations et normes</h2>
+        <p class="block-lead" data-i18n="tm_lead"></p>
+      </header>
+      <div class="seg" role="group" id="tm-periode">
+        <button type="button" data-j="30" aria-pressed="true" data-i18n="p30">30 jours</button>
+        <button type="button" data-j="90" data-i18n="p90">3 mois</button>
+      </div>
+      <div id="tm-liste" class="tm-liste"></div>
+      <p class="empty" id="tm-vide" hidden data-i18n="tm_empty"></p>
+    </section>
+
     <section class="agenda" aria-labelledby="agenda-titre">
       <header class="block-head">
         <h2 id="agenda-titre" data-i18n="agenda_title">Dates clés</h2>
@@ -139,6 +152,8 @@
     </div>
 
     <p class="result-count" id="result-count" aria-live="polite"></p>
+    <p class="surveiller-note" id="surveiller-note" hidden><span id="surveiller-texte"></span>
+      <button type="button" class="linkbtn" id="surveiller-bascule"></button></p>
     <p class="empty" id="empty-state" hidden data-i18n="empty">Aucun article ne correspond à ces filtres.</p>
     <p class="empty" id="no-data" hidden data-i18n="no_data"></p>
     <div id="rubriques"></div>
@@ -283,6 +298,29 @@
       <p class="block-meta" id="trad-status"></p>
     </section>
 
+    <details class="annexe" id="couverture">
+      <summary><span data-i18n="cov_title">Couverture : pays × thème</span> <span class="block-meta" id="cov-resume"></span></summary>
+      <p class="block-lead" data-i18n="cov_lead"></p>
+      <div class="table-wrap"><table class="data-table cov-table" id="cov-table"></table></div>
+    </details>
+
+    <details class="annexe" id="ecartes">
+      <summary><span data-i18n="ec_title">Articles écartés</span> <span class="block-meta" id="ec-resume"></span></summary>
+      <p class="block-lead" data-i18n="ec_lead"></p>
+      <div class="toolbar">
+        <input type="search" id="ec-recherche" class="search" data-i18n-ph="ec_search_ph" autocomplete="off" aria-label="Filtrer">
+        <select id="ec-motif" class="select" aria-label="Motif"></select>
+        <button type="button" class="btn btn-quiet" id="ec-export" data-i18n="ec_export">Télécharger la liste (Excel)</button>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="ec_th_date">Date</th><th data-i18n="ec_th_title">Titre</th><th data-i18n="th_source">Source</th><th data-i18n="ec_th_reason">Motif</th><th data-i18n="th_action">Action</th></tr></thead>
+          <tbody id="ec-lignes"></tbody>
+        </table>
+      </div>
+      <p class="block-meta" id="ec-plus"></p>
+    </details>
+
     <details class="annexe" id="acronymes">
       <summary><span data-i18n="acro_title">Acronymes détectés</span> <span class="block-meta" id="acro-resume"></span></summary>
       <p class="block-lead" data-i18n="acro_lead"></p>
@@ -343,6 +381,7 @@
 <script src="data/versions.js" onerror="window.VEILLE_VERSIONS=null"></script>
 <script src="data/referentiel.js" onerror="window.VEILLE_REFERENTIEL=null"></script>
 <script src="data/debats.js" onerror="window.VEILLE_DEBATS=null"></script>
+<script src="data/ecartes_site.js" onerror="window.VEILLE_ECARTES=null"></script>
 <script src="data/monde.js" onerror="window.VEILLE_MONDE=null"></script>
 <script src="script.js"></script>
 </body>

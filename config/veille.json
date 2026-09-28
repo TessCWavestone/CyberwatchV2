@@ -56,7 +56,7 @@
       "groupes": []
     }
   ],
-  "_aide_groupes": "Les mots-clés ne servent plus à écarter un article : TOUS les articles collectés sont gardés. Ils justifient la présence d'un article (affichés dans « Pourquoi cet article »), orientent sa rubrique et donnent un petit bonus à sa note de pertinence. Un groupe « non suffisant » (termes génériques comme 'amendment') donne un bonus plus faible et ne choisit pas la rubrique. La note de pertinence elle-même se règle dans config/profil_pertinence.json.",
+  "_aide_groupes": "Les mots-clés n'écartent jamais un article : ils justifient sa présence (« Pourquoi cet article »), orientent sa rubrique et donnent un petit bonus à sa note. Le niveau final (essentiel, très pertinent, pertinent, à surveiller, écarté) est décidé par collecte/regles.py (textes clés, signal réglementaire, bruit) et config/profil_pertinence.json. Un groupe « non suffisant » (termes génériques) donne un bonus plus faible et ne choisit pas la rubrique.",
   "groupes_non_suffisants": [
     "Nouveaux textes réglementaires",
     "Standards Cyber",
@@ -313,21 +313,6 @@
   "delai_requete_secondes": 25,
   "requetes_paralleles": 8,
   "user_agent": "CyberWatch-Veille/1.0 (+veille reglementaire; contact interne)",
-  "_aide_legifrance": "Recherche dans le Journal officiel via l'API PISTE. Les identifiants ne sont jamais écrits ici : ils sont stockés dans les secrets GitHub (voir README).",
-  "legifrance": {
-    "environnement": "sandbox",
-    "jours": 30,
-    "mots_cles": [
-      "cybersécurité",
-      "sécurité des systèmes d'information",
-      "résilience des infrastructures critiques",
-      "NIS 2",
-      "données de santé",
-      "dispositif médical de diagnostic in vitro",
-      "intelligence artificielle",
-      "hébergement de données de santé"
-    ]
-  },
   "surtitre_en": "Regulatory watch — Wavestone",
   "sous_titre_en": "Cybersecurity · Data · AI · Medical devices — automated collection every Monday",
   "libelles_en": {
@@ -360,5 +345,7 @@
   "rattrapage_pages_max": 15,
   "_aide_rattrapage": "Rattrapage ponctuel des archives : dans GitHub, Actions > Run workflow > « Rattrapage depuis » = 2026-01-01. Nombre maximal de pages d'archives lues par source.",
   "date_debut_veille": "2026-01-01",
-  "_aide_date_debut": "Aucun article antérieur à cette date n'est ajouté (début de la base de connaissance)."
+  "_aide_date_debut": "Aucun article antérieur à cette date n'est ajouté (début de la base de connaissance).",
+  "dila_jours_premiere_collecte": 21,
+  "nb_max_ecartes": 8000
 }

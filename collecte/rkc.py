@@ -1,17 +1,24 @@
 """
-Cyber Watch — lecture des veilles RKC (Wavestone) déposées dans un dépôt PRIVÉ.
+Cyber Watch — lecture des veilles RKC (alerte Nexis Newsdesk) déposées dans un
+dépôt GitHub PRIVÉ.
 
-Le workflow GitHub récupère ce dépôt privé dans le dossier « rkc/ » (jamais
-publié). On y dépose chaque semaine :
-  - le mail RKC, enregistré depuis Outlook au format .eml ou .msg
-    (liste de liens vers des articles gratuits et payants) ;
-  - le fichier Word « Veille AAAA-MM-JJ.docx » qui contient le texte des
-    articles payants.
+Le workflow récupère ce dépôt privé dans le dossier « rkc/ » (jamais publié,
+supprimé avant l'enregistrement). On y dépose le mail de l'alerte, enregistré
+depuis Outlook au format .msg ou .eml (et, facultativement, un Word .docx
+contenant le texte d'articles payants).
 
-CONFIDENTIALITÉ : le site est public. Le texte des articles n'est JAMAIS
-publié : il sert uniquement à calculer la pertinence, repérer une amende et
-des dates clés. Le site n'affiche que le titre, le lien, la date, la note de
-pertinence et les thèmes.
+Lecture « structurée » du mail Newsdesk : pour chaque article on garde
+  - le titre (lien « click » Newsdesk, identifiant d'article a=…),
+  - le nom de la publication, la date de l'article (« 22 Aug 2026 02:00 »),
+  - l'extrait (« ...texte... ») : PRIVÉ, sert seulement à la note de pertinence.
+Sont ignorés : en-tête du transfert (De / Envoyé / À / Objet), signature,
+« View in browser », liens vers le site racine de la publication, pied de page.
+Les liens sont décodés (Proofpoint urldefense v3, Outlook safelinks).
+
+CONFIDENTIALITÉ : le site est public. On n'y publie jamais l'extrait, ni le
+lien Newsdesk brut (il contient des identifiants d'abonné) : le lien publié
+est l'adresse finale de l'article (résolue pendant la collecte) ou, à défaut,
+une recherche du titre.
 """
 
 import datetime as dt
@@ -20,41 +27,61 @@ import email.policy
 import glob
 import os
 import re
-from urllib.parse import parse_qs, unquote, urlparse
+import struct
+from urllib.parse import parse_qs, quote_plus, unquote, urlparse
 
-from bs4 import BeautifulSoup
-
-LIENS_EXCLUS = re.compile(
-    r"(unsubscribe|desinscri|désinscri|mailto:|linkedin\.com|twitter\.com|x\.com/|facebook\.com|youtube\.com|"
-    r"instagram\.com|aka\.ms|privacy|confidentialit|view.?in.?browser|voir.?dans.?le.?navigateur|"
-    r"\.(png|jpe?g|gif|svg)(\?|$))", re.I)
-TEXTES_GENERIQUES = re.compile(r"^(ici|here|lien|link|lire|read( more)?|en savoir plus|voir|article|source|→|»)$", re.I)
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 PAYS = {
-    "Allemagne": r"allemagne|allemand|germany|german|deutschland|bsi\b|bfarm", "Autriche": r"autriche|autrichien|austria|österreich",
-    "Belgique": r"belgique|belge|belgium|belgian|belgië", "Danemark": r"danemark|danois|denmark|danish|danmark",
-    "Espagne": r"espagne|espagnol|spain|spanish|españa|aepd|ccn-cert|incibe", "Finlande": r"finlande|finlandais|finland|finnish|suomi",
-    "France": r"\bfrance\b|french|française|français|cnil|anssi|\bans\b", "Grèce": r"grèce|grec\b|grecque|greece|greek|ελλάδα",
+    "Allemagne": r"allemagne|allemand|germany|german|deutschland|\bbsi\b|bfarm", "Autriche": r"autriche|autrichien|austria|osterreich",
+    "Belgique": r"belgique|belge|belgium|belgian|belgie", "Danemark": r"danemark|danois|denmark|danish|danmark",
+    "Espagne": r"espagne|espagnol|spain|spanish|espana|aepd|ccn-cert|incibe", "Finlande": r"finlande|finlandais|finland|finnish|suomi",
+    "France": r"\bfrance\b|french|francaise|francais|cnil|anssi", "Grèce": r"grece|grec\b|grecque|greece|greek",
     "Hongrie": r"hongrie|hongrois|hungary|hungarian|magyar", "Italie": r"italie|italien|italy|italian|italia|garante",
-    "Norvège": r"norvège|norvégien|norway|norwegian|norge", "Pays-Bas": r"pays-bas|néerlandais|netherlands|dutch|nederland",
+    "Norvège": r"norvege|norvegien|norway|norwegian|norge", "Pays-Bas": r"pays-bas|neerlandais|netherlands|dutch|nederland",
     "Pologne": r"pologne|polonais|poland|polish|polska|uodo", "Portugal": r"portugal|portugais|portuguese|cnpd",
-    "Rép. Tchèque": r"tchèque|czech|česk", "Royaume-Uni": r"royaume-uni|britannique|united kingdom|\buk\b|britain|british|\bnhs\b|\bico\b|ncsc",
-    "Suède": r"suède|suédois|sweden|swedish|sverige", "Suisse": r"suisse|switzerland|swiss|schweiz",
-    "Europe": r"européen|european|\beu\b|\bue\b|commission|enisa|edpb|nis2|cyber resilience act|ai act|ehds",
+    "Rép. Tchèque": r"tcheque|czech|cesk", "Royaume-Uni": r"royaume-uni|britannique|united kingdom|\buk\b|britain|british|\bnhs\b|\bico\b|ncsc",
+    "Suède": r"suede|suedois|sweden|swedish|sverige", "Suisse": r"suisse|switzerland|swiss|schweiz",
+    "Europe": r"europeen|european|\beu\b|\bue\b|commission|enisa|edpb|nis2|cyber resilience act|ai act|ehds",
 }
+MOIS_EN = {m: i + 1 for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split())}
+RE_DATE_ND = re.compile(r"\b(\d{1,2}) ([A-Z][a-z]{2}) (20\d\d)(?: \d\d:\d\d)?")
+PIED = re.compile(r"If you wish to unsubscribe|About LexisNexis|Pour vous d[ée]sabonner", re.I)
+
+
+def _sa(s):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
+
+
+def espaces(s):
+    return re.sub(r"\s+", " ", s or "").strip()
 
 
 def zone_probable(texte):
-    t = texte.lower()
+    t = _sa(texte).lower()
     scores = {z: len(re.findall(rx, t)) for z, rx in PAYS.items()}
     z = max(scores, key=scores.get)
-    return z if scores[z] else "Europe"
+    # aucun pays européen reconnu : article probablement international (écarté s'il ne parle pas de l'Europe)
+    return z if scores[z] else "Worldwide"
 
 
 def deballer_lien(url):
-    """Liens Outlook « safelinks » et redirections de suivi -> URL d'origine."""
+    """Proofpoint urldefense (v2, v3), Outlook safelinks -> URL d'origine."""
+    url = (url or "").strip()
+    m = re.match(r"https?://urldefense(?:\.proofpoint)?\.com/v3/__(.+?)__;", url)
+    if m:
+        brut = m.group(1)
+        # v3 : les caractères spéciaux sont remplacés par « * » (le jeu exact est dans la partie encodée,
+        # « *21 » = « ! » dans les liens Newsdesk) ; on remet les plus courants
+        brut = brut.replace("*21", "!").replace("*2A", "*").replace("**", "*")
+        return brut
     p = urlparse(url)
-    if "safelinks.protection.outlook.com" in p.netloc or p.path.endswith("/redirect"):
+    if "urldefense" in p.netloc and p.path.startswith("/v2/"):
+        q = parse_qs(p.query)
+        if q.get("u"):
+            return unquote(q["u"][0].replace("-", "%").replace("_", "/"))
+    if "safelinks.protection.outlook.com" in p.netloc:
         q = parse_qs(p.query)
         for cle in ("url", "u", "target"):
             if q.get(cle):
@@ -63,29 +90,117 @@ def deballer_lien(url):
 
 
 def date_depuis_nom(nom, aujourdhui):
-    """« Veille 2026-04-21 », « Veille 20260421 », « Veille 2104 » (21/04) -> date."""
     m = re.search(r"(20\d\d)[-_. ]?(\d\d)[-_. ]?(\d\d)", nom)
     if m:
         try:
             return dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
         except ValueError:
             pass
-    m = re.search(r"(?<!\d)(\d\d)(\d\d)(?!\d)", nom)
-    if m:
-        j, mo = int(m.group(1)), int(m.group(2))
-        for annee in (aujourdhui.year, aujourdhui.year - 1):
-            try:
-                d = dt.date(annee, mo, j)
-            except ValueError:
-                break
-            if d <= aujourdhui:
-                return d
     return None
 
 
-# ------------------------------------------------------------------ mails
+# ------------------------------------------------------------------ fichiers .msg (Outlook), sans dépendance
 
-def _corps_html_eml(chemin):
+def lire_cfb(chemin):
+    """Lecteur minimal du format « Compound File Binary » (fichiers .msg Outlook).
+    Retourne {chemin_du_flux: octets}."""
+    d = open(chemin, "rb").read()
+    if d[:8] != bytes.fromhex("D0CF11E0A1B11AE1"):
+        raise ValueError("pas un fichier .msg Outlook")
+    ssz = 1 << struct.unpack_from("<H", d, 30)[0]
+    mssz = 1 << struct.unpack_from("<H", d, 32)[0]
+    nfat = struct.unpack_from("<I", d, 44)[0]
+    dir1 = struct.unpack_from("<I", d, 48)[0]
+    cutoff = struct.unpack_from("<I", d, 56)[0]
+    minifat1 = struct.unpack_from("<I", d, 60)[0]
+    difat1, ndifat = struct.unpack_from("<I", d, 68)[0], struct.unpack_from("<I", d, 72)[0]
+    FIN = 0xFFFFFFFA
+
+    def sec(i):
+        return d[512 + i * ssz: 512 + (i + 1) * ssz]
+
+    difat = list(struct.unpack_from("<109I", d, 76))
+    n = difat1
+    while n < FIN and ndifat:
+        s = sec(n)
+        difat += list(struct.unpack_from("<%dI" % (ssz // 4 - 1), s))
+        n = struct.unpack_from("<I", s, ssz - 4)[0]
+        ndifat -= 1
+    fat = []
+    for i in difat[:nfat]:
+        fat += list(struct.unpack_from("<%dI" % (ssz // 4), sec(i)))
+
+    def chaine(s):
+        out, vus = [], set()
+        while s < FIN and s not in vus and s < len(fat):
+            vus.add(s)
+            out.append(s)
+            s = fat[s]
+        return out
+
+    def lire(s):
+        return b"".join(sec(i) for i in chaine(s))
+
+    dirs = lire(dir1)
+    entrees = []
+    for k in range(len(dirs) // 128):
+        e = dirs[k * 128:(k + 1) * 128]
+        nl = struct.unpack_from("<H", e, 64)[0]
+        gauche, droite, enfant = struct.unpack_from("<III", e, 68)
+        entrees.append({"nom": e[:max(nl - 2, 0)].decode("utf-16le", "ignore"), "type": e[66], "g": gauche,
+                        "d": droite, "e": enfant, "debut": struct.unpack_from("<I", e, 116)[0],
+                        "taille": struct.unpack_from("<Q", e, 120)[0]})
+    racine = entrees[0]
+    mini = lire(racine["debut"]) if racine["debut"] < FIN else b""
+    minifat = []
+    for i in (chaine(minifat1) if minifat1 < FIN else []):
+        minifat += list(struct.unpack_from("<%dI" % (ssz // 4), sec(i)))
+
+    def lire_mini(s, taille):
+        out = b""
+        while s < FIN and len(out) < taille and s < len(minifat):
+            out += mini[s * mssz:(s + 1) * mssz]
+            s = minifat[s]
+        return out[:taille]
+
+    res, vus = {}, set()
+
+    def parcours(idx, prefixe):
+        if idx >= FIN or idx >= len(entrees) or idx in vus:
+            return
+        vus.add(idx)
+        e = entrees[idx]
+        parcours(e["g"], prefixe)
+        parcours(e["d"], prefixe)
+        p = prefixe + "/" + e["nom"]
+        if e["type"] == 2:
+            res[p] = lire_mini(e["debut"], e["taille"]) if e["taille"] < cutoff else lire(e["debut"])[:e["taille"]]
+        elif e["type"] == 1:
+            parcours(e["e"], p)
+
+    parcours(racine["e"], "")
+    return res
+
+
+def _corps_msg(chemin):
+    flux = lire_cfb(chemin)
+    sujet = flux.get("/__substg1.0_0037001F", b"").decode("utf-16le", "ignore").strip("\x00")
+    html = flux.get("/__substg1.0_10130102")
+    if html:
+        m = re.search(rb"charset=[\"']?([\w-]+)", html[:3000], re.I)
+        enc = m.group(1).decode() if m else "cp1252"
+        try:
+            contenu = html.decode(enc, "replace")
+        except LookupError:
+            contenu = html.decode("cp1252", "replace")
+    elif "/__substg1.0_1013001F" in flux:
+        contenu = flux["/__substg1.0_1013001F"].decode("utf-16le", "ignore")
+    else:
+        contenu = flux.get("/__substg1.0_1000001F", b"").decode("utf-16le", "ignore")
+    return contenu, None, sujet
+
+
+def _corps_eml(chemin):
     with open(chemin, "rb") as f:
         msg = email.message_from_binary_file(f, policy=email.policy.default)
     date = None
@@ -94,70 +209,115 @@ def _corps_html_eml(chemin):
     except Exception:
         pass
     corps = msg.get_body(preferencelist=("html", "plain"))
-    contenu = corps.get_content() if corps else ""
-    return contenu, date, str(msg["subject"] or "")
+    return (corps.get_content() if corps else ""), date, str(msg["subject"] or "")
 
 
-def _corps_html_msg(chemin):
-    import extract_msg  # dépendance facultative (requirements-rkc.txt)
-    m = extract_msg.Message(chemin)
-    contenu = m.htmlBody or m.body or ""
-    if isinstance(contenu, bytes):
-        contenu = contenu.decode("utf-8", "ignore")
-    date = None
+# ------------------------------------------------------------------ analyse du mail Newsdesk
+
+def _date_nd(texte):
+    m = RE_DATE_ND.search(texte)
+    if not m:
+        return None, None
+    mo = MOIS_EN.get(m.group(2).lower())
     try:
-        date = m.date.date() if hasattr(m.date, "date") else None
-    except Exception:
-        pass
-    return contenu, date, m.subject or ""
+        return dt.date(int(m.group(3)), mo, int(m.group(1))), m
+    except (TypeError, ValueError):
+        return None, None
 
 
-def liens_du_mail(contenu):
-    """Extrait (titre, lien, contexte) de chaque article cité dans le mail."""
+def _dans(el, ancre):
+    p = el.parent
+    while p is not None:
+        if p is ancre:
+            return True
+        p = p.parent
+    return False
+
+
+def articles_newsdesk(contenu):
+    """Retourne une liste de dicts {titre, lien_newsdesk, id_nd, publication, date, extrait}."""
     if "<" not in contenu:
-        return [("", u, "") for u in re.findall(r"https?://\S+", contenu)]
+        return _articles_texte(contenu)
     soupe = BeautifulSoup(contenu, "html.parser")
+    titres = [a for a in soupe.find_all("a", href=True) if "newsdesk.lexisnexis.com/click" in deballer_lien(a["href"])]
     sortie, vus = [], set()
-    for a in soupe.find_all("a", href=True):
-        lien = deballer_lien(a["href"].strip())
-        if not lien.startswith("http") or LIENS_EXCLUS.search(lien) or lien in vus:
+    for k, a in enumerate(titres):
+        lien = deballer_lien(a["href"])
+        ident = (parse_qs(urlparse(lien).query).get("a") or [""])[0]
+        titre = espaces(a.get_text(" "))
+        if not titre or (ident and ident in vus):
             continue
-        titre = re.sub(r"\s+", " ", a.get_text(" ")).strip()
-        bloc = a.find_parent(["p", "li", "td", "div"]) or a.parent
-        contexte = re.sub(r"\s+", " ", bloc.get_text(" ")).strip() if bloc else ""
-        if len(titre) < 15 or TEXTES_GENERIQUES.match(titre):
-            titre = contexte.replace(titre, "").strip(" :-–—|") if contexte else titre
-        if len(titre) < 10:
-            continue
-        vus.add(lien)
-        sortie.append((titre[:250], lien, contexte[:600]))
+        suivant = titres[k + 1] if k + 1 < len(titres) else None
+        publication, morceaux = "", []
+        for el in a.next_elements:
+            if el is suivant:
+                break
+            if isinstance(el, Tag) and el.name == "a" and el is not a and not publication:
+                publication = espaces(el.get_text(" "))
+            elif isinstance(el, NavigableString) and not _dans(el, a):
+                par = el.parent
+                if par is not None and par.name == "a":
+                    continue
+                if par is not None and any(isinstance(x, Tag) and x.name == "a" and x is not a for x in el.parents):
+                    continue
+                morceaux.append(str(el))
+        bloc = espaces(" ".join(morceaux))
+        bloc = PIED.split(bloc)[0]
+        date, m = _date_nd(bloc)
+        extrait = espaces(bloc[m.end():]) if m else bloc
+        publication = re.sub(r"\s*\(additional subscription may be required\)", "", publication).strip()
+        vus.add(ident)
+        sortie.append({"titre": titre[:300], "lien_newsdesk": lien, "id_nd": ident, "publication": publication,
+                       "date": date, "extrait": extrait[:1500],
+                       "abonnement": "subscription may be required" in bloc or "subscription may be required" in
+                                     espaces(a.find_next("a").get_text(" ") if a.find_next("a") else "")})
     return sortie
 
 
-# ------------------------------------------------------------------ Word
+def _articles_texte(contenu):
+    """Corps texte brut (repli) : « Titre <https://…newsdesk…click…> »."""
+    sortie = []
+    for m in re.finditer(r"([^\n<]{15,300})\s*<(https?://[^>]+)>", contenu):
+        lien = deballer_lien(m.group(2))
+        if "newsdesk.lexisnexis.com/click" not in lien:
+            continue
+        ident = (parse_qs(urlparse(lien).query).get("a") or [""])[0]
+        suite = contenu[m.end():m.end() + 800]
+        date, md = _date_nd(suite)
+        sortie.append({"titre": espaces(m.group(1)), "lien_newsdesk": lien, "id_nd": ident, "publication": "",
+                       "date": date, "extrait": espaces(suite[md.end():] if md else suite)[:1500], "abonnement": False})
+    return sortie
 
-def _liens_paragraphe(par):
-    liens = []
-    for h in par._p.xpath(".//w:hyperlink"):
-        rid = h.get("{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id")
-        if rid and rid in par.part.rels:
-            liens.append(par.part.rels[rid].target_ref)
-    liens += re.findall(r"https?://[^\s)>\]]+", par.text)
-    return [deballer_lien(l) for l in liens if l.startswith("http")]
+
+def lien_public(item, client=None, cache=None, budget=None):
+    """Adresse publiable : l'URL finale de l'article (redirection Newsdesk suivie
+    pendant la collecte), sinon une recherche du titre. Jamais le lien Newsdesk
+    brut (il contient des identifiants d'abonné)."""
+    cle = item.get("id_nd")
+    if cache is not None and cle and cache.get(cle):
+        return cache[cle]
+    final = ""
+    if client is not None and item.get("lien_newsdesk") and (budget is None or budget[0] > 0):
+        if budget is not None:
+            budget[0] -= 1
+        try:
+            r = client.s.get(item["lien_newsdesk"], timeout=15, allow_redirects=True, stream=True)
+            r.close()
+            u = r.url
+            if u.startswith("http") and "lexisnexis" not in urlparse(u).netloc and "urldefense" not in u:
+                final = re.sub(r"[?&](utm_[^&]+)", "", u)
+        except Exception:
+            pass
+    if not final:
+        final = "https://www.google.com/search?q=" + quote_plus('"%s" %s' % (item["titre"][:150], item.get("publication", "")))
+    elif cache is not None and cle:
+        cache[cle] = final
+    return final
 
 
-def _est_titre(par):
-    style = (par.style.name if par.style is not None else "").lower()
-    if style.startswith(("heading", "titre", "title")):
-        return True
-    texte = par.text.strip()
-    runs = [r for r in par.runs if r.text.strip()]
-    return 12 <= len(texte) <= 220 and runs and all(r.bold for r in runs)
-
+# ------------------------------------------------------------------ Word (texte d'articles payants, facultatif)
 
 def articles_du_word(chemin):
-    """Découpe le document en articles : un titre (style Titre ou paragraphe
-    entièrement en gras) suivi de son texte. Retourne (titre, liens, texte)."""
     import docx
     doc = docx.Document(chemin)
     articles, courant = [], None
@@ -165,49 +325,56 @@ def articles_du_word(chemin):
         texte = par.text.strip()
         if not texte:
             continue
-        if _est_titre(par):
+        style = (par.style.name if par.style is not None else "").lower()
+        runs = [r for r in par.runs if r.text.strip()]
+        titre = style.startswith(("heading", "titre", "title")) or (12 <= len(texte) <= 220 and runs and all(r.bold for r in runs))
+        if titre:
             if courant:
                 articles.append(courant)
-            courant = {"titre": texte, "liens": _liens_paragraphe(par), "texte": []}
+            courant = {"titre": texte, "texte": []}
         elif courant:
-            courant["liens"] += _liens_paragraphe(par)
             courant["texte"].append(texte)
     if courant:
         articles.append(courant)
-    return [(a["titre"], list(dict.fromkeys(a["liens"])), " ".join(a["texte"])) for a in articles if a["texte"] or a["liens"]]
+    return [(a["titre"], " ".join(a["texte"])) for a in articles if a["texte"]]
 
-
-# ------------------------------------------------------------------ assemblage
 
 def _cle(titre):
-    return re.sub(r"\W+", " ", titre.lower()).strip()[:80]
+    return re.sub(r"\W+", " ", _sa(titre).lower()).strip()[:80]
 
 
-def lire_rkc(dossier, aujourdhui, client=None):
-    """Retourne (articles, rapport). Chaque article : titre, lien, date, texte
-    (privé, jamais publié), zone probable, fichier d'origine."""
-    rapport = {"fichiers": 0, "mails": 0, "word": 0, "erreurs": []}
+def lire_rkc(dossier, aujourdhui, client=None, cache_liens=None, max_resolutions=250):
+    """Retourne (articles, rapport). Chaque article : titre, lien (public), date,
+    source (publication), texte (PRIVÉ), payant, zone, id_nd."""
+    rapport = {"fichiers": 0, "mails": 0, "word": 0, "erreurs": [], "articles_lus": 0}
     if not os.path.isdir(dossier):
         return [], rapport
     par_cle = {}
+    budget = [max_resolutions]
     fichiers = sorted(glob.glob(os.path.join(dossier, "**", "*"), recursive=True))
-    # 1. mails : liste des articles (titres + liens)
     for f in fichiers:
         ext = f.lower().rsplit(".", 1)[-1]
         if ext not in ("eml", "msg"):
             continue
         rapport["fichiers"] += 1
         try:
-            contenu, date, sujet = (_corps_html_eml if ext == "eml" else _corps_html_msg)(f)
+            contenu, date_mail, _sujet = (_corps_eml if ext == "eml" else _corps_msg)(f)
         except Exception as e:
             rapport["erreurs"].append("%s : %s" % (os.path.basename(f), str(e)[:120]))
             continue
         rapport["mails"] += 1
-        date = date or date_depuis_nom(os.path.basename(f), aujourdhui) or aujourdhui
-        for titre, lien, contexte in liens_du_mail(contenu):
-            par_cle.setdefault(_cle(titre), {"titre": titre, "lien": lien, "date": date, "texte": contexte,
-                                             "payant": False, "fichier": os.path.basename(f)})
-    # 2. Word : texte des articles payants (rapproché du mail par le titre)
+        date_defaut = date_mail or date_depuis_nom(os.path.basename(f), aujourdhui) or aujourdhui
+        items = articles_newsdesk(contenu)
+        rapport["articles_lus"] += len(items)
+        if not items:
+            rapport["erreurs"].append("%s : aucun article Newsdesk reconnu" % os.path.basename(f))
+        for it in items:
+            cle = it["id_nd"] or _cle(it["titre"])
+            if cle in par_cle or _cle(it["titre"]) in {_cle(x["titre"]) for x in par_cle.values()}:
+                continue  # même article (ou même titre repris par plusieurs sites)
+            par_cle[cle] = {"titre": it["titre"], "lien": lien_public(it, client, cache_liens, budget),
+                            "date": it["date"] or date_defaut, "texte": it["extrait"], "source": it["publication"],
+                            "payant": bool(it["abonnement"]), "id_nd": it["id_nd"], "fichier": os.path.basename(f)}
     for f in fichiers:
         if not f.lower().endswith(".docx") or os.path.basename(f).startswith("~$"):
             continue
@@ -218,16 +385,12 @@ def lire_rkc(dossier, aujourdhui, client=None):
             rapport["erreurs"].append("%s : %s" % (os.path.basename(f), str(e)[:120]))
             continue
         rapport["word"] += 1
-        date = date_depuis_nom(os.path.basename(f), aujourdhui) or aujourdhui
-        for titre, liens, texte in arts:
-            cle = _cle(titre)
-            proche = next((k for k in par_cle if k[:40] == cle[:40] or (len(cle) > 25 and (cle in k or k in cle))), None)
+        for titre, texte in arts:
+            c = _cle(titre)
+            proche = next((k for k, v in par_cle.items() if _cle(v["titre"])[:40] == c[:40]), None)
             if proche:
                 par_cle[proche]["texte"] = texte
                 par_cle[proche]["payant"] = True
-            else:
-                par_cle[cle] = {"titre": titre, "lien": liens[0] if liens else "", "date": date, "texte": texte,
-                                "payant": True, "fichier": os.path.basename(f)}
     articles = []
     for a in par_cle.values():
         a["zone"] = zone_probable(a["titre"] + " " + a["texte"])

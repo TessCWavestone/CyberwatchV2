@@ -45,6 +45,7 @@ from pertinence import Pertinence  # noqa: E402
 from amendes import detecter as detecter_amende  # noqa: E402
 import echeances  # noqa: E402
 import rkc  # noqa: E402
+import dila  # noqa: E402
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(RACINE, "data")
@@ -346,8 +347,9 @@ NATURE_OFFICIELLE = re.compile(
 
 def nature_source(src):
     t = sans_accents(src["type"]).lower()
-    # « Avis d'experts (non certifié) » : section Débats et signaux, jamais mélangée à la veille
-    if "avis" in t or "opinion" in t or "expert" in t:
+    # Seul le type exact « Avis d'experts (non certifié) » va dans l'onglet Débats et signaux
+    # (auparavant « Experts officiels » — MDCG — y partait par erreur)
+    if "avis d'expert" in t or "non certifie" in t or t.startswith("opinion"):
         return "opinion"
     if "avocat" in t:
         return "cabinet"
@@ -478,7 +480,50 @@ MOTS_NAV = re.compile(
     r"(cookie|mentions l[ée]gales|confidentialit|privacy policy|accessibilit|plan du site|sitemap|"
     r"newsletter|contact|login|connexion|s'abonner|subscribe|linkedin|twitter|facebook|youtube|"
     r"instagram|mastodon|bluesky|recrutement|careers|jobs)", re.I)
-EXT_IGNOREES = re.compile(r"\.(jpg|jpeg|png|gif|svg|webp|zip|mp4|mp3|css|js|ics)$", re.I)
+EXT_IGNOREES = re.compile(r"\.(jpg|jpeg|png|gif|svg|webp|zip|mp4|mp3|css|js|ics|xlsx?|docx?|csv|xml|json|odt|ods|odp|pptx?|rtf|txt)$", re.I)
+
+
+PREFIXES_TITRE = re.compile(
+    r"^\s*(acc?ess to the publication|read more( about)?|lire la suite|en savoir plus( sur)?|davantage d'informations sur|"
+    r"more information (about|on)|learn more( about)?|mehr erfahren( zu[mr]?)?|weiterlesen|leer m[aá]s( sobre)?|"
+    r"leggi (di pi[uù]|tutto)|lees meer( over)?|czytaj wi[eę]cej|v[ií]ce informac[ií]|download|t[ée]l[ée]charger)"
+    r"\s*[:\-–—»›]?\s*", re.I)
+TITRES_GENERIQUES = re.compile(
+    r"^(see legislative record|legislative record|read more|more|details?|d[ée]tails|lire la suite|en savoir plus|download|"
+    r"t[ée]l[ée]charger|pdf|html|link|lien|here|ici|click here|cliquez ici|continue reading|voir plus|voir|see|view|"
+    r"(le|la|les|l'|the) (rapport|synth[èe]se|d[ée]cision|avis|lignes directrices|document|report|summary|annexe?s?|guide)|"
+    r"press release|communiqu[ée] de presse|news|actualit[ée]s?|publication|documents?)\W*$", re.I)
+TITRE_FICHIER = re.compile(r"^[\w\-. ]+\.(pdf|xlsx?|docx?|csv|odt|ods|pptx?|zip|xml|json)$|^[\w\-.]+_[\w\-.]+$", re.I)
+
+
+def titre_depuis_lien(lien):
+    """« …/2026-09-guidelines_on_ai-transparency.pdf » -> « 2026 09 guidelines on ai transparency »."""
+    from urllib.parse import unquote
+    seg = unquote(urlparse(lien).path.rstrip("/").rsplit("/", 1)[-1])
+    seg = re.sub(r"\.(pdf|html?|aspx|php|xlsx?|docx?)$", "", seg, flags=re.I)
+    mots = [m for m in re.split(r"[-_+.\s]+", seg) if m and not re.fullmatch(r"[0-9a-f]{8,}|\d{5,}", m)]
+    if len(mots) < 3:
+        return ""
+    t = " ".join(mots)
+    return t[0].upper() + t[1:]
+
+
+def nettoyer_titre(titre, lien):
+    """Retire les préfixes parasites (« Acess to the publication: »), la taille des
+    PDF, et remplace un titre générique ou un nom de fichier par le nom tiré du
+    lien. Retourne "" si aucun titre exploitable."""
+    t = re.sub(r"\s+", " ", titre or "").strip()
+    t = re.sub(r"\s*[\(\[]\s*(pdf|PDF|xlsx|docx)?\s*[-–,]?\s*[\d.,]+\s*(ko|Ko|KB|kB|Mo|MB|mo|o)\s*[\)\]]\s*$", "", t)
+    t2 = PREFIXES_TITRE.sub("", t)
+    if len(t2) >= 12:
+        t = t2
+    if TITRES_GENERIQUES.match(t) or TITRE_FICHIER.match(t) or len(t) < 12:
+        return titre_depuis_lien(lien)
+    return t
+
+
+def cle_titre(titre):
+    return re.sub(r"[^a-z0-9]+", " ", sans_accents(titre).lower()).strip()[:120]
 
 
 def liens_page(html, url):
@@ -612,11 +657,13 @@ def collecter_source(src, client, etat_prec, max_pages=15):
     for f in src["flux_excel"]:
         try:
             lot = lire_flux(client.get(f).content, f)
+            for a in lot:
+                a["_orig"] = f
             arts.extend(lot)
             flux_lus.append(f)
             dates = [a["date"] for a in lot if a["date"]]
             if RATTRAPAGE and dates and min(dates) > RATTRAPAGE:
-                arts.extend(flux_archives(client, f, {a["lien"] for a in lot}, max_pages))
+                arts.extend(dict(x, _orig=f) for x in flux_archives(client, f, {a["lien"] for a in lot}, max_pages))
         except Exception as e:
             erreurs.append("Flux %s illisible : %s" % (f, str(e)[:100]))
 
@@ -634,6 +681,8 @@ def collecter_source(src, client, etat_prec, max_pages=15):
             erreurs.append("Aucun lien d'article détecté sur %s (page probablement chargée en JavaScript)" % u)
         elif RATTRAPAGE and not est_flux(r.content):
             trouves += paginer(client, r.url, r.content, erreurs, max_pages)
+        for a in trouves:
+            a["_orig"] = u
         arts.extend(trouves)
         pages_lues.append(u)
 
@@ -679,85 +728,6 @@ def collecter_source(src, client, etat_prec, max_pages=15):
     return arts, etat
 
 
-
-# --------------------------------------------------------------------------- Légifrance (API PISTE)
-
-PISTE = {
-    "sandbox": ("https://sandbox-oauth.piste.gouv.fr/api/oauth/token",
-                "https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app"),
-    "production": ("https://oauth.piste.gouv.fr/api/oauth/token",
-                   "https://api.piste.gouv.fr/dila/legifrance/lf-engine-app"),
-}
-
-
-def _date_legifrance(v):
-    """Les dates de l'API arrivent en millisecondes (epoch) ou en texte ISO."""
-    if isinstance(v, (int, float)) and v > 0:
-        return dt.datetime.fromtimestamp(v / 1000, dt.timezone.utc).date()
-    if isinstance(v, str):
-        return lire_date(v)
-    return None
-
-
-def collecter_legifrance(src, cfg, client):
-    """Interroge le Journal officiel (fonds JORF) via l'API Légifrance de PISTE.
-    Identifiants lus dans les variables d'environnement (secrets GitHub) :
-    LEGIFRANCE_CLIENT_ID, LEGIFRANCE_CLIENT_SECRET, LEGIFRANCE_ENV (sandbox|production)."""
-    etat = {"nom": src["nom"], "zone": src["zone"], "url": src["url"], "mode": "api", "flux": "",
-            "nb_trouves": 0, "erreur": "", "verifie_le": MAINTENANT.strftime("%Y-%m-%d %H:%M")}
-    cid, secret = os.environ.get("LEGIFRANCE_CLIENT_ID"), os.environ.get("LEGIFRANCE_CLIENT_SECRET")
-    if not cid or not secret:
-        etat.update(mode="erreur", erreur="API Légifrance non configurée : ajoutez les secrets "
-                    "LEGIFRANCE_CLIENT_ID et LEGIFRANCE_CLIENT_SECRET dans GitHub (voir README).")
-        return [], etat
-    conf = cfg.get("legifrance", {})
-    env = (os.environ.get("LEGIFRANCE_ENV") or conf.get("environnement") or "sandbox").lower()
-    url_token, url_api = PISTE.get(env, PISTE["sandbox"])
-    try:
-        r = client.s.post(url_token, data={"grant_type": "client_credentials", "client_id": cid,
-                                           "client_secret": secret, "scope": "openid"}, timeout=client.delai)
-        r.raise_for_status()
-        jeton = r.json()["access_token"]
-    except Exception as e:
-        etat.update(mode="erreur", erreur="Authentification PISTE refusée (%s) : vérifiez que l'application "
-                    "est bien abonnée à l'API Légifrance et l'environnement (%s)." % (str(e)[:120], env))
-        return [], etat
-    entetes = {"Authorization": "Bearer " + jeton, "Content-Type": "application/json", "Accept": "application/json"}
-    debut = (AUJOURDHUI - dt.timedelta(days=conf.get("jours", 30))).isoformat()
-    arts, erreurs = [], []
-    for mot in conf.get("mots_cles", []):
-        corps = {"fond": "JORF", "recherche": {
-            "champs": [{"typeChamp": "ALL", "operateur": "ET",
-                        "criteres": [{"typeRecherche": "EXACTE", "valeur": mot, "operateur": "ET"}]}],
-            "filtres": [{"facette": "DATE_PUBLICATION", "dates": {"start": debut, "end": AUJOURDHUI.isoformat()}}],
-            "pageNumber": 1, "pageSize": 50, "operateur": "ET",
-            "sort": "PUBLICATION_DATE_DESC", "typePagination": "DEFAUT"}}
-        try:
-            r = client.s.post(url_api + "/search", json=corps, headers=entetes, timeout=client.delai)
-            r.raise_for_status()
-            resultats = r.json().get("results", [])
-        except Exception as e:
-            erreurs.append("Recherche « %s » : %s" % (mot, str(e)[:100]))
-            continue
-        for res in resultats:
-            titres = res.get("titles") or [{}]
-            t = titres[0]
-            ident = t.get("id") or t.get("cid") or res.get("id")
-            if not ident:
-                continue
-            date = None
-            for cle in ("datePublication", "date", "dateTexte", "dateSignature"):
-                date = _date_legifrance(res.get(cle)) or date
-                if date:
-                    break
-            arts.append({"titre": nettoyer_texte(t.get("title") or res.get("title") or ident),
-                         "lien": "https://www.legifrance.gouv.fr/jorf/id/%s" % ident,
-                         "resume": "Journal officiel — %s (recherche : %s)" % (res.get("nature") or "texte", mot),
-                         "date": date})
-    etat.update(nb_trouves=len(arts), flux="API Légifrance (%s)" % env, erreur=" ; ".join(erreurs))
-    if erreurs and not arts:
-        etat["mode"] = "erreur"
-    return arts, etat
 
 def niveau_acces(etat):
     """ok : tout a été lu ; partielle : lue mais au moins une page ou un flux en échec ;
@@ -845,21 +815,53 @@ def charger_base(ids_existants):
     return sortie
 
 
+
+
 # --------------------------------------------------------------------------- programme principal
+
+def nouvel_article(a, src, id_version, regles_mc, cfg, nature):
+    texte = a["titre"] + " " + a["resume"]
+    rubrique, tags, groupes = classer(texte, regles_mc, cfg)
+    art = {
+        "id": identifiant(a["lien"]), "titre": a["titre"], "lien": a["lien"], "resume": a["resume"],
+        "date": (a["date"] or AUJOURDHUI).isoformat(), "date_estimee": a["date"] is None,
+        "detecte_le": AUJOURDHUI.isoformat(), "version": id_version, "source": src["nom"], "zone": src["zone"],
+        "nature": nature, "rubrique": rubrique or "autres", "rubrique_mots_cles": bool(rubrique),
+        "tags": tags, "groupes": groupes, "amende": detecter_amende(texte, src["zone"]),
+    }
+    if src.get("filtre_pertinence"):
+        art["filtre_pertinence"] = True
+    return art
+
+
+def fiche_ecarte(a):
+    """Version légère d'un article écarté, pour la liste consultable du site."""
+    en = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
+    return {k: v for k, v in {
+        "id": a["id"], "titre": a["titre"], "titre_en": en if en != a["titre"] else "", "lien": a["lien"],
+        "source": a.get("source", ""), "zone": a.get("zone", ""), "date": a.get("date", ""),
+        "detecte_le": a.get("detecte_le", ""), "motif": a.get("motif", ""), "score": a.get("score"),
+        "nature": a.get("nature", ""), "debat": a.get("debat", False)}.items() if v not in ("", None, False)}
+
 
 def main():
     cfg = charger_config()
     classeur = openpyxl.load_workbook(os.path.join(RACINE, cfg["fichier_sources"]), read_only=True, data_only=True)
     toutes = charger_sources(cfg, classeur, avec_inactives=True)
     sources = [x for x in toutes if not x["inactive"]]
-    regles = charger_mots_cles(cfg, classeur)
-    print("%d sources, %d mots-clés%s" % (len(sources), len(regles),
+    regles_mc = charger_mots_cles(cfg, classeur)
+    print("%d sources, %d mots-clés%s" % (len(sources), len(regles_mc),
           (" — RATTRAPAGE depuis le %s" % RATTRAPAGE) if RATTRAPAGE else ""))
 
     ancien = lire_json(os.path.join(DATA, "actualites.json"), {})
-    articles = {a["id"]: a for a in ancien.get("articles", []) if not a.get("base")}
+    # (les articles RKC lus par l'ancien analyseur de mails sont relus avec le nouveau)
+    articles = {a["id"]: a for a in ancien.get("articles", []) if not a.get("base")
+                and not (a.get("nature") == "rkc" and not str(a.get("pertinence_v", "")).startswith("v4-"))}
     # Débats et signaux (avis d'experts) : stockés à part, jamais mélangés à la veille certifiée
     debats = {a["id"]: a for a in lire_json(os.path.join(DATA, "debats.json"), {}).get("articles", [])}
+    # Articles écartés (hors sujet, hors Europe, bruit…) : gardés pour la liste consultable
+    # et réexaminés à chaque collecte (les règles ou les avis des lecteurs peuvent changer)
+    ecartes = {a["id"]: a for a in lire_json(os.path.join(DATA, "ecartes.json"), {}).get("articles", [])}
     etats_prec = {e["url"]: e for e in lire_json(os.path.join(DATA, "etat_sources.json"), {}).get("sources", [])}
     vus = lire_json(os.path.join(DATA, "vus.json"), {})
     versions = lire_json(os.path.join(DATA, "versions.json"), {}).get("versions", [])
@@ -869,79 +871,78 @@ def main():
 
     client = Client(cfg)
     max_pages = cfg.get("rattrapage_pages_max", 15)
+    memoire_dila = vus.setdefault("__dila_jorf__", {})
+    depuis_dila = RATTRAPAGE or (AUJOURDHUI - dt.timedelta(days=cfg.get("dila_jours_premiere_collecte", 21)))
+
+    def collecter(s):
+        if "legifrance.gouv.fr" in s["url"] or "dila.gouv.fr" in s["url"]:
+            s["filtre_pertinence"] = True   # le JO publie des centaines de textes par semaine
+            return dila.collecter(s, client, memoire_dila, depuis_dila, MAINTENANT)
+        return collecter_source(s, client, etats_prec.get(s["url"], {}), max_pages)
+
     with ThreadPoolExecutor(max_workers=cfg.get("requetes_paralleles", 8)) as pool:
-        resultats = list(pool.map(lambda s: (s, *(
-            collecter_legifrance(s, cfg, client) if "legifrance.gouv.fr" in s["url"]
-            else collecter_source(s, client, etats_prec.get(s["url"], {}), max_pages))), sources))
+        resultats = list(pool.map(lambda s: (s, *collecter(s)), sources))
 
     conservation = cfg.get("jours_conservation", 730)
     limite_premiere = RATTRAPAGE or (AUJOURDHUI - dt.timedelta(days=cfg.get("jours_premiere_collecte", 60)))
     plancher = dt.date.fromisoformat(cfg.get("date_debut_veille", "2026-01-01"))
+    deja_titres = {(a.get("source"), cle_titre(a["titre"])) for d in (articles, debats, ecartes) for a in d.values()}
     etats, nouveaux_ids = [], []
     for src, arts, etat in resultats:
-        cle_src = normaliser_lien(src["url"])
-        premiere_fois = cle_src not in vus
-        deja_vus = set(vus.get(cle_src, []))
+        memo = {}   # mémoire « déjà vus » par page ou flux (et non plus par source)
+        nature = nature_source(src)
         retenus = 0
         for a in arts:
+            cle_o = normaliser_lien(a.get("_orig") or src["url"])
+            if cle_o not in memo:
+                memo[cle_o] = (cle_o not in vus, set(vus.get(cle_o, [])))
+            premiere_fois, deja_vus = memo[cle_o]
             ident = identifiant(a["lien"])
             nouveau_lien = ident not in deja_vus
             deja_vus.add(ident)
-            if ident in articles or ident in debats:
+            if ident in articles or ident in debats or ident in ecartes:
                 continue
-            # Première visite (ou rattrapage) : on ne reprend que le daté postérieur à
-            # la date limite, pour ne pas présenter d'anciens articles comme neufs.
+            # Nouvelle page ou nouveau flux (ou rattrapage) : seuls les liens datés récents sont repris,
+            # pour ne pas présenter d'anciennes publications comme des nouveautés.
             if (premiere_fois or RATTRAPAGE) and (not a["date"] or a["date"] < limite_premiere):
                 if not (RATTRAPAGE and nouveau_lien and not premiere_fois and not a["date"]):
                     continue
             if not premiere_fois and not nouveau_lien and (not a["date"] or a["date"] < limite_premiere):
-                continue  # lien déjà vu lors d'une collecte précédente et trop ancien : pas une nouveauté
-            if a["date"] and a["date"] < plancher:
-                continue  # antérieur au début de la base de connaissance
-            if a["date"] and a["date"] < AUJOURDHUI - dt.timedelta(days=conservation):
                 continue
-            texte = a["titre"] + " " + a["resume"]
-            rubrique, tags, groupes = classer(texte, regles, cfg)
-            # Aucun article n'est écarté pour absence de mot-clé. Seule exception :
-            # un lien SANS date et SANS aucun mot-clé trouvé sur une page web est
-            # le plus souvent un lien de menu (« Nos services »…) et non un article.
-            if not a["date"] and not groupes and not etat.get("mode", "").startswith("rss") and etat.get("mode") != "api":
+            if a["date"] and (a["date"] < plancher or a["date"] < AUJOURDHUI - dt.timedelta(days=conservation)):
                 continue
-            cible = debats if nature_source(src) == "opinion" else articles
-            cible[ident] = {
-                "id": ident,
-                "titre": a["titre"],
-                "lien": a["lien"],
-                "resume": a["resume"],
-                "date": (a["date"] or AUJOURDHUI).isoformat(),
-                "date_estimee": a["date"] is None,
-                "detecte_le": AUJOURDHUI.isoformat(),
-                "version": id_version,
-                "source": src["nom"],
-                "zone": src["zone"],
-                "nature": nature_source(src),
-                "rubrique": rubrique or "autres",
-                "rubrique_mots_cles": bool(rubrique),
-                "tags": tags,
-                "groupes": groupes,
-                "amende": detecter_amende(texte, src["zone"]),
-            }
-            if src.get("filtre_pertinence"):
-                cible[ident]["filtre_pertinence"] = True
-            if cible is articles:
+            titre = nettoyer_titre(a["titre"], a["lien"])
+            if not titre:
+                continue
+            a["titre"] = titre
+            cle_t = (src["nom"], cle_titre(titre))
+            if cle_t in deja_titres:
+                continue   # même titre déjà publié par cette source (lien différent)
+            deja_titres.add(cle_t)
+            art = nouvel_article(a, src, id_version, regles_mc, cfg, nature)
+            # un lien SANS date et SANS mot-clé trouvé sur une page web est le plus souvent un lien de menu
+            if a["date"] is None and not art["groupes"] and etat.get("mode") not in ("rss", "rss-auto", "opendata"):
+                continue
+            (debats if nature == "opinion" else articles)[ident] = art
+            if nature != "opinion":
                 nouveaux_ids.append(ident)
             retenus += 1
-        vus[cle_src] = sorted(deja_vus)[-5000:]
+        for cle_o, (_p, deja_vus) in memo.items():
+            vus[cle_o] = sorted(deja_vus)[-5000:]
         etat["nb_retenus"] = retenus
-        etat.update(acces=niveau_acces(etat), type=src["type"], nature=nature_source(src),
+        prec = etats_prec.get(src["url"], {})
+        etat.update(acces=niveau_acces(etat), type=src["type"], nature=nature,
                     nb_pages=len(src["urls_actu"]), nb_flux=len(src["flux_excel"]), origine=src.get("origine", "excel"),
                     pages=src["urls_actu"], flux_liste=src["flux_excel"])
+        # santé de la source : deux collectes de suite sans rien lire -> « à retirer ? »
+        etat["echecs"] = (prec.get("echecs", 0) + 1) if etat["acces"] == "ko" else 0
+        etat["a_retirer"] = etat["echecs"] >= 2
+        etat["dernier_article"] = max([a["date"].isoformat() for a in arts if a.get("date")] or [prec.get("dernier_article", "")])
         etats.append(etat)
         print("  %-9s %3d trouvés  %3d retenus  %s%s" % (
             etat["mode"], etat["nb_trouves"], retenus, src["nom"][:60],
-            ("  ! " + etat["erreur"]) if etat["erreur"] else ""))
+            ("  ! " + etat["erreur"][:160]) if etat["erreur"] else ""))
 
-    # Sources inactives (Excel) ou retirées depuis le site : listées mais non interrogées
     for src in toutes:
         if src["inactive"]:
             msg = ("Retirée depuis le site : plus interrogée." if src.get("retiree")
@@ -951,18 +952,24 @@ def main():
                           "nb_trouves": 0, "nb_retenus": 0, "erreur": msg, "type": src["type"],
                           "nature": nature_source(src), "verifie_le": "", "origine": src.get("origine", "excel")})
 
-    # Veilles RKC (dépôt privé récupéré dans rkc/) : titre + lien publiés, texte gardé privé
-    arts_rkc, rapport_rkc = rkc.lire_rkc(os.path.join(RACINE, "rkc"), AUJOURDHUI)
+    # Veille RKC (dépôt privé récupéré dans rkc/) : titre + lien publiés, extrait gardé privé
+    cache_liens = vus.setdefault("__rkc_liens__", {})
+    arts_rkc, rapport_rkc = rkc.lire_rkc(os.path.join(RACINE, "rkc"), AUJOURDHUI, client, cache_liens)
     n_rkc = 0
     for r in arts_rkc:
-        ident = identifiant(r["lien"]) if r["lien"] else "r" + hashlib.sha1(r["titre"].encode("utf-8")).hexdigest()[:11]
-        if ident in articles or r["date"] < plancher:
+        ident = ("n" + hashlib.sha1(r["id_nd"].encode()).hexdigest()[:11]) if r.get("id_nd") \
+            else "r" + hashlib.sha1(r["titre"].encode("utf-8")).hexdigest()[:11]
+        if ident in articles or ident in ecartes or r["date"] < plancher:
             continue
+        cle_t = ("Veille RKC (Wavestone)", cle_titre(r["titre"]))
+        if cle_t in deja_titres:
+            continue
+        deja_titres.add(cle_t)
         texte_prive = r["titre"] + ". " + r["texte"]
-        rubrique, tags, groupes = classer(texte_prive, regles, cfg)
+        rubrique, tags, groupes = classer(texte_prive, regles_mc, cfg)
         articles[ident] = {
             "id": ident, "titre": r["titre"], "lien": r["lien"], "resume": "", "reserve": True,
-            "payant": r["payant"], "date": r["date"].isoformat(), "date_estimee": False,
+            "payant": r["payant"], "publication": r.get("source", ""), "date": r["date"].isoformat(), "date_estimee": False,
             "detecte_le": AUJOURDHUI.isoformat(), "version": id_version,
             "source": "Veille RKC (Wavestone)", "zone": r["zone"], "nature": "rkc",
             "rubrique": rubrique or "autres", "rubrique_mots_cles": bool(rubrique), "tags": tags, "groupes": groupes,
@@ -973,90 +980,118 @@ def main():
         nouveaux_ids.append(ident)
         n_rkc += 1
     if rapport_rkc["fichiers"]:
-        print("Veille RKC : %d fichiers (%d mails, %d Word), %d nouveaux articles%s" % (
-            rapport_rkc["fichiers"], rapport_rkc["mails"], rapport_rkc["word"], n_rkc,
+        print("Veille RKC : %d fichiers (%d mails, %d Word), %d articles lus, %d nouveaux%s" % (
+            rapport_rkc["fichiers"], rapport_rkc["mails"], rapport_rkc["word"], rapport_rkc["articles_lus"], n_rkc,
             (" — erreurs : " + " ; ".join(rapport_rkc["erreurs"])) if rapport_rkc["erreurs"] else ""))
         etats.append({"nom": "Veille RKC (Wavestone) — dépôt privé", "zone": "Europe", "url": "", "mode": "rkc",
                       "acces": "partielle" if rapport_rkc["erreurs"] else "ok", "flux": "", "page": "",
-                      "nb_trouves": len(arts_rkc), "nb_retenus": n_rkc, "erreur": " ; ".join(rapport_rkc["erreurs"]),
-                      "type": "Veille interne", "nature": "rkc", "verifie_le": MAINTENANT.strftime("%Y-%m-%d %H:%M"),
-                      "origine": "rkc"})
+                      "nb_trouves": rapport_rkc["articles_lus"], "nb_retenus": n_rkc,
+                      "erreur": " ; ".join(rapport_rkc["erreurs"]), "type": "Veille interne", "nature": "rkc",
+                      "verifie_le": MAINTENANT.strftime("%Y-%m-%d %H:%M"), "origine": "rkc"})
 
-    # Base de connaissance (jamais purgée) + nettoyage des articles collectés
+    # Base de connaissance (jamais purgée) + nettoyage
     base = charger_base(articles)
     liens_base = {normaliser_lien(b["lien"]) for b in base}
     seuil = (AUJOURDHUI - dt.timedelta(days=conservation)).isoformat()
-    collectes = [a for a in articles.values() if a["date"] >= seuil and normaliser_lien(a["lien"]) not in liens_base]
-    collectes = sorted(collectes, key=lambda a: (a["date"], a["detecte_le"]), reverse=True)[:cfg.get("nb_max_articles", 5000)]
-    for a in collectes:  # articles déjà présents avant cette version du script
+    for d in (articles, ecartes):   # anciens titres parasites (versions précédentes) nettoyés une fois
+        for a in d.values():
+            if a.get("nature") != "rkc" and not a.get("titre_nettoye"):
+                t = nettoyer_titre(a["titre"], a["lien"])
+                if t and t != a["titre"]:
+                    a["titre"], a["trad"] = t, {}
+                a["titre_nettoye"] = True
+    # doublons (même source, même titre) laissés par les versions précédentes
+    vus_t, collectes = set(), []
+    tous = sorted([a for a in list(articles.values()) + list(ecartes.values()) if not a.get("debat")],
+                  key=lambda a: (a.get("detecte_le", ""), a["date"]))
+    for a in tous:
+        c = (a.get("source"), cle_titre(a["titre"]))
+        if c in vus_t or a["date"] < seuil or normaliser_lien(a["lien"]) in liens_base:
+            continue
+        vus_t.add(c)
+        collectes.append(a)
+    for a in collectes:
         a.setdefault("rubrique_mots_cles", a.get("rubrique") not in (None, "autres"))
         a.setdefault("version", "")
         if "amende" not in a:
             a["amende"] = detecter_amende(a["titre"] + " " + a.get("resume", ""), a.get("zone", ""))
-    liste = sorted(collectes + base, key=lambda a: (a["date"], a["detecte_le"]), reverse=True)
+    liste_debats = [a for a in list(debats.values()) + [e for e in ecartes.values() if e.get("debat")] if a["date"] >= seuil]
 
     depot = os.environ.get("GITHUB_REPOSITORY")
     serveur = os.environ.get("GITHUB_SERVER_URL", "https://github.com")
     meta = {
         "titre": cfg["titre"], "surtitre": cfg.get("surtitre", ""), "sous_titre": cfg.get("sous_titre", ""),
-        "mise_a_jour": MAINTENANT.isoformat(timespec="minutes"),
-        "version": id_version,
+        "mise_a_jour": MAINTENANT.isoformat(timespec="minutes"), "version": id_version,
         "nb_sources": len(sources),
-        "nb_nouveaux": len(nouveaux_ids),
         "url_lancer_maj": ("%s/%s/actions/workflows/veille.yml" % (serveur, depot)) if depot else cfg.get("url_lancer_maj", ""),
         "depot": depot or cfg.get("depot_github", ""),
         "branche": os.environ.get("BRANCHE_VEILLE") or cfg.get("branche_github", "main"),
         "serveur": serveur,
     }
-    # Traduction (gratuite, open source) des titres et résumés, puis des analyses rédigées
+
+    # Pertinence, 1er passage (sans traduction) : on ne traduit que ce qui sera gardé
+    pert = Pertinence(cfg)
+    pert.noter(collectes)
+    pert.noter(liste_debats)
+    gardes = [a for a in collectes if a["pertinence"] != "ecarte"]
+
+    # Traduction (gratuite, open source) des articles gardés et des débats gardés
     trad = Traducteur(cfg)
-    for a in liste:
+    for a in sorted(gardes + base, key=lambda a: (a["date"], a.get("detecte_le", "")), reverse=True):
         trad.traduire_article(a)
+    for a in liste_debats:
+        if a["pertinence"] in ("elevee", "moyenne"):
+            trad.traduire_article(a)
     traduire_syntheses(trad)
     trad.enregistrer()
-    en_attente = sum(1 for a in liste if trad.actif and any(
+    en_attente = sum(1 for a in gardes + base if trad.actif and any(
         c != a.get("langue") and c not in (a.get("trad") or {}) for c in trad.cibles))
     meta["traduction"] = {"active": trad.actif, "moteur": bool(trad.moteur), "faites": trad.faits,
                           "en_attente": en_attente, "erreur": trad.erreur}
     print("Traduction : %d segments traduits, %d articles en attente%s" % (
         trad.faits, en_attente, (" — " + trad.erreur) if trad.erreur else ""))
 
-    # Pertinence (après traduction : le modèle lit aussi le titre anglais)
-    pert = Pertinence(cfg)
-    liste_debats = sorted((a for a in debats.values() if a["date"] >= seuil), key=lambda a: a["date"], reverse=True)[:2000]
+    # 2e passage : les règles lisent aussi le titre anglais (textes clés cités dans une autre langue)
+    pert.noter(gardes)
+    ecartes = {a["id"]: a for a in collectes if a["pertinence"] == "ecarte"}
+    gardes = [a for a in collectes if a["pertinence"] != "ecarte"]
+    debats_gardes = [a for a in liste_debats if a["pertinence"] in ("elevee", "moyenne")]
+    for a in debats_gardes:
+        a.pop("debat", None)
+        a["essentiel"] = False   # un avis d'expert n'entre jamais dans L'essentiel
     for a in liste_debats:
-        trad.traduire_article(a)
-    pert.noter(liste_debats)
-    liste_debats = [a for a in liste_debats if not (a.get("filtre_pertinence") and a.get("pertinence") == "faible")]
-    n = pert.noter(liste)
-    # Sources très volumineuses (journal officiel…) : seuls les textes jugés pertinents sont gardés
-    avant = len(liste)
-    liste = [a for a in liste if not (a.get("filtre_pertinence") and a.get("pertinence") == "faible"
-                                      and not a.get("rubrique_mots_cles"))]
-    if avant != len(liste):
-        gardes = {a["id"] for a in liste}
-        nouveaux_ids = [i for i in nouveaux_ids if i in gardes]
-        meta["nb_nouveaux"] = len(nouveaux_ids)
-        print("Sources volumineuses : %d textes de faible pertinence écartés." % (avant - len(liste)))
-    print("Pertinence : %d articles notés (mode %s)%s" % (n, pert.mode, (" — " + pert.erreur) if pert.erreur else ""))
+        if a["pertinence"] not in ("elevee", "moyenne"):
+            a["debat"] = True
+            a["pertinence"] = "ecarte"
+            ecartes[a["id"]] = a
+    liste = sorted(gardes + base, key=lambda a: (a["date"], a.get("detecte_le", "")), reverse=True)
+    liste = liste[:cfg.get("nb_max_articles", 5000)]
+    ids_liste = {a["id"] for a in liste}
+    nouveaux_ids = [i for i in dict.fromkeys(nouveaux_ids) if i in ids_liste]
+    meta["nb_nouveaux"] = len(nouveaux_ids)
+    meta["nb_ecartes_nouveaux"] = sum(1 for a in ecartes.values() if a.get("version") == id_version)
+    meta["nb_essentiel"] = sum(1 for a in liste if a.get("essentiel"))
+    print("Pertinence (%s) : %d gardés, dont %d dans L'essentiel ; %d écartés au total (%d cette semaine)%s" % (
+        pert.mode, len(gardes), meta["nb_essentiel"], len(ecartes), meta["nb_ecartes_nouveaux"],
+        (" — " + pert.erreur) if pert.erreur else ""))
+    import regles as _regles
+    meta["textes_cles_en"] = _regles.LIBELLES_EN
     meta["pertinence"] = {"mode": pert.mode, "erreur": pert.erreur, "themes": pert.libelles(),
                           "seuils": {k: v for k, v in pert.seuils.items() if not k.startswith("_")}}
 
     rubriques = [dict(r) for r in cfg["rubriques"]]
-    if not any(r["id"] == "autres" for r in rubriques):
-        rubriques.append({"id": "autres", "titre": "Autres actualités à surveiller",
-                          "titre_en": "Other news to monitor",
-                          "chapeau": "Articles sans lien évident avec les thèmes prioritaires : gardés pour ne rien manquer.",
-                          "chapeau_en": "Articles with no obvious link to the priority themes: kept so that nothing is missed."})
     meta["rubriques"] = [{k: r.get(k, "") for k in ("id", "titre", "chapeau", "titre_en", "chapeau_en")} for r in rubriques]
     meta["libelles_en"] = cfg.get("libelles_en", {})
     meta["sous_titre_en"] = cfg.get("sous_titre_en", "")
     meta["surtitre_en"] = cfg.get("surtitre_en", "")
 
-    # Dates clés (échéances) citées dans les textes : pour l'onglet « L'essentiel »
-    for a in liste + liste_debats:
-        if a.get("nature") == "rkc":
-            continue  # calculées une fois à partir du texte privé
+    # Dates clés (échéances) : seulement près d'un mot d'obligation, jamais pour un événement
+    for a in liste + debats_gardes:
+        if a.get("nature") == "rkc" or a.get("base"):
+            continue
+        if any("événements" in b for b in a.get("bruit", [])):
+            a["echeances"] = []
+            continue
         textes = {a.get("langue") or "fr": a["titre"] + ". " + (a.get("resume") or "")}
         for lg, tr in (a.get("trad") or {}).items():
             textes[lg] = (tr.get("titre") or "") + ". " + (tr.get("resume") or "")
@@ -1065,20 +1100,19 @@ def main():
         except ValueError:
             d_art = None
         a["echeances"] = echeances.extraire(textes, d_art, AUJOURDHUI)
-    for a in liste + liste_debats:
-        a.pop("_texte", None)
+    for a in liste + liste_debats + list(ecartes.values()):
+        a.pop("_texte", None)   # le texte privé RKC n'est jamais écrit
 
-    # Acronymes : forme canonique par article (pour le filtre du site) + registre global
-    for a in liste + liste_debats:
+    for a in liste + debats_gardes:
         a["acronymes"] = [code for code, _ in extraire_acronymes(a["titre"] + " " + a.get("resume", ""), trad.glossaire)]
     precedent = lire_json(os.path.join(DATA, "acronymes.json"), {})
     registre = registre_acronymes(liste, trad.glossaire, precedent, AUJOURDHUI.isoformat())
 
-    # Historique des versions : une entrée par collecte
     actives = [e for e in etats if e["acces"] not in ("inactive", "retiree")]
     versions.append({
         "id": id_version, "date": meta["mise_a_jour"], "nb_total": len(liste), "nb_nouveaux": len(nouveaux_ids),
         "nouveaux": nouveaux_ids, "rattrapage": RATTRAPAGE.isoformat() if RATTRAPAGE else "",
+        "nb_essentiel": meta["nb_essentiel"], "nb_ecartes": meta["nb_ecartes_nouveaux"],
         "sources_lues": sum(1 for e in actives if e["acces"] in ("ok", "partielle")), "sources_actives": len(actives),
         "declenchement": os.environ.get("GITHUB_EVENT_NAME", "local"),
     })
@@ -1090,9 +1124,15 @@ def main():
     ecrire_json_et_js("etat_sources", {"mise_a_jour": meta["mise_a_jour"], "jours_premiere_collecte": cfg.get("jours_premiere_collecte", 60),
                                        "jours_conservation": conservation, "sources": etats}, "VEILLE_ETAT_SOURCES")
     ecrire_json_et_js("versions", {"versions": versions}, "VEILLE_VERSIONS")
-    ecrire_json_et_js("debats", {"mise_a_jour": meta["mise_a_jour"], "articles": liste_debats}, "VEILLE_DEBATS")
+    ecrire_json_et_js("debats", {"mise_a_jour": meta["mise_a_jour"], "articles": debats_gardes}, "VEILLE_DEBATS")
+    # écartés : fichier complet (réexaminé à chaque collecte) + liste légère pour le site (120 derniers jours)
+    liste_ecartes = sorted(ecartes.values(), key=lambda a: (a.get("detecte_le", ""), a["date"]), reverse=True)
+    ecrire_json_et_js("ecartes", {"articles": liste_ecartes[:cfg.get("nb_max_ecartes", 8000)]}, None)
+    limite_ec = (AUJOURDHUI - dt.timedelta(days=120)).isoformat()
+    ecrire_json_et_js("ecartes_site", {"mise_a_jour": meta["mise_a_jour"],
+                                       "articles": [fiche_ecarte(a) for a in liste_ecartes if a.get("detecte_le", a["date"]) >= limite_ec][:4000]},
+                      "VEILLE_ECARTES")
     telecharger_carte()
-    # Référentiel des textes applicables (config/referentiel.json, modifiable à la main) -> site
     ref = lire_json(os.path.join(RACINE, "config", "referentiel.json"), {})
     if ref:
         with open(os.path.join(DATA, "referentiel.js"), "w", encoding="utf-8") as f:
@@ -1100,10 +1140,16 @@ def main():
     ecrire_json_et_js("vus", vus, None)
     with open(os.path.join(DATA, "version_courante.txt"), "w") as f:
         f.write(id_version)
+    # Export PDF de la veille complète (FR et EN), téléchargeable depuis le site
+    try:
+        import export_pdf
+        export_pdf.generer(liste, meta, ref, DATA)
+    except Exception as e:
+        print("Export PDF non généré : %s" % str(e)[:200])
     print("\n%d nouveaux articles — %d au total (dont %d de la base de connaissance)." % (len(nouveaux_ids), len(liste), len(base)))
-    print("%d/%d sources actives lues (%d partiellement)." % (
+    print("%d/%d sources actives lues (%d partiellement, %d à retirer ?)." % (
         sum(1 for e in actives if e["acces"] in ("ok", "partielle")), len(actives),
-        sum(1 for e in actives if e["acces"] == "partielle")))
+        sum(1 for e in actives if e["acces"] == "partielle"), sum(1 for e in actives if e.get("a_retirer"))))
     return 0
 
 

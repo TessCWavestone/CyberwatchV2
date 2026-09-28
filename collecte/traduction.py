@@ -170,17 +170,28 @@ class Traducteur:
         return self.moteur.translate.translate(texte, de, vers)
 
     def traduire(self, texte, de, vers):
-        """Retourne la traduction, ou None si elle n'est pas (encore) disponible."""
+        """Retourne la traduction, ou None si elle n'est pas (encore) disponible.
+        Une traduction « dégénérée » (le modèle boucle : « mainstremainstre… »)
+        est refaite phrase par phrase, sinon le texte d'origine est gardé."""
         if not texte or de == vers:
             return texte
         cle = hashlib.sha1(("%s|%s|%s" % (de, vers, texte)).encode("utf-8")).hexdigest()[:16]
-        if cle in self.cache:
+        if cle in self.cache and not degeneree(texte, self.cache[cle]):
             return self.cache[cle]
         if not self.moteur or self.faits >= self.budget:
             return None
         try:
             protege, trouves = self._proteger(texte)
             sortie = self._restaurer(self._brut(protege, de, vers), trouves, de, vers)
+            if degeneree(texte, sortie):
+                morceaux = []
+                for phrase in re.split(r"(?<=[.!?;:])\s+", texte):
+                    p2, tr2 = self._proteger(phrase)
+                    t2 = self._restaurer(self._brut(p2, de, vers), tr2, de, vers) if phrase.strip() else phrase
+                    morceaux.append(phrase if degeneree(phrase, t2) else t2)
+                sortie = " ".join(morceaux)
+                if degeneree(texte, sortie):
+                    sortie = texte
         except Exception as e:
             self.erreur = "Traduction %s→%s impossible : %s" % (de, vers, str(e)[:100])
             return None
@@ -189,6 +200,13 @@ class Traducteur:
         return sortie
 
     def traduire_article(self, a):
+        # traductions dégénérées enregistrées par une version précédente : on les refait
+        for c, tr in list((a.get("trad") or {}).items()):
+            if degeneree(a["titre"], tr.get("titre", "")) or degeneree(a.get("resume", ""), tr.get("resume", "")):
+                del a["trad"][c]
+        self._traduire_article(a)
+
+    def _traduire_article(self, a):
         """Complète a['langue'] et a['trad'] = {cible: {titre, resume}}."""
         if not self.actif:
             return
@@ -204,6 +222,18 @@ class Traducteur:
                 trad[cible] = {"titre": titre, "resume": resume}
         if trad:
             a["trad"] = trad
+
+
+def degeneree(source, sortie):
+    """Détecte une traduction qui boucle (répétition d'un fragment, texte gonflé)."""
+    if not sortie or not source:
+        return False
+    if len(sortie) > 2.2 * len(source) + 40:
+        return True
+    if re.search(r"(.{3,20}?)\1{3,}", sortie) and not re.search(r"(.{3,20}?)\1{3,}", source):
+        return True
+    mots = re.findall(r"\w+", sortie.lower())
+    return len(mots) >= 10 and len(set(mots)) / len(mots) < 0.3
 
 
 # --------------------------------------------------------------- registre des acronymes

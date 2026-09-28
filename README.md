@@ -1,10 +1,42 @@
 # Cyber Watch : veille réglementaire automatique et gratuite
 
 Chaque lundi à 7 h (et à la demande), GitHub lance un script qui lit toutes les
-sources, **garde tous les articles**, leur donne une note de pertinence avec un
-petit modèle d'IA open source et gratuit, détecte les montants d'amendes, traduit
-en français et en anglais, puis met le site à jour. Pas de clé API, pas
-d'abonnement, rien à payer.
+sources, note chaque article (petit modèle open source + règles lisibles), trie
+entre **L'essentiel**, **très pertinent**, **pertinent**, **à surveiller** et
+**écarté** (liste consultable), détecte amendes et échéances, traduit en français
+et en anglais, produit le PDF de la veille, puis met le site à jour. Pas de clé
+API, pas d'abonnement, pas d'IA générative, rien à payer.
+
+## Nouveautés de la version 4 (28/09/2026) — ce qu'il faut faire sur GitHub
+
+1. **Remplacer tous les fichiers du dépôt** par ceux du zip (Add file → Upload
+   files), y compris les deux fichiers cachés `.github/workflows/veille.yml` et
+   `.github/workflows/sources.yml` (ils ont changé) : créez-les à nouveau avec
+   **Add file → Create new file**, nom `.github/workflows/veille.yml`, puis
+   collez le contenu. Le dossier `data/` du zip est vide exprès : **ne supprimez
+   pas** le `data/` du dépôt (il contient votre historique). Le zip ne contient
+   pas non plus `config/sources_manuelles.json`, pour ne pas écraser les sources
+   ajoutées depuis le site.
+2. **Légifrance** : plus rien à configurer. Le Journal officiel est lu dans les
+   données ouvertes de la DILA, sans compte. Vous pouvez supprimer les secrets
+   `LEGIFRANCE_CLIENT_ID`, `LEGIFRANCE_CLIENT_SECRET` et la variable
+   `LEGIFRANCE_ENV` (inutilisés).
+3. **Étiquette `approuvé`** : vérifiez qu'elle existe (Issues → Labels). Elle
+   sert aussi aux avis « Important » / « Pas pertinent » proposés par des
+   non-collaborateurs.
+4. **Veille RKC** : rien ne change, déposez le mail `.msg` comme avant dans le
+   dépôt privé (le Word n'est plus nécessaire).
+5. **Lancer une collecte** (Actions → Cyber Watch - collecte → Run workflow). La
+   première collecte v4 est plus longue (toutes les notes sont recalculées).
+
+Ce qui change : textes clés jamais écartés, « très pertinent » réservé aux
+articles avec un signal réglementaire, bruit écarté (alertes de vulnérabilités,
+événements, marchés, finance, télécoms), hors Europe limité aux textes à portée
+mondiale, liste des écartés consultable, boutons d'avis, L'essentiel regroupé
+par texte, couverture pays × rubrique, PDF téléchargé directement, nouvelles
+sources (EUR-Lex JO L et C, JO français, CEN-CENELEC, ETSI, BGBl, SFS,
+Swissmedic, Helsedirektoratet), corrections (MDCG, doublons, titres parasites,
+traductions en boucle, dates d'événements prises pour des échéances).
 
 ## Contenu du dossier
 
@@ -35,6 +67,12 @@ d'abonnement, rien à payer.
 | `data/debats.js` / `.json` | Avis d'experts (onglet « Débats et signaux », non certifié), stockés à part | Le script |
 | `data/monde.js` | Fond de carte (contours des pays, données libres Natural Earth), téléchargé une fois | Le script |
 | `config/referentiel.json` | Textes applicables par pays (grille de 10 catégories), affichés dans l'onglet « Textes applicables » | Vous, à la main si besoin. **Jamais écrasé** |
+| `collecte/regles.py` | Règles de pertinence : textes clés, signal réglementaire, bruit, hors Europe (listes lisibles, multilingues) | Vous ou Claude, pour ajouter un texte clé |
+| `collecte/dila.py` | Journal officiel français (données ouvertes DILA) | Personne |
+| `collecte/export_pdf.py` | PDF de la veille complète (FR et EN) généré à chaque collecte | Personne |
+| `config/retours.json` | Avis des lecteurs (boutons « Important » / « Pas pertinent ») | Le site (ou vous) |
+| `data/ecartes.json`, `data/ecartes_site.js` | Articles écartés (réexaminés à chaque collecte), liste affichée dans Sources | Le script |
+| `data/cyberwatch_veille_fr.pdf` / `_en.pdf` | La veille complète en PDF | Le script |
 
 ---
 
@@ -105,10 +143,12 @@ collecte s'ajoute à la base existante.
 
 ### Étape 7 : brancher la veille RKC (facultatif, 10 minutes)
 
-Le site est public : les fichiers RKC (articles payants, veille interne
-Wavestone) ne doivent **jamais** être déposés dans ce dépôt. On les range dans
-un second dépôt **privé**, que la collecte lit sans jamais publier son contenu.
-Le site n'affiche que le titre, le lien, la date, la note et les thèmes.
+Le site est public : les fichiers RKC (alerte Nexis Newsdesk, articles payants)
+ne doivent **jamais** être déposés dans ce dépôt. On les range dans un second
+dépôt **privé**, que la collecte lit sans jamais publier son contenu. Le site
+n'affiche que le titre, la publication, la date et la note ; l'extrait de
+l'article, l'en-tête du transfert et la signature du mail ne sont jamais
+publiés. Seuls les articles « pertinent » ou « très pertinent » sont gardés.
 
 1. **Créer le dépôt privé** : **+ → New repository**, nom `cyberwatch-rkc`,
    cochez **Private**, **Create repository**.
@@ -116,9 +156,9 @@ Le site n'affiche que le titre, le lien, la date, la note et les thèmes.
    - le mail RKC : dans Outlook, ouvrez le mail → **Fichier → Enregistrer
      sous** → format **Message Outlook (.msg)** (ou glissez le mail sur le
      bureau : un .msg est créé) ;
-   - le fichier Word « Veille AAAA-MM-JJ.docx » (texte des articles payants).
-     Chaque article commence par son titre, en style **Titre** ou entièrement
-     en **gras**, suivi de son texte. Mettez la date dans le nom du fichier.
+   - facultatif : un fichier Word « Veille AAAA-MM-JJ.docx » avec le texte
+     d'articles payants (chaque article commence par son titre en style
+     **Titre** ou en **gras**). Il affine seulement la note.
 3. **Créer un jeton de lecture** : photo de profil → **Settings → Developer
    settings → Personal access tokens → Fine-grained tokens → Generate new
    token**. *Repository access* : **Only select repositories** →
@@ -131,10 +171,11 @@ Le site n'affiche que le titre, le lien, la date, la note et les thèmes.
 5. La prochaine collecte lit les fichiers. L'onglet **Sources** affiche une
    ligne « Veille RKC — dépôt privé » avec le nombre d'articles lus.
 
-Les liens des articles gratuits cités dans les mails sont repris tels quels
-(les liens Outlook « safelinks » sont nettoyés). Le script ne recherche pas
-les articles sur internet : si un lien est protégé, un humain qui clique y
-accède normalement.
+Les liens du mail (protégés par Proofpoint « urldefense » et suivis par
+Newsdesk) sont décodés ; pendant la collecte, le script suit le lien Newsdesk
+pour publier l'adresse finale de l'article. Si ce n'est pas possible, le site
+propose une recherche du titre (le lien Newsdesk brut, qui contient des
+identifiants d'abonné, n'est jamais publié).
 
 ### Étape 8 : ajout de sources depuis le site (facultatif)
 
@@ -273,15 +314,24 @@ l'onglet Sources du site dit, après la collecte, si elles ont été lues. Les l
 - **Inaccessible**, ou « page chargée en JavaScript » : à corriger, en trouvant
   un flux RSS ou une autre page de la source.
 
-**Ajuster la pertinence.** Aucun article n'est jamais supprimé ; seule sa
-note change. Deux leviers :
+**Ajuster la pertinence.** Aucun article n'est supprimé : un article écarté
+reste dans Sources › Articles écartés (téléchargeable). Leviers, du plus simple
+au plus fin :
+
+- les boutons **« Important »** / **« Pas pertinent »** sur chaque article (et
+  « Important » dans la liste des écartés) : l'avis est enregistré dans
+  `config/retours.json` (issue « [Avis] » ou jeton), appliqué à la collecte
+  suivante et utilisé comme exemple par le modèle ;
+- `collecte/regles.py` : la liste des **textes clés** (jamais écartés), les
+  mots du **signal réglementaire** et du **bruit**, dans toutes les langues ;
 
 - `config/profil_pertinence.json` : les **thèmes** qui intéressent le client,
   décrits en phrases simples (NIS2, CRA, RGPD, données de santé, DM et DIV,
   AI Act, Data Act, entités critiques, pharma, normes, réglementation large,
-  menaces). Le modèle compare le **sens** de chaque article à ces phrases, dans
-  toutes les langues. Ajoutez une phrase ou un thème pour élargir ; les
-  `seuils` règlent la frontière élevée / moyenne / faible.
+  acheteurs de santé, fournisseurs publics) et des thèmes « bruit » marqués
+  `negatif`. Le modèle compare le **sens** de chaque article à ces phrases, dans
+  toutes les langues ; les `seuils` règlent les frontières (élevée 0,55,
+  moyenne 0,45, bas 0,33).
 - L'onglet **« Mots Clés »** de l'Excel : un mot-clé présent donne un petit
   bonus et apparaît dans « Pourquoi cet article est là ». Les variantes en
   langues étrangères sont dans `config/veille.json`.
@@ -299,9 +349,12 @@ modifie à la main (ou avec l'aide de Claude) : un élément par réglementation
 avec titre et résumé en français et en anglais, date, pays, lien, statut,
 amende et justification.
 
-**Exporter.** Le bouton **« Exporter la sélection (Excel) »** télécharge un
-fichier CSV des articles actuellement filtrés, qui s'ouvre directement dans
-Excel.
+**Exporter.** Menu **Exporter** : « La veille complète (PDF) » télécharge le
+PDF produit à chaque collecte (L'essentiel regroupé par texte, puis les
+articles pertinents des 60 derniers jours, titres cliquables) ; « Les articles
+affichés (PDF) » crée un PDF de la sélection filtrée (bibliothèque libre
+html2pdf, chargée au clic ; si elle ne se charge pas, la fenêtre d'impression
+s'ouvre en secours) ; « Les articles affichés (Excel) » télécharge un CSV.
 
 **Ajouter des analyses rédigées.** Le fichier `data/syntheses.js` n'est jamais
 modifié par la collecte. Vous pouvez y ajouter des fiches, à la main ou en
@@ -311,34 +364,21 @@ demandant à Claude de rédiger une synthèse à partir d'un export.
 l'Excel (sources et mots-clés) et le titre et les rubriques dans
 `config/veille.json`. Rien d'autre à modifier.
 
-## Brancher l'API Légifrance (Journal officiel)
+## Journaux officiels
 
-La ligne « Légifrance » de l'Excel est collectée par l'**API officielle** de
-PISTE plutôt que par la page web. Vos identifiants ne sont **jamais** écrits
-dans les fichiers ni envoyés dans une conversation : ils sont rangés dans les
-secrets chiffrés de GitHub.
+- **France (JORF)** : la ligne « Légifrance » de l'Excel est lue dans les
+  **données ouvertes de la DILA** (https://echanges.dila.gouv.fr/OPENDATA/JORF/,
+  deux archives par jour, sans compte ni clé). Les mesures individuelles
+  (nominations, promotions, concours…) sont ignorées ; chaque texte renvoie vers
+  sa page Légifrance. Première lecture : 21 derniers jours
+  (`dila_jours_premiere_collecte` dans `config/veille.json`), puis seulement
+  les nouvelles archives ; un rattrapage relit depuis la date demandée.
+- **Union européenne** : flux RSS d'EUR-Lex, Journal officiel série L (actes)
+  et série C (communications), sur la ligne EUR-Lex de l'Excel.
+- **Allemagne** (Bundesgesetzblatt) et **Suède** (Svensk författningssamling).
 
-1. **Abonner l'application à l'API Légifrance** (étape manquante jusqu'ici).
-   Sur piste.gouv.fr, ouvrez votre application, puis **Modifier l'application**
-   → onglet des API / **Consentement CGU API** : cochez **Légifrance**, acceptez
-   les CGU, enregistrez. La fiche doit afficher Légifrance dans « Subscribed APIs ».
-   Si le catalogue d'API renvoie une erreur 403, essayez depuis un autre
-   réseau (partage 4G par exemple) : certains réseaux d'entreprise le bloquent.
-2. **Noter l'environnement** : une application « SANDBOX » ne fonctionne qu'en
-   bac à sable (données de test) ; pour les vrais textes du JO, créez la même
-   application en **Production** et abonnez-la aussi à Légifrance.
-3. **Ranger les identifiants dans GitHub** : dépôt → **Settings → Secrets and
-   variables → Actions** :
-   - onglet *Secrets* → **New repository secret** : `LEGIFRANCE_CLIENT_ID`
-     (le Client ID OAuth), puis `LEGIFRANCE_CLIENT_SECRET` (le secret OAuth) ;
-   - onglet *Variables* → **New repository variable** : `LEGIFRANCE_ENV` =
-     `sandbox` ou `production`.
-4. **Relancer la collecte** (Actions → Run workflow). La ligne Légifrance de
-   « Sources de la veille » indique « API officielle » si tout va bien, sinon le
-   message d'erreur exact (authentification refusée, API non abonnée…).
-
-Les mots-clés recherchés dans le JO se règlent dans `config/veille.json`,
-rubrique `legifrance` (par défaut sur les 30 derniers jours).
+Ces sources publient beaucoup : leur colonne « Filtrage » vaut `pertinence`
+(seuls les textes pertinents sont gardés, les autres vont dans les écartés).
 
 ## Règles de qualité des sources
 
@@ -371,8 +411,11 @@ Ouvrez ensuite `index.html` dans votre navigateur.
 
 - **Pas de résumé rédigé par une IA** pour les articles collectés : le résumé
   affiché est celui fourni par la source. La pertinence est une estimation
-  automatique : un article « faible » peut malgré tout vous intéresser, d'où le
-  choix de tout garder.
+  automatique : un contrôle humain reste nécessaire (les « à surveiller » et
+  les écartés sont là pour ça, et les boutons d'avis corrigent le tri).
+- **Traduction espagnol → anglais** : le modèle libre boucle parfois
+  (« mainmainmain… ») ; ces traductions sont détectées et remplacées par le
+  texte d'origine.
 - **Amendes** : la détection repose sur des motifs de texte ; un montant peut
   manquer si l'article ne le cite pas dans son titre ou son résumé. Les
   conversions en euros sont approximatives.

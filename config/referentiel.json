@@ -58,7 +58,9 @@
    "lien": "https://www.btl-recht.de/blog/nis-2-im-bsig-wer-verpflichtet-ist-und-was-jetzt-gilt/",
    "pourquoi_fr": "Les fabricants de DM/DIV d'une certaine taille et leurs clients hospitaliers sont des entités NIS2 ; exigences de sécurité de la chaîne d'approvisionnement.",
    "pourquoi_en": "Medical device/IVD manufacturers above size thresholds and their hospital customers are NIS2 entities; supply chain security requirements.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "BSI",
+   "amende_max_en": "€10m or 2% of worldwide turnover (particularly important entities) ; €7m or 1.4% (important entities)"
   },
   {
    "amende_max": null,
@@ -74,7 +76,9 @@
    "lien": "https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf",
    "pourquoi_fr": "Référence des autorités allemandes pour les outils d'IA d'aide à l'interprétation traitant des données de patients.",
    "pourquoi_en": "Reference of German authorities for AI interpretation-support tools processing patient data.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Datenschutzkonferenz (BfDI and Länder authorities)",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -90,7 +94,9 @@
    "lien": "https://www.gesetze-im-internet.de/sgb_5/__393.html",
    "pourquoi_fr": "Condition d'accès au marché pour les offres cloud/connectivité à distance traitant des données de patients allemands.",
    "pourquoi_en": "Market access condition for cloud/remote connectivity offerings processing German patient data.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "BMG / BSI",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -106,7 +112,9 @@
    "lien": "https://www.bsi.bund.de/SharedDocs/Textbausteine/DE/KRITIS/B3S/Gesundheit/b3s-krankenhaus.html",
    "pourquoi_fr": "Référentiel que les hôpitaux allemands imposent dans leurs achats et contrats de maintenance de dispositifs connectés.",
    "pourquoi_en": "Framework German hospitals impose in procurement and maintenance contracts for connected devices.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "DKG / BSI",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -122,7 +130,9 @@
    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260407_C5_Cloud_Computing.html",
    "pourquoi_fr": "Attestation attendue pour tout service cloud vendu aux acteurs publics et de santé allemands.",
    "pourquoi_en": "Attestation expected for any cloud service sold to German public and health actors.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "BSI",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -138,7 +148,9 @@
    "lien": "https://www.bfarm.de/DE/Medizinprodukte/Aufgaben/Risikobewertung-und-Forschung/Cybersicherheit/_node.html",
    "pourquoi_fr": "Autorité compétente pour la vigilance et les vulnérabilités des automates et logiciels DIV en Allemagne.",
    "pourquoi_en": "Competent authority for vigilance and vulnerabilities of IVD analysers and software in Germany.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "BfArM",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -154,7 +166,9 @@
    "lien": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Cyber_Resilience_Act/cyber_resilience_act_node.html",
    "pourquoi_fr": "Applicable aux logiciels et composants connectés non couverts par l'IVDR.",
    "pourquoi_en": "Applies to connected software and components not covered by the IVDR.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "BSI",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -170,7 +184,9 @@
    "lien": "https://www.bfarm.de/DE/Medizinprodukte/Aufgaben/DiGA-und-DiPA/Datensicherheitskriterien/_artikel.html",
    "pourquoi_fr": "Schéma national de certification de référence pour les logiciels de santé ; pertinent si des applications de santé numériques sont remboursées en Allemagne.",
    "pourquoi_en": "Reference national certification scheme for health software; relevant if digital health applications are reimbursed in Germany.",
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "BSI / BfArM",
+   "amende_max_en": null
   },
   {
    "amende_max": "10 M€ ou 2 % du CA mondial (entités essentielles) ; 7 M€ ou 1,4 % (entités importantes)",
@@ -186,7 +202,9 @@
    "lien": "https://risilience.at/2025/12/29/nis-2-ist-angekommen-erweiterung-besonders-im-gesundheitswesen/",
    "pourquoi_fr": "Les clients hospitaliers autrichiens exigeront des preuves de sécurité (ISO/IEC 27001, Cyber Risk Rating) de leurs fournisseurs.",
    "pourquoi_en": "Austrian hospital customers will require security evidence (ISO/IEC 27001, Cyber Risk Rating) from their suppliers.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Bundesamt für Cybersicherheit (Ministry of the Interior)",
+   "amende_max_en": "€10m or 2% of worldwide turnover (essential entities) ; €7m or 1.4% (important entities)"
   },
   {
    "amende_max": null,
@@ -202,7 +220,9 @@
    "lien": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20008120",
    "pourquoi_fr": "Encadre l'échange des résultats de laboratoire et l'intégration des logiciels avec ELGA.",
    "pourquoi_en": "Governs exchange of laboratory results and software integration with ELGA.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Federal Ministry of Health / ELGA GmbH",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -218,7 +238,9 @@
    "lien": "https://www.wko.at/it-sicherheit/sicherheit-lieferkette-nis2",
    "pourquoi_fr": "Décrit précisément ce que les acheteurs de santé autrichiens exigeront des fournisseurs d'automates et logiciels.",
    "pourquoi_en": "Describes precisely what Austrian health buyers will require from analyser and software suppliers.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Bundesamt für Cybersicherheit / WKO",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -234,7 +256,9 @@
    "lien": "https://www.sicherheitshandbuch.gv.at/",
    "pourquoi_fr": "Référence possible dans les marchés publics et contrats avec les établissements publics autrichiens.",
    "pourquoi_en": "Possible reference in public procurement and contracts with Austrian public bodies.",
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "Bundeskanzleramt / A-SIT",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -250,7 +274,9 @@
    "lien": "https://www.basg.gv.at/fuer-unternehmen/medizinprodukte/hersteller",
    "pourquoi_fr": "Autorité de surveillance des DIV mis sur le marché autrichien (vigilance, dont cybersécurité).",
    "pourquoi_en": "Supervisory authority for IVDs placed on the Austrian market (vigilance, including cybersecurity).",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "BASG",
+   "amende_max_en": null
   },
   {
    "amende_max": "500 000 €",
@@ -266,7 +292,9 @@
    "lien": "https://www.ey.com/de_at/newsroom/2026/02/rkeg-neues-gesetz-2026",
    "pourquoi_fr": "Santé couverte ; exigences de résilience répercutées sur les fournisseurs essentiels.",
    "pourquoi_en": "Health is covered; resilience requirements passed on to essential suppliers.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Federal Ministry of the Interior",
+   "amende_max_en": "500 000 €"
   },
   {
    "amende_max": null,
@@ -282,7 +310,9 @@
    "lien": "https://cyberrisk-rating.at/cyberrisk-2026-schema-en.pdf",
    "pourquoi_fr": "Preuve de sécurité citée par la WKO comme acceptable pour les exigences de chaîne d'approvisionnement du NISG 2026.",
    "pourquoi_en": "Security evidence cited by the WKO as acceptable for NISG 2026 supply chain requirements.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Kompetenzzentrum Sicheres Österreich (KSÖ), KSV1870",
+   "amende_max_en": null
   },
   {
    "zone": "Belgique",
@@ -298,7 +328,9 @@
    "pourquoi_fr": "Les fabricants de DIV implantés en Belgique sont des entités NIS2 du secteur santé.",
    "pourquoi_en": "IVD manufacturers established in Belgium are NIS2 health-sector entities.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "CCB",
+   "amende_max_en": null
   },
   {
    "zone": "Belgique",
@@ -314,7 +346,9 @@
    "pourquoi_fr": "Traitement de données de santé des laboratoires clients.",
    "pourquoi_en": "Processing of client laboratories' health data.",
    "amende_max": "20 M€ ou 4 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Data protection authority (APD/GBA)",
+   "amende_max_en": "€20m or 4% of worldwide turnover"
   },
   {
    "zone": "Belgique",
@@ -330,7 +364,9 @@
    "pourquoi_fr": "Les flux de résultats de laboratoire dans l'écosystème eHealth sont encadrés.",
    "pourquoi_en": "Laboratory result flows in the eHealth ecosystem are regulated.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Plateforme eHealth",
+   "amende_max_en": null
   },
   {
    "zone": "Belgique",
@@ -346,7 +382,9 @@
    "pourquoi_fr": "Condition pratique pour que les logiciels de laboratoire s'intègrent aux services eHealth utilisés par les hôpitaux.",
    "pourquoi_en": "Practical condition for lab software to integrate with eHealth services used by hospitals.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Plateforme eHealth / INAMI",
+   "amende_max_en": null
   },
   {
    "zone": "Belgique",
@@ -362,7 +400,9 @@
    "pourquoi_fr": "Cadre principal des automates et logiciels DIV.",
    "pourquoi_en": "Main framework for IVD analysers and software.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "AFMPS / FAGG",
+   "amende_max_en": null
   },
   {
    "zone": "Belgique",
@@ -378,7 +418,9 @@
    "pourquoi_fr": "IA d'aide à l'interprétation = haut risque (IVDR).",
    "pourquoi_en": "AI interpretation support = high risk (IVDR).",
    "amende_max": "35 M€ ou 7 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "IBPT / AFMPS",
+   "amende_max_en": "€35m or 7% of worldwide turnover"
   },
   {
    "zone": "Belgique",
@@ -394,7 +436,9 @@
    "pourquoi_fr": "Produits connectés non-DM.",
    "pourquoi_en": "Non-device connected products.",
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "CCB (communication), supervisory authority to be confirmed",
+   "amende_max_en": "€15m or 2.5% of worldwide turnover"
   },
   {
    "zone": "Belgique",
@@ -410,7 +454,9 @@
    "pourquoi_fr": "Clients hospitaliers ou laboratoires désignés entités critiques.",
    "pourquoi_en": "Hospital or lab clients designated as critical entities.",
    "amende_max": "125 000 €",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "National crisis centre / sectoral authorities",
+   "amende_max_en": "125 000 €"
   },
   {
    "zone": "Belgique",
@@ -426,7 +472,9 @@
    "pourquoi_fr": "Certification attendue par les clients belges soumis à NIS2.",
    "pourquoi_en": "Certification expected by Belgian NIS2 clients.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "CCB",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -442,7 +490,9 @@
    "pourquoi_fr": "Socle cyber applicable aux clients hospitaliers et potentiellement au fabricant de DIV (sous-secteur santé).",
    "pourquoi_en": "Cyber baseline for hospital customers and potentially the IVD manufacturer (health subsector).",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Styrelsen for Samfundssikkerhed (SAMSIK) and sectoral authorities",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -458,7 +508,9 @@
    "pourquoi_fr": "Autorité compétente directe si le client a une entité de fabrication DIV au Danemark.",
    "pourquoi_en": "Directly competent authority if the client has an IVD manufacturing entity in Denmark.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Sundhedsdatastyrelsen (taken over by Digital Sundhed Danmark)",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -474,7 +526,9 @@
    "pourquoi_fr": "Traitement de données de santé via logiciels et services connectés ; régions déjà condamnées.",
    "pourquoi_en": "Processing of health data via software and connected services; regions already fined.",
    "amende_max": "RGPD : jusqu'à 20 M€ ou 4 % du chiffre d'affaires annuel mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Datatilsynet",
+   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover"
   },
   {
    "zone": "Danemark",
@@ -490,7 +544,9 @@
    "pourquoi_fr": "Détermine standards d'interopérabilité et coordination cyber du système de santé danois.",
    "pourquoi_en": "Sets interoperability standards and cyber coordination for the Danish health system.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Indenrigs- og Sundhedsministeriet / Digital Sundhed Danmark",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -506,7 +562,9 @@
    "pourquoi_fr": "Référentiel des acheteurs hospitaliers danois envers leurs fournisseurs.",
    "pourquoi_en": "Baseline of Danish hospital buyers towards their suppliers.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Danske Regioner / regions",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -522,7 +580,9 @@
    "pourquoi_fr": "Les acheteurs publics répercutent des exigences ISO 27001 sur leurs fournisseurs.",
    "pourquoi_en": "Public buyers pass ISO 27001 requirements on to suppliers.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Digitaliseringsstyrelsen",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -538,7 +598,9 @@
    "pourquoi_fr": "Exigences susceptibles d'être reprises dans les marchés publics de systèmes de santé.",
    "pourquoi_en": "Requirements likely to be reused in public procurement of health systems.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Digitaliseringsstyrelsen / sikkerdigital.dk",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -554,7 +616,9 @@
    "pourquoi_fr": "Autorité nationale DM/DIV (vigilance, avis de sécurité, y compris cyber).",
    "pourquoi_en": "National MD/IVD authority (vigilance, safety notices including cyber).",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Lægemiddelstyrelsen",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -570,7 +634,9 @@
    "pourquoi_fr": "Cadre national de supervision de l'IA, applicable aux fonctions d'IA d'aide à l'interprétation.",
    "pourquoi_en": "National AI supervision framework, relevant for AI interpretation-support functions.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Digitaliseringsministeriet and designated authorities",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -586,7 +652,9 @@
    "pourquoi_fr": "Produits connectés hors MDR/IVDR du client.",
    "pourquoi_en": "Client's connected products outside MDR/IVDR.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Styrelsen for Samfundssikkerhed (SAMSIK)",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -602,7 +670,9 @@
    "pourquoi_fr": "Hôpitaux et laboratoires critiques exigeront continuité de la part des fournisseurs.",
    "pourquoi_en": "Critical hospitals and laboratories will require continuity from suppliers.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministeriet for Samfundssikkerhed og Beredskab and sectoral authorities",
+   "amende_max_en": null
   },
   {
    "zone": "Danemark",
@@ -618,7 +688,9 @@
    "pourquoi_fr": "Label volontaire, parfois valorisé par les acheteurs danois.",
    "pourquoi_en": "Voluntary label, sometimes valued by Danish buyers.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "D-mærket (Industriens Fond, Dansk Erhverv and al.)",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -634,7 +706,9 @@
    "pourquoi_fr": "Les hôpitaux clients sont opérateurs de services essentiels ; NIS2 introduira des exigences de chaîne d'approvisionnement.",
    "pourquoi_en": "Hospital customers are essential service operators; NIS2 will add supply chain requirements.",
    "amende_max": "NIS2 (projet) : 10 M€ ou 2 % du CA",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "CCN-CERT / INCIBE-CERT",
+   "amende_max_en": "NIS2 (draft) : €10m or 2% of turnover"
   },
   {
    "zone": "Espagne",
@@ -650,7 +724,9 @@
    "pourquoi_fr": "Données de santé traitées par les logiciels connectés.",
    "pourquoi_en": "Health data processed by connected software.",
    "amende_max": "20 M€ ou 4 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "AEPD",
+   "amende_max_en": "€20m or 4% of worldwide turnover"
   },
   {
    "zone": "Espagne",
@@ -666,7 +742,9 @@
    "pourquoi_fr": "Interopérabilité des résultats de laboratoire et réutilisation des données.",
    "pourquoi_en": "Lab result interoperability and data reuse.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministerio de Sanidad",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -682,7 +760,9 @@
    "pourquoi_fr": "Les acheteurs publics de santé vont intégrer des critères cyber dans leurs marchés.",
    "pourquoi_en": "Public health buyers will embed cyber criteria in tenders.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Ministerio de Sanidad / CISNS",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -698,7 +778,9 @@
    "pourquoi_fr": "Canal d'accès au marché public de la santé.",
    "pourquoi_en": "Public health market access route.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministerio de Sanidad / INGESA",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -714,7 +796,9 @@
    "pourquoi_fr": "Certification ENS exigée des fournisseurs de services TIC/cloud aux hôpitaux publics.",
    "pourquoi_en": "ENS certification required of ICT/cloud suppliers to public hospitals.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "CCN",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -730,7 +814,9 @@
    "pourquoi_fr": "Référence possible dans les marchés publics pour des composants de sécurité.",
    "pourquoi_en": "Possible reference in public tenders for security components.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "CCN",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -746,7 +832,9 @@
    "pourquoi_fr": "Texte national directement applicable aux DIV vendus en Espagne.",
    "pourquoi_en": "National text directly applicable to IVDs sold in Spain.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "AEMPS",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -762,7 +850,9 @@
    "pourquoi_fr": "IA d'aide à l'interprétation = haut risque via l'IVDR.",
    "pourquoi_en": "Interpretation-support AI = high-risk via IVDR.",
    "amende_max": "35 M€ ou 7 % du CA (AI Act)",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "AESIA",
+   "amende_max_en": "€35m or 7% of turnover (AI Act)"
   },
   {
    "zone": "Espagne",
@@ -778,7 +868,9 @@
    "pourquoi_fr": "Produits connectés hors DM/DIV.",
    "pourquoi_en": "Connected products outside MD/IVD.",
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "INCIBE (appui) ; supervisory authority to be confirmed",
+   "amende_max_en": "€15m or 2.5% of worldwide turnover"
   },
   {
    "zone": "Espagne",
@@ -794,7 +886,9 @@
    "pourquoi_fr": "Exigences de continuité répercutées par les hôpitaux critiques.",
    "pourquoi_en": "Continuity requirements passed on by critical hospitals.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "CNPIC / Secretaría de Estado de Seguridad",
+   "amende_max_en": null
   },
   {
    "zone": "Espagne",
@@ -810,7 +904,9 @@
    "pourquoi_fr": "Option de certification pour des produits vendus au secteur public.",
    "pourquoi_en": "Certification option for products sold to the public sector.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "CCN",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -826,7 +922,9 @@
    "pourquoi_fr": "Le client (fabricant de DIV) est entité NIS2 dans plusieurs États.",
    "pourquoi_en": "The client (IVD manufacturer) is a NIS2 entity in several states.",
    "amende_max": "10 M€ ou 2 % du CA mondial (entités essentielles)",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "National authorities ; ENISA",
+   "amende_max_en": "€10m or 2% of worldwide turnover (essential entities)"
   },
   {
    "zone": "Europe",
@@ -842,7 +940,9 @@
    "pourquoi_fr": "Traitement de données de santé dans les produits connectés et services.",
    "pourquoi_en": "Processing of health data in connected products and services.",
    "amende_max": "20 M€ ou 4 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "National authorities ; EDPB",
+   "amende_max_en": "€20m or 4% of worldwide turnover"
   },
   {
    "zone": "Europe",
@@ -858,7 +958,9 @@
    "pourquoi_fr": "Résultats de laboratoire parmi les catégories prioritaires (2031) ; interopérabilité des logiciels.",
    "pourquoi_en": "Lab results among priority categories (2031); software interoperability.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Commission ; national digital health authorities",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -874,7 +976,9 @@
    "pourquoi_fr": "Les automates connectés génèrent des données que les utilisateurs peuvent demander.",
    "pourquoi_en": "Connected analysers generate data that users may request.",
    "amende_max": "jusqu'à 20 M€ ou 4 % du CA (selon les États membres)",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "European Union",
+   "amende_max_en": "up to €20m or 4% of turnover (depending on the Member State)"
   },
   {
    "zone": "Europe",
@@ -890,7 +994,9 @@
    "pourquoi_fr": "Référentiel repris par les acheteurs hospitaliers européens, y compris tchèques.",
    "pourquoi_en": "Framework used by European hospital buyers, including Czech ones.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ENISA",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -906,7 +1012,9 @@
    "pourquoi_fr": "Cadre réglementaire central du client.",
    "pourquoi_en": "Core regulatory framework of the client.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "National competent authorities ; MDCG",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -922,7 +1030,9 @@
    "pourquoi_fr": "S'applique aux logiciels et accessoires relevant des dispositifs médicaux.",
    "pourquoi_en": "Applies to software and accessories qualifying as medical devices.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "European Union",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -938,7 +1048,9 @@
    "pourquoi_fr": "IA d'aide à l'interprétation intégrée aux DIV.",
    "pourquoi_en": "AI interpretation support embedded in IVDs.",
    "amende_max": "35 M€ ou 7 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "AI Office ; national authorities",
+   "amende_max_en": "€35m or 7% of worldwide turnover"
   },
   {
    "zone": "Europe",
@@ -954,7 +1066,9 @@
    "pourquoi_fr": "Produits connectés hors champ DM/DIV (DM/DIV exclus du CRA).",
    "pourquoi_en": "Connected products outside MD/IVD scope (MD/IVD excluded from CRA).",
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Commission ; ENISA ; market surveillance authorities",
+   "amende_max_en": "€15m or 2.5% of worldwide turnover"
   },
   {
    "zone": "Europe",
@@ -970,7 +1084,9 @@
    "pourquoi_fr": "Le fabricant répond des dommages causés par un logiciel ou une faille de sécurité.",
    "pourquoi_en": "The manufacturer is liable for damage caused by software or a security flaw.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "European Union",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -986,7 +1102,9 @@
    "pourquoi_fr": "Concerne les équipements dotés de Wi-Fi ou de Bluetooth hors dispositifs médicaux.",
    "pourquoi_en": "Covers Wi-Fi or Bluetooth equipment that is not a medical device.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "European Union",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -1002,7 +1120,9 @@
    "pourquoi_fr": "Clients hospitaliers et éventuellement fabricants critiques.",
    "pourquoi_en": "Hospital customers and potentially critical manufacturers.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Member States",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -1018,7 +1138,9 @@
    "pourquoi_fr": "Certification possible de composants TIC ; référence dans les marchés publics.",
    "pourquoi_en": "Possible certification of ICT components; reference in public procurement.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "ENISA ; national certification authorities",
+   "amende_max_en": null
   },
   {
    "zone": "Europe",
@@ -1034,7 +1156,9 @@
    "pourquoi_fr": "Base des certifications que les acheteurs peuvent exiger.",
    "pourquoi_en": "Basis for certifications that buyers may require.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "European Union",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1050,7 +1174,9 @@
    "pourquoi_fr": "Applicable aux hôpitaux clients et potentiellement aux fabricants de DM/DIV (supervision Fimea).",
    "pourquoi_en": "Applies to hospital customers and potentially MD/IVD manufacturers (Fimea supervision).",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Traficom (Kyberturvallisuuskeskus) and sectoral authorities, including Fimea",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1066,7 +1192,9 @@
    "pourquoi_fr": "Autorité directe pour une entité de fabrication DIV en Finlande.",
    "pourquoi_en": "Direct authority for an IVD manufacturing entity in Finland.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Fimea",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1082,7 +1210,9 @@
    "pourquoi_fr": "Traitement de données de santé des clients hospitaliers.",
    "pourquoi_en": "Processing of health data of hospital customers.",
    "amende_max": "RGPD : jusqu'à 20 M€ ou 4 % du chiffre d'affaires annuel mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Tietosuojavaltuutettu",
+   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover"
   },
   {
    "zone": "Finlande",
@@ -1098,7 +1228,9 @@
    "pourquoi_fr": "R&D et entraînement d'IA sur données finlandaises.",
    "pourquoi_en": "R&D and AI training on Finnish data.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Findata / THL",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1114,7 +1246,9 @@
    "pourquoi_fr": "Condition de mise sur le marché finlandais pour les logiciels échangeant avec Kanta (dont potentiellement les systèmes de laboratoire).",
    "pourquoi_en": "Condition for Finnish market access for software exchanging with Kanta (potentially including laboratory systems).",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "THL, Kela (Kanta), Traficom (accredited assessment bodies)",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1130,7 +1264,9 @@
    "pourquoi_fr": "Exigé ou pris comme référence dans les marchés publics finlandais.",
    "pourquoi_en": "Required or referenced in Finnish public procurement.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Valtiovarainministeriö (Ministry of Finance)",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1146,7 +1282,9 @@
    "pourquoi_fr": "Cadre national de mise sur le marché des DIV en Finlande.",
    "pourquoi_en": "National framework for placing IVDs on the Finnish market.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Fimea",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1162,7 +1300,9 @@
    "pourquoi_fr": "Produits connectés du client hors MDR/IVDR.",
    "pourquoi_en": "Client's connected products outside MDR/IVDR.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Traficom",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1178,7 +1318,9 @@
    "pourquoi_fr": "Clients hospitaliers critiques.",
    "pourquoi_en": "Critical hospital customers.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Lupa- ja valvontavirasto (health and social care)",
+   "amende_max_en": null
   },
   {
    "zone": "Finlande",
@@ -1194,7 +1336,9 @@
    "pourquoi_fr": "Organismes agréés impliqués dans la certification Kanta et Julkri.",
    "pourquoi_en": "Approved bodies involved in Kanta and Julkri assessments.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Traficom (Kyberturvallisuuskeskus)",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1210,7 +1354,9 @@
    "pourquoi_fr": "Les fabricants de DIV figurent parmi les entités NIS2 du secteur santé et devront se conformer dès l'adoption de la loi.",
    "pourquoi_en": "IVD manufacturers are NIS2 health-sector entities and will have to comply once the law is adopted.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ANSSI",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1226,7 +1372,9 @@
    "pourquoi_fr": "Traitement de données de santé via les logiciels et la connectivité à distance.",
    "pourquoi_en": "Health data processed via software and remote connectivity.",
    "amende_max": "20 M€ ou 4 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "CNIL",
+   "amende_max_en": "€20m or 4% of worldwide turnover"
   },
   {
    "zone": "France",
@@ -1242,7 +1390,9 @@
    "pourquoi_fr": "Obligatoire pour toute offre cloud ou de connectivité hébergeant des données patients de clients français.",
    "pourquoi_en": "Mandatory for any cloud or connectivity offering hosting French clients' patient data.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ANS / Ministry of Health",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1258,7 +1408,9 @@
    "pourquoi_fr": "S'applique aux logiciels de laboratoire et middleware connectés vendus en France.",
    "pourquoi_en": "Applies to connected laboratory software and middleware sold in France.",
    "amende_max": "1 % du CA France plafonné à 1 M€",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ANS / Ministry of Health",
+   "amende_max_en": "1% of French turnover capped at €1m"
   },
   {
    "zone": "France",
@@ -1274,7 +1426,9 @@
    "pourquoi_fr": "Les établissements achètent prioritairement des solutions référencées Ségur.",
    "pourquoi_en": "Hospitals preferentially buy Ségur-listed solutions.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "ANS / DNS",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1290,7 +1444,9 @@
    "pourquoi_fr": "Les hôpitaux clients répercutent les objectifs CaRE dans leurs exigences fournisseurs.",
    "pourquoi_en": "Hospital clients pass CaRE objectives into supplier requirements.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of Health / ANS",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1306,7 +1462,9 @@
    "pourquoi_fr": "Peut s'imposer aux offres cloud vendues à des entités publiques de l'État.",
    "pourquoi_en": "May apply to cloud offerings sold to State public bodies.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "ANSSI / DINUM",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1322,7 +1480,9 @@
    "pourquoi_fr": "Cadre réglementaire principal des automates et logiciels DIV.",
    "pourquoi_en": "Main regulatory framework for IVD analysers and software.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ANSM",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1338,7 +1498,9 @@
    "pourquoi_fr": "Les logiciels d'aide à l'interprétation à base d'IA relevant de l'IVDR sont des systèmes d'IA à haut risque.",
    "pourquoi_en": "AI-based interpretation software under IVDR are high-risk AI systems.",
    "amende_max": "35 M€ ou 7 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "CNIL, DGCCRF, ANSM (projet DDADUE)",
+   "amende_max_en": "€35m or 7% of worldwide turnover"
   },
   {
    "zone": "France",
@@ -1354,7 +1516,9 @@
    "pourquoi_fr": "Vise les produits connectés non-DM (passerelles, logiciels hors DM).",
    "pourquoi_en": "Covers non-device connected products (gateways, non-device software).",
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "ANFR (surveillance), ANSSI, CERT-FR",
+   "amende_max_en": "€15m or 2.5% of worldwide turnover"
   },
   {
    "zone": "France",
@@ -1370,7 +1534,9 @@
    "pourquoi_fr": "Des établissements de santé clients peuvent être OIV et imposer des exigences à leurs fournisseurs.",
    "pourquoi_en": "Client hospitals may be OIVs and impose requirements on suppliers.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "SGDSN / ANSSI",
+   "amende_max_en": null
   },
   {
    "zone": "France",
@@ -1386,7 +1552,9 @@
    "pourquoi_fr": "Référence attendue par les acheteurs publics pour les offres cloud et produits de sécurité.",
    "pourquoi_en": "Reference expected by public buyers for cloud and security products.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "ANSSI",
+   "amende_max_en": null
   },
   {
    "amende_max": "10 M€ ou 2 % du CA mondial",
@@ -1402,7 +1570,9 @@
    "lien": "https://irglobal.com/article/nis2-in-greece-in-2026-law-5160-2024-the-national-cybersecurity-requirements-framework-and-management-accountability/",
    "pourquoi_fr": "Les hôpitaux et entités grecques doivent contrôler la sécurité de leur chaîne d'approvisionnement.",
    "pourquoi_en": "Greek hospitals and entities must check the security of their supply chain.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "National cybersecurity authority",
+   "amende_max_en": "€10m or 2% of worldwide turnover"
   },
   {
    "amende_max": null,
@@ -1418,7 +1588,9 @@
    "lien": "https://www.ehealthrecord.gov.gr/en/press-releases/%CE%B7%CE%BC-%CE%B5%CE%B7%CF%86%CF%85-golive",
    "pourquoi_fr": "Intégration attendue des résultats de laboratoire et interopérabilité des logiciels de laboratoire en Grèce.",
    "pourquoi_en": "Expected integration of laboratory results and interoperability of laboratory software in Greece.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of Digital Governance / Ministry of Health / IDIKA",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1434,7 +1606,9 @@
    "lien": "https://www.ktpae.gr/en/erga/negotiation-system-electronic-procurement-and-related-applications-for-the-national-central-health-procurement-authority-h-c-a-p-y/",
    "pourquoi_fr": "Principal acheteur public de DIV en Grèce ; ses cahiers des charges fixent les exigences imposées aux fournisseurs.",
    "pourquoi_en": "Main public buyer of IVDs in Greece; its specifications set supplier requirements.",
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "EKAPY",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1450,7 +1624,9 @@
    "lien": "https://old.eof.gr/web/guest/lawmedical",
    "pourquoi_fr": "Autorité de surveillance des DIV mis sur le marché grec.",
    "pourquoi_en": "Supervisory authority for IVDs placed on the Greek market.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "EOF",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1466,7 +1642,9 @@
    "lien": "https://www.ey.com/en_gr/technical/tax/tax-alerts/l-4961-2022-the-greek-legal-framework-on-emerging-technologies",
    "pourquoi_fr": "Les hôpitaux publics grecs achetant des solutions d'IA doivent obtenir des informations des fournisseurs ; complète la loi 5321/2026 d'application de l'AI Act.",
    "pourquoi_en": "Greek public hospitals buying AI solutions must obtain information from suppliers; complements Law 5321/2026 implementing the AI Act.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of Digital Governance",
+   "amende_max_en": null
   },
   {
    "amende_max": "10 M€",
@@ -1482,7 +1660,9 @@
    "lien": "https://www.ey.com/en_gr/technical/tax/tax-alerts/law-5236-2025-cer-directive-en",
    "pourquoi_fr": "Hôpitaux critiques grecs : exigences de résilience envers les fournisseurs.",
    "pourquoi_en": "Critical Greek hospitals: resilience requirements towards suppliers.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "General Secretariat for the Protection of Critical Entities (Ministry of Citizen Protection)",
+   "amende_max_en": "€10m"
   },
   {
    "zone": "Hongrie",
@@ -1498,7 +1678,9 @@
    "pourquoi_fr": "Hôpitaux clients et éventuellement la filiale locale soumis ; audits répercutés sur les fournisseurs.",
    "pourquoi_en": "Hospital customers and possibly local subsidiary covered; audits passed on to suppliers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "SZTFH ; Nemzeti Kibervédelmi Intézet",
+   "amende_max_en": null
   },
   {
    "zone": "Hongrie",
@@ -1514,7 +1696,9 @@
    "pourquoi_fr": "Traitement de données de santé comme sous-traitant.",
    "pourquoi_en": "Processing of health data as processor.",
    "amende_max": "20 M€ ou 4 % du CA mondial (RGPD)",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "NAIH",
+   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)"
   },
   {
    "zone": "Hongrie",
@@ -1530,7 +1714,9 @@
    "pourquoi_fr": "Les systèmes de laboratoire hongrois transmettent des données à l'EESZT.",
    "pourquoi_en": "Hungarian lab systems report data to EESZT.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of the Interior (health) ; operator EESZT",
+   "amende_max_en": null
   },
   {
    "zone": "Hongrie",
@@ -1546,7 +1732,9 @@
    "pourquoi_fr": "Référentiel appliqué par les hôpitaux publics hongrois aux systèmes fournis.",
    "pourquoi_en": "Framework applied by Hungarian public hospitals to supplied systems.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Nemzeti Kibervédelmi Intézet ; SZTFH",
+   "amende_max_en": null
   },
   {
    "zone": "Hongrie",
@@ -1562,7 +1750,9 @@
    "pourquoi_fr": "Cadre national direct pour les DIV en Hongrie.",
    "pourquoi_en": "Direct national framework for IVDs in Hungary.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NNGYK",
+   "amende_max_en": null
   },
   {
    "zone": "Hongrie",
@@ -1578,7 +1768,9 @@
    "pourquoi_fr": "Supervision nationale de l'IA d'aide au diagnostic.",
    "pourquoi_en": "National supervision of diagnostic support AI.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "Government (authorities to be designated) ; MNB (financial sector)",
+   "amende_max_en": null
   },
   {
    "zone": "Hongrie",
@@ -1594,7 +1786,9 @@
    "pourquoi_fr": "Produits connectés hors DM/DIV vendus en Hongrie.",
    "pourquoi_en": "Connected non-MD/IVD products sold in Hungary.",
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "SZTFH",
+   "amende_max_en": "€15m or 2.5% of worldwide turnover"
   },
   {
    "zone": "Hongrie",
@@ -1610,7 +1804,9 @@
    "pourquoi_fr": "Hôpitaux critiques clients.",
    "pourquoi_en": "Critical hospital customers.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "Designated sectoral authorities",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1626,7 +1822,9 @@
    "lien": "https://www.iusprivacy.eu/normativa/nis2-in-italia-tutti-gli-adempimenti-e-le-scadenze-per-le-imprese",
    "pourquoi_fr": "Les entités de santé italiennes doivent déclarer leurs fournisseurs pertinents et exiger des mesures de sécurité ; échéance imminente du 31 octobre 2026.",
    "pourquoi_en": "Italian health entities must declare their relevant suppliers and require security measures; imminent 31 October 2026 deadline.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ACN",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1642,7 +1840,9 @@
    "lien": "https://www.gazzettaufficiale.it/eli/id/2025/03/05/25A01321/SG",
    "pourquoi_fr": "Encadre la circulation des résultats de laboratoire dans le système national de santé italien.",
    "pourquoi_en": "Governs the flow of laboratory results within the Italian national health system.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of Health / Garante",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1658,7 +1858,9 @@
    "lien": "https://www.agenas.gov.it/aree-tematiche/comunicazione/primo-piano/2698-pnhta-dm-2026%E2%80%932028-sbloccate-le-risorse-del-fondo,-al-via-la-fase-operativa-del-sistema-nazionale-hta-sui-dispositivi-medici",
    "pourquoi_fr": "Critère d'accès au marché public de santé italien.",
    "pourquoi_en": "Access criterion for the Italian public health market.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "AGENAS / Ministry of Health",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1674,7 +1876,9 @@
    "lien": "https://www.piselliandpartners.com/innovation/elementi-essenziali-di-cybersicurezza-nei-contratti-pubblici-il-dpcm-30-aprile-2025-e-lart-14-della-l-90-2024/",
    "pourquoi_fr": "S'applique aux appels d'offres des structures publiques de santé italiennes pour les services cloud et logiciels.",
    "pourquoi_en": "Applies to tenders by Italian public health bodies for cloud services and software.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ACN / Presidency of the Council of Ministers",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1690,7 +1894,9 @@
    "lien": "https://www.acn.gov.it/portale/documents/d/guest/regolamentocloud",
    "pourquoi_fr": "Condition pour vendre des services cloud (middleware hébergé, connectivité) aux hôpitaux publics italiens.",
    "pourquoi_en": "Condition for selling cloud services (hosted middleware, connectivity) to Italian public hospitals.",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ACN",
+   "amende_max_en": null
   },
   {
    "amende_max": null,
@@ -1706,7 +1912,9 @@
    "lien": "https://www.avvisopubblico.it/home/home/cosa-facciamo/informare/osservatorio-parlamentare/attivita-legislativa/leggi-approvate/legge-36-2026-legge-di-delegazione-europea-2025/",
    "pourquoi_fr": "Fixe l'autorité italienne compétente pour les produits connectés hors DM.",
    "pourquoi_en": "Sets the Italian authority competent for connected products that are not devices.",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "ACN",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1722,7 +1930,9 @@
    "pourquoi_fr": "Socle cyber des clients hospitaliers norvégiens.",
    "pourquoi_en": "Cyber baseline for Norwegian hospital customers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NSM and sectoral authorities (Helsetilsynet for health)",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1738,7 +1948,9 @@
    "pourquoi_fr": "Traitement de données de santé ; les sous-traitants fournisseurs de systèmes peuvent être sanctionnés.",
    "pourquoi_en": "Processing of health data; system-provider processors can be fined.",
    "amende_max": "RGPD : jusqu'à 20 M€ ou 4 % du chiffre d'affaires annuel mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Datatilsynet",
+   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover"
   },
   {
    "zone": "Norvège",
@@ -1754,7 +1966,9 @@
    "pourquoi_fr": "Services cloud et connectivité à distance du client.",
    "pourquoi_en": "Client's cloud services and remote connectivity.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Helsedirektoratet",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1770,7 +1984,9 @@
    "pourquoi_fr": "Référentiel de fait exigé par les hôpitaux norvégiens.",
    "pourquoi_en": "De facto standard required by Norwegian hospitals.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Helsedirektoratet (Normen secretariat)",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1786,7 +2002,9 @@
    "pourquoi_fr": "Vise directement les fournisseurs comme le client (accès à distance, DM connectés).",
    "pourquoi_en": "Directly targets suppliers like the client (remote access, connected MDs).",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Helsedirektoratet",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1802,7 +2020,9 @@
    "pourquoi_fr": "Exigences que les hôpitaux appliquent aux automates connectés.",
    "pourquoi_en": "Requirements hospitals apply to connected analysers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Helsedirektoratet",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1818,7 +2038,9 @@
    "pourquoi_fr": "Référence fréquente dans les exigences des acheteurs publics norvégiens.",
    "pourquoi_en": "Frequent reference in Norwegian public buyers' requirements.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "NSM",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1834,7 +2056,9 @@
    "pourquoi_fr": "Autorité nationale DM/DIV norvégienne.",
    "pourquoi_en": "Norwegian national MD/IVD authority.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Direktoratet for medisinske produkter (DMP)",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1850,7 +2074,9 @@
    "pourquoi_fr": "IA d'aide à l'interprétation intégrée aux DIV.",
    "pourquoi_en": "AI interpretation support embedded in IVDs.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "DMP",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1866,7 +2092,9 @@
    "pourquoi_fr": "Équipements connectés sans fil (hors DM) du client.",
    "pourquoi_en": "Client's wireless connected equipment (non-MD).",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "Nkom",
+   "amende_max_en": null
   },
   {
    "zone": "Norvège",
@@ -1882,7 +2110,9 @@
    "pourquoi_fr": "Faible pour des DIV, pertinent si certification produit exigée.",
    "pourquoi_en": "Low for IVDs, relevant if product certification is required.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "NSM / SERTIT",
+   "amende_max_en": null
   },
   {
    "zone": "Pays-Bas",
@@ -1898,7 +2128,9 @@
    "pourquoi_fr": "Les fabricants de DM au-dessus des seuils sont directement assujettis.",
    "pourquoi_en": "Device manufacturers above thresholds are directly in scope.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "IGJ (health), Z-CERT, NCSC",
+   "amende_max_en": null
   },
   {
    "zone": "Pays-Bas",
@@ -1914,7 +2146,9 @@
    "pourquoi_fr": "Traitement de données de santé.",
    "pourquoi_en": "Health data processing.",
    "amende_max": "20 M€ ou 4 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Autoriteit Persoonsgegevens (AP)",
+   "amende_max_en": "€20m or 4% of worldwide turnover"
   },
   {
    "zone": "Pays-Bas",
@@ -1930,7 +2164,9 @@
    "pourquoi_fr": "Les échanges de résultats de laboratoire pourront être désignés.",
    "pourquoi_en": "Laboratory result exchanges may be designated.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry VWS / IGJ",
+   "amende_max_en": null
   },
   {
    "zone": "Pays-Bas",
@@ -1946,7 +2182,9 @@
    "pourquoi_fr": "Les hôpitaux néerlandais exigent de leurs fournisseurs des garanties alignées NEN 7510.",
    "pourquoi_en": "Dutch hospitals require NEN 7510-aligned guarantees from suppliers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "IGJ / Z-CERT",
+   "amende_max_en": null
   },
   {
    "zone": "Pays-Bas",
@@ -1962,7 +2200,9 @@
    "pourquoi_fr": "Ventes au secteur public néerlandais.",
    "pourquoi_en": "Sales to the Dutch public sector.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "CIP / BZK",
+   "amende_max_en": null
   },
   {
    "zone": "Pays-Bas",
@@ -1978,7 +2218,9 @@
    "pourquoi_fr": "Cadre principal des DIV.",
    "pourquoi_en": "Main IVD framework.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "IGJ",
+   "amende_max_en": null
   },
   {
    "zone": "Pays-Bas",
@@ -1994,7 +2236,9 @@
    "pourquoi_fr": "IA médicale à haut risque.",
    "pourquoi_en": "High-risk medical AI.",
    "amende_max": "35 M€ ou 7 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "AP, RDI and sectoral authorities",
+   "amende_max_en": "€35m or 7% of worldwide turnover"
   },
   {
    "zone": "Pays-Bas",
@@ -2010,7 +2254,9 @@
    "pourquoi_fr": "Produits connectés non-DM.",
    "pourquoi_en": "Non-device connected products.",
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "RDI",
+   "amende_max_en": "€15m or 2.5% of worldwide turnover"
   },
   {
    "zone": "Pays-Bas",
@@ -2026,7 +2272,9 @@
    "pourquoi_fr": "Clients désignés entités critiques.",
    "pourquoi_en": "Clients designated as critical entities.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry JenV / sectoral authorities",
+   "amende_max_en": null
   },
   {
    "zone": "Pays-Bas",
@@ -2042,7 +2290,9 @@
    "pourquoi_fr": "Certification souvent exigée des fournisseurs par les hôpitaux.",
    "pourquoi_en": "Certification often required from suppliers by hospitals.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NEN",
+   "amende_max_en": null
   },
   {
    "zone": "Pologne",
@@ -2058,7 +2308,9 @@
    "pourquoi_fr": "Les hôpitaux clients sont entités KSC et imposent des exigences à leurs fournisseurs TIC ; la procédure HRV peut viser des produits.",
    "pourquoi_en": "Hospital customers are KSC entities and impose requirements on ICT suppliers; the HRV procedure may target products.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Minister of Digital Affairs ; CSIRT NASK / CSIRT CeZ (health)",
+   "amende_max_en": null
   },
   {
    "zone": "Pologne",
@@ -2074,7 +2326,9 @@
    "pourquoi_fr": "Traitement de données de santé en tant que sous-traitant (connectivité, support à distance).",
    "pourquoi_en": "Processing of health data as processor (connectivity, remote support).",
    "amende_max": "20 M€ ou 4 % du CA mondial (RGPD)",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "UODO",
+   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)"
   },
   {
    "zone": "Pologne",
@@ -2090,7 +2344,9 @@
    "pourquoi_fr": "Les résultats de laboratoire et systèmes connectés aux SIH polonais s'intègrent à l'écosystème P1/EDM.",
    "pourquoi_en": "Lab results and systems connected to Polish HIS integrate with the P1/EDM ecosystem.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of Health ; Centrum e-Zdrowia",
+   "amende_max_en": null
   },
   {
    "zone": "Pologne",
@@ -2106,7 +2362,9 @@
    "pourquoi_fr": "S'applique aux systèmes TIC des hôpitaux publics et donc aux solutions fournies.",
    "pourquoi_en": "Applies to public hospitals' ICT systems and therefore supplied solutions.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Minister of Digital Affairs",
+   "amende_max_en": null
   },
   {
    "zone": "Pologne",
@@ -2122,7 +2380,9 @@
    "pourquoi_fr": "Cadre national direct pour la mise sur le marché polonais des DIV.",
    "pourquoi_en": "Direct national framework for placing IVDs on the Polish market.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "URPL (Urząd Rejestracji Produktów Leczniczych, Wyrobów Medycznych i Produktów Biobójczych)",
+   "amende_max_en": null
   },
   {
    "zone": "Pologne",
@@ -2138,7 +2398,9 @@
    "pourquoi_fr": "Les hôpitaux désignés entités critiques imposeront des exigences de continuité aux fournisseurs.",
    "pourquoi_en": "Hospitals designated as critical entities will impose continuity requirements on suppliers.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "Rządowe Centrum Bezpieczeństwa (RCB)",
+   "amende_max_en": null
   },
   {
    "zone": "Pologne",
@@ -2154,7 +2416,9 @@
    "pourquoi_fr": "Base possible de la future certification des entreprises traitant des données médicales (« Cyber piątka »).",
    "pourquoi_en": "Possible basis for future certification of companies processing medical data ('Cyber Five').",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Minister of Digital Affairs (national cybersecurity certification authority)",
+   "amende_max_en": null
   },
   {
    "zone": "Portugal",
@@ -2170,7 +2434,9 @@
    "pourquoi_fr": "Applicable à la filiale et aux clients hospitaliers du SNS.",
    "pourquoi_en": "Applies to the subsidiary and to SNS hospital customers.",
    "amende_max": "10 M€ ou 2 % du CA mondial (entités essentielles)",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "CNCS",
+   "amende_max_en": "€10m or 2% of worldwide turnover (essential entities)"
   },
   {
    "zone": "Portugal",
@@ -2186,7 +2452,9 @@
    "pourquoi_fr": "Gestion des accès aux données de santé dans les logiciels.",
    "pourquoi_en": "Access control to health data in software.",
    "amende_max": "20 M€ ou 4 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "CNPD",
+   "amende_max_en": "€20m or 4% of worldwide turnover"
   },
   {
    "zone": "Portugal",
@@ -2202,7 +2470,9 @@
    "pourquoi_fr": "Intégration des résultats de laboratoire aux systèmes du SNS.",
    "pourquoi_en": "Integration of lab results into SNS systems.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "SPMS",
+   "amende_max_en": null
   },
   {
    "zone": "Portugal",
@@ -2218,7 +2488,9 @@
    "pourquoi_fr": "Voie d'achat des services cloud par les hôpitaux publics.",
    "pourquoi_en": "Procurement route for public hospitals' cloud services.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "SPMS",
+   "amende_max_en": null
   },
   {
    "zone": "Portugal",
@@ -2229,12 +2501,14 @@
    "autorite": "Infarmed",
    "resume_fr": "Conditions d'acquisition et d'utilisation des DM et DIV par les établissements.",
    "resume_en": "Conditions for procurement and use of MDs and IVDs by institutions.",
-   "applicable_depuis": "n.d.",
+   "applicable_depuis": null,
    "lien": "https://www.infarmed.pt/web/infarmed/aquisicao-e-utilizacao-de-dm-e-div",
    "pourquoi_fr": "Conditions que les acheteurs vérifient avant d'acheter des DIV.",
    "pourquoi_en": "Conditions buyers check before buying IVDs.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Infarmed",
+   "amende_max_en": null
   },
   {
    "zone": "Portugal",
@@ -2250,7 +2524,9 @@
    "pourquoi_fr": "Contraintes d'hébergement pour les solutions cloud vendues au secteur public.",
    "pourquoi_en": "Hosting constraints for cloud solutions sold to the public sector.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Government / ARTE",
+   "amende_max_en": null
   },
   {
    "zone": "Portugal",
@@ -2261,12 +2537,14 @@
    "autorite": "Infarmed",
    "resume_fr": "Obligation d'enregistrement des DM/DIV (SIDM/EUDAMED) et orientations sur la qualification des solutions numériques comme dispositifs médicaux.",
    "resume_en": "MD/IVD registration (SIDM/EUDAMED) and guidance on qualifying digital health solutions as medical devices.",
-   "applicable_depuis": "n.d.",
+   "applicable_depuis": null,
    "lien": "https://www.infarmed.pt/web/infarmed/-/registo-de-dm-e-div",
    "pourquoi_fr": "Directement applicable aux DIV et logiciels vendus au Portugal.",
    "pourquoi_en": "Directly applicable to IVDs and software sold in Portugal.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Infarmed",
+   "amende_max_en": null
   },
   {
    "zone": "Portugal",
@@ -2282,7 +2560,9 @@
    "pourquoi_fr": "Interlocuteur pour l'IA d'aide à l'interprétation.",
    "pourquoi_en": "Contact authority for interpretation-support AI.",
    "amende_max": "35 M€ ou 7 % du CA (AI Act)",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "ANACOM",
+   "amende_max_en": "€35m or 7% of turnover (AI Act)"
   },
   {
    "zone": "Portugal",
@@ -2298,7 +2578,9 @@
    "pourquoi_fr": "Produits connectés hors DM/DIV.",
    "pourquoi_en": "Connected products outside MD/IVD.",
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "To be confirmed (ANACOM relays the guidance)",
+   "amende_max_en": "€15m or 2.5% of worldwide turnover"
   },
   {
    "zone": "Portugal",
@@ -2314,7 +2596,9 @@
    "pourquoi_fr": "Exigences de continuité répercutées par les hôpitaux critiques.",
    "pourquoi_en": "Continuity requirements passed on by critical hospitals.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Secretary General for Information Systems Security",
+   "amende_max_en": null
   },
   {
    "zone": "Portugal",
@@ -2330,7 +2614,9 @@
    "pourquoi_fr": "Peut être demandé par les acheteurs publics portugais.",
    "pourquoi_en": "May be requested by Portuguese public buyers.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "CNCS",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2346,7 +2632,9 @@
    "pourquoi_fr": "Les clients hospitaliers sont régulés ; un fournisseur peut devenir « fournisseur critique désigné ».",
    "pourquoi_en": "Hospital customers are regulated; a supplier may become a designated critical supplier.",
    "amende_max": "17 M£ ou 4 % du CA (régime cible CSRB)",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "DHSC / NCSC (health)",
+   "amende_max_en": "£17m or 4% of turnover (target regime CSRB)"
   },
   {
    "zone": "Royaume-Uni",
@@ -2362,7 +2650,9 @@
    "pourquoi_fr": "Un fournisseur sous-traitant de données de santé peut être sanctionné directement.",
    "pourquoi_en": "A supplier processing health data can be fined directly.",
    "amende_max": "17,5 M£ ou 4 % du CA mondial",
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "ICO",
+   "amende_max_en": "£17.5m or 4% of worldwide turnover"
   },
   {
    "zone": "Royaume-Uni",
@@ -2378,7 +2668,9 @@
    "pourquoi_fr": "Conditionne l'intégration des logiciels de laboratoire avec les systèmes du NHS.",
    "pourquoi_en": "Governs integration of lab software with NHS systems.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "NHS England / DHSC",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2394,7 +2686,9 @@
    "pourquoi_fr": "Exigé pour vendre des logiciels de santé au NHS.",
    "pourquoi_en": "Required to sell digital health software to the NHS.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NHS England",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2410,7 +2704,9 @@
    "pourquoi_fr": "Condition contractuelle courante dans les marchés NHS.",
    "pourquoi_en": "Common contractual condition in NHS contracts.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NHS England",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2426,7 +2722,9 @@
    "pourquoi_fr": "Référentiel de l'acheteur NHS pour ses fournisseurs de technologies.",
    "pourquoi_en": "NHS buyer baseline for technology suppliers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NHS England",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2442,7 +2740,9 @@
    "pourquoi_fr": "Certification souvent exigée dans les appels d'offres publics et du NHS.",
    "pourquoi_en": "Certification often required in public and NHS tenders.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Cabinet Office",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2458,7 +2758,9 @@
    "pourquoi_fr": "Base de mise sur le marché britannique des DIV et logiciels DM.",
    "pourquoi_en": "Basis for placing IVDs and SaMD on the UK market.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "MHRA",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2474,7 +2776,9 @@
    "pourquoi_fr": "L'IA d'aide à l'interprétation relève de la MHRA.",
    "pourquoi_en": "Interpretation-support AI falls under MHRA.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "DSIT / MHRA",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2490,7 +2794,9 @@
    "pourquoi_fr": "Pertinence limitée (produits grand public), mais signal pour les produits connectés hors DM.",
    "pourquoi_en": "Limited relevance (consumer products) but a signal for non-MD connected products.",
    "amende_max": "10 M£ ou 4 % du CA mondial",
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "OPSS",
+   "amende_max_en": "£10m or 4% of worldwide turnover"
   },
   {
    "zone": "Royaume-Uni",
@@ -2506,7 +2812,9 @@
    "pourquoi_fr": "Standard attendu par les clients NHS et les régulateurs NIS.",
    "pourquoi_en": "Expected by NHS customers and NIS regulators.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "NCSC",
+   "amende_max_en": null
   },
   {
    "zone": "Royaume-Uni",
@@ -2522,7 +2830,9 @@
    "pourquoi_fr": "Certification attendue des fournisseurs publics et du NHS.",
    "pourquoi_en": "Expected from public and NHS suppliers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NCSC / IASME",
+   "amende_max_en": null
   },
   {
    "zone": "Rép. Tchèque",
@@ -2538,7 +2848,9 @@
    "pourquoi_fr": "Les établissements de santé tchèques régulés imposent des exigences contractuelles à leurs fournisseurs.",
    "pourquoi_en": "Regulated Czech healthcare providers impose contractual requirements on suppliers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "NÚKIB",
+   "amende_max_en": null
   },
   {
    "zone": "Rép. Tchèque",
@@ -2554,7 +2866,9 @@
    "pourquoi_fr": "Traitement de données de santé comme sous-traitant.",
    "pourquoi_en": "Processing of health data as processor.",
    "amende_max": "20 M€ ou 4 % du CA mondial (RGPD)",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "ÚOOÚ",
+   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)"
   },
   {
    "zone": "Rép. Tchèque",
@@ -2570,7 +2884,9 @@
    "pourquoi_fr": "Interopérabilité des logiciels de laboratoire avec l'infrastructure nationale.",
    "pourquoi_en": "Interoperability of lab software with national infrastructure.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of Health ; NCEZ",
+   "amende_max_en": null
   },
   {
    "zone": "Rép. Tchèque",
@@ -2586,7 +2902,9 @@
    "pourquoi_fr": "Condition possible pour vendre des services cloud aux hôpitaux publics tchèques.",
    "pourquoi_en": "Possible condition to sell cloud services to Czech public hospitals.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "DIA (Digitální a informační agentura)",
+   "amende_max_en": null
   },
   {
    "zone": "Rép. Tchèque",
@@ -2602,7 +2920,9 @@
    "pourquoi_fr": "Cadre national direct pour les DIV en Rép. tchèque.",
    "pourquoi_en": "Direct national framework for IVDs in the Czech Republic.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "SÚKL ; Ministry of Health",
+   "amende_max_en": null
   },
   {
    "zone": "Rép. Tchèque",
@@ -2618,7 +2938,9 @@
    "pourquoi_fr": "Exigences de résilience répercutées sur les fournisseurs des hôpitaux critiques.",
    "pourquoi_en": "Resilience requirements passed on to suppliers of critical hospitals.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Ministry of the Interior",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2634,7 +2956,9 @@
    "pourquoi_fr": "Base de l'obligation de signaler et des exigences envers les fournisseurs fédéraux.",
    "pourquoi_en": "Basis for reporting obligation and federal supplier requirements.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "OFCS / SEPOS",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2650,7 +2974,9 @@
    "pourquoi_fr": "Données de santé traitées par les logiciels et services connectés en Suisse.",
    "pourquoi_en": "Health data processed by software and connected services in Switzerland.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "PFPDT",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2666,7 +2992,9 @@
    "pourquoi_fr": "Intégration des résultats de laboratoire dans le dossier patient.",
    "pourquoi_en": "Integration of lab results in the patient record.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "OFSP / eHealth Suisse",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2682,7 +3010,9 @@
    "pourquoi_fr": "Les hôpitaux suisses répercutent ces obligations dans leurs achats d'automates connectés.",
    "pourquoi_en": "Swiss hospitals pass these obligations into purchases of connected analysers.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Swissmedic",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2698,7 +3028,9 @@
    "pourquoi_fr": "Fournitures à l'administration fédérale.",
    "pourquoi_en": "Supplies to the federal administration.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "SEPOS",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2714,7 +3046,9 @@
    "pourquoi_fr": "Cadre principal pour vendre des DIV en Suisse.",
    "pourquoi_en": "Main framework for selling IVDs in Switzerland.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Swissmedic",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2730,7 +3064,9 @@
    "pourquoi_fr": "Les logiciels IA DIV restent régis par l'ODiv et la nLPD.",
    "pourquoi_en": "AI IVD software remains governed by IvDO and revFADP.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Federal Council / OFJ",
+   "amende_max_en": null
   },
   {
    "zone": "Suisse",
@@ -2746,7 +3082,9 @@
    "pourquoi_fr": "Les hôpitaux et laboratoires clients sont soumis et attendent un appui des fournisseurs.",
    "pourquoi_en": "Hospital and lab clients are in scope and expect supplier support.",
    "amende_max": "100 000 CHF",
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "OFCS",
+   "amende_max_en": "100 000 CHF"
   },
   {
    "zone": "Suède",
@@ -2762,7 +3100,9 @@
    "pourquoi_fr": "Socle cyber des régions et hôpitaux clients, et des fabricants de DM/DIV.",
    "pourquoi_en": "Cyber baseline for regions and hospital customers, and for MD/IVD manufacturers.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "MCF and sectoral authorities (including Läkemedelsverket, IVO)",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2778,7 +3118,9 @@
    "pourquoi_fr": "Clauses cyber qui seront imposées au client par ses acheteurs suédois.",
    "pourquoi_en": "Cyber clauses Swedish buyers will impose on the client.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "MCF",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2794,7 +3136,9 @@
    "pourquoi_fr": "Exigences de journalisation et de contrôle d'accès répercutées sur les systèmes fournis.",
    "pourquoi_en": "Logging and access-control requirements passed on to supplied systems.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "IMY / IVO",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2810,7 +3154,9 @@
    "pourquoi_fr": "Interopérabilité et partage de résultats.",
    "pourquoi_en": "Interoperability and results sharing.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "IVO / IMY",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2826,7 +3172,9 @@
    "pourquoi_fr": "Illustration des exigences de sécurité posées par les acheteurs publics suédois.",
    "pourquoi_en": "Illustrates security requirements set by Swedish public buyers.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Adda (SKR)",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2842,7 +3190,9 @@
    "pourquoi_fr": "Base des exigences de sécurité dans les appels d'offres hospitaliers.",
    "pourquoi_en": "Basis of security requirements in hospital tenders.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "MCF",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2858,7 +3208,9 @@
    "pourquoi_fr": "Autorité directe du client en Suède.",
    "pourquoi_en": "Client's direct authority in Sweden.",
    "amende_max": null,
-   "pertinence": "elevee"
+   "pertinence": "elevee",
+   "autorite_en": "Läkemedelsverket",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2874,7 +3226,9 @@
    "pourquoi_fr": "IA d'aide à l'interprétation du client.",
    "pourquoi_en": "Client's AI interpretation support.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "IMY, PTS",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2890,7 +3244,9 @@
    "pourquoi_fr": "Produits connectés du client hors MDR/IVDR.",
    "pourquoi_en": "Client's connected products outside MDR/IVDR.",
    "amende_max": null,
-   "pertinence": "moyenne"
+   "pertinence": "moyenne",
+   "autorite_en": "Regeringen (supervisory authority to be designated)",
+   "amende_max_en": null
   },
   {
    "zone": "Suède",
@@ -2906,7 +3262,9 @@
    "pourquoi_fr": "Certifications produit éventuellement exigées par des acheteurs publics.",
    "pourquoi_en": "Product certifications possibly required by public buyers.",
    "amende_max": null,
-   "pertinence": "faible"
+   "pertinence": "faible",
+   "autorite_en": "FMV",
+   "amende_max_en": null
   }
  ]
 }

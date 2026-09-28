@@ -16,6 +16,7 @@
   var ACRO     = window.VEILLE_ACRONYMES    || { glossaire: {}, acronymes: [] };
   var REF      = window.VEILLE_REFERENTIEL  || { textes: [], categories: {} };
   var DEBATS   = (window.VEILLE_DEBATS || {}).articles || [];
+  var ECARTES  = (window.VEILLE_ECARTES || {}).articles || [];
   var MONDE    = window.VEILLE_MONDE || null;
   var VERSIONS = ((window.VEILLE_VERSIONS || {}).versions || []).slice();
   var GLOSSAIRE = ACRO.glossaire || {};
@@ -23,6 +24,7 @@
   var ARTICLES = (DATA.articles || []).filter(function (a) { return a.nature !== 'opinion'; });  // garde-fou : jamais d'avis dans la veille
   var REF_TEXTES = REF.textes || [];
   var THEMES_P = (META.pertinence || {}).themes || {};
+  var TEXTES_CLES_EN = META.textes_cles_en || {};
   var ORDRE_PERT = { elevee: 0, moyenne: 1, faible: 2 };
 
   /* ================================================================== langue */
@@ -38,6 +40,27 @@
   var T = {
     fr: {
       skip: 'Aller au contenu', btn_export: 'Exporter ▾', btn_update: 'Lancer une mise à jour',
+      tm_title: 'Nouvelles réglementations et normes',
+      tm_lead: "Tous les textes importants de la période (lois, décrets, lignes directrices, normes, consultations), regroupés par texte : un sujet repris par plusieurs sources n'apparaît qu'une fois, avec toutes ses sources. Classement par règles fixes (textes clés, signal réglementaire), sans IA générative. En cas de doute, l'article est gardé et marqué « à vérifier ».",
+      tm_empty: 'Aucun texte important repéré sur la période.', tm_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); }, tm_other: 'Autres textes officiels',
+      tm_more: function (n) { return 'Voir les ' + n + ' autres sources'; },
+      badge_ess: 'Essentiel', badge_verif: 'À vérifier', verif_title: "Repéré automatiquement dans une source non officielle (ou sans texte clé connu) : vérifiez sur la source officielle.",
+      fb_important: '★ Important', fb_not: '✕ Pas pertinent', fb_t_imp: 'Signaler cet article comme important ?', fb_t_not: 'Signaler cet article comme non pertinent ?',
+      fb_b_imp: "Il sera gardé et mis dans L'essentiel à la prochaine collecte ; les articles semblables seront mieux notés.",
+      fb_b_not: "Il sera écarté à la prochaine collecte (consultable dans Sources › Articles écartés) ; les articles semblables seront moins bien notés.",
+      surv_hidden: function (n) { return n + ' articles « à surveiller » (faible pertinence, gardés pour ne rien manquer) sont masqués.'; },
+      surv_shown: function (n) { return n + ' articles « à surveiller » sont affichés.'; }, surv_show: 'Les afficher', surv_hide: 'Les masquer',
+      why_key: 'Texte clé cité : ', why_motif: 'Classement : ',
+      cov_title: 'Couverture : pays × rubrique', cov_lead: "Date du dernier article pertinent par pays et par rubrique. En rouge : rien depuis plus de 60 jours — vérifiez les sources de ce pays (ou l'actualité est simplement calme).",
+      cov_none: 'rien', cov_summary: function (n) { return '· ' + n + ' cases sans article pertinent depuis 60 jours'; }, cov_zone: 'Pays / zone', cov_all: 'Toutes rubriques',
+      ec_title: 'Articles écartés', ec_lead: "Articles collectés mais jugés hors sujet : alertes de vulnérabilités, événements, marchés, finance, télécoms, sujets hors Europe, note trop faible… Ils ne sont pas perdus : vérifiez ici qu'aucun texte important n'a été écarté à tort, et cliquez « Important » pour le remettre dans la veille.",
+      ec_search_ph: 'Filtrer les écartés…', ec_export: 'Télécharger la liste (Excel)', ec_th_date: 'Date', ec_th_title: 'Titre', ec_th_reason: 'Motif', ec_all: 'Tous les motifs',
+      ec_summary: function (n, s2) { return '· ' + n + ' sur 120 jours, dont ' + s2 + ' à la dernière collecte'; },
+      ec_more: function (n) { return n + ' autres lignes : affinez le filtre ou téléchargez la liste.'; },
+      ec_csv_head: ['Date', 'Titre', 'Titre (anglais)', 'Source', 'Pays / zone', 'Motif', 'Note', 'Lien'],
+      flag_retirer: 'À retirer ?', flag_retirer_t: 'Rien lu lors des deux dernières collectes : la source bloque sans doute les robots.',
+      m_opendata: 'Données ouvertes (JO)', pdf_prep: 'Préparation du PDF…', pdf_missing: 'Le PDF de la veille complète sera créé à la prochaine collecte sur GitHub.',
+      pdf_fail: "PDF impossible ici (bibliothèque non chargée) : choisissez « Enregistrer au format PDF » dans la fenêtre qui s'ouvre.",
       btn_pdf_all: 'La veille complète (PDF)', btn_pdf: 'Les articles affichés (PDF)', btn_excel: 'Les articles affichés (Excel)',
       update_title: 'Ouvre GitHub : cliquez sur « Run workflow » puis patientez quelques minutes',
       version_label: 'Édition', version_current: ' (actuelle)', version_base: 'Base de connaissance initiale',
@@ -48,7 +71,7 @@
       edition: function (d, n) { return 'Édition du ' + d + ' · ' + n + (n > 1 ? ' nouveaux articles' : ' nouvel article'); },
       no_run: "Aucune collecte pour l'instant.",
       tab_essentiel: "L'essentiel", tab_watch: 'Veille', tab_map: 'Carte', tab_ref: 'Textes applicables', tab_debats: 'Débats et signaux', tab_sources: 'Sources',
-      une_title: 'À la une', une_lead: "Les informations les plus importantes du moment, classées automatiquement (sans IA payante) : pertinence pour le client, échéance proche, texte adopté ou en vigueur, source officielle, amende, fraîcheur.",
+      une_title: 'À la une', une_lead: "Les cinq informations les plus importantes du moment, classées par des règles fixes (sans IA générative) : texte clé, échéance proche, texte adopté ou en vigueur, source officielle, fraîcheur.",
       une_empty: "Rien de marquant pour l'instant : lancez une collecte.", une_why: 'À la une car : ',
       u_deadline: 'échéance proche', u_pert: 'très pertinent', u_off: 'source officielle', u_fine: 'amende', u_recent: 'tout récent', u_status: 'texte adopté ou en vigueur',
       agenda_title: 'Dates clés', agenda_lead: "Échéances repérées automatiquement dans les textes (« d'ici le… », « applicable from… », « bis zum… ») et dates d'application des textes en vigueur. Les dates approximatives (mois seulement) sont marquées « vers ».",
@@ -135,17 +158,39 @@
       csv_head: ['Date', 'Rubrique', 'Pertinence', 'Titre', "Titre d'origine", 'Langue', 'Source', 'Pays / zone', 'Nature', 'Statut', 'Amende', 'Amende (€, estimation)', 'Dates clés', 'Pourquoi', 'Thèmes', 'Lien', 'Résumé'],
       robust_err: "Une partie de la page n'a pas pu s'afficher : ", at: ' à ', no_date: 'Sans date',
       method_html: [
-        ['Collecte', "<p>Chaque lundi à 7 h (et à la demande), un script lit toutes les sources : flux RSS, pages d'actualités datées, API Légifrance, et les veilles RKC déposées dans un dépôt privé. La base couvre toute l'actualité depuis le 1er janvier 2026 : recherche documentaire vérifiée (badge « Base 2026 ») et rattrapage des archives de chaque source.</p>"],
-        ["Rien n'est écarté", "<p>Tous les articles sont gardés. Chacun reçoit une pertinence (très pertinent, pertinent, à surveiller) calculée par un petit modèle d'IA open source et gratuit exécuté sur GitHub, qui compare le sens de l'article aux thèmes du client (dont les exigences des acheteurs de santé et du secteur public). Les mots-clés justifient la présence de l'article, ils ne décident pas seuls.</p>"],
-        ["L'essentiel", "<p>« À la une » et « Dates clés » sont calculés par des règles fixes, sans IA générative : pertinence, échéance proche (dates repérées automatiquement dans les textes, dans toutes les langues), statut du texte, source officielle, amende, fraîcheur. Les dates « vers » sont approximatives (mois seulement).</p>"],
+        ['Collecte', "<p>Chaque lundi à 7 h (et à la demande), un script lit toutes les sources : flux RSS, pages d'actualités datées, Journal officiel de l'UE (EUR-Lex) et français (données ouvertes de la DILA), et l'alerte RKC déposée dans un dépôt privé. La base couvre l'actualité depuis le 1er janvier 2026 (badge « Base 2026 » pour la recherche documentaire initiale).</p>"],
+        ['Pertinence', "<p>Chaque article reçoit une note d'un petit modèle open source gratuit (exécuté sur GitHub) qui compare son sens aux thèmes du client, puis des règles fixes et lisibles décident du niveau : <strong>un texte clé cité</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) n'est jamais écarté ; <strong>« très pertinent »</strong> exige un signal réglementaire (loi, décret, lignes directrices, consultation, norme, sanction… dans toutes les langues) ; le bruit (alertes de vulnérabilités, événements, marchés, finance, télécoms) est écarté, sauf source officielle ; hors Europe, seuls les textes à portée mondiale (ISO/IEC, IMDRF, FDA cybersécurité des dispositifs) sont gardés.</p>"],
+        ['Rien ne se perd', "<p>Les articles de faible pertinence sont gardés dans « À surveiller » (masqués par défaut). Les articles écartés restent consultables et téléchargeables dans Sources › Articles écartés. Les boutons « Important » et « Pas pertinent » corrigent le classement à la collecte suivante et servent d'exemples au modèle.</p>"],
+        ["L'essentiel", "<p>« À la une » et « Nouvelles réglementations et normes » ne retiennent que les textes et normes importants, regroupés par texte avec toutes leurs sources. En cas de doute (source non officielle, texte inconnu), l'article est gardé avec le badge « À vérifier ». Les dates clés ne sont retenues que près d'un mot d'obligation (« d'ici le », « applicable à compter du »…), jamais pour un webinaire ou une réunion.</p>"],
         ['Nouveautés et archives', "<p>« Nouveautés » montre les 30 derniers jours (60 s'il y a peu d'articles) ; tout le reste est dans « Archives ». Chaque collecte crée une édition, consultable dans le sélecteur « Édition ».</p>"],
-        ['Débats et signaux', "<p>Les avis d'experts viennent uniquement de sources classées « Avis d'experts (non certifié) ». Ils sont stockés à part et n'apparaissent jamais dans la veille, la carte, L'essentiel ni les textes applicables. Les tendances sont de simples comptages de sujets, sans interprétation.</p>"],
-        ['Veille RKC', "<p>Les mails et fichiers Word de la veille RKC sont lus dans un dépôt privé. Seuls le titre, le lien, la date, la note et les thèmes sont publiés : le texte des articles, souvent payants, n'apparaît jamais sur ce site.</p>"],
-        ['Traduction et limites', "<p>Titres et résumés sont traduits par un moteur libre (Argos Translate) ; les acronymes ne sont jamais traduits. Pertinence, traduction et dates clés sont automatiques : en cas de doute, lisez la source. Les montants convertis sont des estimations.</p>"]
+        ['Débats et signaux', "<p>Les avis d'experts viennent uniquement de sources classées « Avis d'experts (non certifié) », et seuls les avis pertinents ou très pertinents sont gardés. Ils sont stockés à part et n'apparaissent jamais dans la veille, la carte, L'essentiel ni les textes applicables.</p>"],
+        ['Veille RKC', "<p>L'alerte RKC (Nexis Newsdesk) est lue dans un dépôt privé ; seuls les articles pertinents ou très pertinents sont gardés. Seuls le titre, la publication, la date et la note sont publiés : l'extrait, souvent payant, n'apparaît jamais sur ce site.</p>"],
+        ['Traduction et limites', "<p>Titres et résumés sont traduits par un moteur libre (Argos Translate) ; les acronymes ne sont jamais traduits ; une traduction défaillante est remplacée par le texte d'origine. Tout est automatique : en cas de doute, lisez la source. Les montants convertis sont des estimations.</p>"]
       ]
     },
     en: {
       skip: 'Skip to content', btn_export: 'Export ▾', btn_update: 'Run an update',
+      tm_title: 'New regulations and standards',
+      tm_lead: 'Every important text of the period (laws, decrees, guidelines, standards, consultations), grouped by text: a topic covered by several sources appears once, with all its sources. Ranked by fixed rules (key texts, regulatory signal), with no generative AI. When in doubt, the article is kept and marked “to be checked”.',
+      tm_empty: 'No important text found for this period.', tm_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); }, tm_other: 'Other official texts',
+      tm_more: function (n) { return 'Show ' + n + ' more sources'; },
+      badge_ess: 'Key point', badge_verif: 'To be checked', verif_title: 'Detected automatically in a non-official source (or with no known key text): check the official source.',
+      fb_important: '★ Important', fb_not: '✕ Not relevant', fb_t_imp: 'Flag this article as important?', fb_t_not: 'Flag this article as not relevant?',
+      fb_b_imp: 'It will be kept and added to Key points at the next collection; similar articles will be rated higher.',
+      fb_b_not: 'It will be discarded at the next collection (still listed in Sources › Discarded articles); similar articles will be rated lower.',
+      surv_hidden: function (n) { return n + ' “to monitor” articles (low relevance, kept so that nothing is missed) are hidden.'; },
+      surv_shown: function (n) { return n + ' “to monitor” articles are shown.'; }, surv_show: 'Show them', surv_hide: 'Hide them',
+      why_key: 'Key text mentioned: ', why_motif: 'Rating: ',
+      cov_title: 'Coverage: country × section', cov_lead: 'Date of the latest relevant article per country and section. In red: nothing for more than 60 days — check the sources for that country (or news is simply quiet).',
+      cov_none: 'none', cov_summary: function (n) { return '· ' + n + ' cells with no relevant article for 60 days'; }, cov_zone: 'Country / area', cov_all: 'All sections',
+      ec_title: 'Discarded articles', ec_lead: 'Articles collected but judged off-topic: vulnerability alerts, events, business news, finance, telecoms, non-European topics, score too low… They are not lost: check here that no important text was discarded by mistake, and click “Important” to put it back in the watch.',
+      ec_search_ph: 'Filter discarded articles…', ec_export: 'Download the list (Excel)', ec_th_date: 'Date', ec_th_title: 'Title', ec_th_reason: 'Reason', ec_all: 'All reasons',
+      ec_summary: function (n, s2) { return '· ' + n + ' over 120 days, ' + s2 + ' at the last collection'; },
+      ec_more: function (n) { return n + ' more rows: refine the filter or download the list.'; },
+      ec_csv_head: ['Date', 'Title', 'Title (English)', 'Source', 'Country / area', 'Reason', 'Score', 'Link'],
+      flag_retirer: 'Remove?', flag_retirer_t: 'Nothing read at the last two collections: the source probably blocks robots.',
+      m_opendata: 'Open data (Official Journal)', pdf_prep: 'Preparing the PDF…', pdf_missing: 'The full-watch PDF will be created at the next collection on GitHub.',
+      pdf_fail: 'PDF not available here (library not loaded): choose “Save as PDF” in the window that opens.',
       btn_pdf_all: 'The full watch (PDF)', btn_pdf: 'Articles shown (PDF)', btn_excel: 'Articles shown (Excel)',
       update_title: 'Opens GitHub: click “Run workflow”, then wait a few minutes',
       version_label: 'Edition', version_current: ' (current)', version_base: 'Initial knowledge base',
@@ -156,7 +201,7 @@
       edition: function (d, n) { return 'Edition of ' + d + ' · ' + n + ' new article' + (n > 1 ? 's' : ''); },
       no_run: 'No collection yet.',
       tab_essentiel: 'Key points', tab_watch: 'Watch', tab_map: 'Map', tab_ref: 'Applicable texts', tab_debats: 'Debates & signals', tab_sources: 'Sources',
-      une_title: 'Top stories', une_lead: 'The most important items right now, ranked automatically (no paid AI): relevance for the client, upcoming deadline, adopted or in-force text, official source, fine, freshness.',
+      une_title: 'Top stories', une_lead: 'The five most important items right now, ranked by fixed rules (no generative AI): key text, upcoming deadline, adopted or in-force text, official source, freshness.',
       une_empty: 'Nothing notable yet: run a collection.', une_why: 'On top because: ',
       u_deadline: 'deadline soon', u_pert: 'highly relevant', u_off: 'official source', u_fine: 'fine', u_recent: 'brand new', u_status: 'adopted or in force',
       agenda_title: 'Key dates', agenda_lead: 'Deadlines detected automatically in the texts (“by…”, “applicable from…”, “bis zum…”) and application dates of texts in force. Approximate dates (month only) are marked “around”.',
@@ -243,13 +288,14 @@
       csv_head: ['Date', 'Section', 'Relevance', 'Title', 'Original title', 'Language', 'Source', 'Country / area', 'Type', 'Status', 'Fine', 'Fine (€, estimate)', 'Key dates', 'Why', 'Topics', 'Link', 'Summary'],
       robust_err: 'Part of the page could not be displayed: ', at: ' at ', no_date: 'No date',
       method_html: [
-        ['Collection', '<p>Every Monday at 7 am (and on demand), a script reads every source: RSS feeds, dated news pages, the Légifrance API, and the RKC watch files stored in a private repository. The database covers all news since 1 January 2026: verified desk research (“2026 base” badge) plus a catch-up of each source’s archives.</p>'],
-        ['Nothing is discarded', '<p>Every article is kept. Each gets a relevance rating (highly relevant, relevant, to monitor) computed by a small, free, open-source AI model running on GitHub, which compares the meaning of the article with the client’s themes (including requirements set by healthcare buyers and the public sector). Keywords justify why an article is here; they never decide alone.</p>'],
-        ['Key points', '<p>“Top stories” and “Key dates” are computed with fixed rules, no generative AI: relevance, upcoming deadline (dates detected automatically in the texts, in every language), status, official source, fine, freshness. Dates marked “around” are approximate (month only).</p>'],
+        ['Collection', '<p>Every Monday at 7 am (and on demand), a script reads every source: RSS feeds, dated news pages, the EU Official Journal (EUR-Lex) and the French one (DILA open data), and the RKC alert stored in a private repository. The database covers news since 1 January 2026 (“2026 base” badge for the initial desk research).</p>'],
+        ['Relevance', '<p>Each article is scored by a small, free, open-source model (running on GitHub) that compares its meaning with the client’s themes; then fixed, readable rules set the level: <strong>an article mentioning a key text</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) is never discarded; <strong>“highly relevant”</strong> requires a regulatory signal (law, decree, guidelines, consultation, standard, sanction… in every language); noise (vulnerability alerts, events, business news, finance, telecoms) is discarded unless the source is official; outside Europe, only texts with a global scope (ISO/IEC, IMDRF, FDA medical-device cybersecurity) are kept.</p>'],
+        ['Nothing is lost', '<p>Low-relevance articles are kept under “To monitor” (hidden by default). Discarded articles remain listed and downloadable in Sources › Discarded articles. The “Important” and “Not relevant” buttons correct the rating at the next collection and serve as examples for the model.</p>'],
+        ['Key points', '<p>“Top stories” and “New regulations and standards” only keep important texts and standards, grouped by text with all their sources. When in doubt (non-official source, unknown text), the article is kept with a “To be checked” badge. Key dates are only kept next to an obligation word (“by”, “applicable from”…), never for a webinar or a meeting.</p>'],
         ['Latest and archive', '<p>“Latest” shows the last 30 days (60 when there are few articles); everything else is in “Archive”. Each collection creates an edition, available in the “Edition” selector.</p>'],
-        ['Debates & signals', '<p>Expert opinions come only from sources classified as “Expert opinion (not certified)”. They are stored separately and never appear in the watch, the map, Key points or applicable texts. Trends are plain topic counts, with no interpretation.</p>'],
-        ['RKC watch', '<p>RKC e-mails and Word files are read from a private repository. Only the title, link, date, rating and topics are published: the text of the articles, often paywalled, never appears on this site.</p>'],
-        ['Translation and limits', '<p>Titles and summaries are translated by a free engine (Argos Translate); acronyms are never translated. Relevance, translation and key dates are automatic: when in doubt, read the source. Converted amounts are estimates.</p>']
+        ['Debates & signals', '<p>Expert opinions come only from sources classified as “Expert opinion (not certified)”, and only relevant or highly relevant ones are kept. They are stored separately and never appear in the watch, the map, Key points or applicable texts.</p>'],
+        ['RKC watch', '<p>The RKC alert (Nexis Newsdesk) is read from a private repository; only relevant or highly relevant articles are kept. Only the title, publication, date and rating are published: the excerpt, often paywalled, never appears on this site.</p>'],
+        ['Translation and limits', '<p>Titles and summaries are translated by a free engine (Argos Translate); acronyms are never translated; a failed translation is replaced by the original text. Everything is automatic: when in doubt, read the source. Converted amounts are estimates.</p>']
       ]
     }
   };
@@ -434,12 +480,29 @@
     if (LANG === 'en' && a.base) return lab + montantCourt(a.amende.montant_eur);
     return lab + a.amende.texte;
   }
+  var MOTIFS_EN = [
+    [/^texte clé : /, 'key text: '], [/sujet hors Europe sans portée mondiale/, 'non-European topic with no global scope'],
+    [/^hors sujet : /, 'off-topic: '], [/^source officielle, sujet secondaire : /, 'official source, secondary topic: '],
+    [/source officielle, sans lien direct avec la cyber, les données ou la santé numérique/, 'official source, no direct link with cyber, data or digital health'],
+    [/note trop faible \(([\d.]+)\), aucun texte clé/, 'score too low ($1), no key text'], [/aucun lien avec la cyber, les données, l'IA ou la santé/, 'no link with cyber, data, AI or health'],
+    [/source volumineuse : seuls les articles pertinents sont gardés/, 'high-volume source: only relevant articles are kept'],
+    [/veille RKC : moins que « pertinent »/, 'RKC watch: below “relevant”'], [/avis d'expert : moins que « pertinent »/, 'expert opinion: below “relevant”'],
+    [/jugé non pertinent par un lecteur/, 'marked not relevant by a reader'], [/jugé important par un lecteur/, 'marked important by a reader'],
+    [/texte à portée mondiale/, 'text with a global scope'], [/proche d'un thème hors sujet \(modèle\)/, 'close to an off-topic theme (model)'],
+    [/vulnérabilités \/ alertes techniques/g, 'vulnerabilities / technical alerts'], [/menaces \/ incidents/g, 'threats / incidents'],
+    [/événements \/ webinaires/g, 'events / webinars'], [/vœux \/ prix \/ RH/g, 'greetings / awards / HR'], [/marchés \/ entreprises/g, 'business / markets'],
+    [/finance \/ banque/g, 'finance / banking'], [/télécoms/g, 'telecoms'], [/sensibilisation \/ conseils/g, 'awareness / tips'],
+    [/médicaments \(hors dispositifs\)/g, 'medicines (not devices)'], [/hors sujet \(autres domaines\)/g, 'off-topic (other fields)']
+  ];
+  function motifTexte(m) { m = m || ''; if (LANG === 'en') MOTIFS_EN.forEach(function (r) { m = m.replace(r[0], r[1]); }); return m; }
+  function libTexteCle(x) { return LANG === 'en' ? (TEXTES_CLES_EN[x] || x) : x; }
   function pourquoiTexte(a) {
     if (a.base) return (a.pourquoi || {})[LANG] || (a.pourquoi || {}).fr || '';
     var m = [];
+    if (a.textes_cles && a.textes_cles.length) m.push(t('why_key') + a.textes_cles.map(libTexteCle).join(', '));
+    else if (a.motif) m.push(t('why_motif') + motifTexte(a.motif));
     if (a.themes && a.themes.length) m.push(t('why_themes') + a.themes.map(nomTheme).join(', '));
     if (a.tags && a.tags.length) m.push(t('why_kw') + a.tags.map(libelleTag).join(', '));
-    else m.push(t('why_none'));
     return m.join(' · ');
   }
   function extraitEcheance(e) { var x = e.extrait || {}; return x[LANG] || x.fr || x.en || x[Object.keys(x)[0]] || ''; }
@@ -528,7 +591,7 @@
     var k = el('div', { className: 'card-kicker' });
     if (ZONES[a.zone]) k.appendChild(el('span', { className: 'zone-code', text: codeZone(a.zone), title: nomZone(a.zone) }));
     k.appendChild(el('span', { text: dateLongue(a.date) }));
-    k.appendChild(el('span', { text: '· ' + (a.source || '') }));
+    k.appendChild(el('span', { text: '· ' + (a.source || '') + (a.publication ? ' · ' + a.publication : '') }));
     return k;
   }
 
@@ -539,6 +602,8 @@
     var foot = el('div', { className: 'card-foot' });
     if (META.version && a.version === META.version && VERSIONS.length > 1) ajout(foot, badge('badge-new', t('new_badge')));
     ajout(foot, badgePert(a));
+    if (a.essentiel) ajout(foot, badge('badge-ess', t('badge_ess')));
+    if (a.essentiel && a.a_verifier) ajout(foot, badge('badge-verif', t('badge_verif'), t('verif_title')));
     var pe = prochaineEcheance(a);
     if (pe) ajout(foot, badge('badge-urgent', (pe.approx ? t('approx') + ' ' : '') + dateCourte(pe.date)));
     ajout(foot, badgeAmende(a));
@@ -598,10 +663,18 @@
         themes.forEach(function (k) { tl.appendChild(el('li', null, [el('button', { type: 'button', className: 'tag', 'data-theme': k, text: libelleTheme(k) })])); });
         parts.push(tl);
       }
-      parts.push(el('div', { className: 'card-actions' }, [el('button', { type: 'button', className: 'btn btn-sm btn-copy', 'data-copy': true, text: t('copy') })]));
+      parts.push(el('div', { className: 'card-actions' }, [el('button', { type: 'button', className: 'btn btn-sm btn-copy', 'data-copy': true, text: t('copy') })].concat(a.base ? [] : boutonsAvis(a))));
       return parts;
     };
     return card;
+  }
+
+  /* Avis des lecteurs : « Important » / « Pas pertinent » -> issue GitHub « [Avis] » (ou écriture directe avec jeton) */
+  function boutonsAvis(a) {
+    return ['important', 'pas_pertinent'].map(function (v) {
+      return el('button', { type: 'button', className: 'btn btn-sm btn-avis btn-avis-' + v, 'data-avis': v, 'data-id': a.id,
+        'data-titre': (a.titre || '').slice(0, 250), 'data-lien': a.lien || '', text: v === 'important' ? t('fb_important') : t('fb_not') });
+    });
   }
 
   function carteSynthese(f, fFr) {
@@ -719,8 +792,10 @@
     Array.prototype.forEach.call(document.querySelectorAll('input[data-facet]'), function (i) { i.addEventListener('change', appliquerFiltres); });
   }
 
+  var montrerFaible = false;
   function correspond(card, sel) {
     var f = card._f;
+    card._masque = false;
     if (etatFiltres.versionMax !== null) {
       if (f.rang === undefined) { if (etatFiltres.versionSeule) return false; }
       else if (f.rang > etatFiltres.versionMax || (etatFiltres.versionSeule && f.version !== etatFiltres.versionSeule)) return false;
@@ -737,6 +812,8 @@
     if (sel.amende.length && sel.amende.indexOf(f.amende) === -1) return false;
     if (sel.theme.length && !sel.theme.some(function (k) { return f.theme.indexOf(k) !== -1; })) return false;
     for (var j = 0; j < etatFiltres.q.length; j++) if (f.texte.indexOf(etatFiltres.q[j]) === -1) return false;
+    // « À surveiller » (faible pertinence) : masqué par défaut, sauf recherche ou filtre explicite
+    if (f.pert === 'faible' && !montrerFaible && !etatFiltres.q.length && sel.pert.indexOf('faible') === -1) { card._masque = true; return false; }
     return true;
   }
   function trier(liste) {
@@ -749,12 +826,14 @@
   }
   function appliquerFiltres() {
     var sel = { section: selection('section'), nature: selection('nature'), zone: selection('zone'), pert: selection('pert'), statut: selection('statut'), amende: selection('amende'), theme: selection('theme') };
-    var total = 0, visibles = 0, nRecent = 0, nArch = 0;
+    var total = 0, visibles = 0, nRecent = 0, nArch = 0, nMasques = 0, nFaiblesVis = 0;
     var parRub = {};
     cartes.forEach(function (c) {
       if (c._f.recent) nRecent++; else nArch++;
       total++;
       var ok = correspond(c, sel);
+      if (c._masque) nMasques++;
+      if (ok && c._f.pert === 'faible') nFaiblesVis++;
       if (ok) { visibles++; (parRub[c._f.section] = parRub[c._f.section] || []).push(c); }
       else if (c.classList.contains('is-open')) ouvrir(c, false);
     });
@@ -782,6 +861,13 @@
     var base = etatFiltres.q.length ? total : (etatFiltres.fenetre === 'recent' ? nRecent : nArch);
     document.getElementById('result-count').textContent = t('shown')(visibles, base);
     document.getElementById('empty-state').hidden = visibles !== 0 || !cartes.length;
+    var sn = document.getElementById('surveiller-note');
+    if (sn) {
+      var nFaibles = montrerFaible ? nFaiblesVis : nMasques;
+      sn.hidden = !nFaibles;
+      document.getElementById('surveiller-texte').textContent = montrerFaible ? t('surv_shown')(nFaibles) + ' ' : t('surv_hidden')(nMasques) + ' ';
+      document.getElementById('surveiller-bascule').textContent = montrerFaible ? t('surv_hide') : t('surv_show');
+    }
     var actifs = sel.section.length + sel.nature.length + sel.zone.length + sel.pert.length + sel.statut.length + sel.amende.length + sel.theme.length;
     var ac = document.getElementById('active-count'); ac.textContent = actifs; ac.hidden = !actifs;
     Array.prototype.forEach.call(document.querySelectorAll('.tag[data-theme]'), function (b) { b.setAttribute('aria-pressed', sel.theme.indexOf(b.getAttribute('data-theme')) !== -1 ? 'true' : 'false'); });
@@ -800,6 +886,7 @@
       Array.prototype.forEach.call(document.querySelectorAll('input[data-facet]'), function (i) { i.checked = false; });
       document.getElementById('recherche').value = ''; etatFiltres.q = []; appliquerFiltres();
     });
+    document.getElementById('surveiller-bascule').addEventListener('click', function () { montrerFaible = !montrerFaible; appliquerFiltres(); });
     document.getElementById('voir-originaux').addEventListener('change', function (e) { voirOriginaux = e.target.checked; cartes.forEach(function (c) { montrerTexte(c, voirOriginaux); }); });
     document.getElementById('rubriques').addEventListener('click', function (e) {
       var tag = e.target.closest('.tag[data-theme]');
@@ -810,7 +897,7 @@
       }
       var bas = e.target.closest('[data-bascule]');
       if (bas) { var cb = bas.closest('.card'); montrerTexte(cb, !cb._original); return; }
-      if (e.target.closest('[data-copy]') || e.target.closest('a')) return;
+      if (e.target.closest('[data-copy]') || e.target.closest('[data-avis]') || e.target.closest('a')) return;
       var tog = e.target.closest('[data-toggle]');
       if (tog) { var c = tog.closest('.card'); ouvrir(c, !c.classList.contains('is-open')); }
     });
@@ -850,6 +937,8 @@
   /* Score d'urgence : règles fixes, lisibles, sans IA générative */
   function urgence(a) {
     var s = 0, raisons = [];
+    if (a.essentiel) { s += 2; if (a.textes_cles && a.textes_cles.length) raisons.push(a.textes_cles.slice(0, 2).map(libTexteCle).join(', ')); }
+    if (a.a_verifier) s -= 0.5;
     if (a.pertinence === 'elevee') { s += 3; raisons.push(t('u_pert')); } else if (a.pertinence === 'moyenne') s += 1.5;
     var pe = prochaineEcheance(a);
     if (pe) {
@@ -867,13 +956,15 @@
 
   function renderEssentiel() {
     var grid = document.getElementById('une-grid');
-    var candidats = ARTICLES.filter(function (a) { return a.pertinence !== 'faible'; }).map(function (a) { return { a: a, u: urgence(a) }; })
+    // « À la une » : uniquement les textes et normes importants (L'essentiel), jamais un article « à surveiller »
+    var candidats = ARTICLES.filter(function (a) { return a.essentiel || (a.base && a.pertinence === 'elevee'); }).map(function (a) { return { a: a, u: urgence(a) }; })
       .sort(function (x, y) { return (y.u.score - x.u.score) || (y.a.date > x.a.date ? 1 : -1); }).slice(0, 5);
     document.getElementById('une-vide').hidden = candidats.length > 0;
     function carteUne(c, principale) {
       var a = c.a, tx = textes(a), pe = c.u.echeance;
       var badges = el('div', { className: 'une-badges' }, [badgePert(a, true), badgeAmende(a, true),
         a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null, a.base ? badge('badge-base badge-sm', t('base_badge')) : null,
+        a.a_verifier ? badge('badge-verif badge-sm', t('badge_verif'), t('verif_title')) : null,
         a.payant ? badge('badge-fine badge-fine-cap badge-sm', '🔒 ' + t('badge_payant')) : null]);
       return el('article', { className: 'une-card' + (principale ? ' une-main' : '') }, [
         el('div', { className: 'une-kicker' }, [ZONES[a.zone] ? el('span', { className: 'zone-code', text: codeZone(a.zone) }) : null, el('span', { text: dateLongue(a.date) + ' · ' + (a.source || '') })]),
@@ -890,15 +981,64 @@
       candidats.slice(1).forEach(function (c) { cote.appendChild(carteUne(c, false)); });
       grid.appendChild(cote);
     }
+    renderTextesMois(30);
+    document.getElementById('tm-periode').addEventListener('choix', function (e) { renderTextesMois(+e.detail.getAttribute('data-j')); });
     renderAgenda(90);
     document.getElementById('agenda-horizon').addEventListener('choix', function (e) { renderAgenda(+e.detail.getAttribute('data-h')); });
     renderKpis();
+  }
+
+  /* Nouvelles réglementations et normes : articles de L'essentiel regroupés par texte clé */
+  function renderTextesMois(jours) {
+    var box = document.getElementById('tm-liste'); box.textContent = '';
+    var groupes = {};
+    ARTICLES.forEach(function (a) {
+      if (!a.essentiel || a.base || joursDepuis(a.date) > jours) return;
+      var cle = (a.textes_cles && a.textes_cles[0]) || '';
+      (groupes[cle] = groupes[cle] || []).push(a);
+    });
+    var cles = Object.keys(groupes).sort(function (x, y) {
+      if (!x) return 1; if (!y) return -1;
+      return (groupes[y].length - groupes[x].length) || x.localeCompare(y);
+    });
+    document.getElementById('tm-vide').hidden = cles.length > 0;
+    cles.forEach(function (cle) {
+      var arts = groupes[cle].sort(function (x, y) {
+        return ((x.nature === 'officielle' ? 0 : 1) - (y.nature === 'officielle' ? 0 : 1)) || (y.date > x.date ? 1 : y.date < x.date ? -1 : 0);
+      });
+      var ul = el('ul', { className: 'tm-items' }), cachees = [];
+      arts.forEach(function (a, i) {
+        var tx = textes(a);
+        var li = el('li', { className: 'tm-item' }, [
+          el('div', { className: 'tm-meta' }, [ZONES[a.zone] ? el('span', { className: 'zone-code', text: codeZone(a.zone) }) : null,
+            el('span', { text: dateCourte(a.date) + ' · ' + (a.source || '') + (a.publication ? ' · ' + a.publication : '') }),
+            a.nature === 'officielle' ? badge('badge-statut badge-sm', libNature('officielle')) : null,
+            a.a_verifier ? badge('badge-verif badge-sm', t('badge_verif'), t('verif_title')) : null,
+            a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null,
+            a.payant ? badge('badge-fine badge-fine-cap badge-sm', '🔒 ' + t('badge_payant')) : null]),
+          el('a', { className: 'tm-titre', href: a.lien || '#', target: '_blank', rel: 'noopener noreferrer', text: tx.aff.titre })
+        ]);
+        if (i >= 5) { li.hidden = true; cachees.push(li); }
+        ul.appendChild(li);
+      });
+      var carte = el('article', { className: 'tm-groupe' }, [
+        el('header', { className: 'tm-head' }, [el('h3', { text: cle ? libTexteCle(cle) : t('tm_other') }), el('span', { className: 'tm-n', text: t('tm_sources')(arts.length) })]),
+        ul
+      ]);
+      if (cachees.length) {
+        var plus = el('button', { type: 'button', className: 'linkbtn', text: t('tm_more')(cachees.length) });
+        plus.addEventListener('click', function () { cachees.forEach(function (x) { x.hidden = false; }); plus.remove(); });
+        carte.appendChild(plus);
+      }
+      box.appendChild(carte);
+    });
   }
 
   function evenementsAgenda(horizon, zone) {
     var evs = [];
     ARTICLES.forEach(function (a) {
       if (zone && a.zone !== zone) return;
+      if (a.pertinence === 'faible') return;   // pas d'échéance tirée d'un article « à surveiller »
       (a.echeances || []).forEach(function (e) {
         var j = joursJusqua(e.date);
         if (j < -30 || j > horizon) return;
@@ -957,7 +1097,7 @@
 
   function renderKpis() {
     var box = document.getElementById('kpis');
-    var recents = ARTICLES.filter(estRecent).length;
+    var recents = ARTICLES.filter(function (a) { return estRecent(a) && a.pertinence !== 'faible'; }).length;
     var ech = evenementsAgenda(90).filter(function (e) { return joursJusqua(e.date) >= 0; }).length;
     var amendes = ARTICLES.filter(function (a) { return a.amende && !a.amende.plafond; }).length;
     var zones = {}; ARTICLES.forEach(function (a) { if (a.zone) zones[a.zone] = 1; });
@@ -1038,7 +1178,7 @@
     ['0', '1–2', '3–5', '6–10', '11–20', '21+'].forEach(function (lab, i) {
       legende.appendChild(el('span', null, [el('span', { className: 'legend-sw', style: 'background:' + RAMPE[i] }), lab]));
     });
-    function articlesZone(z) { return ARTICLES.filter(function (a) { return a.zone === z && (!periode || joursDepuis(a.date) <= +periode); }); }
+    function articlesZone(z) { return ARTICLES.filter(function (a) { return a.zone === z && a.pertinence !== 'faible' && (!periode || joursDepuis(a.date) <= +periode); }); }
     function reglementations(z) {
       return articlesZone(z).filter(function (a) { return a.rubrique !== 'autres' && a.pertinence !== 'faible'; })
         .sort(function (x, y) { return x.date < y.date ? 1 : x.date > y.date ? -1 : 0; });
@@ -1193,6 +1333,8 @@
     return { nom: LANG === 'en' ? (r.nom_en || r.nom) : r.nom, resume: LANG === 'en' ? (r.resume_en || r.resume_fr) : r.resume_fr,
              pourquoi: LANG === 'en' ? (r.pourquoi_en || r.pourquoi_fr) : r.pourquoi_fr };
   }
+  function refAutorite(r) { return LANG === 'en' ? (r.autorite_en || r.autorite || '') : (r.autorite || ''); }
+  function refAmende(r) { return LANG === 'en' ? (r.amende_max_en || r.amende_max || '') : (r.amende_max || ''); }
   function refDepuis(v) { return !v || v === 'n.d.' ? '—' : (/^\d{4}-\d{2}-\d{2}$/.test(v) ? dateLongue(v) : v); }
 
   function renderReferentiel() {
@@ -1215,8 +1357,8 @@
           x.resume ? el('p', { text: x.resume }) : null,
           x.pourquoi ? el('p', { className: 'ref-why', text: '→ ' + x.pourquoi }) : null,
           el('div', { className: 'ref-meta' }, [r.acronyme ? badge('badge-statut badge-sm', r.acronyme) : null, badgePert(r, true),
-            el('span', { text: [r.autorite, t('ref_since') + refDepuis(r.applicable_depuis)].filter(Boolean).join(' · ') }),
-            r.amende_max ? badge('badge-fine badge-fine-cap badge-sm', t('ref_fine') + r.amende_max) : null])
+            el('span', { text: [refAutorite(r), t('ref_since') + refDepuis(r.applicable_depuis)].filter(Boolean).join(' · ') }),
+            r.amende_max ? badge('badge-fine badge-fine-cap badge-sm', t('ref_fine') + refAmende(r)) : null])
         ]);
         c._r = r; c._t = normaliser([x.nom, r.nom, r.acronyme, r.autorite, x.resume, nomZone(r.zone)].join(' '));
         grid.appendChild(c); return c;
@@ -1244,7 +1386,7 @@
       groupes.forEach(function (g) { g.cartes.forEach(function (k) {
         if (k.hidden) return;
         var r = k._r, x = refTexte(r);
-        lignes.push([nomZone(r.zone), nomCategorie(r.categorie), x.nom, r.acronyme || '', r.autorite || '', r.applicable_depuis || '', r.amende_max || '', r.pertinence ? t('pert_badge')[r.pertinence] : '', x.resume || '', x.pourquoi || '', r.lien]);
+        lignes.push([nomZone(r.zone), nomCategorie(r.categorie), x.nom, r.acronyme || '', refAutorite(r), r.applicable_depuis || '', refAmende(r), r.pertinence ? t('pert_badge')[r.pertinence] : '', x.resume || '', x.pourquoi || '', r.lien]);
       }); });
       telechargerCsv([t('ref_csv_head')].concat(lignes), 'cyberwatch_textes_applicables_');
     });
@@ -1298,14 +1440,15 @@
     non_configuree: { key: 'a_nc', cls: 'mode-off', ordre: 2 }, inactive: { key: 'a_off', cls: 'mode-off', ordre: 4 }, attente: { key: 'a_wait', cls: 'mode-off', ordre: 5 },
     retiree: { key: 'a_removed', cls: 'mode-off', ordre: 6 }
   };
-  var MODES = { rss: 'm_rss', 'rss-auto': 'm_rssauto', 'rss+page': 'm_rsspage', page: 'm_page', erreur: 'm_err', api: 'm_api', rkc: 'm_rkc' };
+  var MODES = { rss: 'm_rss', 'rss-auto': 'm_rssauto', 'rss+page': 'm_rsspage', page: 'm_page', erreur: 'm_err', api: 'm_api', rkc: 'm_rkc', opendata: 'm_opendata' };
   var ERREURS_EN = [
     [/Page (\S+) inaccessible : /g, 'Page $1 unreachable: '], [/Flux (\S+) illisible : /g, 'Feed $1 unreadable: '],
     [/Aucun lien d'article détecté sur (\S+) \(page probablement chargée en JavaScript\)/g, 'No article link found on $1 (page probably loaded with JavaScript)'],
     [/interdit aux robots par le robots\.txt du site/g, "disallowed for robots by the site's robots.txt"],
     [/Statut « ([^»]+) » dans l'Excel : source non interrogée\./g, 'Status “$1” in the spreadsheet: source not queried.'],
     [/Retirée depuis le site : plus interrogée\./g, 'Removed from the site: no longer queried.'],
-    [/API Légifrance non configurée[^.]*\./g, 'Légifrance API not configured: add the GitHub secrets (see README).']
+    [/Liste des archives DILA illisible : /g, 'DILA archive list unreadable: '], [/(\d+) archive\(s\) du JO lue\(s\)/g, '$1 Official Journal archive(s) read'],
+    [/aucun article Newsdesk reconnu/g, 'no Newsdesk article recognised']
   ];
   function traduireErreur(txt) { if (LANG !== 'en') return txt; ERREURS_EN.forEach(function (r) { txt = txt.replace(r[0], r[1]); }); return txt; }
   function accesDe(s) { return s.acces || (s.mode === 'erreur' ? 'ko' : (s.erreur ? 'partielle' : 'ok')); }
@@ -1327,7 +1470,8 @@
       tbody.appendChild(el('tr', { 'data-acces': groupe, 'data-texte': normaliser((s.nom || '') + ' ' + (s.zone || '') + ' ' + nomZone(s.zone)) }, [
         el('td', null, [el('span', { className: 'mode ' + info.cls, text: t(info.key) })]),
         el('td', null, [s.url ? el('a', { href: s.url, target: '_blank', rel: 'noopener noreferrer', text: s.nom || s.url }) : el('span', { text: s.nom }),
-          s.origine === 'site' ? badge('badge-sm', t('added_site')) : null, s.nature === 'opinion' ? badge('badge-opinion badge-sm', t('opinion_src')) : null]),
+          s.origine === 'site' ? badge('badge-sm', t('added_site')) : null, s.nature === 'opinion' ? badge('badge-opinion badge-sm', t('opinion_src')) : null,
+          s.a_retirer ? badge('badge-verif badge-sm', t('flag_retirer'), t('flag_retirer_t')) : null]),
         el('td', { text: nomZone(s.zone) }),
         el('td', { text: MODES[s.mode] ? t(MODES[s.mode]) : '—' }),
         el('td', { className: 'num', text: inactif ? '—' : String(s.nb_trouves || 0) }),
@@ -1354,6 +1498,72 @@
     rech.addEventListener('input', filtrer);
     var tr = META.traduction, st = document.getElementById('trad-status');
     if (tr && tr.active) st.textContent = tr.moteur ? t('trad_ok')(tr.faites || 0, tr.en_attente || 0) : t('trad_off') + (tr.erreur || '');
+  }
+
+  /* Couverture : date du dernier article pertinent par pays et par rubrique (rouge si > 60 jours) */
+  function renderCouverture() {
+    var table = document.getElementById('cov-table'); if (!table) return;
+    var zones = Object.keys(ZONES).filter(function (z) { return z !== 'Worldwide' && z !== 'Bulgarie'; })
+      .sort(function (a, b) { return a === 'Europe' ? -1 : b === 'Europe' ? 1 : nomZone(a).localeCompare(nomZone(b), LANG); });
+    var rubs = (META.rubriques || []).filter(function (r) { return r.id !== 'autres'; });
+    var der = {};
+    ARTICLES.forEach(function (a) {
+      if (a.base || (a.pertinence !== 'elevee' && a.pertinence !== 'moyenne')) return;
+      [a.rubrique, '*'].forEach(function (r) { var k = a.zone + '|' + r; if (!der[k] || a.date > der[k]) der[k] = a.date; });
+    });
+    var thead = el('tr', null, [el('th', { text: t('cov_zone') })].concat(rubs.map(function (r) { return el('th', { text: titreRubrique(r) }); })).concat([el('th', { text: t('cov_all') })]));
+    table.appendChild(el('thead', null, [thead]));
+    var tb = el('tbody'), rouges = 0;
+    zones.forEach(function (z) {
+      var tr = el('tr', null, [el('td', null, [el('span', { className: 'zone-code', text: codeZone(z) }), ' ' + nomZone(z)])]);
+      rubs.map(function (r) { return r.id; }).concat(['*']).forEach(function (r) {
+        var d = der[z + '|' + r], vieux = !d || joursDepuis(d) > 60;
+        if (vieux) rouges++;
+        tr.appendChild(el('td', { className: 'cov-cell' + (vieux ? ' cov-old' : ''), text: d ? dateCourte(d) + (joursDepuis(d) > 300 ? ' ' + d.slice(0, 4) : '') : t('cov_none') }));
+      });
+      tb.appendChild(tr);
+    });
+    table.appendChild(tb);
+    document.getElementById('cov-resume').textContent = t('cov_summary')(rouges);
+  }
+
+  /* Articles écartés : liste consultable et téléchargeable, avec bouton « Important » pour les repêcher */
+  function renderEcartes() {
+    var tbody = document.getElementById('ec-lignes'); if (!tbody) return;
+    var liste = ECARTES.slice().sort(function (x, y) { return (y.date || '') > (x.date || '') ? 1 : -1; });
+    var derniere = META.version || '';
+    var nDerniere = META.nb_ecartes_nouveaux || 0;
+    document.getElementById('ec-resume').textContent = liste.length ? t('ec_summary')(liste.length, nDerniere) : '';
+    function cat(m) { return (m || '').replace(/ \([\d.]+\)/, '').split(' : ')[0]; }
+    var cats = {}; liste.forEach(function (e) { var c = cat(e.motif); cats[c] = (cats[c] || 0) + 1; });
+    var sel = document.getElementById('ec-motif');
+    sel.appendChild(el('option', { value: '', text: t('ec_all') }));
+    Object.keys(cats).sort(function (a, b) { return cats[b] - cats[a]; }).forEach(function (c) { sel.appendChild(el('option', { value: c, text: motifTexte(c) + ' (' + cats[c] + ')' })); });
+    var q = document.getElementById('ec-recherche'), MAX = 300, filtres = [];
+    function titreDe(e) { return LANG === 'en' && e.titre_en ? e.titre_en : e.titre; }
+    function dessiner() {
+      var s2 = normaliser(q.value).trim(), c = sel.value;
+      filtres = liste.filter(function (e) {
+        return (!c || cat(e.motif) === c) && (!s2 || normaliser([e.titre, e.titre_en, e.source, e.motif].join(' ')).indexOf(s2) !== -1);
+      });
+      tbody.textContent = '';
+      filtres.slice(0, MAX).forEach(function (e) {
+        tbody.appendChild(el('tr', null, [
+          el('td', { text: dateCourte(e.date) }),
+          el('td', null, [el('a', { href: e.lien, target: '_blank', rel: 'noopener noreferrer', text: titreDe(e) })]),
+          el('td', { text: (e.source || '') + (e.zone ? ' · ' + nomZone(e.zone) : '') }),
+          el('td', { className: 'remarque', text: motifTexte(e.motif) }),
+          el('td', null, [el('button', { type: 'button', className: 'btn btn-sm btn-avis btn-avis-important', 'data-avis': 'important', 'data-id': e.id,
+            'data-titre': (e.titre || '').slice(0, 250), 'data-lien': e.lien || '', text: t('fb_important') })])
+        ]));
+      });
+      document.getElementById('ec-plus').textContent = filtres.length > MAX ? t('ec_more')(filtres.length - MAX) : '';
+    }
+    q.addEventListener('input', dessiner); sel.addEventListener('change', dessiner);
+    document.getElementById('ec-export').addEventListener('click', function () {
+      telechargerCsv([t('ec_csv_head')].concat(filtres.map(function (e) { return [e.date, e.titre, e.titre_en || '', e.source, nomZone(e.zone), motifTexte(e.motif), e.score === undefined ? '' : e.score, e.lien]; })), 'cyberwatch_ecartes_');
+    });
+    dessiner();
   }
 
   function renderAcronymes() {
@@ -1442,6 +1652,39 @@
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status + (r.status === 401 || r.status === 403 ? ' (jeton refusé)' : '')); toast(t('saved_ok')); })
       .catch(function (e) { toast(t('saved_ko') + e.message); });
   }
+  function envoyerAvis(d) {
+    var jeton = lireJeton(), depot = META.depot, branche = META.branche || 'main';
+    if (!depot) { toast(t('mode_none')); return; }
+    if (!jeton) {
+      var corps = (LANG === 'en' ? 'Opinion given on the Cyber Watch site. Do not edit the block below.' : 'Avis donné depuis le site Cyber Watch. Ne modifiez pas le bloc ci-dessous.') + '\n\n```json\n' + JSON.stringify(d, null, 1) + '\n```\n';
+      var titre = '[Avis] ' + (d.avis === 'important' ? 'Important' : 'Pas pertinent') + ' : ' + (d.titre || d.id).slice(0, 120);
+      window.open((META.serveur || 'https://github.com') + '/' + depot + '/issues/new?title=' + encodeURIComponent(titre) + '&body=' + encodeURIComponent(corps), '_blank', 'noopener');
+      toast(t('opened_gh')); return;
+    }
+    var api = 'https://api.github.com/repos/' + depot + '/contents/config/retours.json';
+    var entetes = { Authorization: 'Bearer ' + jeton, Accept: 'application/vnd.github+json' };
+    fetch(api + '?ref=' + encodeURIComponent(branche), { headers: entetes })
+      .then(function (r) { if (r.status === 404) return null; if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (f) {
+        var ret = f ? JSON.parse(b64dec(f.content)) : {};
+        ret.articles = ret.articles || {};
+        ret.articles[d.id] = { avis: d.avis, titre: d.titre, lien: d.lien, le: new Date().toISOString().slice(0, 10) };
+        var corps = { message: 'Avis : ' + d.avis + ' — ' + (d.titre || d.id).slice(0, 80) + ' (depuis le site)', branch: branche, content: b64enc(JSON.stringify(ret, null, 1) + '\n') };
+        if (f) corps.sha = f.sha;
+        return fetch(api, { method: 'PUT', headers: entetes, body: JSON.stringify(corps) });
+      })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); toast(t('saved_ok')); })
+      .catch(function (e) { toast(t('saved_ko') + e.message); });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-avis]') : null; if (!b) return;
+    e.preventDefault(); e.stopPropagation();
+    var d = { action: 'avis', avis: b.getAttribute('data-avis'), id: b.getAttribute('data-id'), titre: b.getAttribute('data-titre'), lien: b.getAttribute('data-lien') };
+    var imp = d.avis === 'important';
+    demander(imp ? t('fb_t_imp') : t('fb_t_not'), [d.titre, imp ? t('fb_b_imp') : t('fb_b_not'), lireJeton() ? t('via_token') : t('via_issue')], t('confirm'),
+      function () { envoyerAvis(d); b.disabled = true; });
+  });
+
   function gestionSources() {
     var form = document.getElementById('src-form'), err = document.getElementById('src-form-err'), zoneSel = document.getElementById('sf-zone');
     Object.keys(ZONES).sort(function (a, b) { return nomZone(a).localeCompare(nomZone(b), LANG); }).forEach(function (z) { zoneSel.appendChild(el('option', { value: z, text: nomZone(z) })); });
@@ -1512,7 +1755,7 @@
       x.lien ? el('p', { className: 'pr-link', text: x.lien }) : null
     ]);
   }
-  function imprimer(sel, titre, complet) {
+  function imprimer(sel, titre, complet, telecharger) {
     var rep = document.getElementById('print-report'); rep.textContent = '';
     rep.appendChild(el('h1', { text: titre }));
     rep.appendChild(el('p', { className: 'pr-meta', text: t('pdf_generated') + horodatage(new Date().toISOString()) + ' · ' + sel.length + t('pdf_count') + (META.mise_a_jour ? ' · ' + t('edition')(jourSeul(META.mise_a_jour), META.nb_nouveaux || 0) : '') }));
@@ -1549,8 +1792,8 @@
         parZ2[z].sort(function (a, b) { return a.categorie - b.categorie; }).forEach(function (r) {
           var x = refTexte(r);
           rep.appendChild(el('div', { className: 'pr-item' }, [el('h4', { text: x.nom + (r.acronyme ? ' — ' + r.acronyme : '') }),
-            el('p', { className: 'pr-line', text: [nomCategorie(r.categorie), r.autorite, refDepuis(r.applicable_depuis)].filter(Boolean).join(' · ') }),
-            r.amende_max ? el('p', { className: 'pr-fine', text: t('ref_fine') + r.amende_max }) : null, x.resume ? el('p', { text: x.resume }) : null,
+            el('p', { className: 'pr-line', text: [nomCategorie(r.categorie), refAutorite(r), refDepuis(r.applicable_depuis)].filter(Boolean).join(' · ') }),
+            r.amende_max ? el('p', { className: 'pr-fine', text: t('ref_fine') + refAmende(r) }) : null, x.resume ? el('p', { text: x.resume }) : null,
             x.pourquoi ? el('p', { className: 'pr-why', text: x.pourquoi }) : null, el('p', { className: 'pr-link', text: r.lien })]));
         });
       });
@@ -1564,8 +1807,50 @@
           tx.aff.resume ? el('p', { text: tx.aff.resume }) : null, el('p', { className: 'pr-link', text: a.lien })]));
       });
     }
+    if (telecharger) { telechargerPdf(rep, titre); return; }
     document.body.classList.add('printing-report');
     setTimeout(function () { window.print(); }, 80);
+  }
+
+  /* PDF téléchargé directement (sans fenêtre d'impression) : bibliothèque libre html2pdf.js,
+     chargée seulement au clic ; rendu par morceaux pour les longues sélections. */
+  var URL_HTML2PDF = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+  function chargerHtml2pdf() {
+    return new Promise(function (ok, ko) {
+      if (window.html2pdf) { ok(window.html2pdf); return; }
+      var sc = document.createElement('script'); sc.src = URL_HTML2PDF; sc.async = true;
+      sc.onload = function () { window.html2pdf ? ok(window.html2pdf) : ko(new Error('html2pdf')); };
+      sc.onerror = function () { ko(new Error('html2pdf')); };
+      document.head.appendChild(sc);
+    });
+  }
+  function repliImpression(msg) {
+    if (msg) toast(msg);
+    document.body.classList.remove('pdf-rendering');
+    document.body.classList.add('printing-report');
+    setTimeout(function () { window.print(); }, 80);
+  }
+  function telechargerPdf(rep, titre) {
+    toast(t('pdf_prep'));
+    var nom = 'cyberwatch_' + (LANG === 'en' ? 'selection' : 'selection') + '_' + LANG + '_' + new Date().toISOString().slice(0, 10) + '.pdf';
+    chargerHtml2pdf().then(function (h2p) {
+      document.body.classList.add('pdf-rendering');
+      // morceaux de ~12 éléments : chaque morceau est rendu séparément (limite de taille des images du navigateur)
+      var enfants = Array.prototype.slice.call(rep.children), morceaux = [], cur = null, n = 0;
+      enfants.forEach(function (c) {
+        if (!cur || n >= 12) { cur = el('div', { className: 'print-report pdf-chunk' }); morceaux.push(cur); n = 0; }
+        cur.appendChild(c.cloneNode(true)); if (c.classList.contains('pr-item')) n++;
+      });
+      var hote = el('div', { className: 'pdf-host' }); morceaux.forEach(function (m) { hote.appendChild(m); }); document.body.appendChild(hote);
+      var opt = { margin: [10, 10, 12, 10], filename: nom, image: { type: 'jpeg', quality: 0.92 },
+                  html2canvas: { scale: 1.6, useCORS: true, backgroundColor: '#ffffff' }, jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                  pagebreak: { mode: ['css', 'legacy'], avoid: ['.pr-item', 'h2', 'h3'] } };
+      var w = h2p().set(opt).from(morceaux[0]).toPdf();
+      morceaux.slice(1).forEach(function (m) {
+        w = w.get('pdf').then(function (pdf) { pdf.addPage(); }).from(m).toContainer().toCanvas().toPdf();
+      });
+      return w.save().then(function () { hote.remove(); document.body.classList.remove('pdf-rendering'); });
+    }).catch(function () { var h = document.querySelector('.pdf-host'); if (h) h.remove(); repliImpression(t('pdf_fail')); });
   }
   window.addEventListener('afterprint', function () { document.body.classList.remove('printing-report'); });
 
@@ -1598,6 +1883,8 @@
   sur('textes applicables', renderReferentiel);
   sur('débats', renderDebats);
   sur('sources', renderEtat);
+  sur('couverture', renderCouverture);
+  sur('écartés', renderEcartes);
   sur('acronymes', renderAcronymes);
   sur('glossaire', renderGlossaire);
   sur('gestion des sources', gestionSources);
@@ -1607,10 +1894,18 @@
   document.getElementById('export-pdf').addEventListener('click', function () {
     var sel = cartesAffichees().map(ligneExport);
     if (!sel.length) { toast(t('nothing_export')); return; }
-    imprimer(sel, t('pdf_title'), false);
+    if (sel.length > 300) { toast(t('too_many')); return; }
+    imprimer(sel, t('pdf_title'), false, true);
   });
+  // la veille complète : PDF généré à chaque collecte par le serveur GitHub (data/cyberwatch_veille_fr|en.pdf)
   document.getElementById('export-pdf-complet').addEventListener('click', function () {
-    imprimer(cartes.filter(function (c) { return c._f.rang !== undefined; }).map(ligneExport), t('pdf_all_title'), true);
+    var url = 'data/cyberwatch_veille_' + LANG + '.pdf';
+    function telecharger() {
+      var a = el('a', { href: url, download: 'cyberwatch_veille_' + LANG + '_' + (META.mise_a_jour || '').slice(0, 10) + '.pdf' });
+      document.body.appendChild(a); a.click(); a.remove();
+    }
+    if (location.protocol === 'file:') { telecharger(); return; }
+    fetch(url, { method: 'HEAD' }).then(function (r) { if (r.ok) telecharger(); else toast(t('pdf_missing')); }).catch(telecharger);
   });
   document.addEventListener('click', function (e) { var b = e.target.closest ? e.target.closest('[data-copy]') : null; if (b) copier(b); });
 

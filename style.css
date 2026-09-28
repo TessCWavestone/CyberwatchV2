@@ -370,3 +370,47 @@ section + section { margin-top: 44px; }
 .edition-select select { max-width: 100%; min-width: 0; }
 .edition-select { max-width: 100%; }
 @media (max-width: 560px) { .edition-select { width: 100%; } .edition-select select { flex: 1; width: 100%; } }
+
+/* ------------------------------------------------------------ v4 : essentiel, avis, couverture, écartés */
+.badge-ess { color: #fff; background: var(--accent); border-color: var(--accent); }
+.badge-verif { color: var(--warn); background: var(--warn-soft); border-color: #e3c78a; border-style: dashed; }
+.btn-avis { font-size: 12.5px; }
+.btn-avis-important { color: var(--ok); border-color: #a9cfb4; }
+.btn-avis-pas_pertinent { color: var(--ink-dim); }
+.btn-avis[disabled] { opacity: .5; cursor: default; }
+.card-actions { flex-wrap: wrap; }
+.surveiller-note { margin: 4px 0 14px; padding: 10px 14px; background: var(--surface-alt); border-radius: var(--radius); color: var(--ink-mid); font-size: 14px; }
+
+.textes-mois { margin: 40px 0 0; }
+.tm-liste { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 16px; margin-top: 14px; }
+.tm-groupe { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 14px 18px; min-width: 0; }
+.tm-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.tm-head h3 { font-family: var(--serif); font-size: 20px; line-height: 1.2; margin: 0; }
+.tm-n { font-size: 12.5px; color: var(--ink-dim); white-space: nowrap; }
+.tm-items { list-style: none; margin: 0 0 6px; padding: 0; }
+.tm-item { padding: 8px 0; border-top: 1px solid var(--line); }
+.tm-item:first-child { border-top: 0; }
+.tm-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-dim); margin-bottom: 2px; }
+.tm-titre { display: block; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; line-height: 1.35; overflow-wrap: anywhere; }
+.tm-titre:hover { text-decoration: underline; }
+
+.cov-table th, .cov-table td { white-space: nowrap; }
+.cov-cell { font-size: 13px; text-align: center; }
+.cov-old { color: var(--urgent); background: var(--urgent-soft); font-weight: 600; }
+
+/* PDF téléchargé (html2pdf) : le rapport est rendu hors écran avec les styles d'impression */
+.pdf-host { position: absolute; left: -12000px; top: 0; width: 760px; background: #fff; }
+body.pdf-rendering .pdf-chunk { display: block; font-size: 10.5pt; color: #000; font-family: var(--sans); width: 760px; background: #fff; }
+.pdf-chunk h1 { font-family: var(--serif); font-size: 22pt; margin: 0 0 4pt; }
+.pdf-chunk h2 { font-family: var(--serif); font-size: 15pt; margin: 16pt 0 6pt; padding-bottom: 3pt; border-bottom: 1.5pt solid #000; }
+.pdf-chunk h3 { font-size: 12pt; margin: 12pt 0 6pt; color: #1f4e79; }
+.pdf-chunk h4 { font-size: 10.5pt; margin: 0 0 2pt; }
+.pdf-chunk .pr-meta { color: #444; margin: 0 0 10pt; }
+.pdf-chunk .pr-item { margin: 0 0 9pt; padding-bottom: 7pt; border-bottom: .5pt solid #bbb; }
+.pdf-chunk p { margin: 2pt 0; }
+.pdf-chunk .pr-line, .pdf-chunk .pr-orig { color: #444; font-size: 9pt; }
+.pdf-chunk .pr-fine { font-weight: 600; color: #8a3030; font-size: 9.5pt; }
+.pdf-chunk .pr-why { color: #333; font-size: 9pt; border-left: 2pt solid #1f4e79; padding-left: 5pt; }
+.pdf-chunk .pr-link { color: #1f4e79; font-size: 8.5pt; word-break: break-all; }
+.btn-avis { white-space: nowrap; }
+#ec-lignes td:first-child { white-space: nowrap; }

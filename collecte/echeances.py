@@ -113,6 +113,27 @@ def _extrait(texte, debut, fin, largeur=90):
     return morceau.strip()
 
 
+# Une date n'est une échéance que si un mot d'obligation / d'application est tout près
+# (sinon : date d'un webinaire, d'une réunion, d'un rapport…)
+OBLIGATION = re.compile(
+    r"deadline|due|by\b|no later than|until|from\b|as of|starting|applicab|appl(y|ies)|in force|into force|effect|mandatory|"
+    r"must|obligat|required|comply|compliance|transpos|registration|report(ing)?\b|submit|"
+    r"d'ici|au plus tard|avant le|a compter|a partir|des le|date limite|echeance|entree en vigueur|applicable|obligatoire|"
+    r"doivent|devront|transposition|enregistrement|notification|"
+    r"bis (zum|spatestens)|spatestens|ab dem|ab \d|frist|inkrafttreten|in kraft|gilt ab|verpflicht|"
+    r"antes del|a partir del|plazo|entrada en vigor|obligatori|entro il|a decorrere|entrata in vigore|scadenza|"
+    r"ate|prazo|entrada em vigor|uiterlijk|vanaf|inwerkingtreding|verplicht|do dnia|od dnia|termin|wchodzi w zycie|"
+    r"lhut|do \d|od \d|ucinnost|senest|fra og med|fran och med|senast|trader i kraft|viimeistaan|alkaen|voimaan|"
+    r"hatarid|-ig\b|hatalyba|εως|απο|προθεσμ|ισχυ", re.I)
+EVENEMENT = re.compile(r"webinar|webinaire|conference|congres|\bevent|evenement|register (now|here|for)|inscri(vez|ption)|save the date|workshop|atelier|"
+                       r"seminar|forum|summit|sommet|meeting|reunion|tagung|veranstaltung|jornada|evento|podcast|live\b", re.I)
+
+
+def _contexte_ok(texte, debut, fin):
+    fen = _sans_accents(texte[max(0, debut - 110):fin + 60])
+    return bool(OBLIGATION.search(fen)) and not EVENEMENT.search(fen)
+
+
 def extraire(textes_par_langue, date_article, aujourdhui, passe=45, futur_ans=3, maxi=3):
     """textes_par_langue : {"fr": "…", "en": "…", "de": "…"}. Retourne une liste
     [{"date": "AAAA-MM-JJ", "approx": bool, "extrait": {langue: texte}}]."""
@@ -124,6 +145,8 @@ def extraire(textes_par_langue, date_article, aujourdhui, passe=45, futur_ans=3,
             continue
         for d, approx, deb, fin in trouver_dates(texte):
             if not (mini <= d <= maxd) or (date_article and d == date_article):
+                continue
+            if not _contexte_ok(texte, deb, fin):
                 continue
             cle = d.isoformat()
             e = trouvees.setdefault(cle, {"date": cle, "approx": approx, "extrait": {}})

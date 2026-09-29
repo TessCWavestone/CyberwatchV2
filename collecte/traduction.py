@@ -62,6 +62,7 @@ class Traducteur:
             self.glossaire = {}
         self.moteur = None
         self.detecteur = None
+        self._marian_modeles = {}
         if self.actif:
             self._charger_moteur()
 
@@ -169,6 +170,36 @@ class Traducteur:
             raise LookupError("pas de modèle %s→%s" % (de, vers))
         return self.moteur.translate.translate(texte, de, vers)
 
+    # ------------------------------------------------------------ secours : modèles Opus-MT (Helsinki-NLP)
+    # Gratuits et open source, exécutés hors ligne (bibliothèque transformers, déjà installée avec
+    # le modèle de pertinence). Utilisés quand Argos boucle (constaté pour l'espagnol → anglais).
+
+    def _marian(self, texte, de, vers):
+        nom = "Helsinki-NLP/opus-mt-%s-%s" % ({"nb": "no"}.get(de, de), {"nb": "no"}.get(vers, vers))
+        if nom not in self._marian_modeles:
+            try:
+                from transformers import MarianMTModel, MarianTokenizer
+                self._marian_modeles[nom] = (MarianTokenizer.from_pretrained(nom), MarianMTModel.from_pretrained(nom))
+            except Exception:
+                self._marian_modeles[nom] = None
+        m = self._marian_modeles[nom]
+        if not m or not texte:
+            return None
+        tok, mod = m
+        try:
+            lot = tok([texte], return_tensors="pt", truncation=True, max_length=512)
+            sortie = mod.generate(**lot, max_new_tokens=512, num_beams=2)
+            return tok.decode(sortie[0], skip_special_tokens=True)
+        except Exception:
+            return None
+
+    def _secours(self, texte, de, vers):
+        r = self._marian(texte, de, vers)
+        if r is None and de != "en" and vers != "en":
+            en = self._marian(texte, de, "en")
+            r = self._marian(en, "en", vers) if en else None
+        return r if r and not degeneree(texte, r) else None
+
     def traduire(self, texte, de, vers):
         """Retourne la traduction, ou None si elle n'est pas (encore) disponible.
         Une traduction « dégénérée » (le modèle boucle : « mainstremainstre… »)
@@ -176,13 +207,17 @@ class Traducteur:
         if not texte or de == vers:
             return texte
         cle = hashlib.sha1(("%s|%s|%s" % (de, vers, texte)).encode("utf-8")).hexdigest()[:16]
-        if cle in self.cache and not degeneree(texte, self.cache[cle]):
+        if self.cache.get("x" + cle) == ECHEC:
+            return texte   # déjà tenté sans succès avec tous les moteurs : texte d'origine
+        if cle in self.cache and not degeneree(texte, self.cache[cle]) and not (self.cache[cle] == texte and len(texte) > 15):
             return self.cache[cle]
         if not self.moteur or self.faits >= self.budget:
             return None
         try:
             protege, trouves = self._proteger(texte)
             sortie = self._restaurer(self._brut(protege, de, vers), trouves, de, vers)
+            if degeneree(texte, sortie):
+                sortie = self._secours(texte, de, vers) or sortie
             if degeneree(texte, sortie):
                 morceaux = []
                 for phrase in re.split(r"(?<=[.!?;:])\s+", texte):
@@ -192,18 +227,22 @@ class Traducteur:
                 sortie = " ".join(morceaux)
                 if degeneree(texte, sortie):
                     sortie = texte
+                    self.cache["x" + cle] = ECHEC
         except Exception as e:
             self.erreur = "Traduction %s→%s impossible : %s" % (de, vers, str(e)[:100])
             return None
         self.faits += 1
         self.cache[cle] = sortie
+        if sortie == texte:
+            self.cache["x" + cle] = ECHEC   # rien à traduire (nom propre, texte déjà dans la langue cible)
         return sortie
 
     def traduire_article(self, a):
         # traductions dégénérées enregistrées par une version précédente : on les refait
         for c, tr in list((a.get("trad") or {}).items()):
-            if degeneree(a["titre"], tr.get("titre", "")) or degeneree(a.get("resume", ""), tr.get("resume", "")):
-                del a["trad"][c]
+            if degeneree(a["titre"], tr.get("titre", "")) or degeneree(a.get("resume", ""), tr.get("resume", "")) \
+                    or (c != a.get("langue") and tr.get("titre") == a["titre"] and len(a["titre"]) > 15):
+                del a["trad"][c]   # traduction en boucle, ou « traduction » identique à l'original : on réessaie
         self._traduire_article(a)
 
     def _traduire_article(self, a):
@@ -222,6 +261,9 @@ class Traducteur:
                 trad[cible] = {"titre": titre, "resume": resume}
         if trad:
             a["trad"] = trad
+
+
+ECHEC = "echec-v2"
 
 
 def degeneree(source, sortie):

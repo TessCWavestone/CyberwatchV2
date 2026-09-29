@@ -408,7 +408,13 @@ def local(tag):
 def lire_flux(contenu, url_flux):
     """Analyse un flux RSS 2.0, RSS 1.0 (RDF) ou Atom. Retourne une liste de dicts."""
     contenu = re.sub(rb"^[^<]*", b"", contenu, count=1)  # BOM ou espaces avant <?xml
-    racine = ET.fromstring(contenu)
+    try:
+        racine = ET.fromstring(contenu)
+    except ET.ParseError:
+        # flux mal formé (« & » non échappé, caractères de contrôle) : on le répare puis on réessaie
+        repare = re.sub(rb"&(?!#?\w+;)", b"&amp;", contenu)
+        repare = re.sub(rb"[\x00-\x08\x0b\x0c\x0e-\x1f]", b"", repare)
+        racine = ET.fromstring(repare)
     articles = []
     for el in racine.iter():
         if local(el.tag) not in ("item", "entry"):
@@ -513,6 +519,7 @@ def nettoyer_titre(titre, lien):
     PDF, et remplace un titre générique ou un nom de fichier par le nom tiré du
     lien. Retourne "" si aucun titre exploitable."""
     t = re.sub(r"\s+", " ", titre or "").strip()
+    t = re.sub(r"^CELEX:\S+:\s*", "", t)   # titres EUR-Lex « CELEX:32026D04999: … »
     t = re.sub(r"\s*[\(\[]\s*(pdf|PDF|xlsx|docx)?\s*[-–,]?\s*[\d.,]+\s*(ko|Ko|KB|kB|Mo|MB|mo|o)\s*[\)\]]\s*$", "", t)
     t2 = PREFIXES_TITRE.sub("", t)
     if len(t2) >= 12:
@@ -844,6 +851,34 @@ def fiche_ecarte(a):
         "nature": a.get("nature", ""), "debat": a.get("debat", False)}.items() if v not in ("", None, False)}
 
 
+def regrouper_doublons(liste):
+    """Même information publiée par plusieurs sources (titre identique, dans la langue
+    d'origine ou une fois traduit) : on garde une seule carte (source officielle en
+    priorité, sinon la plus ancienne) et on liste les autres sources dessous."""
+    for a in liste:
+        a.pop("doublon_de", None)
+        a.pop("aussi", None)
+    ordre = sorted((a for a in liste if not a.get("base")),
+                   key=lambda a: (a.get("nature") != "officielle", a["date"], a.get("detecte_le", "")))
+    premiers, n = {}, 0
+    for a in ordre:
+        cles = set()
+        for t in [a["titre"]] + [(tr or {}).get("titre", "") for tr in (a.get("trad") or {}).values()]:
+            k = cle_titre(t or "")
+            if len(k.split()) >= 5:
+                cles.add(k)
+        prem = next((premiers[k] for k in cles if k in premiers), None)
+        if prem is not None and prem["source"] != a["source"]:
+            a["doublon_de"] = prem["id"]
+            prem.setdefault("aussi", []).append({"source": a["source"], "lien": a["lien"], "date": a["date"],
+                                                 "publication": a.get("publication", "")})
+            n += 1
+        else:
+            for k in cles:
+                premiers.setdefault(k, a)
+    return n
+
+
 def main():
     cfg = charger_config()
     classeur = openpyxl.load_workbook(os.path.join(RACINE, cfg["fichier_sources"]), read_only=True, data_only=True)
@@ -987,7 +1022,9 @@ def main():
                       "acces": "partielle" if rapport_rkc["erreurs"] else "ok", "flux": "", "page": "",
                       "nb_trouves": rapport_rkc["articles_lus"], "nb_retenus": n_rkc,
                       "erreur": " ; ".join(rapport_rkc["erreurs"]), "type": "Veille interne", "nature": "rkc",
-                      "verifie_le": MAINTENANT.strftime("%Y-%m-%d %H:%M"), "origine": "rkc"})
+                      "verifie_le": MAINTENANT.strftime("%Y-%m-%d %H:%M"), "origine": "rkc",
+                      # dates des alertes lues (jamais le nom des fichiers)
+                      "veilles": sorted(rapport_rkc.get("veilles", []), key=lambda v: v["date"], reverse=True)})
 
     # Base de connaissance (jamais purgée) + nettoyage
     base = charger_base(articles)
@@ -995,11 +1032,11 @@ def main():
     seuil = (AUJOURDHUI - dt.timedelta(days=conservation)).isoformat()
     for d in (articles, ecartes):   # anciens titres parasites (versions précédentes) nettoyés une fois
         for a in d.values():
-            if a.get("nature") != "rkc" and not a.get("titre_nettoye"):
+            if a.get("nature") != "rkc" and a.get("titre_nettoye") != 2:
                 t = nettoyer_titre(a["titre"], a["lien"])
                 if t and t != a["titre"]:
                     a["titre"], a["trad"] = t, {}
-                a["titre_nettoye"] = True
+                a["titre_nettoye"] = 2
     # doublons (même source, même titre) laissés par les versions précédentes
     vus_t, collectes = set(), []
     tous = sorted([a for a in list(articles.values()) + list(ecartes.values()) if not a.get("debat")],
@@ -1037,7 +1074,10 @@ def main():
 
     # Traduction (gratuite, open source) des articles gardés et des débats gardés
     trad = Traducteur(cfg)
-    for a in sorted(gardes + base, key=lambda a: (a["date"], a.get("detecte_le", "")), reverse=True):
+    # d'abord les plus pertinents (le budget de traduction par collecte est limité), puis les plus récents
+    rang = {"elevee": 0, "moyenne": 1, "faible": 2}
+    for a in sorted(sorted(gardes + base, key=lambda a: (a["date"], a.get("detecte_le", "")), reverse=True),
+                    key=lambda a: 0 if a.get("base") else rang.get(a.get("pertinence"), 3)):
         trad.traduire_article(a)
     for a in liste_debats:
         if a["pertinence"] in ("elevee", "moyenne"):
@@ -1066,6 +1106,8 @@ def main():
             ecartes[a["id"]] = a
     liste = sorted(gardes + base, key=lambda a: (a["date"], a.get("detecte_le", "")), reverse=True)
     liste = liste[:cfg.get("nb_max_articles", 5000)]
+    n_doublons = regrouper_doublons(liste)
+    print("Doublons entre sources regroupés : %d" % n_doublons)
     ids_liste = {a["id"] for a in liste}
     nouveaux_ids = [i for i in dict.fromkeys(nouveaux_ids) if i in ids_liste]
     meta["nb_nouveaux"] = len(nouveaux_ids)
@@ -1087,7 +1129,7 @@ def main():
 
     # Dates clés (échéances) : seulement près d'un mot d'obligation, jamais pour un événement
     for a in liste + debats_gardes:
-        if a.get("nature") == "rkc" or a.get("base"):
+        if a.get("nature") == "rkc":
             continue
         if any("événements" in b for b in a.get("bruit", [])):
             a["echeances"] = []

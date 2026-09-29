@@ -125,7 +125,9 @@ OBLIGATION = re.compile(
     r"ate|prazo|entrada em vigor|uiterlijk|vanaf|inwerkingtreding|verplicht|do dnia|od dnia|termin|wchodzi w zycie|"
     r"lhut|do \d|od \d|ucinnost|senest|fra og med|fran och med|senast|trader i kraft|viimeistaan|alkaen|voimaan|"
     r"hatarid|-ig\b|hatalyba|εως|απο|προθεσμ|ισχυ", re.I)
-EVENEMENT = re.compile(r"webinar|webinaire|conference|congres|\bevent|evenement|register (now|here|for)|inscri(vez|ption)|save the date|workshop|atelier|"
+EVENEMENT = re.compile(r"webinar|webinaire|conference|congres|\bevent|evenement|register (now|here|for)|inscri(vez|ption)|"
+                       r"rencontres?\b|participez|colloque|assises|journee (d'etude|nationale|d'information)|table ronde|"
+                       r"join us|meet us|forum|salon\b|conferencia|jornadas?\b|convegno|tagung|konferenz|kongress|save the date|workshop|atelier|"
                        r"seminar|forum|summit|sommet|meeting|reunion|tagung|veranstaltung|jornada|evento|podcast|live\b", re.I)
 
 

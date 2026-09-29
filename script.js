@@ -21,7 +21,8 @@
   var VERSIONS = ((window.VEILLE_VERSIONS || {}).versions || []).slice();
   var GLOSSAIRE = ACRO.glossaire || {};
   var META     = DATA.meta || {};
-  var ARTICLES = (DATA.articles || []).filter(function (a) { return a.nature !== 'opinion'; });  // garde-fou : jamais d'avis dans la veille
+  // garde-fous : jamais d'avis d'expert dans la veille ; une information reprise par plusieurs sources = une seule carte
+  var ARTICLES = (DATA.articles || []).filter(function (a) { return a.nature !== 'opinion' && !a.doublon_de; });
   var REF_TEXTES = REF.textes || [];
   var THEMES_P = (META.pertinence || {}).themes || {};
   var TEXTES_CLES_EN = META.textes_cles_en || {};
@@ -40,6 +41,8 @@
   var T = {
     fr: {
       skip: 'Aller au contenu', btn_export: 'Exporter ▾', btn_update: 'Lancer une mise à jour',
+      aussi: 'Aussi publié par : ', rkc_veilles: 'Alertes RKC lues : ', rkc_n: function (n) { return n + ' articles'; },
+      agenda_none_more: function (h) { return 'Aucune autre échéance repérée au-delà de ' + h + ' : les dates clés viennent des textes (« d’ici le… », « applicable à compter du… ») et des textes applicables.'; },
       tm_title: 'Nouvelles réglementations et normes',
       tm_lead: "Tous les textes importants de la période (lois, décrets, lignes directrices, normes, consultations), regroupés par texte : un sujet repris par plusieurs sources n'apparaît qu'une fois, avec toutes ses sources. Classement par règles fixes (textes clés, signal réglementaire), sans IA générative. En cas de doute, l'article est gardé et marqué « à vérifier ».",
       tm_empty: 'Aucun texte important repéré sur la période.', tm_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); }, tm_other: 'Autres textes officiels',
@@ -170,6 +173,8 @@
     },
     en: {
       skip: 'Skip to content', btn_export: 'Export ▾', btn_update: 'Run an update',
+      aussi: 'Also published by: ', rkc_veilles: 'RKC alerts read: ', rkc_n: function (n) { return n + ' articles'; },
+      agenda_none_more: function (h) { return 'No other deadline found beyond ' + h + ': key dates come from the texts (“by…”, “applicable from…”) and from the applicable texts.'; },
       tm_title: 'New regulations and standards',
       tm_lead: 'Every important text of the period (laws, decrees, guidelines, standards, consultations), grouped by text: a topic covered by several sources appears once, with all its sources. Ranked by fixed rules (key texts, regulatory signal), with no generative AI. When in doubt, the article is kept and marked “to be checked”.',
       tm_empty: 'No important text found for this period.', tm_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); }, tm_other: 'Other official texts',
@@ -658,6 +663,11 @@
       parts.push(el('p', { className: 'src-line' }, [el('strong', { text: a.source || '' }), ' · ' + nomZone(a.zone) + ' · ' + libNature(a.nature) + ' · ' +
         (a.date_estimee ? t('detected') + dateLongue(a.date) + t('no_pubdate') : t('published') + dateLongue(a.date))]));
       parts.push(el('p', { className: 'src-line' }, liens));
+      if (a.aussi && a.aussi.length) {
+        var aussi = [t('aussi')];
+        a.aussi.forEach(function (x, i) { if (i) aussi.push(' · '); aussi.push(el('a', { href: x.lien, target: '_blank', rel: 'noopener noreferrer', text: x.source + (x.publication ? ' (' + x.publication + ')' : '') })); });
+        parts.push(el('p', { className: 'src-line' }, aussi));
+      }
       if (themes.length) {
         var tl = el('ul', { className: 'tags' });
         themes.forEach(function (k) { tl.appendChild(el('li', null, [el('button', { type: 'button', className: 'tag', 'data-theme': k, text: libelleTheme(k) })])); });
@@ -958,7 +968,10 @@
     var grid = document.getElementById('une-grid');
     // « À la une » : uniquement les textes et normes importants (L'essentiel), jamais un article « à surveiller »
     var candidats = ARTICLES.filter(function (a) { return a.essentiel || (a.base && a.pertinence === 'elevee'); }).map(function (a) { return { a: a, u: urgence(a) }; })
-      .sort(function (x, y) { return (y.u.score - x.u.score) || (y.a.date > x.a.date ? 1 : -1); }).slice(0, 5);
+      .sort(function (x, y) { return (y.u.score - x.u.score) || (y.a.date > x.a.date ? 1 : -1); })
+      // diversité : au plus 2 articles sur un même texte clé (le reste est dans « Nouvelles réglementations et normes »)
+      .filter((function () { var vus = {}; return function (c) { var k = (c.a.textes_cles || [])[0] || c.a.id; vus[k] = (vus[k] || 0) + 1; return vus[k] <= 2; }; })())
+      .slice(0, 5);
     document.getElementById('une-vide').hidden = candidats.length > 0;
     function carteUne(c, principale) {
       var a = c.a, tx = textes(a), pe = c.u.echeance;
@@ -983,6 +996,11 @@
     }
     renderTextesMois(30);
     document.getElementById('tm-periode').addEventListener('choix', function (e) { renderTextesMois(+e.detail.getAttribute('data-j')); });
+    // nombre de dates à venir par horizon, affiché sur chaque bouton (les boutons ne changent rien s'il n'y a pas plus de dates)
+    Array.prototype.forEach.call(document.querySelectorAll('#agenda-horizon button'), function (b) {
+      var n = evenementsAgenda(+b.getAttribute('data-h')).filter(function (e) { return joursJusqua(e.date) >= 0; }).length;
+      b.appendChild(el('span', { className: 'seg-n', text: ' ' + n }));
+    });
     renderAgenda(90);
     document.getElementById('agenda-horizon').addEventListener('choix', function (e) { renderAgenda(+e.detail.getAttribute('data-h')); });
     renderKpis();
@@ -1066,7 +1084,13 @@
     var futurs = tous.filter(function (e) { return joursJusqua(e.date) >= 0; });
     var passes = tous.filter(function (e) { var j = joursJusqua(e.date); return j < 0 && j >= -14; }).reverse();
     document.getElementById('agenda-vide').hidden = futurs.length + passes.length > 0;
-    var LIMITE = 20, mois = null, n = 0, plus = null;
+    var libH = { 90: t('h90'), 180: t('h180'), 365: t('h365') }[horizon];
+    var nPrec = horizon > 90 ? evenementsAgenda({ 180: 90, 365: 180, 1100: 365 }[horizon]).filter(function (e) { return joursJusqua(e.date) >= 0; }).length : -1;
+    var note = document.getElementById('agenda-note');
+    if (!note) { note = el('p', { className: 'block-meta', id: 'agenda-note' }); ol.parentNode.insertBefore(note, ol); }
+    note.textContent = (nPrec === futurs.length && horizon > 90) ? t('agenda_none_more')({ 180: t('h90'), 365: t('h180'), 1100: t('h365') }[horizon]) : '';
+    // 3 mois : 20 dates visibles puis « voir plus » ; horizons plus longs : tout est affiché (sinon les boutons semblent sans effet)
+    var LIMITE = horizon > 90 ? 1000 : 20, mois = null, n = 0, plus = null;
     futurs.concat(passes).forEach(function (e, i) {
       var m = joursJusqua(e.date) < 0 ? (LANG === 'en' ? 'Recently passed' : 'Échues récemment') : moisAnnee(e.date);
       var cache = i >= LIMITE;
@@ -1462,7 +1486,9 @@
     src.forEach(function (s) {
       var a = accesDe(s), info = ACCES[a] || ACCES.ko, groupe = a in compte ? a : 'autre';
       compte[groupe]++;
-      var details = [s.flux ? t('d_feed') + s.flux : '', s.page ? t('d_pages') + s.page : '', s.erreur ? '⚠ ' + traduireErreur(s.erreur) : ''].filter(Boolean).join(' · ');
+      var details = [s.flux ? t('d_feed') + s.flux : '', s.page ? t('d_pages') + s.page : '',
+        (s.veilles && s.veilles.length) ? t('rkc_veilles') + s.veilles.map(function (v) { return (v.date ? dateLongue(v.date) : '?') + ' (' + t('rkc_n')(v.articles) + ')'; }).join(', ') : '',
+        s.erreur ? '⚠ ' + traduireErreur(s.erreur) : ''].filter(Boolean).join(' · ');
       var inactif = ['inactive', 'attente', 'retiree'].indexOf(a) !== -1;
       var action = !s.url ? null : (a === 'retiree'
         ? el('button', { type: 'button', className: 'btn btn-sm', 'data-src-action': 'retablir', 'data-url': s.url, 'data-nom': s.nom, text: t('src_restore') })

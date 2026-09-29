@@ -340,7 +340,7 @@
       "en",
       "fr"
     ],
-    "max_segments_par_collecte": 2500
+    "max_segments_par_collecte": 5000
   },
   "rattrapage_pages_max": 15,
   "_aide_rattrapage": "Rattrapage ponctuel des archives : dans GitHub, Actions > Run workflow > « Rattrapage depuis » = 2026-01-01. Nombre maximal de pages d'archives lues par source.",

@@ -1,2 +1,5 @@
 argostranslate>=1.9
 langdetect>=1.0.9
+# secours Opus-MT (Helsinki-NLP) quand Argos boucle : transformers est installé avec le modèle de pertinence
+sentencepiece>=0.1.99
+sacremoses>=0.1

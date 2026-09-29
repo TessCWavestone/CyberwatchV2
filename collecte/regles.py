@@ -71,7 +71,7 @@ TEXTES_CLES = [
      r"obecne narizeni o ochrane osobnich udaju|regulamento geral (sobre a|de) protecao de dados|regolamento generale sulla protezione|"
      r"reglamento general de proteccion de datos|Algemene verordening gegevensbescherming|revDSG|\bnLPD\b|nouvelle loi sur la protection des donnees"),
     ("IVDR", "secteur", "A",
-     r"\bIVDR\b|2017/746|in[- ]vitro diagnostic (medical )?devices?|diagnostic in vitro|In-vitro-Diagnosti|"
+     r"\bIVDR\b|2017/746|in[- ]vitro diagnostics?\b|diagnostic in vitro|In-vitro-Diagnosti|"
      r"diagnostico in vitro|diagnostica in vitro|diagnostiek in vitro|\bIVD\b|(?-i:\bDMDIV\b)"),
     ("MDR (dispositifs médicaux)", "secteur", "A",
      r"Medical Devices? Regulation|2017/745|reglement (relatif )?aux dispositifs medicaux|"
@@ -101,7 +101,7 @@ TEXTES_CLES = [
     ("RED (équipements radio) / EN 18031", "standards", "A",
      r"Radio Equipment Directive|2022/30\b|equipements radioelectriques|Funkanlagen(richtlinie)?|EN ?18031|"
      r"\bRED\b.{0,40}(delegated|delegue|cyber|article 3)"),
-    ("IEC 81001-5-1 / IEC 62443", "standards", "A", r"81001-5-1|IEC 81001|62443"),
+    ("IEC 81001-5-1 / IEC 62443", "standards", "A", r"81001-5-1|IEC ?81001|(?<![\d])62443(?![\d])"),
     ("ISO/IEC 27001 et normes ISO", "standards", "A",
      r"ISO(/IEC)? ?2700[0-9]|ISO(/IEC)? ?27701|ISO(/IEC)? ?42001|ISO ?13485|ISO ?14971|ISO(/IEC)? ?2703[0-9]|"
      r"ISO/IEC ?15408|Common Criteria"),
@@ -198,6 +198,14 @@ SIGNAL_NET = _rx(
     r"(ustaw|rozporzadzeni|dyrektyw|wytyczn|konsultacj|zakon|vyhlask|narizeni|smernic|metodik|pokut|torveny|rendelet|"
     r"iranyelv|utmutato|birsag|νομος|νομοσχεδιο|κανονισμος|οδηγια|διαβουλευση|προστιμο)")
 
+# Journaux officiels : des centaines de textes par semaine ; sans texte clé, il faut un sujet « fort »
+JOURNAL_OFFICIEL = re.compile(r"L[ée]gifrance|EUR-Lex|Bundesgesetzblatt|f[öo]rfattningssamling|\bBOE\b|Gazzetta Ufficiale|"
+                              r"Di[áa]rio da Rep[úu]blica|Dziennik Ustaw|Staatsblad|Moniteur belge|Lovtidend|Sbírka zákonů", re.I)
+# Bruit propre aux journaux officiels et à EUR-Lex
+BRUIT_JO = _rx(r"replacing (a|an) (full |alternate )?member|appointment of|restrictive measures|prior notification of a concentration|"
+               r"non-opposition to a notified concentration|indice des prix|tarification (des|de la)|cuestion de inconstitucionalidad|"
+               r"recurso de inconstitucionalidad|zone (interdite|protegee)|dissolution d'une association")
+
 # Sujet « fort » : exigé pour faire entrer dans L'essentiel un texte officiel qui ne cite aucun texte clé connu
 SUJET_FORT = _rx(
     r"cyber|kyber|ciber|kiber|κυβερνο|informationssicherheit|IT-Sicherheit|information security|informatiebeveiliging|"
@@ -209,7 +217,9 @@ SUJET_FORT = _rx(
     r"kunstmatige intelligentie|sztuczn\w* inteligencj|umel\w* inteligenc|tekoaly|mesterseges intelligencia|"
     r"(?-i:\bAI\b|\bIA\b|\bKI\b)|medical devices?|dispositifs? medica|medizinprodukt|productos? sanitario|dispositivi medic|"
     r"in vitro|diagnosti|health data|donnees de sante|gesundheitsdaten|datos de salud|dati sanitari|e-?health|e-?sante|"
-    r"sante numerique|digital health|zarzadzaniu danymi|data governance|gouvernance des donnees|cloud")
+    r"sante numerique|digital health|zarzadzaniu danymi|data governance|gouvernance des donnees|cloud|"
+    r"systemes? d'information|information systems?|informationssystem|biologie medicale|laboratoires? de biologie|"
+    r"medizinische(n)? Labor|in-vitro|Medizinprodukt|telematik|elektronische Patientenakte")
 
 # --------------------------------------------------------------------------- bruit
 BRUIT = [
@@ -224,7 +234,7 @@ BRUIT = [
         r"cyberattaque contre|piratage|hackerangriff|ciberataque (a|contra)|attacco informatico|arnaque|scam\b|"
         r"infostealer|spyware|trojan|backdoor")),
     ("événements / webinaires", _rx(
-        r"webinar|webinaire|\bconference\b|congress|congres\b|summit|sommet|save the date|register now|inscri(vez|ption)|"
+        r"webinar|webinaire|\bconference\b|\brencontres\b|participez|colloque|\bassises\b|congress|congres\b|summit|sommet|save the date|register now|inscri(vez|ption)|"
         r"\bevenement|\bevent\b|veranstaltung|tagung|jornada|\bevento\b|seminar|seminaire|workshop|atelier|meetup|"
         r"hackathon|podcast|livestream|\bsalon\b|round ?table|table ronde|masterclass|bootcamp|info day|infoday|"
         r"\btraining\b|\bcours\b|\bcourse\b|szkoleni|\bkurs\b|\bcurso\b|\bcorso\b|e-learning|\bmooc\b")),
@@ -241,7 +251,7 @@ BRUIT = [
         r"press release.{0,20}(announces|launch)|announces? (new|the launch)")),
     ("finance / banque", _rx(
         r"\bbank(s|ing)?\b|\bbanques?\b|\bDORA\b|\bMiCA\b|crypto|payment services|\bPSD[23]\b|anti-money|\bAML\b|"
-        r"insurance|assurances?\b|stablecoin|capital requirements|credit institutions?|investment firms?|"
+        r"insurance|compagnies? d.assurance|stablecoin|capital requirements|credit institutions?|investment firms?|"
         r"\bEBA\b|\bESMA\b|\bEIOPA\b|fund managers?|securities")),
     ("télécoms", _rx(
         r"spectrum|\b5G\b|roaming|broadband|\bfibre\b|haut debit|net neutrality|numbering|termination rates|"
@@ -383,6 +393,13 @@ def evaluer(a, seuils, score_neg=None):
     sujet = bool(SUJET.search(t))
     motif = ""
     br_forts = [b for b in br if b.split(" ")[0] in ("événements", "vœux", "marchés", "hors", "sensibilisation")]
+    jo = bool(JOURNAL_OFFICIEL.search(a.get("source", "")))
+    informatif = len(re.findall(r"\w{3,}", t)) >= 8   # titre + résumé assez parlants pour juger
+    if jo and (BRUIT_JO.search(t) or (informatif and not tc and not SUJET_FORT.search(t))):
+        niveau = "ecarte"
+        motif = "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
+        return {"niveau": niveau, "essentiel": False, "a_verifier": False, "textes_cles": [x[0] for x in tc], "bruit": br,
+                "motif": motif, "rubrique_texte": None, "statut": statut(t)}
     if tc:
         # texte clé cité : jamais écarté ; mais un article « vie des entreprises » ou « événement »
         # qui cite le CRA en passant reste « pertinent » et n'entre pas dans L'essentiel

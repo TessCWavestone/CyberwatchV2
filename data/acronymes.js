@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-09-28T12:10+00:00",
+ "mise_a_jour": "2026-09-29T15:53+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -172,7 +172,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "IA : la CNIL met à jour son outil de traçabilité des modèles publiés en source ouverte",
    "lien_exemple": "https://www.cnil.fr/fr/ia-la-cnil-met-jour-son-outil-de-tracabilite-des-modeles-publies-en-source-ouverte",
-   "nb_articles": 425,
+   "nb_articles": 444,
    "dans_glossaire": true,
    "fr": "IA"
   },
@@ -201,7 +201,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "Acess to the publication: EU financial entities cybersecurity upgrade: DORA is now alive and kicking",
    "lien_exemple": "https://www.enisa.europa.eu/news/eu-financial-entities-cybersecurity-upgrade-dora-is-now-alive-and-kicking",
-   "nb_articles": 288,
+   "nb_articles": 306,
    "dans_glossaire": true,
    "fr": "UE"
   },
@@ -289,24 +289,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NIS2"
   },
   {
-   "code": "NCSC",
-   "variantes": [
-    "NCSC"
-   ],
-   "langues": [
-    "nl",
-    "sv",
-    "en",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CISA en NCSC waarschuwen voor kwetsbaarheid in Arista VeloCloud",
-   "lien_exemple": "https://www.security.nl/posting/954266/CISA+en+NCSC+waarschuwen+voor+kwetsbaarheid+in+Arista+VeloCloud?channel=rss",
-   "nb_articles": 49,
-   "dans_glossaire": false,
-   "fr": "NCSC"
-  },
-  {
    "code": "GDPR",
    "variantes": [
     "RGPD",
@@ -320,14 +302,33 @@ window.VEILLE_ACRONYMES = {
     "pt",
     "sv",
     "el",
-    "pl"
+    "pl",
+    "it"
    ],
    "premier_vu": "2026-09-24",
    "exemple": "Jeux d’argent et de hasard : appliquer le RGPD aux traitements de données des joueurs",
    "lien_exemple": "https://www.cnil.fr/fr/jeux-argent-hasard-application-rgpd",
-   "nb_articles": 48,
+   "nb_articles": 53,
    "dans_glossaire": true,
    "fr": "RGPD"
+  },
+  {
+   "code": "NCSC",
+   "variantes": [
+    "NCSC"
+   ],
+   "langues": [
+    "nl",
+    "sv",
+    "en",
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CISA en NCSC waarschuwen voor kwetsbaarheid in Arista VeloCloud",
+   "lien_exemple": "https://www.security.nl/posting/954266/CISA+en+NCSC+waarschuwen+voor+kwetsbaarheid+in+Arista+VeloCloud?channel=rss",
+   "nb_articles": 50,
+   "dans_glossaire": false,
+   "fr": "NCSC"
   },
   {
    "code": "CRA",
@@ -360,7 +361,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "UK fines water supplier $1.3M for exposing data of 664k customers",
    "lien_exemple": "https://www.bleepingcomputer.com/news/security/uk-fines-water-supplier-13m-for-exposing-data-of-664k-customers/",
-   "nb_articles": 40,
+   "nb_articles": 42,
    "dans_glossaire": false,
    "fr": "UK"
   },
@@ -376,7 +377,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "Angriffe gegen Mikrotik-Router (\"MikroTrick\")",
    "lien_exemple": "https://www.cert.at/de/aktuelles/2026/9/angriffe-gegen-mikrotik-router-mikrotrick",
-   "nb_articles": 39,
+   "nb_articles": 41,
    "dans_glossaire": false,
    "fr": "CERT"
   },
@@ -434,7 +435,7 @@ window.VEILLE_ACRONYMES = {
    "premier_vu": "2026-09-24",
    "exemple": "IT solutions ( instructions) until June 2026",
    "lien_exemple": "https://www.eba.europa.eu/sites/default/files/2026-07/6ce57e21-1560-43db-aaf4-a56b07650acc/IT%20solutions%20%28%20instructions%29%20until%20June%202026.DOCX",
-   "nb_articles": 33,
+   "nb_articles": 32,
    "dans_glossaire": false,
    "fr": "IT"
   },
@@ -456,6 +457,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "CNPD"
   },
   {
+   "code": "NÚKIB",
+   "variantes": [
+    "NÚKIB"
+   ],
+   "langues": [
+    "cs",
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Česká delegace v Jižní Koreji se zapojila do Cyber Summit Korea a mezinárodního cvičení APEX",
+   "lien_exemple": "https://nukib.gov.cz/cs/infoservis/aktuality/2459-ceska-delegace-v-jizni-koreji-se-zapojila-do-cyber-summit-korea-a-mezinarodniho-cviceni-apex",
+   "nb_articles": 25,
+   "dans_glossaire": false,
+   "fr": "NÚKIB"
+  },
+  {
    "code": "ESMA",
    "variantes": [
     "ESMA"
@@ -469,22 +486,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 24,
    "dans_glossaire": false,
    "fr": "ESMA"
-  },
-  {
-   "code": "NÚKIB",
-   "variantes": [
-    "NÚKIB"
-   ],
-   "langues": [
-    "cs",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Česká delegace v Jižní Koreji se zapojila do Cyber Summit Korea a mezinárodního cvičení APEX",
-   "lien_exemple": "https://nukib.gov.cz/cs/infoservis/aktuality/2459-ceska-delegace-v-jizni-koreji-se-zapojila-do-cyber-summit-korea-a-mezinarodniho-cviceni-apex",
-   "nb_articles": 24,
-   "dans_glossaire": false,
-   "fr": "NÚKIB"
   },
   {
    "code": "DSA",
@@ -502,21 +503,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 22,
    "dans_glossaire": false,
    "fr": "DSA"
-  },
-  {
-   "code": "NOR",
-   "variantes": [
-    "NOR"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "Arrêté du 26 août 2026 modifiant l'arrêté du 21 février 2022 relatif au fonctionnement du système d'information des centres antipoison et de toxicovigilance (SICAP)",
-   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054902614",
-   "nb_articles": 21,
-   "dans_glossaire": false,
-   "fr": "NOR"
   },
   {
    "code": "ENISA",
@@ -572,6 +558,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "MHRA"
   },
   {
+   "code": "NCSA",
+   "variantes": [
+    "ΕΑΚ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Το Εργαλείο Αυτοαξιολόγησης Κυβερνοασφάλειας της ΕΑΚ πλέον και σε διαδικτυακή εφαρμογή",
+   "lien_exemple": "https://cyber.gov.gr/ergaleio-aytoaxiologisis-kyvernoasfaleias-tis-eak-pleon-kai-se-diadiktyaki-efarmogi/",
+   "nb_articles": 18,
+   "dans_glossaire": true,
+   "fr": "NCSA"
+  },
+  {
    "code": "EDPB",
    "variantes": [
     "EDPB"
@@ -605,19 +606,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "EMA"
   },
   {
-   "code": "NCSA",
+   "code": "OFCS",
    "variantes": [
-    "ΕΑΚ"
+    "OFCS"
    ],
    "langues": [
-    "el"
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Το Εργαλείο Αυτοαξιολόγησης Κυβερνοασφάλειας της ΕΑΚ πλέον και σε διαδικτυακή εφαρμογή",
-   "lien_exemple": "https://cyber.gov.gr/ergaleio-aytoaxiologisis-kyvernoasfaleias-tis-eak-pleon-kai-se-diadiktyaki-efarmogi/",
+   "exemple": "Davantage d'informations sur «Semaine 34 : Compléments alimentaires douteux sur des sites web d’anciens cabinets médicaux et pharmacies»",
+   "lien_exemple": "https://www.bacs.admin.ch/fr/26w34-fr",
    "nb_articles": 16,
-   "dans_glossaire": true,
-   "fr": "NCSA"
+   "dans_glossaire": false,
+   "fr": "OFCS"
   },
   {
    "code": "SQL",
@@ -639,6 +640,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "SQL"
   },
   {
+   "code": "ANSSI",
+   "variantes": [
+    "ANSSI"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
+   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
+   "nb_articles": 15,
+   "dans_glossaire": false,
+   "fr": "ANSSI"
+  },
+  {
    "code": "GNU",
    "variantes": [
     "GNU"
@@ -653,36 +669,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 15,
    "dans_glossaire": false,
    "fr": "GNU"
-  },
-  {
-   "code": "OFCS",
-   "variantes": [
-    "OFCS"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Davantage d'informations sur «Semaine 34 : Compléments alimentaires douteux sur des sites web d’anciens cabinets médicaux et pharmacies»",
-   "lien_exemple": "https://www.bacs.admin.ch/fr/26w34-fr",
-   "nb_articles": 15,
-   "dans_glossaire": false,
-   "fr": "OFCS"
-  },
-  {
-   "code": "ANSSI",
-   "variantes": [
-    "ANSSI"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
-   "lien_exemple": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
-   "nb_articles": 14,
-   "dans_glossaire": false,
-   "fr": "ANSSI"
   },
   {
    "code": "BSI",
@@ -784,6 +770,24 @@ window.VEILLE_ACRONYMES = {
    "fr": "TI"
   },
   {
+   "code": "CSIRT",
+   "variantes": [
+    "CSIRT"
+   ],
+   "langues": [
+    "fr",
+    "fi",
+    "it",
+    "pl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "CRA : la plateforme unique de signalement (SRP) de l'ENISA est lancée et les obligations de notification s'appliquent",
+   "lien_exemple": "https://www.enisa.europa.eu/news/the-cra-single-reporting-platform-is-launched",
+   "nb_articles": 13,
+   "dans_glossaire": false,
+   "fr": "CSIRT"
+  },
+  {
    "code": "ETSI",
    "variantes": [
     "ETSI"
@@ -814,24 +818,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 13,
    "dans_glossaire": false,
    "fr": "ITS"
-  },
-  {
-   "code": "CSIRT",
-   "variantes": [
-    "CSIRT"
-   ],
-   "langues": [
-    "fr",
-    "fi",
-    "it",
-    "pl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "CRA : la plateforme unique de signalement (SRP) de l'ENISA est lancée et les obligations de notification s'appliquent",
-   "lien_exemple": "https://www.enisa.europa.eu/news/the-cra-single-reporting-platform-is-launched",
-   "nb_articles": 12,
-   "dans_glossaire": false,
-   "fr": "CSIRT"
   },
   {
    "code": "EIOPA",
@@ -898,20 +884,41 @@ window.VEILLE_ACRONYMES = {
    "fr": "CNCS"
   },
   {
-   "code": "DELLA",
+   "code": "EHDS",
    "variantes": [
-    "DELLA"
+    "EHDS"
    ],
    "langues": [
-    "it",
-    "pt"
+    "en",
+    "fr",
+    "sv",
+    "nl"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "exemple": "A new era for healthcare data: Understanding the European health data space regulation",
+   "lien_exemple": "https://data.europa.eu/en/news-events/news/new-era-healthcare-data-understanding-european-health-data-space-regulation",
    "nb_articles": 11,
    "dans_glossaire": false,
-   "fr": "DELLA"
+   "fr": "EHDS"
+  },
+  {
+   "code": "ICT",
+   "variantes": [
+    "ICT"
+   ],
+   "langues": [
+    "hu",
+    "nl",
+    "pl",
+    "en",
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "SZTFH elismerése a kiberbiztonság területén – Szakmai Kiválósági Különdíj az ICT Global gálán",
+   "lien_exemple": "https://sztfh.hu/sztfh-elismerese-a-kiberbiztonsag-teruleten-szakmai-kivalosagi-kulondij-az-ict-global-galan/",
+   "nb_articles": 11,
+   "dans_glossaire": false,
+   "fr": "ICT"
   },
   {
    "code": "UKE",
@@ -927,39 +934,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 11,
    "dans_glossaire": false,
    "fr": "UKE"
-  },
-  {
-   "code": "DELLE",
-   "variantes": [
-    "DELLE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 10,
-   "dans_glossaire": false,
-   "fr": "DELLE"
-  },
-  {
-   "code": "EHDS",
-   "variantes": [
-    "EHDS"
-   ],
-   "langues": [
-    "en",
-    "fr",
-    "sv",
-    "nl"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "A new era for healthcare data: Understanding the European health data space regulation",
-   "lien_exemple": "https://data.europa.eu/en/news-events/news/new-era-healthcare-data-understanding-european-health-data-space-regulation",
-   "nb_articles": 10,
-   "dans_glossaire": false,
-   "fr": "EHDS"
   },
   {
    "code": "NBSZ",
@@ -1006,23 +980,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 10,
    "dans_glossaire": false,
    "fr": "NYHET"
-  },
-  {
-   "code": "CCN",
-   "variantes": [
-    "CCN"
-   ],
-   "langues": [
-    "es",
-    "fr",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "¿Sabes para qué funciona un SOC? Definición, cometidos y tipos de centros de operaciones de seguridad",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/sabes-para-que-funciona-un-soc-definicion-cometidos-y-tipos-de-centros-de-operaciones-de-seguridad_20260822.html",
-   "nb_articles": 9,
-   "dans_glossaire": false,
-   "fr": "CCN"
   },
   {
    "code": "CHMP",
@@ -1139,21 +1096,25 @@ window.VEILLE_ACRONYMES = {
    "fr": "STAMPA"
   },
   {
-   "code": "AEPD",
+   "code": "API",
    "variantes": [
-    "AEPD"
+    "API"
    ],
    "langues": [
     "en",
+    "sv",
+    "pt",
+    "de",
+    "it",
     "fr",
-    "es"
+    "nl"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "AI Agent Carries Out Multi-Stage Data Theft Attack",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ai-agent-carries-out-multistage/",
+   "exemple": "Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/",
    "nb_articles": 8,
    "dans_glossaire": false,
-   "fr": "AEPD"
+   "fr": "API"
   },
   {
    "code": "CEPD",
@@ -1202,23 +1163,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "DM"
   },
   {
-   "code": "ICT",
+   "code": "ICO",
    "variantes": [
-    "ICT"
+    "ICO"
    ],
    "langues": [
-    "hu",
-    "nl",
-    "pl",
     "en",
-    "cs"
+    "fr"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "SZTFH elismerése a kiberbiztonság területén – Szakmai Kiválósági Különdíj az ICT Global gálán",
-   "lien_exemple": "https://sztfh.hu/sztfh-elismerese-a-kiberbiztonsag-teruleten-szakmai-kivalosagi-kulondij-az-ict-global-galan/",
+   "exemple": "ICO Urges Police to Improve Data Governance in Facial Recognition Rollouts",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ico-police-data-governance-facial/",
    "nb_articles": 8,
    "dans_glossaire": false,
-   "fr": "ICT"
+   "fr": "ICO"
+  },
+  {
+   "code": "PTS",
+   "variantes": [
+    "PTS"
+   ],
+   "langues": [
+    "fr",
+    "sv"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Suède : l'IMY désignée autorité de surveillance du marché pour l'AI Act",
+   "lien_exemple": "https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/",
+   "nb_articles": 8,
+   "dans_glossaire": false,
+   "fr": "PTS"
   },
   {
    "code": "SNS",
@@ -1253,6 +1227,40 @@ window.VEILLE_ACRONYMES = {
    "fr": "SZTFH"
   },
   {
+   "code": "US",
+   "variantes": [
+    "US"
+   ],
+   "langues": [
+    "en",
+    "da",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "US disrupts SocksEscort proxy network powered by Linux malware",
+   "lien_exemple": "https://www.bleepingcomputer.com/news/security/us-disrupts-socksescort-proxy-network-powered-by-linux-malware/",
+   "nb_articles": 8,
+   "dans_glossaire": false,
+   "fr": "US"
+  },
+  {
+   "code": "AEPD",
+   "variantes": [
+    "AEPD"
+   ],
+   "langues": [
+    "en",
+    "fr",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AI Agent Carries Out Multi-Stage Data Theft Attack",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/ai-agent-carries-out-multistage/",
+   "nb_articles": 7,
+   "dans_glossaire": false,
+   "fr": "AEPD"
+  },
+  {
    "code": "ANS",
    "variantes": [
     "ANS"
@@ -1266,57 +1274,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 7,
    "dans_glossaire": false,
    "fr": "ANS"
-  },
-  {
-   "code": "API",
-   "variantes": [
-    "API"
-   ],
-   "langues": [
-    "en",
-    "sv",
-    "pt",
-    "de",
-    "it",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "API"
-  },
-  {
-   "code": "AWS",
-   "variantes": [
-    "AWS"
-   ],
-   "langues": [
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Researchers Uncover Thousands of Leaked AWS Keys",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-thousands-eaked-aws/",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "AWS"
-  },
-  {
-   "code": "DELL",
-   "variantes": [
-    "DELL"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "DELL"
   },
   {
    "code": "EC",
@@ -1334,20 +1291,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "EC"
   },
   {
-   "code": "ICO",
+   "code": "ECB",
    "variantes": [
-    "ICO"
+    "ECB"
    ],
    "langues": [
-    "en",
-    "fr"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "ICO Urges Police to Improve Data Governance in Facial Recognition Rollouts",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/ico-police-data-governance-facial/",
+   "exemple": "Almost ten million people took part in ECB survey on new euro banknotes",
+   "lien_exemple": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260923~6ebddaf01e.en.html",
    "nb_articles": 7,
    "dans_glossaire": false,
-   "fr": "ICO"
+   "fr": "ECB"
   },
   {
    "code": "PFPDT",
@@ -1363,39 +1319,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 7,
    "dans_glossaire": false,
    "fr": "PFPDT"
-  },
-  {
-   "code": "TIC",
-   "variantes": [
-    "TIC"
-   ],
-   "langues": [
-    "fr",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Cybersecurity Act 2 : les négociations avancent malgré les réserves des États membres sur la compétence de l'UE",
-   "lien_exemple": "https://www.jonesday.com/en/insights/2026/07/eu-cybersecurity-act-2-advances-amid-member-states-concerns-over-eu-competence",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "TIC"
-  },
-  {
-   "code": "US",
-   "variantes": [
-    "US"
-   ],
-   "langues": [
-    "en",
-    "da",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "US disrupts SocksEscort proxy network powered by Linux malware",
-   "lien_exemple": "https://www.bleepingcomputer.com/news/security/us-disrupts-socksescort-proxy-network-powered-by-linux-malware/",
-   "nb_articles": 7,
-   "dans_glossaire": false,
-   "fr": "US"
   },
   {
    "code": "VPN",
@@ -1417,6 +1340,42 @@ window.VEILLE_ACRONYMES = {
    "fr": "VPN"
   },
   {
+   "code": "ADC",
+   "variantes": [
+    "ADC"
+   ],
+   "langues": [
+    "fi",
+    "en",
+    "de",
+    "nl",
+    "sv",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Citrix Netscaler ADC ja Gateway -tuotteissa kriittisiä haavoittuvuuksia",
+   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-23?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "ADC"
+  },
+  {
+   "code": "AWS",
+   "variantes": [
+    "AWS"
+   ],
+   "langues": [
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Researchers Uncover Thousands of Leaked AWS Keys",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/researchers-thousands-eaked-aws/",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "AWS"
+  },
+  {
    "code": "CE",
    "variantes": [
     "CE"
@@ -1436,21 +1395,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 6,
    "dans_glossaire": false,
    "fr": "CE"
-  },
-  {
-   "code": "CELEX",
-   "variantes": [
-    "CELEX"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "CELEX:32026D04999: Council Decision of 22 September 2026 replacing a member of the Advisory Committee for the Coordination of Social Security Systems for Austria",
-   "lien_exemple": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D04999",
-   "nb_articles": 6,
-   "dans_glossaire": false,
-   "fr": "CELEX"
   },
   {
    "code": "CEST",
@@ -1499,19 +1443,20 @@ window.VEILLE_ACRONYMES = {
    "fr": "DIV"
   },
   {
-   "code": "ECB",
+   "code": "ESR",
    "variantes": [
-    "ECB"
+    "ESR"
    ],
    "langues": [
-    "en"
+    "de",
+    "it"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "Almost ten million people took part in ECB survey on new euro banknotes",
-   "lien_exemple": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260923~6ebddaf01e.en.html",
+   "exemple": "[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen",
+   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3375",
    "nb_articles": 6,
    "dans_glossaire": false,
-   "fr": "ECB"
+   "fr": "ESR"
   },
   {
    "code": "EUHPP",
@@ -1693,6 +1638,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "SAMSIK"
   },
   {
+   "code": "TIC",
+   "variantes": [
+    "TIC"
+   ],
+   "langues": [
+    "fr",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Cybersecurity Act 2 : les négociations avancent malgré les réserves des États membres sur la compétence de l'UE",
+   "lien_exemple": "https://www.jonesday.com/en/insights/2026/07/eu-cybersecurity-act-2-advances-amid-member-states-concerns-over-eu-competence",
+   "nb_articles": 6,
+   "dans_glossaire": false,
+   "fr": "TIC"
+  },
+  {
    "code": "ACN",
    "variantes": [
     "ACN"
@@ -1708,26 +1669,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ACN"
   },
   {
-   "code": "ADC",
-   "variantes": [
-    "ADC"
-   ],
-   "langues": [
-    "fi",
-    "en",
-    "de",
-    "nl",
-    "sv",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Citrix Netscaler ADC ja Gateway -tuotteissa kriittisiä haavoittuvuuksia",
-   "lien_exemple": "https://www.kyberturvallisuuskeskus.fi/fi/haavoittuvuudet/haavoittuvuus-2026-23?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
-   "nb_articles": 5,
-   "dans_glossaire": false,
-   "fr": "ADC"
-  },
-  {
    "code": "ANACOM",
    "variantes": [
     "ANACOM"
@@ -1741,6 +1682,23 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 5,
    "dans_glossaire": false,
    "fr": "ANACOM"
+  },
+  {
+   "code": "AP",
+   "variantes": [
+    "AP"
+   ],
+   "langues": [
+    "nl",
+    "fr",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Autoriteit Persoonsgegevens waarschuwt gebruikers camerabrillen voor privacyregels",
+   "lien_exemple": "https://www.security.nl/posting/954102/Autoriteit+Persoonsgegevens+waarschuwt+gebruikers+camerabrillen+voor+privacyregels?channel=rss",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "AP"
   },
   {
    "code": "APM",
@@ -1798,6 +1756,23 @@ window.VEILLE_ACRONYMES = {
    "fr": "CA"
   },
   {
+   "code": "CCN",
+   "variantes": [
+    "CCN"
+   ],
+   "langues": [
+    "es",
+    "fr",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "¿Sabes para qué funciona un SOC? Definición, cometidos y tipos de centros de operaciones de seguridad",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/sabes-para-que-funciona-un-soc-definicion-cometidos-y-tipos-de-centros-de-operaciones-de-seguridad_20260822.html",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "CCN"
+  },
+  {
    "code": "CERT-SE",
    "variantes": [
     "CERT-SE"
@@ -1828,6 +1803,24 @@ window.VEILLE_ACRONYMES = {
    "fr": "CJUE"
   },
   {
+   "code": "DPC",
+   "variantes": [
+    "DPC"
+   ],
+   "langues": [
+    "en",
+    "pt",
+    "hu",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Ireland's DPC fines Google 403M euros to close 2020 location data inquiry",
+   "lien_exemple": "https://iapp.org/news/a/irelands-dpc-fines-google-403m-euros-to-close-2020-location-data-inquiry",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "DPC"
+  },
+  {
    "code": "ENS",
    "variantes": [
     "ENS"
@@ -1844,19 +1837,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "ENS"
   },
   {
-   "code": "ESR",
+   "code": "EUR",
    "variantes": [
-    "ESR"
+    "EUR"
    ],
    "langues": [
-    "de"
+    "en"
    ],
    "premier_vu": "2026-09-24",
-   "exemple": "[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen",
-   "lien_exemple": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3375",
+   "exemple": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+   "lien_exemple": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
    "nb_articles": 5,
    "dans_glossaire": false,
-   "fr": "ESR"
+   "fr": "EUR"
+  },
+  {
+   "code": "FAQ",
+   "variantes": [
+    "FAQ"
+   ],
+   "langues": [
+    "fr",
+    "en",
+    "nl"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Italie : l'ACN met à jour ses FAQ NIS sur la supervision, les inspections et les sanctions",
+   "lien_exemple": "https://www.matricedigitale.it/2026/09/13/nis2-aggiornamento-faq/",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "FAQ"
   },
   {
    "code": "IP",
@@ -1876,6 +1886,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 5,
    "dans_glossaire": false,
    "fr": "IP"
+  },
+  {
+   "code": "NOR",
+   "variantes": [
+    "NOR"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Arrêté du 26 août 2026 modifiant l'arrêté du 21 février 2022 relatif au fonctionnement du système d'information des centres antipoison et de toxicovigilance (SICAP)",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054902614",
+   "nb_articles": 5,
+   "dans_glossaire": false,
+   "fr": "NOR"
   },
   {
    "code": "PRAC",
@@ -1943,22 +1968,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "UODO"
   },
   {
-   "code": "AP",
-   "variantes": [
-    "AP"
-   ],
-   "langues": [
-    "nl",
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Autoriteit Persoonsgegevens waarschuwt gebruikers camerabrillen voor privacyregels",
-   "lien_exemple": "https://www.security.nl/posting/954102/Autoriteit+Persoonsgegevens+waarschuwt+gebruikers+camerabrillen+voor+privacyregels?channel=rss",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "AP"
-  },
-  {
    "code": "CEF",
    "variantes": [
     "CEF"
@@ -2010,38 +2019,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CISA"
   },
   {
-   "code": "CSC-EDIC",
-   "variantes": [
-    "CSC-EDIC"
-   ],
-   "langues": [
-    "el",
-    "es",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Kick-off του έργου CSC-EDIC: Θεμέλια για ένα ισχυρό οικοσύστημα δεξιοτήτων κυβερνοασφάλειας",
-   "lien_exemple": "https://cyber.gov.gr/kick-off-toy-ergoy-csc-edic-themelia-gia-ena-ischyro-oikosystima-dexiotiton-kyvernoasfaleias/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "CSC-EDIC"
-  },
-  {
-   "code": "DEI",
-   "variantes": [
-    "DEI"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "DEI"
-  },
-  {
    "code": "DG",
    "variantes": [
     "DG"
@@ -2072,23 +2049,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 4,
    "dans_glossaire": false,
    "fr": "DMA"
-  },
-  {
-   "code": "DPC",
-   "variantes": [
-    "DPC"
-   ],
-   "langues": [
-    "en",
-    "pt",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Ireland's DPC fines Google 403M euros to close 2020 location data inquiry",
-   "lien_exemple": "https://iapp.org/news/a/irelands-dpc-fines-google-403m-euros-to-close-2020-location-data-inquiry",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "DPC"
   },
   {
    "code": "DPO",
@@ -2159,37 +2119,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "EU/EEA"
   },
   {
-   "code": "EUR",
-   "variantes": [
-    "EUR"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
-   "lien_exemple": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "EUR"
-  },
-  {
-   "code": "FAQ",
-   "variantes": [
-    "FAQ"
-   ],
-   "langues": [
-    "fr",
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Italie : l'ACN met à jour ses FAQ NIS sur la supervision, les inspections et les sanctions",
-   "lien_exemple": "https://www.matricedigitale.it/2026/09/13/nis2-aggiornamento-faq/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "FAQ"
-  },
-  {
    "code": "HTA",
    "variantes": [
     "HTA"
@@ -2204,6 +2133,41 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 4,
    "dans_glossaire": false,
    "fr": "HTA"
+  },
+  {
+   "code": "ID",
+   "variantes": [
+    "ID"
+   ],
+   "langues": [
+    "el",
+    "nl",
+    "pt",
+    "en",
+    "da"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Υποχρεωτική Ενεργοποίηση Πολυπαραγοντικής Ταυτοποίησης (MFA) για Microsoft Entra ID – Συμμόρφωση με NIS2 και Εθνικό Πλαίσιο Κυβερνοασφάλειας",
+   "lien_exemple": "https://cyber.gov.gr/ypochreotiki-energopoiisi-polyparagontikis-taytopoiisis-mfa-gia-microsoft-entra-id-symmorfosi-me-nis2-kai-ethniko-plaisio-kyvernoasfaleias/",
+   "nb_articles": 4,
+   "dans_glossaire": false,
+   "fr": "ID"
+  },
+  {
+   "code": "IGF",
+   "variantes": [
+    "IGF"
+   ],
+   "langues": [
+    "pl",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Do 20 lipca trwa nabór na propozycje sesji na Szczyt Cyfrowy IGF Polska 2026",
+   "lien_exemple": "https://www.gov.pl/web/cyfryzacja/do-20-lipca-trwa-nabor-na-propozycje-sesji-na-szczyt-cyfrowy-igf-polska-2026",
+   "nb_articles": 4,
+   "dans_glossaire": false,
+   "fr": "IGF"
   },
   {
    "code": "ISO/IEC 27001",
@@ -2267,24 +2231,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 4,
    "dans_glossaire": false,
    "fr": "MR"
-  },
-  {
-   "code": "OT",
-   "variantes": [
-    "OT"
-   ],
-   "langues": [
-    "en",
-    "sv",
-    "es",
-    "hu"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
-   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
-   "nb_articles": 4,
-   "dans_glossaire": false,
-   "fr": "OT"
   },
   {
    "code": "OWASP",
@@ -2475,21 +2421,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CEO"
   },
   {
-   "code": "CFSP",
-   "variantes": [
-    "CFSP"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Statement by the High Representative on behalf of the EU on the alignment of certain countries concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
-   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/25/statement-by-the-high-representative-on-behalf-of-the-eu-on-the-alignment-of-certain-countries-concerning-restrictive-measures-in-respect-of-actions-undermining-or-threatening-the-territorial-integrity-sovereignty-and-independence-of-ukrain/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "CFSP"
-  },
-  {
    "code": "CHOSEN",
    "variantes": [
     "CHOSEN"
@@ -2553,19 +2484,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CREST"
   },
   {
-   "code": "DECRETO",
+   "code": "CSC-EDIC",
    "variantes": [
-    "DECRETO"
+    "CSC-EDIC"
    ],
    "langues": [
-    "it"
+    "el",
+    "es",
+    "en"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
+   "premier_vu": "2026-09-24",
+   "exemple": "Kick-off του έργου CSC-EDIC: Θεμέλια για ένα ισχυρό οικοσύστημα δεξιοτήτων κυβερνοασφάλειας",
+   "lien_exemple": "https://cyber.gov.gr/kick-off-toy-ergoy-csc-edic-themelia-gia-ena-ischyro-oikosystima-dexiotiton-kyvernoasfaleias/",
    "nb_articles": 3,
    "dans_glossaire": false,
-   "fr": "DECRETO"
+   "fr": "CSC-EDIC"
   },
   {
    "code": "DGE",
@@ -2629,6 +2562,23 @@ window.VEILLE_ACRONYMES = {
    "fr": "DNS"
   },
   {
+   "code": "DSB",
+   "variantes": [
+    "DSB"
+   ],
+   "langues": [
+    "fr",
+    "en",
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Autriche : pas encore d'autorité de surveillance du marché désignée pour l'AI Act (avril 2026)",
+   "lien_exemple": "https://www.knowlee.ai/at/blog/eu-ai-act-oesterreich-zustaendigkeit",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "DSB"
+  },
+  {
    "code": "DSPT",
    "variantes": [
     "DSPT"
@@ -2672,21 +2622,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "EUDAMED"
-  },
-  {
-   "code": "FORESTE",
-   "variantes": [
-    "FORESTE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "FORESTE"
   },
   {
    "code": "GKV",
@@ -2748,41 +2683,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "HUF"
-  },
-  {
-   "code": "ID",
-   "variantes": [
-    "ID"
-   ],
-   "langues": [
-    "el",
-    "nl",
-    "pt",
-    "en",
-    "da"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Υποχρεωτική Ενεργοποίηση Πολυπαραγοντικής Ταυτοποίησης (MFA) για Microsoft Entra ID – Συμμόρφωση με NIS2 και Εθνικό Πλαίσιο Κυβερνοασφάλειας",
-   "lien_exemple": "https://cyber.gov.gr/ypochreotiki-energopoiisi-polyparagontikis-taytopoiisis-mfa-gia-microsoft-entra-id-symmorfosi-me-nis2-kai-ethniko-plaisio-kyvernoasfaleias/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "ID"
-  },
-  {
-   "code": "IGF",
-   "variantes": [
-    "IGF"
-   ],
-   "langues": [
-    "pl",
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Do 20 lipca trwa nabór na propozycje sesji na Szczyt Cyfrowy IGF Polska 2026",
-   "lien_exemple": "https://www.gov.pl/web/cyfryzacja/do-20-lipca-trwa-nabor-na-propozycje-sesji-na-szczyt-cyfrowy-igf-polska-2026",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "IGF"
   },
   {
    "code": "ISE",
@@ -2863,6 +2763,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "LLM"
+  },
+  {
+   "code": "MDD",
+   "variantes": [
+    "MDD"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση των παρτίδων του συνημμένου πίνακα, του Ιατροτεχνολογικού προϊόντος κατηγορίας MDD Class I, NDI Passive Sphere & κιτ βελόνων βιοψίας.",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%cf%89%ce%bd-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%ce%bf%cf%85-%cf%83%cf%85%ce%bd%ce%b7%ce%bc%ce%bc%ce%ad%ce%bd%ce%bf%cf%85-11/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "MDD"
   },
   {
    "code": "MISP",
@@ -2963,6 +2878,24 @@ window.VEILLE_ACRONYMES = {
    "fr": "OS"
   },
   {
+   "code": "OT",
+   "variantes": [
+    "OT"
+   ],
+   "langues": [
+    "en",
+    "sv",
+    "es",
+    "hu"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL",
+   "lien_exemple": "https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "OT"
+  },
+  {
    "code": "P4M",
    "variantes": [
     "P4M"
@@ -2991,21 +2924,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "PARENTI"
-  },
-  {
-   "code": "PER",
-   "variantes": [
-    "PER"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "PER"
   },
   {
    "code": "PESEL",
@@ -3070,6 +2988,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "QT"
   },
   {
+   "code": "REF",
+   "variantes": [
+    "REF"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 3145507 του ιατροτεχνολογικού προϊόντος HIPPOKRATIS Επιθέματα γάζας μη αποστειρωμένα 10X20 PLY, REF: 1020121301",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-3145507-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd/",
+   "nb_articles": 3,
+   "dans_glossaire": false,
+   "fr": "REF"
+  },
+  {
    "code": "RP",
    "variantes": [
     "RP"
@@ -3116,23 +3049,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 3,
    "dans_glossaire": false,
    "fr": "SDK"
-  },
-  {
-   "code": "SOC",
-   "variantes": [
-    "SOC"
-   ],
-   "langues": [
-    "el",
-    "en",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Δημόσια διαβούλευση για την οριστικοποίηση αναλυτικών τεχνικών προδιαγραφών του έργου «Ενοποιημένο Κέντρο Αναφοράς Κυβερνοασφάλειας», EL SOC.",
-   "lien_exemple": "https://cyber.gov.gr/dimosia-diavoyleysi-gia-tin-oristikopoiisi-analytikon-technikon-prodiagrafon-toy-ergoy-enopoiimeno-kentro-anaforas-kyvernoasfaleias-el-soc/",
-   "nb_articles": 3,
-   "dans_glossaire": false,
-   "fr": "SOC"
   },
   {
    "code": "SQL-Injection-Angriffe",
@@ -3845,21 +3761,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CXF"
   },
   {
-   "code": "DECRETO16",
-   "variantes": [
-    "DECRETO16"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 16 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04942/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DECRETO16"
-  },
-  {
    "code": "DEP",
    "variantes": [
     "DEP"
@@ -3952,21 +3853,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DKK"
   },
   {
-   "code": "DL",
-   "variantes": [
-    "DL"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "GuardedBox-NAR entra en el catálogo CPSTIC del CCN como producto para la gestión de información nacional clasificada",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/guardedbox-logra-la-incorporacion-al-catalogo-cpstic-del-ccn_20260611.html",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "DL"
-  },
-  {
    "code": "DOM",
    "variantes": [
     "DOM"
@@ -4026,6 +3912,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "DREETS"
+  },
+  {
+   "code": "DSM",
+   "variantes": [
+    "DSM"
+   ],
+   "langues": [
+    "it",
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Risolte vulnerabilità in Synology DiskStation Manager (DSM)",
+   "lien_exemple": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-synology-diskstation-manager-dsm-",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "DSM"
   },
   {
    "code": "DTAC",
@@ -4277,6 +4179,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "FDA"
+  },
+  {
+   "code": "FG",
+   "variantes": [
+    "FG"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "FG-enquête 2026: zo ziet de ontwikkelende FG-rol eruit",
+   "lien_exemple": "https://www.digitaleoverheid.nl/nieuws/fg-enquete-2026-zo-ziet-de-ontwikkelende-fg-rol-eruit/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "FG"
   },
   {
    "code": "FINESS",
@@ -4586,21 +4503,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "IMO"
   },
   {
-   "code": "IMPRESE",
-   "variantes": [
-    "IMPRESE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "IMPRESE"
-  },
-  {
    "code": "INA",
    "variantes": [
     "INA"
@@ -4632,21 +4534,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "INCIBE"
   },
   {
-   "code": "INTERNO",
-   "variantes": [
-    "INTERNO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'INTERNO - DECRETO 22 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A05078/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "INTERNO"
-  },
-  {
    "code": "ISDA",
    "variantes": [
     "ISDA"
@@ -4676,21 +4563,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "ISO 27001"
-  },
-  {
-   "code": "ITALY",
-   "variantes": [
-    "ITALY"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "ITALY"
   },
   {
    "code": "ITU",
@@ -4815,21 +4687,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "KRONIK"
   },
   {
-   "code": "LEGGE18",
-   "variantes": [
-    "LEGGE18"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "LEGGE 18 settembre 2026, n.164",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26G00182/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "LEGGE18"
-  },
-  {
    "code": "LG",
    "variantes": [
     "LG"
@@ -4876,21 +4733,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "LSI"
   },
   {
-   "code": "MADE",
-   "variantes": [
-    "MADE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "MADE"
-  },
-  {
    "code": "MCFFS 2026",
    "variantes": [
     "MCFFS 2026"
@@ -4904,6 +4746,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "MCFFS 2026"
+  },
+  {
+   "code": "MDCG 2020-16",
+   "variantes": [
+    "MDCG 2020-16"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
+   "lien_exemple": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "MDCG 2020-16"
   },
   {
    "code": "MDR/IVDR",
@@ -4980,23 +4837,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "NASA"
-  },
-  {
-   "code": "NATO",
-   "variantes": [
-    "NATO"
-   ],
-   "langues": [
-    "cs",
-    "da",
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "NÚKIB hostil Cyber Champions Summit se zástupci NATO a indo-pacifických partnerů",
-   "lien_exemple": "https://nukib.gov.cz/cs/infoservis/aktuality/2379-nukib-hostil-cyber-champions-summit-se-zastupci-nato-a-indo-pacifickych-partneru",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "NATO"
   },
   {
    "code": "NCC-EL_ScaleUP",
@@ -5118,6 +4958,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "OPINION"
+  },
+  {
+   "code": "ORF",
+   "variantes": [
+    "ORF"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Brand der Floridsdorfer Brücke: Glasfaserausfälle in Wien",
+   "lien_exemple": "https://www.cert.at/de/aktuelles/2026/6/brand-der-floridsdorfer-brucke-glasfaserausfalle-in-wien",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "ORF"
   },
   {
    "code": "OTP",
@@ -5308,21 +5163,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "S7"
   },
   {
-   "code": "SALUTE",
-   "variantes": [
-    "SALUTE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLA SALUTE - DECRETO 9 giugno 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04880/SG",
-   "nb_articles": 2,
-   "dans_glossaire": false,
-   "fr": "SALUTE"
-  },
-  {
    "code": "SANT",
    "variantes": [
     "SANT"
@@ -5468,6 +5308,23 @@ window.VEILLE_ACRONYMES = {
    "fr": "SMS"
   },
   {
+   "code": "SOC",
+   "variantes": [
+    "SOC"
+   ],
+   "langues": [
+    "el",
+    "en",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Δημόσια διαβούλευση για την οριστικοποίηση αναλυτικών τεχνικών προδιαγραφών του έργου «Ενοποιημένο Κέντρο Αναφοράς Κυβερνοασφάλειας», EL SOC.",
+   "lien_exemple": "https://cyber.gov.gr/dimosia-diavoyleysi-gia-tin-oristikopoiisi-analytikon-technikon-prodiagrafon-toy-ergoy-enopoiimeno-kentro-anaforas-kyvernoasfaleias-el-soc/",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "SOC"
+  },
+  {
    "code": "SPMS",
    "variantes": [
     "SPMS"
@@ -5544,6 +5401,22 @@ window.VEILLE_ACRONYMES = {
    "fr": "STIX"
   },
   {
+   "code": "SÚKL",
+   "variantes": [
+    "SÚKL"
+   ],
+   "langues": [
+    "fr",
+    "cs"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Rép. tchèque : promulgation de la loi 166/2026 Sb. modifiant la loi sur les DM et DIV",
+   "lien_exemple": "https://mzd.gov.cz/wp-content/uploads/2026/07/Legislativni-newsletter-07-2026.pdf",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "SÚKL"
+  },
+  {
    "code": "TAXII",
    "variantes": [
     "TAXII"
@@ -5602,6 +5475,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 2,
    "dans_glossaire": false,
    "fr": "UDI"
+  },
+  {
+   "code": "USA",
+   "variantes": [
+    "USA"
+   ],
+   "langues": [
+    "sv"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Nyhet Open AI vill se globala AI-standarder – och att USA leder arbetet Av Viktor Eriksson 22 sep. 2026 2 min Offentlig sektor Lagar och regleringar Marknader",
+   "lien_exemple": "https://computersweden.se/article/4224907/open-ai-vill-se-globala-ai-standarder-och-att-usa-leder-arbetet.html",
+   "nb_articles": 2,
+   "dans_glossaire": false,
+   "fr": "USA"
   },
   {
    "code": "VRT",
@@ -5879,19 +5767,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "AEVE"
   },
   {
-   "code": "AFFARI",
+   "code": "AFARM",
    "variantes": [
-    "AFFARI"
+    "AFARM"
    ],
    "langues": [
-    "pt"
+    "fr"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "premier_vu": "2026-09-29",
+   "exemple": "Les 5èmes Journées de l'AFARM",
+   "lien_exemple": "https://esante.gouv.fr/agenda/les-5emes-journees-de-l-afarm",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "AFFARI"
+   "fr": "AFARM"
   },
   {
    "code": "AFM",
@@ -5970,21 +5858,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "AGENDA"
   },
   {
-   "code": "AGENZIA",
-   "variantes": [
-    "AGENZIA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "AGENZIA"
-  },
-  {
    "code": "AI Act",
    "variantes": [
     "KI-Verordnung"
@@ -6060,6 +5933,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "AIVD"
   },
   {
+   "code": "AIVG",
+   "variantes": [
+    "AIVG"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Blog 29 september 2026 Zorg & ICT EHDS De tekortkomingen van de AIVG bij de inkoop van medische software Lees meer",
+   "lien_exemple": "https://www.ictrecht.nl/blog/de-tekortkomingen-van-de-aivg-bij-de-inkoop-van-medische-software",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "AIVG"
+  },
+  {
    "code": "AL02/260615",
    "variantes": [
     "AL02/260615"
@@ -6090,19 +5978,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "ALIA"
   },
   {
-   "code": "ALPI",
+   "code": "ALPHA",
    "variantes": [
-    "ALPI"
+    "ALPHA"
    ],
    "langues": [
-    "it"
+    "el"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AUTORITA' DI BACINO DISTRETTUALE DELLE ALPI ORIENTALI - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04877/SG",
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση παρτίδας του ιατροτεχνολογικού προϊόντος ALPHA ρινική κάνουλα οξυγόνου-σωλήνας παροχής 2 m με κωδικό REF Τ20169",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd%ce%bf%ce%bb%ce%bf%ce%b3-2/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "ALPI"
+   "fr": "ALPHA"
   },
   {
    "code": "AMA",
@@ -6195,6 +6083,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ANATEL"
   },
   {
+   "code": "ANCI",
+   "variantes": [
+    "ANCI"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Mappa dei Comuni digitali, rinviata al 4 novembre a Roma la presentazione del secondo rapporto",
+   "lien_exemple": "https://innovazione.gov.it/notizie/articoli/mappa-dei-comuni-digitali-il-4-novembre-a-roma-la-presentazione-del-secondo-rappo",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ANCI"
+  },
+  {
    "code": "ANDICOM",
    "variantes": [
     "ANDICOM"
@@ -6268,6 +6171,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "APEX"
+  },
+  {
+   "code": "API 2026",
+   "variantes": [
+    "API 2026"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Gouden API voor slimme waterdata‑uitwisseling",
+   "lien_exemple": "https://www.digitaleoverheid.nl/nieuws/gouden-api-voor-slimme-waterdata-uitwisseling/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "API 2026"
   },
   {
    "code": "APIC",
@@ -6347,6 +6265,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "APT"
   },
   {
+   "code": "AR2140",
+   "variantes": [
+    "AR2140"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerabilities in Kaon AR2140 routers",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-52748/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "AR2140"
+  },
+  {
    "code": "AT-Alert-Testauslösung",
    "variantes": [
     "AT-Alert-Testauslösung"
@@ -6390,21 +6323,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ATTIVITÀ 2025"
-  },
-  {
-   "code": "AUTORITA",
-   "variantes": [
-    "AUTORITA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AUTORITA' DI BACINO DISTRETTUALE DELLE ALPI ORIENTALI - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04877/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "AUTORITA"
   },
   {
    "code": "AVMSD",
@@ -6452,19 +6370,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "B3S"
   },
   {
-   "code": "BACINO",
+   "code": "BBU",
    "variantes": [
-    "BACINO"
+    "BBU"
    ],
    "langues": [
-    "it"
+    "de"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AUTORITA' DI BACINO DISTRETTUALE DELLE ALPI ORIENTALI - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04877/SG",
+   "premier_vu": "2026-09-29",
+   "exemple": "Sparen bei Asyl und investieren in die Sicherheit",
+   "lien_exemple": "https://www.bmi.gv.at/news.aspx?id=6A655053577347625339493D",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "BACINO"
+   "fr": "BBU"
   },
   {
    "code": "BBVA",
@@ -6472,7 +6390,8 @@ window.VEILLE_ACRONYMES = {
     "BBVA"
    ],
    "langues": [
-    "es"
+    "es",
+    "it"
    ],
    "premier_vu": "2026-09-24",
    "exemple": "BBVA extiende la IA a los procesos de su banca de empresas",
@@ -6558,6 +6477,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "BEREC-ERGP"
+  },
+  {
+   "code": "BEUC",
+   "variantes": [
+    "BEUC"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Google, multa da 403 milioni di euro per violazione del GDPR sui dati di geolocalizzazione degli utenti",
+   "lien_exemple": "https://www.federprivacy.org/informazione/societa/google-multa-da-403-milioni-di-euro-per-violazione-del-gdpr-sui-dati-di-geolocalizzazione-degli-utenti",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "BEUC"
   },
   {
    "code": "BIND",
@@ -6650,6 +6584,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "BMBFSFJ"
   },
   {
+   "code": "BMI",
+   "variantes": [
+    "BMI"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Zweite Evaluation zur Cannabis-Teillegalisierung - BMG, BMI und BMBFSFJ und Bundesdrogenbeauftragter erkennen dringenden Handlungsbedarf",
+   "lien_exemple": "https://www.bundesgesundheitsministerium.de/zweite-evaluation-zur-cannabis-teillegalisierung-01-04-26",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "BMI"
+  },
+  {
    "code": "BNPP",
    "variantes": [
     "BNPP"
@@ -6678,21 +6627,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "BOE"
-  },
-  {
-   "code": "BOE-A-2026-19849",
-   "variantes": [
-    "BOE-A-2026-19849"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Real Decreto 739/2026, de 23 de septiembre, por el que se establece el régimen jurídico para el cómputo como cotizados al Régimen General de la Seguridad Social, a efectos de la pensión de jubilación, de los periodos de actividad ejercidos como deportista profesional con anterioridad a su integración en el Régimen General de la Seguridad Social.",
-   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19849",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "BOE-A-2026-19849"
   },
   {
    "code": "BOS",
@@ -6753,6 +6687,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "BOSS"
+  },
+  {
+   "code": "BOSTON",
+   "variantes": [
+    "BOSTON"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση παρτίδων του ιατροτεχνολογικού προϊόντος “Αγγειογραφικοί καθετήρες Imager II” της εταιρείας BOSTON SCIENTIFIC κατηγορίας class MDD IIa",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd%ce%bf%ce%bb%ce%bf%ce%b3-16/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "BOSTON"
   },
   {
    "code": "BPS",
@@ -6860,6 +6809,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "C4"
   },
   {
+   "code": "CADMUS",
+   "variantes": [
+    "CADMUS"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Πρόσκληση σε διαδικτυακά μαθήματα Κυβερνοασφάλειας δωρεάν και πιστοποιούμενα μέσω του ευρωπαϊκού έργου Cadmus",
+   "lien_exemple": "https://cyber.gov.gr/prosklisi-se-diadiktyaka-mathimata-kyvernoasfaleias-dorean-kai-pistopoioymena-meso-toy-eyropaikoy-ergoy-cadmus/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CADMUS"
+  },
+  {
    "code": "CAF",
    "variantes": [
     "CAF"
@@ -6905,6 +6869,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CAT"
   },
   {
+   "code": "CATHETER",
+   "variantes": [
+    "CATHETER"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 25F1670 του Ιατροτεχνολογικού προϊόντος Gloflon I.V. CATHETER WITH INJECTION VALVES & WINGS 20G 1.1 x 33mm",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-25f1670-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CATHETER"
+  },
+  {
    "code": "CBS",
    "variantes": [
     "CBS"
@@ -6933,21 +6912,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CCM4"
-  },
-  {
-   "code": "CCN-TEC",
-   "variantes": [
-    "CCN-TEC"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "El Centro Criptológico Nacional llama a prepararse frente a la amenaza cuántica",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/computacion-cuantica-el-centro-criptologico-nacional-llama-a-prepararse-frente-a-la-amenaza-cuantica_20260723.html",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CCN-TEC"
   },
   {
    "code": "CCS",
@@ -7115,6 +7079,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CESNET"
   },
   {
+   "code": "CFSP",
+   "variantes": [
+    "CFSP"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Statement by the High Representative on behalf of the EU on the alignment of certain countries concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/25/statement-by-the-high-representative-on-behalf-of-the-eu-on-the-alignment-of-certain-countries-concerning-restrictive-measures-in-respect-of-actions-undermining-or-threatening-the-territorial-integrity-sovereignty-and-independence-of-ukrain/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CFSP"
+  },
+  {
    "code": "CGI",
    "variantes": [
     "CGI"
@@ -7235,21 +7214,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CISO 2026"
   },
   {
-   "code": "CITTA",
-   "variantes": [
-    "CITTA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CITTA"
-  },
-  {
    "code": "CK",
    "variantes": [
     "CK"
@@ -7263,21 +7227,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CK"
-  },
-  {
-   "code": "CLEAR",
-   "variantes": [
-    "CLEAR"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "Avis relatif à la tarification de la denrée alimentaire destinée à des fins médicales spéciales CLINUTREN THICKENUP CLEAR visée à l'article L. 165-1 du code de la sécurité sociale",
-   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838990",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CLEAR"
   },
   {
    "code": "CLOSED",
@@ -7415,21 +7364,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "COMBINE"
   },
   {
-   "code": "COMITATO",
-   "variantes": [
-    "COMITATO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "COMITATO"
-  },
-  {
    "code": "CON",
    "variantes": [
     "CON"
@@ -7565,21 +7499,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "CRD"
   },
   {
-   "code": "CREA",
-   "variantes": [
-    "CREA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "CREA"
-  },
-  {
    "code": "CRR3",
    "variantes": [
     "CRR3"
@@ -7593,6 +7512,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CRR3"
+  },
+  {
+   "code": "CS",
+   "variantes": [
+    "CS"
+   ],
+   "langues": [
+    "sv"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Krönika Borde AI vara en valfråga? Har man inga tydliga svar är det lättast att inte prata om det, konstaterar CS chefredaktör Marcus Jerräng i en krönika. Av Marcus Jerräng 4 sep. 2026 4 min Offentlig sektor Lagar och regleringar Marknader",
+   "lien_exemple": "https://computersweden.se/article/4218654/borde-ai-vara-en-valfraga.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CS"
   },
   {
    "code": "CSAM",
@@ -7683,6 +7617,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CSK"
+  },
+  {
+   "code": "CSL",
+   "variantes": [
+    "CSL"
+   ],
+   "langues": [
+    "sv"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Beslut om avgifter enligt cybersäkerhetslagen för 2026",
+   "lien_exemple": "https://pts.se/nyheter-och-pressmeddelanden/beslut-om-avgifter-enligt-cybersakerhetslagen-for-2026/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CSL"
   },
   {
    "code": "CTIS",
@@ -7910,6 +7859,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-15243"
   },
   {
+   "code": "CVE-2026-15390",
+   "variantes": [
+    "CVE-2026-15390"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerability in Das U-Boot software",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-15390/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-15390"
+  },
+  {
    "code": "CVE-2026-15600",
    "variantes": [
     "CVE-2026-15600"
@@ -8088,6 +8052,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CVE-2026-18929"
+  },
+  {
+   "code": "CVE-2026-19547",
+   "variantes": [
+    "CVE-2026-19547"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerability in Ghostscript software",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-19547/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-19547"
   },
   {
    "code": "CVE-2026-25606",
@@ -8975,6 +8954,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-50751"
   },
   {
+   "code": "CVE-2026-52748",
+   "variantes": [
+    "CVE-2026-52748"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerabilities in Kaon AR2140 routers",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-52748/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-52748"
+  },
+  {
+   "code": "CVE-2026-52749",
+   "variantes": [
+    "CVE-2026-52749"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerabilities in Kaon AR2140 routers",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-52748/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-52749"
+  },
+  {
    "code": "CVE-2026-53266",
    "variantes": [
     "CVE-2026-53266"
@@ -9815,6 +9824,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-71540"
   },
   {
+   "code": "CVE-2026-73640",
+   "variantes": [
+    "CVE-2026-73640"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerabilities in Dayforce Payroll software",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-73640/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-73640"
+  },
+  {
+   "code": "CVE-2026-73642",
+   "variantes": [
+    "CVE-2026-73642"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerabilities in Dayforce Payroll software",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-73640/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-73642"
+  },
+  {
    "code": "CVE-2026-76460",
    "variantes": [
     "CVE-2026-76460"
@@ -9963,6 +10002,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CVE-2026-82078"
+  },
+  {
+   "code": "CVE-2026-82329",
+   "variantes": [
+    "CVE-2026-82329"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "JFrog: rilevato sfruttamento in rete della CVE-2026-82329 relativa ad Artifactory",
+   "lien_exemple": "https://www.acn.gov.it/portale/w/jfrog-rilevato-sfruttamento-in-rete-della-cve-2026-82329-relativa-ad-artifactory",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-82329"
   },
   {
    "code": "CVE-2026-82928",
@@ -10161,6 +10215,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CVE-2026-85103"
   },
   {
+   "code": "CVE-2026-85520",
+   "variantes": [
+    "CVE-2026-85520"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerability in MyPresta Google Merchant Center Feed software",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-85520/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-85520"
+  },
+  {
    "code": "CVE-2026-85542",
    "variantes": [
     "CVE-2026-85542"
@@ -10174,6 +10243,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "CVE-2026-85542"
+  },
+  {
+   "code": "CVE-2026-86950",
+   "variantes": [
+    "CVE-2026-86950"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Apple: rilevato sfruttamento in rete della CVE-2026-86950",
+   "lien_exemple": "https://www.acn.gov.it/portale/w/apple-rilevato-sfruttamento-in-rete-della-cve-2026-86950",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "CVE-2026-86950"
   },
   {
    "code": "CVE-2026-87491",
@@ -10476,139 +10560,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "DDPS"
   },
   {
-   "code": "DECRETO10",
+   "code": "DENX",
    "variantes": [
-    "DECRETO10"
+    "DENX"
    ],
    "langues": [
-    "it"
+    "en"
    ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
+   "premier_vu": "2026-09-29",
+   "exemple": "Vulnerability in Das U-Boot software",
+   "lien_exemple": "https://cert.pl/en/posts/2026/09/CVE-2026-15390/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "DECRETO10"
-  },
-  {
-   "code": "DECRETO15",
-   "variantes": [
-    "DECRETO15"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 15 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04930/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DECRETO15"
-  },
-  {
-   "code": "DECRETO20",
-   "variantes": [
-    "DECRETO20"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELLA SALUTE - DECRETO 20 aprile 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04949/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DECRETO20"
-  },
-  {
-   "code": "DECRETO22",
-   "variantes": [
-    "DECRETO22"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'INTERNO - DECRETO 22 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A05078/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DECRETO22"
-  },
-  {
-   "code": "DECRETO26",
-   "variantes": [
-    "DECRETO26"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI - DECRETO 26 agosto 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05000/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DECRETO26"
-  },
-  {
-   "code": "DECRETO8",
-   "variantes": [
-    "DECRETO8"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DECRETO8"
-  },
-  {
-   "code": "DECRETO9",
-   "variantes": [
-    "DECRETO9"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELLA SALUTE - DECRETO 9 giugno 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04880/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DECRETO9"
-  },
-  {
-   "code": "DEGLI",
-   "variantes": [
-    "DEGLI"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DEGLI"
-  },
-  {
-   "code": "DELIBERA4",
-   "variantes": [
-    "DELIBERA4"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DELIBERA4"
+   "fr": "DENX"
   },
   {
    "code": "DEP-ERMIS",
@@ -10733,21 +10697,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DIA"
   },
   {
-   "code": "DIFESA",
-   "variantes": [
-    "DIFESA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "MINISTERO DELLA DIFESA - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05026/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DIFESA"
-  },
-  {
    "code": "DIRECT",
    "variantes": [
     "DIRECT"
@@ -10776,6 +10725,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DKCERT"
+  },
+  {
+   "code": "DL",
+   "variantes": [
+    "DL"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "GuardedBox-NAR entra en el catálogo CPSTIC del CCN como producto para la gestión de información nacional clasificada",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/guardedbox-logra-la-incorporacion-al-catalogo-cpstic-del-ccn_20260611.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "DL"
   },
   {
    "code": "DMP",
@@ -10821,21 +10785,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DNI"
-  },
-  {
-   "code": "DOP",
-   "variantes": [
-    "DOP"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 16 settembre 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04942/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DOP"
   },
   {
    "code": "DP",
@@ -10958,21 +10907,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "DSAR"
   },
   {
-   "code": "DSB",
-   "variantes": [
-    "DSB"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Autriche : pas encore d'autorité de surveillance du marché désignée pour l'AI Act (avril 2026)",
-   "lien_exemple": "https://www.knowlee.ai/at/blog/eu-ai-act-oesterreich-zustaendigkeit",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DSB"
-  },
-  {
    "code": "DSIT",
    "variantes": [
     "DSIT"
@@ -10986,21 +10920,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "DSIT"
-  },
-  {
-   "code": "DSM",
-   "variantes": [
-    "DSM"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Risolte vulnerabilità in Synology DiskStation Manager (DSM)",
-   "lien_exemple": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-synology-diskstation-manager-dsm-",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "DSM"
   },
   {
    "code": "DWR-X1820",
@@ -11136,21 +11055,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ECI"
-  },
-  {
-   "code": "ECONOMIA",
-   "variantes": [
-    "ECONOMIA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ECONOMIA"
   },
   {
    "code": "ECSC 2026",
@@ -11740,21 +11644,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ESSS"
   },
   {
-   "code": "ESTERI",
-   "variantes": [
-    "ESTERI"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ESTERI"
-  },
-  {
    "code": "ETF",
    "variantes": [
     "ETF"
@@ -12085,21 +11974,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "FACTORY/1"
   },
   {
-   "code": "FARMACO",
-   "variantes": [
-    "FARMACO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "FARMACO"
-  },
-  {
    "code": "FCSAL",
    "variantes": [
     "FCSAL"
@@ -12191,19 +12065,19 @@ window.VEILLE_ACRONYMES = {
    "fr": "FIFA"
   },
   {
-   "code": "FINANZE",
+   "code": "FINMA",
    "variantes": [
-    "FINANZE"
+    "FINMA"
    ],
    "langues": [
-    "it"
+    "en"
    ],
-   "premier_vu": "2026-09-25",
-   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
+   "premier_vu": "2026-09-29",
+   "exemple": "Fede­ral Admi­ni­stra­ti­ve Court (A‑2652/2025): Exemp­ti­on from the Fede­ral Act on Access to Infor­ma­ti­on for the SNB and FINMA; for­eign poli­cy inte­rests; per­so­nal data of admi­ni­stra­ti­ve employees",
+   "lien_exemple": "https://datenrecht.ch/en/bvger-a-2652-2025-ausnahme-vom-bgoe-fuer-snb-und-finma-aussenpolitische-interessen-personendaten-von-verwaltungsangestellten/",
    "nb_articles": 1,
    "dans_glossaire": false,
-   "fr": "FINANZE"
+   "fr": "FINMA"
   },
   {
    "code": "FITD",
@@ -12234,6 +12108,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "FLOODS"
+  },
+  {
+   "code": "FM",
+   "variantes": [
+    "FM"
+   ],
+   "langues": [
+    "nb"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Varsler høring om utlysningsvilkår og tildelingsregler for lokale FM-sendernett",
+   "lien_exemple": "https://nkom.no/aktuelt/varsler-horing-om-utlysningsvilkar-og-tildelingsregler-for-lokale-fm-sendernett",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "FM"
   },
   {
    "code": "FMV",
@@ -12309,6 +12198,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "FSB"
+  },
+  {
+   "code": "FSC",
+   "variantes": [
+    "FSC"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "BW690_00_001e_VL FSC - Examples of a Product List as well as a Product List for Systems and Procedure Packs (PDF, 213 kB, 09.09.2026)",
+   "lien_exemple": "https://www.swissmedic.ch/dam/swissmedic/en/dokumente/medizinprodukte/mep_urr/bw690_00_001d_vl_fsc_beispiel_produktliste.pdf.download.pdf/BW690_00_001e_VL_FSC-Example_of_a_product_list.pdf",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "FSC"
   },
   {
    "code": "FSE",
@@ -12414,6 +12318,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "GARANTE"
+  },
+  {
+   "code": "GAUZE",
+   "variantes": [
+    "GAUZE"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 2025083000073 του προϊόντος γάζα υδρόφιλη απλή αναδιπλούμενη ABSORBENT GAUZE ZIG ZAG standard 90 cm X100 m, REF MG-AG-90100",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-2025083000073-%cf%84%ce%bf%cf%85-%cf%80%cf%81%ce%bf%cf%8a%cf%8c%ce%bd%cf%84%ce%bf/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "GAUZE"
   },
   {
    "code": "GC3",
@@ -12596,21 +12515,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "GOTT"
   },
   {
-   "code": "GOVERNO",
-   "variantes": [
-    "GOVERNO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "GOVERNO"
-  },
-  {
    "code": "GPAI",
    "variantes": [
     "GPAI"
@@ -12639,6 +12543,22 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "GPMV-IVD"
+  },
+  {
+   "code": "GPT",
+   "variantes": [
+    "GPT"
+   ],
+   "langues": [
+    "pt",
+    "sv"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "OpenAI aposta os trunfos no GPT‑6 Astra, o seu modelo mais poderoso (e que garante ser seguro)",
+   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/openai-aposta-os-trunfos-no-gpt-6-astra-o-seu-modelo-mais-poderoso-e-que-garante-ser-seguro/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "GPT"
   },
   {
    "code": "GPT5",
@@ -13004,21 +12924,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "HMPC"
   },
   {
-   "code": "HN",
-   "variantes": [
-    "HN"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "Avis relatif à la tarification des denrées alimentaires destinées à des fins médicales spéciales PEPTAMEN et PEPTAMEN HN visées à l'article L. 165-1 du code de la sécurité sociale",
-   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838992",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "HN"
-  },
-  {
    "code": "HORIZON-CID-2026-01",
    "variantes": [
     "HORIZON-CID-2026-01"
@@ -13064,6 +12969,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "HORIZON-CL4-2025-02"
   },
   {
+   "code": "HORIZON-CL4-2026-03",
+   "variantes": [
+    "HORIZON-CL4-2026-03"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Horizon Europe - EU Space Research call 2026: 132 proposals submitted",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2029",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HORIZON-CL4-2026-03"
+  },
+  {
    "code": "HORIZON-CL4-2026-05",
    "variantes": [
     "HORIZON-CL4-2026-05"
@@ -13077,6 +12997,37 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "HORIZON-CL4-2026-05"
+  },
+  {
+   "code": "HPC",
+   "variantes": [
+    "HPC"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "HPC - Librela ad us. vet., Injektionslösung für Hunde (Bedinvetmabum)",
+   "lien_exemple": "https://www.swissmedic.ch/swissmedic/en/home/tierarzneimittel/veterinary-medicines/dhpc-veterinary-medicines/hpc-librela-ad-us-vet-injlsg.html",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HPC"
+  },
+  {
+   "code": "HPE",
+   "variantes": [
+    "HPE"
+   ],
+   "langues": [
+    "es",
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "Isabel Benavente (HPE): «Las marcas tecnológicas van a competir cada vez más por la confianza de los clientes»",
+   "lien_exemple": "https://www.computing.es/marketing/isabel-benavente-hpe-la-autenticidad-y-el-liderazgo-con-rigor-son-las-claves-para-destacar-frente-al-ruido-tecnologico/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "HPE"
   },
   {
    "code": "HPLIP",
@@ -13333,6 +13284,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "IEEE"
+  },
+  {
+   "code": "IFG",
+   "variantes": [
+    "IFG"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Neuer Arbeitsbehelf der DSB für informationspflichtige Stellen nach dem IFG",
+   "lien_exemple": "https://dsb.gv.at/aktuelles/aktuelles/neuer-arbeitsbehelf-der-dsb-fuer-informationspflichtige-stellen-nach-dem-ifg",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "IFG"
   },
   {
    "code": "IFRS",
@@ -13697,6 +13663,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ISO 15223-1"
   },
   {
+   "code": "ISO 3",
+   "variantes": [
+    "ISO 3"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση παρτίδων των ιατροτεχνολογικών προϊόντων: Αεραγωγός Guedel Νο 00 (ISO 5.0) – Κωδικός: 1100050, Αεραγωγός Guedel Νο 000 (ISO 3.5) – Κωδικός: 1000035",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%cf%89%ce%bd-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd%ce%bf%ce%bb%ce%bf%ce%b3-13/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ISO 3"
+  },
+  {
    "code": "ISO 31000",
    "variantes": [
     "ISO 31000"
@@ -13710,6 +13691,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ISO 31000"
+  },
+  {
+   "code": "ISO 5",
+   "variantes": [
+    "ISO 5"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση παρτίδων των ιατροτεχνολογικών προϊόντων: Αεραγωγός Guedel Νο 00 (ISO 5.0) – Κωδικός: 1100050, Αεραγωγός Guedel Νο 000 (ISO 3.5) – Κωδικός: 1000035",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%cf%89%ce%bd-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd%ce%bf%ce%bb%ce%bf%ce%b3-13/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ISO 5"
+  },
+  {
+   "code": "ISO 9001",
+   "variantes": [
+    "ISO 9001"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Tecnologie emergenti e dati personali: una lettura trasversale della nuova ISO 9001:2026",
+   "lien_exemple": "https://www.federprivacy.org/informazione/primo-piano/tecnologie-emergenti-e-dati-personali-una-lettura-trasversale-della-nuova-norma-iso-9001-2026",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ISO 9001"
   },
   {
    "code": "ISO/IEC 27000",
@@ -13727,21 +13738,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "ISO/IEC 27000"
   },
   {
-   "code": "ISTITUTO",
-   "variantes": [
-    "ISTITUTO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ISTITUTO PER LA VIGILANZA SULLE ASSICURAZIONI - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04936/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ISTITUTO"
-  },
-  {
    "code": "IT-OT",
    "variantes": [
     "IT-OT"
@@ -13755,21 +13751,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "IT-OT"
-  },
-  {
-   "code": "ITALIANA",
-   "variantes": [
-    "ITALIANA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ITALIANA"
   },
   {
    "code": "ITU22",
@@ -13878,6 +13859,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "JCE"
   },
   {
+   "code": "JFR 2026",
+   "variantes": [
+    "JFR 2026"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Les JFR 2026",
+   "lien_exemple": "https://esante.gouv.fr/agenda/les-jfr-2026",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "JFR 2026"
+  },
+  {
    "code": "JO",
    "variantes": [
     "JO"
@@ -13891,21 +13887,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "JO"
-  },
-  {
-   "code": "JOIN",
-   "variantes": [
-    "JOIN"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "CELEX:52026AE0590: Opinion of the European Economic and Social Committee – Joint Communication to the European Parliament and the Council strengthening EU economic security (JOIN(2025) 977 final)",
-   "lien_exemple": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AE0590",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "JOIN"
   },
   {
    "code": "JPG",
@@ -14134,6 +14115,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "LAN"
   },
   {
+   "code": "LANGE",
+   "variantes": [
+    "LANGE"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "\"LANGE NACHT DER MUSEEN 2026\" im Innenministerium",
+   "lien_exemple": "https://www.bmi.gv.at/news.aspx?id=4E684F526E70706D536F6F3D",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "LANGE"
+  },
+  {
    "code": "LAPIN",
    "variantes": [
     "LAPIN"
@@ -14162,21 +14158,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "LAUNDRY"
-  },
-  {
-   "code": "LAVORO",
-   "variantes": [
-    "LAVORO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "MINISTERO DEL LAVORO E DELLE POLITICHE SOCIALI - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A04988/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LAVORO"
   },
   {
    "code": "LDAP",
@@ -14223,21 +14204,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "LGBTQI"
-  },
-  {
-   "code": "LINEA2",
-   "variantes": [
-    "LINEA2"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LINEA2"
   },
   {
    "code": "LIVE",
@@ -14314,21 +14280,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "LMU-s"
-  },
-  {
-   "code": "LO",
-   "variantes": [
-    "LO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "LO"
   },
   {
    "code": "LVM",
@@ -14497,21 +14448,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "MDCG"
   },
   {
-   "code": "MDCG 2020-16",
-   "variantes": [
-    "MDCG 2020-16"
-   ],
-   "langues": [
-    "en"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
-   "lien_exemple": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MDCG 2020-16"
-  },
-  {
    "code": "MDCG 2021-24",
    "variantes": [
     "MDCG 2021-24"
@@ -14617,6 +14553,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "MF"
   },
   {
+   "code": "MFF 2028-2034",
+   "variantes": [
+    "MFF 2028-2034"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "MFF 2028-2034: Council agrees negotiating position on future EU support for the fisheries sector",
+   "lien_exemple": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/29/mff-2028-2034-council-agrees-negotiating-position-on-future-eu-support-for-the-fisheries-sector/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "MFF 2028-2034"
+  },
+  {
+   "code": "MG-AG-90100",
+   "variantes": [
+    "MG-AG-90100"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 2025083000073 του προϊόντος γάζα υδρόφιλη απλή αναδιπλούμενη ABSORBENT GAUZE ZIG ZAG standard 90 cm X100 m, REF MG-AG-90100",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-2025083000073-%cf%84%ce%bf%cf%85-%cf%80%cf%81%ce%bf%cf%8a%cf%8c%ce%bd%cf%84%ce%bf/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "MG-AG-90100"
+  },
+  {
    "code": "MGA",
    "variantes": [
     "MGA"
@@ -14645,36 +14611,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "MI"
-  },
-  {
-   "code": "MINISTRI",
-   "variantes": [
-    "MINISTRI"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MINISTRI"
-  },
-  {
-   "code": "MINISTRI6",
-   "variantes": [
-    "MINISTRI6"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "MINISTRI6"
   },
   {
    "code": "MIOTI",
@@ -14949,6 +14885,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "MSSG"
   },
   {
+   "code": "MUSEEN 2026",
+   "variantes": [
+    "MUSEEN 2026"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "\"LANGE NACHT DER MUSEEN 2026\" im Innenministerium",
+   "lien_exemple": "https://www.bmi.gv.at/news.aspx?id=4E684F526E70706D536F6F3D",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "MUSEEN 2026"
+  },
+  {
    "code": "MWDB",
    "variantes": [
     "MWDB"
@@ -14962,6 +14913,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "MWDB"
+  },
+  {
+   "code": "NACHT",
+   "variantes": [
+    "NACHT"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "\"LANGE NACHT DER MUSEEN 2026\" im Innenministerium",
+   "lien_exemple": "https://www.bmi.gv.at/news.aspx?id=4E684F526E70706D536F6F3D",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "NACHT"
   },
   {
    "code": "NAIH",
@@ -14992,6 +14958,23 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "NASK-PIB"
+  },
+  {
+   "code": "NATO",
+   "variantes": [
+    "NATO"
+   ],
+   "langues": [
+    "cs",
+    "da",
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "NÚKIB hostil Cyber Champions Summit se zástupci NATO a indo-pacifických partnerů",
+   "lien_exemple": "https://nukib.gov.cz/cs/infoservis/aktuality/2379-nukib-hostil-cyber-champions-summit-se-zastupci-nato-a-indo-pacifickych-partneru",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "NATO"
   },
   {
    "code": "NAVO",
@@ -15052,6 +15035,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "NCEZ"
+  },
+  {
+   "code": "NDI",
+   "variantes": [
+    "NDI"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση των παρτίδων του συνημμένου πίνακα, του Ιατροτεχνολογικού προϊόντος κατηγορίας MDD Class I, NDI Passive Sphere & κιτ βελόνων βιοψίας.",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%cf%89%ce%bd-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%ce%bf%cf%85-%cf%83%cf%85%ce%bd%ce%b7%ce%bc%ce%bc%ce%ad%ce%bd%ce%bf%cf%85-11/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "NDI"
   },
   {
    "code": "NEN 7510",
@@ -15460,21 +15458,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "NPÖ1"
   },
   {
-   "code": "NR",
-   "variantes": [
-    "NR"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "AWS logra la acreditación NATO Restricted para su Región ‘Cloud’ en España",
-   "lien_exemple": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/aws-logra-la-acreditacion-nato-restricted-para-su-region-cloud-en-espana_20260925.html",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "NR"
-  },
-  {
    "code": "NTC",
    "variantes": [
     "NTC"
@@ -15853,21 +15836,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "OPI"
   },
   {
-   "code": "ORF",
-   "variantes": [
-    "ORF"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Brand der Floridsdorfer Brücke: Glasfaserausfälle in Wien",
-   "lien_exemple": "https://www.cert.at/de/aktuelles/2026/6/brand-der-floridsdorfer-brucke-glasfaserausfalle-in-wien",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "ORF"
-  },
-  {
    "code": "OSAE",
    "variantes": [
     "OSAE"
@@ -16054,6 +16022,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "PAN-OS"
   },
   {
+   "code": "PANDA",
+   "variantes": [
+    "PANDA"
+   ],
+   "langues": [
+    "de"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Neuer Pass soll falsche Penicillinallergie dauerhaft aus Patientenakte entfernen",
+   "lien_exemple": "https://www.aerzteblatt.de/news/neuer-pass-soll-falsche-penicillinallergie-dauerhaft-aus-patientenakte-entfernen-8187ed66-7528-4cf2-9051-82ba18b954dc",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "PANDA"
+  },
+  {
    "code": "PCCP",
    "variantes": [
     "PCCP"
@@ -16127,21 +16110,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "PEH"
-  },
-  {
-   "code": "PEPTAMEN",
-   "variantes": [
-    "PEPTAMEN"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "Avis relatif à la tarification des denrées alimentaires destinées à des fins médicales spéciales PEPTAMEN et PEPTAMEN HN visées à l'article L. 165-1 du code de la sécurité sociale",
-   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838992",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PEPTAMEN"
   },
   {
    "code": "PFG7",
@@ -16310,6 +16278,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "PLC"
   },
   {
+   "code": "PLY",
+   "variantes": [
+    "PLY"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 3145507 του ιατροτεχνολογικού προϊόντος HIPPOKRATIS Επιθέματα γάζας μη αποστειρωμένα 10X20 PLY, REF: 1020121301",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-3145507-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "PLY"
+  },
+  {
    "code": "PNHTA-DM",
    "variantes": [
     "PNHTA-DM"
@@ -16323,6 +16306,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "PNHTA-DM"
+  },
+  {
+   "code": "PNRR",
+   "variantes": [
+    "PNRR"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Reti ultraveloci: firmate le convenzioni per il Fondo Nazionale Connettività",
+   "lien_exemple": "https://innovazione.gov.it/notizie/articoli/reti-ultraveloci-firmate-le-convenzioni-per-il-fondo-nazionale-connettivita",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "PNRR"
   },
   {
    "code": "PODCAST",
@@ -16353,6 +16351,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "POG"
+  },
+  {
+   "code": "POPS",
+   "variantes": [
+    "POPS"
+   ],
+   "langues": [
+    "cs"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "SÚKL zřídil Poradní orgán pro pacienty a spotřebitele",
+   "lien_exemple": "https://sukl.gov.cz/pacientske-organizace/sukl-zridil-poradni-organ-pro-pacienty-a-spotrebitele/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "POPS"
   },
   {
    "code": "PPE",
@@ -16459,21 +16472,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "PSUSA/00010431"
-  },
-  {
-   "code": "PTS",
-   "variantes": [
-    "PTS"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Suède : l'IMY désignée autorité de surveillance du marché pour l'AI Act",
-   "lien_exemple": "https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "PTS"
   },
   {
    "code": "PUE25",
@@ -16896,21 +16894,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "RH"
-  },
-  {
-   "code": "RICERCA",
-   "variantes": [
-    "RICERCA"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "MINISTERO DELL'UNIVERSITA' E DELLA RICERCA - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04947/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "RICERCA"
   },
   {
    "code": "RKEG",
@@ -17785,6 +17768,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "SMSI"
   },
   {
+   "code": "SNB",
+   "variantes": [
+    "SNB"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Fede­ral Admi­ni­stra­ti­ve Court (A‑2652/2025): Exemp­ti­on from the Fede­ral Act on Access to Infor­ma­ti­on for the SNB and FINMA; for­eign poli­cy inte­rests; per­so­nal data of admi­ni­stra­ti­ve employees",
+   "lien_exemple": "https://datenrecht.ch/en/bvger-a-2652-2025-ausnahme-vom-bgoe-fuer-snb-und-finma-aussenpolitische-interessen-personendaten-von-verwaltungsangestellten/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "SNB"
+  },
+  {
    "code": "SND/682/2021",
    "variantes": [
     "SND/682/2021"
@@ -17813,36 +17811,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SOAR"
-  },
-  {
-   "code": "SOCIAL",
-   "variantes": [
-    "SOCIAL"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "Real Decreto 739/2026, de 23 de septiembre, por el que se establece el régimen jurídico para el cómputo como cotizados al Régimen General de la Seguridad Social, a efectos de la pensión de jubilación, de los periodos de actividad ejercidos como deportista profesional con anterioridad a su integración en el Régimen General de la Seguridad Social.",
-   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19849",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SOCIAL"
-  },
-  {
-   "code": "SOCIALI",
-   "variantes": [
-    "SOCIALI"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-28",
-   "exemple": "MINISTERO DEL LAVORO E DELLE POLITICHE SOCIALI - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A04988/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SOCIALI"
   },
   {
    "code": "SOLACE",
@@ -17888,6 +17856,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SOU 2025"
+  },
+  {
+   "code": "SPACE",
+   "variantes": [
+    "SPACE"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Horizon Europe - EU Space Research call 2026: 132 proposals submitted",
+   "lien_exemple": "https://hadea.ec.europa.eu/node/2029",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "SPACE"
   },
   {
    "code": "SPACE-HADEA",
@@ -18146,36 +18129,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "SULL"
   },
   {
-   "code": "SULLE",
-   "variantes": [
-    "SULLE"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "ISTITUTO PER LA VIGILANZA SULLE ASSICURAZIONI - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04936/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SULLE"
-  },
-  {
-   "code": "SVILUPPO",
-   "variantes": [
-    "SVILUPPO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SVILUPPO"
-  },
-  {
    "code": "SZTFH1",
    "variantes": [
     "SZTFH1"
@@ -18189,21 +18142,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "SZTFH1"
-  },
-  {
-   "code": "SÚKL",
-   "variantes": [
-    "SÚKL"
-   ],
-   "langues": [
-    "fr"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Rép. tchèque : promulgation de la loi 166/2026 Sb. modifiant la loi sur les DM et DIV",
-   "lien_exemple": "https://mzd.gov.cz/wp-content/uploads/2026/07/Legislativni-newsletter-07-2026.pdf",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "SÚKL"
   },
   {
    "code": "TA488",
@@ -18402,6 +18340,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "TEWV"
   },
   {
+   "code": "TG1 14",
+   "variantes": [
+    "TG1 14"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Intervento del Sottosegretario di Stato Alessio Butti al TG1",
+   "lien_exemple": "https://innovazione.gov.it/notizie/interventi/intervento-del-sottosegretario-di-stato-alessio-butti-al-tg1",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "TG1 14"
+  },
+  {
+   "code": "TGS",
+   "variantes": [
+    "TGS"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Opinion 23/2026 on the draft decision of the Norwegian Supervisory Authority regarding the Controller Binding Corporate Rules of the TGS Group",
+   "lien_exemple": "https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-232026-on-the-draft-decision-of-the-norwegian_en",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "TGS"
+  },
+  {
    "code": "THEODORA",
    "variantes": [
     "THEODORA"
@@ -18460,21 +18428,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "TIA"
-  },
-  {
-   "code": "TORINO",
-   "variantes": [
-    "TORINO"
-   ],
-   "langues": [
-    "it"
-   ],
-   "premier_vu": "2026-09-25",
-   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
-   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
-   "nb_articles": 1,
-   "dans_glossaire": false,
-   "fr": "TORINO"
   },
   {
    "code": "TPV",
@@ -18838,6 +18791,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "UODO 2026"
   },
   {
+   "code": "UR-TEST",
+   "variantes": [
+    "UR-TEST"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 0366002724 του Ιατροτεχνολογικού προϊόντος UR-TEST 120ml Sterile Ουροσυλλέκτης",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-0366002724-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "UR-TEST"
+  },
+  {
    "code": "USB",
    "variantes": [
     "USB"
@@ -18911,6 +18879,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "V8"
+  },
+  {
+   "code": "VALVES",
+   "variantes": [
+    "VALVES"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 25F1670 του Ιατροτεχνολογικού προϊόντος Gloflon I.V. CATHETER WITH INJECTION VALVES & WINGS 20G 1.1 x 33mm",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-25f1670-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "VALVES"
   },
   {
    "code": "VDI",
@@ -18988,6 +18971,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "VLOSE"
   },
   {
+   "code": "VNG",
+   "variantes": [
+    "VNG"
+   ],
+   "langues": [
+    "nl"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Vernieuwd: VNG-handreiking weerbaarheid en veerkracht",
+   "lien_exemple": "https://www.digitaleoverheid.nl/nieuws/vernieuwd-vng-handreiking-weerbaarheid-en-veerkracht/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "VNG"
+  },
+  {
    "code": "VR",
    "variantes": [
     "VR"
@@ -19063,6 +19061,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "WACC"
   },
   {
+   "code": "WASPI",
+   "variantes": [
+    "WASPI"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Information Commissioner's Office adopted Code of Conduct for Information Sharing Protocols",
+   "lien_exemple": "https://digitalpolicyalert.org/event/44015-information-commissioners-office-adopts-waspi-uk-gdpr-code-of-conduct-for-information-sharing-protocols",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "WASPI"
+  },
+  {
    "code": "WAVEO",
    "variantes": [
     "WAVEO"
@@ -19109,6 +19122,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "WHM"
+  },
+  {
+   "code": "WINGS",
+   "variantes": [
+    "WINGS"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 25F1670 του Ιατροτεχνολογικού προϊόντος Gloflon I.V. CATHETER WITH INJECTION VALVES & WINGS 20G 1.1 x 33mm",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-25f1670-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "WINGS"
+  },
+  {
+   "code": "WITH",
+   "variantes": [
+    "WITH"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 25F1670 του Ιατροτεχνολογικού προϊόντος Gloflon I.V. CATHETER WITH INJECTION VALVES & WINGS 20G 1.1 x 33mm",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-25f1670-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "WITH"
   },
   {
    "code": "WKO",
@@ -19201,6 +19244,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "WSJ"
   },
   {
+   "code": "X100",
+   "variantes": [
+    "X100"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 2025083000073 του προϊόντος γάζα υδρόφιλη απλή αναδιπλούμενη ABSORBENT GAUZE ZIG ZAG standard 90 cm X100 m, REF MG-AG-90100",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-2025083000073-%cf%84%ce%bf%cf%85-%cf%80%cf%81%ce%bf%cf%8a%cf%8c%ce%bd%cf%84%ce%bf/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "X100"
+  },
+  {
    "code": "X11",
    "variantes": [
     "X11"
@@ -19291,6 +19349,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "XZ"
   },
   {
+   "code": "ZAG",
+   "variantes": [
+    "ZAG"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 2025083000073 του προϊόντος γάζα υδρόφιλη απλή αναδιπλούμενη ABSORBENT GAUZE ZIG ZAG standard 90 cm X100 m, REF MG-AG-90100",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-2025083000073-%cf%84%ce%bf%cf%85-%cf%80%cf%81%ce%bf%cf%8a%cf%8c%ce%bd%cf%84%ce%bf/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ZAG"
+  },
+  {
    "code": "ZCS",
    "variantes": [
     "ZCS"
@@ -19319,6 +19392,51 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ZENITH"
+  },
+  {
+   "code": "ZH",
+   "variantes": [
+    "ZH"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "DSB ZH: Dis­clo­sure of Pati­ent Data to Health Insu­r­ers; End-to-End Encryp­ti­on for Out­sour­ced Services",
+   "lien_exemple": "https://datenrecht.ch/en/dsb-zh-bekanntgabe-von-patientendaten-an-krankenversicherer-end-to-end-verschluesselung-bei-auslagerungen/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ZH"
+  },
+  {
+   "code": "ZIG",
+   "variantes": [
+    "ZIG"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση της παρτίδας 2025083000073 του προϊόντος γάζα υδρόφιλη απλή αναδιπλούμενη ABSORBENT GAUZE ZIG ZAG standard 90 cm X100 m, REF MG-AG-90100",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-2025083000073-%cf%84%ce%bf%cf%85-%cf%80%cf%81%ce%bf%cf%8a%cf%8c%ce%bd%cf%84%ce%bf/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ZIG"
+  },
+  {
+   "code": "ΑΔΑΕ",
+   "variantes": [
+    "ΑΔΑΕ"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Νομοθεσία 29.09.2026 Νέος Κανονισμός της ΑΔΑΕ για την πρόσβαση σε δεδομένα επικοινωνίας Λήψη μέτρων ασφάλειας κατά την εξυπηρέτηση αιτημάτων συνδρομητών ή χρηστών",
+   "lien_exemple": "https://www.lawspot.gr/nomika-nea/neos-kanonismos-tes-adae-gia-ten-prosbase-se-dedomena-epikoinonias/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "ΑΔΑΕ"
   },
   {
    "code": "ΔΤ",
@@ -19364,6 +19482,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 1,
    "dans_glossaire": false,
    "fr": "ΜΕΤΑ"
+  },
+  {
+   "code": "Τ20169",
+   "variantes": [
+    "Τ20169"
+   ],
+   "langues": [
+    "el"
+   ],
+   "premier_vu": "2026-09-29",
+   "exemple": "Ανάκληση παρτίδας του ιατροτεχνολογικού προϊόντος ALPHA ρινική κάνουλα οξυγόνου-σωλήνας παροχής 2 m με κωδικό REF Τ20169",
+   "lien_exemple": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd%ce%bf%ce%bb%ce%bf%ce%b3-2/",
+   "nb_articles": 1,
+   "dans_glossaire": false,
+   "fr": "Τ20169"
   },
   {
    "code": "A2",
@@ -19546,6 +19679,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "ADSL"
   },
   {
+   "code": "AFFARI",
+   "variantes": [
+    "AFFARI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "AFFARI"
+  },
+  {
+   "code": "AGENZIA",
+   "variantes": [
+    "AGENZIA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "AGENZIA"
+  },
+  {
    "code": "AGH",
    "variantes": [
     "AGH"
@@ -19619,6 +19782,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "AKC"
+  },
+  {
+   "code": "ALPI",
+   "variantes": [
+    "ALPI"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AUTORITA' DI BACINO DISTRETTUALE DELLE ALPI ORIENTALI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04877/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ALPI"
   },
   {
    "code": "ALSIA",
@@ -19878,6 +20056,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "ASU"
   },
   {
+   "code": "AUTORITA",
+   "variantes": [
+    "AUTORITA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AUTORITA' DI BACINO DISTRETTUALE DELLE ALPI ORIENTALI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04877/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "AUTORITA"
+  },
+  {
+   "code": "BACINO",
+   "variantes": [
+    "BACINO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AUTORITA' DI BACINO DISTRETTUALE DELLE ALPI ORIENTALI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04877/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BACINO"
+  },
+  {
    "code": "BAS",
    "variantes": [
     "BAS"
@@ -20043,21 +20251,6 @@ window.VEILLE_ACRONYMES = {
    "fr": "BLT"
   },
   {
-   "code": "BMI",
-   "variantes": [
-    "BMI"
-   ],
-   "langues": [
-    "de"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Zweite Evaluation zur Cannabis-Teillegalisierung - BMG, BMI und BMBFSFJ und Bundesdrogenbeauftragter erkennen dringenden Handlungsbedarf",
-   "lien_exemple": "https://www.bundesgesundheitsministerium.de/zweite-evaluation-zur-cannabis-teillegalisierung-01-04-26",
-   "nb_articles": 0,
-   "dans_glossaire": false,
-   "fr": "BMI"
-  },
-  {
    "code": "BN12",
    "variantes": [
     "BN12"
@@ -20086,6 +20279,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "BOE-A-2026-19846"
+  },
+  {
+   "code": "BOE-A-2026-19849",
+   "variantes": [
+    "BOE-A-2026-19849"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Real Decreto 739/2026, de 23 de septiembre, por el que se establece el régimen jurídico para el cómputo como cotizados al Régimen General de la Seguridad Social, a efectos de la pensión de jubilación, de los periodos de actividad ejercidos como deportista profesional con anterioridad a su integración en el Régimen General de la Seguridad Social.",
+   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19849",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "BOE-A-2026-19849"
   },
   {
    "code": "BRAF",
@@ -20253,6 +20461,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CCN-CERT"
   },
   {
+   "code": "CCN-TEC",
+   "variantes": [
+    "CCN-TEC"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "El Centro Criptológico Nacional llama a prepararse frente a la amenaza cuántica",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/ciberseguridad/computacion-cuantica-el-centro-criptologico-nacional-llama-a-prepararse-frente-a-la-amenaza-cuantica_20260723.html",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CCN-TEC"
+  },
+  {
    "code": "CCPA",
    "variantes": [
     "CCPA"
@@ -20388,6 +20611,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "CEKAS"
   },
   {
+   "code": "CELEX",
+   "variantes": [
+    "CELEX"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "CELEX:32026D04999: Council Decision of 22 September 2026 replacing a member of the Advisory Committee for the Coordination of Social Security Systems for Austria",
+   "lien_exemple": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D04999",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CELEX"
+  },
+  {
    "code": "CHF",
    "variantes": [
     "CHF"
@@ -20463,6 +20701,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "CIRAN"
   },
   {
+   "code": "CITTA",
+   "variantes": [
+    "CITTA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CITTA"
+  },
+  {
+   "code": "CLEAR",
+   "variantes": [
+    "CLEAR"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Avis relatif à la tarification de la denrée alimentaire destinée à des fins médicales spéciales CLINUTREN THICKENUP CLEAR visée à l'article L. 165-1 du code de la sécurité sociale",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838990",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CLEAR"
+  },
+  {
    "code": "CMA",
    "variantes": [
     "CMA"
@@ -20491,6 +20759,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "CMMC"
+  },
+  {
+   "code": "COMITATO",
+   "variantes": [
+    "COMITATO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "COMITATO"
   },
   {
    "code": "COPD",
@@ -20581,6 +20864,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "CRC"
+  },
+  {
+   "code": "CREA",
+   "variantes": [
+    "CREA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "CREA"
   },
   {
    "code": "CREPS",
@@ -21398,6 +21696,232 @@ window.VEILLE_ACRONYMES = {
    "fr": "DEBRA"
   },
   {
+   "code": "DECRETO",
+   "variantes": [
+    "DECRETO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO"
+  },
+  {
+   "code": "DECRETO10",
+   "variantes": [
+    "DECRETO10"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO10"
+  },
+  {
+   "code": "DECRETO15",
+   "variantes": [
+    "DECRETO15"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 15 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04930/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO15"
+  },
+  {
+   "code": "DECRETO16",
+   "variantes": [
+    "DECRETO16"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 16 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04942/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO16"
+  },
+  {
+   "code": "DECRETO20",
+   "variantes": [
+    "DECRETO20"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELLA SALUTE - DECRETO 20 aprile 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04949/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO20"
+  },
+  {
+   "code": "DECRETO22",
+   "variantes": [
+    "DECRETO22"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'INTERNO - DECRETO 22 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A05078/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO22"
+  },
+  {
+   "code": "DECRETO26",
+   "variantes": [
+    "DECRETO26"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI - DECRETO 26 agosto 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05000/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO26"
+  },
+  {
+   "code": "DECRETO8",
+   "variantes": [
+    "DECRETO8"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO8"
+  },
+  {
+   "code": "DECRETO9",
+   "variantes": [
+    "DECRETO9"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLA SALUTE - DECRETO 9 giugno 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04880/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DECRETO9"
+  },
+  {
+   "code": "DEGLI",
+   "variantes": [
+    "DEGLI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DEGLI"
+  },
+  {
+   "code": "DEI",
+   "variantes": [
+    "DEI"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DEI"
+  },
+  {
+   "code": "DELIBERA4",
+   "variantes": [
+    "DELIBERA4"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DELIBERA4"
+  },
+  {
+   "code": "DELL",
+   "variantes": [
+    "DELL"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DELL"
+  },
+  {
+   "code": "DELLA",
+   "variantes": [
+    "DELLA"
+   ],
+   "langues": [
+    "it",
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DELLA"
+  },
+  {
+   "code": "DELLE",
+   "variantes": [
+    "DELLE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DELLE"
+  },
+  {
    "code": "DFS",
    "variantes": [
     "DFS"
@@ -21456,6 +21980,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "DHTMLX"
+  },
+  {
+   "code": "DIFESA",
+   "variantes": [
+    "DIFESA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DELLA DIFESA - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05026/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DIFESA"
   },
   {
    "code": "DIGITAL-2026-BESTUSE-10",
@@ -21651,6 +22190,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "DOJ"
+  },
+  {
+   "code": "DOP",
+   "variantes": [
+    "DOP"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 16 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04942/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "DOP"
   },
   {
    "code": "DORA14",
@@ -21936,6 +22490,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "ECMWF"
+  },
+  {
+   "code": "ECONOMIA",
+   "variantes": [
+    "ECONOMIA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ECONOMIA"
   },
   {
    "code": "EDPB-EDPS",
@@ -22285,6 +22854,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "ESRS"
   },
   {
+   "code": "ESTERI",
+   "variantes": [
+    "ESTERI"
+   ],
+   "langues": [
+    "pt"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DEGLI AFFARI ESTERI E DELLA COOPERAZIONE INTERNAZIONALE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04932/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ESTERI"
+  },
+  {
    "code": "EU-U",
    "variantes": [
     "EU-U"
@@ -22343,6 +22927,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "F1"
+  },
+  {
+   "code": "FARMACO",
+   "variantes": [
+    "FARMACO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FARMACO"
   },
   {
    "code": "FC",
@@ -22480,6 +23079,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "FIN9"
   },
   {
+   "code": "FINANZE",
+   "variantes": [
+    "FINANZE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'ECONOMIA E DELLE FINANZE - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04966/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FINANZE"
+  },
+  {
    "code": "FINMISP",
    "variantes": [
     "FINMISP"
@@ -22553,6 +23167,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "FN"
+  },
+  {
+   "code": "FORESTE",
+   "variantes": [
+    "FORESTE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 8 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04935/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "FORESTE"
   },
   {
    "code": "FRATEL",
@@ -22752,6 +23381,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "GOV"
   },
   {
+   "code": "GOVERNO",
+   "variantes": [
+    "GOVERNO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "GOVERNO"
+  },
+  {
    "code": "GPA",
    "variantes": [
     "GPA"
@@ -22765,21 +23409,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "GPA"
-  },
-  {
-   "code": "GPT",
-   "variantes": [
-    "GPT"
-   ],
-   "langues": [
-    "pt"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "OpenAI aposta os trunfos no GPT‑6 Astra, o seu modelo mais poderoso (e que garante ser seguro)",
-   "lien_exemple": "https://tek.sapo.pt/noticias/computadores/artigos/openai-aposta-os-trunfos-no-gpt-6-astra-o-seu-modelo-mais-poderoso-e-que-garante-ser-seguro/",
-   "nb_articles": 0,
-   "dans_glossaire": false,
-   "fr": "GPT"
   },
   {
    "code": "GPT20",
@@ -23097,6 +23726,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "HIV/AIDS"
   },
   {
+   "code": "HN",
+   "variantes": [
+    "HN"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Avis relatif à la tarification des denrées alimentaires destinées à des fins médicales spéciales PEPTAMEN et PEPTAMEN HN visées à l'article L. 165-1 du code de la sécurité sociale",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838992",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "HN"
+  },
+  {
    "code": "HONDIUS",
    "variantes": [
     "HONDIUS"
@@ -23110,21 +23754,6 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "HONDIUS"
-  },
-  {
-   "code": "HPE",
-   "variantes": [
-    "HPE"
-   ],
-   "langues": [
-    "es"
-   ],
-   "premier_vu": "2026-09-24",
-   "exemple": "Isabel Benavente (HPE): «Las marcas tecnológicas van a competir cada vez más por la confianza de los clientes»",
-   "lien_exemple": "https://www.computing.es/marketing/isabel-benavente-hpe-la-autenticidad-y-el-liderazgo-con-rigor-son-las-claves-para-destacar-frente-al-ruido-tecnologico/",
-   "nb_articles": 0,
-   "dans_glossaire": false,
-   "fr": "HPE"
   },
   {
    "code": "HRV",
@@ -23292,6 +23921,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "IMMA"
   },
   {
+   "code": "IMPRESE",
+   "variantes": [
+    "IMPRESE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "IMPRESE"
+  },
+  {
+   "code": "INTERNO",
+   "variantes": [
+    "INTERNO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "MINISTERO DELL'INTERNO - DECRETO 22 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A05078/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "INTERNO"
+  },
+  {
    "code": "INTERPOL",
    "variantes": [
     "INTERPOL"
@@ -23443,6 +24102,51 @@ window.VEILLE_ACRONYMES = {
    "fr": "ISS"
   },
   {
+   "code": "ISTITUTO",
+   "variantes": [
+    "ISTITUTO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ISTITUTO PER LA VIGILANZA SULLE ASSICURAZIONI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04936/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ISTITUTO"
+  },
+  {
+   "code": "ITALIANA",
+   "variantes": [
+    "ITALIANA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "AGENZIA ITALIANA DEL FARMACO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04869/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ITALIANA"
+  },
+  {
+   "code": "ITALY",
+   "variantes": [
+    "ITALY"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "ITALY"
+  },
+  {
    "code": "IWF",
    "variantes": [
     "IWF"
@@ -23501,6 +24205,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "JD"
+  },
+  {
+   "code": "JOIN",
+   "variantes": [
+    "JOIN"
+   ],
+   "langues": [
+    "en"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "CELEX:52026AE0590: Opinion of the European Economic and Social Committee – Joint Communication to the European Parliament and the Council strengthening EU economic security (JOIN(2025) 977 final)",
+   "lien_exemple": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AE0590",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "JOIN"
   },
   {
    "code": "JSON",
@@ -23714,6 +24433,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "LAS"
   },
   {
+   "code": "LAVORO",
+   "variantes": [
+    "LAVORO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DEL LAVORO E DELLE POLITICHE SOCIALI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A04988/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LAVORO"
+  },
+  {
+   "code": "LEGGE18",
+   "variantes": [
+    "LEGGE18"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "LEGGE 18 settembre 2026, n.164",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26G00182/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LEGGE18"
+  },
+  {
    "code": "LEO",
    "variantes": [
     "LEO"
@@ -23772,6 +24521,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "LIHE"
+  },
+  {
+   "code": "LINEA2",
+   "variantes": [
+    "LINEA2"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LINEA2"
+  },
+  {
+   "code": "LO",
+   "variantes": [
+    "LO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "LO"
   },
   {
    "code": "LPD",
@@ -23924,6 +24703,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "MACRON"
   },
   {
+   "code": "MADE",
+   "variantes": [
+    "MADE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 10 settembre 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04879/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MADE"
+  },
+  {
    "code": "MADRING",
    "variantes": [
     "MADRING"
@@ -24058,6 +24852,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "MEO"
+  },
+  {
+   "code": "MINISTRI",
+   "variantes": [
+    "MINISTRI"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MINISTRI"
+  },
+  {
+   "code": "MINISTRI6",
+   "variantes": [
+    "MINISTRI6"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 6 maggio 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04948/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "MINISTRI6"
   },
   {
    "code": "MISP-SE",
@@ -24709,6 +25533,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "NPM"
   },
   {
+   "code": "NR",
+   "variantes": [
+    "NR"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "AWS logra la acreditación NATO Restricted para su Región ‘Cloud’ en España",
+   "lien_exemple": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/aws-logra-la-acreditacion-nato-restricted-para-su-region-cloud-en-espana_20260925.html",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "NR"
+  },
+  {
    "code": "NSO",
    "variantes": [
     "NSO"
@@ -25188,6 +26027,36 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "PDT"
+  },
+  {
+   "code": "PEPTAMEN",
+   "variantes": [
+    "PEPTAMEN"
+   ],
+   "langues": [
+    "fr"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "Avis relatif à la tarification des denrées alimentaires destinées à des fins médicales spéciales PEPTAMEN et PEPTAMEN HN visées à l'article L. 165-1 du code de la sécurité sociale",
+   "lien_exemple": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054838992",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PEPTAMEN"
+  },
+  {
+   "code": "PER",
+   "variantes": [
+    "PER"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "PER"
   },
   {
    "code": "PERTE",
@@ -25685,6 +26554,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "RHÖN"
   },
   {
+   "code": "RICERCA",
+   "variantes": [
+    "RICERCA"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELL'UNIVERSITA' E DELLA RICERCA - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04947/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "RICERCA"
+  },
+  {
    "code": "RMM",
    "variantes": [
     "RMM"
@@ -25893,6 +26777,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "S27"
+  },
+  {
+   "code": "SALUTE",
+   "variantes": [
+    "SALUTE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "MINISTERO DELLA SALUTE - DECRETO 9 giugno 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04880/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SALUTE"
   },
   {
    "code": "SAP",
@@ -26243,6 +27142,36 @@ window.VEILLE_ACRONYMES = {
    "fr": "SOC2"
   },
   {
+   "code": "SOCIAL",
+   "variantes": [
+    "SOCIAL"
+   ],
+   "langues": [
+    "es"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "Real Decreto 739/2026, de 23 de septiembre, por el que se establece el régimen jurídico para el cómputo como cotizados al Régimen General de la Seguridad Social, a efectos de la pensión de jubilación, de los periodos de actividad ejercidos como deportista profesional con anterioridad a su integración en el Régimen General de la Seguridad Social.",
+   "lien_exemple": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19849",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SOCIAL"
+  },
+  {
+   "code": "SOCIALI",
+   "variantes": [
+    "SOCIALI"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-28",
+   "exemple": "MINISTERO DEL LAVORO E DELLE POLITICHE SOCIALI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/26/26A04988/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SOCIALI"
+  },
+  {
    "code": "SOCKS5",
    "variantes": [
     "SOCKS5"
@@ -26438,6 +27367,21 @@ window.VEILLE_ACRONYMES = {
    "fr": "SU7"
   },
   {
+   "code": "SULLE",
+   "variantes": [
+    "SULLE"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "ISTITUTO PER LA VIGILANZA SULLE ASSICURAZIONI - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04936/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SULLE"
+  },
+  {
    "code": "SUPER",
    "variantes": [
     "SUPER"
@@ -26496,6 +27440,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "SVG"
+  },
+  {
+   "code": "SVILUPPO",
+   "variantes": [
+    "SVILUPPO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-24",
+   "exemple": "COMITATO INTERMINISTERIALE PER LA PROGRAMMAZIONE ECONOMICA E LO SVILUPPO SOSTENIBILE - DELIBERA 4 agosto 2026",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/23/26A04864/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "SVILUPPO"
   },
   {
    "code": "TAKE",
@@ -26691,6 +27650,21 @@ window.VEILLE_ACRONYMES = {
    "nb_articles": 0,
    "dans_glossaire": false,
    "fr": "TOCTOU"
+  },
+  {
+   "code": "TORINO",
+   "variantes": [
+    "TORINO"
+   ],
+   "langues": [
+    "it"
+   ],
+   "premier_vu": "2026-09-25",
+   "exemple": "PRESIDENZA DEL CONSIGLIO DEI MINISTRI - COMMISSARIO STRAORDINARIO DI GOVERNO PER LA REALIZZAZIONE DELLA LINEA 2 DELLA METROPOLITANA DELLA CITTA' DI TORINO - COMUNICATO",
+   "lien_exemple": "http://www.gazzettaufficiale.it/eli/id/2026/09/24/26A04971/SG",
+   "nb_articles": 0,
+   "dans_glossaire": false,
+   "fr": "TORINO"
   },
   {
    "code": "TP",

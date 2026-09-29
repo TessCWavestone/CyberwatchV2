@@ -106,7 +106,7 @@ jobs:
             ~/.local/share/argos-translate
             ~/.local/cache/argos-translate
             ~/.cache/huggingface
-          key: modeles-v2
+          key: modeles-v3
 
       - name: Collecter les nouveaux articles
         if: steps.garde.outputs.lancer == 'true'

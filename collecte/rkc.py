@@ -253,7 +253,9 @@ def articles_newsdesk(contenu):
             if el is suivant:
                 break
             if isinstance(el, Tag) and el.name == "a" and el is not a and not publication:
-                publication = espaces(el.get_text(" "))
+                txt_a = espaces(el.get_text(" "))
+                if txt_a.strip("() ").lower() not in ("translate", "traduire", "view in browser", "read more"):
+                    publication = txt_a
             elif isinstance(el, NavigableString) and not _dans(el, a):
                 par = el.parent
                 if par is not None and par.name == "a":
@@ -343,10 +345,34 @@ def _cle(titre):
     return re.sub(r"\W+", " ", _sa(titre).lower()).strip()[:80]
 
 
+MOIS_FR = {"janvier": 1, "fevrier": 2, "mars": 3, "avril": 4, "mai": 5, "juin": 6, "juillet": 7, "aout": 8,
+           "septembre": 9, "octobre": 10, "novembre": 11, "decembre": 12}
+
+
+def date_veille(contenu, items):
+    """Date d'envoi de l'alerte Newsdesk : horodatage des liens (ac=…_<millisecondes>),
+    sinon ligne « Envoyé : lundi 24 août 2026 » / « Sent: », sinon date du plus récent article."""
+    m = re.search(r"ac=\d+_(1\d{12})", contenu)
+    if m:
+        try:
+            return dt.datetime.fromtimestamp(int(m.group(1)) / 1000, dt.timezone.utc).date()
+        except (ValueError, OSError):
+            pass
+    texte = _sa(BeautifulSoup(contenu, "html.parser").get_text(" ") if "<" in contenu else contenu).lower()
+    m = re.search(r"(?:envoye|sent|date)\s*:\s*\w*\s*(\d{1,2})\s+([a-z]+)\s+(20\d\d)", texte)
+    if m and m.group(2) in MOIS_FR:
+        try:
+            return dt.date(int(m.group(3)), MOIS_FR[m.group(2)], int(m.group(1)))
+        except ValueError:
+            pass
+    dates = [it["date"] for it in items if it.get("date")]
+    return max(dates) if dates else None
+
+
 def lire_rkc(dossier, aujourdhui, client=None, cache_liens=None, max_resolutions=250):
     """Retourne (articles, rapport). Chaque article : titre, lien (public), date,
     source (publication), texte (PRIVÉ), payant, zone, id_nd."""
-    rapport = {"fichiers": 0, "mails": 0, "word": 0, "erreurs": [], "articles_lus": 0}
+    rapport = {"fichiers": 0, "mails": 0, "word": 0, "erreurs": [], "articles_lus": 0, "veilles": []}
     if not os.path.isdir(dossier):
         return [], rapport
     par_cle = {}
@@ -360,14 +386,17 @@ def lire_rkc(dossier, aujourdhui, client=None, cache_liens=None, max_resolutions
         try:
             contenu, date_mail, _sujet = (_corps_eml if ext == "eml" else _corps_msg)(f)
         except Exception as e:
-            rapport["erreurs"].append("%s : %s" % (os.path.basename(f), str(e)[:120]))
+            # le nom du fichier n'est jamais publié (il peut contenir un nom de client ou de personne)
+            rapport["erreurs"].append("mail n° %d illisible : %s" % (rapport["fichiers"], str(e)[:120]))
             continue
         rapport["mails"] += 1
-        date_defaut = date_mail or date_depuis_nom(os.path.basename(f), aujourdhui) or aujourdhui
         items = articles_newsdesk(contenu)
         rapport["articles_lus"] += len(items)
+        d_veille = date_veille(contenu, items)
+        date_defaut = d_veille or date_mail or date_depuis_nom(os.path.basename(f), aujourdhui) or aujourdhui
+        rapport["veilles"].append({"date": d_veille.isoformat() if d_veille else "", "articles": len(items)})
         if not items:
-            rapport["erreurs"].append("%s : aucun article Newsdesk reconnu" % os.path.basename(f))
+            rapport["erreurs"].append("veille du %s : aucun article Newsdesk reconnu" % (d_veille or "?"))
         for it in items:
             cle = it["id_nd"] or _cle(it["titre"])
             if cle in par_cle or _cle(it["titre"]) in {_cle(x["titre"]) for x in par_cle.values()}:
@@ -382,7 +411,7 @@ def lire_rkc(dossier, aujourdhui, client=None, cache_liens=None, max_resolutions
         try:
             arts = articles_du_word(f)
         except Exception as e:
-            rapport["erreurs"].append("%s : %s" % (os.path.basename(f), str(e)[:120]))
+            rapport["erreurs"].append("fichier Word illisible : %s" % str(e)[:120])
             continue
         rapport["word"] += 1
         for titre, texte in arts:

@@ -7,11 +7,14 @@ name: Cyber Watch - collecte
 
 on:
   schedule:
-    # GitHub ne connaît que l'heure UTC : deux créneaux le lundi (05:00 et 06:00 UTC).
-    # L'étape « Vérifier l'horaire » ne garde que celui qui tombe à 7 h à Paris
-    # (05:00 UTC en été, 06:00 UTC en hiver).
-    - cron: "0 5 * * 1"
-    - cron: "0 6 * * 1"
+    # GitHub ne connaît que l'heure UTC, et les créneaux « pile à l'heure » (xx:00) sont souvent
+    # retardés ou abandonnés par GitHub quand ses serveurs sont chargés. On utilise donc des
+    # minutes décalées et plusieurs créneaux de secours le lundi : l'étape « Vérifier l'horaire »
+    # lance la collecte au premier créneau après 7 h (heure de Paris) et ignore les suivants.
+    - cron: "17 5 * * 1"    # 7 h 17 à Paris en été
+    - cron: "17 6 * * 1"    # 7 h 17 à Paris en hiver (8 h 17 en été)
+    - cron: "43 8 * * 1"    # secours
+    - cron: "43 11 * * 1"   # secours
   workflow_dispatch:          # bouton « Run workflow » dans l'onglet Actions
     inputs:
       rattrapage_depuis:

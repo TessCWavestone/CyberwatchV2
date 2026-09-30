@@ -133,13 +133,16 @@
       </div>
     </div>
     <p class="window-note" id="window-note"></p>
+    <p class="search-hint" data-i18n="search_hint"></p>
 
     <div class="facets-panel" id="facets" hidden>
       <div class="facets">
         <fieldset class="facet"><legend data-i18n="f_pert">Pertinence</legend><div class="chips" id="fc-pert"></div></fieldset>
         <fieldset class="facet"><legend data-i18n="f_zone">Pays / zone</legend><div class="chips" id="fc-zone"></div></fieldset>
-        <fieldset class="facet facet-wide"><legend data-i18n="f_theme">Thèmes</legend><div class="chips" id="fc-theme"></div>
+        <fieldset class="facet facet-wide"><legend data-i18n="f_theme">Textes et normes</legend><div class="chips" id="fc-theme"></div>
           <button type="button" class="linkbtn" id="more-themes" hidden></button></fieldset>
+        <fieldset class="facet facet-wide"><legend data-i18n="f_autorite">Autorités</legend><div class="chips" id="fc-autorite"></div></fieldset>
+        <fieldset class="facet facet-wide"><legend data-i18n="f_grand">Grands thèmes</legend><div class="chips" id="fc-grand"></div></fieldset>
         <fieldset class="facet"><legend data-i18n="f_section">Rubrique</legend><div class="chips" id="fc-section"></div></fieldset>
         <fieldset class="facet"><legend data-i18n="f_status">Statut du texte</legend><div class="chips" id="fc-statut"></div></fieldset>
         <fieldset class="facet"><legend data-i18n="f_nature">Source</legend><div class="chips" id="fc-nature"></div></fieldset>
@@ -322,23 +325,24 @@
     </details>
 
     <details class="annexe" id="acronymes">
-      <summary><span data-i18n="acro_title">Acronymes détectés</span> <span class="block-meta" id="acro-resume"></span></summary>
+      <summary><span data-i18n="acro_title">Sujets suivis</span> <span class="block-meta" id="acro-resume"></span></summary>
       <p class="block-lead" data-i18n="acro_lead"></p>
       <div class="toolbar">
         <div class="seg" role="group" id="acro-filtres">
           <button type="button" data-a="" aria-pressed="true" data-i18n="ac_all">Tous</button>
-          <button type="button" data-a="nouveau" data-i18n="ac_new">Nouveaux (7 jours)</button>
-          <button type="button" data-a="hors" data-i18n="ac_out">Conservés tels quels</button>
+          <button type="button" data-a="textes" data-i18n="ac_textes">Textes et normes</button>
+          <button type="button" data-a="autorites" data-i18n="ac_autorites">Autorités</button>
+          <button type="button" data-a="candidat" data-i18n="ac_candidats">Candidats à valider</button>
         </div>
         <input type="search" id="acro-recherche" class="search" data-i18n-ph="ac_search_ph" autocomplete="off" aria-label="Filtrer">
       </div>
       <div class="table-wrap">
         <table class="data-table">
-          <thead><tr><th data-i18n="ac_th_acro">Acronyme</th><th data-i18n="ac_th_var">Variantes</th><th class="num" data-i18n="ac_th_n">Articles</th><th data-i18n="ac_th_lang">Langues</th><th data-i18n="ac_th_first">Vu la 1re fois</th><th data-i18n="ac_th_glo">Glossaire</th><th data-i18n="ac_th_ex">Exemple</th></tr></thead>
+          <thead><tr><th data-i18n="ac_th_acro">Sujet</th><th data-i18n="ac_th_type">Type</th><th class="num" data-i18n="ac_th_n">Articles</th><th data-i18n="ac_th_ex">Exemple récent</th></tr></thead>
           <tbody id="acro-lignes"></tbody>
         </table>
       </div>
-      <p class="empty" id="acro-vide" hidden data-i18n="ac_empty">Aucun acronyme pour ce filtre.</p>
+      <p class="empty" id="acro-vide" hidden data-i18n="ac_empty">Aucun sujet pour ce filtre.</p>
     </details>
 
     <details class="annexe" id="methode" open>

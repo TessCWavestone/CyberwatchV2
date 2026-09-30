@@ -60,7 +60,9 @@
    "pourquoi_en": "Medical device/IVD manufacturers above size thresholds and their hospital customers are NIS2 entities; supply chain security requirements.",
    "pertinence": "elevee",
    "autorite_en": "BSI",
-   "amende_max_en": "€10m or 2% of worldwide turnover (particularly important entities) ; €7m or 1.4% (important entities)"
+   "amende_max_en": "€10m or 2% of worldwide turnover (particularly important entities) ; €7m or 1.4% (important entities)",
+   "nom_original": "BSI-Gesetz modifié par la loi de transposition NIS2 (NIS2UmsuCG)",
+   "nom_fr": "Loi BSI modifiée par la loi de transposition de NIS2 (NIS2UmsuCG)"
   },
   {
    "amende_max": null,
@@ -78,7 +80,9 @@
    "pourquoi_en": "Reference of German authorities for AI interpretation-support tools processing patient data.",
    "pertinence": "moyenne",
    "autorite_en": "Datenschutzkonferenz (BfDI and Länder authorities)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Orientierungshilfe de la DSK « KI und Datenschutz »",
+   "nom_fr": "Guide de la DSK « IA et protection des données »"
   },
   {
    "amende_max": null,
@@ -96,7 +100,9 @@
    "pourquoi_en": "Market access condition for cloud/remote connectivity offerings processing German patient data.",
    "pertinence": "elevee",
    "autorite_en": "BMG / BSI",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "§ 393 SGB V – Recours au cloud dans le système de santé",
+   "nom_fr": "Article 393 du Code de la sécurité sociale V (SGB V) – recours au cloud dans le système de santé"
   },
   {
    "amende_max": null,
@@ -114,7 +120,9 @@
    "pourquoi_en": "Framework German hospitals impose in procurement and maintenance contracts for connected devices.",
    "pertinence": "elevee",
    "autorite_en": "DKG / BSI",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "B3S « Medizinische Versorgung » et § 391 SGB V (sécurité informatique des hôpitaux)",
+   "nom_fr": "B3S « Soins médicaux » et article 391 SGB V (sécurité informatique des hôpitaux)"
   },
   {
    "amende_max": null,
@@ -492,7 +500,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Styrelsen for Samfundssikkerhed (SAMSIK) and sectoral authorities",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Lov om foranstaltninger til sikring af et højt cybersikkerhedsniveau (NIS 2-loven), lov nr. 434 af 6. maj 2025",
+   "nom_fr": "Loi sur les mesures garantissant un niveau élevé de cybersécurité (loi NIS2), loi n° 434 du 6 mai 2025"
   },
   {
    "zone": "Danemark",
@@ -528,7 +538,9 @@
    "amende_max": "RGPD : jusqu'à 20 M€ ou 4 % du chiffre d'affaires annuel mondial",
    "pertinence": "elevee",
    "autorite_en": "Datatilsynet",
-   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover"
+   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover",
+   "nom_original": "Databeskyttelsesloven",
+   "nom_fr": "Loi danoise sur la protection des données"
   },
   {
    "zone": "Danemark",
@@ -546,7 +558,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Indenrigs- og Sundhedsministeriet / Digital Sundhed Danmark",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Lov om Digital Sundhed Danmark",
+   "nom_fr": "Loi sur Digital Sundhed Danmark (santé numérique)"
   },
   {
    "zone": "Danemark",
@@ -564,7 +578,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Danske Regioner / regions",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Fællesregional informationssikkerhedspolitik",
+   "nom_fr": "Politique de sécurité de l'information commune aux régions"
   },
   {
    "zone": "Danemark",
@@ -600,7 +616,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Digitaliseringsstyrelsen / sikkerdigital.dk",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Katalog over krav til kontrakt- og leverandørstyring for samfundskritiske it-systemer (2023)",
+   "nom_fr": "Catalogue d'exigences pour la gestion des contrats et fournisseurs des systèmes informatiques critiques (2023)"
   },
   {
    "zone": "Danemark",
@@ -618,7 +636,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Lægemiddelstyrelsen",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Vejledning til fabrikanter af medicinsk udstyr om markedsovervågning",
+   "nom_fr": "Guide pour les fabricants de dispositifs médicaux sur la surveillance du marché"
   },
   {
    "zone": "Danemark",
@@ -636,7 +656,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Digitaliseringsministeriet and designated authorities",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Lov om supplerende bestemmelser til forordningen om kunstig intelligens (lov nr. 467 af 2025)",
+   "nom_fr": "Loi complétant le règlement sur l'intelligence artificielle (loi n° 467 de 2025)"
   },
   {
    "zone": "Danemark",
@@ -672,7 +694,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministeriet for Samfundssikkerhed og Beredskab and sectoral authorities",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Lov om kritiske enheders modstandsdygtighed (CER-loven), lov nr. 433 af 2025",
+   "nom_fr": "Loi sur la résilience des entités critiques (loi CER), loi n° 433 de 2025"
   },
   {
    "zone": "Danemark",
@@ -690,7 +714,9 @@
    "amende_max": null,
    "pertinence": "faible",
    "autorite_en": "D-mærket (Industriens Fond, Dansk Erhverv and al.)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "D-mærket",
+   "nom_fr": "Label D-mærket (label de confiance numérique)"
   },
   {
    "zone": "Espagne",
@@ -726,7 +752,9 @@
    "amende_max": "20 M€ ou 4 % du CA mondial",
    "pertinence": "elevee",
    "autorite_en": "AEPD",
-   "amende_max_en": "€20m or 4% of worldwide turnover"
+   "amende_max_en": "€20m or 4% of worldwide turnover",
+   "nom_original": "Ley Orgánica 3/2018 (LOPDGDD) et RGPD",
+   "nom_fr": "Loi organique 3/2018 (LOPDGDD) et RGPD"
   },
   {
    "zone": "Espagne",
@@ -744,7 +772,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministerio de Sanidad",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Historia Clínica Digital del SNS et Espacio Nacional de Datos de Salud",
+   "nom_fr": "Dossier médical numérique du système national de santé et espace national des données de santé"
   },
   {
    "zone": "Espagne",
@@ -762,7 +792,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Ministerio de Sanidad / CISNS",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Estrategia de Ciberseguridad del Sistema Nacional de Salud 2025-2028",
+   "nom_fr": "Stratégie de cybersécurité du système national de santé 2025-2028"
   },
   {
    "zone": "Espagne",
@@ -798,7 +830,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "CCN",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Esquema Nacional de Seguridad (Real Decreto 311/2022)",
+   "nom_fr": "Schéma national de sécurité (ENS, décret royal 311/2022)"
   },
   {
    "zone": "Espagne",
@@ -816,7 +850,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "CCN",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Catálogo de Productos y Servicios de Seguridad TIC",
+   "nom_fr": "Catalogue des produits et services de sécurité TIC (CPSTIC)"
   },
   {
    "zone": "Espagne",
@@ -996,7 +1032,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "ENISA",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "ENISA – Procurement guidelines for the cybersecurity of hospitals and healthcare providers",
+   "nom_fr": "ENISA – Lignes directrices d'achat pour la cybersécurité des hôpitaux et des prestataires de santé"
   },
   {
    "zone": "Europe",
@@ -1176,7 +1214,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Traficom (Kyberturvallisuuskeskus) and sectoral authorities, including Fimea",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Kyberturvallisuuslaki (124/2025)",
+   "nom_fr": "Loi sur la cybersécurité (124/2025)"
   },
   {
    "zone": "Finlande",
@@ -1212,7 +1252,9 @@
    "amende_max": "RGPD : jusqu'à 20 M€ ou 4 % du chiffre d'affaires annuel mondial",
    "pertinence": "elevee",
    "autorite_en": "Tietosuojavaltuutettu",
-   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover"
+   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover",
+   "nom_original": "Tietosuojalaki (1050/2018)",
+   "nom_fr": "Loi sur la protection des données (1050/2018)"
   },
   {
    "zone": "Finlande",
@@ -1230,7 +1272,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Findata / THL",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Toisiolaki – usage secondaire des données sociales et de santé (réformée au 1er mai 2026)",
+   "nom_fr": "Loi sur l'usage secondaire des données sociales et de santé (réformée au 1er mai 2026)"
   },
   {
    "zone": "Finlande",
@@ -1248,7 +1292,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "THL, Kela (Kanta), Traficom (accredited assessment bodies)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Määräykset THL 4/2024 et 5/2024 – exigences essentielles et certification des systèmes d'information sociaux et de santé (Kanta)",
+   "nom_fr": "Règlements THL 4/2024 et 5/2024 – exigences essentielles et certification des systèmes d'information sociaux et de santé (Kanta)"
   },
   {
    "zone": "Finlande",
@@ -1284,7 +1330,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Fimea",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Laki lääkinnällisistä laitteista (719/2021)",
+   "nom_fr": "Loi sur les dispositifs médicaux (719/2021)"
   },
   {
    "zone": "Finlande",
@@ -1302,7 +1350,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Traficom",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Kyberkestävyyslaki – loi nationale d'application du CRA",
+   "nom_fr": "Loi sur la cyberrésilience – loi nationale d'application du CRA"
   },
   {
    "zone": "Finlande",
@@ -1320,7 +1370,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Lupa- ja valvontavirasto (health and social care)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "CER-laki – résilience des entités critiques",
+   "nom_fr": "Loi CER – résilience des entités critiques"
   },
   {
    "zone": "Finlande",
@@ -1680,7 +1732,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "SZTFH ; Nemzeti Kibervédelmi Intézet",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "2024. évi LXIX. törvény (loi sur la cybersécurité)",
+   "nom_fr": "Loi LXIX de 2024 sur la cybersécurité"
   },
   {
    "zone": "Hongrie",
@@ -1698,7 +1752,9 @@
    "amende_max": "20 M€ ou 4 % du CA mondial (RGPD)",
    "pertinence": "moyenne",
    "autorite_en": "NAIH",
-   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)"
+   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)",
+   "nom_original": "RGPD et 2011. évi CXII. törvény (Infotv.)",
+   "nom_fr": "RGPD et loi CXII de 2011 sur l'information (Infotv.)"
   },
   {
    "zone": "Hongrie",
@@ -1716,7 +1772,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministry of the Interior (health) ; operator EESZT",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "39/2016. (XII. 21.) EMMI rendelet sur l'EESZT (espace électronique de services de santé)",
+   "nom_fr": "Décret EMMI 39/2016 (XII. 21.) sur l'EESZT (espace électronique de services de santé)"
   },
   {
    "zone": "Hongrie",
@@ -1734,7 +1792,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Nemzeti Kibervédelmi Intézet ; SZTFH",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "7/2024. (VI. 24.) MK rendelet sur les classes de sécurité et mesures de protection",
+   "nom_fr": "Décret MK 7/2024 (VI. 24.) sur les classes de sécurité et les mesures de protection"
   },
   {
    "zone": "Hongrie",
@@ -1752,7 +1812,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "NNGYK",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "8/2003. (III. 13.) ESzCsM rendelet sur les dispositifs médicaux de diagnostic in vitro",
+   "nom_fr": "Décret ESzCsM 8/2003 (III. 13.) sur les dispositifs médicaux de diagnostic in vitro"
   },
   {
    "zone": "Hongrie",
@@ -1770,7 +1832,9 @@
    "amende_max": null,
    "pertinence": "faible",
    "autorite_en": "Government (authorities to be designated) ; MNB (financial sector)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "2025. évi LXXV. törvény d'application de l'AI Act",
+   "nom_fr": "Loi LXXV de 2025 d'application de l'AI Act"
   },
   {
    "zone": "Hongrie",
@@ -1788,7 +1852,9 @@
    "amende_max": "15 M€ ou 2,5 % du CA mondial",
    "pertinence": "moyenne",
    "autorite_en": "SZTFH",
-   "amende_max_en": "€15m or 2.5% of worldwide turnover"
+   "amende_max_en": "€15m or 2.5% of worldwide turnover",
+   "nom_original": "2025. évi CXXXV. törvény d'application du CRA",
+   "nom_fr": "Loi CXXXV de 2025 d'application du CRA"
   },
   {
    "zone": "Hongrie",
@@ -1806,7 +1872,9 @@
    "amende_max": null,
    "pertinence": "faible",
    "autorite_en": "Designated sectoral authorities",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "2024. évi LXXXIV. törvény sur la résilience des entités critiques",
+   "nom_fr": "Loi LXXXIV de 2024 sur la résilience des entités critiques"
   },
   {
    "amende_max": null,
@@ -1932,7 +2000,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "NSM and sectoral authorities (Helsetilsynet for health)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Digitalsikkerhetsloven et digitalsikkerhetsforskriften (FOR-2025-06-20-1131)",
+   "nom_fr": "Loi et règlement sur la sécurité numérique (FOR-2025-06-20-1131)"
   },
   {
    "zone": "Norvège",
@@ -1950,7 +2020,9 @@
    "amende_max": "RGPD : jusqu'à 20 M€ ou 4 % du chiffre d'affaires annuel mondial",
    "pertinence": "elevee",
    "autorite_en": "Datatilsynet",
-   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover"
+   "amende_max_en": "GDPR : up to €20m or 4% of annual worldwide turnover",
+   "nom_original": "Personopplysningsloven",
+   "nom_fr": "Loi sur les données personnelles"
   },
   {
    "zone": "Norvège",
@@ -1968,7 +2040,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Helsedirektoratet",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Helseopplysninger i skyen – guide",
+   "nom_fr": "Données de santé dans le cloud – guide"
   },
   {
    "zone": "Norvège",
@@ -1986,7 +2060,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Helsedirektoratet (Normen secretariat)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Norm for informasjonssikkerhet og personvern i helse- og omsorgssektoren, version 7.0",
+   "nom_fr": "Code de conduite pour la sécurité de l'information et la protection des données dans le secteur de la santé (Normen), version 7.0"
   },
   {
    "zone": "Norvège",
@@ -2004,7 +2080,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Helsedirektoratet",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Informasjonssikkerhet og personvern for leverandører til helse- og omsorgssektoren (guide de la Normen)",
+   "nom_fr": "Sécurité de l'information et protection des données pour les fournisseurs du secteur de la santé (guide de la Normen)"
   },
   {
    "zone": "Norvège",
@@ -2022,7 +2100,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Helsedirektoratet",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Medisinsk utstyr – personvern og informasjonssikkerhet (guide de la Normen)",
+   "nom_fr": "Dispositifs médicaux – protection des données et sécurité de l'information (guide de la Normen)"
   },
   {
    "zone": "Norvège",
@@ -2040,7 +2120,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "NSM",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "NSMs grunnprinsipper for IKT-sikkerhet v2.1",
+   "nom_fr": "Principes de base de la NSM pour la sécurité des TIC, v2.1"
   },
   {
    "zone": "Norvège",
@@ -2076,7 +2158,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "DMP",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Medisinsk utstyr og kunstig intelligens – guide DMP",
+   "nom_fr": "Dispositifs médicaux et intelligence artificielle – guide de la DMP"
   },
   {
    "zone": "Norvège",
@@ -2112,7 +2196,9 @@
    "amende_max": null,
    "pertinence": "faible",
    "autorite_en": "NSM / SERTIT",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Den norske sertifiseringsordningen for IT-sikkerhet (SERTIT)",
+   "nom_fr": "Dispositif norvégien de certification de la sécurité informatique (SERTIT)"
   },
   {
    "zone": "Pays-Bas",
@@ -2130,7 +2216,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "IGJ (health), Z-CERT, NCSC",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Cyberbeveiligingswet, Cyberbeveiligingsbesluit et regeling pour la santé",
+   "nom_fr": "Loi, décret et arrêté sur la cybersécurité (Cyberbeveiligingswet), volet santé"
   },
   {
    "zone": "Pays-Bas",
@@ -2148,7 +2236,9 @@
    "amende_max": "20 M€ ou 4 % du CA mondial",
    "pertinence": "elevee",
    "autorite_en": "Autoriteit Persoonsgegevens (AP)",
-   "amende_max_en": "€20m or 4% of worldwide turnover"
+   "amende_max_en": "€20m or 4% of worldwide turnover",
+   "nom_original": "AVG (RGPD) et UAVG",
+   "nom_fr": "RGPD (AVG) et loi néerlandaise d'application (UAVG)"
   },
   {
    "zone": "Pays-Bas",
@@ -2166,7 +2256,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministry VWS / IGJ",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Wet elektronische gegevensuitwisseling in de zorg (Wegiz)",
+   "nom_fr": "Loi sur l'échange électronique de données dans les soins (Wegiz)"
   },
   {
    "zone": "Pays-Bas",
@@ -2202,7 +2294,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "CIP / BZK",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Baseline Informatiebeveiliging Overheid 2 (BIO2)",
+   "nom_fr": "Référentiel de sécurité de l'information de l'administration 2 (BIO2)"
   },
   {
    "zone": "Pays-Bas",
@@ -2274,7 +2368,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministry JenV / sectoral authorities",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Wet weerbaarheid kritieke entiteiten (Wwke)",
+   "nom_fr": "Loi sur la résilience des entités critiques (Wwke)"
   },
   {
    "zone": "Pays-Bas",
@@ -2310,7 +2406,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Minister of Digital Affairs ; CSIRT NASK / CSIRT CeZ (health)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Ustawa o krajowym systemie cyberbezpieczeństwa (modifiée par la loi du 23 janvier 2026, Dz.U. 2026 poz. 252)",
+   "nom_fr": "Loi sur le système national de cybersécurité (modifiée par la loi du 23 janvier 2026, Dz.U. 2026 poz. 252)"
   },
   {
    "zone": "Pologne",
@@ -2328,7 +2426,9 @@
    "amende_max": "20 M€ ou 4 % du CA mondial (RGPD)",
    "pertinence": "elevee",
    "autorite_en": "UODO",
-   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)"
+   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)",
+   "nom_original": "RODO et loi du 10 mai 2018 sur la protection des données personnelles",
+   "nom_fr": "RGPD et loi du 10 mai 2018 sur la protection des données personnelles"
   },
   {
    "zone": "Pologne",
@@ -2346,7 +2446,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministry of Health ; Centrum e-Zdrowia",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Ustawa o systemie informacji w ochronie zdrowia (Dz.U. 2011 nr 113 poz. 657)",
+   "nom_fr": "Loi sur le système d'information dans la santé (Dz.U. 2011 n° 113 poz. 657)"
   },
   {
    "zone": "Pologne",
@@ -2364,7 +2466,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Minister of Digital Affairs",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Rozporządzenie Rady Ministrów z 21 maja 2024 r. w sprawie Krajowych Ram Interoperacyjności",
+   "nom_fr": "Règlement du Conseil des ministres du 21 mai 2024 sur le cadre national d'interopérabilité"
   },
   {
    "zone": "Pologne",
@@ -2382,7 +2486,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "URPL (Urząd Rejestracji Produktów Leczniczych, Wyrobów Medycznych i Produktów Biobójczych)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Ustawa z 7 kwietnia 2022 r. o wyrobach medycznych (t.j. Dz.U. 2024 poz. 1620)",
+   "nom_fr": "Loi du 7 avril 2022 sur les dispositifs médicaux (texte consolidé Dz.U. 2024 poz. 1620)"
   },
   {
    "zone": "Pologne",
@@ -2400,7 +2506,9 @@
    "amende_max": null,
    "pertinence": "faible",
    "autorite_en": "Rządowe Centrum Bezpieczeństwa (RCB)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Ustawa o zarządzaniu kryzysowym (26 avril 2007) – infrastructure critique",
+   "nom_fr": "Loi du 26 avril 2007 sur la gestion de crise – infrastructures critiques"
   },
   {
    "zone": "Pologne",
@@ -2418,7 +2526,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Minister of Digital Affairs (national cybersecurity certification authority)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Ustawa z 25 czerwca 2025 r. o krajowym systemie certyfikacji cyberbezpieczeństwa",
+   "nom_fr": "Loi du 25 juin 2025 sur le système national de certification de cybersécurité"
   },
   {
    "zone": "Portugal",
@@ -2436,7 +2546,9 @@
    "amende_max": "10 M€ ou 2 % du CA mondial (entités essentielles)",
    "pertinence": "elevee",
    "autorite_en": "CNCS",
-   "amende_max_en": "€10m or 2% of worldwide turnover (essential entities)"
+   "amende_max_en": "€10m or 2% of worldwide turnover (essential entities)",
+   "nom_original": "Decreto-Lei 125/2025 – régime juridique de la cybersécurité (transposition NIS2)",
+   "nom_fr": "Décret-loi 125/2025 – régime juridique de la cybersécurité (transposition de NIS2)"
   },
   {
    "zone": "Portugal",
@@ -2454,7 +2566,9 @@
    "amende_max": "20 M€ ou 4 % du CA mondial",
    "pertinence": "elevee",
    "autorite_en": "CNPD",
-   "amende_max_en": "€20m or 4% of worldwide turnover"
+   "amende_max_en": "€20m or 4% of worldwide turnover",
+   "nom_original": "Lei 58/2019 d'exécution du RGPD",
+   "nom_fr": "Loi 58/2019 d'exécution du RGPD"
   },
   {
    "zone": "Portugal",
@@ -2634,7 +2748,9 @@
    "amende_max": "17 M£ ou 4 % du CA (régime cible CSRB)",
    "pertinence": "elevee",
    "autorite_en": "DHSC / NCSC (health)",
-   "amende_max_en": "£17m or 4% of turnover (target regime CSRB)"
+   "amende_max_en": "£17m or 4% of turnover (target regime CSRB)",
+   "nom_original": "Network and Information Systems Regulations 2018 (en cours de réforme par le Cyber Security and Resilience Bill)",
+   "nom_fr": "Règlement NIS 2018 (en cours de réforme par le projet de loi Cyber Security and Resilience)"
   },
   {
    "zone": "Royaume-Uni",
@@ -2652,7 +2768,9 @@
    "amende_max": "17,5 M£ ou 4 % du CA mondial",
    "pertinence": "elevee",
    "autorite_en": "ICO",
-   "amende_max_en": "£17.5m or 4% of worldwide turnover"
+   "amende_max_en": "£17.5m or 4% of worldwide turnover",
+   "nom_original": "UK GDPR et Data Protection Act 2018, modifiés par le Data (Use and Access) Act 2025",
+   "nom_fr": "UK GDPR et Data Protection Act 2018, modifiés par le Data (Use and Access) Act 2025"
   },
   {
    "zone": "Royaume-Uni",
@@ -2688,7 +2806,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "NHS England",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Digital Technology Assessment Criteria v2",
+   "nom_fr": "Critères d'évaluation des technologies numériques du NHS (DTAC) v2"
   },
   {
    "zone": "Royaume-Uni",
@@ -2706,7 +2826,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "NHS England",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Data Security and Protection Toolkit (aligné CAF)",
+   "nom_fr": "Boîte à outils de sécurité et de protection des données (DSPT), alignée sur le CAF"
   },
   {
    "zone": "Royaume-Uni",
@@ -2724,7 +2846,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "NHS England",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Cyber Security Supply Chain Charter pour les fournisseurs du NHS",
+   "nom_fr": "Charte de cybersécurité de la chaîne d'approvisionnement pour les fournisseurs du NHS"
   },
   {
    "zone": "Royaume-Uni",
@@ -2742,7 +2866,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "Cabinet Office",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Procurement Policy Note 014 – Cyber Essentials Scheme",
+   "nom_fr": "Note de politique d'achat 014 – schéma Cyber Essentials"
   },
   {
    "zone": "Royaume-Uni",
@@ -2760,7 +2886,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "MHRA",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Medical Devices Regulations 2002 (UK MDR 2002), en cours de réforme",
+   "nom_fr": "Règlement de 2002 sur les dispositifs médicaux (UK MDR 2002), en cours de réforme"
   },
   {
    "zone": "Royaume-Uni",
@@ -2796,7 +2924,9 @@
    "amende_max": "10 M£ ou 4 % du CA mondial",
    "pertinence": "faible",
    "autorite_en": "OPSS",
-   "amende_max_en": "£10m or 4% of worldwide turnover"
+   "amende_max_en": "£10m or 4% of worldwide turnover",
+   "nom_original": "Product Security and Telecommunications Infrastructure Act 2022 et règlements de 2023",
+   "nom_fr": "Loi de 2022 sur la sécurité des produits et les infrastructures de télécommunications (PSTI) et règlements de 2023"
   },
   {
    "zone": "Royaume-Uni",
@@ -2814,7 +2944,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "NCSC",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Cyber Assessment Framework v4.0 du NCSC",
+   "nom_fr": "Cadre d'évaluation cyber (CAF) v4.0 du NCSC"
   },
   {
    "zone": "Royaume-Uni",
@@ -2850,7 +2982,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "NÚKIB",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Zákon č. 264/2025 Sb., o kybernetické bezpečnosti, et décrets 409/2025 Sb. et 410/2025 Sb.",
+   "nom_fr": "Loi n° 264/2025 Sb. sur la cybersécurité et décrets 409/2025 Sb. et 410/2025 Sb."
   },
   {
    "zone": "Rép. Tchèque",
@@ -2868,7 +3002,9 @@
    "amende_max": "20 M€ ou 4 % du CA mondial (RGPD)",
    "pertinence": "moyenne",
    "autorite_en": "ÚOOÚ",
-   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)"
+   "amende_max_en": "€20m or 4% of worldwide turnover (GDPR)",
+   "nom_original": "RGPD et zákon č. 110/2019 Sb., o zpracování osobních údajů",
+   "nom_fr": "RGPD et loi n° 110/2019 Sb. sur le traitement des données personnelles"
   },
   {
    "zone": "Rép. Tchèque",
@@ -2886,7 +3022,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministry of Health ; NCEZ",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Zákon o elektronizaci zdravotnictví (2021, modifié au 1er janvier 2026)",
+   "nom_fr": "Loi sur la numérisation de la santé (2021, modifiée au 1er janvier 2026)"
   },
   {
    "zone": "Rép. Tchèque",
@@ -2904,7 +3042,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "DIA (Digitální a informační agentura)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Zákon č. 365/2000 Sb., o informačních systémech veřejné správy (titre VI cloud computing) et vyhláška č. 505/2025 Sb.",
+   "nom_fr": "Loi n° 365/2000 Sb. sur les systèmes d'information de l'administration (titre VI, cloud) et décret n° 505/2025 Sb."
   },
   {
    "zone": "Rép. Tchèque",
@@ -2922,7 +3062,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "SÚKL ; Ministry of Health",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Zákon č. 375/2022 Sb., o zdravotnických prostředcích a diagnostických zdravotnických prostředcích in vitro (modifié par 166/2026 Sb.)",
+   "nom_fr": "Loi n° 375/2022 Sb. sur les dispositifs médicaux et les dispositifs médicaux de diagnostic in vitro (modifiée par 166/2026 Sb.)"
   },
   {
    "zone": "Rép. Tchèque",
@@ -2940,7 +3082,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Ministry of the Interior",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Zákon č. 266/2025 Sb., o kritické infrastruktuře",
+   "nom_fr": "Loi n° 266/2025 Sb. sur les infrastructures critiques"
   },
   {
    "zone": "Suisse",
@@ -3102,7 +3246,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "MCF and sectoral authorities (including Läkemedelsverket, IVO)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Cybersäkerhetslag (2025:1506) et cybersäkerhetsförordning (2025:1507)",
+   "nom_fr": "Loi (2025:1506) et ordonnance (2025:1507) sur la cybersécurité"
   },
   {
    "zone": "Suède",
@@ -3138,7 +3284,9 @@
    "amende_max": null,
    "pertinence": "elevee",
    "autorite_en": "IMY / IVO",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Patientdatalag (2008:355)",
+   "nom_fr": "Loi sur les données des patients (2008:355)"
   },
   {
    "zone": "Suède",
@@ -3156,7 +3304,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "IVO / IMY",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Lag (2022:913) om sammanhållen vård- och omsorgsdokumentation",
+   "nom_fr": "Loi (2022:913) sur la documentation intégrée des soins"
   },
   {
    "zone": "Suède",
@@ -3174,7 +3324,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Adda (SKR)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Informationssäkerhetskrav d'Adda (centrale d'achat des collectivités)",
+   "nom_fr": "Exigences de sécurité de l'information d'Adda (centrale d'achat des collectivités)"
   },
   {
    "zone": "Suède",
@@ -3192,7 +3344,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "MCF",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Informationssäker upphandling – guide MCF",
+   "nom_fr": "Achats sécurisés du point de vue de l'information – guide de la MCF"
   },
   {
    "zone": "Suède",
@@ -3228,7 +3382,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "IMY, PTS",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "AI-förordningen – supervision nationale",
+   "nom_fr": "Règlement sur l'IA – supervision nationale"
   },
   {
    "zone": "Suède",
@@ -3246,7 +3402,9 @@
    "amende_max": null,
    "pertinence": "moyenne",
    "autorite_en": "Regeringen (supervisory authority to be designated)",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Cyberresiliensförordningen – dispositions nationales complémentaires proposées (SOU 2025:115)",
+   "nom_fr": "Règlement sur la cyberrésilience – dispositions nationales complémentaires proposées (SOU 2025:115)"
   },
   {
    "zone": "Suède",
@@ -3264,7 +3422,9 @@
    "amende_max": null,
    "pertinence": "faible",
    "autorite_en": "FMV",
-   "amende_max_en": null
+   "amende_max_en": null,
+   "nom_original": "Nationella myndigheten för cybersäkerhetscertifiering (FMV/CSEC)",
+   "nom_fr": "Autorité nationale de certification de cybersécurité (FMV/CSEC)"
   }
  ]
 }

@@ -40,7 +40,8 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from traduction import Traducteur, extraire_acronymes, registre_acronymes  # noqa: E402
+from traduction import Traducteur  # noqa: E402
+import sujets  # noqa: E402
 from pertinence import Pertinence  # noqa: E402
 from amendes import detecter as detecter_amende  # noqa: E402
 import echeances  # noqa: E402
@@ -94,6 +95,9 @@ def sans_accents(s):
 def nettoyer_texte(html_ou_texte, limite=None):
     if not html_ou_texte:
         return ""
+    import html as _html
+    for _ in range(2):   # entités HTML parfois doublement échappées dans les flux (« &amp;lt; »)
+        html_ou_texte = _html.unescape(html_ou_texte)
     texte = BeautifulSoup(html_ou_texte, "html.parser").get_text(" ") if "<" in html_ou_texte else html_ou_texte
     texte = re.sub(r"\s+", " ", texte).strip()
     if limite and len(texte) > limite:
@@ -518,7 +522,9 @@ def nettoyer_titre(titre, lien):
     """Retire les préfixes parasites (« Acess to the publication: »), la taille des
     PDF, et remplace un titre générique ou un nom de fichier par le nom tiré du
     lien. Retourne "" si aucun titre exploitable."""
-    t = re.sub(r"\s+", " ", titre or "").strip()
+    import html as _html
+    t = _html.unescape(_html.unescape(titre or ""))
+    t = re.sub(r"\s+", " ", t).strip()
     t = re.sub(r"^CELEX:\S+:\s*", "", t)   # titres EUR-Lex « CELEX:32026D04999: … »
     t = re.sub(r"\s*[\(\[]\s*(pdf|PDF|xlsx|docx)?\s*[-–,]?\s*[\d.,]+\s*(ko|Ko|KB|kB|Mo|MB|mo|o)\s*[\)\]]\s*$", "", t)
     t2 = PREFIXES_TITRE.sub("", t)
@@ -1032,11 +1038,11 @@ def main():
     seuil = (AUJOURDHUI - dt.timedelta(days=conservation)).isoformat()
     for d in (articles, ecartes):   # anciens titres parasites (versions précédentes) nettoyés une fois
         for a in d.values():
-            if a.get("nature") != "rkc" and a.get("titre_nettoye") != 2:
+            if a.get("nature") != "rkc" and a.get("titre_nettoye") != 3:
                 t = nettoyer_titre(a["titre"], a["lien"])
                 if t and t != a["titre"]:
                     a["titre"], a["trad"] = t, {}
-                a["titre_nettoye"] = 2
+                a["titre_nettoye"] = 3
     # doublons (même source, même titre) laissés par les versions précédentes
     vus_t, collectes = set(), []
     tous = sorted([a for a in list(articles.values()) + list(ecartes.values()) if not a.get("debat")],
@@ -1145,10 +1151,24 @@ def main():
     for a in liste + liste_debats + list(ecartes.values()):
         a.pop("_texte", None)   # le texte privé RKC n'est jamais écrit
 
+    # Sujets suivis (liste fermée : textes, normes, autorités) : filtres du site et registre de l'onglet Sources.
+    # Les autres acronymes fréquents des articles pertinents sont proposés comme « candidats ».
     for a in liste + debats_gardes:
-        a["acronymes"] = [code for code, _ in extraire_acronymes(a["titre"] + " " + a.get("resume", ""), trad.glossaire)]
-    precedent = lire_json(os.path.join(DATA, "acronymes.json"), {})
-    registre = registre_acronymes(liste, trad.glossaire, precedent, AUJOURDHUI.isoformat())
+        a["sujets"] = sujets.detecter(a)
+        a["acronymes"] = a["sujets"]
+    meta["sujets"] = sujets.LIBELLES
+    suivis = []
+    for code, lib in sujets.LIBELLES.items():
+        arts = [a for a in liste if code in a.get("sujets", []) and a.get("pertinence") in ("elevee", "moyenne")]
+        if not arts:
+            continue
+        ex = max(arts, key=lambda a: a["date"])
+        tr = ex.get("trad") or {}
+        suivis.append({"code": code, "groupe": lib["groupe"], "fr": lib["fr"], "en": lib["en"], "nb_articles": len(arts),
+                       "exemple": {"date": ex["date"], "lien": ex.get("lien", ""), "titre": ex["titre"], "langue": ex.get("langue", ""),
+                                   "titre_fr": (tr.get("fr") or {}).get("titre", ""), "titre_en": (tr.get("en") or {}).get("titre", "")}})
+    suivis.sort(key=lambda e: (e["groupe"] != "textes", -e["nb_articles"]))
+    candidats = sujets.candidats(liste, list(sujets.LIBELLES), trad.glossaire)
 
     actives = [e for e in etats if e["acces"] not in ("inactive", "retiree")]
     versions.append({
@@ -1161,7 +1181,7 @@ def main():
     meta["nb_versions"] = len(versions)
 
     ecrire_json_et_js("acronymes", {"mise_a_jour": meta["mise_a_jour"], "glossaire": trad.glossaire,
-                                    "acronymes": registre}, "VEILLE_ACRONYMES")
+                                    "suivis": suivis, "candidats": candidats}, "VEILLE_ACRONYMES")
     ecrire_json_et_js("actualites", {"meta": meta, "articles": liste}, "VEILLE_ACTUALITES")
     ecrire_json_et_js("etat_sources", {"mise_a_jour": meta["mise_a_jour"], "jours_premiere_collecte": cfg.get("jours_premiere_collecte", 60),
                                        "jours_conservation": conservation, "sources": etats}, "VEILLE_ETAT_SOURCES")

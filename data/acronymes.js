@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-09-30T08:16+00:00",
+ "mise_a_jour": "2026-09-30T08:42+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -794,14 +794,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "MCF / MSB (Suède)",
    "en": "MCF / MSB (Sweden)",
-   "nb_articles": 13,
+   "nb_articles": 14,
    "exemple": {
-    "date": "2026-09-14",
-    "lien": "https://www.ncsc.se/sv/aktuellt/inga-storre-informations--eller-cyberangrepp-mot-svenska-valet/",
-    "titre": "Inga större informations- eller cyberangrepp mot svenska valet",
+    "date": "2026-09-30",
+    "lien": "https://www.ncsc.se/sv/aktuellt/nu-startar-tank-sakert-2026/",
+    "titre": "Nu startar Tänk Säkert 2026",
     "langue": "sv",
-    "titre_fr": "Aucune information importante ou cyberattaque contre les élections suédoises",
-    "titre_en": "No major information or cyber attacks against Swedish elections"
+    "titre_fr": "Penser sûrement 2026",
+    "titre_en": "Thinking Surely 2026"
    }
   },
   {

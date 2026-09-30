@@ -1,5 +1,5 @@
 window.VEILLE_DEBATS = {
- "mise_a_jour": "2026-09-30T08:16+00:00",
+ "mise_a_jour": "2026-09-30T08:42+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",

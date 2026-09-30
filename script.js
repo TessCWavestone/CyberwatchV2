@@ -26,6 +26,7 @@
   var REF_TEXTES = REF.textes || [];
   var THEMES_P = (META.pertinence || {}).themes || {};
   var TEXTES_CLES_EN = META.textes_cles_en || {};
+  var SUJETS = META.sujets || {};   // liste fermée des sujets suivis : { code: { fr, en, groupe: 'textes' | 'autorites' } }
   var ORDRE_PERT = { elevee: 0, moyenne: 1, faible: 2 };
 
   /* ================================================================== langue */
@@ -41,7 +42,7 @@
   var T = {
     fr: {
       skip: 'Aller au contenu', btn_export: 'Exporter ▾', btn_update: 'Lancer une mise à jour',
-      aussi: 'Aussi publié par : ', rkc_veilles: 'Alertes RKC lues : ', rkc_n: function (n) { return n + ' articles'; },
+      ref_original: "Titre d'origine : ", aussi: 'Aussi publié par : ', rkc_veilles: 'Alertes RKC lues : ', rkc_n: function (n) { return n + ' articles'; },
       agenda_none_more: function (h) { return 'Aucune autre échéance repérée au-delà de ' + h + ' : les dates clés viennent des textes (« d’ici le… », « applicable à compter du… ») et des textes applicables.'; },
       tm_title: 'Nouvelles réglementations et normes',
       tm_lead: "Tous les textes importants de la période (lois, décrets, lignes directrices, normes, consultations), regroupés par texte : un sujet repris par plusieurs sources n'apparaît qu'une fois, avec toutes ses sources. Classement par règles fixes (textes clés, signal réglementaire), sans IA générative. En cas de doute, l'article est gardé et marqué « à vérifier ».",
@@ -85,10 +86,13 @@
       w_recent: 'Nouveautés', w_archives: 'Archives',
       window_recent: function (j) { return 'Publiées ces ' + j + ' derniers jours. Les plus anciennes sont dans « Archives ».'; },
       window_archives: function (j) { return 'Tout ce qui a plus de ' + j + ' jours, depuis le 1er janvier 2026, et les analyses rédigées.'; },
-      search_ph: 'Rechercher (NIS2, IVDR, NHS, amende…)', filters: 'Affiner', reset: 'Tout effacer', show_originals: "Textes d'origine (non traduits)",
+      search_ph: 'Rechercher (NIS2, IVDR, amende…) — "ENS" entre guillemets = recherche exacte',
+      search_hint: 'Astuce : un acronyme entre guillemets ("ENS", "CRA") ne renvoie que les articles où il est détecté tel quel (majuscules respectées) ; sans guillemets, la recherche porte sur tout le texte.',
+      f_autorite: 'Autorités', f_grand: 'Grands thèmes', ac_textes: 'Textes et normes', ac_autorites: 'Autorités', ac_candidats: 'Candidats à valider',
+      ac_th_type: 'Type', ac_type: { textes: 'Texte ou norme', autorites: 'Autorité', candidat: 'Candidat (à valider)' }, filters: 'Affiner', reset: 'Tout effacer', show_originals: "Textes d'origine (non traduits)",
       sort_date: 'Plus récents', sort_pert: 'Plus pertinents', sort_fine: 'Plus fortes amendes',
-      f_pert: 'Pertinence', f_zone: 'Pays / zone', f_theme: 'Thèmes', f_section: 'Rubrique', f_status: 'Statut du texte', f_nature: 'Source', f_fine: 'Amendes',
-      more_themes: function (n) { return 'Voir tous les thèmes (' + n + ')'; }, less_themes: 'Réduire',
+      f_pert: 'Pertinence', f_zone: 'Pays / zone', f_theme: 'Textes et normes', f_section: 'Rubrique', f_status: 'Statut du texte', f_nature: 'Source', f_fine: 'Amendes',
+      more_themes: function (n) { return 'Voir tout (' + n + ')'; }, less_themes: 'Réduire',
       pert_badge: { elevee: 'Très pertinent', moyenne: 'Pertinent', faible: 'À surveiller' },
       am_prononcee: 'Amende prononcée', am_plafond: 'Amende maximale prévue', fine_badge: 'Amende ', fine_cap: "Jusqu'à ",
       statuts: { adopte: 'Adopté', en_vigueur: 'En vigueur', projet: 'Projet', consultation: 'Consultation', lignes_directrices: 'Lignes directrices', sanction: 'Sanction', autre: 'Autre' },
@@ -150,10 +154,10 @@
       saved_ok: 'Enregistré : pris en compte à la prochaine collecte.', saved_ko: "Échec de l'enregistrement : ", opened_gh: "Demande préparée sur GitHub : validez-la dans l'onglet ouvert.",
       token_t: 'Jeton GitHub', token_help: "Pour modifier les sources directement, collez un jeton GitHub « fine-grained » (gratuit) limité à ce dépôt, avec Contents : Read and write. Il reste dans ce navigateur. Laissez vide pour l'effacer.",
       token_saved: 'Jeton enregistré.', token_cleared: 'Jeton effacé.',
-      acro_title: 'Acronymes détectés', ac_all: 'Tous', ac_new: 'Nouveaux (7 jours)', ac_out: 'Conservés tels quels', ac_search_ph: 'Filtrer…',
-      acro_lead: "Acronymes repérés dans les articles. Ils ne sont jamais traduits ; les variantes nationales d'un même texte sont harmonisées via config/acronymes.json (ΓΚΠΔ → GDPR).",
-      ac_th_acro: 'Acronyme', ac_th_var: 'Variantes', ac_th_n: 'Articles', ac_th_lang: 'Langues', ac_th_first: 'Vu la 1re fois', ac_th_glo: 'Glossaire', ac_th_ex: 'Exemple',
-      ac_empty: 'Aucun acronyme.', ac_in: '✓ Harmonisé', ac_todo: 'Tel quel', ac_summary: function (n, nv) { return n + ' acronymes · ' + nv + ' nouveaux cette semaine'; },
+      acro_title: 'Sujets suivis (textes, normes, autorités)', ac_all: 'Tous', ac_new: 'Nouveaux (7 jours)', ac_out: 'Conservés tels quels', ac_search_ph: 'Filtrer…',
+      acro_lead: "Liste fermée et relue des sujets suivis (collecte/sujets.py) : ce sont eux qui servent de filtres dans Veille › Affiner. Les variantes nationales sont regroupées (ΓΚΠΔ, DSGVO → RGPD). Les « candidats » sont des acronymes inconnus vus dans au moins 3 articles pertinents : à ajouter à la liste s'ils sont utiles, sinon à ignorer. Dates, termes informatiques généraux (SQL, API…), finance et télécoms sont exclus.",
+      ac_th_acro: 'Sujet', ac_th_var: 'Variantes', ac_th_n: 'Articles', ac_th_lang: 'Langues', ac_th_first: 'Vu la 1re fois', ac_th_glo: 'Glossaire', ac_th_ex: 'Exemple récent',
+      ac_empty: 'Aucun sujet pour ce filtre.', ac_in: '✓ Harmonisé', ac_todo: 'Tel quel', ac_summary: function (n, nc) { return n + ' sujets présents dans la veille · ' + nc + ' candidats à valider'; },
       method: 'Méthode', method_lead: 'Comment la veille est collectée, notée et présentée — gratuitement, sans IA payante ni clé API.',
       footer: 'Cyber Watch — Wavestone · collecte, notation et traduction automatiques et gratuites.', footer_note: "Ce site ne constitue pas un conseil juridique. Les avis d'experts (onglet Débats et signaux) ne sont pas des informations certifiées.",
       nothing_export: 'Aucun article à exporter', exported: ' articles exportés', too_many: "Trop d'articles : filtrez d'abord (max. 300)",
@@ -173,7 +177,7 @@
     },
     en: {
       skip: 'Skip to content', btn_export: 'Export ▾', btn_update: 'Run an update',
-      aussi: 'Also published by: ', rkc_veilles: 'RKC alerts read: ', rkc_n: function (n) { return n + ' articles'; },
+      ref_original: 'Original title: ', aussi: 'Also published by: ', rkc_veilles: 'RKC alerts read: ', rkc_n: function (n) { return n + ' articles'; },
       agenda_none_more: function (h) { return 'No other deadline found beyond ' + h + ': key dates come from the texts (“by…”, “applicable from…”) and from the applicable texts.'; },
       tm_title: 'New regulations and standards',
       tm_lead: 'Every important text of the period (laws, decrees, guidelines, standards, consultations), grouped by text: a topic covered by several sources appears once, with all its sources. Ranked by fixed rules (key texts, regulatory signal), with no generative AI. When in doubt, the article is kept and marked “to be checked”.',
@@ -217,10 +221,13 @@
       w_recent: 'Latest', w_archives: 'Archive',
       window_recent: function (j) { return 'Published in the last ' + j + ' days. Older items are in “Archive”.'; },
       window_archives: function (j) { return 'Everything older than ' + j + ' days, since 1 January 2026, and the written analyses.'; },
-      search_ph: 'Search (NIS2, IVDR, NHS, fine…)', filters: 'Refine', reset: 'Clear all', show_originals: 'Original texts (untranslated)',
+      search_ph: 'Search (NIS2, IVDR, fine…) — "ENS" in quotes = exact search',
+      search_hint: 'Tip: an acronym in quotes ("ENS", "CRA") only returns articles where it is detected as such (case-sensitive); without quotes, the whole text is searched.',
+      f_autorite: 'Authorities', f_grand: 'Main themes', ac_textes: 'Texts and standards', ac_autorites: 'Authorities', ac_candidats: 'Candidates to review',
+      ac_th_type: 'Type', ac_type: { textes: 'Text or standard', autorites: 'Authority', candidat: 'Candidate (to review)' }, filters: 'Refine', reset: 'Clear all', show_originals: 'Original texts (untranslated)',
       sort_date: 'Newest', sort_pert: 'Most relevant', sort_fine: 'Largest fines',
-      f_pert: 'Relevance', f_zone: 'Country / area', f_theme: 'Topics', f_section: 'Section', f_status: 'Status of the text', f_nature: 'Source', f_fine: 'Fines',
-      more_themes: function (n) { return 'Show all topics (' + n + ')'; }, less_themes: 'Show fewer',
+      f_pert: 'Relevance', f_zone: 'Country / area', f_theme: 'Texts and standards', f_section: 'Section', f_status: 'Status of the text', f_nature: 'Source', f_fine: 'Fines',
+      more_themes: function (n) { return 'Show all (' + n + ')'; }, less_themes: 'Show fewer',
       pert_badge: { elevee: 'Highly relevant', moyenne: 'Relevant', faible: 'To monitor' },
       am_prononcee: 'Fine imposed', am_plafond: 'Maximum fine provided', fine_badge: 'Fine ', fine_cap: 'Up to ',
       statuts: { adopte: 'Adopted', en_vigueur: 'In force', projet: 'Draft', consultation: 'Consultation', lignes_directrices: 'Guidelines', sanction: 'Enforcement', autre: 'Other' },
@@ -282,10 +289,10 @@
       saved_ok: 'Saved: applied at the next collection.', saved_ko: 'Could not save: ', opened_gh: 'Request prepared on GitHub: submit it in the new tab.',
       token_t: 'GitHub token', token_help: 'To edit sources directly, paste a free GitHub “fine-grained” token restricted to this repository, with Contents: Read and write. It stays in this browser. Leave empty to delete it.',
       token_saved: 'Token saved.', token_cleared: 'Token deleted.',
-      acro_title: 'Detected acronyms', ac_all: 'All', ac_new: 'New (7 days)', ac_out: 'Kept as is', ac_search_ph: 'Filter…',
-      acro_lead: 'Acronyms found in the articles. They are never translated; national variants of the same act are harmonised through config/acronymes.json (ΓΚΠΔ → GDPR).',
-      ac_th_acro: 'Acronym', ac_th_var: 'Variants', ac_th_n: 'Articles', ac_th_lang: 'Languages', ac_th_first: 'First seen', ac_th_glo: 'Glossary', ac_th_ex: 'Example',
-      ac_empty: 'No acronym.', ac_in: '✓ Harmonised', ac_todo: 'As is', ac_summary: function (n, nv) { return n + ' acronyms · ' + nv + ' new this week'; },
+      acro_title: 'Tracked topics (texts, standards, authorities)', ac_all: 'All', ac_new: 'New (7 days)', ac_out: 'Kept as is', ac_search_ph: 'Filter…',
+      acro_lead: 'Closed, reviewed list of tracked topics (collecte/sujets.py): they are the filters in Watch › Refine. National variants are grouped (ΓΚΠΔ, DSGVO → GDPR). “Candidates” are unknown acronyms seen in at least 3 relevant articles: add them to the list if useful, otherwise ignore them. Dates, general IT terms (SQL, API…), finance and telecoms are excluded.',
+      ac_th_acro: 'Topic', ac_th_var: 'Variants', ac_th_n: 'Articles', ac_th_lang: 'Languages', ac_th_first: 'First seen', ac_th_glo: 'Glossary', ac_th_ex: 'Recent example',
+      ac_empty: 'No topic for this filter.', ac_in: '✓ Harmonised', ac_todo: 'As is', ac_summary: function (n, nc) { return n + ' topics found in the watch · ' + nc + ' candidates to review'; },
       method: 'Method', method_lead: 'How the watch is collected, rated and presented — free of charge, with no paid AI and no API key.',
       footer: 'Cyber Watch — Wavestone · free automated collection, rating and translation.', footer_note: 'This site does not constitute legal advice. Expert opinions (Debates & signals tab) are not certified information.',
       nothing_export: 'No article to export', exported: ' articles exported', too_many: 'Too many articles: filter first (max. 300)',
@@ -447,7 +454,22 @@
   /* Un seul filtre « Thèmes » : acronymes (forme harmonisée) + mots-clés, sans doublon (RGPD = GDPR) */
   function cleTheme(x) { var g = GLOSSAIRE[x]; return 'k:' + normaliser((g && g.en) || x); }
   var LIB_THEME = {};
+  /* Sujets suivis (liste fermée, calculée par la collecte) : textes et normes, autorités */
+  function libSujet(code) { var x = SUJETS[code]; return x ? (x[LANG] || x.fr || code) : code; }
+  function sujetsDe(a, groupe) {
+    var codes = a.sujets || (a.acronymes || []).filter(function (c) { return SUJETS[c]; });
+    return codes.filter(function (c) { return SUJETS[c] && (!groupe || SUJETS[c].groupe === groupe); });
+  }
+  function sujetsDepuisTags(tags) {   // analyses rédigées : tags libres rapprochés des sujets suivis
+    var out = [];
+    (tags || []).forEach(function (tg) {
+      var n = normaliser(tg);
+      Object.keys(SUJETS).forEach(function (c) { if ((normaliser(c) === n || normaliser(SUJETS[c].fr) === n || normaliser(SUJETS[c].en) === n) && out.indexOf(c) === -1) out.push(c); });
+    });
+    return out;
+  }
   function themesDe(a) {
+    if (a.sujets || Object.keys(SUJETS).length) return sujetsDe(a).map(function (c) { return 's:' + c; });
     var cles = [];
     function ajoute(val, estAcro) {
       if (!val) return;
@@ -459,7 +481,11 @@
     (a.tags || []).forEach(function (tg) { ajoute(tg, false); });
     return cles;
   }
-  function libelleTheme(k) { var i = LIB_THEME[k]; if (!i) return k.slice(2); return i.acro ? libelleAcro(i.val) : libelleTag(i.val); }
+  function libelleTheme(k) {
+    if (k.indexOf('s:') === 0) return libSujet(k.slice(2));
+    if (k.indexOf('g:') === 0) return nomTheme(k.slice(2));
+    var i = LIB_THEME[k]; if (!i) return k.slice(2); return i.acro ? libelleAcro(i.val) : libelleTag(i.val);
+  }
 
   /* ========================================================= textes d'un article */
   function textes(a) {
@@ -632,7 +658,10 @@
     card._f = {
       section: a.rubrique, nature: a.nature || 'presse', zone: a.zone || '—', pert: a.pertinence || 'faible',
       statut: a.statut || '', amende: a.amende ? (a.amende.plafond ? 'plafond' : 'prononcee') : '',
-      theme: themes, recent: estRecent(a), rang: rangVersion(a), version: a.version || '',
+      theme: sujetsDe(a, 'textes').map(function (c) { return 's:' + c; }), autorite: sujetsDe(a, 'autorites').map(function (c) { return 's:' + c; }),
+      grand: (a.pertinence !== 'faible' ? (a.themes || []) : []).map(function (x) { return 'g:' + x; }),
+      codes: sujetsDe(a), brut: [a.titre, a.resume, tx.aff.titre, tx.aff.resume].join(' \n '),
+      recent: estRecent(a), rang: rangVersion(a), version: a.version || '',
       texte: normaliser([a.titre, a.resume, tx.aff.titre, tx.aff.resume, a.source, nomZone(a.zone), (a.tags || []).join(' '), themes.map(libelleTheme).join(' ')].join(' '))
     };
     card._tri = { date: a.date || '', pert: ORDRE_PERT[a.pertinence] === undefined ? 3 : ORDRE_PERT[a.pertinence], score: a.score || 0, montant: a.amende ? a.amende.montant_eur : -1 };
@@ -670,7 +699,10 @@
       }
       if (themes.length) {
         var tl = el('ul', { className: 'tags' });
-        themes.forEach(function (k) { tl.appendChild(el('li', null, [el('button', { type: 'button', className: 'tag', 'data-theme': k, text: libelleTheme(k) })])); });
+        themes.forEach(function (k) {
+          var fac = (SUJETS[k.slice(2)] || {}).groupe === 'autorites' ? 'autorite' : 'theme';
+          tl.appendChild(el('li', null, [el('button', { type: 'button', className: 'tag', 'data-theme': k, 'data-facette': fac, text: libelleTheme(k) })]));
+        });
         parts.push(tl);
       }
       parts.push(el('div', { className: 'card-actions' }, [el('button', { type: 'button', className: 'btn btn-sm btn-copy', 'data-copy': true, text: t('copy') })].concat(a.base ? [] : boutonsAvis(a))));
@@ -699,8 +731,11 @@
       ]),
       el('div', { className: 'card-foot' }, [badge('badge-statut', (t('conf') || {})[f.conf] || ''), el('button', { type: 'button', className: 'more', 'data-toggle': true, text: t('read_more') + ' ›' })])
     ]);
-    var themes = (f.tags || []).map(function (tg) { var k = cleTheme(tg); if (!LIB_THEME[k]) LIB_THEME[k] = { acro: !!GLOSSAIRE[tg], val: tg }; return k; });
-    card._f = { section: 'syntheses', nature: 'synthese', zone: '—', pert: 'moyenne', statut: '', amende: '', theme: themes, recent: false, rang: undefined, version: '',
+    var codesS = sujetsDepuisTags(f.tags), themes = codesS.map(function (c) { return 's:' + c; });
+    card._f = { section: 'syntheses', nature: 'synthese', zone: '—', pert: 'moyenne', statut: '', amende: '',
+                theme: codesS.filter(function (c) { return SUJETS[c].groupe === 'textes'; }).map(function (c) { return 's:' + c; }),
+                autorite: codesS.filter(function (c) { return SUJETS[c].groupe === 'autorites'; }).map(function (c) { return 's:' + c; }),
+                grand: [], codes: codesS, brut: [f.titre, f.accroche].join(' '), recent: false, rang: undefined, version: '',
                 texte: normaliser([f.titre, f.accroche].concat(f.paragraphes || []).join(' ')) };
     card._tri = { date: iso, pert: 1, score: 0, montant: -1 };
     card._build = function () {
@@ -764,7 +799,7 @@
   }
 
   /* ---------------------------------------------------------------- filtres */
-  var etatFiltres = { fenetre: 'recent', tri: 'date', q: [], versionMax: null, versionSeule: '' };
+  var etatFiltres = { fenetre: 'recent', tri: 'date', q: [], exact: [], versionMax: null, versionSeule: '' };
   function selection(facet) {
     return Array.prototype.slice.call(document.querySelectorAll('input[data-facet="' + facet + '"]:checked')).map(function (i) { return i.value; });
   }
@@ -778,18 +813,24 @@
     var cz = compte('zone'); box = document.getElementById('fc-zone');
     Object.keys(cz).filter(function (z) { return z !== '—'; }).sort(function (a, b) { return nomZone(a).localeCompare(nomZone(b), LANG); })
       .forEach(function (z) { box.appendChild(chip('zone', z, nomZone(z), cz[z])); });
-    var ct = compte('theme'), cles = Object.keys(ct).sort(function (a, b) { return ct[b] - ct[a] || libelleTheme(a).localeCompare(libelleTheme(b)); });
-    box = document.getElementById('fc-theme');
-    cles.forEach(function (k, i) { var c = chip('theme', k, libelleTheme(k), ct[k]); if (i >= 24) { c.hidden = true; c.classList.add('chip-plus'); } box.appendChild(c); });
-    var plus = document.getElementById('more-themes');
-    if (cles.length > 24) {
-      plus.hidden = false; plus.textContent = t('more_themes')(cles.length);
-      plus.addEventListener('click', function () {
-        var ouvert = plus.getAttribute('data-open') === '1';
-        Array.prototype.forEach.call(box.querySelectorAll('.chip-plus'), function (c) { c.hidden = ouvert; });
-        plus.setAttribute('data-open', ouvert ? '0' : '1'); plus.textContent = ouvert ? t('more_themes')(cles.length) : t('less_themes');
-      });
-    }
+    // Thèmes = textes et normes suivis ; Autorités ; Grands thèmes (note de pertinence). Listes courtes, toutes visibles.
+    [['theme', 'fc-theme'], ['autorite', 'fc-autorite'], ['grand', 'fc-grand']].forEach(function (x) {
+      var c = compte(x[0]), b = document.getElementById(x[1]); if (!b) return;
+      var cles = Object.keys(c).sort(function (p, q) { return c[q] - c[p] || libelleTheme(p).localeCompare(libelleTheme(q)); });
+      var MAX = 20, caches = [];
+      cles.forEach(function (k, i) { var ch = chip(x[0], k, libelleTheme(k), c[k]); if (i >= MAX) { ch.hidden = true; caches.push(ch); } b.appendChild(ch); });
+      if (!cles.length) b.closest('.facet').hidden = true;
+      if (caches.length) {   // les moins fréquents derrière un bouton « Voir tout »
+        var plus = el('button', { type: 'button', className: 'linkbtn chips-plus', text: t('more_themes')(cles.length) }), ouvert = false;
+        plus.addEventListener('click', function (ev) {
+          ev.preventDefault(); ev.stopPropagation(); ouvert = !ouvert;
+          caches.forEach(function (ch) { ch.hidden = !ouvert && !ch.querySelector('input').checked; });
+          plus.textContent = ouvert ? t('less_themes') : t('more_themes')(cles.length);
+        });
+        b.parentNode.appendChild(plus);
+      }
+    });
+    var plusT = document.getElementById('more-themes'); if (plusT) plusT.hidden = true;
     box = document.getElementById('fc-section');
     RUBRIQUES.forEach(function (r) { box.appendChild(chip('section', r.id, r.titre)); });
     var cs = compte('statut'); box = document.getElementById('fc-statut');
@@ -810,7 +851,7 @@
       if (f.rang === undefined) { if (etatFiltres.versionSeule) return false; }
       else if (f.rang > etatFiltres.versionMax || (etatFiltres.versionSeule && f.version !== etatFiltres.versionSeule)) return false;
     }
-    if (!etatFiltres.q.length && etatFiltres.versionMax === null) {
+    if (!etatFiltres.q.length && !etatFiltres.exact.length && etatFiltres.versionMax === null) {
       if (etatFiltres.fenetre === 'recent' && !f.recent) return false;
       if (etatFiltres.fenetre === 'archives' && f.recent) return false;
     }
@@ -821,9 +862,18 @@
     if (sel.statut.length && sel.statut.indexOf(f.statut) === -1) return false;
     if (sel.amende.length && sel.amende.indexOf(f.amende) === -1) return false;
     if (sel.theme.length && !sel.theme.some(function (k) { return f.theme.indexOf(k) !== -1; })) return false;
+    if (sel.autorite.length && !sel.autorite.some(function (k) { return (f.autorite || []).indexOf(k) !== -1; })) return false;
+    if (sel.grand.length && !sel.grand.some(function (k) { return (f.grand || []).indexOf(k) !== -1; })) return false;
+    // recherche exacte : "ENS" -> sujet suivi ENS, ou le mot exact (casse respectée) dans le titre / résumé
+    for (var x = 0; x < etatFiltres.exact.length; x++) {
+      var ex = etatFiltres.exact[x], exN = normaliser(ex);
+      var parCode = (f.codes || []).some(function (c) { return normaliser(c) === exN; });
+      var rx = new RegExp('(^|[^\\p{L}\\p{N}])' + ex.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\p{L}\\p{N}])', 'u');
+      if (!parCode && !rx.test(f.brut || '')) return false;
+    }
     for (var j = 0; j < etatFiltres.q.length; j++) if (f.texte.indexOf(etatFiltres.q[j]) === -1) return false;
     // « À surveiller » (faible pertinence) : masqué par défaut, sauf recherche ou filtre explicite
-    if (f.pert === 'faible' && !montrerFaible && !etatFiltres.q.length && sel.pert.indexOf('faible') === -1) { card._masque = true; return false; }
+    if (f.pert === 'faible' && !montrerFaible && !etatFiltres.q.length && !etatFiltres.exact.length && sel.pert.indexOf('faible') === -1) { card._masque = true; return false; }
     return true;
   }
   function trier(liste) {
@@ -835,7 +885,7 @@
     });
   }
   function appliquerFiltres() {
-    var sel = { section: selection('section'), nature: selection('nature'), zone: selection('zone'), pert: selection('pert'), statut: selection('statut'), amende: selection('amende'), theme: selection('theme') };
+    var sel = { section: selection('section'), nature: selection('nature'), zone: selection('zone'), pert: selection('pert'), statut: selection('statut'), amende: selection('amende'), theme: selection('theme'), autorite: selection('autorite'), grand: selection('grand') };
     var total = 0, visibles = 0, nRecent = 0, nArch = 0, nMasques = 0, nFaiblesVis = 0;
     var parRub = {};
     cartes.forEach(function (c) {
@@ -878,9 +928,9 @@
       document.getElementById('surveiller-texte').textContent = montrerFaible ? t('surv_shown')(nFaibles) + ' ' : t('surv_hidden')(nMasques) + ' ';
       document.getElementById('surveiller-bascule').textContent = montrerFaible ? t('surv_hide') : t('surv_show');
     }
-    var actifs = sel.section.length + sel.nature.length + sel.zone.length + sel.pert.length + sel.statut.length + sel.amende.length + sel.theme.length;
+    var actifs = sel.section.length + sel.nature.length + sel.zone.length + sel.pert.length + sel.statut.length + sel.amende.length + sel.theme.length + sel.autorite.length + sel.grand.length;
     var ac = document.getElementById('active-count'); ac.textContent = actifs; ac.hidden = !actifs;
-    Array.prototype.forEach.call(document.querySelectorAll('.tag[data-theme]'), function (b) { b.setAttribute('aria-pressed', sel.theme.indexOf(b.getAttribute('data-theme')) !== -1 ? 'true' : 'false'); });
+    Array.prototype.forEach.call(document.querySelectorAll('.tag[data-theme]'), function (b) { var v = b.getAttribute('data-theme'); b.setAttribute('aria-pressed', sel.theme.indexOf(v) !== -1 || sel.autorite.indexOf(v) !== -1 ? 'true' : 'false'); });
   }
 
   function brancherVeille() {
@@ -888,20 +938,26 @@
     document.getElementById('tri').addEventListener('change', function (e) { etatFiltres.tri = e.target.value; appliquerFiltres(); });
     var timer = null;
     document.getElementById('recherche').addEventListener('input', function (e) {
-      clearTimeout(timer); timer = setTimeout(function () { etatFiltres.q = normaliser(e.target.value).split(/\s+/).filter(Boolean); appliquerFiltres(); }, 180);
+      clearTimeout(timer); timer = setTimeout(function () {
+        // "…" entre guillemets = recherche exacte (acronyme ou mot, casse respectée) ; le reste = recherche large
+        var v = e.target.value, exact = [];
+        v = v.replace(/["“”«»]\s*([^"“”«»]+?)\s*["“”«»]/g, function (m0, x) { exact.push(x); return ' '; });
+        etatFiltres.exact = exact;
+        etatFiltres.q = normaliser(v).split(/\s+/).filter(Boolean); appliquerFiltres();
+      }, 180);
     });
     var tg = document.getElementById('toggle-filters'), panneau = document.getElementById('facets');
     tg.addEventListener('click', function () { var o = panneau.hidden; panneau.hidden = !o; tg.setAttribute('aria-expanded', o ? 'true' : 'false'); });
     document.getElementById('reset-filters').addEventListener('click', function () {
       Array.prototype.forEach.call(document.querySelectorAll('input[data-facet]'), function (i) { i.checked = false; });
-      document.getElementById('recherche').value = ''; etatFiltres.q = []; appliquerFiltres();
+      document.getElementById('recherche').value = ''; etatFiltres.q = []; etatFiltres.exact = []; appliquerFiltres();
     });
     document.getElementById('surveiller-bascule').addEventListener('click', function () { montrerFaible = !montrerFaible; appliquerFiltres(); });
     document.getElementById('voir-originaux').addEventListener('change', function (e) { voirOriginaux = e.target.checked; cartes.forEach(function (c) { montrerTexte(c, voirOriginaux); }); });
     document.getElementById('rubriques').addEventListener('click', function (e) {
       var tag = e.target.closest('.tag[data-theme]');
       if (tag) {
-        var inp = document.querySelector('input[data-facet="theme"][value="' + tag.getAttribute('data-theme').replace(/"/g, '\\"') + '"]');
+        var inp = document.querySelector('input[data-facet="' + (tag.getAttribute('data-facette') || 'theme') + '"][value="' + tag.getAttribute('data-theme').replace(/"/g, '\\"') + '"]');
         if (inp) { inp.checked = !inp.checked; if (inp.closest('.chip').hidden) inp.closest('.chip').hidden = false; appliquerFiltres(); }
         return;
       }
@@ -1069,7 +1125,7 @@
       if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return;
       var j = joursJusqua(v);
       if (j < -30 || j > horizon) return;
-      evs.push({ date: v, approx: false, titre: t('applies') + (LANG === 'en' ? (r.nom_en || r.nom) : r.nom), lien: r.lien, ctx: LANG === 'en' ? (r.resume_en || '') : (r.resume_fr || ''), zone: r.zone, source: r.autorite || '', ref: true });
+      evs.push({ date: v, approx: false, titre: t('applies') + refTexte(r).nom, lien: r.lien, ctx: LANG === 'en' ? (r.resume_en || '') : (r.resume_fr || ''), zone: r.zone, source: r.autorite || '', ref: true });
     });
     // une même date et un même lien ne sont affichés qu'une fois
     var vus = {};
@@ -1354,7 +1410,7 @@
   /* ===================================================== TEXTES APPLICABLES */
   function nomCategorie(c) { var x = (REF.categories || {})[String(c)]; return x ? (x[LANG] || x.fr) : String(c || ''); }
   function refTexte(r) {
-    return { nom: LANG === 'en' ? (r.nom_en || r.nom) : r.nom, resume: LANG === 'en' ? (r.resume_en || r.resume_fr) : r.resume_fr,
+    return { nom: LANG === 'en' ? (r.nom_en || r.nom) : (r.nom_fr || r.nom), original: r.nom_original || '', resume: LANG === 'en' ? (r.resume_en || r.resume_fr) : r.resume_fr,
              pourquoi: LANG === 'en' ? (r.pourquoi_en || r.pourquoi_fr) : r.pourquoi_fr };
   }
   function refAutorite(r) { return LANG === 'en' ? (r.autorite_en || r.autorite || '') : (r.autorite || ''); }
@@ -1378,13 +1434,14 @@
         var c = el('div', { className: 'ref-card' }, [
           el('p', { className: 'ref-cat', text: nomCategorie(r.categorie) }),
           el('a', { className: 'ref-nom', href: r.lien, target: '_blank', rel: 'noopener noreferrer', text: x.nom }),
+          x.original ? el('p', { className: 'ref-orig', text: t('ref_original') + x.original }) : null,
           x.resume ? el('p', { text: x.resume }) : null,
           x.pourquoi ? el('p', { className: 'ref-why', text: '→ ' + x.pourquoi }) : null,
           el('div', { className: 'ref-meta' }, [r.acronyme ? badge('badge-statut badge-sm', r.acronyme) : null, badgePert(r, true),
             el('span', { text: [refAutorite(r), t('ref_since') + refDepuis(r.applicable_depuis)].filter(Boolean).join(' · ') }),
             r.amende_max ? badge('badge-fine badge-fine-cap badge-sm', t('ref_fine') + refAmende(r)) : null])
         ]);
-        c._r = r; c._t = normaliser([x.nom, r.nom, r.acronyme, r.autorite, x.resume, nomZone(r.zone)].join(' '));
+        c._r = r; c._t = normaliser([x.nom, r.nom, r.nom_en, r.nom_original, r.acronyme, r.autorite, x.resume, nomZone(r.zone)].join(' '));
         grid.appendChild(c); return c;
       });
       var sec = el('section', { className: 'ref-pays' }, [el('h3', { text: nomZone(z) + ' · ' + zones[z].length }), grid]);
@@ -1593,27 +1650,32 @@
   }
 
   function renderAcronymes() {
-    var tbody = document.getElementById('acro-lignes'), liste = ACRO.acronymes || [], nouveaux = 0;
-    liste.forEach(function (e) {
-      var nouveau = joursDepuis(e.premier_vu) <= 7, dans = e.dans_glossaire;
-      if (nouveau) nouveaux++;
-      tbody.appendChild(el('tr', { 'data-nouveau': nouveau ? '1' : '', 'data-hors': dans ? '' : '1', 'data-texte': normaliser([e.code].concat(e.variantes || []).join(' ')) }, [
-        el('td', null, [el('strong', { text: libelleAcro(e.code) }), nouveau ? badge('badge-new badge-sm', t('new_badge')) : null]),
-        el('td', { text: (e.variantes || []).join(', ') }), el('td', { className: 'num', text: String(e.nb_articles || 0) }),
-        el('td', { text: (e.langues || []).map(function (l) { return (l || '').toUpperCase(); }).join(', ') }), el('td', { text: dateLongue(e.premier_vu) }),
-        el('td', null, [el('span', { className: 'mode ' + (dans ? 'mode-ok' : 'mode-off'), text: dans ? t('ac_in') : t('ac_todo') })]),
-        el('td', { className: 'remarque' }, [e.lien_exemple ? el('a', { href: e.lien_exemple, target: '_blank', rel: 'noopener noreferrer', text: e.exemple }) : (e.exemple || '')])
+    var tbody = document.getElementById('acro-lignes');
+    var suivis = ACRO.suivis || [], cands = ACRO.candidats || [];
+    function titreEx(x) {   // titre d'exemple dans la langue du site (traduction si disponible)
+      if (!x) return '';
+      if (x.langue === LANG) return x.titre;
+      return (LANG === 'en' ? x.titre_en : x.titre_fr) || x.titre;
+    }
+    function ligne(code, lib, type, n, ex) {
+      tbody.appendChild(el('tr', { 'data-type': type, 'data-texte': normaliser(code + ' ' + lib + ' ' + titreEx(ex)) }, [
+        el('td', null, [el('strong', { text: code }), lib && lib !== code ? el('span', { className: 'block-meta', text: ' — ' + lib }) : null]),
+        el('td', null, [el('span', { className: 'mode ' + (type === 'candidat' ? 'mode-off' : 'mode-ok'), text: t('ac_type')[type] })]),
+        el('td', { className: 'num', text: String(n || 0) }),
+        el('td', { className: 'remarque' }, ex ? [dateCourte(ex.date) + ' · ', el('a', { href: ex.lien, target: '_blank', rel: 'noopener noreferrer', text: titreEx(ex) })] : [])
       ]));
-    });
-    document.getElementById('acro-resume').textContent = liste.length ? '· ' + t('ac_summary')(liste.length, nouveaux) : '';
+    }
+    suivis.forEach(function (e) { ligne(e.code, e[LANG] || e.fr, e.groupe, e.nb_articles, e.exemple); });
+    cands.forEach(function (e) { ligne(e.code, '', 'candidat', e.nb_articles, e.exemple); });
+    document.getElementById('acro-resume').textContent = (suivis.length || cands.length) ? '· ' + t('ac_summary')(suivis.length, cands.length) : '';
     var r = document.getElementById('acro-recherche'), choix = '';
     function filtrer() {
       var q = normaliser(r.value).trim(), n = 0;
       Array.prototype.forEach.call(tbody.children, function (tr) {
-        var ok = (!choix || (choix === 'nouveau' ? tr.getAttribute('data-nouveau') : tr.getAttribute('data-hors'))) && (!q || tr.getAttribute('data-texte').indexOf(q) !== -1);
+        var ok = (!choix || tr.getAttribute('data-type') === choix) && (!q || tr.getAttribute('data-texte').indexOf(q) !== -1);
         tr.hidden = !ok; if (ok) n++;
       });
-      document.getElementById('acro-vide').hidden = n !== 0 || !liste.length;
+      document.getElementById('acro-vide').hidden = n !== 0;
     }
     document.getElementById('acro-filtres').addEventListener('choix', function (e) { choix = e.detail.getAttribute('data-a'); filtrer(); });
     r.addEventListener('input', filtrer);
@@ -1752,7 +1814,7 @@
              source: d.source, zone: nomZone(d.zone), nature: libNature(d.nature), pert: d.pertinence ? t('pert_badge')[d.pertinence] : '',
              statut: d.statut ? libStatut(d.statut) : '', amende: d.amende ? (d.amende.plafond ? t('fine_cap') : '') + d.amende.texte : '', montant: d.amende ? d.amende.montant_eur : '',
              echeances: (d.echeances || []).map(function (e) { return (e.approx ? t('approx') + ' ' : '') + dateLongue(e.date); }).join(' ; '),
-             pourquoi: d.nature === 'synthese' ? '' : pourquoiTexte(d), themes: (c._f.theme || []).map(libelleTheme).join(', '), lien: d.lien, traduit: tx.traduit && !d.base };
+             pourquoi: d.nature === 'synthese' ? '' : pourquoiTexte(d), themes: (c._f.theme || []).concat(c._f.autorite || []).map(libelleTheme).join(', '), lien: d.lien, traduit: tx.traduit && !d.base };
   }
   function cartesAffichees() { return cartes.filter(function (c) { return c.isConnected && c.closest('.rub') && !c.closest('.rub').hidden; }); }
   function telechargerCsv(lignes, prefixe) {

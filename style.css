@@ -414,3 +414,9 @@ body.pdf-rendering .pdf-chunk { display: block; font-size: 10.5pt; color: #000; 
 .pdf-chunk .pr-link { color: #1f4e79; font-size: 8.5pt; word-break: break-all; }
 .btn-avis { white-space: nowrap; }
 #ec-lignes td:first-child { white-space: nowrap; }
+.ref-orig { font-size: 12.5px; color: var(--ink-dim); font-style: italic; margin: 2px 0 0; }
+/* tableau des sources : les longues adresses passent à la ligne, le bouton « Retirer » reste visible */
+.remarque { overflow-wrap: anywhere; word-break: break-word; max-width: 360px; }
+#etat-lignes td:last-child { white-space: nowrap; }
+#etat-lignes td:nth-child(2) { min-width: 160px; }
+.search-hint { font-size: 12.5px; color: var(--ink-dim); margin: -6px 0 10px; }

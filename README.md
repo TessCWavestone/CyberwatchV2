@@ -38,6 +38,22 @@ sources (EUR-Lex JO L et C, JO français, CEN-CENELEC, ETSI, BGBl, SFS,
 Swissmedic, Helsedirektoratet), corrections (MDCG, doublons, titres parasites,
 traductions en boucle, dates d'événements prises pour des échéances).
 
+## Version 4.3 (30/09/2026)
+
+- **Sujets suivis** (`collecte/sujets.py`) : liste fermée et relue de ~40 textes et normes (NIS2, CRA, AI Act, RGPD,
+  IVDR, MDR, MDCG, EHDS, ENS, DTAC, HDS, ISO 27001…) et ~55 autorités (CNIL, ANSSI, BSI, NCSC, ENISA…). Ce sont
+  les seuls filtres de Veille › Affiner (« Textes et normes », « Autorités », « Grands thèmes »). Les autres
+  acronymes fréquents des articles pertinents apparaissent comme « candidats » dans Sources › Sujets suivis :
+  pour en ajouter un, ajoutez une ligne dans `collecte/sujets.py` (ou demandez-le à Claude).
+- **Recherche exacte** : un acronyme entre guillemets (`"ENS"`) ne renvoie que les articles où il est détecté.
+- **Sources officielles** : leurs alertes de vulnérabilités, événements, vœux, actualités de police… sont
+  désormais écartées (consultables dans la liste des écartés) ; « à surveiller » ne garde que ce qui touche la
+  cyber, les données, l'IA ou la santé.
+- **Textes applicables** : titres traduits en français (titre d'origine affiché dessous).
+- **Collecte du lundi** : créneaux décalés (7 h 17 heure de Paris) + créneaux de secours, car GitHub retarde ou
+  abandonne souvent les tâches programmées « pile à l'heure ». Vérification : Actions › Cyber Watch - collecte,
+  les lancements programmés apparaissent avec l'événement « schedule ».
+
 ## Contenu du dossier
 
 | Fichier | Rôle | Qui le modifie |

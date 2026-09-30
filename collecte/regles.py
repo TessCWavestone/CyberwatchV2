@@ -409,16 +409,20 @@ def evaluer(a, seuils, score_neg=None):
         niveau, motif = "ecarte", "sujet hors Europe sans portée mondiale"
     elif br and not officiel:
         niveau, motif = "ecarte", "hors sujet : " + ", ".join(br)
+    elif br and not (SIGNAL_NET.search(t) and SUJET_FORT.search(t)):
+        # même venant d'une source officielle : alertes de vulnérabilités, événements, vœux, police… sont écartés
+        # (restent consultables dans la liste des écartés)
+        niveau, motif = "ecarte", "source officielle, hors sujet : " + ", ".join(br)
     elif br:
         niveau, motif = "faible", "source officielle, sujet secondaire : " + ", ".join(br)
     elif sujet and SIGNAL_NET.search(t) and s >= haut:
         niveau = "elevee"
     elif sujet and s >= moy and (sig or officiel):
         niveau = "moyenne"
+    elif officiel and (sujet or s >= moy):
+        niveau = "faible"   # source officielle proche du sujet : gardée « à surveiller »
     elif officiel:
-        niveau = "faible"   # une source officielle n'est jamais écartée (sauf source volumineuse)
-        if not sujet:
-            motif = "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
+        niveau, motif = "ecarte", "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
     elif (sujet and s >= bas) or s >= moy:
         niveau = "faible"
     else:

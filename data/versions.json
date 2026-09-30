@@ -6396,6 +6396,21 @@
    "sources_lues": 156,
    "sources_actives": 157,
    "declenchement": "workflow_dispatch"
+  },
+  {
+   "id": "2026-09-30-0842",
+   "date": "2026-09-30T08:42+00:00",
+   "nb_total": 1793,
+   "nb_nouveaux": 1,
+   "nouveaux": [
+    "825cff769fa8"
+   ],
+   "rattrapage": "",
+   "nb_essentiel": 232,
+   "nb_ecartes": 10,
+   "sources_lues": 156,
+   "sources_actives": 157,
+   "declenchement": "workflow_dispatch"
   }
  ]
 }

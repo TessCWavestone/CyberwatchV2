@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-09-30T08:16+00:00",
+ "mise_a_jour": "2026-09-30T08:42+00:00",
  "articles": [
   {
    "id": "46ae715984b5",
@@ -12,6 +12,114 @@
    "motif": "source officielle, hors sujet : proche d'un thème hors sujet (modèle)",
    "score": 0.3,
    "nature": "officielle"
+  },
+  {
+   "id": "d629f7069ae9",
+   "titre": "Commission Implementing Decision (EU) 2026/2189 of 24 September 2026 laying down rules for the application of Directive (EU) 2016/797 of the European Parliament and of the Council as regards a request from Greece not to apply the requirement to install ETCS on board vehicles set out in Commission Implementing Regulation (EU) 2023/1695 (notified under document C(2026) 6839)",
+   "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2189",
+   "source": "Législation de l’UE - EUR-Lex",
+   "zone": "Europe",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique",
+   "score": 0.502,
+   "nature": "officielle"
+  },
+  {
+   "id": "71246a19c673",
+   "titre": "Council Implementing Decision (EU) 2026/2194 of 22 September 2026 authorising Spain to apply reduced rates of excise duty to gas oil and unleaded petrol used as motor fuels, pursuant to Article 19 of Directive 2003/96/EC",
+   "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2194",
+   "source": "Législation de l’UE - EUR-Lex",
+   "zone": "Europe",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique",
+   "score": 0.338,
+   "nature": "officielle"
+  },
+  {
+   "id": "49049694ac24",
+   "titre": "Court of Justice of the EU: Member states’ representatives appoint a judge to the Court of Justice and two judges to the General Court",
+   "lien": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/30/court-of-justice-of-the-eu-member-states-representatives-appoint-a-judge-to-the-court-of-justice-and-two-judges-to-the-general-court/",
+   "source": "Conseil de l'Union Européenne",
+   "zone": "Europe",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique",
+   "score": 0.277,
+   "nature": "officielle"
+  },
+  {
+   "id": "928b3789e083",
+   "titre": "Microsoft maakt Windows 11 versie 26H2 breed beschikbaar",
+   "lien": "https://www.security.nl/posting/955235/Microsoft+maakt+Windows+11+versie+26H2+breed+beschikbaar?channel=rss",
+   "source": "Security.NL",
+   "zone": "Pays-Bas",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "aucun lien avec la cyber, les données, l'IA ou la santé",
+   "score": 0.211,
+   "nature": "presse"
+  },
+  {
+   "id": "2fa3fc379d98",
+   "titre": "GPT-6 Astra gik til angreb på projekter uden for testens rammer",
+   "lien": "https://www.cert.dk/news/2026-09-30/GPT-6-Astra-gik-til-angreb-paa-projekter-uden-for-testens-rammer",
+   "source": "DKCERT (CERT danois de la recherche et de l'éducation) — actualités",
+   "zone": "Danemark",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "source officielle, hors sujet : proche d'un thème hors sujet (modèle)",
+   "score": 0.311,
+   "nature": "officielle"
+  },
+  {
+   "id": "86b631065952",
+   "titre": "Plásticos Durex migra su plataforma tecnológica a SAP S/HANA",
+   "lien": "https://www.computing.es/erp/plasticos-durex-migra-su-plataforma-tecnologica-a-sap-s-hana/",
+   "source": "Computing España",
+   "zone": "Espagne",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "source volumineuse : seuls les articles pertinents sont gardés",
+   "score": 0.36,
+   "nature": "presse"
+  },
+  {
+   "id": "208e416136e6",
+   "titre": "La IA migra al dispositivo: El 76% de las empresas teme la fuga de datos en la nube",
+   "lien": "https://www.computing.es/inteligencia-artificial/la-ia-migra-al-dispositivo-el-76-de-las-empresas-teme-la-fuga-de-datos-en-la-nube/",
+   "source": "Computing España",
+   "zone": "Espagne",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "hors sujet : proche d'un thème hors sujet (modèle)",
+   "score": 0.49,
+   "nature": "presse"
+  },
+  {
+   "id": "c4b02f130e12",
+   "titre": "Datasenterindustrien slakter Teknologirådet: – Bommer totalt",
+   "lien": "https://www.digi.no/digitalisering-og-offentlig-it/datasenterindustrien-slakter-teknologiradet-bommer-totalt/7141845",
+   "source": "Digi.no (presse numérique norvégienne)",
+   "zone": "Norvège",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "source volumineuse : seuls les articles pertinents sont gardés",
+   "score": 0.522,
+   "nature": "presse"
+  },
+  {
+   "id": "35a120fdfda2",
+   "titre": "Regjeringen vil stramme inn regler for datasentre",
+   "lien": "https://www.digi.no/digitalisering-og-offentlig-it/regjeringen-vil-stramme-inn-regler-for-datasentre/7141796",
+   "source": "Digi.no (presse numérique norvégienne)",
+   "zone": "Norvège",
+   "date": "2026-09-30",
+   "detecte_le": "2026-09-30",
+   "motif": "source volumineuse : seuls les articles pertinents sont gardés",
+   "score": 0.561,
+   "nature": "presse"
   },
   {
    "id": "cff49ca6202c",
@@ -1752,6 +1860,18 @@
    "motif": "source volumineuse : seuls les articles pertinents sont gardés",
    "score": 0.477,
    "nature": "presse"
+  },
+  {
+   "id": "b78e9603cd2f",
+   "titre": "Vedení odboru politiky závislostí jednalo se zástupci Institutu pro regulaci hazardních her",
+   "lien": "https://mzd.gov.cz/vedeni-odboru-politiky-zavislosti-jednalo-se-zastupci-institutu-pro-regulaci-hazardnich-her/",
+   "source": "Ministerstvo zdravotnictví ČR (ministère de la santé)",
+   "zone": "Rép. Tchèque",
+   "date": "2026-09-29",
+   "detecte_le": "2026-09-30",
+   "motif": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique",
+   "score": 0.411,
+   "nature": "officielle"
   },
   {
    "id": "d7d5e4d1a178",
@@ -49273,131 +49393,6 @@
    "motif": "source officielle, hors sujet : événements / webinaires",
    "score": 0.623,
    "nature": "officielle"
-  },
-  {
-   "id": "85b13d06648c",
-   "titre": "Kwetsbaarheid in N-central van N-able: update nu",
-   "titre_en": "Vulnerability in N-central of N-able: update now",
-   "lien": "https://www.ncsc.nl/alerts/kwetsbaarheid-in-n-central-van-n-able-update-nu",
-   "source": "Centre National de Cybersécurité",
-   "zone": "Pays-Bas",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "source officielle, hors sujet : vulnérabilités / alertes techniques",
-   "score": 0.488,
-   "nature": "officielle"
-  },
-  {
-   "id": "310df2a979ab",
-   "titre": "Forum Cyfryzacji 2026. Trzy dni rozmów o AI, cyberbezpieczeństwie i cyfrowej przyszłości Polski",
-   "titre_en": "Digital Forum 2026. Three days of talks about AI, cyber security and the digital future of Poland",
-   "lien": "https://www.gov.pl/web/cyfryzacja/forum-cyfryzacji-2026-trzy-dni-rozmow-o-ai-cyberbezpieczenstwie-i-cyfrowej-przyszlosci-polski",
-   "source": "Ministère du numérique",
-   "zone": "Pologne",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "source officielle, hors sujet : événements / webinaires",
-   "score": 0.446,
-   "nature": "officielle"
-  },
-  {
-   "id": "a1f5b4430ff7",
-   "titre": "Rok z mStłuczką - tak mObywatel ułatwia życie po kolizji drogowej",
-   "titre_en": "Year with mShip - so mCitizen facilitates life after road collision",
-   "lien": "https://www.gov.pl/web/cyfryzacja/rok-z-mstluczka--tak-mobywatel-ulatwia-zycie-po-kolizji-drogowej",
-   "source": "Ministère du numérique",
-   "zone": "Pologne",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique",
-   "score": 0.39,
-   "nature": "officielle"
-  },
-  {
-   "id": "a524825f1382",
-   "titre": "Agility – key principle for modern regulation",
-   "lien": "https://www.berec.europa.eu/en/news/latest-news/agility-key-principle-for-modern-regulation",
-   "source": "BEREC (télécoms)",
-   "zone": "Europe",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "source officielle, hors sujet : événements / webinaires, télécoms",
-   "score": 0.469,
-   "nature": "officielle"
-  },
-  {
-   "id": "57a3667a7912",
-   "titre": "Mobiliser la commande publique au service de l’emploi, de la production et de l’innovation en France",
-   "titre_en": "Mobilising public procurement for employment, production and innovation in France",
-   "lien": "https://www.assemblee-nationale.fr/dyn/17/dossiers/mobiliser_commande_publique_service_emploi_production_innovation_france_17e",
-   "source": "Assemblée nationale - Dossiers législatifs",
-   "zone": "France",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "source officielle, hors sujet : événements / webinaires",
-   "score": 0.354,
-   "nature": "officielle"
-  },
-  {
-   "id": "43a981f835a5",
-   "titre": "Commission publishes joint clinical assessment report on an advanced therapy medicine for spinal muscular atrophy",
-   "lien": "https://health.ec.europa.eu/node/17496",
-   "source": "Medical Device Coordination Group",
-   "zone": "Europe",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique",
-   "score": 0.336,
-   "nature": "officielle"
-  },
-  {
-   "id": "0773fad8bf39",
-   "titre": "CaixaBank: Cómo ha sido la caída de su infraestructura digital",
-   "titre_en": "CaixaBank: How your digital infrastructure has fallen",
-   "lien": "https://www.redseguridad.com/actualidad/caixabank-como-ha-sido-la-caida-de-su-infraestructura-digital_20260907.html",
-   "source": "Red Seguridad (revue cyber espagnole)",
-   "zone": "Espagne",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "hors sujet : finance / banque",
-   "score": 0.417,
-   "nature": "presse"
-  },
-  {
-   "id": "7a14462ed9cb",
-   "titre": "N-able Releases Hotfix for Critical Remote Code Execution Vulnerability",
-   "lien": "https://www.infosecurity-magazine.com/news/nable-hotfix-critical-rce/",
-   "source": "Infosecurity Magazine (UK)",
-   "zone": "Royaume-Uni",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "hors sujet : vulnérabilités / alertes techniques",
-   "score": 0.531,
-   "nature": "presse"
-  },
-  {
-   "id": "007ceef72c6c",
-   "titre": "Rhysida Publishes Berlin Government Data After €2m Extortion Demand Refused",
-   "lien": "https://www.infosecurity-magazine.com/news/rhysida-berlin-data-extortion/",
-   "source": "Infosecurity Magazine (UK)",
-   "zone": "Royaume-Uni",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "hors sujet : menaces / incidents",
-   "score": 0.491,
-   "nature": "presse"
-  },
-  {
-   "id": "d99d97c36861",
-   "titre": "Multiple Class Action Lawsuits Filed Against IDScan",
-   "lien": "https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/",
-   "source": "Infosecurity Magazine (UK)",
-   "zone": "Royaume-Uni",
-   "date": "2026-09-07",
-   "detecte_le": "2026-09-24",
-   "motif": "aucun lien avec la cyber, les données, l'IA ou la santé",
-   "score": 0.396,
-   "nature": "presse"
   }
  ]
 }

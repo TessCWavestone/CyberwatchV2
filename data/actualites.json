@@ -3,8 +3,8 @@
   "titre": "Cyber Watch",
   "surtitre": "Veille réglementaire — Wavestone",
   "sous_titre": "Cybersécurité · Données · IA · Dispositifs médicaux — collecte automatique chaque lundi",
-  "mise_a_jour": "2026-09-30T08:16+00:00",
-  "version": "2026-09-30-0816",
+  "mise_a_jour": "2026-09-30T08:42+00:00",
+  "version": "2026-09-30-0842",
   "nb_sources": 156,
   "url_lancer_maj": "https://github.com/TessCWavestone/CyberwatchV2/actions/workflows/veille.yml",
   "depot": "TessCWavestone/CyberwatchV2",
@@ -13,12 +13,12 @@
   "traduction": {
    "active": true,
    "moteur": true,
-   "faites": 75,
+   "faites": 4,
    "en_attente": 0,
    "erreur": ""
   },
-  "nb_nouveaux": 19,
-  "nb_ecartes_nouveaux": 196,
+  "nb_nouveaux": 1,
+  "nb_ecartes_nouveaux": 10,
   "nb_essentiel": 232,
   "textes_cles_en": {
    "RGPD / GDPR": "GDPR",
@@ -651,7 +651,7 @@
     "groupe": "autorites"
    }
   },
-  "nb_versions": 6
+  "nb_versions": 7
  },
  "articles": [
   {
@@ -1438,6 +1438,59 @@
    ],
    "acronymes": [
     "ISO 27001"
+   ]
+  },
+  {
+   "id": "825cff769fa8",
+   "titre": "Nu startar Tänk Säkert 2026",
+   "lien": "https://www.ncsc.se/sv/aktuellt/nu-startar-tank-sakert-2026/",
+   "resume": "30 sep. 2026 kl. 10:23 NYHET I oktober är det dags för Tänk Säkert – den nationella informationskampanjen som Nationellt cybersäkerhetscenter genomför tillsammans med polisen och över 20 samarbetspartners inom både offentlig och privat sektor.",
+   "date": "2026-09-30",
+   "date_estimee": false,
+   "detecte_le": "2026-09-30",
+   "version": "2026-09-30-0842",
+   "source": "Agence pour la défense civile",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.49,
+   "score": 0.665,
+   "themes": [
+    "nis2",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "sv",
+   "trad": {
+    "en": {
+     "titre": "Thinking Surely 2026",
+     "resume": "2026 at 10:23 NYHET In October, the National Information Campaign that the National Cybersecurity Centre conducts with the police and over 20 partners in both the public and private sectors."
+    },
+    "fr": {
+     "titre": "Penser sûrement 2026",
+     "resume": "2026 à 10:23 NYHET En octobre, la Campagne nationale d'information que le Centre national de cybersécurité mène avec la police et plus de 20 partenaires des secteurs public et privé."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "MCF"
+   ],
+   "acronymes": [
+    "MCF"
    ]
   },
   {
@@ -32995,11 +33048,11 @@
     "IVDR",
     "MDCG"
    ],
-   "doublon_de": "1de3670a1438",
    "sujets": [
     "IVDR",
     "MDCG"
-   ]
+   ],
+   "doublon_de": "1de3670a1438"
   },
   {
    "id": "f37b228e8afd",
@@ -34343,6 +34396,10 @@
    ],
    "motif": "texte clé : IVDR, MDCG",
    "statut": "lignes_directrices",
+   "sujets": [
+    "IVDR",
+    "MDCG"
+   ],
    "aussi": [
     {
      "source": "Commission européenne — DG SANTE (santé publique, santé numérique)",
@@ -34350,10 +34407,6 @@
      "date": "2026-09-09",
      "publication": ""
     }
-   ],
-   "sujets": [
-    "IVDR",
-    "MDCG"
    ]
   },
   {
@@ -49705,10 +49758,10 @@
    "acronymes": [
     "CRA"
    ],
-   "doublon_de": "6e87303c8934",
    "sujets": [
     "CRA"
-   ]
+   ],
+   "doublon_de": "6e87303c8934"
   },
   {
    "id": "17980d5fbf62",
@@ -49900,6 +49953,9 @@
      "resume": "17 août 2026 L'Institut européen des normes de télécommunications a lancé un processus d'approbation pour les fournisseurs de normes qui devront se conformer à la loi sur la cyberrésilience"
     }
    },
+   "sujets": [
+    "CRA"
+   ],
    "aussi": [
     {
      "source": "Veille RKC (Wavestone)",
@@ -49907,9 +49963,6 @@
      "date": "2026-08-17",
      "publication": "ITSecurityNews.info"
     }
-   ],
-   "sujets": [
-    "CRA"
    ]
   },
   {
@@ -78846,8 +78899,8 @@
      "resume": "Nouvelle article 21 mai 2026 Afin d'évaluer les propositions de projets soumises dans le cadre des appels au titre du programme pour l'Europe numérique, HaDEA (Agence exécutive européenne pour la santé et le numérique) recherche des experts."
     }
    },
-   "doublon_de": "919e1df51581",
-   "sujets": []
+   "sujets": [],
+   "doublon_de": "919e1df51581"
   },
   {
    "id": "49e2b84cff26",
@@ -79413,6 +79466,7 @@
      "resume": "Nouvelle annonce 20 mai 2026 HaDEA cherche des experts pour évaluer les propositions de projets soumises dans le cadre des appels du programme Europe numérique. 1 min lire"
     }
    },
+   "sujets": [],
    "aussi": [
     {
      "source": "Commission Européenne - Cybersecurity",
@@ -79420,8 +79474,7 @@
      "date": "2026-05-21",
      "publication": ""
     }
-   ],
-   "sujets": []
+   ]
   },
   {
    "id": "b6c1e7159a76",

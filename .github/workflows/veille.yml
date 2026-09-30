@@ -21,6 +21,11 @@ on:
         description: "Rattrapage des archives depuis cette date (AAAA-MM-JJ). Laisser vide pour une collecte normale."
         required: false
         default: ""
+      retester_inactives:
+        description: "Retester aussi les sources inactives (sinon : automatiquement le 1er lundi du mois)"
+        type: boolean
+        required: false
+        default: false
 
 env:
   BRANCHE_VEILLE: main  # dépôt dédié : tout est sur la branche main
@@ -116,6 +121,7 @@ jobs:
         run: python collecte/collecte.py
         env:
           RATTRAPAGE_DEPUIS: ${{ github.event.inputs.rattrapage_depuis }}
+          RETEST_INACTIVES: ${{ github.event.inputs.retester_inactives }}
           # Journal officiel français : données ouvertes de la DILA, aucun identifiant nécessaire.
 
       - name: Enregistrer les données et marquer la version

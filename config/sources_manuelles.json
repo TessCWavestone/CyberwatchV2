@@ -1,11 +1,15 @@
 {
   "_aide": "Sources ajoutées ou retirées depuis le site (onglet Sources). Ce fichier est modifié par le site ; vous pouvez aussi l'éditer à la main. 'ajouts' : nouvelles sources (en plus de l'Excel). 'retraits' : sources de l'Excel ou ajoutées qui ne doivent plus être interrogées. Pris en compte à la collecte suivante.",
-  "ajouts": [],
-  "retraits": [
+  "ajouts": [
     {
+      "nom": "VLADA",
+      "zone": "Rép. Tchèque",
+      "type": "Site gouvernemental officiel",
       "url": "https://vlada.gov.cz/",
-      "nom": "Vláda ČR — centre de presse du gouvernement",
-      "retire_le": "2026-09-30"
+      "flux": [],
+      "pages": [],
+      "ajoute_le": "2026-09-30"
     }
-  ]
+  ],
+  "retraits": []
 }

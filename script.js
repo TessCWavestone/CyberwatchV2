@@ -42,7 +42,9 @@
   var T = {
     fr: {
       skip: 'Aller au contenu', btn_export: 'Exporter ▾', btn_update: 'Lancer une mise à jour',
-      ref_original: "Titre d'origine : ", aussi: 'Aussi publié par : ', rkc_veilles: 'Alertes RKC lues : ', rkc_n: function (n) { return n + ' articles'; },
+      ref_original: "Titre d'origine : ", reactivable: 'Réactivable', reactivable_t: 'Le dernier test mensuel a pu lire cette source : elle peut être remise en « Actif » dans config/sources.xlsx.',
+      retest_ok: function (d, n) { return 'Nouveau test du ' + d + ' : de nouveau lisible (' + n + ' articles trouvés), peut être réactivée'; },
+      retest_ko: function (d) { return 'Nouveau test du ' + d + ' : toujours illisible'; }, aussi: 'Aussi publié par : ', rkc_veilles: 'Alertes RKC lues : ', rkc_n: function (n) { return n + ' articles'; },
       agenda_none_more: function (h) { return 'Aucune autre échéance repérée au-delà de ' + h + ' : les dates clés viennent des textes (« d’ici le… », « applicable à compter du… ») et des textes applicables.'; },
       tm_title: 'Nouvelles réglementations et normes',
       tm_lead: "Tous les textes importants de la période (lois, décrets, lignes directrices, normes, consultations), regroupés par texte : un sujet repris par plusieurs sources n'apparaît qu'une fois, avec toutes ses sources. Classement par règles fixes (textes clés, signal réglementaire), sans IA générative. En cas de doute, l'article est gardé et marqué « à vérifier ».",
@@ -128,7 +130,7 @@
       deb_trends: 'Sujets qui montent chez les experts', deb_trends_lead: "Nombre de publications d'experts citant chaque sujet : 60 jours précédents → 60 derniers jours. Un simple comptage, sans interprétation.",
       deb_list: 'Dernières prises de position', deb_search_ph: 'Filtrer les avis…', deb_empty: "Aucun avis d'expert collecté pour l'instant : ils apparaîtront après la prochaine collecte.",
       deb_mention: "Avis d'expert — supposition, non certifié", deb_none_trend: 'Pas encore assez de publications pour dégager des tendances.', deb_pdf: 'Annexe — Débats et signaux (NON CERTIFIÉ : avis et suppositions)',
-      src_title: 'Sources de la veille', src_lead: "Toutes les sources (Excel, ajouts faits depuis ce site, veille RKC) et leur accessibilité lors de la dernière collecte. Vous pouvez ajouter ou retirer une source : c'est pris en compte à la collecte suivante.",
+      src_title: 'Sources de la veille', src_lead: "Toutes les sources (liste maîtresse config/sources.xlsx du dépôt GitHub, ajouts faits depuis ce site, veille RKC) et leur accessibilité lors de la dernière collecte. Les sources « ignorées » ne sont pas collectées (motif affiché) ; elles sont retestées automatiquement le 1er lundi de chaque mois. Vous pouvez ajouter ou retirer une source : c'est pris en compte à la collecte suivante.",
       src_summary: function (q, n) { return (q ? 'Dernière collecte : ' + q + ' · ' : '') + n + ' sources'; }, src_none: 'La liste apparaîtra après la première collecte.',
       s_all: 'Toutes', s_ok: 'Accessibles', s_partial: 'Partielles', s_ko: 'Inaccessibles', s_other: 'Ignorées', src_search_ph: 'Filtrer par nom ou pays…', src_empty: 'Aucune source ne correspond.',
       st_ok: 'accessibles', st_partial: 'partielles', st_ko: 'inaccessibles', st_other: 'ignorées ou retirées',
@@ -177,7 +179,9 @@
     },
     en: {
       skip: 'Skip to content', btn_export: 'Export ▾', btn_update: 'Run an update',
-      ref_original: 'Original title: ', aussi: 'Also published by: ', rkc_veilles: 'RKC alerts read: ', rkc_n: function (n) { return n + ' articles'; },
+      ref_original: 'Original title: ', reactivable: 'Can be reactivated', reactivable_t: 'The last monthly test could read this source: it can be set back to “Actif” in config/sources.xlsx.',
+      retest_ok: function (d, n) { return 'Re-tested on ' + d + ': readable again (' + n + ' articles found), can be reactivated'; },
+      retest_ko: function (d) { return 'Re-tested on ' + d + ': still unreadable'; }, aussi: 'Also published by: ', rkc_veilles: 'RKC alerts read: ', rkc_n: function (n) { return n + ' articles'; },
       agenda_none_more: function (h) { return 'No other deadline found beyond ' + h + ': key dates come from the texts (“by…”, “applicable from…”) and from the applicable texts.'; },
       tm_title: 'New regulations and standards',
       tm_lead: 'Every important text of the period (laws, decrees, guidelines, standards, consultations), grouped by text: a topic covered by several sources appears once, with all its sources. Ranked by fixed rules (key texts, regulatory signal), with no generative AI. When in doubt, the article is kept and marked “to be checked”.',
@@ -263,7 +267,7 @@
       deb_trends: 'Topics rising among experts', deb_trends_lead: 'Number of expert publications mentioning each topic: previous 60 days → last 60 days. A plain count, with no interpretation.',
       deb_list: 'Latest positions', deb_search_ph: 'Filter opinions…', deb_empty: 'No expert opinion collected yet: they will appear after the next collection.',
       deb_mention: 'Expert opinion — assumption, not certified', deb_none_trend: 'Not enough publications yet to show trends.', deb_pdf: 'Annex — Debates & signals (NOT CERTIFIED: opinions and assumptions)',
-      src_title: 'Watch sources', src_lead: 'Every source (spreadsheet, additions made on this site, RKC watch) and whether it could be read during the last collection. You can add or remove a source: it applies from the next collection.',
+      src_title: 'Watch sources', src_lead: 'Every source (master list config/sources.xlsx in the GitHub repository, additions made on this site, RKC watch) and whether it could be read during the last collection. “Ignored” sources are not collected (reason shown); they are re-tested automatically on the first Monday of each month. You can add or remove a source: it applies from the next collection.',
       src_summary: function (q, n) { return (q ? 'Last collection: ' + q + ' · ' : '') + n + ' sources'; }, src_none: 'The list will appear after the first collection.',
       s_all: 'All', s_ok: 'Reachable', s_partial: 'Partial', s_ko: 'Unreachable', s_other: 'Ignored', src_search_ph: 'Filter by name or country…', src_empty: 'No source matches.',
       st_ok: 'reachable', st_partial: 'partial', st_ko: 'unreachable', st_other: 'ignored or removed',
@@ -1529,9 +1533,14 @@
     [/Statut « ([^»]+) » dans l'Excel : source non interrogée\./g, 'Status “$1” in the spreadsheet: source not queried.'],
     [/Retirée depuis le site : plus interrogée\./g, 'Removed from the site: no longer queried.'],
     [/Liste des archives DILA illisible : /g, 'DILA archive list unreadable: '], [/(\d+) archive\(s\) du JO lue\(s\)/g, '$1 Official Journal archive(s) read'],
-    [/aucun article Newsdesk reconnu/g, 'no Newsdesk article recognised']
+    [/aucun article Newsdesk reconnu/g, 'no Newsdesk article recognised'],
+    [/Retirée le ([\d\/]+) : le site bloque les robots \(erreur 403 ou page protégée\)\./g, 'Removed on $1: the site blocks robots (403 error or protected page).'],
+    [/Retirée le ([\d\/]+) : page construite en JavaScript, aucun article lisible par le serveur\./g, 'Removed on $1: page built with JavaScript, no article readable by the server.'],
+    [/Doublon de « ([^»]+) » : non interrogée\./g, 'Duplicate of “$1”: not queried.'], [/Remplacée par « ([^»]+) »\./g, 'Replaced by “$1”.'],
+    [/Désactivée dans la liste des sources \(config\/sources\.xlsx\)/g, 'Disabled in the source list (config/sources.xlsx)']
   ];
   function traduireErreur(txt) { if (LANG !== 'en') return txt; ERREURS_EN.forEach(function (r) { txt = txt.replace(r[0], r[1]); }); return txt; }
+  function inactifSrc(s) { return s.acces === 'inactive' || s.acces === 'retiree'; }
   function accesDe(s) { return s.acces || (s.mode === 'erreur' ? 'ko' : (s.erreur ? 'partielle' : 'ok')); }
 
   function renderEtat() {
@@ -1545,7 +1554,8 @@
       compte[groupe]++;
       var details = [s.flux ? t('d_feed') + s.flux : '', s.page ? t('d_pages') + s.page : '',
         (s.veilles && s.veilles.length) ? t('rkc_veilles') + s.veilles.map(function (v) { return (v.date ? dateLongue(v.date) : '?') + ' (' + t('rkc_n')(v.articles) + ')'; }).join(', ') : '',
-        s.erreur ? '⚠ ' + traduireErreur(s.erreur) : ''].filter(Boolean).join(' · ');
+        s.erreur ? (inactifSrc(s) ? '' : '⚠ ') + traduireErreur(s.erreur) : '',
+        s.retest ? (s.retest.lisible ? t('retest_ok')(dateLongue(s.retest.date), s.retest.nb_trouves) : t('retest_ko')(dateLongue(s.retest.date))) : ''].filter(Boolean).join(' · ');
       var inactif = ['inactive', 'attente', 'retiree'].indexOf(a) !== -1;
       var action = !s.url ? null : (a === 'retiree'
         ? el('button', { type: 'button', className: 'btn btn-sm', 'data-src-action': 'retablir', 'data-url': s.url, 'data-nom': s.nom, text: t('src_restore') })
@@ -1554,7 +1564,8 @@
         el('td', null, [el('span', { className: 'mode ' + info.cls, text: t(info.key) })]),
         el('td', null, [s.url ? el('a', { href: s.url, target: '_blank', rel: 'noopener noreferrer', text: s.nom || s.url }) : el('span', { text: s.nom }),
           s.origine === 'site' ? badge('badge-sm', t('added_site')) : null, s.nature === 'opinion' ? badge('badge-opinion badge-sm', t('opinion_src')) : null,
-          s.a_retirer ? badge('badge-verif badge-sm', t('flag_retirer'), t('flag_retirer_t')) : null]),
+          s.a_retirer ? badge('badge-verif badge-sm', t('flag_retirer'), t('flag_retirer_t')) : null,
+          (s.retest && s.retest.lisible) ? badge('badge-ess badge-sm', t('reactivable'), t('reactivable_t')) : null]),
         el('td', { text: nomZone(s.zone) }),
         el('td', { text: MODES[s.mode] ? t(MODES[s.mode]) : '—' }),
         el('td', { className: 'num', text: inactif ? '—' : String(s.nb_trouves || 0) }),

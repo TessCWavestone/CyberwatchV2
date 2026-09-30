@@ -220,7 +220,7 @@ def charger_sources(cfg, classeur, avec_inactives=False):
     c = {
         "zone": col("zone"), "nom": col("nom"), "type": col("type"), "url": col("url"),
         "rss": col("rss"), "xml": col("xml"), "statut": col("statut"),
-        "actu": col("url", "actualit"), "filtrage": col("filtrage"),
+        "actu": col("url", "actualit"), "filtrage": col("filtrage"), "motif": col("motif de retrait"),
     }
     ignores = {s.lower() for s in cfg.get("statuts_ignores", [])}
     sources, deja = [], set()
@@ -241,7 +241,7 @@ def charger_sources(cfg, classeur, avec_inactives=False):
         sources.append({
             "nom": nom, "zone": get("zone") or "—", "type": get("type"), "url": url,
             "urls_actu": list(dict.fromkeys(actus)), "flux_excel": list(dict.fromkeys(flux)), "statut_excel": get("statut"),
-            "inactive": inactive, "origine": "excel",
+            "inactive": inactive, "origine": "excel", "motif_retrait": get("motif"),
             # source très volumineuse (journal officiel…) : on ne garde que la pertinence moyenne ou élevée
             "filtre_pertinence": "pertinence" in get("filtrage").lower(),
         })
@@ -984,14 +984,42 @@ def main():
             etat["mode"], etat["nb_trouves"], retenus, src["nom"][:60],
             ("  ! " + etat["erreur"][:160]) if etat["erreur"] else ""))
 
-    for src in toutes:
-        if src["inactive"]:
-            msg = ("Retirée depuis le site : plus interrogée." if src.get("retiree")
-                   else "Statut « %s » dans l'Excel : source non interrogée." % src["statut_excel"])
-            etats.append({"nom": src["nom"], "zone": src["zone"], "url": src["url"], "mode": "inactif",
-                          "acces": "retiree" if src.get("retiree") else "inactive", "flux": "", "page": "",
-                          "nb_trouves": 0, "nb_retenus": 0, "erreur": msg, "type": src["type"],
-                          "nature": nature_source(src), "verifie_le": "", "origine": src.get("origine", "excel")})
+    # Sources inactives : non collectées. Motif de retrait affiché (colonne de l'Excel config/sources.xlsx).
+    # Une fois par mois (1er lundi) ou à la demande, on retente de les lire, sans garder leurs articles,
+    # pour savoir si le site est redevenu lisible.
+    inactives = [x for x in toutes if x["inactive"]]
+    retester = os.environ.get("RETEST_INACTIVES", "").lower() in ("true", "1", "oui") or \
+        (AUJOURDHUI.weekday() == 0 and AUJOURDHUI.day <= 7)
+    a_tester = [x for x in inactives if retester and not x.get("retiree")
+                and not (x.get("motif_retrait") or "").lower().startswith(("doublon", "remplac"))]
+    retests = {}
+    if a_tester:
+        with ThreadPoolExecutor(max_workers=cfg.get("requetes_paralleles", 8)) as pool:
+            for x, (arts_t, etat_t) in zip(a_tester, pool.map(lambda x: collecter_source(x, client, {}, 1), a_tester)):
+                lisible = etat_t.get("mode") != "erreur" and len(arts_t) > 0
+                retests[x["url"]] = {"date": AUJOURDHUI.isoformat(), "lisible": lisible, "nb_trouves": len(arts_t),
+                                     "detail": (etat_t.get("erreur") or "")[:200]}
+        print("Nouveau test des sources inactives : %d testées, %d de nouveau lisibles." % (
+            len(retests), sum(1 for r in retests.values() if r["lisible"])))
+    for src in inactives:
+        motif = (src.get("motif_retrait") or "").strip()
+        code = motif.split(" ", 1)[0].lower() if motif else ""
+        reste = motif.split(" ", 1)[1] if " " in motif else ""
+        if src.get("retiree"):
+            msg = "Retirée depuis le site : plus interrogée."
+        elif code in ("robots", "javascript", "doublon", "remplacee"):
+            msg = {"robots": "Retirée le %s : le site bloque les robots (erreur 403 ou page protégée)." % reste,
+                   "javascript": "Retirée le %s : page construite en JavaScript, aucun article lisible par le serveur." % reste,
+                   "doublon": "Doublon de « %s » : non interrogée." % reste,
+                   "remplacee": "Remplacée par « %s »." % reste}[code]
+        else:
+            msg = "Désactivée dans la liste des sources (config/sources.xlsx)%s." % ((" : " + motif) if motif else "")
+        prec = etats_prec.get(src["url"], {})
+        etats.append({"nom": src["nom"], "zone": src["zone"], "url": src["url"], "mode": "inactif",
+                      "acces": "retiree" if src.get("retiree") else "inactive", "flux": "", "page": "",
+                      "nb_trouves": 0, "nb_retenus": 0, "erreur": msg, "motif_retrait": code, "type": src["type"],
+                      "nature": nature_source(src), "verifie_le": "", "origine": src.get("origine", "excel"),
+                      "retest": retests.get(src["url"]) or prec.get("retest")})
 
     # Veille RKC (dépôt privé récupéré dans rkc/) : titre + lien publiés, extrait gardé privé
     cache_liens = vus.setdefault("__rkc_liens__", {})

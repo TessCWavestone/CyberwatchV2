@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-09-30T08:42+00:00",
+ "mise_a_jour": "2026-10-05T12:18+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 137,
+   "nb_articles": 171,
    "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://www.netzwoche.ch/news/2026-09-25/bundesrat-erteilt-auftrag-fuer-neues-cybersicherheitsgesetz",
-    "titre": "Bundesrat erteilt Auftrag für neues Cybersicherheitsgesetz",
-    "langue": "de",
-    "titre_fr": "Le Conseil fédéral donne mandat pour une nouvelle loi sur la cybersécurité",
-    "titre_en": "Federal Council gives mandate for new cybersecurity law"
+    "date": "2026-10-03",
+    "lien": "https://www.forvismazars.com/fr/fr/insights/publications-et-evenements/avis-d-experts/avis-d-expert-cyber-resilience-act",
+    "titre": "Avis d'expert | Cyber Resilience Act",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Expert opinion on Cyber Resilience Act"
    }
   },
   {
@@ -164,14 +164,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "NIS2",
    "en": "NIS2",
-   "nb_articles": 83,
+   "nb_articles": 84,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://www.ncsc.nl/cyberbeveiligingswet-nis2/registreren",
-    "titre": "Valt jouw organisatie onder de Cyberbeveiligingswet (NIS2)? Start vandaag met de registratie van jouw organisatie bij het NCSC. Registreer voor de Cbw Registreer voor de Cbw Registreer voor de Cbw",
-    "langue": "nl",
-    "titre_fr": "Votre organisation est-elle assujettie à la Loi sur la cybersécurité (NIS2)? Commencez à enregistrer votre organisation au NCSC aujourd'hui. S'inscrire au registre Cbw pour le registre Cbw",
-    "titre_en": "Does your organization fall under the Cyber Security Act (NIS2)? Start registering your organisation at the NCSC today. Register for the Cbw Register for the Cbw Register for the Cbw"
+    "date": "2026-10-02",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/nya-regler-for-vad-som-ar-betydande-incidenter-inom-telekomomradet/",
+    "titre": "Nya regler för vad som är betydande incidenter inom telekomområdet",
+    "langue": "sv",
+    "titre_fr": "Nouvelles règles relatives aux incidents majeurs dans le secteur des télécommunications",
+    "titre_en": "New rules on major incidents in the telecommunications sector"
    }
   },
   {
@@ -179,14 +179,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 64,
+   "nb_articles": 65,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://digitalpolicyalert.org/change/21524-usersubject-right-in-legislative-decree-implementing-eu-ai-act-regarding-police-use-of-artificial-intelligence-and-civil-and-criminal-liability-in-italy-no-1602026",
-    "titre": "User/subject right in Legislative Decree implementing EU AI Act regarding police use of artificial intelligence and civil and criminal liability (No. 160/2026)",
-    "langue": "en",
-    "titre_fr": "Droit de l'utilisateur/du sujet dans le décret législatif portant application de la loi UE IA sur l'utilisation par la police de l'intelligence artificielle et la responsabilité civile et pénale (no 160/2026)",
-    "titre_en": ""
+    "date": "2026-10-05",
+    "lien": "https://www.computing.es/informes/soberania-del-dato-ai-act-y-agentes-autonomos-las-tres-claves-del-despliegue-de-ia-empresarial-en-2026/",
+    "titre": "Soberanía del dato, AI Act y agentes autónomos: las tres claves del despliegue de IA empresarial en 2026",
+    "langue": "es",
+    "titre_fr": "La souveraineté des données, la loi AI et les agents indépendants : les trois clés du déploiement de IA d'ici 2026",
+    "titre_en": "Data Sovereignty, AI Act and Self-employed Agents: The Three Key to Business AI's Deployment by 2026"
    }
   },
   {
@@ -194,14 +194,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 52,
+   "nb_articles": 56,
    "exemple": {
-    "date": "2026-09-28",
-    "lien": "https://www.federprivacy.org/informazione/flash-news/linee-guida-04-2026-l-european-data-protection-board-fornisce-i-chiarimenti-sull-applicazione-delle-sanzioni-per-violazioni-del-gdpr",
-    "titre": "Linee Guida 04/2026, l’European Data Protection Board fornisce i chiarimenti sull’applicazione delle sanzioni per violazioni del GDPR",
-    "langue": "it",
-    "titre_fr": "Lignes directrices 04/2026, le Conseil européen de la protection des données fournit des précisions sur l'application des sanctions en cas de violation de RGPD",
-    "titre_en": "Guidelines 04/2026, the European Data Protection Board provides clarification on the application of sanctions for violations of GDPR"
+    "date": "2026-10-05",
+    "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
+    "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
+    "langue": "hu",
+    "titre_fr": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD",
+    "titre_en": "New EDPB Guidelines on administrative penalties under GDPR"
    }
   },
   {
@@ -209,14 +209,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cybersecurity Act (certification UE)",
    "en": "Cybersecurity Act (EU certification)",
-   "nb_articles": 25,
+   "nb_articles": 26,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://www.ncsc.nl/cyberbeveiligingswet-nis2/registreren",
-    "titre": "Valt jouw organisatie onder de Cyberbeveiligingswet (NIS2)? Start vandaag met de registratie van jouw organisatie bij het NCSC. Registreer voor de Cbw Registreer voor de Cbw Registreer voor de Cbw",
-    "langue": "nl",
-    "titre_fr": "Votre organisation est-elle assujettie à la Loi sur la cybersécurité (NIS2)? Commencez à enregistrer votre organisation au NCSC aujourd'hui. S'inscrire au registre Cbw pour le registre Cbw",
-    "titre_en": "Does your organization fall under the Cyber Security Act (NIS2)? Start registering your organisation at the NCSC today. Register for the Cbw Register for the Cbw Register for the Cbw"
+    "date": "2026-10-02",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/nya-regler-for-vad-som-ar-betydande-incidenter-inom-telekomomradet/",
+    "titre": "Nya regler för vad som är betydande incidenter inom telekomområdet",
+    "langue": "sv",
+    "titre_fr": "Nouvelles règles relatives aux incidents majeurs dans le secteur des télécommunications",
+    "titre_en": "New rules on major incidents in the telecommunications sector"
    }
   },
   {
@@ -239,14 +239,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "EHDS (espace européen des données de santé)",
    "en": "EHDS (European Health Data Space)",
-   "nb_articles": 14,
+   "nb_articles": 15,
    "exemple": {
-    "date": "2026-09-29",
-    "lien": "https://www.ictrecht.nl/blog/de-tekortkomingen-van-de-aivg-bij-de-inkoop-van-medische-software",
-    "titre": "Blog 29 september 2026 Zorg & ICT EHDS De tekortkomingen van de AIVG bij de inkoop van medische software Lees meer",
-    "langue": "nl",
-    "titre_fr": "Blog 29 septembre 2026 Soins et ICT EHDS Les lacunes du AIVG dans l'achat de logiciels médicaux Lire la suite",
-    "titre_en": "Blog 29 September 2026 Care & ICT EHDS The shortcomings of the AIVG in purchasing medical software Read more"
+    "date": "2026-10-02",
+    "lien": "https://mzd.gov.cz/evropsky-prostor-pro-zdravotni-data-ehds-aktualni-stav-implementace-a-podpurne-iniciativy/",
+    "titre": "Evropský prostor pro zdravotní data (EHDS): aktuální stav implementace a podpůrné iniciativy",
+    "langue": "cs",
+    "titre_fr": "Espace européen des données sanitaires (EHDS): état actuel de la mise en œuvre et initiatives de soutien",
+    "titre_en": "European area for health data (EHDS): current state of implementation and support initiatives"
    }
   },
   {
@@ -329,14 +329,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cloud and AI Development Act",
    "en": "Cloud and AI Development Act",
-   "nb_articles": 4,
+   "nb_articles": 5,
    "exemple": {
-    "date": "2026-08-20",
-    "lien": "https://iapp.org/news/a/the-eu-s-proposed-cada-why-cloud-sovereignty-matters-for-business-strategy",
-    "titre": "The EU's proposed CADA: Why cloud sovereignty matters for business strategy",
-    "langue": "en",
-    "titre_fr": "CADA proposé par le UE: Pourquoi la souveraineté du cloud est importante pour la stratégie commerciale",
-    "titre_en": ""
+    "date": "2026-10-02",
+    "lien": "https://www.gov.pl/web/cyfryzacja/polska-w-centrum-unijnej-debaty-o-cyfrowej-suwerennosci",
+    "titre": "Polska w centrum unijnej debaty o cyfrowej suwerenności",
+    "langue": "pl",
+    "titre_fr": "La Pologne au cœur du débat de l'UE sur la souveraineté numérique",
+    "titre_en": "Poland at the heart of EU debate on digital sovereignty"
    }
   },
   {
@@ -397,6 +397,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "French resilience bill (NIS2, CER, DORA) still awaiting a floor debate in the National Assembly"
+   }
+  },
+  {
+   "code": "Normes harmonisées",
+   "groupe": "textes",
+   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
+   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-02",
+    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2211",
+    "titre": "Commission Implementing Decision (EU) 2026/2211 of 1 October 2026 amending Commission Implementing Decision (EU) 2025/165 as regards harmonised standards for refrigerating systems and heat pumps, LPG equipment, cryogenic vessels, and welding and brazing, drafted in support of Directive 2014/68/EU of the European Parliament and of the Council",
+    "langue": "en",
+    "titre_fr": "Décision d'exécution (UE) 2026/2211 de la Commission du 1er octobre 2026 modifiant la décision d'exécution (UE) 2025/165 de la Commission en ce qui concerne les normes harmonisées pour les systèmes de réfrigération et les pompes à chaleur, les équipements LPG, les récipients cryogéniques, le soudage et le brasage, élaborées à l'appui de la directive 2014/68/UE du Parlement européen et du Conseil",
+    "titre_en": ""
    }
   },
   {
@@ -472,21 +487,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "es",
     "titre_fr": "Cartographie entre NIST FW et IEC 62443 2-1",
     "titre_en": "Mapping between NIST FW and IEC 62443 2-1"
-   }
-  },
-  {
-   "code": "Normes harmonisées",
-   "groupe": "textes",
-   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
-   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-08-13",
-    "lien": "https://www.etsi.org/newsroom/press-releases/etsi-launches-approval-process-for-17-european-standards-supporting-the-cyber-resilience-act/",
-    "titre": "ETSI lance l'approbation de 17 normes européennes à l'appui du CRA",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "ETSI launches approval of 17 European Standards supporting the CRA"
    }
   },
   {
@@ -644,14 +644,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 55,
+   "nb_articles": 59,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://www.ncsc.nl/cyberbeveiligingswet-nis2/registreren",
-    "titre": "Valt jouw organisatie onder de Cyberbeveiligingswet (NIS2)? Start vandaag met de registratie van jouw organisatie bij het NCSC. Registreer voor de Cbw Registreer voor de Cbw Registreer voor de Cbw",
-    "langue": "nl",
-    "titre_fr": "Votre organisation est-elle assujettie à la Loi sur la cybersécurité (NIS2)? Commencez à enregistrer votre organisation au NCSC aujourd'hui. S'inscrire au registre Cbw pour le registre Cbw",
-    "titre_en": "Does your organization fall under the Cyber Security Act (NIS2)? Start registering your organisation at the NCSC today. Register for the Cbw Register for the Cbw Register for the Cbw"
+    "date": "2026-10-02",
+    "lien": "https://www.cert.se/2026/10/cert-se-veckobrev-v40.html",
+    "titre": "CERT-SE:s veckobrev v.40",
+    "langue": "sv",
+    "titre_fr": "Récif hebdomadaire de CERT-SE v. 40",
+    "titre_en": "CERT-SE's weekly reef v. 40"
    }
   },
   {
@@ -659,14 +659,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 43,
+   "nb_articles": 44,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://www.cnil.fr/fr/ia-la-cnil-met-jour-son-outil-de-tracabilite-des-modeles-publies-en-source-ouverte",
-    "titre": "IA : la CNIL met à jour son outil de traçabilité des modèles publiés en source ouverte",
+    "date": "2026-10-02",
+    "lien": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
+    "titre": "Violations de données personnelles : dans quels cas peut-on être indemnisé ?",
     "langue": "fr",
     "titre_fr": "",
-    "titre_en": "AI: CNIL updates its open source model traceability tool"
+    "titre_en": "Violations of personal data: in what cases can we be compensated?"
    }
   },
   {
@@ -674,14 +674,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 32,
+   "nb_articles": 34,
    "exemple": {
-    "date": "2026-09-28",
-    "lien": "https://www.federprivacy.org/informazione/flash-news/linee-guida-04-2026-l-european-data-protection-board-fornisce-i-chiarimenti-sull-applicazione-delle-sanzioni-per-violazioni-del-gdpr",
-    "titre": "Linee Guida 04/2026, l’European Data Protection Board fornisce i chiarimenti sull’applicazione delle sanzioni per violazioni del GDPR",
-    "langue": "it",
-    "titre_fr": "Lignes directrices 04/2026, le Conseil européen de la protection des données fournit des précisions sur l'application des sanctions en cas de violation de RGPD",
-    "titre_en": "Guidelines 04/2026, the European Data Protection Board provides clarification on the application of sanctions for violations of GDPR"
+    "date": "2026-10-05",
+    "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
+    "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
+    "langue": "hu",
+    "titre_fr": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD",
+    "titre_en": "New EDPB Guidelines on administrative penalties under GDPR"
    }
   },
   {
@@ -734,14 +734,29 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "ENISA",
    "en": "ENISA",
+   "nb_articles": 21,
+   "exemple": {
+    "date": "2026-10-02",
+    "lien": "https://nki.gov.hu/it-biztonsag/tanacsok/kezdetet-veszi-az-idei-ecsm/",
+    "titre": "Kezdetét veszi az idei ECSM",
+    "langue": "hu",
+    "titre_fr": "Commencez cette année le ECSM",
+    "titre_en": "Start this year's ECSM"
+   }
+  },
+  {
+   "code": "Garante",
+   "groupe": "autorites",
+   "fr": "Garante privacy (Italie)",
+   "en": "Garante privacy (Italy)",
    "nb_articles": 19,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://www.enisa.europa.eu/news/supporting-nis2-implementation-through-actionable-guidance",
-    "titre": "Supporting NIS2 implementation through actionable guidance",
-    "langue": "en",
-    "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
-    "titre_en": ""
+    "date": "2026-10-04",
+    "lien": "https://www.federprivacy.org/informazione/garante-privacy/videosorveglianza-installata-in-modo-non-conforme-alla-planimetria-condivisa-con-i-sindacati-sanzionato-l-istituto-nazionale-di-ricerca-metrologica",
+    "titre": "Videosorveglianza installata in modo non conforme alla planimetria condivisa con i sindacati: sanzionato l’Istituto Nazionale di Ricerca Metrologica",
+    "langue": "it",
+    "titre_fr": "Vidéosurveillance installée d'une manière qui ne correspond pas à la planification partagée avec les syndicats: sanctionné l'Institut national de recherche métrologique",
+    "titre_en": "Video surveillance installed in a way that does not conform to the planimetry shared with the unions: sanctioned the National Institute of Metrological Research"
    }
   },
   {
@@ -749,14 +764,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NKI (Hongrie)",
    "en": "NKI (Hungary)",
-   "nb_articles": 16,
+   "nb_articles": 19,
    "exemple": {
-    "date": "2026-09-29",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/felhasznaloi-kepeket-toltottek-fel-kulso-szolgaltatasokhoz-az-openai-mi-agensei/",
-    "titre": "Felhasználói képeket töltöttek fel külső szolgáltatásokhoz az OpenAI MI-ágensei",
+    "date": "2026-10-02",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/a-signal-ios-es-asztali-alkalmazasaihoz-is-bevezette-a-helyi-titkositott-mentesi-funkciot/",
+    "titre": "A Signal iOS és asztali alkalmazásaihoz is bevezette a helyi titkosított mentési funkciót",
     "langue": "hu",
-    "titre_fr": "Les utilisateurs ont téléchargé des images vers des services externes sur OpenAI MI-ágensei",
-    "titre_en": "Users uploaded images to external services on OpenAI MI-ágensei"
+    "titre_fr": "Il a également présenté la fonction de sauvetage cryptée locale pour le Signal iOS et les applications de bureau",
+    "titre_en": "He also introduced the local encrypted rescue function for the Signal iOS and desktop applications"
    }
   },
   {
@@ -772,21 +787,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "hu",
     "titre_fr": "Le règlement relatif aux contrôleurs des comptes en matière de cybersécurité a été modifié",
     "titre_en": "Regulation on cybersecurity auditors has been amended"
-   }
-  },
-  {
-   "code": "Garante",
-   "groupe": "autorites",
-   "fr": "Garante privacy (Italie)",
-   "en": "Garante privacy (Italy)",
-   "nb_articles": 14,
-   "exemple": {
-    "date": "2026-09-22",
-    "lien": "https://www.federprivacy.org/informazione/garante-privacy/nuovo-piano-ispettivo-del-garante-privacy-priorita-di-fine-2026-e-trasparenza-della-vigilanza",
-    "titre": "Nuovo piano ispettivo del Garante Privacy: priorità di fine 2026 e trasparenza della vigilanza",
-    "langue": "it",
-    "titre_fr": "Nouveau plan prospectif du garant de la protection de la vie privée: fin 2026 priorité et transparence de la surveillance",
-    "titre_en": "New Inspective Plan of the Privacy Guarantor: end 2026 priority and transparency of supervision"
    }
   },
   {
@@ -925,6 +925,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "PTS",
+   "groupe": "autorites",
+   "fr": "PTS (Suède)",
+   "en": "PTS (Sweden)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-02",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/nya-regler-for-vad-som-ar-betydande-incidenter-inom-telekomomradet/",
+    "titre": "Nya regler för vad som är betydande incidenter inom telekomområdet",
+    "langue": "sv",
+    "titre_fr": "Nouvelles règles relatives aux incidents majeurs dans le secteur des télécommunications",
+    "titre_en": "New rules on major incidents in the telecommunications sector"
+   }
+  },
+  {
    "code": "IMY",
    "groupe": "autorites",
    "fr": "IMY (Suède)",
@@ -940,18 +955,33 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "PTS",
+   "code": "SAMSIK",
    "groupe": "autorites",
-   "fr": "PTS (Suède)",
-   "en": "PTS (Sweden)",
+   "fr": "SAMSIK (Danemark)",
+   "en": "SAMSIK (Denmark)",
    "nb_articles": 7,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-sst-nets-avtalsvillkor/",
-    "titre": "PTS granskar SST Net:s avtalsvillkor",
-    "langue": "sv",
-    "titre_fr": "PTS avis SST Conditions contractuelles nettes",
-    "titre_en": "PTS reviews SST Net’s terms of contract"
+    "date": "2026-10-05",
+    "lien": "https://samsik.dk/artikler/2026/10/uvedkommende-adgang-til-cpr-oplysninger-sadan-skal-du-forholde-dig/",
+    "titre": "Uvedkommende har fået adgang til borgeres CPR-oplysninger: Sådan skal du forholde dig",
+    "langue": "da",
+    "titre_fr": "Les indépendants ont accès aux citoyens CPR-oplysninger: Comment se comporter",
+    "titre_en": "Independents have access to citizens CPR-oplysninger: How to behave"
+   }
+  },
+  {
+   "code": "ANS",
+   "groupe": "autorites",
+   "fr": "Agence du numérique en santé",
+   "en": "French Digital Health Agency (ANS)",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://esante.gouv.fr/actualites/controle-des-services-numeriques-en-sante-un-nouveau-cadre-pour-garantir-la-confiance",
+    "titre": "Contrôle des services numériques en santé : un nouveau cadre pour garantir la confiance",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Control of digital health services: a new framework to ensure trust"
    }
   },
   {
@@ -967,21 +997,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Italy: ACN updates its NIS FAQ on supervision, inspections and sanctions"
-   }
-  },
-  {
-   "code": "ANS",
-   "groupe": "autorites",
-   "fr": "Agence du numérique en santé",
-   "en": "French Digital Health Agency (ANS)",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-09-18",
-    "lien": "https://esante.gouv.fr/agenda/la-matinee-du-reglement-de-l-espace-europeen-des-donnees-de-sante-eeds",
-    "titre": "La matinée du règlement de l'Espace européen des données de santé (EEDS)",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "The morning of the European Health Data Area Regulation (EEDS)"
    }
   },
   {
@@ -1012,21 +1027,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "pl",
     "titre_fr": "EROD harmonise la méthodologie de sanction et adopte des lignes directrices finales pour DSA et RODO 25.09.2026",
     "titre_en": "EROD harmonises the sanctioning methodology and adopts final guidelines for DSA and RODO 25.09.2026"
-   }
-  },
-  {
-   "code": "SAMSIK",
-   "groupe": "autorites",
-   "fr": "SAMSIK (Danemark)",
-   "en": "SAMSIK (Denmark)",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://samsik.dk/artikler/2026/09/truslen-fra-destruktive-cyberangreb-haeves-til-hoej/",
-    "titre": "Truslen fra destruktive cyberangreb hæves til høj",
-    "langue": "da",
-    "titre_fr": "La menace des cyberattaques destructrices est élevée",
-    "titre_en": "The threat from destructive cyber attacks is raised to high"
    }
   },
   {
@@ -1072,6 +1072,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "nb",
     "titre_fr": "Le nouveau système rendra la Norvège moins dépendante des signaux horaires de GPS – important pour la sécurité sociale",
     "titre_en": "New system will make Norway less dependent on time signals from GPS – important for social security"
+   }
+  },
+  {
+   "code": "Swissmedic",
+   "groupe": "autorites",
+   "fr": "Swissmedic",
+   "en": "Swissmedic",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
+    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
+    "langue": "en",
+    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
+    "titre_en": ""
    }
   },
   {
@@ -1210,18 +1225,18 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "Swissmedic",
+   "code": "PFPDT / EDÖB",
    "groupe": "autorites",
-   "fr": "Swissmedic",
-   "en": "Swissmedic",
+   "fr": "PFPDT / EDÖB (Suisse)",
+   "en": "FDPIC (Switzerland)",
    "nb_articles": 3,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
-    "titre": "Swissmedic Portal Release – New Features Available from 23 September 2026",
-    "langue": "en",
-    "titre_fr": "Swissmedic Portal Release – Nouvelles fonctionnalités Disponible à partir du 23 septembre 2026",
-    "titre_en": ""
+    "date": "2026-10-01",
+    "lien": "https://www.edoeb.admin.ch/fr/bodycams-blt-fr",
+    "titre": "«Bodycams – Le PFPDT interdit à la société BLT Baselland Transport AG de traiter les données»",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»"
    }
   },
   {
@@ -1315,21 +1330,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "PFPDT / EDÖB",
-   "groupe": "autorites",
-   "fr": "PFPDT / EDÖB (Suisse)",
-   "en": "FDPIC (Switzerland)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-08-20",
-    "lien": "https://www.edoeb.admin.ch/fr/taf-confirme-pratique-du-pfpdt",
-    "titre": "«Le Tribunal administratif fédéral confirme la pratique du PFPDT»",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "\"The Federal Administrative Tribunal confirms the practice of PFPDT\""
-   }
-  },
-  {
    "code": "ANSM",
    "groupe": "autorites",
    "fr": "ANSM",
@@ -1405,6 +1405,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "NAIH",
+   "groupe": "autorites",
+   "fr": "NAIH (Hongrie)",
+   "en": "NAIH (Hungary)",
+   "nb_articles": 1,
+   "exemple": {
+    "date": "2026-10-05",
+    "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
+    "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
+    "langue": "hu",
+    "titre_fr": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD",
+    "titre_en": "New EDPB Guidelines on administrative penalties under GDPR"
+   }
+  },
+  {
    "code": "APD / GBA",
    "groupe": "autorites",
    "fr": "APD / GBA (Belgique)",
@@ -1468,12 +1483,24 @@ window.VEILLE_ACRONYMES = {
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 16,
+   "nb_articles": 17,
    "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://digital-strategy.ec.europa.eu/en/library/european-board-digital-services-adopts-good-practices-notify-suspected-criminal-offences-under",
-    "titre": "European Board for Digital Services adopts good practices to notify suspected criminal offences under the Digital Services Act",
-    "titre_fr": "Le Conseil européen des services numériques adopte de bonnes pratiques pour notifier les infractions pénales présumées en vertu de la loi sur les services numériques",
+    "date": "2026-10-01",
+    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-asks-bulgaria-comply-digital-services-act-and-empower-national-authorities-enforce-it",
+    "titre": "Commission asks Bulgaria to comply with the Digital Services Act and empower the national authorities to enforce it",
+    "titre_fr": "La Commission demande à la Bulgarie de se conformer à la loi sur les services numériques et d'habiliter les autorités nationales à l'appliquer.",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
+   "code": "SECURE",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-02",
+    "lien": "https://ccb.belgium.be/news/secure-2nd-open-call-launched-1-october-offering-support-smes-preparing-cyber-resilience-act",
+    "titre": "The SECURE 2nd Open Call launched on 1 October, offering support to SMEs in preparing for the Cyber Resilience Act",
+    "titre_fr": "Le 2ème appel ouvert SECURE a été lancé le 1er octobre, offrant un soutien aux PME dans la préparation de la Cyber Resilience Act",
     "titre_en": "",
     "langue": "en"
    }
@@ -1488,6 +1515,30 @@ window.VEILLE_ACRONYMES = {
     "titre_fr": "Plus de 460 millions de dollars ont été infligés à Google pour la gestion des données de localisation",
     "titre_en": "More than $460 million has been fined to Google for managing location data",
     "langue": "hu"
+   }
+  },
+  {
+   "code": "PFPDT",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.edoeb.admin.ch/fr/bodycams-blt-fr",
+    "titre": "«Bodycams – Le PFPDT interdit à la société BLT Baselland Transport AG de traiter les données»",
+    "titre_fr": "",
+    "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»",
+    "langue": "fr"
+   }
+  },
+  {
+   "code": "EMA",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
+    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
+    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
+    "titre_en": "",
+    "langue": "en"
    }
   },
   {

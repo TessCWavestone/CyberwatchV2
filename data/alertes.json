@@ -1,0 +1,3122 @@
+{
+ "mise_a_jour": "2026-10-06T12:06+00:00",
+ "alertes": [
+  {
+   "id": "k62c01d9d30f",
+   "type": "adopte",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-23",
+   "date": "2026-09-21",
+   "fin": "2026-10-21",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "635da126b90c",
+     "titre": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "EDPB harmonise la méthodologie d'affinage et adopte les lignes directrices finales DSA-GDPR"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
+     "date": "2026-09-21",
+     "detecte_le": "2026-09-23",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k8cb942c3e8a",
+   "type": "proposition",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-23",
+   "date": "2026-09-17",
+   "fin": "2026-10-21",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "4cf4cac90c14",
+     "titre": "Guidelines 3/2025 on the interplay between the DSA and the GDPR",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Lignes directrices 3/2025 sur l'interaction entre le DSA et le RGPD"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-32025-on-the-interplay-between-the-dsa-and-the-gdpr_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
+     "date": "2026-09-17",
+     "detecte_le": "2026-09-23",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    },
+    {
+     "id": "050e584d0be0",
+     "titre": "Guidelines 04/2026 on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Lignes directrices 04/2026 sur l'application du pouvoir d'imposer des amendes administratives en relation avec d'autres pouvoirs correctifs en vertu du RGPD"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
+     "date": "2026-09-17",
+     "detecte_le": "2026-09-23",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k5df38ea5db6",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "France",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-23",
+   "date": "2026-09-10",
+   "fin": "2026-10-21",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "fe403a8c350f",
+     "titre": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Electronic billing: what are the challenges for the protection of personal data?"
+      }
+     },
+     "lien": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
+     "source": "CNIL",
+     "zone": "France",
+     "date": "2026-09-10",
+     "detecte_le": "2026-09-23",
+     "statut": "en_vigueur",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "kb5f0964b2fe",
+   "type": "proposition",
+   "texte": "IVDR",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-23",
+   "date": "2026-09-09",
+   "fin": "2026-10-21",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "1de3670a1438",
+     "titre": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "MDCG 2020-16 rev.5 - Lignes directrices sur les règles de classification des instruments médicaux de diagnostic in vitro en vertu du Règlement (UE) 2017/746 (septembre 2026)"
+      }
+     },
+     "lien": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
+     "source": "Medical Device Coordination Group",
+     "zone": "Europe",
+     "date": "2026-09-09",
+     "detecte_le": "2026-09-23",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "ke61fbba9392",
+   "type": "proposition",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Finlande",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-23",
+   "date": "2026-08-26",
+   "fin": "2026-10-07",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "1a71fb618512",
+     "titre": "Valmistaja - varaudu ennalta kyberkestävyyssäädöksen mukaiseen haavoittuvuuksien ja poikkeamien ilmoittamiseen",
+     "langue": "fi",
+     "trad": {
+      "en": {
+       "titre": "Manufacturer - anticipate vulnerability and occurrence reporting in accordance with the Cyber Sustainability Act"
+      },
+      "fr": {
+       "titre": "Fabricant - Prévoir les rapports de vulnérabilité et d'occurrence conformément à la Cyber Sustainability Act"
+      }
+     },
+     "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/valmistaja-varaudu-ennalta-kyberkestavyyssaadoksen-mukaiseen-haavoittuvuuksien-ja-poikkeamien-ilmoittamiseen?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+     "source": "Centre de cybersécurité de Traficom",
+     "zone": "Finlande",
+     "date": "2026-08-26",
+     "detecte_le": "2026-09-23",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k37834c19ed1",
+   "type": "proposition",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "b1b61f43c4d8",
+     "titre": "Supporting NIS2 implementation through actionable guidance",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Soutien à la mise en œuvre de NIS2 par des directives pratiques"
+      }
+     },
+     "lien": "https://www.enisa.europa.eu/news/supporting-nis2-implementation-through-actionable-guidance",
+     "source": "ENISA (European Union Agency for Cybersecurity)",
+     "zone": "Europe",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    },
+    {
+     "id": "5b8cc1c5cb07",
+     "titre": "Asking for your feedback: ENISA technical guidance for the cybersecurity measures of the NIS2 Implementing Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Demander votre avis: ENISA conseils techniques pour les mesures de cybersécurité de la loi de mise en œuvre NIS2"
+      }
+     },
+     "lien": "https://www.enisa.europa.eu/news/asking-for-your-feedback-enisa-technical-guidance-for-the-cybersecurity-measures-of-the-nis2-implementing-act",
+     "source": "ENISA (European Union Agency for Cybersecurity)",
+     "zone": "Europe",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k072f3a793e4",
+   "type": "proposition",
+   "texte": "Cybersecurity Act / certification UE",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "f557a3e65e9a",
+     "titre": "Share your feedback: ENISA public consultation bolsters EU5G Cybersecurity Certification",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Partagez vos commentaires : la consultation publique ENISA renforce la certification de cybersécurité EU5G"
+      }
+     },
+     "lien": "https://www.enisa.europa.eu/news/share-your-feedback-enisa-public-consultation-bolsters-eu5g-cybersecurity-certification",
+     "source": "ENISA (European Union Agency for Cybersecurity)",
+     "zone": "Europe",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "consultation",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "kea01e3ef444",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "Grèce",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "7ec3a825dc76",
+     "titre": "Έως τις 10 Νοεμβρίου παρατείνεται η δημόσια διαβούλευση για την Εθνική Στρατηγική Κυβερνοασφάλειας 2026-2030",
+     "langue": "el",
+     "trad": {
+      "en": {
+       "titre": "Until 10 November public consultation on the National Cyber Security Strategy is extended 2026-2030"
+      },
+      "fr": {
+       "titre": "Jusqu'au 10 novembre, la consultation publique sur la Stratégie nationale de cybersécurité est prolongée 2026-2030"
+      }
+     },
+     "lien": "https://cyber.gov.gr/eos-tis-10-noemvrioy-parateinetai-i-dimosia-diavoyleysi-gia-tin-ethniki-stratigiki-kyvernoasfaleias-2026-2030/",
+     "source": "Autorité Nationale de Cybersécurité",
+     "zone": "Grèce",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "consultation",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "kdd5c0350fe2",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "Grèce",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "25bc6806832a",
+     "titre": "Δημόσια διαβούλευση για την οριστικοποίηση αναλυτικών τεχνικών προδιαγραφών του έργου «Ενοποιημένο Κέντρο Αναφοράς Κυβερνοασφάλειας», EL SOC.",
+     "langue": "el",
+     "trad": {
+      "en": {
+       "titre": "Public consultation on the finalisation of analytical technical specifications of the ‘Unified Cybersecurity Reporting Centre’ project, EL SOC."
+      },
+      "fr": {
+       "titre": "Consultation publique sur la finalisation des spécifications techniques analytiques du projet «Centre unifié de rapport sur la cybersécurité», EL SOC."
+      }
+     },
+     "lien": "https://cyber.gov.gr/dimosia-diavoyleysi-gia-tin-oristikopoiisi-analytikon-technikon-prodiagrafon-toy-ergoy-enopoiimeno-kentro-anaforas-kyvernoasfaleias-el-soc/",
+     "source": "Autorité Nationale de Cybersécurité",
+     "zone": "Grèce",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "consultation",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "k42b512d2892",
+   "type": "adopte",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Bulgarie",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "1eccbbdb8619",
+     "titre": "Legal Alert: The Bulgarian Parliament Adopted a Law Transposing the NIS 2 Directive",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Alerte juridique: le Parlement bulgare a adopté une loi transposant la directive NIS 2"
+      }
+     },
+     "lien": "https://dgkv.com:443/news/legal-alert-the-bulgarian-parliament-adopted-a-law-transposing-the-nis-2-directive",
+     "source": "DGKV - News",
+     "zone": "Bulgarie",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "adopte",
+     "nature": "cabinet",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "k969fd235249",
+   "type": "proposition",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "Bulgarie",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "f4d285b45803",
+     "titre": "EDPB and EDPS Opine on Draft GDPR Amendments further to IV Simplification Omnibus Package",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Opine EDPB et EDPS sur le projet de modifications RGPD suite à la simplification du paquet Omnibus IV"
+      }
+     },
+     "lien": "https://www.dgkv.com:443/insights/publications/edpb-and-edps-opine-on-draft-gdpr-amendments-further-to-iv-simplification-omnibus-package",
+     "source": "DGKV - News",
+     "zone": "Bulgarie",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "projet",
+     "nature": "cabinet",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "k3af5e666104",
+   "type": "adopte",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Danemark",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-21",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-1243",
+   "version_maj": "2026-09-24-1243",
+   "articles": [
+    {
+     "id": "df8cb77f3b3e",
+     "titre": "Cyber Resilience Act er trådt i kraft: Nye krav til producenter af digitale produkter",
+     "langue": "da",
+     "trad": {
+      "en": {
+       "titre": "The Cyber Resilience Act has entered into force: New requirements for producers of digital products"
+      },
+      "fr": {
+       "titre": "La Loi sur la cyberrésilience est entrée en vigueur : Nouvelles exigences pour les producteurs de produits numériques"
+      }
+     },
+     "lien": "https://www.cert.dk/news/2026-09-21/Cyber-Resilience-Act-er-traadt-i-kraft-Nye-krav-til-producenter-af-digitale-produkter",
+     "source": "DKCERT (CERT danois de la recherche et de l'éducation) — actualités",
+     "zone": "Danemark",
+     "date": "2026-09-21",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-1243",
+     "statut": "en_vigueur",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k650a028f8a9",
+   "type": "echeance",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Italie",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-13",
+   "fin": "2026-10-31",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b6f361fabdf1",
+     "titre": "Italie : l'ACN met à jour ses FAQ NIS sur la supervision, les inspections et les sanctions",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Italy: ACN updates its NIS FAQ on supervision, inspections and sanctions"
+      }
+     },
+     "lien": "https://www.matricedigitale.it/2026/09/13/nis2-aggiornamento-faq/",
+     "source": "Matrice Digitale",
+     "zone": "Italie",
+     "date": "2026-09-13",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "lignes_directrices",
+     "nature": "presse"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-10-31",
+   "extrait": {
+    "fr": "…préalable, procédure de sanction). Ces clarifications interviennent avant l'échéance du 31 octobre 2026 pour l'adoption des mesures de sécurité de base (détermination 379907/2025), qui marque…",
+    "en": "…prior suspicion, and the sanctioning procedure). The clarifications come ahead of the 31 October 2026 deadline for adopting baseline security measures (determination 379907/2025), which ends…"
+   },
+   "active": true
+  },
+  {
+   "id": "k756ef3eb024",
+   "type": "echeance",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-08-11",
+   "fin": "2026-10-28",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b296c3ef5ab0",
+     "titre": "Pologne : entrée en vigueur de la loi sur les systèmes d'IA – la KRiBSI devient autorité de surveillance",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Poland: Act on AI Systems enters into force – KRiBSI becomes supervisory authority"
+      }
+     },
+     "lien": "https://gdpr.pl/ustawa-o-systemach-sztucznej-inteligencji-weszla-w-zycie",
+     "source": "GDPR.pl",
+     "zone": "Pologne",
+     "date": "2026-08-11",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "en_vigueur",
+     "nature": "presse"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-10-28",
+   "extrait": {
+    "fr": "…en vigueur pour l'essentiel le 11 août 2026, avec une mise en œuvre complète prévue le 28 octobre 2026. La KRiBSI est l'autorité de surveillance et le point de contact national ; les…",
+    "en": "…mostly entered into force on 11 August 2026, with full implementation scheduled for 28 October 2026. KRiBSI is the supervisory authority and national contact point; financial penalty…"
+   },
+   "active": true
+  },
+  {
+   "id": "k2971e1efe37",
+   "type": "echeance",
+   "texte": "Cyber Security and Resilience Bill",
+   "inconnu": false,
+   "zone": "Royaume-Uni",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-14",
+   "fin": "2026-10-26",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b9f14d513220",
+     "titre": "Cyber Security and Resilience Bill : deuxième lecture à la Chambre des lords",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Cyber Security and Resilience Bill: second reading in the House of Lords"
+      }
+     },
+     "lien": "https://bills.parliament.uk/bills/4035/stages",
+     "source": "UK Parliament",
+     "zone": "Royaume-Uni",
+     "date": "2026-07-14",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "projet",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-10-26",
+   "extrait": {
+    "fr": "…à partir du 1er septembre 2026, l'étape du rapport étant programmée (provisoirement) au 26 octobre 2026 ; la sanction royale est attendue fin 2026.",
+    "en": "…committee stage from 1 September 2026, with report stage (provisionally) scheduled for 26 October 2026; Royal Assent is expected in late 2026."
+   },
+   "active": true
+  },
+  {
+   "id": "kfd5a2f0035f",
+   "type": "echeance",
+   "texte": "RGPD",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-08",
+   "fin": "2026-10-30",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "bd74ef00758d",
+     "titre": "EDPB : lignes directrices sur l'anonymisation et le web scraping pour l'IA générative ; version finale sur la blockchain",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "EDPB: guidelines on anonymisation and web scraping for generative AI; final blockchain guidelines"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
+     "source": "EDPB",
+     "zone": "Europe",
+     "date": "2026-07-08",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "consultation",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-10-30",
+   "extrait": {
+    "en": "…case C-413/23) and on web scraping for generative AI, open for consultation until 30 October 2026. It also adopted final blockchain guidelines."
+   },
+   "active": true
+  },
+  {
+   "id": "k34c0108890e",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-01",
+   "fin": "2026-10-31",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b4ee1d016788",
+     "titre": "CRA : projet de modification du mandat de normalisation M/606 (report de deux mois)",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "CRA: draft amendment to standardisation request M/606 (two-month delay)"
+      }
+     },
+     "lien": "https://www.cyberresilienceact.eu/news/cra-standardisation-deadlines-pushed-back-two-months.html",
+     "source": "cyberresilienceact.eu",
+     "zone": "Europe",
+     "date": "2026-07-01",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "projet",
+     "nature": "presse"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-10-31",
+   "extrait": {
+    "fr": "…les échéances de livraison des normes harmonisées CRA : normes horizontales A et B au 31 octobre 2026, normes verticales C au 31 décembre 2026. Aucune norme harmonisée CRA n'était encore…",
+    "en": "…postponing CRA harmonised standard deadlines: horizontal type A and B standards to 31 October 2026, vertical type C standards to 31 December 2026. No CRA harmonised standard had yet been…"
+   },
+   "active": true
+  },
+  {
+   "id": "k0783362d596",
+   "type": "echeance",
+   "texte": "EHDS",
+   "inconnu": false,
+   "zone": "Suède",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-05-11",
+   "fin": "2026-11-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b1c4ebaefe51",
+     "titre": "Suède : quatre autorités chargées de préparer la mise en œuvre de l'EHDS",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Sweden: four authorities tasked with preparing EHDS implementation"
+      }
+     },
+     "lien": "https://www.ehalsomyndigheten.se/om-ehalsomyndigheten/aktuellt/nyheter/2026/sverige-forbereder-genomforandet-av-det-europeiska-halsodataomradet/",
+     "source": "E-hälsomyndigheten",
+     "zone": "Suède",
+     "date": "2026-05-11",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "autre",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-11-01",
+   "extrait": {
+    "en": "…authority, single entry point for providers, secondary use of data; final report due 1 November 2026."
+   },
+   "active": true
+  },
+  {
+   "id": "k3b28f3ba5ad",
+   "type": "proposition",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-09-25",
+   "maj_le": "2026-09-25",
+   "date": "2026-09-25",
+   "fin": "2026-10-23",
+   "version": "2026-09-25-1456",
+   "version_maj": "2026-09-25-1456",
+   "articles": [
+    {
+     "id": "d21844491833",
+     "titre": "EROD ujednolica metodologię nakładania kar i przyjmuje ostateczne wytyczne dotyczące DSA i RODO 25.09.2026",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "EROD harmonises the sanctioning methodology and adopts final guidelines for DSA and RODO 25.09.2026"
+      },
+      "fr": {
+       "titre": "EROD harmonise la méthodologie de sanction et adopte des lignes directrices finales pour DSA et RODO 25.09.2026"
+      }
+     },
+     "lien": "https://uodo.gov.pl/pl/185/4584",
+     "source": "UODO (Office for Personal Data Protection)",
+     "zone": "Pologne",
+     "date": "2026-09-25",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k9e31a975339",
+   "type": "adopte",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-28",
+   "maj_le": "2026-10-05",
+   "date": "2026-10-01",
+   "fin": "2026-10-24",
+   "version": "2026-09-28-1210",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "n91e9b45d92d",
+     "titre": "Cyber Resilience Act : l’ANFR aux côtés des industriels pour préparer l’entrée en vigueur du règlement",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Cyber Resilience Act: the ANFR alongside industry to prepare for the coming into force of the regulation"
+      }
+     },
+     "lien": "https://www.anfr.fr/liste-actualites/actualite/cyber-resilience-act-lanfr-aux-cotes-des-industriels-pour-preparer-lentree-en-vigueur-du-reglement",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-10-01",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "en_vigueur",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n04f1798cec0",
+     "titre": "Cybersécurité de nouvelles obligations européennes entrent en vigueur pour les entreprises",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Cybersecurity of new European obligations enter into force for businesses"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22Cybers%C3%A9curit%C3%A9+de+nouvelles+obligations+europ%C3%A9ennes+entrent+en+vigueur+pour+les+entreprises%22+RiskAssur",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-15",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "en_vigueur",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "ncde810de261",
+     "titre": "Le \" Cyber Resilience Act \", ce règlement européen visant à mieux protéger les objets connectés du piratage, est entré en vigueur",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "The Cyber Resilience Act, this European regulation to better protect connected objects from piracy, has entered into force"
+      }
+     },
+     "lien": "https://www.rtbf.be/article/le-cyber-resilience-act-ce-reglement-europeen-visant-a-mieux-proteger-les-objets-connectes-du-piratage-est-entre-en-vigueur-11784197",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-12",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "en_vigueur",
+     "nature": "rkc",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 3,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "kd3a6da5b92d",
+   "type": "adopte",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-09-28",
+   "maj_le": "2026-09-28",
+   "date": "2026-09-28",
+   "fin": "2026-10-26",
+   "version": "2026-09-28-1210",
+   "version_maj": "2026-09-28-1210",
+   "articles": [
+    {
+     "id": "63aa7c4c18f5",
+     "titre": "Ostatnie dni na samorejestrację w Wykazie KSC. Termin mija 3 października",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "Last days for self-registration in the KSC list. The deadline is 3 October"
+      },
+      "fr": {
+       "titre": "Les derniers jours pour l'auto-inscription dans la liste KSC. La date limite est le 3 octobre"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/ostatnie-dni-na-samorejestracje-w-wykazie-ksc-termin-mija-3-pazdziernika",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-09-28",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "en_vigueur",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k57e03f6bb00",
+   "type": "adopte",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-28",
+   "maj_le": "2026-10-05",
+   "date": "2026-09-21",
+   "fin": "2026-10-16",
+   "version": "2026-09-28-1210",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "n5544db3d087",
+     "titre": "United Kingdom: Preparing For The EU Cyber Resilience Act : Key Reporting Obligations From 11 September 2026",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Royaume-Uni : se préparer à la loi UE sur la cyberrésilience : principales obligations de déclaration à partir du 11 septembre 2026"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22United+Kingdom%3A+Preparing+For+The+EU+Cyber+Resilience+Act+%3A+Key+Reporting+Obligations+From+11+September+2026%22+Mondaq+Business+Briefing",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-21",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "adopte",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n62f3c8db19a",
+     "titre": "Preparing for the EU Cyber Resilience Act : Key Reporting Obligations From 11 September 2026",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Préparation à la Loi sur la cyberrésilience UE : Obligations de déclaration clés à compter du 11 septembre 2026"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22Preparing+for+the+EU+Cyber+Resilience+Act+%3A+Key+Reporting+Obligations+From+11+September+2026%22+JD+Supra",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-11",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "adopte",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n845bf71922f",
+     "titre": "September 2026 EU Compliance Deadlines for Connected Product Manufacturers New EU cybersecurity reporting and data-access obligations take effect in September 2026 — with extraterritorial reach for...",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Septembre 2026 UE Délais de conformité pour les fabricants de produits connectés Les nouvelles obligations en matière de cybersécurité et d'accès aux données UE entrent en vigueur en septembre 2026...."
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22September+2026+EU+Compliance+Deadlines+for+Connected+Product+Manufacturers+New+EU+cybersecurity+reporting+and+data-access+obligations+take+effect+in+S%22+Faegre+Drinker+Biddle+%26+Reath+LLP",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-10",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "adopte",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "nd79e85690df",
+     "titre": "A New Compliance Discipline: Key Insights from Building the Kroll Cyber Resilience Act Framework",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Une nouvelle discipline en matière de conformité : les principales conclusions de l'élaboration du cadre de la Loi sur la cyberrésilience Kroll"
+      }
+     },
+     "lien": "https://www.kroll.com/en/publications/cyber/key-insights-building-kroll-cyber-resilience-act-framework",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-04",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "adopte",
+     "nature": "rkc",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 4,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "kac9ebbc6492",
+   "type": "proposition",
+   "texte": "IVDR",
+   "inconnu": false,
+   "zone": "Suisse",
+   "detecte_le": "2026-09-28",
+   "maj_le": "2026-09-28",
+   "date": "2026-09-10",
+   "fin": "2026-10-22",
+   "version": "2026-09-28-1210",
+   "version_maj": "2026-09-28-1210",
+   "articles": [
+    {
+     "id": "f22f5783f38a",
+     "titre": "New guideline «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Nouvelle ligne directrice «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)"
+      }
+     },
+     "lien": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/reporting-incidents---fscas/users---operators.html",
+     "source": "Swissmedic — actualités (via flux RSS FetchRSS)",
+     "zone": "Suisse",
+     "date": "2026-09-10",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k245cb8c9cfe",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "Danemark",
+   "detecte_le": "2026-09-29",
+   "maj_le": "2026-09-29",
+   "date": "2026-09-14",
+   "fin": "2026-10-26",
+   "version": "2026-09-29-1553",
+   "version_maj": "2026-09-29-1553",
+   "articles": [
+    {
+     "id": "221aba035949",
+     "titre": "Forslag til lov om offentlige myndigheders og organers udvikling og anvendelse af AI-systemer ved behandling af personoplysninger",
+     "langue": "da",
+     "trad": {
+      "en": {
+       "titre": "Proposal for a law on the development and use of AI-systemer by public authorities and bodies in the processing of personal data"
+      },
+      "fr": {
+       "titre": "Proposition de loi sur le développement et l'utilisation de AI-systemer par les autorités et organismes publics dans le traitement des données à caractère personnel"
+      }
+     },
+     "lien": "https://hoeringsportalen.dk/Hearing/Details/71477",
+     "source": "Høringsportalen — consultations (numérique, justice, santé)",
+     "zone": "Danemark",
+     "date": "2026-09-14",
+     "detecte_le": "2026-09-29",
+     "version": "2026-09-29-1553",
+     "statut": "consultation",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "kc2d14571182",
+   "type": "adopte",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Espagne",
+   "detecte_le": "2026-10-05",
+   "maj_le": "2026-10-05",
+   "date": "2026-10-05",
+   "fin": "2026-11-02",
+   "version": "2026-10-05-1218",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "5d608ae28055",
+     "titre": "Soberanía del dato, AI Act y agentes autónomos: las tres claves del despliegue de IA empresarial en 2026",
+     "langue": "es",
+     "trad": {
+      "en": {
+       "titre": "Data Sovereignty, AI Act and Self-employed Agents: The Three Key to Business AI's Deployment by 2026"
+      },
+      "fr": {
+       "titre": "La souveraineté des données, la loi AI et les agents indépendants : les trois clés du déploiement de IA d'ici 2026"
+      }
+     },
+     "lien": "https://www.computing.es/informes/soberania-del-dato-ai-act-y-agentes-autonomos-las-tres-claves-del-despliegue-de-ia-empresarial-en-2026/",
+     "source": "Computing España",
+     "zone": "Espagne",
+     "date": "2026-10-05",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "en_vigueur",
+     "nature": "presse",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "kc1d47bd8d5a",
+   "type": "proposition",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "Hongrie",
+   "detecte_le": "2026-10-05",
+   "maj_le": "2026-10-05",
+   "date": "2026-10-05",
+   "fin": "2026-11-02",
+   "version": "2026-10-05-1218",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "61035cf9edcc",
+     "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
+     "langue": "hu",
+     "trad": {
+      "en": {
+       "titre": "New EDPB Guidelines on administrative penalties under GDPR"
+      },
+      "fr": {
+       "titre": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD"
+      }
+     },
+     "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
+     "source": "NAIH (autorité de protection des données)",
+     "zone": "Hongrie",
+     "date": "2026-10-05",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
+   "id": "k9d2b21407cd",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "France",
+   "detecte_le": "2026-10-05",
+   "maj_le": "2026-10-05",
+   "date": "2026-10-01",
+   "fin": "2026-11-02",
+   "version": "2026-10-05-1218",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "dba0f618cd86",
+     "titre": "Contrôle des services numériques en santé : un nouveau cadre pour garantir la confiance",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Control of digital health services: a new framework to ensure trust"
+      }
+     },
+     "lien": "https://esante.gouv.fr/actualites/controle-des-services-numeriques-en-sante-un-nouveau-cadre-pour-garantir-la-confiance",
+     "source": "Agence du Numérique en Santé (ANS) — flux RSS",
+     "zone": "France",
+     "date": "2026-10-01",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "lignes_directrices",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "k305bdc0b27d",
+   "type": "adopte",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "France",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-08-18",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "6f8f34192614",
+     "titre": "Lignes directrices pour la recherche scientifique et certification : les derniers documents adoptés par le CEPD",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Guidelines for Scientific Research and Certification: the latest documents adopted by CEPD"
+      }
+     },
+     "lien": "https://www.cnil.fr/fr/cepd-lignes-directrices-pour-la-recherche-scientifique-et-certification",
+     "source": "CNIL",
+     "zone": "France",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "adopte",
+     "nature": "officielle"
+    },
+    {
+     "id": "54e666f6c580",
+     "titre": "Amendes RGPD et interaction avec le règlement sur les services numériques : retour sur la plénière du CEPD du 17 septembre 2026",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "GDPR Fines and Interaction with Digital Services Regulations: Return to CEPD Plenary on September 17, 2026"
+      }
+     },
+     "lien": "https://www.cnil.fr/fr/pleniere-cepd-amendes-reglement-services-numeriques",
+     "source": "CNIL",
+     "zone": "France",
+     "date": "2026-09-23",
+     "detecte_le": "2026-09-23",
+     "statut": "adopte",
+     "nature": "officielle"
+    },
+    {
+     "id": "e75f99da976a",
+     "titre": "Le CEPD met en lumière l’anonymisation et le moissonnage pour l’IA générative et adopte la version finale des lignes directrices sur la chaîne de blocs",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "The CEPD highlights anonymization and harvesting for the generative AI and adopts the final version of the block chain guidelines"
+      }
+     },
+     "lien": "https://www.cnil.fr/fr/cepd-ia-generative-chaines-blocs",
+     "source": "CNIL",
+     "zone": "France",
+     "date": "2026-07-07",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 3,
+   "a_verifier": false,
+   "active": false
+  },
+  {
+   "id": "k0744fa729aa",
+   "type": "proposition",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Worldwide",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-29",
+   "date": "2026-09-29",
+   "fin": "2026-07-03",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-29-1553",
+   "articles": [
+    {
+     "id": "1ac275ccc7c9",
+     "titre": "Artificial Intelligence authority governance in Law on the use and development of artificial intelligence implementing EU AI Act (Bill No. 52-654-01-151)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Gouvernance de l'autorité chargée de l'intelligence artificielle dans la loi sur l'utilisation et le développement de l'intelligence artificielle mettant en œuvre la loi UE IA (projet de loi no 52-654-01-151)"
+      }
+     },
+     "lien": "https://digitalpolicyalert.org/change/21631-artificial-intelligence-authority-governance-in-law-on-the-use-and-development-of-artificial-intelligence-implementing-eu-ai-act-no-52-654-01-151",
+     "source": "Digital Policy Alert",
+     "zone": "Worldwide",
+     "date": "2026-09-29",
+     "detecte_le": "2026-09-29",
+     "version": "2026-09-29-1553",
+     "statut": "projet",
+     "nature": "presse",
+     "a_verifier": true
+    },
+    {
+     "id": "93541a6b0c64",
+     "titre": "Is my use case a high-risk AI system? Applying the Commission’s guidelines and next steps",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Mon cas d'utilisation est-il un système IA à haut risque? Application des lignes directrices de la Commission et des prochaines étapes"
+      }
+     },
+     "lien": "https://www.dataprotectionreport.com/2026/05/is-my-use-case-a-high-risk-ai-system-applying-the-commissions-guidelines-and-next-steps/",
+     "source": "Data Protection Report (Norton Rose Fulbright)",
+     "zone": "Worldwide",
+     "date": "2026-05-22",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "projet",
+     "nature": "cabinet",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "kd13283d08af",
+   "type": "adopte",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Suède",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-29",
+   "date": "2026-09-10",
+   "fin": "2026-08-07",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-29-1553",
+   "articles": [
+    {
+     "id": "855d9cd886f0",
+     "titre": "Nyhet Tiotusentals svenska företag berörs av EU:s nya cybersäkerhetslag Träder i kraft den 11 september. Av Mikael Markander 10 sep. 2026 1 min Offentlig sektor Lagar och regleringar Marknader",
+     "langue": "sv",
+     "trad": {
+      "en": {
+       "titre": "Tens of thousands of Swedish companies are affected by EU’s new cybersecurity law It will take effect on September 11. By Michael Markander 10 sep. 2026 1 min Public Sector Laws and Regulations Markets"
+      },
+      "fr": {
+       "titre": "Des dizaines de milliers d'entreprises suédoises sont touchées par la nouvelle loi sur la cybersécurité de UE. Par Michael Markander 10 sept. 2026 1 min Marchés des lois et règlements du secteur public"
+      }
+     },
+     "lien": "https://computersweden.se/article/4220669/tiotusentals-svenska-foretag-berors-av-eus-nya-cybersakerhetslag.html",
+     "source": "Computer Sweden — réglementation",
+     "zone": "Suède",
+     "date": "2026-09-10",
+     "detecte_le": "2026-09-29",
+     "version": "2026-09-29-1553",
+     "statut": "en_vigueur",
+     "nature": "presse",
+     "a_verifier": true
+    },
+    {
+     "id": "f34dcd685e44",
+     "titre": "Krav på säkerhetsåtgärder som stärker cybersäkerheten",
+     "langue": "sv",
+     "trad": {
+      "en": {
+       "titre": "Security measures to strengthen cybersecurity"
+      },
+      "fr": {
+       "titre": "Mesures de sécurité visant à renforcer la cybersécurité"
+      }
+     },
+     "lien": "https://www.ncsc.se/sv/aktuellt/krav-pa-sakerhetsatgarder-som-starker-cybersakerheten/",
+     "source": "Agence pour la défense civile",
+     "zone": "Suède",
+     "date": "2026-06-26",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "en_vigueur",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": false,
+   "active": false
+  },
+  {
+   "id": "ka32b7800f6a",
+   "type": "proposition",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "Worldwide",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-28",
+   "fin": "2026-09-08",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "e684cc0f4562",
+     "titre": "EDPB discusses draft anonymization, AI web scraping guidelines",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "EDPB discute de l'anonymisation provisoire, lignes directrices sur le grattage Web IA"
+      }
+     },
+     "lien": "https://iapp.org/news/a/edpb-discusses-focuses-in-draft-anonymization-ai-web-scraping-guidelines",
+     "source": "IAPP",
+     "zone": "Worldwide",
+     "date": "2026-07-28",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "projet",
+     "nature": "presse",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "kdcf7d6651ec",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "Pologne",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-27",
+   "fin": "2026-09-07",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "9dfd709bfda1",
+     "titre": "Ustawa o systemach AI - bezpieczny rozwój sztucznej inteligencji w Polsce",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "AI system law - safe development of artificial intelligence in Poland"
+      },
+      "fr": {
+       "titre": "Droit du système IA - développement sûr de l'intelligence artificielle en Pologne"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/ustawa-o-systemach-ai--bezpieczny-rozwoj-sztucznej-inteligencji-w-polsce",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-07-27",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "k9971914cdac",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "Pologne",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-23",
+   "fin": "2026-09-03",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "e48bc3975f4b",
+     "titre": "Ustawa o zarządzaniu danymi już obowiązuje",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "Data Management Act already in force"
+      },
+      "fr": {
+       "titre": "Gestion des données Acte déjà en vigueur"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/ustawa-o-zarzadzaniu-danymi-juz-obowiazuje",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-07-23",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "en_vigueur",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "k1b183c533ea",
+   "type": "proposition",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-25",
+   "date": "2026-07-20",
+   "fin": "2026-08-31",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-25-1456",
+   "articles": [
+    {
+     "id": "82e0544acf38",
+     "titre": "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Commission publie des lignes directrices sur les obligations de transparence pour les fournisseurs et les déploiements de certains systèmes IA"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-07-20",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    },
+    {
+     "id": "d4f499c564f0",
+     "titre": "Guidelines on transparency obligations for providers and deployers of AI systems",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Lignes directrices concernant les obligations de transparence pour les fournisseurs et les déploiements de systèmes IA"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-07-20",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": false,
+   "active": false
+  },
+  {
+   "id": "k261524349fc",
+   "type": "adopte",
+   "texte": "EHDS",
+   "inconnu": false,
+   "zone": "Pays-Bas",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-15",
+   "fin": "2026-08-26",
+   "version": "2026-09-24-1243",
+   "version_maj": "2026-09-24-1243",
+   "articles": [
+    {
+     "id": "c52d01ed6cc3",
+     "titre": "Voorbereiden op de EHDS? Regel betrouwbare toegang met eIDAS",
+     "langue": "nl",
+     "trad": {
+      "en": {
+       "titre": "Preparing for the EHDS? Get reliable access with eIDAS"
+      },
+      "fr": {
+       "titre": "Se préparer pour le EHDS? Obtenez un accès fiable avec eIDAS"
+      }
+     },
+     "lien": "https://www.nictiz.nl/nieuws/voorbereiden-op-de-ehds-regel-betrouwbare-toegang-met-eidas/",
+     "source": "Nictiz (centre d'expertise santé numérique, normes d'échange, EHDS)",
+     "zone": "Pays-Bas",
+     "date": "2026-07-15",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-1243",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": false
+  },
+  {
+   "id": "kbfd522533f7",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "France",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-06-30",
+   "fin": "2026-08-11",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "79bef3387b83",
+     "titre": "Lignes directrices cloud multicloud juil2026",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Cloud Multicloud Guidelines Jul2026"
+      }
+     },
+     "lien": "https://www.arcep.fr/uploads/tx_gspublication/lignes-directrices-cloud_multicloud_juil2026.pdf",
+     "source": "ARCEP",
+     "zone": "France",
+     "date": "2026-06-30",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "lignes_directrices",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "k34277dcde19",
+   "type": "proposition",
+   "texte": "Cloud and AI Development Act (CADA)",
+   "inconnu": false,
+   "zone": "Worldwide",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-06-11",
+   "fin": "2026-07-23",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "84165049ed3c",
+     "titre": "A view from Brussels: Why the CADA sovereignty proposal deserves attention",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Vue depuis Bruxelles: Pourquoi la proposition de souveraineté CADA mérite attention"
+      }
+     },
+     "lien": "https://iapp.org/news/a/a-view-from-brussels-why-the-cada-sovereignty-proposal-deserves-attention",
+     "source": "IAPP",
+     "zone": "Worldwide",
+     "date": "2026-06-11",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "projet",
+     "nature": "presse",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "k55600d2e7f8",
+   "type": "echeance",
+   "texte": "NISG 2026",
+   "inconnu": false,
+   "zone": "Autriche",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-18",
+   "fin": "2026-10-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b44d5867a054",
+     "titre": "Autriche : NISG 2026 applicable au 1er octobre 2026 – enregistrement avant le 31 décembre 2026",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Austria: NISG 2026 applies from 1 October 2026 – registration by 31 December 2026"
+      }
+     },
+     "lien": "https://www.wko.at/it-sicherheit/nis2-uebersicht",
+     "source": "WKO",
+     "zone": "Autriche",
+     "date": "2026-09-18",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-10-01",
+   "ref": {
+    "nom": "Loi sur la sécurité des réseaux et des systèmes d'information 2026",
+    "nom_en": "Network and Information Systems Security Act 2026",
+    "lien": "https://risilience.at/2025/12/29/nis-2-ist-angekommen-erweiterung-besonders-im-gesundheitswesen/",
+    "autorite": "Bundesamt für Cybersicherheit (ministère de l'Intérieur)",
+    "resume_fr": "Transposition de NIS2 (BGBl. I 2025/94, publiée le 23 décembre 2025), applicable au 1er octobre 2026 : enregistrement avant le 31 décembre 2026, gestion des risques y compris chaîne d'approvisionnement, notification d'incidents, auto-déclaration pour le 30 septembre 2027. Couvre tous les hôpitaux, laboratoires de référence UE, fabricants de produits pharmaceutiques et de DM critiques.",
+    "resume_en": "NIS2 transposition (BGBl. I 2025/94, published 23 December 2025), applicable from 1 October 2026: registration by 31 December 2026, risk management including supply chain, incident reporting, self-declaration by 30 September 2027. Covers all hospitals, EU reference laboratories, pharmaceutical and critical medical device manufacturers."
+   },
+   "active": false
+  },
+  {
+   "id": "k3f6af663ce0",
+   "type": "echeance",
+   "texte": "MCFFS 2026:11",
+   "inconnu": false,
+   "zone": "Suède",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-06-15",
+   "fin": "2026-10-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "bf76f49d531b",
+     "titre": "Suède : adoption du règlement MCFFS 2026:11 sur les mesures de sécurité et la formation des dirigeants (NIS2), applicable au 1er octobre 2026",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Sweden: MCFFS 2026:11 on security measures and management training (NIS2) adopted, applicable from 1 October 2026"
+      }
+     },
+     "lien": "https://www.fra.se/download/18.1c31366219e925a606973/1782394568329/MCFFS-2026-11.pdf",
+     "source": "MCF / NCSC (FRA)",
+     "zone": "Suède",
+     "date": "2026-06-15",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-10-01",
+   "ref": {
+    "nom": "MCFFS 2026:11 – mesures de sécurité et formation des dirigeants",
+    "nom_en": "MCFFS 2026:11 – security measures and management training",
+    "lien": "https://www.fra.se/download/18.1c31366219e925a606973/1782394568329/MCFFS-2026-11.pdf",
+    "autorite": "MCF",
+    "resume_fr": "Mesures de sécurité fondées sur ISO/IEC 27001/27002:2022, exigences sur la chaîne d'approvisionnement et les contrats fournisseurs.",
+    "resume_en": "Security measures based on ISO/IEC 27001/27002:2022, supply chain and supplier contract requirements."
+   },
+   "active": false
+  },
+  {
+   "id": "ka493b5d87ec",
+   "type": "echeance",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Italie",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-15",
+   "fin": "2026-09-09",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b12866f58ef7",
+     "titre": "Italie : publication du D.Lgs. 160/2026 sur l'intelligence artificielle, en vigueur le 30 septembre 2026",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Italy: Legislative Decree 160/2026 on artificial intelligence published, in force 30 September 2026"
+      }
+     },
+     "lien": "https://www.normattiva.it/eli/id/2026/09/15/26G00179/ORIGINAL",
+     "source": "Normattiva (Gazzetta Ufficiale)",
+     "zone": "Italie",
+     "date": "2026-09-15",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-09",
+   "extrait": {
+    "en": "…intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was published in the Official Journal (General Series No.…"
+   },
+   "active": false
+  },
+  {
+   "id": "k651f81a45c7",
+   "type": "echeance",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Italie",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-15",
+   "fin": "2026-09-30",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b12866f58ef7",
+     "titre": "Italie : publication du D.Lgs. 160/2026 sur l'intelligence artificielle, en vigueur le 30 septembre 2026",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Italy: Legislative Decree 160/2026 on artificial intelligence published, in force 30 September 2026"
+      }
+     },
+     "lien": "https://www.normattiva.it/eli/id/2026/09/15/26G00179/ORIGINAL",
+     "source": "Normattiva (Gazzetta Ufficiale)",
+     "zone": "Italie",
+     "date": "2026-09-15",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-30",
+   "extrait": {
+    "en": "Italy: Legislative Decree 160/2026 on artificial intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was…"
+   },
+   "active": false
+  },
+  {
+   "id": "kd35539e4571",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Rép. Tchèque",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-10",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b166f341ea5d",
+     "titre": "Rép. tchèque : loi d'adaptation au CRA en route vers la Chambre ; ČOI pressentie comme autorité de surveillance du marché",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Czech Republic: CRA adaptation bill heading to the Chamber; ČOI expected as market surveillance authority"
+      }
+     },
+     "lien": "https://www.gdpr.cz/cyber-resilience-act-v-ostrem-provozu-povinnosti-pro-software-vyrobce-i-prodejce-od-11-zari-2026",
+     "source": "GDPR.cz",
+     "zone": "Rép. Tchèque",
+     "date": "2026-09-10",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "projet",
+     "nature": "presse"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "extrait": {
+    "fr": "…du marché. Alors que les obligations de notification du CRA s'appliquent depuis le 11 septembre 2026, le projet de loi tchèque d'adaptation a achevé la consultation et se dirige vers la…",
+    "en": "…as market surveillance authority. With CRA reporting obligations applicable since 11 September 2026, the Czech adaptation bill has completed consultation and is heading to the Chamber of…"
+   },
+   "active": false
+  },
+  {
+   "id": "k58ccf203eff",
+   "type": "echeance",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-03",
+   "fin": "2026-10-03",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "08da9d45d259",
+     "titre": "Miesiąc na samorejestrację w Wykazie KSC. Termin mija 3 października",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "A month for self-registration in the KSC list. The deadline is 3 October"
+      },
+      "fr": {
+       "titre": "Un mois pour l'auto-inscription dans la liste KSC. La date limite est le 3 octobre"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/miesiac-na-samorejestracje-w-wykazie-ksc-termin-mija-3-pazdziernika",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-09-03",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "nature": "officielle"
+    },
+    {
+     "id": "574c3ed8fab7",
+     "titre": "Nowelizacja ustawy o krajowym systemie cyberbezpieczeństwa (KSC) - wpis do Wykazu KSC otwiera dostęp do platformy S46 Cyber Hub",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "Amendment of the National Cybersecurity System Act (KSC) - entry in the List of KSC opens access to the S46 Cyber Hub platform"
+      },
+      "fr": {
+       "titre": "Modification de la loi sur le système national de cybersécurité (KSC) - entrée dans la liste de KSC ouvre l'accès à la plateforme Cyber Hub S46"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/nowelizacja-ustawy-o-krajowym-systemie-cyberbezpieczenstwa-ksc---wpis-do-wykazu-ksc-otwiera-dostep-do-platformy-s46-cyber-hub",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-07-07",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "nature": "officielle"
+    },
+    {
+     "id": "b48675872bde",
+     "titre": "Pologne : entrée en vigueur de la loi KSC (NIS2) – enregistrement avant le 3 octobre 2026",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Poland: KSC (NIS2) Act enters into force – registration due by 3 October 2026"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/nowelizacja-ustawy-o-krajowym-systemie-cyberbezpieczenstwa-zaczyna-obowiazywac",
+     "source": "Ministerstwo Cyfryzacji",
+     "zone": "Pologne",
+     "date": "2026-04-03",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "en_vigueur",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 3,
+   "a_verifier": false,
+   "echeance": "2026-10-03",
+   "extrait": {
+    "pl": "…systemie cyberbezpieczeństwa. Podmioty zobowiązane do samorejestracji mają czas do 3 października 2026 r. na złożenie wniosku o wpis.",
+    "en": "…covered by national cybersecurity legislation. The self-registration entities have until 3 October 2026 to submit an application for an alert.",
+    "fr": "…nationale en matière de cybersécurité. Les entités d'auto-enregistrement ont jusqu'au 3 octobre 2026 pour présenter une demande d'alerte."
+   },
+   "active": false
+  },
+  {
+   "id": "k93cee1ce5dc",
+   "type": "echeance",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "France",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-08-27",
+   "fin": "2026-08-31",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b965366ff47a",
+     "titre": "Loi résilience (NIS2, REC, DORA) : toujours en attente d'examen en séance à l'Assemblée nationale",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "French resilience bill (NIS2, CER, DORA) still awaiting a floor debate in the National Assembly"
+      }
+     },
+     "lien": "https://cnb.avocat.fr/actualite/cybersecurite-et-resilience-etat-des-lieux-de-la-transposition-des-directives-europeennes-nis2-et-rec-et-de-l-adaptation-du-droit-francais-au-reglement-dora",
+     "source": "Conseil national des barreaux",
+     "zone": "France",
+     "date": "2026-08-27",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "projet",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-08-31",
+   "extrait": {
+    "fr": "…Sénat, attend son examen à l'Assemblée nationale, attendu à partir de septembre 2026. Au 31 août 2026, aucune loi n'était promulguée et aucun décret d'application n'existait.",
+    "en": "…still awaits examination in the National Assembly, expected from September 2026. As of 31 August 2026, no law had been enacted and no implementing decree existed."
+   },
+   "active": false
+  },
+  {
+   "id": "k14093971410",
+   "type": "echeance",
+   "texte": "Cyber Security and Resilience Bill",
+   "inconnu": false,
+   "zone": "Royaume-Uni",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-14",
+   "fin": "2026-09-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b9f14d513220",
+     "titre": "Cyber Security and Resilience Bill : deuxième lecture à la Chambre des lords",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Cyber Security and Resilience Bill: second reading in the House of Lords"
+      }
+     },
+     "lien": "https://bills.parliament.uk/bills/4035/stages",
+     "source": "UK Parliament",
+     "zone": "Royaume-Uni",
+     "date": "2026-07-14",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "projet",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-01",
+   "extrait": {
+    "fr": "…projet de loi le 14 juillet 2026. Le texte est ensuite entré en commission à partir du 1er septembre 2026, l'étape du rapport étant programmée (provisoirement) au 26 octobre 2026 ; la sanction…",
+    "en": "…second reading of the bill on 14 July 2026. The bill then entered committee stage from 1 September 2026, with report stage (provisionally) scheduled for 26 October 2026; Royal Assent is…"
+   },
+   "active": false
+  },
+  {
+   "id": "k2ad1fc88b36",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "France",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-07-06",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b3aa1a761ba3",
+     "titre": "ANSSI : FAQ nationale sur le Cyber Resilience Act – la conformité s'impose sans attendre les normes",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "ANSSI: national FAQ on the Cyber Resilience Act – compliance applies without waiting for standards"
+      }
+     },
+     "lien": "https://itsocial.fr/cybersecurite/cybersecurite-actualites/cyber-resilience-act-lanssi-rappelle-que-la-conformite-simpose-sans-attendre-les-normes/",
+     "source": "IT Social",
+     "zone": "France",
+     "date": "2026-07-06",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "lignes_directrices",
+     "nature": "presse"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "extrait": {
+    "fr": "…du CRA en France : signalement des vulnérabilités activement exploitées sous 24 h dès le 11 septembre 2026, conformité complète en décembre 2027 ; ANSSI pour les organismes notifiés, CERT-FR pour…",
+    "en": "…on CRA application in France: 24h reporting of actively exploited vulnerabilities from 11 September 2026, full compliance in December 2027; ANSSI for notified bodies, CERT-FR for reports, ANFR…"
+   },
+   "active": false
+  },
+  {
+   "id": "k8a19d3e7853",
+   "type": "echeance",
+   "texte": "EHDS",
+   "inconnu": false,
+   "zone": "Norvège",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-06-08",
+   "fin": "2026-09-28",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "bd2deac3c7c5",
+     "titre": "Norvège : consultation sur une nouvelle loi d'application de l'EHDS et la modification de la loi sur les dossiers patients",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Norway: consultation on a new law implementing the EHDS and amending the Patient Records Act"
+      }
+     },
+     "lien": "https://www.regjeringen.no/no/dokumenter/horingsbrev-forslag-til-ny-lov-om-det-europeiske-helsedataomradet/id3164607/",
+     "source": "Helse- og omsorgsdepartementet",
+     "zone": "Norvège",
+     "date": "2026-06-08",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "consultation",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-28",
+   "extrait": {
+    "en": "…amending the Patient Records Act. The Ministry of Health opened a consultation (until 28 September 2026) on a draft law implementing Regulation (EU) 2025/327 on the European Health Data Space…"
+   },
+   "active": false
+  },
+  {
+   "id": "k5ce43a3d774",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Finlande",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-06-01",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "b6e53dd1f5c0",
+     "titre": "Finlande : entrée en vigueur de la loi nationale d'application du Cyber Resilience Act",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Finland: national Cyber Resilience Act implementing law enters into force"
+      }
+     },
+     "lien": "https://traficom.fi/fi/uutiset/uusi-kyberkestavyyslaki-voimaan-16-haavoittuvuuksista-ilmoitettava-traficomille-syksysta-alkaen",
+     "source": "Traficom",
+     "zone": "Finlande",
+     "date": "2026-06-01",
+     "detecte_le": "2026-09-24",
+     "version": "base",
+     "statut": "en_vigueur",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "extrait": {
+    "fr": "…vulnérabilités activement exploitées au Centre de cybersécurité de Traficom à partir du 11 septembre 2026 ; les organismes notifiés peuvent demander leur habilitation dès le 11 juin 2026 et tous…",
+    "en": "…Manufacturers must report actively exploited vulnerabilities to Traficom's NCSC-FI from 11 September 2026; notified bodies may apply for authorisation from 11 June 2026 and all products must…"
+   },
+   "active": false
+  },
+  {
+   "id": "k0171816af7f",
+   "type": "proposition",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-25",
+   "maj_le": "2026-09-25",
+   "date": "2026-07-27",
+   "fin": "2026-09-07",
+   "version": "2026-09-25-1456",
+   "version_maj": "2026-09-25-1456",
+   "articles": [
+    {
+     "id": "9c11a311a168",
+     "titre": "Commission publishes new guidance to support businesses' implementation of the Cyber Resilience Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Commission publie de nouvelles orientations pour soutenir la mise en œuvre de la loi sur la cyberrésilience par les entreprises"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-new-guidance-support-businesses-implementation-cyber-resilience-act",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-07-27",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": false
+  },
+  {
+   "id": "kc6c6b4dd948",
+   "type": "proposition",
+   "texte": "Cloud and AI Development Act (CADA)",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-25",
+   "maj_le": "2026-09-25",
+   "date": "2026-06-03",
+   "fin": "2026-07-15",
+   "version": "2026-09-25-1456",
+   "version_maj": "2026-09-25-1456",
+   "articles": [
+    {
+     "id": "6e9de68d3825",
+     "titre": "Proposal for the Cloud and AI Development Act (CADA)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Proposition de loi sur le développement du Cloud et du IA (CADA)"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-06-03",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": false
+  },
+  {
+   "id": "kb263c585b20",
+   "type": "adopte",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-25",
+   "maj_le": "2026-09-25",
+   "date": "2026-05-22",
+   "fin": "2026-07-03",
+   "version": "2026-09-25-1456",
+   "version_maj": "2026-09-25-1456",
+   "articles": [
+    {
+     "id": "e6d4e8e8345e",
+     "titre": "Report on the review of prohibitions and high-risk AI",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Rapport sur l'examen des interdictions et des risques élevés IA"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/library/report-review-prohibitions-and-high-risk-ai",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-05-22",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "adopte",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": false
+  },
+  {
+   "id": "k79521e15082",
+   "type": "proposition",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-28",
+   "maj_le": "2026-10-05",
+   "date": "2026-10-02",
+   "fin": "2026-09-28",
+   "version": "2026-09-28-1210",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "nc7fe3d40940",
+     "titre": "The SECURE 2nd Open Call launched on 1 October, offering support to SMEs in preparing for the Cyber Resilience Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Le 2ème appel ouvert SECURE a été lancé le 1er octobre, offrant un soutien aux PME dans la préparation de la Cyber Resilience Act"
+      }
+     },
+     "lien": "https://ccb.belgium.be/news/secure-2nd-open-call-launched-1-october-offering-support-smes-preparing-cyber-resilience-act",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-10-02",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "projet",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n7215a23ebd7",
+     "titre": "ETSI drafts standards to aid CRA compliance",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "ETSI rédige des normes pour faciliter la conformité CRA"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22ETSI+drafts+standards+to+aid+CRA+compliance%22+IoT+M2M+Council",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-08-18",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "projet",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n0a729025fd6",
+     "titre": "EU Cyber Resilience Act Moves Toward Technical Standards Ahead of September Deadline",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "UE Loi sur la cyberrésilience se dirige vers les normes techniques avant la date limite de septembre"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22EU+Cyber+Resilience+Act+Moves+Toward+Technical+Standards+Ahead+of+September+Deadline%22+SAP+Insider",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-08-17",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "projet",
+     "nature": "rkc",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 3,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "k62adbc5148f",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-28",
+   "maj_le": "2026-10-05",
+   "date": "2026-09-29",
+   "fin": "2026-09-11",
+   "version": "2026-09-28-1210",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "n117319b2335",
+     "titre": "United Kingdom: The EU Cyber Resilience Act's Vulnerability And Incident Reporting Requirements Are Now Live",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Royaume-Uni: Les exigences de la loi UE Cyber Resilience Act en matière de vulnérabilité et de rapports d'incidents sont maintenant en vie"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22United+Kingdom%3A+The+EU+Cyber+Resilience+Act%27s+Vulnerability+And+Incident+Reporting+Requirements+Are+Now+Live%22+Mondaq+Business+Briefing",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-29",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n5849c577435",
+     "titre": "Oracle Maps Its Security Programs to the EU Cyber Resilience Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Oracle cartographie ses programmes de sécurité à la Loi sur la cyberrésilience UE"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22Oracle+Maps+Its+Security+Programs+to+the+EU+Cyber+Resilience+Act%22+ERP+Today",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-22",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n5544db3d087",
+     "titre": "United Kingdom: Preparing For The EU Cyber Resilience Act : Key Reporting Obligations From 11 September 2026",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Royaume-Uni : se préparer à la loi UE sur la cyberrésilience : principales obligations de déclaration à partir du 11 septembre 2026"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22United+Kingdom%3A+Preparing+For+The+EU+Cyber+Resilience+Act+%3A+Key+Reporting+Obligations+From+11+September+2026%22+Mondaq+Business+Briefing",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-21",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "adopte",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n493da50c677",
+     "titre": "Cyber Resilience Act : l’obligation de signaler une vulnérabilité exploitée dans les 24h",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Cyber Resilience Act: the obligation to report a vulnerability exploited within 24 hours"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22Cyber+Resilience+Act+%3A+l%E2%80%99obligation+de+signaler+une+vuln%C3%A9rabilit%C3%A9+exploit%C3%A9e+dans+les+24h%22+%28translate%29",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-15",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "nf1e63dac1ec",
+     "titre": "New reporting obligations under the Cyber Resilience Act come into effect",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "De nouvelles obligations de déclaration en vertu de la Loi sur la cyberrésilience entrent en vigueur"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22New+reporting+obligations+under+the+Cyber+Resilience+Act+come+into+effect%22+Nordic+Daily",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-15",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "nature": "rkc",
+     "a_verifier": true
+    },
+    {
+     "id": "n2b54069e861",
+     "titre": "European Union: The EU Cyber Resilience Act : Reporting Obligations Take Effect",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Union européenne: La loi UE sur la cyberrésilience : les obligations de déclaration prennent effet"
+      }
+     },
+     "lien": "https://www.google.com/search?q=%22European+Union%3A+The+EU+Cyber+Resilience+Act+%3A+Reporting+Obligations+Take+Effect%22+Mondaq+Business+Briefing",
+     "source": "Veille RKC (Wavestone)",
+     "zone": "Europe",
+     "date": "2026-09-14",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "nature": "rkc",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 16,
+   "a_verifier": true,
+   "echeance": "2026-09-11",
+   "active": false
+  },
+  {
+   "id": "ke470152444a",
+   "type": "echeance",
+   "texte": "C5",
+   "inconnu": false,
+   "zone": "Allemagne",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-04-07",
+   "fin": "2026-04-07",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-04-07",
+   "ref": {
+    "nom": "Catalogue de critères C5 (Cloud Computing Compliance Criteria Catalogue), version C5:2026",
+    "nom_en": "Cloud Computing Compliance Criteria Catalogue, C5:2026",
+    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260407_C5_Cloud_Computing.html",
+    "autorite": "BSI",
+    "resume_fr": "Référentiel du BSI pour la sécurité des services cloud, base des attestations exigées par le secteur public et la santé ; version C5:2026 publiée le 7 avril 2026.",
+    "resume_en": "BSI framework for cloud service security, basis of attestations required by the public sector and healthcare; C5:2026 published on 7 April 2026."
+   },
+   "active": false
+  },
+  {
+   "id": "kf3ccd72c935",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Allemagne",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-09-11",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "ref": {
+    "nom": "Cyber Resilience Act – point d'information et autorité de surveillance (BSI)",
+    "nom_en": "Cyber Resilience Act – BSI information and market surveillance",
+    "lien": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Cyber_Resilience_Act/cyber_resilience_act_node.html",
+    "autorite": "BSI",
+    "resume_fr": "Le BSI est l'autorité désignée (projet de CRA-Durchführungsgesetz) pour la surveillance du marché des produits à éléments numériques et publie des informations pour les fabricants.",
+    "resume_en": "The BSI is the designated authority (draft CRA-Durchführungsgesetz) for market surveillance of products with digital elements and publishes guidance for manufacturers."
+   },
+   "active": false
+  },
+  {
+   "id": "kd55aac6f01f",
+   "type": "echeance",
+   "texte": "RKEG / RKEV",
+   "inconnu": false,
+   "zone": "Autriche",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-03-01",
+   "fin": "2026-03-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-03-01",
+   "ref": {
+    "nom": "Loi sur la résilience des entités critiques et son règlement",
+    "nom_en": "Resilience of Critical Entities Act and Regulation",
+    "lien": "https://www.ey.com/de_at/newsroom/2026/02/rkeg-neues-gesetz-2026",
+    "autorite": "Ministère fédéral de l'Intérieur",
+    "resume_fr": "Transposition de CER en vigueur le 1er mars 2026 ; RKEV (BGBl. II Nr. 91/2026) en vigueur le 15 avril 2026 ; entités critiques automatiquement essentielles au titre du NISG 2026.",
+    "resume_en": "CER transposition in force on 1 March 2026; RKEV (BGBl. II Nr. 91/2026) in force on 15 April 2026; critical entities automatically essential under NISG 2026."
+   },
+   "active": false
+  },
+  {
+   "id": "k095d4b59411",
+   "type": "echeance",
+   "texte": "CER",
+   "inconnu": false,
+   "zone": "Belgique",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-01-19",
+   "fin": "2026-01-19",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-01-19",
+   "ref": {
+    "nom": "Loi du 19 décembre 2025 relative à la résilience des entités critiques",
+    "nom_en": "Act of 19 December 2025 on critical entity resilience",
+    "lien": "https://refli.be/fr/lex/2026000133",
+    "autorite": "Centre de crise national / autorités sectorielles",
+    "resume_fr": "Transposition de la directive CER ; identification des entités critiques au 17 juillet 2026, plans de résilience et notification des incidents sous 24 h.",
+    "resume_en": "CER transposition; critical entities identified by 17 July 2026, resilience plans and 24h incident reporting."
+   },
+   "active": false
+  },
+  {
+   "id": "kdf2c4f1fa3d",
+   "type": "echeance",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Danemark",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-01-01",
+   "fin": "2026-01-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-01-01",
+   "ref": {
+    "nom": "Loi sur Digital Sundhed Danmark (santé numérique)",
+    "nom_en": "Act on Digital Health Denmark",
+    "lien": "https://www.retsinformation.dk/eli/lta/2025/1758/pdf",
+    "autorite": "Indenrigs- og Sundhedsministeriet / Digital Sundhed Danmark",
+    "resume_fr": "Crée l'institution nationale regroupant MedCom, sundhed.dk, Sundhedsdatastyrelsen et le Nationalt Genom Center : infrastructure d'échange, accès aux données de santé, coordination cyber, standards informatiques.",
+    "resume_en": "Creates the national institution merging MedCom, sundhed.dk, Sundhedsdatastyrelsen and the National Genome Center: exchange infrastructure, health data access, cyber coordination, IT standards."
+   },
+   "active": false
+  },
+  {
+   "id": "k9826cf6a9e6",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Danemark",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-09-11",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "ref": {
+    "nom": "Cyber Resilience Act – autorité nationale (SAMSIK)",
+    "nom_en": "Cyber Resilience Act – national authority (SAMSIK)",
+    "lien": "https://samsik.dk/cra/",
+    "autorite": "Styrelsen for Samfundssikkerhed (SAMSIK)",
+    "resume_fr": "SAMSIK accompagne la mise en œuvre du CRA au Danemark ; notifications des vulnérabilités activement exploitées et incidents graves via la plateforme européenne depuis le 11 septembre 2026, exigences complètes au 11 décembre 2027.",
+    "resume_en": "SAMSIK supports CRA implementation in Denmark; reporting of actively exploited vulnerabilities and severe incidents via the EU platform since 11 September 2026, full requirements on 11 December 2027."
+   },
+   "active": false
+  },
+  {
+   "id": "ka3bd0789505",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Espagne",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-09-11",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "ref": {
+    "nom": "Règlement (UE) 2024/2847 (CRA) – application en Espagne",
+    "nom_en": "Regulation (EU) 2024/2847 (CRA) – application in Spain",
+    "lien": "https://www.incibe.es/empresas/blog/la-ley-de-ciberresiliencia-europea-se-publica-en-su-version-en-castellano",
+    "autorite": "INCIBE (appui) ; autorité de surveillance à confirmer",
+    "resume_fr": "Obligations de notification applicables depuis le 11 septembre 2026, exigences essentielles en décembre 2027.",
+    "resume_en": "Reporting obligations since 11 September 2026, essential requirements from December 2027."
+   },
+   "active": false
+  },
+  {
+   "id": "kaf50aea36ee",
+   "type": "echeance",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Finlande",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-05-01",
+   "fin": "2026-05-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-05-01",
+   "ref": {
+    "nom": "Loi sur l'usage secondaire des données sociales et de santé (réformée au 1er mai 2026)",
+    "nom_en": "Act on the secondary use of health and social data",
+    "lien": "https://findata.fi/uutiset/toisiolaki-muuttuu-1-5-katso-kooste-tulevista-uudistuksista/",
+    "autorite": "Findata / THL",
+    "resume_fr": "Encadre l'accès aux données de santé pour la recherche, l'innovation et le développement ; modèle décentralisé depuis mai 2026.",
+    "resume_en": "Governs access to health data for research, innovation and development; decentralised model since May 2026."
+   },
+   "active": false
+  },
+  {
+   "id": "k5887a5587ca",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Finlande",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-06-01",
+   "fin": "2026-06-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-06-01",
+   "ref": {
+    "nom": "Loi sur la cyberrésilience – loi nationale d'application du CRA",
+    "nom_en": "Cyber Resilience Act national implementing act",
+    "lien": "https://traficom.fi/fi/uutiset/uusi-kyberkestavyyslaki-voimaan-16-haavoittuvuuksista-ilmoitettava-traficomille-syksysta-alkaen",
+    "autorite": "Traficom",
+    "resume_fr": "Loi nationale d'application du CRA en vigueur le 1er juin 2026 ; notifications de vulnérabilités à Traficom depuis l'automne 2026.",
+    "resume_en": "National CRA implementing act in force on 1 June 2026; vulnerability notifications to Traficom from autumn 2026."
+   },
+   "active": false
+  },
+  {
+   "id": "ke27d53a0bb2",
+   "type": "echeance",
+   "texte": "SREN / SecNumCloud",
+   "inconnu": false,
+   "zone": "France",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-04-14",
+   "fin": "2026-04-14",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-04-14",
+   "ref": {
+    "nom": "Loi SREN art. 31 et décret n° 2026-272 – cloud et données sensibles de l'État (SecNumCloud)",
+    "nom_en": "SREN Act art. 31 and Decree 2026-272 – cloud and sensitive State data (SecNumCloud)",
+    "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053900789",
+    "autorite": "ANSSI / DINUM",
+    "resume_fr": "Les données d'une sensibilité particulière des administrations, opérateurs et GIP de l'État doivent être hébergées par un cloud protégé contre les lois extraterritoriales (SecNumCloud).",
+    "resume_en": "Particularly sensitive data of State administrations, operators and GIPs must be hosted in a cloud protected against extraterritorial laws (SecNumCloud)."
+   },
+   "active": false
+  },
+  {
+   "id": "k7b10ce10370",
+   "type": "echeance",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Hongrie",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-06-11",
+   "fin": "2026-06-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-06-11",
+   "ref": {
+    "nom": "Loi CXXXV de 2025 d'application du CRA",
+    "nom_en": "Act CXXXV of 2025 implementing the CRA",
+    "lien": "https://cms.law/en/hun/legal-updates/eu-cyber-resilience-act-s-implementing-provisions-published-in-the-hungarian-official-journal",
+    "autorite": "SZTFH",
+    "resume_fr": "SZTFH autorité de notification et de surveillance du marché ; amendes jusqu'à 15 M€ ou 2,5 % du CA ; surveillance et amendes applicables au 11 décembre 2027.",
+    "resume_en": "SZTFH notifying and market surveillance authority; fines up to EUR 15m or 2.5% of turnover; surveillance and fines from 11 December 2027."
+   },
+   "active": false
+  },
+  {
+   "id": "k5dc3fc790d7",
+   "type": "echeance",
+   "texte": "Cbw",
+   "inconnu": false,
+   "zone": "Pays-Bas",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-08-15",
+   "fin": "2026-08-15",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-08-15",
+   "ref": {
+    "nom": "Loi, décret et arrêté sur la cybersécurité (Cyberbeveiligingswet), volet santé",
+    "nom_en": "Cybersecurity Act, Decree and health-sector regulation",
+    "lien": "https://zoek.officielebekendmakingen.nl/stcrt-2026-28763.html",
+    "autorite": "IGJ (santé), Z-CERT, NCSC",
+    "resume_fr": "Transposition de NIS2 en vigueur depuis le 15 août 2026 ; pour la santé (y compris fabricants de DM), conformité via NEN 7510 / ISO 27001 et notification des incidents significatifs.",
+    "resume_en": "NIS2 transposition in force since 15 August 2026; for health (including device manufacturers), compliance via NEN 7510 / ISO 27001 and significant-incident reporting."
+   },
+   "active": false
+  },
+  {
+   "id": "ka795c174f38",
+   "type": "echeance",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Pays-Bas",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-08-15",
+   "fin": "2026-08-15",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-08-15",
+   "ref": {
+    "nom": "Obligations des établissements de santé au titre de la Cbw (NEN 7510) et chaîne d'approvisionnement",
+    "nom_en": "Healthcare providers' Cbw obligations (NEN 7510) and supply chain",
+    "lien": "https://www.igj.nl/onderwerpen/themas-in-het-toezicht/digitale-zorg/informatiebeveiliging/toezicht-op-cyberbeveiliging",
+    "autorite": "IGJ / Z-CERT",
+    "resume_fr": "Les hôpitaux doivent démontrer la maîtrise de leurs risques, y compris fournisseurs, selon NEN 7510 / ISO 27001.",
+    "resume_en": "Hospitals must demonstrate risk control, including suppliers, per NEN 7510 / ISO 27001."
+   },
+   "active": false
+  },
+  {
+   "id": "ke2d8946c04a",
+   "type": "echeance",
+   "texte": "BIO2",
+   "inconnu": false,
+   "zone": "Pays-Bas",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-03-05",
+   "fin": "2026-03-05",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-03-05",
+   "ref": {
+    "nom": "Référentiel de sécurité de l'information de l'administration 2 (BIO2)",
+    "nom_en": "Baseline Information Security for Government 2",
+    "lien": "https://www.bio-overheid.nl/bio2/bio-producten/baseline-informatiebeveiliging-overheid-2-bio2/",
+    "autorite": "CIP / BZK",
+    "resume_fr": "Norme de sécurité obligatoire pour toutes les administrations, avec exigences à intégrer dans les contrats fournisseurs.",
+    "resume_en": "Mandatory security baseline for all government layers, with requirements to embed in supplier contracts."
+   },
+   "active": false
+  },
+  {
+   "id": "kaf4d73abb01",
+   "type": "echeance",
+   "texte": "Wwke",
+   "inconnu": false,
+   "zone": "Pays-Bas",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-08-15",
+   "fin": "2026-08-15",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-08-15",
+   "ref": {
+    "nom": "Loi sur la résilience des entités critiques (Wwke)",
+    "nom_en": "Critical Entities Resilience Act",
+    "lien": "https://www.rdi.nl/actueel/nieuws/2026/04/17/cbw-en-wwke-stap-dichterbij",
+    "autorite": "Ministère JenV / autorités sectorielles",
+    "resume_fr": "Transposition de la directive CER, en vigueur depuis le 15 août 2026.",
+    "resume_en": "CER directive transposition, in force since 15 August 2026."
+   },
+   "active": false
+  },
+  {
+   "id": "k1ad6156a8a0",
+   "type": "echeance",
+   "texte": "KSC",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-04-03",
+   "fin": "2026-04-03",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-04-03",
+   "ref": {
+    "nom": "Loi sur le système national de cybersécurité (modifiée par la loi du 23 janvier 2026, Dz.U. 2026 poz. 252)",
+    "nom_en": "National Cybersecurity System Act (amended by Act of 23 January 2026, Journal of Laws 2026 item 252)",
+    "lien": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000252",
+    "autorite": "Ministre du Numérique ; CSIRT NASK / CSIRT CeZ (santé)",
+    "resume_fr": "Transposition de NIS2 : entités essentielles et importantes (dont santé) s'auto-identifient et s'enregistrent (système S46), mesures de gestion des risques, notification des incidents, procédure de désignation des fournisseurs à haut risque.",
+    "resume_en": "NIS2 transposition: essential and important entities (including health) self-identify and register (S46 system), risk management measures, incident reporting, high-risk vendor designation procedure."
+   },
+   "active": false
+  },
+  {
+   "id": "kce7dcd41f22",
+   "type": "echeance",
+   "texte": "RJC",
+   "inconnu": false,
+   "zone": "Portugal",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-04-03",
+   "fin": "2026-04-03",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-04-03",
+   "ref": {
+    "nom": "Décret-loi 125/2025 – régime juridique de la cybersécurité (transposition de NIS2)",
+    "nom_en": "Decree-Law 125/2025 – cybersecurity legal regime (NIS2 transposition)",
+    "lien": "https://www.cncs.gov.pt/pt/regime-juridico/",
+    "autorite": "CNCS",
+    "resume_fr": "Transposition NIS2 en vigueur depuis le 3 avril 2026 : enregistrement MyCiber, responsable de cybersécurité, notification d'incidents, évaluation de la chaîne d'approvisionnement.",
+    "resume_en": "NIS2 transposition in force since 3 April 2026: MyCiber registration, cybersecurity officer, incident notification, supply chain assessment."
+   },
+   "active": false
+  },
+  {
+   "id": "kca94a96ab3b",
+   "type": "echeance",
+   "texte": "RCM 102/2026",
+   "inconnu": false,
+   "zone": "Portugal",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-05-28",
+   "fin": "2026-05-28",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-05-28",
+   "ref": {
+    "nom": "Résolution du Conseil des ministres 102/2026 – cloud souverain de l'administration",
+    "nom_en": "Council of Ministers Resolution 102/2026 – sovereign cloud for public administration",
+    "lien": "https://eco.sapo.pt/2026/05/27/entidades-publicas-ficam-com-50-da-poupanca-apos-migracao-para-cloud-soberana/",
+    "autorite": "Gouvernement / ARTE",
+    "resume_fr": "Classification des processus publics en quatre niveaux de souveraineté ; données stratégiques en infrastructure sous contrôle de l'État.",
+    "resume_en": "Four-tier sovereignty classification of public processes; strategic data in State-controlled infrastructure."
+   },
+   "active": false
+  },
+  {
+   "id": "k3cd47b6104d",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Portugal",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-09-11",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "ref": {
+    "nom": "Règlement (UE) 2024/2847 (CRA) – application au Portugal",
+    "nom_en": "Regulation (EU) 2024/2847 (CRA) – application in Portugal",
+    "lien": "https://www.cuatrecasas.com/pt/portugal/propriedade-intelectual/art/regulamento-ciber-resiliencia-primeiras-obrigacoes",
+    "autorite": "À confirmer (ANACOM relaie les orientations)",
+    "resume_fr": "Obligations de notification depuis le 11 septembre 2026, exigences essentielles en décembre 2027.",
+    "resume_en": "Reporting obligations since 11 September 2026, essential requirements from December 2027."
+   },
+   "active": false
+  },
+  {
+   "id": "k7944683e2e5",
+   "type": "echeance",
+   "texte": "DTAC",
+   "inconnu": false,
+   "zone": "Royaume-Uni",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-04-06",
+   "fin": "2026-04-06",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-04-06",
+   "ref": {
+    "nom": "Critères d'évaluation des technologies numériques du NHS (DTAC) v2",
+    "nom_en": "Digital Technology Assessment Criteria v2",
+    "lien": "https://htn.co.uk/2026/02/25/digital-technology-assessment-criteria-refreshed-to-create-simpler-more-trusted-pathway-for-nhs-digital-innovation/",
+    "autorite": "NHS England",
+    "resume_fr": "Référentiel d'évaluation des technologies de santé numériques (sécurité clinique, protection des données, cybersécurité, interopérabilité) utilisé par les acheteurs du NHS.",
+    "resume_en": "Assessment baseline for digital health technologies (clinical safety, data protection, cybersecurity, interoperability) used by NHS buyers."
+   },
+   "active": false
+  },
+  {
+   "id": "k26f94400541",
+   "type": "echeance",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Rép. Tchèque",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-01-01",
+   "fin": "2026-01-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-01-01",
+   "ref": {
+    "nom": "Loi sur la numérisation de la santé (2021, modifiée au 1er janvier 2026)",
+    "nom_en": "Act on the electronisation of healthcare (2021, amended from 1 January 2026)",
+    "lien": "https://www.tribune.cz/vsechny-clanky/co-se-zmeni-od-ledna-2026-v-elektronickem-zdravotnictvi/",
+    "autorite": "Ministère de la Santé ; NCEZ",
+    "resume_fr": "Services nationaux d'e-santé (portail ezdravi, dossier de santé partagé, eŽádanky), registres de base, standards d'interopérabilité.",
+    "resume_en": "National e-health services (ezdravi portal, shared health record, eŽádanky), base registers, interoperability standards."
+   },
+   "active": false
+  },
+  {
+   "id": "k3b2943c1694",
+   "type": "echeance",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Rép. Tchèque",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-01-01",
+   "fin": "2026-01-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-01-01",
+   "ref": {
+    "nom": "Loi n° 365/2000 Sb. sur les systèmes d'information de l'administration (titre VI, cloud) et décret n° 505/2025 Sb.",
+    "nom_en": "Act No. 365/2000 Coll. on public administration information systems (Part VI cloud computing) and Decree No. 505/2025 Coll.",
+    "lien": "https://www.dia.gov.cz/cs/nase-cinnosti/na-cem-pracujeme/egovernment-cloud/katalog-cloud-computingu/katalog-cloud-computingu",
+    "autorite": "DIA (Digitální a informační agentura)",
+    "resume_fr": "Les organismes publics ne peuvent recourir qu'à des services cloud inscrits au catalogue cloud computing, selon des niveaux de sécurité.",
+    "resume_en": "Public bodies may only use cloud services listed in the cloud computing catalogue, according to security levels."
+   },
+   "active": false
+  },
+  {
+   "id": "k9e6f40326fc",
+   "type": "echeance",
+   "texte": "LSI / PSE",
+   "inconnu": false,
+   "zone": "Suisse",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-01-01",
+   "fin": "2026-01-01",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-01-01",
+   "ref": {
+    "nom": "Sécurité dans les acquisitions de la Confédération (procédure de sécurité relative aux entreprises, clauses SEPOS)",
+    "nom_en": "Security in federal procurement (facility security procedure, SEPOS clauses)",
+    "lien": "https://www.sepos.admin.ch/fr/securite-dans-les-acquisitions",
+    "autorite": "SEPOS",
+    "resume_fr": "Exigences de sécurité dans les marchés fédéraux ; clauses contractuelles standard applicables depuis le 1er janvier 2026.",
+    "resume_en": "Security requirements in federal contracts; standard contract clauses applicable since 1 January 2026."
+   },
+   "active": false
+  },
+  {
+   "id": "k9ee52d1f3ae",
+   "type": "echeance",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Suède",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-01-15",
+   "fin": "2026-01-15",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-01-15",
+   "ref": {
+    "nom": "Loi (2025:1506) et ordonnance (2025:1507) sur la cybersécurité",
+    "nom_en": "Cybersecurity Act and Ordinance",
+    "lien": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+    "autorite": "MCF et autorités sectorielles (dont Läkemedelsverket, IVO)",
+    "resume_fr": "Transposition suédoise de NIS2, complétée par les règlements MCFFS 2026:1 (notification et identification) et MCFFS 2026:11 (mesures de sécurité, à partir du 1er octobre 2026).",
+    "resume_en": "Swedish NIS2 transposition, supplemented by MCFFS 2026:1 (notification and identification) and MCFFS 2026:11 (security measures, from 1 October 2026)."
+   },
+   "active": false
+  },
+  {
+   "id": "k2c8876df86c",
+   "type": "echeance",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Suède",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-01-15",
+   "fin": "2026-01-15",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-01-15",
+   "ref": {
+    "nom": "Supervision NIS2 des fabricants de médicaments et de dispositifs médicaux",
+    "nom_en": "NIS2 supervision of medicine and medical device manufacturers",
+    "lien": "https://www.lakemedelsverket.se/sv/lagar-och-regler/eu-direktiv-och-eu-forordningar/eu-direktiv/nis2",
+    "autorite": "Läkemedelsverket",
+    "resume_fr": "Le Läkemedelsverket est l'autorité de supervision de la loi cybersécurité pour les fabricants de médicaments et de dispositifs médicaux et la R&D associée ; il est aussi l'autorité DM/DIV.",
+    "resume_en": "Läkemedelsverket is the Cybersecurity Act supervisory authority for medicine and medical device manufacturers and related R&D; it is also the MD/IVD authority."
+   },
+   "active": false
+  },
+  {
+   "id": "k1dbc78ff0d2",
+   "type": "echeance",
+   "texte": "CRA",
+   "inconnu": false,
+   "zone": "Suède",
+   "detecte_le": "2026-10-06",
+   "maj_le": "2026-10-06",
+   "date": "2026-09-11",
+   "fin": "2026-09-11",
+   "version": "",
+   "version_maj": "",
+   "articles": [],
+   "nb_articles": 0,
+   "a_verifier": false,
+   "echeance": "2026-09-11",
+   "ref": {
+    "nom": "Règlement sur la cyberrésilience – dispositions nationales complémentaires proposées (SOU 2025:115)",
+    "nom_en": "Cyber Resilience Act – proposed supplementary national provisions",
+    "lien": "https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2025/12/sou-2025115/",
+    "autorite": "Regeringen (autorité de surveillance à désigner)",
+    "resume_fr": "Le CRA s'applique directement (signalement depuis le 11 septembre 2026) ; le SOU 2025:115 propose les compléments nationaux (surveillance, sanctions).",
+    "resume_en": "The CRA applies directly (reporting since 11 September 2026); SOU 2025:115 proposes national supplements (supervision, penalties)."
+   },
+   "active": false
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 window.VEILLE_DEBATS = {
- "mise_a_jour": "2026-10-05T12:18+00:00",
+ "mise_a_jour": "2026-10-06T12:06+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -6448,6 +6448,111 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "IVDR"
+   ]
+  },
+  {
+   "id": "bfec90ddb6b3",
+   "titre": "The new UK Information Commission: Turning data protection enforcement into a team effort",
+   "lien": "https://www.hlc.com/en/publications/the-new-uk-information-commission-turning-data-protection-enforcement-into-a-team-effort",
+   "resume": "On 30 September 2026, the Information Commissioner's Office became the Information Commission’s Office, a subtle but important change introduced by the Data (Use and Access) Act 2025...",
+   "date": "2026-10-05",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_bruit": 0.369,
+   "score": 0.476,
+   "themes": [
+    "large",
+    "nis2"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La nouvelle Commission d'information UK : transformer l'application de la protection des données en une équipe",
+     "resume": "Le 30 septembre 2026, le Commissariat à l'information est devenu le Bureau de la Commission de l'information, un changement subtil mais important introduit par la Loi sur les données (utilisation et accès) de 2025..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "ICO"
+   ],
+   "acronymes": [
+    "GDPR",
+    "ICO"
+   ]
+  },
+  {
+   "id": "bc86d3897543",
+   "titre": "MedTech Europe in the headlines in September 2026",
+   "lien": "https://www.medtecheurope.org/2026/10/06/medtech-europe-in-the-headlines-in-september-2026/",
+   "resume": "In September, MedTech Europe featured prominently in coverage of the MDR/IVDR revision, setting out its positions on the IVDR, single-use devices and AI-enabled medical devices. Coverage also centred heavily on the EU’s proposed Public Procurement Regulation, with MedTech Europe welcoming the shift towards value-based procurement while warning against “Made in Europe” requirements. Further coverage included […] The…",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "MDR",
+    "Dispositifs médicaux",
+    "Achats publics"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "score_bruit": 0.3,
+   "score": 0.63,
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres en septembre 2026",
+     "resume": "En septembre, MedTech Europe a pris une place importante dans la révision de MDR/IVDR et a exposé ses positions sur les appareils IVDR, les appareils à usage unique et les appareils médicaux AI-enabled. La couverture s'est également fortement concentrée sur le règlement sur les marchés publics proposé par UE, MedTech Europe se félicitant de l'évolution vers des marchés à valeur ajoutée tout en mettant en garde contre les exigences de « Made in Europe ». Autre couverture : [...] Les..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "IVDR",
+    "MDR"
+   ],
+   "acronymes": [
+    "IVDR",
+    "MDR"
    ]
   }
  ]

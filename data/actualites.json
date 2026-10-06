@@ -3,22 +3,24 @@
   "titre": "Cyber Watch",
   "surtitre": "Veille réglementaire — Wavestone",
   "sous_titre": "Cybersécurité · Données · IA · Dispositifs médicaux — collecte automatique chaque lundi",
-  "mise_a_jour": "2026-10-05T12:18+00:00",
-  "version": "2026-10-05-1218",
+  "mise_a_jour": "2026-10-06T12:06+00:00",
+  "version": "2026-10-06-1206",
   "nb_sources": 156,
   "url_lancer_maj": "https://github.com/TessCWavestone/CyberwatchV2/actions/workflows/veille.yml",
   "depot": "TessCWavestone/CyberwatchV2",
   "branche": "main",
   "serveur": "https://github.com",
+  "url_relais": "",
+  "url_site": "https://tesscwavestone.github.io/CyberwatchV2/",
   "traduction": {
    "active": true,
    "moteur": true,
-   "faites": 288,
+   "faites": 61,
    "en_attente": 0,
    "erreur": ""
   },
-  "nb_nouveaux": 112,
-  "nb_ecartes_nouveaux": 806,
+  "nb_nouveaux": 18,
+  "nb_ecartes_nouveaux": 223,
   "nb_essentiel": 272,
   "textes_cles_en": {
    "RGPD / GDPR": "GDPR",
@@ -651,9 +653,705 @@
     "groupe": "autorites"
    }
   },
-  "nb_versions": 8
+  "nb_versions": 9,
+  "nb_alertes": 27
  },
  "articles": [
+  {
+   "id": "a470f96b529e",
+   "titre": "Myndigheder, organisationer og virksomheder bør supplere deres identitetskontrol efter læk fra CPR-registeret",
+   "lien": "https://samsik.dk/artikler/2026/10/myndigheder-organisationer-og-virksomheder-boer-supplere-identitetskontrol/",
+   "resume": "Styrelsen for Samfundssikkerhed opfordrer til, at myndigheder, organisationer og virksomheder supplerer deres kontrol, så der ikke udleveres følsomme oplysninger alene på baggrund af oplysninger fra Det Centrale Personregister.",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Agence pour la sécurité sociétale",
+   "zone": "Danemark",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.35,
+   "score": 0.55,
+   "themes": [
+    "fournisseurs_publics",
+    "donnees"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "da",
+   "trad": {
+    "en": {
+     "titre": "Authorities, organisations and undertakings should supplement their identity checks following leaks from CPR-registeret",
+     "resume": "The Society Security Agency calls for authorities, organisations and companies to supplement their controls so that sensitive information is not provided solely on the basis of information provided by the Central Personnel Register."
+    },
+    "fr": {
+     "titre": "Les autorités, organisations et entreprises devraient compléter leurs contrôles d'identité à la suite de fuites de CPR-registeret",
+     "resume": "L'Agence de sécurité de la société demande aux autorités, aux organisations et aux entreprises de compléter leurs contrôles afin que les informations sensibles ne soient pas fournies uniquement sur la base des informations fournies par le registre central du personnel."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "SAMSIK"
+   ],
+   "acronymes": [
+    "SAMSIK"
+   ]
+  },
+  {
+   "id": "6143388ad58c",
+   "titre": "Privacy statement for Public Procurement procedures",
+   "lien": "https://www.berec.europa.eu/index%2Ephp/en/procurement-procedures/privacy-statement-for-public-procurement-procedures",
+   "resume": "",
+   "date": "2026-10-06",
+   "date_estimee": true,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "BEREC (télécoms)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Achats publics"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_bruit": 0.383,
+   "score": 0.659,
+   "themes": [
+    "donnees",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Déclaration de confidentialité pour les procédures de marchés publics",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "e1e3558529ae",
+   "titre": "Antibiotika in der Tiermedizin: Abgabe laut Bundesamt weiter auf niedrigem Niveau",
+   "lien": "https://www.aerzteblatt.de/news/antibiotika-in-der-tiermedizin-abgabe-laut-bundesamt-weiter-auf-niedrigem-niveau-61f4319c-63b8-44a3-b333-90b59fe0699d",
+   "resume": "Berlin – Die Menge der in der Tiermedizin abgegebenen Antibiotika hat sich nach Angaben des Bundesamts für Verbraucherschutz und Lebensmittelsicherheit (BVL) zuletzt auf niedrigem Niveau stabilisiert. 2025 sei die Menge marginal um 0,3 Tonnen gesunken, teilte das BVL heute mit. Demnach wurden wie im Vorjahr rund 562 Tonnen Antibiotika an die... [weiter lesen]",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Deutsches Ärzteblatt – Nachrichten",
+   "zone": "Allemagne",
+   "nature": "presse",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.261,
+   "score": 0.462,
+   "themes": [
+    "dm_div",
+    "pharma_industrie"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Antibiotics in veterinary medicine: according to the Federal Office, delivery continues at a low level",
+     "resume": "Berlin – According to the Federal Office for Consumer Protection and Food Safety (BVL), the amount of antibiotics released in veterinary medicine has recently stabilised at a low level. In 2025, the quantity has fallen marginally by 0.3 tons, informed the BVL today. Accordingly, as in the previous year, around 562 tons of antibiotics were sent to the... [read more]"
+    },
+    "fr": {
+     "titre": "Antibiotiques en médecine vétérinaire: selon l'Office fédéral, la livraison continue à un faible niveau",
+     "resume": "Berlin – Selon l'Office fédéral de la protection des consommateurs et de la sécurité alimentaire (BVL), la quantité d'antibiotiques libérés en médecine vétérinaire s'est récemment stabilisée à un faible niveau. En 2025, la quantité a légèrement baissé de 0,3 tonne, a informé le BVL aujourd'hui. Par conséquent, comme l'année précédente, environ 562 tonnes d'antibiotiques ont été envoyées... [en savoir plus]"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "cdb8944f73dc",
+   "titre": "Digitalverband warnt vor neuen DiGA-Abschlägen",
+   "lien": "https://www.aerzteblatt.de/news/digitalverband-warnt-vor-neuen-diga-abschlagen-54960e9d-4432-4b25-9ca4-508d649d5e50",
+   "resume": "Berlin – Die vom Gesetzgeber geplanten Vergütungsabschläge für digitale Gesundheitsanwendungen (DiGA) werden vom Spitzenverband Digitale Gesundheitsversorgung (SVDGV) kritisch bewertet. Laut einem Änderungsantrag zum Notfallreformgesetz soll ab 1. Januar 2027 ein Abschlag von den Vergütungsbeträgen greifen, welcher dem Anteil der DiGA-Nutzer (im... [weiter lesen]",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Deutsches Ärzteblatt – Nachrichten",
+   "zone": "Allemagne",
+   "nature": "presse",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Technologies numériques en santé"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.271,
+   "score": 0.575,
+   "themes": [
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Digital Association warns of new DiGA discounts",
+     "resume": "Berlin – The compensation discounts for digital health applications (DiGA) planned by the legislature are critically assessed by the leading association Digital Health Care (SVDGV). According to an amendment to the Emergency Reform Act, from January 1, 2027, a discount of the remuneration amounts will apply, which corresponds to the share of DiGA users (in... [read more])"
+    },
+    "fr": {
+     "titre": "Digital Association met en garde contre les nouvelles réductions DiGA",
+     "resume": "Berlin – Les rabais de compensation pour les applications de santé numériques (DiGA) prévus par le législateur sont évalués de façon critique par l'association leader Digital Health Care (SVDGV). En vertu d'un amendement à la loi sur la réforme d'urgence, à partir du 1er janvier 2027, un rabais sur les montants de la rémunération s'appliquera, ce qui correspond à la part des utilisateurs de DiGA (en... [read more])"
+    }
+   },
+   "echeances": [
+    {
+     "date": "2027-01-01",
+     "approx": false,
+     "extrait": {
+      "de": "…(SVDGV) kritisch bewertet. Laut einem Änderungsantrag zum Notfallreformgesetz soll ab 1. Januar 2027 ein Abschlag von den Vergütungsbeträgen greifen, welcher dem Anteil der DiGA-Nutzer…",
+      "en": "…Digital Health Care (SVDGV). According to an amendment to the Emergency Reform Act, from January 1, 2027, a discount of the remuneration amounts will apply, which corresponds to the share of…",
+      "fr": "…Care (SVDGV). En vertu d'un amendement à la loi sur la réforme d'urgence, à partir du 1er janvier 2027, un rabais sur les montants de la rémunération s'appliquera, ce qui correspond à la part…"
+     }
+    }
+   ],
+   "sujets": [
+    "DiGA"
+   ],
+   "acronymes": [
+    "DiGA"
+   ]
+  },
+  {
+   "id": "c67f94ee2639",
+   "titre": "Transformationsfonds: Mindestanforderungen für Telemedizin-Netzwerke stehen fest",
+   "lien": "https://www.aerzteblatt.de/news/transformationsfonds-mindestanforderungen-fur-telemedizin-netzwerke-stehen-fest-5375ce73-6c2a-40dd-94f1-f2e13b6e4ff4",
+   "resume": "Berlin – Im Zuge der Krankenhausreform kann unter anderem der Aufbau und das Betreiben von Telemedizin zwischen Krankenhäusern durch den Transformationsfonds gefördert werden. Wie konkret die telemedizinischen Netzwerke aussehen müssen, damit sie entsprechend gefördert werden können, hat das Bundesministerium für Gesundheit (BMG) nun in einer... [weiter lesen]",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Deutsches Ärzteblatt – Nachrichten",
+   "zone": "Allemagne",
+   "nature": "presse",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Service national de santé"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.309,
+   "score": 0.604,
+   "themes": [
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Transformation Fund: Minimum Requirements for Telemedicine Networks",
+     "resume": "Berlin – As part of the hospital reform, the establishment and operation of telemedicine between hospitals can be supported by the Transformation Fund. How concrete the telemedical networks must look so that they can be promoted accordingly, the Federal Ministry of Health (BMG) has now... [read more]"
+    },
+    "fr": {
+     "titre": "Fonds de transformation : Exigences minimales pour les réseaux de télémédecine",
+     "resume": "Berlin – Dans le cadre de la réforme des hôpitaux, l'établissement et le fonctionnement de la télémédecine entre les hôpitaux peuvent être soutenus par le Fonds pour la transformation. Comme les réseaux télémédicaux doivent être concrets pour qu'ils puissent être promus en conséquence, le ministère fédéral de la Santé (BMG) a maintenant... [lire la suite]"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "458a768b687e",
+   "titre": "Ältere Menschen mit Melanom: Adjuvante Immuntherapie ist wirksam und sicher",
+   "lien": "https://www.aerzteblatt.de/news/altere-menschen-mit-melanom-adjuvante-immuntherapie-ist-wirksam-und-sicher-d6cec430-4d37-40bb-8009-aa94a8a338c4",
+   "resume": "Wien – Die adjuvante Immuntherapie ist wohl bei Menschen mit Hautkrebs in verschiedenen Altersgruppen sicher und wirksam. Traten immunvermittelte Nebenwirkungen (iRAE) auf, so ging das mit einem besseren rezidivfreien Überleben (RFS) einher, berichtete Pedro Naranjo Álamo, Universitary Hospital of Gran Canaria Doctor Negrin, Las Palmas, auf dem... [weiter lesen]",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Deutsches Ärzteblatt – Nachrichten",
+   "zone": "Allemagne",
+   "nature": "presse",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Santé"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.208,
+   "score": 0.494,
+   "themes": [
+    "sante_donnees",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Elderly people with melanoma: Adjuvant immunotherapy is effective and safe",
+     "resume": "Vienna – Adjuvant immunotherapy is probably safe and effective in people with skin cancer in different age groups. If immune-mediated side effects (iRAE) occurred, this was accompanied by better recurrence-free survival (RFS), Pedro Naranjo Álamo, Universitary Hospital of Gran Canaria Doctor Negrin, Las Palmas, reported on the... [read more]"
+    },
+    "fr": {
+     "titre": "Personnes âgées atteintes de mélanome: l'immunothérapie Adjuvant est efficace et sûre",
+     "resume": "Vienne – L'immunothérapie adjuvante est probablement sûre et efficace chez les personnes atteintes d'un cancer de la peau dans différents groupes d'âge. Si des effets indésirables immunodéprimés (iRAE) sont survenus, cela s'est accompagné d'une meilleure survie sans récidive (RFS), Pedro Naranjo Álamo, Hôpital Universitaire de Gran Canaria Docteur Negrin, Las Palmas, a... [Lire la suite]"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "03cb3a68dda7",
+   "titre": "Nuovo paper del CERT-AGID sugli Explosive Prompts e la sicurezza dei sistemi agentici",
+   "lien": "https://www.agid.gov.it/it/notizie/nuovo-paper-del-cert-agid-sugli-explosive-prompts-e-la-sicurezza-dei-sistemi-agentici",
+   "resume": "Nuovo paper del CERT-AGID sugli Explosive Prompts e la sicurezza dei sistemi agentici false PARENTI@agid.gov.it Mar, 10/06/2026 - 10:47 Un’istruzione malevola può essere acquisita da un modello di intelligenza artificiale durante la lettura di un documento e produrre i propri effetti soltanto in un momento successivo della conversazione, al verificarsi di una specifica condizione. È questo il principio alla base…",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "AgID – Agenzia per l'Italia Digitale (notizie)",
+   "zone": "Italie",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.434,
+   "score": 0.565,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "it",
+   "trad": {
+    "en": {
+     "titre": "New CERT-AGID paper on Explosive Prompts and the security of the agents",
+     "resume": "New CERT-AGID paper on Explosive Prompts and the safety of false agents PARENTI@agid.gov.it Mar, 10/06/2026 - 10:47 A malevolent instruction can be acquired by a model of artificial intelligence when reading a document and producing its effects only at a later time of conversation, at the occurrence of a specific condition. That's the basic principle."
+    },
+    "fr": {
+     "titre": "Nouveau document CERT-AGID sur les prompts explosifs et la sécurité des agents",
+     "resume": "Nouveau document CERT-AGID sur les sollicitations explosives et la sécurité des faux agents PARENTI@agid.gov.it Mar, 10/06/26 - 10:47 Une instruction malveillante peut être acquise par un modèle d'intelligence artificielle lors de la lecture d'un document et de la production de ses effets seulement à un moment ultérieur de la conversation, à la survenue d'une condition spécifique. C'est le principe de base."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AgID"
+   ],
+   "acronymes": [
+    "AgID"
+   ]
+  },
+  {
+   "id": "6fe1a66ba23c",
+   "titre": "Government backs recommendations of NHS doctors-led AI Commission",
+   "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+   "resume": "Ministers back independent Commission's blueprint in full, while the MHRA's AI Airlock opens its next phase,",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "MHRA (Medicines and Healthcare products Regulatory Agency) – news & communications",
+   "zone": "Royaume-Uni",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Service national de santé"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.332,
+   "score": 0.525,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
+     "resume": "Les ministres soutiennent pleinement le plan de travail de la Commission, tandis que le poste de pilotage IA ouvre sa prochaine phase,"
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "MHRA",
+    "NHS"
+   ],
+   "acronymes": [
+    "MHRA",
+    "NHS"
+   ]
+  },
+  {
+   "id": "44acd3b05520",
+   "titre": "Instructions for use of medical devices must be available to the user and easy to understand",
+   "lien": "https://fimea.fi/en/-/instructions-for-use-of-medical-devices-must-be-available-to-the-user-and-easy-to-understand",
+   "resume": "",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Fimea (médicaments et dispositifs médicaux)",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_bruit": 0.339,
+   "score": 0.676,
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Les instructions d'utilisation des instruments médicaux doivent être à la disposition de l'utilisateur et faciles à comprendre",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "Fimea"
+   ],
+   "acronymes": [
+    "Fimea"
+   ]
+  },
+  {
+   "id": "3533d86b8d11",
+   "titre": "Nieuwe strategie om kinderen online te beschermen",
+   "lien": "https://www.digitaleoverheid.nl/nieuws/kabinet-presenteert-strategie-om-kinderen-online-te-beschermen/",
+   "resume": "Het kabinet wil onder andere strengere regels voor digitale diensten, een Europese minimumleeftijd voor sociale media en ondersteuning voor ouders en kinderen. Het bericht Nieuwe strategie om kinderen online te beschermen verscheen eerst op Digitale Overheid .",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Digitale Overheid (ministère de l'Intérieur, BZK)",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.365,
+   "score": 0.505,
+   "themes": [
+    "donnees",
+    "large"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "New strategy to protect children online",
+     "resume": "Among other things, the cabinet wants stricter rules for digital services, a European minimum age for social media and support for parents and children. Het bericht New strategy to protect children online appeared first on Digital Government."
+    },
+    "fr": {
+     "titre": "Nouvelle stratégie de protection des enfants en ligne",
+     "resume": "Entre autres choses, le cabinet veut des règles plus strictes pour les services numériques, un âge minimum européen pour les médias sociaux et le soutien aux parents et aux enfants. Het Bericht Une nouvelle stratégie pour protéger les enfants en ligne est apparue en premier sur le gouvernement numérique."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "b0d83aafd5d0",
+   "titre": "Update: Parlament fordert mehr Schutz für Schweizer Internetadressen",
+   "lien": "https://www.netzwoche.ch/news/2026-03-20/parlament-will-betruegern-das-handwerk-legen",
+   "resume": "Das Parlament will es Cyberkriminellen erschweren, Schweizer Domains zu missbrauchen. Die beiden Kammern überweisen eine entsprechende Motion an den Bundesrat. Darin fordern sie unter anderem eine Identifikationspflicht beim Kauf von Schweizer Domains.",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Netzwoche (presse IT suisse)",
+   "zone": "Suisse",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_bruit": 0.392,
+   "score": 0.462,
+   "themes": [
+    "fournisseurs_publics",
+    "cra"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Update: Parliament calls for more protection for Swiss Internet addresses",
+     "resume": "Parliament wants to make it more difficult for cybercriminals to abuse Swiss domains. The two chambers refer a corresponding motion to the Federal Council. In it, they demand, among other things, an identification obligation when buying Swiss domains."
+    },
+    "fr": {
+     "titre": "Mise à jour: le Parlement demande une plus grande protection des adresses Internet suisses",
+     "resume": "Le Parlement veut rendre plus difficile pour les cybercriminels d'abuser des domaines suisses. Les deux chambres soumettent une motion correspondante au Conseil fédéral. Ils exigent, entre autres, une obligation d'identification lors de l'achat de domaines suisses."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "7bdc95ee4f7d",
+   "titre": "Better public transport data for better-connected communities",
+   "lien": "https://data.europa.eu/en/news-events/news/better-public-transport-data-better-connected-communities",
+   "resume": "05 October 2026 A new study on the European Data Portal examines the availability and consistency of scheduled public transport data in General Transit Feed Specification (GTFS) format across the EU. GTFS is an open, machine-readable standard covering operators, stops, routes, trips and timetables,…",
+   "date": "2026-10-05",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "European Data",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.249,
+   "score": 0.413,
+   "themes": [
+    "sante_donnees",
+    "cra"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Meilleures données sur les transports publics pour les communautés mieux connectées",
+     "resume": "05 octobre 2026 Une nouvelle étude sur le portail européen de données examine la disponibilité et la cohérence des données de transport public prévues au format GTFS (General Transit Feed Specification) dans l'ensemble du UE. GTFS est un standard ouvert, lisible par machine couvrant les opérateurs, les arrêts, les itinéraires, les voyages et les horaires,..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "36b18749973d",
+   "titre": "Česko-francouzské setkání v Paříži a Rennes podpořilo formování strategického přístupu ke kybernetické bezpečnosti",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2461-cesko-francouzske-setkani-v-parizi-a-rennes-podporilo-formovani-strategickeho-pristupu-ke-kyberneticke-bezpecnosti",
+   "resume": "Ve dnech 22.-24. září 2026 se uskutečnila odborná mise české delegace do Francie zaměřená na rozvoj česko-francouzské spolupráce a výměnu know-how v oblasti kybernetické a informační bezpečnosti. Program proběhl v Paříži a Rennes a soustředil se na sdílení zkušeností, identifikaci společných priorit, aktivit a navazování nových partnerství mezi českými a francouzskými institucemi.",
+   "date": "2026-10-05",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.423,
+   "score": 0.588,
+   "themes": [
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "cs",
+   "trad": {
+    "en": {
+     "titre": "Czech-French meetings in Paris and Rennes supported the formation of a strategic approach to cyber security",
+     "resume": "On 22-24 September 2026, an expert mission from the Czech delegation to France aimed at developing Czech-French cooperation and exchanging knowledge on cyber and information security. The programme took place in Paris and Rennes and focused on sharing experience, identifying common priorities, activities and establishing new partnerships between Czech and French institutions."
+    },
+    "fr": {
+     "titre": "Les rencontres franco-tchèques à Paris et à Rennes ont soutenu la formation d'une approche stratégique de la cybersécurité",
+     "resume": "Les 22 et 24 septembre 2026, une mission d'experts de la délégation tchèque en France a pour but de développer la coopération entre la République tchèque et la France et d'échanger des connaissances sur la cybersécurité et la sécurité de l'information. Le programme s'est déroulé à Paris et à Rennes et s'est concentré sur le partage d'expériences, l'identification de priorités, d'activités communes et l'établissement de nouveaux partenariats entre les institutions tchèques et françaises."
+    }
+   },
+   "echeances": [
+    {
+     "date": "2026-09-24",
+     "approx": false,
+     "extrait": {
+      "cs": "…podpořilo formování strategického přístupu ke kybernetické bezpečnosti. Ve dnech 22.-24. září 2026 se uskutečnila odborná mise české delegace do Francie zaměřená na rozvoj…",
+      "fr": "…ont soutenu la formation d'une approche stratégique de la cybersécurité. Les 22 et 24 septembre 2026, une mission d'experts de la délégation tchèque en France a pour but de développer la…"
+     }
+    }
+   ],
+   "sujets": [
+    "NÚKIB"
+   ],
+   "acronymes": [
+    "NÚKIB"
+   ]
+  },
+  {
+   "id": "39632667e991",
+   "titre": "IQVIA fined $7.8 million for failing to properly anonymize health data",
+   "lien": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+   "resume": "Italy's Data Protection Authority (GPDP) has fined IQVIA €7 million ($7.8M) over poor data-processing practices that the agency says could have put roughly one million patients at risk of data exposure and de-anonymization. [...]",
+   "date": "2026-10-05",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "BleepingComputer",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Santé",
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes santé",
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 7176000,
+    "texte": "$7.8M (≈ 7,2 M€)",
+    "plafond": false
+   },
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_bruit": 0.256,
+   "score": 0.492,
+   "themes": [
+    "donnees",
+    "ia"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "IQVIA condamné à une amende de 7,8 millions de dollars pour défaut d'anonymat des données sur la santé",
+     "resume": "L'Autorité italienne pour la protection des données (GPDP) a condamné IQVIA à une amende de 7 millions d'euros (7,8 millions de dollars) pour les mauvaises pratiques de traitement de l'information qui, selon l'agence, auraient pu mettre environ un million de patients à risque d'exposition aux données et de désanonymisation. [...]"
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "Garante"
+   ],
+   "acronymes": [
+    "Garante"
+   ]
+  },
   {
    "id": "213579b82cbd",
    "titre": "Uvedkommende har fået adgang til borgeres CPR-oplysninger: Sådan skal du forholde dig",
@@ -1437,6 +2135,55 @@
    ],
    "acronymes": [
     "CRA"
+   ]
+  },
+  {
+   "id": "05aedfa53c74",
+   "titre": "COMUNICATO STAMPA - Dati sanitari: il Garante privacy sanziona IQVIA per 7 milioni di euro",
+   "lien": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10302141",
+   "resume": "",
+   "date": "2026-10-02",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Garante per la Protezione dei Dati Personali",
+   "zone": "Italie",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_bruit": 0.339,
+   "score": 0.559,
+   "themes": [
+    "donnees",
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "it",
+   "trad": {
+    "en": {
+     "titre": "COMMUNITY STAMPA - Health data: the IQVIA Sanitary Privacy Guarantee for 7 million euros",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "COMMUNAUTE STAMPA - Données sanitaires: la garantie de confidentialité sanitaire IQVIA pour 7 millions d'euros",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "Garante"
+   ],
+   "acronymes": [
+    "Garante"
    ]
   },
   {
@@ -21850,6 +22597,58 @@
    ]
   },
   {
+   "id": "8cf22cfa7884",
+   "titre": "The Spanish DPA fined Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
+   "lien": "https://www.edpb.europa.eu/news/the-spanish-dpa-fined-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
+   "resume": "Background information Date of final decision: 1 February 2023 National case Controller: SECURITAS DIRECT, S.A. Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) Decision: Administrative fine, Compliance order Key words: Data subject rights Summary of the Decision Origin of the case A consumer association lodged a complaint…",
+   "date": "2026-09-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 100000,
+    "texte": "EUR 100 000",
+    "plafond": false
+   },
+   "titre_nettoye": 3,
+   "score_bruit": 0.37,
+   "score": 0.617,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "L'espagnol DPA a infligé une amende à Securitas Direct EUR 100 000 pour avoir rendu plus difficile l'exercice des droits de la personne concernée en orientant les personnes vers un numéro de téléphone payant",
+     "resume": "Informations générales Date de la décision finale: 1 février 2023 Contrôleur national de l'affaire: SECURITAS DIRECT, S.A. Référence(s) légale(s): Article 12 (Information transparente, communication et modalités d'exercice des droits de la personne concernée) Décision: Amende administrative, Ordonnance de conformité Mots clés: Droits de la personne concernée Résumé de la décision Origine de l'affaire Une association de consommateurs a déposé une plainte..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "EDPB"
+   ],
+   "acronymes": [
+    "EDPB"
+   ]
+  },
+  {
    "id": "n5849c577435",
    "titre": "Oracle Maps Its Security Programs to the EU Cyber Resilience Act",
    "lien": "https://www.google.com/search?q=%22Oracle+Maps+Its+Security+Programs+to+the+EU+Cyber+Resilience+Act%22+ERP+Today",
@@ -34013,6 +34812,61 @@
    ]
   },
   {
+   "id": "b355377827f7",
+   "titre": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+   "lien": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+   "resume": "Background information Date of final decision: 21 July 2026 National case Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 17 (Right to erasure ‘right to be forgotten’) Decision: Administrative fine Key words: Data subject rights Summary of the Decision Origin of the case EXTIA, which specialises in IT and engineering,…",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 300000,
+    "texte": "EUR 300 000",
+    "plafond": false
+   },
+   "titre_nettoye": 3,
+   "score_bruit": 0.204,
+   "score": 0.528,
+   "themes": [
+    "donnees",
+    "nis2"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Non-respect des droits des individus : L'amende de CNIL de EXTIA EUR 300 000",
+     "resume": "Informations générales Date de la décision finale : 21 juillet 2026 Affaire nationale Référence(s) légale(s) : Article 12 (Information transparente, communication et modalités d'exercice des droits de la personne concernée), Article 17 (Droit à l'effacement « du droit à l'oubli ») Décision : Amende administrative Mots clés : Droits de la personne concernée Résumé de la décision Origine de l'affaire EXTIA, spécialisée en IT et en..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CNIL",
+    "EDPB"
+   ],
+   "acronymes": [
+    "CNIL",
+    "EDPB"
+   ]
+  },
+  {
    "id": "555fa4ad1c3c",
    "titre": "Comunicazioni promozionali nell’app nonostante il \"no\" del cliente: il Garante della privacy sanziona Banco Bilbao per 5,5 milioni di euro",
    "lien": "https://www.federprivacy.org/informazione/garante-privacy/comunicazioni-promozionali-nell-app-nonostante-il-no-del-cliente-il-garante-della-privacy-sanziona-banco-bilbao-per-5-5-milioni-di-euro",
@@ -38687,6 +39541,71 @@
    "statut": "en_vigueur",
    "sujets": [
     "CNIL"
+   ]
+  },
+  {
+   "id": "100b69922607",
+   "titre": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+   "lien": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+   "resume": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer 2025, an attacker…",
+   "date": "2026-09-09",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Santé",
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes santé",
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 500000,
+    "texte": "EUR 500 000",
+    "plafond": false
+   },
+   "titre_nettoye": 3,
+   "score_bruit": 0.283,
+   "score": 0.649,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Violation des données sanitaires : l'amende de CNIL à l'Hôpital Privé de la Loire EUR 500 000",
+     "resume": "Informations générales Date de la décision finale: 3 septembre 2026 Contrôleur national de l'affaire: Hôpital Privé de la Loire Référence légale: article 32 (Sécurité du traitement), article 34 (Communication d'une violation de données à caractère personnel à la personne concernée), décision: amende administrative Mots clés: Cybersécurité, violation de données à caractère personnel, Santé et recherche Résumé de la décision Origine de l'affaire En été 2025, un attaquant..."
+    }
+   },
+   "echeances": [
+    {
+     "date": "2026-09-03",
+     "approx": false,
+     "extrait": {
+      "en": "…Hôpital Privé de la Loire EUR 500 000. Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32…",
+      "fr": "…Privé de la Loire EUR 500 000. Informations générales Date de la décision finale: 3 septembre 2026 Contrôleur national de l'affaire: Hôpital Privé de la Loire Référence légale: article 32…"
+     }
+    }
+   ],
+   "sujets": [
+    "CNIL",
+    "EDPB"
+   ],
+   "acronymes": [
+    "CNIL",
+    "EDPB"
    ]
   },
   {

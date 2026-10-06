@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-05T12:18+00:00",
+ "mise_a_jour": "2026-10-06T12:06+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -640,6 +640,21 @@
    }
   },
   {
+   "code": "DiGA",
+   "groupe": "textes",
+   "fr": "DiGA / DiPA (Allemagne)",
+   "en": "DiGA / DiPA (Germany)",
+   "nb_articles": 1,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://www.aerzteblatt.de/news/digitalverband-warnt-vor-neuen-diga-abschlagen-54960e9d-4432-4b25-9ca4-508d649d5e50",
+    "titre": "Digitalverband warnt vor neuen DiGA-Abschlägen",
+    "langue": "de",
+    "titre_fr": "Digital Association met en garde contre les nouvelles réductions DiGA",
+    "titre_en": "Digital Association warns of new DiGA discounts"
+   }
+  },
+  {
    "code": "NCSC",
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
@@ -659,7 +674,7 @@
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 44,
+   "nb_articles": 46,
    "exemple": {
     "date": "2026-10-02",
     "lien": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
@@ -674,7 +689,7 @@
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 34,
+   "nb_articles": 37,
    "exemple": {
     "date": "2026-10-05",
     "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
@@ -704,14 +719,14 @@
    "groupe": "autorites",
    "fr": "NÚKIB (Tchéquie)",
    "en": "NÚKIB (Czechia)",
-   "nb_articles": 25,
+   "nb_articles": 26,
    "exemple": {
-    "date": "2026-09-29",
-    "lien": "https://www.lupa.cz/aktuality/stat-rozdava-miliony-na-kyberbezpecnost-firmy-i-neziskovky-si-mohou-sahnout-az-na-2-5-milionu/?utm_source=rss&utm_medium=text&utm_campaign=rss",
-    "titre": "Stát rozdává miliony na kyberbezpečnost. Firmy i neziskovky si mohou sáhnout až na 2,5 milionu",
+    "date": "2026-10-05",
+    "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2461-cesko-francouzske-setkani-v-parizi-a-rennes-podporilo-formovani-strategickeho-pristupu-ke-kyberneticke-bezpecnosti",
+    "titre": "Česko-francouzské setkání v Paříži a Rennes podpořilo formování strategického přístupu ke kybernetické bezpečnosti",
     "langue": "cs",
-    "titre_fr": "L'État distribue des millions pour la cybersécurité. Les entreprises et les banques sans but lucratif peuvent toucher jusqu'à 2,5 millions",
-    "titre_en": "The state is handing out millions for cyber security. Companies and non-profit banks can touch up to 2.5 million"
+    "titre_fr": "Les rencontres franco-tchèques à Paris et à Rennes ont soutenu la formation d'une approche stratégique de la cybersécurité",
+    "titre_en": "Czech-French meetings in Paris and Rennes supported the formation of a strategic approach to cyber security"
    }
   },
   {
@@ -749,14 +764,14 @@
    "groupe": "autorites",
    "fr": "Garante privacy (Italie)",
    "en": "Garante privacy (Italy)",
-   "nb_articles": 19,
+   "nb_articles": 21,
    "exemple": {
-    "date": "2026-10-04",
-    "lien": "https://www.federprivacy.org/informazione/garante-privacy/videosorveglianza-installata-in-modo-non-conforme-alla-planimetria-condivisa-con-i-sindacati-sanzionato-l-istituto-nazionale-di-ricerca-metrologica",
-    "titre": "Videosorveglianza installata in modo non conforme alla planimetria condivisa con i sindacati: sanzionato l’Istituto Nazionale di Ricerca Metrologica",
-    "langue": "it",
-    "titre_fr": "Vidéosurveillance installée d'une manière qui ne correspond pas à la planification partagée avec les syndicats: sanctionné l'Institut national de recherche métrologique",
-    "titre_en": "Video surveillance installed in a way that does not conform to the planimetry shared with the unions: sanctioned the National Institute of Metrological Research"
+    "date": "2026-10-05",
+    "lien": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+    "titre": "IQVIA fined $7.8 million for failing to properly anonymize health data",
+    "langue": "en",
+    "titre_fr": "IQVIA condamné à une amende de 7,8 millions de dollars pour défaut d'anonymat des données sur la santé",
+    "titre_en": ""
    }
   },
   {
@@ -805,6 +820,21 @@
    }
   },
   {
+   "code": "NHS",
+   "groupe": "autorites",
+   "fr": "NHS (Royaume-Uni)",
+   "en": "NHS (UK)",
+   "nb_articles": 13,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
+    "langue": "en",
+    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "Traficom",
    "groupe": "autorites",
    "fr": "Traficom (Finlande)",
@@ -832,21 +862,6 @@
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Outcome of the call for expression of interest – Security of cyber security ecosystems"
-   }
-  },
-  {
-   "code": "NHS",
-   "groupe": "autorites",
-   "fr": "NHS (Royaume-Uni)",
-   "en": "NHS (UK)",
-   "nb_articles": 12,
-   "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://www.england.nhs.uk/2026/09/nhs-staff-suspected-snooping-patient-records-immediately-suspended/",
-    "titre": "NHS staff suspected of snooping on patient records to be immediately suspended",
-    "langue": "en",
-    "titre_fr": "Le personnel de NHS soupçonné de fouiner sur les dossiers du patient doit être immédiatement suspendu",
-    "titre_en": ""
    }
   },
   {
@@ -895,6 +910,21 @@
    }
   },
   {
+   "code": "MHRA",
+   "groupe": "autorites",
+   "fr": "MHRA",
+   "en": "MHRA",
+   "nb_articles": 9,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
+    "langue": "en",
+    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "gematik",
    "groupe": "autorites",
    "fr": "gematik",
@@ -907,21 +937,6 @@
     "langue": "de",
     "titre_fr": "\"Tout en un\": TI-Messenger peut également être utilisé à l'avenir via des systèmes logiciels pour les établissements de santé",
     "titre_en": "\"All in One\": TI-Messenger can also be used in the future via software systems for healthcare facilities"
-   }
-  },
-  {
-   "code": "MHRA",
-   "groupe": "autorites",
-   "fr": "MHRA",
-   "en": "MHRA",
-   "nb_articles": 8,
-   "exemple": {
-    "date": "2026-09-10",
-    "lien": "https://www.gov.uk/government/news/independent-commission-led-by-nhs-doctors-sets-out-blueprint-to-accelerate-safe-ai-adoption-in-healthcare",
-    "titre": "Independent Commission led by NHS doctors sets out blueprint to accelerate safe AI adoption in healthcare",
-    "langue": "en",
-    "titre_fr": "La Commission indépendante dirigée par les médecins NHS établit un plan pour accélérer l'adoption sûre de IA dans les soins de santé",
-    "titre_en": ""
    }
   },
   {
@@ -940,6 +955,21 @@
    }
   },
   {
+   "code": "SAMSIK",
+   "groupe": "autorites",
+   "fr": "SAMSIK (Danemark)",
+   "en": "SAMSIK (Denmark)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://samsik.dk/artikler/2026/10/myndigheder-organisationer-og-virksomheder-boer-supplere-identitetskontrol/",
+    "titre": "Myndigheder, organisationer og virksomheder bør supplere deres identitetskontrol efter læk fra CPR-registeret",
+    "langue": "da",
+    "titre_fr": "Les autorités, organisations et entreprises devraient compléter leurs contrôles d'identité à la suite de fuites de CPR-registeret",
+    "titre_en": "Authorities, organisations and undertakings should supplement their identity checks following leaks from CPR-registeret"
+   }
+  },
+  {
    "code": "IMY",
    "groupe": "autorites",
    "fr": "IMY (Suède)",
@@ -952,21 +982,6 @@
     "langue": "nl",
     "titre_fr": "Le contrôleur suédois de la protection de la vie privée sanctionne Miljödata après une violation importante des données",
     "titre_en": "Swedish Privacy Supervisor fines Miljödata after large data breach"
-   }
-  },
-  {
-   "code": "SAMSIK",
-   "groupe": "autorites",
-   "fr": "SAMSIK (Danemark)",
-   "en": "SAMSIK (Denmark)",
-   "nb_articles": 7,
-   "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://samsik.dk/artikler/2026/10/uvedkommende-adgang-til-cpr-oplysninger-sadan-skal-du-forholde-dig/",
-    "titre": "Uvedkommende har fået adgang til borgeres CPR-oplysninger: Sådan skal du forholde dig",
-    "langue": "da",
-    "titre_fr": "Les indépendants ont accès aux citoyens CPR-oplysninger: Comment se comporter",
-    "titre_en": "Independents have access to citizens CPR-oplysninger: How to behave"
    }
   },
   {
@@ -1045,6 +1060,21 @@
    }
   },
   {
+   "code": "AgID",
+   "groupe": "autorites",
+   "fr": "AgID",
+   "en": "AgID",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://www.agid.gov.it/it/notizie/nuovo-paper-del-cert-agid-sugli-explosive-prompts-e-la-sicurezza-dei-sistemi-agentici",
+    "titre": "Nuovo paper del CERT-AGID sugli Explosive Prompts e la sicurezza dei sistemi agentici",
+    "langue": "it",
+    "titre_fr": "Nouveau document CERT-AGID sur les prompts explosifs et la sécurité des agents",
+    "titre_en": "New CERT-AGID paper on Explosive Prompts and the security of the agents"
+   }
+  },
+  {
    "code": "ICO",
    "groupe": "autorites",
    "fr": "ICO (Royaume-Uni)",
@@ -1072,6 +1102,21 @@
     "langue": "nb",
     "titre_fr": "Le nouveau système rendra la Norvège moins dépendante des signaux horaires de GPS – important pour la sécurité sociale",
     "titre_en": "New system will make Norway less dependent on time signals from GPS – important for social security"
+   }
+  },
+  {
+   "code": "Fimea",
+   "groupe": "autorites",
+   "fr": "Fimea (Finlande)",
+   "en": "Fimea (Finland)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://fimea.fi/en/-/instructions-for-use-of-medical-devices-must-be-available-to-the-user-and-easy-to-understand",
+    "titre": "Instructions for use of medical devices must be available to the user and easy to understand",
+    "langue": "en",
+    "titre_fr": "Les instructions d'utilisation des instruments médicaux doivent être à la disposition de l'utilisateur et faciles à comprendre",
+    "titre_en": ""
    }
   },
   {
@@ -1135,21 +1180,6 @@
    }
   },
   {
-   "code": "AgID",
-   "groupe": "autorites",
-   "fr": "AgID",
-   "en": "AgID",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-21",
-    "lien": "https://www.agid.gov.it/it/notizie/litalia-aderisce-alla-campagna-50-5-sulle-infrastrutture-pubbliche-digitali",
-    "titre": "L’Italia aderisce alla campagna 50-in-5 sulle infrastrutture pubbliche digitali",
-    "langue": "it",
-    "titre_fr": "L'Italie se joint à la campagne de 50 sur 5 sur les infrastructures publiques numériques",
-    "titre_en": "Italy joins the 50-in-5 campaign on digital public infrastructure"
-   }
-  },
-  {
    "code": "CERT Polska",
    "groupe": "autorites",
    "fr": "CERT Polska / NASK",
@@ -1207,21 +1237,6 @@
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Sweden: only 21 medical device manufacturers registered under the new cyber law"
-   }
-  },
-  {
-   "code": "Fimea",
-   "groupe": "autorites",
-   "fr": "Fimea (Finlande)",
-   "en": "Fimea (Finland)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-08-25",
-    "lien": "https://fimea.fi/en/-/application-of-the-ai-act-s-transparency-obligation-to-medical-devices",
-    "titre": "Application of the AI Act’s transparency obligation to medical devices",
-    "langue": "en",
-    "titre_fr": "Application de la loi IA : obligation de transparence aux dispositifs médicaux",
-    "titre_en": ""
    }
   },
   {
@@ -1518,6 +1533,18 @@
    }
   },
   {
+   "code": "IQVIA",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-05",
+    "lien": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+    "titre": "IQVIA fined $7.8 million for failing to properly anonymize health data",
+    "titre_fr": "IQVIA condamné à une amende de 7,8 millions de dollars pour défaut d'anonymat des données sur la santé",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
    "code": "PFPDT",
    "nb_articles": 3,
    "exemple": {
@@ -1563,6 +1590,30 @@
     "titre_fr": "En savoir plus sur : Cours NASK-PIB avec système S46",
     "titre_en": "More About: NASK-PIB Course with S46 System",
     "langue": "pl"
+   }
+  },
+  {
+   "code": "DPA",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-09-22",
+    "lien": "https://www.edpb.europa.eu/news/the-spanish-dpa-fined-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
+    "titre": "The Spanish DPA fined Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
+    "titre_fr": "L'espagnol DPA a infligé une amende à Securitas Direct EUR 100 000 pour avoir rendu plus difficile l'exercice des droits de la personne concernée en orientant les personnes vers un numéro de téléphone payant",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
+   "code": "EXTIA",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-09-11",
+    "lien": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+    "titre": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+    "titre_fr": "Non-respect des droits des individus : L'amende de CNIL de EXTIA EUR 300 000",
+    "titre_en": "",
+    "langue": "en"
    }
   },
   {

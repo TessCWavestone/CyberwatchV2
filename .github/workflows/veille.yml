@@ -7,14 +7,12 @@ name: Cyber Watch - collecte
 
 on:
   schedule:
-    # GitHub ne connaît que l'heure UTC, et les créneaux « pile à l'heure » (xx:00) sont souvent
-    # retardés ou abandonnés par GitHub quand ses serveurs sont chargés. On utilise donc des
-    # minutes décalées et plusieurs créneaux de secours le lundi : l'étape « Vérifier l'horaire »
-    # lance la collecte au premier créneau après 7 h (heure de Paris) et ignore les suivants.
+    # GitHub ne connaît que l'heure UTC et peut retarder ses lancements programmés de plusieurs
+    # heures (serveurs chargés le lundi matin). Deux créneaux pour couvrir l'heure d'été et
+    # d'hiver ; l'étape « Vérifier l'horaire » ne lance la collecte qu'une fois par lundi,
+    # après 7 h (heure de Paris), et ignore l'autre créneau (quelques secondes, gratuit).
     - cron: "17 5 * * 1"    # 7 h 17 à Paris en été
-    - cron: "17 6 * * 1"    # 7 h 17 à Paris en hiver (8 h 17 en été)
-    - cron: "43 8 * * 1"    # secours
-    - cron: "43 11 * * 1"   # secours
+    - cron: "17 6 * * 1"    # 7 h 17 à Paris en hiver
   workflow_dispatch:          # bouton « Run workflow » dans l'onglet Actions
     inputs:
       rattrapage_depuis:
@@ -41,7 +39,8 @@ concurrency:
 
 jobs:
   collecte:
-    runs-on: ubuntu-latest
+    # version figée : « ubuntu-latest » passe à Ubuntu 26 le 19/10/2026 (évite une collecte cassée par ce changement)
+    runs-on: ubuntu-24.04
     timeout-minutes: 120
     environment:
       name: github-pages
@@ -150,6 +149,7 @@ jobs:
           cp index.html style.css script.js _site/
           cp data/*.js _site/data/
           cp data/*.pdf _site/data/ 2>/dev/null || true
+          cp data/*.xml _site/data/ 2>/dev/null || true   # flux RSS des points clés
 
       - uses: actions/configure-pages@v5
         if: steps.garde.outputs.lancer == 'true'

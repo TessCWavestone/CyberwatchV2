@@ -7,6 +7,52 @@ entre **L'essentiel**, **très pertinent**, **pertinent**, **à surveiller** et
 et en anglais, produit le PDF de la veille, puis met le site à jour. Pas de clé
 API, pas d'abonnement, pas d'IA générative, rien à payer.
 
+## Version 5 (06/10/2026) — ce qu'il faut faire sur GitHub
+
+Le zip ne contient **que les 11 fichiers modifiés ou nouveaux** : les déposer sur GitHub en remplaçant
+les anciens (même emplacement). Ne pas toucher au dossier `data/`, ni à `config/sources.xlsx`,
+`config/sources_manuelles.json`, `config/retours.json`. Puis lancer une collecte
+(Actions › Cyber Watch - collecte › Run workflow). Rien d'autre à faire.
+
+Fichiers : `index.html`, `script.js`, `style.css`, `README.md`, `.github/workflows/veille.yml`,
+`collecte/collecte.py`, `collecte/regles.py`, `collecte/alertes.py` (nouveau), `config/veille.json`,
+`relais/worker.js` et `relais/LISEZMOI.md` (nouveaux, facultatifs).
+
+> Sur Mac, le dossier `.github` est caché : appuyez sur Cmd + Maj + . dans le Finder pour l'afficher,
+> et vérifiez après l'envoi que `.github/workflows/veille.yml` contient bien `ubuntu-24.04`.
+
+Nouveautés :
+
+- **Points clés** (onglet L'essentiel) : liste d'alertes **stable** à la place de « À la une ».
+  Une alerte = un fait réglementaire (même texte, même pays, même étape ; plusieurs articles = une alerte) :
+  échéance dans les 3 mois, nouveau texte adopté / publié / en vigueur, texte en préparation (proposition,
+  projet de loi, consultation, lignes directrices officielles), **texte inconnu détecté** (absent de la liste
+  des textes suivis, repéré par des signaux forts : à qualifier). Elle reste affichée 6 mois (ou jusqu'à son
+  échéance), puis passe dans « Points clés précédents ». 8 alertes affichées (12 au plus s'il y a beaucoup
+  d'urgences), les autres derrière « Voir les autres ». Registre : `data/alertes.json` (`collecte/alertes.py`).
+- **Vocabulaire « proposition / projet de loi »** ajouté aux signaux forts, dans toutes les langues
+  (`collecte/regles.py`, SIGNAL_FORT) : un texte inconnu peut remonter dès sa proposition. Un texte inconnu
+  repris par **plusieurs sources** (même non officielles) avec un signal fort entre aussi dans L'essentiel.
+- **« Nouveau » depuis la dernière visite** de chaque utilisateur (mémorisé dans son navigateur, sans compte),
+  et bandeau « N nouveautés depuis votre dernière visite ». Filtre correspondant dans Veille › Affiner.
+- **Flux RSS des points clés** (`data/points_cles_fr.xml` / `_en.xml`) : bouton « S'abonner (Outlook / RSS) ».
+- **Période** dans Veille › Affiner (du… au…, 1 / 6 / 12 mois) ; **bilan mensuel** et **restitution sur une
+  période** (PDF, Excel) dans L'essentiel › Bilans et restitutions.
+- **Données découpées** : le site charge les 6 derniers mois (`data/actualites.js`) ; les articles plus anciens
+  sont dans `data/actualites_archives.js`, chargé seulement si la période choisie le demande
+  (réglage `jours_site` dans `config/veille.json`). `data/actualites.json` (complet) reste la référence.
+- **Bandeau « Collecte en cours »** en haut de page (étape, barre d'avancement, fin estimée) ; le bouton
+  « Lancer une mise à jour » est caché pendant une collecte. Il lit l'API publique de GitHub (gratuit, sans clé).
+- **Lancement sans compte GitHub** (facultatif, à configurer plus tard) : relais Cloudflare gratuit,
+  voir `relais/LISEZMOI.md`, puis `url_relais` dans `config/veille.json`.
+- **Assistant de recherche** (bouton « Poser une question ») : comprend le pays, le sujet (NIS2, IVDR…) et le
+  type de recherche (échéances, sanctions, nouveautés, projets, obligations) et affiche les contenus les plus
+  proches **uniquement dans la veille** (points clés, articles, textes applicables, dates clés). Pas d'IA
+  générative, pas de recherche sur Internet.
+- **Lancement du lundi** : deux créneaux seulement (heure d'été / d'hiver), une seule collecte par lundi.
+  GitHub peut retarder ses lancements programmés de plusieurs heures : la collecte peut arriver en fin de matinée.
+- **Machine GitHub figée sur Ubuntu 24.04** (`ubuntu-latest` passe à Ubuntu 26 le 19/10/2026).
+
 ## Nouveautés de la version 4 (28/09/2026) — ce qu'il faut faire sur GitHub
 
 1. **Remplacer tous les fichiers du dépôt** par ceux du zip (Add file → Upload
@@ -50,9 +96,9 @@ traductions en boucle, dates d'événements prises pour des échéances).
   désormais écartées (consultables dans la liste des écartés) ; « à surveiller » ne garde que ce qui touche la
   cyber, les données, l'IA ou la santé.
 - **Textes applicables** : titres traduits en français (titre d'origine affiché dessous).
-- **Collecte du lundi** : créneaux décalés (7 h 17 heure de Paris) + créneaux de secours, car GitHub retarde ou
-  abandonne souvent les tâches programmées « pile à l'heure ». Vérification : Actions › Cyber Watch - collecte,
-  les lancements programmés apparaissent avec l'événement « schedule ».
+- **Collecte du lundi** : créneaux décalés (7 h 17 heure de Paris), car GitHub retarde ou abandonne souvent
+  les tâches programmées « pile à l'heure » (créneaux de secours retirés en v5). Vérification : Actions ›
+  Cyber Watch - collecte, les lancements programmés apparaissent avec l'événement « schedule ».
 
 ## Contenu du dossier
 
@@ -89,6 +135,10 @@ traductions en boucle, dates d'événements prises pour des échéances).
 | `config/retours.json` | Avis des lecteurs (boutons « Important » / « Pas pertinent ») | Le site (ou vous) |
 | `data/ecartes.json`, `data/ecartes_site.js` | Articles écartés (réexaminés à chaque collecte), liste affichée dans Sources | Le script |
 | `data/cyberwatch_veille_fr.pdf` / `_en.pdf` | La veille complète en PDF | Le script |
+| `collecte/alertes.py`, `data/alertes.js` / `.json` | Points clés : alertes stables et leur registre (date de première détection) | Le script |
+| `data/points_cles_fr.xml` / `_en.xml` | Flux RSS des points clés (abonnement Outlook) | Le script |
+| `data/actualites_archives.js` | Articles de plus de 6 mois, chargés par le site à la demande | Le script |
+| `relais/worker.js`, `relais/LISEZMOI.md` | Relais Cloudflare facultatif : lancer une collecte depuis le site sans compte GitHub | Personne (configuration une fois) |
 
 ---
 

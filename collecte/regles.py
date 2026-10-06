@@ -322,7 +322,16 @@ SIGNAL_FORT = _rx(
     r"wchodzi w zycie|nabyva ucinnosti|new (law|act|regulation|decree)|nouvelle loi|nouveau decret|"
     r"\b(loi|decret|arrete|ordonnance) n\W|real decreto|decreto-lei|\bgesetz zur\b|verordnung zur|"
     r"ustawa z dnia|zakon c\.|zakon o|torveny|lov om|lag om|laki|wet van|\bact 20\d\d\b|guidelines on|lignes directrices sur|"
-    r"guidance on|consultation (on|sur)|call for evidence|draft (law|act|regulation|guidelines))", )
+    r"guidance on|consultation (on|sur)|call for evidence|draft (law|act|bill|regulation|directive|decree|guidelines)|"
+    # v5 : propositions et projets de texte (pour voir venir un texte AVANT son adoption, ex. NIS2 en 2020)
+    r"proposal for a (new )?(regulation|directive|decision|law)|legislative proposal|commission propos\w*|"
+    r"proposition de (loi|reglement|directive)|projet de (loi|decret|reglement|directive)|avant-projet de loi|"
+    r"gesetzentwurf|referentenentwurf|regierungsentwurf|entwurf (eines|einer) (gesetz|verordnung)|"
+    r"anteproyecto de ley|proyecto de (ley|real decreto)|disegno di legge|schema di (decreto|regolamento)|"
+    r"proposta de lei|projeto de (lei|decreto)|wetsvoorstel|ontwerpbesluit|voorontwerp|wetsontwerp|"
+    r"lovforslag|forslag til lov|lagforslag|lagradsremiss|hallituksen esitys|luonnos laiksi|"
+    r"projekt ustawy|projekt rozporzadzenia|navrh zakona|navrh vyhlasky|torvenyjavaslat|torvenytervezet|"
+    r"σχεδιο νομου|νομοσχεδιο|bill (introduced|published|tabled))", )
 
 # Statut d'un texte, déduit du titre / résumé (multilingue, prudent)
 STATUTS = [

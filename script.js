@@ -170,7 +170,7 @@
         ['Collecte', "<p>Chaque lundi à 7 h (et à la demande), un script lit toutes les sources : flux RSS, pages d'actualités datées, Journal officiel de l'UE (EUR-Lex) et français (données ouvertes de la DILA), et l'alerte RKC déposée dans un dépôt privé. La base couvre l'actualité depuis le 1er janvier 2026 (badge « Base 2026 » pour la recherche documentaire initiale).</p>"],
         ['Pertinence', "<p>Chaque article reçoit une note d'un petit modèle open source gratuit (exécuté sur GitHub) qui compare son sens aux thèmes du client, puis des règles fixes et lisibles décident du niveau : <strong>un texte clé cité</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) n'est jamais écarté ; <strong>« très pertinent »</strong> exige un signal réglementaire (loi, décret, lignes directrices, consultation, norme, sanction… dans toutes les langues) ; le bruit (alertes de vulnérabilités, événements, marchés, finance, télécoms) est écarté, sauf source officielle ; hors Europe, seuls les textes à portée mondiale (ISO/IEC, IMDRF, FDA cybersécurité des dispositifs) sont gardés.</p>"],
         ['Rien ne se perd', "<p>Les articles de faible pertinence sont gardés dans « À surveiller » (masqués par défaut). Les articles écartés restent consultables et téléchargeables dans Sources › Articles écartés. Les boutons « Important » et « Pas pertinent » corrigent le classement à la collecte suivante et servent d'exemples au modèle.</p>"],
-        ["L'essentiel", "<p>« À la une » et « Nouvelles réglementations et normes » ne retiennent que les textes et normes importants, regroupés par texte avec toutes leurs sources. En cas de doute (source non officielle, texte inconnu), l'article est gardé avec le badge « À vérifier ». Les dates clés ne sont retenues que près d'un mot d'obligation (« d'ici le », « applicable à compter du »…), jamais pour un webinaire ou une réunion.</p>"],
+        ["L'essentiel", "<p>« Points clés » : une liste d'alertes stable (échéances à moins de 3 mois, nouveaux textes adoptés, textes en préparation, textes inconnus détectés), chacune affichée 6 mois ou jusqu'à son échéance, puis rangée dans « Points clés précédents ». « Nouvelles réglementations et normes » ne retient que les textes et normes importants, regroupés par texte avec toutes leurs sources. En cas de doute (source non officielle, texte inconnu), l'article est gardé avec le badge « À vérifier ». Les dates clés ne sont retenues que près d'un mot d'obligation (« d'ici le », « applicable à compter du »…), jamais pour un webinaire ou une réunion.</p>"],
         ['Nouveautés et archives', "<p>« Nouveautés » montre les 30 derniers jours (60 s'il y a peu d'articles) ; tout le reste est dans « Archives ». Chaque collecte crée une édition, consultable dans le sélecteur « Édition ».</p>"],
         ['Débats et signaux', "<p>Les avis d'experts viennent uniquement de sources classées « Avis d'experts (non certifié) », et seuls les avis pertinents ou très pertinents sont gardés. Ils sont stockés à part et n'apparaissent jamais dans la veille, la carte, L'essentiel ni les textes applicables.</p>"],
         ['Veille RKC', "<p>L'alerte RKC (Nexis Newsdesk) est lue dans un dépôt privé ; seuls les articles pertinents ou très pertinents sont gardés. Seuls le titre, la publication, la date et la note sont publiés : l'extrait, souvent payant, n'apparaît jamais sur ce site.</p>"],
@@ -307,7 +307,7 @@
         ['Collection', '<p>Every Monday at 7 am (and on demand), a script reads every source: RSS feeds, dated news pages, the EU Official Journal (EUR-Lex) and the French one (DILA open data), and the RKC alert stored in a private repository. The database covers news since 1 January 2026 (“2026 base” badge for the initial desk research).</p>'],
         ['Relevance', '<p>Each article is scored by a small, free, open-source model (running on GitHub) that compares its meaning with the client’s themes; then fixed, readable rules set the level: <strong>an article mentioning a key text</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) is never discarded; <strong>“highly relevant”</strong> requires a regulatory signal (law, decree, guidelines, consultation, standard, sanction… in every language); noise (vulnerability alerts, events, business news, finance, telecoms) is discarded unless the source is official; outside Europe, only texts with a global scope (ISO/IEC, IMDRF, FDA medical-device cybersecurity) are kept.</p>'],
         ['Nothing is lost', '<p>Low-relevance articles are kept under “To monitor” (hidden by default). Discarded articles remain listed and downloadable in Sources › Discarded articles. The “Important” and “Not relevant” buttons correct the rating at the next collection and serve as examples for the model.</p>'],
-        ['Key points', '<p>“Top stories” and “New regulations and standards” only keep important texts and standards, grouped by text with all their sources. When in doubt (non-official source, unknown text), the article is kept with a “To be checked” badge. Key dates are only kept next to an obligation word (“by”, “applicable from”…), never for a webinar or a meeting.</p>'],
+        ['Key points', '<p>“Key points”: a stable list of alerts (deadlines within 3 months, newly adopted texts, texts in preparation, unknown texts detected), each shown for 6 months or until its deadline, then moved to “Previous key points”. “New regulations and standards” only keeps important texts and standards, grouped by text with all their sources. When in doubt (non-official source, unknown text), the article is kept with a “To be checked” badge. Key dates are only kept next to an obligation word (“by”, “applicable from”…), never for a webinar or a meeting.</p>'],
         ['Latest and archive', '<p>“Latest” shows the last 30 days (60 when there are few articles); everything else is in “Archive”. Each collection creates an edition, available in the “Edition” selector.</p>'],
         ['Debates & signals', '<p>Expert opinions come only from sources classified as “Expert opinion (not certified)”, and only relevant or highly relevant ones are kept. They are stored separately and never appear in the watch, the map, Key points or applicable texts.</p>'],
         ['RKC watch', '<p>The RKC alert (Nexis Newsdesk) is read from a private repository; only relevant or highly relevant articles are kept. Only the title, publication, date and rating are published: the excerpt, often paywalled, never appears on this site.</p>'],
@@ -586,8 +586,7 @@
     document.getElementById('surtitre').textContent = LANG === 'en' ? (META.surtitre_en || 'Regulatory watch — Wavestone') : (META.surtitre || 'Veille réglementaire — Wavestone');
     document.getElementById('sous-titre').textContent = LANG === 'en' ? (META.sous_titre_en || '') : (META.sous_titre || '');
     document.getElementById('edition').textContent = META.mise_a_jour ? t('edition')(jourSeul(META.mise_a_jour), META.nb_nouveaux || 0) : t('no_run');
-    var btn = document.getElementById('lancer-maj');
-    if (META.url_lancer_maj) { btn.href = META.url_lancer_maj; btn.hidden = false; btn.title = t('update_title'); }
+    sur('nouveautés depuis la dernière visite', renderVisite);
   }
 
   /* ================================================================ onglets */
@@ -635,7 +634,7 @@
     var id = 'a-' + a.id, tx = textes(a);
     registre[id] = { d: a, tx: tx };
     var foot = el('div', { className: 'card-foot' });
-    if (META.version && a.version === META.version && VERSIONS.length > 1) ajout(foot, badge('badge-new', t('new_badge')));
+    if (estNouveau(a)) ajout(foot, badge('badge-new', t('new_badge'), t('new_title')));
     ajout(foot, badgePert(a));
     if (a.essentiel) ajout(foot, badge('badge-ess', t('badge_ess')));
     if (a.essentiel && a.a_verifier) ajout(foot, badge('badge-verif', t('badge_verif'), t('verif_title')));
@@ -664,7 +663,7 @@
       statut: a.statut || '', amende: a.amende ? (a.amende.plafond ? 'plafond' : 'prononcee') : '',
       theme: sujetsDe(a, 'textes').map(function (c) { return 's:' + c; }), autorite: sujetsDe(a, 'autorites').map(function (c) { return 's:' + c; }),
       grand: (a.pertinence !== 'faible' ? (a.themes || []) : []).map(function (x) { return 'g:' + x; }),
-      codes: sujetsDe(a), brut: [a.titre, a.resume, tx.aff.titre, tx.aff.resume].join(' \n '),
+      codes: sujetsDe(a), brut: [a.titre, a.resume, tx.aff.titre, tx.aff.resume].join(' \n '), date: a.date || '', nouveau: estNouveau(a),
       recent: estRecent(a), rang: rangVersion(a), version: a.version || '',
       texte: normaliser([a.titre, a.resume, tx.aff.titre, tx.aff.resume, a.source, nomZone(a.zone), (a.tags || []).join(' '), themes.map(libelleTheme).join(' ')].join(' '))
     };
@@ -803,7 +802,7 @@
   }
 
   /* ---------------------------------------------------------------- filtres */
-  var etatFiltres = { fenetre: 'recent', tri: 'date', q: [], exact: [], versionMax: null, versionSeule: '' };
+  var etatFiltres = { fenetre: 'recent', tri: 'date', q: [], exact: [], versionMax: null, versionSeule: '', du: '', au: '', depuisVisite: false };
   function selection(facet) {
     return Array.prototype.slice.call(document.querySelectorAll('input[data-facet="' + facet + '"]:checked')).map(function (i) { return i.value; });
   }
@@ -855,10 +854,13 @@
       if (f.rang === undefined) { if (etatFiltres.versionSeule) return false; }
       else if (f.rang > etatFiltres.versionMax || (etatFiltres.versionSeule && f.version !== etatFiltres.versionSeule)) return false;
     }
-    if (!etatFiltres.q.length && !etatFiltres.exact.length && etatFiltres.versionMax === null) {
+    if (etatFiltres.du || etatFiltres.au) {   // période choisie : remplace « Nouveautés / Archives »
+      if (!f.date || (etatFiltres.du && f.date < etatFiltres.du) || (etatFiltres.au && f.date > etatFiltres.au)) return false;
+    } else if (!etatFiltres.q.length && !etatFiltres.exact.length && etatFiltres.versionMax === null && !etatFiltres.depuisVisite) {
       if (etatFiltres.fenetre === 'recent' && !f.recent) return false;
       if (etatFiltres.fenetre === 'archives' && f.recent) return false;
     }
+    if (etatFiltres.depuisVisite && !f.nouveau) return false;
     if (sel.section.length && sel.section.indexOf(f.section) === -1) return false;
     if (sel.nature.length && sel.nature.indexOf(f.nature) === -1) return false;
     if (sel.zone.length && sel.zone.indexOf(f.zone) === -1) return false;
@@ -908,7 +910,7 @@
       r.el.querySelector('.rub-count').textContent = liste.length + (liste.length > 1 ? ' articles' : ' article');
       if (!liste.length) return;
       var groupe = null, box = null;
-      var parMois = etatFiltres.fenetre === 'archives' && etatFiltres.tri === 'date' && !etatFiltres.q.length;
+      var parMois = (etatFiltres.fenetre === 'archives' || etatFiltres.du || etatFiltres.au) && etatFiltres.tri === 'date' && !etatFiltres.q.length;
       liste.forEach(function (c) {
         var cle = parMois ? moisAnnee(c._tri.date) : '';
         if (!box || cle !== groupe) {
@@ -921,8 +923,11 @@
     });
     document.getElementById('n-recent').textContent = nRecent;
     document.getElementById('n-archives').textContent = nArch;
-    document.getElementById('window-note').textContent = etatFiltres.q.length ? '' : (etatFiltres.fenetre === 'recent' ? t('window_recent')(JOURS_RECENT) : t('window_archives')(JOURS_RECENT));
-    var base = etatFiltres.q.length ? total : (etatFiltres.fenetre === 'recent' ? nRecent : nArch);
+    var periode = etatFiltres.du || etatFiltres.au;
+    document.getElementById('window-note').textContent = periode ? t('window_periode')(etatFiltres.du ? dateLongue(etatFiltres.du) : '…', etatFiltres.au ? dateLongue(etatFiltres.au) : t('per_auj'))
+      : etatFiltres.depuisVisite ? t('window_visite')(VISITE.libelle) : etatFiltres.q.length ? '' : (etatFiltres.fenetre === 'recent' ? t('window_recent')(JOURS_RECENT) : t('window_archives')(JOURS_RECENT));
+    Array.prototype.forEach.call(document.querySelectorAll('#fenetre button'), function (b) { b.disabled = !!(periode || etatFiltres.depuisVisite); });
+    var base = (etatFiltres.q.length || periode || etatFiltres.depuisVisite) ? total : (etatFiltres.fenetre === 'recent' ? nRecent : nArch);
     document.getElementById('result-count').textContent = t('shown')(visibles, base);
     document.getElementById('empty-state').hidden = visibles !== 0 || !cartes.length;
     var sn = document.getElementById('surveiller-note');
@@ -932,7 +937,7 @@
       document.getElementById('surveiller-texte').textContent = montrerFaible ? t('surv_shown')(nFaibles) + ' ' : t('surv_hidden')(nMasques) + ' ';
       document.getElementById('surveiller-bascule').textContent = montrerFaible ? t('surv_hide') : t('surv_show');
     }
-    var actifs = sel.section.length + sel.nature.length + sel.zone.length + sel.pert.length + sel.statut.length + sel.amende.length + sel.theme.length + sel.autorite.length + sel.grand.length;
+    var actifs = sel.section.length + sel.nature.length + sel.zone.length + sel.pert.length + sel.statut.length + sel.amende.length + sel.theme.length + sel.autorite.length + sel.grand.length + (periode ? 1 : 0) + (etatFiltres.depuisVisite ? 1 : 0);
     var ac = document.getElementById('active-count'); ac.textContent = actifs; ac.hidden = !actifs;
     Array.prototype.forEach.call(document.querySelectorAll('.tag[data-theme]'), function (b) { var v = b.getAttribute('data-theme'); b.setAttribute('aria-pressed', sel.theme.indexOf(v) !== -1 || sel.autorite.indexOf(v) !== -1 ? 'true' : 'false'); });
   }
@@ -954,8 +959,12 @@
     tg.addEventListener('click', function () { var o = panneau.hidden; panneau.hidden = !o; tg.setAttribute('aria-expanded', o ? 'true' : 'false'); });
     document.getElementById('reset-filters').addEventListener('click', function () {
       Array.prototype.forEach.call(document.querySelectorAll('input[data-facet]'), function (i) { i.checked = false; });
-      document.getElementById('recherche').value = ''; etatFiltres.q = []; etatFiltres.exact = []; appliquerFiltres();
+      document.getElementById('recherche').value = ''; etatFiltres.q = []; etatFiltres.exact = [];
+      etatFiltres.du = etatFiltres.au = ''; etatFiltres.depuisVisite = false;
+      document.getElementById('per-du').value = document.getElementById('per-au').value = ''; document.getElementById('depuis-visite').checked = false;
+      appliquerFiltres();
     });
+    brancherPeriode();
     document.getElementById('surveiller-bascule').addEventListener('click', function () { montrerFaible = !montrerFaible; appliquerFiltres(); });
     document.getElementById('voir-originaux').addEventListener('change', function (e) { voirOriginaux = e.target.checked; cartes.forEach(function (c) { montrerTexte(c, voirOriginaux); }); });
     document.getElementById('rubriques').addEventListener('click', function (e) {
@@ -1004,56 +1013,8 @@
   }
 
   /* ============================================================ L'ESSENTIEL */
-  /* Score d'urgence : règles fixes, lisibles, sans IA générative */
-  function urgence(a) {
-    var s = 0, raisons = [];
-    if (a.essentiel) { s += 2; if (a.textes_cles && a.textes_cles.length) raisons.push(a.textes_cles.slice(0, 2).map(libTexteCle).join(', ')); }
-    if (a.a_verifier) s -= 0.5;
-    if (a.pertinence === 'elevee') { s += 3; raisons.push(t('u_pert')); } else if (a.pertinence === 'moyenne') s += 1.5;
-    var pe = prochaineEcheance(a);
-    if (pe) {
-      var j = joursJusqua(pe.date);
-      if (j <= 30) { s += 3; raisons.push(t('u_deadline')); } else if (j <= 90) { s += 2; raisons.push(t('u_deadline')); } else if (j <= 180) s += 1;
-    }
-    if (['en_vigueur', 'adopte'].indexOf(a.statut) !== -1) { s += 1; raisons.push(t('u_status')); }
-    if (a.statut === 'sanction' || (a.amende && !a.amende.plafond && a.amende.montant_eur >= 1e6)) { s += 1; raisons.push(t('u_fine')); }
-    if (a.nature === 'officielle') { s += 1; raisons.push(t('u_off')); }
-    var age = joursDepuis(a.date);
-    if (age <= 7) { s += 2; raisons.push(t('u_recent')); } else if (age <= 30) s += 1; else if (age > 60 && !pe) s -= 3;
-    if (a.rubrique === 'autres') s -= 2;
-    return { score: s, raisons: raisons, echeance: pe };
-  }
-
   function renderEssentiel() {
-    var grid = document.getElementById('une-grid');
-    // « À la une » : uniquement les textes et normes importants (L'essentiel), jamais un article « à surveiller »
-    var candidats = ARTICLES.filter(function (a) { return a.essentiel || (a.base && a.pertinence === 'elevee'); }).map(function (a) { return { a: a, u: urgence(a) }; })
-      .sort(function (x, y) { return (y.u.score - x.u.score) || (y.a.date > x.a.date ? 1 : -1); })
-      // diversité : au plus 2 articles sur un même texte clé (le reste est dans « Nouvelles réglementations et normes »)
-      .filter((function () { var vus = {}; return function (c) { var k = (c.a.textes_cles || [])[0] || c.a.id; vus[k] = (vus[k] || 0) + 1; return vus[k] <= 2; }; })())
-      .slice(0, 5);
-    document.getElementById('une-vide').hidden = candidats.length > 0;
-    function carteUne(c, principale) {
-      var a = c.a, tx = textes(a), pe = c.u.echeance;
-      var badges = el('div', { className: 'une-badges' }, [badgePert(a, true), badgeAmende(a, true),
-        a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null, a.base ? badge('badge-base badge-sm', t('base_badge')) : null,
-        a.a_verifier ? badge('badge-verif badge-sm', t('badge_verif'), t('verif_title')) : null,
-        a.payant ? badge('badge-fine badge-fine-cap badge-sm', '🔒 ' + t('badge_payant')) : null]);
-      return el('article', { className: 'une-card' + (principale ? ' une-main' : '') }, [
-        el('div', { className: 'une-kicker' }, [ZONES[a.zone] ? el('span', { className: 'zone-code', text: codeZone(a.zone) }) : null, el('span', { text: dateLongue(a.date) + ' · ' + (a.source || '') })]),
-        pe ? el('span', { className: 'une-deadline', text: '⏱ ' + (pe.approx ? t('approx') + ' ' : '') + dateLongue(pe.date) + ' · ' + t('in_days')(joursJusqua(pe.date)) }) : null,
-        el('h3', null, [a.lien ? el('a', { href: a.lien, target: '_blank', rel: 'noopener noreferrer', text: tx.aff.titre }) : tx.aff.titre]),
-        !a.reserve && tx.aff.resume && (principale || tx.aff.resume.length < 260) ? el('p', { text: tx.aff.resume }) : null,
-        c.u.raisons.length ? el('p', { className: 'une-why', text: t('une_why') + c.u.raisons.join(', ') }) : null,
-        badges
-      ]);
-    }
-    if (candidats.length) {
-      grid.appendChild(carteUne(candidats[0], true));
-      var cote = el('div', { className: 'une-side' });
-      candidats.slice(1).forEach(function (c) { cote.appendChild(carteUne(c, false)); });
-      grid.appendChild(cote);
-    }
+    sur('points clés', renderPointsCles);
     renderTextesMois(30);
     document.getElementById('tm-periode').addEventListener('choix', function (e) { renderTextesMois(+e.detail.getAttribute('data-j')); });
     // nombre de dates à venir par horizon, affiché sur chaque bouton (les boutons ne changent rien s'il n'y a pas plus de dates)
@@ -1063,6 +1024,7 @@
     });
     renderAgenda(90);
     document.getElementById('agenda-horizon').addEventListener('choix', function (e) { renderAgenda(+e.detail.getAttribute('data-h')); });
+    sur('bilans', renderBilans);
     renderKpis();
   }
 
@@ -1112,14 +1074,14 @@
     });
   }
 
-  function evenementsAgenda(horizon, zone) {
-    var evs = [];
+  function evenementsAgenda(horizon, zone, recul) {
+    var evs = []; recul = recul || 30;   // recul : jours passés gardés (30 par défaut ; plus pour les bilans)
     ARTICLES.forEach(function (a) {
       if (zone && a.zone !== zone) return;
       if (a.pertinence === 'faible') return;   // pas d'échéance tirée d'un article « à surveiller »
       (a.echeances || []).forEach(function (e) {
         var j = joursJusqua(e.date);
-        if (j < -30 || j > horizon) return;
+        if (j < -recul || j > horizon) return;
         evs.push({ date: e.date, approx: e.approx, titre: textes(a).aff.titre, lien: a.lien, ctx: a.reserve ? '' : extraitEcheance(e), zone: a.zone, source: a.source, a: a });
       });
     });
@@ -1128,7 +1090,7 @@
       var v = r.applicable_depuis || '';
       if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return;
       var j = joursJusqua(v);
-      if (j < -30 || j > horizon) return;
+      if (j < -recul || j > horizon) return;
       evs.push({ date: v, approx: false, titre: t('applies') + refTexte(r).nom, lien: r.lien, ctx: LANG === 'en' ? (r.resume_en || '') : (r.resume_fr || ''), zone: r.zone, source: r.autorite || '', ref: true });
     });
     // une même date et un même lien ne sont affichés qu'une fois
@@ -1929,9 +1891,9 @@
     document.body.classList.add('printing-report');
     setTimeout(function () { window.print(); }, 80);
   }
-  function telechargerPdf(rep, titre) {
+  function telechargerPdf(rep, titre, prefixe) {
     toast(t('pdf_prep'));
-    var nom = 'cyberwatch_' + (LANG === 'en' ? 'selection' : 'selection') + '_' + LANG + '_' + new Date().toISOString().slice(0, 10) + '.pdf';
+    var nom = 'cyberwatch_' + (prefixe || 'selection') + '_' + LANG + '_' + new Date().toISOString().slice(0, 10) + '.pdf';
     chargerHtml2pdf().then(function (h2p) {
       document.body.classList.add('pdf-rendering');
       // morceaux de ~12 éléments : chaque morceau est rendu séparément (limite de taille des images du navigateur)
@@ -1970,6 +1932,829 @@
     else if (secours()) ok(); else toast(t('copy_ko'));
   }
 
+  /* ==========================================================================
+     v5 — Points clés (alertes stables), nouveautés depuis la dernière visite,
+     période et archives, bilans et restitutions, collecte en cours, assistant.
+     ========================================================================== */
+  var T5 = {
+    fr: {
+      new_title: 'Nouveau depuis votre dernière visite',
+      vis_first: function (n) { return 'Bienvenue : les articles des 7 derniers jours sont marqués « Nouveau » (' + n + ').'; },
+      vis_new: function (n, p, d) { return n + (n > 1 ? ' nouveautés' : ' nouveauté') + ' depuis votre dernière visite (' + d + ')' + (p ? ', dont ' + p + (p > 1 ? ' points clés' : ' point clé') : '') + '.'; },
+      vis_none: function (d) { return 'Rien de nouveau depuis votre dernière visite (' + d + ').'; },
+      vis_voir: 'Voir les nouveautés',
+      window_periode: function (a, b) { return 'Période : du ' + a + ' au ' + b + '.'; },
+      window_visite: function (d) { return 'Nouveautés depuis votre dernière visite (' + d + ').'; },
+      f_periode: 'Période', per_du: 'Du', per_au: 'au', per_1m: '1 mois', per_clear: 'Effacer', per_auj: "aujourd'hui",
+      since_visit: 'Seulement les nouveautés depuis ma dernière visite',
+      per_arch: function (n, d) { return n + ' articles antérieurs au ' + d + ' sont archivés : ils sont chargés automatiquement si la période choisie commence avant cette date.'; },
+      arch_loading: 'Chargement des archives…', arch_loaded: function (n) { return n + ' articles archivés chargés.'; }, arch_ko: 'Archives indisponibles.',
+      pc_title: 'Points clés',
+      pc_lead: "Les faits réglementaires qui peuvent concerner l'entreprise dans un de ses pays : échéance dans les 3 mois, nouveau texte adopté, texte en préparation (proposition, projet de loi, consultation), texte inconnu détecté. Classement par urgence : échéances les plus proches et textes les plus récemment détectés en premier. Une alerte reste affichée 6 mois (ou jusqu'à son échéance), même si personne ne consulte la veille entre-temps. Règles fixes, sans IA générative.",
+      pc_empty: 'Aucun point clé en cours.', pc_rss: "S'abonner (Outlook / RSS)",
+      pc_types: { echeance: 'Échéance', adopte: 'Texte adopté', signale: 'Signalé important', proposition: 'Texte en préparation', a_qualifier: 'Nouveau texte détecté' },
+      pc_types_long: { echeance: 'Échéance dans les 3 mois', adopte: 'Nouveau texte adopté, publié ou en vigueur', signale: 'Jugé important par un lecteur', proposition: 'Proposition, projet de loi, consultation, lignes directrices', a_qualifier: 'Texte absent de la liste des textes suivis : à qualifier' },
+      pc_new: 'Nouveau', pc_maj: 'Mis à jour', pc_maj_t: 'Nouvelle source depuis votre dernière visite',
+      pc_inconnu: 'Texte inconnu', pc_inconnu_t: "Ce texte n'est pas dans la liste des textes suivis : repéré par des signaux forts (adopté, publié, proposition…). À qualifier par un humain.",
+      pc_detecte: function (d) { return 'Détecté le ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },
+      pc_texte: 'Texte : ', pc_toutes: function (n) { return 'Toutes les sources (' + n + ')'; }, pc_voir_veille: 'Voir dans la veille',
+      pc_plus: function (n) { return 'Voir les ' + n + ' autres points clés'; }, pc_moins: 'Réduire',
+      pc_prev: 'Points clés précédents', pc_prev_lead: 'Alertes dont la période d’affichage est terminée (échéance passée ou plus de 6 mois), classées par mois.',
+      pc_prev_n: function (n) { return '(' + n + ')'; }, pc_fin: function (d) { return 'jusqu’au ' + d; },
+      rss_titre: "S'abonner aux points clés", rss_copier: 'Copier le lien', rss_copie: 'Lien copié',
+      rss_corps: ["Ce lien donne un flux RSS des points clés, mis à jour à chaque collecte. Outlook (version classique) : clic droit sur « Flux RSS » dans la liste des dossiers › « Ajouter un nouveau flux RSS… », puis collez le lien. Il fonctionne aussi dans tout lecteur RSS.", "Le nouvel Outlook et Outlook sur le web ne lisent pas les flux RSS : utilisez dans ce cas un lecteur RSS."],
+      bi_title: 'Bilans et restitutions',
+      bi_lead: 'Un bilan par mois et une restitution sur la période de votre choix (6 derniers mois par défaut), pour ne rien perdre même si la veille n’a pas été consultée chaque semaine.',
+      bi_month: 'Bilan mensuel', bi_pdf: 'Télécharger (PDF)', bi_rest: 'Restitution sur une période', bi_rest_pdf: 'Restitution (PDF)', bi_rest_csv: 'Articles de la période (Excel)',
+      bi_rest_note: 'La restitution reprend les points clés, les nouveaux textes et normes, les dates clés et les articles très pertinents de la période, classés par pays.',
+      bi_en_cours: ' (en cours)',
+      bi_k: { pc: 'points clés', textes: 'textes et normes importants', pert: 'articles très pertinents', ech: 'dates clés (mois + 3 mois)' },
+      bi_top_pc: 'Points clés du mois', bi_top_textes: 'Textes les plus cités', bi_rien: 'Rien de notable ce mois-ci.',
+      rest_titre: function (a, b) { return 'Restitution de la veille — du ' + a + ' au ' + b; },
+      bilan_titre: function (m) { return 'Bilan mensuel de la veille — ' + m; },
+      rp_periode: function (a, b) { return 'Période : du ' + a + ' au ' + b; },
+      rp_pc: 'Points clés', rp_textes: 'Nouveaux textes et normes', rp_dates: 'Dates clés (période et 3 mois suivants)', rp_pert: 'Articles très pertinents, par pays',
+      rp_tronque: function (n) { return '… et ' + n + ' autres articles (voir l’export Excel).'; }, rp_vide: 'Rien sur la période.',
+      rp_resume: function (a, b, c, d) { return a + ' points clés · ' + b + ' textes et normes importants · ' + c + ' articles très pertinents · ' + d + ' dates clés'; },
+      cs_titre: 'Collecte en cours', cs_auto: 'automatique', cs_manuel: 'lancée depuis le site ou GitHub',
+      cs_lancee: function (h, d) { return 'démarrée à ' + h + ' (' + d + ')'; },
+      cs_etape: function (n, m, l) { return 'Étape ' + n + '/' + m + ' : ' + l; }, cs_fin: function (h) { return 'fin estimée vers ' + h; },
+      cs_attente: 'En attente d’une machine GitHub…', cs_demandee: 'Collecte demandée : démarrage dans quelques secondes…',
+      cs_ok: 'Collecte terminée : les nouvelles données sont en ligne.', cs_recharger: 'Recharger la page',
+      cs_ko: 'La collecte a échoué ou a été interrompue. Le site affiche toujours les données de la collecte précédente.',
+      cs_etapes: { prep: 'Préparation', garde: 'Vérification de l’horaire', rkc: 'Lecture des veilles RKC', outils: 'Installation des outils', collecte: 'Lecture des sources, tri et traduction des articles', enreg: 'Enregistrement des données', publi: 'Publication du site' },
+      update_title_relais: 'Lance une nouvelle collecte (environ 10 minutes), sans compte GitHub',
+      lm_titre: 'Lancer une nouvelle collecte ?', lm_ok: 'Lancer',
+      lm_corps: function (m) { return 'La collecte lit toutes les sources, trie et traduit les articles, puis met le site à jour. Elle dure environ ' + m + ' minutes ; son avancement s’affiche en haut de la page.'; },
+      lm_envoye: 'Collecte demandée.', lm_deja: 'Une collecte est déjà en cours.', lm_heure: 'Une collecte a déjà été lancée il y a moins d’une heure.',
+      lm_jour: 'Nombre maximal de collectes pour aujourd’hui atteint.', lm_ko: 'Impossible de lancer la collecte pour le moment.',
+      lm_code_titre: "Code d'accès", lm_code_corps: "Saisissez le code d'accès communiqué par l'équipe.", lm_code_ko: 'Code incorrect, réessayez.',
+      as_btn: 'Poser une question', as_title: 'Assistant de recherche', as_go: 'Chercher', as_ph: 'Ex. : obligations NIS2 en Belgique',
+      as_note: "L'assistant cherche uniquement dans le contenu de la veille (points clés, articles, textes applicables, dates clés). Il ne rédige pas de réponse et ne va pas chercher sur Internet : il vous montre les contenus les plus proches de votre question.",
+      as_ex: ['Obligations NIS2 en Belgique', 'Échéances des 3 prochains mois en Allemagne', 'Nouveaux textes sur les dispositifs médicaux', 'Sanctions RGPD en Italie', "Projets de loi sur l'intelligence artificielle"],
+      as_compris: "J'ai compris : ", as_pays: 'pays', as_sujet: 'sujet', as_mots: 'mots', as_type: 'recherche',
+      as_types: { echeance: 'échéances', sanction: 'sanctions', nouveau: 'nouveautés', projet: 'textes en préparation', obligation: 'obligations' },
+      as_horizon: function (j) { return 'dans les ' + Math.round(j / 30) + ' mois'; },
+      as_sec: { alerte: 'Points clés', date: 'Dates clés', texte: 'Textes applicables', article: 'Articles de la veille' },
+      as_rien: "Rien trouvé dans la veille pour cette question. Essayez d'autres mots : le nom du texte (NIS2, IVDR…), le pays, ou un mot du sujet.",
+      as_plus: function (n) { return 'Voir ' + n + ' résultats de plus'; }, as_ref_voir: 'Voir dans Textes applicables', as_applicable: 'Applicable depuis le '
+    },
+    en: {
+      new_title: 'New since your last visit',
+      vis_first: function (n) { return 'Welcome: articles from the last 7 days are marked “New” (' + n + ').'; },
+      vis_new: function (n, p, d) { return n + (n > 1 ? ' new items' : ' new item') + ' since your last visit (' + d + ')' + (p ? ', including ' + p + (p > 1 ? ' key points' : ' key point') : '') + '.'; },
+      vis_none: function (d) { return 'Nothing new since your last visit (' + d + ').'; },
+      vis_voir: 'Show new items',
+      window_periode: function (a, b) { return 'Period: from ' + a + ' to ' + b + '.'; },
+      window_visite: function (d) { return 'New since your last visit (' + d + ').'; },
+      f_periode: 'Period', per_du: 'From', per_au: 'to', per_1m: '1 month', per_clear: 'Clear', per_auj: 'today',
+      since_visit: 'Only new items since my last visit',
+      per_arch: function (n, d) { return n + ' articles older than ' + d + ' are archived: they are loaded automatically when the chosen period starts before that date.'; },
+      arch_loading: 'Loading archives…', arch_loaded: function (n) { return n + ' archived articles loaded.'; }, arch_ko: 'Archives unavailable.',
+      pc_title: 'Key points',
+      pc_lead: 'Regulatory facts that may concern the company in one of its countries: deadline within 3 months, newly adopted text, text in preparation (proposal, bill, consultation), unknown text detected. Ranked by urgency: nearest deadlines and most recently detected texts first. An alert stays visible for 6 months (or until its deadline), even if nobody checks the watch in the meantime. Fixed rules, no generative AI.',
+      pc_empty: 'No current key point.', pc_rss: 'Subscribe (Outlook / RSS)',
+      pc_types: { echeance: 'Deadline', adopte: 'Text adopted', signale: 'Flagged important', proposition: 'Text in preparation', a_qualifier: 'New text detected' },
+      pc_types_long: { echeance: 'Deadline within 3 months', adopte: 'New text adopted, published or in force', signale: 'Flagged as important by a reader', proposition: 'Proposal, bill, consultation, guidelines', a_qualifier: 'Text not in the list of tracked texts: to be assessed' },
+      pc_new: 'New', pc_maj: 'Updated', pc_maj_t: 'New source since your last visit',
+      pc_inconnu: 'Unknown text', pc_inconnu_t: 'This text is not in the list of tracked texts: spotted through strong signals (adopted, published, proposal…). To be assessed by a person.',
+      pc_detecte: function (d) { return 'Detected on ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },
+      pc_texte: 'Text: ', pc_toutes: function (n) { return 'All sources (' + n + ')'; }, pc_voir_veille: 'Show in the watch',
+      pc_plus: function (n) { return 'Show ' + n + ' more key points'; }, pc_moins: 'Show less',
+      pc_prev: 'Previous key points', pc_prev_lead: 'Alerts whose display period is over (deadline passed or older than 6 months), by month.',
+      pc_prev_n: function (n) { return '(' + n + ')'; }, pc_fin: function (d) { return 'until ' + d; },
+      rss_titre: 'Subscribe to key points', rss_copier: 'Copy the link', rss_copie: 'Link copied',
+      rss_corps: ['This link is an RSS feed of the key points, updated at each collection. Outlook (classic): right-click “RSS Feeds” in the folder list › “Add a New RSS Feed…”, then paste the link. It also works in any RSS reader.', 'The new Outlook and Outlook on the web do not read RSS feeds: use an RSS reader instead.'],
+      bi_title: 'Reports',
+      bi_lead: 'A report per month and a summary over the period of your choice (last 6 months by default), so that nothing is lost even if the watch was not checked every week.',
+      bi_month: 'Monthly report', bi_pdf: 'Download (PDF)', bi_rest: 'Summary over a period', bi_rest_pdf: 'Summary (PDF)', bi_rest_csv: 'Articles of the period (Excel)',
+      bi_rest_note: 'The summary includes the key points, new texts and standards, key dates and highly relevant articles of the period, by country.',
+      bi_en_cours: ' (in progress)',
+      bi_k: { pc: 'key points', textes: 'important texts and standards', pert: 'highly relevant articles', ech: 'key dates (month + 3 months)' },
+      bi_top_pc: 'Key points of the month', bi_top_textes: 'Most cited texts', bi_rien: 'Nothing notable this month.',
+      rest_titre: function (a, b) { return 'Regulatory watch summary — ' + a + ' to ' + b; },
+      bilan_titre: function (m) { return 'Monthly regulatory watch report — ' + m; },
+      rp_periode: function (a, b) { return 'Period: ' + a + ' to ' + b; },
+      rp_pc: 'Key points', rp_textes: 'New texts and standards', rp_dates: 'Key dates (period and next 3 months)', rp_pert: 'Highly relevant articles, by country',
+      rp_tronque: function (n) { return '… and ' + n + ' more articles (see the Excel export).'; }, rp_vide: 'Nothing in this period.',
+      rp_resume: function (a, b, c, d) { return a + ' key points · ' + b + ' important texts and standards · ' + c + ' highly relevant articles · ' + d + ' key dates'; },
+      cs_titre: 'Collection in progress', cs_auto: 'automatic', cs_manuel: 'started from the site or GitHub',
+      cs_lancee: function (h, d) { return 'started at ' + h + ' (' + d + ')'; },
+      cs_etape: function (n, m, l) { return 'Step ' + n + '/' + m + ': ' + l; }, cs_fin: function (h) { return 'expected to end around ' + h; },
+      cs_attente: 'Waiting for a GitHub machine…', cs_demandee: 'Collection requested: starting in a few seconds…',
+      cs_ok: 'Collection finished: the new data is online.', cs_recharger: 'Reload the page',
+      cs_ko: 'The collection failed or was interrupted. The site still shows the data of the previous collection.',
+      cs_etapes: { prep: 'Preparation', garde: 'Checking the schedule', rkc: 'Reading RKC alerts', outils: 'Installing tools', collecte: 'Reading sources, sorting and translating articles', enreg: 'Saving data', publi: 'Publishing the site' },
+      update_title_relais: 'Starts a new collection (about 10 minutes), no GitHub account needed',
+      lm_titre: 'Start a new collection?', lm_ok: 'Start',
+      lm_corps: function (m) { return 'The collection reads all sources, sorts and translates the articles, then updates the site. It takes about ' + m + ' minutes; its progress is shown at the top of the page.'; },
+      lm_envoye: 'Collection requested.', lm_deja: 'A collection is already running.', lm_heure: 'A collection was already started less than an hour ago.',
+      lm_jour: 'Maximum number of collections for today reached.', lm_ko: 'Unable to start the collection right now.',
+      lm_code_titre: 'Access code', lm_code_corps: 'Enter the access code provided by the team.', lm_code_ko: 'Wrong code, try again.',
+      as_btn: 'Ask a question', as_title: 'Search assistant', as_go: 'Search', as_ph: 'E.g. NIS2 obligations in Belgium',
+      as_note: 'The assistant only searches the content of the watch (key points, articles, applicable texts, key dates). It does not write an answer and does not search the Internet: it shows you the content closest to your question.',
+      as_ex: ['NIS2 obligations in Belgium', 'Deadlines in the next 3 months in Germany', 'New texts on medical devices', 'GDPR fines in Italy', 'Draft laws on artificial intelligence'],
+      as_compris: 'Understood: ', as_pays: 'country', as_sujet: 'topic', as_mots: 'words', as_type: 'looking for',
+      as_types: { echeance: 'deadlines', sanction: 'fines', nouveau: 'new items', projet: 'texts in preparation', obligation: 'obligations' },
+      as_horizon: function (j) { return 'within ' + Math.round(j / 30) + ' months'; },
+      as_sec: { alerte: 'Key points', date: 'Key dates', texte: 'Applicable texts', article: 'Watch articles' },
+      as_rien: 'Nothing found in the watch for this question. Try other words: the name of the text (NIS2, IVDR…), the country, or a topic word.',
+      as_plus: function (n) { return 'Show ' + n + ' more results'; }, as_ref_voir: 'Show in Applicable texts', as_applicable: 'Applicable since '
+    }
+  };
+  Object.keys(T5.fr).forEach(function (k) { T.fr[k] = T5.fr[k]; });
+  Object.keys(T5.en).forEach(function (k) { T.en[k] = T5.en[k]; });
+
+  function isoJour(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function moisAvant(n) { var d = new Date(aujourdhui.getTime()); d.setMonth(d.getMonth() - n); return d; }
+  function heureCourte(d) { return d.toLocaleTimeString(LANG === 'en' ? 'en-GB' : 'fr-FR', { hour: '2-digit', minute: '2-digit' }); }
+  var AUJ_ISO = isoJour(aujourdhui);
+  var ARTICLES_PAR_ID = {};
+  ARTICLES.forEach(function (a) { ARTICLES_PAR_ID[a.id] = a; });
+  var ALERTES = ((window.VEILLE_ALERTES || {}).alertes || []);
+
+  /* ------------------------------------------- nouveautés depuis la dernière visite */
+  // Mémorisé dans ce navigateur uniquement (aucun compte). Pendant la visite, la référence ne bouge pas.
+  var VISITE = (function () {
+    var ref = null, premiere = false;
+    try { ref = sessionStorage.getItem('cw-ref-visite'); } catch (e) {}
+    if (ref === null) {
+      var prec = null;
+      try { prec = localStorage.getItem('cw-derniere-visite'); } catch (e) {}
+      ref = prec || '';
+      try { sessionStorage.setItem('cw-ref-visite', ref); } catch (e) {}
+    }
+    try { if (META.version) localStorage.setItem('cw-derniere-visite', META.version); } catch (e) {}
+    if (!ref) { premiere = true; ref = isoJour(new Date(aujourdhui.getTime() - 7 * 86400000)) + '-0000'; }
+    return { ref: ref, premiere: premiere, libelle: dateLongue(ref.slice(0, 10)) };
+  })();
+  function estNouveau(a) { var v = a && a.version; return !!v && v !== 'base' && v > VISITE.ref; }
+
+  function renderVisite() {
+    var box = document.getElementById('visite-banner'); if (!box || !META.version) return;
+    var nArt = ARTICLES.filter(function (a) { return estNouveau(a) && a.pertinence !== 'faible'; }).length;
+    var nPc = ALERTES.filter(function (x) { return alerteActive(x) && estNouvelleAlerte(x); }).length;
+    var txt = VISITE.premiere ? t('vis_first')(nArt) : (nArt || nPc ? t('vis_new')(nArt, nPc, VISITE.libelle) : t('vis_none')(VISITE.libelle));
+    box.textContent = '';
+    box.appendChild(el('span', { text: txt }));
+    if (nArt) {
+      var b = el('button', { type: 'button', className: 'linkbtn', text: t('vis_voir') });
+      b.addEventListener('click', function () {
+        etatFiltres.depuisVisite = true; document.getElementById('depuis-visite').checked = true;
+        location.hash = '#veille'; appliquerFiltres();
+      });
+      box.appendChild(b);
+    }
+    box.classList.toggle('visite-new', !!(nArt || nPc) && !VISITE.premiere);
+    box.hidden = false;
+  }
+
+  /* ------------------------------------------------------------- points clés */
+  var PRIO = { echeance: 1, adopte: 2, signale: 2, proposition: 3, a_qualifier: 4 };
+  function alerteActive(x) { return x.type === 'echeance' ? (x.echeance || '') >= AUJ_ISO : (x.fin || '') >= AUJ_ISO; }
+  function estNouvelleAlerte(x) { return !!x.version && x.version > VISITE.ref; }
+  function estMajAlerte(x) { return !estNouvelleAlerte(x) && !!x.version_maj && x.version_maj > VISITE.ref; }
+  function critique(x) {
+    // « critique » : seule raison d'afficher plus de 8 points clés (jamais plus de 12)
+    return (x.type === 'echeance' && joursJusqua(x.echeance) <= 14) || ((x.type === 'adopte' || x.type === 'signale') && !x.a_verifier && joursDepuis(x.detecte_le) <= 7);
+  }
+  function trierAlertes(l) {
+    // Ordre d'urgence : échéances à 14 jours ou moins, puis alternance « nouveaux textes » (les plus récemment
+    // détectés d'abord ; à détection égale : adopté > en préparation > à qualifier) / « échéances suivantes ».
+    function parDate(x, y) { return x.echeance < y.echeance ? -1 : x.echeance > y.echeance ? 1 : 0; }
+    var proches = l.filter(function (x) { return x.type === 'echeance' && joursJusqua(x.echeance) <= 14; }).sort(parDate);
+    var suivantes = l.filter(function (x) { return x.type === 'echeance' && joursJusqua(x.echeance) > 14; }).sort(parDate);
+    var textesN = l.filter(function (x) { return x.type !== 'echeance'; }).sort(function (x, y) {
+      if ((x.detecte_le || '') !== (y.detecte_le || '')) return (y.detecte_le || '') > (x.detecte_le || '') ? 1 : -1;
+      return ((PRIO[x.type] || 9) - (PRIO[y.type] || 9)) || ((y.date || '') > (x.date || '') ? 1 : -1);
+    });
+    var res = proches.slice();
+    while (textesN.length || suivantes.length) { if (textesN.length) res.push(textesN.shift()); if (suivantes.length) res.push(suivantes.shift()); }
+    return res;
+  }
+  function titreApercu(ap) {
+    var a = ARTICLES_PAR_ID[ap.id]; if (a) return textes(a).aff.titre;
+    if (!ap.langue || ap.langue === LANG) return ap.titre;
+    var tr = (ap.trad || {})[LANG]; return (tr && tr.titre) || ap.titre;
+  }
+  function titreAlerte(x) {
+    if (x.ref) return (LANG === 'en' && x.ref.nom_en) ? x.ref.nom_en : x.ref.nom;
+    var ap = (x.articles || [])[0]; return ap ? titreApercu(ap) : libTexteCle(x.texte || '');
+  }
+  function lienAlerte(x) { return (x.ref && x.ref.lien) || ((x.articles || [])[0] || {}).lien || ''; }
+  function voirDansVeille(id) {
+    var a = ARTICLES_PAR_ID[id]; if (!a) return;
+    // affiche le jour de publication de l'article, sans autre filtre, et ouvre sa carte
+    Array.prototype.forEach.call(document.querySelectorAll('input[data-facet]'), function (i) { i.checked = false; });
+    document.getElementById('recherche').value = ''; etatFiltres.q = []; etatFiltres.exact = []; etatFiltres.depuisVisite = false;
+    etatFiltres.du = etatFiltres.au = a.date; document.getElementById('per-du').value = document.getElementById('per-au').value = a.date;
+    document.getElementById('depuis-visite').checked = false;
+    if (a.pertinence === 'faible') montrerFaible = true;
+    appliquerFiltres();
+    if (location.hash !== '#veille') location.hash = '#veille'; else afficherOnglet('veille');
+    var c = document.getElementById('a-' + id);
+    if (c) { ouvrir(c, true); setTimeout(function () { c.scrollIntoView({ block: 'start' }); }, 120); }
+  }
+  function carteAlerte(x, compacte) {
+    var lien = lienAlerte(x), titre = titreAlerte(x), nv = estNouvelleAlerte(x), maj = estMajAlerte(x);
+    var haut = el('div', { className: 'pc-top' }, [
+      el('span', { className: 'pc-type pc-t-' + x.type, text: t('pc_types')[x.type] || x.type, title: t('pc_types_long')[x.type] || '' }),
+      nv ? badge('badge-new badge-sm', t('pc_new'), t('new_title')) : (maj ? badge('badge-maj badge-sm', t('pc_maj'), t('pc_maj_t')) : null),
+      ZONES[x.zone] ? el('span', { className: 'zone-code', text: codeZone(x.zone), title: nomZone(x.zone) }) : null,
+      el('span', { className: 'pc-zone', text: nomZone(x.zone) }),
+      x.inconnu ? badge('badge-verif badge-sm', t('pc_inconnu'), t('pc_inconnu_t')) : null,
+      x.a_verifier && !x.inconnu ? badge('badge-verif badge-sm', t('badge_verif'), t('verif_title')) : null
+    ]);
+    var meta = [];
+    if (x.type === 'echeance') meta.push(el('strong', { className: 'pc-ech', text: '⏱ ' + dateLongue(x.echeance) + ' · ' + t('in_days')(joursJusqua(x.echeance)) }));
+    else meta.push(el('span', { text: t('pc_detecte')(dateLongue(x.detecte_le)) }));
+    if (x.nb_articles > 1) meta.push(el('span', { text: t('pc_sources')(x.nb_articles) }));
+    else if ((x.articles || [])[0]) meta.push(el('span', { text: x.articles[0].source || '' }));
+    if (x.texte && !x.ref) meta.push(el('span', { text: t('pc_texte') + libTexteCle(x.texte) }));
+    if (x.ref && x.ref.autorite) meta.push(el('span', { text: x.ref.autorite }));
+    var corps = [haut, el('h3', { className: 'pc-titre' }, [lien ? el('a', { href: lien, target: '_blank', rel: 'noopener noreferrer', text: titre }) : titre]),
+      el('p', { className: 'pc-meta' }, meta.reduce(function (acc, m, i) { if (i) acc.push(' · '); acc.push(m); return acc; }, []))];
+    if (!compacte) {
+      var extrait = x.extrait ? (x.extrait[LANG] || x.extrait.fr || x.extrait.en || '') : '';
+      if (!extrait && x.ref) extrait = (LANG === 'en' ? x.ref.resume_en : x.ref.resume_fr) || '';
+      if (extrait) corps.push(el('p', { className: 'pc-extrait', text: extrait.length > 260 ? extrait.slice(0, 257) + '…' : extrait }));
+      var arts = x.articles || [];
+      if (arts.length > 1) {
+        var ul = el('ul', { className: 'pc-sources' });
+        arts.forEach(function (ap) {
+          ul.appendChild(el('li', null, [el('span', { className: 'pc-src-meta', text: dateCourte(ap.date) + ' · ' + (ap.source || '') + ' · ' }),
+            ap.lien ? el('a', { href: ap.lien, target: '_blank', rel: 'noopener noreferrer', text: titreApercu(ap) }) : titreApercu(ap)]));
+        });
+        corps.push(el('details', { className: 'pc-details' }, [el('summary', { text: t('pc_toutes')(x.nb_articles) }), ul]));
+      }
+      if (arts[0] && ARTICLES_PAR_ID[arts[0].id]) {
+        var v = el('button', { type: 'button', className: 'linkbtn pc-voir', text: t('pc_voir_veille') + ' ›' });
+        v.addEventListener('click', function () { voirDansVeille(arts[0].id); });
+        corps.push(v);
+      }
+    }
+    return el('article', { className: 'pc-card pc-c-' + x.type + (compacte ? ' pc-compacte' : '') + (nv ? ' pc-nouveau' : '') }, corps);
+  }
+  function renderPointsCles() {
+    var liste = document.getElementById('pc-liste'), plus = document.getElementById('pc-plus');
+    var leg = document.getElementById('pc-legende');
+    ['echeance', 'adopte', 'proposition', 'a_qualifier'].forEach(function (k, i) {
+      leg.appendChild(el('span', { className: 'pc-leg' }, [el('span', { className: 'pc-type pc-t-' + k, text: String(i + 1) }), el('span', { text: t('pc_types_long')[k] })]));
+    });
+    var act = trierAlertes(ALERTES.filter(alerteActive));
+    var nCrit = act.filter(critique).length, n = Math.min(12, Math.max(8, nCrit));
+    document.getElementById('pc-vide').hidden = act.length > 0;
+    var caches = [];
+    act.forEach(function (x, i) { var c = carteAlerte(x, false); if (i >= n) { c.hidden = true; caches.push(c); } liste.appendChild(c); });
+    if (caches.length) {
+      var ouvert = false; plus.hidden = false; plus.textContent = t('pc_plus')(caches.length);
+      plus.addEventListener('click', function () {
+        ouvert = !ouvert; caches.forEach(function (c) { c.hidden = !ouvert; });
+        plus.textContent = ouvert ? t('pc_moins') : t('pc_plus')(caches.length);
+      });
+    }
+    // points clés précédents : construits à l'ouverture
+    var prec = ALERTES.filter(function (x) { return !alerteActive(x); });
+    document.getElementById('pc-prev-n').textContent = t('pc_prev_n')(prec.length);
+    var det = document.getElementById('pc-precedents'), fait = false;
+    det.hidden = !prec.length;
+    det.addEventListener('toggle', function () {
+      if (!det.open || fait) return; fait = true;
+      var box = document.getElementById('pc-prev-liste'), mois = null, grille = null;
+      prec.map(function (x) { return { x: x, d: x.type === 'echeance' ? x.echeance : (x.maj_le || x.detecte_le || '') }; })
+        .sort(function (p, q) { return p.d < q.d ? 1 : -1; })
+        .forEach(function (p) {
+          var m = moisAnnee(p.d);
+          if (m !== mois) { mois = m; box.appendChild(el('h3', { className: 'sub-title', text: m })); grille = el('div', { className: 'pc-liste pc-liste-compacte' }); box.appendChild(grille); }
+          grille.appendChild(carteAlerte(p.x, true));
+        });
+    });
+    document.getElementById('pc-rss').addEventListener('click', function () {
+      var url = new URL('data/points_cles_' + LANG + '.xml', location.href).href;
+      var inp = el('input', { type: 'text', value: url, readOnly: true, className: 'select' });
+      demander(t('rss_titre'), t('rss_corps').concat([inp]), t('rss_copier'), function () {
+        function ok() { toast(t('rss_copie')); }
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(ok).catch(function () {});
+        else { inp.select(); try { document.execCommand('copy'); ok(); } catch (e) {} }
+      });
+      setTimeout(function () { inp.select(); }, 30);
+    });
+  }
+
+  /* ------------------------------------------------- archives (plus de 6 mois) */
+  var ARCHIVES_INFO = META.archives || { nb: 0 };
+  var archivesChargees = !ARCHIVES_INFO.nb, promesseArchives = null;
+  function besoinArchives(du) { return !archivesChargees && !!du && du < (ARCHIVES_INFO.avant || ''); }
+  function chargerArchives() {
+    if (archivesChargees) return Promise.resolve();
+    if (promesseArchives) return promesseArchives;
+    toast(t('arch_loading'));
+    promesseArchives = new Promise(function (ok) {
+      var sc = document.createElement('script'); sc.src = 'data/actualites_archives.js'; sc.async = true;
+      sc.onload = function () {
+        var arts = ((window.VEILLE_ARCHIVES || {}).articles || []).filter(function (a) { return a.nature !== 'opinion' && !a.doublon_de && !ARTICLES_PAR_ID[a.id]; });
+        arts.forEach(function (a) { ARTICLES_PAR_ID[a.id] = a; ARTICLES.push(a); cartes.push(carteArticle(a)); });
+        archivesChargees = true; toast(t('arch_loaded')(arts.length)); ok();
+      };
+      sc.onerror = function () { archivesChargees = true; toast(t('arch_ko')); ok(); };
+      document.head.appendChild(sc);
+    });
+    return promesseArchives;
+  }
+
+  /* --------------------------------------------------------- période (Veille) */
+  function brancherPeriode() {
+    var du = document.getElementById('per-du'), au = document.getElementById('per-au');
+    function appliquer() {
+      etatFiltres.du = du.value || ''; etatFiltres.au = au.value || '';
+      if (besoinArchives(etatFiltres.du)) chargerArchives().then(appliquerFiltres);
+      appliquerFiltres();
+    }
+    du.addEventListener('change', appliquer); au.addEventListener('change', appliquer);
+    document.getElementById('per-preset').addEventListener('choix', function (e) {
+      var m = +e.detail.getAttribute('data-m');
+      du.value = m ? isoJour(moisAvant(m)) : ''; au.value = '';
+      if (!m) Array.prototype.forEach.call(document.querySelectorAll('#per-preset button'), function (b) { b.setAttribute('aria-pressed', 'false'); });
+      appliquer();
+    });
+    document.getElementById('depuis-visite').addEventListener('change', function (e) { etatFiltres.depuisVisite = e.target.checked; appliquerFiltres(); });
+    var note = document.getElementById('per-archives');
+    if (ARCHIVES_INFO.nb) { note.textContent = t('per_arch')(ARCHIVES_INFO.nb, dateLongue(ARCHIVES_INFO.avant)); note.hidden = false; }
+  }
+
+  /* ------------------------------------------------- bilans et restitutions */
+  function dansPeriode(d, du, au) { return !!d && d >= du && d <= au; }
+  function contenuPeriode(du, au) {
+    var fin3 = isoJour(new Date(isoToDate(au).getTime() + 92 * 86400000));
+    var pc = trierAlertes(ALERTES.filter(function (x) { return x.type === 'echeance' ? dansPeriode(x.echeance, du, au) : dansPeriode(x.detecte_le, du, au); }));
+    var ess = ARTICLES.filter(function (a) { return a.essentiel && !a.base && dansPeriode(a.date, du, au); });
+    var pert = ARTICLES.filter(function (a) { return a.pertinence === 'elevee' && !a.base && !a.essentiel && dansPeriode(a.date, du, au); });
+    var dates = evenementsAgenda(3000, null, 3000).filter(function (e) { return dansPeriode(e.date, du, fin3); });
+    var parTexte = {};
+    ess.forEach(function (a) { var k = (a.textes_cles && a.textes_cles[0]) || ''; (parTexte[k] = parTexte[k] || []).push(a); });
+    return { pc: pc, ess: ess, pert: pert, dates: dates, parTexte: parTexte };
+  }
+  function moisListe() {
+    var plusAncien = ARCHIVES_INFO.plus_ancien || '';
+    ARTICLES.forEach(function (a) { if (!a.base && a.date && (!plusAncien || a.date < plusAncien)) plusAncien = a.date; });
+    var res = [], d = new Date(aujourdhui.getFullYear(), aujourdhui.getMonth(), 1);
+    for (var i = 0; i < 24; i++) {
+      var m = isoJour(d).slice(0, 7);
+      if (plusAncien && m < plusAncien.slice(0, 7)) break;
+      res.push(m); d.setMonth(d.getMonth() - 1);
+    }
+    return res;
+  }
+  function bornesMois(m) {
+    var d = isoToDate(m + '-01'), f = new Date(d.getFullYear(), d.getMonth() + 1, 0);
+    return [m + '-01', isoJour(f) < AUJ_ISO ? isoJour(f) : AUJ_ISO];
+  }
+  function afficherBilan(m) {
+    var b = bornesMois(m), box = document.getElementById('bilan-resume');
+    (besoinArchives(b[0]) ? chargerArchives() : Promise.resolve()).then(function () {
+      var c = contenuPeriode(b[0], b[1]); box.textContent = '';
+      var k = t('bi_k');
+      box.appendChild(el('div', { className: 'bilan-kpis' }, [[c.pc.length, k.pc], [Object.keys(c.parTexte).length, k.textes], [c.pert.length, k.pert], [c.dates.length, k.ech]].map(function (x) {
+        return el('div', { className: 'kpi kpi-sm' }, [el('span', { className: 'kpi-n', text: String(x[0]) }), el('span', { className: 'kpi-l', text: x[1] })]);
+      })));
+      if (!c.pc.length && !c.ess.length) { box.appendChild(el('p', { className: 'block-meta', text: t('bi_rien') })); return; }
+      if (c.pc.length) {
+        box.appendChild(el('h4', { text: t('bi_top_pc') }));
+        var ul = el('ul', { className: 'bilan-liste' });
+        c.pc.slice(0, 6).forEach(function (x) {
+          var l = lienAlerte(x);
+          ul.appendChild(el('li', null, [el('span', { className: 'pc-type pc-t-' + x.type, text: t('pc_types')[x.type] }), ' ', codeZone(x.zone) ? el('span', { className: 'zone-code', text: codeZone(x.zone) }) : null, ' ',
+            l ? el('a', { href: l, target: '_blank', rel: 'noopener noreferrer', text: titreAlerte(x) }) : titreAlerte(x)]));
+        });
+        box.appendChild(ul);
+      }
+      var cles = Object.keys(c.parTexte).filter(Boolean).sort(function (x, y) { return c.parTexte[y].length - c.parTexte[x].length; }).slice(0, 8);
+      if (cles.length) {
+        box.appendChild(el('h4', { text: t('bi_top_textes') }));
+        box.appendChild(el('p', { className: 'bilan-textes', text: cles.map(function (x) { return libTexteCle(x) + ' (' + c.parTexte[x].length + ')'; }).join(' · ') }));
+      }
+    });
+  }
+  function itemCompact(titre, ligne, lien) {
+    return el('div', { className: 'pr-item pr-compact' }, [el('h4', { text: titre }), ligne ? el('p', { className: 'pr-line', text: ligne }) : null, lien ? el('p', { className: 'pr-link', text: lien }) : null]);
+  }
+  function genererRapport(du, au, titre, prefixe) {
+    (besoinArchives(du) ? chargerArchives() : Promise.resolve()).then(function () {
+      var c = contenuPeriode(du, au), rep = document.getElementById('print-report'); rep.textContent = '';
+      rep.appendChild(el('h1', { text: titre }));
+      rep.appendChild(el('p', { className: 'pr-meta', text: t('rp_periode')(dateLongue(du), dateLongue(au)) + ' · ' + t('pdf_generated') + horodatage(new Date().toISOString()) }));
+      rep.appendChild(el('p', { className: 'pr-meta', text: t('rp_resume')(c.pc.length, c.ess.length, c.pert.length, c.dates.length) }));
+      rep.appendChild(el('h2', { text: t('rp_pc') + ' (' + c.pc.length + ')' }));
+      if (!c.pc.length) rep.appendChild(el('p', { text: t('rp_vide') }));
+      c.pc.forEach(function (x) {
+        rep.appendChild(itemCompact(titreAlerte(x), [t('pc_types')[x.type], nomZone(x.zone), x.type === 'echeance' ? dateLongue(x.echeance) : t('pc_detecte')(dateLongue(x.detecte_le)),
+          x.nb_articles > 1 ? t('pc_sources')(x.nb_articles) : '', x.texte && !x.ref ? libTexteCle(x.texte) : ''].filter(Boolean).join(' · '), lienAlerte(x)));
+      });
+      var cles = Object.keys(c.parTexte).sort(function (x, y) { if (!x) return 1; if (!y) return -1; return c.parTexte[y].length - c.parTexte[x].length; });
+      rep.appendChild(el('h2', { className: 'pr-break', text: t('rp_textes') + ' (' + c.ess.length + ')' }));
+      if (!cles.length) rep.appendChild(el('p', { text: t('rp_vide') }));
+      cles.forEach(function (k) {
+        rep.appendChild(el('h3', { text: (k ? libTexteCle(k) : t('tm_other')) + ' (' + c.parTexte[k].length + ')' }));
+        c.parTexte[k].sort(function (x, y) { return x.date < y.date ? 1 : -1; }).forEach(function (a) {
+          rep.appendChild(itemCompact(textes(a).aff.titre, [dateLongue(a.date), a.source, nomZone(a.zone), a.statut ? libStatut(a.statut) : '', a.a_verifier ? t('badge_verif') : ''].filter(Boolean).join(' · '), a.lien));
+        });
+      });
+      rep.appendChild(el('h2', { className: 'pr-break', text: t('rp_dates') + ' (' + c.dates.length + ')' }));
+      if (!c.dates.length) rep.appendChild(el('p', { text: t('rp_vide') }));
+      c.dates.forEach(function (e) { rep.appendChild(el('p', { className: 'pr-line', text: (e.approx ? t('approx') + ' ' : '') + dateLongue(e.date) + ' — ' + e.titre + ' (' + nomZone(e.zone) + ')' })); });
+      rep.appendChild(el('h2', { className: 'pr-break', text: t('rp_pert') + ' (' + c.pert.length + ')' }));
+      if (!c.pert.length) rep.appendChild(el('p', { text: t('rp_vide') }));
+      var MAX = 350, parZ = {};
+      c.pert.sort(function (x, y) { return x.date < y.date ? 1 : -1; }).slice(0, MAX).forEach(function (a) { (parZ[a.zone] = parZ[a.zone] || []).push(a); });
+      Object.keys(parZ).sort(function (x, y) { return nomZone(x).localeCompare(nomZone(y), LANG); }).forEach(function (z) {
+        rep.appendChild(el('h3', { text: nomZone(z) + ' (' + parZ[z].length + ')' }));
+        parZ[z].forEach(function (a) { rep.appendChild(itemCompact(textes(a).aff.titre, [dateLongue(a.date), a.source, a.statut ? libStatut(a.statut) : ''].filter(Boolean).join(' · '), a.lien)); });
+      });
+      if (c.pert.length > MAX) rep.appendChild(el('p', { text: t('rp_tronque')(c.pert.length - MAX) }));
+      telechargerPdf(rep, titre, prefixe);
+    });
+  }
+  function renderBilans() {
+    var sel = document.getElementById('bilan-mois');
+    moisListe().forEach(function (m, i) { sel.appendChild(el('option', { value: m, text: moisAnnee(m + '-01') + (i === 0 ? t('bi_en_cours') : '') })); });
+    if (sel.options.length > 1) sel.selectedIndex = 1;   // le dernier mois complet
+    sel.addEventListener('change', function () { afficherBilan(sel.value); });
+    if (sel.value) afficherBilan(sel.value);
+    document.getElementById('bilan-pdf').addEventListener('click', function () {
+      if (!sel.value) return; var b = bornesMois(sel.value);
+      genererRapport(b[0], b[1], t('bilan_titre')(moisAnnee(sel.value + '-01')), 'bilan_' + sel.value);
+    });
+    var du = document.getElementById('rest-du'), au = document.getElementById('rest-au');
+    function preset(m) { du.value = isoJour(moisAvant(m)); au.value = AUJ_ISO; }
+    preset(6);
+    document.getElementById('rest-preset').addEventListener('choix', function (e) { preset(+e.detail.getAttribute('data-m')); });
+    function bornes() { var a = du.value || isoJour(moisAvant(6)), b = au.value || AUJ_ISO; return a <= b ? [a, b] : [b, a]; }
+    document.getElementById('rest-pdf').addEventListener('click', function () {
+      var b = bornes(); genererRapport(b[0], b[1], t('rest_titre')(dateLongue(b[0]), dateLongue(b[1])), 'restitution');
+    });
+    document.getElementById('rest-csv').addEventListener('click', function () {
+      var b = bornes();
+      (besoinArchives(b[0]) ? chargerArchives() : Promise.resolve()).then(function () {
+        var arts = ARTICLES.filter(function (a) { return !a.base && a.pertinence !== 'faible' && dansPeriode(a.date, b[0], b[1]); })
+          .sort(function (x, y) { return x.date < y.date ? 1 : -1; });
+        if (!arts.length) { toast(t('nothing_export')); return; }
+        var lignes = arts.map(function (a) {
+          var c = cartes.filter(function (k) { return k.id === 'a-' + a.id; })[0];
+          var x = c ? ligneExport(c) : null; if (!x) return null;
+          return [x.date, x.rubrique, x.pert, x.titre, x.titreOrig, x.langue, x.source, x.zone, x.nature, x.statut, x.amende, x.montant, x.echeances, x.pourquoi, x.themes, x.lien, x.resume];
+        }).filter(Boolean);
+        telechargerCsv([t('csv_head')].concat(lignes), 'cyberwatch_restitution_');
+        toast(lignes.length + t('exported'));
+      });
+    });
+  }
+
+  /* ---------------------------------------------- collecte en cours (bandeau) */
+  var EN_COURS = ['queued', 'in_progress', 'waiting', 'requested', 'pending'];
+  var COLLECTE = { vu: false, fini: false, timer: null, run: null, duree: null, pause: false, demande: 0 };
+  function apiGh(chemin) {
+    return fetch('https://api.github.com' + chemin, { headers: { Accept: 'application/vnd.github+json' }, cache: 'no-store' }).then(function (r) {
+      if (r.status === 403 || r.status === 429) { var e = new Error('limite'); e.limite = true; throw e; }
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    });
+  }
+  function lireEtatCollecte() {
+    if (META.url_relais) return fetch(META.url_relais.replace(/\/+$/, '') + '/etat', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('relais'); return r.json(); });
+    if (!META.depot) return Promise.reject(new Error('depot'));
+    if (COLLECTE.run) {   // collecte repérée : on ne suit plus que ses étapes (1 appel)
+      return apiGh('/repos/' + META.depot + '/actions/runs/' + COLLECTE.run.id + '/jobs').then(function (j) {
+        var job = (j.jobs || [])[0] || {};
+        if (job.status === 'completed') { COLLECTE.run = null; return { en_cours: false, derniere: { conclusion: job.conclusion } }; }
+        return { en_cours: true, duree_habituelle_s: COLLECTE.duree, collecte: { debut: COLLECTE.run.debut, declenchement: COLLECTE.run.decl,
+          statut: job.status || 'queued', etapes: (job.steps || []).map(function (s) { return { nom: s.name, statut: s.status, conclusion: s.conclusion }; }) } };
+      });
+    }
+    return apiGh('/repos/' + META.depot + '/actions/workflows/veille.yml/runs?per_page=10').then(function (d) {
+      var runs = d.workflow_runs || [];
+      var actif = runs.filter(function (r) { return EN_COURS.indexOf(r.status) !== -1; })[0];
+      var ok = runs.filter(function (r) { return r.conclusion === 'success' && (new Date(r.updated_at) - new Date(r.run_started_at)) > 120000; })[0];
+      COLLECTE.duree = ok ? Math.round((new Date(ok.updated_at) - new Date(ok.run_started_at)) / 1000) : null;
+      if (!actif) return { en_cours: false, duree_habituelle_s: COLLECTE.duree };
+      COLLECTE.run = { id: actif.id, debut: actif.run_started_at || actif.created_at, decl: actif.event === 'schedule' ? 'automatique' : 'manuel' };
+      return lireEtatCollecte();
+    });
+  }
+  function libelleEtape(nom) {
+    var e = t('cs_etapes'); nom = nom || '';
+    if (/horaire/i.test(nom)) return e.garde;
+    if (/RKC/.test(nom)) return e.rkc;
+    if (/Collecter/i.test(nom)) return e.collecte;
+    if (/Enregistrer/i.test(nom)) return e.enreg;
+    if (/Python|d[ée]pendances|mod[eè]les|cache/i.test(nom)) return e.outils;
+    if (/site|pages|Publier|artifact/i.test(nom)) return e.publi;
+    return e.prep;
+  }
+  function boutonLancement() { return document.getElementById('lancer-maj'); }
+  function montrerBouton(oui) { var b = boutonLancement(); if (b && (META.url_relais || META.url_lancer_maj)) b.hidden = !oui; }
+  function afficherCollecte(etat) {
+    var box = document.getElementById('collecte-bandeau');
+    if (etat.duree_habituelle_s) COLLECTE.duree = etat.duree_habituelle_s;
+    // juste après une demande, GitHub met parfois une minute à créer la collecte : on patiente
+    if (!etat.en_cours && COLLECTE.demande && Date.now() - COLLECTE.demande < 150000) return;
+    if (etat.en_cours) {
+      COLLECTE.demande = 0;
+      var c = etat.collecte || {}, etapes = (c.etapes || []).filter(function (s) { return !/^(Set up job|Post |Complete job)/.test(s.nom) && s.conclusion !== 'skipped'; });
+      var cour = etapes.filter(function (s) { return s.statut === 'in_progress'; })[0];
+      // créneau automatique encore à l'étape « vérifier l'horaire » : souvent un créneau ignoré, on n'affiche rien
+      if (c.declenchement === 'automatique' && !COLLECTE.vu && (!cour || /horaire|branche|checkout/i.test(cour.nom))) { box.hidden = true; return; }
+      COLLECTE.vu = true; COLLECTE.fini = false; montrerBouton(false);
+      var debut = c.debut ? new Date(c.debut) : new Date(), duree = etat.duree_habituelle_s || 600;
+      var ecoule = (Date.now() - debut.getTime()) / 1000, pct = Math.max(3, Math.min(95, ecoule / duree * 100));
+      var ligne2 = '';
+      if (!etapes.length || c.statut === 'queued') { ligne2 = t('cs_attente'); pct = 2; }
+      else {
+        var idx = cour ? etapes.indexOf(cour) + 1 : etapes.filter(function (s) { return s.statut === 'completed'; }).length;
+        ligne2 = t('cs_etape')(Math.max(1, idx), etapes.length, libelleEtape(cour ? cour.nom : '')) + ' · ' + t('cs_fin')(heureCourte(new Date(debut.getTime() + duree * 1000)));
+      }
+      box.className = 'collecte-bandeau cb-encours'; box.textContent = '';
+      box.appendChild(el('div', { className: 'cb-ligne' }, [el('span', { className: 'cb-spin', 'aria-hidden': 'true' }),
+        el('strong', { text: t('cs_titre') }), el('span', { text: ' — ' + t('cs_lancee')(heureCourte(debut), c.declenchement === 'automatique' ? t('cs_auto') : t('cs_manuel')) })]));
+      box.appendChild(el('div', { className: 'cb-ligne cb-etape', text: ligne2 }));
+      var barre = el('div', { className: 'cb-barre', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': '100', 'aria-valuenow': String(Math.round(pct)) });
+      barre.appendChild(el('div', { className: 'cb-rempli', style: 'width:' + pct.toFixed(1) + '%' }));
+      box.appendChild(barre); box.hidden = false;
+      return;
+    }
+    if (COLLECTE.vu && !COLLECTE.fini) {
+      COLLECTE.fini = true; COLLECTE.vu = false;
+      var ok = !etat.derniere || etat.derniere.conclusion === 'success';
+      box.className = 'collecte-bandeau ' + (ok ? 'cb-ok' : 'cb-ko'); box.textContent = '';
+      box.appendChild(el('span', { text: (ok ? '✅ ' + t('cs_ok') : '⚠️ ' + t('cs_ko')) + ' ' }));
+      if (ok) { var r = el('button', { type: 'button', className: 'btn btn-sm', text: t('cs_recharger') }); r.addEventListener('click', function () { location.reload(); }); box.appendChild(r); }
+      box.hidden = false;
+    } else if (!COLLECTE.fini) box.hidden = true;
+    montrerBouton(true);
+  }
+  function planifier(ms) { clearTimeout(COLLECTE.timer); COLLECTE.timer = setTimeout(sonder, ms); }
+  function sonder() {
+    if (document.hidden) { COLLECTE.pause = true; return; }
+    lireEtatCollecte().then(function (e) {
+      afficherCollecte(e);
+      // limite de l'API publique GitHub : 60 appels/heure par adresse IP -> rythme prudent
+      planifier(e.en_cours ? (META.url_relais ? 30000 : 75000) : (COLLECTE.demande ? 15000 : 600000));
+    }).catch(function (err) { planifier(err && err.limite ? 900000 : 600000); });
+  }
+  function afficherDemande() {
+    var box = document.getElementById('collecte-bandeau');
+    box.className = 'collecte-bandeau cb-encours'; box.textContent = '';
+    box.appendChild(el('div', { className: 'cb-ligne' }, [el('span', { className: 'cb-spin', 'aria-hidden': 'true' }), el('strong', { text: t('cs_demandee') })]));
+    box.hidden = false; COLLECTE.vu = true; COLLECTE.fini = false; COLLECTE.demande = Date.now(); montrerBouton(false);
+  }
+  function envoyerLancement(code) {
+    fetch(META.url_relais.replace(/\/+$/, '') + '/lancer', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ code: code || '' }) })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { s: r.status, j: j }; }); })
+      .then(function (x) {
+        if (x.s === 202) { toast(t('lm_envoye')); afficherDemande(); planifier(15000); return; }
+        if (x.s === 403 && x.j.erreur === 'code') {
+          var inp = el('input', { type: 'password', autocomplete: 'off', className: 'select' });
+          demander(t('lm_code_titre'), [code ? t('lm_code_ko') : t('lm_code_corps'), inp], t('lm_ok'), function () { envoyerLancement(inp.value); });
+          return;
+        }
+        if (x.s === 409) { toast(t('lm_deja')); sonder(); return; }
+        if (x.s === 429) { toast(x.j.erreur === 'jour' ? t('lm_jour') : t('lm_heure')); return; }
+        toast(t('lm_ko'));
+      }).catch(function () { toast(t('lm_ko')); });
+  }
+  function suivreCollecte() {
+    var btn = boutonLancement();
+    if (META.url_relais) {
+      btn.hidden = false; btn.removeAttribute('target'); btn.setAttribute('href', '#'); btn.title = t('update_title_relais');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var min = Math.max(5, Math.round((COLLECTE.duree || 600) / 60));
+        demander(t('lm_titre'), [t('lm_corps')(min)], t('lm_ok'), function () { envoyerLancement(''); });
+      });
+    } else if (META.url_lancer_maj) { btn.href = META.url_lancer_maj; btn.hidden = false; btn.title = t('update_title'); }
+    if (!META.depot && !META.url_relais) return;
+    document.addEventListener('visibilitychange', function () { if (!document.hidden && COLLECTE.pause) { COLLECTE.pause = false; sonder(); } });
+    sonder();
+  }
+
+  /* ------------------------------------------- assistant de recherche (sans IA générative) */
+  var ZONE_MOTS = {
+    'Allemagne': ['allemagne', 'allemand', 'allemande', 'allemands', 'germany', 'german', 'deutschland'],
+    'Autriche': ['autriche', 'autrichien', 'autrichienne', 'austria', 'austrian'],
+    'Belgique': ['belgique', 'belge', 'belges', 'belgium', 'belgian'],
+    'Bulgarie': ['bulgarie', 'bulgare', 'bulgaria', 'bulgarian'],
+    'Danemark': ['danemark', 'danois', 'danoise', 'denmark', 'danish'],
+    'Espagne': ['espagne', 'espagnol', 'espagnole', 'spain', 'spanish'],
+    'Finlande': ['finlande', 'finlandais', 'finland', 'finnish'],
+    'France': ['france', 'francais', 'francaise', 'french'],
+    'Grèce': ['grece', 'grec', 'grecque', 'greece', 'greek'],
+    'Hongrie': ['hongrie', 'hongrois', 'hungary', 'hungarian'],
+    'Italie': ['italie', 'italien', 'italienne', 'italy', 'italian'],
+    'Norvège': ['norvege', 'norvegien', 'norway', 'norwegian'],
+    'Pays-Bas': ['pays-bas', 'pays bas', 'neerlandais', 'hollande', 'netherlands', 'dutch', 'holland'],
+    'Pologne': ['pologne', 'polonais', 'polonaise', 'poland', 'polish'],
+    'Portugal': ['portugal', 'portugais', 'portugaise', 'portuguese'],
+    'Rép. Tchèque': ['tcheque', 'tchequie', 'czech', 'czechia'],
+    'Royaume-Uni': ['royaume-uni', 'royaume uni', 'britannique', 'angleterre', 'uk', 'united kingdom', 'britain', 'british', 'england'],
+    'Suède': ['suede', 'suedois', 'suedoise', 'sweden', 'swedish'],
+    'Suisse': ['suisse', 'switzerland', 'swiss'],
+    'Europe': ['europe', 'europeen', 'europeenne', 'europeens', 'ue', 'eu', 'union europeenne', 'european union', 'european']
+  };
+  var SYN_SUJETS = {
+    'MDR': ['dispositif medical', 'dispositifs medicaux', 'medical device', 'medical devices'],
+    'IVDR': ['diagnostic in vitro', 'diagnostics in vitro', 'in vitro', 'ivd', 'dmdiv'],
+    'GDPR': ['rgpd', 'gdpr', 'donnees personnelles', 'personal data', 'protection des donnees', 'data protection', 'vie privee', 'privacy'],
+    'AI Act': ['intelligence artificielle', 'artificial intelligence', 'ia', 'ai', 'reglement ia', 'ai act'],
+    'NIS2': ['nis 2', 'nis2', 'nis'], 'CRA': ['cyber resilience act', 'cyberresilience', 'cra'],
+    'EHDS': ['donnees de sante', 'health data', 'ehds', 'espace europeen des donnees de sante'],
+    'PLD': ['responsabilite du fait des produits', 'product liability', 'produits defectueux'],
+    'HDS': ['hebergement de donnees de sante', 'hds'], 'Cybersecurity Act': ['cybersecurity act', 'certification cyber']
+  };
+  var MOTS_VIDES = ('le la les un une des du de d l au aux et ou en dans sur pour par avec sans ce ces cet cette qui que quoi quel quelle quels quelles est sont a ont il elle ils elles on nous vous je tu mon ma mes ' +
+    'son sa ses leur leurs y ne pas plus moins tout tous toute toutes comme mais donc car si quand comment combien pourquoi faut doit doivent the of and or in on for to with without is are was were be by at from ' +
+    'this that these those what which who how when why do does did any all about into over under between there their it its as an a me my our your new nouveau nouveaux nouvelle nouvelles ' +
+    'prochains prochaines prochain prochaine next mois months month annee year jours days dernier derniers derniere dernieres latest recent recents recentes recente texte textes').split(' ');
+  var VIDES = {}; MOTS_VIDES.forEach(function (m) { VIDES[m] = 1; });
+  var INTENTIONS = {
+    echeance: /\b(echeances?|dates? (limites?|cles?)|deadlines?|quand|when|calendrier|agenda|d'ici|avant le|due|applicable a partir|entree en vigueur|entry into force)\b/,
+    sanction: /\b(amendes?|sanctions?|penalites?|fines?|penalt\w*|enforcement|condamn\w*)\b/,
+    nouveau: /\b(nouveaux?|nouvelles?|new|recents?|recentes?|derni\w*|latest|adopt\w*|publi\w*|published)\b/,
+    projet: /\b(projets?|propositions?|consultations?|drafts?|proposals?|bills?|en preparation|in preparation)\b/,
+    obligation: /\b(obligations?|exigences?|requirements?|obliged|must|doit|doivent|conformite|compliance)\b/
+  };
+  function radical(m) { return m.length > 4 ? m.replace(/(ements|ement|ations|ation|ions|ion|ies|es|s|x)$/, '') : m; }
+  function jetons(txt) {
+    return normaliser(txt).replace(/[^a-z0-9\u0370-\u03ff\u0400-\u04ff]+/g, ' ').split(' ').filter(function (m) { return m && !VIDES[m] && m.length > 1; }).map(radical);
+  }
+  function motif(mots) { return new RegExp('(^|[^a-z0-9])(' + mots.map(function (m) { return m.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/[- ]/g, '[- ]?'); }).join('|') + ')(?=[^a-z0-9]|$)'); }
+  var RX_ZONES = {}; Object.keys(ZONE_MOTS).forEach(function (z) { RX_ZONES[z] = motif(ZONE_MOTS[z]); });
+  var RX_SUJETS = {};
+  Object.keys(SUJETS).forEach(function (c) {
+    var s = SUJETS[c] || {}, mots = [normaliser(c)];
+    [s.fr, s.en].forEach(function (l) { if (!l) return; var base = normaliser(l.split(' (')[0]).trim(); if (base.length >= 3) mots.push(base); });
+    (SYN_SUJETS[c] || []).forEach(function (m) { mots.push(m); });
+    RX_SUJETS[c] = motif(mots.filter(function (m, i, arr) { return m && arr.indexOf(m) === i; }));
+  });
+  function sujetsDuTexte(n) { return Object.keys(RX_SUJETS).filter(function (c) { return RX_SUJETS[c].test(n); }); }
+  var INDEX = null;
+  function construireIndex() {
+    var docs = [];
+    function ajouterDoc(d, txt) { d.n = normaliser(txt); d.toks = jetons(txt); d.tf = {}; d.toks.forEach(function (m) { d.tf[m] = (d.tf[m] || 0) + 1; }); docs.push(d); }
+    ALERTES.filter(alerteActive).forEach(function (x) {
+      var txt = [titreAlerte(x), x.texte, libTexteCle(x.texte || ''), (x.articles || []).map(function (ap) { return ap.titre + ' ' + titreApercu(ap); }).join(' '), t('pc_types_long')[x.type]].join(' ');
+      ajouterDoc({ kind: 'alerte', x: x, zone: x.zone, date: x.type === 'echeance' ? x.echeance : x.detecte_le, codes: sujetsDuTexte(normaliser(txt)) }, txt);
+    });
+    ARTICLES.forEach(function (a) {
+      var tr = a.trad || {}, txt = [a.titre, a.resume, (tr.fr || {}).titre, (tr.fr || {}).resume, (tr.en || {}).titre, (tr.en || {}).resume, a.source, (a.tags || []).join(' '),
+        (a.sujets || []).map(libSujet).join(' '), (a.textes_cles || []).join(' ')].join(' ');
+      ajouterDoc({ kind: 'article', a: a, zone: a.zone, date: a.date, codes: (a.sujets || []).concat(sujetsDuTexte(normaliser(a.titre + ' ' + ((tr.fr || {}).titre || '') + ' ' + ((tr.en || {}).titre || '')))) }, txt);
+    });
+    REF_TEXTES.forEach(function (r) {
+      var txt = [r.nom, r.nom_en, r.nom_fr, r.nom_original, r.acronyme, r.resume_fr, r.resume_en, r.pourquoi_fr, r.pourquoi_en, r.autorite].join(' ');
+      ajouterDoc({ kind: 'texte', r: r, zone: r.zone, date: /^\d{4}-\d{2}-\d{2}$/.test(r.applicable_depuis || '') ? r.applicable_depuis : '', codes: sujetsDuTexte(normaliser([r.nom, r.nom_en, r.acronyme].join(' '))) }, txt);
+    });
+    evenementsAgenda(3000).forEach(function (e) {
+      if (joursJusqua(e.date) < -30) return;
+      var txt = [e.titre, e.ctx, e.source].join(' ');
+      ajouterDoc({ kind: 'date', e: e, zone: e.zone, date: e.date, codes: e.a ? (e.a.sujets || []) : sujetsDuTexte(normaliser(txt)), a: e.a }, txt);
+    });
+    var df = {}, total = 0;
+    docs.forEach(function (d) { total += d.toks.length; Object.keys(d.tf).forEach(function (m) { df[m] = (df[m] || 0) + 1; }); });
+    INDEX = { docs: docs, df: df, N: docs.length, moy: total / Math.max(1, docs.length) };
+  }
+  function comprendre(question) {
+    var n = ' ' + normaliser(question) + ' ', q = { zones: [], sujets: [], intents: [], horizon: 0, mots: [] };
+    Object.keys(RX_ZONES).forEach(function (z) { if (RX_ZONES[z].test(n)) q.zones.push(z); });
+    q.sujets = sujetsDuTexte(n);
+    Object.keys(INTENTIONS).forEach(function (k) { if (INTENTIONS[k].test(n)) q.intents.push(k); });
+    var h = /(\d{1,2})\s*(prochains?\s*|next\s*|derniers?\s*|last\s*)?(mois|months?)/.exec(n);
+    if (h) q.horizon = +h[1] * 31; else if (/\b(ce mois|this month)\b/.test(n)) q.horizon = 31; else if (/\b(cette annee|this year)\b/.test(n)) q.horizon = 366;
+    // mots restants (hors pays, sujets et mots d'intention) : recherche plein texte
+    var reste = n;
+    Object.keys(RX_ZONES).forEach(function (z) { reste = reste.replace(new RegExp(RX_ZONES[z].source, 'g'), ' '); });
+    q.sujets.forEach(function (c) { reste = reste.replace(new RegExp(RX_SUJETS[c].source, 'g'), ' '); });
+    Object.keys(INTENTIONS).forEach(function (k) { reste = reste.replace(new RegExp(INTENTIONS[k].source, 'g'), ' '); });
+    q.mots = jetons(reste).filter(function (m) { return !/^\d+$/.test(m); });
+    q.motsAff = normaliser(reste).replace(/[^a-z0-9]+/g, ' ').split(' ').filter(function (m) { return m.length > 1 && !VIDES[m] && !/^\d+$/.test(m); });
+    return q;
+  }
+  function noter(d, q) {
+    var s = 0, k1 = 1.2, b = 0.75, texteOk = false;
+    q.mots.forEach(function (m) {
+      var tf = d.tf[m]; if (!tf) return; texteOk = true;
+      var idf = Math.log(1 + (INDEX.N - INDEX.df[m] + 0.5) / (INDEX.df[m] + 0.5));
+      s += idf * tf * (k1 + 1) / (tf + k1 * (1 - b + b * d.toks.length / INDEX.moy));
+    });
+    if (q.mots.length && !texteOk && !(q.sujets.length && q.sujets.some(function (c) { return d.codes.indexOf(c) !== -1; }))) return -1;
+    if (q.zones.length) {
+      if (q.zones.indexOf(d.zone) !== -1) s += 3;
+      else if (d.zone === 'Europe' && q.zones.indexOf('Europe') === -1 && d.kind !== 'article') s += 0.3;   // un texte européen s'applique aussi
+      else return -1;
+    }
+    if (q.sujets.length) {
+      if (q.sujets.some(function (c) { return d.codes.indexOf(c) !== -1; })) s += 4;
+      else if (!texteOk) return -1; else s -= 1;
+    }
+    if (!q.mots.length && !q.zones.length && !q.sujets.length && !q.intents.length) return -1;
+    var a = d.a;
+    if (a) {
+      if (a.pertinence === 'elevee') s += 1.5; else if (a.pertinence === 'moyenne') s += 0.7; else s -= 0.5;
+      if (a.essentiel) s += 1;
+      if (q.intents.indexOf('sanction') !== -1) { if (a.amende || a.statut === 'sanction') s += 3; else if (d.kind === 'article') s -= 1; }
+      if (q.intents.indexOf('projet') !== -1 && ['projet', 'consultation'].indexOf(a.statut) !== -1) s += 2.5;
+      if (q.intents.indexOf('nouveau') !== -1 && ['adopte', 'en_vigueur'].indexOf(a.statut) !== -1) s += 1.5;
+    }
+    if (d.kind === 'alerte') { s += 1.5; if (q.intents.indexOf('projet') !== -1 && d.x.type === 'proposition') s += 2; if (q.intents.indexOf('nouveau') !== -1 && d.x.type === 'adopte') s += 2; }
+    if (d.kind === 'texte' && q.intents.indexOf('obligation') !== -1) s += 2;
+    if (d.kind === 'date' || (d.kind === 'alerte' && d.x.type === 'echeance')) {
+      if (q.intents.indexOf('echeance') !== -1) s += 3;
+      var j = joursJusqua(d.date);
+      if (q.horizon && (j < 0 || j > q.horizon)) return -1;
+    } else if (q.horizon && d.date && joursDepuis(d.date) > q.horizon && q.intents.indexOf('echeance') === -1) return -1;
+    var age = d.date ? joursDepuis(d.date) : 9999;
+    if (age >= 0 && age <= 30) s += (q.intents.indexOf('nouveau') !== -1 ? 2 : 0.8); else if (age <= 90) s += 0.4;
+    return s;
+  }
+  function itemAssistant(d) {
+    if (d.kind === 'alerte') return carteAlerte(d.x, true);
+    if (d.kind === 'texte') {
+      var r = d.r, x = refTexte(r);
+      return el('div', { className: 'as-item' }, [el('div', { className: 'as-meta' }, [ZONES[r.zone] ? el('span', { className: 'zone-code', text: codeZone(r.zone) }) : null,
+        el('span', { text: [nomZone(r.zone), refAutorite(r), /^\d{4}-\d{2}-\d{2}$/.test(r.applicable_depuis || '') ? t('as_applicable') + dateLongue(r.applicable_depuis) : ''].filter(Boolean).join(' · ') })]),
+        el('a', { className: 'as-titre', href: r.lien, target: '_blank', rel: 'noopener noreferrer', text: x.nom + (r.acronyme ? ' — ' + r.acronyme : '') }),
+        x.resume ? el('p', { className: 'as-extrait', text: x.resume.length > 220 ? x.resume.slice(0, 217) + '…' : x.resume }) : null]);
+    }
+    if (d.kind === 'date') {
+      var e = d.e;
+      return el('div', { className: 'as-item' }, [el('div', { className: 'as-meta' }, [el('strong', { className: 'pc-ech', text: '⏱ ' + (e.approx ? t('approx') + ' ' : '') + dateLongue(e.date) }),
+        ZONES[e.zone] ? el('span', { className: 'zone-code', text: codeZone(e.zone) }) : null, el('span', { text: nomZone(e.zone) })]),
+        e.lien ? el('a', { className: 'as-titre', href: e.lien, target: '_blank', rel: 'noopener noreferrer', text: e.titre }) : el('span', { className: 'as-titre', text: e.titre }),
+        e.ctx ? el('p', { className: 'as-extrait', text: e.ctx.length > 200 ? e.ctx.slice(0, 197) + '…' : e.ctx }) : null]);
+    }
+    var a = d.a, tx = textes(a);
+    var voir = el('button', { type: 'button', className: 'linkbtn', text: t('pc_voir_veille') + ' ›' });
+    voir.addEventListener('click', function () { fermerAssistant(); voirDansVeille(a.id); });
+    return el('div', { className: 'as-item' }, [el('div', { className: 'as-meta' }, [ZONES[a.zone] ? el('span', { className: 'zone-code', text: codeZone(a.zone) }) : null,
+      el('span', { text: dateCourte(a.date) + ' · ' + (a.source || '') }), badgePert(a, true), a.statut && a.statut !== 'autre' ? badge('badge-statut badge-sm', libStatut(a.statut)) : null]),
+      a.lien ? el('a', { className: 'as-titre', href: a.lien, target: '_blank', rel: 'noopener noreferrer', text: tx.aff.titre }) : el('span', { className: 'as-titre', text: tx.aff.titre }),
+      voir]);
+  }
+  function chercher(question) {
+    if (!INDEX) construireIndex();
+    var q = comprendre(question), res = document.getElementById('as-resultats'), comp = document.getElementById('as-compris');
+    res.textContent = ''; comp.textContent = '';
+    var morceaux = [];
+    if (q.zones.length) morceaux.push(t('as_pays') + ' : ' + q.zones.map(nomZone).join(', '));
+    if (q.sujets.length) morceaux.push(t('as_sujet') + ' : ' + q.sujets.map(libSujet).join(', '));
+    if (q.intents.length) morceaux.push(t('as_type') + ' : ' + q.intents.map(function (k) { return t('as_types')[k]; }).join(', ') + (q.horizon ? ' ' + t('as_horizon')(q.horizon) : ''));
+    if (q.motsAff.length) morceaux.push(t('as_mots') + ' : ' + q.motsAff.join(' '));
+    comp.hidden = !morceaux.length;
+    if (morceaux.length) { comp.appendChild(el('strong', { text: t('as_compris') })); comp.appendChild(document.createTextNode(morceaux.join(' · '))); }
+    var groupes = { alerte: [], date: [], texte: [], article: [] };
+    INDEX.docs.forEach(function (d) { var s = noter(d, q); if (s > 0) groupes[d.kind].push({ d: d, s: s }); });
+    var ordre = q.intents.indexOf('echeance') !== -1 ? ['date', 'alerte', 'texte', 'article'] : (q.intents.indexOf('obligation') !== -1 ? ['texte', 'alerte', 'date', 'article'] : ['alerte', 'texte', 'date', 'article']);
+    if (!q.intents.length) {   // simple recherche par mots : la rubrique qui contient le meilleur résultat d'abord (points clés toujours en tête)
+      var meilleur = function (k) { return groupes[k].reduce(function (m, x) { return Math.max(m, x.s); }, 0); };
+      ordre = ['alerte'].concat(['texte', 'date', 'article'].sort(function (x, y) { return meilleur(y) - meilleur(x); }));
+    }
+    var MAX = { alerte: 5, date: 8, texte: 5, article: 10 }, total = 0;
+    ordre.forEach(function (k) {
+      var l = groupes[k].sort(function (x, y) { return y.s - x.s; }); if (!l.length) return; total += l.length;
+      var sec = el('section', { className: 'as-section' }, [el('h3', { text: t('as_sec')[k] + ' (' + l.length + ')' })]);
+      var cont = el('div', { className: 'as-liste' }); sec.appendChild(cont);
+      var montre = 0;
+      function afficher(n) { l.slice(montre, montre + n).forEach(function (x) { cont.appendChild(itemAssistant(x.d)); }); montre = Math.min(l.length, montre + n); }
+      afficher(MAX[k]);
+      if (l.length > montre) {
+        var p = el('button', { type: 'button', className: 'linkbtn', text: t('as_plus')(Math.min(MAX[k] * 2, l.length - montre)) });
+        p.addEventListener('click', function () { afficher(MAX[k] * 2); if (montre >= l.length) p.remove(); else p.textContent = t('as_plus')(Math.min(MAX[k] * 2, l.length - montre)); });
+        sec.appendChild(p);
+      }
+      res.appendChild(sec);
+    });
+    if (!total) res.appendChild(el('p', { className: 'empty', text: t('as_rien') }));
+  }
+  function fermerAssistant() {
+    document.getElementById('assistant').hidden = true;
+    document.getElementById('assistant-ouvrir').setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('as-ouvert');
+  }
+  function brancherAssistant() {
+    var panneau = document.getElementById('assistant'), ouvrirB = document.getElementById('assistant-ouvrir'), champ = document.getElementById('as-q');
+    ouvrirB.addEventListener('click', function () {
+      var o = panneau.hidden; if (!o) { fermerAssistant(); return; }
+      panneau.hidden = false; ouvrirB.setAttribute('aria-expanded', 'true'); document.body.classList.add('as-ouvert'); champ.focus();
+    });
+    document.getElementById('assistant-fermer').addEventListener('click', fermerAssistant);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panneau.hidden && document.getElementById('modal').hidden) fermerAssistant(); });
+    document.getElementById('as-form').addEventListener('submit', function (e) { e.preventDefault(); if (champ.value.trim()) chercher(champ.value); });
+    var ex = document.getElementById('as-exemples');
+    t('as_ex').forEach(function (q) {
+      var b = el('button', { type: 'button', className: 'chip as-ex', text: q });
+      b.addEventListener('click', function () { champ.value = q; chercher(q); });
+      ex.appendChild(b);
+    });
+  }
+
   /* ============================================================ démarrage */
   sur('textes', appliquerTextes);
   sur('en-tête', renderHeader);
@@ -1988,6 +2773,8 @@
   sur('glossaire', renderGlossaire);
   sur('gestion des sources', gestionSources);
   sur('filtres (application)', appliquerFiltres);
+  sur('collecte en cours', suivreCollecte);
+  sur('assistant de recherche', brancherAssistant);
 
   document.getElementById('export-csv').addEventListener('click', exporterCsv);
   document.getElementById('export-pdf').addEventListener('click', function () {

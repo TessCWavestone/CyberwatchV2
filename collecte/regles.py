@@ -53,11 +53,15 @@ TEXTES_CLES = [
      r"Kyberbezpecnost|cybersikkerhetslov|entites essentielles et importantes|essential and important entities|"
      r"(besonders )?wichtige(n)? Einrichtungen|entidades esenciales e importantes|soggetti essenziali e importanti|"
      r"essentiele en belangrijke entiteiten|podmiot\w* kluczow\w*|securite des reseaux et (des )?systemes d'information|"
-     r"ciberseguranca.{0,40}(decreto-lei|regime juridico)"),
+     r"ciberseguranca.{0,40}(decreto-lei|regime juridico)|"
+     # titre officiel de la directive (les textes de la Commission ne disent pas « NIS2 »)
+     r"high common level of cybersecurity|niveau eleve commun de cybersecurite|hohes gemeinsames Cybersicherheitsniveau|"
+     r"livello comune elevato di cibersicurezza|elevado nivel comun de ciberseguridad"),
     ("CRA", "reglementation", "A",
      r"Cyber ?Resilience Act|(?-i:\bCRA\b)|2024/2847|cyber ?resilience regulation|reglement sur la cyberresilience|"
      r"Cyberresilienz(-)?(verordnung|gesetz)|ley de ciberresiliencia|regolamento sulla ciberresilienza|"
-     r"products? with digital elements|produits comportant des elements numeriques"),
+     r"products? with digital elements|produits comportant des elements numeriques|"
+     r"horizontal cybersecurity requirements|exigences horizontales en matiere de cybersecurite"),
     ("AI Act", "reglementation", "A",
      r"\bAI Act\b|Artificial Intelligence Act|2024/1689|reglement (europeen )?sur l'(IA|intelligence artificielle)|"
      r"\bRIA\b.{0,30}(IA|intelligence)|KI-Verordnung|KI-VO\b|AI-verordening|reglamento (europeo )?de (IA|inteligencia artificial)|"
@@ -189,7 +193,7 @@ SIGNAL_NET = _rx(
     r"mise en demeure|journal officiel|deliberation|norme)\b|"
     r"(gesetz|verordnung|richtlinie|leitlinie|leitfaden|referentenentwurf|gesetzentwurf|umsetzung|inkrafttreten|"
     r"pflichten|bussgeld|konsultation)|"
-    r"\b(ley|real decreto|decreto|decreto-lei|reglamento|directiva|guia|consulta publica|anteproyecto|transposicion|"
+    r"\b(ley|real decreto|decreto|decreto-lei|reglamento|directiva|guia|consulta publica|anteproyecto|transposicion|proyecto de (ley|real decreto|r\.? ?d)|regulacion|"
     r"entrada en vigor|obligaciones|sancion|multa|lei|regulamento|diretiva|orientacoes|transposicao|entrada em vigor|coima|"
     r"legge|regolamento|direttiva|linee guida|consultazione|recepimento|entrata in vigore|sanzione)\b|"
     r"\b(wet|wetsvoorstel|besluit|verordening|richtlijn|richtsnoeren|internetconsultatie|inwerkingtreding|boete|lov|lag|"
@@ -219,7 +223,10 @@ SUJET_FORT = _rx(
     r"in vitro|diagnosti|health data|donnees de sante|gesundheitsdaten|datos de salud|dati sanitari|e-?health|e-?sante|"
     r"sante numerique|digital health|zarzadzaniu danymi|data governance|gouvernance des donnees|cloud|"
     r"systemes? d'information|information systems?|informationssystem|biologie medicale|laboratoires? de biologie|"
-    r"medizinische(n)? Labor|in-vitro|Medizinprodukt|telematik|elektronische Patientenakte")
+    r"medizinische(n)? Labor|in-vitro|Medizinprodukt|telematik|elektronische Patientenakte|"
+    # v5.1 : cadres nationaux de sécurité dont le titre ne dit pas « cyber »
+    r"seguridad de las redes|seguridad de la informacion|sistemas de informacion|"
+    r"sicurezza delle reti|informationssicherheit|reseaux et (des )?systemes d'information|netz- und informationssicherheit")
 
 # --------------------------------------------------------------------------- bruit
 BRUIT = [
@@ -327,18 +334,21 @@ SIGNAL_FORT = _rx(
     r"proposal for a (new )?(regulation|directive|decision|law)|legislative proposal|commission propos\w*|"
     r"proposition de (loi|reglement|directive)|projet de (loi|decret|reglement|directive)|avant-projet de loi|"
     r"gesetzentwurf|referentenentwurf|regierungsentwurf|entwurf (eines|einer) (gesetz|verordnung)|"
-    r"anteproyecto de ley|proyecto de (ley|real decreto)|disegno di legge|schema di (decreto|regolamento)|"
+    r"anteproyecto de ley|proyecto de (ley|real decreto|r\.? ?d\.?\b)|disegno di legge|schema di (decreto|regolamento)|"
     r"proposta de lei|projeto de (lei|decreto)|wetsvoorstel|ontwerpbesluit|voorontwerp|wetsontwerp|"
     r"lovforslag|forslag til lov|lagforslag|lagradsremiss|hallituksen esitys|luonnos laiksi|"
     r"projekt ustawy|projekt rozporzadzenia|navrh zakona|navrh vyhlasky|torvenyjavaslat|torvenytervezet|"
-    r"σχεδιο νομου|νομοσχεδιο|bill (introduced|published|tabled))", )
+    r"σχεδιο νομου|νομοσχεδιο|bill (introduced|published|tabled)|"
+    # v5.1 : un acte numéroté est un texte adopté (titres du Journal officiel : « Directive (EU) 2022/2555 … »)
+    r"\b(directive|regulation|decision|reglement|richtlinie|verordnung|directiva|reglamento|direttiva|regolamento)\s*\((eu|ue)\)\s*(no\s*)?\d{4}/\d+|"
+    r"real decreto \d+/\d{4}|decreto legislativo,? \d|decreto-lei n|gesetz zur umsetzung|\bwet van \d|ustawa z dnia)", )
 
 # Statut d'un texte, déduit du titre / résumé (multilingue, prudent)
 STATUTS = [
     ("consultation", _rx(r"consultation|call for evidence|have your say|consulta publica|konsultation|consultatie|"
                          r"horing|remiss|lausunto|konsultacj|konzultac|διαβουλευση|consultazione")),
     ("projet", _rx(r"\bdraft\b|proposal|proposition de|projet de (loi|decret|texte|reglement)|\bentwurf|referentenentwurf|"
-                   r"anteproyecto|proyecto de (ley|real decreto)|wetsvoorstel|lovforslag|projekt ustawy|navrh zakona|"
+                   r"anteproyecto|proyecto de (ley|real decreto|r\.? ?d\.?\b)|wetsvoorstel|lovforslag|projekt ustawy|navrh zakona|"
                    r"tervezet|disegno di legge|proposta de lei|\bbill\b")),
     ("adopte", _rx(r"adopted|adopte|published in the official journal|journal officiel|promulg|verkundet|"
                             r"bundesgesetzblatt|\bBOE\b|gazzetta ufficiale|staatsblad|dziennik ustaw|sbirka zakonu|"
@@ -394,6 +404,10 @@ def evaluer(a, seuils, score_neg=None):
     mondial = bool(PORTEE_MONDIALE.search(t))
     s = a.get("score") or 0
     haut, moy, bas = seuils.get("elevee", 0.55), seuils.get("moyenne", 0.45), seuils.get("bas", 0.33)
+    # « sens fort » : le modèle juge le texte très proche des thèmes suivis, même sans aucun mot attendu
+    # (un futur texte au vocabulaire inconnu) — seuil réglable dans config/profil_pertinence.json
+    tres_haut = seuils.get("tres_haut", round(haut + 0.15, 2))
+    sens_fort = s >= tres_haut
     if score_neg is not None and score_neg > s + 0.02:   # le modèle rapproche l'article d'un thème « bruit »
         br = br or ["proche d'un thème hors sujet (modèle)"]
 
@@ -404,7 +418,7 @@ def evaluer(a, seuils, score_neg=None):
     br_forts = [b for b in br if b.split(" ")[0] in ("événements", "vœux", "marchés", "hors", "sensibilisation")]
     jo = bool(JOURNAL_OFFICIEL.search(a.get("source", "")))
     informatif = len(re.findall(r"\w{3,}", t)) >= 8   # titre + résumé assez parlants pour juger
-    if jo and (BRUIT_JO.search(t) or (informatif and not tc and not SUJET_FORT.search(t))):
+    if jo and (BRUIT_JO.search(t) or (informatif and not tc and not SUJET_FORT.search(t) and not sens_fort)):
         niveau = "ecarte"
         motif = "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
         return {"niveau": niveau, "essentiel": False, "a_verifier": False, "textes_cles": [x[0] for x in tc], "bruit": br,
@@ -426,6 +440,8 @@ def evaluer(a, seuils, score_neg=None):
         niveau, motif = "faible", "source officielle, sujet secondaire : " + ", ".join(br)
     elif sujet and SIGNAL_NET.search(t) and s >= haut:
         niveau = "elevee"
+    elif officiel and sens_fort and (SIGNAL_NET.search(t) or SIGNAL_FORT.search(t)):
+        niveau = "elevee"   # source officielle + signal réglementaire + sens très proche (sans mot attendu)
     elif sujet and s >= moy and (sig or officiel):
         niveau = "moyenne"
     elif officiel and (sujet or s >= moy):
@@ -448,13 +464,17 @@ def evaluer(a, seuils, score_neg=None):
         if tier_a or gdpr_fort:
             essentiel = True
             a_verifier = not officiel
-        elif officiel and s >= haut and SIGNAL_FORT.search(t) and SUJET_FORT.search(t):
+        elif officiel and s >= haut and SIGNAL_FORT.search(t) and (SUJET_FORT.search(t) or sens_fort):
+            essentiel, a_verifier = True, True
+        elif (nature == "cabinet" and s >= haut and SIGNAL_FORT.search(t) and (SUJET_FORT.search(t) or sens_fort)
+              and statut(t) in ("projet", "adopte", "en_vigueur")):
+            # v5.1 : cabinet d'avocats qui annonce un projet ou un texte adopté inconnu (ex. projet de décret ENS 2021)
             essentiel, a_verifier = True, True
         if br_forts or (br and not tier_a):
             essentiel = False
     rub = None
     if tc:
         rub = tc[0][1]
-    return {"niveau": niveau, "essentiel": essentiel, "a_verifier": a_verifier,
+    return {"niveau": niveau, "essentiel": essentiel, "a_verifier": a_verifier, "sens_fort": sens_fort,
             "textes_cles": [x[0] for x in tc], "bruit": br, "motif": motif, "rubrique_texte": rub,
             "statut": statut(t)}

@@ -1939,6 +1939,7 @@
   var T5 = {
     fr: {
       new_title: 'Nouveau depuis votre dernière visite',
+      pert_degradee: "⚠️ Lors de la dernière collecte, le modèle de pertinence n'a pas pu être installé : le tri s'est fait avec les seuls mots-clés, ce qui repère beaucoup moins bien les textes nouveaux. Relancez une collecte.",
       vis_first: function (n) { return 'Bienvenue : les articles des 7 derniers jours sont marqués « Nouveau » (' + n + ').'; },
       vis_new: function (n, p, d) { return n + (n > 1 ? ' nouveautés' : ' nouveauté') + ' depuis votre dernière visite (' + d + ')' + (p ? ', dont ' + p + (p > 1 ? ' points clés' : ' point clé') : '') + '.'; },
       vis_none: function (d) { return 'Rien de nouveau depuis votre dernière visite (' + d + ').'; },
@@ -1955,7 +1956,7 @@
       pc_types: { echeance: 'Échéance', adopte: 'Texte adopté', signale: 'Signalé important', proposition: 'Texte en préparation', a_qualifier: 'Nouveau texte détecté' },
       pc_types_long: { echeance: 'Échéance dans les 30 jours', adopte: 'Nouveau texte adopté, publié ou en vigueur', signale: 'Jugé important par un lecteur', proposition: 'Proposition, projet de loi, consultation, lignes directrices', a_qualifier: 'Texte absent de la liste des textes suivis : à qualifier' },
       pc_new: 'Nouveau', pc_maj: 'Mis à jour', pc_maj_t: 'Nouvelle source depuis votre dernière visite',
-      pc_inconnu: 'Texte inconnu', pc_inconnu_t: "Ce texte n'est pas dans la liste des textes suivis : repéré par des signaux forts (adopté, publié, proposition…). À qualifier par un humain.",
+      pc_inconnu: 'Texte inconnu', pc_emergent: function (m, n) { return '« ' + m + ' » : nouveau sujet cité par ' + n + ' sources'; }, pc_inconnu_t: "Ce texte n'est pas dans la liste des textes suivis : repéré par des signaux forts (adopté, publié, proposition…). À qualifier par un humain.",
       pc_detecte: function (d) { return 'Détecté le ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },
       pc_texte: 'Texte : ', pc_toutes: function (n) { return 'Toutes les sources (' + n + ')'; }, pc_voir_veille: 'Voir dans la veille',
       pc_plus: function (n) { return 'Voir les ' + n + ' autres points clés'; }, pc_moins: 'Réduire',
@@ -2003,6 +2004,7 @@
     },
     en: {
       new_title: 'New since your last visit',
+      pert_degradee: '⚠️ During the last collection, the relevance model could not be installed: sorting used keywords only, which is much weaker at spotting new texts. Please run a new collection.',
       vis_first: function (n) { return 'Welcome: articles from the last 7 days are marked “New” (' + n + ').'; },
       vis_new: function (n, p, d) { return n + (n > 1 ? ' new items' : ' new item') + ' since your last visit (' + d + ')' + (p ? ', including ' + p + (p > 1 ? ' key points' : ' key point') : '') + '.'; },
       vis_none: function (d) { return 'Nothing new since your last visit (' + d + ').'; },
@@ -2019,7 +2021,7 @@
       pc_types: { echeance: 'Deadline', adopte: 'Text adopted', signale: 'Flagged important', proposition: 'Text in preparation', a_qualifier: 'New text detected' },
       pc_types_long: { echeance: 'Deadline within 30 days', adopte: 'New text adopted, published or in force', signale: 'Flagged as important by a reader', proposition: 'Proposal, bill, consultation, guidelines', a_qualifier: 'Text not in the list of tracked texts: to be assessed' },
       pc_new: 'New', pc_maj: 'Updated', pc_maj_t: 'New source since your last visit',
-      pc_inconnu: 'Unknown text', pc_inconnu_t: 'This text is not in the list of tracked texts: spotted through strong signals (adopted, published, proposal…). To be assessed by a person.',
+      pc_inconnu: 'Unknown text', pc_emergent: function (m, n) { return '“' + m + '”: new topic cited by ' + n + ' sources'; }, pc_inconnu_t: 'This text is not in the list of tracked texts: spotted through strong signals (adopted, published, proposal…). To be assessed by a person.',
       pc_detecte: function (d) { return 'Detected on ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },
       pc_texte: 'Text: ', pc_toutes: function (n) { return 'All sources (' + n + ')'; }, pc_voir_veille: 'Show in the watch',
       pc_plus: function (n) { return 'Show ' + n + ' more key points'; }, pc_moins: 'Show less',
@@ -2095,6 +2097,12 @@
   function estNouveau(a) { var v = a && a.version; return !!v && v !== 'base' && v > VISITE.ref; }
 
   function renderVisite() {
+    // garde-fou : si le modèle de pertinence n'a pas pu être installé lors de la dernière collecte, la
+    // détection des textes inconnus est beaucoup plus faible (test rétrospectif) -> on le dit clairement
+    if ((META.pertinence || {}).mode === 'mots_cles') {
+      var vb = document.getElementById('version-banner');
+      vb.textContent = t('pert_degradee'); vb.hidden = false;
+    }
     var box = document.getElementById('visite-banner'); if (!box || !META.version) return;
     var nArt = ARTICLES.filter(function (a) { return estNouveau(a) && a.pertinence !== 'faible'; }).length;
     var nPc = ALERTES.filter(estNouvelleAlerte).length;
@@ -2149,6 +2157,7 @@
     var tr = (ap.trad || {})[LANG]; return (tr && tr.titre) || ap.titre;
   }
   function titreAlerte(x) {
+    if (x.emergent) return t('pc_emergent')(x.texte, x.nb_sources || x.nb_articles);
     if (x.ref) return (LANG === 'en' && x.ref.nom_en) ? x.ref.nom_en : x.ref.nom;
     var ap = (x.articles || [])[0]; return ap ? titreApercu(ap) : libTexteCle(x.texte || '');
   }

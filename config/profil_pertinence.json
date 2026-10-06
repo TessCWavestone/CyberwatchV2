@@ -2,10 +2,11 @@
  "_aide": "Profil de pertinence (v4). Les thèmes « utiles » décrivent ce qui concerne l'entreprise suivie ; les thèmes marqués \"negatif\": true décrivent le bruit à écarter. Le modèle open source compare chaque article à ces phrases ; les règles de collecte/regles.py décident ensuite du niveau (textes clés, signal réglementaire, bruit). Pour ajuster : ajoutez des phrases d'exemple, ou utilisez les boutons « Important » / « Pas pertinent » du site.",
  "modele": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
  "seuils": {
-  "_aide": "Note du modèle (0 à 1, bonus mots-clés compris). elevee : minimum pour « très pertinent » (avec signal réglementaire) ; moyenne : minimum pour « pertinent » ; bas : en dessous, un article de presse sans texte clé est écarté. Calibré sur la collecte du 25/09/2026 (médiane 0,45).",
+  "_aide": "Note du modèle (0 à 1, bonus mots-clés compris). elevee : minimum pour « très pertinent » (avec signal réglementaire) ; moyenne : minimum pour « pertinent » ; bas : en dessous, un article de presse sans texte clé est écarté. Calibré sur la collecte du 25/09/2026 (médiane 0,45). tres_haut : « sens très proche » — un texte officiel avec un signal réglementaire qui atteint cette note remonte même sans aucun mot du vocabulaire attendu (futur texte inconnu) ; 0,70 = aucun faux positif sur les 4 mois de données du 30/09/2026.",
   "elevee": 0.55,
   "moyenne": 0.45,
-  "bas": 0.33
+  "bas": 0.33,
+  "tres_haut": 0.7
  },
  "bonus_mots_cles": {
   "_aide": "Petit bonus quand un mot-clé de l'Excel est présent. Les mots-clés justifient, ils ne décident pas.",

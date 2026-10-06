@@ -26,6 +26,7 @@ import os
 import re
 
 import regles
+import sujets
 
 DUREE_ACTIVE = 28           # jours d'affichage après la première détection (4 collectes)
 HORIZON_ECHEANCE = 30       # une échéance devient une alerte 30 jours avant sa date
@@ -56,7 +57,8 @@ SUJET_ALERTE = re.compile(
     r"cloud|logiciel|software|interoperab|e-?sante|e-?health|digital health|sante numerique|telemedecin|"
     r"dossier (medical|patient)|patient record|patientenakte|vulnerab|ransomware|chiffrement|encryption|cryptograph|"
     r"identite numerique|eidas|critical (infrastructure|entities)|infrastructures? critiques|entites critiques|kritis|"
-    r"resilience operationnelle|incident", re.I)
+    r"resilience operationnelle|incident|seguridad de (las redes|la informacion)|"
+    r"sicurezza delle reti|informationssicherheit|reseaux et (des )?systemes d'information", re.I)
 
 ZONES_EN = {"Europe": "Europe (EU)", "Union européenne": "European Union", "Allemagne": "Germany", "Autriche": "Austria",
             "Belgique": "Belgium", "Bulgarie": "Bulgaria", "Danemark": "Denmark", "Espagne": "Spain", "Finlande": "Finland",
@@ -114,13 +116,124 @@ def type_article(a):
         return None   # des lignes directrices commentées par la presse ne sont pas une nouvelle règle
     inconnu = not a.get("textes_cles")
     if inconnu:
-        if not SUJET_ALERTE.search(texte):
-            return None
+        if not SUJET_ALERTE.search(texte) and not a.get("sens_fort"):
+            return None   # ni sujet central reconnu, ni sens jugé très proche par le modèle
         return "a_qualifier" if (t or regles.SIGNAL_FORT.search(texte)) else None
     return t
 
 
-def construire(liste, ancien, referentiel, aujourdhui, plancher=None):
+# --------------------------------------------------------------------------- sujets émergents
+# Un nom de texte ou un sigle INCONNU (ni dans la liste des sujets suivis, ni dans les textes clés)
+# qui apparaît soudain dans plusieurs sources pertinentes : c'est souvent un nouveau texte en préparation.
+# Ne dépend d'aucun vocabulaire : seulement de la nouveauté du nom et de sa reprise par plusieurs sources.
+FENETRE_EMERGENCE = 60      # jours
+MIN_ARTICLES, MIN_SOURCES = 3, 2
+RE_NOM_TEXTE = re.compile(
+    r"(?<![\w-])((?:[A-Z][\w'’-]+ (?:(?:and|of|for|on|the|des|de|du|sur|la|le|und|für|zur) )?){1,6}"
+    r"(?:Act|Bill|Gesetz|Verordnung|Regulation|Directive|Strategy|Framework))(?![\w-])")
+NOMS_GENERIQUES = re.compile(r"^(The |A |New |This |EU |European )?(Act|Bill|Regulation|Directive|Strategy|Framework)$|"
+                             r"^(Data Protection|General Data Protection|Digital Services|Digital Markets|Cybersecurity|Security)", re.I)
+
+
+def termes(texte):
+    """Sigles et noms de textes candidats d'un titre / résumé."""
+    res = set()
+    lettres = [c for c in texte if c.isalpha()]
+    if not lettres or sum(c.isupper() for c in lettres) / len(lettres) <= 0.6:   # pas un titre en majuscules
+        for m in sujets.RE_CANDIDAT.findall(texte):
+            u = regles._sa(m).upper()
+            if len(u) >= 3 and u not in sujets.EXCLUS and u not in sujets.VARIANTES and not re.fullmatch(sujets.MOIS, u) \
+                    and not re.fullmatch(r"[IVXLC]+|\d.*|.*\d{4}", u):
+                res.add(m)
+    for m in RE_NOM_TEXTE.findall(texte):
+        mots = m.strip().split()
+        # toutes les fins de 2 mots ou plus (« Introduce New Cyber Security and Resilience Bill » donne aussi
+        # « Cyber Security and Resilience Bill ») : la forme reprise par plusieurs sources l'emporte
+        for i in range(len(mots) - 1):
+            f = " ".join(mots[i:])
+            if mots[i][0].isupper() and not NOMS_GENERIQUES.search(f):
+                res.add(f)
+    return res
+
+
+# textes existants hors périmètre direct (ne sont pas « nouveaux »)
+DEJA_CONNUS = {"DSA", "DMA", "DIGITAL SERVICES ACT", "DIGITAL MARKETS ACT", "SERVICES ACT", "MARKETS ACT", "DGA",
+               "DATA GOVERNANCE ACT", "MICA", "EMFA", "EUROPEAN MEDIA FREEDOM ACT", "CHIPS ACT", "PSD2", "PSD3"}
+
+
+def est_connu_defaut(terme):
+    u = regles._sa(terme).upper()
+    if u in DEJA_CONNUS:
+        return True
+    libelles = [regles._sa(c).upper() for c in sujets.LIBELLES] + \
+               [regles._sa(x.get(k, "")).upper() for x in sujets.LIBELLES.values() for k in ("fr", "en")]
+    return any(u == l or (" " in u and u in l) for l in libelles) or bool(regles.textes_cles(regles._sa(terme)))
+
+
+def emergents(articles, aujourdhui, est_connu=est_connu_defaut, fenetre=FENETRE_EMERGENCE):
+    """Retourne [(terme, [articles])] : termes inconnus apparus dans la fenêtre, repris par plusieurs sources
+    pertinentes, avec au moins un signal réglementaire, et jamais vus avant la fenêtre."""
+    debut = (aujourdhui - dt.timedelta(days=fenetre)).isoformat()
+    fin = aujourdhui.isoformat()
+    avant, dans = set(), {}
+    for a in articles:
+        if a.get("base") or a.get("nature") == "opinion":
+            continue
+        tr = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
+        tx = " ".join(x for x in (a.get("titre", ""), a.get("resume", ""), tr) if x)
+        d = a.get("date", "")
+        for m in termes(tx):
+            if d < debut:
+                avant.add(m.lower())
+            elif d <= fin and a.get("pertinence") in ("elevee", "moyenne"):
+                dans.setdefault(m, []).append(a)
+    # sigle et nom long d'un même texte (« Cloud and AI Development Act (CADA) ») : comptés ensemble
+    def initiales(nom):
+        return "".join(w[0] for w in re.findall(r"[A-Za-z][\w'’-]*", nom) if w[0].isupper())
+    alias = {}
+    for m in dans:
+        if " " not in m:
+            continue
+        ini = initiales(m).upper()
+        for sig in dans:
+            if " " in sig or len(sig) < 3:
+                continue
+            u = regles._sa(sig).upper()
+            if u and (ini == u or (len(u) >= 3 and ini.startswith(u))) and \
+                    {x["id"] for x in dans[m]} & {x["id"] for x in dans[sig]}:
+                alias[sig] = m
+    for sig, nom in alias.items():
+        for a in dans.pop(sig, []):
+            if all(a["id"] != x["id"] for x in dans[nom]):
+                dans[nom].append(a)
+        if sig.lower() in avant:
+            avant.add(nom.lower())
+    res = []
+    for m, arts in dans.items():
+        if m.lower() in avant or est_connu(m) or any(est_connu(s2) for s2, n2 in alias.items() if n2 == m):
+            continue
+        sources = {a.get("source") for a in arts}
+        officiel = any(a.get("nature") == "officielle" for a in arts)
+        signal = any(a.get("statut") in ("projet", "consultation", "adopte", "en_vigueur")
+                     or regles.SIGNAL_FORT.search(regles.texte_article(a)) for a in arts)
+        assez = len(arts) >= MIN_ARTICLES or (len(arts) >= 2 and officiel)
+        if assez and len(sources) >= MIN_SOURCES and signal:
+            sig = [s2 for s2, n2 in alias.items() if n2 == m]
+            res.append(("%s (%s)" % (m, sig[0]) if sig else m, sorted(arts, key=lambda a: a.get("date", ""), reverse=True)))
+    # un nom contenu dans un autre (« Resilience Act » / « Cyber Resilience Act ») : on garde le plus long
+    # même groupe d'articles sous plusieurs formes (« Resilience Act » / « Cyber Resilience Act ») : la plus longue
+    res.sort(key=lambda x: -len(x[0]))
+    garde, vus = [], []
+    for m, arts in res:
+        ids = {a["id"] for a in arts}
+        if any(m.lower() in n.lower() and len(ids & i) >= len(ids) / 2 for n, i in vus):
+            continue
+        vus.append((m, ids))
+        garde.append((m, arts))
+    return garde
+
+
+def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecartes=()):
     """Recalcule les alertes à partir des articles du site ; garde du registre précédent
     la date de première détection et les alertes dont les articles ont été purgés."""
     groupes = {}
@@ -143,6 +256,13 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None):
         else:
             cle = "|".join(("txt", texte, a.get("zone", ""), etape))
         ajouter(cle, t, a, {"texte": texte, "inconnu": t == "a_qualifier"})
+
+    for terme, arts in emergents(liste, aujourdhui):
+        g = groupes.setdefault("emg|" + terme.lower(), {"type": "a_qualifier", "articles": [], "extra": {}})
+        g["extra"] = {"texte": terme, "inconnu": True, "emergent": True}
+        for a in arts:
+            if all(x["id"] != a["id"] for x in g["articles"]):
+                g["articles"].append(a)
 
     # Échéances : dates d'obligation proches, tirées des textes applicables et des articles importants.
     # Une même date dans un même pays = une seule alerte (le texte applicable en priorité).
@@ -174,7 +294,7 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None):
             ajouter(cle, "echeance", a, {"texte": texte, "echeance": d.isoformat(), "extrait": e.get("extrait") or {}})
 
     anciens = {x["id"]: x for x in (ancien or {}).get("alertes", [])}
-    ids_liste = {a["id"] for a in liste}
+    ids_liste = {a["id"] for a in liste} | set(ids_ecartes)   # articles encore connus (gardés ou écartés)
     alertes = []
     for cle, g in groupes.items():
         arts = sorted(g["articles"], key=lambda a: (a.get("date", ""), a.get("detecte_le", "")), reverse=True)
@@ -201,6 +321,9 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None):
               "zone": ex.get("zone") or (arts[0].get("zone", "") if arts else ""), "detecte_le": detecte, "maj_le": maj,
               "date": dernier, "fin": fin, "version": version, "version_maj": versions[-1] if versions else "", "articles": [_apercu(a) for a in arts[:6]], "nb_articles": len(arts),
               "a_verifier": bool(arts) and all(a.get("a_verifier") for a in arts)}
+        if ex.get("emergent"):
+            al["emergent"] = True
+            al["nb_sources"] = len({a.get("source") for a in arts})
         if g["type"] == "echeance":
             al["echeance"] = ex["echeance"]
             if ex.get("extrait"):
@@ -234,6 +357,9 @@ def _titre_langue(ap, lg):
 
 
 def titre_alerte(al, lg):
+    if al.get("emergent"):
+        n = al.get("nb_sources") or al.get("nb_articles", 0)
+        return ("“%s”: new topic cited by %d sources" if lg == "en" else "« %s » : nouveau sujet cité par %d sources") % (al.get("texte", ""), n)
     if al.get("ref"):
         r = al["ref"]
         nom = r.get("nom_en") if lg == "en" and r.get("nom_en") else r.get("nom", "")

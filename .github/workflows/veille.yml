@@ -42,9 +42,10 @@ jobs:
     # version figée : « ubuntu-latest » passe à Ubuntu 26 le 19/10/2026 (évite une collecte cassée par ce changement)
     runs-on: ubuntu-24.04
     timeout-minutes: 120
-    environment:
-      name: github-pages
-      url: ${{ steps.publication.outputs.page_url }}
+    # pas d'« environment » ici : la collecte et l'enregistrement des données ne doivent jamais
+    # attendre une autorisation de déploiement ; seule la publication (job suivant) en dépend
+    outputs:
+      lancer: ${{ steps.garde.outputs.lancer }}
     steps:
       - name: Récupérer la branche de veille
         uses: actions/checkout@v4
@@ -157,7 +158,18 @@ jobs:
         if: steps.garde.outputs.lancer == 'true'
         with:
           path: _site
+
+  # Publication du site, séparée : si GitHub bloque le déploiement (autorisation, incident),
+  # les données sont déjà enregistrées et la publication peut être relancée seule (« Re-run jobs »).
+  publication:
+    needs: collecte
+    if: needs.collecte.outputs.lancer == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.publication.outputs.page_url }}
+    steps:
       - name: Publier sur GitHub Pages
-        if: steps.garde.outputs.lancer == 'true'
         id: publication
         uses: actions/deploy-pages@v4

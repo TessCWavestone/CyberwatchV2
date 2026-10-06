@@ -347,5 +347,10 @@
   "date_debut_veille": "2026-01-01",
   "_aide_date_debut": "Aucun article antérieur à cette date n'est ajouté (début de la base de connaissance).",
   "dila_jours_premiere_collecte": 21,
-  "nb_max_ecartes": 8000
+  "nb_max_ecartes": 8000,
+  "_aide_relais": "url_relais : adresse du relais Cloudflare (voir relais/LISEZMOI.md) pour lancer une collecte depuis le site sans compte GitHub. Vide = le bouton ouvre GitHub.",
+  "url_relais": "",
+  "_aide_site": "jours_site : articles chargés par défaut par le site (les plus anciens sont dans data/actualites_archives.js, chargés à la demande). url_site : adresse publique du site (sinon déduite du dépôt GitHub).",
+  "jours_site": 183,
+  "url_site": ""
 }

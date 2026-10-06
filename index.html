@@ -13,7 +13,9 @@
 <!--
   Aucun texte d'article n'est écrit ici : tout est construit par script.js, en
   français ou en anglais, à partir des fichiers de data/ :
-    actualites.js   veille certifiée (articles collectés + base de connaissance)
+    actualites.js   veille certifiée, 6 derniers mois (articles collectés + base de connaissance)
+    actualites_archives.js  articles plus anciens, chargés à la demande (période, restitution)
+    alertes.js      points clés (alertes stables) ; flux RSS points_cles_fr|en.xml
     debats.js       avis d'experts (non certifié, toujours affiché à part)
     referentiel.js  textes applicables par pays
     etat_sources.js, versions.js, acronymes.js, syntheses.js, monde.js (fond de carte)
@@ -21,6 +23,7 @@
 
 <header class="masthead">
   <div class="wrap">
+    <div class="collecte-bandeau" id="collecte-bandeau" role="status" aria-live="polite" hidden></div>
     <div class="mast-top">
       <p class="mast-kicker" id="surtitre">Veille réglementaire — Wavestone</p>
       <div class="mast-tools">
@@ -32,6 +35,7 @@
             <button type="button" role="menuitem" id="export-csv" data-i18n="btn_excel">Les articles affichés (Excel)</button>
           </div>
         </div>
+        <button type="button" class="btn btn-quiet btn-assistant" id="assistant-ouvrir" aria-controls="assistant" aria-expanded="false"><span aria-hidden="true">🔎</span> <span data-i18n="as_btn">Poser une question</span></button>
         <a class="btn btn-quiet" id="lancer-maj" href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="btn_update">Lancer une mise à jour</a>
         <div class="lang-switch" role="group" aria-label="Langue / Language">
           <button type="button" class="lang-btn" data-lang="fr" lang="fr">FR</button>
@@ -47,6 +51,7 @@
         <select id="version-select"></select></label>
     </div>
     <p class="version-banner" id="version-banner" hidden></p>
+    <div class="visite-banner" id="visite-banner" hidden></div>
   </div>
 </header>
 
@@ -68,13 +73,23 @@
 <!-- ============================================================ L'ESSENTIEL -->
 <div class="tab-panel" data-tab="essentiel">
   <div class="wrap">
-    <section class="une" aria-labelledby="une-titre">
-      <header class="block-head">
-        <h2 id="une-titre" data-i18n="une_title">À la une</h2>
-        <p class="block-lead" data-i18n="une_lead"></p>
+    <section class="points-cles" aria-labelledby="pc-titre">
+      <header class="block-head pc-head">
+        <div>
+          <h2 id="pc-titre" data-i18n="pc_title">Points clés</h2>
+          <p class="block-lead" data-i18n="pc_lead"></p>
+        </div>
+        <button type="button" class="btn btn-quiet btn-sm" id="pc-rss"><span aria-hidden="true">📡</span> <span data-i18n="pc_rss">S'abonner (Outlook / RSS)</span></button>
       </header>
-      <div class="une-grid" id="une-grid"></div>
-      <p class="empty" id="une-vide" hidden data-i18n="une_empty"></p>
+      <div class="pc-legende" id="pc-legende"></div>
+      <div class="pc-liste" id="pc-liste"></div>
+      <p class="empty" id="pc-vide" hidden data-i18n="pc_empty"></p>
+      <button type="button" class="btn" id="pc-plus" hidden></button>
+      <details class="pc-precedents" id="pc-precedents">
+        <summary><span data-i18n="pc_prev">Points clés précédents</span> <span class="block-meta" id="pc-prev-n"></span></summary>
+        <p class="block-meta" data-i18n="pc_prev_lead"></p>
+        <div id="pc-prev-liste"></div>
+      </details>
     </section>
 
     <section class="textes-mois" aria-labelledby="tm-titre">
@@ -103,6 +118,40 @@
       </div>
       <ol class="timeline" id="timeline"></ol>
       <p class="empty" id="agenda-vide" hidden data-i18n="agenda_empty"></p>
+    </section>
+
+    <section class="bilans" aria-labelledby="bilan-titre">
+      <header class="block-head">
+        <h2 id="bilan-titre" data-i18n="bi_title">Bilans et restitutions</h2>
+        <p class="block-lead" data-i18n="bi_lead"></p>
+      </header>
+      <div class="bilan-grid">
+        <div class="bilan-box">
+          <h3 data-i18n="bi_month">Bilan mensuel</h3>
+          <div class="bilan-ctrl">
+            <select id="bilan-mois" class="select" aria-label="Mois"></select>
+            <button type="button" class="btn btn-sm" id="bilan-pdf" data-i18n="bi_pdf">Télécharger (PDF)</button>
+          </div>
+          <div id="bilan-resume" class="bilan-resume"></div>
+        </div>
+        <div class="bilan-box">
+          <h3 data-i18n="bi_rest">Restitution sur une période</h3>
+          <div class="seg" role="group" id="rest-preset">
+            <button type="button" data-m="3" data-i18n="p90">3 mois</button>
+            <button type="button" data-m="6" aria-pressed="true" data-i18n="h180">6 mois</button>
+            <button type="button" data-m="12" data-i18n="h365">12 mois</button>
+          </div>
+          <div class="bilan-ctrl">
+            <label><span data-i18n="per_du">Du</span> <input type="date" id="rest-du" class="select"></label>
+            <label><span data-i18n="per_au">au</span> <input type="date" id="rest-au" class="select"></label>
+          </div>
+          <div class="bilan-ctrl">
+            <button type="button" class="btn btn-primary btn-sm" id="rest-pdf" data-i18n="bi_rest_pdf">Restitution (PDF)</button>
+            <button type="button" class="btn btn-sm" id="rest-csv" data-i18n="bi_rest_csv">Articles de la période (Excel)</button>
+          </div>
+          <p class="block-meta" data-i18n="bi_rest_note"></p>
+        </div>
+      </div>
     </section>
 
     <section class="chiffres" aria-labelledby="chiffres-titre">
@@ -137,6 +186,20 @@
 
     <div class="facets-panel" id="facets" hidden>
       <div class="facets">
+        <fieldset class="facet facet-wide facet-periode"><legend data-i18n="f_periode">Période</legend>
+          <div class="periode-ctrl">
+            <label><span data-i18n="per_du">Du</span> <input type="date" id="per-du" class="select"></label>
+            <label><span data-i18n="per_au">au</span> <input type="date" id="per-au" class="select"></label>
+            <div class="seg" role="group" id="per-preset">
+              <button type="button" data-m="1" data-i18n="per_1m">1 mois</button>
+              <button type="button" data-m="6" data-i18n="h180">6 mois</button>
+              <button type="button" data-m="12" data-i18n="h365">12 mois</button>
+              <button type="button" data-m="0" data-i18n="per_clear">Effacer</button>
+            </div>
+          </div>
+          <label class="switch"><input type="checkbox" id="depuis-visite"><span data-i18n="since_visit">Seulement les nouveautés depuis ma dernière visite</span></label>
+          <p class="block-meta" id="per-archives" hidden></p>
+        </fieldset>
         <fieldset class="facet"><legend data-i18n="f_pert">Pertinence</legend><div class="chips" id="fc-pert"></div></fieldset>
         <fieldset class="facet"><legend data-i18n="f_zone">Pays / zone</legend><div class="chips" id="fc-zone"></div></fieldset>
         <fieldset class="facet facet-wide"><legend data-i18n="f_theme">Textes et normes</legend><div class="chips" id="fc-theme"></div>
@@ -362,6 +425,21 @@
   </div>
 </footer>
 
+<aside class="assistant" id="assistant" hidden aria-labelledby="as-titre">
+  <div class="as-head">
+    <h2 id="as-titre" data-i18n="as_title">Assistant de recherche</h2>
+    <button type="button" class="as-fermer" id="assistant-fermer" aria-label="Fermer">✕</button>
+  </div>
+  <p class="as-note" data-i18n="as_note"></p>
+  <form class="as-form" id="as-form" role="search">
+    <input type="search" id="as-q" class="search" autocomplete="off" data-i18n-ph="as_ph" aria-label="Question">
+    <button type="submit" class="btn btn-primary btn-sm" data-i18n="as_go">Chercher</button>
+  </form>
+  <div class="as-exemples" id="as-exemples"></div>
+  <div class="as-compris" id="as-compris" hidden></div>
+  <div class="as-resultats" id="as-resultats" aria-live="polite"></div>
+</aside>
+
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <div class="modal-back" id="modal" hidden>
@@ -378,6 +456,7 @@
 <div id="print-report" class="print-report" aria-hidden="true"></div>
 
 <script src="data/actualites.js"></script>
+<script src="data/alertes.js" onerror="window.VEILLE_ALERTES=null"></script>
 <script src="data/etat_sources.js"></script>
 <script src="data/syntheses.js" onerror="window.VEILLE_SYNTHESES=null"></script>
 <script src="data/syntheses_en.js" onerror="window.VEILLE_SYNTHESES_EN=null"></script>

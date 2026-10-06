@@ -13,6 +13,8 @@ Fichiers écrits (lus par le site) :
     data/actualites.json / .js    les articles
     data/etat_sources.json / .js  le diagnostic de chaque source
     data/versions.json / .js      l'historique des collectes
+    data/alertes.json / .js       les « Points clés » (alertes stables) + flux RSS points_cles_fr|en.xml
+    data/actualites_archives.js   articles de plus de 6 mois (chargés par le site à la demande)
     data/vus.json                 la mémoire des liens déjà vus (pages web)
 
 Lancement :  python collecte/collecte.py
@@ -47,6 +49,8 @@ from amendes import detecter as detecter_amende  # noqa: E402
 import echeances  # noqa: E402
 import rkc  # noqa: E402
 import dila  # noqa: E402
+import alertes  # noqa: E402
+import regles  # noqa: E402
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(RACINE, "data")
@@ -1098,6 +1102,10 @@ def main():
         "depot": depot or cfg.get("depot_github", ""),
         "branche": os.environ.get("BRANCHE_VEILLE") or cfg.get("branche_github", "main"),
         "serveur": serveur,
+        # relais facultatif (Cloudflare Worker, voir relais/) : lancer une collecte sans compte GitHub
+        "url_relais": cfg.get("url_relais", ""),
+        "url_site": cfg.get("url_site") or (("https://%s.github.io/%s/" % (depot.split("/")[0].lower(), depot.split("/")[1]))
+                                             if depot and "/" in depot else ""),
     }
 
     # Pertinence, 1er passage (sans traduction) : on ne traduit que ce qui sera gardé
@@ -1142,6 +1150,18 @@ def main():
     liste = liste[:cfg.get("nb_max_articles", 5000)]
     n_doublons = regrouper_doublons(liste)
     print("Doublons entre sources regroupés : %d" % n_doublons)
+    # Texte INCONNU repris par plusieurs sources (même non officielles) avec un signal fort (adopté,
+    # publié, proposition, projet de loi…) sur un sujet fort : il entre dans L'essentiel, « à vérifier ».
+    n_multi = 0
+    for a in liste:
+        if (a.get("aussi") and not a.get("essentiel") and not a.get("base") and a.get("pertinence") == "elevee"
+                and not a.get("textes_cles") and a.get("nature") != "opinion"):
+            t = regles.texte_article(a)
+            if regles.SIGNAL_FORT.search(t) and regles.SUJET_FORT.search(t):
+                a["essentiel"], a["a_verifier"] = True, True
+                n_multi += 1
+    if n_multi:
+        print("Textes inconnus repris par plusieurs sources, ajoutés à L'essentiel : %d" % n_multi)
     ids_liste = {a["id"] for a in liste}
     nouveaux_ids = [i for i in dict.fromkeys(nouveaux_ids) if i in ids_liste]
     meta["nb_nouveaux"] = len(nouveaux_ids)
@@ -1208,9 +1228,31 @@ def main():
     })
     meta["nb_versions"] = len(versions)
 
+    # Points clés : alertes stables (registre persistant), flux RSS
+    ref = lire_json(os.path.join(RACINE, "config", "referentiel.json"), {})
+    ancien_alertes = lire_json(os.path.join(DATA, "alertes.json"), {})
+    liste_alertes = alertes.construire(liste, ancien_alertes, ref, AUJOURDHUI, plancher)
+    meta["nb_alertes"] = sum(1 for x in liste_alertes if x.get("active"))
+    ecrire_json_et_js("alertes", {"mise_a_jour": meta["mise_a_jour"], "alertes": liste_alertes}, "VEILLE_ALERTES")
+    alertes.ecrire_rss(liste_alertes, DATA, meta["url_site"], AUJOURDHUI)
+    print("Points clés : %d alertes actives, %d précédentes" % (meta["nb_alertes"], len(liste_alertes) - meta["nb_alertes"]))
+
     ecrire_json_et_js("acronymes", {"mise_a_jour": meta["mise_a_jour"], "glossaire": trad.glossaire,
                                     "suivis": suivis, "candidats": candidats}, "VEILLE_ACRONYMES")
-    ecrire_json_et_js("actualites", {"meta": meta, "articles": liste}, "VEILLE_ACTUALITES")
+    # Site : les 6 derniers mois (+ base de connaissance + articles des points clés actifs) ; le reste dans
+    # actualites_archives.js, chargé seulement quand on consulte une période plus ancienne.
+    ecrire_json_et_js("actualites", {"meta": meta, "articles": liste}, None)
+    limite_site = (AUJOURDHUI - dt.timedelta(days=cfg.get("jours_site", 183))).isoformat()
+    ids_alertes = {ar["id"] for x in liste_alertes if x.get("active") for ar in x.get("articles", [])}
+    recents_site = [a for a in liste if a.get("base") or a["date"] >= limite_site or a["id"] in ids_alertes]
+    ids_recents = {a["id"] for a in recents_site}
+    archives_site = [a for a in liste if a["id"] not in ids_recents]
+    meta["archives"] = {"nb": len(archives_site), "avant": limite_site,
+                        "plus_ancien": min([a["date"] for a in archives_site] or [""])}
+    with open(os.path.join(DATA, "actualites.js"), "w", encoding="utf-8") as f:
+        f.write("window.VEILLE_ACTUALITES = %s;\n" % json.dumps({"meta": meta, "articles": recents_site}, ensure_ascii=False))
+    with open(os.path.join(DATA, "actualites_archives.js"), "w", encoding="utf-8") as f:
+        f.write("window.VEILLE_ARCHIVES = %s;\n" % json.dumps({"articles": archives_site}, ensure_ascii=False))
     ecrire_json_et_js("etat_sources", {"mise_a_jour": meta["mise_a_jour"], "jours_premiere_collecte": cfg.get("jours_premiere_collecte", 60),
                                        "jours_conservation": conservation, "sources": etats}, "VEILLE_ETAT_SOURCES")
     ecrire_json_et_js("versions", {"versions": versions}, "VEILLE_VERSIONS")
@@ -1223,7 +1265,6 @@ def main():
                                        "articles": [fiche_ecarte(a) for a in liste_ecartes if a.get("detecte_le", a["date"]) >= limite_ec][:4000]},
                       "VEILLE_ECARTES")
     telecharger_carte()
-    ref = lire_json(os.path.join(RACINE, "config", "referentiel.json"), {})
     if ref:
         with open(os.path.join(DATA, "referentiel.js"), "w", encoding="utf-8") as f:
             f.write("window.VEILLE_REFERENTIEL = %s;\n" % json.dumps(ref, ensure_ascii=False))

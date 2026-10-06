@@ -7,6 +7,29 @@ entre **L'essentiel**, **très pertinent**, **pertinent**, **à surveiller** et
 et en anglais, produit le PDF de la veille, puis met le site à jour. Pas de clé
 API, pas d'abonnement, pas d'IA générative, rien à payer.
 
+## Version 5.2 (07/10/2026) — capter les textes que l'on ne connaît pas encore
+
+- **Sans dépendre des mots** : un texte officiel avec un signal réglementaire (proposition, projet, adoption,
+  consultation…) que le modèle juge très proche des thèmes suivis (note ≥ 0,70, réglage `tres_haut` dans
+  `config/profil_pertinence.json`) remonte dans L'essentiel et les points clés, même sans aucun mot du
+  vocabulaire attendu. Aucun faux positif sur les 4 mois de données réelles à ce seuil.
+- **Détecteur de « sujets émergents »** (`collecte/alertes.py`) : un nom de texte ou un sigle inconnu
+  (« … Act », « … Bill », « … Gesetz », sigle) qui apparaît soudain dans au moins 3 articles pertinents de
+  2 sources (ou 2 dont une officielle) en 60 jours, avec un signal réglementaire, devient un point clé
+  « Nouveau texte détecté ». Sigle et nom long sont regroupés (« Cloud and AI Development Act (CADA) »).
+  Sur les données réelles : CADA aurait été signalé 9 jours après sa proposition ; 1 seule autre alerte en
+  4 mois (« EU KIDS Act », vraie initiative nouvelle).
+- **Réglages sur-mesure retirés** (« Esquema Nacional de Seguridad » ajouté pour le test ENS). Restent les
+  règles génériques : actes numérotés reconnus comme adoptés, projet annoncé par un cabinet d'avocats,
+  « Proyecto de RD ». Les titres officiels de NIS2 / CRA ajoutés aux textes clés ne servent qu'aux textes connus.
+- **Test rétrospectif à l'aveugle** (`tests/retro/`) : 10 textes, 145 publications réelles 2018-2026.
+  5 textes de réglage (NIS2, CRA, AI Act, EHDS, ENS) et **5 textes de contrôle jamais utilisés pour régler**
+  (DORA, Data Act, CER, PLD, UK Cyber Security and Resilience Bill). Le nom de chaque texte est « oublié »
+  (le sujet reste visible). Lancement avec le vrai modèle : Actions › **Cyber Watch - test rétrospectif**.
+- Une alerte dont l'article a ensuite été écarté (avis d'un lecteur, règles) disparaît des points clés.
+- Bandeau d'avertissement si le modèle de pertinence n'a pas pu être installé lors d'une collecte.
+- Workflow : la publication du site est une étape séparée (une autorisation GitHub bloquée n'empêche plus la collecte).
+
 ## Version 5 (06/10/2026) — ce qu'il faut faire sur GitHub
 
 Le zip ne contient **que les 11 fichiers modifiés ou nouveaux** : les déposer sur GitHub en remplaçant

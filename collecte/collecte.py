@@ -1231,7 +1231,7 @@ def main():
     # Points clés : alertes stables (registre persistant), flux RSS
     ref = lire_json(os.path.join(RACINE, "config", "referentiel.json"), {})
     ancien_alertes = lire_json(os.path.join(DATA, "alertes.json"), {})
-    liste_alertes = alertes.construire(liste, ancien_alertes, ref, AUJOURDHUI, plancher)
+    liste_alertes = alertes.construire(liste, ancien_alertes, ref, AUJOURDHUI, plancher, ecartes.keys())
     meta["nb_alertes"] = sum(1 for x in liste_alertes if x.get("active"))
     ecrire_json_et_js("alertes", {"mise_a_jour": meta["mise_a_jour"], "alertes": liste_alertes}, "VEILLE_ALERTES")
     alertes.ecrire_rss(liste_alertes, DATA, meta["url_site"], AUJOURDHUI)

@@ -174,6 +174,10 @@ class Pertinence:
             a["essentiel"] = bool(r["essentiel"])
             a["a_verifier"] = bool(r["a_verifier"])
             a["textes_cles"] = r["textes_cles"]
+            if r.get("sens_fort"):
+                a["sens_fort"] = True
+            else:
+                a.pop("sens_fort", None)
             a["motif"] = r["motif"]
             if r["bruit"]:
                 a["bruit"] = r["bruit"]

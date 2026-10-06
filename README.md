@@ -23,18 +23,23 @@ Fichiers : `index.html`, `script.js`, `style.css`, `README.md`, `.github/workflo
 
 Nouveautés :
 
-- **Points clés** (onglet L'essentiel) : liste d'alertes **stable** à la place de « À la une ».
+- **Points clés** (onglet L'essentiel) : à la place de « À la une », les **5 alertes les plus urgentes**
+  (8 au plus en cas d'urgences : échéance à 14 jours ou moins, texte adopté détecté dans la semaine).
   Une alerte = un fait réglementaire (même texte, même pays, même étape ; plusieurs articles = une alerte) :
-  échéance dans les 3 mois, nouveau texte adopté / publié / en vigueur, texte en préparation (proposition,
+  échéance dans les 30 jours, nouveau texte adopté / publié / en vigueur, texte en préparation (proposition,
   projet de loi, consultation, lignes directrices officielles), **texte inconnu détecté** (absent de la liste
-  des textes suivis, repéré par des signaux forts : à qualifier). Elle reste affichée 6 mois (ou jusqu'à son
-  échéance), puis passe dans « Points clés précédents ». 8 alertes affichées (12 au plus s'il y a beaucoup
-  d'urgences), les autres derrière « Voir les autres ». Registre : `data/alertes.json` (`collecte/alertes.py`).
+  des textes suivis, repéré par des signaux forts : à qualifier).
+  **Durée** : un nouveau texte reste 4 semaines après sa **première détection** (un nouvel article sur le même
+  fait ne prolonge pas) ; chaque nouvelle étape (adoption, entrée en vigueur) crée une nouvelle alerte ; une
+  date d'application revient en alerte 30 jours avant. Une information ancienne retrouvée tard (rattrapage)
+  compte à partir de sa publication. Le reste (autres alertes en cours, alertes terminées par mois) est dans
+  « Points clés précédents ». Registre : `data/alertes.json` (`collecte/alertes.py`).
 - **Vocabulaire « proposition / projet de loi »** ajouté aux signaux forts, dans toutes les langues
   (`collecte/regles.py`, SIGNAL_FORT) : un texte inconnu peut remonter dès sa proposition. Un texte inconnu
   repris par **plusieurs sources** (même non officielles) avec un signal fort entre aussi dans L'essentiel.
 - **« Nouveau » depuis la dernière visite** de chaque utilisateur (mémorisé dans son navigateur, sans compte),
-  et bandeau « N nouveautés depuis votre dernière visite ». Filtre correspondant dans Veille › Affiner.
+  et bandeau « N nouveautés depuis votre dernière visite » (avec un lien vers les points clés détectés depuis
+  la visite et déjà passés dans « Points clés précédents »). Filtre correspondant dans Veille › Affiner.
 - **Flux RSS des points clés** (`data/points_cles_fr.xml` / `_en.xml`) : bouton « S'abonner (Outlook / RSS) ».
 - **Période** dans Veille › Affiner (du… au…, 1 / 6 / 12 mois) ; **bilan mensuel** et **restitution sur une
   période** (PDF, Excel) dans L'essentiel › Bilans et restitutions.

@@ -170,7 +170,7 @@
         ['Collecte', "<p>Chaque lundi à 7 h (et à la demande), un script lit toutes les sources : flux RSS, pages d'actualités datées, Journal officiel de l'UE (EUR-Lex) et français (données ouvertes de la DILA), et l'alerte RKC déposée dans un dépôt privé. La base couvre l'actualité depuis le 1er janvier 2026 (badge « Base 2026 » pour la recherche documentaire initiale).</p>"],
         ['Pertinence', "<p>Chaque article reçoit une note d'un petit modèle open source gratuit (exécuté sur GitHub) qui compare son sens aux thèmes du client, puis des règles fixes et lisibles décident du niveau : <strong>un texte clé cité</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) n'est jamais écarté ; <strong>« très pertinent »</strong> exige un signal réglementaire (loi, décret, lignes directrices, consultation, norme, sanction… dans toutes les langues) ; le bruit (alertes de vulnérabilités, événements, marchés, finance, télécoms) est écarté, sauf source officielle ; hors Europe, seuls les textes à portée mondiale (ISO/IEC, IMDRF, FDA cybersécurité des dispositifs) sont gardés.</p>"],
         ['Rien ne se perd', "<p>Les articles de faible pertinence sont gardés dans « À surveiller » (masqués par défaut). Les articles écartés restent consultables et téléchargeables dans Sources › Articles écartés. Les boutons « Important » et « Pas pertinent » corrigent le classement à la collecte suivante et servent d'exemples au modèle.</p>"],
-        ["L'essentiel", "<p>« Points clés » : une liste d'alertes stable (échéances à moins de 3 mois, nouveaux textes adoptés, textes en préparation, textes inconnus détectés), chacune affichée 6 mois ou jusqu'à son échéance, puis rangée dans « Points clés précédents ». « Nouvelles réglementations et normes » ne retient que les textes et normes importants, regroupés par texte avec toutes leurs sources. En cas de doute (source non officielle, texte inconnu), l'article est gardé avec le badge « À vérifier ». Les dates clés ne sont retenues que près d'un mot d'obligation (« d'ici le », « applicable à compter du »…), jamais pour un webinaire ou une réunion.</p>"],
+        ["L'essentiel", "<p>« Points clés » : les 5 alertes les plus urgentes, 8 au plus (échéances à 30 jours, nouveaux textes adoptés, textes en préparation, textes inconnus détectés). Un nouveau texte y reste 4 semaines après sa détection, une échéance les 30 jours qui la précèdent ; ensuite l'alerte passe dans « Points clés précédents ». « Nouvelles réglementations et normes » ne retient que les textes et normes importants, regroupés par texte avec toutes leurs sources. En cas de doute (source non officielle, texte inconnu), l'article est gardé avec le badge « À vérifier ». Les dates clés ne sont retenues que près d'un mot d'obligation (« d'ici le », « applicable à compter du »…), jamais pour un webinaire ou une réunion.</p>"],
         ['Nouveautés et archives', "<p>« Nouveautés » montre les 30 derniers jours (60 s'il y a peu d'articles) ; tout le reste est dans « Archives ». Chaque collecte crée une édition, consultable dans le sélecteur « Édition ».</p>"],
         ['Débats et signaux', "<p>Les avis d'experts viennent uniquement de sources classées « Avis d'experts (non certifié) », et seuls les avis pertinents ou très pertinents sont gardés. Ils sont stockés à part et n'apparaissent jamais dans la veille, la carte, L'essentiel ni les textes applicables.</p>"],
         ['Veille RKC', "<p>L'alerte RKC (Nexis Newsdesk) est lue dans un dépôt privé ; seuls les articles pertinents ou très pertinents sont gardés. Seuls le titre, la publication, la date et la note sont publiés : l'extrait, souvent payant, n'apparaît jamais sur ce site.</p>"],
@@ -307,7 +307,7 @@
         ['Collection', '<p>Every Monday at 7 am (and on demand), a script reads every source: RSS feeds, dated news pages, the EU Official Journal (EUR-Lex) and the French one (DILA open data), and the RKC alert stored in a private repository. The database covers news since 1 January 2026 (“2026 base” badge for the initial desk research).</p>'],
         ['Relevance', '<p>Each article is scored by a small, free, open-source model (running on GitHub) that compares its meaning with the client’s themes; then fixed, readable rules set the level: <strong>an article mentioning a key text</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) is never discarded; <strong>“highly relevant”</strong> requires a regulatory signal (law, decree, guidelines, consultation, standard, sanction… in every language); noise (vulnerability alerts, events, business news, finance, telecoms) is discarded unless the source is official; outside Europe, only texts with a global scope (ISO/IEC, IMDRF, FDA medical-device cybersecurity) are kept.</p>'],
         ['Nothing is lost', '<p>Low-relevance articles are kept under “To monitor” (hidden by default). Discarded articles remain listed and downloadable in Sources › Discarded articles. The “Important” and “Not relevant” buttons correct the rating at the next collection and serve as examples for the model.</p>'],
-        ['Key points', '<p>“Key points”: a stable list of alerts (deadlines within 3 months, newly adopted texts, texts in preparation, unknown texts detected), each shown for 6 months or until its deadline, then moved to “Previous key points”. “New regulations and standards” only keeps important texts and standards, grouped by text with all their sources. When in doubt (non-official source, unknown text), the article is kept with a “To be checked” badge. Key dates are only kept next to an obligation word (“by”, “applicable from”…), never for a webinar or a meeting.</p>'],
+        ['Key points', '<p>“Key points”: the 5 most urgent alerts, 8 at most (deadlines within 30 days, newly adopted texts, texts in preparation, unknown texts detected). A new text stays there for 4 weeks after detection, a deadline for the 30 days before it; then the alert moves to “Previous key points”. “New regulations and standards” only keeps important texts and standards, grouped by text with all their sources. When in doubt (non-official source, unknown text), the article is kept with a “To be checked” badge. Key dates are only kept next to an obligation word (“by”, “applicable from”…), never for a webinar or a meeting.</p>'],
         ['Latest and archive', '<p>“Latest” shows the last 30 days (60 when there are few articles); everything else is in “Archive”. Each collection creates an edition, available in the “Edition” selector.</p>'],
         ['Debates & signals', '<p>Expert opinions come only from sources classified as “Expert opinion (not certified)”, and only relevant or highly relevant ones are kept. They are stored separately and never appear in the watch, the map, Key points or applicable texts.</p>'],
         ['RKC watch', '<p>The RKC alert (Nexis Newsdesk) is read from a private repository; only relevant or highly relevant articles are kept. Only the title, publication, date and rating are published: the excerpt, often paywalled, never appears on this site.</p>'],
@@ -1950,16 +1950,18 @@
       per_arch: function (n, d) { return n + ' articles antérieurs au ' + d + ' sont archivés : ils sont chargés automatiquement si la période choisie commence avant cette date.'; },
       arch_loading: 'Chargement des archives…', arch_loaded: function (n) { return n + ' articles archivés chargés.'; }, arch_ko: 'Archives indisponibles.',
       pc_title: 'Points clés',
-      pc_lead: "Les faits réglementaires qui peuvent concerner l'entreprise dans un de ses pays : échéance dans les 3 mois, nouveau texte adopté, texte en préparation (proposition, projet de loi, consultation), texte inconnu détecté. Classement par urgence : échéances les plus proches et textes les plus récemment détectés en premier. Une alerte reste affichée 6 mois (ou jusqu'à son échéance), même si personne ne consulte la veille entre-temps. Règles fixes, sans IA générative.",
+      pc_lead: "Les 5 faits réglementaires les plus urgents qui peuvent concerner l'entreprise dans un de ses pays (jusqu'à 8 en cas d'urgences) : échéance dans les 30 jours, nouveau texte adopté, texte en préparation (proposition, projet de loi, consultation), texte inconnu détecté. Un nouveau texte reste ici 4 semaines après sa détection ; chaque nouvelle étape (adoption, entrée en vigueur) crée une nouvelle alerte, et sa date d'application revient ici 30 jours avant. Le reste est dans « Points clés précédents ». Règles fixes, sans IA générative.",
       pc_empty: 'Aucun point clé en cours.', pc_rss: "S'abonner (Outlook / RSS)",
       pc_types: { echeance: 'Échéance', adopte: 'Texte adopté', signale: 'Signalé important', proposition: 'Texte en préparation', a_qualifier: 'Nouveau texte détecté' },
-      pc_types_long: { echeance: 'Échéance dans les 3 mois', adopte: 'Nouveau texte adopté, publié ou en vigueur', signale: 'Jugé important par un lecteur', proposition: 'Proposition, projet de loi, consultation, lignes directrices', a_qualifier: 'Texte absent de la liste des textes suivis : à qualifier' },
+      pc_types_long: { echeance: 'Échéance dans les 30 jours', adopte: 'Nouveau texte adopté, publié ou en vigueur', signale: 'Jugé important par un lecteur', proposition: 'Proposition, projet de loi, consultation, lignes directrices', a_qualifier: 'Texte absent de la liste des textes suivis : à qualifier' },
       pc_new: 'Nouveau', pc_maj: 'Mis à jour', pc_maj_t: 'Nouvelle source depuis votre dernière visite',
       pc_inconnu: 'Texte inconnu', pc_inconnu_t: "Ce texte n'est pas dans la liste des textes suivis : repéré par des signaux forts (adopté, publié, proposition…). À qualifier par un humain.",
       pc_detecte: function (d) { return 'Détecté le ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },
       pc_texte: 'Texte : ', pc_toutes: function (n) { return 'Toutes les sources (' + n + ')'; }, pc_voir_veille: 'Voir dans la veille',
       pc_plus: function (n) { return 'Voir les ' + n + ' autres points clés'; }, pc_moins: 'Réduire',
-      pc_prev: 'Points clés précédents', pc_prev_lead: 'Alertes dont la période d’affichage est terminée (échéance passée ou plus de 6 mois), classées par mois.',
+      pc_prev: 'Points clés précédents', pc_prev_lead: 'Les autres alertes encore d’actualité, puis les alertes terminées (affichées plus de 4 semaines, ou échéance passée), classées par mois.',
+      pc_autres: function (n) { return 'Autres alertes en cours (' + n + ')'; },
+      vis_passes: function (n) { return n + (n > 1 ? ' points clés détectés depuis votre visite sont déjà dans « Points clés précédents »' : ' point clé détecté depuis votre visite est déjà dans « Points clés précédents »'); },
       pc_prev_n: function (n) { return '(' + n + ')'; }, pc_fin: function (d) { return 'jusqu’au ' + d; },
       rss_titre: "S'abonner aux points clés", rss_copier: 'Copier le lien', rss_copie: 'Lien copié',
       rss_corps: ["Ce lien donne un flux RSS des points clés, mis à jour à chaque collecte. Outlook (version classique) : clic droit sur « Flux RSS » dans la liste des dossiers › « Ajouter un nouveau flux RSS… », puis collez le lien. Il fonctionne aussi dans tout lecteur RSS.", "Le nouvel Outlook et Outlook sur le web ne lisent pas les flux RSS : utilisez dans ce cas un lecteur RSS."],
@@ -2012,16 +2014,18 @@
       per_arch: function (n, d) { return n + ' articles older than ' + d + ' are archived: they are loaded automatically when the chosen period starts before that date.'; },
       arch_loading: 'Loading archives…', arch_loaded: function (n) { return n + ' archived articles loaded.'; }, arch_ko: 'Archives unavailable.',
       pc_title: 'Key points',
-      pc_lead: 'Regulatory facts that may concern the company in one of its countries: deadline within 3 months, newly adopted text, text in preparation (proposal, bill, consultation), unknown text detected. Ranked by urgency: nearest deadlines and most recently detected texts first. An alert stays visible for 6 months (or until its deadline), even if nobody checks the watch in the meantime. Fixed rules, no generative AI.',
+      pc_lead: 'The 5 most urgent regulatory facts that may concern the company in one of its countries (up to 8 when urgent): deadline within 30 days, newly adopted text, text in preparation (proposal, bill, consultation), unknown text detected. A new text stays here for 4 weeks after detection; each new step (adoption, entry into force) creates a new alert, and its application date comes back here 30 days before. Everything else is in “Previous key points”. Fixed rules, no generative AI.',
       pc_empty: 'No current key point.', pc_rss: 'Subscribe (Outlook / RSS)',
       pc_types: { echeance: 'Deadline', adopte: 'Text adopted', signale: 'Flagged important', proposition: 'Text in preparation', a_qualifier: 'New text detected' },
-      pc_types_long: { echeance: 'Deadline within 3 months', adopte: 'New text adopted, published or in force', signale: 'Flagged as important by a reader', proposition: 'Proposal, bill, consultation, guidelines', a_qualifier: 'Text not in the list of tracked texts: to be assessed' },
+      pc_types_long: { echeance: 'Deadline within 30 days', adopte: 'New text adopted, published or in force', signale: 'Flagged as important by a reader', proposition: 'Proposal, bill, consultation, guidelines', a_qualifier: 'Text not in the list of tracked texts: to be assessed' },
       pc_new: 'New', pc_maj: 'Updated', pc_maj_t: 'New source since your last visit',
       pc_inconnu: 'Unknown text', pc_inconnu_t: 'This text is not in the list of tracked texts: spotted through strong signals (adopted, published, proposal…). To be assessed by a person.',
       pc_detecte: function (d) { return 'Detected on ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },
       pc_texte: 'Text: ', pc_toutes: function (n) { return 'All sources (' + n + ')'; }, pc_voir_veille: 'Show in the watch',
       pc_plus: function (n) { return 'Show ' + n + ' more key points'; }, pc_moins: 'Show less',
-      pc_prev: 'Previous key points', pc_prev_lead: 'Alerts whose display period is over (deadline passed or older than 6 months), by month.',
+      pc_prev: 'Previous key points', pc_prev_lead: 'Other current alerts, then finished alerts (shown for more than 4 weeks, or deadline passed), by month.',
+      pc_autres: function (n) { return 'Other current alerts (' + n + ')'; },
+      vis_passes: function (n) { return n + (n > 1 ? ' key points detected since your visit are already in “Previous key points”' : ' key point detected since your visit is already in “Previous key points”'); },
       pc_prev_n: function (n) { return '(' + n + ')'; }, pc_fin: function (d) { return 'until ' + d; },
       rss_titre: 'Subscribe to key points', rss_copier: 'Copy the link', rss_copie: 'Link copied',
       rss_corps: ['This link is an RSS feed of the key points, updated at each collection. Outlook (classic): right-click “RSS Feeds” in the folder list › “Add a New RSS Feed…”, then paste the link. It also works in any RSS reader.', 'The new Outlook and Outlook on the web do not read RSS feeds: use an RSS reader instead.'],
@@ -2093,7 +2097,7 @@
   function renderVisite() {
     var box = document.getElementById('visite-banner'); if (!box || !META.version) return;
     var nArt = ARTICLES.filter(function (a) { return estNouveau(a) && a.pertinence !== 'faible'; }).length;
-    var nPc = ALERTES.filter(function (x) { return alerteActive(x) && estNouvelleAlerte(x); }).length;
+    var nPc = ALERTES.filter(estNouvelleAlerte).length;
     var txt = VISITE.premiere ? t('vis_first')(nArt) : (nArt || nPc ? t('vis_new')(nArt, nPc, VISITE.libelle) : t('vis_none')(VISITE.libelle));
     box.textContent = '';
     box.appendChild(el('span', { text: txt }));
@@ -2105,13 +2109,20 @@
       });
       box.appendChild(b);
     }
+    // points clés détectés depuis la visite mais déjà hors des 5 à 8 affichés (absence de plusieurs semaines)
+    var sel = selectionPointsCles(), nPasses = sel.autres.concat(sel.prec).filter(estNouvelleAlerte).length;
+    if (nPasses && !VISITE.premiere) {
+      var bp = el('button', { type: 'button', className: 'linkbtn', text: t('vis_passes')(nPasses) });
+      bp.addEventListener('click', ouvrirPrecedents);
+      box.appendChild(bp);
+    }
     box.classList.toggle('visite-new', !!(nArt || nPc) && !VISITE.premiere);
     box.hidden = false;
   }
 
   /* ------------------------------------------------------------- points clés */
   var PRIO = { echeance: 1, adopte: 2, signale: 2, proposition: 3, a_qualifier: 4 };
-  function alerteActive(x) { return x.type === 'echeance' ? (x.echeance || '') >= AUJ_ISO : (x.fin || '') >= AUJ_ISO; }
+  function alerteActive(x) { return x.type === 'echeance' ? ((x.echeance || '') >= AUJ_ISO && joursJusqua(x.echeance) <= 30) : (x.fin || '') >= AUJ_ISO; }
   function estNouvelleAlerte(x) { return !!x.version && x.version > VISITE.ref; }
   function estMajAlerte(x) { return !estNouvelleAlerte(x) && !!x.version_maj && x.version_maj > VISITE.ref; }
   function critique(x) {
@@ -2195,33 +2206,43 @@
     }
     return el('article', { className: 'pc-card pc-c-' + x.type + (compacte ? ' pc-compacte' : '') + (nv ? ' pc-nouveau' : '') }, corps);
   }
+  // 5 points clés affichés (jusqu'à 8 s'il y a des urgences) ; les autres alertes en cours et les alertes
+  // terminées sont dans « Points clés précédents »
+  var SEL_PC = null;
+  function selectionPointsCles() {
+    if (SEL_PC) return SEL_PC;
+    var act = trierAlertes(ALERTES.filter(alerteActive));
+    var n = Math.min(8, Math.max(5, act.filter(critique).length));
+    SEL_PC = { top: act.slice(0, n), autres: act.slice(n), prec: ALERTES.filter(function (x) { return !alerteActive(x); }) };
+    return SEL_PC;
+  }
+  function ouvrirPrecedents() {
+    var det = document.getElementById('pc-precedents');
+    location.hash = '#essentiel'; det.open = true;
+    setTimeout(function () { det.scrollIntoView({ block: 'start' }); }, 80);
+  }
   function renderPointsCles() {
-    var liste = document.getElementById('pc-liste'), plus = document.getElementById('pc-plus');
+    var liste = document.getElementById('pc-liste');
     var leg = document.getElementById('pc-legende');
     ['echeance', 'adopte', 'proposition', 'a_qualifier'].forEach(function (k, i) {
       leg.appendChild(el('span', { className: 'pc-leg' }, [el('span', { className: 'pc-type pc-t-' + k, text: String(i + 1) }), el('span', { text: t('pc_types_long')[k] })]));
     });
-    var act = trierAlertes(ALERTES.filter(alerteActive));
-    var nCrit = act.filter(critique).length, n = Math.min(12, Math.max(8, nCrit));
-    document.getElementById('pc-vide').hidden = act.length > 0;
-    var caches = [];
-    act.forEach(function (x, i) { var c = carteAlerte(x, false); if (i >= n) { c.hidden = true; caches.push(c); } liste.appendChild(c); });
-    if (caches.length) {
-      var ouvert = false; plus.hidden = false; plus.textContent = t('pc_plus')(caches.length);
-      plus.addEventListener('click', function () {
-        ouvert = !ouvert; caches.forEach(function (c) { c.hidden = !ouvert; });
-        plus.textContent = ouvert ? t('pc_moins') : t('pc_plus')(caches.length);
-      });
-    }
-    // points clés précédents : construits à l'ouverture
-    var prec = ALERTES.filter(function (x) { return !alerteActive(x); });
-    document.getElementById('pc-prev-n').textContent = t('pc_prev_n')(prec.length);
+    var sel = selectionPointsCles();
+    document.getElementById('pc-vide').hidden = sel.top.length > 0;
+    sel.top.forEach(function (x) { liste.appendChild(carteAlerte(x, false)); });
+    var nPrec = sel.autres.length + sel.prec.length;
+    document.getElementById('pc-prev-n').textContent = t('pc_prev_n')(nPrec);
     var det = document.getElementById('pc-precedents'), fait = false;
-    det.hidden = !prec.length;
+    det.hidden = !nPrec;
     det.addEventListener('toggle', function () {
       if (!det.open || fait) return; fait = true;
       var box = document.getElementById('pc-prev-liste'), mois = null, grille = null;
-      prec.map(function (x) { return { x: x, d: x.type === 'echeance' ? x.echeance : (x.maj_le || x.detecte_le || '') }; })
+      if (sel.autres.length) {   // encore d'actualité, mais au-delà des 5 à 8 points affichés
+        box.appendChild(el('h3', { className: 'sub-title', text: t('pc_autres')(sel.autres.length) }));
+        grille = el('div', { className: 'pc-liste pc-liste-compacte' }); box.appendChild(grille);
+        sel.autres.forEach(function (x) { grille.appendChild(carteAlerte(x, true)); });
+      }
+      sel.prec.map(function (x) { return { x: x, d: x.type === 'echeance' ? x.echeance : (x.detecte_le || '') }; })
         .sort(function (p, q) { return p.d < q.d ? 1 : -1; })
         .forEach(function (p) {
           var m = moisAnnee(p.d);

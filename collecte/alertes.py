@@ -6,13 +6,15 @@ l'entreprise dans un de ses pays (ou au niveau européen). Plusieurs articles su
 le même fait (même texte, même pays, même étape) forment UNE alerte.
 
 Types (ordre de priorité affiché sur le site) :
-  1. echeance     échéance d'un texte dans les 3 mois (date d'obligation, jamais un événement)
+  1. echeance     échéance d'un texte dans les 30 jours (date d'obligation, jamais un événement)
   2. adopte       nouveau texte adopté, publié ou entrant en vigueur
   2. signale      jugé « important » par un lecteur
   3. proposition  proposition, projet de loi, consultation ou lignes directrices officielles
   4. a_qualifier  nouveau texte INCONNU (absent de la liste des textes suivis) repéré par
                   des signaux forts : à qualifier par un humain
-Une alerte reste affichée 6 mois après son dernier article (ou jusqu'à son échéance),
+Une alerte reste affichée 4 semaines après sa PREMIÈRE détection (un nouvel article sur le même
+fait ne la prolonge pas ; une nouvelle étape — adopté, entrée en vigueur… — crée une nouvelle alerte).
+Une échéance est affichée pendant les 30 jours qui la précèdent. Ensuite :
 puis passe dans « Points clés précédents ». Le registre (data/alertes.json) garde la
 date de première détection : « Nouveau » sur le site = détecté depuis la dernière visite.
 """
@@ -25,8 +27,8 @@ import re
 
 import regles
 
-DUREE_ACTIVE = 183          # jours d'affichage après le dernier article
-HORIZON_ECHEANCE = 90       # échéances retenues comme alertes : dans les 3 mois
+DUREE_ACTIVE = 28           # jours d'affichage après la première détection (4 collectes)
+HORIZON_ECHEANCE = 30       # une échéance devient une alerte 30 jours avant sa date
 GARDE_ARCHIVES = 730        # « Points clés précédents » : 2 ans
 
 TYPE_STATUT = {"adopte": "adopte", "en_vigueur": "adopte", "projet": "proposition",
@@ -133,7 +135,9 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None):
         if not t:
             continue
         texte = (a.get("textes_cles") or [""])[0]
-        etape = "proposition" if t == "proposition" else ("adopte" if t in ("adopte", "signale") else t)
+        # une étape = une alerte : proposition, lignes directrices, adoption, entrée en vigueur
+        etape = {"projet": "proposition", "consultation": "proposition", "lignes_directrices": "orientation",
+                 "en_vigueur": "en_vigueur"}.get(a.get("statut") or "", "adopte" if t in ("adopte", "signale") else t)
         if t == "a_qualifier" or not texte:
             cle = "art|" + a["id"]
         else:
@@ -188,8 +192,11 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None):
         if g["type"] == "echeance":
             fin = ex["echeance"]
         else:
-            base_fin = max(_date(dernier) or aujourdhui, _date(maj) or aujourdhui)
-            fin = (base_fin + dt.timedelta(days=DUREE_ACTIVE)).isoformat()
+            # départ = première détection, sauf information ancienne retrouvée tard (rattrapage d'archives) :
+            # on part alors de sa publication (+ 14 jours de marge pour les sources lentes)
+            premiere_pub = _date(min([a.get("date", "") for a in arts if a.get("date")] or [detecte]))
+            depart = min(_date(detecte) or aujourdhui, (premiere_pub or aujourdhui) + dt.timedelta(days=14))
+            fin = (depart + dt.timedelta(days=DUREE_ACTIVE)).isoformat()
         al = {"id": ident, "type": g["type"], "texte": ex.get("texte", ""), "inconnu": ex.get("inconnu", False),
               "zone": ex.get("zone") or (arts[0].get("zone", "") if arts else ""), "detecte_le": detecte, "maj_le": maj,
               "date": dernier, "fin": fin, "version": version, "version_maj": versions[-1] if versions else "", "articles": [_apercu(a) for a in arts[:6]], "nb_articles": len(arts),

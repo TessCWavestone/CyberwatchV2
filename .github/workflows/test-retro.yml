@@ -1,12 +1,19 @@
-# Cyber Watch — test rétrospectif « à l'aveugle » (NIS2, CRA, AI Act, EHDS, ENS)
+# Cyber Watch — test rétrospectif « à l'aveugle » (v6)
 # Lancement à la main : Actions › « Cyber Watch - test rétrospectif » › Run workflow.
 # Ne modifie ni les données ni le site : le rapport s'affiche dans le résumé de l'exécution
 # (page de l'exécution, en bas) et se télécharge dans « Artifacts ».
+#
+# Teste les mêmes publications réelles de trois façons : mots seuls (v5), + classement par le sens,
+# + lecture de la page ; puis « qui est concerné » et le bruit sur les vraies données des 120 derniers jours.
 
 name: Cyber Watch - test rétrospectif
 
 on:
   workflow_dispatch:
+    inputs:
+      modes:
+        description: "Façons de lire (mots, sens, page)"
+        default: "mots,sens,page"
 
 permissions:
   contents: read
@@ -14,7 +21,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -23,24 +30,27 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Installer les dépendances et le modèle de pertinence
+      - name: Installer les dépendances et les modèles (pertinence + sens)
         run: |
           pip install -r requirements.txt
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-pertinence.txt
 
-      - name: Garder en cache le modèle
+      - name: Garder en cache les modèles
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
-          key: modele-pertinence-test-v1
+          key: modeles-test-v6
 
-      - name: Lancer le test (vraie note du modèle)
+      - name: Lancer le test
+        env:
+          MODES: ${{ inputs.modes }}
         run: |
           python tests/retro/test_aveugle.py
           cat tests/retro/rapport.md >> "$GITHUB_STEP_SUMMARY"
 
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: test-retrospectif
           path: |

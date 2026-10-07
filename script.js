@@ -638,6 +638,7 @@
     ajout(foot, badgePert(a));
     if (a.essentiel) ajout(foot, badge('badge-ess', t('badge_ess')));
     if (a.essentiel && a.a_verifier) ajout(foot, badge('badge-verif', t('badge_verif'), t('verif_title')));
+    if ((a.concernes || {}).hors_perimetre) ajout(foot, badge('badge-hors', t('hors_badge'), t('hors_title')));
     var pe = prochaineEcheance(a);
     if (pe) ajout(foot, badge('badge-urgent', (pe.approx ? t('approx') + ' ' : '') + dateCourte(pe.date)));
     ajout(foot, badgeAmende(a));
@@ -663,7 +664,7 @@
       statut: a.statut || '', amende: a.amende ? (a.amende.plafond ? 'plafond' : 'prononcee') : '',
       theme: sujetsDe(a, 'textes').map(function (c) { return 's:' + c; }), autorite: sujetsDe(a, 'autorites').map(function (c) { return 's:' + c; }),
       grand: (a.pertinence !== 'faible' ? (a.themes || []) : []).map(function (x) { return 'g:' + x; }),
-      codes: sujetsDe(a), brut: [a.titre, a.resume, tx.aff.titre, tx.aff.resume].join(' \n '), date: a.date || '', nouveau: estNouveau(a),
+      codes: sujetsDe(a), brut: [a.titre, a.resume, tx.aff.titre, tx.aff.resume].join(' \n '), date: a.date || '', nouveau: estNouveau(a), id: a.id,
       recent: estRecent(a), rang: rangVersion(a), version: a.version || '',
       texte: normaliser([a.titre, a.resume, tx.aff.titre, tx.aff.resume, a.source, nomZone(a.zone), (a.tags || []).join(' '), themes.map(libelleTheme).join(' ')].join(' '))
     };
@@ -677,6 +678,7 @@
         a.amende ? el('p', { className: 'why-meta', text: texteAmende(a) }) : null,
         a.payant ? el('p', { className: 'why-meta', text: t('rkc_extrait') }) : null
       ]));
+      var bc = blocConcernes(a.concernes, a.source, a.lien); if (bc) parts.push(bc);
       if ((a.echeances || []).length) {
         var ul = el('ul', { className: 'ech-list' });
         a.echeances.forEach(function (e) {
@@ -802,7 +804,7 @@
   }
 
   /* ---------------------------------------------------------------- filtres */
-  var etatFiltres = { fenetre: 'recent', tri: 'date', q: [], exact: [], versionMax: null, versionSeule: '', du: '', au: '', depuisVisite: false };
+  var etatFiltres = { fenetre: 'recent', tri: 'date', q: [], exact: [], versionMax: null, versionSeule: '', du: '', au: '', depuisVisite: false, ids: null, idsLibelle: '' };
   function selection(facet) {
     return Array.prototype.slice.call(document.querySelectorAll('input[data-facet="' + facet + '"]:checked')).map(function (i) { return i.value; });
   }
@@ -854,6 +856,7 @@
       if (f.rang === undefined) { if (etatFiltres.versionSeule) return false; }
       else if (f.rang > etatFiltres.versionMax || (etatFiltres.versionSeule && f.version !== etatFiltres.versionSeule)) return false;
     }
+    if (etatFiltres.ids) return !!etatFiltres.ids[f.id];   // articles liés à un point clé : aucun autre filtre
     if (etatFiltres.du || etatFiltres.au) {   // période choisie : remplace « Nouveautés / Archives »
       if (!f.date || (etatFiltres.du && f.date < etatFiltres.du) || (etatFiltres.au && f.date > etatFiltres.au)) return false;
     } else if (!etatFiltres.q.length && !etatFiltres.exact.length && etatFiltres.versionMax === null && !etatFiltres.depuisVisite) {
@@ -924,10 +927,10 @@
     document.getElementById('n-recent').textContent = nRecent;
     document.getElementById('n-archives').textContent = nArch;
     var periode = etatFiltres.du || etatFiltres.au;
-    document.getElementById('window-note').textContent = periode ? t('window_periode')(etatFiltres.du ? dateLongue(etatFiltres.du) : '…', etatFiltres.au ? dateLongue(etatFiltres.au) : t('per_auj'))
+    document.getElementById('window-note').textContent = etatFiltres.ids ? t('window_lies')(etatFiltres.idsLibelle) : periode ? t('window_periode')(etatFiltres.du ? dateLongue(etatFiltres.du) : '…', etatFiltres.au ? dateLongue(etatFiltres.au) : t('per_auj'))
       : etatFiltres.depuisVisite ? t('window_visite')(VISITE.libelle) : etatFiltres.q.length ? '' : (etatFiltres.fenetre === 'recent' ? t('window_recent')(JOURS_RECENT) : t('window_archives')(JOURS_RECENT));
     Array.prototype.forEach.call(document.querySelectorAll('#fenetre button'), function (b) { b.disabled = !!(periode || etatFiltres.depuisVisite); });
-    var base = (etatFiltres.q.length || periode || etatFiltres.depuisVisite) ? total : (etatFiltres.fenetre === 'recent' ? nRecent : nArch);
+    var base = (etatFiltres.q.length || periode || etatFiltres.depuisVisite || etatFiltres.ids) ? total : (etatFiltres.fenetre === 'recent' ? nRecent : nArch);
     document.getElementById('result-count').textContent = t('shown')(visibles, base);
     document.getElementById('empty-state').hidden = visibles !== 0 || !cartes.length;
     var sn = document.getElementById('surveiller-note');
@@ -960,7 +963,7 @@
     document.getElementById('reset-filters').addEventListener('click', function () {
       Array.prototype.forEach.call(document.querySelectorAll('input[data-facet]'), function (i) { i.checked = false; });
       document.getElementById('recherche').value = ''; etatFiltres.q = []; etatFiltres.exact = [];
-      etatFiltres.du = etatFiltres.au = ''; etatFiltres.depuisVisite = false;
+      etatFiltres.du = etatFiltres.au = ''; etatFiltres.depuisVisite = false; etatFiltres.ids = null;
       document.getElementById('per-du').value = document.getElementById('per-au').value = ''; document.getElementById('depuis-visite').checked = false;
       appliquerFiltres();
     });
@@ -1939,6 +1942,11 @@
   var T5 = {
     fr: {
       new_title: 'Nouveau depuis votre dernière visite',
+      window_lies: function (x) { return 'Articles liés au point clé : ' + x + '. « Tout effacer » pour revenir à la veille complète.'; },
+      pc_lies: function (n) { return 'Autres articles sur ce sujet : ' + n; },
+      conc_titre: 'Qui est concerné (d’après l’article)', conc_source: 'Source : ',
+      hors_badge: 'Hors périmètre ?', hors_title: 'D’après l’article, ce texte ne vise que des acteurs hors du périmètre de l’entreprise (ex. banques, administrations) : il n’est pas remonté en point clé.',
+      hors_note: 'ne vise a priori pas l’entreprise', extrait_page: 'Début de l’article : ',
       pert_degradee: "⚠️ Lors de la dernière collecte, le modèle de pertinence n'a pas pu être installé : le tri s'est fait avec les seuls mots-clés, ce qui repère beaucoup moins bien les textes nouveaux. Relancez une collecte.",
       vis_first: function (n) { return 'Bienvenue : les articles des 7 derniers jours sont marqués « Nouveau » (' + n + ').'; },
       vis_new: function (n, p, d) { return n + (n > 1 ? ' nouveautés' : ' nouveauté') + ' depuis votre dernière visite (' + d + ')' + (p ? ', dont ' + p + (p > 1 ? ' points clés' : ' point clé') : '') + '.'; },
@@ -2004,6 +2012,11 @@
     },
     en: {
       new_title: 'New since your last visit',
+      window_lies: function (x) { return 'Articles related to the key point: ' + x + '. “Clear all” to go back to the full watch.'; },
+      pc_lies: function (n) { return 'Other articles on this topic: ' + n; },
+      conc_titre: 'Who is concerned (according to the article)', conc_source: 'Source: ',
+      hors_badge: 'Out of scope?', hors_title: 'According to the article, this text only targets actors outside the company’s scope (e.g. banks, public administrations): it was not raised as a key point.',
+      hors_note: 'does not seem to target the company', extrait_page: 'Start of the article: ',
       pert_degradee: '⚠️ During the last collection, the relevance model could not be installed: sorting used keywords only, which is much weaker at spotting new texts. Please run a new collection.',
       vis_first: function (n) { return 'Welcome: articles from the last 7 days are marked “New” (' + n + ').'; },
       vis_new: function (n, p, d) { return n + (n > 1 ? ' new items' : ' new item') + ' since your last visit (' + d + ')' + (p ? ', including ' + p + (p > 1 ? ' key points' : ' key point') : '') + '.'; },
@@ -2175,6 +2188,26 @@
     var c = document.getElementById('a-' + id);
     if (c) { ouvrir(c, true); setTimeout(function () { c.scrollIntoView({ block: 'start' }); }, 120); }
   }
+  /* « Qui est concerné » : seulement si l'article le dit et que le classifieur l'a confirmé (sinon rien) */
+  function blocConcernes(c, source, lien) {
+    if (!c || !(c.acteurs || []).length) return null;
+    var lib = (META.acteurs || {});
+    var noms = c.acteurs.map(function (k) { return (lib[k] || {})[LANG] || k; });
+    return el('div', { className: 'concernes' + (c.hors_perimetre ? ' concernes-hors' : '') }, [
+      el('p', { className: 'why-title', text: t('conc_titre') }),
+      el('p', { className: 'conc-acteurs', text: noms.join(' · ') + (c.hors_perimetre ? ' — ' + t('hors_note') : '') }),
+      el('p', { className: 'why-meta' }, [t('conc_source'), lien ? el('a', { href: lien, target: '_blank', rel: 'noopener noreferrer', text: source || lien }) : (source || '')])
+    ]);
+  }
+  function voirLies(x, ids) {
+    Array.prototype.forEach.call(document.querySelectorAll('input[data-facet]'), function (i) { i.checked = false; });
+    document.getElementById('recherche').value = ''; etatFiltres.q = []; etatFiltres.exact = [];
+    etatFiltres.ids = {}; ids.concat((x.articles || []).map(function (a) { return a.id; })).forEach(function (id) { etatFiltres.ids[id] = 1; });
+    etatFiltres.idsLibelle = titreAlerte(x);
+    montrerFaible = true;
+    appliquerFiltres();
+    if (location.hash !== '#veille') location.hash = '#veille'; else afficherOnglet('veille');
+  }
   function carteAlerte(x, compacte) {
     var lien = lienAlerte(x), titre = titreAlerte(x), nv = estNouvelleAlerte(x), maj = estMajAlerte(x);
     var haut = el('div', { className: 'pc-top' }, [
@@ -2206,6 +2239,13 @@
             ap.lien ? el('a', { href: ap.lien, target: '_blank', rel: 'noopener noreferrer', text: titreApercu(ap) }) : titreApercu(ap)]));
         });
         corps.push(el('details', { className: 'pc-details' }, [el('summary', { text: t('pc_toutes')(x.nb_articles) }), ul]));
+      }
+      var bcx = blocConcernes(x.concernes, (x.concernes || {}).source, (x.concernes || {}).lien); if (bcx) corps.push(bcx);
+      var lies = (x.lies || []).filter(function (id) { return ARTICLES_PAR_ID[id]; });
+      if (lies.length) {
+        var bl = el('button', { type: 'button', className: 'linkbtn pc-voir', text: t('pc_lies')(lies.length) + ' ›' });
+        bl.addEventListener('click', function () { voirLies(x, lies); });
+        corps.push(bl);
       }
       if (arts[0] && ARTICLES_PAR_ID[arts[0].id]) {
         var v = el('button', { type: 'button', className: 'linkbtn pc-voir', text: t('pc_voir_veille') + ' ›' });

@@ -245,5 +245,6 @@
     "Medicines agency recommends approval of a new medicinal product for migraine."
    ]
   }
- ]
+ ],
+ "modele_sens": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
 }

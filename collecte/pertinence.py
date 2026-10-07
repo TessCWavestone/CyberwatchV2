@@ -94,7 +94,7 @@ class Pertinence:
                     brut = a["_texte"]
                     morceaux = [a["titre"] + ". " + brut[i:i + 600] for i in range(0, min(len(brut), 6000), 550)] or [a["titre"]]
                 else:
-                    t = (a["titre"] + ". " + (a.get("resume") or ""))[:700]
+                    t = (a["titre"] + ". " + (a.get("resume") or ""))[:900]
                     en = (a.get("trad") or {}).get("en") or {}
                     if en.get("titre") and en["titre"] != a["titre"]:
                         t += " / " + en["titre"]

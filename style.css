@@ -518,3 +518,11 @@ a.as-titre:hover { text-decoration: underline; }
 @media (max-width: 560px) { .assistant { width: 100vw; border-left: 0; } .btn-assistant span:last-child { display: none; } }
 .mast-tools { flex-wrap: wrap; justify-content: flex-end; }
 @media (max-width: 560px) { .mast-tools { width: 100%; justify-content: flex-start; } }
+
+/* ------------------------------------------------------------ v6 : qui est concerné, hors périmètre */
+.concernes { margin: 8px 0 4px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 var(--radius) var(--radius) 0; }
+.concernes .why-title { margin: 0 0 2px; }
+.conc-acteurs { margin: 0; font-weight: 600; font-size: 14px; }
+.conc-phrase { margin: 4px 0; font-size: 13px; color: var(--ink-mid); font-style: italic; overflow-wrap: anywhere; }
+.concernes-hors { border-left-color: var(--warn); background: var(--warn-soft); }
+.badge-hors { color: var(--warn); background: var(--warn-soft); border-color: #e3c78a; }

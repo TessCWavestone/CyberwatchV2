@@ -361,6 +361,33 @@ collaboratrices du dépôt (voir « Ajouter ou retirer une source » plus bas).
 - **Résumés** : aucun résumé n'est rédigé par une IA. Le texte affiché est
   celui publié par la source (chapeau du flux RSS ou de la page).
 
+## Comprendre au-delà des mots (v6)
+
+Les titres de flux sont souvent vagues. Depuis la v6, la collecte ne dépend plus seulement des mots :
+
+- **Lecture de la page** : pour les articles récents (60 jours, 400 pages par collecte au plus), la collecte lit la
+  page de l'article, si le site l'autorise (robots.txt respecté, pas de contournement de connexion ni de paywall),
+  uniquement pour mieux le classer. Rien du texte de la page n'est enregistré ni affiché sur le site : seuls sont
+  gardés la note de pertinence, le classement par le sens et quelques indices (textes cités, signal réglementaire).
+- **Classement par le sens** : un modèle open source gratuit (mDeBERTa multilingue, famille « NLI » : il répond
+  oui / non à une question, il ne rédige rien) dit si l'article parle d'une règle ou d'un projet de règle, sur notre
+  sujet, ou d'une attaque / d'un événement. Il complète les mots : un texte inconnu au vocabulaire inhabituel peut
+  être reconnu. Si le modèle ne s'installe pas, la collecte continue avec les mots et la note de pertinence.
+- **Qui est concerné** : catégories d'acteurs affichées (sans citation de l'article) seulement si une phrase de l'article le dit et que le modèle en est sûr (≥ 90 %).
+  Si toutes les catégories trouvées sont hors périmètre (banques et assurances, administrations, télécoms), l'article
+  porte le badge « hors périmètre » et ne devient pas un point clé. Sinon rien n'est affiché.
+- **Autres articles sur ce sujet** : chaque point clé indique combien d'articles des 12 derniers mois parlent du même
+  texte ; un clic les affiche dans l'onglet Veille.
+
+Temps ajouté à la collecte : environ 20 à 30 minutes (dans le temps gratuit de GitHub Actions). Réglages :
+`config/veille.json` (`lecture_pages_max`, `lecture_pages_jours`, `sens_max_articles`, `sens_budget_secondes`).
+
+**Test rétrospectif** : Actions › « Cyber Watch - test rétrospectif » › Run workflow (≈ 30 à 60 minutes). Il rejoue
+de vraies publications de 10 textes (NIS2, CRA, AI Act, EHDS, ENS, DORA, Data Act, CER, PLD, loi britannique)
+« à l'aveugle » de trois façons (mots seuls, + sens, + page), vérifie « qui est concerné » sur des phrases dont la
+réponse est connue, et mesure le nombre de nouveaux points clés par mois sur les vraies données. Le rapport s'affiche
+en bas de la page de l'exécution.
+
 ## Utilisation au quotidien
 
 **Ajouter ou retirer une source depuis le site.** Onglet **Sources** :

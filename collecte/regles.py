@@ -253,7 +253,7 @@ BRUIT = [
         r"legal leaders|top \d+ (lawyers|firms)|ranking of")),
     ("marchés / entreprises", _rx(
         r"funding round|raises? \$|leve \d|levee de fonds|\bacquisition\b|\bacquires?\b|\bmerger\b|\bfusion\b|"
-        r"partnership with|partenariat avec|\blaunch(es)?\b|lance (son|sa|une|un)|new product|market (size|report|growth|share)|"
+        r"partnership with|partenariat avec|\blaunch(es|ed)?\b(?! (a |an |the |its |new )?(public |targeted |open )?(consultation|call|initiative|review|evaluation|survey|procedure|investigation|dialogue))|lance (son|sa)|new product|market (size|report|growth|share)|"
         r"\bCAGR\b|stock|shares|earnings|quarterly results|chiffre d'affaires|\bIPO\b|credit rating|marketsandmarkets|"
         r"press release.{0,20}(announces|launch)|announces? (new|the launch)")),
     ("finance / banque", _rx(
@@ -341,13 +341,21 @@ SIGNAL_FORT = _rx(
     r"σχεδιο νομου|νομοσχεδιο|bill (introduced|published|tabled)|"
     # v5.1 : un acte numéroté est un texte adopté (titres du Journal officiel : « Directive (EU) 2022/2555 … »)
     r"\b(directive|regulation|decision|reglement|richtlinie|verordnung|directiva|reglamento|direttiva|regolamento)\s*\((eu|ue)\)\s*(no\s*)?\d{4}/\d+|"
-    r"real decreto \d+/\d{4}|decreto legislativo,? \d|decreto-lei n|gesetz zur umsetzung|\bwet van \d|ustawa z dnia)", )
+    r"real decreto \d+/\d{4}|decreto legislativo,? \d|decreto-lei n|gesetz zur umsetzung|\bwet van \d|ustawa z dnia|"
+    # v6 : étapes de la procédure législative (valables pour n'importe quel texte)
+    r"\badopts?\b|negotiating (mandate|position)|general approach|common position|(political|provisional) (agreement|deal)|"
+    r"strike a deal|reach(es|ed)? (a )?(deal|agreement)|trilogue|first reading|new (eu )?rules|new (eu )?law|"
+    r"mandat de negociation|orientation generale|accord (provisoire|politique)|nouvelles regles|premiere lecture|"
+    r"allgemeine ausrichtung|vorlaufige einigung|politische einigung|trilog|neue regeln|"
+    r"orientacion general|acuerdo (provisional|politico)|nuevas normas|orientamento generale|accordo (provvisorio|politico)|nuove norme)", )
 
 # Statut d'un texte, déduit du titre / résumé (multilingue, prudent)
 STATUTS = [
     ("consultation", _rx(r"consultation|call for evidence|have your say|consulta publica|konsultation|consultatie|"
                          r"horing|remiss|lausunto|konsultacj|konzultac|διαβουλευση|consultazione")),
-    ("projet", _rx(r"\bdraft\b|proposal|proposition de|projet de (loi|decret|texte|reglement)|\bentwurf|referentenentwurf|"
+    ("projet", _rx(r"negotiating (mandate|position)|general approach|common position|(political|provisional) (agreement|deal)|"
+                   r"strike a deal|trilogue|mandat de negociation|orientation generale|accord (provisoire|politique)|"
+                   r"\bdraft\b|proposal|proposition de|projet de (loi|decret|texte|reglement)|\bentwurf|referentenentwurf|"
                    r"anteproyecto|proyecto de (ley|real decreto|r\.? ?d\.?\b)|wetsvoorstel|lovforslag|projekt ustawy|navrh zakona|"
                    r"tervezet|disegno di legge|proposta de lei|\bbill\b")),
     ("adopte", _rx(r"adopted|adopte|published in the official journal|journal officiel|promulg|verkundet|"
@@ -365,9 +373,34 @@ def texte_article(a):
     parties = [a.get("titre", ""), a.get("resume", "")]
     en = ((a.get("trad") or {}).get("en") or {})
     parties += [en.get("titre", ""), en.get("resume", "")]
-    if a.get("_texte"):
-        parties.append(a["_texte"][:4000])
+    # v6 : le texte de la page n'est jamais enregistré ni affiché ; ce qu'il apporte est gardé sous forme
+    # d'indices (a['indices_page'], voir indices_page) et de note / classement par le sens.
     return _sa(" \n ".join(p for p in parties if p))
+
+
+# --------------------------------------------------------------------------- compréhension par le sens (v6)
+# Probabilités données par le classifieur « par le sens » (collecte/sens.py) : elles complètent les listes de
+# mots — un article peut être reconnu comme « nouvelle règle sur notre sujet » sans contenir aucun mot attendu.
+SEUIL_SENS = 0.80
+
+
+LONGUEUR_INDICES = 1500   # début de la page : une simple mention en bas de page ne suffit pas
+
+
+def indices_page(texte):
+    """Indices tirés du début de la page de l'article (lue une seule fois, jamais enregistrée) : textes clés
+    cités, signal réglementaire, sujet, statut. Seuls ces indices (pas le texte) sont gardés dans les données,
+    pour que le jugement reste le même d'une collecte à l'autre."""
+    t = _sa(texte[:LONGUEUR_INDICES])
+    ind = {"tc": [x[0] for x in textes_cles(t)], "sig": bool(SIGNAL.search(t)), "sig_net": bool(SIGNAL_NET.search(t)),
+           "sig_fort": bool(SIGNAL_FORT.search(t)), "sujet": bool(SUJET.search(t)), "sujet_fort": bool(SUJET_FORT.search(t)),
+           "statut": statut(t)}
+    return {k: v for k, v in ind.items() if v}
+
+
+def lire_sens(a):
+    x = a.get("sens") or {}
+    return {k: x.get(k, 0) >= SEUIL_SENS for k in ("reg", "projet", "adopte", "sujet", "bruit")}
 
 
 def textes_cles(texte):
@@ -391,11 +424,19 @@ def statut(texte):
 
 def evaluer(a, seuils, score_neg=None):
     """Décide du niveau final d'un article déjà noté (a['score']).
-    Retourne un dict : niveau, essentiel, a_verifier, textes_cles, bruit, motif."""
+    Trois sources d'indices, combinées : les mots (listes multilingues), la note du modèle de pertinence et,
+    s'il a tourné, le classifieur par le sens (a['sens']). Retourne : niveau, essentiel, a_verifier, textes_cles,
+    bruit, motif, statut."""
     t = texte_article(a)
     tc = textes_cles(t)
-    br = bruits(t)
-    sig = bool(SIGNAL.search(t))
+    br = bruits(t)            # le bruit se juge sur le titre et le résumé seulement (pas sur la page)
+    sn = lire_sens(a)
+    ip = a.get("indices_page") or {}
+    par_id = {x[0]: x[:3] for x in TEXTES_CLES}
+    tc += [par_id[i] for i in ip.get("tc", []) if i in par_id and all(i != x[0] for x in tc)]
+    sig = bool(SIGNAL.search(t)) or sn["reg"] or bool(ip.get("sig"))
+    sig_net = bool(SIGNAL_NET.search(t)) or sn["reg"] or bool(ip.get("sig_net"))
+    sig_fort = bool(SIGNAL_FORT.search(t)) or (sn["reg"] and (sn["projet"] or sn["adopte"])) or bool(ip.get("sig_fort"))
     nature = a.get("nature", "presse")
     officiel = nature == "officielle"
     zone = a.get("zone", "")
@@ -405,24 +446,34 @@ def evaluer(a, seuils, score_neg=None):
     s = a.get("score") or 0
     haut, moy, bas = seuils.get("elevee", 0.55), seuils.get("moyenne", 0.45), seuils.get("bas", 0.33)
     # « sens fort » : le modèle juge le texte très proche des thèmes suivis, même sans aucun mot attendu
-    # (un futur texte au vocabulaire inconnu) — seuil réglable dans config/profil_pertinence.json
     tres_haut = seuils.get("tres_haut", round(haut + 0.15, 2))
-    sens_fort = s >= tres_haut
+    sens_fort = s >= tres_haut or (sn["sujet"] and sn["reg"] and s >= haut)
     if score_neg is not None and score_neg > s + 0.02:   # le modèle rapproche l'article d'un thème « bruit »
         br = br or ["proche d'un thème hors sujet (modèle)"]
+    # le classifieur par le sens corrige les listes de mots dans les deux sens
+    if br and sn["reg"] and sn["sujet"] and not sn["bruit"]:
+        br = [b for b in br if b.split(" ")[0] in ("événements", "vœux", "hors")]   # « launches », « acquisition »… ignorés
+    elif not br and sn["bruit"] and not sn["reg"] and not tc:
+        br = ["hors sujet (sens)"]
+    statut_t = statut(t) or ip.get("statut", "") or ("projet" if sn["projet"] and not sn["adopte"] else ("adopte" if sn["adopte"] else ""))
 
     europe_cite = bool(EUROPE_SUJET.search(t))
     hors_eu = (hors_eu_source and not europe_cite) or (hors_eu_sujet and not europe_cite)
-    sujet = bool(SUJET.search(t))
+    sujet = bool(SUJET.search(t)) or sn["sujet"] or bool(ip.get("sujet"))
+    sujet_fort = bool(SUJET_FORT.search(t)) or sn["sujet"] or bool(ip.get("sujet_fort"))
     motif = ""
     br_forts = [b for b in br if b.split(" ")[0] in ("événements", "vœux", "marchés", "hors", "sensibilisation")]
     jo = bool(JOURNAL_OFFICIEL.search(a.get("source", "")))
     informatif = len(re.findall(r"\w{3,}", t)) >= 8   # titre + résumé assez parlants pour juger
-    if jo and (BRUIT_JO.search(t) or (informatif and not tc and not SUJET_FORT.search(t) and not sens_fort)):
-        niveau = "ecarte"
-        motif = "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
-        return {"niveau": niveau, "essentiel": False, "a_verifier": False, "textes_cles": [x[0] for x in tc], "bruit": br,
-                "motif": motif, "rubrique_texte": None, "statut": statut(t)}
+    if jo and (BRUIT_JO.search(t) or (informatif and not tc and not sujet_fort and not sens_fort)):
+        # v6 : un acte numéroté jugé proche par le modèle n'est plus écarté : gardé « à surveiller »
+        if not BRUIT_JO.search(t) and SIGNAL_FORT.search(t) and s >= haut:
+            return {"niveau": "faible", "essentiel": False, "a_verifier": False, "textes_cles": [x[0] for x in tc], "bruit": br,
+                    "motif": "journal officiel : acte proche du sujet, à vérifier", "rubrique_texte": None, "statut": statut_t,
+                    "sens_fort": False}
+        return {"niveau": "ecarte", "essentiel": False, "a_verifier": False, "textes_cles": [x[0] for x in tc], "bruit": br,
+                "motif": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique",
+                "rubrique_texte": None, "statut": statut_t, "sens_fort": False}
     if tc:
         # texte clé cité : jamais écarté ; mais un article « vie des entreprises » ou « événement »
         # qui cite le CRA en passant reste « pertinent » et n'entre pas dans L'essentiel
@@ -432,15 +483,14 @@ def evaluer(a, seuils, score_neg=None):
         niveau, motif = "ecarte", "sujet hors Europe sans portée mondiale"
     elif br and not officiel:
         niveau, motif = "ecarte", "hors sujet : " + ", ".join(br)
-    elif br and not (SIGNAL_NET.search(t) and SUJET_FORT.search(t)):
+    elif br and not (sig_net and sujet_fort):
         # même venant d'une source officielle : alertes de vulnérabilités, événements, vœux, police… sont écartés
-        # (restent consultables dans la liste des écartés)
         niveau, motif = "ecarte", "source officielle, hors sujet : " + ", ".join(br)
     elif br:
         niveau, motif = "faible", "source officielle, sujet secondaire : " + ", ".join(br)
-    elif sujet and SIGNAL_NET.search(t) and s >= haut:
+    elif sujet and sig_net and s >= haut:
         niveau = "elevee"
-    elif officiel and sens_fort and (SIGNAL_NET.search(t) or SIGNAL_FORT.search(t)):
+    elif officiel and sens_fort and (sig_net or sig_fort):
         niveau = "elevee"   # source officielle + signal réglementaire + sens très proche (sans mot attendu)
     elif sujet and s >= moy and (sig or officiel):
         niveau = "moyenne"
@@ -464,11 +514,11 @@ def evaluer(a, seuils, score_neg=None):
         if tier_a or gdpr_fort:
             essentiel = True
             a_verifier = not officiel
-        elif officiel and s >= haut and SIGNAL_FORT.search(t) and (SUJET_FORT.search(t) or sens_fort):
+        elif officiel and s >= haut and sig_fort and (sujet_fort or sens_fort):
             essentiel, a_verifier = True, True
-        elif (nature == "cabinet" and s >= haut and SIGNAL_FORT.search(t) and (SUJET_FORT.search(t) or sens_fort)
-              and statut(t) in ("projet", "adopte", "en_vigueur")):
-            # v5.1 : cabinet d'avocats qui annonce un projet ou un texte adopté inconnu (ex. projet de décret ENS 2021)
+        elif (nature == "cabinet" and s >= haut and sig_fort and (sujet_fort or sens_fort)
+              and statut_t in ("projet", "adopte", "en_vigueur")):
+            # cabinet d'avocats qui annonce un projet ou un texte adopté inconnu
             essentiel, a_verifier = True, True
         if br_forts or (br and not tier_a):
             essentiel = False
@@ -477,4 +527,4 @@ def evaluer(a, seuils, score_neg=None):
         rub = tc[0][1]
     return {"niveau": niveau, "essentiel": essentiel, "a_verifier": a_verifier, "sens_fort": sens_fort,
             "textes_cles": [x[0] for x in tc], "bruit": br, "motif": motif, "rubrique_texte": rub,
-            "statut": statut(t)}
+            "statut": statut_t}

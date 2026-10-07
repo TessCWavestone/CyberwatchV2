@@ -2,3 +2,6 @@
 # exécuté sur le serveur GitHub). torch (version processeur) est installé à part
 # dans le workflow. Si l'installation échoue, la note est calculée avec les mots-clés.
 sentence-transformers>=3.0
+# v6 : classifieur « par le sens » (mDeBERTa multilingue, NLI) : tokenizer
+protobuf>=4.21
+sentencepiece>=0.2

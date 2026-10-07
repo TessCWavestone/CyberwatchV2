@@ -106,6 +106,8 @@ def type_article(a):
         return None
     if a.get("motif") == "jugé important par un lecteur":
         return "signale"
+    if (a.get("concernes") or {}).get("hors_perimetre"):
+        return None   # l'article dit SÛREMENT que le texte ne vise que d'autres acteurs (banques, administrations…)
     if not a.get("essentiel") or a.get("pertinence") != "elevee" or not _europeen(a):
         return None
     texte = regles.texte_article(a)
@@ -331,6 +333,47 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecarte
             if ex.get("ref"):
                 al["ref"] = ex["ref"]
         alertes.append(al)
+
+    # « Qui est concerné » (d'après les articles, seulement si c'est sûr) et « autres articles sur ce sujet »
+    par_id = {a["id"]: a for a in liste}
+    limite_lies = (aujourdhui - dt.timedelta(days=365)).isoformat()
+    utiles = [a for a in liste if a.get("pertinence") in ("elevee", "moyenne") and not a.get("doublon_de")
+              and a.get("date", "") >= limite_lies]
+    termes_de = {}
+    for al in alertes:
+        arts = [par_id[x["id"]] for x in al.get("articles", []) if x["id"] in par_id]
+        conc = [a for a in arts if (a.get("concernes") or {}).get("acteurs")]
+        if conc:
+            acteurs = []
+            for a in conc:
+                acteurs += [x for x in a["concernes"]["acteurs"] if x not in acteurs]
+            al["concernes"] = {"acteurs": acteurs,
+                               "source": conc[0].get("source", ""), "lien": conc[0].get("lien", "")}
+        propres = {x["id"] for x in al.get("articles", [])}
+        if al.get("texte") and not al.get("emergent") and not al.get("ref"):
+            lies = [a["id"] for a in utiles if al["texte"] in (a.get("textes_cles") or []) and a["id"] not in propres]
+        else:
+            if not arts:
+                continue
+            cibles = set()
+            for a in arts:
+                if a["id"] not in termes_de:
+                    termes_de[a["id"]] = termes(a.get("titre", "") + " " + a.get("resume", ""))
+                cibles |= termes_de[a["id"]]
+            if al.get("emergent"):
+                cibles.add(al["texte"].split(" (")[0])
+            cibles = {c for c in cibles if not est_connu_defaut(c) or al.get("emergent")}
+            lies = []
+            for a in utiles:
+                if a["id"] in propres:
+                    continue
+                if a["id"] not in termes_de:
+                    termes_de[a["id"]] = termes(a.get("titre", "") + " " + a.get("resume", ""))
+                if termes_de[a["id"]] & cibles:
+                    lies.append(a["id"])
+        if lies:
+            al["lies"] = lies[:80]
+            al["nb_lies"] = len(lies)
 
     # alertes anciennes dont les articles ont quitté le site (conservation) : gardées comme historique
     nouveaux = {a["id"] for a in alertes}

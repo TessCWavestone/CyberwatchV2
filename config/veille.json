@@ -352,5 +352,10 @@
   "url_relais": "",
   "_aide_site": "jours_site : articles chargés par défaut par le site (les plus anciens sont dans data/actualites_archives.js, chargés à la demande). url_site : adresse publique du site (sinon déduite du dépôt GitHub).",
   "jours_site": 183,
-  "url_site": ""
+  "url_site": "",
+  "_aide_v6": "lecture_pages_max : pages d'articles lues par collecte (texte complet pour juger, extrait de 500 caractères publié) ; lecture_pages_jours : âge maximal des articles lus ; sens_budget_secondes / sens_max_articles : limites du classifieur par le sens.",
+  "lecture_pages_max": 400,
+  "lecture_pages_jours": 60,
+  "sens_budget_secondes": 1500,
+  "sens_max_articles": 700
 }

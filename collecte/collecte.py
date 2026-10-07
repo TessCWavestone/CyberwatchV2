@@ -49,6 +49,8 @@ from amendes import detecter as detecter_amende  # noqa: E402
 import echeances  # noqa: E402
 import rkc  # noqa: E402
 import dila  # noqa: E402
+import lecture  # noqa: E402
+import sens as sens_mod  # noqa: E402
 import alertes  # noqa: E402
 import regles  # noqa: E402
 
@@ -1112,6 +1114,43 @@ def main():
     pert = Pertinence(cfg)
     pert.noter(collectes)
     pert.noter(liste_debats)
+
+    # v6 — Lecture de la page des articles : les titres de flux sont souvent vagues. Articles lus : les nouveaux
+    # (et, pour démarrer, les récents jamais lus), sauf ceux déjà écartés sans aucun lien avec le sujet.
+    recents = (AUJOURDHUI - dt.timedelta(days=cfg.get("lecture_pages_jours", 60))).isoformat()
+    def candidat(a):
+        return (a.get("nature") not in ("rkc", "opinion") and not a.get("base") and a.get("date", "") >= recents
+                and (a["pertinence"] != "ecarte" or (a.get("score") or 0) >= pert.seuils.get("bas", 0.33)
+                     or a.get("nature") == "officielle"))
+    # priorité : nouveaux de cette collecte, puis gardés, puis les plus récents
+    for a in collectes:
+        a.pop("extrait_page", None)   # rien du texte des pages n'est publié (ancien champ de test)
+        if (a.get("concernes") or {}).get("phrase"):
+            a["concernes"].pop("phrase")
+    a_lire = sorted([a for a in collectes if candidat(a)], key=lambda a: a["date"], reverse=True)
+    a_lire.sort(key=lambda a: (a.get("version") != id_version, a["pertinence"] == "ecarte"))
+    n_lues, n_ok = lecture.lire_pages(a_lire, client, AUJOURDHUI, cfg.get("lecture_pages_max", 400))
+    lues = [a for a in a_lire if a.get("_texte")]
+    for a in lues:
+        a.pop("score", None)          # nouvelle note avec le texte de la page
+    pert.noter(lues)
+    print("Lecture des pages : %d tentées, %d lues" % (n_lues, n_ok))
+
+    # v6 — Classement par le sens (modèle NLI open source, sans IA générative) puis « qui est concerné »
+    sens = sens_mod.Sens(pert.profil, cfg.get("sens_budget_secondes", 1500))
+    if sens.actif:
+        a_classer = [a for a in collectes if candidat(a)]
+        a_classer.sort(key=lambda a: (not a.get("_texte"), a.get("version") != id_version))
+        n_sens = sens.analyser(a_classer, cfg.get("sens_max_articles", 700))
+        pert.noter(collectes)          # les règles relisent avec le sens
+        cles = [a for a in collectes if a["pertinence"] in ("elevee", "moyenne") and candidat(a)
+                and (a.get("essentiel") or a.get("statut") or (a.get("sens") or {}).get("reg", 0) >= 0.8)]
+        n_conc = sens.concernes(cles, lambda a: lecture.phrases_candidates(
+            a.get("_texte") or ((a.get("titre") or "") + ". " + (a.get("resume") or ""))))
+        print("Classement par le sens : %d articles ; « qui est concerné » trouvé pour %d%s" % (
+            n_sens, sum(1 for a in cles if (a.get("concernes") or {}).get("acteurs")), (" — " + sens.erreur) if sens.erreur else ""))
+    else:
+        print(sens.erreur)
     gardes = [a for a in collectes if a["pertinence"] != "ecarte"]
 
     # Traduction (gratuite, open source) des articles gardés et des débats gardés
@@ -1172,6 +1211,9 @@ def main():
         (" — " + pert.erreur) if pert.erreur else ""))
     import regles as _regles
     meta["textes_cles_en"] = _regles.LIBELLES_EN
+    meta["sens"] = {"actif": sens.actif, "modele": sens.nom, "faits": sens.faits, "erreur": sens.erreur}
+    meta["pages"] = {"tentees": n_lues, "lues": n_ok}
+    meta["acteurs"] = sens_mod.LIBELLES_ACTEURS
     meta["pertinence"] = {"mode": pert.mode, "erreur": pert.erreur, "themes": pert.libelles(),
                           "seuils": {k: v for k, v in pert.seuils.items() if not k.startswith("_")}}
 

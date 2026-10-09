@@ -23,6 +23,7 @@ import time
 
 MODELE_DEFAUT = "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
 VERSION = "s1"
+VERSION_CONCERNES = "c2"
 QUESTIONS = {
     "reg": "This text is about a law, a regulation, a directive, a decree or official binding rules, or about a proposal or a public consultation for new rules.",
     "projet": "This text is about a draft law, a legislative proposal, ongoing negotiations on a law or a public consultation.",
@@ -31,30 +32,69 @@ QUESTIONS = {
     "bruit": "This text is about a cyber attack, a security vulnerability, a conference or event, or a company's commercial news.",
 }
 CHAMP = "This sentence says which organisations or companies have to comply with the rules."
-# catégories d'acteurs : (id, libellé fr, libellé en, question, dans le périmètre de l'entreprise ?)
+# Catégories d'acteurs : (id, libellé fr, libellé en, question au modèle, mots attendus, périmètre)
+# Une catégorie n'est retenue que si la phrase CONTIENT un mot de la catégorie ET que le modèle la confirme :
+# test du 08/10, le modèle seul confondait les catégories (banques -> « entités essentielles »).
+# périmètre : True = vise l'entreprise ; False = sûrement pas (banques, télécoms) ; None = selon les cas
+# (administrations : hôpitaux publics et fournisseurs peuvent être visés, ex. ENS) -> jamais « hors périmètre » seul.
+import re as _re
+import unicodedata as _ud
+
+
+def _sa(x):
+    return "".join(c for c in _ud.normalize("NFD", x or "") if _ud.category(c) != "Mn").lower()
+
+
 ACTEURS = [
     ("dm", "fabricants de dispositifs médicaux / de diagnostic in vitro", "medical device / IVD manufacturers",
-     "The rules apply to manufacturers of medical devices or in vitro diagnostic devices.", True),
+     "The rules apply to manufacturers of medical devices or in vitro diagnostic devices.",
+     r"medical devices?|dispositi(f|vo)s? medic|in vitro|\bivd|medizinprodukt|in-vitro-diagnost|productos? sanitario|"
+     r"medische hulpmiddel|wyrob\w* medyczn|diagnostic (medical )?devices?|dispositifs? de diagnostic", True),
     ("produits", "fabricants de produits ou logiciels numériques", "manufacturers of digital products or software",
-     "The rules apply to manufacturers of connected products, software or products with digital elements.", True),
+     "The rules apply to products, software or their manufacturers.",
+     r"products? with digital elements|connected (products?|devices?)|software|logiciel|hardware|materiel|"
+     r"produits? (connectes|numeriques|comportant)|produkte mit digitalen|vernetzte|\biot\b|internet of things|"
+     r"manufacturers? of (products|hardware|devices)|fabricants? de produits", True),
     ("sante", "établissements de santé et laboratoires", "healthcare providers and laboratories",
-     "The rules apply to hospitals, healthcare providers or laboratories.", True),
+     "The rules apply to hospitals, healthcare providers or laboratories.",
+     r"hospital|hopita|krankenh|ziekenhu|ospedal|szpital|laborator|\blabore?\b|klinik|clinic|healthcare providers?|"
+     r"etablissements de sante|gesundheitseinrichtung|zorgaanbieder|prestataires de soins|health ?care sector", True),
     ("entites", "entités essentielles / importantes, entités critiques", "essential / important / critical entities",
-     "The rules apply to essential or important entities, critical entities or operators of essential services.", True),
+     "The rules apply to essential or important entities, critical entities or operators of essential services.",
+     r"(essential|important|critical) entit|entites (essentielles|importantes|critiques)|operators? of essential|"
+     r"operateurs? d'importance vitale|(besonders )?wichtige einrichtung|wesentliche einrichtung|kritische (infrastruktur|einrichtung)|"
+     r"\bkritis\b|entidades (esenciales|importantes|criticas)|soggetti (essenziali|importanti)|"
+     r"(essentiele|belangrijke|kritieke) entiteit|critical infrastructure|infrastructures? critiques", True),
     ("donnees", "toute organisation traitant des données personnelles", "any organisation processing personal data",
-     "The rules apply to all companies or organisations that process personal data.", True),
+     "The rules apply to all companies or organisations that process personal data.",
+     r"personal data|donnees (personnelles|a caractere personnel)|personenbezogen|datos personales|dati personali|"
+     r"persoonsgegevens|dane osobowe|data controllers?|responsables? (de|du) traitement", True),
     ("ia", "fournisseurs et utilisateurs de systèmes d'IA", "providers and deployers of AI systems",
-     "The rules apply to providers or users of artificial intelligence systems.", True),
+     "The rules apply to providers or users of artificial intelligence systems.",
+     r"\bai\b|artificial intelligence|intelligence artificielle|\bia\b|\bki\b|kunstliche intelligenz|"
+     r"inteligencia artificial|intelligenza artificiale|kunstmatige intelligentie|sztuczn\w* inteligencj", True),
     ("tic", "prestataires informatiques, cloud et numériques", "IT, cloud and digital service providers",
-     "The rules apply to cloud, IT or digital service providers.", True),
+     "The rules apply to cloud, IT or digital service providers.",
+     r"cloud|\bnube\b|managed (security )?services?|it services?|digital services?|data cent|hosting|hebergeu?r|"
+     r"services? numeriques|digitale dienste|\bsaas\b|computacion|prestataires? (informatiques?|de services numeriques)", True),
     ("finance", "banques, assurances et entités financières", "banks, insurers and financial entities",
-     "The rules apply only to banks, insurers or other financial institutions.", False),
+     "The rules apply to banks, insurers or other financial institutions.",
+     r"\bbank|banque|bancari|\bbanco|kredit|credit institutions?|etablissements de credit|insur|assur(ance|eur)|"
+     r"versicher|aseguradora|\bseguros\b|financial (entit|institution|sector|services)|entites financieres|finanz|"
+     r"investment firms?|entreprises d'investissement|payment institutions?|etablissements de paiement", False),
     ("public", "administrations publiques", "public administrations",
-     "The rules apply only to public administrations or government bodies.", False),
+     "The rules apply to public administrations or government bodies.",
+     r"public (administration|bodies|sector|authorit)|administrations? publiques?|government (bodies|departments|agencies)|"
+     r"union institutions|institutions, organes|bundesverwaltung|bundesbehorde|collectivites|local authorit|"
+     r"administracion publica|sector publico|pubblica amministrazione|overheid|organismes publics", None),
     ("telecom", "opérateurs de télécommunications", "telecom operators",
-     "The rules apply only to telecommunications operators.", False),
+     "The rules apply to telecommunications operators.",
+     r"telecom|electronic communications?|communications electroniques|telekommunikation|comunicaciones electronicas|"
+     r"comunicazioni elettroniche|elektronische communicatie|mobile (network )?operators?", False),
 ]
-SEUIL_SUR = 0.90
+ANCRES = {x[0]: _re.compile(x[4], _re.I) for x in ACTEURS}
+SEUIL_SUR = 0.90      # la phrase dit bien qui doit appliquer le texte
+SEUIL_ACTEUR = 0.70   # catégorie confirmée par le modèle (en plus des mots de la catégorie)
 
 
 class Sens:
@@ -116,28 +156,36 @@ class Sens:
             return 0
         n = 0
         for a in articles:
-            if (a.get("concernes") or {}).get("v") == VERSION and not a.get("_texte"):
+            if (a.get("concernes") or {}).get("v") == VERSION_CONCERNES and not a.get("_texte"):
                 continue
             phrases = phrases_de(a)
-            a["concernes"] = {"v": VERSION}      # analysé (même si rien de sûr n'est trouvé)
+            a["concernes"] = {"v": VERSION_CONCERNES}      # analysé (même si rien de sûr n'est trouvé)
             if not phrases:
                 continue
             p_champ = self._probas(phrases, [CHAMP])
             sures = [ph for ph, p in zip(phrases, p_champ) if p.get(CHAMP, 0) >= SEUIL_SUR]
             if not sures:
                 continue
-            phrase = sures[0]
-            p = self._probas([phrase], [x[3] for x in ACTEURS])[0]
-            acteurs = [x for x in ACTEURS if p.get(x[3], 0) >= SEUIL_SUR]
+            phrase, acteurs = None, []
+            for ph in sures:                 # première phrase sûre qui nomme une catégorie (mots + modèle)
+                cand = [x for x in ACTEURS if ANCRES[x[0]].search(_sa(ph))]
+                if not cand:
+                    continue
+                p = self._probas([ph], [x[3] for x in cand])[0]
+                acteurs = [x for x in cand if p.get(x[3], 0) >= SEUIL_ACTEUR]
+                if acteurs:
+                    phrase = ph
+                    break
             if not acteurs:
                 continue
-            dedans = [x for x in acteurs if x[4]]
+            dedans = [x for x in acteurs if x[5] is not False]
             # la phrase elle-même n'est pas enregistrée (pas de contenu de l'article sur le site)
-            a["concernes"] = {"v": VERSION, "acteurs": [x[0] for x in acteurs],
+            a["concernes"] = {"v": VERSION_CONCERNES, "acteurs": [x[0] for x in acteurs],
                               # hors périmètre seulement si c'est SÛR : catégories exclusives et aucune dans le périmètre
-                              "hors_perimetre": bool(acteurs) and not dedans}
+                              # … et seulement pour un texte INCONNU : un texte suivi (NIS2…) n'est jamais déclaré hors périmètre
+                              "hors_perimetre": bool(acteurs) and not dedans and not a.get("textes_cles")}
             n += 1
         return n
 
 
-LIBELLES_ACTEURS = {x[0]: {"fr": x[1], "en": x[2], "perimetre": x[4]} for x in ACTEURS}
+LIBELLES_ACTEURS = {x[0]: {"fr": x[1], "en": x[2], "perimetre": x[5]} for x in ACTEURS}

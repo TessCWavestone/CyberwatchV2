@@ -100,13 +100,23 @@ def _apercu(a):
         "payant": a.get("payant", False)}.items() if v not in ("", None, False, {})}
 
 
+# Règlements européens directement applicables (pas de transposition nationale)
+REGLEMENTS_UE = {"CRA", "AI Act", "RGPD / GDPR", "IVDR", "MDR (dispositifs médicaux)", "MDCG", "EHDS", "Data Act",
+                 "Cybersecurity Act / certification UE", "Cloud and AI Development Act (CADA)",
+                 "eIDAS 2 / portefeuille européen d'identité", "RED (équipements radio) / EN 18031"}
+LOI_NATIONALE = re.compile(r"\bloi\b|projet de loi|\bgesetz|durchfuhrung|\bwet\b|wetsvoorstel|\bley\b|anteproyecto|"
+                           r"\blegge\b|disegno di legge|ustaw|zakon|torveny|\blag\b|\blov\b|\blaki\b|decret|dekret|decreto|"
+                           r"national (law|implementation|legislation)|implementing (law|act) in|autorite nationale|"
+                           r"designat\w* (the )?(national|market surveillance)", re.I)
+
+
 def type_article(a):
     """Type d'alerte d'un article, ou None (pas une alerte)."""
     if a.get("base") or a.get("doublon_de") or a.get("nature") == "opinion" or a.get("debat"):
         return None
     if a.get("motif") == "jugé important par un lecteur":
         return "signale"
-    if (a.get("concernes") or {}).get("hors_perimetre"):
+    if (a.get("concernes") or {}).get("hors_perimetre") and not a.get("textes_cles"):
         return None   # l'article dit SÛREMENT que le texte ne vise que d'autres acteurs (banques, administrations…)
     if not a.get("essentiel") or a.get("pertinence") != "elevee" or not _europeen(a):
         return None
@@ -114,6 +124,12 @@ def type_article(a):
     if EXCLUS.search(texte):
         return None
     t = TYPE_STATUT.get(a.get("statut") or "")
+    if a.get("nature") != "officielle":
+        # presse, cabinets, veille RKC : l'étape (adopté, projet, consultation…) doit être annoncée dans le TITRE ;
+        # sinon c'est un commentaire d'un texte existant, pas une nouvelle étape (test du 08/10 sur les vraies données)
+        tr = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
+        if not regles.statut(regles._sa(a.get("titre", "") + " \n " + tr)):
+            return None
     if t == "proposition" and a.get("statut") == "lignes_directrices" and a.get("nature") != "officielle":
         return None   # des lignes directrices commentées par la presse ne sont pas une nouvelle règle
     inconnu = not a.get("textes_cles")
@@ -253,11 +269,16 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecarte
         # une étape = une alerte : proposition, lignes directrices, adoption, entrée en vigueur
         etape = {"projet": "proposition", "consultation": "proposition", "lignes_directrices": "orientation",
                  "en_vigueur": "en_vigueur"}.get(a.get("statut") or "", "adopte" if t in ("adopte", "signale") else t)
+        zone = a.get("zone", "")
+        # règlement européen (directement applicable) : une seule alerte par étape, quel que soit le pays de la
+        # source (test du 08/10 : un même texte donnait une alerte par pays) ; sauf loi nationale d'application
+        if texte in REGLEMENTS_UE and not LOI_NATIONALE.search(regles.texte_article(a)):
+            zone = "Europe"
         if t == "a_qualifier" or not texte:
             cle = "art|" + a["id"]
         else:
-            cle = "|".join(("txt", texte, a.get("zone", ""), etape))
-        ajouter(cle, t, a, {"texte": texte, "inconnu": t == "a_qualifier"})
+            cle = "|".join(("txt", texte, zone, etape))
+        ajouter(cle, t, a, {"texte": texte, "inconnu": t == "a_qualifier", "zone": zone})
 
     for terme, arts in emergents(liste, aujourdhui):
         g = groupes.setdefault("emg|" + terme.lower(), {"type": "a_qualifier", "articles": [], "extra": {}})

@@ -156,7 +156,7 @@ def emergence(texte, arts_aveugles):
 PHRASES_CONCERNES = [
     ("This Regulation applies to credit institutions, payment institutions, investment firms, insurance and "
      "reinsurance undertakings and other financial entities.", {"finance"}, True),
-    ("Le présent règlement s'applique aux institutions, organes et organismes de l'Union.", {"public"}, True),
+    ("Le présent règlement s'applique aux institutions, organes et organismes de l'Union.", {"public"}, False),   # administrations : jamais « hors » seules
     ("These obligations apply only to providers of public electronic communications networks and services.", {"telecom"}, True),
     ("Diese Vorschriften gelten nur für Kreditinstitute und Versicherungsunternehmen.", {"finance"}, True),
     ("This Directive applies to public or private entities referred to in the Annexes, including manufacturers of "
@@ -221,6 +221,7 @@ def bruit_reel(mode, jours=120):
     ref = json.load(open(os.path.join(RACINE, "config", "referentiel.json"), encoding="utf-8")) \
         if os.path.exists(os.path.join(RACINE, "config", "referentiel.json")) else {}
     ancien, nouveaux, vus = {}, {}, set()
+    par_id = {a["id"]: a for a in arts}
     jour = debut + dt.timedelta(days=(7 - debut.weekday()) % 7)   # lundis
     while jour <= fin:
         visibles = [a for a in arts if a.get("date", "") <= jour.isoformat()]
@@ -230,9 +231,11 @@ def bruit_reel(mode, jours=120):
         for al in als:
             if al.get("active") and al["id"] not in vus and al.get("type") != "echeance":
                 vus.add(al["id"])
+                a0 = par_id.get(((al.get("articles") or [{}])[0]).get("id"), {})
                 nouveaux.setdefault(jour.isoformat()[:7], []).append(
-                    "%s — %s%s" % (jour.isoformat(), ("[%s] " % al["texte"]) if al.get("texte") else "",
-                                  ((al.get("articles") or [{}])[0].get("titre") or "")[:110]))
+                    ("| %s | %s | %s | %s | %s | %s | %s |" % (
+                        jour.isoformat(), al.get("type", ""), al.get("texte") or "—", al.get("zone", ""),
+                        (a0.get("source") or "")[:40], (a0.get("titre") or "").replace("|", "/")[:110], (a0.get("motif") or a0.get("statut") or "")[:60])).replace("\n", " "))
         ancien = {"alertes": als}
         jour += dt.timedelta(days=7)
     return nouveaux
@@ -336,11 +339,12 @@ def main():
         for mo in mois:
             L.append("| %s | %s |" % (mo, " | ".join(str(len((bruits[m] or {}).get(mo, []))) for m in bruits)))
         L.append("")
-        for m, v in bruits.items():
-            L += ["<details><summary>Nouveaux points clés (%s)</summary>" % NOM_MODE[m], ""]
-            for mo in sorted(v or {}):
-                L += ["- " + x.replace("|", "/") for x in v[mo]]
-            L += ["", "</details>", ""]
+        m = list(bruits)[-1]
+        L += ["Nouveaux points clés (%s), pour juger le bruit :" % NOM_MODE[m], "",
+              "| Semaine | Type | Texte | Zone | Source | Titre | Motif |", "|---|---|---|---|---|---|---|"]
+        for mo in sorted(bruits[m] or {}):
+            L += bruits[m][mo]
+        L.append("")
 
     L += ["## Détail", "", "| Corpus | Texte | Date | Étape | Note | " + " | ".join(NOM_MODE[m] for m in MODES) +
           " | Sens (reg / sujet / bruit) | Page lue | Titre |", "|---|---|---|---|---|" + "---|" * len(MODES) + "---|---|---|"]

@@ -212,6 +212,8 @@ BRUIT_JO = _rx(r"replacing (a|an) (full |alternate )?member|appointment of|restr
 
 # Sujet « fort » : exigé pour faire entrer dans L'essentiel un texte officiel qui ne cite aucun texte clé connu
 SUJET_FORT = _rx(
+    r"critical (entities|infrastructures?)|entites critiques|infrastructures? critiques|kritische infrastruktur|kritis|"
+    r"infraestructuras? criticas|infrastrutture critiche|kritieke entiteiten|"
     r"cyber|kyber|ciber|kiber|κυβερνο|informationssicherheit|IT-Sicherheit|information security|informatiebeveiliging|"
     r"securite (informatique|numerique|des systemes d'information)|seguridad de la informacion|sicurezza informatica|"
     r"tietoturva|informationssakerhet|informasjonssikkerhet|data protection|protection des donnees|datenschutz|"
@@ -343,7 +345,7 @@ SIGNAL_FORT = _rx(
     r"\b(directive|regulation|decision|reglement|richtlinie|verordnung|directiva|reglamento|direttiva|regolamento)\s*\((eu|ue)\)\s*(no\s*)?\d{4}/\d+|"
     r"real decreto \d+/\d{4}|decreto legislativo,? \d|decreto-lei n|gesetz zur umsetzung|\bwet van \d|ustawa z dnia|"
     # v6 : étapes de la procédure législative (valables pour n'importe quel texte)
-    r"\badopts?\b|negotiating (mandate|position)|general approach|common position|(political|provisional) (agreement|deal)|"
+    r"\badopts? (a |an |its |the |new )?([\w-]+ ){0,3}(law|regulation|directive|act|rules|position|mandate|text|bill|decree|legislation|framework)\b|negotiating (mandate|position)|general approach|common position|(political|provisional) (agreement|deal)|"
     r"strike a deal|reach(es|ed)? (a )?(deal|agreement)|trilogue|first reading|new (eu )?rules|new (eu )?law|"
     r"mandat de negociation|orientation generale|accord (provisoire|politique)|nouvelles regles|premiere lecture|"
     r"allgemeine ausrichtung|vorlaufige einigung|politische einigung|trilog|neue regeln|"
@@ -351,14 +353,14 @@ SIGNAL_FORT = _rx(
 
 # Statut d'un texte, déduit du titre / résumé (multilingue, prudent)
 STATUTS = [
-    ("consultation", _rx(r"consultation|call for evidence|have your say|consulta publica|konsultation|consultatie|"
+    ("consultation", _rx(r"consultation|call for (evidence|input|views|feedback)|have your say|share (their|your) views|appel a contributions|consulta publica|konsultation|consultatie|"
                          r"horing|remiss|lausunto|konsultacj|konzultac|διαβουλευση|consultazione")),
     ("projet", _rx(r"negotiating (mandate|position)|general approach|common position|(political|provisional) (agreement|deal)|"
                    r"strike a deal|trilogue|mandat de negociation|orientation generale|accord (provisoire|politique)|"
                    r"\bdraft\b|proposal|proposition de|projet de (loi|decret|texte|reglement)|\bentwurf|referentenentwurf|"
                    r"anteproyecto|proyecto de (ley|real decreto|r\.? ?d\.?\b)|wetsvoorstel|lovforslag|projekt ustawy|navrh zakona|"
                    r"tervezet|disegno di legge|proposta de lei|\bbill\b")),
-    ("adopte", _rx(r"adopted|adopte|published in the official journal|journal officiel|promulg|verkundet|"
+    ("adopte", _rx(r"adopted|adopte|\badopts? (a |an |its |the |new )?([\w-]+ ){0,3}(law|regulation|directive|act|text|bill|decree|legislation)\b|published in the official journal|journal officiel|promulg|verkundet|"
                             r"bundesgesetzblatt|\bBOE\b|gazzetta ufficiale|staatsblad|dziennik ustaw|sbirka zakonu|"
                             r"magyar kozlony|ΦΕΚ|diario da republica|svensk forfattningssamling|lovtidend|signed into law")),
     ("en_vigueur", _rx(r"enters? into force|entry into force|entre(e)? en vigueur|in kraft|entrada en vigor|entrata in vigore|"
@@ -436,7 +438,9 @@ def evaluer(a, seuils, score_neg=None):
     tc += [par_id[i] for i in ip.get("tc", []) if i in par_id and all(i != x[0] for x in tc)]
     sig = bool(SIGNAL.search(t)) or sn["reg"] or bool(ip.get("sig"))
     sig_net = bool(SIGNAL_NET.search(t)) or sn["reg"] or bool(ip.get("sig_net"))
-    sig_fort = bool(SIGNAL_FORT.search(t)) or (sn["reg"] and (sn["projet"] or sn["adopte"])) or bool(ip.get("sig_fort"))
+    # test du 08/10 : le sens seul (« projet », « adopté ») multipliait les points clés sur les vraies données ;
+    # il sert au niveau de pertinence (rien d'oublié) mais jamais seul à créer un point clé.
+    sig_fort = bool(SIGNAL_FORT.search(t)) or bool(ip.get("sig_fort"))
     nature = a.get("nature", "presse")
     officiel = nature == "officielle"
     zone = a.get("zone", "")
@@ -447,7 +451,7 @@ def evaluer(a, seuils, score_neg=None):
     haut, moy, bas = seuils.get("elevee", 0.55), seuils.get("moyenne", 0.45), seuils.get("bas", 0.33)
     # « sens fort » : le modèle juge le texte très proche des thèmes suivis, même sans aucun mot attendu
     tres_haut = seuils.get("tres_haut", round(haut + 0.15, 2))
-    sens_fort = s >= tres_haut or (sn["sujet"] and sn["reg"] and s >= haut)
+    sens_fort = s >= tres_haut
     if score_neg is not None and score_neg > s + 0.02:   # le modèle rapproche l'article d'un thème « bruit »
         br = br or ["proche d'un thème hors sujet (modèle)"]
     # le classifieur par le sens corrige les listes de mots dans les deux sens
@@ -455,12 +459,12 @@ def evaluer(a, seuils, score_neg=None):
         br = [b for b in br if b.split(" ")[0] in ("événements", "vœux", "hors")]   # « launches », « acquisition »… ignorés
     elif not br and sn["bruit"] and not sn["reg"] and not tc:
         br = ["hors sujet (sens)"]
-    statut_t = statut(t) or ip.get("statut", "") or ("projet" if sn["projet"] and not sn["adopte"] else ("adopte" if sn["adopte"] else ""))
+    statut_t = statut(t) or ip.get("statut", "")
 
     europe_cite = bool(EUROPE_SUJET.search(t))
     hors_eu = (hors_eu_source and not europe_cite) or (hors_eu_sujet and not europe_cite)
     sujet = bool(SUJET.search(t)) or sn["sujet"] or bool(ip.get("sujet"))
-    sujet_fort = bool(SUJET_FORT.search(t)) or sn["sujet"] or bool(ip.get("sujet_fort"))
+    sujet_fort = bool(SUJET_FORT.search(t)) or bool(ip.get("sujet_fort"))
     motif = ""
     br_forts = [b for b in br if b.split(" ")[0] in ("événements", "vœux", "marchés", "hors", "sensibilisation")]
     jo = bool(JOURNAL_OFFICIEL.search(a.get("source", "")))

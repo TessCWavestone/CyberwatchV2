@@ -638,7 +638,7 @@
     ajout(foot, badgePert(a));
     if (a.essentiel) ajout(foot, badge('badge-ess', t('badge_ess')));
     if (a.essentiel && a.a_verifier) ajout(foot, badge('badge-verif', t('badge_verif'), t('verif_title')));
-    if ((a.concernes || {}).hors_perimetre) ajout(foot, badge('badge-hors', t('hors_badge'), t('hors_title')));
+    if ((a.concernes || {}).hors_perimetre && !(a.textes_cles || []).length) ajout(foot, badge('badge-hors', t('hors_badge'), t('hors_title')));
     var pe = prochaineEcheance(a);
     if (pe) ajout(foot, badge('badge-urgent', (pe.approx ? t('approx') + ' ' : '') + dateCourte(pe.date)));
     ajout(foot, badgeAmende(a));

@@ -1,5 +1,5 @@
 window.VEILLE_DEBATS = {
- "mise_a_jour": "2026-10-06T12:06+00:00",
+ "mise_a_jour": "2026-10-12T12:59+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -31,7 +31,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -91,7 +91,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CRA",
@@ -113,7 +113,8 @@ window.VEILLE_DEBATS = {
    "sujets": [
     "CRA",
     "ENISA"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "8e2f9438e3b5",
@@ -152,7 +153,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -208,7 +209,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -229,7 +230,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "a603c9e24ae6",
@@ -256,7 +258,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.23,
@@ -300,7 +302,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.269,
@@ -341,7 +343,7 @@ window.VEILLE_DEBATS = {
     "ia",
     "pharma_industrie"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.369,
@@ -385,7 +387,7 @@ window.VEILLE_DEBATS = {
     "sante_donnees",
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.243,
@@ -425,7 +427,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CADA"
@@ -478,7 +480,7 @@ window.VEILLE_DEBATS = {
     "dm_div",
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "MHRA",
@@ -526,7 +528,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "nis2"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.341,
@@ -571,7 +573,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -591,7 +593,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "14ef8c447a42",
@@ -624,7 +627,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CRA"
@@ -675,7 +678,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -728,7 +731,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -780,7 +783,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [
     {
      "date": "2027-12-01",
@@ -818,7 +821,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "a633e6ee6fb1",
@@ -849,7 +853,7 @@ window.VEILLE_DEBATS = {
     "data_act",
     "nis2"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "NIS2"
@@ -869,7 +873,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "NIS2"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "851ef646e66c",
@@ -898,7 +903,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -958,7 +963,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -1006,7 +1011,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.338,
@@ -1048,7 +1053,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.206,
@@ -1090,7 +1095,7 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.366,
@@ -1132,7 +1137,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.235,
@@ -1179,7 +1184,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -1232,7 +1237,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.253,
@@ -1271,7 +1276,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1321,7 +1326,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1375,7 +1380,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -1426,7 +1431,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -1453,7 +1458,8 @@ window.VEILLE_DEBATS = {
     "IVDR",
     "MDR",
     "Normes harmonisées"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "1e33ff7bdfed",
@@ -1484,7 +1490,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "EHDS"
@@ -1505,7 +1511,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "EHDS"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "da89b42df590",
@@ -1536,7 +1543,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -1583,7 +1590,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "large"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.27,
@@ -1625,7 +1632,7 @@ window.VEILLE_DEBATS = {
     "large",
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.328,
@@ -1670,7 +1677,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "large"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.324,
@@ -1711,7 +1718,7 @@ window.VEILLE_DEBATS = {
     "data_act",
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CADA"
@@ -1758,7 +1765,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -1804,7 +1811,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -1853,7 +1860,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1906,7 +1913,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [
     {
      "date": "2026-09-11",
@@ -1938,7 +1945,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "CRA"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "fdeebccf8550",
@@ -1971,7 +1979,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1992,7 +2000,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "47a570713409",
@@ -2024,7 +2033,7 @@ window.VEILLE_DEBATS = {
     "nis2",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act",
@@ -2047,7 +2056,8 @@ window.VEILLE_DEBATS = {
    "sujets": [
     "Cybersecurity Act",
     "ENISA"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "3ffe210c422f",
@@ -2077,7 +2087,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -2131,7 +2141,7 @@ window.VEILLE_DEBATS = {
     "sante_donnees",
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -2180,7 +2190,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -2200,7 +2210,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "statut": "projet"
   },
   {
    "id": "a12297a020e9",
@@ -2230,7 +2241,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
@@ -2280,7 +2291,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "large"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -2330,7 +2341,7 @@ window.VEILLE_DEBATS = {
     "sante_donnees",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -2383,7 +2394,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2404,7 +2415,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "23b1e18d68e0",
@@ -2436,7 +2448,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2483,7 +2495,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.276,
@@ -2528,7 +2540,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2582,7 +2594,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "nis2"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -2626,7 +2638,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.256,
@@ -2674,7 +2686,7 @@ window.VEILLE_DEBATS = {
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -2730,7 +2742,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2753,7 +2765,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "77ae9d24e66d",
@@ -2783,7 +2796,7 @@ window.VEILLE_DEBATS = {
     "nis2",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
@@ -2835,7 +2848,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2855,7 +2868,9 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true,
+   "statut": "projet"
   },
   {
    "id": "796597175a35",
@@ -2880,7 +2895,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.296,
@@ -2925,7 +2940,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Data Act"
@@ -2979,7 +2994,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "EHDS"
@@ -3000,7 +3015,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "EHDS"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "986095d5b23c",
@@ -3032,7 +3048,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3055,7 +3071,8 @@ window.VEILLE_DEBATS = {
    "sujets": [
     "AI Act",
     "Digital Omnibus"
-   ]
+   ],
+   "statut": "projet"
   },
   {
    "id": "91c6f3361182",
@@ -3087,7 +3104,7 @@ window.VEILLE_DEBATS = {
     "ia",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -3141,7 +3158,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -3195,7 +3212,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -3251,7 +3268,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -3274,7 +3291,8 @@ window.VEILLE_DEBATS = {
    "sujets": [
     "IVDR",
     "MDR"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "0fef48d02162",
@@ -3301,7 +3319,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.371,
@@ -3341,7 +3359,7 @@ window.VEILLE_DEBATS = {
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -3388,7 +3406,7 @@ window.VEILLE_DEBATS = {
     "large",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.268,
@@ -3428,7 +3446,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -3483,7 +3501,7 @@ window.VEILLE_DEBATS = {
     "ia",
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3509,7 +3527,8 @@ window.VEILLE_DEBATS = {
     "AI Act",
     "IVDR",
     "MDR"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "1253424d4e4f",
@@ -3535,7 +3554,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.403,
@@ -3576,7 +3595,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -3628,7 +3647,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3679,7 +3698,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "nis2"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
@@ -3699,7 +3718,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "Cybersecurity Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "bc86a60fa79a",
@@ -3728,7 +3748,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.256,
@@ -3777,7 +3797,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -3799,7 +3819,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "e9c47a35c1ad",
@@ -3830,7 +3851,7 @@ window.VEILLE_DEBATS = {
     "fournisseurs_publics",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Data Act"
@@ -3876,7 +3897,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -3925,7 +3946,7 @@ window.VEILLE_DEBATS = {
     "ia",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -3974,7 +3995,7 @@ window.VEILLE_DEBATS = {
     "dm_div",
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -4031,7 +4052,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -4089,7 +4110,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4109,7 +4130,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "a8e5c54d23fd",
@@ -4142,7 +4164,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -4195,7 +4217,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -4243,7 +4265,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "large"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.246,
@@ -4288,7 +4310,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4338,7 +4360,7 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.231,
@@ -4387,7 +4409,7 @@ window.VEILLE_DEBATS = {
     "dm_div",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -4441,7 +4463,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -4491,7 +4513,7 @@ window.VEILLE_DEBATS = {
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.398,
@@ -4533,7 +4555,7 @@ window.VEILLE_DEBATS = {
     "large",
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.312,
@@ -4578,7 +4600,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4623,7 +4645,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "PLD"
@@ -4677,7 +4699,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4727,7 +4749,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4775,7 +4797,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.456,
@@ -4820,7 +4842,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4874,7 +4896,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -4897,7 +4919,8 @@ window.VEILLE_DEBATS = {
    "sujets": [
     "GDPR",
     "Digital Omnibus"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "30a841a59859",
@@ -4924,7 +4947,7 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "large"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.193,
@@ -4938,7 +4961,8 @@ window.VEILLE_DEBATS = {
      "resume": "À l'occasion de la Journée mondiale des droits des consommateurs, EDRi et des dizaines d'autres organisations de la société civile ont signé une lettre conjointe demandant à la Commission européenne d'adopter une loi forte sur l'équité numérique (DFA). La coalition appelle à des règles qui s'attaquent aux modèles d'affaires numériques manipulateurs et protègent les gens contre les pratiques néfastes en ligne. La lettre fait écho aux recommandations formulées dans le récent document d'orientation sur une approche fondée sur les droits..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "statut": "adopte"
   },
   {
    "id": "594d7456f012",
@@ -4969,7 +4993,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -5014,7 +5038,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -5061,7 +5085,7 @@ window.VEILLE_DEBATS = {
     "ia",
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.318,
@@ -5101,7 +5125,7 @@ window.VEILLE_DEBATS = {
     "ia",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.31,
@@ -5147,7 +5171,7 @@ window.VEILLE_DEBATS = {
     "sante_donnees",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.288,
@@ -5193,7 +5217,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -5246,7 +5270,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CRA"
@@ -5267,7 +5291,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "CRA"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "7f2efca6663f",
@@ -5294,7 +5319,7 @@ window.VEILLE_DEBATS = {
     "large",
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.366,
@@ -5339,7 +5364,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -5388,7 +5413,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.341,
@@ -5429,7 +5454,7 @@ window.VEILLE_DEBATS = {
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.339,
@@ -5441,47 +5466,6 @@ window.VEILLE_DEBATS = {
     "fr": {
      "titre": "Lettre ouverte: Nous disons non à la masse Big Tech fouiner sur nos messages!",
      "resume": "EDRi et 39 organisations exhortent les membres du Parlement européen à rejeter toute extension de la dérogation temporaire à la protection de la vie privée, également connue sous le nom de « Contrôle de la vie privée ». The post Lettre ouverte: Nous disons non à Big Tech masse fouiner sur nos messages! est apparu en premier sur European Digital Rights (EDRI) ."
-    }
-   },
-   "sujets": []
-  },
-  {
-   "id": "90d6b46bd6f6",
-   "titre": "US pressure on the Digital Services Act in the Netherlands",
-   "lien": "https://edri.org/our-work/us-pressure-on-the-digital-services-act-in-the-netherlands/",
-   "resume": "On 3 February 2026, the United States House Committee on the Judiciary launched a report in which EDRi member Bits of Freedom and Justice for Prosperity, among others, are called \"censorous NGOs\". In response, Bits of Freedom and Justice for Prosperity are issuing the following statement. The post US pressure on the Digital Services Act in the Netherlands appeared first on European Digital Rights (EDRi) .",
-   "date": "2026-02-18",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "EDRi (European Digital Rights)",
-   "zone": "Europe",
-   "nature": "opinion",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "langue": "en",
-   "score": 0.456,
-   "pertinence": "moyenne",
-   "themes": [
-    "data_act",
-    "cra"
-   ],
-   "pertinence_v": "v4-5be8160b4amodele",
-   "echeances": [],
-   "acronymes": [],
-   "score_bruit": 0.274,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "trad": {
-    "fr": {
-     "titre": "US pression sur la loi sur les services numériques aux Pays-Bas",
-     "resume": "Le 3 février 2026, la Commission parlementaire de la magistrature des États-Unis a lancé un rapport dans lequel le membre de l'EDRi Bits of Freedom and Justice for Prosperity, entre autres, est appelé « ONG de censure ». En réponse, Bits of Freedom and Justice for Prosperity publie la déclaration suivante. La pression post US sur la loi sur les services numériques aux Pays-Bas est apparue en premier sur les droits numériques européens (EDRI)."
     }
    },
    "sujets": []
@@ -5515,7 +5499,7 @@ window.VEILLE_DEBATS = {
     "fournisseurs_publics",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.267,
@@ -5556,7 +5540,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.321,
@@ -5603,7 +5587,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -5656,7 +5640,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "MHRA"
@@ -5705,7 +5689,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "MHRA"
@@ -5756,7 +5740,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -5780,7 +5764,8 @@ window.VEILLE_DEBATS = {
    "sujets": [
     "GDPR",
     "Digital Omnibus"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "3b3d6722a2c8",
@@ -5811,7 +5796,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -5862,7 +5847,7 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -5909,7 +5894,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "large"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.313,
@@ -5949,7 +5934,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.374,
@@ -5989,7 +5974,7 @@ window.VEILLE_DEBATS = {
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -6040,7 +6025,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -6064,7 +6049,8 @@ window.VEILLE_DEBATS = {
    "sujets": [
     "IVDR",
     "MDR"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "0a50b70773c4",
@@ -6094,7 +6080,7 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.285,
@@ -6138,7 +6124,7 @@ window.VEILLE_DEBATS = {
     "sante_donnees",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "DiGA"
@@ -6189,7 +6175,7 @@ window.VEILLE_DEBATS = {
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -6235,7 +6221,7 @@ window.VEILLE_DEBATS = {
     "acheteurs_sante",
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IGJ"
@@ -6281,7 +6267,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.363,
@@ -6320,7 +6306,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -6373,7 +6359,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "CRA"
@@ -6393,7 +6379,8 @@ window.VEILLE_DEBATS = {
    },
    "sujets": [
     "CRA"
-   ]
+   ],
+   "sens_fort": true
   },
   {
    "id": "5c2f79f76036",
@@ -6423,7 +6410,7 @@ window.VEILLE_DEBATS = {
     "sante_donnees",
     "dm_div"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -6473,7 +6460,7 @@ window.VEILLE_DEBATS = {
     "large",
     "nis2"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": false,
@@ -6530,7 +6517,7 @@ window.VEILLE_DEBATS = {
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-5be8160b4amodele",
+   "pertinence_v": "v4-65f9a1e245modele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": true,
@@ -6554,6 +6541,93 @@ window.VEILLE_DEBATS = {
     "IVDR",
     "MDR"
    ]
+  },
+  {
+   "id": "399a1a84e774",
+   "titre": "The Cloud and AI Development Act (CADA) represents everything that’s wrong with Europe’s approach to digital sovereignty",
+   "lien": "https://edri.org/our-work/the-cloud-and-ai-development-act-cada-represents-everything-thats-wrong-with-europes-approach-to-digital-sovereignty/",
+   "resume": "The EU’s Tech Sovereignty Package is supposed to jump-start Europe’s “sovereign AI” ambitions. But due to fundamental misunderstandings about the technology behind ‘AI’ and the blind trust in Big Tech’s AI doomer and boomer narratives, it is more likely to instead hurt digital rights and the environment instead, and waste valuable public resources that should have been invested in actually increasing Europe’s…",
+   "date": "2026-10-08",
+   "date_estimee": false,
+   "detecte_le": "2026-10-12",
+   "version": "2026-10-12-1259",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_bruit": 0.335,
+   "score": 0.532,
+   "themes": [
+    "data_act",
+    "ia"
+   ],
+   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
+   ],
+   "motif": "texte clé : Cloud and AI Development Act (CADA)",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le Cloud and IA Development Act (CADA) représente tout ce qui ne va pas avec l'approche européenne de la souveraineté numérique",
+     "resume": "Le package de souveraineté technique de QZXO est censé démarrer l'Europe. Mais en raison de malentendus fondamentaux au sujet de la technologie derrière «IA. » et de la confiance aveugle dans le doomer IA Big Techs et les récits de boomer, il est plus probable qu'il porte atteinte aux droits numériques et à l'environnement à la place, et gaspille des ressources publiques précieuses qui auraient dû être investies dans l'augmentation de l'Europe..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CADA"
+   ],
+   "acronymes": [
+    "CADA"
+   ]
+  },
+  {
+   "id": "ae9d356841ae",
+   "titre": "No human required: Austria’s plan for AI-only government decisions",
+   "lien": "https://edri.org/our-work/no-human-required-austrias-plan-for-ai-only-government-decisions/",
+   "resume": "A sweeping change to Austria's administrative law would let authorities issue binding decisions using AI systems with no human ever reviewing the outcome. EDRi member epicenter.works has sent an open letter to parliament, and is looking for input from readers elsewhere in Europe about how other countries are handling, or planning to handle, the same issue. The post No human required: Austria’s plan for AI-only…",
+   "date": "2026-10-08",
+   "date_estimee": false,
+   "detecte_le": "2026-10-12",
+   "version": "2026-10-12-1259",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_bruit": 0.374,
+   "score": 0.547,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Pas d'humain requis: Autriche plan pour les décisions du gouvernement AI-only",
+     "resume": "Une modification radicale du droit administratif autrichien permettrait aux autorités de prendre des décisions contraignantes en utilisant des systèmes IA sans jamais examiner le résultat. EDRi membre epicenter.works a envoyé une lettre ouverte au Parlement, et est à la recherche de commentaires de lecteurs ailleurs en Europe sur la façon dont d'autres pays traitent, ou prévoient de traiter, la même question. Le post Pas d'humain requis: Austria..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
   }
  ]
 };

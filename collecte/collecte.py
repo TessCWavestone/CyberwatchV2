@@ -31,6 +31,7 @@ import os
 import re
 import sys
 import threading
+import time
 import unicodedata
 import urllib.robotparser
 import xml.etree.ElementTree as ET
@@ -1129,15 +1130,20 @@ def main():
             a["concernes"].pop("phrase")
     a_lire = sorted([a for a in collectes if candidat(a)], key=lambda a: a["date"], reverse=True)
     a_lire.sort(key=lambda a: (a.get("version") != id_version, a["pertinence"] == "ecarte"))
-    n_lues, n_ok = lecture.lire_pages(a_lire, client, AUJOURDHUI, cfg.get("lecture_pages_max", 400))
+    # temps total accordé aux étapes v6 (lecture des pages, sens, « qui est concerné ») : ce qui n'est pas fait
+    # est repris à la collecte suivante ; la collecte ne dépasse jamais la limite de GitHub (12/10 : arrêt à 2 h)
+    t_v6 = time.time()
+    fin_v6 = t_v6 + 60 * cfg.get("v6_budget_minutes", 35)
+    fin_pages = t_v6 + 60 * cfg.get("lecture_pages_minutes", 10)
+    n_lues, n_ok = lecture.lire_pages(a_lire, client, AUJOURDHUI, cfg.get("lecture_pages_max", 400), fin=fin_pages)
     lues = [a for a in a_lire if a.get("_texte")]
     for a in lues:
         a.pop("score", None)          # nouvelle note avec le texte de la page
     pert.noter(lues)
-    print("Lecture des pages : %d tentées, %d lues" % (n_lues, n_ok))
+    print("Lecture des pages : %d tentées, %d lues (%d s)" % (n_lues, n_ok, time.time() - t_v6))
 
     # v6 — Classement par le sens (modèle NLI open source, sans IA générative) puis « qui est concerné »
-    sens = sens_mod.Sens(pert.profil, cfg.get("sens_budget_secondes", 1500))
+    sens = sens_mod.Sens(pert.profil, max(60, min(cfg.get("sens_budget_secondes", 1500), fin_v6 - time.time() - 300)))
     if sens.actif:
         a_classer = [a for a in collectes if candidat(a)]
         a_classer.sort(key=lambda a: (not a.get("_texte"), a.get("version") != id_version))
@@ -1146,9 +1152,9 @@ def main():
         cles = [a for a in collectes if a["pertinence"] in ("elevee", "moyenne") and candidat(a)
                 and (a.get("essentiel") or a.get("statut") or (a.get("sens") or {}).get("reg", 0) >= 0.8)]
         n_conc = sens.concernes(cles, lambda a: lecture.phrases_candidates(
-            a.get("_texte") or ((a.get("titre") or "") + ". " + (a.get("resume") or ""))))
-        print("Classement par le sens : %d articles ; « qui est concerné » trouvé pour %d%s" % (
-            n_sens, sum(1 for a in cles if (a.get("concernes") or {}).get("acteurs")), (" — " + sens.erreur) if sens.erreur else ""))
+            a.get("_texte") or ((a.get("titre") or "") + ". " + (a.get("resume") or ""))), fin=fin_v6)
+        print("Classement par le sens : %d articles ; « qui est concerné » trouvé pour %d (étapes v6 : %d s)%s" % (
+            n_sens, sum(1 for a in cles if (a.get("concernes") or {}).get("acteurs")), time.time() - t_v6, (" — " + sens.erreur) if sens.erreur else ""))
     else:
         print(sens.erreur)
     gardes = [a for a in collectes if a["pertinence"] != "ecarte"]

@@ -149,7 +149,7 @@ class Sens:
         self.faits += n
         return n
 
-    def concernes(self, articles, phrases_de):
+    def concernes(self, articles, phrases_de, fin=None, max_phrases=6):
         """Pour chaque article, cherche une phrase qui dit SÛREMENT qui est concerné, puis les catégories.
         phrases_de(a) -> phrases candidates. Écrit a['concernes'] = {acteurs, phrase, hors_perimetre}."""
         if not self.actif:
@@ -158,7 +158,10 @@ class Sens:
         for a in articles:
             if (a.get("concernes") or {}).get("v") == VERSION_CONCERNES and not a.get("_texte"):
                 continue
-            phrases = phrases_de(a)
+            if fin and time.time() > fin:
+                self.erreur = "Temps imparti atteint : « qui est concerné » sera complété à la prochaine collecte."
+                break
+            phrases = phrases_de(a)[:max_phrases]
             a["concernes"] = {"v": VERSION_CONCERNES}      # analysé (même si rien de sûr n'est trouvé)
             if not phrases:
                 continue

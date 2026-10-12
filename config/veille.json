@@ -357,5 +357,8 @@
   "lecture_pages_max": 400,
   "lecture_pages_jours": 60,
   "sens_budget_secondes": 1500,
-  "sens_max_articles": 700
+  "sens_max_articles": 700,
+  "_aide_v6_1": "v6_budget_minutes : temps total des étapes v6 (pages + sens + qui est concerné), le reste est repris à la collecte suivante ; lecture_pages_minutes : part de ce temps pour lire les pages.",
+  "v6_budget_minutes": 35,
+  "lecture_pages_minutes": 10
 }

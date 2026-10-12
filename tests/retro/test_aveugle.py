@@ -216,7 +216,9 @@ def bruit_reel(mode, jours=120):
             a.pop("sens", None)
     if mode != "mots":
         cand = [a for a in arts if a.get("nature") not in ("rkc", "opinion") and a.get("date", "") >= debut.isoformat()]
-        SENS.analyser(cand, 5000)
+        SENS.budget = 1800                  # 30 min au plus pour le bruit (12/10 : limite de 2 h atteinte)
+        cand.sort(key=lambda a: a.get("pertinence") == "ecarte")
+        SENS.analyser(cand, 2500)
     PERT.noter(arts)
     ref = json.load(open(os.path.join(RACINE, "config", "referentiel.json"), encoding="utf-8")) \
         if os.path.exists(os.path.join(RACINE, "config", "referentiel.json")) else {}

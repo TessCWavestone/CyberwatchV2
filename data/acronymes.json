@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-06T12:06+00:00",
+ "mise_a_jour": "2026-10-12T12:59+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 171,
+   "nb_articles": 172,
    "exemple": {
-    "date": "2026-10-03",
-    "lien": "https://www.forvismazars.com/fr/fr/insights/publications-et-evenements/avis-d-experts/avis-d-expert-cyber-resilience-act",
-    "titre": "Avis d'expert | Cyber Resilience Act",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Expert opinion on Cyber Resilience Act"
+    "date": "2026-10-09",
+    "lien": "https://www.ictrecht.nl/blog/wie-betaalt-de-rekening-als-jouw-product-gehackt-wordt",
+    "titre": "Blog 9 oktober 2026 Data & privacy CRA Wie betaalt de rekening als jouw product gehackt wordt? Lees meer",
+    "langue": "nl",
+    "titre_fr": "Blogue 9 octobre 2026 Données et confidentialité CRA Qui paie la facture si votre produit est piraté? Lire la suite",
+    "titre_en": "Blog October 9, 2026 Data & privacy CRA Who pays the bill if your product is hacked? Read more"
    }
   },
   {
@@ -164,14 +164,14 @@
    "groupe": "textes",
    "fr": "NIS2",
    "en": "NIS2",
-   "nb_articles": 84,
+   "nb_articles": 86,
    "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/nya-regler-for-vad-som-ar-betydande-incidenter-inom-telekomomradet/",
-    "titre": "Nya regler för vad som är betydande incidenter inom telekomområdet",
-    "langue": "sv",
-    "titre_fr": "Nouvelles règles relatives aux incidents majeurs dans le secteur des télécommunications",
-    "titre_en": "New rules on major incidents in the telecommunications sector"
+    "date": "2026-10-09",
+    "lien": "https://www.redseguridad.com/actualidad/problema-cronico-ciberseguridad-espana-incorporacion-nis2_20261009.html",
+    "titre": "El problema crónico de España con la incorporación de la NIS2",
+    "langue": "es",
+    "titre_fr": "Le problème chronique de l'Espagne avec l'incorporation de la NIS2",
+    "titre_en": "Spain's chronic problem with the incorporation of NIS2"
    }
   },
   {
@@ -179,14 +179,14 @@
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 65,
+   "nb_articles": 67,
    "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://www.computing.es/informes/soberania-del-dato-ai-act-y-agentes-autonomos-las-tres-claves-del-despliegue-de-ia-empresarial-en-2026/",
-    "titre": "Soberanía del dato, AI Act y agentes autónomos: las tres claves del despliegue de IA empresarial en 2026",
-    "langue": "es",
-    "titre_fr": "La souveraineté des données, la loi AI et les agents indépendants : les trois clés du déploiement de IA d'ici 2026",
-    "titre_en": "Data Sovereignty, AI Act and Self-employed Agents: The Three Key to Business AI's Deployment by 2026"
+    "date": "2026-10-08",
+    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
+    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
+    "langue": "it",
+    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
+    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
    }
   },
   {
@@ -194,14 +194,14 @@
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 56,
+   "nb_articles": 58,
    "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
-    "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
-    "langue": "hu",
-    "titre_fr": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD",
-    "titre_en": "New EDPB Guidelines on administrative penalties under GDPR"
+    "date": "2026-10-12",
+    "lien": "https://www.security.nl/posting/957091/Microsofts+advertentiebedrijf+Xandr+krijgt+AVG-boete+van+8%2C5+miljoen+euro?channel=rss",
+    "titre": "Microsofts advertentiebedrijf Xandr krijgt AVG-boete van 8,5 miljoen euro",
+    "langue": "nl",
+    "titre_fr": "Microsoft société de publicité Xandr obtient AVG-boete de 8,5 millions d'euro",
+    "titre_en": "Microsoft advertising company Xandr gets AVG-boete of 8.5 million euros"
    }
   },
   {
@@ -209,14 +209,14 @@
    "groupe": "textes",
    "fr": "Cybersecurity Act (certification UE)",
    "en": "Cybersecurity Act (EU certification)",
-   "nb_articles": 26,
+   "nb_articles": 28,
    "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/nya-regler-for-vad-som-ar-betydande-incidenter-inom-telekomomradet/",
-    "titre": "Nya regler för vad som är betydande incidenter inom telekomområdet",
-    "langue": "sv",
-    "titre_fr": "Nouvelles règles relatives aux incidents majeurs dans le secteur des télécommunications",
-    "titre_en": "New rules on major incidents in the telecommunications sector"
+    "date": "2026-10-08",
+    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:E2025J0021",
+    "titre": "Judgment of the Court of 3 July 2026 in Case E-21/25 – EFTA Surveillance Authority v Iceland (Failure by an EFTA State to fulfil its obligations – Failure to implement – Article 3 EEA – Principle of sincere cooperation – Duty to provide information – Regulation (EU) 2019/881 – Cybersecurity – Electronic communication, audiovisual services and information society)",
+    "langue": "en",
+    "titre_fr": "Arrêt de la Cour du 3 juillet 2026 dans l'affaire E-21/25 – EFTA Surveillance Authority / Islande (Manquement de l'État EFTA – Défaut d'exécution – Article 3 EEA – Principe de coopération sincère – Obligation de fournir des informations – Règlement (UE) 2019/881 – Cybersécurité – Communication électronique, services audiovisuels et société de l'information)",
+    "titre_en": ""
    }
   },
   {
@@ -239,14 +239,14 @@
    "groupe": "textes",
    "fr": "EHDS (espace européen des données de santé)",
    "en": "EHDS (European Health Data Space)",
-   "nb_articles": 15,
+   "nb_articles": 16,
    "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://mzd.gov.cz/evropsky-prostor-pro-zdravotni-data-ehds-aktualni-stav-implementace-a-podpurne-iniciativy/",
-    "titre": "Evropský prostor pro zdravotní data (EHDS): aktuální stav implementace a podpůrné iniciativy",
-    "langue": "cs",
-    "titre_fr": "Espace européen des données sanitaires (EHDS): état actuel de la mise en œuvre et initiatives de soutien",
-    "titre_en": "European area for health data (EHDS): current state of implementation and support initiatives"
+    "date": "2026-10-08",
+    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
+    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
    }
   },
   {
@@ -254,13 +254,13 @@
    "groupe": "textes",
    "fr": "IVDR (diagnostic in vitro)",
    "en": "IVDR (in vitro diagnostics)",
-   "nb_articles": 9,
+   "nb_articles": 10,
    "exemple": {
-    "date": "2026-09-10",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/reporting-incidents---fscas/users---operators.html",
-    "titre": "New guideline «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
+    "date": "2026-10-09",
+    "lien": "https://hadea.ec.europa.eu/node/2045",
+    "titre": "European Day for Organ, Tissue and Cell Donation: Safe testing for safer donations",
     "langue": "en",
-    "titre_fr": "Nouvelle ligne directrice «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
+    "titre_fr": "Journée européenne pour le don d'organes, de tissus et de cellules: tests sûrs pour des dons plus sûrs",
     "titre_en": ""
    }
   },
@@ -659,14 +659,14 @@
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 59,
+   "nb_articles": 60,
    "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://www.cert.se/2026/10/cert-se-veckobrev-v40.html",
-    "titre": "CERT-SE:s veckobrev v.40",
-    "langue": "sv",
-    "titre_fr": "Récif hebdomadaire de CERT-SE v. 40",
-    "titre_en": "CERT-SE's weekly reef v. 40"
+    "date": "2026-10-12",
+    "lien": "https://www.ncsc.gov.uk/blogs/help-ncsc-understand-how-organisations-approach-external-attack-surface-risk",
+    "titre": "Help the NCSC understand how organisations approach external attack surface risk",
+    "langue": "en",
+    "titre_fr": "Aider le NCSC à comprendre comment les organisations approchent le risque de surface d'attaque externe",
+    "titre_en": ""
    }
   },
   {
@@ -674,7 +674,7 @@
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 46,
+   "nb_articles": 47,
    "exemple": {
     "date": "2026-10-02",
     "lien": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
@@ -689,14 +689,14 @@
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 37,
+   "nb_articles": 46,
    "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
-    "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
-    "langue": "hu",
-    "titre_fr": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD",
-    "titre_en": "New EDPB Guidelines on administrative penalties under GDPR"
+    "date": "2026-10-12",
+    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
+    "titre": "Italian DPA fines Wind Tre EUR 16 700 000 for unlawful telemarketing and data protection infringements",
+    "langue": "en",
+    "titre_fr": "Italie DPA amendes Wind Tre EUR 16 700 000 pour infractions illégales au télémarketing et à la protection des données",
+    "titre_en": ""
    }
   },
   {
@@ -715,18 +715,33 @@
    }
   },
   {
+   "code": "Garante",
+   "groupe": "autorites",
+   "fr": "Garante privacy (Italie)",
+   "en": "Garante privacy (Italy)",
+   "nb_articles": 26,
+   "exemple": {
+    "date": "2026-10-11",
+    "lien": "https://www.federprivacy.org/strumenti/accesso-ristretto/deepfake-la-rassegna-dei-provvedimenti-del-garante-privacy-su-nudi-e-voci-rubate",
+    "titre": "Deepfake, la rassegna dei provvedimenti del Garante Privacy su nudi e voci rubate",
+    "langue": "it",
+    "titre_fr": "Deepfake, l'examen des dispositions du garant de la vie privée sur les voix nues et volées",
+    "titre_en": "Deepfake, the review of the provisions of the Privacy Guarantor on naked and stolen voices"
+   }
+  },
+  {
    "code": "NÚKIB",
    "groupe": "autorites",
    "fr": "NÚKIB (Tchéquie)",
    "en": "NÚKIB (Czechia)",
-   "nb_articles": 26,
+   "nb_articles": 25,
    "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2461-cesko-francouzske-setkani-v-parizi-a-rennes-podporilo-formovani-strategickeho-pristupu-ke-kyberneticke-bezpecnosti",
-    "titre": "Česko-francouzské setkání v Paříži a Rennes podpořilo formování strategického přístupu ke kybernetické bezpečnosti",
+    "date": "2026-10-09",
+    "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2462-nukib-navazal-v-rime-na-predchozi-spolupraci-tematem-kvantove-odolne-komunikace",
+    "titre": "NÚKIB navázal v Římě na předchozí spolupráci tématem kvantově odolné komunikace",
     "langue": "cs",
-    "titre_fr": "Les rencontres franco-tchèques à Paris et à Rennes ont soutenu la formation d'une approche stratégique de la cybersécurité",
-    "titre_en": "Czech-French meetings in Paris and Rennes supported the formation of a strategic approach to cyber security"
+    "titre_fr": "NÚKIB a établi un thème de communication résistant au quantique à Rome",
+    "titre_en": "NÚKIB established a quantum-resistant communication theme in Rome"
    }
   },
   {
@@ -745,48 +760,33 @@
    }
   },
   {
-   "code": "ENISA",
-   "groupe": "autorites",
-   "fr": "ENISA",
-   "en": "ENISA",
-   "nb_articles": 21,
-   "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://nki.gov.hu/it-biztonsag/tanacsok/kezdetet-veszi-az-idei-ecsm/",
-    "titre": "Kezdetét veszi az idei ECSM",
-    "langue": "hu",
-    "titre_fr": "Commencez cette année le ECSM",
-    "titre_en": "Start this year's ECSM"
-   }
-  },
-  {
-   "code": "Garante",
-   "groupe": "autorites",
-   "fr": "Garante privacy (Italie)",
-   "en": "Garante privacy (Italy)",
-   "nb_articles": 21,
-   "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
-    "titre": "IQVIA fined $7.8 million for failing to properly anonymize health data",
-    "langue": "en",
-    "titre_fr": "IQVIA condamné à une amende de 7,8 millions de dollars pour défaut d'anonymat des données sur la santé",
-    "titre_en": ""
-   }
-  },
-  {
    "code": "NKI",
    "groupe": "autorites",
    "fr": "NKI (Hongrie)",
    "en": "NKI (Hungary)",
-   "nb_articles": 19,
+   "nb_articles": 22,
    "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/a-signal-ios-es-asztali-alkalmazasaihoz-is-bevezette-a-helyi-titkositott-mentesi-funkciot/",
-    "titre": "A Signal iOS és asztali alkalmazásaihoz is bevezette a helyi titkosított mentési funkciót",
+    "date": "2026-10-12",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/tobb-ezer-olcso-androidos-telefon-kerult-forgalomba-reklamcsalo-virussal/",
+    "titre": "Több ezer olcsó Androidos telefon került forgalomba reklámcsaló vírussal",
     "langue": "hu",
-    "titre_fr": "Il a également présenté la fonction de sauvetage cryptée locale pour le Signal iOS et les applications de bureau",
-    "titre_en": "He also introduced the local encrypted rescue function for the Signal iOS and desktop applications"
+    "titre_fr": "Des milliers de téléphones Android bon marché ont été mis sur le marché avec le virus de la publicité",
+    "titre_en": "Thousands of cheap Android phones have been placed on the market with advertising virus"
+   }
+  },
+  {
+   "code": "ENISA",
+   "groupe": "autorites",
+   "fr": "ENISA",
+   "en": "ENISA",
+   "nb_articles": 20,
+   "exemple": {
+    "date": "2026-09-24",
+    "lien": "https://www.enisa.europa.eu/news/supporting-nis2-implementation-through-actionable-guidance",
+    "titre": "Supporting NIS2 implementation through actionable guidance",
+    "langue": "en",
+    "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
+    "titre_en": ""
    }
   },
   {
@@ -854,7 +854,7 @@
    "groupe": "autorites",
    "fr": "ANSSI",
    "en": "ANSSI",
-   "nb_articles": 12,
+   "nb_articles": 11,
    "exemple": {
     "date": "2026-09-30",
     "lien": "http://cyber.sites.beta.gouv.fr/actualites/resultat-ami-sec/",
@@ -880,33 +880,33 @@
    }
   },
   {
-   "code": "CNCS",
-   "groupe": "autorites",
-   "fr": "CNCS (Portugal)",
-   "en": "CNCS (Portugal)",
-   "nb_articles": 10,
-   "exemple": {
-    "date": "2026-09-15",
-    "lien": "https://www.n4a.pt/noticias-nis2/nis2-fim-prazo-registo-15-setembro",
-    "titre": "Portugal : fin de la période d'enregistrement NIS2 sur la plateforme MyCiber (15 septembre 2026)",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Portugal: NIS2 registration window on the MyCiber platform closes (15 September 2026)"
-   }
-  },
-  {
    "code": "CNPD",
    "groupe": "autorites",
    "fr": "CNPD (Portugal / Luxembourg)",
    "en": "CNPD (Portugal / Luxembourg)",
-   "nb_articles": 9,
+   "nb_articles": 11,
    "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/presidente-da-cnpd-participa-no-i-encontro-iberico-academico-dedicado-a-regulacao-digital-10-anos-do-rgpd/",
-    "titre": "25/09/2026 Presidente da CNPD participa no I Encontro Ibérico académico dedicado à “Regulação Digital — 10 Anos do RGPD”",
+    "date": "2026-10-08",
+    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-e-a-agencia-nacional-de-protecao-de-dados-do-brasil-celebram-memorando-de-entendimento-para-reforcar-a-atuacao-em-materia-de-dados-pessoais/",
+    "titre": "08/10/2026 CNPD e a Agência Nacional de Proteção de Dados do Brasil celebram Memorando de Entendimento para reforçar a atuação em matéria de dados pessoais O MoU foi assinado na sede da CNPD no dia 2 de outubro de 2026.",
     "langue": "pt",
-    "titre_fr": "25/09/2026 Le président de CNPD participe à la réunion académique ibérique consacrée à la réglementation numérique — 10 ans de RGPD",
-    "titre_en": "25/09/2026 President of CNPD takes part in the Iberic academic meeting dedicated to “Digital Regulation — 10 Years of GDPR”"
+    "titre_fr": "08/10/2026 CNPD et l'Agence nationale brésilienne de protection des données célèbrent le protocole d'entente pour renforcer la performance des données personnelles Le protocole d'entente a été signé au siège de CNPD le 2 octobre 2026.",
+    "titre_en": "08/10/2026 CNPD and the Brazilian National Data Protection Agency celebrate Memorandum of Understanding to strengthen the performance of personal data The MoU was signed at CNPD headquarters on October 2, 2026."
+   }
+  },
+  {
+   "code": "CNCS",
+   "groupe": "autorites",
+   "fr": "CNCS (Portugal)",
+   "en": "CNCS (Portugal)",
+   "nb_articles": 11,
+   "exemple": {
+    "date": "2026-10-08",
+    "lien": "https://dyn.cncs.gov.pt/pt/detalhe/art/136097/cncs-termina-segunda-ronda-de-reunioes-com-comunidades-de-ciberseguranca",
+    "titre": "CNCS termina segunda ronda de reuniões com Comunidades de Cibersegurança",
+    "langue": "pt",
+    "titre_fr": "CNCS termine la deuxième série de réunions avec les communautés de cybersécurité",
+    "titre_en": "CNCS ends second round of meetings with Cybersecurity Communities"
    }
   },
   {
@@ -925,26 +925,11 @@
    }
   },
   {
-   "code": "gematik",
-   "groupe": "autorites",
-   "fr": "gematik",
-   "en": "gematik",
-   "nb_articles": 8,
-   "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://www.gematik.de/newsroom/news-detail/all-in-one-ti-messenger-kann-kuenftig-auch-ueber-softwaresysteme-fuer-gesundheitseinrichtungen-genutzt-werden",
-    "titre": "\"All in One\": TI-Messenger kann künftig auch über Softwaresysteme für Gesundheitseinrichtungen genutzt werden",
-    "langue": "de",
-    "titre_fr": "\"Tout en un\": TI-Messenger peut également être utilisé à l'avenir via des systèmes logiciels pour les établissements de santé",
-    "titre_en": "\"All in One\": TI-Messenger can also be used in the future via software systems for healthcare facilities"
-   }
-  },
-  {
    "code": "PTS",
    "groupe": "autorites",
    "fr": "PTS (Suède)",
    "en": "PTS (Sweden)",
-   "nb_articles": 8,
+   "nb_articles": 9,
    "exemple": {
     "date": "2026-10-02",
     "lien": "https://pts.se/nyheter-och-pressmeddelanden/nya-regler-for-vad-som-ar-betydande-incidenter-inom-telekomomradet/",
@@ -970,6 +955,51 @@
    }
   },
   {
+   "code": "ANS",
+   "groupe": "autorites",
+   "fr": "Agence du numérique en santé",
+   "en": "French Digital Health Agency (ANS)",
+   "nb_articles": 7,
+   "exemple": {
+    "date": "2026-10-08",
+    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
+    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
+   }
+  },
+  {
+   "code": "gematik",
+   "groupe": "autorites",
+   "fr": "gematik",
+   "en": "gematik",
+   "nb_articles": 7,
+   "exemple": {
+    "date": "2026-09-30",
+    "lien": "https://www.gematik.de/newsroom/news-detail/all-in-one-ti-messenger-kann-kuenftig-auch-ueber-softwaresysteme-fuer-gesundheitseinrichtungen-genutzt-werden",
+    "titre": "\"All in One\": TI-Messenger kann künftig auch über Softwaresysteme für Gesundheitseinrichtungen genutzt werden",
+    "langue": "de",
+    "titre_fr": "\"Tout en un\": TI-Messenger peut également être utilisé à l'avenir via des systèmes logiciels pour les établissements de santé",
+    "titre_en": "\"All in One\": TI-Messenger can also be used in the future via software systems for healthcare facilities"
+   }
+  },
+  {
+   "code": "ACN",
+   "groupe": "autorites",
+   "fr": "ACN (Italie)",
+   "en": "ACN (Italy)",
+   "nb_articles": 7,
+   "exemple": {
+    "date": "2026-09-13",
+    "lien": "https://www.matricedigitale.it/2026/09/13/nis2-aggiornamento-faq/",
+    "titre": "Italie : l'ACN met à jour ses FAQ NIS sur la supervision, les inspections et les sanctions",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Italy: ACN updates its NIS FAQ on supervision, inspections and sanctions"
+   }
+  },
+  {
    "code": "IMY",
    "groupe": "autorites",
    "fr": "IMY (Suède)",
@@ -985,78 +1015,18 @@
    }
   },
   {
-   "code": "ANS",
-   "groupe": "autorites",
-   "fr": "Agence du numérique en santé",
-   "en": "French Digital Health Agency (ANS)",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://esante.gouv.fr/actualites/controle-des-services-numeriques-en-sante-un-nouveau-cadre-pour-garantir-la-confiance",
-    "titre": "Contrôle des services numériques en santé : un nouveau cadre pour garantir la confiance",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Control of digital health services: a new framework to ensure trust"
-   }
-  },
-  {
-   "code": "ACN",
-   "groupe": "autorites",
-   "fr": "ACN (Italie)",
-   "en": "ACN (Italy)",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-09-13",
-    "lien": "https://www.matricedigitale.it/2026/09/13/nis2-aggiornamento-faq/",
-    "titre": "Italie : l'ACN met à jour ses FAQ NIS sur la supervision, les inspections et les sanctions",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Italy: ACN updates its NIS FAQ on supervision, inspections and sanctions"
-   }
-  },
-  {
    "code": "AEPD",
    "groupe": "autorites",
    "fr": "AEPD (Espagne)",
    "en": "AEPD (Spain)",
-   "nb_articles": 5,
+   "nb_articles": 6,
    "exemple": {
-    "date": "2026-09-23",
-    "lien": "https://digitalpolicyalert.org/event/43928-data-protection-agency-investigation-into-a-company-over-data-protection-safeguards-in-a-planned-ai-based-cv-screening-tool-exp202600427",
-    "titre": "Data Protection Agency issued a preventive warning to a company over data protection safeguards in a planned AI-based CV screening tool (EXP202600427)",
-    "langue": "en",
-    "titre_fr": "L'Agence de protection des données a émis un avertissement préventif à une entreprise sur les garanties de protection des données dans un outil de dépistage AI-based CV prévu (EXP202600427)",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "UODO",
-   "groupe": "autorites",
-   "fr": "UODO (Pologne)",
-   "en": "UODO (Poland)",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://uodo.gov.pl/pl/185/4584",
-    "titre": "EROD ujednolica metodologię nakładania kar i przyjmuje ostateczne wytyczne dotyczące DSA i RODO 25.09.2026",
-    "langue": "pl",
-    "titre_fr": "EROD harmonise la méthodologie de sanction et adopte des lignes directrices finales pour DSA et RODO 25.09.2026",
-    "titre_en": "EROD harmonises the sanctioning methodology and adopts final guidelines for DSA and RODO 25.09.2026"
-   }
-  },
-  {
-   "code": "AI Office",
-   "groupe": "autorites",
-   "fr": "Bureau de l'IA (UE)",
-   "en": "EU AI Office",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-07-31",
-    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
-    "titre": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
-    "langue": "en",
-    "titre_fr": "La Commission commence à appliquer les règles de la loi IA et les nouvelles exigences de transparence le 2 août",
-    "titre_en": ""
+    "date": "2026-10-01",
+    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-e-aepd-reforcam-cooperacao-e-partilham-experiencias-sobre-os-desafios-da-utilizacao-da-inteligencia-artificial-na-protecao-de-dados-pessoais/",
+    "titre": "01/10/2026 CNPD e AEPD reforçam cooperação e partilham experiências sobre os desafios da utilização da inteligência artificial na proteção de dados pessoais",
+    "langue": "pt",
+    "titre_fr": "01/10/2026 CNPD et AEPD renforcent la coopération et échangent des expériences sur les défis de l'utilisation de l'intelligence artificielle dans la protection des données personnelles",
+    "titre_en": "01/10/2026 CNPD and AEPD reinforce cooperation and share experiences on the challenges of using artificial intelligence in the protection of personal data"
    }
   },
   {
@@ -1064,29 +1034,29 @@
    "groupe": "autorites",
    "fr": "AgID",
    "en": "AgID",
-   "nb_articles": 4,
+   "nb_articles": 6,
    "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://www.agid.gov.it/it/notizie/nuovo-paper-del-cert-agid-sugli-explosive-prompts-e-la-sicurezza-dei-sistemi-agentici",
-    "titre": "Nuovo paper del CERT-AGID sugli Explosive Prompts e la sicurezza dei sistemi agentici",
+    "date": "2026-10-08",
+    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
+    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
     "langue": "it",
-    "titre_fr": "Nouveau document CERT-AGID sur les prompts explosifs et la sécurité des agents",
-    "titre_en": "New CERT-AGID paper on Explosive Prompts and the security of the agents"
+    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
+    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
    }
   },
   {
-   "code": "ICO",
+   "code": "UODO",
    "groupe": "autorites",
-   "fr": "ICO (Royaume-Uni)",
-   "en": "ICO (UK)",
-   "nb_articles": 4,
+   "fr": "UODO (Pologne)",
+   "en": "UODO (Poland)",
+   "nb_articles": 6,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://digitalpolicyalert.org/event/44015-information-commissioners-office-adopts-waspi-uk-gdpr-code-of-conduct-for-information-sharing-protocols",
-    "titre": "Information Commissioner's Office adopted Code of Conduct for Information Sharing Protocols",
-    "langue": "en",
-    "titre_fr": "Le Commissariat à l'information a adopté le Code de conduite pour les protocoles de partage de l'information",
-    "titre_en": ""
+    "date": "2026-10-12",
+    "lien": "https://uodo.gov.pl/pl/138/4598",
+    "titre": "Cyfryzacja, automatyzacja i ochrona danych: jak będą wyglądały polskie urzędy za kilka lat? 07.10.2026",
+    "langue": "pl",
+    "titre_fr": "Digitalisation, automatisation et protection des données : à quoi ressembleront les bureaux polonais dans quelques années ? 07.10.2026",
+    "titre_en": "Digitalisation, automation and data protection: what will Polish offices look like in a few years? 07.10.2026"
    }
   },
   {
@@ -1094,14 +1064,89 @@
    "groupe": "autorites",
    "fr": "Nkom (Norvège)",
    "en": "Nkom (Norway)",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-10-07",
+    "lien": "https://nkom.no/aktuelt/millioner-til-okt-digital-sikkerhet-og-nytt-nodnett",
+    "titre": "Millioner til økt digital sikkerhet og nytt nødnett",
+    "langue": "nb",
+    "titre_fr": "Des millions pour accroître la sécurité numérique et les nouveaux réseaux d'urgence",
+    "titre_en": "Millions to increase digital security and new emergency networks"
+   }
+  },
+  {
+   "code": "AI Office",
+   "groupe": "autorites",
+   "fr": "Bureau de l'IA (UE)",
+   "en": "EU AI Office",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-09",
+    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks",
+    "titre": "Commission holds special meeting of Scientific panel on frontier AI safety and risks",
+    "langue": "en",
+    "titre_fr": "La Commission tient une réunion spéciale du groupe scientifique sur la sécurité et les risques des frontières IA",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "ICO",
+   "groupe": "autorites",
+   "fr": "ICO (Royaume-Uni)",
+   "en": "ICO (UK)",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-09",
+    "lien": "https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/",
+    "titre": "Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push",
+    "langue": "en",
+    "titre_fr": "Principales entreprises IA Annonce de changements à la protection des données après UK",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "Lægemiddelstyrelsen",
+   "groupe": "autorites",
+   "fr": "Lægemiddelstyrelsen (Danemark)",
+   "en": "Danish Medicines Agency",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-12",
+    "lien": "https://laegemiddelstyrelsen.dk/da/godkendelse/kontrol-og-inspektion/mangel-paa-medicin/meddelelser-om-forsyning-af-medicin/human-2026/bexsero-forsyningsvanskelighed/",
+    "titre": "Bexsero ; forsyningsvanskelighed",
+    "langue": "da",
+    "titre_fr": "Bexsero; difficulté d'approvisionnement",
+    "titre_en": "Bexsero; supply difficulty"
+   }
+  },
+  {
+   "code": "CERT Polska",
+   "groupe": "autorites",
+   "fr": "CERT Polska / NASK",
+   "en": "CERT Polska / NASK",
    "nb_articles": 4,
    "exemple": {
-    "date": "2026-09-29",
-    "lien": "https://nkom.no/aktuelt/tema-frekvensforum-2026",
-    "titre": "Nytt system vil gjøre Norge mindre avhengig av tidssignaler fra GPS – viktig for samfunnssikkerheten",
+    "date": "2026-10-09",
+    "lien": "https://www.gov.pl/web/cyfryzacja/dezinformacja---jak-ja-rozpoznac-i-gdzie-zglosic",
+    "titre": "Dezinformacja - jak ją rozpoznać i gdzie zgłosić?",
+    "langue": "pl",
+    "titre_fr": "Désinformation - comment la reconnaître et où la signaler?",
+    "titre_en": "Disinformation - how to recognize it and where to report it?"
+   }
+  },
+  {
+   "code": "Datatilsynet",
+   "groupe": "autorites",
+   "fr": "Datatilsynet (Norvège, Danemark)",
+   "en": "Datatilsynet (Norway, Denmark)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-12",
+    "lien": "https://www.digi.no/sikkerhet/datatilsynet-gir-microsoft-selskap-rekordbot-bruddene-er-svaert-alvorlige/7145501",
+    "titre": "– Bruddene er svært alvorlige",
     "langue": "nb",
-    "titre_fr": "Le nouveau système rendra la Norvège moins dépendante des signaux horaires de GPS – important pour la sécurité sociale",
-    "titre_en": "New system will make Norway less dependent on time signals from GPS – important for social security"
+    "titre_fr": "Les mariées sont très sérieuses.",
+    "titre_en": "The brides are very serious."
    }
   },
   {
@@ -1132,6 +1177,36 @@
     "langue": "en",
     "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
     "titre_en": ""
+   }
+  },
+  {
+   "code": "EOF",
+   "groupe": "autorites",
+   "fr": "EOF (Grèce)",
+   "en": "EOF (Greece)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-09-18",
+    "lien": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-0366002724-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87/",
+    "titre": "Ανάκληση της παρτίδας 0366002724 του Ιατροτεχνολογικού προϊόντος UR-TEST 120ml Sterile Ουροσυλλέκτης",
+    "langue": "el",
+    "titre_fr": "Retrait du lot 0366002724 du dispositif médical UR-TEST 120ml Urocallor stérile",
+    "titre_en": "Withdrawal of batch 0366002724 of the medical device UR-TEST 120ml Sterile Urocollector"
+   }
+  },
+  {
+   "code": "HDPA",
+   "groupe": "autorites",
+   "fr": "Autorité grecque de protection des données",
+   "en": "Hellenic DPA",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-07",
+    "lien": "https://www.dpa.gr/el/enimerwtiko/deltia/17-nees-theseis-eidikoy-epistimonikoy-prosopikoy-stin-arhi-prostasias-dedomenon",
+    "titre": "17 νέες θέσεις Ειδικού Επιστημονικού Προσωπικού στην Αρχή Προστασίας Δεδομένων",
+    "langue": "el",
+    "titre_fr": "17 nouveaux postes de personnel scientifique spécial à l'Autorité de protection des données",
+    "titre_en": "17 new Special Scientific Personnel posts at the Data Protection Authority"
    }
   },
   {
@@ -1180,18 +1255,48 @@
    }
   },
   {
-   "code": "CERT Polska",
+   "code": "Autoriteit Persoonsgegevens",
    "groupe": "autorites",
-   "fr": "CERT Polska / NASK",
-   "en": "CERT Polska / NASK",
+   "fr": "Autoriteit Persoonsgegevens (Pays-Bas)",
+   "en": "Dutch DPA (AP)",
    "nb_articles": 3,
    "exemple": {
-    "date": "2026-09-23",
-    "lien": "https://www.uke.gov.pl/akt/szkolenie-nask-pib-z-systemu-s46,691.html",
-    "titre": "Więcej O: Szkolenie NASK-PIB z Systemu S46",
-    "langue": "pl",
-    "titre_fr": "En savoir plus sur : Cours NASK-PIB avec système S46",
-    "titre_en": "More About: NASK-PIB Course with S46 System"
+    "date": "2026-10-08",
+    "lien": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+    "titre": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+    "langue": "en",
+    "titre_fr": "Dutch DPA Amende Uber EUR 824 990 000 pour prise de décision automatisée illégale et insuffisance d'informations sur le profilage",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "RDI",
+   "groupe": "autorites",
+   "fr": "RDI (Pays-Bas)",
+   "en": "RDI (Netherlands)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-07",
+    "lien": "https://www.ncsc.nl/nieuws/ncsc-en-toezichthouders-maken-afspraken-over-samenwerking-bij-cyberbeveiligingswet",
+    "titre": "NCSC en toezichthouders maken afspraken over samenwerking bij Cyberbeveiligingswet",
+    "langue": "nl",
+    "titre_fr": "NCSC et les superviseurs conviennent de la coopération avec la Loi sur la cybersécurité",
+    "titre_en": "NCSC and supervisors agree on cooperation with Cybersecurity Act"
+   }
+  },
+  {
+   "code": "DSB",
+   "groupe": "autorites",
+   "fr": "DSB (Autriche)",
+   "en": "DSB (Austria)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-08",
+    "lien": "https://dsb.gv.at/aktuelles/aktuelles/bilaterales-treffen-der-polnischen-und-oesterreichischen-datenschutzbehoerde",
+    "titre": "Bilaterales Treffen der polnischen und österreichischen Datenschutzbehörde",
+    "langue": "de",
+    "titre_fr": "Réunion bilatérale de l'Autorité polonaise et autrichienne de protection des données",
+    "titre_en": "Bilateral meeting of the Polish and Austrian Data Protection Authority"
    }
   },
   {
@@ -1207,21 +1312,6 @@
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Cyber Resilience Act: EU reporting obligations take effect (CCB communication)"
-   }
-  },
-  {
-   "code": "Datatilsynet",
-   "groupe": "autorites",
-   "fr": "Datatilsynet (Norvège, Danemark)",
-   "en": "Datatilsynet (Norway, Denmark)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-03-23",
-    "lien": "https://www.lovguiden.dk/det-offentlige/region-syddanmark/2026-03-23-region-syddanmark-faar-500000-kr-i-boede-for-gdpr-brud-i-2020",
-    "titre": "Région du Danemark du Sud condamnée à 500 000 DKK d'amende pour une violation du RGPD",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Region of Southern Denmark fined DKK 500,000 for a GDPR breach"
    }
   },
   {
@@ -1255,21 +1345,6 @@
    }
   },
   {
-   "code": "HDPA",
-   "groupe": "autorites",
-   "fr": "Autorité grecque de protection des données",
-   "en": "Hellenic DPA",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-15",
-    "lien": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/apofasi-shetika-me-tin-apostoli-syntomoy-ilektronikoy-minymatos-sms-apo",
-    "titre": "Απόφαση σχετικά με την αποστολή σύντομου ηλεκτρονικού μηνύματος (sms) από το Υπουργείο Υποδομών και Μεταφορών στους πολίτες (συνδρομητές κινητής τηλεφωνίας) για την οδική ασφάλεια",
-    "langue": "el",
-    "titre_fr": "Décision concernant l'envoi d'un court (sms) courrier électronique du ministère des infrastructures et des transports aux citoyens (abonnés mobiles) pour la sécurité routière",
-    "titre_en": "Decision on the dispatch of a short email (sms) from the Ministry of Infrastructure and Transport to citizens (mobile subscribers) for road safety"
-   }
-  },
-  {
    "code": "SÚKL",
    "groupe": "autorites",
    "fr": "SÚKL (Tchéquie)",
@@ -1285,36 +1360,6 @@
    }
   },
   {
-   "code": "Autoriteit Persoonsgegevens",
-   "groupe": "autorites",
-   "fr": "Autoriteit Persoonsgegevens (Pays-Bas)",
-   "en": "Dutch DPA (AP)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-09-22",
-    "lien": "https://www.security.nl/posting/954102/Autoriteit+Persoonsgegevens+waarschuwt+gebruikers+camerabrillen+voor+privacyregels?channel=rss",
-    "titre": "Autoriteit Persoonsgegevens waarschuwt gebruikers camerabrillen voor privacyregels",
-    "langue": "nl",
-    "titre_fr": "Autorité Données personnelles avertit les utilisateurs lunettes de caméra pour les règles de confidentialité",
-    "titre_en": "Authority Personal data warns users camera glasses for privacy rules"
-   }
-  },
-  {
-   "code": "RDI",
-   "groupe": "autorites",
-   "fr": "RDI (Pays-Bas)",
-   "en": "RDI (Netherlands)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-09-11",
-    "lien": "https://www.rdi.nl/onderwerpen/draadloze-apparatuur/handel-en-apparatuur/cra",
-    "titre": "Pays-Bas : la RDI rappelle les obligations de signalement CRA en vigueur depuis le 11 septembre 2026",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Netherlands: RDI highlights CRA reporting obligations applicable since 11 September 2026"
-   }
-  },
-  {
    "code": "IGJ",
    "groupe": "autorites",
    "fr": "IGJ (Pays-Bas)",
@@ -1327,21 +1372,6 @@
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Netherlands: Cybersecurity Regulation for healthcare published – NEN 7510 / ISO 27001 compliance and reporting thresholds"
-   }
-  },
-  {
-   "code": "DSB",
-   "groupe": "autorites",
-   "fr": "DSB (Autriche)",
-   "en": "DSB (Austria)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-09-18",
-    "lien": "https://dsb.gv.at/aktuelles/aktuelles/treffen-der-datenschutzbehoerden-aus-slowenien-sterreich-kroatien-tschechien-und-ungarn-in-ljubljana",
-    "titre": "Treffen der Datenschutzbehörden aus Slowenien, Österreich, Kroatien, Tschechien und Ungarn in Ljubljana",
-    "langue": "de",
-    "titre_fr": "Réunion des autorités de protection des données de Slovénie, d'Autriche, de Croatie, de République tchèque et de Hongrie à Ljubljana",
-    "titre_en": "Meeting of data protection authorities from Slovenia, Austria, Croatia, Czech Republic and Hungary in Ljubljana"
    }
   },
   {
@@ -1478,32 +1508,41 @@
     "titre_fr": "",
     "titre_en": "Norway: Norwegian Board of Health Supervision clarifies Digital Security Act requirements"
    }
-  },
-  {
-   "code": "EOF",
-   "groupe": "autorites",
-   "fr": "EOF (Grèce)",
-   "en": "EOF (Greece)",
-   "nb_articles": 1,
-   "exemple": {
-    "date": "2026-08-27",
-    "lien": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87%ce%bd%ce%bf%ce%bb%ce%bf%ce%b3-16/",
-    "titre": "Ανάκληση παρτίδων του ιατροτεχνολογικού προϊόντος “Αγγειογραφικοί καθετήρες Imager II” της εταιρείας BOSTON SCIENTIFIC κατηγορίας class MDD IIa",
-    "langue": "el",
-    "titre_fr": "Révocation des lots de l'appareil médical Imager QZXO par BOSTON SCIENTIFIC classe MDD IIa",
-    "titre_en": "Revocation of batches of the medical device “Imager II” by BOSTON SCIENTIFIC class MDD IIa"
-   }
   }
  ],
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 17,
+   "nb_articles": 18,
    "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-asks-bulgaria-comply-digital-services-act-and-empower-national-authorities-enforce-it",
-    "titre": "Commission asks Bulgaria to comply with the Digital Services Act and empower the national authorities to enforce it",
-    "titre_fr": "La Commission demande à la Bulgarie de se conformer à la loi sur les services numériques et d'habiliter les autorités nationales à l'appliquer.",
+    "date": "2026-10-12",
+    "lien": "https://www.gov.pl/web/cyfryzacja/dsa---co-zmienia-nowe-przepisy",
+    "titre": "DSA - co zmienią nowe przepisy",
+    "titre_fr": "DSA - ce qui va changer les nouveaux règlements",
+    "titre_en": "DSA - what will change the new regulations",
+    "langue": "pl"
+   }
+  },
+  {
+   "code": "DPA",
+   "nb_articles": 12,
+   "exemple": {
+    "date": "2026-10-12",
+    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
+    "titre": "Italian DPA fines Wind Tre EUR 16 700 000 for unlawful telemarketing and data protection infringements",
+    "titre_fr": "Italie DPA amendes Wind Tre EUR 16 700 000 pour infractions illégales au télémarketing et à la protection des données",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
+   "code": "IQVIA",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-09",
+    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
+    "titre": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+    "titre_fr": "Italie DPA amendes IQVIA EUR 7 000 000 pour traitement illégal de patients",
     "titre_en": "",
     "langue": "en"
    }
@@ -1533,15 +1572,27 @@
    }
   },
   {
-   "code": "IQVIA",
+   "code": "OUCH",
    "nb_articles": 3,
    "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
-    "titre": "IQVIA fined $7.8 million for failing to properly anonymize health data",
-    "titre_fr": "IQVIA condamné à une amende de 7,8 millions de dollars pour défaut d'anonymat des données sur la santé",
-    "titre_en": "",
-    "langue": "en"
+    "date": "2026-10-07",
+    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
+    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
+    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
+    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
+    "langue": "hu"
+   }
+  },
+  {
+   "code": "SANS",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-07",
+    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
+    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
+    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
+    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
+    "langue": "hu"
    }
   },
   {
@@ -1593,13 +1644,13 @@
    }
   },
   {
-   "code": "DPA",
+   "code": "DIRECT",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-09-22",
-    "lien": "https://www.edpb.europa.eu/news/the-spanish-dpa-fined-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
-    "titre": "The Spanish DPA fined Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
-    "titre_fr": "L'espagnol DPA a infligé une amende à Securitas Direct EUR 100 000 pour avoir rendu plus difficile l'exercice des droits de la personne concernée en orientant les personnes vers un numéro de téléphone payant",
+    "lien": "https://www.edpb.europa.eu/news/the-spanish-dpa-fines-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
+    "titre": "The Spanish DPA fines Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
+    "titre_fr": "L'espagnol DPA amende Securitas Direct EUR 100 000 pour avoir rendu l'exercice des droits des personnes concernées plus difficile en orientant les personnes vers un numéro de téléphone payant",
     "titre_en": "",
     "langue": "en"
    }
@@ -1614,6 +1665,18 @@
     "titre_fr": "Non-respect des droits des individus : L'amende de CNIL de EXTIA EUR 300 000",
     "titre_en": "",
     "langue": "en"
+   }
+  },
+  {
+   "code": "MDD",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-09-07",
+    "lien": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%cf%89%ce%bd-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%ce%bf%cf%85-%cf%83%cf%85%ce%bd%ce%b7%ce%bc%ce%bc%ce%ad%ce%bd%ce%bf%cf%85-11/",
+    "titre": "Ανάκληση των παρτίδων του συνημμένου πίνακα, του Ιατροτεχνολογικού προϊόντος κατηγορίας MDD Class I, NDI Passive Sphere & κιτ βελόνων βιοψίας.",
+    "titre_fr": "Retrait des lots du tableau ci-joint, de la trousse à aiguilles passives et biopsies de classe MDD classe I, NDI.",
+    "titre_en": "Withdrawal of batches of the attached table, the Class MDD Class I, NDI Passive Sphere & biopsy needle kit.",
+    "langue": "el"
    }
   },
   {

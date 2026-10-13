@@ -386,6 +386,59 @@ def texte_article(a):
 SEUIL_SENS = 0.80
 
 
+# --------------------------------------------------------------------------- santé : lien cyber / réglementaire exigé
+# Décision du 13/10 : une actualité du secteur santé (hôpitaux, laboratoires, diagnostic, pharma…) n'est classée
+# « pertinent » que si elle a un lien avec la cyber, les données, l'IA, le numérique réglementé ou la réglementation
+# des dispositifs médicaux / DIV. Le lien est cherché largement (mots ci-dessous, textes clés, page lue) ET par le
+# modèle de pertinence (note sur les seuls thèmes cyber / réglementaires) : un article au vocabulaire inhabituel mais
+# proche de ces thèmes n'est pas perdu. Sans lien : gardé « à surveiller », jamais point clé.
+SANTE_METIER = _rx(
+    r"sante|health|salud|salute|saude|gesundheit|gezondheid|\bhelse|halsa|sundhed|terveys|zdrav|zdrow|egeszseg|υγει|"
+    r"hospital|hopita|krankenh|ziekenhu|ospedal|szpital|klinik|clinic|patient|diagnosti|laborator|biolog|microbiol|genom|"
+    r"pharma|medicament|arzneimittel|\bNHS\b|soins|nursing|infirmi")
+# cyber, sécurité de l'information, données personnelles, IA (sans les mots purement santé de SUJET_FORT)
+CYBER_DONNEES_IA = _rx(
+    r"cyber|kyber|ciber|kiber|κυβερνο|informationssicherheit|IT-Sicherheit|information security|informatiebeveiliging|"
+    r"securite (informatique|numerique|des systemes d'information|des donnees)|seguridad de la informacion|sicurezza informatica|"
+    r"tietoturva|informationssakerhet|informasjonssikkerhet|data protection|protection des donnees|datenschutz|"
+    r"proteccion de datos|protezione dei dati|protecao de dados|gegevensbescherming|ochron\w* danych|tietosuoja|adatvedelem|"
+    r"privacy|vie privee|personal data|donnees personnelles|personenbezogen|datos personales|dati personali|dane osobowe|"
+    r"artificial intelligence|intelligence artificielle|kunstliche intelligenz|inteligencia artificial|intelligenza artificiale|"
+    r"kunstmatige intelligentie|sztuczn\w* inteligencj|tekoaly|(?-i:\bAI\b|\bIA\b|\bKI\b)|"
+    r"health data|gesundheitsdaten|donnees de sante|datos (de salud|sanitarios)|dati sanitari|gezondheidsgegevens|"
+    r"helsedata|halsodata|sundhedsdata|dane medyczne|electronic (health|patient) records?|\bEHR\b|dossier (medical|patient)|"
+    r"patientenakte|fascicolo sanitario|historia clinica|data space|espace (europeen )?des donnees|secondary use|"
+    r"software|logiciel|\bSaMD\b|cloud|hebergement|hosting|\bHDS\b|interoperab|encryption|chiffrement|verschlussel|"
+    r"cifrado|identite numerique|digital identity|eidas|authentification|authentication|incident|breach|"
+    r"fuite de donnees|violation de donnees|datenleck|ransomware|vulnerab|telematik|\bSBOM\b|information systems?|"
+    r"systemes? d'information|informationssystem|sistemas de informacion|critical (entities|infrastructures?)|"
+    r"infrastructures? critiques|kritische infrastruktur|\bkritis\b|quantum|quantique|post-?quanti|cryptograph|"
+    r"kryptograf|assurance level|niveau de garantie|betrouwbaarheidsniveau|vertrauensniveau")
+# réglementation propre aux dispositifs médicaux / DIV (toujours un lien)
+REG_DISPOSITIFS = _rx(
+    r"notified bod|organismes? notifies?|benannte stelle|marquage CE|CE[- ]mark|conformity assessment|"
+    r"evaluation de la conformite|EUDAMED|\bUDI\b|vigilance|\bMDCG\b|\bIVDR\b|\bMDR\b|2017/74[56]")
+# dispositifs, diagnostic, santé numérique : lien seulement avec une règle / un cadre (pas une simple actualité)
+DISPO_NUM_SANTE = _rx(
+    r"medical devices?|dispositi(f|vo)s? medic|medizinprodukt|productos? sanitario|medische hulpmiddel|in vitro|\bIVD\b|"
+    r"in-vitro-diagnost|diagnostic (devices?|tests?)|e-?health|e-?sante|sante numerique|digital health|"
+    r"services? numeriques|telemedec|telemedic|\bDiGA\b|gesundheitsanwendung|health (apps?|technolog)|"
+    r"laboratory (equipment|software|systems?)|automates?|"
+    # autorités du médicament et des dispositifs : lien si elles annoncent une règle
+    r"\b(MHRA|Swissmedic|ANSM|BfArM|AEMPS|AIFA|HPRA|Infarmed|SUKL|URPL|Fimea|Lakemedelsverket|DKMA|EMA)\b")
+REG_MOTS = _rx(
+    r"nouveau cadre|new framework|referentiel|certification|exigences?|requirements?|obligations?|guidance|guideline|"
+    r"lignes directrices|leitlinie|leitfaden|richtlijn|law|loi\b|gesetz|ley\b|legge|decree|decret|dekret|decreto|arrete|"
+    r"regulation|reglement|verordnung|reglamento|regolamento|directive|richtlinie|consultation|konsultation|horing|"
+    r"draft|projet de|entwurf|proyecto|standard|norme|norm\b|(?-i:\bBill\b)|regulatory|reform")
+
+
+def lien_cyber_reg(t, a, tc, ip, seuil):
+    return bool(tc or ip.get("tc") or CYBER_DONNEES_IA.search(t) or REG_DISPOSITIFS.search(t)
+                or (DISPO_NUM_SANTE.search(t) and (REG_MOTS.search(t) or ip.get("sig_net")))
+                or (a.get("score_cyber") or 0) >= seuil)
+
+
 LONGUEUR_INDICES = 1500   # début de la page : une simple mention en bas de page ne suffit pas
 
 
@@ -508,6 +561,9 @@ def evaluer(a, seuils, score_neg=None):
         niveau, motif = "ecarte", ("note trop faible (%.2f), aucun texte clé" % s) if sujet else "aucun lien avec la cyber, les données, l'IA ou la santé"
     if mondial and niveau in ("faible", "ecarte") and not br:
         niveau, motif = "moyenne", "texte à portée mondiale"
+    if niveau in ("elevee", "moyenne") and (a.get("rubrique") == "secteur" or SANTE_METIER.search(t)) \
+            and not lien_cyber_reg(t, a, tc, ip, moy):
+        niveau, motif = "faible", "santé sans lien avec la cyber, les données ou la réglementation"
 
     # L'essentiel : textes et normes importants, même en cas de doute (badge « à vérifier »)
     essentiel, a_verifier = False, False

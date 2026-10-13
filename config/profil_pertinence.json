@@ -70,8 +70,7 @@
    "en": "Medical devices and in vitro diagnostics",
    "phrases": [
     "In vitro diagnostic medical devices regulation IVDR, medical device regulation MDR, notified bodies, MDCG guidance.",
-    "Cybersecurity of medical devices and medical device software, premarket requirements, post-market surveillance.",
-    "Diagnostic de laboratoire, microbiologie, biologie moléculaire, tests de diagnostic et automates de laboratoire."
+    "Cybersecurity of medical devices and medical device software, premarket requirements, post-market surveillance."
    ]
   },
   {
@@ -116,7 +115,21 @@
    "en": "Pharma, food and quality control",
    "phrases": [
     "GMP Annex 11 computerised systems, Annex 22 artificial intelligence, data integrity in pharmaceutical manufacturing.",
-    "Food safety and pharmaceutical quality control, industrial microbiology, laboratory information systems."
+    "Laboratory information systems, data integrity and computerised system validation in quality control laboratories."
+   ]
+  },
+  {
+   "id": "sante_metier",
+   "rubrique": "secteur",
+   "poids": 0.9,
+   "lien_cyber": false,
+   "fr": "Métier santé / diagnostic (sans lien cyber)",
+   "en": "Health / diagnostics business (no cyber link)",
+   "_aide": "Thème « métier » : garde visibles les actualités du secteur, mais ne suffit pas à les classer pertinentes (lien cyber ou réglementaire exigé, décision du 13/10).",
+   "phrases": [
+    "Diagnostic de laboratoire, microbiologie, biologie moléculaire, tests de diagnostic et automates de laboratoire.",
+    "Food safety and pharmaceutical quality control, industrial microbiology.",
+    "Hospital funding, healthcare workforce, health services organisation and public health news."
    ]
   },
   {

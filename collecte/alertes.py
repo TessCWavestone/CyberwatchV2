@@ -40,7 +40,15 @@ EXCLUS = re.compile(
     r"\[(closed|clos|cloturee|fermee|ferme)\]|consultation (closed|cloturee|terminee)|weekly review|viikkokatsaus|"
     r"newsletter|lettre d'information|bulletin (hebdo|mensuel)|week \d+|semaine \d+|"
     r"top \d+|\d+ (things|tips|steps|key takeaways)|webinar|webinaire|podcast|"
-    r"what (it|they|this) means?|ce qu'il faut (savoir|retenir)|how to (prepare|comply)|comment se preparer", re.I)
+    r"what (it|they|this) means?|ce qu'il faut (savoir|retenir)|how to (prepare|comply)|comment se preparer|"
+    r"preparing for|(get|getting) ready for|se preparer a|voorbereiden op|vorbereitung auf|sich vorbereiten|prepararse para", re.I)
+
+# Texte INCONNU venant du secteur financier ou des télécoms seulement (décision du 09/10 : secteur financier hors
+# périmètre ; test du 13/10 : ESMA, BEREC) : pas un point clé (l'article reste visible dans la Veille)
+SECTEUR_EXCLU = re.compile(
+    r"\b(ESMA|EBA|EIOPA|ECB|BCE|ACPR|AMF|BaFin|CNMV|Consob|FCA|BEREC|ORECE)\b|central counterpart|\bCCPs?\b|tokeni[sz]ation|"
+    r"crypto-?asset|\bMiCA\b|payment services|anti-money laundering|blanchiment|banking union|insurance distribution|"
+    r"internet openness|net neutrality|neutralite du net|roaming|(radio )?spectrum (auction|allocation|management)|electronic communications code")
 
 # Texte INCONNU : il faut un sujet au cœur de la veille (cyber, données, dispositifs médicaux, IA, santé
 # numérique) ; « diagnostic », « laboratoire » ou « biologie » seuls ne suffisent pas (ex. décrets sur
@@ -147,6 +155,8 @@ def type_article(a):
     if t == "proposition" and statut_a == "lignes_directrices" and a.get("nature") != "officielle":
         return None   # des lignes directrices commentées par la presse ne sont pas une nouvelle règle
     inconnu = not a.get("textes_cles")
+    if inconnu and SECTEUR_EXCLU.search(titre + " " + regles._sa(a.get("source", ""))):
+        return None
     if inconnu:
         if not SUJET_ALERTE.search(texte) and not a.get("sens_fort") and not (a.get("indices_page") or {}).get("sujet_fort"):
             return None   # ni sujet central reconnu, ni sens jugé très proche par le modèle
@@ -192,7 +202,7 @@ def termes(texte):
 DEJA_CONNUS = {"DSA", "DMA", "DIGITAL SERVICES ACT", "DIGITAL MARKETS ACT", "SERVICES ACT", "MARKETS ACT", "DGA",
                "DATA GOVERNANCE ACT", "MICA", "EMFA", "EUROPEAN MEDIA FREEDOM ACT", "CHIPS ACT", "PSD2", "PSD3",
                # protection des mineurs en ligne / réseaux sociaux (famille DSA), secteur financier (décision du 09/10)
-               "EU KIDS ACT", "KIDS ACT", "DORA", "DIGITAL OPERATIONAL RESILIENCE ACT", "FIDA", "AMLR", "AMLA"}
+               "EU KIDS ACT", "KIDS ACT", "KIDS", "EU KIDS", "DORA", "DIGITAL OPERATIONAL RESILIENCE ACT", "FIDA", "AMLR", "AMLA"}
 
 
 def est_connu_defaut(terme):

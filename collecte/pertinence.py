@@ -121,6 +121,8 @@ class Pertinence:
                 pos = sorted(((i, v) for i, v in par_theme.items() if i < n_pos), key=lambda x: -x[1])
                 neg = max((v for i, v in par_theme.items() if i >= n_pos), default=0)
                 meilleur = pos[0][1]
+                # note « cyber / réglementaire » : meilleure note hors thèmes purement métier santé (lien_cyber = false)
+                a["score_cyber"] = round(max((v for i, v in pos if self.themes[i].get("lien_cyber", True)), default=0), 3)
                 score = min(1.0, meilleur + bonus)
                 themes = [self.themes[i]["id"] for i, v in pos[:3] if v >= meilleur - 0.06][:2]
                 a["score_bruit"] = round(neg, 3)
@@ -128,6 +130,7 @@ class Pertinence:
                 score = 0.6 if fort else (0.45 if groupes else 0.3)
                 themes = []
                 a.pop("score_bruit", None)
+                a.pop("score_cyber", None)
             a["score"] = round(score, 3)
             a["themes"] = themes
             a["pertinence_v"] = self.version + self.mode

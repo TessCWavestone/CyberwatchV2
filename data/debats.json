@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-12T12:59+00:00",
+ "mise_a_jour": "2026-10-13T15:56+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -31,7 +31,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -57,7 +57,8 @@
    "sujets": [
     "GDPR",
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.53
   },
   {
    "id": "a87ec4ba81e6",
@@ -91,7 +92,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CRA",
@@ -114,7 +115,8 @@
     "CRA",
     "ENISA"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.747
   },
   {
    "id": "8e2f9438e3b5",
@@ -153,7 +155,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -179,7 +181,8 @@
     "AI Act",
     "IVDR",
     "MDR"
-   ]
+   ],
+   "score_cyber": 0.544
   },
   {
    "id": "7db8ca28be0c",
@@ -209,7 +212,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -231,7 +234,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.713
   },
   {
    "id": "a603c9e24ae6",
@@ -258,7 +262,7 @@
     "cra",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.23,
@@ -272,7 +276,8 @@
      "resume": "Le cadre ePrivacy limite le suivi commercial et l'accès de l'État aux communications. Il est maintenant affaibli de plusieurs directions à la fois. La loi sur les cookies d'Europe est vraiment une loi sur la surveillance apparue en premier sur European Digital Rights (EDRI)."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.461
   },
   {
    "id": "49c9c2ffbd61",
@@ -302,7 +307,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.269,
@@ -317,7 +322,8 @@
      "resume": "Une proposition législative UE pour une interdiction des médias sociaux sera présentée à l'adresse annuelle de l'État de l'Union européenne (SOTEU), mais les outils qui sont présentés comme prêts à l'emploi et à la préservation de la vie privée sont voués à l'échec. Voici un compte rendu technique des lacunes. L'article Pourquoi l'outil de vérification d'âge UE ne résout pas les problèmes de confidentialité est apparu en premier sur European Digital Rights (EDRi)."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.555
   },
   {
    "id": "98e1ff50d35f",
@@ -343,7 +349,7 @@
     "ia",
     "pharma_industrie"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.369,
@@ -357,7 +363,8 @@
      "resume": "Le paysage biotechnologique mondial évolue à une vitesse sans précédent, sous l'impulsion des progrès de la biologie synthétique et de l'édition de génomes, qui, conjugués à IA, font de la biotechnologie l'avant-garde de l'innovation. Ces développements offrent des possibilités sans précédent pour faire progresser la santé et la protection contre les menaces biologiques, mais rendent aussi l'utilisation abusive des biotechnologies plus rapide, moins coûteuse et plus accessible. Pour..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.485
   },
   {
    "id": "fe514524db79",
@@ -387,7 +394,7 @@
     "sante_donnees",
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.243,
@@ -401,7 +408,8 @@
      "resume": "Le Q1 et le Q3 Life Science and Health Care Law Update ne couvrent les principales tendances du UE que tandis que les autres rapports (sur Q2 et Q4) couvrent les principales tendances du UE ainsi que du Big Five (Allemagne, ..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.461
   },
   {
    "id": "c38d5df0a85a",
@@ -427,7 +435,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CADA"
@@ -448,7 +456,8 @@
    },
    "sujets": [
     "CADA"
-   ]
+   ],
+   "score_cyber": 0.622
   },
   {
    "id": "38c13c78761a",
@@ -480,7 +489,7 @@
     "dm_div",
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "MHRA",
@@ -501,7 +510,8 @@
    "sujets": [
     "MHRA",
     "NHS"
-   ]
+   ],
+   "score_cyber": 0.565
   },
   {
    "id": "6fc11e1ddde7",
@@ -528,7 +538,7 @@
     "cra",
     "nis2"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.341,
@@ -543,7 +553,8 @@
      "resume": "Les membres du Parlement européen (PEM) ont voté pour la troisième fois en quatre mois une dérogation à la directive sur la protection des données personnelles. Si la proposition est adoptée, le vote reste néanmoins un triomphe car il renforce la position du Parlement contre la surveillance de masse sur le règlement CSA plus dangereux, et parce qu'il consacre la protection du chiffrement. The post La saga de contrôle de la..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.526
   },
   {
    "id": "fd724b67e7ac",
@@ -573,7 +584,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -594,7 +605,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.73
   },
   {
    "id": "14ef8c447a42",
@@ -627,7 +639,7 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CRA"
@@ -648,7 +660,8 @@
    },
    "sujets": [
     "CRA"
-   ]
+   ],
+   "score_cyber": 0.604
   },
   {
    "id": "a8c673be3df7",
@@ -678,7 +691,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -699,7 +712,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.61
   },
   {
    "id": "713bebe7c61c",
@@ -731,7 +745,7 @@
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -752,7 +766,8 @@
    },
    "sujets": [
     "GDPR"
-   ]
+   ],
+   "score_cyber": 0.452
   },
   {
    "id": "1e37fbdedae7",
@@ -783,7 +798,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [
     {
      "date": "2027-12-01",
@@ -822,7 +837,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.686
   },
   {
    "id": "a633e6ee6fb1",
@@ -853,7 +869,7 @@
     "data_act",
     "nis2"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "NIS2"
@@ -874,7 +890,8 @@
    "sujets": [
     "NIS2"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.636
   },
   {
    "id": "851ef646e66c",
@@ -903,7 +920,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -927,7 +944,8 @@
    },
    "sujets": [
     "EDPB"
-   ]
+   ],
+   "score_cyber": 0.524
   },
   {
    "id": "2931491c7dd4",
@@ -963,7 +981,7 @@
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -986,7 +1004,8 @@
    "sujets": [
     "GDPR",
     "EDPB"
-   ]
+   ],
+   "score_cyber": 0.52
   },
   {
    "id": "bba5b8a62111",
@@ -1011,7 +1030,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.338,
@@ -1026,7 +1045,8 @@
      "resume": "En janvier 2026, (aujourd'hui ancien) les dirigeants de l'U.S. Food and Drug Administration (FDA) ont décrit une approche d'essai unique dans un article de New England Journal of Medicine (NEJM), et dans..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.519
   },
   {
    "id": "dffa9b49e601",
@@ -1053,7 +1073,7 @@
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.206,
@@ -1068,7 +1088,8 @@
      "resume": "La Commission européenne met actuellement la dernière main aux négociations avec l'administration Trump en vue de la conclusion d'un accord-cadre (EBSP) visant à renforcer le partenariat en matière de sécurité des frontières, permettant aux autorités chargées du contrôle aux frontières de contrôler les voyageurs au moyen de bases de données biométriques et de les profiler en fonction de leurs préoccupations en matière de sécurité. Le projet de texte divulgué suggère que la Commission s'est considérablement effondrée dans US..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.468
   },
   {
    "id": "c71e3215f1e6",
@@ -1095,7 +1116,7 @@
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.366,
@@ -1110,7 +1131,8 @@
      "resume": "EDRi a répondu à la consultation de la Commission européenne sur le Digital Fitness Check, soulignant l'importance du cadre numérique fondé sur les droits développé au fil des ans. Plutôt que de simplifier les protections des droits des personnes, il devrait se concentrer sur une application plus stricte et combler les lacunes. Ce n'est que de cette façon que le UE peut continuer à diriger la construction d'un environnement numérique qui fonctionne pour les gens, la démocratie et l'innovation..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.51
   },
   {
    "id": "a7e328075acf",
@@ -1137,7 +1159,7 @@
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.235,
@@ -1151,7 +1173,8 @@
      "resume": "La Cour administrative suprême française a statué en faveur de La Quadrature du Net, French Data Network (FDN), Franciliens.net et Fédération FDN en reconnaissant que le système de surveillance Hadopi vise à lutter contre le partage illégal de fichiers violant les droits fondamentaux protégés par l'Union européenne. Le gouvernement a été ordonné d'abroger les dispositions clés de ce décret. Il appartient maintenant au gouvernement de..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.454
   },
   {
    "id": "9a9e29660678",
@@ -1184,7 +1207,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -1211,7 +1234,8 @@
     "AI Act",
     "GDPR",
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.558
   },
   {
    "id": "8fea9ccae151",
@@ -1237,7 +1261,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.253,
@@ -1251,7 +1275,8 @@
      "resume": "La troisième réforme en six ans alloue 3 milliards d'euros à l'agence de police controversée UE avec les capacités de placer tout le monde sous surveillance. Le post Proposition de réforme d'Europol érode dangereusement la vie privée, automatise la surveillance et met en veilleuse la première sur les droits numériques européens (EDRi)."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.469
   },
   {
    "id": "50729a075a89",
@@ -1276,7 +1301,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1296,7 +1321,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.611
   },
   {
    "id": "4eec4628b124",
@@ -1326,7 +1352,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1347,7 +1373,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.571
   },
   {
    "id": "4ccf6ac9e7f7",
@@ -1380,7 +1407,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -1400,7 +1427,8 @@
    },
    "sujets": [
     "IVDR"
-   ]
+   ],
+   "score_cyber": 0.577
   },
   {
    "id": "f1930213ea4d",
@@ -1431,7 +1459,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -1459,7 +1487,8 @@
     "MDR",
     "Normes harmonisées"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.725
   },
   {
    "id": "1e33ff7bdfed",
@@ -1490,7 +1519,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "EHDS"
@@ -1512,7 +1541,8 @@
    "sujets": [
     "EHDS"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.683
   },
   {
    "id": "da89b42df590",
@@ -1543,7 +1573,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -1563,7 +1593,8 @@
    },
    "sujets": [
     "IVDR"
-   ]
+   ],
+   "score_cyber": 0.528
   },
   {
    "id": "7f706370e522",
@@ -1590,7 +1621,7 @@
     "donnees",
     "large"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.27,
@@ -1605,7 +1636,8 @@
      "resume": "En 2025, le UE est entré dans une ère de déréglementation où les protections des droits numériques durement acquises sont diluées. Compte tenu de notre vision à long terme de l'avenir numérique, les travaux d'EDRI en 2025 ont porté sur la protection de la législation sur les droits numériques et la défense de perspectives centrées sur l'être humain. Nous avons également adopté notre nouvelle stratégie agile et réactive qui guidera nos travaux pour les cinq prochaines années. L'après rapport annuel EDRi..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.491
   },
   {
    "id": "0a704f23e9a1",
@@ -1632,7 +1664,7 @@
     "large",
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.328,
@@ -1646,7 +1678,8 @@
      "resume": "Il y a huit semaines, la Commission européenne a achevé son examen de la Digital Markets Act (DMA) – sa réglementation historique des plateformes technologiques. La Commission a déclaré que le règlement est adapté aux fins et que son propre rendement en vertu de la Loi ..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.559
   },
   {
    "id": "10dc9d270da2",
@@ -1677,7 +1710,7 @@
     "cra",
     "large"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.324,
@@ -1692,7 +1725,8 @@
      "resume": "Les autorités espagnoles et belges chargées de la protection des données (DPA) ont publié conjointement des recommandations et des meilleures pratiques en matière de protection des données dans le cadre de jeux vidéo (les lignes directrices de l'OMPI). C'est le premier..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.484
   },
   {
    "id": "d9ee9741ca9a",
@@ -1718,7 +1752,7 @@
     "data_act",
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CADA"
@@ -1738,7 +1772,8 @@
    },
    "sujets": [
     "CADA"
-   ]
+   ],
+   "score_cyber": 0.577
   },
   {
    "id": "7a8e433a3039",
@@ -1765,7 +1800,7 @@
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -1786,7 +1821,8 @@
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.405
   },
   {
    "id": "1196a0e84e76",
@@ -1811,7 +1847,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -1829,7 +1865,8 @@
    },
    "sujets": [
     "CNIL"
-   ]
+   ],
+   "score_cyber": 0.541
   },
   {
    "id": "ec27ca7f8476",
@@ -1860,7 +1897,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1880,7 +1917,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.607
   },
   {
    "id": "7c1b6fa6ac64",
@@ -1913,7 +1951,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [
     {
      "date": "2026-09-11",
@@ -1946,7 +1984,8 @@
    "sujets": [
     "CRA"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.792
   },
   {
    "id": "fdeebccf8550",
@@ -1979,7 +2018,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2001,7 +2040,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.634
   },
   {
    "id": "47a570713409",
@@ -2033,7 +2073,7 @@
     "nis2",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act",
@@ -2057,7 +2097,8 @@
     "Cybersecurity Act",
     "ENISA"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.647
   },
   {
    "id": "3ffe210c422f",
@@ -2087,7 +2128,7 @@
     "cra",
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -2107,7 +2148,8 @@
    },
    "sujets": [
     "IVDR"
-   ]
+   ],
+   "score_cyber": 0.435
   },
   {
    "id": "c41729c4b8a3",
@@ -2141,7 +2183,7 @@
     "sante_donnees",
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -2164,7 +2206,8 @@
    "sujets": [
     "IVDR",
     "MDR"
-   ]
+   ],
+   "score_cyber": 0.483
   },
   {
    "id": "85b37950908e",
@@ -2190,7 +2233,7 @@
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -2211,7 +2254,8 @@
    "sujets": [
     "Digital Omnibus"
    ],
-   "statut": "projet"
+   "statut": "projet",
+   "score_cyber": 0.469
   },
   {
    "id": "a12297a020e9",
@@ -2241,7 +2285,7 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
@@ -2264,7 +2308,8 @@
    },
    "sujets": [
     "Cybersecurity Act"
-   ]
+   ],
+   "score_cyber": 0.474
   },
   {
    "id": "c5c7bce2d75a",
@@ -2291,7 +2336,7 @@
     "cra",
     "large"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -2311,7 +2356,8 @@
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.446
   },
   {
    "id": "80ec7e888cd5",
@@ -2341,7 +2387,7 @@
     "sante_donnees",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -2362,7 +2408,8 @@
    },
    "sujets": [
     "EDPB"
-   ]
+   ],
+   "score_cyber": 0.491
   },
   {
    "id": "a1f0bde72bab",
@@ -2394,7 +2441,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2416,7 +2463,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.66
   },
   {
    "id": "23b1e18d68e0",
@@ -2448,7 +2496,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2469,7 +2517,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.584
   },
   {
    "id": "2af5a7d97314",
@@ -2495,7 +2544,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.276,
@@ -2509,7 +2558,8 @@
      "resume": "Cette étude commandée par EDRi analyse la mise en œuvre de la directive relative à l'application des lois (LED) dans cinq États membres. Il montre que même huit ans après l'entrée en application de la LED, la mise en œuvre de cet instrument crucial pour les droits numériques reste fragmentée et insuffisante. The post Research study: Evaluation of UES La directive sur l'application des lois montre que la mise en œuvre est encore..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.535
   },
   {
    "id": "38cc65510ee5",
@@ -2540,7 +2590,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2560,7 +2610,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.533
   },
   {
    "id": "aa2b070bb7d3",
@@ -2594,7 +2645,7 @@
     "donnees",
     "nis2"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -2612,7 +2663,8 @@
    },
    "sujets": [
     "CNIL"
-   ]
+   ],
+   "score_cyber": 0.461
   },
   {
    "id": "ee493df61253",
@@ -2638,7 +2690,7 @@
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.256,
@@ -2653,7 +2705,8 @@
      "resume": "Un nouvel âge de l'espace se profile – et la Commission UE a déjà fait un premier pas législatif audacieux : la proposition d'un UE Space Act vise à établir des règles communes..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.462
   },
   {
    "id": "f09a1609a73f",
@@ -2686,7 +2739,7 @@
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -2712,7 +2765,8 @@
    "sujets": [
     "IVDR",
     "MHRA"
-   ]
+   ],
+   "score_cyber": 0.584
   },
   {
    "id": "6370cf69a09c",
@@ -2742,7 +2796,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2766,7 +2820,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.642
   },
   {
    "id": "77ae9d24e66d",
@@ -2796,7 +2851,7 @@
     "nis2",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
@@ -2816,7 +2871,8 @@
    },
    "sujets": [
     "Cybersecurity Act"
-   ]
+   ],
+   "score_cyber": 0.513
   },
   {
    "id": "05a05ce28ba5",
@@ -2848,7 +2904,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2870,7 +2926,8 @@
     "AI Act"
    ],
    "sens_fort": true,
-   "statut": "projet"
+   "statut": "projet",
+   "score_cyber": 0.625
   },
   {
    "id": "796597175a35",
@@ -2895,7 +2952,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.296,
@@ -2909,7 +2966,8 @@
      "resume": "À titre de clarification, cette perspicacité utilise délibérément le mot « inflation ». Tout comme l'inflation monétaire érode le pouvoir d'achat, l'inflation réglementaire risque d'éroder..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.519
   },
   {
    "id": "5947df68d889",
@@ -2940,7 +2998,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Data Act"
@@ -2963,7 +3021,8 @@
    },
    "sujets": [
     "Data Act"
-   ]
+   ],
+   "score_cyber": 0.559
   },
   {
    "id": "400ba2eadef7",
@@ -2994,7 +3053,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "EHDS"
@@ -3016,7 +3075,8 @@
    "sujets": [
     "EHDS"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.686
   },
   {
    "id": "986095d5b23c",
@@ -3048,7 +3108,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3072,7 +3132,8 @@
     "AI Act",
     "Digital Omnibus"
    ],
-   "statut": "projet"
+   "statut": "projet",
+   "score_cyber": 0.605
   },
   {
    "id": "91c6f3361182",
@@ -3104,7 +3165,7 @@
     "ia",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -3125,7 +3186,8 @@
    },
    "sujets": [
     "GDPR"
-   ]
+   ],
+   "score_cyber": 0.583
   },
   {
    "id": "0601fb721679",
@@ -3158,7 +3220,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -3179,7 +3241,8 @@
    },
    "sujets": [
     "IVDR"
-   ]
+   ],
+   "score_cyber": 0.469
   },
   {
    "id": "6ca23f9a6a08",
@@ -3212,7 +3275,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -3235,7 +3298,8 @@
    "sujets": [
     "IVDR",
     "MDR"
-   ]
+   ],
+   "score_cyber": 0.544
   },
   {
    "id": "fc872a00306c",
@@ -3268,7 +3332,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -3292,7 +3356,8 @@
     "IVDR",
     "MDR"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.625
   },
   {
    "id": "0fef48d02162",
@@ -3319,7 +3384,7 @@
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.371,
@@ -3333,7 +3398,8 @@
      "resume": "Dans une série d'études et d'études, des chercheurs de ECIPE ont attiré l'attention sur la relation de plus en plus conflictuelle entre la nouvelle application de la Loi sur les marchés numériques et la réglementation de la protection des données dans la UE. La semaine dernière, la Commission a présenté son ..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.517
   },
   {
    "id": "e8704672140f",
@@ -3359,7 +3425,7 @@
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -3379,7 +3445,8 @@
    },
    "sujets": [
     "GDPR"
-   ]
+   ],
+   "score_cyber": 0.483
   },
   {
    "id": "dd3dbaf652a0",
@@ -3406,7 +3473,7 @@
     "large",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.268,
@@ -3420,7 +3487,8 @@
      "resume": "La Commission européenne indique que la loi sur les marchés numériques (DMA) était adaptée à des fins précises et a eu un impact positif. Mais s'il dispose certainement de ce potentiel, l'application du laissez-faire et l'ingérence politique de la Commission compromettent son efficacité et permettent aux gardiens de continuer à dominer les marchés numériques européens. Le post Si le DMA est adapté au but pourquoi les gardiens gagnent-ils? Il est apparu en premier..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.455
   },
   {
    "id": "e10c379ebb53",
@@ -3446,7 +3514,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -3466,7 +3534,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.671
   },
   {
    "id": "a85117d6b19a",
@@ -3501,7 +3570,7 @@
     "ia",
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3528,7 +3597,8 @@
     "IVDR",
     "MDR"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.671
   },
   {
    "id": "1253424d4e4f",
@@ -3554,7 +3624,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.403,
@@ -3568,7 +3638,8 @@
      "resume": "Un programme de services de police intelligents de 4 millions de EUR permettant l'utilisation des technologies IA, y compris le logiciel de reconnaissance faciale, qui a été déployé par la police hellénique a été jugé illégal par l'autorité grecque de protection des données. La décision a confirmé les préoccupations exprimées de longue date par Homo Digitalis, membre de l'EDRI, au sujet des violations de la reconnaissance faciale et de la protection des données. Le post Grèce IA système de police intelligent ..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.649
   },
   {
    "id": "582861b78449",
@@ -3595,7 +3666,7 @@
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -3616,7 +3687,8 @@
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.452
   },
   {
    "id": "fbbf3ed27436",
@@ -3647,7 +3719,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3669,7 +3741,8 @@
    "sujets": [
     "AI Act",
     "AI Office"
-   ]
+   ],
+   "score_cyber": 0.603
   },
   {
    "id": "b69302ae9a43",
@@ -3698,7 +3771,7 @@
    "themes": [
     "nis2"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
@@ -3719,7 +3792,8 @@
    "sujets": [
     "Cybersecurity Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.665
   },
   {
    "id": "bc86a60fa79a",
@@ -3748,7 +3822,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.256,
@@ -3763,7 +3837,8 @@
      "resume": "Le 21 avril 2026, l'Autorité néerlandaise pour la protection des données a publié un projet de lignes directrices sur le droit à l'explication dans le cadre de la prise de décision automatisée..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.437
   },
   {
    "id": "43ea37aee96a",
@@ -3797,7 +3872,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -3820,7 +3895,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.635
   },
   {
    "id": "e9c47a35c1ad",
@@ -3851,7 +3927,7 @@
     "fournisseurs_publics",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Data Act"
@@ -3872,7 +3948,8 @@
    },
    "sujets": [
     "Data Act"
-   ]
+   ],
+   "score_cyber": 0.547
   },
   {
    "id": "3577429f9c7e",
@@ -3897,7 +3974,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -3920,7 +3997,8 @@
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.573
   },
   {
    "id": "e23051e22e89",
@@ -3946,7 +4024,7 @@
     "ia",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -3965,7 +4043,8 @@
    },
    "sujets": [
     "CNIL"
-   ]
+   ],
+   "score_cyber": 0.477
   },
   {
    "id": "c3ab7bda4be4",
@@ -3995,7 +4074,7 @@
     "dm_div",
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -4018,7 +4097,8 @@
    },
    "sujets": [
     "IVDR"
-   ]
+   ],
+   "score_cyber": 0.514
   },
   {
    "id": "d56cb4fd16cd",
@@ -4052,7 +4132,7 @@
     "donnees",
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -4079,7 +4159,8 @@
     "AI Act",
     "GDPR",
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.591
   },
   {
    "id": "a548fe27b8f1",
@@ -4110,7 +4191,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4131,7 +4212,8 @@
    "sujets": [
     "AI Act"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.638
   },
   {
    "id": "a8e5c54d23fd",
@@ -4164,7 +4246,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -4190,7 +4272,8 @@
     "GDPR",
     "Data Act",
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.539
   },
   {
    "id": "118d6392815c",
@@ -4217,7 +4300,7 @@
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -4238,7 +4321,8 @@
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.469
   },
   {
    "id": "a57e4e4f244f",
@@ -4265,7 +4349,7 @@
     "donnees",
     "large"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.246,
@@ -4279,7 +4363,8 @@
      "resume": "Le règlement numérique UES entre dans une nouvelle phase, moins marquée par la nécessité de combler les lacunes réglementaires que par le risque de friction entre les règles qui se chevauchent. Au centre de ce changement se trouve le Digital Markets Act (DMA), ... Continue"
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.548
   },
   {
    "id": "2c036248e27e",
@@ -4310,7 +4395,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4330,7 +4415,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.584
   },
   {
    "id": "524835d9a7f2",
@@ -4360,7 +4446,7 @@
     "acheteurs_sante",
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.231,
@@ -4374,7 +4460,8 @@
      "resume": "La UE Design Act (en vigueur le 1er mai 2025 avec d'autres réformes en vigueur le 1er juillet 2026 ) a été introduite pour renforcer, simplifier et moderniser le système de conception UE et l'aligner..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.418
   },
   {
    "id": "ab176b19f598",
@@ -4409,7 +4496,7 @@
     "dm_div",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -4432,7 +4519,8 @@
    "sujets": [
     "IVDR",
     "MHRA"
-   ]
+   ],
+   "score_cyber": 0.436
   },
   {
    "id": "3193abde4894",
@@ -4463,7 +4551,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -4483,7 +4571,8 @@
    },
    "sujets": [
     "IVDR"
-   ]
+   ],
+   "score_cyber": 0.572
   },
   {
    "id": "9fd5fd61a676",
@@ -4513,7 +4602,7 @@
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.398,
@@ -4528,7 +4617,8 @@
      "resume": "Le 30 mars 2026, le Centre pour les appareils et la santé radiologique de FDA et le Centre pour l'évaluation et la recherche biologiques ont publié une orientation finale intitulée Intégration de la préférence volontaire..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.484
   },
   {
    "id": "e062b92bb623",
@@ -4555,7 +4645,7 @@
     "large",
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.312,
@@ -4569,7 +4659,8 @@
      "resume": "En réaction au récent projet d'ouverture d'un dialogue formel avec le gouvernement US sur les règles techniques UE, EDRi et d'autres organisations de la société civile exhortent la Commission à mettre un terme à ce plan qui risque de donner à Big Tech une porte arrière pour affaiblir le règlement numérique UE et son application. L'après Europe Les lois numériques ne sont pas des puces de négociation sont apparues en premier sur les droits numériques européens (EDRi)."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.512
   },
   {
    "id": "b7416e14a1d9",
@@ -4600,7 +4691,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4620,7 +4711,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.512
   },
   {
    "id": "f2602b30ac42",
@@ -4645,7 +4737,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "PLD"
@@ -4668,7 +4760,8 @@
    },
    "sujets": [
     "PLD"
-   ]
+   ],
+   "score_cyber": 0.602
   },
   {
    "id": "b07edebd6bd2",
@@ -4699,7 +4792,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4719,7 +4812,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.431
   },
   {
    "id": "01357a973114",
@@ -4749,7 +4843,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4770,7 +4864,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.588
   },
   {
    "id": "7b382fff67ec",
@@ -4797,7 +4892,7 @@
     "cra",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.456,
@@ -4811,7 +4906,8 @@
      "resume": "En vertu de la Loi sur les services numériques (DSA), les plateformes Big Tech sont tenues d'évaluer chaque année les risques systémiques liés à leurs services et de mettre en oeuvre des mesures pour les atténuer. Membre de l ' EDRi, le Centre européen pour le droit sans but lucratif (ECNL) a analysé les trois premières séries de ces évaluations des risques, qui ont porté sur la période 2023-2025, et identifié cinq lacunes majeures. Dans leur forme actuelle, ces évaluations sont peu susceptibles de fournir..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.517
   },
   {
    "id": "a2d27d0052c7",
@@ -4842,7 +4938,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4862,7 +4958,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.42
   },
   {
    "id": "7eb12d21e1a5",
@@ -4896,7 +4993,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -4920,7 +5017,8 @@
     "GDPR",
     "Digital Omnibus"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.667
   },
   {
    "id": "30a841a59859",
@@ -4947,7 +5045,7 @@
     "acheteurs_sante",
     "large"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.193,
@@ -4962,7 +5060,8 @@
     }
    },
    "sujets": [],
-   "statut": "adopte"
+   "statut": "adopte",
+   "score_cyber": 0.45
   },
   {
    "id": "594d7456f012",
@@ -4993,7 +5092,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -5013,7 +5112,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.534
   },
   {
    "id": "59ff1643d97f",
@@ -5038,7 +5138,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -5058,7 +5158,8 @@
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.624
   },
   {
    "id": "9a3da57e0c97",
@@ -5085,7 +5186,7 @@
     "ia",
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.318,
@@ -5099,7 +5200,8 @@
      "resume": "Ce ECIPE Insight est basé sur une prochaine publication ECIPE sur Copyright et IA. Trois développements au début de 2026 ont amené la relation entre le droit d'auteur et l'intelligence artificielle à la tête. Le 28 janvier, la commission ... suite"
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.497
   },
   {
    "id": "568f6feae1f4",
@@ -5125,7 +5227,7 @@
     "ia",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.31,
@@ -5139,7 +5241,8 @@
      "resume": "Dans cet épisode de The Data Chronicles, l'hôte Scott Loughlin est rejoint par les partenaires Hogan Lovells Eduardo Ustaran et Giulia Mariuz pour examiner comment les régulateurs et les tribunaux à travers l'Europe et..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.467
   },
   {
    "id": "553d69f046fd",
@@ -5171,7 +5274,7 @@
     "sante_donnees",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.288,
@@ -5186,7 +5289,8 @@
      "resume": "En février 2026, MedTech Europe a répondu à la consultation publique de la Commission européenne sur le prochain Cadre intégré de résilience au climat, appelant à une réponse globale du système de santé aux pressions découlant du changement climatique. Des investissements intelligents, une meilleure coordination, des cadres stratégiques cohérents et une meilleure collaboration seront essentiels pour bâtir des systèmes de santé plus durables et plus résilients. Les..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.48
   },
   {
    "id": "f888d32a1df0",
@@ -5217,7 +5321,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -5237,7 +5341,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.511
   },
   {
    "id": "8952fc95a8fc",
@@ -5270,7 +5375,7 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CRA"
@@ -5292,7 +5397,8 @@
    "sujets": [
     "CRA"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.66
   },
   {
    "id": "7f2efca6663f",
@@ -5319,7 +5425,7 @@
     "large",
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.366,
@@ -5333,7 +5439,8 @@
      "resume": "Avec les négociations finales sur le règlement controversé CSA en cours, vous seriez pardonné de penser que nos droits numériques sont hors de la forêt. Toutefois, même si la position récemment adoptée par les États membres UE est un pas prudent et optimiste, nous sommes encore loin d'un accord final. Le problème le plus inquiétant qui reste est peut-être la menace que la vérification de l'âge devienne obligatoire pour toutes les méthodes numériques de..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.471
   },
   {
    "id": "c42ad0152958",
@@ -5364,7 +5471,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -5387,7 +5494,8 @@
    },
    "sujets": [
     "AI Act"
-   ]
+   ],
+   "score_cyber": 0.52
   },
   {
    "id": "66e69f89b00c",
@@ -5413,7 +5521,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.341,
@@ -5427,7 +5535,8 @@
      "resume": "Le nouveau document de position de l'EDRI s'attaque à la menace croissante de la conception de plateformes manipulatrices et injustes dans l'environnement numérique UE. Il examine comment les interfaces trompeuses, la personnalisation d'exploitation et les pratiques de conception addictive sont intégrées dans l'économie numérique actuelle et pourquoi les lois existantes ne s'attaquent pas à leurs racines structurelles. Fondé sur une analyse fondée sur les droits, le document soutient que la Loi sur l'équité numérique doit..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.538
   },
   {
    "id": "5f126eca1667",
@@ -5454,7 +5563,7 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.339,
@@ -5468,7 +5577,8 @@
      "resume": "EDRi et 39 organisations exhortent les membres du Parlement européen à rejeter toute extension de la dérogation temporaire à la protection de la vie privée, également connue sous le nom de « Contrôle de la vie privée ». The post Lettre ouverte: Nous disons non à Big Tech masse fouiner sur nos messages! est apparu en premier sur European Digital Rights (EDRI) ."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.486
   },
   {
    "id": "408e6e51bba4",
@@ -5499,7 +5609,7 @@
     "fournisseurs_publics",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.267,
@@ -5514,7 +5624,8 @@
      "resume": "L'Alliance des droits de l'homme DSA a publié « Principes pour une application centrée sur les droits de l'homme de la loi sur les services numériques : une perspective globale » pour guider la Commission européenne, les décideurs nationaux et les régulateurs à mesure que le DSA passe de la législation à l'application. Les recommandations mettent l'accent sur les effets transfrontaliers de l'application de DSA, l'habilitation de divers groupes à faire respecter les droits des utilisateurs et..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.464
   },
   {
    "id": "03183b79b41f",
@@ -5540,7 +5651,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.321,
@@ -5554,7 +5665,8 @@
      "resume": "Une affaire portée devant la Cour de justice de l'Union européenne (CJEU) vise à clarifier l'une des questions juridiques les plus importantes soulevées par l'intelligence artificielle: lorsque les machines apprennent du texte, lisent-elles ou copient-elles? À ... suite"
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.525
   },
   {
    "id": "d605f6d4c1dd",
@@ -5587,7 +5699,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -5610,7 +5722,8 @@
    "sujets": [
     "AI Act",
     "GDPR"
-   ]
+   ],
+   "score_cyber": 0.569
   },
   {
    "id": "0c22a63f92e3",
@@ -5640,7 +5753,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "MHRA"
@@ -5659,7 +5772,8 @@
    },
    "sujets": [
     "MHRA"
-   ]
+   ],
+   "score_cyber": 0.462
   },
   {
    "id": "f085b830eec8",
@@ -5689,7 +5803,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "MHRA"
@@ -5708,7 +5822,8 @@
    },
    "sujets": [
     "MHRA"
-   ]
+   ],
+   "score_cyber": 0.48
   },
   {
    "id": "d9200aced789",
@@ -5740,7 +5855,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -5765,7 +5880,8 @@
     "GDPR",
     "Digital Omnibus"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.701
   },
   {
    "id": "3b3d6722a2c8",
@@ -5796,7 +5912,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -5820,7 +5936,8 @@
    "sujets": [
     "AI Act",
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.619
   },
   {
    "id": "193103f3f3a8",
@@ -5847,7 +5964,7 @@
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -5868,7 +5985,8 @@
    },
    "sujets": [
     "Digital Omnibus"
-   ]
+   ],
+   "score_cyber": 0.482
   },
   {
    "id": "11644bf6e551",
@@ -5894,7 +6012,7 @@
    "themes": [
     "large"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.313,
@@ -5908,7 +6026,8 @@
      "resume": "La Commission européenne est en train de réviser la loi sur les marchés numériques (DMA), le règlement phare sur la concurrence ex ante introduit il y a quelques années pour gérer la concurrence des plateformes numériques. C'est une bonne occasion de réfléchir sur le DMA et, ... Continue"
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.515
   },
   {
    "id": "e879cd195249",
@@ -5934,7 +6053,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.374,
@@ -5948,7 +6067,8 @@
      "resume": "Bruxelles et les capitales des États membres passent une grande partie de leur temps à s'inquiéter des menaces extérieures – dépendance énergétique, chaînes d'approvisionnement, technologie étrangère, pression géopolitique. Pourtant, la vulnérabilité la plus importante de l'Europe est beaucoup plus proche de la maison. Il est sous-estimé, largement auto-infligé, et profondément ... Suite"
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.56
   },
   {
    "id": "826da4a29d3d",
@@ -5974,7 +6094,7 @@
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -5994,7 +6114,8 @@
    },
    "sujets": [
     "GDPR"
-   ]
+   ],
+   "score_cyber": 0.495
   },
   {
    "id": "74862f8fb1cd",
@@ -6025,7 +6146,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -6050,7 +6171,8 @@
     "IVDR",
     "MDR"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.656
   },
   {
    "id": "0a50b70773c4",
@@ -6080,7 +6202,7 @@
     "acheteurs_sante",
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.285,
@@ -6094,7 +6216,8 @@
      "resume": "Le 2 février 2026, la Food and Drug Administration (FDA) des États-Unis a publié son manuel de programme de conformité prévu, Inspection of Medical Device Manufacturers (CP 7382.850 ), pour..."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.485
   },
   {
    "id": "48517000dedd",
@@ -6124,7 +6247,7 @@
     "sante_donnees",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "DiGA"
@@ -6142,7 +6265,8 @@
    },
    "sujets": [
     "DiGA"
-   ]
+   ],
+   "score_cyber": 0.561
   },
   {
    "id": "245147982189",
@@ -6175,7 +6299,7 @@
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -6195,7 +6319,8 @@
    },
    "sujets": [
     "GDPR"
-   ]
+   ],
+   "score_cyber": 0.511
   },
   {
    "id": "628e2af51339",
@@ -6218,10 +6343,9 @@
    "score": 0.507,
    "pertinence": "elevee",
    "themes": [
-    "acheteurs_sante",
-    "dm_div"
+    "acheteurs_sante"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IGJ"
@@ -6241,7 +6365,8 @@
    },
    "sujets": [
     "IGJ"
-   ]
+   ],
+   "score_cyber": 0.507
   },
   {
    "id": "d4d5a1d0e34f",
@@ -6267,7 +6392,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.363,
@@ -6281,7 +6406,8 @@
      "resume": "La Commission européenne a ouvert une enquête DSA sur le chatbot IA de Grok. EDRi se félicite de cette décision et appelle à une résolution rapide de cette question, afin que X respecte pleinement ses obligations DSA et protège ses utilisateurs. Le communiqué de presse post: EDRi appelle à une action rapide alors que les sondes UE X.S. Grok sur les dommages AI-generated apparaissent en premier sur European Digital Rights (EDRI)."
     }
    },
-   "sujets": []
+   "sujets": [],
+   "score_cyber": 0.56
   },
   {
    "id": "6da06edd07ea",
@@ -6306,7 +6432,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -6327,7 +6453,8 @@
    },
    "sujets": [
     "EDPB"
-   ]
+   ],
+   "score_cyber": 0.482
   },
   {
    "id": "0bb46f7b252f",
@@ -6359,7 +6486,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "CRA"
@@ -6380,7 +6507,8 @@
    "sujets": [
     "CRA"
    ],
-   "sens_fort": true
+   "sens_fort": true,
+   "score_cyber": 0.714
   },
   {
    "id": "5c2f79f76036",
@@ -6410,7 +6538,7 @@
     "sante_donnees",
     "dm_div"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -6435,7 +6563,8 @@
    },
    "sujets": [
     "IVDR"
-   ]
+   ],
+   "score_cyber": 0.479
   },
   {
    "id": "bfec90ddb6b3",
@@ -6460,7 +6589,7 @@
     "large",
     "nis2"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": false,
@@ -6483,7 +6612,8 @@
    "acronymes": [
     "GDPR",
     "ICO"
-   ]
+   ],
+   "score_cyber": 0.476
   },
   {
    "id": "bc86d3897543",
@@ -6517,7 +6647,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": true,
@@ -6540,7 +6670,8 @@
    "acronymes": [
     "IVDR",
     "MDR"
-   ]
+   ],
+   "score_cyber": 0.55
   },
   {
    "id": "399a1a84e774",
@@ -6566,7 +6697,7 @@
     "data_act",
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": true,
@@ -6587,7 +6718,8 @@
    ],
    "acronymes": [
     "CADA"
-   ]
+   ],
+   "score_cyber": 0.532
   },
   {
    "id": "ae9d356841ae",
@@ -6612,7 +6744,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-65f9a1e245modele",
+   "pertinence_v": "v4-bb5f969381modele",
    "pertinence": "moyenne",
    "essentiel": false,
    "a_verifier": false,
@@ -6627,7 +6759,8 @@
    },
    "echeances": [],
    "sujets": [],
-   "acronymes": []
+   "acronymes": [],
+   "score_cyber": 0.547
   }
  ]
 }

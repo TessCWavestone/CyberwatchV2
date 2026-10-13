@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-10-12T12:59+00:00",
+ "mise_a_jour": "2026-10-13T15:56+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 172,
+   "nb_articles": 173,
    "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://www.ictrecht.nl/blog/wie-betaalt-de-rekening-als-jouw-product-gehackt-wordt",
-    "titre": "Blog 9 oktober 2026 Data & privacy CRA Wie betaalt de rekening als jouw product gehackt wordt? Lees meer",
-    "langue": "nl",
-    "titre_fr": "Blogue 9 octobre 2026 Données et confidentialité CRA Qui paie la facture si votre produit est piraté? Lire la suite",
-    "titre_en": "Blog October 9, 2026 Data & privacy CRA Who pays the bill if your product is hacked? Read more"
+    "date": "2026-10-13",
+    "lien": "https://www.lupa.cz/aktuality/ceske-radiokomunikace-reorganizuji-cenny-majetek-klicovy-byznys-prechazi-na-jine-firmy/?utm_source=rss&utm_medium=text&utm_campaign=rss",
+    "titre": "České Radiokomunikace reorganizují cenný majetek. Klíčový byznys přechází na jiné firmy",
+    "langue": "cs",
+    "titre_fr": "Les radiocommunications tchèques réorganisent des biens précieux. Les affaires clés vont à d'autres entreprises",
+    "titre_en": "Czech Radiocommunications reorganise valuable property. Key business goes to other companies"
    }
   },
   {
@@ -179,14 +179,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 67,
+   "nb_articles": 69,
    "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
-    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
-    "langue": "it",
-    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
-    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
+    "date": "2026-10-13",
+    "lien": "https://digitalpolicyalert.org/change/21956-implementing-regulation-on-practical-and-specific-arrangements-for-conduct-of-certain-proceedings-by-commission-pursuant-to-articles-75c-and-75d-of-artificial-intelligence-act",
+    "titre": "Implementing regulation on practical and specific arrangements for conduct of certain proceedings by Commission pursuant to Articles 75c and 75d of Artificial Intelligence Act",
+    "langue": "en",
+    "titre_fr": "Règlement d'exécution relatif aux modalités pratiques et spécifiques de la conduite de certaines procédures par la Commission conformément aux articles 75 quater et 75 quinquies de la loi sur l'intelligence artificielle",
+    "titre_en": ""
    }
   },
   {
@@ -194,7 +194,7 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 58,
+   "nb_articles": 59,
    "exemple": {
     "date": "2026-10-12",
     "lien": "https://www.security.nl/posting/957091/Microsofts+advertentiebedrijf+Xandr+krijgt+AVG-boete+van+8%2C5+miljoen+euro?channel=rss",
@@ -220,6 +220,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "EHDS",
+   "groupe": "textes",
+   "fr": "EHDS (espace européen des données de santé)",
+   "en": "EHDS (European Health Data Space)",
+   "nb_articles": 17,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://health.ec.europa.eu/node/17803",
+    "titre": "Commission establishes the European Health Data Space Stakeholder Forum and Community",
+    "langue": "en",
+    "titre_fr": "La Commission établit le Forum européen des parties prenantes dans le domaine des données sanitaires et la Communauté",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "CER",
    "groupe": "textes",
    "fr": "CER (entités critiques)",
@@ -232,21 +247,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "nl",
     "titre_fr": "Loi sur la cybersécurité et entités essentielles de résilience en vigueur aujourd'hui",
     "titre_en": "Cyber Security Act and Resilience Critical Entities Effective Today"
-   }
-  },
-  {
-   "code": "EHDS",
-   "groupe": "textes",
-   "fr": "EHDS (espace européen des données de santé)",
-   "en": "EHDS (European Health Data Space)",
-   "nb_articles": 16,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
-    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
    }
   },
   {
@@ -340,6 +340,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "Data Act",
+   "groupe": "textes",
+   "fr": "Data Act",
+   "en": "Data Act",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://www.gov.pl/web/cyfryzacja/wieksza-kontrola-nad-danymi-rzad-przyjal-projekt-ustawy",
+    "titre": "Większa kontrola nad danymi. Rząd przyjął projekt ustawy",
+    "langue": "pl",
+    "titre_fr": "Plus de contrôle des données. Le gouvernement a adopté le projet de loi",
+    "titre_en": "More data control. The government adopted the bill"
+   }
+  },
+  {
    "code": "NIST",
    "groupe": "textes",
    "fr": "NIST (CSF, SP 800)",
@@ -367,21 +382,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "en",
     "titre_fr": "MHRA conseille la quarantaine des dispositifs médicaux fournis sans marquage de conformité approprié",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "Data Act",
-   "groupe": "textes",
-   "fr": "Data Act",
-   "en": "Data Act",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-12",
-    "lien": "https://www.gamingtechlaw.com/2026/08/data-act-access-by-design/",
-    "titre": "Data Act : obligation d'accès aux données dès la conception pour les produits connectés",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Data Act: access-by-design obligation for connected products applies"
    }
   },
   {
@@ -659,13 +659,28 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 60,
+   "nb_articles": 62,
    "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://www.ncsc.gov.uk/blogs/help-ncsc-understand-how-organisations-approach-external-attack-surface-risk",
-    "titre": "Help the NCSC understand how organisations approach external attack surface risk",
+    "date": "2026-10-13",
+    "lien": "https://www.ncsc.nl/nieuws/in-het-nieuws-cyberaanvallen-op-levensmiddelensector",
+    "titre": "In het nieuws: cyberaanvallen op levensmiddelensector",
+    "langue": "nl",
+    "titre_fr": "Dans l'actualité : cyberattaques contre le secteur alimentaire",
+    "titre_en": "In the news: cyber attacks on food sector"
+   }
+  },
+  {
+   "code": "EDPB",
+   "groupe": "autorites",
+   "fr": "CEPD / EDPB",
+   "en": "EDPB",
+   "nb_articles": 48,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+    "titre": "EDPB publishes statement on the data protection challenges of smart glasses",
     "langue": "en",
-    "titre_fr": "Aider le NCSC à comprendre comment les organisations approchent le risque de surface d'attaque externe",
+    "titre_fr": "EDPB publie une déclaration sur les défis de la protection des données des lunettes intelligentes",
     "titre_en": ""
    }
   },
@@ -685,33 +700,33 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "EDPB",
-   "groupe": "autorites",
-   "fr": "CEPD / EDPB",
-   "en": "EDPB",
-   "nb_articles": 46,
-   "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
-    "titre": "Italian DPA fines Wind Tre EUR 16 700 000 for unlawful telemarketing and data protection infringements",
-    "langue": "en",
-    "titre_fr": "Italie DPA amendes Wind Tre EUR 16 700 000 pour infractions illégales au télémarketing et à la protection des données",
-    "titre_en": ""
-   }
-  },
-  {
    "code": "ΕΑΚ",
    "groupe": "autorites",
    "fr": "Autorité nationale de cybersécurité (Grèce)",
    "en": "National Cybersecurity Authority (Greece)",
-   "nb_articles": 30,
+   "nb_articles": 31,
    "exemple": {
-    "date": "2026-09-29",
-    "lien": "https://cyber.gov.gr/prosklisi-se-diadiktyaka-mathimata-kyvernoasfaleias-dorean-kai-pistopoioymena-meso-toy-eyropaikoy-ergoy-cadmus/",
-    "titre": "Πρόσκληση σε διαδικτυακά μαθήματα Κυβερνοασφάλειας δωρεάν και πιστοποιούμενα μέσω του ευρωπαϊκού έργου Cadmus",
+    "date": "2026-10-13",
+    "lien": "https://cyber.gov.gr/koines-draseis-kai-synergeies-ton-nccs-stin-kypro-gia-ena-ischyrotero-eyropaiko-oikosystima-kyvernoasfaleias/",
+    "titre": "Κοινές δράσεις και συνέργειες των NCCs στην Κύπρο για ένα ισχυρότερο ευρωπαϊκό οικοσύστημα κυβερνοασφάλειας",
     "langue": "el",
-    "titre_fr": "Invitation à des cours de cybersécurité en ligne gratuits et certifiés par le projet européen Cadmus",
-    "titre_en": "Invitation to cybersecurity online courses free of charge and certified through the European Cadmus project"
+    "titre_fr": "Actions communes et synergies des CNC à Chypre pour un écosystème européen de cybersécurité plus fort",
+    "titre_en": "Joint actions and synergies of NCCs in Cyprus for a stronger European cybersecurity ecosystem"
+   }
+  },
+  {
+   "code": "NKI",
+   "groupe": "autorites",
+   "fr": "NKI (Hongrie)",
+   "en": "NKI (Hungary)",
+   "nb_articles": 26,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/mi-ugynokokkel-tamadta-az-ukran-kritikus-infrastrukturat-egy-konfiguracios-hiba-leplezte-le/",
+    "titre": "MI ügynökökkel támadta az ukrán kritikus infrastruktúrát, egy konfigurációs hiba leplezte le",
+    "langue": "hu",
+    "titre_fr": "MI a attaqué l'infrastructure critique en Ukraine avec une erreur de configuration",
+    "titre_en": "MI attacked the critical infrastructure in Ukraine with a configuration error"
    }
   },
   {
@@ -719,7 +734,7 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "Garante privacy (Italie)",
    "en": "Garante privacy (Italy)",
-   "nb_articles": 26,
+   "nb_articles": 25,
    "exemple": {
     "date": "2026-10-11",
     "lien": "https://www.federprivacy.org/strumenti/accesso-ristretto/deepfake-la-rassegna-dei-provvedimenti-del-garante-privacy-su-nudi-e-voci-rubate",
@@ -757,21 +772,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "es",
     "titre_fr": "Supercomputation et calcul quantique dans la cybersécurité",
     "titre_en": "Supercomputation and quantum computation in cyber security"
-   }
-  },
-  {
-   "code": "NKI",
-   "groupe": "autorites",
-   "fr": "NKI (Hongrie)",
-   "en": "NKI (Hungary)",
-   "nb_articles": 22,
-   "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/tobb-ezer-olcso-androidos-telefon-kerult-forgalomba-reklamcsalo-virussal/",
-    "titre": "Több ezer olcsó Androidos telefon került forgalomba reklámcsaló vírussal",
-    "langue": "hu",
-    "titre_fr": "Des milliers de téléphones Android bon marché ont été mis sur le marché avec le virus de la publicité",
-    "titre_en": "Thousands of cheap Android phones have been placed on the market with advertising virus"
    }
   },
   {
@@ -820,21 +820,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "NHS",
-   "groupe": "autorites",
-   "fr": "NHS (Royaume-Uni)",
-   "en": "NHS (UK)",
-   "nb_articles": 13,
-   "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
-    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
-    "langue": "en",
-    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
-    "titre_en": ""
-   }
-  },
-  {
    "code": "Traficom",
    "groupe": "autorites",
    "fr": "Traficom (Finlande)",
@@ -854,14 +839,44 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "ANSSI",
    "en": "ANSSI",
-   "nb_articles": 11,
+   "nb_articles": 12,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "http://cyber.sites.beta.gouv.fr/actualites/resultat-ami-sec/",
-    "titre": "Résultat de l'appel à manifestation d‘intérêt – Sécurité des écosystèmes de cybersécurité",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Outcome of the call for expression of interest – Security of cyber security ecosystems"
+    "date": "2026-10-12",
+    "lien": "http://cyber.sites.beta.gouv.fr/actualites/ecsc-2026-la-team-france-a-bochum/",
+    "titre": "ECSC 2026 : la Team France à Bochum",
+    "langue": "en",
+    "titre_fr": "ECSC 2026 : la Team France à Bochum",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "CNPD",
+   "groupe": "autorites",
+   "fr": "CNPD (Portugal / Luxembourg)",
+   "en": "CNPD (Portugal / Luxembourg)",
+   "nb_articles": 12,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-participa-em-workshop-europeu-sobre-avaliacao-de-impacto-de-sistemas-de-inteligencia-artificial/",
+    "titre": "13/10/2026 CNPD participa em workshop europeu sobre avaliação de impacto de sistemas de Inteligência Artificial A iniciativa decorreu de 24 a 26 de setembro de 2026, na Croácia.",
+    "langue": "pt",
+    "titre_fr": "13/10/2026 CNPD participe à un atelier européen sur l'analyse d'impact des systèmes d'intelligence artificielle Cette initiative a eu lieu du 24 au 26 septembre 2026 en Croatie.",
+    "titre_en": "13/10/2026 CNPD participates in European workshop on impact assessment of Artificial Intelligence systems The initiative took place from 24 to 26 September 2026 in Croatia."
+   }
+  },
+  {
+   "code": "NHS",
+   "groupe": "autorites",
+   "fr": "NHS (Royaume-Uni)",
+   "en": "NHS (UK)",
+   "nb_articles": 12,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
+    "langue": "en",
+    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
+    "titre_en": ""
    }
   },
   {
@@ -880,21 +895,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "CNPD",
-   "groupe": "autorites",
-   "fr": "CNPD (Portugal / Luxembourg)",
-   "en": "CNPD (Portugal / Luxembourg)",
-   "nb_articles": 11,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-e-a-agencia-nacional-de-protecao-de-dados-do-brasil-celebram-memorando-de-entendimento-para-reforcar-a-atuacao-em-materia-de-dados-pessoais/",
-    "titre": "08/10/2026 CNPD e a Agência Nacional de Proteção de Dados do Brasil celebram Memorando de Entendimento para reforçar a atuação em matéria de dados pessoais O MoU foi assinado na sede da CNPD no dia 2 de outubro de 2026.",
-    "langue": "pt",
-    "titre_fr": "08/10/2026 CNPD et l'Agence nationale brésilienne de protection des données célèbrent le protocole d'entente pour renforcer la performance des données personnelles Le protocole d'entente a été signé au siège de CNPD le 2 octobre 2026.",
-    "titre_en": "08/10/2026 CNPD and the Brazilian National Data Protection Agency celebrate Memorandum of Understanding to strengthen the performance of personal data The MoU was signed at CNPD headquarters on October 2, 2026."
-   }
-  },
-  {
    "code": "CNCS",
    "groupe": "autorites",
    "fr": "CNCS (Portugal)",
@@ -907,21 +907,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "pt",
     "titre_fr": "CNCS termine la deuxième série de réunions avec les communautés de cybersécurité",
     "titre_en": "CNCS ends second round of meetings with Cybersecurity Communities"
-   }
-  },
-  {
-   "code": "MHRA",
-   "groupe": "autorites",
-   "fr": "MHRA",
-   "en": "MHRA",
-   "nb_articles": 9,
-   "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
-    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
-    "langue": "en",
-    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
-    "titre_en": ""
    }
   },
   {
@@ -940,6 +925,51 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "ANS",
+   "groupe": "autorites",
+   "fr": "Agence du numérique en santé",
+   "en": "French Digital Health Agency (ANS)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-08",
+    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
+    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
+   }
+  },
+  {
+   "code": "ACN",
+   "groupe": "autorites",
+   "fr": "ACN (Italie)",
+   "en": "ACN (Italy)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
+    "titre": "Misure urgenti di verifica e mitigazione per operatori della distribuzione alimentare e della filiera del freddo",
+    "langue": "it",
+    "titre_fr": "Mesures urgentes de vérification et d'atténuation pour les exploitants d'approvisionnement en produits alimentaires et en froid",
+    "titre_en": "Urgent verification and mitigation measures for food and cold supply operators"
+   }
+  },
+  {
+   "code": "MHRA",
+   "groupe": "autorites",
+   "fr": "MHRA",
+   "en": "MHRA",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
+    "langue": "en",
+    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "SAMSIK",
    "groupe": "autorites",
    "fr": "SAMSIK (Danemark)",
@@ -955,21 +985,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "ANS",
-   "groupe": "autorites",
-   "fr": "Agence du numérique en santé",
-   "en": "French Digital Health Agency (ANS)",
-   "nb_articles": 7,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
-    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
-   }
-  },
-  {
    "code": "gematik",
    "groupe": "autorites",
    "fr": "gematik",
@@ -982,21 +997,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "de",
     "titre_fr": "\"Tout en un\": TI-Messenger peut également être utilisé à l'avenir via des systèmes logiciels pour les établissements de santé",
     "titre_en": "\"All in One\": TI-Messenger can also be used in the future via software systems for healthcare facilities"
-   }
-  },
-  {
-   "code": "ACN",
-   "groupe": "autorites",
-   "fr": "ACN (Italie)",
-   "en": "ACN (Italy)",
-   "nb_articles": 7,
-   "exemple": {
-    "date": "2026-09-13",
-    "lien": "https://www.matricedigitale.it/2026/09/13/nis2-aggiornamento-faq/",
-    "titre": "Italie : l'ACN met à jour ses FAQ NIS sur la supervision, les inspections et les sanctions",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Italy: ACN updates its NIS FAQ on supervision, inspections and sanctions"
    }
   },
   {
@@ -1030,21 +1030,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "AgID",
-   "groupe": "autorites",
-   "fr": "AgID",
-   "en": "AgID",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
-    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
-    "langue": "it",
-    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
-    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
-   }
-  },
-  {
    "code": "UODO",
    "groupe": "autorites",
    "fr": "UODO (Pologne)",
@@ -1057,6 +1042,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "pl",
     "titre_fr": "Digitalisation, automatisation et protection des données : à quoi ressembleront les bureaux polonais dans quelques années ? 07.10.2026",
     "titre_en": "Digitalisation, automation and data protection: what will Polish offices look like in a few years? 07.10.2026"
+   }
+  },
+  {
+   "code": "Datatilsynet",
+   "groupe": "autorites",
+   "fr": "Datatilsynet (Norvège, Danemark)",
+   "en": "Datatilsynet (Norway, Denmark)",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
+    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
+    "langue": "hu",
+    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
+    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
    }
   },
   {
@@ -1090,6 +1090,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "AgID",
+   "groupe": "autorites",
+   "fr": "AgID",
+   "en": "AgID",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-08",
+    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
+    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
+    "langue": "it",
+    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
+    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
+   }
+  },
+  {
    "code": "ICO",
    "groupe": "autorites",
    "fr": "ICO (Royaume-Uni)",
@@ -1105,18 +1120,33 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "Lægemiddelstyrelsen",
+   "code": "Swissmedic",
    "groupe": "autorites",
-   "fr": "Lægemiddelstyrelsen (Danemark)",
-   "en": "Danish Medicines Agency",
+   "fr": "Swissmedic",
+   "en": "Swissmedic",
    "nb_articles": 5,
    "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://laegemiddelstyrelsen.dk/da/godkendelse/kontrol-og-inspektion/mangel-paa-medicin/meddelelser-om-forsyning-af-medicin/human-2026/bexsero-forsyningsvanskelighed/",
-    "titre": "Bexsero ; forsyningsvanskelighed",
-    "langue": "da",
-    "titre_fr": "Bexsero; difficulté d'approvisionnement",
-    "titre_en": "Bexsero; supply difficulty"
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
+    "titre": "Revision of the Guidance document Authorisation Biosimilar",
+    "langue": "en",
+    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "ECCC",
+   "groupe": "autorites",
+   "fr": "ECCC (centre de compétences cyber UE)",
+   "en": "ECCC (EU cyber competence centre)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://cyber.gov.gr/koines-draseis-kai-synergeies-ton-nccs-stin-kypro-gia-ena-ischyrotero-eyropaiko-oikosystima-kyvernoasfaleias/",
+    "titre": "Κοινές δράσεις και συνέργειες των NCCs στην Κύπρο για ένα ισχυρότερο ευρωπαϊκό οικοσύστημα κυβερνοασφάλειας",
+    "langue": "el",
+    "titre_fr": "Actions communes et synergies des CNC à Chypre pour un écosystème européen de cybersécurité plus fort",
+    "titre_en": "Joint actions and synergies of NCCs in Cyprus for a stronger European cybersecurity ecosystem"
    }
   },
   {
@@ -1135,21 +1165,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "Datatilsynet",
-   "groupe": "autorites",
-   "fr": "Datatilsynet (Norvège, Danemark)",
-   "en": "Datatilsynet (Norway, Denmark)",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://www.digi.no/sikkerhet/datatilsynet-gir-microsoft-selskap-rekordbot-bruddene-er-svaert-alvorlige/7145501",
-    "titre": "– Bruddene er svært alvorlige",
-    "langue": "nb",
-    "titre_fr": "Les mariées sont très sérieuses.",
-    "titre_en": "The brides are very serious."
-   }
-  },
-  {
    "code": "Fimea",
    "groupe": "autorites",
    "fr": "Fimea (Finlande)",
@@ -1161,21 +1176,6 @@ window.VEILLE_ACRONYMES = {
     "titre": "Instructions for use of medical devices must be available to the user and easy to understand",
     "langue": "en",
     "titre_fr": "Les instructions d'utilisation des instruments médicaux doivent être à la disposition de l'utilisateur et faciles à comprendre",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "Swissmedic",
-   "groupe": "autorites",
-   "fr": "Swissmedic",
-   "en": "Swissmedic",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
-    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
-    "langue": "en",
-    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
     "titre_en": ""
    }
   },
@@ -1222,21 +1222,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "en",
     "titre_fr": "Opine EDPB et EDPS sur le projet de modifications RGPD suite à la simplification du paquet Omnibus IV",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "ECCC",
-   "groupe": "autorites",
-   "fr": "ECCC (centre de compétences cyber UE)",
-   "en": "ECCC (EU cyber competence centre)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-04",
-    "lien": "https://cyber.gov.gr/nea-prosklisi-toy-eccc-96-ekat-eyro-gia-erga-enischysis-tis-kyvernoasfaleias-stin-eyropi/",
-    "titre": "Νέα πρόσκληση του ECCC: 96 εκατ. ευρώ για έργα ενίσχυσης της κυβερνοασφάλειας στην Ευρώπη",
-    "langue": "el",
-    "titre_fr": "Nouvel appel ECCC: 96 millions d'euros pour des projets de cybersécurité en Europe",
-    "titre_en": "New ECCC call: 96m euros for cybersecurity projects in Europe"
    }
   },
   {
@@ -1390,21 +1375,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "BfArM",
-   "groupe": "autorites",
-   "fr": "BfArM",
-   "en": "BfArM",
-   "nb_articles": 1,
-   "exemple": {
-    "date": "2026-06-25",
-    "lien": "https://www.bfarm.de/SharedDocs/Pressemitteilungen/DE/2026/pm06-2026.html",
-    "titre": "25.000 Datensätze für die Genommedizin der Zukunft: Modellvorhaben zur Genomsequenzierung erreicht wichtigen Meilenstein",
-    "langue": "de",
-    "titre_fr": "25 000 ensembles de données pour la médecine du génome futur: le projet de modèle pour le séquençage du génome atteint une étape importante",
-    "titre_en": "25,000 data sets for future genome medicine: Model project for genome sequencing reaches important milestone"
-   }
-  },
-  {
    "code": "AEMPS",
    "groupe": "autorites",
    "fr": "AEMPS",
@@ -1525,7 +1495,7 @@ window.VEILLE_ACRONYMES = {
   },
   {
    "code": "DPA",
-   "nb_articles": 12,
+   "nb_articles": 11,
    "exemple": {
     "date": "2026-10-12",
     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
@@ -1555,6 +1525,18 @@ window.VEILLE_ACRONYMES = {
     "lien": "https://ccb.belgium.be/news/secure-2nd-open-call-launched-1-october-offering-support-smes-preparing-cyber-resilience-act",
     "titre": "The SECURE 2nd Open Call launched on 1 October, offering support to SMEs in preparing for the Cyber Resilience Act",
     "titre_fr": "Le 2ème appel ouvert SECURE a été lancé le 1er octobre, offrant un soutien aux PME dans la préparation de la Cyber Resilience Act",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
+   "code": "EMA",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
+    "titre": "Revision of the Guidance document Authorisation Biosimilar",
+    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
     "titre_en": "",
     "langue": "en"
    }
@@ -1605,18 +1587,6 @@ window.VEILLE_ACRONYMES = {
     "titre_fr": "",
     "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»",
     "langue": "fr"
-   }
-  },
-  {
-   "code": "EMA",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
-    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
-    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
-    "titre_en": "",
-    "langue": "en"
    }
   },
   {

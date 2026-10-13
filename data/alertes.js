@@ -1,5 +1,5 @@
 window.VEILLE_ALERTES = {
- "mise_a_jour": "2026-10-12T12:59+00:00",
+ "mise_a_jour": "2026-10-13T15:56+00:00",
  "alertes": [
   {
    "id": "k8cb942c3e8a",
@@ -94,7 +94,12 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": false,
    "lies": [
+    "fe8bb8454a15",
+    "416856d69b55",
+    "689313fd9149",
+    "5c90018a8a0f",
     "29ea2d66d56f",
+    "861e1c6189fb",
     "4f2fa67cfa49",
     "38a1462619ee",
     "87c49a51d1fb",
@@ -108,7 +113,9 @@ window.VEILLE_ALERTES = {
     "e46cb6d2998f",
     "36c415dda027",
     "b2c9680f9c85",
+    "23ac311dc9ff",
     "746b1fe5f47f",
+    "e854a4d5139a",
     "eaffeb787a1b",
     "c78c197b5634",
     "a39f9cc24073",
@@ -160,7 +167,7 @@ window.VEILLE_ALERTES = {
     "614c79f10038",
     "b8f2ac851d18"
    ],
-   "nb_lies": 65,
+   "nb_lies": 72,
    "active": true
   },
   {
@@ -258,144 +265,6 @@ window.VEILLE_ALERTES = {
    "active": true
   },
   {
-   "id": "k313c398bb6e",
-   "type": "a_qualifier",
-   "texte": "ANFR",
-   "inconnu": true,
-   "zone": "Europe",
-   "detecte_le": "2026-09-23",
-   "maj_le": "2026-10-05",
-   "date": "2026-10-01",
-   "fin": "2026-10-21",
-   "version": "2026-10-05-1218",
-   "version_maj": "2026-10-05-1218",
-   "articles": [
-    {
-     "id": "n91e9b45d92d",
-     "titre": "Cyber Resilience Act : l’ANFR aux côtés des industriels pour préparer l’entrée en vigueur du règlement",
-     "langue": "fr",
-     "trad": {
-      "en": {
-       "titre": "Cyber Resilience Act: the ANFR alongside industry to prepare for the coming into force of the regulation"
-      }
-     },
-     "lien": "https://www.anfr.fr/liste-actualites/actualite/cyber-resilience-act-lanfr-aux-cotes-des-industriels-pour-preparer-lentree-en-vigueur-du-reglement",
-     "source": "Veille RKC (Wavestone)",
-     "zone": "Europe",
-     "date": "2026-10-01",
-     "detecte_le": "2026-10-05",
-     "version": "2026-10-05-1218",
-     "statut": "en_vigueur",
-     "nature": "rkc",
-     "a_verifier": true
-    },
-    {
-     "id": "92ef850b974d",
-     "titre": "Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques",
-     "langue": "fr",
-     "trad": {
-      "en": {
-       "titre": "Cyber Resilience Act: ANSSI, ANFR and DGE support manufacturers in compliance with digital products"
-      }
-     },
-     "lien": "http://cyber.sites.beta.gouv.fr/actualites/cra-lanssi-lanfr-et-la-dge-accompagnent-les-fabricants-dans-la-conformite-des-produits-numeriques/",
-     "source": "ANSSI (Agence Nationale de la Sécurité des SI)",
-     "zone": "France",
-     "date": "2026-09-23",
-     "detecte_le": "2026-09-23",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 2,
-   "a_verifier": false,
-   "emergent": true,
-   "nb_sources": 2,
-   "lies": [
-    "87c49a51d1fb",
-    "nb758cc7fe2d",
-    "nc7fe3d40940",
-    "n1340dcd4f1e",
-    "n65cd070da06",
-    "nd0e10e495d4",
-    "nff72156c141",
-    "n9896dcb03b1",
-    "n05ae4d48ba0",
-    "cddb47db0536",
-    "nf9bb9f506dd",
-    "nc1d632dc073",
-    "nbb2e4c59af8",
-    "n117319b2335",
-    "n9c72e1f985c",
-    "bcba85084a96",
-    "n40c1624fa4e",
-    "ne641ef1e9df",
-    "n1b90e60f3b9",
-    "na9a0c4116ff",
-    "n6c994506fe3",
-    "nc5451513a3e",
-    "ne74c791a486",
-    "n9070b6c6fcf",
-    "n809fbc840f5",
-    "nfb2f35dc4cf",
-    "n8ddbd243fd2",
-    "n5849c577435",
-    "n59c3b20ee4c",
-    "nbb1aba15c24",
-    "n33751b180d2",
-    "n1d5e30a42d9",
-    "nf0417419a04",
-    "n5544db3d087",
-    "n5888405deb7",
-    "na88fd82ddc2",
-    "df8cb77f3b3e",
-    "n7a21f04709d",
-    "n74b05a40c9a",
-    "n9be1102cea8",
-    "n960579842d3",
-    "n221e0f6e9e6",
-    "n7172eaa00e7",
-    "nea67054bb06",
-    "neabda431a4a",
-    "n493da50c677",
-    "nf1e63dac1ec",
-    "n3c8dd3eff82",
-    "n29bf9d09dce",
-    "n48c607903ad",
-    "n215d065c03a",
-    "nb53602c92ec",
-    "n2b54069e861",
-    "nefb750675c1",
-    "n37260287d20",
-    "nc089a33235e",
-    "n6bb36ceb1ea",
-    "ncde810de261",
-    "nda986369ed7",
-    "nbc14c48d6c1",
-    "nd19cebc788b",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f",
-    "nb72c3e5cd2e",
-    "nfb81c552e70",
-    "n983025a9173",
-    "n7e0f7c56362",
-    "nadab460c416",
-    "n867d32db08b",
-    "n608387d6033",
-    "n4f1bcce9179",
-    "nfeacfa3e72e",
-    "nf64dd1d35aa",
-    "n42e70584abb",
-    "n123feba5d05",
-    "n38f5757a0a7"
-   ],
-   "nb_lies": 166,
-   "active": true
-  },
-  {
    "id": "k9e31a975339",
    "type": "adopte",
    "texte": "CRA",
@@ -490,6 +359,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
     "nb758cc7fe2d",
@@ -566,12 +438,97 @@ window.VEILLE_ALERTES = {
     "n1454e3aaa19",
     "n36a8703b617",
     "n2a04daac74f",
-    "nb72c3e5cd2e",
-    "nfb81c552e70",
-    "n983025a9173",
-    "n7e0f7c56362"
+    "nb72c3e5cd2e"
    ],
-   "nb_lies": 165,
+   "nb_lies": 168,
+   "active": true
+  },
+  {
+   "id": "k5e5edfc7e7f",
+   "type": "proposition",
+   "texte": "AI Act",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-29",
+   "date": "2026-09-29",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-29-1553",
+   "articles": [
+    {
+     "id": "1ac275ccc7c9",
+     "titre": "Artificial Intelligence authority governance in Law on the use and development of artificial intelligence implementing EU AI Act (Bill No. 52-654-01-151)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Gouvernance de l'autorité chargée de l'intelligence artificielle dans la loi sur l'utilisation et le développement de l'intelligence artificielle mettant en œuvre la loi UE IA (projet de loi no 52-654-01-151)"
+      }
+     },
+     "lien": "https://digitalpolicyalert.org/change/21631-artificial-intelligence-authority-governance-in-law-on-the-use-and-development-of-artificial-intelligence-implementing-eu-ai-act-no-52-654-01-151",
+     "source": "Digital Policy Alert",
+     "zone": "Worldwide",
+     "date": "2026-09-29",
+     "detecte_le": "2026-09-29",
+     "version": "2026-09-29-1553",
+     "statut": "projet",
+     "nature": "presse",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "lies": [
+    "1716a3aa61eb",
+    "e7cf601e0390",
+    "bdbcf905c2b4",
+    "898334da6753",
+    "5ba8c05f4f37",
+    "06ac075a2ae0",
+    "5d608ae28055",
+    "48fdc42e3885",
+    "8d1a4865f535",
+    "b9d9c30b9808",
+    "fb4d2e75e70b",
+    "de1007551d4e",
+    "f3d4873a81b7",
+    "8b6b7e958d72",
+    "26e9aff4b41d",
+    "6bdc6a33a46b",
+    "9418f10b2b76",
+    "2f68fe179d07",
+    "52bda5032918",
+    "169a517ea976",
+    "f77c0f6f8867",
+    "45fae9319d74",
+    "5ffddb2e4496",
+    "584a6d7587ff",
+    "286954db7e79",
+    "a6192df23a8c",
+    "cfcaf530206e",
+    "02f30a061fdf",
+    "8e3bac64ee48",
+    "7fefa889ba8b",
+    "aa7b33850e7b",
+    "e7644651c602",
+    "4d5d44c7f9f5",
+    "013bf27dc688",
+    "82e0544acf38",
+    "d4f499c564f0",
+    "f3e7fa6afdb6",
+    "ff28a2c4c662",
+    "fe189ad21034",
+    "41c06504ff92",
+    "7c70632e2fb7",
+    "59ab50bc51b1",
+    "14c9a9382c17",
+    "89c67897fb74",
+    "3c0781745af0",
+    "e6d4e8e8345e",
+    "93541a6b0c64",
+    "8ec25e1d0626"
+   ],
+   "nb_lies": 48,
    "active": true
   },
   {
@@ -627,6 +584,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "4242a22ccb08",
@@ -634,6 +593,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -681,7 +641,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 53,
+   "nb_lies": 56,
    "active": true
   },
   {
@@ -724,6 +684,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "1e04ec7ac876",
     "de1007551d4e",
+    "1ac275ccc7c9",
     "8ebfa1f4b6bc",
     "6ce7a030fb65",
     "c76267e7d7d9",
@@ -739,7 +700,7 @@ window.VEILLE_ALERTES = {
     "233e75c7746f",
     "f34dcd685e44"
    ],
-   "nb_lies": 19,
+   "nb_lies": 20,
    "active": true
   },
   {
@@ -768,46 +729,6 @@ window.VEILLE_ALERTES = {
       }
      },
      "lien": "https://cyber.gov.gr/eos-tis-10-noemvrioy-parateinetai-i-dimosia-diavoyleysi-gia-tin-ethniki-stratigiki-kyvernoasfaleias-2026-2030/",
-     "source": "Autorité Nationale de Cybersécurité",
-     "zone": "Grèce",
-     "date": "2026-09-24",
-     "detecte_le": "2026-09-24",
-     "version": "2026-09-24-0737",
-     "statut": "consultation",
-     "nature": "officielle",
-     "a_verifier": true
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": true,
-   "active": true
-  },
-  {
-   "id": "kdd5c0350fe2",
-   "type": "a_qualifier",
-   "texte": "",
-   "inconnu": true,
-   "zone": "Grèce",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-09-24",
-   "date": "2026-09-24",
-   "fin": "2026-10-22",
-   "version": "2026-09-24-0737",
-   "version_maj": "2026-09-24-0737",
-   "articles": [
-    {
-     "id": "25bc6806832a",
-     "titre": "Δημόσια διαβούλευση για την οριστικοποίηση αναλυτικών τεχνικών προδιαγραφών του έργου «Ενοποιημένο Κέντρο Αναφοράς Κυβερνοασφάλειας», EL SOC.",
-     "langue": "el",
-     "trad": {
-      "en": {
-       "titre": "Public consultation on the finalisation of analytical technical specifications of the ‘Unified Cybersecurity Reporting Centre’ project, EL SOC."
-      },
-      "fr": {
-       "titre": "Consultation publique sur la finalisation des spécifications techniques analytiques du projet «Centre unifié de rapport sur la cybersécurité», EL SOC."
-      }
-     },
-     "lien": "https://cyber.gov.gr/dimosia-diavoyleysi-gia-tin-oristikopoiisi-analytikon-technikon-prodiagrafon-toy-ergoy-enopoiimeno-kentro-anaforas-kyvernoasfaleias-el-soc/",
      "source": "Autorité Nationale de Cybersécurité",
      "zone": "Grèce",
      "date": "2026-09-24",
@@ -858,6 +779,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": true,
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "4242a22ccb08",
@@ -865,6 +788,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -913,65 +837,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 54,
-   "active": true
-  },
-  {
-   "id": "k5eba3805483",
-   "type": "a_qualifier",
-   "texte": "EU KIDS Act",
-   "inconnu": true,
-   "zone": "Espagne",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-09-24",
-   "date": "2026-09-21",
-   "fin": "2026-10-22",
-   "version": "2026-09-24-0737",
-   "version_maj": "2026-09-24-1243",
-   "articles": [
-    {
-     "id": "7c74e687da89",
-     "titre": "La Ley EU KIDS limita el acceso de los niños a las redes sociales",
-     "langue": "es",
-     "trad": {
-      "en": {
-       "titre": "The EU KIDS Act limits children's access to social networks"
-      },
-      "fr": {
-       "titre": "La loi EU KIDS limite l'accès des enfants aux réseaux sociaux"
-      }
-     },
-     "lien": "https://www.redseguridad.com/actualidad/ley-europea-eu-kids-limita-acceso-ninos-redes-sociales_20260921.html",
-     "source": "Red Seguridad (revue cyber espagnole)",
-     "zone": "Espagne",
-     "date": "2026-09-21",
-     "detecte_le": "2026-09-24",
-     "version": "2026-09-24-1243",
-     "nature": "presse"
-    },
-    {
-     "id": "842e4959e02e",
-     "titre": "Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Proposition de loi UE KIDS - «UE Tenir les espaces numériques Internet comptables et fiables»"
-      }
-     },
-     "lien": "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy",
-     "source": "Commission Européenne - Cybersecurity",
-     "zone": "Europe",
-     "date": "2026-09-17",
-     "detecte_le": "2026-09-24",
-     "version": "2026-09-24-0737",
-     "statut": "projet",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 2,
-   "a_verifier": false,
-   "emergent": true,
-   "nb_sources": 2,
+   "nb_lies": 57,
    "active": true
   },
   {
@@ -1014,6 +880,8 @@ window.VEILLE_ALERTES = {
     "en": "…prior suspicion, and the sanctioning procedure). The clarifications come ahead of the 31 October 2026 deadline for adopting baseline security measures (determination 379907/2025), which ends…"
    },
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "4242a22ccb08",
@@ -1021,6 +889,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -1070,7 +939,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 55,
+   "nb_lies": 58,
    "active": true
   },
   {
@@ -1113,6 +982,8 @@ window.VEILLE_ALERTES = {
     "en": "…mostly entered into force on 11 August 2026, with full implementation scheduled for 28 October 2026. KRiBSI is the supervisory authority and national contact point; financial penalty…"
    },
    "lies": [
+    "1716a3aa61eb",
+    "e7cf601e0390",
     "bdbcf905c2b4",
     "898334da6753",
     "5ba8c05f4f37",
@@ -1161,7 +1032,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 47,
+   "nb_lies": 49,
    "active": true
   },
   {
@@ -1285,6 +1156,9 @@ window.VEILLE_ALERTES = {
     "en": "…postponing CRA harmonised standard deadlines: horizontal type A and B standards to 31 October 2026, vertical type C standards to 31 December 2026. No CRA harmonised standard had yet been…"
    },
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
     "nb758cc7fe2d",
@@ -1361,12 +1235,9 @@ window.VEILLE_ALERTES = {
     "n9f48ed90063",
     "n1ed910293b5",
     "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f"
+    "n14ae6b2f1dc"
    ],
-   "nb_lies": 169,
+   "nb_lies": 172,
    "active": true
   },
   {
@@ -1408,6 +1279,7 @@ window.VEILLE_ALERTES = {
     "en": "…authority, single entry point for providers, secondary use of data; final report due 1 November 2026."
    },
    "lies": [
+    "9650251d04c6",
     "41df26188385",
     "c61c1cee860d",
     "f80d067a3933",
@@ -1419,130 +1291,7 @@ window.VEILLE_ALERTES = {
     "ae89a4ec7129",
     "be849ffd8897"
    ],
-   "nb_lies": 10,
-   "active": true
-  },
-  {
-   "id": "k79521e15082",
-   "type": "proposition",
-   "texte": "CRA",
-   "inconnu": false,
-   "zone": "Europe",
-   "detecte_le": "2026-09-28",
-   "maj_le": "2026-10-12",
-   "date": "2026-10-09",
-   "fin": "2026-10-26",
-   "version": "2026-09-28-1210",
-   "version_maj": "2026-10-12-1259",
-   "articles": [
-    {
-     "id": "87c49a51d1fb",
-     "titre": "Blog 9 oktober 2026 Data & privacy CRA Wie betaalt de rekening als jouw product gehackt wordt? Lees meer",
-     "langue": "nl",
-     "trad": {
-      "en": {
-       "titre": "Blog October 9, 2026 Data & privacy CRA Who pays the bill if your product is hacked? Read more"
-      },
-      "fr": {
-       "titre": "Blogue 9 octobre 2026 Données et confidentialité CRA Qui paie la facture si votre produit est piraté? Lire la suite"
-      }
-     },
-     "lien": "https://www.ictrecht.nl/blog/wie-betaalt-de-rekening-als-jouw-product-gehackt-wordt",
-     "source": "ICTRecht — blog",
-     "zone": "Pays-Bas",
-     "date": "2026-10-09",
-     "detecte_le": "2026-10-12",
-     "version": "2026-10-12-1259",
-     "statut": "projet",
-     "nature": "cabinet",
-     "a_verifier": true
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": true,
-   "lies": [
-    "76d182555694",
-    "nb758cc7fe2d",
-    "nc7fe3d40940",
-    "n1340dcd4f1e",
-    "n65cd070da06",
-    "n91e9b45d92d",
-    "n632d8003592",
-    "nd0e10e495d4",
-    "nff72156c141",
-    "n9896dcb03b1",
-    "n05ae4d48ba0",
-    "nf9bb9f506dd",
-    "nc1d632dc073",
-    "nbb2e4c59af8",
-    "n117319b2335",
-    "n9c72e1f985c",
-    "n40c1624fa4e",
-    "ne641ef1e9df",
-    "n1b90e60f3b9",
-    "na9a0c4116ff",
-    "n6c994506fe3",
-    "nc5451513a3e",
-    "e786e437b828",
-    "18cacb70284c",
-    "ne74c791a486",
-    "n9070b6c6fcf",
-    "nb22f3914f6d",
-    "n809fbc840f5",
-    "nfb2f35dc4cf",
-    "n8ddbd243fd2",
-    "92ef850b974d",
-    "n5849c577435",
-    "n59c3b20ee4c",
-    "nbb1aba15c24",
-    "n33751b180d2",
-    "n1d5e30a42d9",
-    "nf0417419a04",
-    "n5544db3d087",
-    "n5888405deb7",
-    "na88fd82ddc2",
-    "df8cb77f3b3e",
-    "n7a21f04709d",
-    "n74b05a40c9a",
-    "n9be1102cea8",
-    "n960579842d3",
-    "n221e0f6e9e6",
-    "n7172eaa00e7",
-    "nea67054bb06",
-    "neabda431a4a",
-    "nb45ccab90d3",
-    "n493da50c677",
-    "nf1e63dac1ec",
-    "n3c8dd3eff82",
-    "n29bf9d09dce",
-    "n04f1798cec0",
-    "n6331060a285",
-    "n48c607903ad",
-    "n215d065c03a",
-    "nb53602c92ec",
-    "n2b54069e861",
-    "nb6e63c120e6",
-    "nefb750675c1",
-    "n37260287d20",
-    "nc089a33235e",
-    "n6bb36ceb1ea",
-    "ncde810de261",
-    "ne70a10bb264",
-    "n8beb9015549",
-    "nda986369ed7",
-    "nbc14c48d6c1",
-    "nd19cebc788b",
-    "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f",
-    "nb72c3e5cd2e"
-   ],
-   "nb_lies": 168,
+   "nb_lies": 11,
    "active": true
   },
   {
@@ -1583,6 +1332,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "4242a22ccb08",
@@ -1590,6 +1341,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -1638,7 +1390,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 54,
+   "nb_lies": 57,
    "active": true
   },
   {
@@ -1682,6 +1434,42 @@ window.VEILLE_ALERTES = {
    "active": true
   },
   {
+   "id": "kfaa80e21f0b",
+   "type": "proposition",
+   "texte": "HDS / SecNumCloud / PGSSI-S (France)",
+   "inconnu": false,
+   "zone": "France",
+   "detecte_le": "2026-10-05",
+   "maj_le": "2026-10-05",
+   "date": "2026-10-05",
+   "fin": "2026-11-02",
+   "version": "2026-10-05-1218",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "71986c99330d",
+     "titre": "15e Comité des entreprises du numérique en santé : les temps forts de cette édition",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "15th Health Digital Business Committee: Highlights of this edition"
+      }
+     },
+     "lien": "https://esante.gouv.fr/agenda/15e-comite-des-entreprises-du-numerique-en-sante-les-temps-forts-de-cette-edition",
+     "source": "Agence du Numérique en Santé (ANS) — flux RSS",
+     "zone": "France",
+     "date": "2026-10-05",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "consultation",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "active": true
+  },
+  {
    "id": "k9d2b21407cd",
    "type": "a_qualifier",
    "texte": "",
@@ -1716,64 +1504,13 @@ window.VEILLE_ALERTES = {
    ],
    "nb_articles": 1,
    "a_verifier": true,
-   "active": true
-  },
-  {
-   "id": "kf0a16d01cb9",
-   "type": "a_qualifier",
-   "texte": "",
-   "inconnu": true,
-   "zone": "Europe",
-   "detecte_le": "2026-10-12",
-   "maj_le": "2026-10-12",
-   "date": "2026-10-12",
-   "fin": "2026-11-09",
-   "version": "2026-10-12-1259",
-   "version_maj": "2026-10-12-1259",
-   "articles": [
-    {
-     "id": "972b3a0440aa",
-     "titre": "Italian DPA fines Wind Tre EUR 16 700 000 for unlawful telemarketing and data protection infringements",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Italie DPA amendes Wind Tre EUR 16 700 000 pour infractions illégales au télémarketing et à la protection des données"
-      }
-     },
-     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
-     "source": "EDPB (European Data Protection Board)",
-     "zone": "Europe",
-     "date": "2026-10-12",
-     "detecte_le": "2026-10-12",
-     "version": "2026-10-12-1259",
-     "statut": "adopte",
-     "nature": "officielle",
-     "a_verifier": true
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": true,
    "concernes": {
     "acteurs": [
-     "donnees"
+     "tic"
     ],
-    "source": "EDPB (European Data Protection Board)",
-    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en"
+    "source": "Agence du Numérique en Santé (ANS) — flux RSS",
+    "lien": "https://esante.gouv.fr/actualites/controle-des-services-numeriques-en-sante-un-nouveau-cadre-pour-garantir-la-confiance"
    },
-   "lies": [
-    "516fc3c5fbde",
-    "38a1462619ee",
-    "4f773d1a0849",
-    "e9f673f0d01c",
-    "9e5950476e11",
-    "d2f19c42aaff",
-    "5828ea99d44e",
-    "b8d75fed0df3",
-    "8cf22cfa7884",
-    "af5d98081af4",
-    "85816f532617"
-   ],
-   "nb_lies": 11,
    "active": true
   },
   {
@@ -1811,12 +1548,15 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "b7c18b05b5e7",
     "4242a22ccb08",
     "32e49230344c",
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -1866,7 +1606,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 54,
+   "nb_lies": 57,
    "active": true
   },
   {
@@ -1904,6 +1644,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "87c49a51d1fb",
     "nb758cc7fe2d",
     "nc7fe3d40940",
@@ -1980,40 +1723,37 @@ window.VEILLE_ALERTES = {
     "n1ed910293b5",
     "n62f3c8db19a",
     "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f",
-    "nb72c3e5cd2e"
+    "n1454e3aaa19"
    ],
-   "nb_lies": 168,
+   "nb_lies": 171,
    "active": true
   },
   {
-   "id": "kcb9f1b836c8",
+   "id": "k1493e64cfe6",
    "type": "a_qualifier",
    "texte": "",
    "inconnu": true,
    "zone": "France",
    "detecte_le": "2026-10-12",
    "maj_le": "2026-10-12",
-   "date": "2026-10-08",
+   "date": "2026-10-09",
    "fin": "2026-11-09",
    "version": "2026-10-12-1259",
    "version_maj": "2026-10-12-1259",
    "articles": [
     {
-     "id": "9b211bbd6f18",
-     "titre": "Arrêté du 16 septembre 2026 relatif à l'approbation du cahier des charges de l'appel à projets « Soutien au développement de solutions de cybersécurité et à l'amélioration de la maturité de l'offre dans l'écosystème »",
+     "id": "120520409519",
+     "titre": "Arrêté du 8 octobre 2026 modifiant l'arrêté du 6 février 2025 relatif à la prise en charge du dispositif médical in vitro ENDOTEST au titre de l'article L. 165-1-1 du code de la sécurité sociale",
      "langue": "fr",
      "trad": {
       "en": {
-       "titre": "Order of 16 September 2026 on the approval of the terms of reference for the call for projects \"Supporting the development of cybersecurity solutions and improving the maturity of the supply in the ecosystem\""
+       "titre": "Order of 8 October 2026 amending the Order of 6 February 2025 on the management of the in vitro medical device ENDOTEST under Article L. 165-1-1 of the Social Security Code"
       }
      },
-     "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054960871",
+     "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054965700",
      "source": "Légifrance",
      "zone": "France",
-     "date": "2026-10-08",
+     "date": "2026-10-09",
      "detecte_le": "2026-10-12",
      "version": "2026-10-12-1259",
      "statut": "adopte",
@@ -2063,12 +1803,15 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -2118,44 +1861,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 54,
-   "active": true
-  },
-  {
-   "id": "k3479a242c17",
-   "type": "a_qualifier",
-   "texte": "",
-   "inconnu": true,
-   "zone": "Europe",
-   "detecte_le": "2026-10-12",
-   "maj_le": "2026-10-12",
-   "date": "2026-10-07",
-   "fin": "2026-11-09",
-   "version": "2026-10-12-1259",
-   "version_maj": "2026-10-12-1259",
-   "articles": [
-    {
-     "id": "4f0305a94829",
-     "titre": "The impact of generative artificial intelligence on internet openness",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "L'impact de l'intelligence artificielle génératrice sur l'ouverture d'Internet"
-      }
-     },
-     "lien": "https://www.berec.europa.eu/en/news/press-releases/the-impact-of-generative-artificial-intelligence-on-internet-openness",
-     "source": "BEREC (télécoms)",
-     "zone": "Europe",
-     "date": "2026-10-07",
-     "detecte_le": "2026-10-12",
-     "version": "2026-10-12-1259",
-     "statut": "consultation",
-     "nature": "officielle",
-     "a_verifier": true
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": true,
+   "nb_lies": 57,
    "active": true
   },
   {
@@ -2203,7 +1909,12 @@ window.VEILLE_ALERTES = {
     "fr": "…expire le 29 octobre pour s'adapter aux lignes directrices de suivi des pixels. D'ici le 29 octobre 2026, les entreprises, les plateformes et les bulletins devront adapter les systèmes…"
    },
    "lies": [
+    "fe8bb8454a15",
+    "416856d69b55",
+    "689313fd9149",
+    "5c90018a8a0f",
     "29ea2d66d56f",
+    "861e1c6189fb",
     "4f2fa67cfa49",
     "38a1462619ee",
     "87c49a51d1fb",
@@ -2217,7 +1928,9 @@ window.VEILLE_ALERTES = {
     "e46cb6d2998f",
     "36c415dda027",
     "b2c9680f9c85",
+    "23ac311dc9ff",
     "746b1fe5f47f",
+    "e854a4d5139a",
     "eaffeb787a1b",
     "d21844491833",
     "c78c197b5634",
@@ -2272,7 +1985,52 @@ window.VEILLE_ALERTES = {
     "614c79f10038",
     "b8f2ac851d18"
    ],
-   "nb_lies": 68,
+   "nb_lies": 75,
+   "active": true
+  },
+  {
+   "id": "kf33bba5f699",
+   "type": "proposition",
+   "texte": "Data Act",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-10-13",
+   "maj_le": "2026-10-13",
+   "date": "2026-10-13",
+   "fin": "2026-11-10",
+   "version": "2026-10-13-1556",
+   "version_maj": "2026-10-13-1556",
+   "articles": [
+    {
+     "id": "f745a2bec8aa",
+     "titre": "Większa kontrola nad danymi. Rząd przyjął projekt ustawy",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "More data control. The government adopted the bill"
+      },
+      "fr": {
+       "titre": "Plus de contrôle des données. Le gouvernement a adopté le projet de loi"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/wieksza-kontrola-nad-danymi-rzad-przyjal-projekt-ustawy",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-10-13",
+     "detecte_le": "2026-10-13",
+     "version": "2026-10-13-1556",
+     "statut": "projet",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "lies": [
+    "5d608ae28055",
+    "cb7ec8841f49",
+    "de76db758bed"
+   ],
+   "nb_lies": 3,
    "active": true
   },
   {
@@ -2362,7 +2120,12 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": false,
    "lies": [
+    "fe8bb8454a15",
+    "416856d69b55",
+    "689313fd9149",
+    "5c90018a8a0f",
     "29ea2d66d56f",
+    "861e1c6189fb",
     "4f2fa67cfa49",
     "38a1462619ee",
     "87c49a51d1fb",
@@ -2377,7 +2140,9 @@ window.VEILLE_ALERTES = {
     "e46cb6d2998f",
     "36c415dda027",
     "b2c9680f9c85",
+    "23ac311dc9ff",
     "746b1fe5f47f",
+    "e854a4d5139a",
     "eaffeb787a1b",
     "d21844491833",
     "c78c197b5634",
@@ -2428,7 +2193,7 @@ window.VEILLE_ALERTES = {
     "614c79f10038",
     "b8f2ac851d18"
    ],
-   "nb_lies": 65,
+   "nb_lies": 72,
    "active": false
   },
   {
@@ -2486,6 +2251,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
     "nb758cc7fe2d",
@@ -2562,116 +2330,9 @@ window.VEILLE_ALERTES = {
     "n9f48ed90063",
     "n1ed910293b5",
     "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f"
+    "n14ae6b2f1dc"
    ],
-   "nb_lies": 167,
-   "active": false
-  },
-  {
-   "id": "k5e5edfc7e7f",
-   "type": "proposition",
-   "texte": "AI Act",
-   "inconnu": false,
-   "zone": "Europe",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-09-29",
-   "date": "2026-09-29",
-   "fin": "2026-07-03",
-   "version": "2026-09-24-0737",
-   "version_maj": "2026-09-29-1553",
-   "articles": [
-    {
-     "id": "1ac275ccc7c9",
-     "titre": "Artificial Intelligence authority governance in Law on the use and development of artificial intelligence implementing EU AI Act (Bill No. 52-654-01-151)",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Gouvernance de l'autorité chargée de l'intelligence artificielle dans la loi sur l'utilisation et le développement de l'intelligence artificielle mettant en œuvre la loi UE IA (projet de loi no 52-654-01-151)"
-      }
-     },
-     "lien": "https://digitalpolicyalert.org/change/21631-artificial-intelligence-authority-governance-in-law-on-the-use-and-development-of-artificial-intelligence-implementing-eu-ai-act-no-52-654-01-151",
-     "source": "Digital Policy Alert",
-     "zone": "Worldwide",
-     "date": "2026-09-29",
-     "detecte_le": "2026-09-29",
-     "version": "2026-09-29-1553",
-     "statut": "projet",
-     "nature": "presse",
-     "a_verifier": true
-    },
-    {
-     "id": "93541a6b0c64",
-     "titre": "Is my use case a high-risk AI system? Applying the Commission’s guidelines and next steps",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Mon cas d'utilisation est-il un système IA à haut risque? Application des lignes directrices de la Commission et des prochaines étapes"
-      }
-     },
-     "lien": "https://www.dataprotectionreport.com/2026/05/is-my-use-case-a-high-risk-ai-system-applying-the-commissions-guidelines-and-next-steps/",
-     "source": "Data Protection Report (Norton Rose Fulbright)",
-     "zone": "Worldwide",
-     "date": "2026-05-22",
-     "detecte_le": "2026-09-24",
-     "version": "2026-09-24-0737",
-     "statut": "projet",
-     "nature": "cabinet",
-     "a_verifier": true
-    }
-   ],
-   "nb_articles": 2,
-   "a_verifier": true,
-   "lies": [
-    "bdbcf905c2b4",
-    "898334da6753",
-    "5ba8c05f4f37",
-    "06ac075a2ae0",
-    "5d608ae28055",
-    "48fdc42e3885",
-    "8d1a4865f535",
-    "b9d9c30b9808",
-    "fb4d2e75e70b",
-    "de1007551d4e",
-    "f3d4873a81b7",
-    "8b6b7e958d72",
-    "26e9aff4b41d",
-    "6bdc6a33a46b",
-    "9418f10b2b76",
-    "2f68fe179d07",
-    "52bda5032918",
-    "169a517ea976",
-    "f77c0f6f8867",
-    "45fae9319d74",
-    "5ffddb2e4496",
-    "584a6d7587ff",
-    "286954db7e79",
-    "a6192df23a8c",
-    "cfcaf530206e",
-    "02f30a061fdf",
-    "8e3bac64ee48",
-    "7fefa889ba8b",
-    "aa7b33850e7b",
-    "e7644651c602",
-    "4d5d44c7f9f5",
-    "013bf27dc688",
-    "82e0544acf38",
-    "d4f499c564f0",
-    "f3e7fa6afdb6",
-    "ff28a2c4c662",
-    "fe189ad21034",
-    "41c06504ff92",
-    "7c70632e2fb7",
-    "59ab50bc51b1",
-    "14c9a9382c17",
-    "89c67897fb74",
-    "3c0781745af0",
-    "e6d4e8e8345e",
-    "8ec25e1d0626"
-   ],
-   "nb_lies": 45,
+   "nb_lies": 170,
    "active": false
   },
   {
@@ -2729,7 +2390,12 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": true,
    "lies": [
+    "fe8bb8454a15",
+    "416856d69b55",
+    "689313fd9149",
+    "5c90018a8a0f",
     "29ea2d66d56f",
+    "861e1c6189fb",
     "4f2fa67cfa49",
     "38a1462619ee",
     "87c49a51d1fb",
@@ -2744,7 +2410,9 @@ window.VEILLE_ALERTES = {
     "e46cb6d2998f",
     "36c415dda027",
     "b2c9680f9c85",
+    "23ac311dc9ff",
     "746b1fe5f47f",
+    "e854a4d5139a",
     "eaffeb787a1b",
     "d21844491833",
     "c78c197b5634",
@@ -2797,7 +2465,7 @@ window.VEILLE_ALERTES = {
     "614c79f10038",
     "b8f2ac851d18"
    ],
-   "nb_lies": 67,
+   "nb_lies": 74,
    "active": false
   },
   {
@@ -2860,6 +2528,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "4242a22ccb08",
@@ -2867,6 +2537,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -2914,7 +2585,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 53,
+   "nb_lies": 56,
    "active": false
   },
   {
@@ -3049,6 +2720,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "1716a3aa61eb",
+    "e7cf601e0390",
     "bdbcf905c2b4",
     "898334da6753",
     "5ba8c05f4f37",
@@ -3095,58 +2768,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 45,
-   "active": false
-  },
-  {
-   "id": "k4d06f1a23a3",
-   "type": "adopte",
-   "texte": "EHDS",
-   "inconnu": false,
-   "zone": "Europe",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-09-24",
-   "date": "2026-07-15",
-   "fin": "2026-08-26",
-   "version": "2026-09-24-1243",
-   "version_maj": "2026-09-24-1243",
-   "articles": [
-    {
-     "id": "c52d01ed6cc3",
-     "titre": "Voorbereiden op de EHDS? Regel betrouwbare toegang met eIDAS",
-     "langue": "nl",
-     "trad": {
-      "en": {
-       "titre": "Preparing for the EHDS? Get reliable access with eIDAS"
-      },
-      "fr": {
-       "titre": "Se préparer pour le EHDS? Obtenez un accès fiable avec eIDAS"
-      }
-     },
-     "lien": "https://www.nictiz.nl/nieuws/voorbereiden-op-de-ehds-regel-betrouwbare-toegang-met-eidas/",
-     "source": "Nictiz (centre d'expertise santé numérique, normes d'échange, EHDS)",
-     "zone": "Pays-Bas",
-     "date": "2026-07-15",
-     "detecte_le": "2026-09-24",
-     "version": "2026-09-24-1243",
-     "statut": "adopte",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": false,
-   "lies": [
-    "41df26188385",
-    "c61c1cee860d",
-    "f80d067a3933",
-    "b7161e7f611f",
-    "367b5a52be88",
-    "abf518384fc4",
-    "443a598ee48d",
-    "ae89a4ec7129",
-    "be849ffd8897"
-   ],
-   "nb_lies": 9,
+   "nb_lies": 47,
    "active": false
   },
   {
@@ -3208,6 +2830,124 @@ window.VEILLE_ALERTES = {
     "742aef11c88d"
    ],
    "nb_lies": 3,
+   "active": false
+  },
+  {
+   "id": "kf1fe6e051d4",
+   "type": "a_qualifier",
+   "texte": "Implementing Regulation",
+   "inconnu": true,
+   "zone": "Worldwide",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-10-13",
+   "date": "2026-10-12",
+   "fin": "2026-09-30",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-10-13-1556",
+   "articles": [
+    {
+     "id": "e7cf601e0390",
+     "titre": "European Commission opened consultation on draft Implementing regulation on practical and specific arrangements for conduct of certain proceedings pursuant to Article 75c and Article 75d of Artificial Intelligence Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Commission européenne a ouvert une consultation sur le projet de règlement d'exécution relatif aux modalités pratiques et spécifiques de la conduite de certaines procédures conformément aux articles 75 quater et 75 quinquies de la loi sur l'intelligence artificielle"
+      }
+     },
+     "lien": "https://digitalpolicyalert.org/event/44554-european-commission-opened-consultation-on-draft-implementing-regulation-on-practical-and-specific-arrangements-for-conduct-of-certain-proceedings-pursuant-to-article-75c-and-article-75d-of-artificial-intelligence-act",
+     "source": "Digital Policy Alert",
+     "zone": "Worldwide",
+     "date": "2026-10-12",
+     "detecte_le": "2026-10-13",
+     "version": "2026-10-13-1556",
+     "statut": "consultation",
+     "nature": "presse"
+    },
+    {
+     "id": "a8107305c861",
+     "titre": "High-value dataset dashboard: Helping users explore Europe’s most valuable open data",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Tableau de bord de données de grande valeur: Aider les utilisateurs à explorer l'Europe"
+      }
+     },
+     "lien": "https://data.europa.eu/en/news-events/news/high-value-dataset-dashboard-helping-users-explore-europes-most-valuable-open-data",
+     "source": "European Data",
+     "zone": "Europe",
+     "date": "2026-08-19",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": false,
+   "emergent": true,
+   "nb_sources": 2,
+   "lies": [
+    "1716a3aa61eb",
+    "5ba8c05f4f37",
+    "06ac075a2ae0",
+    "5d608ae28055",
+    "48fdc42e3885",
+    "8d1a4865f535",
+    "b9d9c30b9808",
+    "fb4d2e75e70b",
+    "1ac275ccc7c9",
+    "f3d4873a81b7",
+    "8b6b7e958d72",
+    "26e9aff4b41d",
+    "6bdc6a33a46b",
+    "2f68fe179d07",
+    "52bda5032918",
+    "45fae9319d74",
+    "584a6d7587ff",
+    "286954db7e79",
+    "bdc7231e1532",
+    "b37f83034ac3",
+    "a6192df23a8c",
+    "cfcaf530206e",
+    "02f30a061fdf",
+    "7fefa889ba8b",
+    "aa7b33850e7b",
+    "e7644651c602",
+    "b5e41f9c186a",
+    "b365b30650ea",
+    "013bf27dc688",
+    "82e0544acf38",
+    "b304ac14dda5",
+    "f3e7fa6afdb6",
+    "ff28a2c4c662",
+    "b40ce5c44c63",
+    "bbf33d72afc5",
+    "fe189ad21034",
+    "41c06504ff92",
+    "7c70632e2fb7",
+    "bcf6b30b3c7a",
+    "b5b19b2dff2a",
+    "59ab50bc51b1",
+    "b6a7e017eea8",
+    "b6bcc64e8506",
+    "b1f3b7b7e3ba",
+    "89c67897fb74",
+    "b5653947052b",
+    "3c0781745af0",
+    "e6d4e8e8345e",
+    "93541a6b0c64",
+    "b6c1e7159a76",
+    "b4eceeac2003",
+    "b0cd62ed9d0a",
+    "b68f81160ac2",
+    "bcd4036ffadb",
+    "bffd9267fbff",
+    "b11528501adc",
+    "b340c126fa85",
+    "bfd240c6fc4d",
+    "bcd92a2bb12b",
+    "b7c8c84aba4b"
+   ],
+   "nb_lies": 60,
    "active": false
   },
   {
@@ -3347,6 +3087,8 @@ window.VEILLE_ALERTES = {
     "en": "…intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was published in the Official Journal (General Series No.…"
    },
    "lies": [
+    "1716a3aa61eb",
+    "e7cf601e0390",
     "bdbcf905c2b4",
     "898334da6753",
     "5ba8c05f4f37",
@@ -3395,7 +3137,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 47,
+   "nb_lies": 49,
    "active": false
   },
   {
@@ -3437,6 +3179,8 @@ window.VEILLE_ALERTES = {
     "en": "Italy: Legislative Decree 160/2026 on artificial intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was…"
    },
    "lies": [
+    "1716a3aa61eb",
+    "e7cf601e0390",
     "bdbcf905c2b4",
     "898334da6753",
     "5ba8c05f4f37",
@@ -3485,7 +3229,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 47,
+   "nb_lies": 49,
    "active": false
   },
   {
@@ -3528,6 +3272,9 @@ window.VEILLE_ALERTES = {
     "en": "…as market surveillance authority. With CRA reporting obligations applicable since 11 September 2026, the Czech adaptation bill has completed consultation and is heading to the Chamber of…"
    },
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
     "nb758cc7fe2d",
@@ -3604,12 +3351,9 @@ window.VEILLE_ALERTES = {
     "n9f48ed90063",
     "n1ed910293b5",
     "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f"
+    "n14ae6b2f1dc"
    ],
-   "nb_lies": 169,
+   "nb_lies": 172,
    "active": false
   },
   {
@@ -3693,6 +3437,8 @@ window.VEILLE_ALERTES = {
     "fr": "…nationale en matière de cybersécurité. Les entités d'auto-enregistrement ont jusqu'au 3 octobre 2026 pour présenter une demande d'alerte."
    },
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "4242a22ccb08",
@@ -3700,6 +3446,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -3747,7 +3494,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 53,
+   "nb_lies": 56,
    "active": false
   },
   {
@@ -3790,6 +3537,8 @@ window.VEILLE_ALERTES = {
     "en": "…still awaits examination in the National Assembly, expected from September 2026. As of 31 August 2026, no law had been enacted and no implementing decree existed."
    },
    "lies": [
+    "72022880c627",
+    "f0b08572be73",
     "c6a72e78a1ce",
     "b7c18b05b5e7",
     "4242a22ccb08",
@@ -3797,6 +3546,7 @@ window.VEILLE_ALERTES = {
     "2ef9d4236629",
     "f01285f84788",
     "1e04ec7ac876",
+    "539a945e71bd",
     "ne936098b541",
     "0a3fa23bda3a",
     "8ebfa1f4b6bc",
@@ -3846,7 +3596,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 55,
+   "nb_lies": 58,
    "active": false
   },
   {
@@ -3930,6 +3680,9 @@ window.VEILLE_ALERTES = {
     "en": "…on CRA application in France: 24h reporting of actively exploited vulnerabilities from 11 September 2026, full compliance in December 2027; ANSSI for notified bodies, CERT-FR for reports, ANFR…"
    },
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
     "nb758cc7fe2d",
@@ -4006,12 +3759,9 @@ window.VEILLE_ALERTES = {
     "n9f48ed90063",
     "n1ed910293b5",
     "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f"
+    "n14ae6b2f1dc"
    ],
-   "nb_lies": 169,
+   "nb_lies": 172,
    "active": false
   },
   {
@@ -4053,6 +3803,7 @@ window.VEILLE_ALERTES = {
     "en": "…amending the Patient Records Act. The Ministry of Health opened a consultation (until 28 September 2026) on a draft law implementing Regulation (EU) 2025/327 on the European Health Data Space…"
    },
    "lies": [
+    "9650251d04c6",
     "41df26188385",
     "c61c1cee860d",
     "f80d067a3933",
@@ -4064,7 +3815,7 @@ window.VEILLE_ALERTES = {
     "ae89a4ec7129",
     "be849ffd8897"
    ],
-   "nb_lies": 10,
+   "nb_lies": 11,
    "active": false
   },
   {
@@ -4107,6 +3858,9 @@ window.VEILLE_ALERTES = {
     "en": "…Manufacturers must report actively exploited vulnerabilities to Traficom's NCSC-FI from 11 September 2026; notified bodies may apply for authorisation from 11 June 2026 and all products must…"
    },
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
     "nb758cc7fe2d",
@@ -4183,97 +3937,9 @@ window.VEILLE_ALERTES = {
     "n9f48ed90063",
     "n1ed910293b5",
     "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f"
+    "n14ae6b2f1dc"
    ],
-   "nb_lies": 169,
-   "active": false
-  },
-  {
-   "id": "kb263c585b20",
-   "type": "adopte",
-   "texte": "AI Act",
-   "inconnu": false,
-   "zone": "Europe",
-   "detecte_le": "2026-09-25",
-   "maj_le": "2026-09-25",
-   "date": "2026-05-22",
-   "fin": "2026-07-03",
-   "version": "2026-09-25-1456",
-   "version_maj": "2026-09-25-1456",
-   "articles": [
-    {
-     "id": "e6d4e8e8345e",
-     "titre": "Report on the review of prohibitions and high-risk AI",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Rapport sur l'examen des interdictions et des risques élevés IA"
-      }
-     },
-     "lien": "https://digital-strategy.ec.europa.eu/en/library/report-review-prohibitions-and-high-risk-ai",
-     "source": "Commission Européenne - Cybersecurity",
-     "zone": "Europe",
-     "date": "2026-05-22",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "adopte",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": false,
-   "lies": [
-    "bdbcf905c2b4",
-    "898334da6753",
-    "5ba8c05f4f37",
-    "06ac075a2ae0",
-    "5d608ae28055",
-    "48fdc42e3885",
-    "8d1a4865f535",
-    "b9d9c30b9808",
-    "fb4d2e75e70b",
-    "de1007551d4e",
-    "1ac275ccc7c9",
-    "f3d4873a81b7",
-    "8b6b7e958d72",
-    "26e9aff4b41d",
-    "6bdc6a33a46b",
-    "9418f10b2b76",
-    "2f68fe179d07",
-    "52bda5032918",
-    "169a517ea976",
-    "f77c0f6f8867",
-    "45fae9319d74",
-    "5ffddb2e4496",
-    "584a6d7587ff",
-    "286954db7e79",
-    "a6192df23a8c",
-    "cfcaf530206e",
-    "02f30a061fdf",
-    "8e3bac64ee48",
-    "7fefa889ba8b",
-    "aa7b33850e7b",
-    "e7644651c602",
-    "4d5d44c7f9f5",
-    "013bf27dc688",
-    "82e0544acf38",
-    "d4f499c564f0",
-    "f3e7fa6afdb6",
-    "ff28a2c4c662",
-    "fe189ad21034",
-    "41c06504ff92",
-    "7c70632e2fb7",
-    "59ab50bc51b1",
-    "14c9a9382c17",
-    "89c67897fb74",
-    "3c0781745af0",
-    "93541a6b0c64",
-    "8ec25e1d0626"
-   ],
-   "nb_lies": 46,
+   "nb_lies": 172,
    "active": false
   },
   {
@@ -4403,6 +4069,9 @@ window.VEILLE_ALERTES = {
    "a_verifier": true,
    "echeance": "2026-09-11",
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
     "nb758cc7fe2d",
@@ -4479,12 +4148,9 @@ window.VEILLE_ALERTES = {
     "n2a04daac74f",
     "nb72c3e5cd2e",
     "nfb81c552e70",
-    "n983025a9173",
-    "n7e0f7c56362",
-    "nadab460c416",
-    "na038e904570"
+    "n983025a9173"
    ],
-   "nb_lies": 163,
+   "nb_lies": 166,
    "active": false
   },
   {
@@ -4494,7 +4160,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Allemagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-04-07",
    "fin": "2026-04-07",
    "version": "",
@@ -4520,7 +4186,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Allemagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4546,7 +4212,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Autriche",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-03-01",
    "fin": "2026-03-01",
    "version": "",
@@ -4572,7 +4238,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Belgique",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-01-19",
    "fin": "2026-01-19",
    "version": "",
@@ -4598,7 +4264,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Danemark",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4624,7 +4290,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Danemark",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4650,7 +4316,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Espagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4676,7 +4342,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Finlande",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-05-01",
    "fin": "2026-05-01",
    "version": "",
@@ -4702,7 +4368,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Finlande",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-06-01",
    "fin": "2026-06-01",
    "version": "",
@@ -4728,7 +4394,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "France",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-04-14",
    "fin": "2026-04-14",
    "version": "",
@@ -4754,7 +4420,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Hongrie",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-06-11",
    "fin": "2026-06-11",
    "version": "",
@@ -4780,7 +4446,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4806,7 +4472,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4832,7 +4498,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-03-05",
    "fin": "2026-03-05",
    "version": "",
@@ -4858,7 +4524,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4884,7 +4550,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pologne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-04-03",
    "fin": "2026-04-03",
    "version": "",
@@ -4910,7 +4576,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-04-03",
    "fin": "2026-04-03",
    "version": "",
@@ -4936,7 +4602,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-05-28",
    "fin": "2026-05-28",
    "version": "",
@@ -4962,7 +4628,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4988,7 +4654,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Royaume-Uni",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-04-06",
    "fin": "2026-04-06",
    "version": "",
@@ -5014,7 +4680,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Rép. Tchèque",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -5040,7 +4706,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Rép. Tchèque",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -5066,7 +4732,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suisse",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -5092,7 +4758,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-01-15",
    "fin": "2026-01-15",
    "version": "",
@@ -5118,7 +4784,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-01-15",
    "fin": "2026-01-15",
    "version": "",
@@ -5144,7 +4810,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-12",
+   "maj_le": "2026-10-13",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -5203,6 +4869,9 @@ window.VEILLE_ALERTES = {
     "en": "Decree No. 2026-944 of 9 October 2026 on the notification of conformity assessment bodies for products containing digital…"
    },
    "lies": [
+    "72022880c627",
+    "bf2661f2861a",
+    "5f2f02eff764",
     "87c49a51d1fb",
     "nb758cc7fe2d",
     "nc7fe3d40940",
@@ -5279,12 +4948,9 @@ window.VEILLE_ALERTES = {
     "n1ed910293b5",
     "n62f3c8db19a",
     "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f",
-    "nb72c3e5cd2e"
+    "n1454e3aaa19"
    ],
-   "nb_lies": 168,
+   "nb_lies": 171,
    "active": false
   }
  ]

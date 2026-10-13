@@ -359,7 +359,7 @@ STATUTS = [
                    r"strike a deal|trilogue|mandat de negociation|orientation generale|accord (provisoire|politique)|"
                    r"\bdraft\b|proposal|proposition de|projet de (loi|decret|texte|reglement)|\bentwurf|referentenentwurf|"
                    r"anteproyecto|proyecto de (ley|real decreto|r\.? ?d\.?\b)|wetsvoorstel|lovforslag|projekt ustawy|navrh zakona|"
-                   r"tervezet|disegno di legge|proposta de lei|\bbill\b")),
+                   r"tervezet|disegno di legge|proposta de lei|(?-i:\bBill\b)")),   # « Bill » (loi) et non « the bill » (la facture)
     ("adopte", _rx(r"adopted|adopte|\badopts? (a |an |its |the |new )?([\w-]+ ){0,3}(law|regulation|directive|act|text|bill|decree|legislation)\b|published in the official journal|journal officiel|promulg|verkundet|"
                             r"bundesgesetzblatt|\bBOE\b|gazzetta ufficiale|staatsblad|dziennik ustaw|sbirka zakonu|"
                             r"magyar kozlony|ΦΕΚ|diario da republica|svensk forfattningssamling|lovtidend|signed into law")),

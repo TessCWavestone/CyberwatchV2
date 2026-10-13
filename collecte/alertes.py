@@ -110,6 +110,15 @@ LOI_NATIONALE = re.compile(r"\bloi\b|projet de loi|\bgesetz|durchfuhrung|\bwet\b
                            r"designat\w* (the )?(national|market surveillance)", re.I)
 
 
+# Titres qui ne sont pas une nouvelle règle : rapports et études, sanctions prononcées (suivies à part, onglet
+# amendes), appels à projets / d'offres (test du 12/10 sur les vraies données)
+TITRE_EXCLUS = re.compile(
+    r"^\W*((annual |final |evaluation |progress )?report on|rapport (annuel |final )?(sur|de)|study on|etude sur|survey|enquete|bericht)\b|"
+    r"\bfine[sd]?\b.{0,40}(\d[\d .,]*\s?(eur|€|£|m\b|million|mln|k\b)|(eur|€|£)\s?\d)|amende de|inflige une amende|sanctionne|bu(ss|ß)geld|multa de|sanzione|"
+    r"appel a projets|appel d'offres|cahier des charges|call for (projects|proposals|tenders)|ausschreibung|licitacion|"
+    r"convocatoria de (ayudas|subvenciones)|subvention|τεχνικων προδιαγραφων", re.I)
+
+
 def type_article(a):
     """Type d'alerte d'un article, ou None (pas une alerte)."""
     if a.get("base") or a.get("doublon_de") or a.get("nature") == "opinion" or a.get("debat"):
@@ -123,18 +132,23 @@ def type_article(a):
     texte = regles.texte_article(a)
     if EXCLUS.search(texte):
         return None
-    t = TYPE_STATUT.get(a.get("statut") or "")
+    tr = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
+    titre = regles._sa(a.get("titre", "") + " \n " + tr)
+    if TITRE_EXCLUS.search(titre):
+        return None
+    statut_a = a.get("statut") or ""
     if a.get("nature") != "officielle":
         # presse, cabinets, veille RKC : l'étape (adopté, projet, consultation…) doit être annoncée dans le TITRE ;
-        # sinon c'est un commentaire d'un texte existant, pas une nouvelle étape (test du 08/10 sur les vraies données)
-        tr = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
-        if not regles.statut(regles._sa(a.get("titre", "") + " \n " + tr)):
+        # sinon c'est un commentaire d'un texte existant, pas une nouvelle étape (tests des 08 et 12/10)
+        statut_a = regles.statut(titre)
+        if not statut_a:
             return None
-    if t == "proposition" and a.get("statut") == "lignes_directrices" and a.get("nature") != "officielle":
+    t = TYPE_STATUT.get(statut_a)
+    if t == "proposition" and statut_a == "lignes_directrices" and a.get("nature") != "officielle":
         return None   # des lignes directrices commentées par la presse ne sont pas une nouvelle règle
     inconnu = not a.get("textes_cles")
     if inconnu:
-        if not SUJET_ALERTE.search(texte) and not a.get("sens_fort"):
+        if not SUJET_ALERTE.search(texte) and not a.get("sens_fort") and not (a.get("indices_page") or {}).get("sujet_fort"):
             return None   # ni sujet central reconnu, ni sens jugé très proche par le modèle
         return "a_qualifier" if (t or regles.SIGNAL_FORT.search(texte)) else None
     return t
@@ -176,7 +190,9 @@ def termes(texte):
 
 # textes existants hors périmètre direct (ne sont pas « nouveaux »)
 DEJA_CONNUS = {"DSA", "DMA", "DIGITAL SERVICES ACT", "DIGITAL MARKETS ACT", "SERVICES ACT", "MARKETS ACT", "DGA",
-               "DATA GOVERNANCE ACT", "MICA", "EMFA", "EUROPEAN MEDIA FREEDOM ACT", "CHIPS ACT", "PSD2", "PSD3"}
+               "DATA GOVERNANCE ACT", "MICA", "EMFA", "EUROPEAN MEDIA FREEDOM ACT", "CHIPS ACT", "PSD2", "PSD3",
+               # protection des mineurs en ligne / réseaux sociaux (famille DSA), secteur financier (décision du 09/10)
+               "EU KIDS ACT", "KIDS ACT", "DORA", "DIGITAL OPERATIONAL RESILIENCE ACT", "FIDA", "AMLR", "AMLA"}
 
 
 def est_connu_defaut(terme):
@@ -229,6 +245,10 @@ def emergents(articles, aujourdhui, est_connu=est_connu_defaut, fenetre=FENETRE_
     res = []
     for m, arts in dans.items():
         if m.lower() in avant or est_connu(m) or any(est_connu(s2) for s2, n2 in alias.items() if n2 == m):
+            continue
+        # cité surtout dans des articles déjà rattachés à un texte suivi : un organisme ou un acteur (ex. « ANFR »
+        # dans des articles sur le CRA), pas un nouveau texte (test du 12/10)
+        if sum(1 for a in arts if a.get("textes_cles")) * 2 > len(arts):
             continue
         sources = {a.get("source") for a in arts}
         officiel = any(a.get("nature") == "officielle" for a in arts)

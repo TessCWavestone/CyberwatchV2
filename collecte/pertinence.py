@@ -90,15 +90,16 @@ class Pertinence:
             # un texte long (extrait RKC privé) est découpé : on garde le meilleur morceau
             textes, proprio = [], []
             for k, a in enumerate(a_noter):
+                t = (a["titre"] + ". " + (a.get("resume") or ""))[:900]
+                en = (a.get("trad") or {}).get("en") or {}
+                if en.get("titre") and en["titre"] != a["titre"]:
+                    t += " / " + en["titre"]
+                morceaux = [t]
                 if a.get("_texte"):
+                    # titre + résumé reste un des morceaux : lire la page ne peut que relever la note, jamais la
+                    # baisser (test du 12/10 : 12 pages sur 67 baissaient la note, ex. ENS 0,72 -> 0,62)
                     brut = a["_texte"]
-                    morceaux = [a["titre"] + ". " + brut[i:i + 600] for i in range(0, min(len(brut), 6000), 550)] or [a["titre"]]
-                else:
-                    t = (a["titre"] + ". " + (a.get("resume") or ""))[:900]
-                    en = (a.get("trad") or {}).get("en") or {}
-                    if en.get("titre") and en["titre"] != a["titre"]:
-                        t += " / " + en["titre"]
-                    morceaux = [t]
+                    morceaux += [a["titre"] + ". " + brut[i:i + 600] for i in range(0, min(len(brut), 6000), 550)]
                 for m in morceaux:
                     textes.append(m)
                     proprio.append(k)

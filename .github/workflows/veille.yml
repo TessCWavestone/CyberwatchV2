@@ -41,7 +41,7 @@ jobs:
   collecte:
     # version figée : « ubuntu-latest » passe à Ubuntu 26 le 19/10/2026 (évite une collecte cassée par ce changement)
     runs-on: ubuntu-24.04
-    timeout-minutes: 180
+    timeout-minutes: 300
     # pas d'« environment » ici : la collecte et l'enregistrement des données ne doivent jamais
     # attendre une autorisation de déploiement ; seule la publication (job suivant) en dépend
     outputs:
@@ -106,6 +106,13 @@ jobs:
           pip install -r requirements-traduction.txt
           pip install -r requirements-pertinence.txt
 
+      # v7 : petite IA open source de tri (llama.cpp, version précompilée pour processeur). Si elle ne
+      # s'installe pas, la collecte continue avec les règles seules.
+      - name: Installer l'IA de tri (open source, gratuite)
+        if: steps.garde.outputs.lancer == 'true'
+        continue-on-error: true
+        run: pip install -r requirements-ia.txt --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+
       - name: Garder en cache les modèles (téléchargés une seule fois)
         if: steps.garde.outputs.lancer == 'true'
         uses: actions/cache@v4
@@ -114,12 +121,14 @@ jobs:
             ~/.local/share/argos-translate
             ~/.local/cache/argos-translate
             ~/.cache/huggingface
-          key: modeles-v6
+          key: modeles-v7
 
       - name: Collecter les nouveaux articles
         if: steps.garde.outputs.lancer == 'true'
         run: python collecte/collecte.py
         env:
+          # nom de l'entreprise suivie, donné seulement à l'IA de tri (secret : jamais dans le dépôt ni sur le site)
+          VEILLE_ENTREPRISE: ${{ secrets.VEILLE_ENTREPRISE }}
           RATTRAPAGE_DEPUIS: ${{ github.event.inputs.rattrapage_depuis }}
           RETEST_INACTIVES: ${{ github.event.inputs.retester_inactives }}
           # Journal officiel français : données ouvertes de la DILA, aucun identifiant nécessaire.

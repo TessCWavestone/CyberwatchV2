@@ -1,0 +1,63 @@
+# Cyber Watch — test du tri par l'IA sur le jeu de référence (300 articles réels notés)
+# Lancement à la main : Actions › « Cyber Watch - test du tri par l'IA » › Run workflow.
+# Ne modifie ni les données ni le site : le rapport s'affiche dans le résumé de l'exécution
+# et se télécharge dans « Artifacts ».
+
+name: Cyber Watch - test du tri par l'IA
+
+on:
+  workflow_dispatch:
+    inputs:
+      modele:
+        description: "Modèle (qwen7b = le plus fiable ; phi35 = plus rapide ; llama3b)"
+        default: "qwen7b"
+      pages:
+        description: "Lire la page des articles (oui / non)"
+        default: "oui"
+      max:
+        description: "Nombre d'articles (vide = les 300)"
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances et l'IA de tri
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-ia.txt --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+
+      - name: Garder en cache le modèle
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: ia-${{ inputs.modele }}-v1
+
+      - name: Lancer le test
+        env:
+          IA_MODELE: ${{ inputs.modele }}
+          PAGES: ${{ inputs.pages }}
+          MAX: ${{ inputs.max }}
+          VEILLE_ENTREPRISE: ${{ secrets.VEILLE_ENTREPRISE }}
+        run: |
+          python tests/ia/test_tri.py
+          cat tests/ia/rapport.md >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-ia
+          path: |
+            tests/ia/rapport.md
+            tests/ia/resultats.json

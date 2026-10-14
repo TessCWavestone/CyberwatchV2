@@ -1,4 +1,11 @@
 {
  "_aide": "Avis des lecteurs (boutons du site). « important » : gardé et mis dans L'essentiel ; « pas_pertinent » : écarté. Supprimez une ligne pour annuler un avis.",
- "articles": {}
+ "articles": {
+  "900235465e7d": {
+   "avis": "pas_pertinent",
+   "titre": "Cybermobbing: Jeder vierte betroffene junge Mensch berichtet von Suizidgedanken",
+   "lien": "https://www.aerzteblatt.de/news/cybermobbing-jeder-vierte-betroffene-junge-mensch-berichtet-von-suizidgedanken-24a03501-caf9-4c68-b002-6695d9054e7d",
+   "le": "2026-10-14"
+  }
+ }
 }

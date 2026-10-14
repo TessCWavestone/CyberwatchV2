@@ -28,6 +28,8 @@ Principes (validés) :
 import re
 import unicodedata
 
+import tri_ia
+
 
 def _sa(s):
     return "".join(c for c in unicodedata.normalize("NFD", s or "") if unicodedata.category(c) != "Mn")
@@ -270,10 +272,16 @@ BRUIT = [
         r"awareness (month|week|campaign)|mois (europeen )?de la cybersecurite|\bquiz\b|infographi")),
     ("médicaments (hors dispositifs)", _rx(
         r"medicinal products?|\bmedicaments?\b|\bvaccin|clinical trials?|essais? cliniques?|drug shortages?|penuries? de|"
-        r"arzneimittel|medicamentos?|farmac\w*|\bpharmacovigilance|marketing authori[sz]ation|autorisation de mise sur le marche")),
+        r"arzneimittel|medicamentos?|farmac\w*|cytostati|zytostati|\bpharmacovigilance|marketing authori[sz]ation|autorisation de mise sur le marche")),
     ("hors sujet (autres domaines)", _rx(
         r"\bpollen|\bweather\b|football|\brecipes?\b|horoscope|tourism|tourisme|agricultur|fishing|peche\b|"
-        r"obesity|anti-obesity|nutrition|diet\b|real estate|immobilier")),
+        r"obesity|anti-obesity|nutrition|diet\b|real estate|immobilier|"
+        # 14/10 : santé mentale, harcèlement en ligne, désinformation, radiodiffusion, génomique médicale (sans lien
+        # avec le métier ni la cyber réglementaire)
+        r"mental health|sante mentale|psychische gesundheit|salud mental|salute mentale|geestelijke gezondheid|psykisk|"
+        r"psychotherap|psychiatr|cyber-?bull|cyber-?harcel|cybermobbing|ciberacoso|cyberpesten|cyberstalking|harcelement|"
+        r"bullying|\bmobbing|desinformation|disinformation|misinformation|fake news|desinformacion|disinformazione|"
+        r"radio numerique|digital radio|\bDAB\+?|radiodiffusion|broadcast|rundfunk|pharmacogenom|pharmacogenetic")),
 ]
 
 # Sujets nettement centrés sur les États-Unis (ou un autre pays hors Europe)
@@ -423,9 +431,7 @@ DISPO_NUM_SANTE = _rx(
     r"medical devices?|dispositi(f|vo)s? medic|medizinprodukt|productos? sanitario|medische hulpmiddel|in vitro|\bIVD\b|"
     r"in-vitro-diagnost|diagnostic (devices?|tests?)|e-?health|e-?sante|sante numerique|digital health|"
     r"services? numeriques|telemedec|telemedic|\bDiGA\b|gesundheitsanwendung|health (apps?|technolog)|"
-    r"laboratory (equipment|software|systems?)|automates?|"
-    # autorités du médicament et des dispositifs : lien si elles annoncent une règle
-    r"\b(MHRA|Swissmedic|ANSM|BfArM|AEMPS|AIFA|HPRA|Infarmed|SUKL|URPL|Fimea|Lakemedelsverket|DKMA|EMA)\b")
+    r"laboratory (equipment|software|systems?)|automates?")
 REG_MOTS = _rx(
     r"nouveau cadre|new framework|referentiel|certification|exigences?|requirements?|obligations?|guidance|guideline|"
     r"lignes directrices|leitlinie|leitfaden|richtlijn|law|loi\b|gesetz|ley\b|legge|decree|decret|dekret|decreto|arrete|"
@@ -564,6 +570,22 @@ def evaluer(a, seuils, score_neg=None):
     if niveau in ("elevee", "moyenne") and (a.get("rubrique") == "secteur" or SANTE_METIER.search(t)) \
             and not lien_cyber_reg(t, a, tc, ip, moy):
         niveau, motif = "faible", "santé sans lien avec la cyber, les données ou la réglementation"
+
+    # v7 : avis de l'IA de tri (collecte/tri_ia.py), quand elle a lu l'article. Garde-fou : un texte suivi cité
+    # (NIS2, CRA, IVDR…) n'est jamais écarté par l'IA, seulement ramené à « à surveiller ».
+    ia = a.get("ia") or {}
+    if ia.get("avis"):
+        lib = tri_ia.LIBELLES.get(ia.get("motif"), "IA")
+        if ia["avis"] == "pas_pertinent":
+            if tc:
+                if niveau in ("elevee", "moyenne"):
+                    niveau, motif = "faible", lib + " (texte suivi cité : gardé à surveiller)"
+            else:
+                niveau, motif = "ecarte", lib
+        elif ia["avis"] == "a_surveiller" and niveau in ("elevee", "moyenne"):
+            niveau, motif = "faible", lib
+        elif ia["avis"] == "pertinent" and niveau in ("faible", "ecarte"):
+            niveau, motif = "moyenne", lib + " (repêché par l'IA)"
 
     # L'essentiel : textes et normes importants, même en cas de doute (badge « à vérifier »)
     essentiel, a_verifier = False, False

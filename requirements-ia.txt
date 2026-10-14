@@ -1,0 +1,4 @@
+# v7 : tri des articles par une petite IA open source exécutée sur le serveur GitHub (gratuite, sans clé).
+# llama-cpp-python : version précompilée pour processeur (index indiqué dans le workflow).
+llama-cpp-python>=0.3.2
+huggingface_hub>=0.23

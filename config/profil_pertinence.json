@@ -71,7 +71,8 @@
    "phrases": [
     "In vitro diagnostic medical devices regulation IVDR, medical device regulation MDR, notified bodies, MDCG guidance.",
     "Cybersecurity of medical devices and medical device software, premarket requirements, post-market surveillance."
-   ]
+   ],
+   "lien_cyber": false
   },
   {
    "id": "ia",
@@ -116,7 +117,8 @@
    "phrases": [
     "GMP Annex 11 computerised systems, Annex 22 artificial intelligence, data integrity in pharmaceutical manufacturing.",
     "Laboratory information systems, data integrity and computerised system validation in quality control laboratories."
-   ]
+   ],
+   "lien_cyber": false
   },
   {
    "id": "sante_metier",

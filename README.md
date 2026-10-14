@@ -388,6 +388,22 @@ de vraies publications de 10 textes (NIS2, CRA, AI Act, EHDS, ENS, DORA, Data Ac
 réponse est connue, et mesure le nombre de nouveaux points clés par mois sur les vraies données. Le rapport s'affiche
 en bas de la page de l'exécution.
 
+## Tri par une petite IA open source (v7, essai)
+
+Les règles et la note de proximité ne « comprennent » pas un article (« cyberharcèlement » contient « cyber »).
+Depuis la v7, une petite IA de langage **open source, gratuite, sans clé**, exécutée sur le serveur GitHub (llama.cpp,
+modèle Qwen2.5 7B par défaut, licence Apache 2.0), lit le titre, le résumé et le début de la page de chaque nouvel
+article et répond **pertinent / à surveiller / pas pertinent**, avec un motif pris dans une liste fixe, selon des
+critères écrits en clair (`collecte/tri_ia.py`). Elle ne rédige rien pour le site.
+
+- Garde-fou : un article qui cite un texte suivi (NIS2, CRA, IVDR…) n'est jamais écarté par l'IA (au pire « à surveiller »).
+- Les avis des lecteurs (boutons) priment toujours.
+- Nom de l'entreprise suivie : donné seulement à l'IA, par le secret GitHub `VEILLE_ENTREPRISE`
+  (Settings › Secrets and variables › Actions › New repository secret). Il n'est écrit ni dans le dépôt ni sur le site.
+- Réglages : `config/veille.json` › `ia_tri` (modèle, temps maximal par collecte, `actif: false` pour revenir aux règles seules).
+- Test : Actions › « Cyber Watch - test du tri par l'IA » › Run workflow : compare l'IA, les règles et un jeu de
+  référence de 300 articles réels notés (`tests/ia/jeu_reference.json`).
+
 ## Utilisation au quotidien
 
 **Ajouter ou retirer une source depuis le site.** Onglet **Sources** :

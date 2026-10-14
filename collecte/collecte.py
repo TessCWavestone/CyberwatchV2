@@ -52,6 +52,7 @@ import rkc  # noqa: E402
 import dila  # noqa: E402
 import lecture  # noqa: E402
 import sens as sens_mod  # noqa: E402
+import tri_ia  # noqa: E402
 import alertes  # noqa: E402
 import regles  # noqa: E402
 
@@ -1142,12 +1143,30 @@ def main():
     pert.noter(lues)
     print("Lecture des pages : %d tentées, %d lues (%d s)" % (n_lues, n_ok, time.time() - t_v6))
 
+    # v7 — Tri par une petite IA open source (gratuite, sans clé, exécutée ici) : lit titre, résumé et début de la
+    # page, répond pertinent / à surveiller / pas pertinent selon des critères écrits (collecte/tri_ia.py)
+    t_ia = time.time()
+    ia = tri_ia.TriIA(cfg)
+    if ia.actif:
+        a_juger = [a for a in collectes if candidat(a) or a.get("version") == id_version]
+        a_juger = [a for a in a_juger if a.get("nature") != "opinion" and not a.get("base")]
+        rang_niv = {"elevee": 0, "moyenne": 1, "faible": 2, "ecarte": 3}
+        a_juger.sort(key=lambda a: a["date"], reverse=True)
+        a_juger.sort(key=lambda a: (a.get("version") != id_version, rang_niv.get(a.get("pertinence"), 4)))
+        n_ia = ia.trier(a_juger)
+        pert.noter(collectes)
+        print("Tri par l'IA : %d articles jugés (%d s)%s" % (n_ia, time.time() - t_ia, (" — " + ia.erreur) if ia.erreur else ""))
+    else:
+        print(ia.erreur)
+    meta["ia"] = {"actif": ia.actif, "modele": ia.cfg.get("modele_fichier", ""), "faits": ia.faits, "erreur": ia.erreur}
+
     # v6 — Classement par le sens (modèle NLI open source, sans IA générative) puis « qui est concerné »
-    sens = sens_mod.Sens(pert.profil, max(60, min(cfg.get("sens_budget_secondes", 1500), fin_v6 - time.time() - 300)))
+    # (le classement par le sens est inutile quand l'IA de tri a tourné ; « qui est concerné » reste calculé)
+    sens = sens_mod.Sens(pert.profil, 60 if ia.actif else max(60, min(cfg.get("sens_budget_secondes", 1500), fin_v6 - time.time() - 300)))
     if sens.actif:
         a_classer = [a for a in collectes if candidat(a)]
         a_classer.sort(key=lambda a: (not a.get("_texte"), a.get("version") != id_version))
-        n_sens = sens.analyser(a_classer, cfg.get("sens_max_articles", 700))
+        n_sens = 0 if ia.actif else sens.analyser(a_classer, cfg.get("sens_max_articles", 700))
         pert.noter(collectes)          # les règles relisent avec le sens
         cles = [a for a in collectes if a["pertinence"] in ("elevee", "moyenne") and candidat(a)
                 and (a.get("essentiel") or a.get("statut") or (a.get("sens") or {}).get("reg", 0) >= 0.8)]

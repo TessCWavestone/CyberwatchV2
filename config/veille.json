@@ -360,5 +360,14 @@
   "sens_max_articles": 700,
   "_aide_v6_1": "v6_budget_minutes : temps total des étapes v6 (pages + sens + qui est concerné), le reste est repris à la collecte suivante ; lecture_pages_minutes : part de ce temps pour lire les pages.",
   "v6_budget_minutes": 35,
-  "lecture_pages_minutes": 10
+  "lecture_pages_minutes": 10,
+  "_aide_v7": "ia_tri : petite IA open source de tri (pertinent / à surveiller / pas pertinent). modele : qwen7b (Qwen2.5 7B, Apache 2.0, le plus fiable, ~30-40 s par article), phi35 (Phi-3.5 mini, MIT, ~2 fois plus rapide) ou llama3b. caracteres_page : début de la page lu par l'IA. budget_minutes / max_articles : limites par collecte (le reste est repris la fois suivante ; les nouveaux articles passent en premier). actif : false pour revenir aux règles seules.",
+  "ia_tri": {
+    "actif": true,
+    "modele": "qwen7b",
+    "contexte": 4096,
+    "caracteres_page": 2000,
+    "budget_minutes": 120,
+    "max_articles": 600
+  }
 }

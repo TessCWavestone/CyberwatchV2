@@ -21,7 +21,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité numérique sans règle",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : vœux / prix / RH, marchés / entreprises"
   },
   {
    "n": 2,
@@ -45,7 +47,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification (commentaire)",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 3,
@@ -63,7 +67,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "acte EEE sur des réglementations techniques, contenu à vérifier",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 4,
@@ -81,7 +87,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "recommandation CNIL sur la sécurité des dossiers médicaux",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 5,
@@ -99,7 +107,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "convention collective",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 6,
@@ -117,7 +127,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 7,
@@ -141,7 +153,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "loi nationale d'application de l'AI Act",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : AI Act"
   },
   {
    "n": 8,
@@ -159,7 +173,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "incident sans contenu réglementaire",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 9,
@@ -177,7 +193,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "consultation CNIL sur l'IA",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 10,
@@ -199,7 +217,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vie des organisations",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 11,
@@ -217,7 +237,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "décision administrative hors sujet",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 12,
@@ -235,7 +257,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "secteur automobile (vérifié)",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 13,
@@ -257,7 +281,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 14,
@@ -281,7 +307,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 15,
@@ -303,7 +331,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité numérique sans règle",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 16,
@@ -325,7 +355,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "financement des soins",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 17,
@@ -343,7 +375,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "secteur financier",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 18,
@@ -365,7 +399,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "sanction RGPD sur des données de santé",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 19,
@@ -389,7 +425,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 20,
@@ -407,7 +445,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "maladies professionnelles, sans lien cyber",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 21,
@@ -429,7 +469,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "alerte / conseils techniques",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 22,
@@ -451,7 +493,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "guide de sécurité du secteur santé (pas une règle)",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 23,
@@ -473,7 +517,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 24,
@@ -497,7 +543,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "sanction RGPD pour défaut de sécurité",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 25,
@@ -519,7 +567,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "sanction RGPD télémarketing",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 26,
@@ -543,7 +593,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "lignes directrices EDPB (amendes RGPD)",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 27,
@@ -567,7 +619,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "avertissement d'une autorité de protection des données",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 28,
@@ -589,7 +643,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "recommandations officielles sur l'IA : pertinent, pas « très »",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 29,
@@ -611,7 +667,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "enquête, pas une nouvelle règle",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 30,
@@ -635,7 +693,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : nouvelle ligne directrice officielle",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 31,
@@ -657,7 +717,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "protection de l'enfance, hors sujet",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 32,
@@ -681,7 +743,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "lignes directrices DSA-RGPD (DSA hors périmètre)",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 33,
@@ -703,7 +767,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "télécoms",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 34,
@@ -719,9 +785,11 @@
    "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054965700",
    "niveau_regles": "elevee",
    "textes_cles": [],
-   "reference": "pertinent",
-   "motif_reference": "réglementation DIV (prise en charge)",
-   "verifie": true
+   "reference": "pas_pertinent",
+   "motif_reference": "réglementation DIV (prise en charge) — hors scope : concerne le secteur mais pas la réglementation cyber (décision du 16/10)",
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 35,
@@ -743,7 +811,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "article technique de cybersécurité industrielle : moyennement pertinent",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 36,
@@ -765,7 +835,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "marchés publics hors sujet",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 37,
@@ -789,7 +861,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 38,
@@ -811,7 +885,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "cybersécurité automobile (autre secteur)",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 39,
@@ -833,7 +909,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "commentaire sur des sanctions (vérifié)",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 40,
@@ -851,7 +929,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "décision d'exécution hors sujet",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 41,
@@ -873,7 +953,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "enquête / sondage",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 42,
@@ -895,7 +977,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "données ouvertes",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 43,
@@ -917,7 +1001,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 44,
@@ -935,7 +1021,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "incident IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 45,
@@ -957,7 +1045,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 46,
@@ -981,7 +1071,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : échéance de conformité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 47,
@@ -1005,7 +1097,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "sanction RGPD (décision automatisée)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 48,
@@ -1029,7 +1123,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "offre commerciale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 49,
@@ -1047,7 +1143,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "stratégies de sécurité des infrastructures critiques",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : événements / webinaires"
   },
   {
    "n": 50,
@@ -1069,7 +1167,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "tribune grand public",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 51,
@@ -1089,9 +1189,11 @@
    "lien": "https://health.ec.europa.eu/latest-updates/three-new-templates-support-written-input-patients-carers-and-clinicians-joint-clinical-assessments-2026-09-14_en",
    "niveau_regles": "ecarte",
    "textes_cles": [],
-   "reference": "a_surveiller",
-   "motif_reference": "évaluation des technologies de santé (procédure)",
-   "verifie": false
+   "reference": "pas_pertinent",
+   "motif_reference": "évaluation des technologies de santé (procédure) — hors scope : concerne le secteur mais pas la réglementation cyber (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 52,
@@ -1115,7 +1217,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 53,
@@ -1137,7 +1241,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "projet IA de l'administration",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 54,
@@ -1159,7 +1265,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "enquête sur l'IA en santé",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 55,
@@ -1181,7 +1289,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "tribune",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 56,
@@ -1203,7 +1313,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors Europe",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 57,
@@ -1225,7 +1337,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "incident / procès",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 58,
@@ -1243,7 +1357,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "proposition de loi hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 59,
@@ -1261,7 +1377,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "statistiques",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 60,
@@ -1281,7 +1399,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : notification sous 24 h",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 61,
@@ -1303,7 +1423,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 62,
@@ -1321,7 +1443,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 63,
@@ -1339,7 +1463,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "sensibilisation grand public",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 64,
@@ -1361,7 +1487,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : marchés / entreprises"
   },
   {
    "n": 65,
@@ -1379,7 +1507,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 66,
@@ -1401,7 +1531,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "tribune grand public",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 67,
@@ -1423,7 +1555,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 68,
@@ -1445,7 +1579,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "mois de la cybersécurité (sensibilisation)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 69,
@@ -1469,7 +1605,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 70,
@@ -1493,7 +1631,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "vie des institutions",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 71,
@@ -1517,7 +1657,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 72,
@@ -1539,7 +1681,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité numérique sans règle",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 73,
@@ -1563,7 +1707,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "don d'organes, hors sujet",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : IVDR"
   },
   {
    "n": 74,
@@ -1581,7 +1727,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "outil CNIL sur les modèles d'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 75,
@@ -1603,7 +1751,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "obligation nationale (audit de cybersécurité, NIS2 Hongrie)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 76,
@@ -1627,7 +1777,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise (conformité CRA d'un fabricant)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 77,
@@ -1651,7 +1803,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 78,
@@ -1669,7 +1823,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "radiodiffusion",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 79,
@@ -1691,7 +1847,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 80,
@@ -1713,7 +1871,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "projet numérique de l'administration",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 81,
@@ -1735,7 +1895,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 82,
@@ -1753,7 +1915,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "menace / logiciel malveillant",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "sujet hors Europe sans portée mondiale"
   },
   {
    "n": 83,
@@ -1778,7 +1942,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "formation / événement",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : NIS2, Cybersecurity Act / certification UE"
   },
   {
    "n": 84,
@@ -1796,7 +1962,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "sanctions internationales",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 85,
@@ -1814,7 +1982,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 86,
@@ -1832,7 +2002,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "emploi public",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 87,
@@ -1850,7 +2022,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "proposition de loi nationale sur l'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 88,
@@ -1868,7 +2042,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "cyber de l'administration (organisation interne)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 89,
@@ -1886,7 +2062,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "jurisprudence fonction publique",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 90,
@@ -1906,7 +2084,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise (conformité CRA d'un fabricant)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 91,
@@ -1930,7 +2110,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 92,
@@ -1948,7 +2130,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "santé publique hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 93,
@@ -1970,9 +2154,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA : guide vidéo (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA : guide vidéo (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 94,
@@ -1994,9 +2180,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire général)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire général) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 95,
@@ -2018,7 +2206,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "appel à manifestation d'intérêt",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 96,
@@ -2034,9 +2224,11 @@
    "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054902614",
    "niveau_regles": "moyenne",
    "textes_cles": [],
-   "reference": "a_surveiller",
-   "motif_reference": "arrêté sur un système d'information de santé (toxicovigilance)",
-   "verifie": false
+   "reference": "pas_pertinent",
+   "motif_reference": "arrêté sur un système d'information de santé (toxicovigilance) — hors scope : concerne le secteur mais pas la réglementation cyber (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 97,
@@ -2058,7 +2250,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "sanction RGPD (données de localisation)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 98,
@@ -2082,7 +2276,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "crypto-actifs (finance)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 99,
@@ -2100,7 +2296,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "nomination",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 100,
@@ -2122,9 +2320,11 @@
    "textes_cles": [
     "AI Act"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "commentaire AI Act (littératie IA)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "commentaire AI Act (littératie IA) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : AI Act"
   },
   {
    "n": 101,
@@ -2148,7 +2348,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "projet de loi national d'application du Data Act",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : Data Act"
   },
   {
    "n": 102,
@@ -2166,7 +2368,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "secteur financier",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 103,
@@ -2190,7 +2394,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise (télécoms)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 104,
@@ -2212,7 +2418,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "discours politique général",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 105,
@@ -2236,7 +2444,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 106,
@@ -2254,7 +2464,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "agrément hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 107,
@@ -2278,7 +2490,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "webinaire",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 108,
@@ -2298,9 +2512,11 @@
    "lien": "https://health.ec.europa.eu/node/17793",
    "niveau_regles": "elevee",
    "textes_cles": [],
-   "reference": "pertinent",
-   "motif_reference": "règlement HTA : premiers dispositifs médicaux évalués",
-   "verifie": false
+   "reference": "pas_pertinent",
+   "motif_reference": "règlement HTA : premiers dispositifs médicaux évalués — hors scope : concerne le secteur mais pas la réglementation cyber (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 109,
@@ -2322,7 +2538,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "sécurité des patients (organisation des soins)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 110,
@@ -2342,9 +2560,11 @@
    "lien": "https://www.gematik.de/newsroom/news-detail/wie-kann-das-zusammenspiel-von-patientenportalen-mit-primaersystemen-und-der-epa-aussehen-positionspapier-auf-ina-veroeffentlicht",
    "niveau_regles": "moyenne",
    "textes_cles": [],
-   "reference": "a_surveiller",
-   "motif_reference": "position sur l'interopérabilité des portails patients / ePA",
-   "verifie": false
+   "reference": "pas_pertinent",
+   "motif_reference": "position sur l'interopérabilité des portails patients / ePA — hors scope : concerne le secteur mais pas la réglementation cyber (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 111,
@@ -2362,7 +2582,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "politique commerciale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "aucun lien avec la cyber, les données, l'IA ou la santé"
   },
   {
    "n": 112,
@@ -2384,7 +2606,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "appel d'offres",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 113,
@@ -2408,7 +2632,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "enquête / sondage RGPD",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 114,
@@ -2430,7 +2656,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "sanction RGPD sur des données de santé",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 115,
@@ -2452,7 +2680,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "motion sur les noms de domaine (hors périmètre)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 116,
@@ -2474,7 +2704,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "conseils grand public",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 117,
@@ -2496,7 +2728,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "notes de version d'un portail",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : médicaments (hors dispositifs)"
   },
   {
    "n": 118,
@@ -2518,7 +2752,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "désinformation",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 119,
@@ -2540,7 +2776,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "incident / procès",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "aucun lien avec la cyber, les données, l'IA ou la santé"
   },
   {
    "n": 120,
@@ -2562,7 +2800,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "statistiques d'incidents",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 121,
@@ -2584,9 +2824,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "synthèse réglementaire (contenu à vérifier)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "synthèse réglementaire (contenu à vérifier) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 122,
@@ -2611,7 +2853,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "loi nationale d'application de l'AI Act",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : AI Act, Cybersecurity Act / certification UE"
   },
   {
    "n": 123,
@@ -2633,7 +2877,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "guide commercial",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 124,
@@ -2655,7 +2901,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "changement technique d'une infrastructure de santé nationale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 125,
@@ -2677,7 +2925,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "menace / logiciel espion",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 126,
@@ -2699,9 +2949,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 127,
@@ -2723,7 +2975,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 128,
@@ -2747,7 +3001,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 129,
@@ -2772,7 +3028,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "NIS2 Pays-Bas : enregistrement des entités",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : NIS2, Cybersecurity Act / certification UE"
   },
   {
    "n": 130,
@@ -2790,7 +3048,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "médicaments (pénurie)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 131,
@@ -2812,7 +3072,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "sanction RGPD hors sujet (vie privée de célébrités)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 132,
@@ -2834,7 +3096,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 133,
@@ -2854,7 +3118,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "lignes directrices EDPB (recherche scientifique, certification)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 134,
@@ -2872,7 +3138,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "maladies professionnelles, sans lien cyber",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 135,
@@ -2894,7 +3162,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "secteur financier",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 136,
@@ -2912,7 +3182,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "énergie hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 137,
@@ -2934,7 +3206,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "enquête / sondage",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 138,
@@ -2958,7 +3232,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "programme de soutien aux PME pour le CRA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 139,
@@ -2980,7 +3256,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "télécoms",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : marchés / entreprises, télécoms"
   },
   {
    "n": 140,
@@ -3002,7 +3280,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors Europe",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 141,
@@ -3024,7 +3304,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 142,
@@ -3046,7 +3328,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "santé mentale",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 143,
@@ -3068,7 +3352,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 144,
@@ -3090,7 +3376,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "DSA (hors périmètre)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 145,
@@ -3112,7 +3400,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 146,
@@ -3134,9 +3424,11 @@
    "textes_cles": [
     "AI Act"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "tribune AI Act et cybersécurité",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "tribune AI Act et cybersécurité — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : AI Act"
   },
   {
    "n": 147,
@@ -3158,7 +3450,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "sanction RGPD secteur bancaire",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 148,
@@ -3182,7 +3476,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 149,
@@ -3204,7 +3500,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "cyberharcèlement / santé mentale",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 150,
@@ -3228,7 +3526,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "plaintes RGPD (transferts de données hors UE)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 151,
@@ -3250,7 +3550,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 152,
@@ -3268,7 +3570,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "emploi public",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 153,
@@ -3290,7 +3594,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "santé mentale / chatbots",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 154,
@@ -3314,7 +3620,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "enquête / sondage RGPD",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 155,
@@ -3338,7 +3646,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 156,
@@ -3360,9 +3670,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire, Irlande)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire, Irlande) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 157,
@@ -3384,7 +3696,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "projet de règles : certification des sous-traitants de données médicales",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 158,
@@ -3404,7 +3718,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "décret CRA : organismes notifiés (France)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 159,
@@ -3426,7 +3742,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "sanction RGPD sur des données de santé",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 160,
@@ -3446,7 +3764,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "événement",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : EHDS"
   },
   {
    "n": 161,
@@ -3470,7 +3790,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "subventions",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : NIS2"
   },
   {
    "n": 162,
@@ -3492,7 +3814,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "étude grand public",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 163,
@@ -3516,7 +3840,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "certification IEC 62443 (article explicatif)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : IEC 81001-5-1 / IEC 62443"
   },
   {
    "n": 164,
@@ -3538,7 +3864,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "médicaments (pharmacovigilance)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 165,
@@ -3556,7 +3884,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 166,
@@ -3574,9 +3904,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 167,
@@ -3598,7 +3930,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "recherche médicale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "aucun lien avec la cyber, les données, l'IA ou la santé"
   },
   {
    "n": 168,
@@ -3620,7 +3954,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "droit d'auteur",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 169,
@@ -3642,7 +3978,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "menace / fraude",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 170,
@@ -3666,7 +4004,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "travail de plateforme (autre sujet)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 171,
@@ -3688,7 +4028,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "document de processus EMA",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 172,
@@ -3706,7 +4048,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "organisation administrative",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 173,
@@ -3724,7 +4068,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "convention collective",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 174,
@@ -3746,7 +4092,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "chronique",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 175,
@@ -3770,7 +4118,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "NIS2 et secteur de la santé (guide)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : NIS2"
   },
   {
    "n": 176,
@@ -3794,7 +4144,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 177,
@@ -3816,7 +4168,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 178,
@@ -3838,7 +4192,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise (banque)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 179,
@@ -3862,7 +4218,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : déclaration d'incidents",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 180,
@@ -3884,7 +4242,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "pharmacogénomique (médicaments)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 181,
@@ -3902,7 +4262,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 182,
@@ -3924,7 +4286,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "réforme du renseignement et secret médical",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 183,
@@ -3946,9 +4310,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (tribune)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (tribune) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 184,
@@ -3970,7 +4336,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "exigences minimales des réseaux de télémédecine",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 185,
@@ -3992,7 +4360,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "article technique",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 186,
@@ -4014,7 +4384,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "coopération internationale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 187,
@@ -4038,7 +4410,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "NIS2 Suède : nouvelle loi",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : NIS2"
   },
   {
    "n": 188,
@@ -4060,7 +4434,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "projets de recherche",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 189,
@@ -4082,9 +4458,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (feuille de route, commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (feuille de route, commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 190,
@@ -4102,7 +4480,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "médicaments",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 191,
@@ -4124,7 +4504,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "consultation CNIL sur l'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 192,
@@ -4148,7 +4530,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 193,
@@ -4170,9 +4554,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 194,
@@ -4194,7 +4580,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "conseils grand public",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 195,
@@ -4218,7 +4606,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "décret italien d'application de l'AI Act (usage policier)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : AI Act"
   },
   {
    "n": 196,
@@ -4240,7 +4630,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "sanction RGPD (données de localisation)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 197,
@@ -4258,7 +4650,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "projet de loi : traitement des données de santé (Finlande)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 198,
@@ -4280,7 +4674,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 199,
@@ -4302,7 +4698,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "NIS2 Portugal : échéance d'enregistrement",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 200,
@@ -4324,7 +4722,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "blog",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 201,
@@ -4346,9 +4746,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 202,
@@ -4370,7 +4772,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'organisations",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 203,
@@ -4388,7 +4792,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "note CNIL : IA agentique et données personnelles",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 204,
@@ -4410,7 +4816,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "discours",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 205,
@@ -4428,7 +4836,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "secteur financier",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 206,
@@ -4446,7 +4856,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 207,
@@ -4470,7 +4882,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "mesures britanniques sur les risques de l'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : NIS2"
   },
   {
    "n": 208,
@@ -4492,7 +4906,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors Europe",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "sujet hors Europe sans portée mondiale"
   },
   {
    "n": 209,
@@ -4516,7 +4932,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 210,
@@ -4534,7 +4952,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "présentation institutionnelle",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 211,
@@ -4556,9 +4976,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 212,
@@ -4580,7 +5002,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "efficacité énergétique des centres de données",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 213,
@@ -4602,7 +5026,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "données ouvertes",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 214,
@@ -4624,7 +5050,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "discours",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 215,
@@ -4644,9 +5072,11 @@
    "lien": "https://www.gpdp.it/garante/doc.jsp?ID=10306949",
    "niveau_regles": "moyenne",
    "textes_cles": [],
-   "reference": "a_surveiller",
-   "motif_reference": "loi italienne sur l'IA (deepfakes, commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "loi italienne sur l'IA (deepfakes, commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 216,
@@ -4668,7 +5098,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "niveau de menace",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 217,
@@ -4692,7 +5124,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 218,
@@ -4714,7 +5148,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 219,
@@ -4732,7 +5168,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "analyse de menaces",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 220,
@@ -4754,7 +5192,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "télécoms",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 221,
@@ -4778,7 +5218,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : orientations de la Commission",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 222,
@@ -4800,7 +5242,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "incident",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 223,
@@ -4824,7 +5268,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "échéances CRA / Data Act pour les produits connectés",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 224,
@@ -4846,9 +5292,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA en Irlande (contenu à vérifier)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA en Irlande (contenu à vérifier) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 225,
@@ -4870,7 +5318,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "enquête commerciale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 226,
@@ -4890,9 +5340,11 @@
    "lien": "https://www.digitaleoverheid.nl/nieuws/kabinet-kiest-voor-invoering-e-facturatie/",
    "niveau_regles": "moyenne",
    "textes_cles": [],
-   "reference": "a_surveiller",
-   "motif_reference": "facturation électronique obligatoire (données, toutes entreprises)",
-   "verifie": false
+   "reference": "pas_pertinent",
+   "motif_reference": "facturation électronique obligatoire (données, toutes entreprises) — hors scope : concerne le secteur mais pas la réglementation cyber (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 227,
@@ -4910,7 +5362,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "convention collective",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 228,
@@ -4932,7 +5386,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "décision d'une autorité sur une violation de données (administration)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 229,
@@ -4956,7 +5412,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 230,
@@ -4980,7 +5438,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : déclaration des incidents",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 231,
@@ -5002,7 +5462,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "protection des jeunes en ligne",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 232,
@@ -5024,7 +5486,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "sanction RGPD : violation de données de santé (hôpital)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 233,
@@ -5042,7 +5506,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "offre commerciale télécoms",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 234,
@@ -5064,7 +5530,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "protection des mineurs / réseaux sociaux (hors périmètre)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 235,
@@ -5088,7 +5556,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 236,
@@ -5106,7 +5576,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "médicaments (pénurie)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 237,
@@ -5130,7 +5602,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "CRA (enquête de préparation)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 238,
@@ -5152,9 +5626,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (tribune)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (tribune) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 239,
@@ -5172,7 +5648,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "déclaration internationale sur l'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 240,
@@ -5190,7 +5668,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "liste d'actes sans contenu",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : acte proche du sujet, à vérifier"
   },
   {
    "n": 241,
@@ -5208,7 +5688,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "médicaments",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 242,
@@ -5230,7 +5712,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "actualité produit",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 243,
@@ -5252,7 +5736,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "formation",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 244,
@@ -5274,7 +5760,9 @@
    "textes_cles": [],
    "reference": "pertinent",
    "motif_reference": "NIS2 Portugal : échéance d'enregistrement",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 245,
@@ -5292,7 +5780,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "télécoms",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 246,
@@ -5314,7 +5804,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "secteur financier",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 247,
@@ -5336,7 +5828,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "débat international sur l'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 248,
@@ -5358,7 +5852,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "laboratoire de diagnostic après une cyberattaque (autorisation de reprise)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 249,
@@ -5376,7 +5872,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "médicaments",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 250,
@@ -5398,7 +5896,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "maladies rares, hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 251,
@@ -5420,7 +5920,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "listes d'attente (organisation des soins)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 252,
@@ -5438,7 +5940,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "enquête / sondage",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 253,
@@ -5460,7 +5964,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "notes de version d'un portail",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 254,
@@ -5482,7 +5988,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "appel à projets",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 255,
@@ -5504,7 +6012,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors Europe",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 256,
@@ -5526,7 +6036,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "lettre ouverte",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 257,
@@ -5548,7 +6060,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vie des institutions",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 258,
@@ -5566,7 +6080,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "nomination",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 259,
@@ -5588,7 +6104,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "santé publique hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 260,
@@ -5606,7 +6124,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source volumineuse : seuls les articles pertinents sont gardés"
   },
   {
    "n": 261,
@@ -5624,7 +6144,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "transports",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 262,
@@ -5646,9 +6168,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 263,
@@ -5666,7 +6190,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "événement",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : événements / webinaires"
   },
   {
    "n": 264,
@@ -5684,7 +6210,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "protection des mineurs / réseaux sociaux (hors périmètre)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 265,
@@ -5706,7 +6234,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "hors Europe",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "sujet hors Europe sans portée mondiale"
   },
   {
    "n": 266,
@@ -5724,7 +6254,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "recommandation CNIL secteur financier (crédit)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, sujet secondaire : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 267,
@@ -5748,7 +6280,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 268,
@@ -5770,7 +6304,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "débat international sur l'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 269,
@@ -5792,7 +6328,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "article technique",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 270,
@@ -5814,7 +6352,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "livre blanc BSI sur l'IA explicable en cybersécurité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 271,
@@ -5838,7 +6378,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "sanction RGPD (données de localisation)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 272,
@@ -5860,7 +6402,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "procédure administrative",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 273,
@@ -5882,7 +6426,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "tribune commerciale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 274,
@@ -5904,7 +6450,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "recherche / sécurité globale",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 275,
@@ -5926,7 +6474,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "secteur financier",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : finance / banque"
   },
   {
    "n": 276,
@@ -5944,7 +6494,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vie des institutions",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 277,
@@ -5966,7 +6518,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "incident",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 278,
@@ -5988,7 +6542,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "santé publique hors sujet",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 279,
@@ -6012,7 +6568,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification (article 14)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 280,
@@ -6034,7 +6592,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "menace / attaque",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 281,
@@ -6056,7 +6616,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "télécoms",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : événements / webinaires, télécoms"
   },
   {
    "n": 282,
@@ -6078,9 +6640,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (conseils de mise en conformité)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (conseils de mise en conformité) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 283,
@@ -6102,7 +6666,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "nomination",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "hors sujet : proche d'un thème hors sujet (modèle)"
   },
   {
    "n": 284,
@@ -6124,7 +6690,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "organisation des soins",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 285,
@@ -6146,7 +6714,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "statistiques",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 286,
@@ -6168,7 +6738,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "financement de l'IA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 287,
@@ -6190,7 +6762,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "sanction RGPD pour défaut de sécurité (éditeur de logiciel)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 288,
@@ -6212,7 +6786,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "vulnérabilité",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, hors sujet : vulnérabilités / alertes techniques"
   },
   {
    "n": 289,
@@ -6234,7 +6810,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "radiodiffusion",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 290,
@@ -6256,7 +6834,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "santé mentale",
-   "verifie": true
+   "verifie": true,
+   "bruit_regles": false,
+   "motif_regles": ""
   },
   {
    "n": 291,
@@ -6278,9 +6858,11 @@
    "textes_cles": [
     "CRA"
    ],
-   "reference": "a_surveiller",
-   "motif_reference": "CRA (commentaire)",
-   "verifie": false
+   "reference": "pertinent",
+   "motif_reference": "CRA (commentaire) — commentaire / évolution d'un texte suivi : très pertinent (décision du 16/10)",
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 292,
@@ -6304,7 +6886,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "actualité d'entreprise",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 293,
@@ -6328,7 +6912,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "déclaration EDPB (lunettes connectées)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : RGPD / GDPR"
   },
   {
    "n": 294,
@@ -6350,7 +6936,9 @@
    "textes_cles": [],
    "reference": "a_surveiller",
    "motif_reference": "guide de cybersécurité des réseaux 5G privés",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "source officielle, sujet secondaire : télécoms"
   },
   {
    "n": 295,
@@ -6368,7 +6956,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "décision de concurrence",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "journal officiel : texte sans lien avec la cyber, les données, l'IA ou la santé numérique"
   },
   {
    "n": 296,
@@ -6390,7 +6980,9 @@
    "textes_cles": [],
    "reference": "pas_pertinent",
    "motif_reference": "culture",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "source officielle, sans lien direct avec la cyber, les données ou la santé numérique"
   },
   {
    "n": 297,
@@ -6414,7 +7006,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "CRA : obligations de notification (autorité nationale)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : CRA"
   },
   {
    "n": 298,
@@ -6438,7 +7032,9 @@
    ],
    "reference": "a_surveiller",
    "motif_reference": "responsabilité des fournisseurs d'IA (débat politique)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : AI Act"
   },
   {
    "n": 299,
@@ -6462,7 +7058,9 @@
    ],
    "reference": "pas_pertinent",
    "motif_reference": "norme environnementale (smartphones)",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": true,
+   "motif_regles": "texte clé : Normes européennes harmonisées (CEN-CENELEC, ETSI)"
   },
   {
    "n": 300,
@@ -6486,7 +7084,9 @@
    ],
    "reference": "pertinent",
    "motif_reference": "NIS2 : lignes directrices de l'ENISA",
-   "verifie": false
+   "verifie": false,
+   "bruit_regles": false,
+   "motif_regles": "texte clé : NIS2"
   }
  ]
 }

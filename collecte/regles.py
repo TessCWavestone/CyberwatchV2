@@ -584,8 +584,18 @@ def evaluer(a, seuils, score_neg=None):
                 niveau, motif = "ecarte", lib
         elif ia["avis"] == "a_surveiller" and niveau in ("elevee", "moyenne"):
             niveau, motif = "faible", lib
-        elif ia["avis"] == "pertinent" and niveau in ("faible", "ecarte"):
-            niveau, motif = "moyenne", lib + " (repêché par l'IA)"
+        elif ia["avis"] == "pertinent":
+            if ia.get("motif") == "vulnerabilite_secteur":
+                # décision du 16/10 : vulnérabilité touchant le secteur (dispositifs, laboratoires, santé) : pertinente
+                niveau, motif, br = ("elevee" if tc else "moyenne"), lib, []
+            elif tc and niveau in ("moyenne", "faible"):
+                # décision du 16/10 : nouvelle règle, commentaire ou évolution d'un texte suivi : « très pertinent »
+                niveau, motif = "elevee", lib
+            elif niveau == "faible":
+                niveau, motif = "moyenne", lib + " (repêché par l'IA)"
+            elif niveau == "ecarte" and not br:
+                # test du 14/10 : l'IA seule ne suffit pas à repêcher un article écarté ; « à surveiller »
+                niveau, motif = "faible", lib + " (à vérifier : écarté par les règles)"
 
     # L'essentiel : textes et normes importants, même en cas de doute (badge « à vérifier »)
     essentiel, a_verifier = False, False

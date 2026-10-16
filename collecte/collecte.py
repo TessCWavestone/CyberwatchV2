@@ -1148,7 +1148,20 @@ def main():
     t_ia = time.time()
     ia = tri_ia.TriIA(cfg)
     if ia.actif:
-        a_juger = [a for a in collectes if candidat(a) or a.get("version") == id_version]
+        # gardés par les règles, plus les écartés « limites » (source officielle ou note suffisante, sans bruit) :
+        # les écartés pour bruit (vulnérabilités, événements…) ne sont pas soumis à l'IA (test du 14/10)
+        def a_soumettre(a):
+            if not (candidat(a) or a.get("version") == id_version):
+                return False
+            if a["pertinence"] != "ecarte":
+                return True
+            t = regles.texte_article(a)
+            if a.get("bruit"):
+                # décision du 16/10 : une alerte de vulnérabilité est soumise à l'IA si elle évoque le secteur
+                return any(b.startswith("vulnérabilités") for b in a["bruit"]) and bool(
+                    regles.SANTE_METIER.search(t) or regles.DISPO_NUM_SANTE.search(t) or regles.REG_DISPOSITIFS.search(t))
+            return a.get("nature") == "officielle" or (a.get("score") or 0) >= pert.seuils.get("moyenne", 0.45)
+        a_juger = [a for a in collectes if a_soumettre(a)]
         a_juger = [a for a in a_juger if a.get("nature") != "opinion" and not a.get("base")]
         rang_niv = {"elevee": 0, "moyenne": 1, "faible": 2, "ecarte": 3}
         a_juger.sort(key=lambda a: a["date"], reverse=True)

@@ -50,10 +50,16 @@ def main():
     duree = time.time() - t2
 
     def final(a):
-        """Avis appliqué sur le site : celui de l'IA, sauf garde-fou (texte suivi cité : jamais écarté)."""
+        """Avis appliqué sur le site (comme regles.evaluer) : écartés pour bruit non soumis à l'IA ; l'IA ne repêche
+        un écarté qu'en « à surveiller » ; texte suivi cité : jamais écarté par l'IA."""
+        if a["niveau_regles"] == "ecarte" and a.get("bruit_regles"):
+            # seules les alertes de vulnérabilité touchant le secteur sont repêchées (décision du 16/10)
+            return "pertinent" if (a.get("ia") or {}).get("motif") == "vulnerabilite_secteur" else "pas_pertinent"
         d = (a.get("ia") or {}).get("avis")
         if not d:
             return REGLES[a["niveau_regles"]]
+        if d == "pertinent" and a["niveau_regles"] == "ecarte":
+            return "a_surveiller"
         return "a_surveiller" if d == "pas_pertinent" and a.get("textes_cles") else d
 
     def matrice(f):
@@ -85,15 +91,19 @@ def main():
               "- Avis identiques à la référence : **%d / %d** (%d %%)" % (ok, len(jeu), 100 * ok / len(jeu)),
               "- Vrais sujets **ratés** (pertinents jugés « pas pertinents ») : **%d / %d**" % (rates, nP),
               "- Hors-sujet gardés comme pertinents : **%d / %d** ; mis « à surveiller » : %d" % (bruit, nN, bruit_s), ""] + lignes + [""]
-    L += ["## Désaccords entre l'IA et la référence", "",
-          "| N° | Référence | IA | Motif IA | Raison donnée par l'IA (test seulement, jamais publiée) | Page | Titre |",
+    L += ["## Types d'articles vus par l'IA", "", "| Type | Nombre | dont référence « pertinent » |", "|---|---|---|"]
+    for t, n in collections.Counter((a.get("ia") or {}).get("type", "?") for a in jeu).most_common():
+        L.append("| %s | %d | %d |" % (t, n, sum(1 for a in jeu if (a.get("ia") or {}).get("type", "?") == t and a["reference"] == "pertinent")))
+    L += ["", "## Désaccords entre l'IA et la référence", "",
+          "| N° | Référence | IA | Type / sujet / applicable | Raison donnée par l'IA (test seulement, jamais publiée) | Page | Titre |",
           "|---|---|---|---|---|---|---|"]
     for a in jeu:
         d = a.get("ia") or {}
         if d.get("avis") != a["reference"]:
             t = ((a.get("trad") or {}).get("fr") or {}).get("titre") or a["titre"]
             L.append("| %d | %s | %s | %s | %s | %s | %s |" % (
-                a["n"], COURT[a["reference"]], COURT.get(d.get("avis"), "?"), d.get("motif", d.get("erreur", "")),
+                a["n"], COURT[a["reference"]], COURT.get(d.get("avis"), "?"),
+                "%s / %s / %s / secteur %s" % (d.get("type", d.get("erreur", "")), d.get("sujet", ""), d.get("applicable", ""), d.get("secteur", "")),
                 (d.get("raison") or "").replace("|", "/")[:160], "oui" if d.get("page") else "—", t.replace("|", "/")[:110]))
     for a in jeu:
         a.pop("_texte", None)

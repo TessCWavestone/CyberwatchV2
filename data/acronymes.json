@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-13T15:56+00:00",
+ "mise_a_jour": "2026-10-19T10:48+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,7 +149,7 @@
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 173,
+   "nb_articles": 177,
    "exemple": {
     "date": "2026-10-13",
     "lien": "https://www.lupa.cz/aktuality/ceske-radiokomunikace-reorganizuji-cenny-majetek-klicovy-byznys-prechazi-na-jine-firmy/?utm_source=rss&utm_medium=text&utm_campaign=rss",
@@ -179,13 +179,13 @@
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 69,
+   "nb_articles": 70,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://digitalpolicyalert.org/change/21956-implementing-regulation-on-practical-and-specific-arrangements-for-conduct-of-certain-proceedings-by-commission-pursuant-to-articles-75c-and-75d-of-artificial-intelligence-act",
-    "titre": "Implementing regulation on practical and specific arrangements for conduct of certain proceedings by Commission pursuant to Articles 75c and 75d of Artificial Intelligence Act",
+    "date": "2026-10-14",
+    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2274",
+    "titre": "Commission Implementing Decision (EU) 2026/2274 of 12 October 2026 on the harmonised standards for high-risk AI systems drafted in support of Regulation (EU) 2024/1689 of the European Parliament and of the Council",
     "langue": "en",
-    "titre_fr": "Règlement d'exécution relatif aux modalités pratiques et spécifiques de la conduite de certaines procédures par la Commission conformément aux articles 75 quater et 75 quinquies de la loi sur l'intelligence artificielle",
+    "titre_fr": "Décision d'exécution (UE) 2026/2274 de la Commission du 12 octobre 2026 concernant les normes harmonisées pour les systèmes IA à haut risque élaborées à l'appui du règlement (UE) 2024/1689 du Parlement européen et du Conseil",
     "titre_en": ""
    }
   },
@@ -254,13 +254,13 @@
    "groupe": "textes",
    "fr": "IVDR (diagnostic in vitro)",
    "en": "IVDR (in vitro diagnostics)",
-   "nb_articles": 10,
+   "nb_articles": 9,
    "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://hadea.ec.europa.eu/node/2045",
-    "titre": "European Day for Organ, Tissue and Cell Donation: Safe testing for safer donations",
+    "date": "2026-09-10",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/reporting-incidents---fscas/users---operators.html",
+    "titre": "New guideline «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
     "langue": "en",
-    "titre_fr": "Journée européenne pour le don d'organes, de tissus et de cellules: tests sûrs pour des dons plus sûrs",
+    "titre_fr": "Nouvelle ligne directrice «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
     "titre_en": ""
    }
   },
@@ -295,6 +295,21 @@
    }
   },
   {
+   "code": "CADA",
+   "groupe": "textes",
+   "fr": "Cloud and AI Development Act",
+   "en": "Cloud and AI Development Act",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-10-19",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/remissvar-pa-eu-kommissionens-forslag-till-forordning-om-moln-och-ai/",
+    "titre": "Remissvar på EU-kommissionens förslag till förordning om moln och AI",
+    "langue": "sv",
+    "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
+    "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
+   }
+  },
+  {
    "code": "MDCG",
    "groupe": "textes",
    "fr": "MDCG (guides DM/DIV)",
@@ -325,21 +340,6 @@
    }
   },
   {
-   "code": "CADA",
-   "groupe": "textes",
-   "fr": "Cloud and AI Development Act",
-   "en": "Cloud and AI Development Act",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://www.gov.pl/web/cyfryzacja/polska-w-centrum-unijnej-debaty-o-cyfrowej-suwerennosci",
-    "titre": "Polska w centrum unijnej debaty o cyfrowej suwerenności",
-    "langue": "pl",
-    "titre_fr": "La Pologne au cœur du débat de l'UE sur la souveraineté numérique",
-    "titre_en": "Poland at the heart of EU debate on digital sovereignty"
-   }
-  },
-  {
    "code": "Data Act",
    "groupe": "textes",
    "fr": "Data Act",
@@ -352,6 +352,21 @@
     "langue": "pl",
     "titre_fr": "Plus de contrôle des données. Le gouvernement a adopté le projet de loi",
     "titre_en": "More data control. The government adopted the bill"
+   }
+  },
+  {
+   "code": "Normes harmonisées",
+   "groupe": "textes",
+   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
+   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-14",
+    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2274",
+    "titre": "Commission Implementing Decision (EU) 2026/2274 of 12 October 2026 on the harmonised standards for high-risk AI systems drafted in support of Regulation (EU) 2024/1689 of the European Parliament and of the Council",
+    "langue": "en",
+    "titre_fr": "Décision d'exécution (UE) 2026/2274 de la Commission du 12 octobre 2026 concernant les normes harmonisées pour les systèmes IA à haut risque élaborées à l'appui du règlement (UE) 2024/1689 du Parlement européen et du Conseil",
+    "titre_en": ""
    }
   },
   {
@@ -397,21 +412,6 @@
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "French resilience bill (NIS2, CER, DORA) still awaiting a floor debate in the National Assembly"
-   }
-  },
-  {
-   "code": "Normes harmonisées",
-   "groupe": "textes",
-   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
-   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2211",
-    "titre": "Commission Implementing Decision (EU) 2026/2211 of 1 October 2026 amending Commission Implementing Decision (EU) 2025/165 as regards harmonised standards for refrigerating systems and heat pumps, LPG equipment, cryogenic vessels, and welding and brazing, drafted in support of Directive 2014/68/EU of the European Parliament and of the Council",
-    "langue": "en",
-    "titre_fr": "Décision d'exécution (UE) 2026/2211 de la Commission du 1er octobre 2026 modifiant la décision d'exécution (UE) 2025/165 de la Commission en ce qui concerne les normes harmonisées pour les systèmes de réfrigération et les pompes à chaleur, les équipements LPG, les récipients cryogéniques, le soudage et le brasage, élaborées à l'appui de la directive 2014/68/UE du Parlement européen et du Conseil",
-    "titre_en": ""
    }
   },
   {
@@ -659,14 +659,14 @@
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 62,
+   "nb_articles": 61,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.ncsc.nl/nieuws/in-het-nieuws-cyberaanvallen-op-levensmiddelensector",
-    "titre": "In het nieuws: cyberaanvallen op levensmiddelensector",
-    "langue": "nl",
-    "titre_fr": "Dans l'actualité : cyberattaques contre le secteur alimentaire",
-    "titre_en": "In the news: cyber attacks on food sector"
+    "date": "2026-10-19",
+    "lien": "https://www.bacs.admin.ch/fr/26-tb-authentifizierung-fr",
+    "titre": "«Considérations technologiques : Cinq étapes pour une authentification sécurisée»",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "\"Technological Considerations: Five Steps for Secure Authentication\""
    }
   },
   {
@@ -674,7 +674,7 @@
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 48,
+   "nb_articles": 50,
    "exemple": {
     "date": "2026-10-13",
     "lien": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
@@ -689,7 +689,7 @@
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 47,
+   "nb_articles": 41,
    "exemple": {
     "date": "2026-10-02",
     "lien": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
@@ -704,7 +704,7 @@
    "groupe": "autorites",
    "fr": "Autorité nationale de cybersécurité (Grèce)",
    "en": "National Cybersecurity Authority (Greece)",
-   "nb_articles": 31,
+   "nb_articles": 30,
    "exemple": {
     "date": "2026-10-13",
     "lien": "https://cyber.gov.gr/koines-draseis-kai-synergeies-ton-nccs-stin-kypro-gia-ena-ischyrotero-eyropaiko-oikosystima-kyvernoasfaleias/",
@@ -715,26 +715,11 @@
    }
   },
   {
-   "code": "NKI",
-   "groupe": "autorites",
-   "fr": "NKI (Hongrie)",
-   "en": "NKI (Hungary)",
-   "nb_articles": 26,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/mi-ugynokokkel-tamadta-az-ukran-kritikus-infrastrukturat-egy-konfiguracios-hiba-leplezte-le/",
-    "titre": "MI ügynökökkel támadta az ukrán kritikus infrastruktúrát, egy konfigurációs hiba leplezte le",
-    "langue": "hu",
-    "titre_fr": "MI a attaqué l'infrastructure critique en Ukraine avec une erreur de configuration",
-    "titre_en": "MI attacked the critical infrastructure in Ukraine with a configuration error"
-   }
-  },
-  {
    "code": "Garante",
    "groupe": "autorites",
    "fr": "Garante privacy (Italie)",
    "en": "Garante privacy (Italy)",
-   "nb_articles": 25,
+   "nb_articles": 24,
    "exemple": {
     "date": "2026-10-11",
     "lien": "https://www.federprivacy.org/strumenti/accesso-ristretto/deepfake-la-rassegna-dei-provvedimenti-del-garante-privacy-su-nudi-e-voci-rubate",
@@ -749,7 +734,7 @@
    "groupe": "autorites",
    "fr": "NÚKIB (Tchéquie)",
    "en": "NÚKIB (Czechia)",
-   "nb_articles": 25,
+   "nb_articles": 24,
    "exemple": {
     "date": "2026-10-09",
     "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2462-nukib-navazal-v-rime-na-predchozi-spolupraci-tematem-kvantove-odolne-komunikace",
@@ -775,6 +760,21 @@
    }
   },
   {
+   "code": "NKI",
+   "groupe": "autorites",
+   "fr": "NKI (Hongrie)",
+   "en": "NKI (Hungary)",
+   "nb_articles": 21,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
+    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
+    "langue": "hu",
+    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
+    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
+   }
+  },
+  {
    "code": "ENISA",
    "groupe": "autorites",
    "fr": "ENISA",
@@ -794,14 +794,14 @@
    "groupe": "autorites",
    "fr": "SZTFH (Hongrie)",
    "en": "SZTFH (Hungary)",
-   "nb_articles": 16,
+   "nb_articles": 17,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://sztfh.hu/modosult-a-kiberbiztonsagi-auditorokra-vonatkozo-szabalyozas/",
-    "titre": "Módosult a kiberbiztonsági auditorokra vonatkozó szabályozás",
+    "date": "2026-10-19",
+    "lien": "https://sztfh.hu/reszletes-eredmenyek-a-kiberbiztonsagi-auditjelentesekrol/",
+    "titre": "Részletes eredmények a kiberbiztonsági auditjelentésekről",
     "langue": "hu",
-    "titre_fr": "Le règlement relatif aux contrôleurs des comptes en matière de cybersécurité a été modifié",
-    "titre_en": "Regulation on cybersecurity auditors has been amended"
+    "titre_fr": "Résultats détaillés des rapports d'audit sur la cybersécurité",
+    "titre_en": "Detailed results on cybersecurity audit reports"
    }
   },
   {
@@ -817,21 +817,6 @@
     "langue": "sv",
     "titre_fr": "Penser sûrement 2026",
     "titre_en": "Thinking Surely 2026"
-   }
-  },
-  {
-   "code": "Traficom",
-   "groupe": "autorites",
-   "fr": "Traficom (Finlande)",
-   "en": "Traficom (Finland)",
-   "nb_articles": 13,
-   "exemple": {
-    "date": "2026-09-04",
-    "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-362026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
-    "titre": "Kyberturvallisuuskeskuksen viikkokatsaus - 36/2026",
-    "langue": "fi",
-    "titre_fr": "Revue hebdomadaire du Centre de cybersécurité - 36 / 2026",
-    "titre_en": "Cybersecurity Centre weekly review - 36 / 2026"
    }
   },
   {
@@ -880,21 +865,6 @@
    }
   },
   {
-   "code": "BSI",
-   "groupe": "autorites",
-   "fr": "BSI (Allemagne)",
-   "en": "BSI (Germany)",
-   "nb_articles": 11,
-   "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CRA-Konformitaet_BSI_DAkkS_260925.html",
-    "titre": "CRA-Konformität: BSI und DAkkS schaffen Prüfkompetenz für die Cybersicherheit",
-    "langue": "de",
-    "titre_fr": "CRA-Konformität: BSI et DAkkS créent une expertise d'audit pour la cybersécurité",
-    "titre_en": "CRA-Konformität: BSI and DAkkS create audit expertise for cybersecurity"
-   }
-  },
-  {
    "code": "CNCS",
    "groupe": "autorites",
    "fr": "CNCS (Portugal)",
@@ -910,18 +880,48 @@
    }
   },
   {
+   "code": "Traficom",
+   "groupe": "autorites",
+   "fr": "Traficom (Finlande)",
+   "en": "Traficom (Finland)",
+   "nb_articles": 11,
+   "exemple": {
+    "date": "2026-09-04",
+    "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-362026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+    "titre": "Kyberturvallisuuskeskuksen viikkokatsaus - 36/2026",
+    "langue": "fi",
+    "titre_fr": "Revue hebdomadaire du Centre de cybersécurité - 36 / 2026",
+    "titre_en": "Cybersecurity Centre weekly review - 36 / 2026"
+   }
+  },
+  {
+   "code": "BSI",
+   "groupe": "autorites",
+   "fr": "BSI (Allemagne)",
+   "en": "BSI (Germany)",
+   "nb_articles": 10,
+   "exemple": {
+    "date": "2026-09-25",
+    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CRA-Konformitaet_BSI_DAkkS_260925.html",
+    "titre": "CRA-Konformität: BSI und DAkkS schaffen Prüfkompetenz für die Cybersicherheit",
+    "langue": "de",
+    "titre_fr": "CRA-Konformität: BSI et DAkkS créent une expertise d'audit pour la cybersécurité",
+    "titre_en": "CRA-Konformität: BSI and DAkkS create audit expertise for cybersecurity"
+   }
+  },
+  {
    "code": "PTS",
    "groupe": "autorites",
    "fr": "PTS (Suède)",
    "en": "PTS (Sweden)",
    "nb_articles": 9,
    "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/nya-regler-for-vad-som-ar-betydande-incidenter-inom-telekomomradet/",
-    "titre": "Nya regler för vad som är betydande incidenter inom telekomområdet",
+    "date": "2026-10-19",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/remissvar-pa-eu-kommissionens-forslag-till-forordning-om-moln-och-ai/",
+    "titre": "Remissvar på EU-kommissionens förslag till förordning om moln och AI",
     "langue": "sv",
-    "titre_fr": "Nouvelles règles relatives aux incidents majeurs dans le secteur des télécommunications",
-    "titre_en": "New rules on major incidents in the telecommunications sector"
+    "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
+    "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
    }
   },
   {
@@ -970,21 +970,6 @@
    }
   },
   {
-   "code": "SAMSIK",
-   "groupe": "autorites",
-   "fr": "SAMSIK (Danemark)",
-   "en": "SAMSIK (Denmark)",
-   "nb_articles": 8,
-   "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://samsik.dk/artikler/2026/10/myndigheder-organisationer-og-virksomheder-boer-supplere-identitetskontrol/",
-    "titre": "Myndigheder, organisationer og virksomheder bør supplere deres identitetskontrol efter læk fra CPR-registeret",
-    "langue": "da",
-    "titre_fr": "Les autorités, organisations et entreprises devraient compléter leurs contrôles d'identité à la suite de fuites de CPR-registeret",
-    "titre_en": "Authorities, organisations and undertakings should supplement their identity checks following leaks from CPR-registeret"
-   }
-  },
-  {
    "code": "gematik",
    "groupe": "autorites",
    "fr": "gematik",
@@ -1012,6 +997,21 @@
     "langue": "nl",
     "titre_fr": "Le contrôleur suédois de la protection de la vie privée sanctionne Miljödata après une violation importante des données",
     "titre_en": "Swedish Privacy Supervisor fines Miljödata after large data breach"
+   }
+  },
+  {
+   "code": "SAMSIK",
+   "groupe": "autorites",
+   "fr": "SAMSIK (Danemark)",
+   "en": "SAMSIK (Denmark)",
+   "nb_articles": 7,
+   "exemple": {
+    "date": "2026-10-06",
+    "lien": "https://samsik.dk/artikler/2026/10/myndigheder-organisationer-og-virksomheder-boer-supplere-identitetskontrol/",
+    "titre": "Myndigheder, organisationer og virksomheder bør supplere deres identitetskontrol efter læk fra CPR-registeret",
+    "langue": "da",
+    "titre_fr": "Les autorités, organisations et entreprises devraient compléter leurs contrôles d'identité à la suite de fuites de CPR-registeret",
+    "titre_en": "Authorities, organisations and undertakings should supplement their identity checks following leaks from CPR-registeret"
    }
   },
   {
@@ -1060,21 +1060,6 @@
    }
   },
   {
-   "code": "Nkom",
-   "groupe": "autorites",
-   "fr": "Nkom (Norvège)",
-   "en": "Nkom (Norway)",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://nkom.no/aktuelt/millioner-til-okt-digital-sikkerhet-og-nytt-nodnett",
-    "titre": "Millioner til økt digital sikkerhet og nytt nødnett",
-    "langue": "nb",
-    "titre_fr": "Des millions pour accroître la sécurité numérique et les nouveaux réseaux d'urgence",
-    "titre_en": "Millions to increase digital security and new emergency networks"
-   }
-  },
-  {
    "code": "AI Office",
    "groupe": "autorites",
    "fr": "Bureau de l'IA (UE)",
@@ -1087,21 +1072,6 @@
     "langue": "en",
     "titre_fr": "La Commission tient une réunion spéciale du groupe scientifique sur la sécurité et les risques des frontières IA",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "AgID",
-   "groupe": "autorites",
-   "fr": "AgID",
-   "en": "AgID",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
-    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
-    "langue": "it",
-    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
-    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
    }
   },
   {
@@ -1120,18 +1090,18 @@
    }
   },
   {
-   "code": "Swissmedic",
+   "code": "Nkom",
    "groupe": "autorites",
-   "fr": "Swissmedic",
-   "en": "Swissmedic",
+   "fr": "Nkom (Norvège)",
+   "en": "Nkom (Norway)",
    "nb_articles": 5,
    "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
-    "titre": "Revision of the Guidance document Authorisation Biosimilar",
-    "langue": "en",
-    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
-    "titre_en": ""
+    "date": "2026-09-29",
+    "lien": "https://nkom.no/aktuelt/tema-frekvensforum-2026",
+    "titre": "Nytt system vil gjøre Norge mindre avhengig av tidssignaler fra GPS – viktig for samfunnssikkerheten",
+    "langue": "nb",
+    "titre_fr": "Le nouveau système rendra la Norvège moins dépendante des signaux horaires de GPS – important pour la sécurité sociale",
+    "titre_en": "New system will make Norway less dependent on time signals from GPS – important for social security"
    }
   },
   {
@@ -1150,18 +1120,18 @@
    }
   },
   {
-   "code": "CERT Polska",
+   "code": "AgID",
    "groupe": "autorites",
-   "fr": "CERT Polska / NASK",
-   "en": "CERT Polska / NASK",
+   "fr": "AgID",
+   "en": "AgID",
    "nb_articles": 4,
    "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://www.gov.pl/web/cyfryzacja/dezinformacja---jak-ja-rozpoznac-i-gdzie-zglosic",
-    "titre": "Dezinformacja - jak ją rozpoznać i gdzie zgłosić?",
-    "langue": "pl",
-    "titre_fr": "Désinformation - comment la reconnaître et où la signaler?",
-    "titre_en": "Disinformation - how to recognize it and where to report it?"
+    "date": "2026-10-08",
+    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
+    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
+    "langue": "it",
+    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
+    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
    }
   },
   {
@@ -1176,6 +1146,21 @@
     "titre": "Instructions for use of medical devices must be available to the user and easy to understand",
     "langue": "en",
     "titre_fr": "Les instructions d'utilisation des instruments médicaux doivent être à la disposition de l'utilisateur et faciles à comprendre",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "Swissmedic",
+   "groupe": "autorites",
+   "fr": "Swissmedic",
+   "en": "Swissmedic",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
+    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
+    "langue": "en",
+    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
     "titre_en": ""
    }
   },
@@ -1345,6 +1330,21 @@
    }
   },
   {
+   "code": "CERT Polska",
+   "groupe": "autorites",
+   "fr": "CERT Polska / NASK",
+   "en": "CERT Polska / NASK",
+   "nb_articles": 2,
+   "exemple": {
+    "date": "2026-09-23",
+    "lien": "https://www.uke.gov.pl/akt/szkolenie-nask-pib-z-systemu-s46,691.html",
+    "titre": "Więcej O: Szkolenie NASK-PIB z Systemu S46",
+    "langue": "pl",
+    "titre_fr": "En savoir plus sur : Cours NASK-PIB avec système S46",
+    "titre_en": "More About: NASK-PIB Course with S46 System"
+   }
+  },
+  {
    "code": "IGJ",
    "groupe": "autorites",
    "fr": "IGJ (Pays-Bas)",
@@ -1483,7 +1483,7 @@
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 18,
+   "nb_articles": 16,
    "exemple": {
     "date": "2026-10-12",
     "lien": "https://www.gov.pl/web/cyfryzacja/dsa---co-zmienia-nowe-przepisy",
@@ -1495,7 +1495,7 @@
   },
   {
    "code": "DPA",
-   "nb_articles": 11,
+   "nb_articles": 12,
    "exemple": {
     "date": "2026-10-12",
     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
@@ -1530,18 +1530,6 @@
    }
   },
   {
-   "code": "EMA",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
-    "titre": "Revision of the Guidance document Authorisation Biosimilar",
-    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
-    "titre_en": "",
-    "langue": "en"
-   }
-  },
-  {
    "code": "DPC",
    "nb_articles": 4,
    "exemple": {
@@ -1554,7 +1542,7 @@
    }
   },
   {
-   "code": "OUCH",
+   "code": "SANS",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",
@@ -1566,7 +1554,7 @@
    }
   },
   {
-   "code": "SANS",
+   "code": "OUCH",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",
@@ -1587,6 +1575,18 @@
     "titre_fr": "",
     "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»",
     "langue": "fr"
+   }
+  },
+  {
+   "code": "EMA",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
+    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
+    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
+    "titre_en": "",
+    "langue": "en"
    }
   },
   {
@@ -1621,18 +1621,6 @@
     "lien": "https://www.edpb.europa.eu/news/the-spanish-dpa-fines-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
     "titre": "The Spanish DPA fines Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
     "titre_fr": "L'espagnol DPA amende Securitas Direct EUR 100 000 pour avoir rendu l'exercice des droits des personnes concernées plus difficile en orientant les personnes vers un numéro de téléphone payant",
-    "titre_en": "",
-    "langue": "en"
-   }
-  },
-  {
-   "code": "EXTIA",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-11",
-    "lien": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
-    "titre": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
-    "titre_fr": "Non-respect des droits des individus : L'amende de CNIL de EXTIA EUR 300 000",
     "titre_en": "",
     "langue": "en"
    }

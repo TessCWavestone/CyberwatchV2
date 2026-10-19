@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-13T15:56+00:00",
+ "mise_a_jour": "2026-10-19T10:48+00:00",
  "alertes": [
   {
    "id": "k8cb942c3e8a",
@@ -222,10 +222,9 @@
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
-    "7908723e45c9",
     "ne900756ad12"
    ],
-   "nb_lies": 2,
+   "nb_lies": 1,
    "active": true
   },
   {
@@ -364,6 +363,10 @@
     "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -434,13 +437,9 @@
     "n9f48ed90063",
     "n1ed910293b5",
     "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f",
-    "nb72c3e5cd2e"
+    "n14ae6b2f1dc"
    ],
-   "nb_lies": 168,
+   "nb_lies": 172,
    "active": true
   },
   {
@@ -479,6 +478,8 @@
    "nb_articles": 1,
    "a_verifier": true,
    "lies": [
+    "9ddc31713e39",
+    "0e4c0e246757",
     "1716a3aa61eb",
     "e7cf601e0390",
     "bdbcf905c2b4",
@@ -528,7 +529,7 @@
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 48,
+   "nb_lies": 50,
    "active": true
   },
   {
@@ -982,6 +983,8 @@
     "en": "…mostly entered into force on 11 August 2026, with full implementation scheduled for 28 October 2026. KRiBSI is the supervisory authority and national contact point; financial penalty…"
    },
    "lies": [
+    "9ddc31713e39",
+    "0e4c0e246757",
     "1716a3aa61eb",
     "e7cf601e0390",
     "bdbcf905c2b4",
@@ -1032,7 +1035,7 @@
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 49,
+   "nb_lies": 51,
    "active": true
   },
   {
@@ -1161,6 +1164,10 @@
     "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -1231,13 +1238,9 @@
     "nda986369ed7",
     "nbc14c48d6c1",
     "nd19cebc788b",
-    "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc"
+    "nf346f804a60"
    ],
-   "nb_lies": 172,
+   "nb_lies": 176,
    "active": true
   },
   {
@@ -1648,6 +1651,10 @@
     "bf2661f2861a",
     "5f2f02eff764",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -1719,21 +1726,17 @@
     "nbc14c48d6c1",
     "nd19cebc788b",
     "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19"
+    "n9f48ed90063"
    ],
-   "nb_lies": 171,
+   "nb_lies": 175,
    "active": true
   },
   {
-   "id": "k1493e64cfe6",
-   "type": "a_qualifier",
+   "id": "kd6da0050f02",
+   "type": "signale",
    "texte": "",
-   "inconnu": true,
-   "zone": "France",
+   "inconnu": false,
+   "zone": "Europe",
    "detecte_le": "2026-10-12",
    "maj_le": "2026-10-12",
    "date": "2026-10-09",
@@ -1742,27 +1745,92 @@
    "version_maj": "2026-10-12-1259",
    "articles": [
     {
-     "id": "120520409519",
-     "titre": "Arrêté du 8 octobre 2026 modifiant l'arrêté du 6 février 2025 relatif à la prise en charge du dispositif médical in vitro ENDOTEST au titre de l'article L. 165-1-1 du code de la sécurité sociale",
-     "langue": "fr",
+     "id": "516fc3c5fbde",
+     "titre": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+     "langue": "en",
      "trad": {
-      "en": {
-       "titre": "Order of 8 October 2026 amending the Order of 6 February 2025 on the management of the in vitro medical device ENDOTEST under Article L. 165-1-1 of the Social Security Code"
+      "fr": {
+       "titre": "Italie DPA amendes IQVIA EUR 7 000 000 pour traitement illégal de patients"
       }
      },
-     "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054965700",
-     "source": "Légifrance",
-     "zone": "France",
+     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
      "date": "2026-10-09",
      "detecte_le": "2026-10-12",
      "version": "2026-10-12-1259",
-     "statut": "adopte",
-     "nature": "officielle",
-     "a_verifier": true
+     "nature": "officielle"
     }
    ],
    "nb_articles": 1,
-   "a_verifier": true,
+   "a_verifier": false,
+   "lies": [
+    "972b3a0440aa",
+    "38a1462619ee",
+    "4f773d1a0849",
+    "e9f673f0d01c",
+    "9e5950476e11",
+    "d2f19c42aaff",
+    "5828ea99d44e",
+    "39632667e991",
+    "05aedfa53c74",
+    "ce4cb9d98e45",
+    "b8d75fed0df3",
+    "8cf22cfa7884",
+    "af5d98081af4",
+    "85816f532617",
+    "b328c0a69f47"
+   ],
+   "nb_lies": 15,
+   "active": true
+  },
+  {
+   "id": "kd05f9be5c83",
+   "type": "signale",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-10-12",
+   "maj_le": "2026-10-12",
+   "date": "2026-10-09",
+   "fin": "2026-11-09",
+   "version": "2026-10-12-1259",
+   "version_maj": "2026-10-12-1259",
+   "articles": [
+    {
+     "id": "4f773d1a0849",
+     "titre": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Italie DPA amendes Emirates EUR 180 000 pour infractions concernant les données sanitaires des passagers"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
+     "date": "2026-10-09",
+     "detecte_le": "2026-10-12",
+     "version": "2026-10-12-1259",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "lies": [
+    "972b3a0440aa",
+    "516fc3c5fbde",
+    "38a1462619ee",
+    "e9f673f0d01c",
+    "9e5950476e11",
+    "d2f19c42aaff",
+    "5828ea99d44e",
+    "b8d75fed0df3",
+    "8cf22cfa7884",
+    "af5d98081af4",
+    "85816f532617"
+   ],
+   "nb_lies": 11,
    "active": true
   },
   {
@@ -2256,6 +2324,10 @@
     "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -2326,13 +2398,91 @@
     "nda986369ed7",
     "nbc14c48d6c1",
     "nd19cebc788b",
-    "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc"
+    "nf346f804a60"
    ],
-   "nb_lies": 170,
+   "nb_lies": 174,
+   "active": false
+  },
+  {
+   "id": "kc6c6b4dd948",
+   "type": "proposition",
+   "texte": "Cloud and AI Development Act (CADA)",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-10-19",
+   "date": "2026-10-19",
+   "fin": "2026-07-15",
+   "version": "2026-09-25-1456",
+   "version_maj": "2026-10-19-1048",
+   "articles": [
+    {
+     "id": "458ad31d096a",
+     "titre": "Remissvar på EU-kommissionens förslag till förordning om moln och AI",
+     "langue": "sv",
+     "trad": {
+      "en": {
+       "titre": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
+      },
+      "fr": {
+       "titre": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA"
+      }
+     },
+     "lien": "https://pts.se/nyheter-och-pressmeddelanden/remissvar-pa-eu-kommissionens-forslag-till-forordning-om-moln-och-ai/",
+     "source": "PTS (autorité de supervision NIS2 / cybersäkerhetslagen)",
+     "zone": "Suède",
+     "date": "2026-10-19",
+     "detecte_le": "2026-10-19",
+     "version": "2026-10-19-1048",
+     "statut": "consultation",
+     "nature": "officielle"
+    },
+    {
+     "id": "84165049ed3c",
+     "titre": "A view from Brussels: Why the CADA sovereignty proposal deserves attention",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Vue depuis Bruxelles: Pourquoi la proposition de souveraineté CADA mérite attention"
+      }
+     },
+     "lien": "https://iapp.org/news/a/a-view-from-brussels-why-the-cada-sovereignty-proposal-deserves-attention",
+     "source": "IAPP",
+     "zone": "Worldwide",
+     "date": "2026-06-11",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "projet",
+     "nature": "presse",
+     "a_verifier": true
+    },
+    {
+     "id": "6e9de68d3825",
+     "titre": "Proposal for the Cloud and AI Development Act (CADA)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Proposition de loi sur le développement du Cloud et du IA (CADA)"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-06-03",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 3,
+   "a_verifier": false,
+   "lies": [
+    "0554f3c2f833",
+    "729642551464",
+    "742aef11c88d"
+   ],
+   "nb_lies": 3,
    "active": false
   },
   {
@@ -2720,6 +2870,8 @@
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "9ddc31713e39",
+    "0e4c0e246757",
     "1716a3aa61eb",
     "e7cf601e0390",
     "bdbcf905c2b4",
@@ -2768,186 +2920,7 @@
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 47,
-   "active": false
-  },
-  {
-   "id": "kc6c6b4dd948",
-   "type": "proposition",
-   "texte": "Cloud and AI Development Act (CADA)",
-   "inconnu": false,
-   "zone": "Europe",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-09-25",
-   "date": "2026-06-11",
-   "fin": "2026-07-15",
-   "version": "2026-09-25-1456",
-   "version_maj": "2026-09-25-1456",
-   "articles": [
-    {
-     "id": "84165049ed3c",
-     "titre": "A view from Brussels: Why the CADA sovereignty proposal deserves attention",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Vue depuis Bruxelles: Pourquoi la proposition de souveraineté CADA mérite attention"
-      }
-     },
-     "lien": "https://iapp.org/news/a/a-view-from-brussels-why-the-cada-sovereignty-proposal-deserves-attention",
-     "source": "IAPP",
-     "zone": "Worldwide",
-     "date": "2026-06-11",
-     "detecte_le": "2026-09-24",
-     "version": "2026-09-24-0737",
-     "statut": "projet",
-     "nature": "presse",
-     "a_verifier": true
-    },
-    {
-     "id": "6e9de68d3825",
-     "titre": "Proposal for the Cloud and AI Development Act (CADA)",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Proposition de loi sur le développement du Cloud et du IA (CADA)"
-      }
-     },
-     "lien": "https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada",
-     "source": "Commission Européenne - Cybersecurity",
-     "zone": "Europe",
-     "date": "2026-06-03",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 2,
-   "a_verifier": false,
-   "lies": [
-    "0554f3c2f833",
-    "729642551464",
-    "742aef11c88d"
-   ],
-   "nb_lies": 3,
-   "active": false
-  },
-  {
-   "id": "kf1fe6e051d4",
-   "type": "a_qualifier",
-   "texte": "Implementing Regulation",
-   "inconnu": true,
-   "zone": "Worldwide",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-10-13",
-   "date": "2026-10-12",
-   "fin": "2026-09-30",
-   "version": "2026-09-24-0737",
-   "version_maj": "2026-10-13-1556",
-   "articles": [
-    {
-     "id": "e7cf601e0390",
-     "titre": "European Commission opened consultation on draft Implementing regulation on practical and specific arrangements for conduct of certain proceedings pursuant to Article 75c and Article 75d of Artificial Intelligence Act",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "La Commission européenne a ouvert une consultation sur le projet de règlement d'exécution relatif aux modalités pratiques et spécifiques de la conduite de certaines procédures conformément aux articles 75 quater et 75 quinquies de la loi sur l'intelligence artificielle"
-      }
-     },
-     "lien": "https://digitalpolicyalert.org/event/44554-european-commission-opened-consultation-on-draft-implementing-regulation-on-practical-and-specific-arrangements-for-conduct-of-certain-proceedings-pursuant-to-article-75c-and-article-75d-of-artificial-intelligence-act",
-     "source": "Digital Policy Alert",
-     "zone": "Worldwide",
-     "date": "2026-10-12",
-     "detecte_le": "2026-10-13",
-     "version": "2026-10-13-1556",
-     "statut": "consultation",
-     "nature": "presse"
-    },
-    {
-     "id": "a8107305c861",
-     "titre": "High-value dataset dashboard: Helping users explore Europe’s most valuable open data",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Tableau de bord de données de grande valeur: Aider les utilisateurs à explorer l'Europe"
-      }
-     },
-     "lien": "https://data.europa.eu/en/news-events/news/high-value-dataset-dashboard-helping-users-explore-europes-most-valuable-open-data",
-     "source": "European Data",
-     "zone": "Europe",
-     "date": "2026-08-19",
-     "detecte_le": "2026-09-24",
-     "version": "2026-09-24-0737",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 2,
-   "a_verifier": false,
-   "emergent": true,
-   "nb_sources": 2,
-   "lies": [
-    "1716a3aa61eb",
-    "5ba8c05f4f37",
-    "06ac075a2ae0",
-    "5d608ae28055",
-    "48fdc42e3885",
-    "8d1a4865f535",
-    "b9d9c30b9808",
-    "fb4d2e75e70b",
-    "1ac275ccc7c9",
-    "f3d4873a81b7",
-    "8b6b7e958d72",
-    "26e9aff4b41d",
-    "6bdc6a33a46b",
-    "2f68fe179d07",
-    "52bda5032918",
-    "45fae9319d74",
-    "584a6d7587ff",
-    "286954db7e79",
-    "bdc7231e1532",
-    "b37f83034ac3",
-    "a6192df23a8c",
-    "cfcaf530206e",
-    "02f30a061fdf",
-    "7fefa889ba8b",
-    "aa7b33850e7b",
-    "e7644651c602",
-    "b5e41f9c186a",
-    "b365b30650ea",
-    "013bf27dc688",
-    "82e0544acf38",
-    "b304ac14dda5",
-    "f3e7fa6afdb6",
-    "ff28a2c4c662",
-    "b40ce5c44c63",
-    "bbf33d72afc5",
-    "fe189ad21034",
-    "41c06504ff92",
-    "7c70632e2fb7",
-    "bcf6b30b3c7a",
-    "b5b19b2dff2a",
-    "59ab50bc51b1",
-    "b6a7e017eea8",
-    "b6bcc64e8506",
-    "b1f3b7b7e3ba",
-    "89c67897fb74",
-    "b5653947052b",
-    "3c0781745af0",
-    "e6d4e8e8345e",
-    "93541a6b0c64",
-    "b6c1e7159a76",
-    "b4eceeac2003",
-    "b0cd62ed9d0a",
-    "b68f81160ac2",
-    "bcd4036ffadb",
-    "bffd9267fbff",
-    "b11528501adc",
-    "b340c126fa85",
-    "bfd240c6fc4d",
-    "bcd92a2bb12b",
-    "b7c8c84aba4b"
-   ],
-   "nb_lies": 60,
+   "nb_lies": 49,
    "active": false
   },
   {
@@ -3087,6 +3060,8 @@
     "en": "…intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was published in the Official Journal (General Series No.…"
    },
    "lies": [
+    "9ddc31713e39",
+    "0e4c0e246757",
     "1716a3aa61eb",
     "e7cf601e0390",
     "bdbcf905c2b4",
@@ -3137,7 +3112,7 @@
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 49,
+   "nb_lies": 51,
    "active": false
   },
   {
@@ -3179,6 +3154,8 @@
     "en": "Italy: Legislative Decree 160/2026 on artificial intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was…"
    },
    "lies": [
+    "9ddc31713e39",
+    "0e4c0e246757",
     "1716a3aa61eb",
     "e7cf601e0390",
     "bdbcf905c2b4",
@@ -3229,7 +3206,7 @@
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 49,
+   "nb_lies": 51,
    "active": false
   },
   {
@@ -3277,6 +3254,10 @@
     "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -3347,13 +3328,9 @@
     "nda986369ed7",
     "nbc14c48d6c1",
     "nd19cebc788b",
-    "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc"
+    "nf346f804a60"
    ],
-   "nb_lies": 172,
+   "nb_lies": 176,
    "active": false
   },
   {
@@ -3498,149 +3475,6 @@
    "active": false
   },
   {
-   "id": "k93cee1ce5dc",
-   "type": "echeance",
-   "texte": "NIS2",
-   "inconnu": false,
-   "zone": "France",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-09-24",
-   "date": "2026-08-27",
-   "fin": "2026-08-31",
-   "version": "",
-   "version_maj": "",
-   "articles": [
-    {
-     "id": "b965366ff47a",
-     "titre": "Loi résilience (NIS2, REC, DORA) : toujours en attente d'examen en séance à l'Assemblée nationale",
-     "langue": "fr",
-     "trad": {
-      "en": {
-       "titre": "French resilience bill (NIS2, CER, DORA) still awaiting a floor debate in the National Assembly"
-      }
-     },
-     "lien": "https://cnb.avocat.fr/actualite/cybersecurite-et-resilience-etat-des-lieux-de-la-transposition-des-directives-europeennes-nis2-et-rec-et-de-l-adaptation-du-droit-francais-au-reglement-dora",
-     "source": "Conseil national des barreaux",
-     "zone": "France",
-     "date": "2026-08-27",
-     "detecte_le": "2026-09-24",
-     "version": "base",
-     "statut": "projet",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": false,
-   "echeance": "2026-08-31",
-   "extrait": {
-    "fr": "…Sénat, attend son examen à l'Assemblée nationale, attendu à partir de septembre 2026. Au 31 août 2026, aucune loi n'était promulguée et aucun décret d'application n'existait.",
-    "en": "…still awaits examination in the National Assembly, expected from September 2026. As of 31 August 2026, no law had been enacted and no implementing decree existed."
-   },
-   "lies": [
-    "72022880c627",
-    "f0b08572be73",
-    "c6a72e78a1ce",
-    "b7c18b05b5e7",
-    "4242a22ccb08",
-    "32e49230344c",
-    "2ef9d4236629",
-    "f01285f84788",
-    "1e04ec7ac876",
-    "539a945e71bd",
-    "ne936098b541",
-    "0a3fa23bda3a",
-    "8ebfa1f4b6bc",
-    "63aa7c4c18f5",
-    "n362bccdce09",
-    "b1b61f43c4d8",
-    "e4644b41c05a",
-    "281ba3fd745a",
-    "5b8cc1c5cb07",
-    "11201a361012",
-    "29eddf2783bf",
-    "7b31fbd5898f",
-    "4632d31c8ef8",
-    "41fa0ff9c48b",
-    "1eccbbdb8619",
-    "2eb217020c09",
-    "64f8d3eff1c5",
-    "a0bf728da210",
-    "04fe76f70754",
-    "89f049acff85",
-    "c76267e7d7d9",
-    "n2d18c011e62",
-    "n14ae6b2f1dc",
-    "855d9cd886f0",
-    "db646503cee0",
-    "81b92f7b5434",
-    "necdb6828002",
-    "c4a2510c7375",
-    "08da9d45d259",
-    "n275d6d134be",
-    "n9e7616a4274",
-    "3cf8168ed768",
-    "b00f865edf0a",
-    "d241a0931f87",
-    "32322c10ca94",
-    "d8a3a4ba56a8",
-    "8d3ec486ff5b",
-    "574c3ed8fab7",
-    "a36eb2dfd43f",
-    "233e75c7746f",
-    "62576ab73272",
-    "f34dcd685e44",
-    "1a8b067a0355",
-    "9e5e6aab08a7",
-    "7286880185ab",
-    "ba8e2ca7ba44",
-    "74ace7ed70ab",
-    "8a675041e196"
-   ],
-   "nb_lies": 58,
-   "active": false
-  },
-  {
-   "id": "k14093971410",
-   "type": "echeance",
-   "texte": "Cyber Security and Resilience Bill",
-   "inconnu": false,
-   "zone": "Royaume-Uni",
-   "detecte_le": "2026-09-24",
-   "maj_le": "2026-09-24",
-   "date": "2026-07-14",
-   "fin": "2026-09-01",
-   "version": "",
-   "version_maj": "",
-   "articles": [
-    {
-     "id": "b9f14d513220",
-     "titre": "Cyber Security and Resilience Bill : deuxième lecture à la Chambre des lords",
-     "langue": "fr",
-     "trad": {
-      "en": {
-       "titre": "Cyber Security and Resilience Bill: second reading in the House of Lords"
-      }
-     },
-     "lien": "https://bills.parliament.uk/bills/4035/stages",
-     "source": "UK Parliament",
-     "zone": "Royaume-Uni",
-     "date": "2026-07-14",
-     "detecte_le": "2026-09-24",
-     "version": "base",
-     "statut": "projet",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": false,
-   "echeance": "2026-09-01",
-   "extrait": {
-    "fr": "…projet de loi le 14 juillet 2026. Le texte est ensuite entré en commission à partir du 1er septembre 2026, l'étape du rapport étant programmée (provisoirement) au 26 octobre 2026 ; la sanction…",
-    "en": "…second reading of the bill on 14 July 2026. The bill then entered committee stage from 1 September 2026, with report stage (provisionally) scheduled for 26 October 2026; Royal Assent is…"
-   },
-   "active": false
-  },
-  {
    "id": "k2ad1fc88b36",
    "type": "echeance",
    "texte": "CRA",
@@ -3685,6 +3519,10 @@
     "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -3755,13 +3593,9 @@
     "nda986369ed7",
     "nbc14c48d6c1",
     "nd19cebc788b",
-    "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc"
+    "nf346f804a60"
    ],
-   "nb_lies": 172,
+   "nb_lies": 176,
    "active": false
   },
   {
@@ -3863,6 +3697,10 @@
     "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -3933,13 +3771,9 @@
     "nda986369ed7",
     "nbc14c48d6c1",
     "nd19cebc788b",
-    "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc"
+    "nf346f804a60"
    ],
-   "nb_lies": 172,
+   "nb_lies": 176,
    "active": false
   },
   {
@@ -4074,6 +3908,10 @@
     "5f2f02eff764",
     "76d182555694",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -4144,13 +3982,9 @@
     "n62f3c8db19a",
     "n14ae6b2f1dc",
     "n1454e3aaa19",
-    "n36a8703b617",
-    "n2a04daac74f",
-    "nb72c3e5cd2e",
-    "nfb81c552e70",
-    "n983025a9173"
+    "n36a8703b617"
    ],
-   "nb_lies": 166,
+   "nb_lies": 170,
    "active": false
   },
   {
@@ -4160,7 +3994,7 @@
    "inconnu": false,
    "zone": "Allemagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-04-07",
    "fin": "2026-04-07",
    "version": "",
@@ -4186,7 +4020,7 @@
    "inconnu": false,
    "zone": "Allemagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4212,7 +4046,7 @@
    "inconnu": false,
    "zone": "Autriche",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-03-01",
    "fin": "2026-03-01",
    "version": "",
@@ -4238,7 +4072,7 @@
    "inconnu": false,
    "zone": "Belgique",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-01-19",
    "fin": "2026-01-19",
    "version": "",
@@ -4264,7 +4098,7 @@
    "inconnu": false,
    "zone": "Danemark",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4290,7 +4124,7 @@
    "inconnu": false,
    "zone": "Danemark",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4316,7 +4150,7 @@
    "inconnu": false,
    "zone": "Espagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4342,7 +4176,7 @@
    "inconnu": false,
    "zone": "Finlande",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-05-01",
    "fin": "2026-05-01",
    "version": "",
@@ -4368,7 +4202,7 @@
    "inconnu": false,
    "zone": "Finlande",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-06-01",
    "fin": "2026-06-01",
    "version": "",
@@ -4394,7 +4228,7 @@
    "inconnu": false,
    "zone": "France",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-04-14",
    "fin": "2026-04-14",
    "version": "",
@@ -4420,7 +4254,7 @@
    "inconnu": false,
    "zone": "Hongrie",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-06-11",
    "fin": "2026-06-11",
    "version": "",
@@ -4446,7 +4280,7 @@
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4472,7 +4306,7 @@
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4498,7 +4332,7 @@
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-03-05",
    "fin": "2026-03-05",
    "version": "",
@@ -4524,7 +4358,7 @@
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4550,7 +4384,7 @@
    "inconnu": false,
    "zone": "Pologne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-04-03",
    "fin": "2026-04-03",
    "version": "",
@@ -4576,7 +4410,7 @@
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-04-03",
    "fin": "2026-04-03",
    "version": "",
@@ -4602,7 +4436,7 @@
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-05-28",
    "fin": "2026-05-28",
    "version": "",
@@ -4628,7 +4462,7 @@
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4654,7 +4488,7 @@
    "inconnu": false,
    "zone": "Royaume-Uni",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-04-06",
    "fin": "2026-04-06",
    "version": "",
@@ -4680,7 +4514,7 @@
    "inconnu": false,
    "zone": "Rép. Tchèque",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4706,7 +4540,7 @@
    "inconnu": false,
    "zone": "Rép. Tchèque",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4732,7 +4566,7 @@
    "inconnu": false,
    "zone": "Suisse",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4758,7 +4592,7 @@
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-01-15",
    "fin": "2026-01-15",
    "version": "",
@@ -4784,7 +4618,7 @@
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-01-15",
    "fin": "2026-01-15",
    "version": "",
@@ -4810,7 +4644,7 @@
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-13",
+   "maj_le": "2026-10-19",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4873,6 +4707,10 @@
     "bf2661f2861a",
     "5f2f02eff764",
     "87c49a51d1fb",
+    "nfbcd07cd1e8",
+    "n871d50d5c2c",
+    "ncd62bac5db9",
+    "n419d1da8147",
     "nb758cc7fe2d",
     "nc7fe3d40940",
     "n1340dcd4f1e",
@@ -4944,13 +4782,49 @@
     "nbc14c48d6c1",
     "nd19cebc788b",
     "nf346f804a60",
-    "n9f48ed90063",
-    "n1ed910293b5",
-    "n62f3c8db19a",
-    "n14ae6b2f1dc",
-    "n1454e3aaa19"
+    "n9f48ed90063"
    ],
-   "nb_lies": 171,
+   "nb_lies": 175,
+   "active": false
+  },
+  {
+   "id": "k009b4920b8c",
+   "type": "echeance",
+   "texte": "Santé",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-10-12",
+   "maj_le": "2026-10-12",
+   "date": "2026-10-09",
+   "fin": "2026-09-23",
+   "version": "2026-10-12-1259",
+   "version_maj": "2026-10-12-1259",
+   "articles": [
+    {
+     "id": "516fc3c5fbde",
+     "titre": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Italie DPA amendes IQVIA EUR 7 000 000 pour traitement illégal de patients"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
+     "date": "2026-10-09",
+     "detecte_le": "2026-10-12",
+     "version": "2026-10-12-1259",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-09-23",
+   "extrait": {
+    "en": "…processing of patients’ health data. Background information Date of final decision: 23 September 2026 National case Controller: IQVIA Solutions Italy S.r.l Legal Reference(s): Article 5…",
+    "fr": "…pour traitement illégal de patients. Informations générales Date de la décision finale : 23 septembre 2026 Cas national Contrôleur : IQVIA Solutions Italie S.r.l Référence(s) légale(s) : article…"
+   },
    "active": false
   }
  ]

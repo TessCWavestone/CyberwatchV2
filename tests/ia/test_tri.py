@@ -12,7 +12,7 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(os.path.dirname(ICI))
 sys.path.insert(0, os.path.join(RACINE, "collecte"))
 os.chdir(RACINE)
-import collecte, lecture, tri_ia
+import collecte, lecture, regles, tri_ia
 
 cfg = collecte.charger_config()
 jeu = json.load(open(os.path.join(ICI, "jeu_reference.json"), encoding="utf-8"))["articles"]
@@ -54,7 +54,10 @@ def main():
         un écarté qu'en « à surveiller » ; texte suivi cité : jamais écarté par l'IA."""
         if a["niveau_regles"] == "ecarte" and a.get("bruit_regles"):
             # seules les alertes de vulnérabilité touchant le secteur sont repêchées (décision du 16/10)
-            return "pertinent" if (a.get("ia") or {}).get("motif") == "vulnerabilite_secteur" else "pas_pertinent"
+            # comme la collecte : soumise à l'IA seulement si l'alerte évoque la santé ou les dispositifs
+            tx = regles._sa(a["titre"] + " " + (a.get("resume") or ""))
+            soumis = bool(regles.SANTE_METIER.search(tx) or regles.DISPO_NUM_SANTE.search(tx) or regles.REG_DISPOSITIFS.search(tx))
+            return "pertinent" if soumis and (a.get("ia") or {}).get("motif") == "vulnerabilite_secteur" else "pas_pertinent"
         d = (a.get("ia") or {}).get("avis")
         if not d:
             return REGLES[a["niveau_regles"]]

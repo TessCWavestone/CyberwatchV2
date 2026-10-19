@@ -17,7 +17,7 @@ import json
 import os
 import time
 
-VERSION = "t3"
+VERSION = "t4"
 
 PAYS = ("Union européenne (textes européens), Allemagne, Autriche, Belgique, Bulgarie, Danemark, Espagne, "
         "Finlande, France, Grèce, Hongrie, Irlande, Italie, Luxembourg, Norvège, Pays-Bas, Pologne, Portugal, "
@@ -56,7 +56,8 @@ Analyse l'article en répondant à CINQ questions. Le classement final est calcu
   échéances ou son évolution (même s'il ne fait que rappeler une obligation).
 - alerte_vulnerabilite : vulnérabilité, correctif, mise à jour de sécurité, CVE.
 - attaque_incident : attaque, fuite, menace, logiciel malveillant, incident, procès suite à un incident.
-- entreprise_produit : actualité d'une entreprise, produit, offre, partenariat, investissement, nomination.
+- entreprise_produit : actualité d'une entreprise, produit, offre, partenariat, investissement, nomination, Y COMPRIS
+  une entreprise qui annonce sa propre mise en conformité ou une offre d'accompagnement à un texte.
 - evenement : événement, webinaire, conférence, formation, réunion.
 - etude_enquete : rapport, étude, enquête, sondage, statistiques.
 - financement : subvention, appel à projets, appel d'offres, programme de financement.
@@ -149,14 +150,29 @@ SCHEMA = {"type": "object", "properties": {
     "required": ["raison", "type", "sujet", "applicable", "secteur_vise", "exclusion"]}
 
 
-def decider(d):
-    """Classement calculé (et non choisi par l'IA) à partir de ses réponses : (avis, motif)."""
-    if d["exclusion"] != "aucune":
-        return "pas_pertinent", d["exclusion"]
+# textes suivis qui sont par nature des réglementations cyber / données / IA : s'ils sont cités dans un article
+# officiel ou un commentaire, le sujet est cyber (test du 16/10 : l'IA répondait « sujet non » sur des articles du CRA)
+TEXTES_CYBER = {"NIS2", "CRA", "AI Act", "RGPD / GDPR", "Data Act", "CER (entités critiques)",
+                "Cybersecurity Act / certification UE", "Cloud and AI Development Act (CADA)",
+                "eIDAS 2 / portefeuille européen d'identité", "RED (équipements radio) / EN 18031",
+                "IEC 81001-5-1 / IEC 62443", "ISO/IEC 27001 et normes ISO", "EHDS", "ENS / CPSTIC (Espagne)",
+                "HDS / SecNumCloud / PGSSI-S (France)", "C5 / B3S / KHZG (Allemagne)", "NEN 7510 (Pays-Bas)",
+                "DTAC / DSPT / Cyber Essentials (NHS)"}
+
+
+def decider(d, textes_cles=()):
+    """Classement calculé (et non choisi par l'IA) à partir de ses réponses : (avis, motif).
+    Test du 16/10 : l'IA remplissait souvent « exclusion » même pour des articles pertinents (sanctions sur des
+    données de santé, CRA…) ; l'exclusion ne compte donc que si le sujet ou l'applicabilité est déjà douteux."""
     if d["type"] == "alerte_vulnerabilite":
         # décision du 16/10 : une vulnérabilité n'est pertinente que si elle touche le secteur (et seulement alors)
         return ("pertinent", "vulnerabilite_secteur") if d.get("secteur_vise") == "oui" else ("pas_pertinent", d["type"])
-    if d["sujet"] != "oui":
+    sujet = d["sujet"]
+    if set(textes_cles or ()) & TEXTES_CYBER and (d["type"] in OFFICIELS or d["type"] == "commentaire"):
+        sujet = "oui"
+    if d["exclusion"] != "aucune" and not (sujet == "oui" and d["applicable"] == "oui"):
+        return "pas_pertinent", d["exclusion"]
+    if sujet != "oui":
         return "pas_pertinent", "hors_sujet"
     if d["applicable"] == "non":
         return "pas_pertinent", "non_applicable"
@@ -226,7 +242,7 @@ class TriIA:
                 d.get("applicable") not in ("oui", "incertain", "non") or d.get("exclusion") not in EXCLUSIONS or \
                 d.get("secteur_vise") not in ("oui", "non"):
             raise ValueError("réponse hors format")
-        d["avis"], d["motif"] = decider(d)
+        d["avis"], d["motif"] = decider(d, a.get("textes_cles"))
         return d
 
     def trier(self, articles, garder_raison=False):
@@ -247,7 +263,8 @@ class TriIA:
                 a["ia"] = {"v": VERSION, "erreur": str(e)[:80]}
                 continue
             a["ia"] = {"v": VERSION, "avis": d["avis"], "motif": d["motif"], "type": d["type"], "sujet": d["sujet"],
-                       "applicable": d["applicable"], "secteur": d["secteur_vise"], "page": bool(a.get("_texte"))}
+                       "applicable": d["applicable"], "secteur": d["secteur_vise"], "exclusion": d["exclusion"],
+                       "page": bool(a.get("_texte"))}
             if garder_raison:   # tests seulement ; le nom de l'entreprise n'apparaît jamais dans un rapport
                 r = d.get("raison", "")[:200]
                 nom = os.environ.get("VEILLE_ENTREPRISE", "").strip()

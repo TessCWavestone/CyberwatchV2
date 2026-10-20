@@ -6816,6 +6816,27 @@
    "sources_lues": 152,
    "sources_actives": 157,
    "declenchement": "schedule"
+  },
+  {
+   "id": "2026-10-20-0730",
+   "date": "2026-10-20T07:30+00:00",
+   "nb_total": 1873,
+   "nb_nouveaux": 7,
+   "nouveaux": [
+    "7c74b957890e",
+    "386041420935",
+    "557f6b9800a8",
+    "c2c0dd50c24e",
+    "473f715e5757",
+    "41fbd5597465",
+    "e69a17f2e444"
+   ],
+   "rattrapage": "",
+   "nb_essentiel": 300,
+   "nb_ecartes": 208,
+   "sources_lues": 146,
+   "sources_actives": 157,
+   "declenchement": "workflow_dispatch"
   }
  ]
 }

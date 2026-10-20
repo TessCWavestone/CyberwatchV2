@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-19T10:48+00:00",
+ "mise_a_jour": "2026-10-20T07:30+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 177,
+   "nb_articles": 178,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.lupa.cz/aktuality/ceske-radiokomunikace-reorganizuji-cenny-majetek-klicovy-byznys-prechazi-na-jine-firmy/?utm_source=rss&utm_medium=text&utm_campaign=rss",
-    "titre": "České Radiokomunikace reorganizují cenný majetek. Klíčový byznys přechází na jiné firmy",
-    "langue": "cs",
-    "titre_fr": "Les radiocommunications tchèques réorganisent des biens précieux. Les affaires clés vont à d'autres entreprises",
-    "titre_en": "Czech Radiocommunications reorganise valuable property. Key business goes to other companies"
+    "date": "2026-10-19",
+    "lien": "https://www.computing.es/seguridad/mas-ciberresiliencia-para-fortalecer-la-ia-soberana/",
+    "titre": "Más ciberresiliencia para fortalecer la IA soberana",
+    "langue": "es",
+    "titre_fr": "Plus de cybersilience pour renforcer l'IA souveraine",
+    "titre_en": "More Cyber Resilience to Strengthen Sovereign AI"
    }
   },
   {
@@ -179,7 +179,7 @@
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 70,
+   "nb_articles": 66,
    "exemple": {
     "date": "2026-10-14",
     "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2274",
@@ -194,14 +194,14 @@
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 59,
+   "nb_articles": 55,
    "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://www.security.nl/posting/957091/Microsofts+advertentiebedrijf+Xandr+krijgt+AVG-boete+van+8%2C5+miljoen+euro?channel=rss",
-    "titre": "Microsofts advertentiebedrijf Xandr krijgt AVG-boete van 8,5 miljoen euro",
-    "langue": "nl",
-    "titre_fr": "Microsoft société de publicité Xandr obtient AVG-boete de 8,5 millions d'euro",
-    "titre_en": "Microsoft advertising company Xandr gets AVG-boete of 8.5 million euros"
+    "date": "2026-10-11",
+    "lien": "https://www.federprivacy.org/informazione/societa/meno-della-meta-delle-istanze-di-esercizio-dei-diritti-sulla-privacy-vengono-completate-entro-il-termine-di-un-mese-richiesto-dal-gdpr",
+    "titre": "Sono meno della metà le istanze di esercizio dei diritti sulla privacy che vengono evase entro i termini richiesti dal GDPR",
+    "langue": "it",
+    "titre_fr": "Moins de la moitié des droits à la vie privée sont exemptés dans les délais prescrits par RGPD",
+    "titre_en": "There are less than half of the exercise of privacy rights that are exempted within the deadlines required by GDPR"
    }
   },
   {
@@ -209,29 +209,14 @@
    "groupe": "textes",
    "fr": "Cybersecurity Act (certification UE)",
    "en": "Cybersecurity Act (EU certification)",
-   "nb_articles": 28,
+   "nb_articles": 27,
    "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:E2025J0021",
-    "titre": "Judgment of the Court of 3 July 2026 in Case E-21/25 – EFTA Surveillance Authority v Iceland (Failure by an EFTA State to fulfil its obligations – Failure to implement – Article 3 EEA – Principle of sincere cooperation – Duty to provide information – Regulation (EU) 2019/881 – Cybersecurity – Electronic communication, audiovisual services and information society)",
-    "langue": "en",
-    "titre_fr": "Arrêt de la Cour du 3 juillet 2026 dans l'affaire E-21/25 – EFTA Surveillance Authority / Islande (Manquement de l'État EFTA – Défaut d'exécution – Article 3 EEA – Principe de coopération sincère – Obligation de fournir des informations – Règlement (UE) 2019/881 – Cybersécurité – Communication électronique, services audiovisuels et société de l'information)",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "EHDS",
-   "groupe": "textes",
-   "fr": "EHDS (espace européen des données de santé)",
-   "en": "EHDS (European Health Data Space)",
-   "nb_articles": 17,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://health.ec.europa.eu/node/17803",
-    "titre": "Commission establishes the European Health Data Space Stakeholder Forum and Community",
-    "langue": "en",
-    "titre_fr": "La Commission établit le Forum européen des parties prenantes dans le domaine des données sanitaires et la Communauté",
-    "titre_en": ""
+    "date": "2026-10-07",
+    "lien": "https://www.ncsc.nl/nieuws/ncsc-en-toezichthouders-maken-afspraken-over-samenwerking-bij-cyberbeveiligingswet",
+    "titre": "NCSC en toezichthouders maken afspraken over samenwerking bij Cyberbeveiligingswet",
+    "langue": "nl",
+    "titre_fr": "NCSC et les superviseurs conviennent de la coopération avec la Loi sur la cybersécurité",
+    "titre_en": "NCSC and supervisors agree on cooperation with Cybersecurity Act"
    }
   },
   {
@@ -247,6 +232,21 @@
     "langue": "nl",
     "titre_fr": "Loi sur la cybersécurité et entités essentielles de résilience en vigueur aujourd'hui",
     "titre_en": "Cyber Security Act and Resilience Critical Entities Effective Today"
+   }
+  },
+  {
+   "code": "EHDS",
+   "groupe": "textes",
+   "fr": "EHDS (espace européen des données de santé)",
+   "en": "EHDS (European Health Data Space)",
+   "nb_articles": 16,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://health.ec.europa.eu/node/17803",
+    "titre": "Commission establishes the European Health Data Space Stakeholder Forum and Community",
+    "langue": "en",
+    "titre_fr": "La Commission établit le Forum européen des parties prenantes dans le domaine des données sanitaires et la Communauté",
+    "titre_en": ""
    }
   },
   {
@@ -284,14 +284,14 @@
    "groupe": "textes",
    "fr": "ISO/IEC 27001 et famille 2700x",
    "en": "ISO/IEC 27001 and 2700x family",
-   "nb_articles": 8,
+   "nb_articles": 7,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://www.digitaleoverheid.nl/nieuws/iso-normen-gratis-beschikbaar-voor-overheden/",
-    "titre": "ISO-normen gratis beschikbaar voor overheden",
-    "langue": "nl",
-    "titre_fr": "ISO-normen disponible gratuitement pour les gouvernements",
-    "titre_en": "ISO-normen available for free to governments"
+    "date": "2026-08-14",
+    "lien": "https://zoek.officielebekendmakingen.nl/stcrt-2026-28763.html",
+    "titre": "Pays-Bas : Cyberbeveiligingsregeling pour la santé publiée – conformité NEN 7510 / ISO 27001 et seuils de notification",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Netherlands: Cybersecurity Regulation for healthcare published – NEN 7510 / ISO 27001 compliance and reporting thresholds"
    }
   },
   {
@@ -355,21 +355,6 @@
    }
   },
   {
-   "code": "Normes harmonisées",
-   "groupe": "textes",
-   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
-   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-14",
-    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2274",
-    "titre": "Commission Implementing Decision (EU) 2026/2274 of 12 October 2026 on the harmonised standards for high-risk AI systems drafted in support of Regulation (EU) 2024/1689 of the European Parliament and of the Council",
-    "langue": "en",
-    "titre_fr": "Décision d'exécution (UE) 2026/2274 de la Commission du 12 octobre 2026 concernant les normes harmonisées pour les systèmes IA à haut risque élaborées à l'appui du règlement (UE) 2024/1689 du Parlement européen et du Conseil",
-    "titre_en": ""
-   }
-  },
-  {
    "code": "NIST",
    "groupe": "textes",
    "fr": "NIST (CSF, SP 800)",
@@ -415,6 +400,21 @@
    }
   },
   {
+   "code": "Normes harmonisées",
+   "groupe": "textes",
+   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
+   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-14",
+    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2274",
+    "titre": "Commission Implementing Decision (EU) 2026/2274 of 12 October 2026 on the harmonised standards for high-risk AI systems drafted in support of Regulation (EU) 2024/1689 of the European Parliament and of the Council",
+    "langue": "en",
+    "titre_fr": "Décision d'exécution (UE) 2026/2274 de la Commission du 12 octobre 2026 concernant les normes harmonisées pour les systèmes IA à haut risque élaborées à l'appui du règlement (UE) 2024/1689 du Parlement européen et du Conseil",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "DSPT",
    "groupe": "textes",
    "fr": "DSPT (NHS)",
@@ -442,21 +442,6 @@
     "langue": "en",
     "titre_fr": "Cyber Essentials a record d'année mais la consommation reste faible",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "ENS",
-   "groupe": "textes",
-   "fr": "ENS (Espagne)",
-   "en": "ENS (Spain)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://www.redseguridad.com/entrevistas/qualys-la-certificacion-ens-de-nivel-alto-reconoce-nuestra-capacidad-para-ofrecer-servicios-cloud-seguros-en-los-entornos-mas-exigentes_20260925.html",
-    "titre": "\"La certificación ENS de Nivel Alto reconoce nuestra capacidad para ofrecer servicios ‘cloud’ seguros en los entornos más exigentes\"",
-    "langue": "es",
-    "titre_fr": "\"La certification ENS de niveau élevé reconnaît notre capacité à offrir des services  &lt; &lt; Cloud &gt; &gt; sécurisés dans les environnements les plus exigeants\"",
-    "titre_en": "\"High Level ENS certification recognizes our ability to deliver safe cloud services in the most demanding environments\""
    }
   },
   {
@@ -502,6 +487,21 @@
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "NHS: DTAC v2 becomes the mandatory form"
+   }
+  },
+  {
+   "code": "ENS",
+   "groupe": "textes",
+   "fr": "ENS (Espagne)",
+   "en": "ENS (Spain)",
+   "nb_articles": 2,
+   "exemple": {
+    "date": "2026-07-31",
+    "lien": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/qualys-obtiene-la-certificacion-del-ens-de-nivel-alto_20260731.html",
+    "titre": "Qualys, primer proveedor internacional de soluciones de gestión de riesgos de ciberseguridad que obtiene la certificación ENS Nivel Alto",
+    "langue": "es",
+    "titre_fr": "Qualys, premier fournisseur international de solutions de gestion des risques de cybersécurité qui obtient la certification ENS Niveau élevé",
+    "titre_en": "Qualys, the first international provider of cybersecurity risk management solutions to obtain the High Level ENS certification"
    }
   },
   {
@@ -640,26 +640,11 @@
    }
   },
   {
-   "code": "DiGA",
-   "groupe": "textes",
-   "fr": "DiGA / DiPA (Allemagne)",
-   "en": "DiGA / DiPA (Germany)",
-   "nb_articles": 1,
-   "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://www.aerzteblatt.de/news/digitalverband-warnt-vor-neuen-diga-abschlagen-54960e9d-4432-4b25-9ca4-508d649d5e50",
-    "titre": "Digitalverband warnt vor neuen DiGA-Abschlägen",
-    "langue": "de",
-    "titre_fr": "Digital Association met en garde contre les nouvelles réductions DiGA",
-    "titre_en": "Digital Association warns of new DiGA discounts"
-   }
-  },
-  {
    "code": "NCSC",
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 61,
+   "nb_articles": 60,
    "exemple": {
     "date": "2026-10-19",
     "lien": "https://www.bacs.admin.ch/fr/26-tb-authentifizierung-fr",
@@ -674,13 +659,13 @@
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 50,
+   "nb_articles": 48,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
-    "titre": "EDPB publishes statement on the data protection challenges of smart glasses",
+    "date": "2026-10-19",
+    "lien": "https://iapp.org/news/a/its-all-relative-genomic-data-and-the-edpbs-draft-anonymization-guidelines",
+    "titre": "It's all 'relative': Genomic data and the EDPB's draft anonymization guidelines",
     "langue": "en",
-    "titre_fr": "EDPB publie une déclaration sur les défis de la protection des données des lunettes intelligentes",
+    "titre_fr": "Tout est 'relatif' : Données génomiques et projet de lignes directrices d'anonymisation de EDPB",
     "titre_en": ""
    }
   },
@@ -689,7 +674,7 @@
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 41,
+   "nb_articles": 48,
    "exemple": {
     "date": "2026-10-02",
     "lien": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
@@ -712,21 +697,6 @@
     "langue": "el",
     "titre_fr": "Actions communes et synergies des CNC à Chypre pour un écosystème européen de cybersécurité plus fort",
     "titre_en": "Joint actions and synergies of NCCs in Cyprus for a stronger European cybersecurity ecosystem"
-   }
-  },
-  {
-   "code": "Garante",
-   "groupe": "autorites",
-   "fr": "Garante privacy (Italie)",
-   "en": "Garante privacy (Italy)",
-   "nb_articles": 24,
-   "exemple": {
-    "date": "2026-10-11",
-    "lien": "https://www.federprivacy.org/strumenti/accesso-ristretto/deepfake-la-rassegna-dei-provvedimenti-del-garante-privacy-su-nudi-e-voci-rubate",
-    "titre": "Deepfake, la rassegna dei provvedimenti del Garante Privacy su nudi e voci rubate",
-    "langue": "it",
-    "titre_fr": "Deepfake, l'examen des dispositions du garant de la vie privée sur les voix nues et volées",
-    "titre_en": "Deepfake, the review of the provisions of the Privacy Guarantor on naked and stolen voices"
    }
   },
   {
@@ -760,21 +730,6 @@
    }
   },
   {
-   "code": "NKI",
-   "groupe": "autorites",
-   "fr": "NKI (Hongrie)",
-   "en": "NKI (Hungary)",
-   "nb_articles": 21,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
-    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
-    "langue": "hu",
-    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
-    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
-   }
-  },
-  {
    "code": "ENISA",
    "groupe": "autorites",
    "fr": "ENISA",
@@ -787,6 +742,36 @@
     "langue": "en",
     "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
     "titre_en": ""
+   }
+  },
+  {
+   "code": "Garante",
+   "groupe": "autorites",
+   "fr": "Garante privacy (Italie)",
+   "en": "Garante privacy (Italy)",
+   "nb_articles": 20,
+   "exemple": {
+    "date": "2026-10-20",
+    "lien": "https://www.federprivacy.org/informazione/primo-piano/il-dpo-esterno-sotto-ispezione-quando-il-controllore-diventa-controllato",
+    "titre": "Il DPO esterno sotto ispezione: quando il controllore diventa controllato",
+    "langue": "it",
+    "titre_fr": "Le DPO externe sous contrôle : lorsque le contrôleur est contrôlé",
+    "titre_en": "The external DPO under inspection: when the controller becomes controlled"
+   }
+  },
+  {
+   "code": "NKI",
+   "groupe": "autorites",
+   "fr": "NKI (Hongrie)",
+   "en": "NKI (Hungary)",
+   "nb_articles": 20,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
+    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
+    "langue": "hu",
+    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
+    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
    }
   },
   {
@@ -835,21 +820,6 @@
    }
   },
   {
-   "code": "CNPD",
-   "groupe": "autorites",
-   "fr": "CNPD (Portugal / Luxembourg)",
-   "en": "CNPD (Portugal / Luxembourg)",
-   "nb_articles": 12,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-participa-em-workshop-europeu-sobre-avaliacao-de-impacto-de-sistemas-de-inteligencia-artificial/",
-    "titre": "13/10/2026 CNPD participa em workshop europeu sobre avaliação de impacto de sistemas de Inteligência Artificial A iniciativa decorreu de 24 a 26 de setembro de 2026, na Croácia.",
-    "langue": "pt",
-    "titre_fr": "13/10/2026 CNPD participe à un atelier européen sur l'analyse d'impact des systèmes d'intelligence artificielle Cette initiative a eu lieu du 24 au 26 septembre 2026 en Croatie.",
-    "titre_en": "13/10/2026 CNPD participates in European workshop on impact assessment of Artificial Intelligence systems The initiative took place from 24 to 26 September 2026 in Croatia."
-   }
-  },
-  {
    "code": "NHS",
    "groupe": "autorites",
    "fr": "NHS (Royaume-Uni)",
@@ -862,21 +832,6 @@
     "langue": "en",
     "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "CNCS",
-   "groupe": "autorites",
-   "fr": "CNCS (Portugal)",
-   "en": "CNCS (Portugal)",
-   "nb_articles": 11,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://dyn.cncs.gov.pt/pt/detalhe/art/136097/cncs-termina-segunda-ronda-de-reunioes-com-comunidades-de-ciberseguranca",
-    "titre": "CNCS termina segunda ronda de reuniões com Comunidades de Cibersegurança",
-    "langue": "pt",
-    "titre_fr": "CNCS termine la deuxième série de réunions avec les communautés de cybersécurité",
-    "titre_en": "CNCS ends second round of meetings with Cybersecurity Communities"
    }
   },
   {
@@ -910,6 +865,36 @@
    }
   },
   {
+   "code": "CNCS",
+   "groupe": "autorites",
+   "fr": "CNCS (Portugal)",
+   "en": "CNCS (Portugal)",
+   "nb_articles": 10,
+   "exemple": {
+    "date": "2026-10-08",
+    "lien": "https://dyn.cncs.gov.pt/pt/detalhe/art/136098/equipa-do-cybersecurity-challenge-pt-representa-portugal-em-competicao-europeia",
+    "titre": "Equipa do Cybersecurity Challenge PT representa Portugal em competição europeia",
+    "langue": "pt",
+    "titre_fr": "Cybersecurity Challenge L'équipe PT représente le Portugal dans la compétition européenne",
+    "titre_en": "Cybersecurity Challenge PT team represents Portugal in European competition"
+   }
+  },
+  {
+   "code": "CNPD",
+   "groupe": "autorites",
+   "fr": "CNPD (Portugal / Luxembourg)",
+   "en": "CNPD (Portugal / Luxembourg)",
+   "nb_articles": 9,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-participa-em-workshop-europeu-sobre-avaliacao-de-impacto-de-sistemas-de-inteligencia-artificial/",
+    "titre": "13/10/2026 CNPD participa em workshop europeu sobre avaliação de impacto de sistemas de Inteligência Artificial A iniciativa decorreu de 24 a 26 de setembro de 2026, na Croácia.",
+    "langue": "pt",
+    "titre_fr": "13/10/2026 CNPD participe à un atelier européen sur l'analyse d'impact des systèmes d'intelligence artificielle Cette initiative a eu lieu du 24 au 26 septembre 2026 en Croatie.",
+    "titre_en": "13/10/2026 CNPD participates in European workshop on impact assessment of Artificial Intelligence systems The initiative took place from 24 to 26 September 2026 in Croatia."
+   }
+  },
+  {
    "code": "PTS",
    "groupe": "autorites",
    "fr": "PTS (Suède)",
@@ -922,21 +907,6 @@
     "langue": "sv",
     "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
     "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
-   }
-  },
-  {
-   "code": "ANS",
-   "groupe": "autorites",
-   "fr": "Agence du numérique en santé",
-   "en": "French Digital Health Agency (ANS)",
-   "nb_articles": 8,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
-    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
    }
   },
   {
@@ -1015,48 +985,18 @@
    }
   },
   {
-   "code": "AEPD",
+   "code": "ANS",
    "groupe": "autorites",
-   "fr": "AEPD (Espagne)",
-   "en": "AEPD (Spain)",
+   "fr": "Agence du numérique en santé",
+   "en": "French Digital Health Agency (ANS)",
    "nb_articles": 6,
    "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-e-aepd-reforcam-cooperacao-e-partilham-experiencias-sobre-os-desafios-da-utilizacao-da-inteligencia-artificial-na-protecao-de-dados-pessoais/",
-    "titre": "01/10/2026 CNPD e AEPD reforçam cooperação e partilham experiências sobre os desafios da utilização da inteligência artificial na proteção de dados pessoais",
-    "langue": "pt",
-    "titre_fr": "01/10/2026 CNPD et AEPD renforcent la coopération et échangent des expériences sur les défis de l'utilisation de l'intelligence artificielle dans la protection des données personnelles",
-    "titre_en": "01/10/2026 CNPD and AEPD reinforce cooperation and share experiences on the challenges of using artificial intelligence in the protection of personal data"
-   }
-  },
-  {
-   "code": "UODO",
-   "groupe": "autorites",
-   "fr": "UODO (Pologne)",
-   "en": "UODO (Poland)",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://uodo.gov.pl/pl/138/4598",
-    "titre": "Cyfryzacja, automatyzacja i ochrona danych: jak będą wyglądały polskie urzędy za kilka lat? 07.10.2026",
-    "langue": "pl",
-    "titre_fr": "Digitalisation, automatisation et protection des données : à quoi ressembleront les bureaux polonais dans quelques années ? 07.10.2026",
-    "titre_en": "Digitalisation, automation and data protection: what will Polish offices look like in a few years? 07.10.2026"
-   }
-  },
-  {
-   "code": "Datatilsynet",
-   "groupe": "autorites",
-   "fr": "Datatilsynet (Norvège, Danemark)",
-   "en": "Datatilsynet (Norway, Denmark)",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
-    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
-    "langue": "hu",
-    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
-    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
+    "date": "2026-10-08",
+    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
+    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
    }
   },
   {
@@ -1075,18 +1015,48 @@
    }
   },
   {
-   "code": "ICO",
+   "code": "AEPD",
    "groupe": "autorites",
-   "fr": "ICO (Royaume-Uni)",
-   "en": "ICO (UK)",
+   "fr": "AEPD (Espagne)",
+   "en": "AEPD (Spain)",
    "nb_articles": 5,
    "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/",
-    "titre": "Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push",
+    "date": "2026-09-23",
+    "lien": "https://digitalpolicyalert.org/event/43928-data-protection-agency-investigation-into-a-company-over-data-protection-safeguards-in-a-planned-ai-based-cv-screening-tool-exp202600427",
+    "titre": "Data Protection Agency issued a preventive warning to a company over data protection safeguards in a planned AI-based CV screening tool (EXP202600427)",
     "langue": "en",
-    "titre_fr": "Principales entreprises IA Annonce de changements à la protection des données après UK",
+    "titre_fr": "L'Agence de protection des données a émis un avertissement préventif à une entreprise sur les garanties de protection des données dans un outil de dépistage AI-based CV prévu (EXP202600427)",
     "titre_en": ""
+   }
+  },
+  {
+   "code": "UODO",
+   "groupe": "autorites",
+   "fr": "UODO (Pologne)",
+   "en": "UODO (Poland)",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-12",
+    "lien": "https://uodo.gov.pl/pl/138/4598",
+    "titre": "Cyfryzacja, automatyzacja i ochrona danych: jak będą wyglądały polskie urzędy za kilka lat? 07.10.2026",
+    "langue": "pl",
+    "titre_fr": "Digitalisation, automatisation et protection des données : à quoi ressembleront les bureaux polonais dans quelques années ? 07.10.2026",
+    "titre_en": "Digitalisation, automation and data protection: what will Polish offices look like in a few years? 07.10.2026"
+   }
+  },
+  {
+   "code": "Datatilsynet",
+   "groupe": "autorites",
+   "fr": "Datatilsynet (Norvège, Danemark)",
+   "en": "Datatilsynet (Norway, Denmark)",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
+    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
+    "langue": "hu",
+    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
+    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
    }
   },
   {
@@ -1132,6 +1102,21 @@
     "langue": "it",
     "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
     "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
+   }
+  },
+  {
+   "code": "ICO",
+   "groupe": "autorites",
+   "fr": "ICO (Royaume-Uni)",
+   "en": "ICO (UK)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-09-24",
+    "lien": "https://digitalpolicyalert.org/event/44015-information-commissioners-office-adopts-waspi-uk-gdpr-code-of-conduct-for-information-sharing-protocols",
+    "titre": "Information Commissioner's Office adopted Code of Conduct for Information Sharing Protocols",
+    "langue": "en",
+    "titre_fr": "Le Commissariat à l'information a adopté le Code de conduite pour les protocoles de partage de l'information",
+    "titre_en": ""
    }
   },
   {
@@ -1225,21 +1210,6 @@
    }
   },
   {
-   "code": "Autoriteit Persoonsgegevens",
-   "groupe": "autorites",
-   "fr": "Autoriteit Persoonsgegevens (Pays-Bas)",
-   "en": "Dutch DPA (AP)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
-    "titre": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
-    "langue": "en",
-    "titre_fr": "Dutch DPA Amende Uber EUR 824 990 000 pour prise de décision automatisée illégale et insuffisance d'informations sur le profilage",
-    "titre_en": ""
-   }
-  },
-  {
    "code": "RDI",
    "groupe": "autorites",
    "fr": "RDI (Pays-Bas)",
@@ -1252,21 +1222,6 @@
     "langue": "nl",
     "titre_fr": "NCSC et les superviseurs conviennent de la coopération avec la Loi sur la cybersécurité",
     "titre_en": "NCSC and supervisors agree on cooperation with Cybersecurity Act"
-   }
-  },
-  {
-   "code": "DSB",
-   "groupe": "autorites",
-   "fr": "DSB (Autriche)",
-   "en": "DSB (Austria)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://dsb.gv.at/aktuelles/aktuelles/bilaterales-treffen-der-polnischen-und-oesterreichischen-datenschutzbehoerde",
-    "titre": "Bilaterales Treffen der polnischen und österreichischen Datenschutzbehörde",
-    "langue": "de",
-    "titre_fr": "Réunion bilatérale de l'Autorité polonaise et autrichienne de protection des données",
-    "titre_en": "Bilateral meeting of the Polish and Austrian Data Protection Authority"
    }
   },
   {
@@ -1345,6 +1300,21 @@
    }
   },
   {
+   "code": "Autoriteit Persoonsgegevens",
+   "groupe": "autorites",
+   "fr": "Autoriteit Persoonsgegevens (Pays-Bas)",
+   "en": "Dutch DPA (AP)",
+   "nb_articles": 2,
+   "exemple": {
+    "date": "2026-09-22",
+    "lien": "https://www.security.nl/posting/954102/Autoriteit+Persoonsgegevens+waarschuwt+gebruikers+camerabrillen+voor+privacyregels?channel=rss",
+    "titre": "Autoriteit Persoonsgegevens waarschuwt gebruikers camerabrillen voor privacyregels",
+    "langue": "nl",
+    "titre_fr": "Autorité Données personnelles avertit les utilisateurs lunettes de caméra pour les règles de confidentialité",
+    "titre_en": "Authority Personal data warns users camera glasses for privacy rules"
+   }
+  },
+  {
    "code": "IGJ",
    "groupe": "autorites",
    "fr": "IGJ (Pays-Bas)",
@@ -1357,6 +1327,21 @@
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Netherlands: Cybersecurity Regulation for healthcare published – NEN 7510 / ISO 27001 compliance and reporting thresholds"
+   }
+  },
+  {
+   "code": "DSB",
+   "groupe": "autorites",
+   "fr": "DSB (Autriche)",
+   "en": "DSB (Austria)",
+   "nb_articles": 2,
+   "exemple": {
+    "date": "2026-09-18",
+    "lien": "https://dsb.gv.at/aktuelles/aktuelles/treffen-der-datenschutzbehoerden-aus-slowenien-sterreich-kroatien-tschechien-und-ungarn-in-ljubljana",
+    "titre": "Treffen der Datenschutzbehörden aus Slowenien, Österreich, Kroatien, Tschechien und Ungarn in Ljubljana",
+    "langue": "de",
+    "titre_fr": "Réunion des autorités de protection des données de Slovénie, d'Autriche, de Croatie, de République tchèque et de Hongrie à Ljubljana",
+    "titre_en": "Meeting of data protection authorities from Slovenia, Austria, Croatia, Czech Republic and Hungary in Ljubljana"
    }
   },
   {
@@ -1483,7 +1468,7 @@
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 16,
+   "nb_articles": 15,
    "exemple": {
     "date": "2026-10-12",
     "lien": "https://www.gov.pl/web/cyfryzacja/dsa---co-zmienia-nowe-przepisy",
@@ -1495,19 +1480,7 @@
   },
   {
    "code": "DPA",
-   "nb_articles": 12,
-   "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-wind-tre-eur-16-700-000-for-unlawful-telemarketing-and-data-protection_en",
-    "titre": "Italian DPA fines Wind Tre EUR 16 700 000 for unlawful telemarketing and data protection infringements",
-    "titre_fr": "Italie DPA amendes Wind Tre EUR 16 700 000 pour infractions illégales au télémarketing et à la protection des données",
-    "titre_en": "",
-    "langue": "en"
-   }
-  },
-  {
-   "code": "IQVIA",
-   "nb_articles": 4,
+   "nb_articles": 9,
    "exemple": {
     "date": "2026-10-09",
     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
@@ -1515,6 +1488,18 @@
     "titre_fr": "Italie DPA amendes IQVIA EUR 7 000 000 pour traitement illégal de patients",
     "titre_en": "",
     "langue": "en"
+   }
+  },
+  {
+   "code": "SANS",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-07",
+    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
+    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
+    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
+    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
+    "langue": "hu"
    }
   },
   {
@@ -1542,15 +1527,15 @@
    }
   },
   {
-   "code": "SANS",
+   "code": "IQVIA",
    "nb_articles": 3,
    "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
-    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
-    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
-    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
-    "langue": "hu"
+    "date": "2026-10-09",
+    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
+    "titre": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+    "titre_fr": "Italie DPA amendes IQVIA EUR 7 000 000 pour traitement illégal de patients",
+    "titre_en": "",
+    "langue": "en"
    }
   },
   {

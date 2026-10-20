@@ -367,7 +367,7 @@
     "modele": "qwen7b",
     "contexte": 4096,
     "caracteres_page": 2000,
-    "budget_minutes": 120,
+    "budget_minutes": 150,
     "max_articles": 600
   }
 }

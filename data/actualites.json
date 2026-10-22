@@ -3,8 +3,8 @@
   "titre": "Cyber Watch",
   "surtitre": "Veille réglementaire — Wavestone",
   "sous_titre": "Cybersécurité · Données · IA · Dispositifs médicaux — collecte automatique chaque lundi",
-  "mise_a_jour": "2026-10-20T07:30+00:00",
-  "version": "2026-10-20-0730",
+  "mise_a_jour": "2026-10-22T13:02+00:00",
+  "version": "2026-10-22-1302",
   "nb_sources": 156,
   "url_lancer_maj": "https://github.com/TessCWavestone/CyberwatchV2/actions/workflows/veille.yml",
   "depot": "TessCWavestone/CyberwatchV2",
@@ -15,19 +15,19 @@
   "ia": {
    "actif": true,
    "modele": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
-   "faits": 207,
-   "erreur": "Temps imparti atteint : 207 articles triés par l'IA, les autres le seront à la prochaine collecte."
+   "faits": 182,
+   "erreur": "Temps imparti atteint : 182 articles triés par l'IA, les autres le seront à la prochaine collecte."
   },
   "traduction": {
    "active": true,
    "moteur": true,
-   "faites": 21,
+   "faites": 87,
    "en_attente": 0,
    "erreur": ""
   },
-  "nb_nouveaux": 7,
-  "nb_ecartes_nouveaux": 208,
-  "nb_essentiel": 300,
+  "nb_nouveaux": 23,
+  "nb_ecartes_nouveaux": 637,
+  "nb_essentiel": 306,
   "textes_cles_en": {
    "RGPD / GDPR": "GDPR",
    "MDR (dispositifs médicaux)": "MDR (medical devices)",
@@ -52,7 +52,7 @@
   },
   "pages": {
    "tentees": 400,
-   "lues": 201
+   "lues": 166
   },
   "acteurs": {
    "dm": {
@@ -730,10 +730,1767 @@
     "groupe": "autorites"
    }
   },
-  "nb_versions": 13,
-  "nb_alertes": 28
+  "nb_versions": 14,
+  "nb_alertes": 27
  },
  "articles": [
+  {
+   "id": "54d2681e806c",
+   "titre": "22/10/2026 Presidente da CNPD presente na inauguração da exposição comemorativa dos 50 anos do Provedor de Justiça A inauguração da exposição “Os teus direitos, a tua voz!” teve lugar no Palácio Vilalva.",
+   "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/presidente-da-cnpd-presente-na-inauguracao-da-exposicao-comemorativa-dos-50-anos-do-provedor-de-justica/",
+   "resume": "",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Comissão Nacional de Proteção de Dados (CNPD)",
+   "zone": "Portugal",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.456,
+   "score_bruit": 0.579,
+   "themes": [
+    "nis2",
+    "data_act"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "bruit": [
+    "vœux / prix / RH"
+   ],
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.456,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "politique",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "pt",
+   "trad": {
+    "en": {
+     "titre": "22/10/2026 President of CNPD present at the opening of the 50th anniversary exhibition of the Ombudsman The opening of the exhibition “Your rights, your voice!” took place at Vilalva Palace.",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "22/10/2026 Président de CNPD présent à l'ouverture de l'exposition du 50e anniversaire de l'Ombudsman L'ouverture de l'exposition « Vos droits, votre voix ! » a eu lieu au Palais Vilalva.",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CNPD"
+   ],
+   "acronymes": [
+    "CNPD"
+   ]
+  },
+  {
+   "id": "45d0a8f99cb0",
+   "titre": "Więcej O: Chcesz złożyć skargę do Koordynatora ds. usług cyfrowych? Sprawdź, jak to zrobić",
+   "lien": "https://www.uke.gov.pl/blog/chcesz-zlozyc-skarge-do-koordynatora-ds-uslug-cyfrowych-sprawdz-jak-to-zrobic,169.html",
+   "resume": "Chcesz złożyć skargę do Koordynatora ds. usług cyfrowych? Sprawdź, jak to zrobić 22 października 2026 Zablokowane konto, usunięty wpis czy decyzja platformy, z którą się nie zgadzasz, nie zawsze oznaczają naruszenie Aktu o usługach cyfrowych (Digital Services Act - DSA). Jeżeli jednak uważasz, że…",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "UKE (Urząd Komunikacji Elektronicznej)",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.581,
+   "score_bruit": 0.474,
+   "themes": [
+    "fournisseurs_publics",
+    "cra"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sig": true,
+    "sig_net": true,
+    "sujet": true
+   },
+   "score": 0.581,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "commentaire",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "pl",
+   "trad": {
+    "en": {
+     "titre": "More About: Do you want to complain to the Digital Services Coordinator? See how to do this",
+     "resume": "You want to file a complaint with the Digital Services Coordinator? See how to do this 22 October 2026 A blocked account, deleted entry or decision of a platform you disagree with does not always mean a breach of the Digital Services Act (DSA). But if you think..."
+    },
+    "fr": {
+     "titre": "En savoir plus sur : Voulez-vous vous plaindre au coordonnateur des services numériques? Voir comment faire cela",
+     "resume": "Vous voulez déposer une plainte auprès du coordonnateur des services numériques? Voir comment procéder 22 octobre 2026 Un compte bloqué, une entrée supprimée ou une décision d'une plateforme avec laquelle vous êtes en désaccord ne signifie pas toujours une violation de la Loi sur les services numériques (DSA). Mais si vous pensez..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "d66b0685fe15",
+   "titre": "IA agéntica: Autonomía sin control es riesgo sin precio",
+   "lien": "https://www.computing.es/inteligencia-artificial/ia-agentica-autonomia-sin-control-es-riesgo-sin-precio/",
+   "resume": "Los agentes de IA han pasado de recomendar a ejecutar. Cada nivel de autonomía que se les concede exige una capa adicional de control, y la factura de omitirla no desaparece: solo se aplaza L'articolo IA agéntica: Autonomía sin control es riesgo sin precio proviene da Computing .",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Computing España",
+   "zone": "Espagne",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.672,
+   "score_bruit": 0.549,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.672,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "commentaire",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "es",
+   "trad": {
+    "en": {
+     "titre": "Genetic AI: Uncontrolled autonomy is priceless risk",
+     "resume": "The AI agents have gone from recommending to executing. Each level of autonomy granted to them requires an additional layer of control, and the bill to omit it does not disappear: only is postponed L'articolo IA agentica: Autonomy without control is risk without price comes from Computing ."
+    },
+    "fr": {
+     "titre": "IA: L'autonomie sans contrôle est un risque sans prix",
+     "resume": "aujourd'hui"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "81e89b656072",
+   "titre": "Cinco acciones prácticas para reforzar la seguridad en IA agéntica",
+   "lien": "https://www.computing.es/seguridad/cinco-acciones-practicas-para-reforzar-la-seguridad-en-ia-agentica/",
+   "resume": "La inteligencia artificial ya no se limita a responder preguntas, ahora también tiene la capacidad de actuar. A medida que la IA se vuelve más autónoma, el desafío de la ciberseguridad evoluciona L'articolo Cinco acciones prácticas para reforzar la seguridad en IA agéntica proviene da Computing .",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Computing España",
+   "zone": "Espagne",
+   "nature": "presse",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.693,
+   "score_bruit": 0.627,
+   "themes": [
+    "ia",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "sens_fort": true,
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.773,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "commentaire",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "societe_grand_public",
+    "page": true
+   },
+   "langue": "es",
+   "trad": {
+    "en": {
+     "titre": "Five practical actions to strengthen safety in genetic AI",
+     "resume": "Artificial intelligence is no longer limited to answering questions, now it also has the ability to act. As AI becomes more autonomous, the challenge of cybersecurity evolves L'articolo Five practical actions to strengthen security in congenital AI comes from Computing ."
+    },
+    "fr": {
+     "titre": "Cinq actions pratiques visant à renforcer la sécurité en IA",
+     "resume": "aujourd'hui"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "de797c8ff8b9",
+   "titre": "Vagthund skælder ud: Cyberskjold er aldrig blevet gennemtestet",
+   "lien": "https://www.version2.dk/artikel/vagthund-skaelder-ud-cyberskjold-er-aldrig-blevet-gennemtestet",
+   "resume": "EU har investeret over en milliard euro i et nyt forsvar mod cyberangreb – men ingen har kontrolleret, om systemet fungerer ordentligt. Det fremgår af en ny rapport fra Den Europæiske Revisionsret (ECA).",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Version2 (presse IT danoise)",
+   "zone": "Danemark",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "revision"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.701,
+   "score_bruit": 0.514,
+   "themes": [
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "en_vigueur"
+   },
+   "score": 0.731,
+   "sens_fort": true,
+   "statut": "en_vigueur",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "da",
+   "trad": {
+    "en": {
+     "titre": "The watchdog shouts out: Cybershield has never been thoroughly tested",
+     "resume": "EU has invested over a billion euros in a new defence against cyber attacks - but no one has checked whether the system works properly. A new report by the European Court of Auditors (ECA) shows this."
+    },
+    "fr": {
+     "titre": "Le chien de garde crie: Cybershield n'a jamais été soigneusement testé",
+     "resume": "UE a investi plus d'un milliard d'euros dans une nouvelle défense contre les cyberattaques - mais personne n'a vérifié si le système fonctionne correctement. Un nouveau rapport de la Cour des comptes européenne (ECA) le montre."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "7fa8bc79b530",
+   "titre": "Government proposes establishing AI regulatory sandbox",
+   "lien": "https://valtioneuvosto.fi/en/-/1410877/government-proposes-establishing-ai-regulatory-sandbox",
+   "resume": "",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Valtioneuvosto — communiqués et projets de loi du gouvernement",
+   "zone": "Finlande",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.595,
+   "score_bruit": 0.419,
+   "score": 0.595,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": false,
+    "erreur": "403 Client Error: Forbidden for url: https://valtioneuvosto.fi/en/-/1410877/gove"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le gouvernement propose d'établir une boîte à sable réglementaire IA",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "44cbedf38fef",
+   "titre": "Blog 22 oktober 2026 Data & privacy AVG Wetwijziging Klaar voor de nieuwe UAVG? Lees meer",
+   "lien": "https://www.ictrecht.nl/blog/klaar-voor-de-nieuwe-uavg",
+   "resume": "",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "ICTRecht — blog",
+   "zone": "Pays-Bas",
+   "nature": "cabinet",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "RGPD"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.602,
+   "score_bruit": 0.566,
+   "themes": [
+    "donnees",
+    "nis2"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.682,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "incertain",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "Blog 22 October 2026 Data & privacy GDPR Change of law Ready for the new UAVG? Read more",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Blog 22 octobre 2026 Données et confidentialité RGPD Changement de loi Prêt pour le nouveau UAVG ? Lire la suite",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR"
+   ],
+   "acronymes": [
+    "GDPR"
+   ]
+  },
+  {
+   "id": "ee2fc09354bd",
+   "titre": "Blog 22 oktober 2026 Data & privacy AVG Jurisprudentie Data & Privacy Jurisprudentieblog | oktober 2026 Lees meer",
+   "lien": "https://www.ictrecht.nl/blog/data-privacy-jurisprudentieblog-oktober-2026",
+   "resume": "",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "ICTRecht — blog",
+   "zone": "Pays-Bas",
+   "nature": "cabinet",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "RGPD"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.621,
+   "score_bruit": 0.553,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sig": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.701,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "commentaire",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "Blog 22 October 2026 Data & privacy GDPR ECR Data & Privacy Blog October 2026 Read more",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Blog 22 octobre 2026 Données et confidentialité RGPD ECR Données et confidentialité Blog octobre 2026 Lire la suite",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR"
+   ],
+   "acronymes": [
+    "GDPR"
+   ]
+  },
+  {
+   "id": "6cd7b37e3f48",
+   "titre": "Runder Tisch zu Freiverkaufszertifikaten für Medizinprodukte",
+   "lien": "https://www.basg.gv.at/marktbeobachtung/amtliche-nachrichten/detail/runder-tisch-zu-freiverkaufszertifikaten-fuer-medizinprodukte",
+   "resume": "",
+   "date": "2026-10-22",
+   "date_estimee": true,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "BASG — sécurité des dispositifs médicaux",
+   "zone": "Autriche",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.594,
+   "score_bruit": 0.59,
+   "themes": [
+    "sante_donnees",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "IVDR",
+     "MDR (dispositifs médicaux)"
+    ],
+    "sig": true,
+    "sig_net": true
+   },
+   "score": 0.674,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "evenement",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Round table on certificates of free sale for medical devices",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Table ronde sur les certificats de vente gratuite de dispositifs médicaux",
+     "resume": ""
+    }
+   },
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "echeances": [],
+   "sujets": [
+    "BASG"
+   ],
+   "acronymes": [
+    "BASG"
+   ]
+  },
+  {
+   "id": "f5c0ebe64e80",
+   "titre": "Dočasné omezení elektronického rozhraní SÚKL pro podávání vigilančních hlášení zdravotnických prostředků",
+   "lien": "https://sukl.gov.cz/zdravotnicke-prostredky/aktuality-zp/docasne-omezeni-elektronickeho-rozhrani-sukl-pro-podavani-vigilancnich-hlaseni-zdravotnickych-prostredku/",
+   "resume": "V návaznosti na aktuální upozornění Národního úřadu pro kybernetickou a informační bezpečnost (NÚKIB) týkající se zranitelnosti PHP bude z bezpečnostních důvodů dočasně odstaveno elektronické rozhraní SÚKL pro podávání vigilančních hlášení zdravotnických prostředků. Bližší informace jsou dostupné na informačním portálu NÚKIB .",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "SÚKL (médicaments et dispositifs médicaux)",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.582,
+   "score_bruit": 0.534,
+   "themes": [
+    "dm_div",
+    "nis2"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "IA : vulnérabilité touchant le secteur (dispositifs, laboratoires, santé)",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "MDR (dispositifs médicaux)"
+    ],
+    "sig": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.68,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "vulnerabilite_secteur",
+    "type": "alerte_vulnerabilite",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "oui",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "cs",
+   "trad": {
+    "en": {
+     "titre": "Temporary restriction of SÚKL electronic interface for submission of vigilance reports of medical devices",
+     "resume": "Following the current warnings of the National Office for Cyber and Information Security (NÚKIB) regarding the vulnerability of PHP, the SÚKL electronic interface for the submission of vigilance reports of medical devices will be temporarily shut down for safety reasons. More information is available on the NÚKIB information portal."
+    },
+    "fr": {
+     "titre": "Restriction temporaire de l'interface électronique SÚKL pour la soumission des rapports de vigilance des dispositifs médicaux",
+     "resume": "À la suite des avertissements actuels de l'Office national de la cybersécurité et de l'information (NÚKIB) concernant la vulnérabilité de PHP, l'interface électronique SÚKL pour la présentation de rapports de vigilance sur les dispositifs médicaux sera temporairement arrêtée pour des raisons de sécurité. Plus d'informations sont disponibles sur le portail d'information NÚKIB."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NÚKIB",
+    "SÚKL"
+   ],
+   "acronymes": [
+    "NÚKIB",
+    "SÚKL"
+   ]
+  },
+  {
+   "id": "06c67db82a12",
+   "titre": "Digital rulebook: Council agrees position to simplify data protection, privacy and cyber reporting rules",
+   "lien": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/21/digital-rulebook-council-agrees-position-to-simplify-data-protection-privacy-and-cyber-reporting-rules/",
+   "resume": "Simplification: Council agrees position to streamline EU’s data, privacy and cyber reporting rules.",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Conseil de l'Union Européenne",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.532,
+   "score_bruit": 0.457,
+   "score": 0.532,
+   "themes": [
+    "donnees",
+    "cra"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": false,
+    "erreur": "403 Client Error: Forbidden for url: https://www.consilium.europa.eu/en/press/pr"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Manuel numérique: le Conseil convient d'une position visant à simplifier les règles en matière de protection des données, de confidentialité et de cyberinformation",
+     "resume": "Simplification: le Conseil convient d'une position visant à rationaliser les règles relatives aux données, à la vie privée et à la cyberinformation."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "a22702dfeabc",
+   "titre": "Πέρα από το IT η κυβερνοασφάλεια ως στρατηγικός καταλύτης των ελληνικών επιχειρήσεων – Άρθρο του Υποδιοικητή ΕΑΚ Ι. Παυλόσογλου στο περιοδικό Tech Leaders",
+   "lien": "https://cyber.gov.gr/pera-apo-to-it-i-kyvernoasfaleia-os-stratigikos-katalytis-ton-ellinikon-epicheiriseon-arthro-toy-ypodioikiti-eak-sto-periodiko-tech-leaders/",
+   "resume": "Την πολυεπίπεδη διάσταση της κυβερνοασφάλειας όχι απλά ως ένα τεχνικό ζήτημα ή ως υποχρέωση συμμόρφωσης, αλλά ως στρατηγικό παράγοντα ανάπτυξης και ψηφιακής ανθεκτικότητας των επιχειρήσεων, αναδεικνύει ο Υποδιοικητής της ΕΑΚ… Το άρθρο Πέρα από το IT η κυβερνοασφάλεια ως στρατηγικός καταλύτης των ελληνικών επιχειρήσεων – Άρθρο του Υποδιοικητή ΕΑΚ Ι. Παυλόσογλου στο περιοδικό Tech Leaders εμφανίστηκε πρώτα στο Εθνική…",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Autorité Nationale de Cybersécurité",
+   "zone": "Grèce",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.581,
+   "score_bruit": 0.461,
+   "score": 0.661,
+   "themes": [
+    "fournisseurs_publics",
+    "cra"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : applicabilité incertaine",
+   "page": {
+    "date": "2026-10-22",
+    "ok": false,
+    "erreur": "page sans texte lisible (contenu en JavaScript ?)"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "a_surveiller",
+    "motif": "incertain",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "incertain",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "el",
+   "trad": {
+    "en": {
+     "titre": "Beyond IT cybersecurity as a strategic catalyst for Greek businesses – Article of the Deputy Governor NCSA (ΕΑΚ) I. Pavlosoglou in Tech Leaders magazine",
+     "resume": "The multi-level dimension of cybersecurity not just as a technical issue or as an obligation to comply, but as a strategic factor of business development and digital resilience, highlights the Deputy Governor of NCSA (ΕΑΚ)... The article Beyond IT cybersecurity as a strategic catalyst for Greek businesses – Article by Deputy Governor NCSA (ΕΑΚ) I. Pavlosoglou in Tech Leaders magazine appeared first in the National..."
+    },
+    "fr": {
+     "titre": "Au-delà de la cybersécurité IT en tant que catalyseur stratégique pour les entreprises grecques – Article du gouverneur adjoint NCSA (ΕΑΚ) I. Pavlosoglou dans le magazine Tech Leaders",
+     "resume": "La dimension multi-niveaux de la cybersécurité, non seulement en tant que question technique ou en tant qu'obligation de se conformer, mais en tant que facteur stratégique de développement des affaires et de résilience... The article Beyond IT cybersécurité en tant que catalyseur stratégique pour les entreprises grecques – Article du gouverneur adjoint NCSA (ΕΑΚ) I. Pavlosoglou dans Tech Leaders magazine est apparu en premier dans le..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "ΕΑΚ"
+   ],
+   "acronymes": [
+    "ΕΑΚ"
+   ]
+  },
+  {
+   "id": "05f3398c6809",
+   "titre": "Ernstige kwetsbaarheden in PHP: bereid je voor op patchen",
+   "lien": "https://www.ncsc.nl/alerts/ernstige-kwetsbaarheden-in-php-bereid-je-voor-op-patchen",
+   "resume": "Er zijn twee kritieke kwetsbaarheden gevonden, CVE-2026-109618 en CVE-2026-109619, in PHP: Hypertext Preprocessor. Deze kwetsbaarheden zijn vermoedelijk aanwezig in alle huidige versies van PHP, maar in ieder geval vanaf versie 5. Deze kwetsbaarheden maken het mogelijk voor kwaadwillenden om op afstand een remote code execution (RCE) uit te voeren. Het gevolg daarvan kan zijn dat de (web)servers overgenomen kunnen…",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Centre National de Cybersécurité",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.485,
+   "score_bruit": 0.5,
+   "themes": [
+    "sante_donnees",
+    "cra"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : vulnérabilité touchant le secteur (dispositifs, laboratoires, santé)",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sujet": true
+   },
+   "score": 0.485,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "vulnerabilite_secteur",
+    "type": "alerte_vulnerabilite",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "oui",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "Severe vulnerabilities in PHP: Prepare to patch",
+     "resume": "Two critical vulnerabilities were found, CVE-2026-109618 and CVE-2026-109619, in PHP: Hypertext Preprocessor. These vulnerabilities are probably present in all current versions of PHP, but at least from version 5. These vulnerabilities allow malicious to perform remote code execution (RCE) remotely. As a result, the (web) servers can be taken over..."
+    },
+    "fr": {
+     "titre": "Graves vulnérabilités dans PHP : Préparez-vous à patcher",
+     "resume": "Deux vulnérabilités critiques ont été trouvées, CVE-2026-109618 et CVE-2026-109619, dans PHP : Hypertext Preprocesseur. Ces vulnérabilités sont probablement présentes dans toutes les versions actuelles de PHP, mais au moins depuis la version 5. Ces vulnérabilités permettent à des personnes malveillantes d'exécuter des codes à distance (RCE) à distance. En conséquence, les serveurs (web) peuvent être repris..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NCSC"
+   ],
+   "acronymes": [
+    "NCSC"
+   ]
+  },
+  {
+   "id": "8e5e366e1dff",
+   "titre": "Więcej O: Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych",
+   "lien": "https://www.uke.gov.pl/akt/rekomendacja-pelnomocnika-rzadu-ds-cyberbezpieczenstwa-dot-srodkow-organizacyjnych-i-technicznych,704.html",
+   "resume": "Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych 21 października 2026 Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych zwiększających poziom bezpieczeństwa systemów informacyjnych Więcej o:…",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "UKE (Urząd Komunikacji Elektronicznej)",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.727,
+   "score_bruit": 0.569,
+   "themes": [
+    "cra",
+    "nis2"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "NIS2"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : NIS2",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "NIS2"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "consultation"
+   },
+   "score": 0.807,
+   "statut": "consultation",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "pl",
+   "trad": {
+    "en": {
+     "titre": "More About: Recommendation of the Government Representative for Cybersecurity regarding organisational and technical measures",
+     "resume": "Recommendation of the Government Cybersecurity Plenipotentiary on organizational and technical measures 21 October 2026 Recommendation of the Government Cybersecurity Plenipotentiary on organizational and technical measures to increase security of information systems More about:..."
+    },
+    "fr": {
+     "titre": "En savoir plus sur: Recommandation du représentant du gouvernement pour la cybersécurité concernant les mesures organisationnelles et techniques",
+     "resume": "Recommandation du Plénipotentiaire du gouvernement en matière de cybersécurité sur les mesures organisationnelles et techniques 21 octobre 2026 Recommandation du Plénipotentiaire du gouvernement en matière de cybersécurité sur les mesures organisationnelles et techniques visant à accroître la sécurité des systèmes d'information En savoir plus..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "5dbbf0aa924c",
+   "titre": "Government confirms indefinite recognition of CE marked medical devices",
+   "lien": "https://www.gov.uk/government/news/government-confirms-indefinite-recognition-of-ce-marked-medical-devices",
+   "resume": "Patients across Great Britain will have continued access to medical devices and in vitro diagnostic devices (IVDs) already approved for the EU market.",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "MHRA (Medicines and Healthcare products Regulatory Agency) – news & communications",
+   "zone": "Royaume-Uni",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.51,
+   "score_bruit": 0.513,
+   "themes": [
+    "dm_div",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "IA : médicaments seuls (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "IVDR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "consultation"
+   },
+   "score": 0.647,
+   "statut": "consultation",
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "medicaments",
+    "type": "texte_officiel",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "medicaments",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le gouvernement confirme la reconnaissance indéfinie des dispositifs médicaux marqués CE",
+     "resume": "Les patients de la Grande-Bretagne auront un accès continu aux dispositifs médicaux et aux dispositifs de diagnostic in vitro déjà approuvés pour le marché UE."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "IVDR",
+    "MHRA"
+   ],
+   "acronymes": [
+    "IVDR",
+    "MHRA"
+   ]
+  },
+  {
+   "id": "3901c91188d7",
+   "titre": "Jak zvládnout nový zákon o kyberbezpečnosti? Stát ukázal, jak správně nastavit řízení rizik",
+   "lien": "https://www.lupa.cz/aktuality/jak-zvladnout-novy-zakon-o-kyberbezpecnosti-stat-ukazal-jak-spravne-nastavit-rizeni-rizik/?utm_source=rss&utm_medium=text&utm_campaign=rss",
+   "resume": "Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) vydal nové podpůrné materiály pro subjekty spadající pod nový zákon o kybernetické bezpečnosti. Jde o Průvodce řízením aktiv a rizik pro vyšší režim povinností, který je dispozici zde. Dále byl publikován Stručný metodický postup pro hodnocení aktiv a rizik, ten je ke stažení tady.",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Lupa.cz — actualités",
+   "zone": "Rép. Tchèque",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.763,
+   "score_bruit": 0.508,
+   "themes": [
+    "nis2"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "NIS2",
+    "Cybersecurity Act / certification UE"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : NIS2, Cybersecurity Act / certification UE",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "NIS2"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.843,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "cs",
+   "trad": {
+    "en": {
+     "titre": "How to handle the new cyber security bill? State has shown how to properly set risk management",
+     "resume": "The National Cyber and Information Security Authority (NÚKIB) has issued new supporting materials for entities covered by the new Cybersecurity Act. It is a guide to asset and risk management for the higher liability regime available here. A brief methodology for asset and risk assessment has also been published, which is available here."
+    },
+    "fr": {
+     "titre": "Comment gérer la nouvelle loi sur la cybersécurité? L'État a montré comment bien gérer les risques",
+     "resume": "L'Office national de la cybersécurité de l'information (NÚKIB) a publié de nouveaux documents d'appui pour les entités visées par la nouvelle loi sur la cybersécurité. Il s'agit d'un guide de gestion des actifs et des risques pour le régime de responsabilité plus élevé disponible ici. Une brève méthodologie pour l'évaluation des actifs et des risques a également été publiée, qui est disponible ici."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NIS2",
+    "Cybersecurity Act",
+    "NÚKIB"
+   ],
+   "acronymes": [
+    "NIS2",
+    "Cybersecurity Act",
+    "NÚKIB"
+   ]
+  },
+  {
+   "id": "c22da2a6c5f9",
+   "titre": "PEC con gli indirizzi dei destinatari in chiaro: il Garante Privacy multa la Federazione degli Ordini dei Biologi",
+   "lien": "https://www.federprivacy.org/informazione/garante-privacy/pec-con-gli-indirizzi-dei-destinatari-in-chiaro-il-garante-privacy-multa-la-federazione-degli-ordini-dei-biologi",
+   "resume": "Un svista nell'invio di due messaggi di posta elettronica certificata è costato una sanzione di 2.000 euro alla Federazione Nazionale degli Ordini dei Biologi (FNOB). Con il provvedimento n. 763 del 7 ottobre 2026 , il Garante per la protezione dei dati personali ha accertato una violazione del GDPR per aver comunicato a una pluralità di destinatari gli indirizzi email personali degli altri professionisti coinvolti…",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Federprivacy",
+   "zone": "Italie",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD",
+    "Sanction"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues",
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 2000,
+    "texte": "2.000 euro",
+    "plafond": false
+   },
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.622,
+   "score_bruit": 0.542,
+   "themes": [
+    "fournisseurs_publics",
+    "donnees"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.702,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "sanction",
+    "type": "sanction",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "it",
+   "trad": {
+    "en": {
+     "titre": "PEC with the addresses of the recipients in clear: the Privacy Guarantor fines the Federation of Biologist Orders",
+     "resume": "A review of sending two certified emails cost a penalty of 2,000 euros to the National Federation of Biologist Orders (FNOB). With the provision n. 763 of 7 October 2026, the Data Protection Authority has ascertained a violation of GDPR for having communicated to a plurality of recipients the personal email addresses of the other professionals involved..."
+    },
+    "fr": {
+     "titre": "PEC avec les adresses des destinataires en clair: le garant de la vie privée amende la Fédération des ordres biologistes",
+     "resume": "Un examen de l'envoi de deux emails certifiés coûte une pénalité de 2.000 euros à la Fédération Nationale des Ordres Biologistes (FNOB). Avec la disposition n. 763 du 7 octobre 2026, l'Autorité de Protection des Données a constaté une violation de RGPD pour avoir communiqué à une pluralité de destinataires les adresses email personnelles des autres professionnels impliqués..."
+    }
+   },
+   "echeances": [
+    {
+     "date": "2026-10-07",
+     "approx": false,
+     "extrait": {
+      "fr": "…à la Fédération Nationale des Ordres Biologistes (FNOB). Avec la disposition n. 763 du 7 octobre 2026, l'Autorité de Protection des Données a constaté une violation de RGPD pour avoir…"
+     }
+    }
+   ],
+   "sujets": [
+    "GDPR",
+    "Garante"
+   ],
+   "acronymes": [
+    "GDPR",
+    "Garante"
+   ]
+  },
+  {
+   "id": "bc7b0f32806c",
+   "titre": "Il Garante Privacy sanziona ancora AgID: altri 15mila euro per violazione del GDPR",
+   "lien": "https://www.federprivacy.org/informazione/flash-news/il-garante-privacy-sanziona-ancora-agid-altri-15mila-euro-per-violazione-del-gdpr",
+   "resume": "Nuova sanzione del Garante per la protezione dei dati personali nei confronti dell'Agenzia per l'Italia Digitale (AgID), questa volta per la pubblicazione illecita dei dati personali di alcuni candidati a un concorso pubblico. Con il provvedimento n. 745 del 7 ottobre 2026 , l'Autorità ha inflitto all'Agenzia una multa di 15.000 euro, accertando la violazione degli articoli 5 e 6 del GDPR e dell'articolo 2-ter del…",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Federprivacy",
+   "zone": "Italie",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD",
+    "Sanction"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues",
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 15000,
+    "texte": "15.000 euro",
+    "plafond": false
+   },
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.669,
+   "score_bruit": 0.542,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : RGPD / GDPR",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.749,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "sanction",
+    "type": "sanction",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "it",
+   "trad": {
+    "en": {
+     "titre": "The Privacy Guarantor still sanctions AgID: another 15 thousand euros for violation of GDPR",
+     "resume": "New sanction of the Data Protection Authority against the Agency for Digital Italy (AgID), this time for the unlawful publication of personal data of some candidates for a public competition. With the provision n. 745 of 7 October 2026, the Authority has inflicted to the Agency a fine of 15.000 euros, ensuring the violation of articles 5 and 6 of the GDPR and article 2-ter of the..."
+    },
+    "fr": {
+     "titre": "Le garant de la vie privée sanctionne toujours AgID : 15 000 euros supplémentaires pour violation de RGPD",
+     "resume": "Nouvelle sanction de l'Autorité de protection des données contre l'Agence pour l'Italie numérique (AgID), cette fois pour la publication illégale de données personnelles de certains candidats à un concours public. Avec la disposition n. 745 du 7 octobre 2026, l'Autorité a infligé à l'Agence une amende de 15.000 euros, garantissant la violation des articles 5 et 6 du RGPD et de l'article 2ter du..."
+    }
+   },
+   "echeances": [
+    {
+     "date": "2026-10-07",
+     "approx": false,
+     "extrait": {
+      "en": "…personal data of some candidates for a public competition. With the provision n. 745 of 7 October 2026, the Authority has inflicted to the Agency a fine of 15.000 euros, ensuring the…"
+     }
+    }
+   ],
+   "sujets": [
+    "GDPR",
+    "Garante",
+    "AgID"
+   ],
+   "acronymes": [
+    "GDPR",
+    "Garante",
+    "AgID"
+   ]
+  },
+  {
+   "id": "8d48be231b8e",
+   "titre": "Het NCSC blijft CSIRT voor gemeenten",
+   "lien": "https://www.ncsc.nl/nieuws/het-ncsc-blijft-csirt-voor-gemeenten",
+   "resume": "Het Nationaal Cyber Security Centrum (NCSC) blijft sectoraal Computer Security Incident Response Team (CSIRT) voor gemeenten en gemeenschappelijke regelingen. Sinds de inwerkingtreding van de Cyberbeveiligingswet (Cbw) in augustus verleent het NCSC deze dienstverlening al. Deze zal worden voortgezet.",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Centre National de Cybersécurité",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "NIS2",
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.61,
+   "score_bruit": 0.479,
+   "themes": [
+    "nis2",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "NIS2",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : NIS2, Cybersecurity Act / certification UE",
+   "statut": "en_vigueur",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "NIS2"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "en_vigueur"
+   },
+   "score": 0.69,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "The NCSC remains CSIRT for municipalities",
+     "resume": "The National Cyber Security Centre (NCSC) remains sectoral Computer Security Incident Response Team (CSIRT) for municipalities and common regulations. Since the entry into force of the Cybersecurity Act (Cbw) in August, NCSC has already provided this service. This will continue."
+    },
+    "fr": {
+     "titre": "Le NCSC reste le CSIRT pour les municipalités",
+     "resume": "Le Centre national de cybersécurité (NCSC) demeure une équipe sectorielle d'intervention en cas d'incident de sécurité informatique (CSIRT) pour les municipalités et les règlements communs. Depuis l'entrée en vigueur de la Loi sur la cybersécurité (Cbw) en août, NCSC a déjà fourni ce service. Cela se poursuivra."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NIS2",
+    "Cybersecurity Act",
+    "NCSC"
+   ],
+   "acronymes": [
+    "NIS2",
+    "Cybersecurity Act",
+    "NCSC"
+   ]
+  },
+  {
+   "id": "562783383b38",
+   "titre": "NCSC sluit zich aan bij OASIS voor sterkere internationale cyberdreigingsuitwisseling",
+   "lien": "https://www.ncsc.nl/nieuws/ncsc-sluit-zich-aan-bij-oasis-voor-sterkere-internationale-cyberdreigingsuitwisseling",
+   "resume": "Het Nationaal Cyber Security Centrum (NCSC) is per 1 oktober 2026 lid geworden van OASIS, een internationale organisatie die open standaarden ontwikkelt. Met het lidmaatschap wil het NCSC bijdragen aan de verdere ontwikkeling en toepassing van standaarden voor het delen van cyberdreigingsinformatie, waaronder STIX en TAXII.",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Centre National de Cybersécurité",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.591,
+   "score_bruit": 0.52,
+   "themes": [
+    "nis2",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.591,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "NCSC joins OASIS for stronger international cyber threat exchange",
+     "resume": "The National Cyber Security Centre (NCSC) became a member of OASIS, an international organisation that develops open standards. With membership, NCSC aims to contribute to the further development and application of cyber threat information sharing standards, including STIX and TAXII."
+    },
+    "fr": {
+     "titre": "NCSC rejoint OASIS pour renforcer l'échange international de cybermenaces",
+     "resume": "Le Centre national de cybersécurité (NCSC) est devenu membre de OASIS, une organisation internationale qui développe des normes ouvertes. Avec son adhésion, NCSC vise à contribuer à l'élaboration et à l'application de normes d'échange d'informations sur les cybermenaces, y compris STIX et TAXII."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NCSC"
+   ],
+   "acronymes": [
+    "NCSC"
+   ]
+  },
+  {
+   "id": "734c4d15d6b9",
+   "titre": "Řízení aktiv a rizik krok za krokem. NÚKIB vydal nového průvodce i metodický postup",
+   "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2469-rizeni-aktiv-a-rizik-krok-za-krokem-nukib-vydal-noveho-pruvodce-i-metodicky-postup",
+   "resume": "Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) vydal další podpůrný materiál pro organizace spadající pod zákon o kybernetické bezpečnosti – Průvodce řízením aktiv a rizik pro vyšší režim povinností. Cílem je představit organizacím jeden z možných způsobů, jak efektivně zavést a udržovat proces řízení aktiv a rizik a představit teoretický a praktický popis jednotlivých kroků procesu, včetně…",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Office national de la sécurité cybernétique et de l'information",
+   "zone": "Rép. Tchèque",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.702,
+   "score_bruit": 0.567,
+   "themes": [
+    "nis2"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "NIS2",
+    "Cybersecurity Act / certification UE"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : NIS2, Cybersecurity Act / certification UE",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sig": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.782,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "cs",
+   "trad": {
+    "en": {
+     "titre": "Asset and risk management step by step. NÚKIB released a new guide and methodology",
+     "resume": "The National Cyber and Information Security Authority (NÚKIB) has issued additional support material for organisations under the Cybersecurity Act - Guide to asset and risk management for a higher duty regime. The aim is to present to organisations one of the possible ways to effectively implement and maintain the asset and risk management process and to present a theoretical and practical description of the various process steps, including..."
+    },
+    "fr": {
+     "titre": "Gestion des actifs et des risques étape par étape. NÚKIB a publié un nouveau guide et une nouvelle méthodologie",
+     "resume": "L'Autorité nationale de la cybersécurité et de l'information (NÚKIB) a publié des documents d'appui supplémentaires pour les organisations en vertu de la Loi sur la cybersécurité - Guide de gestion des actifs et des risques pour un régime de service plus élevé. L'objectif est de présenter aux organisations un des moyens possibles de mettre en œuvre et de maintenir efficacement le processus de gestion des actifs et des risques et de présenter une description théorique et pratique des différentes étapes du processus, y compris..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NIS2",
+    "Cybersecurity Act",
+    "NÚKIB"
+   ],
+   "acronymes": [
+    "NIS2",
+    "Cybersecurity Act",
+    "NÚKIB"
+   ]
+  },
+  {
+   "id": "36102c1ad0ad",
+   "titre": "Introducing a new AI chapter in the NCSC research problem book",
+   "lien": "https://www.ncsc.gov.uk/blogs/introducing-new-ai-chapter-ncsc-research-problem-book",
+   "resume": "A revolution is underway at the intersection of AI and cyber security.",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Centre National de Cybersécurité)",
+   "zone": "Royaume-Uni",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.576,
+   "score_bruit": 0.495,
+   "themes": [
+    "nis2",
+    "cra"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.576,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Introduction d'un nouveau chapitre IA dans le livre de problèmes de recherche NCSC",
+     "resume": "Une révolution est en cours à l'intersection de IA et de la cybersécurité."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NCSC"
+   ],
+   "acronymes": [
+    "NCSC"
+   ]
+  },
+  {
+   "id": "aa9bd789aa90",
+   "titre": "Więcej O: Gdzie kończy się neutralność, a zaczyna cyberbezpieczeństwo?",
+   "lien": "https://www.uke.gov.pl/blog/gdzie-konczy-sie-neutralnosc-a-zaczyna-cyberbezpieczenstwo,168.html",
+   "resume": "Gdzie kończy się neutralność, a zaczyna cyberbezpieczeństwo? 20 października 2026 Dostęp do Internetu stał się niezbędnym elementem życia i pracy. Różne potrzeby użytkowników oznaczają korzystanie z różnych usług dostępnych w sieci, dlatego Art. 3 Rozporządzenia o Otwartym Internecie ustanawia…",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "UKE (Urząd Komunikacji Elektronicznej)",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.814,
+   "score_bruit": 0.508,
+   "themes": [
+    "nis2"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "NIS2"
+   ],
+   "motif": "texte clé : NIS2",
+   "page": {
+    "date": "2026-10-22",
+    "ok": true
+   },
+   "indices_page": {
+    "tc": [
+     "NIS2"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.894,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "pl",
+   "trad": {
+    "en": {
+     "titre": "More About: Where does neutrality end and cybersecurity begin?",
+     "resume": "Where does neutrality end and cybersecurity begin? 20 October 2026 Internet access has become an essential part of life and work. Different user needs mean using different services available online, so Article 3 of the Open Internet Regulation establishes..."
+    },
+    "fr": {
+     "titre": "En savoir plus sur : Où se termine la neutralité et où commence la cybersécurité ?",
+     "resume": "Où se termine la neutralité et où commence la cybersécurité? 20 octobre 2026 L'accès à Internet est devenu un élément essentiel de la vie et du travail. Les différents besoins des utilisateurs consistent à utiliser différents services disponibles en ligne, de sorte que l'article 3 du règlement sur l'Internet ouvert..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
   {
    "id": "7c74b957890e",
    "titre": "Journée RGPD à Poitiers : cybersécurité, IA et conformité au cœur des enjeux de protection des données",

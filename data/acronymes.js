@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-10-20T07:30+00:00",
+ "mise_a_jour": "2026-10-22T13:02+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -164,14 +164,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "NIS2",
    "en": "NIS2",
-   "nb_articles": 86,
+   "nb_articles": 89,
    "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://www.redseguridad.com/actualidad/problema-cronico-ciberseguridad-espana-incorporacion-nis2_20261009.html",
-    "titre": "El problema crónico de España con la incorporación de la NIS2",
-    "langue": "es",
-    "titre_fr": "Le problème chronique de l'Espagne avec l'incorporation de la NIS2",
-    "titre_en": "Spain's chronic problem with the incorporation of NIS2"
+    "date": "2026-10-21",
+    "lien": "https://www.lupa.cz/aktuality/jak-zvladnout-novy-zakon-o-kyberbezpecnosti-stat-ukazal-jak-spravne-nastavit-rizeni-rizik/?utm_source=rss&utm_medium=text&utm_campaign=rss",
+    "titre": "Jak zvládnout nový zákon o kyberbezpečnosti? Stát ukázal, jak správně nastavit řízení rizik",
+    "langue": "cs",
+    "titre_fr": "Comment gérer la nouvelle loi sur la cybersécurité? L'État a montré comment bien gérer les risques",
+    "titre_en": "How to handle the new cyber security bill? State has shown how to properly set risk management"
    }
   },
   {
@@ -194,14 +194,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 55,
+   "nb_articles": 57,
    "exemple": {
-    "date": "2026-10-11",
-    "lien": "https://www.federprivacy.org/informazione/societa/meno-della-meta-delle-istanze-di-esercizio-dei-diritti-sulla-privacy-vengono-completate-entro-il-termine-di-un-mese-richiesto-dal-gdpr",
-    "titre": "Sono meno della metà le istanze di esercizio dei diritti sulla privacy che vengono evase entro i termini richiesti dal GDPR",
+    "date": "2026-10-21",
+    "lien": "https://www.federprivacy.org/informazione/garante-privacy/pec-con-gli-indirizzi-dei-destinatari-in-chiaro-il-garante-privacy-multa-la-federazione-degli-ordini-dei-biologi",
+    "titre": "PEC con gli indirizzi dei destinatari in chiaro: il Garante Privacy multa la Federazione degli Ordini dei Biologi",
     "langue": "it",
-    "titre_fr": "Moins de la moitié des droits à la vie privée sont exemptés dans les délais prescrits par RGPD",
-    "titre_en": "There are less than half of the exercise of privacy rights that are exempted within the deadlines required by GDPR"
+    "titre_fr": "PEC avec les adresses des destinataires en clair: le garant de la vie privée amende la Fédération des ordres biologistes",
+    "titre_en": "PEC with the addresses of the recipients in clear: the Privacy Guarantor fines the Federation of Biologist Orders"
    }
   },
   {
@@ -209,14 +209,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cybersecurity Act (certification UE)",
    "en": "Cybersecurity Act (EU certification)",
-   "nb_articles": 27,
+   "nb_articles": 30,
    "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://www.ncsc.nl/nieuws/ncsc-en-toezichthouders-maken-afspraken-over-samenwerking-bij-cyberbeveiligingswet",
-    "titre": "NCSC en toezichthouders maken afspraken over samenwerking bij Cyberbeveiligingswet",
-    "langue": "nl",
-    "titre_fr": "NCSC et les superviseurs conviennent de la coopération avec la Loi sur la cybersécurité",
-    "titre_en": "NCSC and supervisors agree on cooperation with Cybersecurity Act"
+    "date": "2026-10-21",
+    "lien": "https://www.lupa.cz/aktuality/jak-zvladnout-novy-zakon-o-kyberbezpecnosti-stat-ukazal-jak-spravne-nastavit-rizeni-rizik/?utm_source=rss&utm_medium=text&utm_campaign=rss",
+    "titre": "Jak zvládnout nový zákon o kyberbezpečnosti? Stát ukázal, jak správně nastavit řízení rizik",
+    "langue": "cs",
+    "titre_fr": "Comment gérer la nouvelle loi sur la cybersécurité? L'État a montré comment bien gérer les risques",
+    "titre_en": "How to handle the new cyber security bill? State has shown how to properly set risk management"
    }
   },
   {
@@ -644,14 +644,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 60,
+   "nb_articles": 64,
    "exemple": {
-    "date": "2026-10-19",
-    "lien": "https://www.bacs.admin.ch/fr/26-tb-authentifizierung-fr",
-    "titre": "«Considérations technologiques : Cinq étapes pour une authentification sécurisée»",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "\"Technological Considerations: Five Steps for Secure Authentication\""
+    "date": "2026-10-21",
+    "lien": "https://www.ncsc.nl/alerts/ernstige-kwetsbaarheden-in-php-bereid-je-voor-op-patchen",
+    "titre": "Ernstige kwetsbaarheden in PHP: bereid je voor op patchen",
+    "langue": "nl",
+    "titre_fr": "Graves vulnérabilités dans PHP : Préparez-vous à patcher",
+    "titre_en": "Severe vulnerabilities in PHP: Prepare to patch"
    }
   },
   {
@@ -704,14 +704,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NÚKIB (Tchéquie)",
    "en": "NÚKIB (Czechia)",
-   "nb_articles": 24,
+   "nb_articles": 27,
    "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2462-nukib-navazal-v-rime-na-predchozi-spolupraci-tematem-kvantove-odolne-komunikace",
-    "titre": "NÚKIB navázal v Římě na předchozí spolupráci tématem kvantově odolné komunikace",
+    "date": "2026-10-22",
+    "lien": "https://sukl.gov.cz/zdravotnicke-prostredky/aktuality-zp/docasne-omezeni-elektronickeho-rozhrani-sukl-pro-podavani-vigilancnich-hlaseni-zdravotnickych-prostredku/",
+    "titre": "Dočasné omezení elektronického rozhraní SÚKL pro podávání vigilančních hlášení zdravotnických prostředků",
     "langue": "cs",
-    "titre_fr": "NÚKIB a établi un thème de communication résistant au quantique à Rome",
-    "titre_en": "NÚKIB established a quantum-resistant communication theme in Rome"
+    "titre_fr": "Restriction temporaire de l'interface électronique SÚKL pour la soumission des rapports de vigilance des dispositifs médicaux",
+    "titre_en": "Temporary restriction of SÚKL electronic interface for submission of vigilance reports of medical devices"
    }
   },
   {
@@ -730,6 +730,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "Garante",
+   "groupe": "autorites",
+   "fr": "Garante privacy (Italie)",
+   "en": "Garante privacy (Italy)",
+   "nb_articles": 22,
+   "exemple": {
+    "date": "2026-10-21",
+    "lien": "https://www.federprivacy.org/informazione/garante-privacy/pec-con-gli-indirizzi-dei-destinatari-in-chiaro-il-garante-privacy-multa-la-federazione-degli-ordini-dei-biologi",
+    "titre": "PEC con gli indirizzi dei destinatari in chiaro: il Garante Privacy multa la Federazione degli Ordini dei Biologi",
+    "langue": "it",
+    "titre_fr": "PEC avec les adresses des destinataires en clair: le garant de la vie privée amende la Fédération des ordres biologistes",
+    "titre_en": "PEC with the addresses of the recipients in clear: the Privacy Guarantor fines the Federation of Biologist Orders"
+   }
+  },
+  {
    "code": "ENISA",
    "groupe": "autorites",
    "fr": "ENISA",
@@ -742,21 +757,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "en",
     "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "Garante",
-   "groupe": "autorites",
-   "fr": "Garante privacy (Italie)",
-   "en": "Garante privacy (Italy)",
-   "nb_articles": 20,
-   "exemple": {
-    "date": "2026-10-20",
-    "lien": "https://www.federprivacy.org/informazione/primo-piano/il-dpo-esterno-sotto-ispezione-quando-il-controllore-diventa-controllato",
-    "titre": "Il DPO esterno sotto ispezione: quando il controllore diventa controllato",
-    "langue": "it",
-    "titre_fr": "Le DPO externe sous contrôle : lorsque le contrôleur est contrôlé",
-    "titre_en": "The external DPO under inspection: when the controller becomes controlled"
    }
   },
   {
@@ -1030,6 +1030,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "AgID",
+   "groupe": "autorites",
+   "fr": "AgID",
+   "en": "AgID",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-21",
+    "lien": "https://www.federprivacy.org/informazione/flash-news/il-garante-privacy-sanziona-ancora-agid-altri-15mila-euro-per-violazione-del-gdpr",
+    "titre": "Il Garante Privacy sanziona ancora AgID: altri 15mila euro per violazione del GDPR",
+    "langue": "it",
+    "titre_fr": "Le garant de la vie privée sanctionne toujours AgID : 15 000 euros supplémentaires pour violation de RGPD",
+    "titre_en": "The Privacy Guarantor still sanctions AgID: another 15 thousand euros for violation of GDPR"
+   }
+  },
+  {
    "code": "UODO",
    "groupe": "autorites",
    "fr": "UODO (Pologne)",
@@ -1087,21 +1102,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "el",
     "titre_fr": "Actions communes et synergies des CNC à Chypre pour un écosystème européen de cybersécurité plus fort",
     "titre_en": "Joint actions and synergies of NCCs in Cyprus for a stronger European cybersecurity ecosystem"
-   }
-  },
-  {
-   "code": "AgID",
-   "groupe": "autorites",
-   "fr": "AgID",
-   "en": "AgID",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://www.agid.gov.it/it/notizie/dga-e-ai-act-come-propulsori-di-sviluppo-il-nuovo-webinar-agid-e-dama-italy",
-    "titre": "DGA e AI Act come propulsori di sviluppo: il nuovo webinar AgID e DAMA Italy",
-    "langue": "it",
-    "titre_fr": "DGA et AI Act comme moteurs de développement: le nouveau webinaire AgID et DAMA Italie",
-    "titre_en": "DGA and AI Act as development engines: the new webinar AgID and DAMA Italy"
    }
   },
   {
@@ -1210,6 +1210,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "SÚKL",
+   "groupe": "autorites",
+   "fr": "SÚKL (Tchéquie)",
+   "en": "SÚKL (Czechia)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-22",
+    "lien": "https://sukl.gov.cz/zdravotnicke-prostredky/aktuality-zp/docasne-omezeni-elektronickeho-rozhrani-sukl-pro-podavani-vigilancnich-hlaseni-zdravotnickych-prostredku/",
+    "titre": "Dočasné omezení elektronického rozhraní SÚKL pro podávání vigilančních hlášení zdravotnických prostředků",
+    "langue": "cs",
+    "titre_fr": "Restriction temporaire de l'interface électronique SÚKL pour la soumission des rapports de vigilance des dispositifs médicaux",
+    "titre_en": "Temporary restriction of SÚKL electronic interface for submission of vigilance reports of medical devices"
+   }
+  },
+  {
    "code": "RDI",
    "groupe": "autorites",
    "fr": "RDI (Pays-Bas)",
@@ -1267,21 +1282,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»"
-   }
-  },
-  {
-   "code": "SÚKL",
-   "groupe": "autorites",
-   "fr": "SÚKL (Tchéquie)",
-   "en": "SÚKL (Czechia)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-09-23",
-    "lien": "https://sukl.gov.cz/pacientske-organizace/sukl-zridil-poradni-organ-pro-pacienty-a-spotrebitele/",
-    "titre": "SÚKL zřídil Poradní orgán pro pacienty a spotřebitele",
-    "langue": "cs",
-    "titre_fr": "SÚKL a établi un organisme consultatif pour les patients et les consommateurs",
-    "titre_en": "SÚKL has established an Advisory Body for Patients and Consumers"
    }
   },
   {
@@ -1468,13 +1468,13 @@ window.VEILLE_ACRONYMES = {
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 15,
+   "nb_articles": 16,
    "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://www.gov.pl/web/cyfryzacja/dsa---co-zmienia-nowe-przepisy",
-    "titre": "DSA - co zmienią nowe przepisy",
-    "titre_fr": "DSA - ce qui va changer les nouveaux règlements",
-    "titre_en": "DSA - what will change the new regulations",
+    "date": "2026-10-22",
+    "lien": "https://www.uke.gov.pl/blog/chcesz-zlozyc-skarge-do-koordynatora-ds-uslug-cyfrowych-sprawdz-jak-to-zrobic,169.html",
+    "titre": "Więcej O: Chcesz złożyć skargę do Koordynatora ds. usług cyfrowych? Sprawdź, jak to zrobić",
+    "titre_fr": "En savoir plus sur : Voulez-vous vous plaindre au coordonnateur des services numériques? Voir comment faire cela",
+    "titre_en": "More About: Do you want to complain to the Digital Services Coordinator? See how to do this",
     "langue": "pl"
    }
   },
@@ -1524,6 +1524,30 @@ window.VEILLE_ACRONYMES = {
     "titre_fr": "Plus de 460 millions de dollars ont été infligés à Google pour la gestion des données de localisation",
     "titre_en": "More than $460 million has been fined to Google for managing location data",
     "langue": "hu"
+   }
+  },
+  {
+   "code": "TAXII",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-20",
+    "lien": "https://www.ncsc.nl/nieuws/ncsc-sluit-zich-aan-bij-oasis-voor-sterkere-internationale-cyberdreigingsuitwisseling",
+    "titre": "NCSC sluit zich aan bij OASIS voor sterkere internationale cyberdreigingsuitwisseling",
+    "titre_fr": "NCSC rejoint OASIS pour renforcer l'échange international de cybermenaces",
+    "titre_en": "NCSC joins OASIS for stronger international cyber threat exchange",
+    "langue": "nl"
+   }
+  },
+  {
+   "code": "STIX",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-20",
+    "lien": "https://www.ncsc.nl/nieuws/ncsc-sluit-zich-aan-bij-oasis-voor-sterkere-internationale-cyberdreigingsuitwisseling",
+    "titre": "NCSC sluit zich aan bij OASIS voor sterkere internationale cyberdreigingsuitwisseling",
+    "titre_fr": "NCSC rejoint OASIS pour renforcer l'échange international de cybermenaces",
+    "titre_en": "NCSC joins OASIS for stronger international cyber threat exchange",
+    "langue": "nl"
    }
   },
   {

@@ -1,275 +1,6 @@
 window.VEILLE_ALERTES = {
- "mise_a_jour": "2026-10-20T07:30+00:00",
+ "mise_a_jour": "2026-10-22T13:02+00:00",
  "alertes": [
-  {
-   "id": "k8cb942c3e8a",
-   "type": "proposition",
-   "texte": "RGPD / GDPR",
-   "inconnu": false,
-   "zone": "Europe",
-   "detecte_le": "2026-09-23",
-   "maj_le": "2026-10-05",
-   "date": "2026-10-05",
-   "fin": "2026-10-21",
-   "version": "2026-09-25-1456",
-   "version_maj": "2026-10-05-1218",
-   "articles": [
-    {
-     "id": "61035cf9edcc",
-     "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
-     "langue": "hu",
-     "trad": {
-      "en": {
-       "titre": "New EDPB Guidelines on administrative penalties under GDPR"
-      },
-      "fr": {
-       "titre": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD"
-      }
-     },
-     "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
-     "source": "NAIH (autorité de protection des données)",
-     "zone": "Hongrie",
-     "date": "2026-10-05",
-     "detecte_le": "2026-10-05",
-     "version": "2026-10-05-1218",
-     "statut": "lignes_directrices",
-     "nature": "officielle"
-    },
-    {
-     "id": "d21844491833",
-     "titre": "EROD ujednolica metodologię nakładania kar i przyjmuje ostateczne wytyczne dotyczące DSA i RODO 25.09.2026",
-     "langue": "pl",
-     "trad": {
-      "en": {
-       "titre": "EROD harmonises the sanctioning methodology and adopts final guidelines for DSA and RODO 25.09.2026"
-      },
-      "fr": {
-       "titre": "EROD harmonise la méthodologie de sanction et adopte des lignes directrices finales pour DSA et RODO 25.09.2026"
-      }
-     },
-     "lien": "https://uodo.gov.pl/pl/185/4584",
-     "source": "UODO (Office for Personal Data Protection)",
-     "zone": "Pologne",
-     "date": "2026-09-25",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "lignes_directrices",
-     "nature": "officielle"
-    },
-    {
-     "id": "4cf4cac90c14",
-     "titre": "Guidelines 3/2025 on the interplay between the DSA and the GDPR",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Lignes directrices 3/2025 sur l'interaction entre le DSA et le RGPD"
-      }
-     },
-     "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-32025-on-the-interplay-between-the-dsa-and-the-gdpr_en",
-     "source": "EDPB (European Data Protection Board)",
-     "zone": "Europe",
-     "date": "2026-09-17",
-     "detecte_le": "2026-09-23",
-     "statut": "lignes_directrices",
-     "nature": "officielle"
-    },
-    {
-     "id": "050e584d0be0",
-     "titre": "Guidelines 04/2026 on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Lignes directrices 04/2026 sur l'application du pouvoir d'imposer des amendes administratives en relation avec d'autres pouvoirs correctifs en vertu du RGPD"
-      }
-     },
-     "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en",
-     "source": "EDPB (European Data Protection Board)",
-     "zone": "Europe",
-     "date": "2026-09-17",
-     "detecte_le": "2026-09-23",
-     "statut": "lignes_directrices",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 4,
-   "a_verifier": false,
-   "lies": [
-    "e69a17f2e444",
-    "386041420935",
-    "fe8bb8454a15",
-    "416856d69b55",
-    "689313fd9149",
-    "5c90018a8a0f",
-    "861e1c6189fb",
-    "4f2fa67cfa49",
-    "38a1462619ee",
-    "87c49a51d1fb",
-    "9e5950476e11",
-    "a89a5066497c",
-    "e46cb6d2998f",
-    "746b1fe5f47f",
-    "eaffeb787a1b",
-    "7387d4c99a44",
-    "5a78439e33f4",
-    "12ca8d705453",
-    "6c84ea1c687d",
-    "62fe5804abe4",
-    "fb78e8d88902",
-    "3281db179143",
-    "f027c5aea361",
-    "68359659ea8b",
-    "6f8f34192614",
-    "11e044621e6f",
-    "313241488e16",
-    "ffd5f1345202",
-    "ad97fa526195",
-    "5d0c34ed1602",
-    "4ad1a6d9507f",
-    "f8e54d6ec725",
-    "6fcd26cd3c51",
-    "dd4e94deae39",
-    "4e5a44015572",
-    "2585a9570852",
-    "f1d23cc1cea7",
-    "f4d285b45803",
-    "f74b4e65426e",
-    "96980f15d193",
-    "46d2573c978e",
-    "df4c72d0f724",
-    "54e666f6c580",
-    "b8d75fed0df3",
-    "dff4b49c90b1",
-    "bff38b55d133",
-    "db32deacbe64",
-    "5ce085118802",
-    "635da126b90c",
-    "b5259f4b3963",
-    "n7e649879ae6",
-    "n2034ce46230",
-    "e098b7e651ac",
-    "45fae9319d74",
-    "36feb41d2a61",
-    "fcdbb25e7e66",
-    "2bb7081b7dc7",
-    "f7e9ba75ea34",
-    "204e6bd9d1a6",
-    "4abc2abc2599",
-    "e684cc0f4562",
-    "8630d68a4c8e",
-    "cf859a5f552b",
-    "7a99837ab49a",
-    "f53ca2725f7b",
-    "85816f532617",
-    "f6b16436deef",
-    "e75f99da976a",
-    "4f6d520adaf1",
-    "bfb313e3af32",
-    "16c46cb75417",
-    "41c06504ff92",
-    "ee77ea07802d",
-    "4d979598ee5c",
-    "09be3e5e2b03",
-    "84a907f4ac63",
-    "07ad27b7337f",
-    "614c79f10038",
-    "b8f2ac851d18"
-   ],
-   "nb_lies": 79,
-   "active": true
-  },
-  {
-   "id": "kb5f0964b2fe",
-   "type": "proposition",
-   "texte": "IVDR",
-   "inconnu": false,
-   "zone": "Europe",
-   "detecte_le": "2026-09-23",
-   "maj_le": "2026-09-28",
-   "date": "2026-09-10",
-   "fin": "2026-10-21",
-   "version": "2026-09-28-1210",
-   "version_maj": "2026-09-28-1210",
-   "articles": [
-    {
-     "id": "f22f5783f38a",
-     "titre": "New guideline «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Nouvelle ligne directrice «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)"
-      }
-     },
-     "lien": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/reporting-incidents---fscas/users---operators.html",
-     "source": "Swissmedic — actualités (via flux RSS FetchRSS)",
-     "zone": "Suisse",
-     "date": "2026-09-10",
-     "detecte_le": "2026-09-28",
-     "version": "2026-09-28-1210",
-     "statut": "lignes_directrices",
-     "nature": "officielle"
-    },
-    {
-     "id": "1de3670a1438",
-     "titre": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "MDCG 2020-16 rev.5 - Lignes directrices sur les règles de classification des instruments médicaux de diagnostic in vitro en vertu du Règlement (UE) 2017/746 (septembre 2026)"
-      }
-     },
-     "lien": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
-     "source": "Medical Device Coordination Group",
-     "zone": "Europe",
-     "date": "2026-09-09",
-     "detecte_le": "2026-09-23",
-     "statut": "lignes_directrices",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 2,
-   "a_verifier": false,
-   "lies": [
-    "ne900756ad12"
-   ],
-   "nb_lies": 1,
-   "active": true
-  },
-  {
-   "id": "k5df38ea5db6",
-   "type": "a_qualifier",
-   "texte": "",
-   "inconnu": true,
-   "zone": "France",
-   "detecte_le": "2026-09-23",
-   "maj_le": "2026-09-23",
-   "date": "2026-09-10",
-   "fin": "2026-10-21",
-   "version": "",
-   "version_maj": "",
-   "articles": [
-    {
-     "id": "fe403a8c350f",
-     "titre": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
-     "langue": "fr",
-     "trad": {
-      "en": {
-       "titre": "Electronic billing: what are the challenges for the protection of personal data?"
-      }
-     },
-     "lien": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
-     "source": "CNIL",
-     "zone": "France",
-     "date": "2026-09-10",
-     "detecte_le": "2026-09-23",
-     "statut": "en_vigueur",
-     "nature": "officielle",
-     "a_verifier": true
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": true,
-   "active": true
-  },
   {
    "id": "k9e31a975339",
    "type": "adopte",
@@ -641,6 +372,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": false,
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -697,7 +433,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 55,
+   "nb_lies": 60,
    "active": true
   },
   {
@@ -735,6 +471,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
     "32e49230344c",
     "2ef9d4236629",
     "1e04ec7ac876",
@@ -759,7 +498,7 @@ window.VEILLE_ALERTES = {
     "233e75c7746f",
     "f34dcd685e44"
    ],
-   "nb_lies": 23,
+   "nb_lies": 26,
    "active": true
   },
   {
@@ -994,6 +733,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -1053,7 +797,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 58,
+   "nb_lies": 63,
    "active": true
   },
   {
@@ -1094,6 +838,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -1153,7 +902,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 58,
+   "nb_lies": 63,
    "active": true
   },
   {
@@ -1192,6 +941,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": true,
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -1251,7 +1005,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 58,
+   "nb_lies": 63,
    "active": true
   },
   {
@@ -1294,6 +1048,11 @@ window.VEILLE_ALERTES = {
     "en": "…prior suspicion, and the sanctioning procedure). The clarifications come ahead of the 31 October 2026 deadline for adopting baseline security measures (determination 379907/2025), which ends…"
    },
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -1354,7 +1113,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 59,
+   "nb_lies": 64,
    "active": true
   },
   {
@@ -1782,6 +1541,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -1841,7 +1605,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 58,
+   "nb_lies": 63,
    "active": true
   },
   {
@@ -2144,6 +1908,393 @@ window.VEILLE_ALERTES = {
    "active": true
   },
   {
+   "id": "kabd740e157c",
+   "type": "proposition",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-10-22",
+   "maj_le": "2026-10-22",
+   "date": "2026-10-21",
+   "fin": "2026-11-19",
+   "version": "2026-10-22-1302",
+   "version_maj": "2026-10-22-1302",
+   "articles": [
+    {
+     "id": "8e5e366e1dff",
+     "titre": "Więcej O: Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "More About: Recommendation of the Government Representative for Cybersecurity regarding organisational and technical measures"
+      },
+      "fr": {
+       "titre": "En savoir plus sur: Recommandation du représentant du gouvernement pour la cybersécurité concernant les mesures organisationnelles et techniques"
+      }
+     },
+     "lien": "https://www.uke.gov.pl/akt/rekomendacja-pelnomocnika-rzadu-ds-cyberbezpieczenstwa-dot-srodkow-organizacyjnych-i-technicznych,704.html",
+     "source": "UKE (Urząd Komunikacji Elektronicznej)",
+     "zone": "Pologne",
+     "date": "2026-10-21",
+     "detecte_le": "2026-10-22",
+     "version": "2026-10-22-1302",
+     "statut": "consultation",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "lies": [
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
+    "b7c18b05b5e7",
+    "32e49230344c",
+    "2ef9d4236629",
+    "f01285f84788",
+    "1e04ec7ac876",
+    "ne936098b541",
+    "0a3fa23bda3a",
+    "8ebfa1f4b6bc",
+    "63aa7c4c18f5",
+    "5a78439e33f4",
+    "n362bccdce09",
+    "b1b61f43c4d8",
+    "e4644b41c05a",
+    "281ba3fd745a",
+    "5b8cc1c5cb07",
+    "11201a361012",
+    "29eddf2783bf",
+    "7b31fbd5898f",
+    "6cba3d2e21bd",
+    "9a2b985ebdd5",
+    "aa536c4932e3",
+    "4632d31c8ef8",
+    "41fa0ff9c48b",
+    "ead3f4747aec",
+    "acc8156ab600",
+    "1eccbbdb8619",
+    "2eb217020c09",
+    "64f8d3eff1c5",
+    "a0bf728da210",
+    "04fe76f70754",
+    "89f049acff85",
+    "c76267e7d7d9",
+    "n2d18c011e62",
+    "n14ae6b2f1dc",
+    "855d9cd886f0",
+    "db646503cee0",
+    "81b92f7b5434",
+    "necdb6828002",
+    "c4a2510c7375",
+    "08da9d45d259",
+    "n275d6d134be",
+    "n9e7616a4274",
+    "3cf8168ed768",
+    "b00f865edf0a",
+    "d241a0931f87",
+    "32322c10ca94",
+    "d8a3a4ba56a8",
+    "8d3ec486ff5b",
+    "574c3ed8fab7",
+    "a36eb2dfd43f",
+    "233e75c7746f",
+    "62576ab73272",
+    "f34dcd685e44",
+    "1a8b067a0355",
+    "9e5e6aab08a7",
+    "7286880185ab",
+    "ba8e2ca7ba44",
+    "74ace7ed70ab",
+    "8a675041e196"
+   ],
+   "nb_lies": 63,
+   "active": true
+  },
+  {
+   "id": "k35db5dd859b",
+   "type": "adopte",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Pays-Bas",
+   "detecte_le": "2026-10-22",
+   "maj_le": "2026-10-22",
+   "date": "2026-10-20",
+   "fin": "2026-11-19",
+   "version": "2026-10-22-1302",
+   "version_maj": "2026-10-22-1302",
+   "articles": [
+    {
+     "id": "8d48be231b8e",
+     "titre": "Het NCSC blijft CSIRT voor gemeenten",
+     "langue": "nl",
+     "trad": {
+      "en": {
+       "titre": "The NCSC remains CSIRT for municipalities"
+      },
+      "fr": {
+       "titre": "Le NCSC reste le CSIRT pour les municipalités"
+      }
+     },
+     "lien": "https://www.ncsc.nl/nieuws/het-ncsc-blijft-csirt-voor-gemeenten",
+     "source": "Centre National de Cybersécurité",
+     "zone": "Pays-Bas",
+     "date": "2026-10-20",
+     "detecte_le": "2026-10-22",
+     "version": "2026-10-22-1302",
+     "statut": "en_vigueur",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
+    "b7c18b05b5e7",
+    "32e49230344c",
+    "2ef9d4236629",
+    "f01285f84788",
+    "1e04ec7ac876",
+    "ne936098b541",
+    "0a3fa23bda3a",
+    "8ebfa1f4b6bc",
+    "63aa7c4c18f5",
+    "5a78439e33f4",
+    "n362bccdce09",
+    "b1b61f43c4d8",
+    "e4644b41c05a",
+    "281ba3fd745a",
+    "5b8cc1c5cb07",
+    "11201a361012",
+    "29eddf2783bf",
+    "7b31fbd5898f",
+    "6cba3d2e21bd",
+    "9a2b985ebdd5",
+    "aa536c4932e3",
+    "4632d31c8ef8",
+    "41fa0ff9c48b",
+    "ead3f4747aec",
+    "acc8156ab600",
+    "1eccbbdb8619",
+    "2eb217020c09",
+    "64f8d3eff1c5",
+    "a0bf728da210",
+    "04fe76f70754",
+    "89f049acff85",
+    "c76267e7d7d9",
+    "n2d18c011e62",
+    "n14ae6b2f1dc",
+    "855d9cd886f0",
+    "db646503cee0",
+    "81b92f7b5434",
+    "necdb6828002",
+    "c4a2510c7375",
+    "08da9d45d259",
+    "n275d6d134be",
+    "n9e7616a4274",
+    "3cf8168ed768",
+    "b00f865edf0a",
+    "d241a0931f87",
+    "32322c10ca94",
+    "d8a3a4ba56a8",
+    "8d3ec486ff5b",
+    "574c3ed8fab7",
+    "a36eb2dfd43f",
+    "233e75c7746f",
+    "62576ab73272",
+    "f34dcd685e44",
+    "1a8b067a0355",
+    "9e5e6aab08a7",
+    "7286880185ab",
+    "ba8e2ca7ba44",
+    "74ace7ed70ab",
+    "8a675041e196"
+   ],
+   "nb_lies": 63,
+   "active": true
+  },
+  {
+   "id": "k8cb942c3e8a",
+   "type": "proposition",
+   "texte": "RGPD / GDPR",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-10-05",
+   "date": "2026-10-05",
+   "fin": "2026-10-21",
+   "version": "2026-09-25-1456",
+   "version_maj": "2026-10-05-1218",
+   "articles": [
+    {
+     "id": "61035cf9edcc",
+     "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
+     "langue": "hu",
+     "trad": {
+      "en": {
+       "titre": "New EDPB Guidelines on administrative penalties under GDPR"
+      },
+      "fr": {
+       "titre": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD"
+      }
+     },
+     "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
+     "source": "NAIH (autorité de protection des données)",
+     "zone": "Hongrie",
+     "date": "2026-10-05",
+     "detecte_le": "2026-10-05",
+     "version": "2026-10-05-1218",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    },
+    {
+     "id": "d21844491833",
+     "titre": "EROD ujednolica metodologię nakładania kar i przyjmuje ostateczne wytyczne dotyczące DSA i RODO 25.09.2026",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "EROD harmonises the sanctioning methodology and adopts final guidelines for DSA and RODO 25.09.2026"
+      },
+      "fr": {
+       "titre": "EROD harmonise la méthodologie de sanction et adopte des lignes directrices finales pour DSA et RODO 25.09.2026"
+      }
+     },
+     "lien": "https://uodo.gov.pl/pl/185/4584",
+     "source": "UODO (Office for Personal Data Protection)",
+     "zone": "Pologne",
+     "date": "2026-09-25",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    },
+    {
+     "id": "4cf4cac90c14",
+     "titre": "Guidelines 3/2025 on the interplay between the DSA and the GDPR",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Lignes directrices 3/2025 sur l'interaction entre le DSA et le RGPD"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-32025-on-the-interplay-between-the-dsa-and-the-gdpr_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
+     "date": "2026-09-17",
+     "detecte_le": "2026-09-23",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    },
+    {
+     "id": "050e584d0be0",
+     "titre": "Guidelines 04/2026 on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Lignes directrices 04/2026 sur l'application du pouvoir d'imposer des amendes administratives en relation avec d'autres pouvoirs correctifs en vertu du RGPD"
+      }
+     },
+     "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en",
+     "source": "EDPB (European Data Protection Board)",
+     "zone": "Europe",
+     "date": "2026-09-17",
+     "detecte_le": "2026-09-23",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 4,
+   "a_verifier": false,
+   "lies": [
+    "c22da2a6c5f9",
+    "bc7b0f32806c",
+    "e69a17f2e444",
+    "386041420935",
+    "fe8bb8454a15",
+    "416856d69b55",
+    "689313fd9149",
+    "5c90018a8a0f",
+    "861e1c6189fb",
+    "4f2fa67cfa49",
+    "38a1462619ee",
+    "87c49a51d1fb",
+    "9e5950476e11",
+    "a89a5066497c",
+    "e46cb6d2998f",
+    "746b1fe5f47f",
+    "eaffeb787a1b",
+    "7387d4c99a44",
+    "5a78439e33f4",
+    "12ca8d705453",
+    "6c84ea1c687d",
+    "62fe5804abe4",
+    "fb78e8d88902",
+    "3281db179143",
+    "f027c5aea361",
+    "68359659ea8b",
+    "6f8f34192614",
+    "11e044621e6f",
+    "313241488e16",
+    "ffd5f1345202",
+    "ad97fa526195",
+    "5d0c34ed1602",
+    "4ad1a6d9507f",
+    "f8e54d6ec725",
+    "6fcd26cd3c51",
+    "dd4e94deae39",
+    "4e5a44015572",
+    "2585a9570852",
+    "f1d23cc1cea7",
+    "f4d285b45803",
+    "f74b4e65426e",
+    "96980f15d193",
+    "46d2573c978e",
+    "df4c72d0f724",
+    "54e666f6c580",
+    "b8d75fed0df3",
+    "dff4b49c90b1",
+    "bff38b55d133",
+    "db32deacbe64",
+    "5ce085118802",
+    "635da126b90c",
+    "b5259f4b3963",
+    "n7e649879ae6",
+    "n2034ce46230",
+    "e098b7e651ac",
+    "45fae9319d74",
+    "36feb41d2a61",
+    "fcdbb25e7e66",
+    "2bb7081b7dc7",
+    "f7e9ba75ea34",
+    "204e6bd9d1a6",
+    "4abc2abc2599",
+    "e684cc0f4562",
+    "8630d68a4c8e",
+    "cf859a5f552b",
+    "7a99837ab49a",
+    "f53ca2725f7b",
+    "85816f532617",
+    "f6b16436deef",
+    "e75f99da976a",
+    "4f6d520adaf1",
+    "bfb313e3af32",
+    "16c46cb75417",
+    "41c06504ff92",
+    "ee77ea07802d",
+    "4d979598ee5c",
+    "09be3e5e2b03",
+    "84a907f4ac63",
+    "07ad27b7337f",
+    "614c79f10038"
+   ],
+   "nb_lies": 81,
+   "active": false
+  },
+  {
    "id": "k62c01d9d30f",
    "type": "adopte",
    "texte": "RGPD / GDPR",
@@ -2248,6 +2399,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 5,
    "a_verifier": false,
    "lies": [
+    "c22da2a6c5f9",
+    "bc7b0f32806c",
     "e69a17f2e444",
     "386041420935",
     "fe8bb8454a15",
@@ -2327,7 +2480,100 @@ window.VEILLE_ALERTES = {
     "614c79f10038",
     "b8f2ac851d18"
    ],
-   "nb_lies": 78,
+   "nb_lies": 80,
+   "active": false
+  },
+  {
+   "id": "kb5f0964b2fe",
+   "type": "proposition",
+   "texte": "IVDR",
+   "inconnu": false,
+   "zone": "Europe",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-28",
+   "date": "2026-09-10",
+   "fin": "2026-10-21",
+   "version": "2026-09-28-1210",
+   "version_maj": "2026-09-28-1210",
+   "articles": [
+    {
+     "id": "f22f5783f38a",
+     "titre": "New guideline «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Nouvelle ligne directrice «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)"
+      }
+     },
+     "lien": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/reporting-incidents---fscas/users---operators.html",
+     "source": "Swissmedic — actualités (via flux RSS FetchRSS)",
+     "zone": "Suisse",
+     "date": "2026-09-10",
+     "detecte_le": "2026-09-28",
+     "version": "2026-09-28-1210",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    },
+    {
+     "id": "1de3670a1438",
+     "titre": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "MDCG 2020-16 rev.5 - Lignes directrices sur les règles de classification des instruments médicaux de diagnostic in vitro en vertu du Règlement (UE) 2017/746 (septembre 2026)"
+      }
+     },
+     "lien": "https://health.ec.europa.eu/latest-updates/mdcg-2020-16-rev5-guidance-classification-rules-vitro-diagnostic-medical-devices-under-regulation-eu-2026-09-09_en",
+     "source": "Medical Device Coordination Group",
+     "zone": "Europe",
+     "date": "2026-09-09",
+     "detecte_le": "2026-09-23",
+     "statut": "lignes_directrices",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": false,
+   "lies": [
+    "ne900756ad12"
+   ],
+   "nb_lies": 1,
+   "active": false
+  },
+  {
+   "id": "k5df38ea5db6",
+   "type": "a_qualifier",
+   "texte": "",
+   "inconnu": true,
+   "zone": "France",
+   "detecte_le": "2026-09-23",
+   "maj_le": "2026-09-23",
+   "date": "2026-09-10",
+   "fin": "2026-10-21",
+   "version": "",
+   "version_maj": "",
+   "articles": [
+    {
+     "id": "fe403a8c350f",
+     "titre": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "Electronic billing: what are the challenges for the protection of personal data?"
+      }
+     },
+     "lien": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
+     "source": "CNIL",
+     "zone": "France",
+     "date": "2026-09-10",
+     "detecte_le": "2026-09-23",
+     "statut": "en_vigueur",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
    "active": false
   },
   {
@@ -2562,6 +2808,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": true,
    "lies": [
+    "c22da2a6c5f9",
+    "bc7b0f32806c",
     "e69a17f2e444",
     "fe8bb8454a15",
     "416856d69b55",
@@ -2639,10 +2887,9 @@ window.VEILLE_ALERTES = {
     "09be3e5e2b03",
     "84a907f4ac63",
     "07ad27b7337f",
-    "614c79f10038",
-    "b8f2ac851d18"
+    "614c79f10038"
    ],
-   "nb_lies": 79,
+   "nb_lies": 81,
    "active": false
   },
   {
@@ -2787,6 +3034,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -2845,7 +3097,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 57,
+   "nb_lies": 62,
    "active": false
   },
   {
@@ -3512,6 +3764,11 @@ window.VEILLE_ALERTES = {
     "fr": "…nationale en matière de cybersécurité. Les entités d'auto-enregistrement ont jusqu'au 3 octobre 2026 pour présenter une demande d'alerte."
    },
    "lies": [
+    "8e5e366e1dff",
+    "3901c91188d7",
+    "8d48be231b8e",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
     "b7c18b05b5e7",
     "32e49230344c",
     "2ef9d4236629",
@@ -3570,7 +3827,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 57,
+   "nb_lies": 62,
    "active": false
   },
   {
@@ -4186,7 +4443,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Allemagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-04-07",
    "fin": "2026-04-07",
    "version": "",
@@ -4212,7 +4469,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Allemagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4238,7 +4495,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Autriche",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-03-01",
    "fin": "2026-03-01",
    "version": "",
@@ -4264,7 +4521,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Belgique",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-01-19",
    "fin": "2026-01-19",
    "version": "",
@@ -4290,7 +4547,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Danemark",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4316,7 +4573,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Danemark",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4342,7 +4599,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Espagne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4368,7 +4625,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Finlande",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-05-01",
    "fin": "2026-05-01",
    "version": "",
@@ -4394,7 +4651,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Finlande",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-06-01",
    "fin": "2026-06-01",
    "version": "",
@@ -4420,7 +4677,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "France",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-04-14",
    "fin": "2026-04-14",
    "version": "",
@@ -4446,7 +4703,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Hongrie",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-06-11",
    "fin": "2026-06-11",
    "version": "",
@@ -4472,7 +4729,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4498,7 +4755,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4524,7 +4781,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-03-05",
    "fin": "2026-03-05",
    "version": "",
@@ -4550,7 +4807,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pays-Bas",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-08-15",
    "fin": "2026-08-15",
    "version": "",
@@ -4576,7 +4833,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Pologne",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-04-03",
    "fin": "2026-04-03",
    "version": "",
@@ -4602,7 +4859,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-04-03",
    "fin": "2026-04-03",
    "version": "",
@@ -4628,7 +4885,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-05-28",
    "fin": "2026-05-28",
    "version": "",
@@ -4654,7 +4911,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Portugal",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",
@@ -4680,7 +4937,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Royaume-Uni",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-04-06",
    "fin": "2026-04-06",
    "version": "",
@@ -4706,7 +4963,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Rép. Tchèque",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4732,7 +4989,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Rép. Tchèque",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4758,7 +5015,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suisse",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-01-01",
    "fin": "2026-01-01",
    "version": "",
@@ -4784,7 +5041,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-01-15",
    "fin": "2026-01-15",
    "version": "",
@@ -4810,7 +5067,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-01-15",
    "fin": "2026-01-15",
    "version": "",
@@ -4836,7 +5093,7 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Suède",
    "detecte_le": "2026-10-06",
-   "maj_le": "2026-10-20",
+   "maj_le": "2026-10-22",
    "date": "2026-09-11",
    "fin": "2026-09-11",
    "version": "",

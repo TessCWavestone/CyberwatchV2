@@ -1,5 +1,5 @@
 window.VEILLE_DEBATS = {
- "mise_a_jour": "2026-10-20T07:30+00:00",
+ "mise_a_jour": "2026-10-22T13:02+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -6717,6 +6717,189 @@ window.VEILLE_DEBATS = {
     "fr": {
      "titre": "L'ébauche du guide RASD codifie les années de pratique d'examen des systèmes de robotique chirurgicaux généraux",
      "resume": "La Food and Drug Administration (FDA) des États-Unis a publié une nouvelle ébauche de lignes directrices sur les soumissions avant la mise en marché d'appareils chirurgicaux assistés par robot. Nous voyons les conseils comme une maturation notable ..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "01e0e347144f",
+   "titre": "Shades of gray: Navigating AI regulation without a global playbook",
+   "lien": "https://www.hlc.com/en/publications/shades-of-gray-navigating-ai-regulation-without-a-global-playbook",
+   "resume": "There is no global playbook for AI regulation, and there may not even be a national one. In this episode of The Data Chronicles, we examine how approaches are diverging across the EU, the...",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_cyber": 0.553,
+   "score_bruit": 0.315,
+   "score": 0.553,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Nuances de gris: Naviguer dans la régulation IA sans playbook global",
+     "resume": "Il n'y a pas de playbook global pour la réglementation IA, et il peut même n'y en avoir pas. Dans cet épisode de The Data Chronicles, nous examinons comment les approches sont divergentes dans le..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "eecf58304bbb",
+   "titre": "The future of EU-US data transfers: The Data Privacy Framework can survive after Slaughter",
+   "lien": "https://www.hlc.com/en/publications/the-future-of-eu-us-data-transfers-the-data-privacy-framework-can-survive-after-slaughter",
+   "resume": "On 29 June 2026, the US Supreme Court held in Trump v. Slaughter that statutory protections insulating Federal Trade Commission (FTC) commissioners from at-will removal by the US President...",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_cyber": 0.525,
+   "score_bruit": 0.393,
+   "score": 0.525,
+   "themes": [
+    "donnees",
+    "data_act"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "L'avenir des transferts de données EU-US : Le Cadre de confidentialité des données peut survivre après l'abattage",
+     "resume": "Le 29 juin 2026, la Cour suprême de US a jugé dans l'affaire Trump c. Slaughter que les protections légales isolent les commissaires de la Commission fédérale du commerce (FTC) de..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "5f29903f380b",
+   "titre": "EU Cyber Resilience Act: Germany adopts CRA Implementation Act as national enforcement regimes take shape across the EU",
+   "lien": "https://www.hlc.com/en/publications/eu-cyber-resilience-act-germany-adopts-cra-implementation-act-as-national-enforcement-regimes",
+   "resume": "On 14 October 2026, the German Parliament adopted the Implementation Act for the EU Cyber Resilience Act (“CRA”), determining how the EU’s cybersecurity rules for products ...",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "score_cyber": 0.633,
+   "score_bruit": 0.386,
+   "score": 0.713,
+   "themes": [
+    "cra",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "statut": "adopte",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "UE Cyber Resilience Act: L'Allemagne adopte la loi de mise en œuvre CRA alors que les régimes nationaux d'application prennent forme à travers la UE",
+     "resume": "Le 14 octobre 2026, le Parlement allemand a adopté la loi de mise en œuvre de la loi UE sur la cyberrésilience, qui définit les règles de cybersécurité ..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "b09e968a5a16",
+   "titre": "UK Medical Device Update: Developments in AI, Proposed GB Licensing Framework and Indefinite CE Mark Recognition",
+   "lien": "https://www.insideeulifesciences.com/2026/10/21/uk-medical-device-update-developments-in-ai-and-proposed-gb-licensing-framework/",
+   "resume": "Recent weeks have proved of great interest to the UK medical device industry, with various key developments emerging. Foremost among these, on 10 September 2026, the National Commission into the Regulation of AI in Healthcare (“National Commission”) published its report on recommendations for a future regulatory framework (“Report”). The Report contains 44 recommendations, including several... Continue Reading…",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Inside EU Life Sciences (blog Covington & Burling)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux",
+    "Santé"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "score_cyber": 0.552,
+   "score_bruit": 0.517,
+   "score": 0.636,
+   "themes": [
+    "dm_div",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Mise à jour de l'instrument médical UK : développements dans IA, cadre de licence GB proposé et reconnaissance de marque CE indéterminée",
+     "resume": "Ces dernières semaines se sont révélées très intéressantes pour l'industrie des dispositifs médicaux UK, avec divers développements clés qui se font jour. En premier lieu, le 10 septembre 2026, la Commission nationale a publié son rapport sur les recommandations pour un futur cadre réglementaire ('Report'). Le rapport contient 44 recommandations, dont plusieurs... Continue Reading..."
     }
    },
    "echeances": [],

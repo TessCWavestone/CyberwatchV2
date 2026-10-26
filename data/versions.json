@@ -6874,6 +6874,42 @@
    "sources_lues": 148,
    "sources_actives": 157,
    "declenchement": "workflow_dispatch"
+  },
+  {
+   "id": "2026-10-26-1112",
+   "date": "2026-10-26T11:12+00:00",
+   "nb_total": 1894,
+   "nb_nouveaux": 22,
+   "nouveaux": [
+    "d14aa1880dae",
+    "fce32e65c7fc",
+    "85b13d06648c",
+    "2e6a178b6d85",
+    "9a90e564b411",
+    "f25f99dd226e",
+    "d8861a3d13b4",
+    "68a948e73ad7",
+    "d0949945ec20",
+    "b63b867910d9",
+    "3dad06d65041",
+    "3784fa1ba833",
+    "ac84545758cc",
+    "4a12feee644a",
+    "ncc540653e2c",
+    "n91c73070142",
+    "n48fa5b6f41d",
+    "n3610900ef0d",
+    "nccbaa76e4b8",
+    "nfbace499273",
+    "n3175d0b098d",
+    "nb4e65deb084"
+   ],
+   "rattrapage": "",
+   "nb_essentiel": 306,
+   "nb_ecartes": 691,
+   "sources_lues": 149,
+   "sources_actives": 157,
+   "declenchement": "schedule"
   }
  ]
 }

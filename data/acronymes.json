@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-22T13:02+00:00",
+ "mise_a_jour": "2026-10-26T11:12+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,7 +149,7 @@
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 178,
+   "nb_articles": 182,
    "exemple": {
     "date": "2026-10-19",
     "lien": "https://www.computing.es/seguridad/mas-ciberresiliencia-para-fortalecer-la-ia-soberana/",
@@ -164,14 +164,14 @@
    "groupe": "textes",
    "fr": "NIS2",
    "en": "NIS2",
-   "nb_articles": 89,
+   "nb_articles": 90,
    "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://www.lupa.cz/aktuality/jak-zvladnout-novy-zakon-o-kyberbezpecnosti-stat-ukazal-jak-spravne-nastavit-rizeni-rizik/?utm_source=rss&utm_medium=text&utm_campaign=rss",
-    "titre": "Jak zvládnout nový zákon o kyberbezpečnosti? Stát ukázal, jak správně nastavit řízení rizik",
-    "langue": "cs",
-    "titre_fr": "Comment gérer la nouvelle loi sur la cybersécurité? L'État a montré comment bien gérer les risques",
-    "titre_en": "How to handle the new cyber security bill? State has shown how to properly set risk management"
+    "date": "2026-10-22",
+    "lien": "https://iapp.org/news/a/securing-nis2-dora-compliance-in-the-cloud-supply-chain",
+    "titre": "Securing NIS2, DORA compliance in the cloud supply chain",
+    "langue": "en",
+    "titre_fr": "Sécuriser la conformité NIS2, DORA dans la chaîne d'approvisionnement en nuage",
+    "titre_en": ""
    }
   },
   {
@@ -179,14 +179,14 @@
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 66,
+   "nb_articles": 67,
    "exemple": {
-    "date": "2026-10-14",
-    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2274",
-    "titre": "Commission Implementing Decision (EU) 2026/2274 of 12 October 2026 on the harmonised standards for high-risk AI systems drafted in support of Regulation (EU) 2024/1689 of the European Parliament and of the Council",
-    "langue": "en",
-    "titre_fr": "Décision d'exécution (UE) 2026/2274 de la Commission du 12 octobre 2026 concernant les normes harmonisées pour les systèmes IA à haut risque élaborées à l'appui du règlement (UE) 2024/1689 du Parlement européen et du Conseil",
-    "titre_en": ""
+    "date": "2026-10-23",
+    "lien": "https://www.federprivacy.org/informazione/flash-news/in-vigore-il-dgls-179-2026-cosa-cambia-per-data-protection-officer-e-professionisti-della-privacy",
+    "titre": "In vigore il Dgls 179/2026: cosa cambia per Data Protection Officer e professionisti della privacy",
+    "langue": "it",
+    "titre_fr": "En vigueur les Dgls 179/2026: quels changements pour le délégué à la protection des données et les professionnels de la vie privée",
+    "titre_en": "In force the Dgls 179/2026: what changes for Data Protection Officer and privacy professionals"
    }
   },
   {
@@ -196,12 +196,12 @@
    "en": "GDPR",
    "nb_articles": 57,
    "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://www.federprivacy.org/informazione/garante-privacy/pec-con-gli-indirizzi-dei-destinatari-in-chiaro-il-garante-privacy-multa-la-federazione-degli-ordini-dei-biologi",
-    "titre": "PEC con gli indirizzi dei destinatari in chiaro: il Garante Privacy multa la Federazione degli Ordini dei Biologi",
-    "langue": "it",
-    "titre_fr": "PEC avec les adresses des destinataires en clair: le garant de la vie privée amende la Fédération des ordres biologistes",
-    "titre_en": "PEC with the addresses of the recipients in clear: the Privacy Guarantor fines the Federation of Biologist Orders"
+    "date": "2026-10-26",
+    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62024CA0798",
+    "titre": "Case C-798/24, Jautiva: Judgment of the Court (First Chamber) of 3 September 2026 (request for a preliminary ruling from the Satversmes tiesa – Latvia) – A and Others (Reference for a preliminary ruling – Protection of natural persons with regard to the processing of personal data – Regulation (EU) 2016/679 – Article 5 – Principles relating to processing of personal data – Article 6 – Lawfulness of processing – Company law – Directive (EU) 2017/1132 – Article 14 – Documents and particulars to be disclosed – Concept of persons who take part in the administration, supervision or control of a company – Making available to the public personal data relating to the shareholders of public limited liability companies – Minority shareholders)",
+    "langue": "en",
+    "titre_fr": "Affaire C-798/24, Jautiva: Arrêt de la Cour (première chambre) du 3 septembre 2026 (demande de décision préjudicielle de la Satversmes liesa – Lettonie) – A e.a. (demande de décision préjudicielle – Protection des personnes physiques à l'égard du traitement des données à caractère personnel – Règlement (UE) 2016/679 – Article 5 – Principes relatifs au traitement des données à caractère personnel – Article 6 – Licéité du traitement – Droit des sociétés – Directive (UE) 2017/1132 – Article 14 – Documents et indications à divulguer – Concept des personnes qui participent à l'administration, à la surveillance ou au contrôle d'une société – Mise à la disposition du public des données à caractère personnel relatives aux actionnaires des sociétés anonymes – Actionnaires minoritaires)",
+    "titre_en": ""
    }
   },
   {
@@ -269,14 +269,14 @@
    "groupe": "textes",
    "fr": "Omnibus numérique",
    "en": "Digital Omnibus",
-   "nb_articles": 8,
+   "nb_articles": 9,
    "exemple": {
-    "date": "2026-09-29",
-    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R1744R(01)",
-    "titre": "Berichtigung der Verordnung (EU) 2026/1744 des Europäischen Parlaments und des Rates vom 8. Juli 2026 zur Änderung der Verordnungen (EU) 2024/1689, (EU) 2018/1139 und (EU) 2023/1230 im Hinblick auf die Vereinfachung der Umsetzung harmonisierter Vorschriften für künstliche Intelligenz (Digital-Omnibus-Verordnung zur KI) (ABl. L, 2026/1744, 24.7.2026)",
-    "langue": "de",
-    "titre_fr": "Rectificatif au règlement (UE) 2026/1744 du Parlement européen et du Conseil du 8 juillet 2026 modifiant les règlements (UE) 2024/1689, (UE) 2018/1139 et (UE) 2023/1230 en vue de simplifier la mise en œuvre des règles harmonisées pour l'intelligence artificielle (règlement omnibus numérique relatif à IA) (JO L 2026/1744, 24.7.2026)",
-    "titre_en": "Corrigendum to Regulation (EU) 2026/1744 of the European Parliament and of the Council of 8. July 2026 amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 with a view to simplifying the implementation of harmonised rules for artificial intelligence (Digital Omnibus Regulation relating to AI) (OJ L, 2026/1744, 24.7.2026)"
+    "date": "2026-10-22",
+    "lien": "https://iapp.org/news/a/eu-member-states-finalize-digital-omnibus-negotiating-stance",
+    "titre": "EU member states finalize negotiating stance on Digital Omnibus",
+    "langue": "en",
+    "titre_fr": "Les Etats membres de UE finalisent leur position de négociation sur l'omnibus numérique",
+    "titre_en": ""
    }
   },
   {
@@ -355,6 +355,21 @@
    }
   },
   {
+   "code": "DORA",
+   "groupe": "textes",
+   "fr": "DORA (résilience opérationnelle numérique)",
+   "en": "DORA (digital operational resilience)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-22",
+    "lien": "https://iapp.org/news/a/securing-nis2-dora-compliance-in-the-cloud-supply-chain",
+    "titre": "Securing NIS2, DORA compliance in the cloud supply chain",
+    "langue": "en",
+    "titre_fr": "Sécuriser la conformité NIS2, DORA dans la chaîne d'approvisionnement en nuage",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "NIST",
    "groupe": "textes",
    "fr": "NIST (CSF, SP 800)",
@@ -382,21 +397,6 @@
     "langue": "en",
     "titre_fr": "MHRA conseille la quarantaine des dispositifs médicaux fournis sans marquage de conformité approprié",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "DORA",
-   "groupe": "textes",
-   "fr": "DORA (résilience opérationnelle numérique)",
-   "en": "DORA (digital operational resilience)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-08-27",
-    "lien": "https://cnb.avocat.fr/actualite/cybersecurite-et-resilience-etat-des-lieux-de-la-transposition-des-directives-europeennes-nis2-et-rec-et-de-l-adaptation-du-droit-francais-au-reglement-dora",
-    "titre": "Loi résilience (NIS2, REC, DORA) : toujours en attente d'examen en séance à l'Assemblée nationale",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "French resilience bill (NIS2, CER, DORA) still awaiting a floor debate in the National Assembly"
    }
   },
   {
@@ -646,12 +646,12 @@
    "en": "NCSC (UK, NL, CH…)",
    "nb_articles": 64,
    "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://www.ncsc.nl/alerts/ernstige-kwetsbaarheden-in-php-bereid-je-voor-op-patchen",
-    "titre": "Ernstige kwetsbaarheden in PHP: bereid je voor op patchen",
-    "langue": "nl",
-    "titre_fr": "Graves vulnérabilités dans PHP : Préparez-vous à patcher",
-    "titre_en": "Severe vulnerabilities in PHP: Prepare to patch"
+    "date": "2026-10-22",
+    "lien": "https://www.bacs.admin.ch/fr/26-kmustudie-fr",
+    "titre": "««PME Cybersécurité 2026»: La cybercriminalité devient un risque commercial pour les PME suisses»",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "‘PME Cybersecurity 2026': Cybercrime becomes a commercial risk for Swiss PME'"
    }
   },
   {
@@ -674,7 +674,7 @@
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 48,
+   "nb_articles": 42,
    "exemple": {
     "date": "2026-10-02",
     "lien": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
@@ -719,7 +719,7 @@
    "groupe": "autorites",
    "fr": "INCIBE",
    "en": "INCIBE",
-   "nb_articles": 23,
+   "nb_articles": 22,
    "exemple": {
     "date": "2026-09-24",
     "lien": "https://www.incibe.es/incibe-cert/blog/supercomputacion-y-computacion-cuantica-en-ciberseguridad",
@@ -745,6 +745,21 @@
    }
   },
   {
+   "code": "NKI",
+   "groupe": "autorites",
+   "fr": "NKI (Hongrie)",
+   "en": "NKI (Hungary)",
+   "nb_articles": 21,
+   "exemple": {
+    "date": "2026-10-16",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/kihasznalt-serulekenysegektol-a-reklamokon-at-terjesztett-kemprogramokig/",
+    "titre": "Kihasznált sérülékenységektől a reklámokon át terjesztett kémprogramokig",
+    "langue": "hu",
+    "titre_fr": "De vulnérabilité utilisée aux programmes espions transmis par la publicité",
+    "titre_en": "From used vulnerability to spy programs transmitted through advertising"
+   }
+  },
+  {
    "code": "ENISA",
    "groupe": "autorites",
    "fr": "ENISA",
@@ -757,36 +772,6 @@
     "langue": "en",
     "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "NKI",
-   "groupe": "autorites",
-   "fr": "NKI (Hongrie)",
-   "en": "NKI (Hungary)",
-   "nb_articles": 20,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
-    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
-    "langue": "hu",
-    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
-    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
-   }
-  },
-  {
-   "code": "SZTFH",
-   "groupe": "autorites",
-   "fr": "SZTFH (Hongrie)",
-   "en": "SZTFH (Hungary)",
-   "nb_articles": 17,
-   "exemple": {
-    "date": "2026-10-19",
-    "lien": "https://sztfh.hu/reszletes-eredmenyek-a-kiberbiztonsagi-auditjelentesekrol/",
-    "titre": "Részletes eredmények a kiberbiztonsági auditjelentésekről",
-    "langue": "hu",
-    "titre_fr": "Résultats détaillés des rapports d'audit sur la cybersécurité",
-    "titre_en": "Detailed results on cybersecurity audit reports"
    }
   },
   {
@@ -805,18 +790,18 @@
    }
   },
   {
-   "code": "ANSSI",
+   "code": "SZTFH",
    "groupe": "autorites",
-   "fr": "ANSSI",
-   "en": "ANSSI",
+   "fr": "SZTFH (Hongrie)",
+   "en": "SZTFH (Hungary)",
    "nb_articles": 12,
    "exemple": {
-    "date": "2026-10-12",
-    "lien": "http://cyber.sites.beta.gouv.fr/actualites/ecsc-2026-la-team-france-a-bochum/",
-    "titre": "ECSC 2026 : la Team France à Bochum",
-    "langue": "en",
-    "titre_fr": "ECSC 2026 : la Team France à Bochum",
-    "titre_en": ""
+    "date": "2026-09-24",
+    "lien": "https://sztfh.hu/technologia-es-tudatossag-uj-szintre-lepett-a-hazai-kiberbiztonsagi-egyuttmukodes/",
+    "titre": "Technológia és tudatosság: Új szintre lépett a hazai kiberbiztonsági együttműködés",
+    "langue": "hu",
+    "titre_fr": "Technologie et sensibilisation: Nouveau niveau de coopération en matière de cybersécurité au niveau national",
+    "titre_en": "Technology and awareness: New level of domestic cybersecurity cooperation"
    }
   },
   {
@@ -835,18 +820,33 @@
    }
   },
   {
-   "code": "Traficom",
+   "code": "ANSSI",
    "groupe": "autorites",
-   "fr": "Traficom (Finlande)",
-   "en": "Traficom (Finland)",
+   "fr": "ANSSI",
+   "en": "ANSSI",
    "nb_articles": 11,
    "exemple": {
-    "date": "2026-09-04",
-    "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/kyberturvallisuuskeskuksen-viikkokatsaus-362026?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
-    "titre": "Kyberturvallisuuskeskuksen viikkokatsaus - 36/2026",
-    "langue": "fi",
-    "titre_fr": "Revue hebdomadaire du Centre de cybersécurité - 36 / 2026",
-    "titre_en": "Cybersecurity Centre weekly review - 36 / 2026"
+    "date": "2026-10-12",
+    "lien": "http://cyber.sites.beta.gouv.fr/actualites/ecsc-2026-la-team-france-a-bochum/",
+    "titre": "ECSC 2026 : la Team France à Bochum",
+    "langue": "en",
+    "titre_fr": "ECSC 2026 : la Team France à Bochum",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "CNPD",
+   "groupe": "autorites",
+   "fr": "CNPD (Portugal / Luxembourg)",
+   "en": "CNPD (Portugal / Luxembourg)",
+   "nb_articles": 10,
+   "exemple": {
+    "date": "2026-10-13",
+    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-participa-em-workshop-europeu-sobre-avaliacao-de-impacto-de-sistemas-de-inteligencia-artificial/",
+    "titre": "13/10/2026 CNPD participa em workshop europeu sobre avaliação de impacto de sistemas de Inteligência Artificial A iniciativa decorreu de 24 a 26 de setembro de 2026, na Croácia.",
+    "langue": "pt",
+    "titre_fr": "13/10/2026 CNPD participe à un atelier européen sur l'analyse d'impact des systèmes d'intelligence artificielle Cette initiative a eu lieu du 24 au 26 septembre 2026 en Croatie.",
+    "titre_en": "13/10/2026 CNPD participates in European workshop on impact assessment of Artificial Intelligence systems The initiative took place from 24 to 26 September 2026 in Croatia."
    }
   },
   {
@@ -854,7 +854,7 @@
    "groupe": "autorites",
    "fr": "BSI (Allemagne)",
    "en": "BSI (Germany)",
-   "nb_articles": 10,
+   "nb_articles": 9,
    "exemple": {
     "date": "2026-09-25",
     "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CRA-Konformitaet_BSI_DAkkS_260925.html",
@@ -869,7 +869,7 @@
    "groupe": "autorites",
    "fr": "CNCS (Portugal)",
    "en": "CNCS (Portugal)",
-   "nb_articles": 10,
+   "nb_articles": 9,
    "exemple": {
     "date": "2026-10-08",
     "lien": "https://dyn.cncs.gov.pt/pt/detalhe/art/136098/equipa-do-cybersecurity-challenge-pt-representa-portugal-em-competicao-europeia",
@@ -877,21 +877,6 @@
     "langue": "pt",
     "titre_fr": "Cybersecurity Challenge L'équipe PT représente le Portugal dans la compétition européenne",
     "titre_en": "Cybersecurity Challenge PT team represents Portugal in European competition"
-   }
-  },
-  {
-   "code": "CNPD",
-   "groupe": "autorites",
-   "fr": "CNPD (Portugal / Luxembourg)",
-   "en": "CNPD (Portugal / Luxembourg)",
-   "nb_articles": 9,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-participa-em-workshop-europeu-sobre-avaliacao-de-impacto-de-sistemas-de-inteligencia-artificial/",
-    "titre": "13/10/2026 CNPD participa em workshop europeu sobre avaliação de impacto de sistemas de Inteligência Artificial A iniciativa decorreu de 24 a 26 de setembro de 2026, na Croácia.",
-    "langue": "pt",
-    "titre_fr": "13/10/2026 CNPD participe à un atelier européen sur l'analyse d'impact des systèmes d'intelligence artificielle Cette initiative a eu lieu du 24 au 26 septembre 2026 en Croatie.",
-    "titre_en": "13/10/2026 CNPD participates in European workshop on impact assessment of Artificial Intelligence systems The initiative took place from 24 to 26 September 2026 in Croatia."
    }
   },
   {
@@ -907,6 +892,21 @@
     "langue": "sv",
     "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
     "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
+   }
+  },
+  {
+   "code": "Traficom",
+   "groupe": "autorites",
+   "fr": "Traficom (Finlande)",
+   "en": "Traficom (Finland)",
+   "nb_articles": 9,
+   "exemple": {
+    "date": "2026-08-26",
+    "lien": "https://www.kyberturvallisuuskeskus.fi/fi/uutiset/valmistaja-varaudu-ennalta-kyberkestavyyssaadoksen-mukaiseen-haavoittuvuuksien-ja-poikkeamien-ilmoittamiseen?mtm_campaign=rss&mtm_source=rss&mtm_medium=rss",
+    "titre": "Valmistaja - varaudu ennalta kyberkestävyyssäädöksen mukaiseen haavoittuvuuksien ja poikkeamien ilmoittamiseen",
+    "langue": "fi",
+    "titre_fr": "Fabricant - Prévoir les rapports de vulnérabilité et d'occurrence conformément à la Cyber Sustainability Act",
+    "titre_en": "Manufacturer - anticipate vulnerability and occurrence reporting in accordance with the Cyber Sustainability Act"
    }
   },
   {
@@ -1090,6 +1090,21 @@
    }
   },
   {
+   "code": "Swissmedic",
+   "groupe": "autorites",
+   "fr": "Swissmedic",
+   "en": "Swissmedic",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
+    "titre": "Revision of the Guidance document Authorisation Biosimilar",
+    "langue": "en",
+    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "ECCC",
    "groupe": "autorites",
    "fr": "ECCC (centre de compétences cyber UE)",
@@ -1131,21 +1146,6 @@
     "titre": "Instructions for use of medical devices must be available to the user and easy to understand",
     "langue": "en",
     "titre_fr": "Les instructions d'utilisation des instruments médicaux doivent être à la disposition de l'utilisateur et faciles à comprendre",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "Swissmedic",
-   "groupe": "autorites",
-   "fr": "Swissmedic",
-   "en": "Swissmedic",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
-    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
-    "langue": "en",
-    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
     "titre_en": ""
    }
   },
@@ -1360,6 +1360,21 @@
    }
   },
   {
+   "code": "BfArM",
+   "groupe": "autorites",
+   "fr": "BfArM",
+   "en": "BfArM",
+   "nb_articles": 1,
+   "exemple": {
+    "date": "2026-06-25",
+    "lien": "https://www.bfarm.de/SharedDocs/Pressemitteilungen/DE/2026/pm06-2026.html",
+    "titre": "25.000 Datensätze für die Genommedizin der Zukunft: Modellvorhaben zur Genomsequenzierung erreicht wichtigen Meilenstein",
+    "langue": "de",
+    "titre_fr": "25 000 ensembles de données pour la médecine du génome futur: le projet de modèle pour le séquençage du génome atteint une étape importante",
+    "titre_en": "25,000 data sets for future genome medicine: Model project for genome sequencing reaches important milestone"
+   }
+  },
+  {
    "code": "AEMPS",
    "groupe": "autorites",
    "fr": "AEMPS",
@@ -1491,18 +1506,6 @@
    }
   },
   {
-   "code": "SANS",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
-    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
-    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
-    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
-    "langue": "hu"
-   }
-  },
-  {
    "code": "SECURE",
    "nb_articles": 4,
    "exemple": {
@@ -1510,6 +1513,18 @@
     "lien": "https://ccb.belgium.be/news/secure-2nd-open-call-launched-1-october-offering-support-smes-preparing-cyber-resilience-act",
     "titre": "The SECURE 2nd Open Call launched on 1 October, offering support to SMEs in preparing for the Cyber Resilience Act",
     "titre_fr": "Le 2ème appel ouvert SECURE a été lancé le 1er octobre, offrant un soutien aux PME dans la préparation de la Cyber Resilience Act",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
+   "code": "EMA",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
+    "titre": "Revision of the Guidance document Authorisation Biosimilar",
+    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
     "titre_en": "",
     "langue": "en"
    }
@@ -1524,6 +1539,18 @@
     "titre_fr": "Plus de 460 millions de dollars ont été infligés à Google pour la gestion des données de localisation",
     "titre_en": "More than $460 million has been fined to Google for managing location data",
     "langue": "hu"
+   }
+  },
+  {
+   "code": "PME",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-22",
+    "lien": "https://www.bacs.admin.ch/fr/26-kmustudie-fr",
+    "titre": "««PME Cybersécurité 2026»: La cybercriminalité devient un risque commercial pour les PME suisses»",
+    "titre_fr": "",
+    "titre_en": "‘PME Cybersecurity 2026': Cybercrime becomes a commercial risk for Swiss PME'",
+    "langue": "fr"
    }
   },
   {
@@ -1563,6 +1590,18 @@
    }
   },
   {
+   "code": "SANS",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-07",
+    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
+    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
+    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
+    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
+    "langue": "hu"
+   }
+  },
+  {
    "code": "OUCH",
    "nb_articles": 3,
    "exemple": {
@@ -1584,18 +1623,6 @@
     "titre_fr": "",
     "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»",
     "langue": "fr"
-   }
-  },
-  {
-   "code": "EMA",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
-    "titre": "Adaptations required for issuing establishment licences and GMP certificates for manufacturers of active substances",
-    "titre_fr": "Adaptations requises pour la délivrance des licences d'établissement et des certificats GMP pour les fabricants de substances actives",
-    "titre_en": "",
-    "langue": "en"
    }
   },
   {

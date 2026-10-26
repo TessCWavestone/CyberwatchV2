@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-22T13:02+00:00",
+ "mise_a_jour": "2026-10-26T11:12+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -31,7 +31,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -92,13 +92,13 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CRA",
     "ENISA"
    ],
-   "score_bruit": 0.417,
+   "score_bruit": 0.525,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -155,7 +155,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -212,7 +212,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -262,7 +262,7 @@
     "cra",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.352,
@@ -307,7 +307,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.389,
@@ -349,7 +349,7 @@
     "ia",
     "pharma_industrie"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.396,
@@ -394,7 +394,7 @@
     "sante_donnees",
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.371,
@@ -435,7 +435,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CADA"
@@ -489,7 +489,7 @@
     "dm_div",
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "MHRA",
@@ -538,10 +538,10 @@
     "cra",
     "nis2"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
-   "score_bruit": 0.481,
+   "score_bruit": 0.505,
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
@@ -584,7 +584,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -639,12 +639,12 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CRA"
    ],
-   "score_bruit": 0.383,
+   "score_bruit": 0.459,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -691,7 +691,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -745,7 +745,7 @@
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -798,7 +798,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [
     {
      "date": "2027-12-01",
@@ -869,7 +869,7 @@
     "data_act",
     "nis2"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "NIS2"
@@ -920,7 +920,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -975,13 +975,13 @@
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.6,
+   "score": 0.614,
    "pertinence": "elevee",
    "themes": [
-    "donnees",
-    "ia"
+    "retours_importants",
+    "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -1005,7 +1005,7 @@
     "GDPR",
     "EDPB"
    ],
-   "score_cyber": 0.52
+   "score_cyber": 0.534
   },
   {
    "id": "dffa9b49e601",
@@ -1032,7 +1032,7 @@
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.318,
@@ -1075,7 +1075,7 @@
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.47,
@@ -1118,7 +1118,7 @@
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.382,
@@ -1166,7 +1166,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -1220,7 +1220,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.357,
@@ -1260,7 +1260,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1311,7 +1311,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1366,7 +1366,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -1418,7 +1418,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -1478,7 +1478,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "EHDS"
@@ -1532,7 +1532,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -1580,7 +1580,7 @@
     "donnees",
     "large"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.484,
@@ -1623,7 +1623,7 @@
     "large",
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.393,
@@ -1669,7 +1669,7 @@
     "cra",
     "large"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.415,
@@ -1711,7 +1711,7 @@
     "data_act",
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CADA"
@@ -1759,7 +1759,7 @@
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -1806,7 +1806,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -1856,7 +1856,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -1910,7 +1910,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [
     {
      "date": "2026-09-11",
@@ -1924,7 +1924,7 @@
    "acronymes": [
     "CRA"
    ],
-   "score_bruit": 0.497,
+   "score_bruit": 0.535,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -1977,12 +1977,12 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
    ],
-   "score_bruit": 0.358,
+   "score_bruit": 0.362,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -2032,13 +2032,13 @@
     "nis2",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act",
     "ENISA"
    ],
-   "score_bruit": 0.474,
+   "score_bruit": 0.55,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -2087,7 +2087,7 @@
     "cra",
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -2142,7 +2142,7 @@
     "sante_donnees",
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -2192,7 +2192,7 @@
     "donnees",
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -2247,7 +2247,7 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
@@ -2298,7 +2298,7 @@
     "cra",
     "large"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -2343,13 +2343,13 @@
    ],
    "amende": null,
    "langue": "en",
-   "score": 0.521,
+   "score": 0.525,
    "pertinence": "elevee",
    "themes": [
-    "sante_donnees",
-    "donnees"
+    "retours_importants",
+    "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -2371,7 +2371,7 @@
    "sujets": [
     "EDPB"
    ],
-   "score_cyber": 0.491
+   "score_cyber": 0.495
   },
   {
    "id": "a1f0bde72bab",
@@ -2403,7 +2403,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2458,7 +2458,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2506,7 +2506,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.374,
@@ -2552,12 +2552,12 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
    ],
-   "score_bruit": 0.312,
+   "score_bruit": 0.323,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -2607,7 +2607,7 @@
     "donnees",
     "nis2"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -2652,7 +2652,7 @@
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.307,
@@ -2701,7 +2701,7 @@
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -2758,7 +2758,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2813,12 +2813,12 @@
     "nis2",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
    ],
-   "score_bruit": 0.298,
+   "score_bruit": 0.353,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -2866,7 +2866,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -2914,7 +2914,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.302,
@@ -2960,7 +2960,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Data Act"
@@ -3015,7 +3015,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "EHDS"
@@ -3070,7 +3070,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3127,7 +3127,7 @@
     "ia",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -3182,7 +3182,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -3237,7 +3237,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -3294,7 +3294,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -3346,7 +3346,7 @@
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.457,
@@ -3387,12 +3387,12 @@
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR"
    ],
-   "score_bruit": 0.335,
+   "score_bruit": 0.378,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -3435,7 +3435,7 @@
     "large",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.297,
@@ -3476,7 +3476,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -3532,7 +3532,7 @@
     "ia",
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3586,7 +3586,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.455,
@@ -3628,7 +3628,7 @@
     "cra",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -3681,7 +3681,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -3733,12 +3733,12 @@
    "themes": [
     "nis2"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Cybersecurity Act"
    ],
-   "score_bruit": 0.405,
+   "score_bruit": 0.503,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -3784,7 +3784,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.431,
@@ -3834,7 +3834,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -3889,12 +3889,12 @@
     "fournisseurs_publics",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Data Act"
    ],
-   "score_bruit": 0.405,
+   "score_bruit": 0.441,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -3936,7 +3936,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -3986,7 +3986,7 @@
     "ia",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CNIL"
@@ -4036,7 +4036,7 @@
     "dm_div",
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -4094,7 +4094,7 @@
     "donnees",
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
@@ -4153,7 +4153,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4208,7 +4208,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -4262,7 +4262,7 @@
     "cra",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -4311,7 +4311,7 @@
     "donnees",
     "large"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.405,
@@ -4357,12 +4357,12 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
    ],
-   "score_bruit": 0.341,
+   "score_bruit": 0.361,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -4408,7 +4408,7 @@
     "acheteurs_sante",
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.455,
@@ -4458,7 +4458,7 @@
     "dm_div",
     "fournisseurs_publics"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -4513,7 +4513,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -4564,7 +4564,7 @@
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.463,
@@ -4607,7 +4607,7 @@
     "large",
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.397,
@@ -4653,12 +4653,12 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
    ],
-   "score_bruit": 0.34,
+   "score_bruit": 0.376,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -4699,7 +4699,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "PLD"
@@ -4754,7 +4754,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4805,7 +4805,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -4854,7 +4854,7 @@
     "cra",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.456,
@@ -4900,12 +4900,12 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
    ],
-   "score_bruit": 0.324,
+   "score_bruit": 0.333,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -4955,7 +4955,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -5007,7 +5007,7 @@
     "acheteurs_sante",
     "large"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.386,
@@ -5054,7 +5054,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
@@ -5100,7 +5100,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -5148,7 +5148,7 @@
     "ia",
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.405,
@@ -5189,10 +5189,10 @@
     "ia",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
-   "score_bruit": 0.409,
+   "score_bruit": 0.436,
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
@@ -5236,7 +5236,7 @@
     "sante_donnees",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.49,
@@ -5283,12 +5283,12 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
    ],
-   "score_bruit": 0.332,
+   "score_bruit": 0.438,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -5337,12 +5337,12 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CRA"
    ],
-   "score_bruit": 0.403,
+   "score_bruit": 0.484,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -5391,12 +5391,12 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act"
    ],
-   "score_bruit": 0.355,
+   "score_bruit": 0.414,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -5441,7 +5441,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.433,
@@ -5483,10 +5483,10 @@
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
-   "score_bruit": 0.455,
+   "score_bruit": 0.46,
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
@@ -5529,7 +5529,7 @@
     "fournisseurs_publics",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.432,
@@ -5571,7 +5571,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.394,
@@ -5619,13 +5619,13 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
     "GDPR"
    ],
-   "score_bruit": 0.362,
+   "score_bruit": 0.414,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -5673,7 +5673,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "MHRA"
@@ -5723,7 +5723,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "MHRA"
@@ -5775,7 +5775,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR",
@@ -5832,13 +5832,13 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "AI Act",
     "Digital Omnibus"
    ],
-   "score_bruit": 0.478,
+   "score_bruit": 0.48,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -5884,7 +5884,7 @@
     "acheteurs_sante",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "Digital Omnibus"
@@ -5932,7 +5932,7 @@
    "themes": [
     "large"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.447,
@@ -5973,7 +5973,7 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.394,
@@ -6014,7 +6014,7 @@
     "data_act",
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -6066,7 +6066,7 @@
    "themes": [
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR",
@@ -6122,7 +6122,7 @@
     "acheteurs_sante",
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.425,
@@ -6167,7 +6167,7 @@
     "sante_donnees",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "DiGA"
@@ -6219,7 +6219,7 @@
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "GDPR"
@@ -6265,7 +6265,7 @@
    "themes": [
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IGJ"
@@ -6312,7 +6312,7 @@
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [],
    "score_bruit": 0.395,
@@ -6352,7 +6352,7 @@
    "themes": [
     "donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "EDPB"
@@ -6406,12 +6406,12 @@
    "themes": [
     "cra"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "CRA"
    ],
-   "score_bruit": 0.433,
+   "score_bruit": 0.457,
    "essentiel": false,
    "a_verifier": true,
    "textes_cles": [
@@ -6458,7 +6458,7 @@
     "sante_donnees",
     "dm_div"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "echeances": [],
    "acronymes": [
     "IVDR"
@@ -6509,7 +6509,7 @@
     "large",
     "nis2"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": false,
@@ -6567,7 +6567,7 @@
    "themes": [
     "sante_donnees"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": true,
@@ -6617,7 +6617,7 @@
     "data_act",
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": true,
@@ -6659,12 +6659,12 @@
    "groupes": [],
    "amende": null,
    "filtre_pertinence": true,
-   "score_bruit": 0.374,
+   "score_bruit": 0.41,
    "score": 0.547,
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "moyenne",
    "essentiel": false,
    "a_verifier": false,
@@ -6705,7 +6705,7 @@
    "themes": [
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "moyenne",
    "essentiel": false,
    "a_verifier": false,
@@ -6741,12 +6741,12 @@
    "groupes": [],
    "amende": null,
    "score_cyber": 0.553,
-   "score_bruit": 0.315,
+   "score_bruit": 0.536,
    "score": 0.553,
    "themes": [
     "ia"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": false,
@@ -6787,7 +6787,7 @@
     "donnees",
     "data_act"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "moyenne",
    "essentiel": false,
    "a_verifier": false,
@@ -6829,13 +6829,13 @@
    ],
    "amende": null,
    "score_cyber": 0.633,
-   "score_bruit": 0.386,
+   "score_bruit": 0.41,
    "score": 0.713,
    "themes": [
     "cra",
     "infra_critiques"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": true,
@@ -6889,7 +6889,7 @@
     "dm_div",
     "acheteurs_sante"
    ],
-   "pertinence_v": "v4-f0c4959077modele",
+   "pertinence_v": "v4-62329d164bmodele",
    "pertinence": "elevee",
    "essentiel": false,
    "a_verifier": false,
@@ -6905,6 +6905,101 @@
    "echeances": [],
    "sujets": [],
    "acronymes": []
+  },
+  {
+   "id": "243cc05df940",
+   "titre": "Insights and Analysis The EU AI Act and UK AI regulation: A product law perspective 19 October 2026",
+   "lien": "https://www.hlc.com/en/publications/the-eu-ai-act-and-uk-ai-regulation-a-product-law-perspective",
+   "resume": "",
+   "date": "2026-10-19",
+   "date_estimee": false,
+   "detecte_le": "2026-10-26",
+   "version": "2026-10-26-1112",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "score_cyber": 0.715,
+   "score_bruit": 0.511,
+   "score": 0.795,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : AI Act",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Insights and Analysis The UE IA Act and UK IA regulation: A product law perspective 19 octobre 2026",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "bba5b8a62111",
+   "titre": "FDA emphasizes totality-of-the-evidence approach in revised “substantial evidence” draft guidance for drugs, biologics",
+   "lien": "https://www.hlc.com/en/publications/fda-emphasizes-totalityoftheevidence-approach-in-revised-substantial-evidence-draft-guidance",
+   "resume": "In January 2026, (now former) U.S. Food and Drug Administration (FDA) leaders described a “single trial default” approach in a New England Journal of Medicine (NEJM) article, and in the...",
+   "date": "2026-07-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.519,
+   "pertinence": "moyenne",
+   "themes": [
+    "dm_div",
+    "retours_importants"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.364,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "FDA met l'accent sur l'approche de la totalité de la preuve dans la version révisée des preuves substantielles.",
+     "resume": "En janvier 2026, (aujourd'hui ancien) les dirigeants de l'U.S. Food and Drug Administration (FDA) ont décrit une approche d'essai unique dans un article de New England Journal of Medicine (NEJM), et dans..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.466,
+   "titre_nettoye": 3
   }
  ]
 }

@@ -17,7 +17,7 @@ import json
 import os
 import time
 
-VERSION = "t3"
+VERSION = "t4"
 
 PAYS = ("Union européenne (textes européens), Allemagne, Autriche, Belgique, Bulgarie, Danemark, Espagne, "
         "Finlande, France, Grèce, Hongrie, Irlande, Italie, Luxembourg, Norvège, Pays-Bas, Pologne, Portugal, "
@@ -56,7 +56,8 @@ Analyse l'article en répondant à CINQ questions. Le classement final est calcu
   échéances ou son évolution (même s'il ne fait que rappeler une obligation).
 - alerte_vulnerabilite : vulnérabilité, correctif, mise à jour de sécurité, CVE.
 - attaque_incident : attaque, fuite, menace, logiciel malveillant, incident, procès suite à un incident.
-- entreprise_produit : actualité d'une entreprise, produit, offre, partenariat, investissement, nomination.
+- entreprise_produit : actualité d'une entreprise, produit, offre, partenariat, investissement, nomination, Y COMPRIS
+  une entreprise qui annonce sa propre mise en conformité ou une offre d'accompagnement à un texte.
 - evenement : événement, webinaire, conférence, formation, réunion.
 - etude_enquete : rapport, étude, enquête, sondage, statistiques.
 - financement : subvention, appel à projets, appel d'offres, programme de financement.
@@ -136,6 +137,11 @@ MOTIFS = {
     "hors_sujet": "hors du sujet suivi",
     "non_applicable": "ne vise pas l'entreprise",
     "incertain": "applicabilité incertaine",
+    "pme": "vise les PME (hors périmètre)",
+    "public_seul": "vise seulement les administrations publiques",
+    "preparation": "travaux préparatoires (projet de texte en cours)",
+    "consultation_droit_souple": "consultation sur un projet de guide ou de lignes directrices",
+    "guide_sans_texte": "guide ou commentaire sans texte suivi",
 }
 LIBELLES = {k: "IA : " + v for k, v in MOTIFS.items()}
 
@@ -149,23 +155,129 @@ SCHEMA = {"type": "object", "properties": {
     "required": ["raison", "type", "sujet", "applicable", "secteur_vise", "exclusion"]}
 
 
-def decider(d):
-    """Classement calculé (et non choisi par l'IA) à partir de ses réponses : (avis, motif)."""
-    if d["exclusion"] != "aucune":
-        return "pas_pertinent", d["exclusion"]
+# textes suivis qui sont par nature des réglementations cyber / données / IA : s'ils sont cités dans un article
+# officiel ou un commentaire, le sujet est cyber (test du 16/10 : l'IA répondait « sujet non » sur des articles du CRA)
+TEXTES_CYBER = {"NIS2", "CRA", "AI Act", "RGPD / GDPR", "Data Act", "CER (entités critiques)",
+                "Cybersecurity Act / certification UE", "Cloud and AI Development Act (CADA)",
+                "eIDAS 2 / portefeuille européen d'identité", "RED (équipements radio) / EN 18031",
+                "IEC 81001-5-1 / IEC 62443", "ISO/IEC 27001 et normes ISO", "EHDS", "ENS / CPSTIC (Espagne)",
+                "HDS / SecNumCloud / PGSSI-S (France)", "C5 / B3S / KHZG (Allemagne)", "NEN 7510 (Pays-Bas)",
+                "DTAC / DSPT / Cyber Essentials (NHS)"}
+
+
+# --------------------------------------------------------------------------- décision v8 (retours du 20/10 et du 26/10)
+# Regex appliquées au TITRE (original + traductions), sans accents. Elles ne changent pas les questions posées à
+# l'IA : ses réponses déjà enregistrées sont réutilisées, la décision est recalculée à chaque collecte.
+import re as _re
+
+# D1 : texte qui ne vise que les administrations publiques ou désigne un organisme (« Le NCSC reste le CSIRT des
+# municipalités ») : pas une obligation pour une entreprise
+PUBLIC_SEUL = _re.compile(
+    r"\b(municipalit\w*|collectivites( territoriales| locales)?|gemeenten|gemeente|kommuner(na)?|kommunerne|"
+    r"kunnat|kuntien|gemeinden|kommunen|ayuntamientos|municipios|comuni\b|samorzad\w*|onkormanyzat\w*|obce\b|"
+    r"administrations? publiques?|public (sector|administration|bodies|authorities)|secteur public|offentlig(a)? (sektor|myndigheter|forvaltning)|"
+    r"offentlige myndighed\w*|offentliga myndighet\w*|overheidsorganisaties|bundesverwaltung|offentliche verwaltung|pubblica amministrazione|"
+    r"administracion publica|administracao publica|administracja publiczna|ministeres)\b", _re.I)
+DESIGNATION = _re.compile(
+    # (les désignations d'autorités de surveillance du marché CRA / AI Act restent pertinentes : elles décident
+    # qui contrôle l'entreprise)
+    r"\b(blijft|remains?|reste|demeure|bleibt|sigue siendo|resta|forblir|pysyy)\b.{0,40}\b(csirt|cert)\b", _re.I)
+ENTREPRISES = _re.compile(r"entreprise|compan|business|bedrijf|unternehm|empresa|impres|operat\w*|fabricant|manufactur|"
+                          r"hersteller|fabrikant|entit(y|ies|e)s? (essenti|important)|essential|important entities", _re.I)
+
+# D2 : travaux préparatoires de mise en œuvre, sans obligation nouvelle (« La Suède prépare la mise en œuvre de l'EHDS »)
+PREPARATION = _re.compile(
+    r"\bprepar(e|es|ent|ing|ation|ations)\b|chargees? de preparer|forbereder|forberedelse|vorbereit\w*|preparan?\b|"
+    r"preparacion|preparazione|valmistel\w*|voorbereid\w*|voorbereiding|uppdrag att|regeringsuppdrag|utredning|"
+    r"(state of|etat de la) (play|transposition)", _re.I)
+
+# C : consultation sur un PROJET de lignes directrices, guide, avis (droit souple) : rien à appliquer encore
+DROIT_SOUPLE = _re.compile(r"guideline|guidance|lignes directrices|recommandation|recommendation|\bguide\b|\bfaq\b|"
+                           r"opinion|avis\b|leitlinie|leitfaden|richtsnoer|orientaciones|linee guida|wytyczn|iranymutat", _re.I)
+LOI = _re.compile(r"\b(law|act|bill|regulation|directive|decree|loi|reglement|decret|ordonnance|arrete|gesetz\w*|"
+                  r"verordnung|wet|wetsvoorstel|ley|real decreto|legge|decreto|ustaw\w*|zakon\w*|torveny\w*|lag|lov|laki)\b", _re.I)
+
+# PME : article qui ne vise que les PME (étude, guide, aide) : hors périmètre pour un grand groupe industriel
+PME = _re.compile(r"\b(pme|pmi|tpe|kmu|kmus|smes?|mkb|pymes?|msp|kkv|mittelstand)\b|small (and medium[- ]sized |and medium |business|businesses|firms|companies)|"
+                  r"petites et moyennes entreprises|kleine(n)? und mittlere(n)? unternehmen|piccole e medie imprese|"
+                  r"pequenas y medianas empresas|male i srednie przedsiebiorstwa|midden- en kleinbedrijf", _re.I)
+
+
+def _sa(s):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", s or "") if unicodedata.category(c) != "Mn")
+
+
+def titres(a):
+    """Titre original + titres traduits, sans accents (les règles de décision v8 ne lisent que le titre)."""
+    t = [a.get("titre", "")] + [(x or {}).get("titre", "") for x in (a.get("trad") or {}).values()]
+    # certains flux collent au titre la signature et les rubriques du site (« … Av Viktor Eriksson 22 sep. 2026
+    # 1 min Offentlig sektor … ») : on s'arrête à la signature
+    t = [_TEMPS_LECTURE.split(_SIGNATURE.split(x)[0])[0] for x in t if x]
+    return _sa(" \n ".join(x for x in t if x))
+
+
+_TEMPS_LECTURE = _re.compile(r"\s\d{1,2} min\b")
+_SIGNATURE = _re.compile(r"\s(?:[Aa]v|[Bb]y|[Pp]ar|[Vv]on|[Dd]oor|[Pp]or|[Dd]i|[Oo]f)\s+[A-ZÅÄÖÉ][\w-]+\s+[A-ZÅÄÖÉ][\w-]+\s+\d")
+
+
+def decider(d, textes_cles=(), titre=""):
+    """Classement calculé (et non choisi par l'IA) à partir de ses réponses : (avis, motif).
+    Test du 16/10 : l'IA remplissait souvent « exclusion » même pour des articles pertinents (sanctions sur des
+    données de santé, CRA…) ; l'exclusion ne compte donc que si le sujet ou l'applicabilité est déjà douteux.
+    v8 (retours du 20/10 et du 26/10) : public seul, travaux préparatoires, guides et commentaires sans texte suivi,
+    consultations sur du droit souple, PME (le titre est lu, voir les regex ci-dessus)."""
     if d["type"] == "alerte_vulnerabilite":
         # décision du 16/10 : une vulnérabilité n'est pertinente que si elle touche le secteur (et seulement alors)
         return ("pertinent", "vulnerabilite_secteur") if d.get("secteur_vise") == "oui" else ("pas_pertinent", d["type"])
-    if d["sujet"] != "oui":
+    tc = set(textes_cles or ())
+    sujet = d["sujet"]
+    if tc & TEXTES_CYBER and (d["type"] in OFFICIELS or d["type"] == "commentaire"):
+        sujet = "oui"
+    if d["exclusion"] != "aucune" and not (sujet == "oui" and d["applicable"] == "oui"):
+        return "pas_pertinent", d["exclusion"]
+    if sujet != "oui":
         return "pas_pertinent", "hors_sujet"
     if d["applicable"] == "non":
         return "pas_pertinent", "non_applicable"
+    if titre:
+        # retour du 26/10 (étude OFCS « PME Cybersécurité 2026 ») : ce qui ne vise que les PME ne concerne pas l'entreprise
+        if PME.search(titre) and not tc:
+            return "pas_pertinent", "pme"
+        # D1 (retour du 20/10) : administrations publiques seules, ou désignation d'un organisme
+        if (PUBLIC_SEUL.search(titre) or DESIGNATION.search(titre)) and not ENTREPRISES.search(titre):
+            return "pas_pertinent", "public_seul"
     if d["type"] in OFFICIELS or d["type"] == "commentaire":
+        if d["applicable"] != "oui":
+            return "a_surveiller", "incertain"
+        if titre:
+            # D2 : travaux préparatoires / mise en œuvre en préparation, sans obligation nouvelle
+            # (pas pour un commentaire : « se préparer au CRA » explique des obligations, décision du 16/10)
+            # 31/10 : s'il concerne l'entreprise (applicable « oui »), c'est un point clé « Projet de texte en cours »
+            if d["type"] in ("projet_consultation", "lignes_directrices") and PREPARATION.search(titre):
+                return "pertinent", "preparation"
+            # C : consultation sur un projet de lignes directrices / guide / avis (rien à appliquer)
+            if d["type"] == "projet_consultation" and DROIT_SOUPLE.search(titre) and not LOI.search(titre):
+                return "a_surveiller", "consultation_droit_souple"
+        # C : guide ou commentaire qui ne se rattache à aucun texte suivi : à surveiller
+        if d["type"] in ("lignes_directrices", "commentaire") and not tc:
+            return "a_surveiller", "guide_sans_texte"
         # décision du 16/10 : un commentaire qui explique une obligation ou une évolution d'un texte est pertinent
-        return ("pertinent", d["type"]) if d["applicable"] == "oui" else ("a_surveiller", "incertain")
+        return "pertinent", d["type"]
     if d["type"] in A_SURVEILLER:
         return "a_surveiller", d["type"]
     return "pas_pertinent", d["type"]
+
+
+def reappliquer(a, textes_cles):
+    """Recalcule l'avis à partir des réponses déjà enregistrées de l'IA (sans la relancer) : une évolution des
+    règles de décision s'applique ainsi à tous les articles déjà jugés, dès la collecte suivante."""
+    ia = a.get("ia") or {}
+    if not ia.get("type") or ia.get("erreur") or "exclusion" not in ia:
+        return   # réponses incomplètes (versions t1 à t3) : l'avis enregistré est gardé, l'IA les rejugera
+    d = {"type": ia["type"], "sujet": ia.get("sujet", "non"), "applicable": ia.get("applicable", "incertain"),
+         "secteur_vise": ia.get("secteur", "non"), "exclusion": ia.get("exclusion", "aucune")}
+    ia["avis"], ia["motif"] = decider(d, textes_cles, titres(a))
 
 
 # modèles possibles (licences permettant un usage professionnel) : (dépôt Hugging Face, fichier GGUF)
@@ -226,7 +338,7 @@ class TriIA:
                 d.get("applicable") not in ("oui", "incertain", "non") or d.get("exclusion") not in EXCLUSIONS or \
                 d.get("secteur_vise") not in ("oui", "non"):
             raise ValueError("réponse hors format")
-        d["avis"], d["motif"] = decider(d)
+        d["avis"], d["motif"] = decider(d, a.get("textes_cles"), titres(a))
         return d
 
     def trier(self, articles, garder_raison=False):
@@ -247,7 +359,8 @@ class TriIA:
                 a["ia"] = {"v": VERSION, "erreur": str(e)[:80]}
                 continue
             a["ia"] = {"v": VERSION, "avis": d["avis"], "motif": d["motif"], "type": d["type"], "sujet": d["sujet"],
-                       "applicable": d["applicable"], "secteur": d["secteur_vise"], "page": bool(a.get("_texte"))}
+                       "applicable": d["applicable"], "secteur": d["secteur_vise"], "exclusion": d["exclusion"],
+                       "page": bool(a.get("_texte"))}
             if garder_raison:   # tests seulement ; le nom de l'entreprise n'apparaît jamais dans un rapport
                 r = d.get("raison", "")[:200]
                 nom = os.environ.get("VEILLE_ENTREPRISE", "").strip()

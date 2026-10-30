@@ -17,6 +17,7 @@
     actualites_archives.js  articles plus anciens, chargés à la demande (période, restitution)
     alertes.js      points clés (alertes stables) ; flux RSS points_cles_fr|en.xml
     debats.js       avis d'experts (non certifié, toujours affiché à part)
+    pressentis.js   « Pressentis et avis d'experts » (sujets regroupés, cycle de vie)
     referentiel.js  textes applicables par pays
     etat_sources.js, versions.js, acronymes.js, syntheses.js, monde.js (fond de carte)
 -->
@@ -62,7 +63,7 @@
       <a class="tab" role="tab" href="#veille" data-tab-link="veille" data-i18n="tab_watch">Veille</a>
       <a class="tab" role="tab" href="#carte" data-tab-link="carte" data-i18n="tab_map">Carte</a>
       <a class="tab" role="tab" href="#referentiel" data-tab-link="referentiel" data-i18n="tab_ref">Textes applicables</a>
-      <a class="tab tab-debats" role="tab" href="#debats" data-tab-link="debats" data-i18n="tab_debats">Débats et signaux</a>
+      <a class="tab tab-debats" role="tab" href="#debats" data-tab-link="debats" data-i18n="tab_debats">Pressentis et avis d'experts</a>
       <a class="tab" role="tab" href="#sources" data-tab-link="sources" data-i18n="tab_sources">Sources</a>
     </div>
   </div>
@@ -284,19 +285,27 @@
       <p data-i18n="deb_warn"></p>
     </div>
     <header class="block-head">
-      <h2 data-i18n="deb_title">Débats et signaux</h2>
+      <h2 data-i18n="deb_title">Pressentis et avis d'experts</h2>
       <p class="block-lead" data-i18n="deb_lead"></p>
     </header>
-    <section class="tendances" aria-labelledby="tend-titre">
-      <h3 id="tend-titre" data-i18n="deb_trends">Sujets qui montent chez les experts</h3>
-      <p class="block-meta" data-i18n="deb_trends_lead"></p>
-      <div id="tendances"></div>
+    <div class="toolbar">
+      <input type="search" id="deb-recherche" class="search" data-i18n-ph="deb_search_ph" autocomplete="off" aria-label="Filtrer">
+    </div>
+    <section aria-labelledby="pr-press-titre">
+      <h3 id="pr-press-titre" data-i18n="pre_title">Textes et évolutions pressentis</h3>
+      <p class="block-meta" data-i18n="pre_lead"></p>
+      <div id="pre-liste" class="deb-liste"></div>
+      <p class="empty" id="pre-vide" hidden data-i18n="pre_empty"></p>
     </section>
-    <section aria-labelledby="deb-liste-titre">
+    <section aria-labelledby="pr-avis-titre">
+      <h3 id="pr-avis-titre" data-i18n="avi_title">Avis d'experts sur les textes adoptés</h3>
+      <p class="block-meta" data-i18n="avi_lead"></p>
+      <div id="avi-liste" class="deb-liste"></div>
+      <p class="empty" id="avi-vide" hidden data-i18n="avi_empty"></p>
+    </section>
+    <section aria-labelledby="deb-liste-titre" id="deb-ancien" hidden>
       <h3 id="deb-liste-titre" data-i18n="deb_list">Dernières prises de position</h3>
-      <div class="toolbar">
-        <input type="search" id="deb-recherche" class="search" data-i18n-ph="deb_search_ph" autocomplete="off" aria-label="Filtrer">
-      </div>
+      <div id="tendances" hidden></div>
       <div id="deb-liste" class="deb-liste"></div>
       <p class="empty" id="deb-vide" hidden data-i18n="deb_empty"></p>
     </section>
@@ -463,6 +472,7 @@
 <script src="data/versions.js" onerror="window.VEILLE_VERSIONS=null"></script>
 <script src="data/referentiel.js" onerror="window.VEILLE_REFERENTIEL=null"></script>
 <script src="data/debats.js" onerror="window.VEILLE_DEBATS=null"></script>
+<script src="data/pressentis.js" onerror="window.VEILLE_PRESSENTIS=null"></script>
 <script src="data/ecartes_site.js" onerror="window.VEILLE_ECARTES=null"></script>
 <script src="data/monde.js" onerror="window.VEILLE_MONDE=null"></script>
 <script src="script.js"></script>

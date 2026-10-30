@@ -131,9 +131,57 @@ EVENEMENT = re.compile(r"webinar|webinaire|conference|congres|\bevent|evenement|
                        r"seminar|forum|summit|sommet|meeting|reunion|tagung|veranstaltung|jornada|evento|podcast|live\b", re.I)
 
 
+# D3 (décision du 29/10) : seules les dates importantes des réglementations sont gardées (entrée en vigueur,
+# application, mise en conformité, enregistrement ou notification). Ne sont PAS des échéances : la fin d'une
+# consultation, une étape de procédure (vote, lecture, rapport attendu), la date d'une décision ou d'une
+# sanction, la date de publication d'un document, une réunion ou une signature.
+NON_REGLEMENTAIRE = re.compile(
+    r"consultation|consulta(cion|zione|cao)?\b|public opinion|comments?\b|commentaires|feedback|call for (evidence|input|views)|"
+    r"have your say|appel a (contributions|commentaires)|stellungnahme|konsultation|hoering|horing|remiss|lausunto|konsultac|"
+    r"διαβουλευσ|\bvote\b|voting|plenary|pleniere|committee|commission (des|parlementaire)|report stage|etape du rapport|"
+    r"reading|lecture\b|scheduled|programmee?|final report|rapport final|due to (report|present)|"
+    r"date of (the )?(final )?decision|date de (la )?decision|decision finale|(by|with the|par) (a |une )?(decision|provision)|"
+    r"decision (of|du|n)|disposition n|provision n|provvedimento|deliberazione|bescheid|resolucion de|"
+    r"published (on|in|by)|publiee?s? le|report published|rapport publie|issued on|signed|signee? le|assinado|unterzeichnet|"
+    r"took place|s'est (tenue?|deroulee?)|a eu lieu|uskutecnil|ve dnech|meeting|reunion|procedure runs|approval procedure|"
+    r"\b(by|av|von|door|par) [a-z]+ [a-z]+ \d|\b\d{1,2} ?[:h] ?\d{2}\b|\b\d{1,2}\.\d{2} ?(am|pm|uhr)\b|matinee|informations pratiques|practical information|"
+    r"mission\b|delegation", re.I)
+# mot d'obligation réglementaire tout près de la date : la date est gardée même si un mot ci-dessus est proche
+# (ex. « mise en œuvre complète prévue le 28 octobre 2026 » d'une loi IA, « entrée en vigueur programmée »)
+FORT = re.compile(
+    r"en vigueur|into force|in force|en application|applicab|appl(y|ies)\b|s'appliqu|mise en (oeuvre|œuvre) complete|"
+    r"conform|complian|enregistr|registration|transpos|obligat|\bmust\b|doivent|devront|deadline|echeance|date limite|"
+    r"in kraft|gilt ab|verpflicht|entrada en vigor|entrata in vigore|wchodzi w zycie|trader i kraft|voimaan", re.I)
+TITRE_CONSULTATION = re.compile(r"consultation|consulta\b|consultazione|konsultation|have your say|call for evidence|"
+                                r"appel a contributions|horing|remiss|lausunto|konsultac|διαβουλευσ", re.I)
+
+
+# 31/10 : la date de PUBLICATION d'un texte réglementaire est gardée (Journal officiel, loi, décret, règlement,
+# directive, norme harmonisée) : elle déclenche souvent l'entrée en vigueur. Pas celle d'un rapport ou d'un article.
+TEXTE_REG = (r"(loi|decret|arrete|ordonnance|reglement|directive|regulation|decree|law|act|bill|gesetz\w*|verordnung|"
+             r"richtlinie|ley|real decreto|legge|decreto|ustaw\w*|norme harmonisee|harmoni[sz]ed standard)")
+PUBLICATION_TEXTE = re.compile(
+    r"(journal officiel|official journal|gazzetta ufficiale|\bboe\b|bundesgesetzblatt|dziennik ustaw|staatsblad|"
+    r"diario da republica|magyar kozlony|sbirka zakonu|\bdou[er]\b)|"
+    r"\b" + TEXTE_REG + r"\b.{0,60}\b(publi\w*|parution|veroffentlicht|pubblicat\w*|publicad\w*|opublikowan\w*)|"
+    r"\b(publi\w*|parution|veroffentlich\w*|pubblicat\w*|publicad\w*)\b.{0,40}\b" + TEXTE_REG + r"\b", re.I)
+
+
+def _publication(texte, debut, fin):
+    proche = _sans_accents(texte[max(0, debut - 90):fin + 40])
+    return bool(PUBLICATION_TEXTE.search(proche)) and not EVENEMENT.search(proche)
+
+
 def _contexte_ok(texte, debut, fin):
     fen = _sans_accents(texte[max(0, debut - 110):fin + 60])
-    return bool(OBLIGATION.search(fen)) and not EVENEMENT.search(fen)
+    proche = _sans_accents(texte[max(0, debut - 70):fin + 40])
+    if not OBLIGATION.search(fen) or EVENEMENT.search(fen):
+        return False
+    if FORT.search(proche):
+        return True
+    # D3 : pas de date de consultation, d'étape de procédure, de décision, de publication ou de réunion ; dans un
+    # article sur une consultation, seule une date d'obligation (entrée en vigueur, application…) est gardée
+    return not NON_REGLEMENTAIRE.search(proche) and not TITRE_CONSULTATION.search(_sans_accents(texte[:160]))
 
 
 def extraire(textes_par_langue, date_article, aujourdhui, passe=45, futur_ans=3, maxi=3):
@@ -148,10 +196,17 @@ def extraire(textes_par_langue, date_article, aujourdhui, passe=45, futur_ans=3,
         for d, approx, deb, fin in trouver_dates(texte):
             if not (mini <= d <= maxd) or (date_article and d == date_article):
                 continue
+            pub = False
             if not _contexte_ok(texte, deb, fin):
-                continue
+                if not _publication(texte, deb, fin):
+                    continue
+                pub = True   # date de publication d'un texte : affichée, mais jamais une « Échéance » des points clés
             cle = d.isoformat()
             e = trouvees.setdefault(cle, {"date": cle, "approx": approx, "extrait": {}})
+            if pub and "publication" not in e and len(e["extrait"]) == 0:
+                e["publication"] = True
+            elif not pub:
+                e.pop("publication", None)
             e["approx"] = e["approx"] and approx
             e["extrait"].setdefault(langue, _extrait(texte, deb, fin))
     # les plus proches d'abord (échéances à venir avant les dates passées)

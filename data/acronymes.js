@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-10-26T11:12+00:00",
+ "mise_a_jour": "2026-10-30T17:05+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 182,
+   "nb_articles": 181,
    "exemple": {
-    "date": "2026-10-19",
-    "lien": "https://www.computing.es/seguridad/mas-ciberresiliencia-para-fortalecer-la-ia-soberana/",
-    "titre": "Más ciberresiliencia para fortalecer la IA soberana",
-    "langue": "es",
-    "titre_fr": "Plus de cybersilience pour renforcer l'IA souveraine",
-    "titre_en": "More Cyber Resilience to Strengthen Sovereign AI"
+    "date": "2026-10-14",
+    "lien": "https://circleid.com/posts/unfolding-forensics-of-a-lawfare-train-wreck-the-eu-cra",
+    "titre": "Unfolding Forensics of a Lawfare Train Wreck: The EU CRA",
+    "langue": "en",
+    "titre_fr": "Déplier la médecine légale d'une épave de train de Lawfare : le UE CRA",
+    "titre_en": ""
    }
   },
   {
@@ -166,12 +166,12 @@ window.VEILLE_ACRONYMES = {
    "en": "NIS2",
    "nb_articles": 90,
    "exemple": {
-    "date": "2026-10-22",
-    "lien": "https://iapp.org/news/a/securing-nis2-dora-compliance-in-the-cloud-supply-chain",
-    "titre": "Securing NIS2, DORA compliance in the cloud supply chain",
-    "langue": "en",
-    "titre_fr": "Sécuriser la conformité NIS2, DORA dans la chaîne d'approvisionnement en nuage",
-    "titre_en": ""
+    "date": "2026-10-27",
+    "lien": "https://www.gov.pl/web/cyfryzacja/wykaz-ksc-nie-otrzymales-zawiadomienia-o-wpisie-zglos-podmiot-do-weryfikacji",
+    "titre": "Wykaz KSC: nie otrzymałeś zawiadomienia o wpisie? Zgłoś podmiot do weryfikacji",
+    "langue": "pl",
+    "titre_fr": "Liste KSC : n'avez-vous pas reçu un avis d'alerte ? Indiquer l'entité aux fins de vérification",
+    "titre_en": "List KSC: have you not received an alert notice? Report the entity for verification"
    }
   },
   {
@@ -179,14 +179,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 67,
+   "nb_articles": 69,
    "exemple": {
-    "date": "2026-10-23",
-    "lien": "https://www.federprivacy.org/informazione/flash-news/in-vigore-il-dgls-179-2026-cosa-cambia-per-data-protection-officer-e-professionisti-della-privacy",
-    "titre": "In vigore il Dgls 179/2026: cosa cambia per Data Protection Officer e professionisti della privacy",
-    "langue": "it",
-    "titre_fr": "En vigueur les Dgls 179/2026: quels changements pour le délégué à la protection des données et les professionnels de la vie privée",
-    "titre_en": "In force the Dgls 179/2026: what changes for Data Protection Officer and privacy professionals"
+    "date": "2026-10-27",
+    "lien": "https://iapp.org/news/a/italys-ai-act-framework-takes-shape-what-legislative-decree-no-179-2026-means-for-organizations",
+    "titre": "Italy's AI Act framework takes shape: What Legislative Decree No. 179/2026 means for organizations",
+    "langue": "en",
+    "titre_fr": "La loi italienne IA prend forme : ce que signifie le décret législatif n° 179/2026 pour les organisations",
+    "titre_en": ""
    }
   },
   {
@@ -194,13 +194,13 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 57,
+   "nb_articles": 59,
    "exemple": {
-    "date": "2026-10-26",
-    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62024CA0798",
-    "titre": "Case C-798/24, Jautiva: Judgment of the Court (First Chamber) of 3 September 2026 (request for a preliminary ruling from the Satversmes tiesa – Latvia) – A and Others (Reference for a preliminary ruling – Protection of natural persons with regard to the processing of personal data – Regulation (EU) 2016/679 – Article 5 – Principles relating to processing of personal data – Article 6 – Lawfulness of processing – Company law – Directive (EU) 2017/1132 – Article 14 – Documents and particulars to be disclosed – Concept of persons who take part in the administration, supervision or control of a company – Making available to the public personal data relating to the shareholders of public limited liability companies – Minority shareholders)",
+    "date": "2026-10-30",
+    "lien": "https://digitalpolicyalert.org/event/41476-european-data-protection-board-closes-consultation-on-guidelines-022026-on-anonymisation",
+    "titre": "European Data Protection Board closes consultation on draft guidelines on anonymisation",
     "langue": "en",
-    "titre_fr": "Affaire C-798/24, Jautiva: Arrêt de la Cour (première chambre) du 3 septembre 2026 (demande de décision préjudicielle de la Satversmes liesa – Lettonie) – A e.a. (demande de décision préjudicielle – Protection des personnes physiques à l'égard du traitement des données à caractère personnel – Règlement (UE) 2016/679 – Article 5 – Principes relatifs au traitement des données à caractère personnel – Article 6 – Licéité du traitement – Droit des sociétés – Directive (UE) 2017/1132 – Article 14 – Documents et indications à divulguer – Concept des personnes qui participent à l'administration, à la surveillance ou au contrôle d'une société – Mise à la disposition du public des données à caractère personnel relatives aux actionnaires des sociétés anonymes – Actionnaires minoritaires)",
+    "titre_fr": "Le Comité européen de la protection des données clôt la consultation sur les projets de lignes directrices sur l'anonymat",
     "titre_en": ""
    }
   },
@@ -209,7 +209,7 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cybersecurity Act (certification UE)",
    "en": "Cybersecurity Act (EU certification)",
-   "nb_articles": 30,
+   "nb_articles": 29,
    "exemple": {
     "date": "2026-10-21",
     "lien": "https://www.lupa.cz/aktuality/jak-zvladnout-novy-zakon-o-kyberbezpecnosti-stat-ukazal-jak-spravne-nastavit-rizeni-rizik/?utm_source=rss&utm_medium=text&utm_campaign=rss",
@@ -250,6 +250,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "Digital Omnibus",
+   "groupe": "textes",
+   "fr": "Omnibus numérique",
+   "en": "Digital Omnibus",
+   "nb_articles": 10,
+   "exemple": {
+    "date": "2026-10-29",
+    "lien": "https://iapp.org/news/a/notes-from-the-iapp-europe-digital-omnibus-progress-health-data-and-online-scams-and-fraud",
+    "titre": "Notes from the IAPP Europe: Digital Omnibus progress, health data and online scams and fraud",
+    "langue": "en",
+    "titre_fr": "Notes du IAPP Europe: progrès de l'omnibus numérique, données de santé et escroqueries et fraudes en ligne",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "IVDR",
    "groupe": "textes",
    "fr": "IVDR (diagnostic in vitro)",
@@ -261,21 +276,6 @@ window.VEILLE_ACRONYMES = {
     "titre": "New guideline «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
     "langue": "en",
     "titre_fr": "Nouvelle ligne directrice «Schweizerische Gute Praxis der Materiovigilance in der In-vitro-Diagnostik» (GPMV-IVD)",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "Digital Omnibus",
-   "groupe": "textes",
-   "fr": "Omnibus numérique",
-   "en": "Digital Omnibus",
-   "nb_articles": 9,
-   "exemple": {
-    "date": "2026-10-22",
-    "lien": "https://iapp.org/news/a/eu-member-states-finalize-digital-omnibus-negotiating-stance",
-    "titre": "EU member states finalize negotiating stance on Digital Omnibus",
-    "langue": "en",
-    "titre_fr": "Les Etats membres de UE finalisent leur position de négociation sur l'omnibus numérique",
     "titre_en": ""
    }
   },
@@ -370,21 +370,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "NIST",
-   "groupe": "textes",
-   "fr": "NIST (CSF, SP 800)",
-   "en": "NIST (CSF, SP 800)",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/frissitett-ot-biztonsagi-utmutatot-ad-ki-a-nist/",
-    "titre": "Frissített OT-biztonsági útmutatót ad ki a NIST",
-    "langue": "hu",
-    "titre_fr": "Le guide OT-biztonsági mis à jour est publié par NIST",
-    "titre_en": "Updated OT-biztonsági Guide is issued by NIST"
-   }
-  },
-  {
    "code": "MDR",
    "groupe": "textes",
    "fr": "MDR (dispositifs médicaux)",
@@ -445,6 +430,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "ENS",
+   "groupe": "textes",
+   "fr": "ENS (Espagne)",
+   "en": "ENS (Spain)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-29",
+    "lien": "https://www.redseguridad.com/actualidad/ciberseguridad/el-ccn-renueva-la-herramienta-ines-para-facilitar-la-adecuacion-al-ens_20261029.html",
+    "titre": "El CCN renueva la herramienta Inés para facilitar la adecuación al ENS",
+    "langue": "es",
+    "titre_fr": "Le CCN renouvelle l'outil Ines pour faciliter l'appariement avec le ENS",
+    "titre_en": "The CCN renews the Ines tool to facilitate matching to the ENS"
+   }
+  },
+  {
    "code": "HDS",
    "groupe": "textes",
    "fr": "HDS (hébergement de données de santé)",
@@ -457,6 +457,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "HDS certification scheme v2.1 announced by the French Digital Health Agency (ANS)"
+   }
+  },
+  {
+   "code": "NIST",
+   "groupe": "textes",
+   "fr": "NIST (CSF, SP 800)",
+   "en": "NIST (CSF, SP 800)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-09-24",
+    "lien": "https://www.incibe.es/incibe-cert/blog/mapping-entre-el-nist-fw-y-la-iec-62443-2-1",
+    "titre": "Mapping entre el NIST FW y la IEC 62443 2-1",
+    "langue": "es",
+    "titre_fr": "Cartographie entre NIST FW et IEC 62443 2-1",
+    "titre_en": "Mapping between NIST FW and IEC 62443 2-1"
    }
   },
   {
@@ -487,21 +502,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "NHS: DTAC v2 becomes the mandatory form"
-   }
-  },
-  {
-   "code": "ENS",
-   "groupe": "textes",
-   "fr": "ENS (Espagne)",
-   "en": "ENS (Spain)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-07-31",
-    "lien": "https://www.redseguridad.com/actualidad/empresas-ciberseguridad/qualys-obtiene-la-certificacion-del-ens-de-nivel-alto_20260731.html",
-    "titre": "Qualys, primer proveedor internacional de soluciones de gestión de riesgos de ciberseguridad que obtiene la certificación ENS Nivel Alto",
-    "langue": "es",
-    "titre_fr": "Qualys, premier fournisseur international de solutions de gestion des risques de cybersécurité qui obtient la certification ENS Niveau élevé",
-    "titre_en": "Qualys, the first international provider of cybersecurity risk management solutions to obtain the High Level ENS certification"
    }
   },
   {
@@ -644,14 +644,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 64,
+   "nb_articles": 59,
    "exemple": {
-    "date": "2026-10-22",
-    "lien": "https://www.bacs.admin.ch/fr/26-kmustudie-fr",
-    "titre": "««PME Cybersécurité 2026»: La cybercriminalité devient un risque commercial pour les PME suisses»",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "‘PME Cybersecurity 2026': Cybercrime becomes a commercial risk for Swiss PME'"
+    "date": "2026-10-21",
+    "lien": "https://www.ncsc.nl/alerts/ernstige-kwetsbaarheden-in-php-bereid-je-voor-op-patchen",
+    "titre": "Ernstige kwetsbaarheden in PHP: bereid je voor op patchen",
+    "langue": "nl",
+    "titre_fr": "Graves vulnérabilités dans PHP : Préparez-vous à patcher",
+    "titre_en": "Severe vulnerabilities in PHP: Prepare to patch"
    }
   },
   {
@@ -659,13 +659,13 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 48,
+   "nb_articles": 50,
    "exemple": {
-    "date": "2026-10-19",
-    "lien": "https://iapp.org/news/a/its-all-relative-genomic-data-and-the-edpbs-draft-anonymization-guidelines",
-    "titre": "It's all 'relative': Genomic data and the EDPB's draft anonymization guidelines",
+    "date": "2026-10-30",
+    "lien": "https://digitalpolicyalert.org/event/41476-european-data-protection-board-closes-consultation-on-guidelines-022026-on-anonymisation",
+    "titre": "European Data Protection Board closes consultation on draft guidelines on anonymisation",
     "langue": "en",
-    "titre_fr": "Tout est 'relatif' : Données génomiques et projet de lignes directrices d'anonymisation de EDPB",
+    "titre_fr": "Le Comité européen de la protection des données clôt la consultation sur les projets de lignes directrices sur l'anonymat",
     "titre_en": ""
    }
   },
@@ -674,14 +674,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 42,
+   "nb_articles": 40,
    "exemple": {
-    "date": "2026-10-02",
-    "lien": "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite",
-    "titre": "Violations de données personnelles : dans quels cas peut-on être indemnisé ?",
+    "date": "2026-10-29",
+    "lien": "https://www.cnil.fr/fr/sanction-cookies-app-fnac",
+    "titre": "Cookies et application mobile : sanctions de 7 millions d’euros à l’encontre des sociétés FNAC DARTY PARTICIPATIONS ET SERVICES et FNAC DIRECT",
     "langue": "fr",
     "titre_fr": "",
-    "titre_en": "Violations of personal data: in what cases can we be compensated?"
+    "titre_en": "Cookies and mobile application: €7 million penalties for FNAC DARTY ET SERVICES and FNAC DIRECT"
    }
   },
   {
@@ -730,11 +730,26 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "ENISA",
+   "groupe": "autorites",
+   "fr": "ENISA",
+   "en": "ENISA",
+   "nb_articles": 20,
+   "exemple": {
+    "date": "2026-09-24",
+    "lien": "https://www.enisa.europa.eu/news/supporting-nis2-implementation-through-actionable-guidance",
+    "titre": "Supporting NIS2 implementation through actionable guidance",
+    "langue": "en",
+    "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "Garante",
    "groupe": "autorites",
    "fr": "Garante privacy (Italie)",
    "en": "Garante privacy (Italy)",
-   "nb_articles": 22,
+   "nb_articles": 20,
    "exemple": {
     "date": "2026-10-21",
     "lien": "https://www.federprivacy.org/informazione/garante-privacy/pec-con-gli-indirizzi-dei-destinatari-in-chiaro-il-garante-privacy-multa-la-federazione-degli-ordini-dei-biologi",
@@ -749,7 +764,7 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NKI (Hongrie)",
    "en": "NKI (Hungary)",
-   "nb_articles": 21,
+   "nb_articles": 20,
    "exemple": {
     "date": "2026-10-16",
     "lien": "https://nki.gov.hu/it-biztonsag/hirek/kihasznalt-serulekenysegektol-a-reklamokon-at-terjesztett-kemprogramokig/",
@@ -757,21 +772,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "hu",
     "titre_fr": "De vulnérabilité utilisée aux programmes espions transmis par la publicité",
     "titre_en": "From used vulnerability to spy programs transmitted through advertising"
-   }
-  },
-  {
-   "code": "ENISA",
-   "groupe": "autorites",
-   "fr": "ENISA",
-   "en": "ENISA",
-   "nb_articles": 20,
-   "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://www.enisa.europa.eu/news/supporting-nis2-implementation-through-actionable-guidance",
-    "titre": "Supporting NIS2 implementation through actionable guidance",
-    "langue": "en",
-    "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
-    "titre_en": ""
    }
   },
   {
@@ -880,21 +880,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "PTS",
-   "groupe": "autorites",
-   "fr": "PTS (Suède)",
-   "en": "PTS (Sweden)",
-   "nb_articles": 9,
-   "exemple": {
-    "date": "2026-10-19",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/remissvar-pa-eu-kommissionens-forslag-till-forordning-om-moln-och-ai/",
-    "titre": "Remissvar på EU-kommissionens förslag till förordning om moln och AI",
-    "langue": "sv",
-    "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
-    "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
-   }
-  },
-  {
    "code": "Traficom",
    "groupe": "autorites",
    "fr": "Traficom (Finlande)",
@@ -937,6 +922,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "en",
     "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
     "titre_en": ""
+   }
+  },
+  {
+   "code": "PTS",
+   "groupe": "autorites",
+   "fr": "PTS (Suède)",
+   "en": "PTS (Sweden)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-19",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/remissvar-pa-eu-kommissionens-forslag-till-forordning-om-moln-och-ai/",
+    "titre": "Remissvar på EU-kommissionens förslag till förordning om moln och AI",
+    "langue": "sv",
+    "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
+    "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
    }
   },
   {
@@ -985,6 +985,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "AI Office",
+   "groupe": "autorites",
+   "fr": "Bureau de l'IA (UE)",
+   "en": "EU AI Office",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-10-21",
+    "lien": "https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models",
+    "titre": "Requirements for qualified independent external evaluators of General-Purpose AI models",
+    "langue": "en",
+    "titre_fr": "Exigences pour les évaluateurs externes indépendants qualifiés des modèles IA à usage général",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "ANS",
    "groupe": "autorites",
    "fr": "Agence du numérique en santé",
@@ -997,21 +1012,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
-   }
-  },
-  {
-   "code": "AI Office",
-   "groupe": "autorites",
-   "fr": "Bureau de l'IA (UE)",
-   "en": "EU AI Office",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks",
-    "titre": "Commission holds special meeting of Scientific panel on frontier AI safety and risks",
-    "langue": "en",
-    "titre_fr": "La Commission tient une réunion spéciale du groupe scientifique sur la sécurité et les risques des frontières IA",
-    "titre_en": ""
    }
   },
   {
@@ -1120,6 +1120,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "CCN",
+   "groupe": "autorites",
+   "fr": "CCN (Espagne)",
+   "en": "CCN (Spain)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-29",
+    "lien": "https://www.redseguridad.com/actualidad/ciberseguridad/el-ccn-renueva-la-herramienta-ines-para-facilitar-la-adecuacion-al-ens_20261029.html",
+    "titre": "El CCN renueva la herramienta Inés para facilitar la adecuación al ENS",
+    "langue": "es",
+    "titre_fr": "Le CCN renouvelle l'outil Ines pour faciliter l'appariement avec le ENS",
+    "titre_en": "The CCN renews the Ines tool to facilitate matching to the ENS"
+   }
+  },
+  {
    "code": "ICO",
    "groupe": "autorites",
    "fr": "ICO (Royaume-Uni)",
@@ -1192,21 +1207,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "en",
     "titre_fr": "Opine EDPB et EDPS sur le projet de modifications RGPD suite à la simplification du paquet Omnibus IV",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "CCN",
-   "groupe": "autorites",
-   "fr": "CCN (Espagne)",
-   "en": "CCN (Spain)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-07-27",
-    "lien": "https://www.ccn.cni.es/es/actualidad-ccn/1375-el-ccn-actualiza-45-de-las-73-familias-del-cpstic-para-simplificar-la-cualificacion-de-productos-de-seguridad-tic",
-    "titre": "Espagne : le CCN met à jour 45 des 73 familles du catalogue CPSTIC",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Spain: CCN updates 45 of 73 CPSTIC catalogue families"
    }
   },
   {
@@ -1483,13 +1483,13 @@ window.VEILLE_ACRONYMES = {
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 16,
+   "nb_articles": 15,
    "exemple": {
-    "date": "2026-10-22",
-    "lien": "https://www.uke.gov.pl/blog/chcesz-zlozyc-skarge-do-koordynatora-ds-uslug-cyfrowych-sprawdz-jak-to-zrobic,169.html",
-    "titre": "Więcej O: Chcesz złożyć skargę do Koordynatora ds. usług cyfrowych? Sprawdź, jak to zrobić",
-    "titre_fr": "En savoir plus sur : Voulez-vous vous plaindre au coordonnateur des services numériques? Voir comment faire cela",
-    "titre_en": "More About: Do you want to complain to the Digital Services Coordinator? See how to do this",
+    "date": "2026-10-12",
+    "lien": "https://www.gov.pl/web/cyfryzacja/dsa---co-zmienia-nowe-przepisy",
+    "titre": "DSA - co zmienią nowe przepisy",
+    "titre_fr": "DSA - ce qui va changer les nouveaux règlements",
+    "titre_en": "DSA - what will change the new regulations",
     "langue": "pl"
    }
   },
@@ -1501,6 +1501,30 @@ window.VEILLE_ACRONYMES = {
     "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
     "titre": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
     "titre_fr": "Italie DPA amendes IQVIA EUR 7 000 000 pour traitement illégal de patients",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
+   "code": "DIRECT",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-29",
+    "lien": "https://www.cnil.fr/fr/sanction-cookies-app-fnac",
+    "titre": "Cookies et application mobile : sanctions de 7 millions d’euros à l’encontre des sociétés FNAC DARTY PARTICIPATIONS ET SERVICES et FNAC DIRECT",
+    "titre_fr": "",
+    "titre_en": "Cookies and mobile application: €7 million penalties for FNAC DARTY ET SERVICES and FNAC DIRECT",
+    "langue": "fr"
+   }
+  },
+  {
+   "code": "IAPP",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-10-29",
+    "lien": "https://iapp.org/news/a/notes-from-the-iapp-europe-digital-omnibus-progress-health-data-and-online-scams-and-fraud",
+    "titre": "Notes from the IAPP Europe: Digital Omnibus progress, health data and online scams and fraud",
+    "titre_fr": "Notes du IAPP Europe: progrès de l'omnibus numérique, données de santé et escroqueries et fraudes en ligne",
     "titre_en": "",
     "langue": "en"
    }
@@ -1542,42 +1566,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "PME",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-22",
-    "lien": "https://www.bacs.admin.ch/fr/26-kmustudie-fr",
-    "titre": "««PME Cybersécurité 2026»: La cybercriminalité devient un risque commercial pour les PME suisses»",
-    "titre_fr": "",
-    "titre_en": "‘PME Cybersecurity 2026': Cybercrime becomes a commercial risk for Swiss PME'",
-    "langue": "fr"
-   }
-  },
-  {
-   "code": "TAXII",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-20",
-    "lien": "https://www.ncsc.nl/nieuws/ncsc-sluit-zich-aan-bij-oasis-voor-sterkere-internationale-cyberdreigingsuitwisseling",
-    "titre": "NCSC sluit zich aan bij OASIS voor sterkere internationale cyberdreigingsuitwisseling",
-    "titre_fr": "NCSC rejoint OASIS pour renforcer l'échange international de cybermenaces",
-    "titre_en": "NCSC joins OASIS for stronger international cyber threat exchange",
-    "langue": "nl"
-   }
-  },
-  {
-   "code": "STIX",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-20",
-    "lien": "https://www.ncsc.nl/nieuws/ncsc-sluit-zich-aan-bij-oasis-voor-sterkere-internationale-cyberdreigingsuitwisseling",
-    "titre": "NCSC sluit zich aan bij OASIS voor sterkere internationale cyberdreigingsuitwisseling",
-    "titre_fr": "NCSC rejoint OASIS pour renforcer l'échange international de cybermenaces",
-    "titre_en": "NCSC joins OASIS for stronger international cyber threat exchange",
-    "langue": "nl"
-   }
-  },
-  {
    "code": "IQVIA",
    "nb_articles": 3,
    "exemple": {
@@ -1590,7 +1578,7 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "SANS",
+   "code": "OUCH",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",
@@ -1602,7 +1590,7 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "OUCH",
+   "code": "SANS",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",
@@ -1626,18 +1614,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "IAPP",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://iapp.org/news/a/notes-from-the-iapp-europe-children-online-future-of-ai-and-eu-digital-laws-clarifications",
-    "titre": "Notes from the IAPP Europe: Children online, future of AI and EU digital laws clarifications",
-    "titre_fr": "Notes du IAPP Europe: Les enfants en ligne, l'avenir des lois numériques IA et UE",
-    "titre_en": "",
-    "langue": "en"
-   }
-  },
-  {
    "code": "S46",
    "nb_articles": 3,
    "exemple": {
@@ -1647,18 +1623,6 @@ window.VEILLE_ACRONYMES = {
     "titre_fr": "En savoir plus sur : Cours NASK-PIB avec système S46",
     "titre_en": "More About: NASK-PIB Course with S46 System",
     "langue": "pl"
-   }
-  },
-  {
-   "code": "DIRECT",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-09-22",
-    "lien": "https://www.edpb.europa.eu/news/the-spanish-dpa-fines-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
-    "titre": "The Spanish DPA fines Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
-    "titre_fr": "L'espagnol DPA amende Securitas Direct EUR 100 000 pour avoir rendu l'exercice des droits des personnes concernées plus difficile en orientant les personnes vers un numéro de téléphone payant",
-    "titre_en": "",
-    "langue": "en"
    }
   },
   {

@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-26T11:12+00:00",
+ "mise_a_jour": "2026-10-30T17:05+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -1911,16 +1911,7 @@
     "cra"
    ],
    "pertinence_v": "v4-62329d164bmodele",
-   "echeances": [
-    {
-     "date": "2026-09-11",
-     "approx": false,
-     "extrait": {
-      "en": "EU Cyber Resilience Act: Preparing for Vulnerability and Incident Reporting. From 11 September 2026, the EU Cyber Resilience Act (\"CRA\") will require manufacturers to report actively…",
-      "fr": "…UE : se préparer à la vulnérabilité et à la déclaration des incidents. À partir du 11 septembre 2026, la loi UE sur la cyberrésilience (\"CRA\") exigera des fabricants qu'ils signalent les…"
-     }
-    }
-   ],
+   "echeances": [],
    "acronymes": [
     "CRA"
    ],
@@ -7000,6 +6991,183 @@
    "sujets": [],
    "score_cyber": 0.466,
    "titre_nettoye": 3
+  },
+  {
+   "id": "8c78703ef337",
+   "titre": "The internet should not demand constant self-defence: Fairness starts before the click",
+   "lien": "https://edri.org/our-work/the-internet-should-not-demand-constant-self-defence-fairness-starts-before-the-click/",
+   "resume": "A fair digital environment cannot – and should not – depend on everyone being permanently alert. Fairness must be built into the environment itself, not left to the skills of the people using it. In practice, that means rules, not appeals: cancelling must be as easy as subscribing, protection must be the default rather than a setting, and a system that detects a moment of weakness must not be allowed to act on it.…",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.483,
+   "score_bruit": 0.463,
+   "score": 0.483,
+   "themes": [
+    "cra",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Internet ne devrait pas exiger une légitime défense constante: L'équité commence avant le clic",
+     "resume": "Un environnement numérique équitable ne peut – et ne doit pas – dépendre de l'alerte permanente de tous. L'équité doit être intégrée dans l'environnement lui-même, et non pas laissée aux compétences des personnes qui l'utilisent. Dans la pratique, cela signifie des règles, pas des appels: l'annulation doit être aussi facile que l'abonnement, la protection doit être le défaut plutôt qu'un réglage, et un système qui détecte un moment de faiblesse ne doit pas être autorisé à agir sur elle...."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "c09b425f2882",
+   "titre": "Surveillance in times of insecurity: a wicked and stupid strategy",
+   "lien": "https://edri.org/our-work/surveillance-in-times-of-insecurity-a-wicked-and-stupid-strategy/",
+   "resume": "Sweden has been grappling with crime-related challenges in the past years. The difficulty to address violent crimes in cities notably has triggered extensive legislative reforms to increase surveillance and repression, including that of children. Tougher criminal penalties, widespread videosurveillance, mass electronic monitoring and government hacking are just a few examples illustrating the Swedish government’s…",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.48,
+   "score_bruit": 0.417,
+   "score": 0.48,
+   "themes": [
+    "cra",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Surveillance en période d'insécurité : une stratégie méchante et stupide",
+     "resume": "Au cours des dernières années, la Suède a relevé des défis liés à la criminalité. La difficulté de lutter contre les crimes violents dans les villes a notamment déclenché de vastes réformes législatives pour accroître la surveillance et la répression, y compris celle des enfants. Des sanctions pénales plus sévères, une surveillance vidéo généralisée, une surveillance électronique de masse et le piratage gouvernemental ne sont que quelques exemples illustrant le gouvernement suédois..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "286772bb7a1c",
+   "titre": "MedTech Europe in the headlines in October 2026",
+   "lien": "https://www.medtecheurope.org/2026/10/01/medtech-europe-in-the-headlines-in-october-2026/",
+   "resume": "October media coverage highlighted MedTech Europe’s call for a single regulatory pathway for AI-enabled medical technologies, efforts to reduce regulatory duplication and accelerate patient access to innovation, as well as its support for a shift towards value-based public procurement that prioritises quality alongside cost. The publication of the Facts & Figures 2026 report also generated broad […] The post MedTech…",
+   "date": "2026-10-01",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Achats publics"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "score_cyber": 0.581,
+   "score_bruit": 0.44,
+   "score": 0.611,
+   "themes": [
+    "sante_donnees",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres en octobre 2026",
+     "resume": "La couverture médiatique du mois d'octobre a mis en lumière l'appel lancé par MedTech Europe en faveur d'une voie réglementaire unique pour les technologies médicales AI-enabled, les efforts visant à réduire les doubles emplois réglementaires et à accélérer l'accès des patients à l'innovation, ainsi que son soutien à une réorientation vers des marchés publics à valeur ajoutée qui privilégient la qualité parallèlement aux coûts. La publication du rapport Faits et chiffres 2026 a également généré une large [...] Le post MedTech..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "fb3199fbb2a1",
+   "titre": "A Comparison of the EU Cloud and AI Development Act Requirements Against the U.S. FOCI Regime and FedRAMP",
+   "lien": "https://www.insideprivacy.com/cloud-computing/a-comparison-of-the-eu-cloud-and-ai-development-act-requirementsagainst-the-u-s-foci-regime-and-fedramp/",
+   "resume": "As governments increasingly focus on cloud security and sovereignty, the European Commission (“EC”) is, through its proposal for a Cloud and AI Development Act (“CADA Proposal”), attempting to create a regime establishing “sovereignty” requirements on cloud computing service providers that can be procured by the public sector. In our prior blog post, we discussed the... Continue Reading…",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Inside Privacy (blog Covington & Burling – données et cybersécurité)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.663,
+   "score_bruit": 0.456,
+   "score": 0.663,
+   "themes": [
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
+   ],
+   "motif": "texte clé : Cloud and AI Development Act (CADA)",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Comparaison des exigences de la UE Cloud et de la IA Development Act par rapport au régime américain FOCI et FedRAMP",
+     "resume": "Étant donné que les gouvernements se concentrent de plus en plus sur la sécurité et la souveraineté dans le cloud, la Commission européenne tente, par sa proposition de loi sur le développement du Cloud et du IA (proposition CADA), de créer un régime établissant des exigences de souveraineté sur les fournisseurs de services de cloud informatique qui peuvent être achetés par le secteur public. Dans notre blog précédent, nous... Continuer la lecture..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CADA"
+   ],
+   "acronymes": [
+    "CADA"
+   ]
   }
  ]
 }

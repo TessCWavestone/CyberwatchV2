@@ -3,9 +3,9 @@
   "titre": "Cyber Watch",
   "surtitre": "Veille réglementaire — Wavestone",
   "sous_titre": "Cybersécurité · Données · IA · Dispositifs médicaux — collecte automatique chaque lundi",
-  "mise_a_jour": "2026-10-26T11:12+00:00",
-  "version": "2026-10-26-1112",
-  "nb_sources": 156,
+  "mise_a_jour": "2026-10-30T17:05+00:00",
+  "version": "2026-10-30-1705",
+  "nb_sources": 159,
   "url_lancer_maj": "https://github.com/TessCWavestone/CyberwatchV2/actions/workflows/veille.yml",
   "depot": "TessCWavestone/CyberwatchV2",
   "branche": "main",
@@ -15,19 +15,19 @@
   "ia": {
    "actif": true,
    "modele": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
-   "faits": 275,
-   "erreur": "Temps imparti atteint : 275 articles triés par l'IA, les autres le seront à la prochaine collecte."
+   "faits": 202,
+   "erreur": "Temps imparti atteint : 202 articles triés par l'IA, les autres le seront à la prochaine collecte."
   },
   "traduction": {
    "active": true,
    "moteur": true,
-   "faites": 50,
+   "faites": 62,
    "en_attente": 0,
    "erreur": ""
   },
-  "nb_nouveaux": 22,
-  "nb_ecartes_nouveaux": 691,
-  "nb_essentiel": 306,
+  "nb_nouveaux": 24,
+  "nb_ecartes_nouveaux": 978,
+  "nb_essentiel": 310,
   "textes_cles_en": {
    "RGPD / GDPR": "GDPR",
    "MDR (dispositifs médicaux)": "MDR (medical devices)",
@@ -52,7 +52,7 @@
   },
   "pages": {
    "tentees": 400,
-   "lues": 104
+   "lues": 179
   },
   "acteurs": {
    "dm": {
@@ -730,10 +730,1550 @@
     "groupe": "autorites"
    }
   },
-  "nb_versions": 15,
-  "nb_alertes": 15
+  "nb_versions": 16,
+  "nb_alertes": 8
  },
  "articles": [
+  {
+   "id": "dbd28002a2a8",
+   "titre": "New revision of the MDCG Position Paper on the management of SS(C)P in Eudamed after mandatory use",
+   "lien": "https://health.ec.europa.eu/latest-updates/new-revision-mdcg-position-paper-management-sscp-eudamed-after-mandatory-use-2026-10-30_en",
+   "resume": "News announcement 30 October 2026 1 min read",
+   "date": "2026-10-30",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Medical Device Coordination Group",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Termes santé"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.383,
+   "score_bruit": 0.519,
+   "score": 0.499,
+   "themes": [
+    "dm_div",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "MDCG"
+   ],
+   "motif": "IA : médicaments seuls (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-30",
+    "ok": false,
+    "v": 2,
+    "erreur": "page sans texte lisible (contenu en JavaScript ?)"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "medicaments",
+    "type": "obligation_echeance",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "medicaments",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Nouvelle révision du document de position MDCG sur la gestion de SS(C)P en Eudamed après utilisation obligatoire",
+     "resume": "Nouvelle annonce 30 octobre 2026 1 min de lecture"
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "MDCG"
+   ],
+   "acronymes": [
+    "MDCG"
+   ]
+  },
+  {
+   "id": "f483a7fe849d",
+   "titre": "Guidelines on web scraping in the context of generative AI",
+   "lien": "https://digitalpolicyalert.org/change/20297-guidelines-032026-on-web-scraping-in-the-context-of-generative-ai",
+   "resume": "",
+   "date": "2026-10-30",
+   "date_estimee": true,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Digital Policy Alert",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.56,
+   "score_bruit": 0.413,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "consultation"
+   },
+   "score": 0.59,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Lignes directrices sur le grattage de toile dans le contexte de IA génératif",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "4a14695e2129",
+   "titre": "European Data Protection Board closes consultation on draft guidelines on web scraping in the context of generative AI",
+   "lien": "https://digitalpolicyalert.org/event/41480-european-data-protection-board-closes-consultation-on-guidelines-032026-on-web-scraping-in-the-context-of-generative-ai",
+   "resume": "Latest event Date: 2026-10-30 outline consultation closed On 30 October 2026, the European Data Protection Board (EDPB) closes the consultation on the draft guidelines 03/2026 on web scraping in the context of generative AI. The draft guidelines clarify the legal and technical implications under…",
+   "date": "2026-10-30",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Digital Policy Alert",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.433,
+   "score_bruit": 0.46,
+   "themes": [
+    "ia",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : consultation sur un projet de guide ou de lignes directrices",
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "statut": "consultation",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "consultation"
+   },
+   "score": 0.463,
+   "ia": {
+    "v": "t4",
+    "avis": "a_surveiller",
+    "motif": "consultation_droit_souple",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le Comité européen de la protection des données clôt la consultation sur les projets de lignes directrices sur le grattage du web dans le contexte de la génération IA",
+     "resume": "Dernier événement Date: 2026-10-30 Fin de la consultation Le 30 octobre 2026, le Conseil européen de la protection des données (EDPB) clôt la consultation sur le projet de lignes directrices 03/2026 sur le grattage web dans le contexte de IA. Le projet de lignes directrices clarifie les implications juridiques et techniques..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "EDPB"
+   ],
+   "acronymes": [
+    "EDPB"
+   ]
+  },
+  {
+   "id": "a1c823870c1a",
+   "titre": "Guidelines on anonymisation",
+   "lien": "https://digitalpolicyalert.org/change/20295-guidelines-022026-on-anonymisation",
+   "resume": "",
+   "date": "2026-10-30",
+   "date_estimee": true,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Digital Policy Alert",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.605,
+   "score_bruit": 0.549,
+   "themes": [
+    "retours_importants",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "consultation"
+   },
+   "score": 0.635,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "fi",
+   "trad": {
+    "en": {
+     "titre": "Guidelines on anonymisation",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Lignes directrices sur l'anonymat",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "d45e8ad52333",
+   "titre": "European Data Protection Board closes consultation on draft guidelines on anonymisation",
+   "lien": "https://digitalpolicyalert.org/event/41476-european-data-protection-board-closes-consultation-on-guidelines-022026-on-anonymisation",
+   "resume": "Latest event Date: 2026-10-30 outline consultation closed On 30 October 2026, the European Data Protection Board (EDPB) closes the consultation on the draft guidelines on anonymisation. The draft guidelines apply to any entity anonymising personal data under the General Data Protection Regulation…",
+   "date": "2026-10-30",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Digital Policy Alert",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.402,
+   "score_bruit": 0.383,
+   "themes": [
+    "nis2",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : lignes directrices / recommandation officielle",
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "statut": "consultation",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "consultation"
+   },
+   "score": 0.432,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le Comité européen de la protection des données clôt la consultation sur les projets de lignes directrices sur l'anonymat",
+     "resume": "Dernier événement Date: 2026-10-30 Fin de la consultation Le 30 octobre 2026, le Conseil européen de la protection des données (EDPB) clôt la consultation sur le projet de lignes directrices sur l'anonymat. Le projet de lignes directrices s'applique à toute entité anonymisant des données personnelles en vertu du règlement général sur la protection des données..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "EDPB"
+   ],
+   "acronymes": [
+    "GDPR",
+    "EDPB"
+   ]
+  },
+  {
+   "id": "43ea48b87e94",
+   "titre": "Cookies et application mobile : sanctions de 7 millions d’euros à l’encontre des sociétés FNAC DARTY PARTICIPATIONS ET SERVICES et FNAC DIRECT",
+   "lien": "https://www.cnil.fr/fr/sanction-cookies-app-fnac",
+   "resume": "Le 22 octobre 2026, la CNIL a sanctionné les sociétés FNAC DARTY PARTICIPATIONS ET SERVICES et FNAC DIRECT d’une amende de 7 millions d’euros pour non-respect des règles applicables en matière de traceurs (cookies).",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 7000000,
+    "texte": "7 millions d’euros",
+    "plafond": false
+   },
+   "titre_nettoye": 3,
+   "score_cyber": 0.587,
+   "score_bruit": 0.599,
+   "themes": [
+    "donnees",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "statut": "lignes_directrices"
+   },
+   "score": 0.617,
+   "statut": "lignes_directrices",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "sanction",
+    "type": "sanction",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "societe_grand_public",
+    "page": true
+   },
+   "langue": "fr",
+   "trad": {
+    "en": {
+     "titre": "Cookies and mobile application: €7 million penalties for FNAC DARTY ET SERVICES and FNAC DIRECT",
+     "resume": "On 22 October 2026, CNIL sanctioned FNAC DARTY PARTICIPATIONS ET SERVICES and FNAC DIRECT by a fine of EUR 7 million for non-compliance with the rules applicable to tracers (cookies)."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CNIL"
+   ],
+   "acronymes": [
+    "CNIL"
+   ]
+  },
+  {
+   "id": "ceea0ceffe69",
+   "titre": "Notes from the IAPP Europe: Digital Omnibus progress, health data and online scams and fraud",
+   "lien": "https://iapp.org/news/a/notes-from-the-iapp-europe-digital-omnibus-progress-health-data-and-online-scams-and-fraud",
+   "resume": "",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "IAPP",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Santé"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.715,
+   "score_bruit": 0.567,
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE",
+    "RGPD / GDPR"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : Cybersecurity Act / certification UE, RGPD / GDPR",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR",
+     "Cybersecurity Act / certification UE"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "projet"
+   },
+   "score": 0.795,
+   "statut": "projet",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Notes du IAPP Europe: progrès de l'omnibus numérique, données de santé et escroqueries et fraudes en ligne",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "acronymes": [
+    "Digital Omnibus"
+   ]
+  },
+  {
+   "id": "732d912784a7",
+   "titre": "Information Commission’s Office adopted updated guidance on special category data under Data (Use and Access) Act",
+   "lien": "https://digitalpolicyalert.org/event/45261-information-commissions-office-adopted-updated-guidance-on-special-category-data-under-data-use-and-access-act",
+   "resume": "Latest event Date: 2026-10-29 outline adoption On 29 October 2026, the Information Commission’s Office (ICO) adopted a revised version of its guidance on special category data to take account of amendments made by the Data (Use and Access) Act 2025, alongside several clarifications. The ICO issu…",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Digital Policy Alert",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "amendment"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.479,
+   "score_bruit": 0.491,
+   "themes": [
+    "donnees",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "statut": "adopte",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "statut": "adopte"
+   },
+   "score": 0.509,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "texte_officiel",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Commission de l'information Le Bureau a adopté des directives actualisées sur les données de catégorie spéciale en vertu de la Loi sur les données (utilisation et accès)",
+     "resume": "Dernier événement Date: 2026-10-29 Adoption de l'ébauche Le 29 octobre 2026, le Bureau de la Commission de l'information (ICO) a adopté une version révisée de ses directives sur les données de catégorie spéciale afin de tenir compte des modifications apportées par la loi de 2025 sur les données (utilisation et accès) ainsi que de plusieurs précisions. Le ICO estsu..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "ICO"
+   ],
+   "acronymes": [
+    "GDPR",
+    "ICO"
+   ]
+  },
+  {
+   "id": "050bbf23e17a",
+   "titre": "Nodo Eidas italiano in manutenzione",
+   "lien": "https://www.agid.gov.it/it/notizie/nodo-eidas-italiano-manutenzione",
+   "resume": "Nodo Eidas italiano in manutenzione false brocceri@agid.gov.it Gio, 10/29/2026 - 12:19 Il Nodo eIDAS italiano si aggiorna per garantire ai cittadini e alle istituzioni un servizio di identità digitale transfrontaliera sempre più sicuro, efficiente e protetto. L’intervento, che verrà effettuato il 29 ottobre 2026, dalle ore 17:00 alle ore 20:00, è legato al rinnovo dei certificati digitali, ovvero il cuore…",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "AgID – Agenzia per l'Italia Digitale (notizie)",
+   "zone": "Italie",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "eIDAS"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.522,
+   "score_bruit": 0.538,
+   "themes": [
+    "fournisseurs_publics",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "eIDAS 2 / portefeuille européen d'identité"
+   ],
+   "motif": "IA : alerte de vulnérabilité (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "eIDAS 2 / portefeuille européen d'identité"
+    ],
+    "sujet": true
+   },
+   "score": 0.602,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "alerte_vulnerabilite",
+    "type": "alerte_vulnerabilite",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "it",
+   "trad": {
+    "en": {
+     "titre": "Nodo Eidas Italian maintenance",
+     "resume": "Nodo Eidas italiano in maintenance false brocceri@agid.gov.it Gio, 10/29/2026 - 12:19 The Italian EIDAS Nodo is updated to guarantee citizens and institutions an increasingly safe, efficient and protected cross-border digital identity service. The intervention, which will be carried out on 29 October 2026, from 17:00 to 20:00, is linked to the renewal of digital certificates, that is the heart..."
+    },
+    "fr": {
+     "titre": "Nodo Eidas Entretien italien",
+     "resume": "Nodo Eidas italiano en entretien faux brocceri@agid.gov.it Gio, COMMISSION ÉCONOMIQUE POUR L'EUROPE Les EIDAS italiens Nodo est mis à jour pour garantir aux citoyens et aux institutions un service d'identité numérique transfrontière de plus en plus sûr, efficace et protégé. L'intervention, qui sera effectuée le 29 octobre 2026, de 17:00 à 20:00, est liée au renouvellement des certificats numériques, c'est le cœur..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "eIDAS",
+    "AgID"
+   ],
+   "acronymes": [
+    "eIDAS",
+    "AgID"
+   ]
+  },
+  {
+   "id": "519b5a0724ad",
+   "titre": "CumuluZ en Nictiz verbinden kennis en praktijk voor landelijke databeschikbaarheid",
+   "lien": "https://www.nictiz.nl/nieuws/cumuluz-en-nictiz-verbinden-kennis-en-praktijk-voor-landelijke-databeschikbaarheid/",
+   "resume": "29 oktober 2026 CumuluZ en Nictiz hebben werkafspraken gemaakt om hun kennis, expertise en inzet voor landelijke databeschikbaarheid met elkaar te verbinden.",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Nictiz (centre d'expertise santé numérique, normes d'échange, EHDS)",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.702,
+   "score_bruit": 0.513,
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "EHDS"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "EHDS"
+    ],
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.702,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "evenement",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "CumuluZ and Nictiz connect knowledge and practice for national data availability",
+     "resume": "29 October 2026 CumuluZ and Nictiz have made working arrangements to connect their knowledge, expertise and commitment to national data availability."
+    },
+    "fr": {
+     "titre": "CumuluZ et Nictiz relient connaissances et pratiques pour la disponibilité des données nationales",
+     "resume": "29 octobre 2026 CumuluZ et Nictiz ont pris des dispositions pour relier leurs connaissances, leur expertise et leur engagement à la disponibilité des données nationales."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "52508ad5756a",
+   "titre": "El CCN renueva la herramienta Inés para facilitar la adecuación al ENS",
+   "lien": "https://www.redseguridad.com/actualidad/ciberseguridad/el-ccn-renueva-la-herramienta-ines-para-facilitar-la-adecuacion-al-ens_20261029.html",
+   "resume": "El Centro Criptológico Nacional (CCN) ha renovado la solución de Gobernanza Inés con una serie de mejoras que la hacen más segura y sencilla de usar, y que ayudan a los organismos públicos a avanzar en su adecuación al Esquema Nacional de Seguridad (ENS). Entre las novedades incorporadas destacan las siguientes: Nuevo cuestionario. Adaptado a […] La entrada El CCN renueva la herramienta Inés para facilitar la…",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Red Seguridad (revue cyber espagnole)",
+   "zone": "Espagne",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Référentiel / schéma de sécurité national"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.546,
+   "score_bruit": 0.527,
+   "themes": [
+    "fournisseurs_publics",
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "ENS / CPSTIC (Espagne)"
+   ],
+   "motif": "texte clé : ENS / CPSTIC (Espagne)",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "ENS / CPSTIC (Espagne)"
+    ],
+    "sig": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.576,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "es",
+   "trad": {
+    "en": {
+     "titre": "The CCN renews the Ines tool to facilitate matching to the ENS",
+     "resume": "The National Cryptocological Center (CCN) has renewed the Ines governance solution with a number of improvements that make it safer and easier to use and that help public agencies advance their adequacy with the National Security Scheme (ENS). The following are some of the new developments: To [...] La entrada The CCN renews the Ines tool to facilitate the..."
+    },
+    "fr": {
+     "titre": "Le CCN renouvelle l'outil Ines pour faciliter l'appariement avec le ENS",
+     "resume": "Le Centre Cryptocologique National (CCN) a renouvelé la solution de gouvernance Ines avec un certain nombre d'améliorations qui la rendent plus sûre et plus facile à utiliser et qui aident les organismes publics à faire progresser leur adéquation avec le système de sécurité nationale (ENS). Voici quelques-uns des nouveaux développements: À [...] La entrada Le CCN renouvelle l'outil Ines pour faciliter..."
+    }
+   },
+   "bruit": [
+    "finance / banque"
+   ],
+   "echeances": [],
+   "sujets": [
+    "ENS",
+    "CCN"
+   ],
+   "acronymes": [
+    "ENS",
+    "CCN"
+   ]
+  },
+  {
+   "id": "20e0311aca88",
+   "titre": "ETSI unveils new standard to reduce production of harmful deepfakes",
+   "lien": "https://www.etsi.org/newsroom/press-releases/etsi-unveils-new-standard-to-reduce-production-of-harmful-deepfakes/",
+   "resume": "Press Release 29 October 2026 ETSI has released a new Technical Specification that aims to reduce the risk of generative AI systems producing harmful deepfakes. Developed by ETSI's Technical Committee... Read more ETSI unveils new standard to reduce production of harmful deepfakes",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "ETSI — newsroom (normalisation télécoms et cybersécurité)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "ETSI"
+   ],
+   "groupes": [
+    "Standards à surveiller"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.553,
+   "score_bruit": 0.415,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.633,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "oui",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "ETSI dévoile une nouvelle norme pour réduire la production de scoops nocifs",
+     "resume": "Communiqué de presse 29 octobre 2026 ETSI a publié une nouvelle spécification technique qui vise à réduire le risque de systèmes générateurs IA produisant des failles profondes nocives. Développé par le Comité Technique de ETSI... En savoir plus ETSI dévoile une nouvelle norme pour réduire la production de spakes profonds nocifs"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "50c2c9f3bacb",
+   "titre": "Nieuwe handreiking gebruik IAMA en Model DPIA Rijksdienst",
+   "lien": "https://www.digitaleoverheid.nl/nieuws/nieuwe-handreiking-gebruik-iama-en-model-dpia-rijksdienst/",
+   "resume": "Deze handreiking is gepubliceerd voor het gezamenlijk gebruik van het Impact Assessment Mensenrechten en Algoritmen (IAMA) en Data Protect Impact Assessment (DPIA). Het bericht Nieuwe handreiking gebruik IAMA en Model DPIA Rijksdienst verscheen eerst op Digitale Overheid .",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Digitale Overheid (ministère de l'Intérieur, BZK)",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.581,
+   "score_bruit": 0.543,
+   "themes": [
+    "ia",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : guide ou commentaire sans texte suivi",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.581,
+   "ia": {
+    "v": "t4",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "New handling use IAMA and Model DPIA National Service",
+     "resume": "This tool was published for the joint use of the Impact Assessment Human Rights and Algorithms (IAMA) and Data Protect Impact Assessment (DPIA). Het bericht Nieuwe handreiking gebruik IAMA en Model DPIA Rijksdienst verscheen eerst op Digitale Overheid ."
+    },
+    "fr": {
+     "titre": "Nouvelle manipulation utiliser IAMA et modèle DPIA service national",
+     "resume": "Cet outil a été publié pour l'utilisation conjointe de l'analyse d'impact Droits de l'homme et Algorithmes (IAMA) et de l'analyse d'impact Protection des données (DPIA). Het bericht Nieuwe handreiking gebruik IAMA en Modèle DPIA Rijksdienst verscheen eerst op Digitale Overheid ."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "2439ecd6c77e",
+   "titre": "Blog 29 oktober 2026 Data & privacy AVG Mag je een klant mailen over zijn verlaten winkelwagen? Dit zijn de spelregels. Lees meer",
+   "lien": "https://www.ictrecht.nl/blog/mag-je-een-klant-mailen-over-zijn-verlaten-winkelwagen-dit-zijn-de-spelregels",
+   "resume": "",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "ICTRecht — blog",
+   "zone": "Pays-Bas",
+   "nature": "cabinet",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "RGPD"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.557,
+   "score_bruit": 0.575,
+   "themes": [
+    "ia",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.637,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "commentaire",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "Blog 29 October 2026 Data & privacy GDPR Can you email a customer about his abandoned shopping cart? These are the rules of the game. Read more",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Blog 29 octobre 2026 Données et confidentialité RGPD Pouvez-vous envoyer un mail à un client au sujet de son panier abandonné ? Ce sont les règles du jeu. Lire plus",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR"
+   ],
+   "acronymes": [
+    "GDPR"
+   ]
+  },
+  {
+   "id": "7bd87ab64ecf",
+   "titre": "BSI stellt Curriculum für NIS2-Geschäftsleitungsschulung vor",
+   "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/NIS-2-Curriculum-CEO-Schulung_261028.html",
+   "resume": "",
+   "date": "2026-10-28",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "BSI (Office fédéral allemand de la sécurité de l'information)",
+   "zone": "Allemagne",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "NIS2"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.333,
+   "score_bruit": 0.278,
+   "score": 0.413,
+   "themes": [
+    "nis2",
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "NIS2"
+   ],
+   "motif": "IA : hors du sujet suivi (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-30",
+    "ok": false,
+    "v": 2,
+    "erreur": "404 Client Error: Not Found for url: https://www.bsi.bund.de/DE/Service-Navi/Pre"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "hors_sujet",
+    "type": "evenement",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "BSI Launches Curriculum for NIS2-Geschäftsleitungsschulung",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "BSI lance un programme pour NIS2-Geschäftsleitungsschulung",
+     "resume": ""
+    }
+   },
+   "bruit": [
+    "marchés / entreprises"
+   ],
+   "echeances": [],
+   "sujets": [
+    "NIS2",
+    "BSI"
+   ],
+   "acronymes": [
+    "NIS2",
+    "BSI"
+   ]
+  },
+  {
+   "id": "2fbd3d0802d4",
+   "titre": "BfArM setzt auf Digitalisierung und Gesundheitsdaten: Dr. Stefanie Weber wird neue Vizepräsidentin",
+   "lien": "https://www.bfarm.de/SharedDocs/Pressemitteilungen/DE/2026/pm09-2026.html",
+   "resume": "Pressemitteilung Nr. 09/26 vom 28.10.2026",
+   "date": "2026-10-28",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "BfArM — communiqués (DiGA, dispositifs médicaux, logiciels)",
+   "zone": "Allemagne",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.679,
+   "score_bruit": 0.541,
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "EHDS"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "EHDS"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.679,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "entreprise_produit",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "BfArM focuses on digitalization and health data: Dr. Stefanie Weber becomes new Vice President",
+     "resume": "Press release No 09/26 of 28.10.2026"
+    },
+    "fr": {
+     "titre": "BfArM se concentre sur la numérisation et les données de santé : Stefanie Weber devient nouvelle vice-présidente",
+     "resume": "Communiqué de presse n° 09/26 du 28.10.2026"
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "BfArM"
+   ],
+   "acronymes": [
+    "BfArM"
+   ]
+  },
+  {
+   "id": "9197dd7f9318",
+   "titre": "Wykaz KSC: nie otrzymałeś zawiadomienia o wpisie? Zgłoś podmiot do weryfikacji",
+   "lien": "https://www.gov.pl/web/cyfryzacja/wykaz-ksc-nie-otrzymales-zawiadomienia-o-wpisie-zglos-podmiot-do-weryfikacji",
+   "resume": "27.10.2026 Ministerstwo Cyfryzacji prowadzi identyfikację podmiotów wykonujących zadania użyteczności publicznej, które mogą podlegać wpisowi z urzędu do Wykazu Podmiotów Kluczowych i Podmiotów Ważnych (Wykazu KSC). Podmioty, które nie otrzymały zawiadomienia o wpisie ani wezwania do uzupełnienia…",
+   "date": "2026-10-27",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Ministère du numérique",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.605,
+   "score_bruit": 0.534,
+   "themes": [
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "NIS2"
+   ],
+   "motif": "IA : obligation ou échéance de conformité",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "NIS2"
+    ],
+    "sujet": true
+   },
+   "score": 0.605,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "obligation_echeance",
+    "type": "obligation_echeance",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "pl",
+   "trad": {
+    "en": {
+     "titre": "List KSC: have you not received an alert notice? Report the entity for verification",
+     "resume": "27.10.2026 The Ministry of Digital Affairs identifies entities carrying out public service tasks which may be subject to an official entry in the List of Key Entities and Important Entities (List KSC). Entities that have not received an alert or a call to supplement..."
+    },
+    "fr": {
+     "titre": "Liste KSC : n'avez-vous pas reçu un avis d'alerte ? Indiquer l'entité aux fins de vérification",
+     "resume": "27.10.2026 Le Ministère des affaires numériques identifie les entités chargées de tâches de service public qui peuvent faire l'objet d'une inscription officielle dans la Liste des entités clés et des entités importantes (Liste KSC). Entités qui n'ont pas reçu d'alerte ou d'appel pour compléter..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NIS2"
+   ],
+   "acronymes": [
+    "NIS2"
+   ]
+  },
+  {
+   "id": "972c08c416af",
+   "titre": "Italy's AI Act framework takes shape: What Legislative Decree No. 179/2026 means for organizations",
+   "lien": "https://iapp.org/news/a/italys-ai-act-framework-takes-shape-what-legislative-decree-no-179-2026-means-for-organizations",
+   "resume": "",
+   "date": "2026-10-27",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "IAPP",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.651,
+   "score_bruit": 0.461,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : AI Act",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "adopte"
+   },
+   "score": 0.731,
+   "statut": "adopte",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La loi italienne IA prend forme : ce que signifie le décret législatif n° 179/2026 pour les organisations",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "eec093029979",
+   "titre": "First ISC2 AI Security Certification Expected for Early 2027",
+   "lien": "https://www.infosecurity-magazine.com/news/first-isc2-ai-security/",
+   "resume": "27 October 2026 ISC2 is seeking 3000 volunteers to enrol to a pilot exam phase for its upcoming AI security certification",
+   "date": "2026-10-27",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Infosecurity Magazine (UK)",
+   "zone": "Royaume-Uni",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Certification / qualification de sécurité"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.628,
+   "score_bruit": 0.464,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.658,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Première certification de sécurité ISC2 IA prévue pour début 2027",
+     "resume": "27 octobre 2026 ISC2 cherche 3000 volontaires pour s'inscrire à une phase d'examen pilote pour sa prochaine certification de sécurité IA"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "a51c198f8174",
+   "titre": "Nevymahatelné nařízení EU: Neviditelná razítka v AI nebudou fungovat, stačí změnit pár slov",
+   "lien": "https://www.lupa.cz/aktuality/nevymahatelne-narizeni-eu-neviditelna-razitka-v-ai-nebudou-fungovat-staci-zmenit-par-slov/?utm_source=rss&utm_medium=text&utm_campaign=rss",
+   "resume": "Podvádění s úkoly, generování falešných recenzí nebo masový přísun anonymních článků od robotů. Technické řešení v podání neviditelných vodoznaků mělo přinést jasný řád do toho, co vytvořila umělá inteligence a co člověk. Vývoj událostí z posledních měsíců ale ukazuje, že očekávání narážejí na tvrdou realitu technologických limitů.",
+   "date": "2026-10-26",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Lupa.cz — actualités",
+   "zone": "Rép. Tchèque",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.648,
+   "score_bruit": 0.638,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.648,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": true
+   },
+   "langue": "cs",
+   "trad": {
+    "en": {
+     "titre": "Unenforceable regulation EU: Invisible stamps in AI will not work, just change a few words",
+     "resume": "Cheating with homework, generating false reviews or mass feeding anonymous articles from robots. The technical solution of invisible watermarks was to bring clear order to what created artificial intelligence and what man. But developments in recent months show that expectations run against the harsh reality of technological limits."
+    },
+    "fr": {
+     "titre": "Règlement non exécutoire UE: Les timbres invisibles en IA ne fonctionneront pas, il suffit de changer quelques mots",
+     "resume": "Faire des devoirs, générer de fausses critiques ou nourrir en masse des articles anonymes de robots. La solution technique des filigranes invisibles était de mettre en ordre ce qui créait l'intelligence artificielle et ce que l'homme. Mais l'évolution de ces derniers mois montre que les attentes vont à l'encontre de la dure réalité des limites technologiques."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
   {
    "id": "d14aa1880dae",
    "titre": "Methodik zum Grundschutz++ als BSI-Standard 300-1 veröffentlicht",
@@ -764,7 +2304,7 @@
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
-   "motif": "IA : lignes directrices / recommandation officielle (à vérifier : écarté par les règles)",
+   "motif": "IA : guide ou commentaire sans texte suivi (à vérifier : écarté par les règles)",
    "page": {
     "date": "2026-10-26",
     "ok": false,
@@ -772,8 +2312,8 @@
    },
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "lignes_directrices",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
     "type": "lignes_directrices",
     "sujet": "oui",
     "applicable": "oui",
@@ -1149,69 +2689,6 @@
    "acronymes": []
   },
   {
-   "id": "3dad06d65041",
-   "titre": "Ciberseguridad desde fábrica: qué exige Europa a los sistemas de seguridad",
-   "lien": "https://www.redseguridad.com/especialidades-tic/normativa-y-certificacion/ciberseguridad-desde-fabrica-que-exige-europa-a-los-sistemas-de-seguridad_20261023.html",
-   "resume": "Cada año aumenta el número de dispositivos conectados a una red. El teletrabajo se ha consolidado, sectores tradicionalmente analógicos han acelerado su digitalización y los equipos intercambian cada vez más información entre sí. Este avance aporta eficiencia y nuevas posibilidades, pero también amplía lo que en seguridad denominamos superficie de ataque. Y es que cuantas […] La entrada Ciberseguridad desde fábrica:…",
-   "date": "2026-10-23",
-   "date_estimee": false,
-   "detecte_le": "2026-10-26",
-   "version": "2026-10-26-1112",
-   "source": "Red Seguridad (revue cyber espagnole)",
-   "zone": "Espagne",
-   "nature": "presse",
-   "rubrique": "autres",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Cybersécurité (réglementation)"
-   ],
-   "groupes": [
-    "Termes multilingues"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_cyber": 0.675,
-   "score_bruit": 0.544,
-   "score": 0.755,
-   "themes": [
-    "cra",
-    "dm_div"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "sens_fort": true,
-   "motif": "IA : commentaire / évolution d'un texte (repêché par l'IA)",
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
-    "type": "commentaire",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "sante_hors_sujet",
-    "page": false
-   },
-   "langue": "es",
-   "trad": {
-    "en": {
-     "titre": "Cybersecurity from factory: what Europe requires of safety systems",
-     "resume": "Each year the number of devices connected to a network increases. Telework has been established and traditionally analogue sectors have been accelerating their digitalization and equipment increasingly exchange information with each other. That advance brings efficiency and new possibilities but also expands what we call an attack surface in safety. And that's how many [...] The entrance Cybersecurity from factory:..."
-    },
-    "fr": {
-     "titre": "Cybersécurité de l'usine : ce que l'Europe exige des systèmes de sécurité",
-     "resume": "Chaque année, le nombre d'appareils connectés à un réseau augmente. Le télétravail a été établi et les secteurs traditionnellement analogiques accélèrent leur numérisation et l'équipement échange de plus en plus d'informations entre eux. Cette avancée apporte une efficacité et de nouvelles possibilités, mais elle élargit aussi ce que nous appelons une surface d'attaque en toute sécurité. Et c'est combien [...] L'entrée Cybersécurité de l'usine:..."
-    }
-   },
-   "echeances": [],
-   "sujets": [],
-   "acronymes": []
-  },
-  {
    "id": "ac84545758cc",
    "titre": "Zatímco se řešily chyby v PHP, útočníci propašovali malware do oblíbené open-source knihovny",
    "lien": "https://www.lupa.cz/aktuality/zatimco-se-resily-chyby-v-php-utocnici-propasovali-malware-do-oblibene-open-source-knihovny/?utm_source=rss&utm_medium=text&utm_campaign=rss",
@@ -1371,80 +2848,6 @@
    ],
    "acronymes": [
     "AI Act"
-   ]
-  },
-  {
-   "id": "2e6a178b6d85",
-   "titre": "««PME Cybersécurité 2026»: La cybercriminalité devient un risque commercial pour les PME suisses»",
-   "lien": "https://www.bacs.admin.ch/fr/26-kmustudie-fr",
-   "resume": "22 octobre 2026 «PME Cybersécurité 2026»: La cybercriminalité devient un risque commercial pour les PME suisses Quatre PME suisses sur cinq s’attendent à une augmentation des cybermenaces en lien avec l’IA. L’étude « PME Cybersécurité 2026 » menée par la Mobilière en collaboration avec différents…",
-   "date": "2026-10-22",
-   "date_estimee": false,
-   "detecte_le": "2026-10-26",
-   "version": "2026-10-26-1112",
-   "source": "Office fédéral de la cybersécurité OFCS",
-   "zone": "Suisse",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Cybersécurité (réglementation)"
-   ],
-   "groupes": [
-    "Termes multilingues"
-   ],
-   "amende": null,
-   "titre_nettoye": 3,
-   "score_cyber": 0.635,
-   "score_bruit": 0.599,
-   "themes": [
-    "sante_donnees",
-    "cra"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "elevee",
-   "essentiel": true,
-   "a_verifier": true,
-   "textes_cles": [],
-   "motif": "",
-   "page": {
-    "date": "2026-10-26",
-    "ok": true
-   },
-   "indices_page": {
-    "sig": true,
-    "sig_fort": true,
-    "sujet": true,
-    "sujet_fort": true,
-    "statut": "adopte"
-   },
-   "score": 0.715,
-   "sens_fort": true,
-   "statut": "adopte",
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "lignes_directrices",
-    "type": "lignes_directrices",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "societe_grand_public",
-    "page": true
-   },
-   "langue": "fr",
-   "trad": {
-    "en": {
-     "titre": "‘PME Cybersecurity 2026': Cybercrime becomes a commercial risk for Swiss PME'",
-     "resume": "22 October 2026 ‘PME Cybersecurity 2026': Cybercrime becomes a commercial risk for Swiss PME Four in five Swiss PME expect an increase in cyber threats related to the AI. The \"PME Cybersecurity 2026\" study conducted by the Mobilière in collaboration with different..."
-    }
-   },
-   "echeances": [],
-   "sujets": [
-    "NCSC"
-   ],
-   "acronymes": [
-    "NCSC"
    ]
   },
   {
@@ -1624,7 +3027,7 @@
    "source": "UKE (Urząd Komunikacji Elektronicznej)",
    "zone": "Pologne",
    "nature": "officielle",
-   "rubrique": "reglementation",
+   "rubrique": "autres",
    "rubrique_mots_cles": false,
    "tags": [],
    "groupes": [],
@@ -1637,11 +3040,11 @@
     "cra"
    ],
    "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
+   "pertinence": "faible",
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
-   "motif": "",
+   "motif": "IA : guide ou commentaire sans texte suivi",
    "page": {
     "date": "2026-10-22",
     "ok": true
@@ -1654,8 +3057,8 @@
    "score": 0.462,
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
     "type": "commentaire",
     "sujet": "oui",
     "applicable": "oui",
@@ -1672,141 +3075,6 @@
     "fr": {
      "titre": "En savoir plus sur : Voulez-vous vous plaindre au coordonnateur des services numériques? Voir comment faire cela",
      "resume": "Vous voulez déposer une plainte auprès du coordonnateur des services numériques? Voir comment procéder 22 octobre 2026 Un compte bloqué, une entrée supprimée ou une décision d'une plateforme avec laquelle vous êtes en désaccord ne signifie pas toujours une violation de la Loi sur les services numériques (DSA). Mais si vous pensez..."
-    }
-   },
-   "echeances": [],
-   "sujets": [],
-   "acronymes": []
-  },
-  {
-   "id": "d66b0685fe15",
-   "titre": "IA agéntica: Autonomía sin control es riesgo sin precio",
-   "lien": "https://www.computing.es/inteligencia-artificial/ia-agentica-autonomia-sin-control-es-riesgo-sin-precio/",
-   "resume": "Los agentes de IA han pasado de recomendar a ejecutar. Cada nivel de autonomía que se les concede exige una capa adicional de control, y la factura de omitirla no desaparece: solo se aplaza L'articolo IA agéntica: Autonomía sin control es riesgo sin precio proviene da Computing .",
-   "date": "2026-10-22",
-   "date_estimee": false,
-   "detecte_le": "2026-10-22",
-   "version": "2026-10-22-1302",
-   "source": "Computing España",
-   "zone": "Espagne",
-   "nature": "presse",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_cyber": 0.627,
-   "score_bruit": 0.605,
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "page": {
-    "date": "2026-10-22",
-    "ok": true
-   },
-   "indices_page": {
-    "sujet": true,
-    "sujet_fort": true
-   },
-   "score": 0.627,
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
-    "type": "commentaire",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "aucune",
-    "page": true
-   },
-   "langue": "es",
-   "trad": {
-    "en": {
-     "titre": "Genetic AI: Uncontrolled autonomy is priceless risk",
-     "resume": "The AI agents have gone from recommending to executing. Each level of autonomy granted to them requires an additional layer of control, and the bill to omit it does not disappear: only is postponed L'articolo IA agentica: Autonomy without control is risk without price comes from Computing ."
-    },
-    "fr": {
-     "titre": "IA: L'autonomie sans contrôle est un risque sans prix",
-     "resume": "aujourd'hui"
-    }
-   },
-   "echeances": [],
-   "sujets": [],
-   "acronymes": []
-  },
-  {
-   "id": "81e89b656072",
-   "titre": "Cinco acciones prácticas para reforzar la seguridad en IA agéntica",
-   "lien": "https://www.computing.es/seguridad/cinco-acciones-practicas-para-reforzar-la-seguridad-en-ia-agentica/",
-   "resume": "La inteligencia artificial ya no se limita a responder preguntas, ahora también tiene la capacidad de actuar. A medida que la IA se vuelve más autónoma, el desafío de la ciberseguridad evoluciona L'articolo Cinco acciones prácticas para reforzar la seguridad en IA agéntica proviene da Computing .",
-   "date": "2026-10-22",
-   "date_estimee": false,
-   "detecte_le": "2026-10-22",
-   "version": "2026-10-22-1302",
-   "source": "Computing España",
-   "zone": "Espagne",
-   "nature": "presse",
-   "rubrique": "autres",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Cybersécurité (réglementation)"
-   ],
-   "groupes": [
-    "Termes multilingues"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_cyber": 0.667,
-   "score_bruit": 0.574,
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "sens_fort": true,
-   "motif": "",
-   "page": {
-    "date": "2026-10-22",
-    "ok": true
-   },
-   "indices_page": {
-    "sujet": true,
-    "sujet_fort": true
-   },
-   "score": 0.747,
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
-    "type": "commentaire",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "societe_grand_public",
-    "page": true
-   },
-   "langue": "es",
-   "trad": {
-    "en": {
-     "titre": "Five practical actions to strengthen safety in genetic AI",
-     "resume": "Artificial intelligence is no longer limited to answering questions, now it also has the ability to act. As AI becomes more autonomous, the challenge of cybersecurity evolves L'articolo Five practical actions to strengthen security in congenital AI comes from Computing ."
-    },
-    "fr": {
-     "titre": "Cinq actions pratiques visant à renforcer la sécurité en IA",
-     "resume": "aujourd'hui"
     }
    },
    "echeances": [],
@@ -2263,6 +3531,90 @@
    "acronymes": [
     "NÚKIB",
     "SÚKL"
+   ]
+  },
+  {
+   "id": "a65c7d292a39",
+   "titre": "Requirements for qualified independent external evaluators of General-Purpose AI models",
+   "lien": "https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models",
+   "resume": "Event report 21 October 2026 The AI Office presents a report on its workshop on the requirements for the qualifications and independence of external model evaluators of general-purpose AI (GPAI) models with systemic risk.",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Commission Européenne - Cybersecurity",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Certification / qualification de sécurité"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.68,
+   "score_bruit": 0.566,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "IA : projet de texte ou consultation",
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "projet"
+   },
+   "score": 0.71,
+   "sens_fort": true,
+   "statut": "projet",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Exigences pour les évaluateurs externes indépendants qualifiés des modèles IA à usage général",
+     "resume": "Rapport d'événement 21 octobre 2026 Le Bureau IA présente un rapport sur son atelier sur les exigences relatives aux qualifications et à l'indépendance des évaluateurs externes de modèles IA à usage général (GPAI) présentant un risque systémique."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act",
+    "AI Office"
+   ],
+   "acronymes": [
+    "AI Act",
+    "AI Office"
    ]
   },
   {
@@ -2787,15 +4139,7 @@
      "resume": "Un examen de l'envoi de deux emails certifiés coûte une pénalité de 2.000 euros à la Fédération Nationale des Ordres Biologistes (FNOB). Avec la disposition n. 763 du 7 octobre 2026, l'Autorité de Protection des Données a constaté une violation de RGPD pour avoir communiqué à une pluralité de destinataires les adresses email personnelles des autres professionnels impliqués..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-07",
-     "approx": false,
-     "extrait": {
-      "fr": "…à la Fédération Nationale des Ordres Biologistes (FNOB). Avec la disposition n. 763 du 7 octobre 2026, l'Autorité de Protection des Données a constaté une violation de RGPD pour avoir…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "GDPR",
     "Garante"
@@ -2886,113 +4230,16 @@
      "resume": "Nouvelle sanction de l'Autorité de protection des données contre l'Agence pour l'Italie numérique (AgID), cette fois pour la publication illégale de données personnelles de certains candidats à un concours public. Avec la disposition n. 745 du 7 octobre 2026, l'Autorité a infligé à l'Agence une amende de 15.000 euros, garantissant la violation des articles 5 et 6 du RGPD et de l'article 2ter du..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-07",
-     "approx": false,
-     "extrait": {
-      "en": "…personal data of some candidates for a public competition. With the provision n. 745 of 7 October 2026, the Authority has inflicted to the Agency a fine of 15.000 euros, ensuring the…"
-     }
-    }
-   ],
-   "sujets": [
-    "GDPR",
-    "Garante",
-    "AgID"
-   ],
-   "acronymes": [
-    "GDPR",
-    "Garante",
-    "AgID"
-   ]
-  },
-  {
-   "id": "8d48be231b8e",
-   "titre": "Het NCSC blijft CSIRT voor gemeenten",
-   "lien": "https://www.ncsc.nl/nieuws/het-ncsc-blijft-csirt-voor-gemeenten",
-   "resume": "Het Nationaal Cyber Security Centrum (NCSC) blijft sectoraal Computer Security Incident Response Team (CSIRT) voor gemeenten en gemeenschappelijke regelingen. Sinds de inwerkingtreding van de Cyberbeveiligingswet (Cbw) in augustus verleent het NCSC deze dienstverlening al. Deze zal worden voortgezet.",
-   "date": "2026-10-20",
-   "date_estimee": false,
-   "detecte_le": "2026-10-22",
-   "version": "2026-10-22-1302",
-   "source": "Centre National de Cybersécurité",
-   "zone": "Pays-Bas",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "NIS2",
-    "Cybersécurité (réglementation)"
-   ],
-   "groupes": [
-    "Termes multilingues"
-   ],
-   "amende": null,
-   "titre_nettoye": 3,
-   "score_cyber": 0.522,
-   "score_bruit": 0.437,
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "elevee",
-   "essentiel": true,
-   "a_verifier": false,
-   "textes_cles": [
-    "NIS2",
-    "Cybersecurity Act / certification UE"
-   ],
-   "motif": "texte clé : NIS2, Cybersecurity Act / certification UE",
-   "statut": "en_vigueur",
-   "page": {
-    "date": "2026-10-22",
-    "ok": true
-   },
-   "indices_page": {
-    "tc": [
-     "NIS2"
-    ],
-    "sig": true,
-    "sig_net": true,
-    "sig_fort": true,
-    "sujet": true,
-    "sujet_fort": true,
-    "statut": "en_vigueur"
-   },
-   "score": 0.602,
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "texte_officiel",
-    "type": "texte_officiel",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "sante_hors_sujet",
-    "page": true
-   },
-   "langue": "nl",
-   "trad": {
-    "en": {
-     "titre": "The NCSC remains CSIRT for municipalities",
-     "resume": "The National Cyber Security Centre (NCSC) remains sectoral Computer Security Incident Response Team (CSIRT) for municipalities and common regulations. Since the entry into force of the Cybersecurity Act (Cbw) in August, NCSC has already provided this service. This will continue."
-    },
-    "fr": {
-     "titre": "Le NCSC reste le CSIRT pour les municipalités",
-     "resume": "Le Centre national de cybersécurité (NCSC) demeure une équipe sectorielle d'intervention en cas d'incident de sécurité informatique (CSIRT) pour les municipalités et les règlements communs. Depuis l'entrée en vigueur de la Loi sur la cybersécurité (Cbw) en août, NCSC a déjà fourni ce service. Cela se poursuivra."
-    }
-   },
    "echeances": [],
    "sujets": [
-    "NIS2",
-    "Cybersecurity Act",
-    "NCSC"
+    "GDPR",
+    "Garante",
+    "AgID"
    ],
    "acronymes": [
-    "NIS2",
-    "Cybersecurity Act",
-    "NCSC"
+    "GDPR",
+    "Garante",
+    "AgID"
    ]
   },
   {
@@ -3007,7 +4254,7 @@
    "source": "Centre National de Cybersécurité",
    "zone": "Pays-Bas",
    "nature": "officielle",
-   "rubrique": "reglementation",
+   "rubrique": "autres",
    "rubrique_mots_cles": false,
    "tags": [],
    "groupes": [],
@@ -3020,11 +4267,11 @@
     "infra_critiques"
    ],
    "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
+   "pertinence": "faible",
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
-   "motif": "",
+   "motif": "IA : guide ou commentaire sans texte suivi",
    "page": {
     "date": "2026-10-22",
     "ok": true
@@ -3036,8 +4283,8 @@
    "score": 0.519,
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "lignes_directrices",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
     "type": "lignes_directrices",
     "sujet": "oui",
     "applicable": "oui",
@@ -3652,148 +4899,6 @@
    ]
   },
   {
-   "id": "473f715e5757",
-   "titre": "Más ciberresiliencia para fortalecer la IA soberana",
-   "lien": "https://www.computing.es/seguridad/mas-ciberresiliencia-para-fortalecer-la-ia-soberana/",
-   "resume": "A medida que el concepto de IA soberana gana peso en Europa, el objetivo ya no es únicamente controlar la ubicación de los datos, sino alcanzar una confianza operativa integral L'articolo Más ciberresiliencia para fortalecer la IA soberana proviene da Computing .",
-   "date": "2026-10-19",
-   "date_estimee": false,
-   "detecte_le": "2026-10-20",
-   "version": "2026-10-20-0730",
-   "source": "Computing España",
-   "zone": "Espagne",
-   "nature": "presse",
-   "rubrique": "autres",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "CRA"
-   ],
-   "groupes": [
-    "Termes multilingues"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_cyber": 0.573,
-   "score_bruit": 0.448,
-   "themes": [
-    "cra",
-    "infra_critiques"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "page": {
-    "date": "2026-10-20",
-    "ok": true
-   },
-   "indices_page": {
-    "sig": true,
-    "sujet": true,
-    "sujet_fort": true
-   },
-   "score": 0.653,
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
-    "type": "commentaire",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "societe_grand_public",
-    "page": true
-   },
-   "langue": "es",
-   "trad": {
-    "en": {
-     "titre": "More Cyber Resilience to Strengthen Sovereign AI",
-     "resume": "As the concept of sovereign AI gains weight in Europe, the goal is not only to control the location of the data, but to achieve an integral operational confidence L'articolo More cyberresilience to strengthen the sovereign AI comes from Computing ."
-    },
-    "fr": {
-     "titre": "Plus de cybersilience pour renforcer l'IA souveraine",
-     "resume": "aujourd'hui"
-    }
-   },
-   "echeances": [],
-   "sujets": [
-    "CRA"
-   ],
-   "acronymes": [
-    "CRA"
-   ]
-  },
-  {
-   "id": "41fbd5597465",
-   "titre": "Microsoft erweitert Schutzmechanismen für autonome KI-Agenten",
-   "lien": "https://www.netzwoche.ch/news/2026-10-19/microsoft-erweitert-schutzmechanismen-fuer-autonome-ki-agenten",
-   "resume": "Microsoft erweitert seinen Sicherheitsansatz Project Perception, um autonome KI-Agenten innerhalb von Unternehmen besser zu kontrollieren. Neue Funktionen sollen Risiken laufend bewerten und Berechtigungen dynamisch anpassen. Auch KI-gestützte Wächter kommen zum Einsatz.",
-   "date": "2026-10-19",
-   "date_estimee": false,
-   "detecte_le": "2026-10-20",
-   "version": "2026-10-20-0730",
-   "source": "Netzwoche (presse IT suisse)",
-   "zone": "Suisse",
-   "nature": "presse",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_cyber": 0.562,
-   "score_bruit": 0.574,
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "elevee",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "page": {
-    "date": "2026-10-20",
-    "ok": true
-   },
-   "indices_page": {
-    "sig": true,
-    "sig_net": true,
-    "sujet": true,
-    "sujet_fort": true
-   },
-   "score": 0.562,
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
-    "type": "commentaire",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "autre_secteur",
-    "page": true
-   },
-   "langue": "de",
-   "trad": {
-    "en": {
-     "titre": "Microsoft extends protection mechanisms for autonomous KI-Agenten",
-     "resume": "Microsoft is expanding its security approach Project Perception to better control autonomous KI-Agenten within enterprises. New functions are intended to continuously assess risks and dynamically adjust authorizations. KI-gestützte guards are also used."
-    },
-    "fr": {
-     "titre": "Microsoft étend les mécanismes de protection pour KI-Agenten autonome",
-     "resume": "Microsoft étend son approche de sécurité Project Perception pour mieux contrôler KI-Agenten autonome au sein des entreprises. De nouvelles fonctions visent à évaluer en permanence les risques et à ajuster dynamiquement les autorisations. Des protecteurs KI-gestützte sont également utilisés."
-    }
-   },
-   "echeances": [],
-   "sujets": [],
-   "acronymes": []
-  },
-  {
    "id": "3f3ef2f516fa",
    "titre": "First harmonised standard supporting the AI Act published in the Official Journal",
    "lien": "https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal",
@@ -4244,16 +5349,7 @@
      "resume": "Informations générales Date de la décision finale : 2 octobre 2026 Contrôleur national de l'affaire : Xandr Inc. Références légales : Article 6 (Licéité du traitement), Article 9 (Processus des catégories spéciales de données à caractère personnel) Décision : Amende administrative Mots clés : amendes, principes de base, marketing, plateformes en ligne Résumé de la décision Origine de l'affaire L'affaire a commencé en 2020 lorsque le Conseil norvégien des consommateurs..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-02",
-     "approx": false,
-     "extrait": {
-      "en": "…for unlawful processing of personal data. Background information Date of final decision: 2 October 2026 National case Controller: Xandr Inc. Legal References: Article 6 (Lawfulness of…",
-      "fr": "…de données à caractère personnel. Informations générales Date de la décision finale : 2 octobre 2026 Contrôleur national de l'affaire : Xandr Inc. Références légales : Article 6 (Licéité du…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "EDPB"
    ],
@@ -6570,15 +7666,7 @@
      "resume": "Les US CISA, FBI et NSA et plusieurs agences partenaires internationales ont lancé un avertissement conjoint sur les cyberattaques avec le gouvernement chinois. Selon le rapport publié le 8 octobre 2026, les agresseurs combinent des outils de détection automatisés, des techniques d'attaque à grande échelle, botopiques et manuelles pour accéder aux réseaux des organisations dans le monde entier et obtenir des données sensibles...."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-08",
-     "approx": false,
-     "extrait": {
-      "en": "…about cyber attacks with the Chinese government. According to the report published on 8 October 2026, attackers combine automated detection tools, large-scale botopic and manual attack…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "NKI"
    ],
@@ -9457,12 +10545,12 @@
    "score_cyber": 0.483,
    "langue": "it",
    "trad": {
-    "en": {
-     "titre": "website data in JSON data format - Scientific guideline",
-     "resume": ""
-    },
     "fr": {
      "titre": "données du site Web au format JSON - Ligne directrice scientifique",
+     "resume": ""
+    },
+    "en": {
+     "titre": "website data in JSON data format - Scientific guideline",
      "resume": ""
     }
    },
@@ -9723,78 +10811,6 @@
    }
   },
   {
-   "id": "fda0696ea4f2",
-   "titre": "Deepfake, la rassegna dei provvedimenti del Garante Privacy su nudi e voci rubate",
-   "lien": "https://www.federprivacy.org/strumenti/accesso-ristretto/deepfake-la-rassegna-dei-provvedimenti-del-garante-privacy-su-nudi-e-voci-rubate",
-   "resume": "Deepfake, il Garante interviene sul fronte della privacy, richiamando anche il nuovo reato di illecita diffusione di contenuti generati o alterati con intelligenza artificiale, punito con la reclusione da uno a cinque anni. L’Autorità riepiloga tre casi: il blocco di Clothoff per carenze nelle tutele dei minori e nell’uso delle immagini altrui; l’intervento su Grok, confluito nella procedura irlandese contro la…",
-   "date": "2026-10-11",
-   "date_estimee": false,
-   "detecte_le": "2026-10-12",
-   "version": "2026-10-12-1259",
-   "source": "Federprivacy",
-   "zone": "Italie",
-   "nature": "presse",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_bruit": 0.543,
-   "themes": [
-    "nis2",
-    "donnees"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "elevee",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "page": {
-    "date": "2026-10-12",
-    "ok": true
-   },
-   "indices_page": {
-    "sig": true,
-    "sig_net": true,
-    "sujet": true,
-    "sujet_fort": true
-   },
-   "score": 0.579,
-   "langue": "it",
-   "trad": {
-    "en": {
-     "titre": "Deepfake, the review of the provisions of the Privacy Guarantor on naked and stolen voices",
-     "resume": "Deepfake, the Guarantor intervenes on the privacy front, recalling also the new crime of illicit diffusion of content generated or altered with artificial intelligence, punished with imprisonment from one to five years. The Authority summarizes three cases: Clothoff’s block for shortcomings in children’s suits and the use of other people’s images; Grok’s intervention, which was influenced by the Irish procedure against..."
-    },
-    "fr": {
-     "titre": "Deepfake, l'examen des dispositions du garant de la vie privée sur les voix nues et volées",
-     "resume": "Deepfake, le garant intervient sur le front de la vie privée, rappelant également le nouveau crime de diffusion illicite de contenu généré ou modifié avec l'intelligence artificielle, puni d'une peine d'emprisonnement de un à cinq ans. L'Autorité récapitule trois cas: Clothoff, bloc pour les lacunes dans les costumes d'enfants et l'utilisation d'images d'autres personnes; l'intervention de Grok..."
-    }
-   },
-   "echeances": [],
-   "sujets": [
-    "Garante"
-   ],
-   "acronymes": [
-    "Garante"
-   ],
-   "score_cyber": 0.579,
-   "ia": {
-    "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
-    "type": "commentaire",
-    "sujet": "oui",
-    "applicable": "oui",
-    "secteur": "non",
-    "exclusion": "societe_grand_public",
-    "page": false
-   }
-  },
-  {
    "id": "c4e0f25e9abe",
    "titre": "Commission holds special meeting of Scientific panel on frontier AI safety and risks",
    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks",
@@ -9982,16 +10998,7 @@
      "resume": "Informations générales Date de la décision finale : 23 septembre 2026 Cas national Contrôleur : IQVIA Solutions Italie S.r.l Référence(s) légale(s) : article 5 (Principes relatifs au traitement des données à caractère personnel), article 9 (Processus de catégories particulières de données à caractère personnel), article 13 (Informations à fournir lorsque des données à caractère personnel sont collectées auprès de la personne concernée), article 25 (Protection des données par..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-09-23",
-     "approx": false,
-     "extrait": {
-      "en": "…processing of patients’ health data. Background information Date of final decision: 23 September 2026 National case Controller: IQVIA Solutions Italy S.r.l Legal Reference(s): Article 5…",
-      "fr": "…pour traitement illégal de patients. Informations générales Date de la décision finale : 23 septembre 2026 Cas national Contrôleur : IQVIA Solutions Italie S.r.l Référence(s) légale(s) : article…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "EDPB"
    ],
@@ -10509,59 +11516,6 @@
    "score_cyber": 0.601
   },
   {
-   "id": "23a6279ecadf",
-   "titre": "Enklere å ta i bruk velferdsteknologisk knutepunkt (VKP) i kommunene ‒ 09.10.2026",
-   "lien": "https://www.nhn.no/nyheter/enklere-a-ta-i-bruk-velferdsteknologisk-knutepunkt-vkp-i-kommunene",
-   "resume": "",
-   "date": "2026-10-09",
-   "date_estimee": false,
-   "detecte_le": "2026-10-12",
-   "version": "2026-10-12-1259",
-   "source": "Norsk helsenett (NHN) — actualités",
-   "zone": "Norvège",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "titre_nettoye": 3,
-   "score_bruit": 0.409,
-   "themes": [
-    "fournisseurs_publics",
-    "acheteurs_sante"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "page": {
-    "date": "2026-10-12",
-    "ok": true
-   },
-   "indices_page": {
-    "sujet": true
-   },
-   "score": 0.518,
-   "langue": "nb",
-   "trad": {
-    "en": {
-     "titre": "Simpler to adopt welfare technology hub (VKP) in municipalities ‒ 09.10.2026",
-     "resume": ""
-    },
-    "fr": {
-     "titre": "Plus simple à adopter centre de technologie de protection sociale (VKP) dans les municipalités - 09.10.2026",
-     "resume": ""
-    }
-   },
-   "echeances": [],
-   "sujets": [],
-   "acronymes": [],
-   "score_cyber": 0.518
-  },
-  {
    "id": "b7c18b05b5e7",
    "titre": "El problema crónico de España con la incorporación de la NIS2",
    "lien": "https://www.redseguridad.com/actualidad/problema-cronico-ciberseguridad-espana-incorporacion-nis2_20261009.html",
@@ -10791,76 +11745,6 @@
     "exclusion": "aucune",
     "page": false
    }
-  },
-  {
-   "id": "046cf212fd13",
-   "titre": "Videosorveglianza urbana riprendeva finestre e balconi di un’abitazione privata: il Garante Privacy sanziona il Comune di Arvier",
-   "lien": "https://www.federprivacy.org/informazione/flash-news/videosorveglianza-urbana-riprendeva-finestre-e-balconi-di-un-abitazione-privata-il-garante-privacy-sanziona-il-comune-di-arvier",
-   "resume": "Una sanzione di 4mila euro è stata comminata dal Garante Privacy al Comune di Arvier, piccola cittadina di 800 abitanti della Valle d’Aosta, per numerose irregolarità riscontrate nell’utilizzo del sistema di videosorveglianza comunale ( provvedimento n. 636 del 23.09.2026 ). Si conclude così un procedimento avviato a seguito del reclamo di una cittadina che lamentava la presenza di una telecamera il cui angolo di…",
-   "date": "2026-10-09",
-   "date_estimee": false,
-   "detecte_le": "2026-10-12",
-   "version": "2026-10-12-1259",
-   "source": "Federprivacy",
-   "zone": "Italie",
-   "nature": "presse",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_bruit": 0.438,
-   "themes": [
-    "nis2",
-    "donnees"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "page": {
-    "date": "2026-10-12",
-    "ok": true
-   },
-   "indices_page": {
-    "sig": true,
-    "sig_net": true,
-    "sujet": true
-   },
-   "score": 0.46,
-   "langue": "it",
-   "trad": {
-    "en": {
-     "titre": "Urban video surveillance resumed windows and balconies of a private residence: the Garante Privacy sanctions the Municipality of Arvier",
-     "resume": "A penalty of 4 thousand euros has been commissioned by the Privacy Authority to the Municipality of Arvier, a small town of 800 inhabitants of the Aosta Valley, for numerous irregularities found in the use of the communal video surveillance system ( provision n. 636 of 23.09.2026 ). This concludes a procedure initiated following the complaint of a citizen who complained about the presence of a camera whose angle of..."
-    },
-    "fr": {
-     "titre": "La surveillance vidéo urbaine reprend les fenêtres et les balcons d'une résidence privée : la Garante Privacy sanctionne la municipalité d'Arvier",
-     "resume": "Une pénalité de 4 000 euros a été demandée par l'Autorité de la vie privée à la municipalité d'Arvier, petite ville de 800 habitants de la vallée d'Aoste, pour de nombreuses irrégularités constatées dans l'utilisation du système communal de vidéosurveillance (disposition n. 636 du 23.09.2026 ). Ceci conclut une procédure engagée à la suite de la plainte d'un citoyen qui s'est plaint de la présence d'une caméra..."
-    }
-   },
-   "echeances": [
-    {
-     "date": "2026-09-23",
-     "approx": false,
-     "extrait": {
-      "it": "…nell’utilizzo del sistema di videosorveglianza comunale ( provvedimento n. 636 del 23.09.2026 ). Si conclude così un procedimento avviato a seguito del reclamo di una cittadina che…",
-      "en": "…found in the use of the communal video surveillance system ( provision n. 636 of 23.09.2026 ). This concludes a procedure initiated following the complaint of a citizen who…",
-      "fr": "…dans l'utilisation du système communal de vidéosurveillance (disposition n. 636 du 23.09.2026 ). Ceci conclut une procédure engagée à la suite de la plainte d'un citoyen qui s'est…"
-     }
-    }
-   ],
-   "sujets": [
-    "Garante"
-   ],
-   "acronymes": [
-    "Garante"
-   ],
-   "score_cyber": 0.46
   },
   {
    "id": "18c9215142f8",
@@ -11121,16 +12005,7 @@
      "resume": "Informations générales Date de la décision finale : 22/09/2026 Affaire nationale Référence(s) légale(s) : Article 32 (Sécurité du traitement) Décision : Infraction administrative Sujets du site Web : Cybersécurité, violations des données personnelles Résumé de la décision Origine de l'affaire En août 2025, le prestataire de services IT Miljödata a été visé par une cyberattaque, au cours de laquelle un acteur malveillant a eu accès à un grand..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-09-22",
-     "approx": false,
-     "extrait": {
-      "en": "…measures to ensure information security. Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision:…",
-      "fr": "…la sécurité de l'information. Informations générales Date de la décision finale : 22/09/2026 Affaire nationale Référence(s) légale(s) : Article 32 (Sécurité du traitement) Décision…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "EDPB"
    ],
@@ -11922,15 +12797,7 @@
      "resume": ""
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-02",
-     "approx": false,
-     "extrait": {
-      "pt": "…a atuação em matéria de dados pessoais O MoU foi assinado na sede da CNPD no dia 2 de outubro de 2026.."
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "CNPD"
    ],
@@ -13504,15 +14371,7 @@
      "resume": "Selon le rapport détaillé publié par la Fondation Wikimedia le 5 octobre 2026, la Fondation Wikimedia aurait été non autorisée par AI-ügynökök à OpenAL, et ils auraient essayé de pirater un carnet et générer un trafic énorme. Ce chiffre d'affaires devrait contribuer à une perte partielle de service en mai. Selon les rapports, ils étaient presque tous des éditions de test, aucun d'entre eux n'a été publié par les lecteurs..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-05",
-     "approx": false,
-     "extrait": {
-      "en": "…on Wikipedia. According to the detailed report published by Wikimedia Foundation on 5 October 2026, Wikimedia Foundation is believed to have been unauthorized by AI-ügynökök to OpenAL,…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "NKI"
    ],
@@ -14200,16 +15059,7 @@
      "resume": "Les 22 et 24 septembre 2026, une mission d'experts de la délégation tchèque en France a pour but de développer la coopération entre la République tchèque et la France et d'échanger des connaissances sur la cybersécurité et la sécurité de l'information. Le programme s'est déroulé à Paris et à Rennes et s'est concentré sur le partage d'expériences, l'identification de priorités, d'activités communes et l'établissement de nouveaux partenariats entre les institutions tchèques et françaises."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-09-24",
-     "approx": false,
-     "extrait": {
-      "cs": "…podpořilo formování strategického přístupu ke kybernetické bezpečnosti. Ve dnech 22.-24. září 2026 se uskutečnila odborná mise české delegace do Francie zaměřená na rozvoj…",
-      "fr": "…ont soutenu la formation d'une approche stratégique de la cybersécurité. Les 22 et 24 septembre 2026, une mission d'experts de la délégation tchèque en France a pour but de développer la…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "NÚKIB"
    ],
@@ -15341,7 +16191,7 @@
    "source": "Ministère du numérique",
    "zone": "Pologne",
    "nature": "officielle",
-   "rubrique": "reglementation",
+   "rubrique": "autres",
    "rubrique_mots_cles": true,
    "tags": [
     "Cybersécurité (réglementation)"
@@ -15357,11 +16207,11 @@
     "fournisseurs_publics"
    ],
    "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "elevee",
+   "pertinence": "faible",
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
-   "motif": "",
+   "motif": "IA : guide ou commentaire sans texte suivi",
    "langue": "pl",
    "trad": {
     "en": {
@@ -15395,8 +16245,8 @@
    },
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "lignes_directrices",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
     "type": "lignes_directrices",
     "sujet": "oui",
     "applicable": "oui",
@@ -16585,15 +17435,7 @@
      "resume": "1 October 2026 Bodycams – PFPDT prohibits BLT Baselland Transport AG from processing data By decision of 29 September 2026, the Federal Data Protection and Transparency Officer (PFPDT) closed his investigation against Basel Transport AG (BLT)..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-09-29",
-     "approx": false,
-     "extrait": {
-      "en": "…– PFPDT prohibits BLT Baselland Transport AG from processing data By decision of 29 September 2026, the Federal Data Protection and Transparency Officer (PFPDT) closed his investigation…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "PFPDT / EDÖB"
    ],
@@ -21522,15 +22364,7 @@
      "resume": "Avec la nouvelle édition de ISO 9001:2026, «Quality Management Systems – Requirements» publiée le 16 septembre 2026, la norme la plus répandue sur les systèmes de gestion maintient sa structure harmonisée (chapitres 4-10) mais l'enrichit d'un attachement beaucoup plus étendu que le passé, conçu pour aider les organisations à interpréter les exigences, même dans des scénarios de plus en plus opérationnels..."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-09-16",
-     "approx": false,
-     "extrait": {
-      "fr": "…édition de ISO 9001:2026, «Quality Management Systems – Requirements» publiée le 16 septembre 2026, la norme la plus répandue sur les systèmes de gestion maintient sa structure harmonisée…"
-     }
-    }
-   ],
+   "echeances": [],
    "acronymes": [],
    "sujets": [],
    "score_cyber": 0.482,
@@ -23099,7 +23933,7 @@
    "source": "National Cyber Security Center Hungary (NKI)",
    "zone": "Hongrie",
    "nature": "officielle",
-   "rubrique": "standards",
+   "rubrique": "autres",
    "rubrique_mots_cles": true,
    "tags": [
     "revision",
@@ -23121,21 +23955,13 @@
      "resume": "NIST a publié un projet mis à jour d'orientation sur la publication spéciale no 800-82 Révision 4 sur la sécurité de la technologie opérationnelle (OT). L'opinion publique du document est valable jusqu'au 30 novembre 2026. Le guide montre comment OT-rendszerek peut être protégé en tenant compte des exigences spécifiques en matière de performance, de fiabilité et de sécurité opérationnelle. La version révisée s'étend à..."
     }
    },
-   "pertinence": "elevee",
+   "pertinence": "faible",
    "themes": [
     "nis2",
     "normes"
    ],
    "pertinence_v": "v4-62329d164bmodele",
-   "echeances": [
-    {
-     "date": "2026-11-30",
-     "approx": false,
-     "extrait": {
-      "en": "…of operational technology (OT). The public opinion of the document shall run until 30 November 2026. The guide shows how OT-rendszerek can be protected taking into account specific…"
-     }
-    }
-   ],
+   "echeances": [],
    "acronymes": [
     "NIST",
     "NKI"
@@ -23145,7 +23971,7 @@
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
-   "motif": "",
+   "motif": "IA : consultation sur un projet de guide ou de lignes directrices",
    "statut": "projet",
    "sujets": [
     "NIST",
@@ -23169,8 +23995,8 @@
    "score": 0.583,
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "projet_consultation",
+    "avis": "a_surveiller",
+    "motif": "consultation_droit_souple",
     "type": "projet_consultation",
     "sujet": "oui",
     "applicable": "oui",
@@ -24631,7 +25457,6 @@
      "date": "2026-09-23",
      "approx": false,
      "extrait": {
-      "en": "Swissmedic Portal Release – New Features Available from 23 September 2026. Submission of major changes (establishment licences) and viewing of specialist data for…",
       "fr": "Swissmedic Portal Release – Nouvelles fonctionnalités Disponible à partir du 23 septembre 2026. Présentation de modifications majeures (licences d'établissement) et consultation de…"
      }
     }
@@ -24769,17 +25594,7 @@
     "cra"
    ],
    "pertinence_v": "v4-62329d164bmodele",
-   "echeances": [
-    {
-     "date": "2026-09-11",
-     "approx": false,
-     "extrait": {
-      "pl": "…zgłaszania podatności i incydentów w ramach Aktu o cyberodporności. 24.09.2026 Od 11 września 2026 r. producenci produktów z elementami cyfrowymi muszą zgłaszać podatności oraz poważne…",
-      "en": "…for reporting vulnerability and incidents under the Cyberimmunity Act. 24.09.2026 From 11 September 2026, digital product manufacturers must report vulnerability and serious incidents…",
-      "fr": "…et les incidents en vertu de la Loi sur la cyberimmunité. 24.09.2026 À partir du 11 septembre 2026, les fabricants de produits numériques doivent signaler la vulnérabilité et les…"
-     }
-    }
-   ],
+   "echeances": [],
    "acronymes": [
     "ENISA"
    ],
@@ -25876,7 +26691,7 @@
    "source": "CNIL",
    "zone": "France",
    "nature": "officielle",
-   "rubrique": "reglementation",
+   "rubrique": "autres",
    "rubrique_mots_cles": false,
    "tags": [],
    "groupes": [],
@@ -25888,7 +26703,7 @@
      "resume": ""
     }
    },
-   "pertinence": "moyenne",
+   "pertinence": "faible",
    "themes": [
     "donnees",
     "sante_donnees"
@@ -25903,7 +26718,7 @@
    "essentiel": false,
    "a_verifier": false,
    "textes_cles": [],
-   "motif": "",
+   "motif": "IA : guide ou commentaire sans texte suivi",
    "sujets": [
     "CNIL"
    ],
@@ -25921,8 +26736,8 @@
    "score": 0.504,
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "lignes_directrices",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
     "type": "lignes_directrices",
     "sujet": "oui",
     "applicable": "oui",
@@ -26260,7 +27075,7 @@
    "source": "CNIL",
    "zone": "France",
    "nature": "officielle",
-   "rubrique": "reglementation",
+   "rubrique": "autres",
    "rubrique_mots_cles": false,
    "tags": [],
    "groupes": [],
@@ -26272,7 +27087,7 @@
      "resume": ""
     }
    },
-   "pertinence": "elevee",
+   "pertinence": "faible",
    "themes": [
     "fournisseurs_publics",
     "cra"
@@ -26284,10 +27099,10 @@
    "echeances": [],
    "titre_nettoye": 3,
    "score_bruit": 0.558,
-   "essentiel": true,
-   "a_verifier": true,
+   "essentiel": false,
+   "a_verifier": false,
    "textes_cles": [],
-   "motif": "",
+   "motif": "IA : guide ou commentaire sans texte suivi",
    "sujets": [
     "CNIL"
    ],
@@ -26308,8 +27123,8 @@
    "statut": "adopte",
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "commentaire",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
     "type": "commentaire",
     "sujet": "oui",
     "applicable": "oui",
@@ -27306,7 +28121,7 @@
    "source": "CNIL",
    "zone": "France",
    "nature": "officielle",
-   "rubrique": "reglementation",
+   "rubrique": "autres",
    "rubrique_mots_cles": false,
    "tags": [],
    "groupes": [],
@@ -27318,7 +28133,7 @@
      "resume": ""
     }
    },
-   "pertinence": "elevee",
+   "pertinence": "faible",
    "themes": [
     "donnees",
     "ia"
@@ -27335,7 +28150,7 @@
    "textes_cles": [
     "RGPD / GDPR"
    ],
-   "motif": "texte clé : RGPD / GDPR",
+   "motif": "IA : consultation sur un projet de guide ou de lignes directrices",
    "statut": "projet",
    "sujets": [
     "CNIL"
@@ -27358,8 +28173,8 @@
    "score": 0.374,
    "ia": {
     "v": "t4",
-    "avis": "pertinent",
-    "motif": "projet_consultation",
+    "avis": "a_surveiller",
+    "motif": "consultation_droit_souple",
     "type": "projet_consultation",
     "sujet": "non",
     "applicable": "oui",
@@ -35907,16 +36722,7 @@
    "acronymes": [
     "EDPB"
    ],
-   "echeances": [
-    {
-     "date": "2026-09-21",
-     "approx": false,
-     "extrait": {
-      "en": "…Google’s processing of location data. Background information Date of final decision: 21 September 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of…",
-      "fr": "…données de localisation par Google.. Informations générales Date de la décision finale: 21 septembre 2026 Affaire nationale Référence(s) légale(s): article 5 (Principes relatifs au traitement…"
-     }
-    }
-   ],
+   "echeances": [],
    "titre_nettoye": 3,
    "score_bruit": 0.427,
    "essentiel": false,
@@ -36505,56 +37311,6 @@
    "motif": "",
    "sujets": [],
    "score_cyber": 0.501
-  },
-  {
-   "id": "cabe69cb3ccd",
-   "titre": "Tendios democratiza la IA para que ayuntamientos de cualquier tamaño puedan acceder a tecnología experta en contratación pública",
-   "lien": "https://www.computing.es/administracion/tendios-democratiza-la-ia-para-que-ayuntamientos-de-cualquier-tamano-puedan-acceder-a-tecnologia-experta-en-contratacion-publica/",
-   "resume": "En España hay 6.800 localidades con menos de 5.000 habitantes, es decir, casi el 84% de los municipios L'articolo Tendios democratiza la IA para que ayuntamientos de cualquier tamaño puedan acceder a tecnología experta en contratación pública proviene da Computing .",
-   "date": "2026-09-23",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-1243",
-   "source": "Computing España",
-   "zone": "Espagne",
-   "nature": "presse",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "Achats publics"
-   ],
-   "groupes": [
-    "Exigences fournisseurs (santé, secteur public)"
-   ],
-   "amende": null,
-   "langue": "es",
-   "trad": {
-    "en": {
-     "titre": "Tendios democratizes AI so that municipalities of any size can have access to specialized public procurement technologies",
-     "resume": "In Spain there are 6,800 locations with less than 5,000 inhabitants, or nearly 84% of the municipalities L'articolo Tendios democratizes the AI so that municipalities of any size can have access to specialized public procurement technologies come from Computing."
-    },
-    "fr": {
-     "titre": "Tendios démocratise IA afin que les municipalités de toute taille puissent avoir accès à des technologies spécialisées dans les marchés publics",
-     "resume": "En Espagne, il y a 6 800 localités de moins de 5 000 habitants, soit près de 84 % des municipalités L'articolo Tendios démocratise le IA de sorte que les municipalités de toute taille puissent avoir accès à des technologies de marchés publics spécialisées provenant de l'informatique."
-    }
-   },
-   "score": 0.517,
-   "pertinence": "faible",
-   "themes": [
-    "acheteurs_sante",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.443,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "sujets": [],
-   "score_cyber": 0.487
   },
   {
    "id": "f6c03a72fe8f",
@@ -37438,55 +38194,6 @@
    ]
   },
   {
-   "id": "45598881d39d",
-   "titre": "PTS stödjer regeringens molnpolicy – kartlägger behov i offentlig sektor",
-   "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-stodjer-regeringens-molnpolicy--kartlagger-behov-i-offentlig-sektor/",
-   "resume": "Post- och telestyrelsen (PTS) har fått i uppdrag av regeringen att stödja tillämpningen av molnpolicyn för offentlig förvaltning. Under hösten 2026 genomför vi intervjuer med kommuner, regio... Publicerades 2026-09-22 Internet och telefoni",
-   "date": "2026-09-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-29",
-   "version": "2026-09-29-1553",
-   "source": "PTS (autorité de supervision NIS2 / cybersäkerhetslagen)",
-   "zone": "Suède",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "titre_nettoye": 3,
-   "score_bruit": 0.449,
-   "score": 0.595,
-   "themes": [
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "langue": "sv",
-   "trad": {
-    "en": {
-     "titre": "PTS supports government cloud policy – maps public sector needs",
-     "resume": "The Postal and Telecom Agency (PTS) has been commissioned by the Government to support the application of the public administration cloud policy. In the autumn of 2026, we conduct interviews with municipalities. Posted in 2026-09-22 Internet and telephone"
-    },
-    "fr": {
-     "titre": "PTS soutient la politique gouvernementale en matière de cloud – cartographie des besoins du secteur public",
-     "resume": "L'Agence postale et de télécommunications (PTS) a été chargée par le gouvernement d'appuyer l'application de la politique en matière de cloud de l'administration publique. À l'automne 2026, nous menons des entrevues avec les municipalités. Publié dans 2026-09-22 Internet et téléphone"
-    }
-   },
-   "echeances": [],
-   "acronymes": [
-    "PTS"
-   ],
-   "sujets": [
-    "PTS"
-   ],
-   "score_cyber": 0.595
-  },
-  {
    "id": "97000a8fd9d0",
    "titre": "E-handel inom Europa ger växande paketmarknad",
    "lien": "https://pts.se/nyheter-och-pressmeddelanden/e-handel-inom-europa-ger-vaxande-paketmarknad/",
@@ -38308,52 +39015,6 @@
    "motif": "",
    "sujets": [],
    "score_cyber": 0.426
-  },
-  {
-   "id": "150b658d07e4",
-   "titre": "IA nas PMEs: o problema quase nunca é a tecnologia",
-   "lien": "https://tek.sapo.pt/opiniao/artigos/ia-nas-pmes-o-problema-quase-nunca-e-a-tecnologia/",
-   "resume": "Usando a sua experiência, Diogo Köpke escreve sobre o caminho das empresas na adoção da Inteligência Artificial e defende que as PMEs portuguesas não precisam de mais tecnologia mas clareza e coragem para deixar uma máquina fazer a parte repetitiva. The post IA nas PMEs: o problema quase nunca é a tecnologia appeared first on Tek Notícias .",
-   "date": "2026-09-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "Tek Notícias (SAPO)",
-   "zone": "Portugal",
-   "nature": "presse",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "pt",
-   "trad": {
-    "en": {
-     "titre": "AI in SMEs: the problem is almost never technology",
-     "resume": "Using his experience, Diogo Köpke writes about the path of companies in the adoption of Artificial Intelligence and argues that Portuguese SMEs do not need more technology but clarity and courage to let a machine do the repetitive part. The post AI in SMEs: the problem is almost never the technology appeared first on Tek News."
-    },
-    "fr": {
-     "titre": "IA dans les PME: le problème est presque jamais technologique",
-     "resume": "En utilisant son expérience, Diogo Köpke écrit sur le chemin des entreprises dans l'adoption de l'intelligence artificielle et fait valoir que les PME portugaises n'ont pas besoin de plus de technologie mais de clarté et de courage pour laisser une machine faire la partie répétitive. Le post IA dans les PME : le problème n'est presque jamais la technologie apparue en premier sur Tek News."
-    }
-   },
-   "score": 0.471,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia",
-    "pharma_industrie"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.431,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "sujets": [],
-   "score_cyber": 0.471
   },
   {
    "id": "e934e1c76244",
@@ -42720,52 +43381,6 @@
    "score_cyber": 0.474
   },
   {
-   "id": "de37b8361a50",
-   "titre": "Gemeenten Harderwijk en Elburg halen webcams wegens privacy offline",
-   "lien": "https://www.security.nl/posting/953453/Gemeenten+Harderwijk+en+Elburg+halen+webcams+wegens+privacy+offline?channel=rss",
-   "resume": "De gemeenten Harderwijk en Elburg hebben eigen webcams wegens zorgen over privacy offline gehaald. Beide gemeenten gingen over ...",
-   "date": "2026-09-17",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "Security.NL",
-   "zone": "Pays-Bas",
-   "nature": "presse",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "nl",
-   "trad": {
-    "en": {
-     "titre": "Municipalitys Harderwijk and Elburg get webcams for privacy offline",
-     "resume": "The municipalities Harderwijk and Elburg took their own webcams offline because of concerns about privacy. Both municipalities were about ..."
-    },
-    "fr": {
-     "titre": "Municipalités Harderwijk et Elburg obtenir webcams pour la confidentialité hors ligne",
-     "resume": "Les municipalités Harderwijk et Elburg ont pris leurs propres webcams hors ligne en raison de préoccupations concernant la vie privée. Les deux municipalités étaient environ ..."
-    }
-   },
-   "score": 0.358,
-   "pertinence": "faible",
-   "themes": [
-    "cra",
-    "sante_donnees"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.308,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "sujets": [],
-   "score_cyber": 0.358
-  },
-  {
    "id": "39afdfc9a6ae",
    "titre": "SPECS: Óculos de realidade aumentada da dona do Snapchat chegam com IA “intuitiva” para o dia a dia",
    "lien": "https://tek.sapo.pt/mobile/equipamentos/artigos/specs-oculos-de-realidade-aumentada-da-dona-do-snapchat-chegam-com-ia-intuitiva-para-o-dia-a-dia/",
@@ -43495,6 +44110,75 @@
     "v": "c2"
    },
    "score_cyber": 0.622
+  },
+  {
+   "id": "42f4c11d920b",
+   "titre": "Meerdere kwetsbaarheden in Apple macOS: update aanbevolen",
+   "lien": "https://www.ncsc.nl/alerts/meerdere-kwetsbaarheden-in-apple-macos-update-aanbevolen",
+   "resume": "Er zijn meerdere kwetsbaarheden gevonden in Apple macOS. De ernst van deze kwetsbaarheden varieert, met CVSS-scores tot 9,8. De kans op misbruik wordt als gemiddeld beoordeeld, maar de mogelijke schade is groot.",
+   "date": "2026-09-16",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Centre National de Cybersécurité",
+   "zone": "Pays-Bas",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.554,
+   "score_bruit": 0.499,
+   "themes": [
+    "cra",
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : vulnérabilité touchant le secteur (dispositifs, laboratoires, santé)",
+   "page": {
+    "date": "2026-10-30",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sujet": true
+   },
+   "score": 0.554,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "vulnerabilite_secteur",
+    "type": "alerte_vulnerabilite",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "oui",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "Multiple vulnerabilities in Apple macOS: update recommended",
+     "resume": "Several vulnerabilities were found in Apple macOS. The severity of these vulnerabilities varies, with CVSS-scores to 9.8. The risk of abuse is assessed as average, but the potential damage is high."
+    },
+    "fr": {
+     "titre": "Multiples vulnérabilités dans Apple macOS: mise à jour recommandée",
+     "resume": "Plusieurs vulnérabilités ont été trouvées dans Apple macOS. La gravité de ces vulnérabilités varie, avec CVSS-scores à 9,8. Le risque d'abus est évalué en moyenne, mais les dommages potentiels sont élevés."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NCSC"
+   ],
+   "acronymes": [
+    "NCSC"
+   ]
   },
   {
    "id": "010e088fffcf",
@@ -45977,6 +46661,7 @@
      "date": "2026-09-30",
      "approx": false,
      "extrait": {
+      "fr": "…a été publié au Journal officiel (série générale n. 214) et entre en vigueur le 30 septembre 2026. Il encadre l'IA en matière pénale (nouvelles infractions, identification biométrique),…",
       "en": "Italy: Legislative Decree 160/2026 on artificial intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was…"
      }
     }
@@ -46109,57 +46794,6 @@
    "motif": "",
    "sujets": [],
    "score_cyber": 0.479
-  },
-  {
-   "id": "221aba035949",
-   "titre": "Forslag til lov om offentlige myndigheders og organers udvikling og anvendelse af AI-systemer ved behandling af personoplysninger",
-   "lien": "https://hoeringsportalen.dk/Hearing/Details/71477",
-   "resume": "Myndighed: Digitaliseringsstyrelsen Type: Lovforslag Høringsfrist: 12-10-2026 Status: Igang",
-   "date": "2026-09-14",
-   "date_estimee": false,
-   "detecte_le": "2026-09-29",
-   "version": "2026-09-29-1553",
-   "source": "Høringsportalen — consultations (numérique, justice, santé)",
-   "zone": "Danemark",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_bruit": 0.462,
-   "score": 0.73,
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "elevee",
-   "essentiel": true,
-   "a_verifier": true,
-   "textes_cles": [],
-   "motif": "",
-   "statut": "consultation",
-   "langue": "da",
-   "trad": {
-    "en": {
-     "titre": "Proposal for a law on the development and use of AI-systemer by public authorities and bodies in the processing of personal data",
-     "resume": "Authority: Digitisation Board Type: Draft laws Consultation deadline: 12-10-2026 Status: Ongoing"
-    },
-    "fr": {
-     "titre": "Proposition de loi sur le développement et l'utilisation de AI-systemer par les autorités et organismes publics dans le traitement des données à caractère personnel",
-     "resume": "Autorité: Conseil de numérisation Type: Projets de lois Délai de consultation: 12-10-2026 État: En cours"
-    }
-   },
-   "echeances": [],
-   "acronymes": [],
-   "sujets": [],
-   "sens_fort": true,
-   "concernes": {
-    "v": "c2"
-   },
-   "score_cyber": 0.73
   },
   {
    "id": "3e091b7b4f10",
@@ -50748,6 +51382,77 @@
    "score_cyber": 0.672
   },
   {
+   "id": "a97fd9f30d64",
+   "titre": "XAI in der Cybersicherheit: Whitepaper schafft Bewertungsgrundlagen und Orientierung",
+   "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/XAI-Chancen-Risiken-Cybersicherheit_260910.html",
+   "resume": "",
+   "date": "2026-09-10",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "BSI (Office fédéral allemand de la sécurité de l'information)",
+   "zone": "Allemagne",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.548,
+   "score_bruit": 0.636,
+   "score": 0.665,
+   "themes": [
+    "dm_div",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : guide ou commentaire sans texte suivi",
+   "page": {
+    "date": "2026-10-30",
+    "ok": false,
+    "v": 2,
+    "erreur": "404 Client Error: Not Found for url: https://www.bsi.bund.de/DE/Service-Navi/Pre"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "XAI in Cybersecurity: Whitepaper Creates Evaluation Basis and Orientation",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "XAI dans Cybersécurité: Whitepaper crée la base d'évaluation et l'orientation",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "BSI"
+   ],
+   "acronymes": [
+    "BSI"
+   ]
+  },
+  {
    "id": "855d9cd886f0",
    "titre": "Nyhet Tiotusentals svenska företag berörs av EU:s nya cybersäkerhetslag Träder i kraft den 11 september. Av Mikael Markander 10 sep. 2026 1 min Offentlig sektor Lagar och regleringar Marknader",
    "lien": "https://computersweden.se/article/4220669/tiotusentals-svenska-foretag-berors-av-eus-nya-cybersakerhetslag.html",
@@ -52462,16 +53167,7 @@
     "fr": "Identifie les interlocuteurs tchèques (NÚKIB, ČOI) pour les produits connectés hors champ DM/DIV.",
     "en": "Identifies Czech contacts (NÚKIB, ČOI) for connected products outside MD/IVD scope."
    },
-   "echeances": [
-    {
-     "date": "2026-09-11",
-     "approx": false,
-     "extrait": {
-      "fr": "…du marché. Alors que les obligations de notification du CRA s'appliquent depuis le 11 septembre 2026, le projet de loi tchèque d'adaptation a achevé la consultation et se dirige vers la…",
-      "en": "…as market surveillance authority. With CRA reporting obligations applicable since 11 September 2026, the Czech adaptation bill has completed consultation and is heading to the Chamber of…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "CRA",
     "NÚKIB"
@@ -57991,56 +58687,6 @@
    ]
   },
   {
-   "id": "c98821ac3cce",
-   "titre": "Subsidie voor cyberweerbaarheid kleine bedrijven binnenkort van start",
-   "lien": "https://www.ncsc.nl/nieuws/subsidie-voor-cyberweerbaarheid-kleine-bedrijven-binnenkort-van-start",
-   "resume": "",
-   "date": "2026-09-02",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "Centre National de Cybersécurité",
-   "zone": "Pays-Bas",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "nl",
-   "score": 0.531,
-   "pertinence": "moyenne",
-   "themes": [
-    "fournisseurs_publics",
-    "cra"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [
-    "NCSC"
-   ],
-   "trad": {
-    "en": {
-     "titre": "Cyber-weasurable subsidy for small businesses to start soon",
-     "resume": ""
-    },
-    "fr": {
-     "titre": "Subvention cyber-masurable pour les petites entreprises à démarrer bientôt",
-     "resume": ""
-    }
-   },
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.463,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "sujets": [
-    "NCSC"
-   ],
-   "score_cyber": 0.531
-  },
-  {
    "id": "45fae9319d74",
    "titre": "Patient rights and AI medical chatbots: Alignment between the GDPR and EU AI Act",
    "lien": "https://iapp.org/news/a/patient-rights-and-ai-medical-chatbots-alignment-between-the-gdpr-and-eu-ai-act",
@@ -61440,57 +62086,6 @@
    "motif": "",
    "sujets": [],
    "score_cyber": 0.462
-  },
-  {
-   "id": "5303729f397a",
-   "titre": "N° 3112 - Proposition de résolution de M. Philippe Latombe tendant à la création d'une commission d'enquête sur les failles de cybersécurité ayant permis des accès, fuites et extractions illégitimes des données confiées par les Français à l'État et aux organismes publics, afin d'en identifier les causes, les conséquences et les responsabilités en matière de sécurité des systèmes d'information",
-   "lien": "https://www.assemblee-nationale.fr/17/propositions/pion3112.asp",
-   "resume": "N° 3112 - Proposition de résolution de M. Philippe Latombe tendant à la création d'une commission d'enquête sur les failles de cybersécurité ayant permis des accès, fuites et extractions illégitimes des données confiées par les Français à l'État et aux organismes publics, afin d'en identifier les causes, les conséquences et les responsabilités en matière de sécurité des systèmes d'information",
-   "date": "2026-08-28",
-   "date_estimee": false,
-   "detecte_le": "2026-09-29",
-   "version": "2026-09-29-1553",
-   "source": "Assemblée nationale - Dossiers législatifs",
-   "zone": "France",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Cybersécurité (réglementation)"
-   ],
-   "groupes": [
-    "Termes multilingues"
-   ],
-   "amende": null,
-   "filtre_pertinence": true,
-   "titre_nettoye": 3,
-   "score_bruit": 0.522,
-   "score": 0.58,
-   "themes": [
-    "nis2",
-    "donnees"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "moyenne",
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "statut": "projet",
-   "langue": "fr",
-   "trad": {
-    "en": {
-     "titre": "No 3112 - Motion for a resolution by Mr Philippe Latombe on the establishment of a commission of inquiry into cybersecurity loopholes which have allowed illegitimate access, leakage and extraction of data entrusted by the French to the State and to public bodies, in order to identify the causes, consequences and responsibilities of information systems security",
-     "resume": "No 3112 - Motion for a resolution by Mr Philippe Latombe on the establishment of a commission of inquiry into cybersecurity loopholes which have allowed illegitimate access, leakage and extraction of data entrusted by the French to the State and to public bodies, in order to identify the causes, consequences and responsibilities of information systems security"
-    }
-   },
-   "echeances": [],
-   "acronymes": [],
-   "sujets": [],
-   "concernes": {
-    "v": "c2"
-   },
-   "score_cyber": 0.5
   },
   {
    "id": "n9163ae2a736",
@@ -66754,15 +67349,7 @@
      "resume": "Du 18/08/2026 au 12/10/2026 CCP, Simplification et réduction des charges"
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-12",
-     "approx": false,
-     "extrait": {
-      "en": "…under EMIR for clearing activity at recognised third-country CCPs. From 18/08/2026 to 12/10/2026 CCP, Simplification and Burden Reduction"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [],
    "acronymes": []
   },
@@ -68633,15 +69220,7 @@
     "fr": "Ces normes donneront la présomption de conformité pour certains composants (gestionnaires de mots de passe, systèmes d'exploitation, etc.) utilisés dans l'écosystème produit.",
     "en": "These standards will give presumption of conformity for some components (password managers, operating systems, etc.) used in the product ecosystem."
    },
-   "echeances": [
-    {
-     "date": "2026-11-01",
-     "approx": true,
-     "extrait": {
-      "en": "…for important and critical products. The procedure runs until mid-September to mid-November 2026."
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "CRA",
     "Normes harmonisées"
@@ -69283,19 +69862,19 @@
    },
    "echeances": [
     {
-     "date": "2026-10-28",
-     "approx": false,
-     "extrait": {
-      "fr": "…en vigueur pour l'essentiel le 11 août 2026, avec une mise en œuvre complète prévue le 28 octobre 2026. La KRiBSI est l'autorité de surveillance et le point de contact national ; les…",
-      "en": "…mostly entered into force on 11 August 2026, with full implementation scheduled for 28 October 2026. KRiBSI is the supervisory authority and national contact point; financial penalty…"
-     }
-    },
-    {
      "date": "2026-10-01",
      "approx": true,
      "extrait": {
       "fr": "…national ; les dispositions sur les sanctions financières s'appliquent à partir d'octobre 2026.",
       "en": "…authority and national contact point; financial penalty provisions apply from October 2026."
+     }
+    },
+    {
+     "date": "2026-10-28",
+     "approx": false,
+     "extrait": {
+      "fr": "…en vigueur pour l'essentiel le 11 août 2026, avec une mise en œuvre complète prévue le 28 octobre 2026. La KRiBSI est l'autorité de surveillance et le point de contact national ; les…",
+      "en": "…mostly entered into force on 11 August 2026, with full implementation scheduled for 28 October 2026. KRiBSI is the supervisory authority and national contact point; financial penalty…"
      }
     }
    ],
@@ -69964,52 +70543,6 @@
    },
    "sujets": [],
    "score_cyber": 0.644
-  },
-  {
-   "id": "a33e48c849f8",
-   "titre": "La Administraciones Públicas valora de forma positiva la atención al ciudadano, pero solo el 44 % de la población coincide en la valoración",
-   "lien": "https://www.computing.es/administracion/el-88-de-los-espanoles-cree-que-el-desarrollo-digital-de-los-servicios-publicos-es-una-prioridad/",
-   "resume": "El informe 'Connected Government' de Twilio muestra que la mayoría de los organismos públicos ya ha implementado soluciones de IA, pero existe una “ilusión de transparencia” en torno a esta tecnología L'articolo La Administraciones Públicas valora de forma positiva la atención al ciudadano, pero solo el 44 % de la población coincide en la valoración proviene da Computing .",
-   "date": "2026-08-07",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-1243",
-   "source": "Computing España",
-   "zone": "Espagne",
-   "nature": "presse",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "es",
-   "score": 0.531,
-   "pertinence": "faible",
-   "themes": [
-    "ia",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.55,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "trad": {
-    "en": {
-     "titre": "Public Administrations positively value attention to the citizen, but only 44% of the population agrees in the assessment",
-     "resume": "Twilio's Connected Government report shows that most public bodies have already implemented AI solutions, but there is a \"transparency illusion\" about this L'articolo technology.Public Administrations positively value attention to the citizen, but only 44% of the population agrees in the assessment comes from Computing ."
-    },
-    "fr": {
-     "titre": "Les administrations publiques accordent une valeur positive à la prise en charge des citoyens, mais seulement 44 pour cent de la population est d'accord avec l'évaluation.",
-     "resume": "Le rapport 'Connected Government' de Twilio montre que la plupart des organismes publics ont déjà mis en œuvre des solutions d'IA, mais il existe une  & #160; 'illusion de transparence & #160; & #160; ' & #160; ' & #160; \" ' & #160; ' L'articolo & #160; ' L'articolo & #160; ' Les administrations publiques apprécient de manière positive l'attention accordée au citoyen, mais seulement 44 % de la population coïncident avec l' évaluation de l' évaluation vient de Computing & #160; ."
-    }
-   },
-   "sujets": [],
-   "score_cyber": 0.531
   },
   {
    "id": "a8d7123c7a14",
@@ -71892,56 +72425,6 @@
    },
    "sujets": [],
    "score_cyber": 0.453
-  },
-  {
-   "id": "ea24de88cde4",
-   "titre": "Samorządy razem skuteczniej obronią się przed cyberatakami",
-   "lien": "https://www.gov.pl/web/cyfryzacja/samorzady-razem-skuteczniej-obronia-sie-przed-cyberatakami",
-   "resume": "31.07.2026 Rusza nabór na Lokalne Centra Cyberbezpieczeństwa (LCC)! Mają wspierać samorządy w ochronie przed cyberatakami. Na ten cel przeznaczono prawie 270 mln złotych, a wsparcie będzie udzielane w formie dotacji. Środki obejmą m.in. monitorowanie lokalnych sieci i systemów informacyjnych,…",
-   "date": "2026-07-31",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "Ministère du numérique",
-   "zone": "Pologne",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": true,
-   "tags": [
-    "Cybersécurité (réglementation)"
-   ],
-   "groupes": [
-    "Termes multilingues"
-   ],
-   "amende": null,
-   "langue": "pl",
-   "score": 0.667,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.551,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "trad": {
-    "en": {
-     "titre": "Together, governments will defend themselves more effectively against cyber attacks",
-     "resume": "31.07.2026 Call for Local Cybersecurity Centres (LCC)! They're supposed to support local governments in cyber attack protection. Almost PLN 270 million has been allocated for this purpose, and support will be provided in the form of grants. The measures will include monitoring local networks and information systems..."
-    },
-    "fr": {
-     "titre": "Ensemble, les gouvernements se défendront plus efficacement contre les cyberattaques",
-     "resume": "31.07.2026 Appel aux centres locaux de cybersécurité (LCC)! Ils sont censés soutenir les gouvernements locaux dans la protection contre les cyberattaques. Près de 270 millions de zlotys ont été alloués à cette fin, et le soutien sera fourni sous forme de subventions. Les mesures comprendront le suivi des réseaux locaux et des systèmes d'information..."
-    }
-   },
-   "sujets": [],
-   "score_cyber": 0.587
   },
   {
    "id": "592ed5076aa9",
@@ -74345,47 +74828,6 @@
    "score_cyber": 0.423
   },
   {
-   "id": "1cdb8acf9113",
-   "titre": "New GenAI pilots for public administrations",
-   "lien": "https://digital-strategy.ec.europa.eu/en/news/new-genai-pilots-public-administrations",
-   "resume": "News article 22 July 2026 Three new pilot projects supporting the uptake of Generative AI in public administrations officially started on 1 July 2026.",
-   "date": "2026-07-22",
-   "date_estimee": false,
-   "detecte_le": "2026-09-25",
-   "version": "2026-09-25-1456",
-   "source": "Commission Européenne - Cybersecurity",
-   "zone": "Europe",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.576,
-   "pertinence": "moyenne",
-   "themes": [
-    "ia"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "echeances": [],
-   "acronymes": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.498,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "trad": {
-    "fr": {
-     "titre": "Nouveaux projets pilotes pour les administrations publiques",
-     "resume": "Nouvelle article 22 juillet 2026 Trois nouveaux projets pilotes d'appui à l'adoption de Generative IA dans les administrations publiques ont officiellement débuté le 1er juillet 2026."
-    }
-   },
-   "sujets": [],
-   "score_cyber": 0.576
-  },
-  {
    "id": "32da88569a0a",
    "titre": "EUNOMIA.AI - Trustworthy Generative AI for efficient and accessible public services",
    "lien": "https://digital-strategy.ec.europa.eu/en/news/eunomiaai-trustworthy-generative-ai-efficient-and-accessible-public-services",
@@ -76736,53 +77178,6 @@
    "score_cyber": 0.539
   },
   {
-   "id": "3eb1aabfcbc9",
-   "titre": "The marginal cost restriction on public sector data re-use: call for evidence",
-   "lien": "https://www.gov.uk/government/calls-for-evidence/the-marginal-cost-restriction-on-public-sector-data-re-use-call-for-evidence",
-   "resume": "This call for evidence asks for views on if public bodies should charge above marginal costs for the re-use of public sector data, and what approaches and conditions should apply.",
-   "date": "2026-07-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "Department for Science, Innovation and Technology (DSIT)",
-   "zone": "Royaume-Uni",
-   "nature": "presse",
-   "rubrique": "autres",
-   "rubrique_mots_cles": false,
-   "tags": [
-    "Consultation publique"
-   ],
-   "groupes": [
-    "Termes génériques"
-   ],
-   "amende": null,
-   "langue": "en",
-   "score": 0.451,
-   "pertinence": "faible",
-   "themes": [
-    "donnees",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.428,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "statut": "consultation",
-   "trad": {
-    "fr": {
-     "titre": "Restriction des coûts marginaux pour la réutilisation des données du secteur public : appel à la preuve",
-     "resume": "Cet appel de preuves demande des avis sur la question de savoir si les organismes publics devraient imputer au-delà des coûts marginaux pour la réutilisation des données du secteur public, et quelles approches et conditions devraient s'appliquer."
-    }
-   },
-   "sujets": [],
-   "score_cyber": 0.421
-  },
-  {
    "id": "dc45994e9b4a",
    "titre": "Data flows you can trust",
    "lien": "https://www.gov.uk/government/calls-for-evidence/data-flows-you-can-trust",
@@ -77000,53 +77395,6 @@
     "AI Office"
    ],
    "score_cyber": 0.558
-  },
-  {
-   "id": "0648b67475cf",
-   "titre": "Helping small businesses with free, hands-on cyber consultancy",
-   "lien": "https://www.ncsc.gov.uk/blogs/helping-small-businesses-with-free-hands-on-cyber-consultancy",
-   "resume": "Cyber Advisors are offering free 30-minute consultations to help small businesses get started with cyber security.",
-   "date": "2026-07-15",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-1243",
-   "source": "Centre National de Cybersécurité)",
-   "zone": "Royaume-Uni",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.502,
-   "pertinence": "moyenne",
-   "themes": [
-    "nis2",
-    "dm_div"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [
-    "NCSC"
-   ],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.504,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "statut": "consultation",
-   "trad": {
-    "fr": {
-     "titre": "Aider les petites entreprises grâce à la cyberconsultation gratuite et pratique",
-     "resume": "Cyberconseillers offre des consultations gratuites de 30 minutes pour aider les petites entreprises à commencer par la cybersécurité."
-    }
-   },
-   "sujets": [
-    "NCSC"
-   ],
-   "score_cyber": 0.502
   },
   {
    "id": "90a528b5c575",
@@ -77639,15 +77987,7 @@
     "fr": "La révision de l'IVDR (procédures d'évaluation, classification logicielle/IA) conditionne l'ensemble du portefeuille produit.",
     "en": "The IVDR revision (conformity procedures, software/AI classification) affects the entire product portfolio."
    },
-   "echeances": [
-    {
-     "date": "2026-12-03",
-     "approx": false,
-     "extrait": {
-      "en": "…the targeted MDR/IVDR revision proposal (December 2025). Committee vote is scheduled for 3 December 2026 and the Council aims for a general approach by end 2026."
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "IVDR"
    ],
@@ -77687,16 +78027,7 @@
     "fr": "Le calendrier indique une adoption probable fin 2026, suivie de réglementations secondaires à suivre pour les fournisseurs du secteur santé.",
     "en": "The timetable points to likely adoption in late 2026, followed by secondary regulations that healthcare suppliers should track."
    },
-   "echeances": [
-    {
-     "date": "2026-10-26",
-     "approx": false,
-     "extrait": {
-      "fr": "…à partir du 1er septembre 2026, l'étape du rapport étant programmée (provisoirement) au 26 octobre 2026 ; la sanction royale est attendue fin 2026.",
-      "en": "…committee stage from 1 September 2026, with report stage (provisionally) scheduled for 26 October 2026; Royal Assent is expected in late 2026."
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "NIS2"
    ],
@@ -79762,15 +80093,7 @@
     "fr": "L'anonymisation conditionne la réutilisation des données de laboratoire et épidémiologiques pour l'IA et la surveillance antimicrobienne.",
     "en": "Anonymisation determines reuse of laboratory and epidemiological data for AI and antimicrobial surveillance."
    },
-   "echeances": [
-    {
-     "date": "2026-10-30",
-     "approx": false,
-     "extrait": {
-      "en": "…case C-413/23) and on web scraping for generative AI, open for consultation until 30 October 2026. It also adopted final blockchain guidelines."
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "EDPB"
    ],
@@ -81220,14 +81543,6 @@
      "extrait": {
       "fr": "…activement exploitées sous 24 h dès le 11 septembre 2026, conformité complète en décembre 2027 ; ANSSI pour les organismes notifiés, CERT-FR pour les signalements, ANFR pour la…",
       "en": "…of actively exploited vulnerabilities from 11 September 2026, full compliance in December 2027; ANSSI for notified bodies, CERT-FR for reports, ANFR for market surveillance. Medical…"
-     }
-    },
-    {
-     "date": "2026-09-11",
-     "approx": false,
-     "extrait": {
-      "fr": "…du CRA en France : signalement des vulnérabilités activement exploitées sous 24 h dès le 11 septembre 2026, conformité complète en décembre 2027 ; ANSSI pour les organismes notifiés, CERT-FR pour…",
-      "en": "…on CRA application in France: 24h reporting of actively exploited vulnerabilities from 11 September 2026, full compliance in December 2027; ANSSI for notified bodies, CERT-FR for reports, ANFR…"
      }
     }
    ],
@@ -83225,49 +83540,6 @@
     "BSI"
    ],
    "score_cyber": 0.48
-  },
-  {
-   "id": "66d1cfa066f4",
-   "titre": "The Open Data Directive: Unlocking the value of public sector information in Europe",
-   "lien": "https://data.europa.eu/en/news-events/news/open-data-directive-unlocking-value-public-sector-information-europe",
-   "resume": "26 June 2026 The Directive on open data and the re-use of public sector information, in short, the Open Data Directive , was adopted in 2019. It establishes a common legal framework across the European Union to promote the reuse of public sector data. Replacing the earlier Public Sector Information…",
-   "date": "2026-06-26",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "European Data",
-   "zone": "Europe",
-   "nature": "officielle",
-   "rubrique": "reglementation",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.547,
-   "pertinence": "moyenne",
-   "themes": [
-    "cra",
-    "sante_donnees"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.392,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "statut": "adopte",
-   "trad": {
-    "fr": {
-     "titre": "La directive sur les données ouvertes: libérer la valeur de l'information du secteur public en Europe",
-     "resume": "26 juin 2026 La directive sur les données ouvertes et la réutilisation des informations du secteur public , en bref la directive sur les données ouvertes , a été adoptée en 2019. Il établit un cadre juridique commun à l'ensemble de l'Union européenne pour promouvoir la réutilisation des données du secteur public. Remplacer l'information du secteur public..."
-    }
-   },
-   "sujets": [],
-   "score_cyber": 0.547
   },
   {
    "id": "d31aedbd5b6b",
@@ -89447,15 +89719,7 @@
     "fr": "Cadre national des futures exigences sur les systèmes de dossiers électroniques et l'échange des résultats de laboratoire en Norvège ; consultation encore ouverte.",
     "en": "National framework for future requirements on EHR systems and exchange of laboratory results in Norway; consultation still open."
    },
-   "echeances": [
-    {
-     "date": "2026-09-28",
-     "approx": false,
-     "extrait": {
-      "en": "…amending the Patient Records Act. The Ministry of Health opened a consultation (until 28 September 2026) on a draft law implementing Regulation (EU) 2025/327 on the European Health Data Space…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "EHDS"
    ],
@@ -90402,52 +90666,6 @@
    ],
    "sujets": [],
    "score_cyber": 0.482
-  },
-  {
-   "id": "5d8bad4a03e0",
-   "titre": "«Zoom sur les PME : Comment détecter et contrer les cyberattaques»",
-   "lien": "https://www.bacs.admin.ch/fr/26kmu-anlass-fr",
-   "resume": "3 juin 2026 Zoom sur les PME : Comment détecter et contrer les cyberattaques Depuis longtemps, les cyberattaques ne touchent plus uniquement les grandes entreprises. Les petites et moyennes entreprises (PME) sont de plus en plus souvent la cible de tentatives d’hameçonnage, de ransomware et…",
-   "date": "2026-06-03",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "Office fédéral de la cybersécurité OFCS",
-   "zone": "Suisse",
-   "nature": "officielle",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "fr",
-   "score": 0.57,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "dm_div"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [
-    "NCSC"
-   ],
-   "echeances": [],
-   "trad": {
-    "en": {
-     "titre": "\"Zoom on PME: How to detect and counter cyber attacks\"",
-     "resume": "3 June 2026 Zoom on PME: How to detect and counter cyber attacks For a long time, cyber attacks have not only affected large companies. Small and medium-sized enterprises (PME) are increasingly the target of phishing, ransomware and..."
-    }
-   },
-   "titre_nettoye": 3,
-   "score_bruit": 0.583,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "sujets": [
-    "NCSC"
-   ],
-   "score_cyber": 0.57
   },
   {
    "id": "eee587bccb45",
@@ -91551,14 +91769,6 @@
      "extrait": {
       "fr": "…leur habilitation dès le 11 juin 2026 et tous les produits devront être conformes au 11 décembre 2027.",
       "en": "…bodies may apply for authorisation from 11 June 2026 and all products must comply by 11 December 2027."
-     }
-    },
-    {
-     "date": "2026-09-11",
-     "approx": false,
-     "extrait": {
-      "fr": "…vulnérabilités activement exploitées au Centre de cybersécurité de Traficom à partir du 11 septembre 2026 ; les organismes notifiés peuvent demander leur habilitation dès le 11 juin 2026 et tous…",
-      "en": "…Manufacturers must report actively exploited vulnerabilities to Traficom's NCSC-FI from 11 September 2026; notified bodies may apply for authorisation from 11 June 2026 and all products must…"
      }
     }
    ],
@@ -93630,48 +93840,6 @@
    ]
   },
   {
-   "id": "ae64e999261f",
-   "titre": "Opening up public sector data: From public sector information to a European data ecosystem",
-   "lien": "https://data.europa.eu/en/news-events/news/opening-public-sector-data-public-sector-information-european-data-ecosystem",
-   "resume": "25 May 2026 The European Union’s public sector information (PSI) directive has played a central role in transforming how government-held data is accessed and re-used across Europe. Initially, the directive established a common legal framework requiring Member States to make public sector data…",
-   "date": "2026-05-25",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-0737",
-   "source": "European Data",
-   "zone": "Europe",
-   "nature": "officielle",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "en",
-   "score": 0.51,
-   "pertinence": "moyenne",
-   "themes": [
-    "sante_donnees",
-    "fournisseurs_publics"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.371,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "trad": {
-    "fr": {
-     "titre": "Ouverture des données du secteur public: de l'information du secteur public à un écosystème européen de données",
-     "resume": "25 mai 2026 La directive de l'Union européenne sur l'information du secteur public (PSI) a joué un rôle central dans la transformation de l'accès et de la réutilisation des données détenues par le gouvernement dans toute l'Europe. Initialement, la directive a établi un cadre juridique commun exigeant des États membres qu'ils produisent des données du secteur public..."
-    }
-   },
-   "sujets": [],
-   "score_cyber": 0.51
-  },
-  {
    "id": "4b2ba4f0dad1",
    "titre": "Mise do Norska rozšířila česko-norské vazby v oblasti kybernetické a informační bezpečnosti a otevřela nové příležitosti pro spolupráci na poli výzkumu, vývoje a inovací",
    "lien": "https://nukib.gov.cz/cs/infoservis/aktuality/2417-mise-do-norska-rozsirila-cesko-norske-vazby-v-oblasti-kyberneticke-a-informacni-bezpecnosti-a-otevrela-nove-prilezitosti-pro-spolupraci-na-poli-vyzkumu-vyvoje-a-inovaci",
@@ -94350,52 +94518,6 @@
    "score_cyber": 0.627
   },
   {
-   "id": "3aa515843529",
-   "titre": "Nu läggs grunden för smidigare informationsflöde i kommunerna",
-   "lien": "https://www.inera.se/aktuellt/nyheter/nu-laggs-grunden-for-smidigare-informationsflode-i-kommunerna/",
-   "resume": "1 av 1 2026-05-21 En ny digital tjänst ska göra inhämtningen av information vid handläggning av ekonomiskt bistånd snabbare, säkrare och mer standardiserad – till nytta för både kommuner, invånare och systemleverantörer. Satsningen lägger grunden för en gemensam nationell plattform där det blir…",
-   "date": "2026-05-21",
-   "date_estimee": false,
-   "detecte_le": "2026-09-24",
-   "version": "2026-09-24-1243",
-   "source": "Inera (services numériques communs des régions : 1177, NPÖ) — actualités",
-   "zone": "Suède",
-   "nature": "officielle",
-   "rubrique": "secteur",
-   "rubrique_mots_cles": false,
-   "tags": [],
-   "groupes": [],
-   "amende": null,
-   "langue": "sv",
-   "score": 0.545,
-   "pertinence": "moyenne",
-   "themes": [
-    "acheteurs_sante",
-    "sante_donnees"
-   ],
-   "pertinence_v": "v4-62329d164bmodele",
-   "acronymes": [],
-   "echeances": [],
-   "titre_nettoye": 3,
-   "score_bruit": 0.511,
-   "essentiel": false,
-   "a_verifier": false,
-   "textes_cles": [],
-   "motif": "",
-   "trad": {
-    "en": {
-     "titre": "The foundation for smoother information flow in municipalities",
-     "resume": "1 of 1 2026-05-21 A new digital service will make the gathering of information in dealing with financial assistance faster, safer and more standardised – beneficial to both municipalities, residents and system providers. The initiative lays the foundation for a common national platform where it becomes..."
-    },
-    "fr": {
-     "titre": "La base d'un flux d'information plus fluide dans les municipalités",
-     "resume": "1 sur 1 2026-05-21 Un nouveau service numérique rendra la collecte d'informations en matière d'assistance financière plus rapide, plus sûre et plus normalisée – bénéfique pour les municipalités, les résidents et les fournisseurs de systèmes. L'initiative jette les bases d'une plateforme nationale commune où elle devient..."
-    }
-   },
-   "sujets": [],
-   "score_cyber": 0.545
-  },
-  {
    "id": "b78b1270f2d0",
    "base": true,
    "titre": "Italie : le Garante sanctionne The European House Ambrosetti (85 000 €) après une violation de données",
@@ -94939,15 +95061,7 @@
     "fr": "L'EHDS impose des exigences aux systèmes de dossiers de santé électroniques et à l'échange de résultats de laboratoire ; la répartition des rôles (dont surveillance du marché) conditionnera les exigences applicables aux logiciels de laboratoire.",
     "en": "EHDS imposes requirements on EHR systems and on the exchange of laboratory results; the allocation of roles (including market surveillance) will shape requirements for laboratory software."
    },
-   "echeances": [
-    {
-     "date": "2026-11-01",
-     "approx": false,
-     "extrait": {
-      "en": "…authority, single entry point for providers, secondary use of data; final report due 1 November 2026."
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "EHDS",
     "Läkemedelsverket"
@@ -98820,6 +98934,65 @@
    ],
    "acronymes": [
     "NIS2"
+   ]
+  },
+  {
+   "id": "170a6eebd4ca",
+   "titre": "Contribution of the EDPB to the European Commission’s evaluation of the Data Protection Law Enforcement Directive (‘‘LED’’) under Article 62 LED",
+   "lien": "https://www.edpb.europa.eu/documents/reports-statements-and-letters/contribution-of-the-edpb-to-the-european-commissions-0_en",
+   "resume": "",
+   "date": "2026-01-19",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.554,
+   "score_bruit": 0.433,
+   "score": 0.554,
+   "themes": [
+    "cra",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Contribution de la EDPB à l'évaluation par la Commission européenne de la directive relative à la protection des données et à l'application de la législation (ci-après la «LED) au titre de l'article 62 LED",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "EDPB"
+   ],
+   "acronymes": [
+    "EDPB"
    ]
   },
   {

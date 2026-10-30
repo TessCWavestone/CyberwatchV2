@@ -334,7 +334,7 @@ EUROPE = {"Europe", "Union européenne", "UE", "Allemagne", "Autriche", "Belgiqu
 # Signaux « forts » (texte adopté / publié) : permettent L'essentiel sans texte clé connu,
 # pour une source officielle (badge « à vérifier »)
 SIGNAL_FORT = _rx(
-    r"(adopted|adopte|published in the official journal|journal officiel|entre(s|e)? en vigueur|enters? into force|"
+    r"(\badopted\b|\badoptee?s?\b|published in the official journal|journal officiel|entre(s|e)? en vigueur|enters? into force|"
     r"in kraft|entrada en vigor|entrata in vigore|inwerkingtreding|trer i kraft|trader i kraft|voimaan|hatalyba|"
     r"wchodzi w zycie|nabyva ucinnosti|new (law|act|regulation|decree)|nouvelle loi|nouveau decret|"
     r"\b(loi|decret|arrete|ordonnance) n\W|real decreto|decreto-lei|\bgesetz zur\b|verordnung zur|"
@@ -368,7 +368,7 @@ STATUTS = [
                    r"\bdraft\b|proposal|proposition de|projet de (loi|decret|texte|reglement)|\bentwurf|referentenentwurf|"
                    r"anteproyecto|proyecto de (ley|real decreto|r\.? ?d\.?\b)|wetsvoorstel|lovforslag|projekt ustawy|navrh zakona|"
                    r"tervezet|disegno di legge|proposta de lei|(?-i:\bBill\b)")),   # « Bill » (loi) et non « the bill » (la facture)
-    ("adopte", _rx(r"adopted|adopte|\badopts? (a |an |its |the |new )?([\w-]+ ){0,3}(law|regulation|directive|act|text|bill|decree|legislation)\b|published in the official journal|journal officiel|promulg|verkundet|"
+    ("adopte", _rx(r"\badopted\b|\badoptee?s?\b|\badopts? (a |an |its |the |new )?([\w-]+ ){0,3}(law|regulation|directive|act|text|bill|decree|legislation)\b|published in the official journal|journal officiel|promulg|verkundet|"
                             r"bundesgesetzblatt|\bBOE\b|gazzetta ufficiale|staatsblad|dziennik ustaw|sbirka zakonu|"
                             r"magyar kozlony|ΦΕΚ|diario da republica|svensk forfattningssamling|lovtidend|signed into law")),
     ("en_vigueur", _rx(r"enters? into force|entry into force|entre(e)? en vigueur|in kraft|entrada en vigor|entrata in vigore|"
@@ -573,17 +573,22 @@ def evaluer(a, seuils, score_neg=None):
 
     # v7 : avis de l'IA de tri (collecte/tri_ia.py), quand elle a lu l'article. Garde-fou : un texte suivi cité
     # (NIS2, CRA, IVDR…) n'est jamais écarté par l'IA, seulement ramené à « à surveiller ».
+    tri_ia.reappliquer(a, [x[0] for x in tc])   # v8 : décision recalculée sur les réponses déjà enregistrées
     ia = a.get("ia") or {}
     if ia.get("avis"):
         lib = tri_ia.LIBELLES.get(ia.get("motif"), "IA")
         if ia["avis"] == "pas_pertinent":
-            if tc:
+            if tc and ia.get("motif") != "public_seul":   # D1 (retour du 20/10) : écarté même avec un texte suivi
                 if niveau in ("elevee", "moyenne"):
                     niveau, motif = "faible", lib + " (texte suivi cité : gardé à surveiller)"
             else:
                 niveau, motif = "ecarte", lib
         elif ia["avis"] == "a_surveiller" and niveau in ("elevee", "moyenne"):
             niveau, motif = "faible", lib
+        elif ia["avis"] == "a_surveiller" and niveau == "ecarte" and not br and ia.get("motif") in (
+                "guide_sans_texte", "preparation", "consultation_droit_souple"):
+            # v8 : ces articles étaient repêchés « à surveiller » quand l'IA les jugeait pertinents ; ils le restent
+            niveau, motif = "faible", lib + " (à vérifier : écarté par les règles)"
         elif ia["avis"] == "pertinent":
             if ia.get("motif") == "vulnerabilite_secteur":
                 # décision du 16/10 : vulnérabilité touchant le secteur (dispositifs, laboratoires, santé) : pertinente
@@ -596,6 +601,15 @@ def evaluer(a, seuils, score_neg=None):
             elif niveau == "ecarte" and not br:
                 # test du 14/10 : l'IA seule ne suffit pas à repêcher un article écarté ; « à surveiller »
                 niveau, motif = "faible", lib + " (à vérifier : écarté par les règles)"
+
+    # v8 (retours des 20/10 et 26/10), aussi pour les articles que l'IA n'a pas (encore) jugés : texte qui ne vise que
+    # les administrations publiques (D1) ou que les PME, d'après le titre : pas pertinent
+    if niveau != "ecarte" and not (ia.get("avis") and ia.get("motif") not in ("public_seul", "pme")):
+        tt = tri_ia.titres(a)
+        if (tri_ia.PUBLIC_SEUL.search(tt) or tri_ia.DESIGNATION.search(tt)) and not tri_ia.ENTREPRISES.search(tt):
+            niveau, motif = "ecarte", tri_ia.LIBELLES["public_seul"]
+        elif tri_ia.PME.search(tt) and not tc:
+            niveau, motif = "ecarte", tri_ia.LIBELLES["pme"]
 
     # L'essentiel : textes et normes importants, même en cas de doute (badge « à vérifier »)
     essentiel, a_verifier = False, False

@@ -73,10 +73,18 @@ def extrait(texte, titre=""):
     return coupe + "…"
 
 
+VERSION_INDICES = 2   # v8 : « adopté » reconnu seulement comme mot entier
+
+
 def lire_pages(articles, client, aujourdhui, max_pages=400, paralleles=8, fin=None):
     """Lit la page des articles donnés (les plus récents d'abord). Met le texte dans a['_texte'] (privé),
     les indices tirés de la page dans a['indices_page'] et l'état dans a['page'] = {date, ok, erreur}."""
-    a_lire = [a for a in articles if not (a.get("page") or {}).get("date") and a.get("lien")][:max_pages]
+    def a_relire(a):
+        # v8 (retour du 26/10) : « adopté » était reconnu dans « adoptent » (étude OFCS sur les PME prise pour un
+        # texte adopté) ; les pages dont les indices disaient « adopté » ou « signal fort » sont relues une fois
+        p, ip = a.get("page") or {}, a.get("indices_page") or {}
+        return p.get("ok") and p.get("v", 1) < VERSION_INDICES and (ip.get("statut") == "adopte" or ip.get("sig_fort"))
+    a_lire = [a for a in articles if (not (a.get("page") or {}).get("date") or a_relire(a)) and a.get("lien")][:max_pages]
     if not a_lire:
         return 0, 0
 
@@ -94,7 +102,7 @@ def lire_pages(articles, client, aujourdhui, max_pages=400, paralleles=8, fin=No
                 continue
             tentees += 1
             texte, err = res
-            a["page"] = {"date": aujourdhui.isoformat(), "ok": bool(texte and not err)}
+            a["page"] = {"date": aujourdhui.isoformat(), "ok": bool(texte and not err), "v": VERSION_INDICES}
             if err:
                 a["page"]["erreur"] = err
             if texte and not err:

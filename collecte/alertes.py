@@ -27,6 +27,7 @@ import re
 
 import regles
 import sujets
+import tri_ia
 
 DUREE_ACTIVE = 28           # jours d'affichage après la première détection (4 collectes)
 HORIZON_ECHEANCE = 30       # une échéance devient une alerte 30 jours avant sa date
@@ -77,9 +78,9 @@ ZONES_EN = {"Europe": "Europe (EU)", "Union européenne": "European Union", "All
 
 LIB_TYPE = {
     "fr": {"echeance": "Échéance", "adopte": "Nouveau texte adopté", "signale": "Signalé par un lecteur",
-           "proposition": "Texte en préparation", "a_qualifier": "Nouveau texte détecté — à qualifier"},
+           "proposition": "Projet de texte en cours", "a_qualifier": "Nouveau texte détecté — à qualifier"},
     "en": {"echeance": "Deadline", "adopte": "New text adopted", "signale": "Flagged by a reader",
-           "proposition": "Text in preparation", "a_qualifier": "New text detected — to be assessed"},
+           "proposition": "Draft text in progress", "a_qualifier": "New text detected — to be assessed"},
 }
 
 
@@ -127,6 +128,18 @@ TITRE_EXCLUS = re.compile(
     r"convocatoria de (ayudas|subvenciones)|subvention|τεχνικων προδιαγραφων", re.I)
 
 
+ETUDE = re.compile(
+    r"\b(etude(?! d.impact)|study|studie|survey|enquete(?! publique| d.impact)|sondage|barometre|barometer|umfrage|undersokning|tutkimus|kyselytutkimus|"
+    r"onderzoek|encuesta|estudio|indagine|sondaggio|badanie|ankieta|pruzkum|felmeres|kutatas|rapport annuel|annual report|"
+    r"jahresbericht|lagebericht|threat (report|landscape)|panorama de la (menace|cybermenace))\b", re.I)
+INSTRUMENT = re.compile(
+    r"\b(loi|lois|projet de loi|proposition de loi|decret|arrete|ordonnance|reglement|directive|"
+    r"law|act|bill|regulation|decree|ordinance|statutory instrument|"
+    r"gesetz\w*|verordnung\w*|richtlinie|wet|wetsvoorstel|besluit|ley|real decreto|reglamento|legge|decreto\w*|regolamento|"
+    r"lei|ustaw\w*|rozporzadzeni\w*|zakon\w*|vyhlask\w*|torveny\w*|rendelet\w*|lag|lagforslag|forordning|lov|lovforslag|"
+    r"bekendtgorelse|laki|asetus|hallituksen esitys|νομος|νομοσχεδιο|σχεδιο νομου|προεδρικο διαταγμα|kanon\w*)\b", re.I)
+
+
 def type_article(a):
     """Type d'alerte d'un article, ou None (pas une alerte)."""
     if a.get("base") or a.get("doublon_de") or a.get("nature") == "opinion" or a.get("debat"):
@@ -135,6 +148,10 @@ def type_article(a):
         return "signale"
     if (a.get("concernes") or {}).get("hors_perimetre") and not a.get("textes_cles"):
         return None   # l'article dit SÛREMENT que le texte ne vise que d'autres acteurs (banques, administrations…)
+    ia = a.get("ia") or {}
+    if (ia.get("avis") == "pertinent" and ia.get("motif") == "preparation" and a.get("pertinence") in ("elevee", "moyenne")
+            and a.get("nature") == "officielle" and _europeen(a)):   # travaux d'une autorité, pas un guide de cabinet
+        return "proposition"   # 31/10 (D2) : travaux préparatoires qui concernent l'entreprise = projet de texte en cours
     if not a.get("essentiel") or a.get("pertinence") != "elevee" or not _europeen(a):
         return None
     texte = regles.texte_article(a)
@@ -143,6 +160,12 @@ def type_article(a):
     tr = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
     titre = regles._sa(a.get("titre", "") + " \n " + tr)
     if TITRE_EXCLUS.search(titre):
+        return None
+    # v8 (retour du 26/10, étude OFCS « PME Cybersécurité 2026 ») : une étude, une enquête ou un baromètre n'est pas
+    # une nouvelle règle, même publié par une autorité ; un article qui ne vise que les PME non plus
+    debut = regles._sa(a.get("titre", "") + " \n " + tr + " \n " + (a.get("resume") or "")[:300] + " \n " +
+                       (((a.get("trad") or {}).get("en") or {}).get("resume") or "")[:300])
+    if ETUDE.search(debut) or (tri_ia.PME.search(titre) and not a.get("textes_cles")):
         return None
     statut_a = a.get("statut") or ""
     if a.get("nature") != "officielle":
@@ -160,6 +183,14 @@ def type_article(a):
     if inconnu:
         if not SUJET_ALERTE.search(texte) and not a.get("sens_fort") and not (a.get("indices_page") or {}).get("sujet_fort"):
             return None   # ni sujet central reconnu, ni sens jugé très proche par le modèle
+        # v8 : « Nouveau texte détecté » exige qu'un texte (loi, règlement, décret, directive…) soit nommé dans le
+        # titre ou le résumé — pas seulement deviné d'après la page — et que l'IA, si elle a lu l'article, y ait vu
+        # un texte officiel, un projet ou une obligation (pas une étude, un guide ou un commentaire)
+        ia = a.get("ia") or {}
+        if ia.get("type") and ia["type"] not in ("texte_officiel", "projet_consultation", "obligation_echeance"):
+            return None
+        if not INSTRUMENT.search(texte):
+            return None
         return "a_qualifier" if (t or regles.SIGNAL_FORT.search(texte)) else None
     return t
 
@@ -337,7 +368,7 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecarte
             continue
         for e in a.get("echeances") or []:
             d = _date(e.get("date"))
-            if not d or e.get("approx") or d > lim_haut or d < lim_bas:
+            if not d or e.get("approx") or e.get("publication") or d > lim_haut or d < lim_bas:
                 continue
             texte = (a.get("textes_cles") or a.get("tags") or [""])[0]
             cle = par_jour.get((a.get("zone", ""), d.isoformat()))

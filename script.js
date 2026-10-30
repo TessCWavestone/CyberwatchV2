@@ -17,6 +17,7 @@
   var REF      = window.VEILLE_REFERENTIEL  || { textes: [], categories: {} };
   var DEBATS   = (window.VEILLE_DEBATS || {}).articles || [];
   var PRESSENTIS = window.VEILLE_PRESSENTIS ? (window.VEILLE_PRESSENTIS.sujets || []) : null;
+  var AVIS_SESSION = {};   // « pas pertinent » cliqués pendant la visite (pas encore pris en compte par une collecte)
   var ECARTES  = (window.VEILLE_ECARTES || {}).articles || [];
   var MONDE    = window.VEILLE_MONDE || null;
   var VERSIONS = ((window.VEILLE_VERSIONS || {}).versions || []).slice();
@@ -69,6 +70,10 @@
       m_opendata: 'Données ouvertes (JO)', pdf_prep: 'Préparation du PDF…', pdf_missing: 'Le PDF de la veille complète sera créé à la prochaine collecte sur GitHub.',
       pdf_fail: "PDF impossible ici (bibliothèque non chargée) : choisissez « Enregistrer au format PDF » dans la fenêtre qui s'ouvre.",
       btn_pdf_all: 'La veille complète (PDF)', btn_pdf: 'Les articles affichés (PDF)', btn_excel: 'Les articles affichés (Excel)',
+      btn_slides: 'Support de slides (PowerPoint)', sl_title: 'Générer un support de slides',
+      sl_lead: "Brouillon modifiable au format PowerPoint, en anglais, au modèle Wavestone : un sujet par slide (regroupés par texte, pays et étape), dates réglementaires, vue par pays, textes en préparation et annexe des articles. Les filtres du site ne sont pas appliqués ; les articles jugés « pas pertinent » par un lecteur sont exclus. Les encadrés « Impact » et « Recommended actions » restent à compléter.",
+      sl_du: 'Du', sl_au: 'Au', sl_monitor: 'Inclure les sujets « à surveiller » (avec un bandeau « To verify »)', sl_go: 'Générer',
+      sl_bad: 'Période invalide.', sl_wait: 'Génération du support en cours…', sl_done: 'Support téléchargé.', sl_err: "La génération du support a échoué (voir la console du navigateur).",
       update_title: 'Ouvre GitHub : cliquez sur « Run workflow » puis patientez quelques minutes',
       version_label: 'Édition', version_current: ' (actuelle)', version_base: 'Base de connaissance initiale',
       version_opt: function (d, n) { return d + ' · ' + n + (n > 1 ? ' nouveautés' : ' nouveauté'); },
@@ -212,6 +217,10 @@
       m_opendata: 'Open data (Official Journal)', pdf_prep: 'Preparing the PDF…', pdf_missing: 'The full-watch PDF will be created at the next collection on GitHub.',
       pdf_fail: 'PDF not available here (library not loaded): choose “Save as PDF” in the window that opens.',
       btn_pdf_all: 'The full watch (PDF)', btn_pdf: 'Articles shown (PDF)', btn_excel: 'Articles shown (Excel)',
+      btn_slides: 'Slide deck (PowerPoint)', sl_title: 'Generate a slide deck',
+      sl_lead: 'Editable PowerPoint draft, in English, in the Wavestone template: one subject per slide (grouped by text, country and step), regulatory dates, view by country, texts in preparation and an appendix of articles. Site filters are not applied; articles rated “not relevant” by a reader are excluded. The “Impact” and “Recommended actions” boxes are left to complete.',
+      sl_du: 'From', sl_au: 'To', sl_monitor: 'Include subjects “to monitor” (with a “To verify” banner)', sl_go: 'Generate',
+      sl_bad: 'Invalid period.', sl_wait: 'Generating the deck…', sl_done: 'Deck downloaded.', sl_err: 'Deck generation failed (see the browser console).',
       update_title: 'Opens GitHub: click “Run workflow”, then wait a few minutes',
       version_label: 'Edition', version_current: ' (current)', version_base: 'Initial knowledge base',
       version_opt: function (d, n) { return d + ' · ' + n + ' new'; },
@@ -1800,7 +1809,7 @@
     var d = { action: 'avis', avis: b.getAttribute('data-avis'), id: b.getAttribute('data-id'), titre: b.getAttribute('data-titre'), lien: b.getAttribute('data-lien') };
     var imp = d.avis === 'important';
     demander(imp ? t('fb_t_imp') : t('fb_t_not'), [d.titre, imp ? t('fb_b_imp') : t('fb_b_not'), lireJeton() ? t('via_token') : t('via_issue')], t('confirm'),
-      function () { envoyerAvis(d); b.disabled = true; });
+      function () { envoyerAvis(d); b.disabled = true; if (d.avis === 'pas_pertinent') AVIS_SESSION[d.id] = 1; });
   });
 
   function gestionSources() {
@@ -2909,6 +2918,39 @@
   sur('assistant de recherche', brancherAssistant);
 
   document.getElementById('export-csv').addEventListener('click', exporterCsv);
+  /* v10 — Support de slides (.pptx) généré dans le navigateur, gratuit, sans IA ni serveur (slides.js + PptxGenJS, MIT).
+     Les fichiers (bibliothèque, images du modèle) ne sont chargés qu'au clic. */
+  function chargerJs(src, pret) {
+    return new Promise(function (ok, ko) {
+      if (pret()) { ok(); return; }
+      var sc = document.createElement('script'); sc.src = src; sc.async = true;
+      sc.onload = function () { pret() ? ok() : ko(new Error(src)); }; sc.onerror = function () { ko(new Error(src)); };
+      document.head.appendChild(sc);
+    });
+  }
+  function isoJour(d) { return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); }
+  document.getElementById('export-slides').addEventListener('click', function () {
+    var auj = new Date(), du = el('input', { type: 'date', value: isoJour(new Date(auj.getTime() - 30 * 864e5)) }), au = el('input', { type: 'date', value: isoJour(auj) });
+    var cb = el('input', { type: 'checkbox' }); cb.checked = true;
+    demander(t('sl_title'), [t('sl_lead'), el('label', { className: 'sl-champ' }, [t('sl_du') + ' ', du]), el('label', { className: 'sl-champ' }, [t('sl_au') + ' ', au]),
+      el('label', { className: 'sl-check' }, [cb, ' ' + t('sl_monitor')])], t('sl_go'), function () { genererSlides(du.value, au.value, cb.checked); });
+  });
+  function genererSlides(du, au, surveiller) {
+    if (!du || !au || du > au) { toast(t('sl_bad')); return; }
+    toast(t('sl_wait'));
+    (besoinArchives(du) ? chargerArchives() : Promise.resolve()).then(function () {
+      return Promise.all([chargerJs('vendor/pptxgen.bundle.js', function () { return !!window.PptxGenJS; }),
+                          chargerJs('assets/slides/images.js', function () { return !!window.CW_SLIDES_IMG; }),
+                          chargerJs('slides.js', function () { return !!window.CW_SLIDES; })]);
+    }).then(function () {
+      var D = { articles: ARTICLES.filter(function (a) { return surveiller || a.pertinence !== 'faible'; }), pressentis: PRESSENTIS || [], ref: REF_TEXTES,
+                du: du, au: au, genere: isoJour(new Date()), exclus: AVIS_SESSION,
+                zoneEn: function (z) { var d = ZONES[z]; return d ? d.en : (z || '—'); },
+                texteEn: function (x) { return TEXTES_CLES_EN[x] || x; },
+                acteurEn: function (x) { var l = (META.acteurs || {})[x]; return l ? l.en : ''; } };
+      return window.CW_SLIDES.construire(window.PptxGenJS, window.CW_SLIDES_IMG, D).writeFile({ fileName: 'cyberwatch_slides_' + du + '_' + au + '.pptx' });
+    }).then(function () { toast(t('sl_done')); }).catch(function (e) { console.error(e); toast(t('sl_err')); });
+  }
   document.getElementById('export-pdf').addEventListener('click', function () {
     var sel = cartesAffichees().map(ligneExport);
     if (!sel.length) { toast(t('nothing_export')); return; }

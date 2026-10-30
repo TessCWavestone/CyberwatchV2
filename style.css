@@ -535,3 +535,9 @@ a.as-titre:hover { text-decoration: underline; }
 .pre-devenu { border-style: solid; opacity: .85; }
 .deb-mention-sm { font-size: 12px; }
 #pr-press-titre, #pr-avis-titre { margin-top: 22px; }
+
+/* v10 — fenêtre « Support de slides » */
+.sl-champ { display: inline-flex; align-items: center; gap: 6px; margin: 10px 14px 0 0; }
+.sl-champ input { width: auto; margin-top: 0; }
+.sl-check { display: flex; align-items: flex-start; gap: 8px; margin-top: 12px; }
+.sl-check input { width: auto; margin-top: 3px; }

@@ -16,6 +16,7 @@
   var ACRO     = window.VEILLE_ACRONYMES    || { glossaire: {}, acronymes: [] };
   var REF      = window.VEILLE_REFERENTIEL  || { textes: [], categories: {} };
   var DEBATS   = (window.VEILLE_DEBATS || {}).articles || [];
+  var PRESSENTIS = window.VEILLE_PRESSENTIS ? (window.VEILLE_PRESSENTIS.sujets || []) : null;
   var ECARTES  = (window.VEILLE_ECARTES || {}).articles || [];
   var MONDE    = window.VEILLE_MONDE || null;
   var VERSIONS = ((window.VEILLE_VERSIONS || {}).versions || []).slice();
@@ -76,14 +77,14 @@
       version_only: 'Seulement ce que cette édition a apporté', version_git: 'Voir cette édition sur GitHub',
       edition: function (d, n) { return 'Édition du ' + d + ' · ' + n + (n > 1 ? ' nouveaux articles' : ' nouvel article'); },
       no_run: "Aucune collecte pour l'instant.",
-      tab_essentiel: "L'essentiel", tab_watch: 'Veille', tab_map: 'Carte', tab_ref: 'Textes applicables', tab_debats: 'Débats et signaux', tab_sources: 'Sources',
+      tab_essentiel: "L'essentiel", tab_watch: 'Veille', tab_map: 'Carte', tab_ref: 'Textes applicables', tab_debats: "Pressentis et avis d'experts", tab_sources: 'Sources',
       une_title: 'À la une', une_lead: "Les cinq informations les plus importantes du moment, classées par des règles fixes (sans IA générative) : texte clé, échéance proche, texte adopté ou en vigueur, source officielle, fraîcheur.",
       une_empty: "Rien de marquant pour l'instant : lancez une collecte.", une_why: 'À la une car : ',
       u_deadline: 'échéance proche', u_pert: 'très pertinent', u_off: 'source officielle', u_fine: 'amende', u_recent: 'tout récent', u_status: 'texte adopté ou en vigueur',
       agenda_title: 'Dates clés', agenda_lead: "Échéances repérées automatiquement dans les textes (« d'ici le… », « applicable from… », « bis zum… ») et dates d'application des textes en vigueur. Les dates approximatives (mois seulement) sont marquées « vers ».",
       h90: '3 mois', h180: '6 mois', h365: '12 mois', hall: 'Tout', agenda_empty: 'Aucune échéance repérée sur cette période.',
       in_days: function (n) { return n === 0 ? "aujourd'hui" : (n > 0 ? 'dans ' + n + ' j' : 'il y a ' + (-n) + ' j'); },
-      approx: 'vers', applies: 'Entrée en application : ', kpi_title: 'En chiffres',
+      approx: 'vers', pub_date: 'publication du texte :', applies: 'Entrée en application : ', kpi_title: 'En chiffres',
       k_recent: function (j) { return 'nouveautés (' + j + ' derniers jours)'; }, k_deadlines: 'échéances dans les 90 jours', k_fines: 'amendes relevées', k_countries: 'pays et zones couverts', k_sources: 'sources lues à la dernière collecte',
       w_recent: 'Nouveautés', w_archives: 'Archives',
       window_recent: function (j) { return 'Publiées ces ' + j + ' derniers jours. Les plus anciennes sont dans « Archives ».'; },
@@ -124,12 +125,18 @@
       ref_empty: 'Aucun texte pour ce filtre.', btn_excel_ref: 'Exporter (Excel)', ref_none: 'Pas encore de référentiel.',
       ref_summary: function (n, z) { return n + ' textes applicables · ' + z + ' pays et zones'; }, ref_since: 'Applicable depuis ', ref_fine: 'Amende max. : ', ref_pdf: 'Annexe — Textes applicables par pays',
       ref_csv_head: ['Pays / zone', 'Catégorie', 'Texte', 'Acronyme', 'Autorité', 'Applicable depuis', 'Amende max.', 'Pertinence', 'Résumé', 'Pourquoi', 'Lien'],
-      deb_warn_title: 'Section non certifiée — avis et suppositions',
-      deb_warn: "Cette page rassemble des avis d'experts, prises de position et analyses prospectives (associations professionnelles, think tanks, cabinets). Ce sont des opinions et des hypothèses, pas des informations officielles. Elles ne sont jamais mélangées aux autres onglets, ni prises en compte dans « L'essentiel », la carte ou les textes applicables.",
-      deb_title: 'Débats et signaux', deb_lead: "Ce que les experts anticipent ou défendent sur les réglementations à venir. Aucun « ressenti » n'est calculé par une machine : seuls les sujets qui reviennent plus souvent sont comptés.",
+      deb_warn_title: 'Section non certifiée — signaux, avis et suppositions',
+      deb_warn: "Cette page rassemble ce qui se prépare avant qu'un projet de texte existe (intentions annoncées, stratégies, appels à contributions en amont) et des avis d'experts (associations professionnelles, think tanks, cabinets). Ce sont des signaux et des opinions, pas des obligations. Ils ne sont jamais pris en compte dans les points clés, la carte ou les textes applicables.",
+      deb_title: "Pressentis et avis d'experts", deb_lead: "Réglementations cyber qui pourraient sortir et concerner l'entreprise, évolutions pressenties des textes existants, et avis d'experts. Tri strict : sujet cyber et pouvant concerner l'entreprise. Un sujet quitte cette page quand le projet de texte sort : il passe alors dans les points clés (« Projet de texte en cours »).",
+      pre_title: 'Textes et évolutions pressentis', pre_lead: "Regroupés par texte et par pays. Un sujet reste un an sans nouveau signal ; quand le projet de texte est publié, il affiche « devenu projet de texte » pendant 4 semaines puis disparaît.",
+      pre_empty: 'Aucun texte pressenti pour le moment.', avi_title: "Avis d'experts sur les textes adoptés", avi_lead: "Analyses et prises de position d'experts sur des textes déjà adoptés, regroupées par texte. Gardées 6 mois.",
+      avi_empty: "Aucun avis d'expert pour le moment.", pre_kind: { pressenti: 'Texte pressenti', evolution: 'Évolution pressentie', avis: "Avis d'experts" },
+      pre_evol: function (x) { return 'Évolution pressentie : ' + x; }, pre_other: 'Signal sans nom de texte',
+      pre_first: function (d, n, s) { return 'Premier signal le ' + d + ' · ' + n + (n > 1 ? ' articles' : ' article') + ' · ' + s + (s > 1 ? ' sources' : ' source'); },
+      pre_devenu: function (d) { return 'Devenu projet de texte le ' + d + ' → voir les points clés'; }, pre_expert: "avis d'expert, non certifié",
       deb_trends: 'Sujets qui montent chez les experts', deb_trends_lead: "Nombre de publications d'experts citant chaque sujet : 60 jours précédents → 60 derniers jours. Un simple comptage, sans interprétation.",
-      deb_list: 'Dernières prises de position', deb_search_ph: 'Filtrer les avis…', deb_empty: "Aucun avis d'expert collecté pour l'instant : ils apparaîtront après la prochaine collecte.",
-      deb_mention: "Avis d'expert — supposition, non certifié", deb_none_trend: 'Pas encore assez de publications pour dégager des tendances.', deb_pdf: 'Annexe — Débats et signaux (NON CERTIFIÉ : avis et suppositions)',
+      deb_list: 'Dernières prises de position', deb_search_ph: 'Filtrer les pressentis et les avis…', deb_empty: "Aucun avis d'expert collecté pour l'instant : ils apparaîtront après la prochaine collecte.",
+      deb_mention: "Avis d'expert — supposition, non certifié", deb_none_trend: 'Pas encore assez de publications pour dégager des tendances.', deb_pdf: "Annexe — Pressentis et avis d'experts (NON CERTIFIÉ : signaux, avis et suppositions)",
       src_title: 'Sources de la veille', src_lead: "Toutes les sources (liste maîtresse config/sources.xlsx du dépôt GitHub, ajouts faits depuis ce site, veille RKC) et leur accessibilité lors de la dernière collecte. Les sources « ignorées » ne sont pas collectées (motif affiché) ; elles sont retestées automatiquement le 1er lundi de chaque mois. Vous pouvez ajouter ou retirer une source : c'est pris en compte à la collecte suivante.",
       src_summary: function (q, n) { return (q ? 'Dernière collecte : ' + q + ' · ' : '') + n + ' sources'; }, src_none: 'La liste apparaîtra après la première collecte.',
       s_all: 'Toutes', s_ok: 'Accessibles', s_partial: 'Partielles', s_ko: 'Inaccessibles', s_other: 'Ignorées', src_search_ph: 'Filtrer par nom ou pays…', src_empty: 'Aucune source ne correspond.',
@@ -143,7 +150,7 @@
       src_add: '+ Ajouter une source', src_token: 'Jeton GitHub', src_form_title: 'Nouvelle source',
       sf_name: 'Nom de la source *', sf_zone: 'Pays / zone *', sf_type: 'Type de source', sf_url: 'Adresse du site *',
       sf_feeds: 'Flux RSS (facultatif, un par ligne)', sf_pages: "Pages d'actualités datées (facultatif, une par ligne)",
-      sf_hint: "La source sera lue à la prochaine collecte. Choisissez « Avis d'experts » pour une source d'opinion : ses articles iront uniquement dans « Débats et signaux ».",
+      sf_hint: "La source sera lue à la prochaine collecte. Choisissez « Avis d'experts » pour une source d'opinion : ses articles iront uniquement dans « Pressentis et avis d'experts ».",
       sf_submit: 'Ajouter…', cancel: 'Annuler', confirm: 'Confirmer', sf_err: 'Renseignez au moins le nom, le pays et une adresse commençant par https://',
       src_remove: 'Retirer', src_restore: 'Rétablir',
       mode_token: 'Mode : modification directe (jeton enregistré dans ce navigateur)', mode_issue: 'Mode : proposition via GitHub', mode_none: 'Dépôt GitHub inconnu : il apparaîtra après la première collecte.',
@@ -161,7 +168,7 @@
       ac_th_acro: 'Sujet', ac_th_var: 'Variantes', ac_th_n: 'Articles', ac_th_lang: 'Langues', ac_th_first: 'Vu la 1re fois', ac_th_glo: 'Glossaire', ac_th_ex: 'Exemple récent',
       ac_empty: 'Aucun sujet pour ce filtre.', ac_in: '✓ Harmonisé', ac_todo: 'Tel quel', ac_summary: function (n, nc) { return n + ' sujets présents dans la veille · ' + nc + ' candidats à valider'; },
       method: 'Méthode', method_lead: 'Comment la veille est collectée, notée et présentée — gratuitement, sans IA payante ni clé API.',
-      footer: 'Cyber Watch — Wavestone · collecte, notation et traduction automatiques et gratuites.', footer_note: "Ce site ne constitue pas un conseil juridique. Les avis d'experts (onglet Débats et signaux) ne sont pas des informations certifiées.",
+      footer: 'Cyber Watch — Wavestone · collecte, notation et traduction automatiques et gratuites.', footer_note: "Ce site ne constitue pas un conseil juridique. Les pressentis et avis d'experts (onglet du même nom) ne sont pas des informations certifiées.",
       nothing_export: 'Aucun article à exporter', exported: ' articles exportés', too_many: "Trop d'articles : filtrez d'abord (max. 300)",
       pdf_title: "Cyber Watch — sélection d'articles", pdf_all_title: 'Cyber Watch — la veille complète', pdf_generated: 'Généré le ', pdf_count: ' articles', pdf_toc: 'Sommaire', pdf_agenda: 'Dates clés à venir',
       csv_head: ['Date', 'Rubrique', 'Pertinence', 'Titre', "Titre d'origine", 'Langue', 'Source', 'Pays / zone', 'Nature', 'Statut', 'Amende', 'Amende (€, estimation)', 'Dates clés', 'Pourquoi', 'Thèmes', 'Lien', 'Résumé'],
@@ -172,7 +179,7 @@
         ['Rien ne se perd', "<p>Les articles de faible pertinence sont gardés dans « À surveiller » (masqués par défaut). Les articles écartés restent consultables et téléchargeables dans Sources › Articles écartés. Les boutons « Important » et « Pas pertinent » corrigent le classement à la collecte suivante et servent d'exemples au modèle.</p>"],
         ["L'essentiel", "<p>« Points clés » : les 5 alertes les plus urgentes, 8 au plus (échéances à 30 jours, nouveaux textes adoptés, textes en préparation, textes inconnus détectés). Un nouveau texte y reste 4 semaines après sa détection, une échéance les 30 jours qui la précèdent ; ensuite l'alerte passe dans « Points clés précédents ». « Nouvelles réglementations et normes » ne retient que les textes et normes importants, regroupés par texte avec toutes leurs sources. En cas de doute (source non officielle, texte inconnu), l'article est gardé avec le badge « À vérifier ». Les dates clés ne sont retenues que près d'un mot d'obligation (« d'ici le », « applicable à compter du »…), jamais pour un webinaire ou une réunion.</p>"],
         ['Nouveautés et archives', "<p>« Nouveautés » montre les 30 derniers jours (60 s'il y a peu d'articles) ; tout le reste est dans « Archives ». Chaque collecte crée une édition, consultable dans le sélecteur « Édition ».</p>"],
-        ['Débats et signaux', "<p>Les avis d'experts viennent uniquement de sources classées « Avis d'experts (non certifié) », et seuls les avis pertinents ou très pertinents sont gardés. Ils sont stockés à part et n'apparaissent jamais dans la veille, la carte, L'essentiel ni les textes applicables.</p>"],
+        ["Pressentis et avis d'experts", "<p>Deux blocs. <b>Textes et évolutions pressentis</b> : intentions annoncées, stratégies, appels à contributions en amont et évolutions annoncées d'un texte existant, gardés seulement si l'IA de tri les juge cyber et pouvant concerner l'entreprise ; regroupés par texte et par pays. Quand le projet de texte sort (point clé « Projet de texte en cours » ou « Nouveau texte adopté » sur le même texte), le sujet affiche « devenu projet de texte » pendant 4 semaines puis quitte la page. <b>Avis d'experts sur les textes adoptés</b> : sources classées « Avis d'experts (non certifié) », sujets cyber seulement, gardés 6 mois. Rien de cette page n'entre dans la veille, la carte, les points clés ni les textes applicables.</p>"],
         ['Veille RKC', "<p>L'alerte RKC (Nexis Newsdesk) est lue dans un dépôt privé ; seuls les articles pertinents ou très pertinents sont gardés. Seuls le titre, la publication, la date et la note sont publiés : l'extrait, souvent payant, n'apparaît jamais sur ce site.</p>"],
         ['Traduction et limites', "<p>Titres et résumés sont traduits par un moteur libre (Argos Translate) ; les acronymes ne sont jamais traduits ; une traduction défaillante est remplacée par le texte d'origine. Tout est automatique : en cas de doute, lisez la source. Les montants convertis sont des estimations.</p>"]
       ]
@@ -213,14 +220,14 @@
       version_only: 'Only what this edition added', version_git: 'View this edition on GitHub',
       edition: function (d, n) { return 'Edition of ' + d + ' · ' + n + ' new article' + (n > 1 ? 's' : ''); },
       no_run: 'No collection yet.',
-      tab_essentiel: 'Key points', tab_watch: 'Watch', tab_map: 'Map', tab_ref: 'Applicable texts', tab_debats: 'Debates & signals', tab_sources: 'Sources',
+      tab_essentiel: 'Key points', tab_watch: 'Watch', tab_map: 'Map', tab_ref: 'Applicable texts', tab_debats: 'Outlook & expert views', tab_sources: 'Sources',
       une_title: 'Top stories', une_lead: 'The five most important items right now, ranked by fixed rules (no generative AI): key text, upcoming deadline, adopted or in-force text, official source, freshness.',
       une_empty: 'Nothing notable yet: run a collection.', une_why: 'On top because: ',
       u_deadline: 'deadline soon', u_pert: 'highly relevant', u_off: 'official source', u_fine: 'fine', u_recent: 'brand new', u_status: 'adopted or in force',
       agenda_title: 'Key dates', agenda_lead: 'Deadlines detected automatically in the texts (“by…”, “applicable from…”, “bis zum…”) and application dates of texts in force. Approximate dates (month only) are marked “around”.',
       h90: '3 months', h180: '6 months', h365: '12 months', hall: 'All', agenda_empty: 'No deadline found for this period.',
       in_days: function (n) { return n === 0 ? 'today' : (n > 0 ? 'in ' + n + ' d' : (-n) + ' d ago'); },
-      approx: 'around', applies: 'Applies from: ', kpi_title: 'In figures',
+      approx: 'around', pub_date: 'publication of the text:', applies: 'Applies from: ', kpi_title: 'In figures',
       k_recent: function (j) { return 'new items (last ' + j + ' days)'; }, k_deadlines: 'deadlines within 90 days', k_fines: 'fines reported', k_countries: 'countries & areas covered', k_sources: 'sources read at last collection',
       w_recent: 'Latest', w_archives: 'Archive',
       window_recent: function (j) { return 'Published in the last ' + j + ' days. Older items are in “Archive”.'; },
@@ -261,12 +268,18 @@
       ref_empty: 'No text for this filter.', btn_excel_ref: 'Export (Excel)', ref_none: 'No baseline yet.',
       ref_summary: function (n, z) { return n + ' applicable texts · ' + z + ' countries and areas'; }, ref_since: 'Applies since ', ref_fine: 'Max. fine: ', ref_pdf: 'Annex — Applicable texts by country',
       ref_csv_head: ['Country / area', 'Category', 'Text', 'Acronym', 'Authority', 'Applies since', 'Max. fine', 'Relevance', 'Summary', 'Why', 'Link'],
-      deb_warn_title: 'Not certified — opinions and assumptions',
-      deb_warn: 'This page gathers expert opinions, position papers and forward-looking analyses (trade associations, think tanks, law firms). They are opinions and assumptions, not official information. They are never mixed with the other tabs, nor used in “Key points”, the map or the applicable texts.',
-      deb_title: 'Debates & signals', deb_lead: 'What experts anticipate or advocate about upcoming regulations. No machine-computed “sentiment”: only how often topics come up is counted.',
+      deb_warn_title: 'Not certified — signals, opinions and assumptions',
+      deb_warn: 'This page gathers what is being prepared before a draft text exists (announced intentions, strategies, early calls for evidence) and expert views (trade associations, think tanks, law firms). These are signals and opinions, not obligations. They are never used in Key points, the map or applicable texts.',
+      deb_title: 'Outlook & expert views', deb_lead: 'Cyber regulations that could come out and concern the company, expected changes to existing texts, and expert views. Strict filter: cyber topic that may concern the company. A topic leaves this page when the draft text is published: it then moves to Key points (“Draft text in progress”).',
+      pre_title: 'Expected texts and changes', pre_lead: 'Grouped by text and country. A topic stays one year without a new signal; once the draft text is published it shows “became a draft text” for 4 weeks, then disappears.',
+      pre_empty: 'No expected text at the moment.', avi_title: 'Expert views on adopted texts', avi_lead: 'Expert analyses and positions on texts already adopted, grouped by text. Kept for 6 months.',
+      avi_empty: 'No expert view at the moment.', pre_kind: { pressenti: 'Expected text', evolution: 'Expected change', avis: 'Expert views' },
+      pre_evol: function (x) { return 'Expected change: ' + x; }, pre_other: 'Signal without a text name',
+      pre_first: function (d, n, s) { return 'First signal on ' + d + ' · ' + n + (n > 1 ? ' articles' : ' article') + ' · ' + s + (s > 1 ? ' sources' : ' source'); },
+      pre_devenu: function (d) { return 'Became a draft text on ' + d + ' → see Key points'; }, pre_expert: 'expert view, not certified',
       deb_trends: 'Topics rising among experts', deb_trends_lead: 'Number of expert publications mentioning each topic: previous 60 days → last 60 days. A plain count, with no interpretation.',
-      deb_list: 'Latest positions', deb_search_ph: 'Filter opinions…', deb_empty: 'No expert opinion collected yet: they will appear after the next collection.',
-      deb_mention: 'Expert opinion — assumption, not certified', deb_none_trend: 'Not enough publications yet to show trends.', deb_pdf: 'Annex — Debates & signals (NOT CERTIFIED: opinions and assumptions)',
+      deb_list: 'Latest positions', deb_search_ph: 'Filter expected texts and views…', deb_empty: 'No expert opinion collected yet: they will appear after the next collection.',
+      deb_mention: 'Expert opinion — assumption, not certified', deb_none_trend: 'Not enough publications yet to show trends.', deb_pdf: 'Annex — Outlook & expert views (NOT CERTIFIED: signals, opinions and assumptions)',
       src_title: 'Watch sources', src_lead: 'Every source (master list config/sources.xlsx in the GitHub repository, additions made on this site, RKC watch) and whether it could be read during the last collection. “Ignored” sources are not collected (reason shown); they are re-tested automatically on the first Monday of each month. You can add or remove a source: it applies from the next collection.',
       src_summary: function (q, n) { return (q ? 'Last collection: ' + q + ' · ' : '') + n + ' sources'; }, src_none: 'The list will appear after the first collection.',
       s_all: 'All', s_ok: 'Reachable', s_partial: 'Partial', s_ko: 'Unreachable', s_other: 'Ignored', src_search_ph: 'Filter by name or country…', src_empty: 'No source matches.',
@@ -280,7 +293,7 @@
       src_add: '+ Add a source', src_token: 'GitHub token', src_form_title: 'New source',
       sf_name: 'Source name *', sf_zone: 'Country / area *', sf_type: 'Type of source', sf_url: 'Website address *',
       sf_feeds: 'RSS feeds (optional, one per line)', sf_pages: 'Dated news pages (optional, one per line)',
-      sf_hint: 'The source will be read at the next collection. Choose “Expert opinion” for an opinion source: its articles will only go to “Debates & signals”.',
+      sf_hint: 'The source will be read at the next collection. Choose “Expert opinion” for an opinion source: its articles will only go to “Outlook & expert views”.',
       sf_submit: 'Add…', cancel: 'Cancel', confirm: 'Confirm', sf_err: 'Fill in at least the name, the country and an address starting with https://',
       src_remove: 'Remove', src_restore: 'Restore',
       mode_token: 'Mode: direct edit (token saved in this browser)', mode_issue: 'Mode: proposal through GitHub', mode_none: 'GitHub repository unknown: it will appear after the first collection.',
@@ -298,7 +311,7 @@
       ac_th_acro: 'Topic', ac_th_var: 'Variants', ac_th_n: 'Articles', ac_th_lang: 'Languages', ac_th_first: 'First seen', ac_th_glo: 'Glossary', ac_th_ex: 'Recent example',
       ac_empty: 'No topic for this filter.', ac_in: '✓ Harmonised', ac_todo: 'As is', ac_summary: function (n, nc) { return n + ' topics found in the watch · ' + nc + ' candidates to review'; },
       method: 'Method', method_lead: 'How the watch is collected, rated and presented — free of charge, with no paid AI and no API key.',
-      footer: 'Cyber Watch — Wavestone · free automated collection, rating and translation.', footer_note: 'This site does not constitute legal advice. Expert opinions (Debates & signals tab) are not certified information.',
+      footer: 'Cyber Watch — Wavestone · free automated collection, rating and translation.', footer_note: 'This site does not constitute legal advice. Outlook and expert views (tab of the same name) are not certified information.',
       nothing_export: 'No article to export', exported: ' articles exported', too_many: 'Too many articles: filter first (max. 300)',
       pdf_title: 'Cyber Watch — selected articles', pdf_all_title: 'Cyber Watch — the full watch', pdf_generated: 'Generated on ', pdf_count: ' articles', pdf_toc: 'Contents', pdf_agenda: 'Upcoming key dates',
       csv_head: ['Date', 'Section', 'Relevance', 'Title', 'Original title', 'Language', 'Source', 'Country / area', 'Type', 'Status', 'Fine', 'Fine (€, estimate)', 'Key dates', 'Why', 'Topics', 'Link', 'Summary'],
@@ -309,7 +322,7 @@
         ['Nothing is lost', '<p>Low-relevance articles are kept under “To monitor” (hidden by default). Discarded articles remain listed and downloadable in Sources › Discarded articles. The “Important” and “Not relevant” buttons correct the rating at the next collection and serve as examples for the model.</p>'],
         ['Key points', '<p>“Key points”: the 5 most urgent alerts, 8 at most (deadlines within 30 days, newly adopted texts, texts in preparation, unknown texts detected). A new text stays there for 4 weeks after detection, a deadline for the 30 days before it; then the alert moves to “Previous key points”. “New regulations and standards” only keeps important texts and standards, grouped by text with all their sources. When in doubt (non-official source, unknown text), the article is kept with a “To be checked” badge. Key dates are only kept next to an obligation word (“by”, “applicable from”…), never for a webinar or a meeting.</p>'],
         ['Latest and archive', '<p>“Latest” shows the last 30 days (60 when there are few articles); everything else is in “Archive”. Each collection creates an edition, available in the “Edition” selector.</p>'],
-        ['Debates & signals', '<p>Expert opinions come only from sources classified as “Expert opinion (not certified)”, and only relevant or highly relevant ones are kept. They are stored separately and never appear in the watch, the map, Key points or applicable texts.</p>'],
+        ['Outlook & expert views', '<p>Two blocks. <b>Expected texts and changes</b>: announced intentions, strategies, early calls for evidence and announced changes to an existing text, kept only if the sorting AI judges them cyber-related and possibly relevant to the company; grouped by text and country. When the draft text is published (Key point “Draft text in progress” or “New text adopted” on the same text), the topic shows “became a draft text” for 4 weeks, then leaves the page. <b>Expert views on adopted texts</b>: sources classified as “Expert opinion (not certified)”, cyber topics only, kept 6 months. Nothing on this page goes into the watch, the map, Key points or applicable texts.</p>'],
         ['RKC watch', '<p>The RKC alert (Nexis Newsdesk) is read from a private repository; only relevant or highly relevant articles are kept. Only the title, publication, date and rating are published: the excerpt, often paywalled, never appears on this site.</p>'],
         ['Translation and limits', '<p>Titles and summaries are translated by a free engine (Argos Translate); acronyms are never translated; a failed translation is replaced by the original text. Everything is automatic: when in doubt, read the source. Converted amounts are estimates.</p>']
       ]
@@ -683,7 +696,7 @@
         var ul = el('ul', { className: 'ech-list' });
         a.echeances.forEach(function (e) {
           var x = extraitEcheance(e);
-          ul.appendChild(el('li', null, [el('strong', { text: (e.approx ? t('approx') + ' ' : '') + dateLongue(e.date) + ' (' + t('in_days')(joursJusqua(e.date)) + ')' }), x ? ' — ' + x : '']));
+          ul.appendChild(el('li', null, [el('strong', { text: (e.publication ? t('pub_date') + ' ' : '') + (e.approx ? t('approx') + ' ' : '') + dateLongue(e.date) + ' (' + t('in_days')(joursJusqua(e.date)) + ')' }), x ? ' — ' + x : '']));
         });
         parts.push(el('p', { className: 'why-title', text: t('ech_title') }), ul);
       }
@@ -1444,7 +1457,11 @@
 
   /* ======================================================= DÉBATS ET SIGNAUX */
   /* Stockés à part (data/debats.js) : jamais mélangés à la veille certifiée */
+  /* v9 : « Pressentis et avis d'experts » (data/pressentis.js) ; ancien affichage si le fichier n'existe pas encore */
   function renderDebats() {
+    if (PRESSENTIS) return renderPressentis();
+    document.getElementById('deb-ancien').hidden = false;
+    document.getElementById('tendances').hidden = false;
     var box = document.getElementById('deb-liste'), tend = document.getElementById('tendances');
     document.getElementById('deb-vide').hidden = DEBATS.length > 0;
     // tendances : simple comptage des sujets, 60 derniers jours contre les 60 précédents
@@ -1481,6 +1498,43 @@
     document.getElementById('deb-recherche').addEventListener('input', function (e) {
       var q = normaliser(e.target.value).trim();
       cartesD.forEach(function (c) { c.hidden = q && c._t.indexOf(q) === -1; });
+    });
+  }
+
+  function titrePressenti(x) {
+    var nom = x.texte ? libTexteCle(x.texte) : (x.nom || '');
+    if (x.sorte === 'evolution') return t('pre_evol')(nom);
+    if (nom) return nom;
+    return titreApercu((x.articles || [])[0] || {}) || t('pre_other');
+  }
+  function renderPressentis() {
+    var cartes = [];
+    [['pre', PRESSENTIS.filter(function (x) { return x.sorte !== 'avis'; })], ['avi', PRESSENTIS.filter(function (x) { return x.sorte === 'avis'; })]].forEach(function (bloc) {
+      var box = document.getElementById(bloc[0] + '-liste');
+      document.getElementById(bloc[0] + '-vide').hidden = bloc[1].length > 0;
+      bloc[1].forEach(function (x) {
+        var devenu = x.statut === 'devenu_projet';
+        var items = el('ul', { className: 'pre-articles' }, (x.articles || []).map(function (ap) {
+          return el('li', null, [
+            el('span', { className: 'block-meta', text: dateLongue(ap.date) + ' · ' + (ap.source || '') + ' ' }),
+            ap.lien ? el('a', { href: ap.lien, target: '_blank', rel: 'noopener noreferrer', text: titreApercu(ap) }) : titreApercu(ap),
+            ap.expert ? el('span', { className: 'deb-mention deb-mention-sm', text: ' ' + t('pre_expert') }) : null]);
+        }));
+        var c = el('article', { className: 'deb-card pre-card' + (devenu ? ' pre-devenu' : '') }, [
+          el('div', { className: 'card-kicker' }, [codeZone(x.zone) ? el('span', { className: 'zone-code', text: codeZone(x.zone) }) : null,
+            el('span', { text: nomZone(x.zone) + ' · ' + t('pre_kind')[x.sorte] })]),
+          el('h4', { text: titrePressenti(x) }),
+          devenu ? el('p', { className: 'pre-statut' }, [el('a', { href: '#essentiel', text: t('pre_devenu')(dateLongue(x.devenu_le)) })]) : null,
+          el('p', { className: 'block-meta', text: t('pre_first')(dateLongue(x.premier_signal), x.nb_articles || (x.articles || []).length, x.nb_sources || 1) }),
+          items
+        ]);
+        c._t = normaliser([titrePressenti(x), x.texte, x.nom, nomZone(x.zone)].concat((x.articles || []).map(function (ap) { return ap.titre + ' ' + titreApercu(ap) + ' ' + (ap.source || ''); })).join(' '));
+        box.appendChild(c); cartes.push(c);
+      });
+    });
+    document.getElementById('deb-recherche').addEventListener('input', function (e) {
+      var q = normaliser(e.target.value).trim();
+      cartes.forEach(function (c) { c.hidden = q && c._t.indexOf(q) === -1; });
     });
   }
 
@@ -1862,7 +1916,15 @@
         });
       });
     }
-    if (complet && DEBATS.length) {
+    if (complet && PRESSENTIS && PRESSENTIS.length) {
+      rep.appendChild(el('h2', { className: 'pr-break', text: t('deb_pdf') }));
+      rep.appendChild(el('p', { className: 'pr-avert', text: t('deb_warn') }));
+      PRESSENTIS.forEach(function (x) {
+        rep.appendChild(el('div', { className: 'pr-item' }, [el('h4', { text: titrePressenti(x) + ' — ' + nomZone(x.zone) }),
+          el('p', { className: 'pr-line', text: [t('pre_kind')[x.sorte], t('pre_first')(dateLongue(x.premier_signal), x.nb_articles || 1, x.nb_sources || 1)].concat(x.statut === 'devenu_projet' ? [t('pre_devenu')(dateLongue(x.devenu_le))] : []).join(' · ') })]
+          .concat((x.articles || []).map(function (ap) { return el('p', { className: 'pr-link', text: dateLongue(ap.date) + ' · ' + (ap.source || '') + ' — ' + titreApercu(ap) + (ap.expert ? ' (' + t('pre_expert') + ')' : '') + ' — ' + (ap.lien || '') }); }))));
+      });
+    } else if (complet && DEBATS.length) {
       rep.appendChild(el('h2', { className: 'pr-break', text: t('deb_pdf') }));
       rep.appendChild(el('p', { className: 'pr-avert', text: t('deb_warn') }));
       DEBATS.slice().sort(function (x, y) { return x.date < y.date ? 1 : -1; }).forEach(function (a) {
@@ -1961,8 +2023,8 @@
       pc_title: 'Points clés',
       pc_lead: "Les 5 faits réglementaires les plus urgents qui peuvent concerner l'entreprise dans un de ses pays (jusqu'à 8 en cas d'urgences) : échéance dans les 30 jours, nouveau texte adopté, texte en préparation (proposition, projet de loi, consultation), texte inconnu détecté. Un nouveau texte reste ici 4 semaines après sa détection ; chaque nouvelle étape (adoption, entrée en vigueur) crée une nouvelle alerte, et sa date d'application revient ici 30 jours avant. Le reste est dans « Points clés précédents ». Règles fixes, sans IA générative.",
       pc_empty: 'Aucun point clé en cours.', pc_rss: "S'abonner (Outlook / RSS)",
-      pc_types: { echeance: 'Échéance', adopte: 'Texte adopté', signale: 'Signalé important', proposition: 'Texte en préparation', a_qualifier: 'Nouveau texte détecté' },
-      pc_types_long: { echeance: 'Échéance dans les 30 jours', adopte: 'Nouveau texte adopté, publié ou en vigueur', signale: 'Jugé important par un lecteur', proposition: 'Proposition, projet de loi, consultation, lignes directrices', a_qualifier: 'Texte absent de la liste des textes suivis : à qualifier' },
+      pc_types: { echeance: 'Échéance', adopte: 'Texte adopté', signale: 'Signalé important', proposition: 'Projet de texte en cours', a_qualifier: 'Nouveau texte détecté' },
+      pc_types_long: { echeance: 'Échéance dans les 30 jours', adopte: 'Nouveau texte adopté, publié ou en vigueur', signale: 'Jugé important par un lecteur', proposition: 'Proposition, projet de loi, consultation, lignes directrices, travaux préparatoires', a_qualifier: 'Texte absent de la liste des textes suivis : à qualifier' },
       pc_new: 'Nouveau', pc_maj: 'Mis à jour', pc_maj_t: 'Nouvelle source depuis votre dernière visite',
       pc_inconnu: 'Texte inconnu', pc_emergent: function (m, n) { return '« ' + m + ' » : nouveau sujet cité par ' + n + ' sources'; }, pc_inconnu_t: "Ce texte n'est pas dans la liste des textes suivis : repéré par des signaux forts (adopté, publié, proposition…). À qualifier par un humain.",
       pc_detecte: function (d) { return 'Détecté le ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },
@@ -2031,8 +2093,8 @@
       pc_title: 'Key points',
       pc_lead: 'The 5 most urgent regulatory facts that may concern the company in one of its countries (up to 8 when urgent): deadline within 30 days, newly adopted text, text in preparation (proposal, bill, consultation), unknown text detected. A new text stays here for 4 weeks after detection; each new step (adoption, entry into force) creates a new alert, and its application date comes back here 30 days before. Everything else is in “Previous key points”. Fixed rules, no generative AI.',
       pc_empty: 'No current key point.', pc_rss: 'Subscribe (Outlook / RSS)',
-      pc_types: { echeance: 'Deadline', adopte: 'Text adopted', signale: 'Flagged important', proposition: 'Text in preparation', a_qualifier: 'New text detected' },
-      pc_types_long: { echeance: 'Deadline within 30 days', adopte: 'New text adopted, published or in force', signale: 'Flagged as important by a reader', proposition: 'Proposal, bill, consultation, guidelines', a_qualifier: 'Text not in the list of tracked texts: to be assessed' },
+      pc_types: { echeance: 'Deadline', adopte: 'Text adopted', signale: 'Flagged important', proposition: 'Draft text in progress', a_qualifier: 'New text detected' },
+      pc_types_long: { echeance: 'Deadline within 30 days', adopte: 'New text adopted, published or in force', signale: 'Flagged as important by a reader', proposition: 'Proposal, bill, consultation, guidelines, preparatory work', a_qualifier: 'Text not in the list of tracked texts: to be assessed' },
       pc_new: 'New', pc_maj: 'Updated', pc_maj_t: 'New source since your last visit',
       pc_inconnu: 'Unknown text', pc_emergent: function (m, n) { return '“' + m + '”: new topic cited by ' + n + ' sources'; }, pc_inconnu_t: 'This text is not in the list of tracked texts: spotted through strong signals (adopted, published, proposal…). To be assessed by a person.',
       pc_detecte: function (d) { return 'Detected on ' + d; }, pc_sources: function (n) { return n + (n > 1 ? ' sources' : ' source'); },

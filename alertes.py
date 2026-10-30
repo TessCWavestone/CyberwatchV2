@@ -1,0 +1,530 @@
+"""
+Cyber Watch — « Points clés » (v5) : liste d'alertes STABLE, sans IA générative.
+
+Une alerte n'est pas un article : c'est un FAIT réglementaire qui peut concerner
+l'entreprise dans un de ses pays (ou au niveau européen). Plusieurs articles sur
+le même fait (même texte, même pays, même étape) forment UNE alerte.
+
+Types (ordre de priorité affiché sur le site) :
+  1. echeance     échéance d'un texte dans les 30 jours (date d'obligation, jamais un événement)
+  2. adopte       nouveau texte adopté, publié ou entrant en vigueur
+  2. signale      jugé « important » par un lecteur
+  3. proposition  proposition, projet de loi, consultation ou lignes directrices officielles
+  4. a_qualifier  nouveau texte INCONNU (absent de la liste des textes suivis) repéré par
+                  des signaux forts : à qualifier par un humain
+Une alerte reste affichée 4 semaines après sa PREMIÈRE détection (un nouvel article sur le même
+fait ne la prolonge pas ; une nouvelle étape — adopté, entrée en vigueur… — crée une nouvelle alerte).
+Une échéance est affichée pendant les 30 jours qui la précèdent. Ensuite :
+puis passe dans « Points clés précédents ». Le registre (data/alertes.json) garde la
+date de première détection : « Nouveau » sur le site = détecté depuis la dernière visite.
+"""
+
+import datetime as dt
+import hashlib
+import html
+import os
+import re
+
+import regles
+import sujets
+import tri_ia
+
+DUREE_ACTIVE = 28           # jours d'affichage après la première détection (4 collectes)
+HORIZON_ECHEANCE = 30       # une échéance devient une alerte 30 jours avant sa date
+GARDE_ARCHIVES = 730        # « Points clés précédents » : 2 ans
+
+TYPE_STATUT = {"adopte": "adopte", "en_vigueur": "adopte", "projet": "proposition",
+               "consultation": "proposition", "lignes_directrices": "proposition"}
+
+# Pas une nouvelle règle : revues périodiques, consultations closes, simples commentaires
+EXCLUS = re.compile(
+    r"\[(closed|clos|cloturee|fermee|ferme)\]|consultation (closed|cloturee|terminee)|weekly review|viikkokatsaus|"
+    r"newsletter|lettre d'information|bulletin (hebdo|mensuel)|week \d+|semaine \d+|"
+    r"top \d+|\d+ (things|tips|steps|key takeaways)|webinar|webinaire|podcast|"
+    r"what (it|they|this) means?|ce qu'il faut (savoir|retenir)|how to (prepare|comply)|comment se preparer|"
+    r"preparing for|(get|getting) ready for|se preparer a|voorbereiden op|vorbereitung auf|sich vorbereiten|prepararse para", re.I)
+
+# Texte INCONNU venant du secteur financier ou des télécoms seulement (décision du 09/10 : secteur financier hors
+# périmètre ; test du 13/10 : ESMA, BEREC) : pas un point clé (l'article reste visible dans la Veille)
+SECTEUR_EXCLU = re.compile(
+    r"\b(ESMA|EBA|EIOPA|ECB|BCE|ACPR|AMF|BaFin|CNMV|Consob|FCA|BEREC|ORECE)\b|central counterpart|\bCCPs?\b|tokeni[sz]ation|"
+    r"crypto-?asset|\bMiCA\b|payment services|anti-money laundering|blanchiment|banking union|insurance distribution|"
+    r"internet openness|net neutrality|neutralite du net|roaming|(radio )?spectrum (auction|allocation|management)|electronic communications code")
+
+# Texte INCONNU : il faut un sujet au cœur de la veille (cyber, données, dispositifs médicaux, IA, santé
+# numérique) ; « diagnostic », « laboratoire » ou « biologie » seuls ne suffisent pas (ex. décrets sur
+# les maladies professionnelles au Journal officiel).
+SUJET_ALERTE = re.compile(
+    r"cyber|kyber|ciber|kiber|κυβερνο|securite (informatique|numerique|des (reseaux|systemes))|information security|"
+    r"informationssicherheit|it-sicherheit|tietoturva|informationssakerhet|informasjonssikkerhet|"
+    r"data protection|protection des donnees|datenschutz|proteccion de datos|protezione dei dati|gegevensbescherming|"
+    r"personal data|donnees (personnelles|de sante)|health data|gesundheitsdaten|dane osobowe|tietosuoja|"
+    r"data (act|governance|management act)|gouvernance des donnees|"
+    r"dispositifs? medica|medical devices?|medizinprodukt|producto sanitario|dispositivi medici|medische hulpmiddel|"
+    r"wyrob\w* medyczn|in vitro|\bivd\b|intelligence artificielle|artificial intelligence|kunstliche intelligenz|"
+    r"inteligencia artificial|intelligenza artificiale|sztuczn\w* inteligencj|\bAI\b|\bIA\b|\bKI\b|ai-system|"
+    r"cloud|logiciel|software|interoperab|e-?sante|e-?health|digital health|sante numerique|telemedecin|"
+    r"dossier (medical|patient)|patient record|patientenakte|vulnerab|ransomware|chiffrement|encryption|cryptograph|"
+    r"identite numerique|eidas|critical (infrastructure|entities)|infrastructures? critiques|entites critiques|kritis|"
+    r"resilience operationnelle|incident|seguridad de (las redes|la informacion)|"
+    r"sicurezza delle reti|informationssicherheit|reseaux et (des )?systemes d'information", re.I)
+
+ZONES_EN = {"Europe": "Europe (EU)", "Union européenne": "European Union", "Allemagne": "Germany", "Autriche": "Austria",
+            "Belgique": "Belgium", "Bulgarie": "Bulgaria", "Danemark": "Denmark", "Espagne": "Spain", "Finlande": "Finland",
+            "France": "France", "Grèce": "Greece", "Hongrie": "Hungary", "Italie": "Italy", "Norvège": "Norway",
+            "Pays-Bas": "Netherlands", "Pologne": "Poland", "Portugal": "Portugal", "République tchèque": "Czech Republic",
+            "Rép. Tchèque": "Czech Republic", "Royaume-Uni": "United Kingdom", "Suède": "Sweden", "Suisse": "Switzerland",
+            "Irlande": "Ireland", "Luxembourg": "Luxembourg", "Worldwide": "Worldwide", "Monde": "Worldwide"}
+
+LIB_TYPE = {
+    "fr": {"echeance": "Échéance", "adopte": "Nouveau texte adopté", "signale": "Signalé par un lecteur",
+           "proposition": "Projet de texte en cours", "a_qualifier": "Nouveau texte détecté — à qualifier"},
+    "en": {"echeance": "Deadline", "adopte": "New text adopted", "signale": "Flagged by a reader",
+           "proposition": "Draft text in progress", "a_qualifier": "New text detected — to be assessed"},
+}
+
+
+def _ident(cle):
+    return "k" + hashlib.sha1(cle.encode("utf-8")).hexdigest()[:11]
+
+
+def _date(s):
+    try:
+        return dt.date.fromisoformat((s or "")[:10])
+    except ValueError:
+        return None
+
+
+def _europeen(a):
+    return a.get("zone") in regles.EUROPE or bool(a.get("textes_cles"))
+
+
+def _apercu(a):
+    """Ce que l'alerte garde d'un article (l'article peut sortir du site après 2 ans)."""
+    tr = {lg: {"titre": (x or {}).get("titre", "")} for lg, x in (a.get("trad") or {}).items() if (x or {}).get("titre")}
+    return {k: v for k, v in {
+        "id": a["id"], "titre": a["titre"], "langue": a.get("langue", ""), "trad": tr, "lien": a.get("lien", ""),
+        "source": a.get("source", ""), "zone": a.get("zone", ""), "date": a.get("date", ""), "detecte_le": a.get("detecte_le", ""), "version": a.get("version", ""),
+        "statut": a.get("statut", ""), "nature": a.get("nature", ""), "a_verifier": a.get("a_verifier", False),
+        "payant": a.get("payant", False)}.items() if v not in ("", None, False, {})}
+
+
+# Règlements européens directement applicables (pas de transposition nationale)
+REGLEMENTS_UE = {"CRA", "AI Act", "RGPD / GDPR", "IVDR", "MDR (dispositifs médicaux)", "MDCG", "EHDS", "Data Act",
+                 "Cybersecurity Act / certification UE", "Cloud and AI Development Act (CADA)",
+                 "eIDAS 2 / portefeuille européen d'identité", "RED (équipements radio) / EN 18031"}
+LOI_NATIONALE = re.compile(r"\bloi\b|projet de loi|\bgesetz|durchfuhrung|\bwet\b|wetsvoorstel|\bley\b|anteproyecto|"
+                           r"\blegge\b|disegno di legge|ustaw|zakon|torveny|\blag\b|\blov\b|\blaki\b|decret|dekret|decreto|"
+                           r"national (law|implementation|legislation)|implementing (law|act) in|autorite nationale|"
+                           r"designat\w* (the )?(national|market surveillance)", re.I)
+
+
+# Titres qui ne sont pas une nouvelle règle : rapports et études, sanctions prononcées (suivies à part, onglet
+# amendes), appels à projets / d'offres (test du 12/10 sur les vraies données)
+TITRE_EXCLUS = re.compile(
+    r"^\W*((annual |final |evaluation |progress )?report on|rapport (annuel |final )?(sur|de)|study on|etude sur|survey|enquete|bericht)\b|"
+    r"\bfine[sd]?\b.{0,40}(\d[\d .,]*\s?(eur|€|£|m\b|million|mln|k\b)|(eur|€|£)\s?\d)|amende de|inflige une amende|sanctionne|bu(ss|ß)geld|multa de|sanzione|"
+    r"appel a projets|appel d'offres|cahier des charges|call for (projects|proposals|tenders)|ausschreibung|licitacion|"
+    r"convocatoria de (ayudas|subvenciones)|subvention|τεχνικων προδιαγραφων", re.I)
+
+
+ETUDE = re.compile(
+    r"\b(etude(?! d.impact)|study|studie|survey|enquete(?! publique| d.impact)|sondage|barometre|barometer|umfrage|undersokning|tutkimus|kyselytutkimus|"
+    r"onderzoek|encuesta|estudio|indagine|sondaggio|badanie|ankieta|pruzkum|felmeres|kutatas|rapport annuel|annual report|"
+    r"jahresbericht|lagebericht|threat (report|landscape)|panorama de la (menace|cybermenace))\b", re.I)
+INSTRUMENT = re.compile(
+    r"\b(loi|lois|projet de loi|proposition de loi|decret|arrete|ordonnance|reglement|directive|"
+    r"law|act|bill|regulation|decree|ordinance|statutory instrument|"
+    r"gesetz\w*|verordnung\w*|richtlinie|wet|wetsvoorstel|besluit|ley|real decreto|reglamento|legge|decreto\w*|regolamento|"
+    r"lei|ustaw\w*|rozporzadzeni\w*|zakon\w*|vyhlask\w*|torveny\w*|rendelet\w*|lag|lagforslag|forordning|lov|lovforslag|"
+    r"bekendtgorelse|laki|asetus|hallituksen esitys|νομος|νομοσχεδιο|σχεδιο νομου|προεδρικο διαταγμα|kanon\w*)\b", re.I)
+
+
+def type_article(a):
+    """Type d'alerte d'un article, ou None (pas une alerte)."""
+    if a.get("base") or a.get("doublon_de") or a.get("nature") == "opinion" or a.get("debat"):
+        return None
+    if a.get("motif") == "jugé important par un lecteur":
+        return "signale"
+    if (a.get("concernes") or {}).get("hors_perimetre") and not a.get("textes_cles"):
+        return None   # l'article dit SÛREMENT que le texte ne vise que d'autres acteurs (banques, administrations…)
+    ia = a.get("ia") or {}
+    if (ia.get("avis") == "pertinent" and ia.get("motif") == "preparation" and a.get("pertinence") in ("elevee", "moyenne")
+            and a.get("nature") == "officielle" and _europeen(a)):   # travaux d'une autorité, pas un guide de cabinet
+        return "proposition"   # 31/10 (D2) : travaux préparatoires qui concernent l'entreprise = projet de texte en cours
+    if not a.get("essentiel") or a.get("pertinence") != "elevee" or not _europeen(a):
+        return None
+    texte = regles.texte_article(a)
+    if EXCLUS.search(texte):
+        return None
+    tr = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
+    titre = regles._sa(a.get("titre", "") + " \n " + tr)
+    if TITRE_EXCLUS.search(titre):
+        return None
+    # v8 (retour du 26/10, étude OFCS « PME Cybersécurité 2026 ») : une étude, une enquête ou un baromètre n'est pas
+    # une nouvelle règle, même publié par une autorité ; un article qui ne vise que les PME non plus
+    debut = regles._sa(a.get("titre", "") + " \n " + tr + " \n " + (a.get("resume") or "")[:300] + " \n " +
+                       (((a.get("trad") or {}).get("en") or {}).get("resume") or "")[:300])
+    if ETUDE.search(debut) or (tri_ia.PME.search(titre) and not a.get("textes_cles")):
+        return None
+    statut_a = a.get("statut") or ""
+    if a.get("nature") != "officielle":
+        # presse, cabinets, veille RKC : l'étape (adopté, projet, consultation…) doit être annoncée dans le TITRE ;
+        # sinon c'est un commentaire d'un texte existant, pas une nouvelle étape (tests des 08 et 12/10)
+        statut_a = regles.statut(titre)
+        if not statut_a:
+            return None
+    t = TYPE_STATUT.get(statut_a)
+    if t == "proposition" and statut_a == "lignes_directrices" and a.get("nature") != "officielle":
+        return None   # des lignes directrices commentées par la presse ne sont pas une nouvelle règle
+    inconnu = not a.get("textes_cles")
+    if inconnu and SECTEUR_EXCLU.search(titre + " " + regles._sa(a.get("source", ""))):
+        return None
+    if inconnu:
+        if not SUJET_ALERTE.search(texte) and not a.get("sens_fort") and not (a.get("indices_page") or {}).get("sujet_fort"):
+            return None   # ni sujet central reconnu, ni sens jugé très proche par le modèle
+        # v8 : « Nouveau texte détecté » exige qu'un texte (loi, règlement, décret, directive…) soit nommé dans le
+        # titre ou le résumé — pas seulement deviné d'après la page — et que l'IA, si elle a lu l'article, y ait vu
+        # un texte officiel, un projet ou une obligation (pas une étude, un guide ou un commentaire)
+        ia = a.get("ia") or {}
+        if ia.get("type") and ia["type"] not in ("texte_officiel", "projet_consultation", "obligation_echeance"):
+            return None
+        if not INSTRUMENT.search(texte):
+            return None
+        return "a_qualifier" if (t or regles.SIGNAL_FORT.search(texte)) else None
+    return t
+
+
+# --------------------------------------------------------------------------- sujets émergents
+# Un nom de texte ou un sigle INCONNU (ni dans la liste des sujets suivis, ni dans les textes clés)
+# qui apparaît soudain dans plusieurs sources pertinentes : c'est souvent un nouveau texte en préparation.
+# Ne dépend d'aucun vocabulaire : seulement de la nouveauté du nom et de sa reprise par plusieurs sources.
+FENETRE_EMERGENCE = 60      # jours
+MIN_ARTICLES, MIN_SOURCES = 3, 2
+RE_NOM_TEXTE = re.compile(
+    r"(?<![\w-])((?:[A-Z][\w'’-]+ (?:(?:and|of|for|on|the|des|de|du|sur|la|le|und|für|zur) )?){1,6}"
+    r"(?:Act|Bill|Gesetz|Verordnung|Regulation|Directive|Strategy|Framework))(?![\w-])")
+NOMS_GENERIQUES = re.compile(r"^(The |A |New |This |EU |European )?(Act|Bill|Regulation|Directive|Strategy|Framework)$|"
+                             r"^(Data Protection|General Data Protection|Digital Services|Digital Markets|Cybersecurity|Security)", re.I)
+
+
+def termes(texte):
+    """Sigles et noms de textes candidats d'un titre / résumé."""
+    res = set()
+    lettres = [c for c in texte if c.isalpha()]
+    if not lettres or sum(c.isupper() for c in lettres) / len(lettres) <= 0.6:   # pas un titre en majuscules
+        for m in sujets.RE_CANDIDAT.findall(texte):
+            u = regles._sa(m).upper()
+            if len(u) >= 3 and u not in sujets.EXCLUS and u not in sujets.VARIANTES and not re.fullmatch(sujets.MOIS, u) \
+                    and not re.fullmatch(r"[IVXLC]+|\d.*|.*\d{4}", u):
+                res.add(m)
+    for m in RE_NOM_TEXTE.findall(texte):
+        mots = m.strip().split()
+        # toutes les fins de 2 mots ou plus (« Introduce New Cyber Security and Resilience Bill » donne aussi
+        # « Cyber Security and Resilience Bill ») : la forme reprise par plusieurs sources l'emporte
+        for i in range(len(mots) - 1):
+            f = " ".join(mots[i:])
+            if mots[i][0].isupper() and not NOMS_GENERIQUES.search(f):
+                res.add(f)
+    return res
+
+
+# textes existants hors périmètre direct (ne sont pas « nouveaux »)
+DEJA_CONNUS = {"DSA", "DMA", "DIGITAL SERVICES ACT", "DIGITAL MARKETS ACT", "SERVICES ACT", "MARKETS ACT", "DGA",
+               "DATA GOVERNANCE ACT", "MICA", "EMFA", "EUROPEAN MEDIA FREEDOM ACT", "CHIPS ACT", "PSD2", "PSD3",
+               # protection des mineurs en ligne / réseaux sociaux (famille DSA), secteur financier (décision du 09/10)
+               "EU KIDS ACT", "KIDS ACT", "KIDS", "EU KIDS", "DORA", "DIGITAL OPERATIONAL RESILIENCE ACT", "FIDA", "AMLR", "AMLA"}
+
+
+def est_connu_defaut(terme):
+    u = regles._sa(terme).upper()
+    if u in DEJA_CONNUS:
+        return True
+    libelles = [regles._sa(c).upper() for c in sujets.LIBELLES] + \
+               [regles._sa(x.get(k, "")).upper() for x in sujets.LIBELLES.values() for k in ("fr", "en")]
+    return any(u == l or (" " in u and u in l) for l in libelles) or bool(regles.textes_cles(regles._sa(terme)))
+
+
+def emergents(articles, aujourdhui, est_connu=est_connu_defaut, fenetre=FENETRE_EMERGENCE):
+    """Retourne [(terme, [articles])] : termes inconnus apparus dans la fenêtre, repris par plusieurs sources
+    pertinentes, avec au moins un signal réglementaire, et jamais vus avant la fenêtre."""
+    debut = (aujourdhui - dt.timedelta(days=fenetre)).isoformat()
+    fin = aujourdhui.isoformat()
+    avant, dans = set(), {}
+    for a in articles:
+        if a.get("base") or a.get("nature") == "opinion":
+            continue
+        tr = ((a.get("trad") or {}).get("en") or {}).get("titre", "")
+        tx = " ".join(x for x in (a.get("titre", ""), a.get("resume", ""), tr) if x)
+        d = a.get("date", "")
+        for m in termes(tx):
+            if d < debut:
+                avant.add(m.lower())
+            elif d <= fin and a.get("pertinence") in ("elevee", "moyenne"):
+                dans.setdefault(m, []).append(a)
+    # sigle et nom long d'un même texte (« Cloud and AI Development Act (CADA) ») : comptés ensemble
+    def initiales(nom):
+        return "".join(w[0] for w in re.findall(r"[A-Za-z][\w'’-]*", nom) if w[0].isupper())
+    alias = {}
+    for m in dans:
+        if " " not in m:
+            continue
+        ini = initiales(m).upper()
+        for sig in dans:
+            if " " in sig or len(sig) < 3:
+                continue
+            u = regles._sa(sig).upper()
+            if u and (ini == u or (len(u) >= 3 and ini.startswith(u))) and \
+                    {x["id"] for x in dans[m]} & {x["id"] for x in dans[sig]}:
+                alias[sig] = m
+    for sig, nom in alias.items():
+        for a in dans.pop(sig, []):
+            if all(a["id"] != x["id"] for x in dans[nom]):
+                dans[nom].append(a)
+        if sig.lower() in avant:
+            avant.add(nom.lower())
+    res = []
+    for m, arts in dans.items():
+        if m.lower() in avant or est_connu(m) or any(est_connu(s2) for s2, n2 in alias.items() if n2 == m):
+            continue
+        # cité surtout dans des articles déjà rattachés à un texte suivi : un organisme ou un acteur (ex. « ANFR »
+        # dans des articles sur le CRA), pas un nouveau texte (test du 12/10)
+        if sum(1 for a in arts if a.get("textes_cles")) * 2 > len(arts):
+            continue
+        sources = {a.get("source") for a in arts}
+        officiel = any(a.get("nature") == "officielle" for a in arts)
+        signal = any(a.get("statut") in ("projet", "consultation", "adopte", "en_vigueur")
+                     or regles.SIGNAL_FORT.search(regles.texte_article(a)) for a in arts)
+        assez = len(arts) >= MIN_ARTICLES or (len(arts) >= 2 and officiel)
+        if assez and len(sources) >= MIN_SOURCES and signal:
+            sig = [s2 for s2, n2 in alias.items() if n2 == m]
+            res.append(("%s (%s)" % (m, sig[0]) if sig else m, sorted(arts, key=lambda a: a.get("date", ""), reverse=True)))
+    # un nom contenu dans un autre (« Resilience Act » / « Cyber Resilience Act ») : on garde le plus long
+    # même groupe d'articles sous plusieurs formes (« Resilience Act » / « Cyber Resilience Act ») : la plus longue
+    res.sort(key=lambda x: -len(x[0]))
+    garde, vus = [], []
+    for m, arts in res:
+        ids = {a["id"] for a in arts}
+        if any(m.lower() in n.lower() and len(ids & i) >= len(ids) / 2 for n, i in vus):
+            continue
+        vus.append((m, ids))
+        garde.append((m, arts))
+    return garde
+
+
+def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecartes=()):
+    """Recalcule les alertes à partir des articles du site ; garde du registre précédent
+    la date de première détection et les alertes dont les articles ont été purgés."""
+    groupes = {}
+
+    def ajouter(cle, type_, a, extra=None):
+        g = groupes.setdefault(cle, {"type": type_, "articles": [], "extra": extra or {}})
+        if a is not None and all(x["id"] != a["id"] for x in g["articles"]):
+            g["articles"].append(a)
+
+    for a in liste:
+        t = type_article(a)
+        if not t:
+            continue
+        texte = (a.get("textes_cles") or [""])[0]
+        # une étape = une alerte : proposition, lignes directrices, adoption, entrée en vigueur
+        etape = {"projet": "proposition", "consultation": "proposition", "lignes_directrices": "orientation",
+                 "en_vigueur": "en_vigueur"}.get(a.get("statut") or "", "adopte" if t in ("adopte", "signale") else t)
+        zone = a.get("zone", "")
+        # règlement européen (directement applicable) : une seule alerte par étape, quel que soit le pays de la
+        # source (test du 08/10 : un même texte donnait une alerte par pays) ; sauf loi nationale d'application
+        if texte in REGLEMENTS_UE and not LOI_NATIONALE.search(regles.texte_article(a)):
+            zone = "Europe"
+        if t == "a_qualifier" or not texte:
+            cle = "art|" + a["id"]
+        else:
+            cle = "|".join(("txt", texte, zone, etape))
+        ajouter(cle, t, a, {"texte": texte, "inconnu": t == "a_qualifier", "zone": zone})
+
+    for terme, arts in emergents(liste, aujourdhui):
+        g = groupes.setdefault("emg|" + terme.lower(), {"type": "a_qualifier", "articles": [], "extra": {}})
+        g["extra"] = {"texte": terme, "inconnu": True, "emergent": True}
+        for a in arts:
+            if all(x["id"] != a["id"] for x in g["articles"]):
+                g["articles"].append(a)
+
+    # Échéances : dates d'obligation proches, tirées des textes applicables et des articles importants.
+    # Une même date dans un même pays = une seule alerte (le texte applicable en priorité).
+    lim_haut = aujourdhui + dt.timedelta(days=HORIZON_ECHEANCE)
+    lim_bas = max(aujourdhui - dt.timedelta(days=GARDE_ARCHIVES), plancher or dt.date.min)
+    par_jour = {}
+    for r in (referentiel or {}).get("textes", []):
+        d = _date(r.get("applicable_depuis"))
+        if not d or d > lim_haut or d < lim_bas:
+            continue
+        cle = "ref|%s|%s|%s" % (r.get("acronyme") or r.get("nom"), r.get("zone", ""), d.isoformat())
+        par_jour.setdefault((r.get("zone", ""), d.isoformat()), cle)
+        ajouter(cle, "echeance", None, {"texte": r.get("acronyme") or "", "echeance": d.isoformat(), "zone": r.get("zone", ""),
+                                        "ref": {"nom": r.get("nom_fr") or r.get("nom", ""), "nom_en": r.get("nom_en", ""),
+                                                "lien": r.get("lien", ""), "autorite": r.get("autorite", ""),
+                                                "resume_fr": r.get("resume_fr", ""), "resume_en": r.get("resume_en", "")}})
+    for a in liste:
+        if a.get("doublon_de") or not (a.get("essentiel") or a.get("base")) or a.get("pertinence") not in ("elevee", "moyenne"):
+            continue
+        for e in a.get("echeances") or []:
+            d = _date(e.get("date"))
+            if not d or e.get("approx") or e.get("publication") or d > lim_haut or d < lim_bas:
+                continue
+            texte = (a.get("textes_cles") or a.get("tags") or [""])[0]
+            cle = par_jour.get((a.get("zone", ""), d.isoformat()))
+            if not cle:
+                cle = "ech|%s|%s|%s" % (texte or a["id"], a.get("zone", ""), d.isoformat())
+                par_jour[(a.get("zone", ""), d.isoformat())] = cle
+            ajouter(cle, "echeance", a, {"texte": texte, "echeance": d.isoformat(), "extrait": e.get("extrait") or {}})
+
+    anciens = {x["id"]: x for x in (ancien or {}).get("alertes", [])}
+    ids_liste = {a["id"] for a in liste} | set(ids_ecartes)   # articles encore connus (gardés ou écartés)
+    alertes = []
+    for cle, g in groupes.items():
+        arts = sorted(g["articles"], key=lambda a: (a.get("date", ""), a.get("detecte_le", "")), reverse=True)
+        ex = g["extra"]
+        detecte = min([a.get("detecte_le") or a.get("date", "") for a in arts] or [aujourdhui.isoformat()])
+        maj = max([a.get("detecte_le") or a.get("date", "") for a in arts] or [detecte])
+        dernier = max([a.get("date", "") for a in arts] or [ex.get("echeance", "")])
+        ident = _ident(cle)
+        prec = anciens.get(ident)
+        versions = sorted(a.get("version") or "" for a in arts if a.get("version") not in (None, "", "base"))
+        version = versions[0] if versions else ""
+        if prec:
+            detecte = min(detecte, prec.get("detecte_le") or detecte)
+            version = prec.get("version") or version
+        if g["type"] == "echeance":
+            fin = ex["echeance"]
+        else:
+            # départ = première détection, sauf information ancienne retrouvée tard (rattrapage d'archives) :
+            # on part alors de sa publication (+ 14 jours de marge pour les sources lentes)
+            premiere_pub = _date(min([a.get("date", "") for a in arts if a.get("date")] or [detecte]))
+            depart = min(_date(detecte) or aujourdhui, (premiere_pub or aujourdhui) + dt.timedelta(days=14))
+            fin = (depart + dt.timedelta(days=DUREE_ACTIVE)).isoformat()
+        al = {"id": ident, "type": g["type"], "texte": ex.get("texte", ""), "inconnu": ex.get("inconnu", False),
+              "zone": ex.get("zone") or (arts[0].get("zone", "") if arts else ""), "detecte_le": detecte, "maj_le": maj,
+              "date": dernier, "fin": fin, "version": version, "version_maj": versions[-1] if versions else "", "articles": [_apercu(a) for a in arts[:6]], "nb_articles": len(arts),
+              "a_verifier": bool(arts) and all(a.get("a_verifier") for a in arts)}
+        if ex.get("emergent"):
+            al["emergent"] = True
+            al["nb_sources"] = len({a.get("source") for a in arts})
+        if g["type"] == "echeance":
+            al["echeance"] = ex["echeance"]
+            if ex.get("extrait"):
+                al["extrait"] = ex["extrait"]
+            if ex.get("ref"):
+                al["ref"] = ex["ref"]
+        alertes.append(al)
+
+    # « Qui est concerné » (d'après les articles, seulement si c'est sûr) et « autres articles sur ce sujet »
+    par_id = {a["id"]: a for a in liste}
+    limite_lies = (aujourdhui - dt.timedelta(days=365)).isoformat()
+    utiles = [a for a in liste if a.get("pertinence") in ("elevee", "moyenne") and not a.get("doublon_de")
+              and a.get("date", "") >= limite_lies]
+    termes_de = {}
+    for al in alertes:
+        arts = [par_id[x["id"]] for x in al.get("articles", []) if x["id"] in par_id]
+        conc = [a for a in arts if (a.get("concernes") or {}).get("acteurs")]
+        if conc:
+            acteurs = []
+            for a in conc:
+                acteurs += [x for x in a["concernes"]["acteurs"] if x not in acteurs]
+            al["concernes"] = {"acteurs": acteurs,
+                               "source": conc[0].get("source", ""), "lien": conc[0].get("lien", "")}
+        propres = {x["id"] for x in al.get("articles", [])}
+        if al.get("texte") and not al.get("emergent") and not al.get("ref"):
+            lies = [a["id"] for a in utiles if al["texte"] in (a.get("textes_cles") or []) and a["id"] not in propres]
+        else:
+            if not arts:
+                continue
+            cibles = set()
+            for a in arts:
+                if a["id"] not in termes_de:
+                    termes_de[a["id"]] = termes(a.get("titre", "") + " " + a.get("resume", ""))
+                cibles |= termes_de[a["id"]]
+            if al.get("emergent"):
+                cibles.add(al["texte"].split(" (")[0])
+            cibles = {c for c in cibles if not est_connu_defaut(c) or al.get("emergent")}
+            lies = []
+            for a in utiles:
+                if a["id"] in propres:
+                    continue
+                if a["id"] not in termes_de:
+                    termes_de[a["id"]] = termes(a.get("titre", "") + " " + a.get("resume", ""))
+                if termes_de[a["id"]] & cibles:
+                    lies.append(a["id"])
+        if lies:
+            al["lies"] = lies[:80]
+            al["nb_lies"] = len(lies)
+
+    # alertes anciennes dont les articles ont quitté le site (conservation) : gardées comme historique
+    nouveaux = {a["id"] for a in alertes}
+    for ident, x in anciens.items():
+        if ident in nouveaux:
+            continue
+        if any(ar["id"] in ids_liste for ar in x.get("articles", [])):
+            continue   # l'article est toujours là mais n'est plus une alerte (avis d'un lecteur, règles) : retirée
+        if (_date(x.get("fin")) or aujourdhui) >= aujourdhui - dt.timedelta(days=GARDE_ARCHIVES):
+            alertes.append(x)
+
+    for x in alertes:
+        x["active"] = (_date(x["fin"]) or aujourdhui) >= aujourdhui
+    alertes.sort(key=lambda x: (not x["active"], x.get("detecte_le", "")), reverse=False)
+    return alertes
+
+
+# --------------------------------------------------------------------------- flux RSS
+
+def _titre_langue(ap, lg):
+    if ap.get("langue") == lg:
+        return ap["titre"]
+    return ((ap.get("trad") or {}).get(lg) or {}).get("titre") or ((ap.get("trad") or {}).get("en") or {}).get("titre") or ap["titre"]
+
+
+def titre_alerte(al, lg):
+    if al.get("emergent"):
+        n = al.get("nb_sources") or al.get("nb_articles", 0)
+        return ("“%s”: new topic cited by %d sources" if lg == "en" else "« %s » : nouveau sujet cité par %d sources") % (al.get("texte", ""), n)
+    if al.get("ref"):
+        r = al["ref"]
+        nom = r.get("nom_en") if lg == "en" and r.get("nom_en") else r.get("nom", "")
+        return nom
+    return _titre_langue(al["articles"][0], lg) if al.get("articles") else al.get("texte", "")
+
+
+def ecrire_rss(alertes, dossier, url_site, aujourdhui):
+    """Un flux RSS par langue (data/points_cles_fr.xml / _en.xml) : abonnement possible dans Outlook."""
+    actives = sorted([a for a in alertes if a.get("active")], key=lambda a: a.get("detecte_le", ""), reverse=True)[:60]
+    for lg in ("fr", "en"):
+        items = []
+        for al in actives:
+            lib = LIB_TYPE[lg].get(al["type"], al["type"])
+            zone = ZONES_EN.get(al.get("zone"), al.get("zone")) if lg == "en" else al.get("zone", "")
+            titre = "%s — %s (%s)" % (lib, titre_alerte(al, lg), zone)
+            lien = (al.get("ref") or {}).get("lien") or ((al.get("articles") or [{}])[0].get("lien")) or url_site
+            desc = []
+            if al.get("echeance"):
+                desc.append(("Deadline: " if lg == "en" else "Échéance : ") + al["echeance"])
+            if al.get("texte"):
+                desc.append("Text: " + regles.LIBELLES_EN.get(al["texte"], al["texte"]) if lg == "en" else "Texte : " + al["texte"])
+            n = al.get("nb_articles", 0)
+            if n > 1:
+                desc.append(("%d sources" % n))
+            if al.get("a_verifier"):
+                desc.append("To be checked on the official source" if lg == "en" else "À vérifier sur la source officielle")
+            desc.append(('<a href="%s">%s</a>' % (html.escape(url_site + ("?lang=en" if lg == "en" else "") + "#essentiel"),
+                                                  "Open the watch" if lg == "en" else "Ouvrir la veille")) if url_site else "")
+            d = _date(al.get("detecte_le")) or aujourdhui
+            pub = dt.datetime(d.year, d.month, d.day, 7, 0, tzinfo=dt.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+            items.append("<item><title>%s</title><link>%s</link><guid isPermaLink=\"false\">%s</guid><pubDate>%s</pubDate>"
+                         "<description>%s</description></item>" % (
+                             html.escape(titre), html.escape(lien), al["id"] + "-" + al.get("maj_le", ""), pub,
+                             html.escape(" · ".join(x for x in desc if x))))
+        canal = ("Cyber Watch — Key points" if lg == "en" else "Cyber Watch — Points clés")
+        xml = ('<?xml version="1.0" encoding="utf-8"?>\n<rss version="2.0"><channel><title>%s</title><link>%s</link>'
+               '<description>%s</description><language>%s</language>%s</channel></rss>\n') % (
+            html.escape(canal), html.escape(url_site or ""),
+            html.escape("Regulatory watch — priority alerts (Wavestone)" if lg == "en" else "Veille réglementaire — alertes prioritaires (Wavestone)"),
+            lg, "".join(items))
+        with open(os.path.join(dossier, "points_cles_%s.xml" % lg), "w", encoding="utf-8") as f:
+            f.write(xml)

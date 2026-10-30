@@ -54,6 +54,7 @@ import lecture  # noqa: E402
 import sens as sens_mod  # noqa: E402
 import tri_ia  # noqa: E402
 import alertes  # noqa: E402
+import pressentis  # noqa: E402
 import regles  # noqa: E402
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1316,6 +1317,14 @@ def main():
     ecrire_json_et_js("alertes", {"mise_a_jour": meta["mise_a_jour"], "alertes": liste_alertes}, "VEILLE_ALERTES")
     alertes.ecrire_rss(liste_alertes, DATA, meta["url_site"], AUJOURDHUI)
     print("Points clés : %d alertes actives, %d précédentes" % (meta["nb_alertes"], len(liste_alertes) - meta["nb_alertes"]))
+
+    # v9 — « Pressentis et avis d'experts » (remplace « Débats et signaux ») : textes et évolutions pressentis,
+    # avis d'experts ; un sujet quitte la section quand le projet de texte sort (voir collecte/pressentis.py)
+    ancien_press = lire_json(os.path.join(DATA, "pressentis.json"), {})
+    liste_press = pressentis.construire(liste, debats_gardes, liste_alertes, ancien_press, AUJOURDHUI)
+    ecrire_json_et_js("pressentis", {"mise_a_jour": meta["mise_a_jour"], "sujets": liste_press}, "VEILLE_PRESSENTIS")
+    print("Pressentis et avis d'experts : %d sujets (%d devenus projets de texte)" % (
+        len(liste_press), sum(1 for x in liste_press if x.get("statut") == "devenu_projet")))
 
     ecrire_json_et_js("acronymes", {"mise_a_jour": meta["mise_a_jour"], "glossaire": trad.glossaire,
                                     "suivis": suivis, "candidats": candidats}, "VEILLE_ACRONYMES")

@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-30T17:05+00:00",
+ "mise_a_jour": "2026-11-09T10:00+00:00",
  "sujets": [
   {
    "id": "pd61e171d30e",
@@ -1378,58 +1378,6 @@
     }
    ],
    "nb_articles": 6,
-   "nb_sources": 2,
-   "statut": "pressenti"
-  },
-  {
-   "id": "p7f8a0d90d58",
-   "sorte": "avis",
-   "texte": "Data Act",
-   "nom": "",
-   "zone": "Europe",
-   "premier_signal": "2026-04-23",
-   "dernier_signal": "2026-05-07",
-   "articles": [
-    {
-     "id": "5947df68d889",
-     "titre": "MedTech Europe in the headlines in April 2026",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "MedTech Europe dans les titres en avril 2026"
-      }
-     },
-     "lien": "https://www.medtecheurope.org/2026/05/07/medtech-europe-in-the-headlines-in-april-2026/",
-     "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-     "zone": "Europe",
-     "date": "2026-05-07",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "expert": true
-    },
-    {
-     "id": "e9c47a35c1ad",
-     "titre": "Contextualizing the Proposed SECURE Data Act in the State Privacy Landscape",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Contexte du projet de loi sur les données SECURE dans le paysage de la protection de la vie privée de l'État"
-      }
-     },
-     "lien": "https://fpf.org/blog/contextualizing-the-proposed-secure-data-act-in-the-state-privacy-landscape/",
-     "source": "Future of Privacy Forum (FPF)",
-     "zone": "Worldwide",
-     "date": "2026-04-23",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    }
-   ],
-   "nb_articles": 2,
    "nb_sources": 2,
    "statut": "pressenti"
   }

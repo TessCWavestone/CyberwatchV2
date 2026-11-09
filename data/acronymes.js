@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-10-30T17:05+00:00",
+ "mise_a_jour": "2026-11-09T10:00+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 181,
+   "nb_articles": 188,
    "exemple": {
-    "date": "2026-10-14",
-    "lien": "https://circleid.com/posts/unfolding-forensics-of-a-lawfare-train-wreck-the-eu-cra",
-    "titre": "Unfolding Forensics of a Lawfare Train Wreck: The EU CRA",
-    "langue": "en",
-    "titre_fr": "Déplier la médecine légale d'une épave de train de Lawfare : le UE CRA",
-    "titre_en": ""
+    "date": "2026-11-09",
+    "lien": "https://www.google.com/search?q=%22Cyber+Resilience+Act+%3A+la+cryptographie+va-t-elle+d%C3%A9cider+quels+produits+pourront+%C3%AAtre+vendus+en+Europe+%3F%22+L%27Observatoire+de+la+Tech",
+    "titre": "Cyber Resilience Act : la cryptographie va-t-elle décider quels produits pourront être vendus en Europe ?",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Cyber Resilience Act: Will cryptography decide which products can be sold in Europe?"
    }
   },
   {
@@ -179,13 +179,13 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 69,
+   "nb_articles": 70,
    "exemple": {
-    "date": "2026-10-27",
-    "lien": "https://iapp.org/news/a/italys-ai-act-framework-takes-shape-what-legislative-decree-no-179-2026-means-for-organizations",
-    "titre": "Italy's AI Act framework takes shape: What Legislative Decree No. 179/2026 means for organizations",
+    "date": "2026-11-09",
+    "lien": "https://digitalpolicyalert.org/event/44555-european-commission-closes-consultation-on-draft-implementing-regulation-on-practical-and-specific-arrangements-for-conduct-of-certain-proceedings-pursuant-to-article-75c-and-article-75d-of-artificial-intelligence-act",
+    "titre": "European Commission closes consultation on draft Implementing regulation on practical and specific arrangements for conduct of certain proceedings pursuant to Article 75c and Article 75d of Artificial Intelligence Act",
     "langue": "en",
-    "titre_fr": "La loi italienne IA prend forme : ce que signifie le décret législatif n° 179/2026 pour les organisations",
+    "titre_fr": "La Commission européenne clôt la consultation sur le projet de règlement d'exécution relatif aux modalités pratiques et spécifiques de la conduite de certaines procédures conformément aux articles 75 quater et 75 quinquies de la loi sur l'intelligence artificielle",
     "titre_en": ""
    }
   },
@@ -325,6 +325,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "Data Act",
+   "groupe": "textes",
+   "fr": "Data Act",
+   "en": "Data Act",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-11-06",
+    "lien": "https://digitalpolicyalert.org/event/44947-dutch-authority-for-consumers-and-markets-closes-consultation-on-guidelines-on-switching-between-cloud-services-under-data-act",
+    "titre": "Dutch Authority for Consumers and Markets closes consultation on guidelines on switching between cloud services under Data Act",
+    "langue": "en",
+    "titre_fr": "L'Autorité néerlandaise des consommateurs et des marchés clôt la consultation sur les lignes directrices relatives au passage d'un service cloud à un autre en vertu de la loi sur les données",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "eIDAS",
    "groupe": "textes",
    "fr": "eIDAS 2 / portefeuille d'identité",
@@ -340,18 +355,18 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "Data Act",
+   "code": "Normes harmonisées",
    "groupe": "textes",
-   "fr": "Data Act",
-   "en": "Data Act",
-   "nb_articles": 4,
+   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
+   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
+   "nb_articles": 5,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.gov.pl/web/cyfryzacja/wieksza-kontrola-nad-danymi-rzad-przyjal-projekt-ustawy",
-    "titre": "Większa kontrola nad danymi. Rząd przyjął projekt ustawy",
-    "langue": "pl",
-    "titre_fr": "Plus de contrôle des données. Le gouvernement a adopté le projet de loi",
-    "titre_en": "More data control. The government adopted the bill"
+    "date": "2026-11-06",
+    "lien": "https://www.google.com/search?q=%22COCIR+-+Cyber+Resilience+Act%3A+Timely+Citation+of+Harmonised+Standards+Essential%22+Global%3A+Government+News+and+Documents%3B+Political+and+Economic+Org+...",
+    "titre": "COCIR - Cyber Resilience Act: Timely Citation of Harmonised Standards Essential",
+    "langue": "en",
+    "titre_fr": "COCIR - Loi sur la cyberrésilience : Citation opportune de normes harmonisées essentielles",
+    "titre_en": ""
    }
   },
   {
@@ -381,21 +396,6 @@ window.VEILLE_ACRONYMES = {
     "titre": "MHRA advises quarantine of medical devices supplied without appropriate conformity markings",
     "langue": "en",
     "titre_fr": "MHRA conseille la quarantaine des dispositifs médicaux fournis sans marquage de conformité approprié",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "Normes harmonisées",
-   "groupe": "textes",
-   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
-   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-14",
-    "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2274",
-    "titre": "Commission Implementing Decision (EU) 2026/2274 of 12 October 2026 on the harmonised standards for high-risk AI systems drafted in support of Regulation (EU) 2024/1689 of the European Parliament and of the Council",
-    "langue": "en",
-    "titre_fr": "Décision d'exécution (UE) 2026/2274 de la Commission du 12 octobre 2026 concernant les normes harmonisées pour les systèmes IA à haut risque élaborées à l'appui du règlement (UE) 2024/1689 du Parlement européen et du Conseil",
     "titre_en": ""
    }
   },
@@ -644,14 +644,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 59,
+   "nb_articles": 60,
    "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://www.ncsc.nl/alerts/ernstige-kwetsbaarheden-in-php-bereid-je-voor-op-patchen",
-    "titre": "Ernstige kwetsbaarheden in PHP: bereid je voor op patchen",
+    "date": "2026-11-06",
+    "lien": "https://www.ncsc.nl/nieuws/cybersecuritybeeld-2026-ai-versnelt-en-vergroot-de-dreiging",
+    "titre": "Cybersecuritybeeld 2026: AI versnelt en vergroot de dreiging",
     "langue": "nl",
-    "titre_fr": "Graves vulnérabilités dans PHP : Préparez-vous à patcher",
-    "titre_en": "Severe vulnerabilities in PHP: Prepare to patch"
+    "titre_fr": "Image Cybersécurité 2026: IA accélère et augmente la menace",
+    "titre_en": "Cybersecurity image 2026: AI accelerates and increases the threat"
    }
   },
   {
@@ -925,6 +925,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "IMY",
+   "groupe": "autorites",
+   "fr": "IMY (Suède)",
+   "en": "IMY (Sweden)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-11-06",
+    "lien": "https://computersweden.se/article/4245742/imy-granskar-arbetsformedlingens-ai-system.html",
+    "titre": "Nyhet IMY granskar Arbetsförmedlingens AI-system Av Viktor Eriksson 6 nov. 2026 1 min Offentlig sektor Lagar och regleringar Marknader",
+    "langue": "sv",
+    "titre_fr": "IMY revues AI-system de Viktor Eriksson 6 nov. 2026 1 min Secteur public Lois et règlements Marchés",
+    "titre_en": "IMY reviews AI-system of Viktor Eriksson 6 Nov. 2026 1 min Public sector Laws and Regulations Markets"
+   }
+  },
+  {
    "code": "PTS",
    "groupe": "autorites",
    "fr": "PTS (Suède)",
@@ -952,21 +967,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "de",
     "titre_fr": "\"Tout en un\": TI-Messenger peut également être utilisé à l'avenir via des systèmes logiciels pour les établissements de santé",
     "titre_en": "\"All in One\": TI-Messenger can also be used in the future via software systems for healthcare facilities"
-   }
-  },
-  {
-   "code": "IMY",
-   "groupe": "autorites",
-   "fr": "IMY (Suède)",
-   "en": "IMY (Sweden)",
-   "nb_articles": 7,
-   "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://www.security.nl/posting/954321/Zweedse+privacytoezichthouder+legt+Milj%C3%B6data+boete+op+na+groot+datalek?channel=rss",
-    "titre": "Zweedse privacytoezichthouder legt Miljödata boete op na groot datalek",
-    "langue": "nl",
-    "titre_fr": "Le contrôleur suédois de la protection de la vie privée sanctionne Miljödata après une violation importante des données",
-    "titre_en": "Swedish Privacy Supervisor fines Miljödata after large data breach"
    }
   },
   {
@@ -1012,6 +1012,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
+   }
+  },
+  {
+   "code": "Nkom",
+   "groupe": "autorites",
+   "fr": "Nkom (Norvège)",
+   "en": "Nkom (Norway)",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-11-03",
+    "lien": "https://nkom.no/aktuelt/hacking-av-frysarar-noreg-kan-ogsa-bli-ramma",
+    "titre": "Hacking av frysarar: Noreg kan også bli ramma",
+    "langue": "nb",
+    "titre_fr": "Hacking congélateurs: la Norvège peut également être encadrée",
+    "titre_en": "Hacking freezers: Norway can also be framed"
    }
   },
   {
@@ -1072,21 +1087,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "hu",
     "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
     "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
-   }
-  },
-  {
-   "code": "Nkom",
-   "groupe": "autorites",
-   "fr": "Nkom (Norvège)",
-   "en": "Nkom (Norway)",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-09-29",
-    "lien": "https://nkom.no/aktuelt/tema-frekvensforum-2026",
-    "titre": "Nytt system vil gjøre Norge mindre avhengig av tidssignaler fra GPS – viktig for samfunnssikkerheten",
-    "langue": "nb",
-    "titre_fr": "Le nouveau système rendra la Norvège moins dépendante des signaux horaires de GPS – important pour la sécurité sociale",
-    "titre_en": "New system will make Norway less dependent on time signals from GPS – important for social security"
    }
   },
   {
@@ -1162,6 +1162,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "en",
     "titre_fr": "Les instructions d'utilisation des instruments médicaux doivent être à la disposition de l'utilisateur et faciles à comprendre",
     "titre_en": ""
+   }
+  },
+  {
+   "code": "PFPDT / EDÖB",
+   "groupe": "autorites",
+   "fr": "PFPDT / EDÖB (Suisse)",
+   "en": "FDPIC (Switzerland)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-11-06",
+    "lien": "https://www.edoeb.admin.ch/fr/violation-de-la-securite-des-donnees-le-taf-confirme-le-devoir-dinformation-dune-exploitante-de-boutique-en-ligne",
+    "titre": "«Violation de la sécurité des données : Le Tribunal administratif fédéral confirme le devoir d’information d’une exploitante de boutique en ligne»",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "\"Data Security Violation: The Federal Administrative Court confirms the information duty of an online shop operator\""
    }
   },
   {
@@ -1267,21 +1282,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Sweden: only 21 medical device manufacturers registered under the new cyber law"
-   }
-  },
-  {
-   "code": "PFPDT / EDÖB",
-   "groupe": "autorites",
-   "fr": "PFPDT / EDÖB (Suisse)",
-   "en": "FDPIC (Switzerland)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.edoeb.admin.ch/fr/bodycams-blt-fr",
-    "titre": "«Bodycams – Le PFPDT interdit à la société BLT Baselland Transport AG de traiter les données»",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»"
    }
   },
   {
@@ -1578,7 +1578,7 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "OUCH",
+   "code": "SANS",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",
@@ -1590,7 +1590,7 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "SANS",
+   "code": "OUCH",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",

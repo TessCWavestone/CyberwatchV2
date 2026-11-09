@@ -1,5 +1,5 @@
 window.VEILLE_ETAT_SOURCES = {
- "mise_a_jour": "2026-10-30T17:05+00:00",
+ "mise_a_jour": "2026-11-09T10:00+00:00",
  "jours_premiere_collecte": 60,
  "jours_conservation": 730,
  "sources": [
@@ -11,9 +11,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 15,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html",
-   "nb_retenus": 2,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -26,7 +26,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-28"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "Bundesnetzagentur",
@@ -36,9 +36,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html",
-   "nb_retenus": 2,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -51,7 +51,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-20"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Ministère fédéral de l'intérieur Autriche",
@@ -61,9 +61,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.bmi.gv.at/rss/bmi_presse.xml",
    "nb_trouves": 17,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 7,
+   "nb_retenus": 15,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -76,7 +76,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-07"
   },
   {
    "nom": "CERT",
@@ -86,7 +86,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.cert.at/cert-at.de.current.rss_2.0.xml",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 0,
    "acces": "ok",
@@ -109,12 +109,12 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://samsik.dk/",
    "mode": "rss+page",
    "flux": "https://samsik.dk/category/cybersikkerhed/feed/",
-   "nb_trouves": 10,
-   "erreur": "Aucun lien d'article détecté sur https://samsik.dk/nyheder/ (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-10-30 17:05",
+   "nb_trouves": 12,
+   "erreur": "",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://samsik.dk/nyheder/",
    "nb_retenus": 3,
-   "acces": "partielle",
+   "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
@@ -128,7 +128,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "INCIBE",
@@ -138,7 +138,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 23,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.incibe.es/incibe-cert/blog ; https://www.incibe.es/incibe-cert/publicaciones/guias-y-estudios",
    "nb_retenus": 0,
    "acces": "ok",
@@ -162,9 +162,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.enisa.europa.eu/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 70,
+   "nb_trouves": 68,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.enisa.europa.eu/news ; https://www.enisa.europa.eu/publications",
    "nb_retenus": 0,
    "acces": "ok",
@@ -190,9 +190,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://data.europa.eu/en/news-events/news",
-   "nb_retenus": 2,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -205,7 +205,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Législation de l’UE - EUR-Lex",
@@ -215,9 +215,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222 ; https://eur-lex.europa.eu/EN/display-feed.rss?rssId=166",
    "nb_trouves": 200,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 120,
+   "nb_retenus": 144,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -231,7 +231,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Commission Européenne - Cybersecurity",
@@ -239,11 +239,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://digital-strategy.ec.europa.eu/fr/policies/cybersecurity",
    "mode": "rss+page",
    "flux": "https://digital-strategy.ec.europa.eu/en/rss.xml",
-   "nb_trouves": 47,
+   "nb_trouves": 48,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://digital-strategy.ec.europa.eu/en/news ; https://digital-strategy.ec.europa.eu/en/library ; https://digital-strategy.ec.europa.eu/en/consultations",
-   "nb_retenus": 18,
+   "nb_retenus": 17,
    "acces": "ok",
    "type": "Site institutionnel officiel",
    "nature": "officielle",
@@ -260,20 +260,20 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "EDPB (European Data Protection Board)",
    "zone": "Europe",
    "url": "https://www.edpb.europa.eu/home_en",
    "mode": "rss+page",
-   "flux": "https://www.edpb.europa.eu/feed/news_en ; https://www.edpb.europa.eu/feed/publications_en",
-   "nb_trouves": 30,
-   "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "flux": "https://www.edpb.europa.eu/feed/publications_en",
+   "nb_trouves": 20,
+   "erreur": "Flux https://www.edpb.europa.eu/feed/news_en illisible : 503 Server Error: Service Unavailable for url: https://www.edpb.europa.eu/feed/news_en",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.edpb.europa.eu/documents_en",
-   "nb_retenus": 1,
-   "acces": "ok",
+   "nb_retenus": 0,
+   "acces": "partielle",
    "type": "Autorité européenne officielle",
    "nature": "officielle",
    "nb_pages": 1,
@@ -288,7 +288,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-16"
+   "dernier_article": "2026-10-13"
   },
   {
    "nom": "CERT-EU",
@@ -296,9 +296,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://cert.europa.eu",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 28,
+   "nb_trouves": 29,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://cert.europa.eu/blog ; https://cert.europa.eu/publications/threat-intelligence/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -324,9 +324,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.consilium.europa.eu/en/rss/pressreleases.ashx",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 16,
+   "nb_retenus": 18,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -339,7 +339,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "European Health and Digital Executive Agency",
@@ -349,9 +349,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://hadea.ec.europa.eu/node/2/rss_en",
    "nb_trouves": 129,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://hadea.ec.europa.eu/news_en",
-   "nb_retenus": 10,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -366,7 +366,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Agence des droits fondamentaux de l'UE (FRA)",
@@ -376,7 +376,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://fra.europa.eu/en/news-and-events/news (page probablement chargée en JavaScript) ; Aucun lien d'article détecté sur https://fra.europa.eu/en/media/press-releases (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://fra.europa.eu/en/news-and-events/news ; https://fra.europa.eu/en/media/press-releases",
    "nb_retenus": 0,
    "acces": "partielle",
@@ -402,7 +402,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 24,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en",
    "nb_retenus": 1,
    "acces": "ok",
@@ -417,7 +417,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "Centre de cybersécurité de Traficom",
@@ -427,9 +427,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
    "nb_trouves": 500,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 9,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -442,7 +442,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Légifrance",
@@ -450,11 +450,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.legifrance.gouv.fr/",
    "mode": "opendata",
    "flux": "https://echanges.dila.gouv.fr/OPENDATA/JORF/",
-   "nb_trouves": 1002,
+   "nb_trouves": 81,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
-   "page": "8 archive(s) du JO lue(s)",
-   "nb_retenus": 188,
+   "verifie_le": "2026-11-09 10:00",
+   "page": "1 archive(s) du JO lue(s)",
+   "nb_retenus": 30,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -465,7 +465,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-08"
   },
   {
    "nom": "ANSSI (Agence Nationale de la Sécurité des SI)",
@@ -475,7 +475,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://cyber.gouv.fr/actualites/rss/",
    "nb_trouves": 31,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://cyber.gouv.fr/actualites/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -502,9 +502,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 14,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.data.gouv.fr/posts",
-   "nb_retenus": 2,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -517,7 +517,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-28"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "CNIL",
@@ -527,9 +527,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.cnil.fr/fr/rss.xml",
    "nb_trouves": 27,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.cnil.fr/fr/actualite ; https://www.cnil.fr/fr/tag/consultation ; https://www.cnil.fr/fr/tag/Sanction",
-   "nb_retenus": 2,
+   "nb_retenus": 7,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -546,7 +546,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Autorité Nationale de Cybersécurité",
@@ -554,11 +554,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://cyber.gov.gr/",
    "mode": "rss+page",
    "flux": "https://cyber.gov.gr/feed/",
-   "nb_trouves": 90,
+   "nb_trouves": 88,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://cyber.gov.gr/nea-plirofories/grafeio-typoy/ ; https://cyber.gov.gr/category/anakoinoseis/",
-   "nb_retenus": 1,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -574,7 +574,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Autorité de régulation des activités supervisées",
@@ -584,7 +584,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 9,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://sztfh.hu/hatosag/hirek/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -609,7 +609,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://nsm.no/aktuelt/ ; https://nsm.no/aktuelt",
    "nb_retenus": 1,
    "acces": "ok",
@@ -625,7 +625,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-27"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "Centre National de Cybersécurité",
@@ -633,11 +633,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.ncsc.nl/",
    "mode": "rss",
    "flux": "https://feeds.ncsc.nl/nieuws.rss",
-   "nb_trouves": 378,
+   "nb_trouves": 384,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 9,
+   "nb_retenus": 8,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -650,7 +650,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Ministère du numérique",
@@ -660,9 +660,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.gov.pl/web/cyfryzacja/wiadomosci",
-   "nb_retenus": 8,
+   "nb_retenus": 10,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -675,7 +675,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Office national de la sécurité cybernétique et de l'information",
@@ -683,11 +683,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://nukib.gov.cz/cs/",
    "mode": "rss+page",
    "flux": "https://nukib.gov.cz/rss.xml",
-   "nb_trouves": 476,
+   "nb_trouves": 480,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://nukib.gov.cz/cs/infoservis/aktuality/",
-   "nb_retenus": 1,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -702,7 +702,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-21"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Centre National de Cybersécurité)",
@@ -712,9 +712,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml ; https://www.ncsc.gov.uk/api/1/services/v1/guidance-rss-feed.xml",
    "nb_trouves": 40,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 4,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -728,7 +728,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-27"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "Agence pour la défense civile",
@@ -736,11 +736,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.mcf.se/sv/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 49,
+   "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.ncsc.se/sv/aktuellt/",
-   "nb_retenus": 0,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -753,7 +753,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-09-30"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "CERT SE",
@@ -763,9 +763,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.cert.se/feed.rss",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 2,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -778,7 +778,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Office fédéral de la cybersécurité OFCS",
@@ -786,9 +786,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.ncsc.admin.ch/ncsc/fr/home/aktuell.html",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 86,
+   "nb_trouves": 89,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.ncsc.admin.ch/ncsc/fr/home/aktuell/im-fokus.html",
    "nb_retenus": 3,
    "acces": "ok",
@@ -803,7 +803,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-27"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "IAPP",
@@ -813,9 +813,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://iapp.org/news/",
-   "nb_retenus": 12,
+   "nb_retenus": 7,
    "acces": "ok",
    "type": "newsletter",
    "nature": "presse",
@@ -828,7 +828,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Intrinsec Threat Landscape",
@@ -838,7 +838,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.intrinsec.com/blog",
    "nb_retenus": 0,
    "acces": "ok",
@@ -863,9 +863,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.eba.europa.eu/news-press/news/rss.xml",
    "nb_trouves": 39,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.eba.europa.eu/publications-and-media/press-releases ; https://www.eba.europa.eu/publications-and-media/publications",
-   "nb_retenus": 5,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -881,7 +881,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "ESMA",
@@ -891,7 +891,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.esma.europa.eu/press-news/esma-news ; https://www.esma.europa.eu/press-news/consultations",
    "nb_retenus": 0,
    "acces": "ok",
@@ -917,9 +917,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.ecb.europa.eu/rss/press.html",
    "nb_trouves": 15,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 7,
+   "nb_retenus": 6,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -932,7 +932,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-07"
   },
   {
    "nom": "EMA (Agence européenne du médicament)",
@@ -940,11 +940,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.ema.europa.eu",
    "mode": "rss+page",
    "flux": "https://www.ema.europa.eu/en/news.xml ; https://www.ema.europa.eu/en/public-consultations.xml ; https://www.ema.europa.eu/en/regulatory-and-procedural-guideline.xml",
-   "nb_trouves": 324,
+   "nb_trouves": 76,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.ema.europa.eu/en/news ; https://www.ema.europa.eu/en/news-events/whats-new",
-   "nb_retenus": 15,
+   "nb_retenus": 10,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -962,7 +962,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "BEREC (télécoms)",
@@ -970,11 +970,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.berec.europa.eu",
    "mode": "rss+page",
    "flux": "https://www.berec.europa.eu/en/rss.xml",
-   "nb_trouves": 53,
+   "nb_trouves": 49,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.berec.europa.eu/en/news/latest-news ; https://www.berec.europa.eu/en/news/press-releases ; https://www.berec.europa.eu/en/public-consultations-calls-for-inputs",
-   "nb_retenus": 1,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -991,7 +991,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-23"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Commission européenne — DG SANTE (santé publique, santé numérique)",
@@ -999,11 +999,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://health.ec.europa.eu/",
    "mode": "rss+page",
    "flux": "https://health.ec.europa.eu/node/2/rss_en",
-   "nb_trouves": 38,
+   "nb_trouves": 37,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://health.ec.europa.eu/latest-updates_en",
-   "nb_retenus": 12,
+   "nb_retenus": 10,
    "acces": "ok",
    "type": "Site institutionnel officiel",
    "nature": "officielle",
@@ -1018,7 +1018,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "ARCEP",
@@ -1028,9 +1028,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 81,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.arcep.fr/actualites/actualites-et-communiques.html ; https://www.arcep.fr/actualites/les-consultations-publiques.html ; https://www.arcep.fr/actualites/les-publications.html",
-   "nb_retenus": 2,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -1045,7 +1045,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-15"
+   "dernier_article": "2026-10-29"
   },
   {
    "nom": "ANFR",
@@ -1055,7 +1055,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 2,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.anfr.fr/presse-anfr",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1080,9 +1080,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://cert.pl/en/rss.xml",
    "nb_trouves": 100,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 14,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -1095,7 +1095,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "The Record (Recorded Future)",
@@ -1105,7 +1105,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://therecord.media/feed/",
    "nb_trouves": 5,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 5,
    "acces": "ok",
@@ -1120,7 +1120,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "BleepingComputer",
@@ -1128,9 +1128,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.bleepingcomputer.com",
    "mode": "rss+page",
    "flux": "https://www.bleepingcomputer.com/feed/",
-   "nb_trouves": 61,
+   "nb_trouves": 63,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.bleepingcomputer.com/news/legal/ ; https://www.bleepingcomputer.com/news/government/",
    "nb_retenus": 15,
    "acces": "ok",
@@ -1148,7 +1148,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-08"
   },
   {
    "nom": "Digital Policy Alert",
@@ -1158,7 +1158,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 32,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://digitalpolicyalert.org/activity-tracker ; https://digitalpolicyalert.org/analysis",
    "nb_retenus": 13,
    "acces": "ok",
@@ -1174,7 +1174,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "GovCERT Austria",
@@ -1184,7 +1184,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 6,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.govcert.gv.at/cert-warnungen.html ; https://www.govcert.gv.at/cert-tagesmeldungen.html",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1210,9 +1210,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://digst.dk/nyheder/nyhedsarkiv/?rss=true",
    "nb_trouves": 110,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://digst.dk/nyheder/nyhedsarkiv/",
-   "nb_retenus": 2,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -1227,7 +1227,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-28"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Agencia Española de Protección de Datos (AEPD)",
@@ -1237,7 +1237,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 95,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa ; https://www.aepd.es/prensa-y-comunicacion/blog",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1263,7 +1263,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://lvm.fi/tiedotteet inaccessible : 403 Client Error: Forbidden for url: https://lvm.fi/tiedotteet ; Page https://lvm.fi inaccessible : 403 Client Error: Forbidden for url: https://lvm.fi/",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "",
@@ -1275,7 +1275,7 @@ window.VEILLE_ETAT_SOURCES = {
     "https://lvm.fi/tiedotteet"
    ],
    "flux_liste": [],
-   "echecs": 7,
+   "echecs": 8,
    "a_retirer": true,
    "dernier_article": "2026-09-30"
   },
@@ -1287,7 +1287,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://www.sgdsn.gouv.fr/publications (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.sgdsn.gouv.fr/publications",
    "nb_retenus": 0,
    "acces": "partielle",
@@ -1312,9 +1312,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 29,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.dpa.gr/el/enimerwtiko/deltia ; https://www.dpa.gr/el/enimerwtiko/prakseisArxis",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -1328,7 +1328,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-21"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "National Cyber Security Center Hungary (NKI)",
@@ -1336,11 +1336,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://nki.gov.hu",
    "mode": "rss+page",
    "flux": "https://nki.gov.hu/feed/hirek/ ; https://nki.gov.hu/feed/kiadvanyok/",
-   "nb_trouves": 61,
+   "nb_trouves": 62,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://nki.gov.hu/it-biztonsag/hirek/ ; https://nki.gov.hu/figyelmeztetesek/tajekoztatas/",
-   "nb_retenus": 17,
+   "nb_retenus": 14,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -1357,7 +1357,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Garante per la Protezione dei Dati Personali",
@@ -1367,7 +1367,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.garanteprivacy.it/o/gpdp-rss/rss?t=news",
    "nb_trouves": 22,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.garanteprivacy.it/comunicati-stampa",
    "nb_retenus": 6,
    "acces": "ok",
@@ -1384,7 +1384,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-07"
   },
   {
    "nom": "UODO (Office for Personal Data Protection)",
@@ -1392,11 +1392,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://uodo.gov.pl",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 878,
+   "nb_trouves": 877,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://uodo.gov.pl/pl/p/aktualnosci",
-   "nb_retenus": 0,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "",
    "nature": "officielle",
@@ -1419,7 +1419,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 58,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.cnpd.pt/comunicacao-publica/noticias/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1444,7 +1444,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.gov.uk/search/news-and-communications.atom?organisations[]=department-for-science-innovation-and-technology ; https://www.gov.uk/search/policy-papers-and-consultations.atom?organisations[]=department-for-science-innovation-and-technology",
    "nb_trouves": 40,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 1,
    "acces": "ok",
@@ -1460,7 +1460,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-13"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "Infosecurity Magazine (UK)",
@@ -1468,9 +1468,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.infosecurity-magazine.com/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 36,
+   "nb_trouves": 34,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.infosecurity-magazine.com/news/",
    "nb_retenus": 20,
    "acces": "ok",
@@ -1485,7 +1485,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Swedish Authority for Privacy Protection (IMY)",
@@ -1494,8 +1494,8 @@ window.VEILLE_ETAT_SOURCES = {
    "mode": "page",
    "flux": "",
    "nb_trouves": 5,
-   "erreur": "Flux https://www.imy.se/link/fa3ee3124ab14f12aba446eb3a35f46e.aspx?epsremainingpath=rss illisible : not well-formed (invalid token): line 26, column 15",
-   "verifie_le": "2026-10-30 17:05",
+   "erreur": "Flux https://www.imy.se/link/fa3ee3124ab14f12aba446eb3a35f46e.aspx?epsremainingpath=rss illisible : mismatched tag: line 24, column 2",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.imy.se/publikationer/",
    "nb_retenus": 0,
    "acces": "partielle",
@@ -1520,11 +1520,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.gazzettaufficiale.it",
    "mode": "rss",
    "flux": "https://www.gazzettaufficiale.it/rss/SG",
-   "nb_trouves": 15,
+   "nb_trouves": 22,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 9,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -1537,7 +1537,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-07"
   },
   {
    "nom": "Assemblée nationale - Dossiers législatifs",
@@ -1547,9 +1547,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "http://www2.assemblee-nationale.fr/feeds/detail/documents-parlementaires",
    "nb_trouves": 35,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.assemblee-nationale.fr/dyn/17/dossiers",
-   "nb_retenus": 24,
+   "nb_retenus": 15,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -1564,7 +1564,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-27"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "UKE (Urząd Komunikacji Elektronicznej)",
@@ -1574,7 +1574,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 16,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.uke.gov.pl/akt/ ; https://www.uke.gov.pl/blog/",
    "nb_retenus": 4,
    "acces": "ok",
@@ -1590,7 +1590,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "CMS Law - Bulgaria Legal Updates",
@@ -1600,9 +1600,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 31,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://cms.law/en/bgr/legal-updates",
-   "nb_retenus": 0,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
@@ -1625,7 +1625,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 3,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.schoenherr.eu/capabilities/legal-areas/it-technology-law/news",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1650,7 +1650,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 13,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.dgkv.com/news ; https://www.dgkv.com/en/insights/publications",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1676,9 +1676,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.dataprotectionreport.com/feed/",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
@@ -1701,7 +1701,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 8,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.cybersecuritycoalition.be/news/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1726,7 +1726,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.security.nl/rss/headlines.xml",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 50,
    "acces": "ok",
@@ -1741,7 +1741,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Tek Notícias (SAPO)",
@@ -1751,7 +1751,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://tek.sapo.pt/rss",
    "nb_trouves": 24,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 24,
    "acces": "ok",
@@ -1766,7 +1766,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "ÚOOÚ (Autorité tchèque de protection des données)",
@@ -1776,7 +1776,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://uoou.gov.cz/novinky (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://uoou.gov.cz/novinky",
    "nb_retenus": 0,
    "acces": "partielle",
@@ -1799,11 +1799,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.edoeb.admin.ch/fr",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 129,
+   "nb_trouves": 131,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.edoeb.admin.ch/fr/breves",
-   "nb_retenus": 1,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -1816,7 +1816,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "gematik (agence nationale de la télématique de santé) – Newsroom",
@@ -1824,11 +1824,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.gematik.de/newsroom",
    "mode": "rss+page",
    "flux": "https://www.gematik.de/newsroom/rss.feed",
-   "nb_trouves": 722,
+   "nb_trouves": 723,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.gematik.de/newsroom",
-   "nb_retenus": 2,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -1843,20 +1843,20 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-23"
+   "dernier_article": "2026-11-02"
   },
   {
    "nom": "Bundesministerium für Gesundheit (BMG) – Pressemitteilungen",
    "zone": "Allemagne",
    "url": "https://www.bundesgesundheitsministerium.de/",
-   "mode": "rss",
+   "mode": "rss+page",
    "flux": "https://www.bundesgesundheitsministerium.de/pressemitteilungen.xml",
-   "nb_trouves": 415,
-   "erreur": "Page https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen.html inaccessible : ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "verifie_le": "2026-10-30 17:05",
-   "page": "",
-   "nb_retenus": 2,
-   "acces": "partielle",
+   "nb_trouves": 426,
+   "erreur": "",
+   "verifie_le": "2026-11-09 10:00",
+   "page": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen.html",
+   "nb_retenus": 1,
+   "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
@@ -1870,7 +1870,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Deutsches Ärzteblatt – Nachrichten",
@@ -1880,7 +1880,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.aerzteblatt.de/rss/news.asp",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 10,
    "acces": "ok",
@@ -1895,7 +1895,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Ministère fédéral autrichien du travail, des affaires sociales, de la santé, des soins et de la protection des consommateurs (BMASGPK) – communiqués sur APA-OTS",
@@ -1905,7 +1905,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 3,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.ots.at/pressemappe/46/bundesministerium-fuer-arbeit-soziales-gesundheit-und-konsumentenschutz",
    "nb_retenus": 0,
    "acces": "ok",
@@ -1930,9 +1930,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.agid.gov.it/it/rss.xml",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 2,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -1945,19 +1945,19 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "Ministère grec de la santé (Υπουργείο Υγείας) – communiqués de presse",
    "zone": "Grèce",
    "url": "https://www.moh.gov.gr/",
-   "mode": "erreur",
-   "flux": "",
-   "nb_trouves": 0,
-   "erreur": "Page https://www.moh.gov.gr/articles/newspaper/press-releases inaccessible : 421 Client Error: Misdirected Request for url: https://www.moh.gov.gr/articles/newspaper/press-relea ; Page https://www.moh.gov.gr/ inaccessible : 421 Client Error: Misdirected Request for url: https://www.moh.gov.gr/",
-   "verifie_le": "2026-10-30 17:05",
-   "nb_retenus": 0,
-   "acces": "ko",
+   "mode": "rss-auto",
+   "flux": "https://www.moh.gov.gr/rss/xml/articles.xml",
+   "nb_trouves": 10,
+   "erreur": "Page https://www.moh.gov.gr/articles/newspaper/press-releases inaccessible : HTTPSConnectionPool(host='www.moh.gov.gr', port=443): Read timed out. (read timeout=25)",
+   "verifie_le": "2026-11-09 10:00",
+   "nb_retenus": 3,
+   "acces": "partielle",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
    "nb_pages": 1,
@@ -1967,8 +1967,8 @@ window.VEILLE_ETAT_SOURCES = {
     "https://www.moh.gov.gr/articles/newspaper/press-releases"
    ],
    "flux_liste": [],
-   "echecs": 3,
-   "a_retirer": true,
+   "echecs": 0,
+   "a_retirer": false,
    "dernier_article": ""
   },
   {
@@ -1979,7 +1979,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 15,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.nictiz.nl/nieuws/",
    "nb_retenus": 1,
    "acces": "ok",
@@ -1994,7 +1994,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "DKCERT (CERT danois de la recherche et de l'éducation) — actualités",
@@ -2004,9 +2004,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.cert.dk/news/rss",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 2,
+   "nb_retenus": 9,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2019,7 +2019,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Kanta-palvelut (services nationaux de données de santé, Kela) — actualités",
@@ -2029,9 +2029,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.kanta.fi/ajankohtaista",
-   "nb_retenus": 0,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2044,7 +2044,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-26"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Norsk helsenett (NHN) — actualités",
@@ -2052,9 +2052,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.nhn.no/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 98,
+   "nb_trouves": 99,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.nhn.no/nyheter",
    "nb_retenus": 1,
    "acces": "ok",
@@ -2069,7 +2069,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-26"
+   "dernier_article": "2026-11-02"
   },
   {
    "nom": "eHälsomyndigheten (Agence suédoise de la santé numérique) — actualités",
@@ -2079,9 +2079,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.ehalsomyndigheten.se/om-ehalsomyndigheten/aktuellt/nyheter/rss",
    "nb_trouves": 16,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.ehalsomyndigheten.se/nyheter/",
-   "nb_retenus": 2,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2096,7 +2096,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Inera (services numériques communs des régions : 1177, NPÖ) — actualités",
@@ -2106,9 +2106,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 99,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.inera.se/aktuellt/nyheter/",
-   "nb_retenus": 0,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2121,7 +2121,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-01"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "Ministerstvo zdravotnictví ČR (ministère de la santé)",
@@ -2131,7 +2131,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://mzd.gov.cz/feed/",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 10,
    "acces": "ok",
@@ -2146,7 +2146,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Department of Health and Social Care (DHSC) – news & communications",
@@ -2156,9 +2156,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.gov.uk/search/news-and-communications.atom?organisations[]=department-of-health-and-social-care",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 7,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2171,7 +2171,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "MHRA (Medicines and Healthcare products Regulatory Agency) – news & communications",
@@ -2181,9 +2181,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.gov.uk/search/news-and-communications.atom?organisations[]=medicines-and-healthcare-products-regulatory-agency",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 3,
+   "nb_retenus": 5,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2196,7 +2196,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "NHS England – news & communications (via gov.uk)",
@@ -2206,7 +2206,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.gov.uk/search/news-and-communications.atom?organisations[]=nhs-england",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2221,7 +2221,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-23"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "NHS Innovation Service – News",
@@ -2231,9 +2231,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://innovation.nhs.uk/news/",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2256,9 +2256,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.gov.uk/search/news-and-communications.atom?organisations[]=cabinet-office",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 3,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2271,7 +2271,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "BOE – Boletín Oficial del Estado (Sección I, disposiciones generales)",
@@ -2279,11 +2279,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.boe.es/",
    "mode": "rss",
    "flux": "https://www.boe.es/rss/boe.php?s=1",
-   "nb_trouves": 6,
+   "nb_trouves": 8,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 5,
+   "nb_retenus": 7,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2296,7 +2296,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Ministerio de Sanidad – Notas de prensa",
@@ -2304,11 +2304,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.sanidad.gob.es/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 4532,
+   "nb_trouves": 4538,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.sanidad.gob.es/gabinete/notasPrensa.do",
-   "nb_retenus": 5,
+   "nb_retenus": 6,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2321,7 +2321,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-27"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Red Seguridad (revue cyber espagnole)",
@@ -2331,7 +2331,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.redseguridad.com/feed/",
    "nb_trouves": 8,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 8,
    "acces": "ok",
@@ -2346,7 +2346,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "Agence du Numérique en Santé (ANS) — flux RSS",
@@ -2356,9 +2356,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://esante.gouv.fr/rss.xml",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2371,7 +2371,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-23"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "BfArM — communiqués (DiGA, dispositifs médicaux, logiciels)",
@@ -2381,9 +2381,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.bfarm.de/SiteGlobals/Functions/RSSFeed/DE/Pressemitteilungen/RSSNewsfeed.xml",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 3,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2406,7 +2406,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.computing.es/feed/",
    "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 12,
    "acces": "ok",
@@ -2421,7 +2421,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "ACN — Agenzia per la Cybersicurezza Nazionale (flux)",
@@ -2431,9 +2431,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 31,
+   "nb_retenus": 28,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2446,7 +2446,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "CNCS — Centro Nacional de Cibersegurança (flux)",
@@ -2456,9 +2456,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.cncs.gov.pt/docs/noticias/feed-rss/index.xml",
    "nb_trouves": 224,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2481,9 +2481,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.england.nhs.uk/feed/",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 0,
+   "nb_retenus": 3,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2496,7 +2496,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-22"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Centrum e-Zdrowia — aktualności",
@@ -2506,9 +2506,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 6,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.cez.gov.pl/pl/page/o-nas/aktualnosci",
-   "nb_retenus": 0,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2521,7 +2521,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-22"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "CCN — Actualidad (portail ccn.cni.es : ENS, catalogue CPSTIC, qualifications)",
@@ -2531,7 +2531,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 9,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.ccn.cni.es/es/actualidad-ccn",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2556,9 +2556,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://edri.org/feed/",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 5,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Avis d'experts (non certifié)",
    "nature": "opinion",
@@ -2571,7 +2571,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "CERRE (Centre on Regulation in Europe)",
@@ -2581,7 +2581,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 1,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://cerre.eu/publications/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2606,9 +2606,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://ecipe.org/feed/",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 0,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Avis d'experts (non certifié)",
    "nature": "opinion",
@@ -2621,7 +2621,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-21"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "CESIN (Club des experts de la sécurité de l'information et du numérique)",
@@ -2631,7 +2631,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 26,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://cesin.fr/articles/?idTheme=3",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2656,9 +2656,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://fpf.org/feed/",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 4,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Avis d'experts (non certifié)",
    "nature": "opinion",
@@ -2671,20 +2671,20 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Hogan Lovells (HLC) - Our thinking",
    "zone": "Worldwide",
    "url": "https://www.hlc.com/en/our-thinking",
    "mode": "rss+page",
-   "flux": "https://www.hlc.com/rss/rss?id={23D3816F-56DB-4796-A0D3-1D0CF5C914BF}",
-   "nb_trouves": 220,
-   "erreur": "Flux https://www.hlc.com/rss/rss?id={85A6BA7F-0842-47CB-BF5E-8AEF326CC650} illisible : HTTPSConnectionPool(host='www.hlc.com', port=443): Read timed out. (read timeout=25)",
-   "verifie_le": "2026-10-30 17:05",
+   "flux": "https://www.hlc.com/rss/rss?id={85A6BA7F-0842-47CB-BF5E-8AEF326CC650} ; https://www.hlc.com/rss/rss?id={23D3816F-56DB-4796-A0D3-1D0CF5C914BF}",
+   "nb_trouves": 399,
+   "erreur": "",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.hlc.com/en/our-thinking",
-   "nb_retenus": 4,
-   "acces": "partielle",
+   "nb_retenus": 7,
+   "acces": "ok",
    "type": "Avis d'experts (non certifié)",
    "nature": "opinion",
    "nb_pages": 1,
@@ -2699,7 +2699,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-11-05"
+   "dernier_article": "2026-11-06"
   },
   {
    "nom": "MedTech Europe (association européenne des technologies médicales et du DIV)",
@@ -2709,7 +2709,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.medtecheurope.org/feed/",
    "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.medtecheurope.org/news-and-events/news/",
    "nb_retenus": 2,
    "acces": "ok",
@@ -2726,7 +2726,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-28"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "BVMed (Bundesverband Medizintechnologie) – Regulatorik / MDR",
@@ -2736,9 +2736,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 7,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.bvmed.de/themen/regulatorik-mdr",
-   "nb_retenus": 0,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Avis d'experts (non certifié)",
    "nature": "opinion",
@@ -2761,7 +2761,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.insideeulifesciences.com/feed",
    "nb_trouves": 21,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.insideeulifesciences.com/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2786,11 +2786,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://blog.johner-institute.com/tag/mdr/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 47,
+   "nb_trouves": 48,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://blog.johner-institute.com/tag/mdr/ ; https://www.johner-institut.de/blog/",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Avis d'experts (non certifié)",
    "nature": "opinion",
@@ -2814,7 +2814,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 2,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.cencenelec.eu/news-events/news/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2839,7 +2839,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.etsi.org/newsroom/",
    "nb_retenus": 2,
    "acces": "ok",
@@ -2854,7 +2854,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Bundesgesetzblatt (journal officiel fédéral)",
@@ -2864,9 +2864,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.recht.bund.de/rss/feeds/rss_bgbl-1-2.xml",
    "nb_trouves": 500,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 10,
+   "nb_retenus": 11,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2879,7 +2879,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Swissmedic — actualités (via flux RSS FetchRSS)",
@@ -2889,9 +2889,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://fetchrss.com/feed/X-CSwP0MWGVCaG_Z2JbPgiti.rss",
    "nb_trouves": 15,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 2,
+   "nb_retenus": 12,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2904,7 +2904,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-26"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Nkom (régulateur des communications électroniques, sécurité numérique)",
@@ -2914,9 +2914,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://nkom.no/aktuelt/rss.xml",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 3,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -2929,7 +2929,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "Digdir (agence norvégienne du numérique)",
@@ -2939,7 +2939,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 7,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.digdir.no/digdir/nyheitsarkiv/691",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2962,9 +2962,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.stortinget.no/",
    "mode": "rss",
    "flux": "https://www.stortinget.no/no/Stottemeny/RSS/Lovbeslutninger/",
-   "nb_trouves": 61,
+   "nb_trouves": 58,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 0,
    "acces": "ok",
@@ -2987,11 +2987,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.digi.no/",
    "mode": "rss",
    "flux": "https://www.digi.no/?lab_viewport=rss",
-   "nb_trouves": 254,
+   "nb_trouves": 265,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 34,
+   "nb_retenus": 53,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
@@ -3004,7 +3004,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Lægemiddelstyrelsen (médicaments et dispositifs médicaux)",
@@ -3014,9 +3014,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://laegemiddelstyrelsen.dk/da/Feeds/rss-feed",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 11,
+   "nb_retenus": 15,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3029,7 +3029,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Høringsportalen — consultations (numérique, justice, santé)",
@@ -3039,9 +3039,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://hoeringsportalen.dk/syndication/HearingsByAuthorityFeed?authorityId=709 ; https://hoeringsportalen.dk/syndication/HearingsByAuthorityFeed?authorityId=607 ; https://hoeringsportalen.dk/syndication/HearingsByAuthorityFeed?authorityId=1725 ; https://hoeringsportalen.dk/syndication/HearingsByAuthorityFeed?authorityId=1727 ; https://hoeringsportalen.dk/syndication/HearingsByAuthorityFeed?authorityId=1768",
    "nb_trouves": 94,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 3,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3058,7 +3058,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "Indenrigs- og Sundhedsministeriet (ministère de la santé)",
@@ -3066,11 +3066,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.ism.dk/",
    "mode": "rss",
    "flux": "https://www.ism.dk/handlers/DynamicRss.ashx?id=ef93e4ce-ba0b-43e6-8f75-edab7d4faaea",
-   "nb_trouves": 50,
+   "nb_trouves": 1000,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 2,
+   "nb_retenus": 162,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3083,7 +3083,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-02"
   },
   {
    "nom": "Version2 (presse IT danoise)",
@@ -3093,9 +3093,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.version2.dk/rss",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 22,
+   "nb_retenus": 23,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
@@ -3108,7 +3108,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Fimea (médicaments et dispositifs médicaux)",
@@ -3118,9 +3118,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://fimea.fi/en/current-events/-/asset_publisher/6Fp1W0OnZUR7/rss",
    "nb_trouves": 50,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3133,7 +3133,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-05"
   },
   {
    "nom": "Tietosuojavaltuutettu (autorité de protection des données)",
@@ -3143,7 +3143,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://tietosuoja.fi/en/current-issues inaccessible : 403 Client Error: Forbidden for url: https://tietosuoja.fi/en/current-issues ; Page https://tietosuoja.fi/ inaccessible : 403 Client Error: Forbidden for url: https://tietosuoja.fi/",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Site gouvernemental officiel",
@@ -3155,7 +3155,7 @@ window.VEILLE_ETAT_SOURCES = {
     "https://tietosuoja.fi/en/current-issues"
    ],
    "flux_liste": [],
-   "echecs": 7,
+   "echecs": 8,
    "a_retirer": true,
    "dernier_article": "2026-08-26"
   },
@@ -3167,9 +3167,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://valtioneuvosto.fi/en/staattiset-feedit-en/-/asset_publisher/LOmkEPY4nk2s/rss",
    "nb_trouves": 100,
    "erreur": "Page https://valtioneuvosto.fi/paatokset/hallituksen-esitykset inaccessible : 403 Client Error: Forbidden for url: https://valtioneuvosto.fi/paatokset/hallituksen-esitykset",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 19,
+   "nb_retenus": 33,
    "acces": "partielle",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3184,7 +3184,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "STM (ministère des affaires sociales et de la santé)",
@@ -3194,7 +3194,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://stm.fi/tiedotteet-ja-uutiset inaccessible : 403 Client Error: Forbidden for url: https://stm.fi/tiedotteet-ja-uutiset ; Page https://stm.fi/ inaccessible : 403 Client Error: Forbidden for url: https://stm.fi/",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Site gouvernemental officiel",
@@ -3206,7 +3206,7 @@ window.VEILLE_ETAT_SOURCES = {
     "https://stm.fi/tiedotteet-ja-uutiset"
    ],
    "flux_liste": [],
-   "echecs": 7,
+   "echecs": 8,
    "a_retirer": true,
    "dernier_article": "2026-10-06"
   },
@@ -3218,9 +3218,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 8,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://pts.se/nyheter-och-pressmeddelanden/",
-   "nb_retenus": 1,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3233,7 +3233,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "IVO (inspection de la santé, supervision NIS2 secteur santé)",
@@ -3243,7 +3243,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://via.tt.se/rss/releases/latest?publisherId=3236124",
    "nb_trouves": 25,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3268,7 +3268,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://data.riksdagen.se/dokumentlista/?avd=dokument&doktyp=prop&sort=datum&sortorder=desc&utformat=rss",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 2,
    "acces": "ok",
@@ -3283,7 +3283,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-27"
+   "dernier_article": "2026-11-03"
   },
   {
    "nom": "Regeringen — consultations (remisser)",
@@ -3293,7 +3293,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 23,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.regeringen.se/remisser/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3316,11 +3316,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://computersweden.se/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 26,
+   "nb_trouves": 24,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://computersweden.se/regulation/",
-   "nb_retenus": 0,
+   "nb_retenus": 6,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
@@ -3333,7 +3333,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-09-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Plateforme eHealth (SPF Santé publique)",
@@ -3343,9 +3343,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.ehealth.fgov.be/ehealthplatform/fr/rss/news",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3368,7 +3368,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.digitaleoverheid.nl/feed/",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 4,
    "acces": "ok",
@@ -3383,7 +3383,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "RDI — Rijksinspectie Digitale Infrastructuur (autorité NIS2)",
@@ -3391,9 +3391,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.rdi.nl/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 17,
+   "nb_trouves": 18,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.rdi.nl/actueel",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3416,9 +3416,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.rijksoverheid.nl/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 8,
+   "nb_trouves": 9,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/cybercrime-en-cybersecurity",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3441,9 +3441,9 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.igj.nl/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 5,
+   "nb_trouves": 6,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.igj.nl/zorgsectoren/medische-technologie",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3468,9 +3468,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 21,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.ictrecht.nl/blog",
-   "nb_retenus": 3,
+   "nb_retenus": 2,
    "acces": "ok",
    "type": "Cabinet d'avocats",
    "nature": "cabinet",
@@ -3483,7 +3483,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "DSB (Datenschutzbehörde)",
@@ -3493,9 +3493,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://dsb.gv.at/aktuelles/",
-   "nb_retenus": 0,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3508,7 +3508,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-15"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "BASG — sécurité des dispositifs médicaux",
@@ -3518,7 +3518,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 54,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://basg.gv.at/medizinprodukte/amtliche-nachrichten/sicherheitsinformationen",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3543,7 +3543,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 24,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.rtr.at/rtr/service/ki-servicestelle/ki-servicestelle.de.html",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3568,7 +3568,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 4,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.usp.gv.at/aktuelles/newsliste/NIS-2.html",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3593,7 +3593,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.netzwoche.ch/taxonomy/term/31/feed",
    "nb_trouves": 20,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 20,
    "acces": "ok",
@@ -3608,7 +3608,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "admin.ch — communiqués du Conseil fédéral et de l'administration",
@@ -3618,7 +3618,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://www.admin.ch/de/newnsb inaccessible : 403 Client Error: Forbidden for url: https://www.admin.ch/de/newnsb ; Page https://www.admin.ch/ inaccessible : 403 Client Error: Forbidden for url: https://www.admin.ch/",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Site gouvernemental officiel",
@@ -3630,7 +3630,7 @@ window.VEILLE_ETAT_SOURCES = {
     "https://www.admin.ch/de/newnsb"
    ],
    "flux_liste": [],
-   "echecs": 12,
+   "echecs": 13,
    "a_retirer": true,
    "dernier_article": ""
   },
@@ -3642,9 +3642,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 26,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/overview-medical-devices.html",
-   "nb_retenus": 1,
+   "nb_retenus": 0,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3657,7 +3657,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-10"
   },
   {
    "nom": "datenrecht.ch (Walder Wyss)",
@@ -3667,7 +3667,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://datenrecht.ch/en/updates/ inaccessible : 403 Client Error: Forbidden for url: https://datenrecht.ch/en/updates/ ; Page https://datenrecht.ch/ inaccessible : 403 Client Error: Forbidden for url: https://datenrecht.ch/",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Cabinet d'avocats",
@@ -3679,7 +3679,7 @@ window.VEILLE_ETAT_SOURCES = {
     "https://datenrecht.ch/en/updates/"
    ],
    "flux_liste": [],
-   "echecs": 5,
+   "echecs": 6,
    "a_retirer": true,
    "dernier_article": "2026-09-08"
   },
@@ -3691,9 +3691,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://sukl.gov.cz/feed/",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 9,
+   "nb_retenus": 8,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3706,7 +3706,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-07"
   },
   {
    "nom": "Vláda ČR — centre de presse du gouvernement",
@@ -3714,11 +3714,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://vlada.gov.cz/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 14,
+   "nb_trouves": 16,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://vlada.gov.cz/cz/media-centrum/",
-   "nb_retenus": 6,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Site gouvernemental officiel",
    "nature": "officielle",
@@ -3731,7 +3731,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-02"
   },
   {
    "nom": "Lupa.cz — actualités",
@@ -3741,9 +3741,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.lupa.cz/rss/aktuality/",
    "nb_trouves": 25,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 22,
+   "nb_retenus": 25,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
@@ -3756,7 +3756,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-08"
   },
   {
    "nom": "NAIH (autorité de protection des données)",
@@ -3766,7 +3766,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.naih.hu/hirek",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3791,7 +3791,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 23,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.hwsw.hu/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3816,9 +3816,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.federprivacy.org/strumenti/feed/tutte-le-notizie-dal-sito-di-federprivacy",
    "nb_trouves": 30,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 8,
+   "nb_retenus": 15,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
@@ -3831,7 +3831,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-29"
+   "dernier_article": "2026-11-08"
   },
   {
    "nom": "Dipartimento per la trasformazione digitale",
@@ -3841,7 +3841,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 21,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://innovazione.gov.it/notizie/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3866,7 +3866,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://www.agenas.gov.it/aree-tematiche/comunicazione/comunicati-stampa (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.agenas.gov.it/aree-tematiche/comunicazione/comunicati-stampa",
    "nb_retenus": 0,
    "acces": "partielle",
@@ -3891,7 +3891,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://www.parlamento.pt/Paginas/UltimasIniciativasEntradas.aspx (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.parlamento.pt/Paginas/UltimasIniciativasEntradas.aspx",
    "nb_retenus": 0,
    "acces": "partielle",
@@ -3916,7 +3916,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://healthnews.pt/feed/",
    "nb_trouves": 10,
    "erreur": "Page https://healthnews.pt/ inaccessible : 403 Client Error: Forbidden for url: https://healthnews.pt/",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
    "nb_retenus": 10,
    "acces": "partielle",
@@ -3933,7 +3933,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "EOF — dispositifs médicaux",
@@ -3943,7 +3943,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.eof.gr/category/iatrotexnologika/feed/",
    "nb_trouves": 37,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.eof.gr/category/iatrotexnologika/",
    "nb_retenus": 0,
    "acces": "ok",
@@ -3968,11 +3968,11 @@ window.VEILLE_ETAT_SOURCES = {
    "url": "https://www.lawspot.gr/",
    "mode": "page",
    "flux": "",
-   "nb_trouves": 9,
+   "nb_trouves": 12,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://www.lawspot.gr/katigories-eidiseon/nomothesia/",
-   "nb_retenus": 1,
+   "nb_retenus": 4,
    "acces": "ok",
    "type": "Presse spécialisée",
    "nature": "presse",
@@ -3985,7 +3985,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux_liste": [],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-27"
+   "dernier_article": "2026-11-09"
   },
   {
    "nom": "Inside Privacy (blog Covington & Burling – données et cybersécurité)",
@@ -3995,9 +3995,9 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "https://www.insideprivacy.com/feed",
    "nb_trouves": 10,
    "erreur": "",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "",
-   "nb_retenus": 10,
+   "nb_retenus": 1,
    "acces": "ok",
    "type": "Avis d'experts (non certifié)",
    "nature": "opinion",
@@ -4010,7 +4010,7 @@ window.VEILLE_ETAT_SOURCES = {
    ],
    "echecs": 0,
    "a_retirer": false,
-   "dernier_article": "2026-10-30"
+   "dernier_article": "2026-11-04"
   },
   {
    "nom": "Orgalim (industries technologiques européennes) – positions",
@@ -4020,7 +4020,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Aucun lien d'article détecté sur https://orgalim.eu/en/resources/ (page probablement chargée en JavaScript) ; Aucun lien d'article détecté sur https://orgalim.eu/news/ (page probablement chargée en JavaScript)",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "page": "https://orgalim.eu/en/resources/ ; https://orgalim.eu/news/",
    "nb_retenus": 0,
    "acces": "partielle",
@@ -4046,7 +4046,7 @@ window.VEILLE_ETAT_SOURCES = {
    "flux": "",
    "nb_trouves": 0,
    "erreur": "Page https://ecs-org.eu/news/ecso_publications/policy-analysis inaccessible : 403 Client Error: Forbidden for url: https://ecs-org.eu/news/ecso_publications/policy-analysis ; Page https://ecs-org.eu/ inaccessible : 403 Client Error: Forbidden for url: https://ecs-org.eu/",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "nb_retenus": 0,
    "acces": "ko",
    "type": "Avis d'experts (non certifié)",
@@ -4058,8 +4058,8 @@ window.VEILLE_ETAT_SOURCES = {
     "https://ecs-org.eu/news/ecso_publications/policy-analysis"
    ],
    "flux_liste": [],
-   "echecs": 1,
-   "a_retirer": false,
+   "echecs": 2,
+   "a_retirer": true,
    "dernier_article": ""
   },
   {
@@ -4474,14 +4474,22 @@ window.VEILLE_ETAT_SOURCES = {
    "acces": "partielle",
    "flux": "",
    "page": "",
-   "nb_trouves": 311,
-   "nb_retenus": 1,
+   "nb_trouves": 365,
+   "nb_retenus": 28,
    "erreur": "fichier Word illisible : Package not found at '/home/runner/work/CyberwatchV2/CyberwatchV2/rkc/Veille 1005.docx'",
    "type": "Veille interne",
    "nature": "rkc",
-   "verifie_le": "2026-10-30 17:05",
+   "verifie_le": "2026-11-09 10:00",
    "origine": "rkc",
    "veilles": [
+    {
+     "date": "2026-11-09",
+     "articles": 27
+    },
+    {
+     "date": "2026-11-09",
+     "articles": 27
+    },
     {
      "date": "2026-10-19",
      "articles": 20

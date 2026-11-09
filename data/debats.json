@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-10-30T17:05+00:00",
+ "mise_a_jour": "2026-11-09T10:00+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -7167,6 +7167,63 @@
    ],
    "acronymes": [
     "CADA"
+   ]
+  },
+  {
+   "id": "001bca83c3a9",
+   "titre": "EU governments call it ‘simplification,’ but their Data Omnibus deal considerably weakens our rights",
+   "lien": "https://edri.org/our-work/eu-governments-call-it-simplification-but-their-data-omnibus-deal-considerably-weakens-our-rights/",
+   "resume": "EU governments have agreed on their position on the Digital Omnibus, retaining changes that threaten fundamental rights to privacy and data protection. With negotiations moving to the European Parliament, MEPs must reject the proposed weakening of GDPR safeguards for AI and pseudonymised data, protect individual rights, and defend ePrivacy against new tracking exemptions. Genuine simplification should make our…",
+   "date": "2026-11-04",
+   "date_estimee": false,
+   "detecte_le": "2026-11-09",
+   "version": "2026-11-09-1000",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.592,
+   "score_bruit": 0.336,
+   "score": 0.672,
+   "themes": [
+    "donnees",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Les gouvernements UE l'appellent «simplification», mais leur accord sur l'omnibus de données affaiblit considérablement nos droits",
+     "resume": "Les gouvernements UE se sont mis d'accord sur leur position sur l'omnibus numérique, en maintenant des changements qui menacent les droits fondamentaux à la vie privée et à la protection des données. Avec le passage des négociations au Parlement européen, les députés doivent rejeter l'affaiblissement proposé des garanties RGPD pour IA et les données pseudonymes, protéger les droits individuels et défendre la vie privée contre les nouvelles exemptions de suivi. Une véritable simplification devrait..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "acronymes": [
+    "GDPR",
+    "Digital Omnibus"
    ]
   }
  ]

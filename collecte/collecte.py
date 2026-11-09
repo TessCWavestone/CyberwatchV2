@@ -55,6 +55,7 @@ import sens as sens_mod  # noqa: E402
 import tri_ia  # noqa: E402
 import alertes  # noqa: E402
 import pressentis  # noqa: E402
+import resumes  # noqa: E402
 import regles  # noqa: E402
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1262,6 +1263,15 @@ def main():
     meta["sous_titre_en"] = cfg.get("sous_titre_en", "")
     meta["surtitre_en"] = cfg.get("surtitre_en", "")
 
+    # v11 — Résumés et citations pour les slides (IA open source), enregistrés CHIFFRÉS (data/resumes.enc.js) :
+    # jamais affichés sur le site, lisibles seulement avec le mot de passe saisi au moment de générer les slides
+    t_res = time.time()
+    try:
+        n_res, msg_res = resumes.mettre_a_jour(liste, ia, trad, client, cfg, AUJOURDHUI, id_version, DATA)
+        print("Résumés pour les slides : %d nouveaux (%d s)%s" % (n_res, time.time() - t_res, (" — " + msg_res) if msg_res else ""))
+    except Exception as e:   # un incident sur les résumés ne doit jamais bloquer la collecte
+        print("Résumés pour les slides : non faits (%s)" % str(e)[:200])
+
     # Dates clés (échéances) : seulement près d'un mot d'obligation, jamais pour un événement
     for a in liste + debats_gardes:
         if a.get("nature") == "rkc":
@@ -1277,6 +1287,24 @@ def main():
         except ValueError:
             d_art = None
         a["echeances"] = echeances.extraire(textes, d_art, AUJOURDHUI)
+        # v11 : dates relevées dans la page (date + quelques mots), ajoutées si elles ne sont pas déjà là
+        lim_b, lim_h = (AUJOURDHUI - dt.timedelta(days=45)).isoformat(), (AUJOURDHUI + dt.timedelta(days=3 * 365)).isoformat()
+        vues = {e["date"] for e in a["echeances"]}
+        for e in a.get("echeances_page") or []:
+            if e["date"] in vues or not (lim_b <= e["date"] <= lim_h):
+                continue
+            ex = dict(e.get("extrait") or {})
+            if "xx" in ex:
+                ex[a.get("langue") or "fr"] = ex.pop("xx")
+            lg = a.get("langue") or "fr"
+            if "en" not in ex and lg != "en" and ex.get(lg) and trad.actif:
+                t_en = trad.traduire(ex[lg], lg, "en")
+                if t_en:
+                    ex["en"] = t_en
+            a["echeances"].append(dict(e, extrait=ex, page=True))
+            vues.add(e["date"])
+        a["echeances"].sort(key=lambda e: (e["date"] < AUJOURDHUI.isoformat(), e["date"]))
+        a["echeances"] = a["echeances"][:4]
     for a in liste + liste_debats + list(ecartes.values()):
         a.pop("_texte", None)   # le texte privé RKC n'est jamais écrit
 

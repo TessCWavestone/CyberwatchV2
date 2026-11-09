@@ -175,16 +175,22 @@ def _publication(texte, debut, fin):
 def _contexte_ok(texte, debut, fin):
     fen = _sans_accents(texte[max(0, debut - 110):fin + 60])
     proche = _sans_accents(texte[max(0, debut - 70):fin + 40])
-    if not OBLIGATION.search(fen) or EVENEMENT.search(fen):
+    # v11 : la phrase qui contient la date (une réunion citée dans la phrase suivante ne l'annule pas)
+    debut_p = max(texte.rfind(". ", 0, debut), texte.rfind("; ", 0, debut), texte.rfind("\n", 0, debut)) + 1
+    fins = [i for i in (texte.find(". ", fin), texte.find("; ", fin), texte.find("\n", fin)) if i >= 0]
+    phrase = _sans_accents(texte[debut_p:min(fins) if fins else len(texte)])
+    if not OBLIGATION.search(fen) or EVENEMENT.search(phrase):
         return False
-    if FORT.search(proche):
+    if FORT.search(phrase):
         return True
+    if EVENEMENT.search(fen):
+        return False
     # D3 : pas de date de consultation, d'étape de procédure, de décision, de publication ou de réunion ; dans un
     # article sur une consultation, seule une date d'obligation (entrée en vigueur, application…) est gardée
     return not NON_REGLEMENTAIRE.search(proche) and not TITRE_CONSULTATION.search(_sans_accents(texte[:160]))
 
 
-def extraire(textes_par_langue, date_article, aujourdhui, passe=45, futur_ans=3, maxi=3):
+def extraire(textes_par_langue, date_article, aujourdhui, passe=45, futur_ans=3, maxi=3, largeur=90):
     """textes_par_langue : {"fr": "…", "en": "…", "de": "…"}. Retourne une liste
     [{"date": "AAAA-MM-JJ", "approx": bool, "extrait": {langue: texte}}]."""
     mini = aujourdhui - dt.timedelta(days=passe)
@@ -208,7 +214,7 @@ def extraire(textes_par_langue, date_article, aujourdhui, passe=45, futur_ans=3,
             elif not pub:
                 e.pop("publication", None)
             e["approx"] = e["approx"] and approx
-            e["extrait"].setdefault(langue, _extrait(texte, deb, fin))
+            e["extrait"].setdefault(langue, _extrait(texte, deb, fin, largeur))
     # les plus proches d'abord (échéances à venir avant les dates passées)
     liste = sorted(trouvees.values(), key=lambda e: (e["date"] < aujourdhui.isoformat(), e["date"]))
     return liste[:maxi]

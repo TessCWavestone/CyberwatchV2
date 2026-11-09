@@ -237,6 +237,23 @@ class Traducteur:
             self.cache["x" + cle] = ECHEC   # rien à traduire (nom propre, texte déjà dans la langue cible)
         return sortie
 
+    def traduire_citation(self, texte, de):
+        """v11 : traduit une citation vers l'anglais et dit quel outil l'a fait (affiché dans les slides).
+        Retourne (traduction, nom de l'outil) ou (None, "")."""
+        if not texte or not self.moteur or de == "en":
+            return None, ""
+        try:
+            protege, trouves = self._proteger(texte)
+            sortie = self._restaurer(self._brut(protege, de, "en"), trouves, de, "en")
+            if sortie and not degeneree(texte, sortie) and sortie != texte:
+                return sortie, "Argos Translate (open-source model %s-en)" % de
+        except Exception:
+            pass
+        r = self._marian(texte, de, "en")
+        if r and not degeneree(texte, r):
+            return r, "Opus-MT (open-source model Helsinki-NLP/opus-mt-%s-en)" % {"nb": "no"}.get(de, de)
+        return None, ""
+
     def traduire_article(self, a):
         # traductions dégénérées enregistrées par une version précédente : on les refait
         for c, tr in list((a.get("trad") or {}).items()):

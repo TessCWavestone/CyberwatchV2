@@ -73,6 +73,23 @@ def extrait(texte, titre=""):
     return coupe + "…"
 
 
+def dates_page(a, texte, aujourdhui):
+    """v11 (décision du 09/11) : dates réglementaires relevées dans la page elle-même (entrée en vigueur,
+    application, enregistrement…), mêmes filtres que pour le titre. On ne garde que la date et quelques mots
+    autour (50 caractères de chaque côté), jamais le texte de l'article."""
+    import datetime as _dt
+    import echeances
+    try:
+        d_art = _dt.date.fromisoformat(a.get("date", "")[:10])
+    except ValueError:
+        d_art = None
+    trouvees = echeances.extraire({a.get("langue") or "xx": texte[:6000]}, d_art, aujourdhui, maxi=3, largeur=50)
+    if trouvees:
+        a["echeances_page"] = trouvees
+    else:
+        a.pop("echeances_page", None)
+
+
 VERSION_INDICES = 2   # v8 : « adopté » reconnu seulement comme mot entier
 
 
@@ -108,6 +125,7 @@ def lire_pages(articles, client, aujourdhui, max_pages=400, paralleles=8, fin=No
             if texte and not err:
                 a["_texte"] = texte
                 a["indices_page"] = regles.indices_page(texte)
+                dates_page(a, texte, aujourdhui)
                 ok += 1
     return tentees, ok
 

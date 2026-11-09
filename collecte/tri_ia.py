@@ -288,6 +288,23 @@ MODELES = {
 }
 
 
+# v11 — résumé et citations pour les slides (décision du 09/11). L'IA ne connaît pas le nom de l'entreprise ici.
+CONSIGNE_RESUME = """You summarise a news article or official page for an internal regulatory watch on cybersecurity, data
+protection and AI regulation. Use ONLY information stated in the text: never add facts, dates, names or numbers.
+
+Answer in JSON with:
+- "resume": 2 or 3 short factual sentences IN ENGLISH saying what happened (which text or rule, who issued it, what
+  changes, who is concerned, key dates if stated). No opinion, no advice.
+- "citations": 1 or 2 short passages (one sentence each, at most 40 words) COPIED EXACTLY, character for character, from
+  the text in its ORIGINAL language, that best support the summary (the rule, the obligation or the date). Do not
+  translate them, do not shorten them, do not change any word. If no passage fits, return an empty list."""
+
+SCHEMA_RESUME = {"type": "object", "properties": {
+    "resume": {"type": "string", "maxLength": 700},
+    "citations": {"type": "array", "maxItems": 2, "items": {"type": "string", "maxLength": 400}}},
+    "required": ["resume", "citations"]}
+
+
 class TriIA:
     def __init__(self, cfg):
         c = dict({"actif": True, "modele": "qwen7b", "contexte": 4096, "caracteres_page": 2000,
@@ -340,6 +357,16 @@ class TriIA:
             raise ValueError("réponse hors format")
         d["avis"], d["motif"] = decider(d, a.get("textes_cles"), titres(a))
         return d
+
+    def resumer(self, a, texte):
+        """Résumé anglais + citations (non vérifiées ici : voir collecte/resumes.py)."""
+        msg = "Title: %s\nSource: %s (%s), %s\n\nText:\n%s" % (a.get("titre", ""), a.get("source", ""), a.get("zone", ""),
+                                                             a.get("date", ""), texte[:self.cfg.get("caracteres_resume", 3500)])
+        r = self.llm.create_chat_completion(
+            messages=[{"role": "system", "content": CONSIGNE_RESUME}, {"role": "user", "content": msg}],
+            temperature=0, max_tokens=420, response_format={"type": "json_object", "schema": SCHEMA_RESUME})
+        d = json.loads(r["choices"][0]["message"]["content"])
+        return (d.get("resume") or "").strip(), [c.strip() for c in (d.get("citations") or []) if c and c.strip()][:2]
 
     def trier(self, articles, garder_raison=False):
         """Juge les articles donnés (dans l'ordre) qui ne l'ont pas encore été, dans le temps imparti.

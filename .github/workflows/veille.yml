@@ -69,6 +69,18 @@ jobs:
             echo "lancer=false" >> "$GITHUB_OUTPUT"
           fi
 
+      # Le serveur gratuit de GitHub est livré avec des outils dont la collecte n'a pas besoin (Android, .NET,
+      # Haskell, CodeQL…) ; la collecte installe l'IA de tri (~5 Go) et d'autres modèles : sans ce ménage, le disque
+      # peut être plein (collecte du 02/11/2026 : « No space left on device »). Environ 20 Go libérés.
+      - name: Libérer de l'espace disque
+        if: steps.garde.outputs.lancer == 'true'
+        run: |
+          echo "Espace disque avant :"; df -h /
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL \
+                      /usr/local/share/boost /usr/share/swift /usr/local/share/powershell /usr/local/share/chromium || true
+          sudo docker image prune --all --force > /dev/null 2>&1 || true
+          echo "Espace disque après :"; df -h /
+
       # Veille RKC : fichiers (mails .eml/.msg, Word) déposés dans un dépôt PRIVÉ.
       # Facultatif : variable RKC_DEPOT (ex. mon-compte/cyberwatch-rkc) + secret RKC_TOKEN.
       # Le dossier rkc/ n'est jamais publié ni enregistré dans ce dépôt public.
@@ -86,10 +98,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
 
+      # PIP_NO_CACHE_DIR : pip ne garde pas de copie des paquets téléchargés (plusieurs Go économisés)
       - name: Installer les dépendances
         if: steps.garde.outputs.lancer == 'true'
+        env:
+          PIP_NO_CACHE_DIR: "1"
         run: |
           pip install -r requirements.txt
           # police libre DejaVu pour l'export PDF (accents, polonais, tchèque, grec…)
@@ -101,6 +115,8 @@ jobs:
       - name: Installer les modèles open source (traduction, pertinence)
         if: steps.garde.outputs.lancer == 'true'
         continue-on-error: true
+        env:
+          PIP_NO_CACHE_DIR: "1"
         run: |
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-traduction.txt
@@ -111,6 +127,8 @@ jobs:
       - name: Installer l'IA de tri (open source, gratuite)
         if: steps.garde.outputs.lancer == 'true'
         continue-on-error: true
+        env:
+          PIP_NO_CACHE_DIR: "1"
         run: pip install -r requirements-ia.txt --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
 
       - name: Garder en cache les modèles (téléchargés une seule fois)
@@ -129,9 +147,15 @@ jobs:
         env:
           # nom de l'entreprise suivie, donné seulement à l'IA de tri (secret : jamais dans le dépôt ni sur le site)
           VEILLE_ENTREPRISE: ${{ secrets.VEILLE_ENTREPRISE }}
+          # v11 : mot de passe qui chiffre les résumés des slides (secret : jamais dans le dépôt ni sur le site)
+          SLIDES_MOT_DE_PASSE: ${{ secrets.SLIDES_MOT_DE_PASSE }}
           RATTRAPAGE_DEPUIS: ${{ github.event.inputs.rattrapage_depuis }}
           RETEST_INACTIVES: ${{ github.event.inputs.retester_inactives }}
           # Journal officiel français : données ouvertes de la DILA, aucun identifiant nécessaire.
+
+      - name: Espace disque restant (contrôle)
+        if: always() && steps.garde.outputs.lancer == 'true'
+        run: df -h / && du -sh ~/.cache/huggingface ~/.local/share/argos-translate 2>/dev/null || true
 
       - name: Enregistrer les données et marquer la version
         if: steps.garde.outputs.lancer == 'true'
@@ -157,6 +181,9 @@ jobs:
         run: |
           mkdir -p _site/data
           cp index.html style.css script.js _site/
+          # v10/v11 : bouton « Support de slides » (générateur, bibliothèque PptxGenJS, images du modèle)
+          cp slides.js _site/ 2>/dev/null || true
+          cp -r vendor assets _site/ 2>/dev/null || true
           cp data/*.js _site/data/
           cp data/*.pdf _site/data/ 2>/dev/null || true
           cp data/*.xml _site/data/ 2>/dev/null || true   # flux RSS des points clés

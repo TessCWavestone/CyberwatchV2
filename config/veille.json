@@ -369,5 +369,7 @@
     "caracteres_page": 2000,
     "budget_minutes": 150,
     "max_articles": 600
-  }
+  },
+  "_aide_v11": "ia_resume : résumés (anglais) et citations vérifiées pour les slides, écrits par la même IA open source, pour les articles très pertinents et pertinents des 60 derniers jours (nouveaux d'abord). Enregistrés CHIFFRÉS avec le secret GitHub SLIDES_MOT_DE_PASSE (sans ce secret : aucun résumé). budget_minutes / max_articles : limites par collecte (le reste à la suivante). actif : false pour arrêter.",
+  "ia_resume": {"actif": true, "budget_minutes": 30, "max_articles": 60, "jours": 60}
 }

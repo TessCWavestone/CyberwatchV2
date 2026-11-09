@@ -6,7 +6,7 @@ l'entreprise dans un de ses pays (ou au niveau européen). Plusieurs articles su
 le même fait (même texte, même pays, même étape) forment UNE alerte.
 
 Types (ordre de priorité affiché sur le site) :
-  1. echeance     échéance d'un texte dans les 30 jours (date d'obligation, jamais un événement)
+  1. echeance     échéance annoncée par un article (date d'obligation à venir, jamais un événement)
   2. adopte       nouveau texte adopté, publié ou entrant en vigueur
   2. signale      jugé « important » par un lecteur
   3. proposition  proposition, projet de loi, consultation ou lignes directrices officielles
@@ -14,7 +14,8 @@ Types (ordre de priorité affiché sur le site) :
                   des signaux forts : à qualifier par un humain
 Une alerte reste affichée 4 semaines après sa PREMIÈRE détection (un nouvel article sur le même
 fait ne la prolonge pas ; une nouvelle étape — adopté, entrée en vigueur… — crée une nouvelle alerte).
-Une échéance est affichée pendant les 30 jours qui la précèdent. Ensuite :
+Depuis le 09/11/2026, une échéance annoncée suit la même règle (4 semaines après sa détection), puis sa date reste
+dans les dates clés. Ensuite :
 puis passe dans « Points clés précédents ». Le registre (data/alertes.json) garde la
 date de première détection : « Nouveau » sur le site = détecté depuis la dernière visite.
 """
@@ -30,7 +31,7 @@ import sujets
 import tri_ia
 
 DUREE_ACTIVE = 28           # jours d'affichage après la première détection (4 collectes)
-HORIZON_ECHEANCE = 30       # une échéance devient une alerte 30 jours avant sa date
+HORIZON_ECHEANCE = 30       # (plus utilisé depuis le 09/11/2026 : échéances affichées 4 semaines après leur détection)
 GARDE_ARCHIVES = 730        # « Points clés précédents » : 2 ans
 
 TYPE_STATUT = {"adopte": "adopte", "en_vigueur": "adopte", "projet": "proposition",
@@ -77,9 +78,9 @@ ZONES_EN = {"Europe": "Europe (EU)", "Union européenne": "European Union", "All
             "Irlande": "Ireland", "Luxembourg": "Luxembourg", "Worldwide": "Worldwide", "Monde": "Worldwide"}
 
 LIB_TYPE = {
-    "fr": {"echeance": "Échéance", "adopte": "Nouveau texte adopté", "signale": "Signalé par un lecteur",
+    "fr": {"echeance": "Échéance annoncée", "adopte": "Nouveau texte adopté", "signale": "Signalé par un lecteur",
            "proposition": "Projet de texte en cours", "a_qualifier": "Nouveau texte détecté — à qualifier"},
-    "en": {"echeance": "Deadline", "adopte": "New text adopted", "signale": "Flagged by a reader",
+    "en": {"echeance": "Announced deadline", "adopte": "New text adopted", "signale": "Flagged by a reader",
            "proposition": "Draft text in progress", "a_qualifier": "New text detected — to be assessed"},
 }
 
@@ -348,28 +349,20 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecarte
             if all(x["id"] != a["id"] for x in g["articles"]):
                 g["articles"].append(a)
 
-    # Échéances : dates d'obligation proches, tirées des textes applicables et des articles importants.
-    # Une même date dans un même pays = une seule alerte (le texte applicable en priorité).
-    lim_haut = aujourdhui + dt.timedelta(days=HORIZON_ECHEANCE)
+    # Échéances annoncées (décision du 09/11/2026) : un article important qui annonce une date limite à venir
+    # devient un point clé DÈS SA DÉTECTION, pendant 4 semaines comme un nouveau texte ; ensuite la date reste
+    # seulement dans les dates clés. Les dates de la liste « Textes applicables » ne font plus de point clé.
+    # Une même date dans un même pays = une seule alerte.
     lim_bas = max(aujourdhui - dt.timedelta(days=GARDE_ARCHIVES), plancher or dt.date.min)
     par_jour = {}
-    for r in (referentiel or {}).get("textes", []):
-        d = _date(r.get("applicable_depuis"))
-        if not d or d > lim_haut or d < lim_bas:
-            continue
-        cle = "ref|%s|%s|%s" % (r.get("acronyme") or r.get("nom"), r.get("zone", ""), d.isoformat())
-        par_jour.setdefault((r.get("zone", ""), d.isoformat()), cle)
-        ajouter(cle, "echeance", None, {"texte": r.get("acronyme") or "", "echeance": d.isoformat(), "zone": r.get("zone", ""),
-                                        "ref": {"nom": r.get("nom_fr") or r.get("nom", ""), "nom_en": r.get("nom_en", ""),
-                                                "lien": r.get("lien", ""), "autorite": r.get("autorite", ""),
-                                                "resume_fr": r.get("resume_fr", ""), "resume_en": r.get("resume_en", "")}})
     for a in liste:
         if a.get("doublon_de") or not (a.get("essentiel") or a.get("base")) or a.get("pertinence") not in ("elevee", "moyenne"):
             continue
+        d_art = _date(a.get("date")) or aujourdhui
         for e in a.get("echeances") or []:
             d = _date(e.get("date"))
-            if not d or e.get("approx") or e.get("publication") or d > lim_haut or d < lim_bas:
-                continue
+            if not d or e.get("approx") or e.get("publication") or d < d_art or d < lim_bas:
+                continue   # date passée au moment de l'article : rien à annoncer
             texte = (a.get("textes_cles") or a.get("tags") or [""])[0]
             cle = par_jour.get((a.get("zone", ""), d.isoformat()))
             if not cle:
@@ -393,9 +386,7 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecarte
         if prec:
             detecte = min(detecte, prec.get("detecte_le") or detecte)
             version = prec.get("version") or version
-        if g["type"] == "echeance":
-            fin = ex["echeance"]
-        else:
+        if True:   # 09/11/2026 : même durée pour tous les types, échéances comprises (4 semaines après la détection)
             # départ = première détection, sauf information ancienne retrouvée tard (rattrapage d'archives) :
             # on part alors de sa publication (+ 14 jours de marge pour les sources lentes)
             premiere_pub = _date(min([a.get("date", "") for a in arts if a.get("date")] or [detecte]))
@@ -464,6 +455,8 @@ def construire(liste, ancien, referentiel, aujourdhui, plancher=None, ids_ecarte
             continue
         if any(ar["id"] in ids_liste for ar in x.get("articles", [])):
             continue   # l'article est toujours là mais n'est plus une alerte (avis d'un lecteur, règles) : retirée
+        if x.get("ref") or (x.get("type") == "echeance" and not x.get("articles")):
+            continue   # 09/11/2026 : les dates des « Textes applicables » ne font plus de point clé
         if (_date(x.get("fin")) or aujourdhui) >= aujourdhui - dt.timedelta(days=GARDE_ARCHIVES):
             alertes.append(x)
 

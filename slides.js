@@ -133,16 +133,55 @@
       s.addShape(S.roundRect, { x: x, y: y, w: w, h: 0.3, rectRadius: 0.15, fill: { color: r.fill }, line: { color: r.fill } });
       s.addText(r.label, { x: x, y: y, w: w, h: 0.3, fontFace: F, fontSize: 11, bold: true, color: r.txt, align: 'center', valign: 'middle', margin: 0 });
     }
-    function bandeauVerifier(s, y) {
-      s.addShape(S.rect, { x: 0.5, y: y, w: 12.33, h: 0.42, fill: { color: C.amberSoft }, line: { color: C.amber, width: 1 } });
-      s.addShape(S.rect, { x: 0.5, y: y, w: 0.12, h: 0.42, fill: { color: C.amber }, line: { color: C.amber } });
-      s.addText([{ text: 'To verify: ', options: { bold: true } },
-                 { text: 'information and relevance were selected automatically. Check the source articles before reuse.' }],
-        { x: 0.75, y: y, w: 12, h: 0.42, fontFace: F, fontSize: 12, color: C.ink, valign: 'middle', margin: 0 });
+    // bandeaux d'avertissement : « To verify » (pertinence incertaine) et/ou contenu écrit par l'IA (décision du 09/11)
+    function bandeaux(s, y, verifier, ia) {
+      var runs = [];
+      if (verifier) runs.push({ text: 'To verify: ', options: { bold: true } },
+        { text: 'information and relevance were selected automatically. Check the source articles before reuse.', options: { breakLine: ia } });
+      if (ia) runs.push({ text: 'AI-generated content: ', options: { bold: true } },
+        { text: 'relevance of this slide to be decided. Summaries and quotes were written by an open-source AI (' + nomModele(ia) + '); please check that the information is accurate against the sources. AI can make mistakes.' });
+      var h = (verifier && ia) ? 0.78 : (ia ? 0.6 : 0.42);
+      s.addShape(S.rect, { x: 0.5, y: y, w: 12.33, h: h, fill: { color: C.amberSoft }, line: { color: C.amber, width: 1 } });
+      s.addShape(S.rect, { x: 0.5, y: y, w: 0.12, h: h, fill: { color: C.amber }, line: { color: C.amber } });
+      s.addText(runs, { x: 0.75, y: y, w: 12, h: h, fontFace: F, fontSize: 12, color: C.ink, valign: 'middle', margin: 0, fit: 'shrink' });
+      return h + 0.15;
+    }
+    function nomModele(f) { return /qwen2\.5-7b/i.test(f || '') ? 'Qwen2.5-7B-Instruct' : (f || 'open-source model').replace(/\.gguf$/i, '').replace(/-Q\d.*$/i, ''); }
+    // ce que la slide dit d'un article : résumé IA + citations vérifiées, mention RKC, ou résumé de la source / titre
+    function faitsArticle(a, premier) {
+      var R = (D.resumes || {})[a.id];
+      if (a.nature === 'rkc') {
+        return [[{ text: titreEn(a) + ' — ', options: {} },
+                 { text: 'Paid article provided by the RKC watch (source: ' + (a.publication || 'not stated') + '). It cannot be quoted or summarised in this slide.', options: { italic: true, color: C.sub } }]];
+      }
+      if (R && R.r) {
+        var l = [premier ? [{ text: R.r, options: {} }] : [{ text: (a.source || '') + ', ' + dateCourte(a.date) + ': ', options: { bold: true } }, { text: R.r, options: {} }]];
+        (R.c || []).forEach(function (q) {
+          var p = [{ text: '“' + q.t + '”', options: { italic: true } }];
+          if (q.tr) p.push({ text: ' (translated into English by ' + q.m + ': “' + q.tr + '”)', options: { color: C.sub } });
+          l.push(p);
+        });
+        l.ia = R.mod || 'qwen2.5-7b';
+        return l;
+      }
+      var res = premier ? couper(resumeEn(a), 320) : '';
+      return [[{ text: res || titreEn(a), options: {} }]];
+    }
+    function paragraphes(items) {
+      var runs = [];
+      items.forEach(function (it, i) {
+        it.forEach(function (r, j) {
+          var o = Object.assign({}, r.options);
+          o.bullet = true;   // sur chaque morceau du paragraphe (sinon la puce peut disparaître)
+          if (j === it.length - 1 && i < items.length - 1) o.breakLine = true;
+          runs.push({ text: couper(r.text, 700), options: o });
+        });
+      });
+      return runs;
     }
     function lignesSources(arts) {
       return arts.map(function (a) {
-        var t = couper(titreEn(a), 150) + ' – ' + (a.source || '') + ', ' + dateCourte(a.date);
+        var t = couper(titreEn(a), 150) + ' – ' + (a.nature === 'rkc' ? 'RKC watch, paid article (' + (a.publication || 'source not stated') + ')' : (a.source || '')) + ', ' + dateCourte(a.date);
         return { text: t, options: a.lien ? { hyperlink: { url: a.lien }, color: C.violet, breakLine: true } : { color: C.ink, breakLine: true } };
       });
     }
@@ -217,37 +256,61 @@
           { x: 0.5, y: 6.65, w: 12, h: 0.3, fontFace: F, fontSize: 12, color: C.sub, margin: 0 });
       });
 
-      /* 4. Une slide par sujet (+ slides « continued ») */
+      /* 4. Une slide par sujet (+ slides « continued ») ; les sujets presque vides vont dans « Other developments » */
+      var maigres = [];
       G.forEach(function (g) {
+        var a0 = g.articles[0];
+        if (g.articles.length === 1 && !g.dates.length && !(D.resumes || {})[a0.id] && resumeEn(a0).length < 80 && !g.acteurs.length) { maigres.push(g); return; }
         var kicker = [g.texteEn || 'Other subject', g.zoneEn, g.etapeEn].join('  |  ');
-        var lead = g.articles[0], resume = couper(resumeEn(lead), 320);
-        var faits = (resume ? [resume] : []).concat(g.articles.slice(resume ? 1 : 0).map(function (a) { return titreEn(a); }));
+        var faits = [], ia = '';
+        g.articles.forEach(function (a, i) {
+          var f = faitsArticle(a, i === 0);
+          if (f.ia) ia = ia || f.ia;
+          f.forEach(function (p) { p.ia = !!f.ia; faits.push(p); });
+        });
         var faits1 = faits.slice(0, 4), faitsSuite = faits.slice(4);
-        var sources1 = g.articles.slice(0, 3), sourcesSuite = g.articles.slice(3);
+        var nS = faits1.some(function (p) { return p.ia; }) ? 2 : 3;   // slide avec résumé IA : plus de place au texte
+        var sources1 = g.articles.slice(0, nS), sourcesSuite = g.articles.slice(nS);
         s = contenu();
         titre(s, g.titre, kicker);
         pastille(s, 11.38, 0.2, g.rel);
         var y = 1.55;
-        if (g.verifier) { bandeauVerifier(s, y); y += 0.6; }
-        var h = g.verifier ? 3.25 : 3.5;
-        blocGris(s, 0.5, y, 4.0, h, 'What happened', faits1.map(function (t, i) { return { text: couper(t, 330), options: { bullet: true, breakLine: i < faits1.length - 1 } }; }), 12);
+        var iaIci = faits1.some(function (p) { return p.ia; }) ? ia : '';
+        if (g.verifier || iaIci) y += bandeaux(s, y, g.verifier, iaIci);
+        var h = 6.75 - y - (0.45 + 0.3 * sources1.length);   // place laissée aux sources en bas
         var dates = g.dates.length ? g.dates.slice(0, 3).map(function (d, i, l) {
           return { text: (d.approx ? 'Around ' : '') + dateCourte(d.date) + (d.publication ? ' (publication of the text)' : '') + (d.texte ? ': ' + couper(d.texte, 70) : ''), options: { breakLine: i < l.length - 1 } };
         }) : 'No regulatory date stated in the sources';
-        blocGris(s, 4.67, y, 4.0, h * 0.5, 'Key dates', dates, 12);
-        blocGris(s, 4.67, y + h * 0.5 + 0.15, 4.0, h * 0.5 - 0.15, 'Who is concerned', g.acteurs.length ? g.acteurs.join(', ') : 'To complete', 12);
-        s.addShape(S.roundRect, { x: 8.83, y: y, w: 4.0, h: h, rectRadius: 0.06, fill: { color: C.white }, line: { color: C.violet, width: 1, dashType: 'dash' } });
-        s.addText('Impact for the company', { x: 9.03, y: y + 0.18, w: 3.6, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
-        s.addText('To complete', { x: 9.03, y: y + 0.5, w: 3.6, h: 0.9, fontFace: F, fontSize: 13, italic: true, color: C.sub, margin: 0, valign: 'top' });
-        s.addText('Recommended actions', { x: 9.03, y: y + h / 2 + 0.05, w: 3.6, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
-        s.addText('To complete', { x: 9.03, y: y + h / 2 + 0.37, w: 3.6, h: 0.9, fontFace: F, fontSize: 13, italic: true, color: C.sub, margin: 0, valign: 'top' });
-        sources(s, y + h + 0.25, sources1, 'Sources');
-        // « continued » : faits, dates et sources restants, jamais coupés
-        // slides « continued » : d'abord les faits et dates restants (avec 5 sources au plus), puis les sources seules
+        var qui = g.acteurs.length ? g.acteurs.join(', ') : 'To complete';
+        if (iaIci) {
+          // résumé + citations : bloc large à gauche ; dates, « qui est concerné » et analyse à droite
+          blocGris(s, 0.5, y, 8.17, h, 'What happened', paragraphes(faits1), 12);
+          var h3 = Math.max(1.2, h * 0.36), h1 = (h - h3 - 0.3) * 0.55, h2 = (h - h3 - 0.3) * 0.45;
+          blocGris(s, 8.83, y, 4.0, h1, 'Key dates', dates, 12);
+          blocGris(s, 8.83, y + h1 + 0.15, 4.0, h2, 'Who is concerned', qui, 12);
+          var y3 = y + h1 + h2 + 0.3;
+          s.addShape(S.roundRect, { x: 8.83, y: y3, w: 4.0, h: h3, rectRadius: 0.06, fill: { color: C.white }, line: { color: C.violet, width: 1, dashType: 'dash' } });
+          s.addText([{ text: 'Impact for the company: ', options: { color: C.violet, breakLine: true } }, { text: 'To complete', options: { italic: true, color: C.sub, breakLine: true } },
+                     { text: 'Recommended actions: ', options: { color: C.violet, breakLine: true } }, { text: 'To complete', options: { italic: true, color: C.sub } }],
+            { x: 9.03, y: y3 + 0.1, w: 3.6, h: h3 - 0.2, fontFace: F, fontSize: 13, margin: 0, valign: 'top', paraSpaceAfter: 4 });
+        } else {
+          blocGris(s, 0.5, y, 4.0, h, 'What happened', paragraphes(faits1), 12);
+          blocGris(s, 4.67, y, 4.0, h * 0.5, 'Key dates', dates, 12);
+          blocGris(s, 4.67, y + h * 0.5 + 0.15, 4.0, h * 0.5 - 0.15, 'Who is concerned', qui, 12);
+        }
+        if (!iaIci) {
+          s.addShape(S.roundRect, { x: 8.83, y: y, w: 4.0, h: h, rectRadius: 0.06, fill: { color: C.white }, line: { color: C.violet, width: 1, dashType: 'dash' } });
+          s.addText('Impact for the company', { x: 9.03, y: y + 0.18, w: 3.6, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
+          s.addText('To complete', { x: 9.03, y: y + 0.5, w: 3.6, h: 0.9, fontFace: F, fontSize: 13, italic: true, color: C.sub, margin: 0, valign: 'top' });
+          s.addText('Recommended actions', { x: 9.03, y: y + h / 2 + 0.05, w: 3.6, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
+          s.addText('To complete', { x: 9.03, y: y + h / 2 + 0.37, w: 3.6, h: 0.9, fontFace: F, fontSize: 13, italic: true, color: C.sub, margin: 0, valign: 'top' });
+        }
+        sources(s, y + h + 0.2, sources1, 'Sources');
+        // slides « continued » : d'abord les faits et dates restants (avec 4 sources au plus), puis les sources seules
         var datesSuite = g.dates.slice(3);
-        var nHaut = Math.max(Math.ceil(faitsSuite.length / 6), Math.ceil(datesSuite.length / 8));
+        var nHaut = Math.max(Math.ceil(faitsSuite.length / 5), Math.ceil(datesSuite.length / 8));
         var pages = [];
-        for (var k = 0; k < nHaut; k++) pages.push({ fs: faitsSuite.slice(k * 6, k * 6 + 6), ds: datesSuite.slice(k * 8, k * 8 + 8), ss: sourcesSuite.splice(0, 5) });
+        for (var k = 0; k < nHaut; k++) pages.push({ fs: faitsSuite.slice(k * 5, k * 5 + 5), ds: datesSuite.slice(k * 8, k * 8 + 8), ss: sourcesSuite.splice(0, 4) });
         while (sourcesSuite.length) pages.push({ fs: [], ds: [], ss: sourcesSuite.splice(0, 12) });
         pages.forEach(function (pg) {
           var fs = pg.fs, ds = pg.ds, ss = pg.ss;
@@ -255,15 +318,34 @@
           titre(s, g.titre + ' (continued)', kicker);
           pastille(s, 11.38, 0.2, g.rel);
           var yy = 1.55;
+          var iaSuite = fs.some(function (p) { return p.ia; }) ? ia : '';
+          if (g.verifier || iaSuite) yy += bandeaux(s, yy, g.verifier, iaSuite);
           if (fs.length || ds.length) {
-            if (fs.length) blocGris(s, 0.5, yy, ds.length ? 7.9 : 12.33, 2.4, 'What happened (continued)', fs.map(function (t, i) { return { text: couper(t, 330), options: { bullet: true, breakLine: i < fs.length - 1 } }; }), 12);
-            if (ds.length) blocGris(s, fs.length ? 8.6 : 0.5, yy, fs.length ? 4.23 : 12.33, 2.4, 'Key dates (continued)', ds.map(function (d, i) {
+            var hh = ss.length ? 2.9 : 6.55 - yy;
+            if (fs.length) blocGris(s, 0.5, yy, ds.length ? 7.9 : 12.33, hh, 'What happened (continued)', paragraphes(fs), 12);
+            if (ds.length) blocGris(s, fs.length ? 8.6 : 0.5, yy, fs.length ? 4.23 : 12.33, hh, 'Key dates (continued)', ds.map(function (d, i) {
               return { text: dateCourte(d.date) + (d.publication ? ' (publication of the text)' : '') + (d.texte ? ': ' + couper(d.texte, 80) : ''), options: { breakLine: i < ds.length - 1 } };
             }), 12);
-            yy += 2.65;
+            yy += hh + 0.2;
           }
           if (ss.length) sources(s, yy, ss, 'Sources (continued)');
         });
+      });
+
+      /* 4 bis. Sujets presque vides (une source, sans résumé, sans date) : regroupés, rien n'est perdu */
+      par(maigres, 7).forEach(function (bloc, i) {
+        if (!bloc.length) return;
+        s = contenu();
+        titre(s, suite('Other developments of the period', i), 'Subjects');
+        tableau(s, ['Development', 'Country', 'Relevance', 'Source'], bloc.map(function (g) {
+          var a = g.articles[0];
+          var lib = (g.texteEn ? g.texteEn + ' — ' : '') + couper(titreEn(a), 120);
+          return [{ text: lib, options: a.lien ? { hyperlink: { url: a.lien }, color: C.violet } : {} }, g.zoneEn,
+                  { text: '● ' + REL[g.rel].label, options: { bold: true, color: g.rel === 'faible' ? 'B07A00' : C.violet } },
+                  (a.nature === 'rkc' ? 'RKC watch (paid, ' + couper(a.publication || 'source not stated', 30) + ')' : couper(a.source, 30)) + ', ' + dateCourte(a.date)];
+        }), [6.3, 1.8, 1.6, 2.63], 1.9, 12);
+        s.addText('Subjects with little information in the sources (no summary, no date). Items marked “To monitor” are to verify. Check the source articles.',
+          { x: 0.5, y: 1.45, w: 12.3, h: 0.3, fontFace: F, fontSize: 12, color: C.sub, margin: 0 });
       });
 
       /* 5. Calendrier des dates réglementaires (pas de consultations ; dates de publication exclues) */

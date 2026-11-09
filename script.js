@@ -71,8 +71,10 @@
       pdf_fail: "PDF impossible ici (bibliothèque non chargée) : choisissez « Enregistrer au format PDF » dans la fenêtre qui s'ouvre.",
       btn_pdf_all: 'La veille complète (PDF)', btn_pdf: 'Les articles affichés (PDF)', btn_excel: 'Les articles affichés (Excel)',
       btn_slides: 'Support de slides (PowerPoint)', sl_title: 'Générer un support de slides',
-      sl_lead: "Brouillon modifiable au format PowerPoint, en anglais, au modèle Wavestone : un sujet par slide (regroupés par texte, pays et étape), dates réglementaires, vue par pays, textes en préparation et annexe des articles. Les filtres du site ne sont pas appliqués ; les articles jugés « pas pertinent » par un lecteur sont exclus. Les encadrés « Impact » et « Recommended actions » restent à compléter.",
+      sl_lead: "Brouillon modifiable au format PowerPoint, en anglais, au modèle Wavestone : un sujet par slide (regroupés par texte, pays et étape), dates réglementaires, vue par pays, textes en préparation et annexe des articles. Les filtres du site ne sont pas appliqués ; les articles jugés « pas pertinent » par un lecteur sont exclus. Les encadrés « Impact » et « Recommended actions » restent à compléter. Les résumés et citations écrits par l'IA sont signalés sur chaque slide.",
       sl_du: 'Du', sl_au: 'Au', sl_monitor: 'Inclure les sujets « à surveiller » (avec un bandeau « To verify »)', sl_go: 'Générer',
+      sl_mdp: 'Mot de passe des résumés : ', sl_mdp_aide: "Obligatoire. Il déchiffre les résumés et citations écrits par l'IA (jamais affichés sur le site). Il est défini dans le secret GitHub SLIDES_MOT_DE_PASSE ; il n'est ni enregistré ni envoyé.",
+      sl_mdp_vide: 'Saisissez le mot de passe des résumés.', sl_mdp_faux: 'Mot de passe incorrect : support non généré.', sl_sans_resumes: "Aucun résumé disponible pour l'instant (ils seront faits aux prochaines collectes) : support sans résumés.",
       sl_bad: 'Période invalide.', sl_wait: 'Génération du support en cours…', sl_done: 'Support téléchargé.', sl_err: "La génération du support a échoué (voir la console du navigateur).",
       update_title: 'Ouvre GitHub : cliquez sur « Run workflow » puis patientez quelques minutes',
       version_label: 'Édition', version_current: ' (actuelle)', version_base: 'Base de connaissance initiale',
@@ -220,6 +222,8 @@
       btn_slides: 'Slide deck (PowerPoint)', sl_title: 'Generate a slide deck',
       sl_lead: 'Editable PowerPoint draft, in English, in the Wavestone template: one subject per slide (grouped by text, country and step), regulatory dates, view by country, texts in preparation and an appendix of articles. Site filters are not applied; articles rated “not relevant” by a reader are excluded. The “Impact” and “Recommended actions” boxes are left to complete.',
       sl_du: 'From', sl_au: 'To', sl_monitor: 'Include subjects “to monitor” (with a “To verify” banner)', sl_go: 'Generate',
+      sl_mdp: 'Summaries password: ', sl_mdp_aide: 'Required. It decrypts the AI-written summaries and quotes (never shown on the site). It is set in the GitHub secret SLIDES_MOT_DE_PASSE; it is neither stored nor sent.',
+      sl_mdp_vide: 'Enter the summaries password.', sl_mdp_faux: 'Wrong password: deck not generated.', sl_sans_resumes: 'No summary available yet (they will be written at the next collections): deck without summaries.',
       sl_bad: 'Invalid period.', sl_wait: 'Generating the deck…', sl_done: 'Deck downloaded.', sl_err: 'Deck generation failed (see the browser console).',
       update_title: 'Opens GitHub: click “Run workflow”, then wait a few minutes',
       version_label: 'Edition', version_current: ' (current)', version_base: 'Initial knowledge base',
@@ -2932,24 +2936,45 @@
   document.getElementById('export-slides').addEventListener('click', function () {
     var auj = new Date(), du = el('input', { type: 'date', value: isoJour(new Date(auj.getTime() - 30 * 864e5)) }), au = el('input', { type: 'date', value: isoJour(auj) });
     var cb = el('input', { type: 'checkbox' }); cb.checked = true;
+    var mdp = el('input', { type: 'password', autocomplete: 'off' });
     demander(t('sl_title'), [t('sl_lead'), el('label', { className: 'sl-champ' }, [t('sl_du') + ' ', du]), el('label', { className: 'sl-champ' }, [t('sl_au') + ' ', au]),
-      el('label', { className: 'sl-check' }, [cb, ' ' + t('sl_monitor')])], t('sl_go'), function () { genererSlides(du.value, au.value, cb.checked); });
+      el('label', { className: 'sl-check' }, [cb, ' ' + t('sl_monitor')]), el('label', { className: 'sl-mdp' }, [t('sl_mdp'), mdp]), el('p', { className: 'block-meta', text: t('sl_mdp_aide') })],
+      t('sl_go'), function () { genererSlides(du.value, au.value, cb.checked, mdp.value); });
   });
-  function genererSlides(du, au, surveiller) {
+  /* v11 — résumés et citations des slides : fichier chiffré (AES-256-GCM, clé PBKDF2-SHA256 tirée du mot de passe).
+     Le mot de passe n'est ni enregistré ni envoyé : le déchiffrement se fait dans le navigateur. */
+  function dechiffrerResumes(mdp) {
+    return chargerJs('data/resumes.enc.js', function () { return !!window.CW_RESUMES_ENC; }).then(function () {
+      var e = window.CW_RESUMES_ENC, b = function (x) { return Uint8Array.from(atob(x), function (c) { return c.charCodeAt(0); }); };
+      return crypto.subtle.importKey('raw', new TextEncoder().encode(mdp), 'PBKDF2', false, ['deriveKey']).then(function (base) {
+        return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b(e.sel), iterations: e.iter, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+      }).then(function (cle) { return crypto.subtle.decrypt({ name: 'AES-GCM', iv: b(e.iv) }, cle, b(e.data)); })
+        .then(function (brut) { return JSON.parse(new TextDecoder().decode(brut)).articles || {}; },
+              function () { throw new Error('mdp'); });
+    }, function () { return null; });   // pas encore de fichier (aucune collecte avec résumés) : slides sans résumés
+  }
+  function genererSlides(du, au, surveiller, mdp) {
     if (!du || !au || du > au) { toast(t('sl_bad')); return; }
+    if (!mdp) { toast(t('sl_mdp_vide')); return; }   // décision du 09/11 : pas de slides sans le mot de passe
+    if (!window.crypto || !crypto.subtle) { toast(t('sl_err')); return; }
     toast(t('sl_wait'));
-    (besoinArchives(du) ? chargerArchives() : Promise.resolve()).then(function () {
+    var RES = null;
+    dechiffrerResumes(mdp).then(function (r) {
+      RES = r;
+      return besoinArchives(du) ? chargerArchives() : null;
+    }).then(function () {
       return Promise.all([chargerJs('vendor/pptxgen.bundle.js', function () { return !!window.PptxGenJS; }),
                           chargerJs('assets/slides/images.js', function () { return !!window.CW_SLIDES_IMG; }),
                           chargerJs('slides.js', function () { return !!window.CW_SLIDES; })]);
     }).then(function () {
+      if (RES === null) toast(t('sl_sans_resumes'));
       var D = { articles: ARTICLES.filter(function (a) { return surveiller || a.pertinence !== 'faible'; }), pressentis: PRESSENTIS || [], ref: REF_TEXTES,
-                du: du, au: au, genere: isoJour(new Date()), exclus: AVIS_SESSION,
+                du: du, au: au, genere: isoJour(new Date()), exclus: AVIS_SESSION, resumes: RES || {},
                 zoneEn: function (z) { var d = ZONES[z]; return d ? d.en : (z || '—'); },
                 texteEn: function (x) { return TEXTES_CLES_EN[x] || x; },
                 acteurEn: function (x) { var l = (META.acteurs || {})[x]; return l ? l.en : ''; } };
       return window.CW_SLIDES.construire(window.PptxGenJS, window.CW_SLIDES_IMG, D).writeFile({ fileName: 'cyberwatch_slides_' + du + '_' + au + '.pptx' });
-    }).then(function () { toast(t('sl_done')); }).catch(function (e) { console.error(e); toast(t('sl_err')); });
+    }).then(function () { toast(t('sl_done')); }).catch(function (e) { if (e && e.message === 'mdp') { toast(t('sl_mdp_faux')); return; } console.error(e); toast(t('sl_err')); });
   }
   document.getElementById('export-pdf').addEventListener('click', function () {
     var sel = cartesAffichees().map(ligneExport);

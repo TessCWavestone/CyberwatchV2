@@ -11,5 +11,11 @@
       "ajoute_le": "2026-09-30"
     }
   ],
-  "retraits": []
+  "retraits": [
+    {
+      "url": "https://lvm.fi",
+      "nom": "Ministry of Transport and Communications Finland",
+      "retire_le": "2026-11-10"
+    }
+  ]
 }

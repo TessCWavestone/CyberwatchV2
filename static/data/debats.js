@@ -1,0 +1,7230 @@
+window.VEILLE_DEBATS = {
+ "mise_a_jour": "2026-11-09T10:00+00:00",
+ "articles": [
+  {
+   "id": "cf9dee9a8108",
+   "titre": "Simplification for whom? Open letter to EU Member States to uphold GDPR protections in Digital Omnibus on Data",
+   "lien": "https://edri.org/our-work/simplification-for-whom-open-letter-uphold-gdpr-protections-in-data-omnibus/",
+   "resume": "Over the past months, the European Commission's Digital Omnibus on Data has turned into a wider discussion about how much protection the data – and with it, the rights – of people in the EU should receive in the name of AI, innovation and competitiveness. That discussion has now reached a critical stage in the Council. The post Simplification for whom? Open letter to EU Member States to uphold GDPR protections in…",
+   "date": "2026-09-24",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.61,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.355,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "bruit": [
+    "vœux / prix / RH"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "Simplification pour qui ? Lettre ouverte aux États membres UE pour le maintien des protections RGPD dans l'omnibus numérique sur les données",
+     "resume": "Au cours des derniers mois, l'omnibus numérique sur les données de la Commission européenne s'est transformé en une discussion plus large sur la mesure dans laquelle les données - et avec elles, les droits - des personnes du UE devraient être protégées au nom du IA, innovation et compétitivité. Ce débat a maintenant atteint une étape critique au sein du Conseil. Le post-simplification pour qui ? Lettre ouverte aux États membres de UE pour maintenir les protections RGPD dans..."
+    }
+   },
+   "sujets": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.53
+  },
+  {
+   "id": "a87ec4ba81e6",
+   "titre": "EU Cyber Resilience Act: Vulnerability and incident reporting obligations now apply and ENISA’s Single Reporting Platform is live",
+   "lien": "https://www.hlc.com/en/publications/eu-cyber-resilience-act-vulnerability-and-incident-reporting-obligations-now-apply",
+   "resume": "The reporting obligations under Art. 14 of the EU Cyber Resilience Act (“CRA”) became applicable on 11 September 2026. Manufacturers of products with digital elements in scope of the CRA...",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "incident reporting obligation",
+    "Cyber Resilience Act",
+    "CRA",
+    "Notification d'incident"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.827,
+   "pertinence": "elevee",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CRA",
+    "ENISA"
+   ],
+   "score_bruit": 0.525,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA",
+   "trad": {
+    "fr": {
+     "titre": "Loi sur la cyberrésilience UE : les obligations en matière de vulnérabilité et de signalement d'incidents s'appliquent maintenant et la plate-forme de signalement unique ENISAS est en direct",
+     "resume": "Les obligations de déclaration en vertu de l'article 14 de la loi UE sur la cyberrésilience sont devenues applicables le 11 septembre 2026. Fabricants de produits avec des éléments numériques dans le cadre de la..."
+    }
+   },
+   "sujets": [
+    "CRA",
+    "ENISA"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.747
+  },
+  {
+   "id": "8e2f9438e3b5",
+   "titre": "MedTech Europe in the headlines – Summer 2026",
+   "lien": "https://www.medtecheurope.org/2026/09/11/medtech-europe-in-the-headlines-summer-2026/",
+   "resume": "Summer media coverage highlighted MedTech Europe’s leadership across key policy debates, including the Medical Devices Regulation (MDR) and In Vitro Diagnostics Regulation (IVDR) revisions, health technology assessment, digital regulation, international trade, and most recently the Public Procurement Act. EU’s AI Act climbdown raises stakes for MDR revisions MDR/IVDR reform remained at the centre of media […] The…",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "AI Act",
+    "MDR",
+    "Dispositifs médicaux",
+    "Achats publics",
+    "Technologies numériques en santé"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Réglementations européennes majeures",
+    "Secteur santé : mots clés spécifiques",
+    "Termes multilingues",
+    "Termes santé",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.624,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "IVDR",
+    "MDR"
+   ],
+   "score_bruit": 0.472,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : AI Act, IVDR, MDR (dispositifs médicaux)",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres – Été 2026",
+     "resume": "La couverture médiatique de l'été a mis en lumière le leadership de MedTech Europe dans les principaux débats politiques, notamment le règlement sur les dispositifs médicaux (MDR) et le règlement sur les diagnostics in vitro (IVDR), l'évaluation des technologies de la santé, la réglementation numérique, le commerce international et, plus récemment, la loi sur les marchés publics. Les..."
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "IVDR",
+    "MDR"
+   ],
+   "score_cyber": 0.544
+  },
+  {
+   "id": "7db8ca28be0c",
+   "titre": "MedTech Europe responds to stakeholder consultation on the classification of high-risk AI systems",
+   "lien": "https://www.medtecheurope.org/2026/09/11/medtech-europe-responds-to-stakeholder-consultation-on-the-classification-of-high-risk-ai-systems/",
+   "resume": "The Artificial Intelligence Act (AI Act), published as part of a wider package of policy measures supporting the development of trustworthy AI in the EU, lays out a set a harmonised rules to address the risks of AI and position the Union as a global player. As part of these rules, it distinguishes between two […] The post MedTech Europe responds to stakeholder consultation on the classification of high-risk AI…",
+   "date": "2026-09-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.793,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.541,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe répond à la consultation des parties prenantes sur la classification des systèmes IA à haut risque",
+     "resume": "La loi sur l'intelligence artificielle (IA Act), publiée dans le cadre d'un ensemble plus large de mesures politiques soutenant le développement de IA dignes de confiance dans la UE, établit un ensemble de règles harmonisées pour traiter les risques de IA et positionner l'Union comme un acteur mondial. Dans le cadre de ces règles, elle distingue deux [...] L'après MedTech Europe répond à la consultation des parties prenantes sur la classification de IA à haut risque..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.713
+  },
+  {
+   "id": "a603c9e24ae6",
+   "titre": "Europe’s cookie law is really a law about surveillance",
+   "lien": "https://edri.org/our-work/europes-cookie-law-is-really-about-surveillance/",
+   "resume": "The ePrivacy framework limits commercial tracking and state access to communications. It is now being weakened from several directions at once. The post Europe’s cookie law is really a law about surveillance appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-09-10",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.461,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.352,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Europe Le droit des cookies est vraiment une loi sur la surveillance",
+     "resume": "Le cadre ePrivacy limite le suivi commercial et l'accès de l'État aux communications. Il est maintenant affaibli de plusieurs directions à la fois. La loi sur les cookies d'Europe est vraiment une loi sur la surveillance apparue en premier sur European Digital Rights (EDRI)."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.461
+  },
+  {
+   "id": "49c9c2ffbd61",
+   "titre": "Why the EU age-verification tool does not solve privacy concerns",
+   "lien": "https://edri.org/our-work/eu-age-verification-tool-does-not-solve-privacy-concerns/",
+   "resume": "An EU legislative proposal for a social media ban will be presented at the State of the European Union (SOTEU) annual address, but the tools which are pitched as “ready” and “privacy-preserving” fail on both counts. Here is a technical account of the shortcomings. The post Why the EU age-verification tool does not solve privacy concerns appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-09-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "legislative proposal"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.585,
+   "pertinence": "elevee",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.389,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Pourquoi l'outil de vérification d'âge UE ne résout pas les problèmes de confidentialité",
+     "resume": "Une proposition législative UE pour une interdiction des médias sociaux sera présentée à l'adresse annuelle de l'État de l'Union européenne (SOTEU), mais les outils qui sont présentés comme prêts à l'emploi et à la préservation de la vie privée sont voués à l'échec. Voici un compte rendu technique des lacunes. L'article Pourquoi l'outil de vérification d'âge UE ne résout pas les problèmes de confidentialité est apparu en premier sur European Digital Rights (EDRi)."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.555
+  },
+  {
+   "id": "98e1ff50d35f",
+   "titre": "The Proposed EU Biotech Act: New Biosecurity Rules for Artificial Intelligence and Biotechnology Companies",
+   "lien": "https://www.insideeulifesciences.com/2026/09/02/the-proposed-eu-biotech-act-new-biosecurity-rules-for-artificial-intelligence-and-biotechnology-companies/",
+   "resume": "The global biotechnology landscape is evolving at an unprecedented speed, driven by advances in synthetic biology and genome editing, which, coupled with AI, make biotechnology stand at the forefront of innovation. These developments offer unprecedented opportunities for advancing health and protecting against biological threats, but also make biotechnological misuse faster, cheaper, and more accessible. For...…",
+   "date": "2026-09-02",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Inside EU Life Sciences (blog Covington & Burling)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.485,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia",
+    "pharma_industrie"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.396,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Projet de loi sur la biotechnologie UE : Nouvelles règles de biosécurité pour les sociétés d'intelligence artificielle et de biotechnologie",
+     "resume": "Le paysage biotechnologique mondial évolue à une vitesse sans précédent, sous l'impulsion des progrès de la biologie synthétique et de l'édition de génomes, qui, conjugués à IA, font de la biotechnologie l'avant-garde de l'innovation. Ces développements offrent des possibilités sans précédent pour faire progresser la santé et la protection contre les menaces biologiques, mais rendent aussi l'utilisation abusive des biotechnologies plus rapide, moins coûteuse et plus accessible. Pour..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.485
+  },
+  {
+   "id": "fe514524db79",
+   "titre": "Q2/ 2026 – Life Science Law Update Key developments for pharma and medical device companies in the EU",
+   "lien": "https://www.hlc.com/en/publications/q2-2026-life-science-law-update-key-developments-for-pharma-and-medical-device-companies-in-the-eu",
+   "resume": "The Q1 and Q3 Life Science and Health Care Law Update covers key trends in the EU only while the other reports (on Q2 and Q4) cover key trends in the EU as well as in the Big Five (Germany, ...",
+   "date": "2026-08-20",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.541,
+   "pertinence": "moyenne",
+   "themes": [
+    "sante_donnees",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.371,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Q2/ 2026 – Mise à jour du droit des sciences de la vie Développements clés pour les entreprises de produits pharmaceutiques et d'appareils médicaux dans le UE",
+     "resume": "Le Q1 et le Q3 Life Science and Health Care Law Update ne couvrent les principales tendances du UE que tandis que les autres rapports (sur Q2 et Q4) couvrent les principales tendances du UE ainsi que du Big Five (Allemagne, ..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.461
+  },
+  {
+   "id": "c38d5df0a85a",
+   "titre": "CADA: An (E)U-turn on AI regulation",
+   "lien": "https://fpf.org/blog/cada-an-eu-turn-on-ai-regulation/",
+   "resume": "The new EU Cloud and AI Development Act (CADA) proposal marks a genuine shift in the way the bloc regulates AI, as it codifies the “AI first” principle and it is as much an “AI promotion and enabling”-type of legislation as it is a cloud sovereignty one. The European Commission published the CADA proposal at [&#8230;]",
+   "date": "2026-08-06",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.622,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CADA"
+   ],
+   "score_bruit": 0.426,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
+   ],
+   "motif": "texte clé : Cloud and AI Development Act (CADA)",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "CADA: Un (E)U-turn sur le règlement IA",
+     "resume": "La nouvelle proposition UE Cloud et IA Development Act (CADA) marque un véritable changement dans la façon dont le bloc régule IA, car il codifie le principe de la « première » IA et il s'agit autant d'une promotion de la « première » IA et d'un type de législation favorable à la « souveraineté du cloud ». La Commission européenne a publié la proposition CADA au [&#8230;]"
+    }
+   },
+   "sujets": [
+    "CADA"
+   ],
+   "score_cyber": 0.622
+  },
+  {
+   "id": "38c13c78761a",
+   "titre": "New UK Guidance Clarifies Medical Device Status of AI Scribes",
+   "lien": "https://www.insideeulifesciences.com/2026/08/06/new-uk-guidance-clarifies-medical-device-status-of-ai-scribes/",
+   "resume": "On 29 July 2026, the UK’s Medicines and Healthcare products Regulatory Agency (“MHRA”) (the regulatory authority with responsibility for enforcing UK medical device rules) published new guidance on ambient voice technology-enabled products (“AVTs,” also known as ambient scribing tools) (“AVT Guidance”). The AVT Guidance is intended to clarify (and essentially overrule) a decision by NHS... Continue Reading…",
+   "date": "2026-08-06",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Inside EU Life Sciences (blog Covington & Burling)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux",
+    "Service national de santé"
+   ],
+   "groupes": [
+    "Termes santé",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.645,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div",
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "MHRA",
+    "NHS"
+   ],
+   "score_bruit": 0.487,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "La nouvelle ligne directrice UK précise l'état de l'instrument médical des scribes IA",
+     "resume": "Le 29 juillet 2026, l'Agence de réglementation des médicaments et des produits de santé (QZX) (l'autorité de réglementation chargée d'appliquer les règles relatives aux dispositifs médicaux UK) a publié de nouvelles directives sur les produits à base de la technologie vocale ambiante ('AVTs,' également connu sous le nom d'outils de license ambiante) ('AVT Guidance'). Le guide AVT vise à clarifier (et essentiellement à annuler) une décision de NHS... Continue Reading..."
+    }
+   },
+   "sujets": [
+    "MHRA",
+    "NHS"
+   ],
+   "score_cyber": 0.511
+  },
+  {
+   "id": "6fc11e1ddde7",
+   "titre": "The “Chat Control 1.0” saga: Big Tech can scan our private messages again – but Parliament sent a strong signal against mass surveillance",
+   "lien": "https://edri.org/our-work/the-chat-control-1-0-saga-big-tech-can-scan-our-private-messages-again-but-parliament-sent-a-strong-signal-against-mass-surveillance/",
+   "resume": "Members of the European Parliament (MEPs) voted on a derogation of the EU’s ePrivacy Directive for the third time in 4 months. While the proposal passed, the vote nonetheless remains a triumph because it reinforces the Parliament’s position against mass surveillance on the more dangerous CSA Regulation, and because it enshrines the protection of encryption. The post The “Chat Control 1.0” saga: Big Tech can scan our…",
+   "date": "2026-08-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.526,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.505,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "La saga \"Chat Control\" 1.0: Big Tech peut à nouveau scanner nos messages privés – mais le Parlement a envoyé un signal fort contre la surveillance de masse",
+     "resume": "Les membres du Parlement européen (PEM) ont voté pour la troisième fois en quatre mois une dérogation à la directive sur la protection des données personnelles. Si la proposition est adoptée, le vote reste néanmoins un triomphe car il renforce la position du Parlement contre la surveillance de masse sur le règlement CSA plus dangereux, et parce qu'il consacre la protection du chiffrement. The post La saga de contrôle de la..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.526
+  },
+  {
+   "id": "fd724b67e7ac",
+   "titre": "U.S. State AI laws v. EU AI Act: key differences and implications for AI agreements",
+   "lien": "https://www.hlc.com/en/publications/us-state-ai-laws-v-eu-ai-act-key-differences-and-implications-for-ai-agreements",
+   "resume": "Businesses are navigating a rapidly evolving, increasingly complex regulatory landscape that should be considered when providing or using artificial intelligence (AI) technologies in the...",
+   "date": "2026-08-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.81,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.514,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "États-Unis lois IA v. UE IA Act: principales différences et implications pour les accords IA",
+     "resume": "Les entreprises naviguent dans un paysage réglementaire en évolution rapide et de plus en plus complexe qui devrait être pris en considération lors de la fourniture ou de l'utilisation des technologies d'intelligence artificielle (IA) dans..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.73
+  },
+  {
+   "id": "14ef8c447a42",
+   "titre": "EU Cyber Resilience Act: European Commission publishes final CRA guidance",
+   "lien": "https://www.hlc.com/en/publications/eu-cyber-resilience-act-european-commission-publishes-final-cra-guidance",
+   "resume": "The European Commission has published its final guidance on the application of the EU Cyber Resilience Act (\"CRA\"). The guidance arrives less than two months before the CRA...",
+   "date": "2026-07-31",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.684,
+   "pertinence": "elevee",
+   "themes": [
+    "cra",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CRA"
+   ],
+   "score_bruit": 0.459,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "Loi sur la cyberrésilience de UE: la Commission européenne publie les orientations finales de CRA",
+     "resume": "La Commission européenne a publié ses orientations finales sur l'application de la loi UE sur la cyberrésilience (\"CRA\"). Les conseils arrivent moins de deux mois avant le CRA..."
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "score_cyber": 0.604
+  },
+  {
+   "id": "a8c673be3df7",
+   "titre": "EU AI Act: German Implementation Act enters into force",
+   "lien": "https://www.hlc.com/en/publications/eu-ai-act-german-implementation-act-enters-into-force",
+   "resume": "As the EU AI Act moves into its operationalization phase, the German legislator adopted its German Implementation Act for the national implementation of the AI Act. Its key element is the...",
+   "date": "2026-07-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.69,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.356,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "UE Loi IA : mise en œuvre allemande La loi entre en vigueur",
+     "resume": "Alors que la loi UE IA entre dans sa phase d'opérationnalisation, le législateur allemand a adopté sa loi d'application allemande pour l'application nationale de la loi IA. Son élément clé est le..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.61
+  },
+  {
+   "id": "713bebe7c61c",
+   "titre": "Dutch regulator publishes GDPR self-assessment framework for using generative AI",
+   "lien": "https://www.hlc.com/en/publications/dutch-regulator-publishes-gdpr-selfassessment-framework-for-using-generative-ai",
+   "resume": "On 13 July 2026, the Dutch Data Protection Authority (\"AP\") published a practical self-assessment tool (\"Tool\") and corresponding guidance document...",
+   "date": "2026-07-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.532,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees",
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR"
+   ],
+   "score_bruit": 0.445,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "Le régulateur néerlandais publie le cadre d'auto-évaluation RGPD pour l'utilisation de IA",
+     "resume": "Le 13 juillet 2026, l'Autorité néerlandaise de protection des données («AP») a publié un outil d'auto-évaluation pratique («Outil») et un document d'orientation..."
+    }
+   },
+   "sujets": [
+    "GDPR"
+   ],
+   "score_cyber": 0.452
+  },
+  {
+   "id": "1e37fbdedae7",
+   "titre": "The AI Act Implementation Timeline: What Changes Under the AI Omnibus?",
+   "lien": "https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus/",
+   "resume": "The implementation timeline of the EU AI Act has been significantly modified through the recently adopted AI Omnibus, which pushes compliance with the obligations for high-risk AI systems to December 2027 (Annex III) and August 2028 (Annex I), from the initial date of 2 August 2026. Changes of the AI Act include, among others, the [&#8230;]",
+   "date": "2026-07-28",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.766,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [
+    {
+     "date": "2027-12-01",
+     "approx": true,
+     "extrait": {
+      "en": "…AI Omnibus, which pushes compliance with the obligations for high-risk AI systems to December 2027 (Annex III) and August 2028 (Annex I), from the initial date of 2 August 2026. Changes…",
+      "fr": "…adopté, qui pousse le respect des obligations pour les systèmes IA à haut risque à décembre 2027 (annexe III) et août 2028 (annexe I), à compter de la date initiale du 2 août 2026. Les…"
+     }
+    },
+    {
+     "date": "2028-08-01",
+     "approx": true,
+     "extrait": {
+      "en": "…with the obligations for high-risk AI systems to December 2027 (Annex III) and August 2028 (Annex I), from the initial date of 2 August 2026. Changes of the AI Act include, among…",
+      "fr": "…des obligations pour les systèmes IA à haut risque à décembre 2027 (annexe III) et août 2028 (annexe I), à compter de la date initiale du 2 août 2026. Les modifications apportées à…"
+     }
+    }
+   ],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.468,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "Le calendrier de mise en oeuvre de la loi IA : quels changements dans l'omnibus IA ?",
+     "resume": "Le calendrier de mise en œuvre de la loi UE IA a été modifié de façon significative grâce à l'omnibus IA récemment adopté, qui pousse le respect des obligations pour les systèmes IA à haut risque à décembre 2027 (annexe III) et août 2028 (annexe I), à compter de la date initiale du 2 août 2026. Les modifications apportées à la Loi IA comprennent, entre autres, le [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.686
+  },
+  {
+   "id": "a633e6ee6fb1",
+   "titre": "The EU NIS2 Directive – Cloud computing services and data centre services: Clarifications and summary of key legal obligations – Implementation in Germany",
+   "lien": "https://www.hlc.com/en/publications/the-eu-nis2-directive-cloud-computing-services-and-data-centre-services-clarifications",
+   "resume": "Data centres and cloud computing services are at the heart of the digital economy – and they are becoming an ever more prominent target for cyber threats. According to CrowdStrike,...",
+   "date": "2026-07-22",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "NIS2"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.716,
+   "pertinence": "elevee",
+   "themes": [
+    "data_act",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "NIS2"
+   ],
+   "score_bruit": 0.448,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "NIS2"
+   ],
+   "motif": "texte clé : NIS2",
+   "trad": {
+    "fr": {
+     "titre": "La directive UE NIS2 – Services d'informatique en nuage et services de centres de données : précisions et résumé des principales obligations légales – Mise en œuvre en Allemagne",
+     "resume": "Les centres de données et les services de cloud computing sont au cœur de l'économie numérique et deviennent une cible de plus en plus importante pour les cybermenaces. Selon CrowdStrike,..."
+    }
+   },
+   "sujets": [
+    "NIS2"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.636
+  },
+  {
+   "id": "851ef646e66c",
+   "titre": "EDPB publishes guidelines on web scraping for generative AI training",
+   "lien": "https://www.hlc.com/en/publications/edpb-publishes-guidelines-on-web-scraping-for-generative-ai-training",
+   "resume": "On 7 July 2026, the European Data Protection Board (“EDPB”) adopted Guidelines 03/2026 on web scraping in the context of generative AI (version 1.0) (“Guidelines”),...",
+   "date": "2026-07-22",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.554,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "EDPB"
+   ],
+   "score_bruit": 0.434,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "EDPB publie des lignes directrices sur le grattage web pour la formation générique IA",
+     "resume": "Le 7 juillet 2026, le Conseil européen de la protection des données a adopté les lignes directrices 03/2026 sur le grattage web dans le contexte de IA génératif (version 1.0)..."
+    }
+   },
+   "sujets": [
+    "EDPB"
+   ],
+   "score_cyber": 0.524
+  },
+  {
+   "id": "2931491c7dd4",
+   "titre": "EDPB publishes new guidelines on anonymization under the GDPR",
+   "lien": "https://www.hlc.com/en/publications/edpb-publishes-new-guidelines-on-anonymization-under-the-gdpr",
+   "resume": "On 7 July 2026, the European Data Protection Board (\"EDPB\") adopted the long-awaited Guidelines 02/2026 on Anonymization (V1.0) , which are now open for public consultation until...",
+   "date": "2026-07-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "public consultation",
+    "guideline",
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Standards Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.614,
+   "pertinence": "elevee",
+   "themes": [
+    "retours_importants",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR",
+    "EDPB"
+   ],
+   "score_bruit": 0.457,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "EDPB publie de nouvelles lignes directrices sur l'anonymat sous RGPD",
+     "resume": "Le 7 juillet 2026, le Conseil européen de la protection des données (\"EDPB\") a adopté les lignes directrices 02/2026 sur l'anonymat (V1.0), qui sont maintenant ouvertes à la consultation publique..."
+    }
+   },
+   "sujets": [
+    "GDPR",
+    "EDPB"
+   ],
+   "score_cyber": 0.534
+  },
+  {
+   "id": "dffa9b49e601",
+   "titre": "The EU is about to sell our most sensitive data to the US for visa-free travel",
+   "lien": "https://edri.org/our-work/the-eu-is-about-to-sell-our-most-sensitive-data-to-the-us-for-visa-free-travel/",
+   "resume": "The European Commission is currently finalising negotiations with the Trump administration to conclude an “Enhanced Border Security Partnership” (EBSP) Framework Agreement allowing border control authorities to screen travellers against biometric databases and profile them for security concerns. The leaked draft text suggests that the Commission significantly caved in to US’s excessive demands for unfettered…",
+   "date": "2026-07-20",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.468,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.318,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Le UE est sur le point de vendre nos données les plus sensibles au US pour un voyage sans visa",
+     "resume": "La Commission européenne met actuellement la dernière main aux négociations avec l'administration Trump en vue de la conclusion d'un accord-cadre (EBSP) visant à renforcer le partenariat en matière de sécurité des frontières, permettant aux autorités chargées du contrôle aux frontières de contrôler les voyageurs au moyen de bases de données biométriques et de les profiler en fonction de leurs préoccupations en matière de sécurité. Le projet de texte divulgué suggère que la Commission s'est considérablement effondrée dans US..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.468
+  },
+  {
+   "id": "c71e3215f1e6",
+   "titre": "The digital rulebook is fit for purpose: better enforcement is needed, not simplification",
+   "lien": "https://edri.org/our-work/the-digital-rulebook-is-fit-for-purpose-better-enforcement-is-needed-not-simplification/",
+   "resume": "EDRi responded to the European Commission’s consultation on the Digital Fitness Check, emphasising the importance of the rights-based digital framework developed over the years. Rather than simplifying people's rights protections, it should focus on stronger enforcement and closing gaps. Only in this way, the EU can continue to lead in building a digital environment that works for people, democracy and innovation…",
+   "date": "2026-07-16",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.51,
+   "pertinence": "moyenne",
+   "themes": [
+    "acheteurs_sante",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.47,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "Le règlement numérique est adapté à l'objectif: une meilleure application est nécessaire et non une simplification",
+     "resume": "EDRi a répondu à la consultation de la Commission européenne sur le Digital Fitness Check, soulignant l'importance du cadre numérique fondé sur les droits développé au fil des ans. Plutôt que de simplifier les protections des droits des personnes, il devrait se concentrer sur une application plus stricte et combler les lacunes. Ce n'est que de cette façon que le UE peut continuer à diriger la construction d'un environnement numérique qui fonctionne pour les gens, la démocratie et l'innovation..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.51
+  },
+  {
+   "id": "a7e328075acf",
+   "titre": "Hadopi law (2009–2026)",
+   "lien": "https://edri.org/our-work/hadopi-law-2009-2026/",
+   "resume": "The French Administrative Supreme Court ruled in favour of La Quadrature du Net, French Data Network (FDN), Franciliens.net and Fédération FDN by recognising that the Hadopi law’s surveillance system that aims to combat illegal files sharing breaches fundamental rights protected by the European Union. The government has been ordered to repeal the key provisions of this decree. It is now up to the government to…",
+   "date": "2026-07-16",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.454,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.382,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Droit hadopi (2009-2026)",
+     "resume": "La Cour administrative suprême française a statué en faveur de La Quadrature du Net, French Data Network (FDN), Franciliens.net et Fédération FDN en reconnaissant que le système de surveillance Hadopi vise à lutter contre le partage illégal de fichiers violant les droits fondamentaux protégés par l'Union européenne. Le gouvernement a été ordonné d'abroger les dispositions clés de ce décret. Il appartient maintenant au gouvernement de..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.454
+  },
+  {
+   "id": "9a9e29660678",
+   "titre": "The Digital Omnibus is going on summer break. Your rights are not.",
+   "lien": "https://edri.org/our-work/the-digital-omnibus-is-going-on-summer-break-your-rights-are-not/",
+   "resume": "In November 2025, the European Commission presented the Digital Omnibus as a simplification package for EU digital rules. Since then, the AI Omnibus has been adopted, weakening the AI Act before key safeguards fully apply. The Data Omnibus is still moving through the Council and European Parliament, covering the Data Acquis, GDPR and ePrivacy rules. Decisions on it will be waiting after summer, with the same basic…",
+   "date": "2026-07-16",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act",
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.638,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.465,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : AI Act, RGPD / GDPR, Cybersecurity Act / certification UE",
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "L'omnibus numérique est en vacances d'été. Vos droits ne le sont pas.",
+     "resume": "En novembre 2025, la Commission européenne a présenté l'omnibus numérique comme un paquet de simplification pour les règles numériques UE. Depuis, l'omnibus IA a été adopté, affaiblissant la loi IA avant que les principales garanties ne s'appliquent pleinement. L'omnibus des données passe toujours par le Conseil et le Parlement européen, en ce qui concerne les règles d'acquisition des données, RGPD et ePrivacy. Les décisions seront en attente après l'été, avec la même base..."
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.558
+  },
+  {
+   "id": "8fea9ccae151",
+   "titre": "Proposed Europol reform dangerously erodes privacy, automates surveillance, and sidelines oversight",
+   "lien": "https://edri.org/our-work/proposed-europol-reform-dangerously-erodes-privacy-automates-surveillance-and-sidelines-oversight/",
+   "resume": "Third reform in six years allocates €3 billion to controversial EU policing agency with the capacities to place everyone under surveillance. The post Proposed Europol reform dangerously erodes privacy, automates surveillance, and sidelines oversight appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-07-16",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.469,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.357,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "La réforme proposée d'Europol érode dangereusement la vie privée, automatise la surveillance et limite la surveillance",
+     "resume": "La troisième réforme en six ans alloue 3 milliards d'euros à l'agence de police controversée UE avec les capacités de placer tout le monde sous surveillance. Le post Proposition de réforme d'Europol érode dangereusement la vie privée, automatise la surveillance et met en veilleuse la première sur les droits numériques européens (EDRi)."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.469
+  },
+  {
+   "id": "50729a075a89",
+   "titre": "Vietnam designates high-risk AI systems: What businesses need to know",
+   "lien": "https://www.hlc.com/en/publications/vietnam-designates-highrisk-ai-systems-what-businesses-need-to-know",
+   "resume": "Vietnam has taken a major step in implementing its AI regulatory framework. On 30 June 2026, the Prime Minister issued Decision No. 33/2026/QD-TTg (“ Decision 33 ”), which...",
+   "date": "2026-07-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.611,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.519,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Vietnam désigne les systèmes IA à haut risque: Ce que les entreprises doivent savoir",
+     "resume": "Le Vietnam a franchi une étape importante dans la mise en œuvre de son cadre réglementaire IA. Le 30 juin 2026, le Premier Ministre a rendu la décision no 33/2026/QD-TTg (..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.611
+  },
+  {
+   "id": "4eec4628b124",
+   "titre": "Thailand moves towards comprehensive AI regulation with new draft AI Act",
+   "lien": "https://www.hlc.com/en/publications/thailand-moves-towards-comprehensive-ai-regulation-with-new-draft-ai-act",
+   "resume": "Thailand has taken a significant step towards regulating artificial intelligence (“ AI ”). On 2 July 2026, Thailand's Electronic Transactions Development Agency (“ ETDA &rd...",
+   "date": "2026-07-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.651,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.397,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "La Thaïlande se dirige vers une réglementation globale IA avec un nouveau projet de loi IA",
+     "resume": "La Thaïlande a fait un pas important vers la réglementation de l'intelligence artificielle (-) (-) IA. Le 2 juillet 2026, l'Agence thaïlandaise de développement des transactions électroniques (..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.571
+  },
+  {
+   "id": "4ccf6ac9e7f7",
+   "titre": "MedTech Europe in the headlines in June 2026",
+   "lien": "https://www.medtecheurope.org/2026/07/02/medtech-europe-in-the-headlines-in-june-2026/",
+   "resume": "The recent media coverage showcased key structural challenges shaping Europe’s medtech landscape, from regulation to investment to value creation. Industry urges dedicated support for Europe’s €13B IVD sector Position paper on IVDR revision welcomes many of the EU’s proposed changes, but requests tweaks to orphan diagnostics, risk classifications and health institution tests. MedTech Insight noted […] The post…",
+   "date": "2026-07-02",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "IVD",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.657,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR"
+   ],
+   "score_bruit": 0.502,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres en juin 2026",
+     "resume": "La récente couverture médiatique a mis en évidence les principaux défis structurels qui ont façonné le paysage de la méditech en Europe, de la réglementation à l'investissement à la création de valeur. L'industrie demande un soutien dédié à l'Europe €13B secteur IVD Position paper sur la révision IVDR accueille bon nombre des changements proposés par UE. MedTech Insight a noté [...] Le poste..."
+    }
+   },
+   "sujets": [
+    "IVDR"
+   ],
+   "score_cyber": 0.577
+  },
+  {
+   "id": "f1930213ea4d",
+   "titre": "New harmonised standards for Medical Devices and In Vitro Diagnostics Regulations and EC-EU REP",
+   "lien": "https://www.medtecheurope.org/2026/07/02/new-harmonised-standards-for-medical-devices-and-in-vitro-diagnostics-regulations-and-ec-eu-rep/",
+   "resume": "New references to harmonised standards supporting the Medical Devices Regulation (MDR) and In Vitro Diagnostics Regulation (IVDR) were published in the Official Journal of the European Union. MDR The update adds references covering, among others, biological evaluation, symbols, medical electrical equipment, transfusion equipment, ophthalmic optics, surgical implants, washer-disinfectors, prosthetics and sharps…",
+   "date": "2026-07-02",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.805,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR",
+    "MDR",
+    "Normes harmonisées"
+   ],
+   "score_bruit": 0.414,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)",
+    "Normes européennes harmonisées (CEN-CENELEC, ETSI)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux), Normes européennes harmonisées (CEN-CENELEC, ETSI)",
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "Nouvelles normes harmonisées pour les règlements sur les dispositifs médicaux et les diagnostics in vitro et EC-EU REP",
+     "resume": "De nouvelles références aux normes harmonisées appuyant le règlement sur les dispositifs médicaux (MDR) et le règlement sur les diagnostics in vitro (IVDR) ont été publiées au Journal officiel de l'Union européenne. MDR La mise à jour ajoute des références couvrant, entre autres, l'évaluation biologique, les symboles, l'équipement électrique médical, l'équipement transfusionnel, l'optique ophtalmique, les implants chirurgicaux, les laveuses-désinfecteuses, les prothèses et les tranchants..."
+    }
+   },
+   "sujets": [
+    "IVDR",
+    "MDR",
+    "Normes harmonisées"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.489
+  },
+  {
+   "id": "1e33ff7bdfed",
+   "titre": "MedTech Europe responded to the final Towards the European Health Data Space 2 (TEHDAS2) consultation",
+   "lien": "https://www.medtecheurope.org/2026/07/02/medtech-europe-responded-to-the-final-towards-the-european-health-data-space-2-tehdas2-consultation/",
+   "resume": "The final public consultation under the Joint Action “Towards the European Health Data Space 2” (TEHDAS2) closed on 28 June 2026. This marks an important milestone in shaping how the European Health Data Space (EHDS) will be implemented in practice, including how companies access, use, link, and share health data across Europe. The EHDS is […] The post MedTech Europe responded to the final Towards the European…",
+   "date": "2026-07-02",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "public consultation",
+    "Santé"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.763,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "EHDS"
+   ],
+   "score_bruit": 0.445,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "EHDS"
+   ],
+   "motif": "texte clé : EHDS",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe a répondu à la consultation finale Vers l'espace européen des données sanitaires 2 (TEHDAS2)",
+     "resume": "La consultation publique finale dans le cadre de l'action commune «Vers l'espace européen des données sanitaires 2» (TEHDAS2) s'est achevée le 28 juin 2026. Il s'agit d'une étape importante dans l'élaboration de la manière dont l'espace européen de données sanitaires (EHDS) sera mis en œuvre dans la pratique, y compris la manière dont les entreprises accèdent, utilisent, relient et partagent des données sur la santé dans toute l'Europe. Le EHDS est [...] Le post MedTech Europe répond à la finale Vers l'Europe..."
+    }
+   },
+   "sujets": [
+    "EHDS"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.683
+  },
+  {
+   "id": "da89b42df590",
+   "titre": "Call to manufacturers: Enabling European regulator observation of combined MDSAP–MDR/IVDR Audits",
+   "lien": "https://www.medtecheurope.org/2026/07/02/call-to-manufacturers-enabling-european-regulator-observation-of-combined-mdsap-mdr-ivdr-audits/",
+   "resume": "The MDSAP Forum was held in Kyoto, Japan between 15 -19 June 2026. Medical Device Single Audit Program (MDSAP) is currently chaired by US FDA until 2028. Day 2 and 3 of the Forum were open to industry and other stakeholders. MedTech Europe was represented during both days. During the sessions, regulators provided several updates […] The post Call to manufacturers: Enabling European regulator observation of combined…",
+   "date": "2026-07-02",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.608,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR"
+   ],
+   "score_bruit": 0.419,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "trad": {
+    "fr": {
+     "titre": "Appel aux fabricants: permettre l'observation par les régulateurs européens des audits combinés MDSAP–MDR/IVDR",
+     "resume": "Le Forum MDSAP s'est tenu à Kyoto, au Japon, du 15 au 19 juin 2026. Le programme de vérification unique des instruments médicaux (MDSAP) est actuellement présidé par US FDA jusqu'en 2028. Les deuxième et troisième jours du Forum étaient ouverts à l'industrie et aux autres parties prenantes. MedTech Europe était représentée pendant les deux jours. Au cours des sessions, les régulateurs ont fourni plusieurs mises à jour [...] The post Appel aux fabricants: permettre l'observation de régulateurs européens..."
+    }
+   },
+   "sujets": [
+    "IVDR"
+   ],
+   "score_cyber": 0.433
+  },
+  {
+   "id": "7f706370e522",
+   "titre": "EDRi Annual Report 2025: Championing digital rights in the deregulation era",
+   "lien": "https://edri.org/our-work/edri-annual-report-2025-championing-digital-rights-in-the-eu-deregulation-era/",
+   "resume": "In 2025, the EU entered an era of deregulation in which hard-fought digital rights protections are being diluted. With our long-term vision for digital futures in mind, EDRi's work in 2025 focused on protecting digital rights legislation and advocating for human-centred perspectives. We also adopted our new agile and responsive strategy which will guide our work for the next five years. The post EDRi Annual Report…",
+   "date": "2026-06-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.491,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees",
+    "large"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.484,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "Rapport annuel de l'EDRI 2025: La défense des droits numériques à l'ère de la déréglementation",
+     "resume": "En 2025, le UE est entré dans une ère de déréglementation où les protections des droits numériques durement acquises sont diluées. Compte tenu de notre vision à long terme de l'avenir numérique, les travaux d'EDRI en 2025 ont porté sur la protection de la législation sur les droits numériques et la défense de perspectives centrées sur l'être humain. Nous avons également adopté notre nouvelle stratégie agile et réactive qui guidera nos travaux pour les cinq prochaines années. L'après rapport annuel EDRi..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.491
+  },
+  {
+   "id": "0a704f23e9a1",
+   "titre": "Before the Gatekeeper: AI and the Limits of Ex Ante Competition Regulation",
+   "lien": "https://ecipe.org/insights/before-the-gatekeeper/",
+   "resume": "Eight weeks ago, the European Commission concluded its review of the Digital Markets Act (DMA) – its landmark regulation of technology platforms. The Commission said that the regulation is fit for purpose and that its own performance under the Act … Continued",
+   "date": "2026-06-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.559,
+   "pertinence": "elevee",
+   "themes": [
+    "large",
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.393,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Avant le Gatekeeper: IA et les limites du règlement de concurrence ex ante",
+     "resume": "Il y a huit semaines, la Commission européenne a achevé son examen de la Digital Markets Act (DMA) – sa réglementation historique des plateformes technologiques. La Commission a déclaré que le règlement est adapté aux fins et que son propre rendement en vertu de la Loi ..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.559
+  },
+  {
+   "id": "10dc9d270da2",
+   "titre": "Game on for privacy: Spanish and Belgian DPAs set best practices for the video game industry",
+   "lien": "https://www.hlc.com/en/publications/game-on-for-privacy-spanish-and-belgian-dpas-set-best-practices-for-the-video-game-industry",
+   "resume": "The Spanish and Belgian Data Protection Authorities (DPAs) have jointly published Recommendations and Best Practices for Data Protection in Video Games (the “ Guidelines ”). This is the first ...",
+   "date": "2026-06-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "best practice",
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.514,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "large"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.415,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "Jeu sur la vie privée: les DPA espagnols et belges établissent les meilleures pratiques pour l'industrie du jeu vidéo",
+     "resume": "Les autorités espagnoles et belges chargées de la protection des données (DPA) ont publié conjointement des recommandations et des meilleures pratiques en matière de protection des données dans le cadre de jeux vidéo (les lignes directrices de l'OMPI). C'est le premier..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.484
+  },
+  {
+   "id": "d9ee9741ca9a",
+   "titre": "The EU’s Cloud and AI Development Act (CADA): Towards a sovereignty-focused framework for cloud and AI services",
+   "lien": "https://www.hlc.com/en/publications/the-eus-cloud-and-ai-development-act-cada-towards-a-sovereigntyfocused-framework-for-cloud",
+   "resume": "On 3 June 2026, the European Commission published its proposed Cloud and AI Development Act (CADA), the centrepiece of its Tech Sovereignty Package. CADA responds to two concerns: a...",
+   "date": "2026-06-19",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.577,
+   "pertinence": "elevee",
+   "themes": [
+    "data_act",
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CADA"
+   ],
+   "score_bruit": 0.444,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
+   ],
+   "motif": "texte clé : Cloud and AI Development Act (CADA)",
+   "trad": {
+    "fr": {
+     "titre": "La loi sur le Cloud et le développement IA (CADA) : Vers un cadre axé sur la souveraineté pour les services cloud et IA",
+     "resume": "Le 3 juin 2026, la Commission européenne a publié sa proposition de Cloud et IA Development Act (CADA), pièce maîtresse de son paquet sur la souveraineté technique. CADA répond à deux préoccupations :..."
+    }
+   },
+   "sujets": [
+    "CADA"
+   ],
+   "score_cyber": 0.577
+  },
+  {
+   "id": "7a8e433a3039",
+   "titre": "Cookies and consent: why ePrivacy matters for our browsing life",
+   "lien": "https://edri.org/our-work/cookies-and-consent-why-eprivacy-matters-for-our-browsing-life/",
+   "resume": "The Commission’s Digital Omnibus proposal reopens an important debate on ePrivacy and how choices are made when browsing the internet. With this leaflet, we cut through the jargon and explain what cookies, tracking technologies, consent and ePrivacy mean in everyday life, helping you to understand the issues at stake and the opportunities that lie ahead. The post Cookies and consent: why ePrivacy matters for our…",
+   "date": "2026-06-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.405,
+   "pertinence": "elevee",
+   "themes": [
+    "cra",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.376,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Cookies et consentement: pourquoi ePrivacy importe pour notre vie de navigation",
+     "resume": "La proposition d'Omnibus numérique de la Commission rouvre un débat important sur la protection de la vie privée en ligne et la manière dont les choix sont faits lors de la navigation sur Internet. Grâce à cette brochure, nous avons analysé le jargon et expliqué ce que signifient les cookies, les technologies de suivi, le consentement et l'ePrivacy dans la vie quotidienne, en vous aidant à comprendre les enjeux et les opportunités qui nous attendent. Le message Cookies et consentement: pourquoi ePrivacy importe pour notre..."
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.405
+  },
+  {
+   "id": "1196a0e84e76",
+   "titre": "Health Research: the French Data Protection Authority (CNIL) updates its Reference Methodologies (MRs) to reflect current practices and raise compliance standards",
+   "lien": "https://www.hlc.com/en/publications/health-research-the-french-data-protection-authority-cnil-updates-its-reference-methodologies-mrs",
+   "resume": "The CNIL has revised the reference methodologies MR-001 and MR-003 applicable to health research, with the new versions entering into force on 24 May 2026. This reform significantly...",
+   "date": "2026-06-12",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.541,
+   "pertinence": "moyenne",
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CNIL"
+   ],
+   "score_bruit": 0.463,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Recherche en santé : l'Autorité française de protection des données (CNIL) met à jour ses méthodes de référence (MR) pour refléter les pratiques actuelles et améliorer les normes de conformité",
+     "resume": "Le CNIL a révisé les méthodes de référence MR-001 et MR-003 applicables à la recherche en santé, les nouvelles versions entrant en vigueur le 24 mai 2026. Cette réforme significative..."
+    }
+   },
+   "sujets": [
+    "CNIL"
+   ],
+   "score_cyber": 0.541
+  },
+  {
+   "id": "ec27ca7f8476",
+   "titre": "AI Omnibus deal: EU lawmakers should reject a rollback of AI safeguards",
+   "lien": "https://edri.org/our-work/ai-omnibus-deal-eu-lawmakers-should-reject-a-rollback-of-ai-safeguards/",
+   "resume": "On 7 May 2026, EU institutions reached a final deal on the AI Omnibus, a file presented as technical simplification of the Artificial Intelligence Act (AI Act). In practice, the deal delays key protections, weakens transparency and creates a dangerous precedent for the EU digital rulebook. The European Parliament and the Council of the EU should reject it. The post AI Omnibus deal: EU lawmakers should reject a…",
+   "date": "2026-06-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.687,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.482,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "IA accord Omnibus: les législateurs UE devraient rejeter un retour en arrière des garanties IA",
+     "resume": "Le 7 mai 2026, les institutions UE ont conclu un accord final sur l'omnibus IA, un dossier présenté comme une simplification technique de la loi sur l'intelligence artificielle (loi IA). Dans la pratique, l'accord retarde les protections clés, affaiblit la transparence et crée un précédent dangereux pour le règlement numérique UE. Le Parlement européen et le Conseil du UE devraient le rejeter. Le post IA Omnibus deal: les législateurs UE devraient rejeter..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.607
+  },
+  {
+   "id": "7c1b6fa6ac64",
+   "titre": "EU Cyber Resilience Act: Preparing for Vulnerability and Incident Reporting",
+   "lien": "https://www.hlc.com/en/publications/eu-cyber-resilience-act-preparing-for-vulnerability-and-incident-reporting",
+   "resume": "From 11 September 2026, the EU Cyber Resilience Act (\"CRA\") will require manufacturers to report actively exploited vulnerabilities and severe incidents affecting the security of...",
+   "date": "2026-06-10",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA",
+    "Notification d'incident"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.872,
+   "pertinence": "elevee",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CRA"
+   ],
+   "score_bruit": 0.535,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA",
+   "bruit": [
+    "vulnérabilités / alertes techniques"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "Loi sur la cyberrésilience UE : se préparer à la vulnérabilité et à la déclaration des incidents",
+     "resume": "À partir du 11 septembre 2026, la loi UE sur la cyberrésilience (\"CRA\") exigera des fabricants qu'ils signalent les vulnérabilités activement exploitées et les incidents graves affectant la sécurité de..."
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.792
+  },
+  {
+   "id": "fdeebccf8550",
+   "titre": "Frontier AI Goes Federal: How the Great American AI Act Compares to State Laws",
+   "lien": "https://fpf.org/blog/frontier-ai-goes-federal-how-the-great-american-ai-act-compares-to-state-laws/",
+   "resume": "Introduction It has been an unusually active few weeks for AI safety policy. Following a new frontier model safety bill passed in Illinois, and a White House executive order on AI security, Rep. Jay Obernolte (R-CA) and Rep. Lori Trahan (D-MA) released a bipartisan discussion draft for the Great American AI Act of 2026, adding [&#8230;]",
+   "date": "2026-06-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "executive order",
+    "AI Act"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.714,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.362,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Frontier IA Goes Federal: Comment la Grande loi américaine IA se compare aux lois de l'État",
+     "resume": "Présentation La politique de sécurité IA a été exceptionnellement active pendant quelques semaines. À la suite d'un nouveau modèle de loi sur la sécurité en Illinois et d'un décret de la Maison-Blanche sur la sécurité IA, le Rep. Jay Obernolte (R-CA) et le Rep. Lori Trahan (D-MA) ont publié un projet de discussion bipartite pour la Great American IA Act de 2026, ajoutant [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.634
+  },
+  {
+   "id": "47a570713409",
+   "titre": "EU Cybersecurity Act 2.0 proposal: new trade controls targeting high‑risk suppliers across 18 critical sectors under cybersecurity law",
+   "lien": "https://www.hlc.com/en/publications/eu-cybersecurity-act-20-proposal-new-trade-controls-targeting-highrisk-suppliers-across",
+   "resume": "On 20 January 2026, the European Commission published a proposal on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT...",
+   "date": "2026-06-08",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Certification / qualification de sécurité"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Termes multilingues",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.727,
+   "pertinence": "elevee",
+   "themes": [
+    "nis2",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Cybersecurity Act",
+    "ENISA"
+   ],
+   "score_bruit": 0.55,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Proposition de la loi UE sur la cybersécurité 2.0 : nouveaux contrôles commerciaux ciblant les fournisseurs à haut risque dans 18 secteurs critiques en vertu de la loi sur la cybersécurité",
+     "resume": "Le 20 janvier 2026, la Commission européenne a publié une proposition sur l'Agence de l'Union européenne pour la cybersécurité (ENISA), le cadre européen de certification de la cybersécurité, et..."
+    }
+   },
+   "sujets": [
+    "Cybersecurity Act",
+    "ENISA"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.647
+  },
+  {
+   "id": "3ffe210c422f",
+   "titre": "EUDAMED reaches a major milestone: mandatory use of the first four modules begins",
+   "lien": "https://www.medtecheurope.org/2026/06/04/eudamed-reaches-a-major-milestone-mandatory-use-of-the-first-four-modules-begins/",
+   "resume": "28 May 2026 marks a major step forward in the EU’s regulatory framework for medical devices and in vitro diagnostic medical devices. From this date, the first four modules of EUDAMED, the European Database on Medical Devices, become mandatory for use, moving from voluntary to a legally required part of the implementation of the Medical […] The post EUDAMED reaches a major milestone: mandatory use of the first four…",
+   "date": "2026-06-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.515,
+   "pertinence": "elevee",
+   "themes": [
+    "cra",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR"
+   ],
+   "score_bruit": 0.473,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "trad": {
+    "fr": {
+     "titre": "EUDAMED atteint une étape importante : l'utilisation obligatoire des quatre premiers modules commence",
+     "resume": "Le 28 mai 2026 marque un grand pas en avant dans le cadre réglementaire de UE. À partir de cette date, les quatre premiers modules de EUDAMED, la base de données européenne sur les dispositifs médicaux, deviennent obligatoires pour l'utilisation, passant d'une partie volontaire à une partie légalement requise de la mise en œuvre [...] Le post EUDAMED atteint une étape importante : l'utilisation obligatoire des quatre premiers..."
+    }
+   },
+   "sujets": [
+    "IVDR"
+   ],
+   "score_cyber": 0.435
+  },
+  {
+   "id": "c41729c4b8a3",
+   "titre": "MedTech Europe in the headlines in May 2026",
+   "lien": "https://www.medtecheurope.org/2026/06/04/medtech-europe-in-the-headlines-in-may-2026/",
+   "resume": "Could do better: MedTech Europe supports MDR/IVDR revision plan but wants more MedTech Europe published on 5 May 2026 its detailed position on the European Commission’s proposed revision of the Medical Devices Regulation (MDR) and In Vitro Diagnostics Regulation (IVDR), supporting the overall direction of the reform while calling for targeted changes to translate the framework into […] The post MedTech Europe in the…",
+   "date": "2026-06-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.563,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR",
+    "MDR"
+   ],
+   "score_bruit": 0.429,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres en mai 2026",
+     "resume": "Pourrait faire mieux: MedTech Europe soutient le plan de révision MDR/IVDR mais veut plus de MedTech Europe publié le 5 mai 2026 sa position détaillée sur la Commission européenne, proposition de révision du règlement sur les dispositifs médicaux (MDR) et du règlement sur les diagnostics in vitro (IVDR), soutenant l'orientation globale de la réforme tout en demandant des changements ciblés pour traduire le cadre en [...] Le post MedTech Europe dans le..."
+    }
+   },
+   "sujets": [
+    "IVDR",
+    "MDR"
+   ],
+   "score_cyber": 0.483
+  },
+  {
+   "id": "85b37950908e",
+   "titre": "MedTech Europe reaction to the provisional agreement on the Digital Omnibus on AI",
+   "lien": "https://www.medtecheurope.org/2026/06/04/medtech-europe-reaction-to-the-provisional-agreement-on-the-digital-omnibus-on-ai/",
+   "resume": "After months of discussions and engagement among stakeholders, the Digital Omnibus on AI should finally soon come to an end. The Digital Omnibus Package, presented by the European Commission on 19 November, was inscribed into the broader Union effort to streamline its rules on Artificial Intelligence (AI), cybersecurity, and data. From the very beginning, MedTech […] The post MedTech Europe reaction to the…",
+   "date": "2026-06-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.469,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees",
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.495,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "Réaction de MedTech Europe à l'accord provisoire sur l'omnibus numérique sur IA",
+     "resume": "Après des mois de discussions et d'engagement entre les parties prenantes, l'omnibus numérique sur IA devrait enfin prendre fin. Le paquet omnibus numérique, présenté par la Commission européenne le 19 novembre, a été inscrit dans l'effort plus large de l'Union visant à rationaliser ses règles en matière d'intelligence artificielle (IA), de cybersécurité et de données. Dès le début, MedTech [...] La réaction de MedTech Europe..."
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "statut": "projet",
+   "score_cyber": 0.469,
+   "bruit": [
+    "proche d'un thème hors sujet (modèle)"
+   ]
+  },
+  {
+   "id": "a12297a020e9",
+   "titre": "Affordability and CSA2",
+   "lien": "https://ecipe.org/insights/affordability-and-csa2/",
+   "resume": "The Horizontal Working Party on Cyber Issues has spent four months debating whether the Commission’s revised Cybersecurity Act will damage Europe’s 5G rollout, arguing that the phase-out window is either impossibly short or irresponsibly long, depending on who is speaking. … Continued",
+   "date": "2026-06-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [],
+   "groupes": [
+    "Réglementations Cyber",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.554,
+   "pertinence": "elevee",
+   "themes": [
+    "cra",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Cybersecurity Act"
+   ],
+   "score_bruit": 0.473,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "bruit": [
+    "télécoms"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "Abordabilité et CSA2",
+     "resume": "Le Groupe de travail horizontal sur les questions cybernétiques a passé quatre mois à débattre de la question de savoir si la révision de la loi sur la cybersécurité par la Commission endommagera le déploiement de la 5G en Europe, en faisant valoir que la fenêtre d'élimination est soit trop courte, soit trop longue, selon qui parle. ... suite"
+    }
+   },
+   "sujets": [
+    "Cybersecurity Act"
+   ],
+   "score_cyber": 0.474
+  },
+  {
+   "id": "c5c7bce2d75a",
+   "titre": "Who Shall Inherit the Cookie Banner?",
+   "lien": "https://ecipe.org/insights/who-shall-inherit-the-cookie-banner/",
+   "resume": "The Digital Omnibus is sold as a simplification. But it also builds in a kill switch on European ad-funded media and small businesses. The final touches of the Digital Omnibus (COM(2025) 837) are currently being negotiated in the Council, which … Continued",
+   "date": "2026-06-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.446,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "large"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.401,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "Qui héritera de la bannière des cookies ?",
+     "resume": "L'omnibus numérique est vendu comme une simplification. Mais elle s'appuie également sur un interrupteur à mort sur les médias et les petites entreprises financés par la publicité européenne. Les dernières touches de l'omnibus numérique (COM(2025) 837) sont en cours de négociation au Conseil, qui ... Suite"
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.446
+  },
+  {
+   "id": "80ec7e888cd5",
+   "titre": "EDPB Guidelines on processing personal data for scientific research – Key takeaways",
+   "lien": "https://www.hlc.com/en/publications/edpb-guidelines-on-processing-personal-data-for-scientific-research-key-takeaways",
+   "resume": "The European Data Protection Board has published its long-awaited Guidelines 1/2026 on the processing of personal data for scientific research purposes. The Guidelines are now open for...",
+   "date": "2026-05-28",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.525,
+   "pertinence": "elevee",
+   "themes": [
+    "retours_importants",
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "EDPB"
+   ],
+   "score_bruit": 0.394,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "EDPB Lignes directrices sur le traitement des données à caractère personnel à des fins de recherche scientifique – Principaux choix",
+     "resume": "Le Comité européen pour la protection des données a publié ses lignes directrices tant attendues 1/2026 sur le traitement des données à caractère personnel à des fins de recherche scientifique. Les Lignes directrices sont maintenant ouvertes..."
+    }
+   },
+   "sujets": [
+    "EDPB"
+   ],
+   "score_cyber": 0.495
+  },
+  {
+   "id": "a1f0bde72bab",
+   "titre": "European Commission publishes long-awaited guidelines on high-risk AI systems",
+   "lien": "https://www.hlc.com/en/publications/european-commission-publishes-long-awaited-guidelines-on-high-risk-ai-systems",
+   "resume": "The European Commission has published its draft guidelines on the classification of high-risk AI systems under the AI Act. The guidelines, which are subject to consultation, have been...",
+   "date": "2026-05-27",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "guideline",
+    "AI Act"
+   ],
+   "groupes": [
+    "Standards Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.74,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.494,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "La Commission européenne publie des lignes directrices tant attendues sur les systèmes IA à haut risque",
+     "resume": "La Commission européenne a publié son projet de lignes directrices sur la classification des systèmes IA à haut risque en vertu de la loi IA. Les lignes directrices, qui font l'objet de consultations, ont été..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.66
+  },
+  {
+   "id": "23b1e18d68e0",
+   "titre": "The European Commission issues draft guidelines on the transparency requirements under the AI Act",
+   "lien": "https://www.hlc.com/en/publications/the-european-commission-issues-draft-guidelines-on-the-transparency-requirements-under-the-ai-act",
+   "resume": "On 8 May 2026, the European Commission issued draft guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 of the AI Act (the...",
+   "date": "2026-05-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "guideline",
+    "AI Act"
+   ],
+   "groupes": [
+    "Standards Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.664,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.426,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "La Commission européenne publie des projets de lignes directrices sur les exigences de transparence en vertu de la loi IA",
+     "resume": "Le 8 mai 2026, la Commission européenne a publié un projet de lignes directrices sur la mise en œuvre des obligations de transparence pour certains systèmes IA en vertu de l'article 50 de l'Acte IA (..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.584
+  },
+  {
+   "id": "2af5a7d97314",
+   "titre": "Research study: Evaluation of EU’s Law Enforcement Directive shows implementation still fragmented and insufficient",
+   "lien": "https://edri.org/our-work/research-study-evaluation-of-eus-law-enforcement-directive-shows-implementation-still-fragmented-and-insufficient/",
+   "resume": "This study commissioned by EDRi analyses the implementation of the Law Enforcement Directive (LED) in five EU Member States. It shows that even eight years after the LED’s entry into application, the implementation of this crucial instrument for digital rights remains fragmented and insufficient. The post Research study: Evaluation of EU’s Law Enforcement Directive shows implementation still fragmented and…",
+   "date": "2026-05-20",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.535,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.374,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Étude : L'évaluation de la directive UES montre que la mise en œuvre reste fragmentée et insuffisante",
+     "resume": "Cette étude commandée par EDRi analyse la mise en œuvre de la directive relative à l'application des lois (LED) dans cinq États membres. Il montre que même huit ans après l'entrée en application de la LED, la mise en œuvre de cet instrument crucial pour les droits numériques reste fragmentée et insuffisante. The post Research study: Evaluation of UES La directive sur l'application des lois montre que la mise en œuvre est encore..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.535
+  },
+  {
+   "id": "38cc65510ee5",
+   "titre": "Colorado Revises Its AI Act: What Changed and Why",
+   "lien": "https://fpf.org/blog/colorado-revises-its-ai-act-what-changed-and-why/",
+   "resume": "On May 15, Governor Polis signed SB 189, revising the Colorado AI Act (CAIA) after two years of intense negotiations and national debate over the original 2024 law&#8217;s approach to AI regulation. The revised law, the Colorado ADM Act (CADMA), reflects a fundamental shift in approach: shifting from an algorithmic discrimination framework to a transparency-focused [&#8230;]",
+   "date": "2026-05-19",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.613,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.323,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Le Colorado révise sa loi IA : ce qui a changé et pourquoi",
+     "resume": "Le 15 mai, le gouverneur Polis a signé SB 189, révisant la loi du Colorado IA (CAIA) après deux années de négociations intenses et de débat national sur la loi originale de 2024&#8217;s approche de la réglementation IA. La loi révisée, la loi du Colorado ADM (CADMA), reflète un changement fondamental d'approche : passer d'un cadre de discrimination algorithmique à un cadre axé sur la transparence [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.533
+  },
+  {
+   "id": "aa2b070bb7d3",
+   "titre": "Overview of the CNIL’s deliberations in 2025: when sanctions precede recommendations",
+   "lien": "https://www.hlc.com/en/publications/overview-of-the-cnils-deliberations-in-2025-when-sanctions-precede-recommendations",
+   "resume": "In 2025, the French data protection authority, the CNIL, imposed €486 million in fines, with 98% concentrated in two decisions issued on the same day. Behind this figure, the authority ...",
+   "date": "2026-05-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 486000000,
+    "texte": "€486 million",
+    "plafond": false
+   },
+   "langue": "en",
+   "score": 0.491,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CNIL"
+   ],
+   "score_bruit": 0.461,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Vue d'ensemble des délibérations de CNIL=2025: lorsque les sanctions précèdent les recommandations",
+     "resume": "En 2025, l'autorité française de protection des données, la CNIL, a infligé 486 millions d'euros d'amendes, dont 98 % se sont concentrés sur deux décisions rendues le même jour. Derrière cette figure, l'autorité..."
+    }
+   },
+   "sujets": [
+    "CNIL"
+   ],
+   "score_cyber": 0.461
+  },
+  {
+   "id": "ee493df61253",
+   "titre": "The EU Space Act proposal in the legislative process: Cybersecurity, market access, and implications for non-EU space operators",
+   "lien": "https://www.hlc.com/en/publications/the-eu-space-act-proposal-in-the-legislative-process-cybersecurity-market-access-and-implications",
+   "resume": "A new space age is looming – and the EU Commission has already made a first bold legislative move for it: The proposal of an EU Space Act aims to establish common EU rules for the...",
+   "date": "2026-05-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.462,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.307,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "La proposition de la loi sur l'espace UE dans le processus législatif: la cybersécurité, l'accès au marché et ses implications pour les opérateurs spatiaux non européens",
+     "resume": "Un nouvel âge de l'espace se profile – et la Commission UE a déjà fait un premier pas législatif audacieux : la proposition d'un UE Space Act vise à établir des règles communes..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.462
+  },
+  {
+   "id": "f09a1609a73f",
+   "titre": "UK Medical Devices Reform: MHRA Publishes Draft 2026 Regulations and Launches Impact Survey",
+   "lien": "https://www.hlc.com/en/publications/uk-medical-devices-reform-mhra-publishes",
+   "resume": "The Medicines and Healthcare products Regulatory Agency (MHRA) has published draft regulations reforming pre-market requirement for medical devices and in vitro diagnostic medical devices...",
+   "date": "2026-05-13",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "draft regulation",
+    "Dispositifs médicaux",
+    "Santé"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.664,
+   "pertinence": "moyenne",
+   "themes": [
+    "dm_div",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR",
+    "MHRA"
+   ],
+   "score_bruit": 0.461,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "bruit": [
+    "marchés / entreprises"
+   ],
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "UK Réforme des instruments médicaux : MHRA publie le projet de règlement 2026 et lance l'étude d'impact",
+     "resume": "L'Agence de réglementation des médicaments et des produits de santé (MHRA) a publié un projet de règlement réformant les exigences précommercialisation des dispositifs médicaux et des dispositifs médicaux diagnostiques in vitro..."
+    }
+   },
+   "sujets": [
+    "IVDR",
+    "MHRA"
+   ],
+   "score_cyber": 0.535
+  },
+  {
+   "id": "6370cf69a09c",
+   "titre": "AI regulation in financial services: navigating the EU AI Act in a layered regulatory landscape",
+   "lien": "https://www.hlc.com/en/publications/ai-regulation-in-financial-services-navigating-the-eu-ai-act-in-a-layered-regulatory-landscape",
+   "resume": "Banks, insurers and financial intermediaries are not newcomers to algorithmic decision making. Credit scoring models have been in production for decades, and actuarial pricing has long...",
+   "date": "2026-05-12",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.722,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.493,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "bruit": [
+    "finance / banque"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "La réglementation IA dans les services financiers: la navigation sur la loi UE IA dans un paysage réglementaire stratifié",
+     "resume": "Les banques, les assureurs et les intermédiaires financiers ne sont pas des nouveaux venus dans la prise de décision algorithmique. Les modèles de notation de crédit sont en production depuis des décennies, et les prix actuariels..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.642
+  },
+  {
+   "id": "77ae9d24e66d",
+   "titre": "China Brings Trade Law to Cybersecurity",
+   "lien": "https://ecipe.org/insights/china-trade-law-cybersecurity/",
+   "resume": "What EU cyber attachés and trade counsellors need to know about CSA2 and the WTO. In a rather unusual move, the Ministry of Commerce (MOFCOM) of the People’s Republic of China filed its formal comments on the revised Cybersecurity Act, … Continued",
+   "date": "2026-05-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [],
+   "groupes": [
+    "Réglementations Cyber",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.593,
+   "pertinence": "elevee",
+   "themes": [
+    "nis2",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Cybersecurity Act"
+   ],
+   "score_bruit": 0.353,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "La Chine apporte le droit commercial à la cybersécurité",
+     "resume": "Ce que les cyberattachés et les conseillers commerciaux UE doivent savoir sur CSA2 et le WTO. Dans un geste assez inhabituel, le ministère du Commerce (MOFCOM) de la République populaire de Chine a déposé ses observations formelles sur la loi ... Continue"
+    }
+   },
+   "sujets": [
+    "Cybersecurity Act"
+   ],
+   "score_cyber": 0.513
+  },
+  {
+   "id": "05a05ce28ba5",
+   "titre": "EU legislators agree to delay for high-risk AI rules",
+   "lien": "https://www.hlc.com/en/publications/eu-legislators-agree-to-delay-for-highrisk-ai-rules",
+   "resume": "On May 7, 2026, the Council of the EU and the European Parliament announced their provisional agreement on targeted amendments to the EU AI Act, as part of the European Commission's...",
+   "date": "2026-05-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "amendment",
+    "AI Act"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.705,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.42,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Les législateurs de UE conviennent de retarder les règles IA à haut risque",
+     "resume": "Le 7 mai 2026, le Conseil du UE et le Parlement européen ont annoncé leur accord provisoire sur des amendements ciblés à l'Acte UE IA, dans le cadre de la..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "statut": "projet",
+   "score_cyber": 0.625
+  },
+  {
+   "id": "796597175a35",
+   "titre": "Regulatory Inflation in the EU Digital Ecosystem",
+   "lien": "https://www.hlc.com/en/publications/regulatory-inflation-in-the-eu-digital-ecosystem",
+   "resume": "By way of clarification, this insight deliberately uses the word \"inflation\". Just as monetary inflation erodes purchasing power, regulatory inflation risks eroding something equally...",
+   "date": "2026-05-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.519,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.302,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Inflation réglementaire dans l'écosystème numérique UE",
+     "resume": "À titre de clarification, cette perspicacité utilise délibérément le mot « inflation ». Tout comme l'inflation monétaire érode le pouvoir d'achat, l'inflation réglementaire risque d'éroder..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.519
+  },
+  {
+   "id": "5947df68d889",
+   "titre": "MedTech Europe in the headlines in April 2026",
+   "lien": "https://www.medtecheurope.org/2026/05/07/medtech-europe-in-the-headlines-in-april-2026/",
+   "resume": "The recent media coverage showcased MedTech Europe’s consistent role as a leading voice in European medical technology, spanning regulatory reforms, evolving geopolitical situations, and the launch of the breakthrough medical devices pilot program. EU Data Act brings yet more questions for medtech In Medtech Insight, MedTech Europe is hoping that the European Parliament addresses industry […] The post MedTech Europe…",
+   "date": "2026-05-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Data Act",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.639,
+   "pertinence": "moyenne",
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Data Act"
+   ],
+   "score_bruit": 0.43,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Data Act"
+   ],
+   "motif": "texte clé : Data Act",
+   "bruit": [
+    "marchés / entreprises"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres en avril 2026",
+     "resume": "La récente couverture médiatique a mis en lumière le rôle constant de MedTech Europe en tant que voix de premier plan dans la technologie médicale européenne, couvrant les réformes réglementaires, l'évolution des situations géopolitiques, et le lancement du programme pilote de percée des dispositifs médicaux. Données UE Act apporte encore plus de questions pour medtech Dans Medtech Insight, MedTech Europe espère que le Parlement européen s'adresse [...] L'après MedTech Europe..."
+    }
+   },
+   "sujets": [
+    "Data Act"
+   ],
+   "score_cyber": 0.559
+  },
+  {
+   "id": "400ba2eadef7",
+   "titre": "TEHDAS2 Stakeholder Forum: MedTech Europe contributes to the debate on EHDS and AI",
+   "lien": "https://www.medtecheurope.org/2026/05/07/tehdas2-stakeholder-forum-medtech-europe-contributes-to-the-debate-on-ehds-and-ai/",
+   "resume": "A year after the entry into force of the European Health Data Space Regulation (EHDS), the goals remain the same: Europe needs clearer guidelines, smoother harmonisation, and better use of health data – not only for clinical care (primary use), but for research and innovation (secondary use) as well. Stakeholders engaged since the outset continue […] The post TEHDAS2 Stakeholder Forum: MedTech Europe contributes to…",
+   "date": "2026-05-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "guideline",
+    "Santé"
+   ],
+   "groupes": [
+    "Standards Cyber",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.766,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "EHDS"
+   ],
+   "score_bruit": 0.483,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "EHDS"
+   ],
+   "motif": "texte clé : EHDS",
+   "statut": "en_vigueur",
+   "trad": {
+    "fr": {
+     "titre": "Forum des parties prenantes TEHDAS2: MedTech Europe contribue au débat sur EHDS et IA",
+     "resume": "Un an après l'entrée en vigueur du règlement européen sur l'espace de données sanitaires (EHDS), les objectifs restent les mêmes: l'Europe a besoin de lignes directrices plus claires, d'une harmonisation plus fluide et d'une meilleure utilisation des données sanitaires, non seulement pour les soins cliniques (utilisation primaire), mais aussi pour la recherche et l'innovation (utilisation secondaire). Les parties prenantes engagées depuis le début continuent [...] Le post TEHDAS2 Forum des parties prenantes: MedTech Europe contribue à..."
+    }
+   },
+   "sujets": [
+    "EHDS"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.686
+  },
+  {
+   "id": "986095d5b23c",
+   "titre": "AI Act deal lands: what it means for the medical technology sector?",
+   "lien": "https://www.medtecheurope.org/2026/05/07/joint-industry-voice-calls-for-one-coherent-framework-for-ai-enabled-medical-technologies/",
+   "resume": "In the early hours of this morning, 7 May 2026, EU co-legislators reached a political agreement on the Digital Omnibus, amending the AI Act. The deal confirms that medical technologies will remain subject to the AI Act’s high-risk requirements. Industrial AI applications secured an exemption following sustained pressure from Germany; medical devices did not. This […] The post AI Act deal lands: what it means for the…",
+   "date": "2026-05-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.685,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.372,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : AI Act, Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "IA Act traite des terres: ce que cela signifie pour le secteur de la technologie médicale?",
+     "resume": "Dans les premières heures de ce matin, le 7 mai 2026, les colégislateurs UE sont parvenus à un accord politique sur l'omnibus numérique, modifiant la loi IA. L'accord confirme que les technologies médicales resteront assujetties aux exigences de la loi IA à haut risque. Les applications industrielles IA ont obtenu une exemption à la suite d'une pression soutenue de l'Allemagne; les dispositifs médicaux ne l'ont pas obtenu. Ce [...] L'après IA Act traite des terres: ce que cela signifie pour le..."
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "Digital Omnibus"
+   ],
+   "statut": "projet",
+   "score_cyber": 0.605
+  },
+  {
+   "id": "91c6f3361182",
+   "titre": "AI and Automated Decision-Making in the UK (Part I): The new rules and regulatory guidance",
+   "lien": "https://www.hlc.com/en/publications/ai-and-automated-decisionmaking-in-the-uk-part-i-the-new-rules-and-regulatory-guidance",
+   "resume": "On 5 February 2026, section 80 of the Data (Use and Access) Act 2025 (\"DUAA\") came into force, replacing Article 22 of the UK GDPR and fundamentally reshaping the UK's...",
+   "date": "2026-05-06",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.663,
+   "pertinence": "elevee",
+   "themes": [
+    "ia",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR"
+   ],
+   "score_bruit": 0.501,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "IA et prise de décision automatisée dans le UK (Partie I): Les nouvelles règles et directives réglementaires",
+     "resume": "Le 5 février 2026, l'article 80 de la loi de 2025 sur l'utilisation et l'accès des données (\"DUAA\") est entré en vigueur, remplaçant l'article 22 de la UK RGPD et..."
+    }
+   },
+   "sujets": [
+    "GDPR"
+   ],
+   "score_cyber": 0.583
+  },
+  {
+   "id": "0601fb721679",
+   "titre": "EU moves to align Notified Bodies’ practices under the MDR and IVDR",
+   "lien": "https://www.hlc.com/en/publications/eu-moves-to-align-notified-bodies-practices-under-the-mdr-and-ivdr",
+   "resume": "On 4 May 2026, the European Commission adopted Commission Implementing Regulation (EU) 2026/977, introducing harmonised and more stringent rules for how notified bodies conduct conformity...",
+   "date": "2026-05-05",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "implementing regulation",
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.549,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR"
+   ],
+   "score_bruit": 0.333,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "UE se déplace pour aligner les pratiques des organismes notifiés dans les MDR et IVDR",
+     "resume": "Le 4 mai 2026, la Commission européenne a adopté le règlement d'exécution (UE) 2026/977 de la Commission, introduisant des règles harmonisées et plus strictes pour la conduite des organismes notifiés..."
+    }
+   },
+   "sujets": [
+    "IVDR"
+   ],
+   "score_cyber": 0.388
+  },
+  {
+   "id": "6ca23f9a6a08",
+   "titre": "MedTech Europe backs EU device regulation overhaul but asks key changes",
+   "lien": "https://www.medtecheurope.org/2026/05/05/medtech-europe-backs-eu-device-regulation-overhaul-but-asks-key-changes/",
+   "resume": "Brussels, 05 May 2026 – MedTech Europe published today its detailed position on the European Commission’s proposed revision of the Medical Devices Regulation (MDR) and In Vitro Diagnostics Regulation (IVDR), supporting the overall direction of the reform while calling for targeted changes to translate the framework into workable outcomes. The industry association broadly welcomes the […] The post MedTech Europe…",
+   "date": "2026-05-05",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.624,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR",
+    "MDR"
+   ],
+   "score_bruit": 0.365,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe soutient la révision de la réglementation des appareils UE mais demande des changements clés",
+     "resume": "Bruxelles, le 05 mai 2026 – MedTech Europe a publié aujourd'hui sa position détaillée sur la proposition de révision du règlement sur les dispositifs médicaux (MDR) et du règlement sur les diagnostics in vitro (IVDR) de la Commission européenne, soutenant l'orientation générale de la réforme tout en appelant à des modifications ciblées pour traduire le cadre en résultats réalisables. L'association de l'industrie se félicite de [...] L'après MedTech Europe..."
+    }
+   },
+   "sujets": [
+    "IVDR",
+    "MDR"
+   ],
+   "score_cyber": 0.478
+  },
+  {
+   "id": "fc872a00306c",
+   "titre": "MDR/IVDR revision: Building a simpler, more predictable framework for patient access and innovation",
+   "lien": "https://www.medtecheurope.org/2026/05/05/mdr-ivdr-revision-building-a-simpler-more-predictable-framework-for-patient-access-and-innovation/",
+   "resume": "Europe’s regulatory framework for medical technologies is at a pivotal moment. Nearly a decade after adoption, the implementation of the Medical Devices Regulation (MDR) and In Vitro Diagnostics Regulations (IVDR) has revealed structural challenges: slow and unpredictable conformity assessment timelines, a high administrative burden, and divergent interpretations across Member States. These issues are affecting…",
+   "date": "2026-05-05",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.705,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR",
+    "MDR"
+   ],
+   "score_bruit": 0.444,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)",
+   "trad": {
+    "fr": {
+     "titre": "Révision MDR/IVDR: Construire un cadre plus simple et plus prévisible pour l'accès des patients et l'innovation",
+     "resume": "Le cadre réglementaire européen pour les technologies médicales est à un moment crucial. Près d'une décennie après l'adoption, la mise en œuvre du Règlement sur les instruments médicaux (MDR) et du Règlement sur les diagnostics in vitro (IVDR) a révélé des défis structurels : des délais d'évaluation de la conformité lents et imprévisibles, une charge administrative élevée et des interprétations divergentes entre les États membres. Ces problèmes affectent..."
+    }
+   },
+   "sujets": [
+    "IVDR",
+    "MDR"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.554
+  },
+  {
+   "id": "0fef48d02162",
+   "titre": "To Protect Data or Not to Protect: The Dilemma in the Commission’s Article 6(11) DMA Proceedings against Google",
+   "lien": "https://ecipe.org/insights/dma-proceedings-against-google/",
+   "resume": "In a series of Insights and Studies, scholars at ECIPE have drawn attention to the increasingly conflictual relationship between new enforcement under the Digital Markets Act and data privacy regulation in the EU. Last week, the Commission presented its preliminary … Continued",
+   "date": "2026-05-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.517,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.457,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Protéger les données ou ne pas protéger: le dilemme de la Commission Article 6(11) DMA Procédures contre Google",
+     "resume": "Dans une série d'études et d'études, des chercheurs de ECIPE ont attiré l'attention sur la relation de plus en plus conflictuelle entre la nouvelle application de la Loi sur les marchés numériques et la réglementation de la protection des données dans la UE. La semaine dernière, la Commission a présenté son ..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.517
+  },
+  {
+   "id": "e8704672140f",
+   "titre": "The Data Chronicles | U.K. data protection reform explained",
+   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-international-transfers",
+   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by Hogan Lovells partners Nicola Fulford and Katie McMullan to unpack the UK's Data (Use and Access) Act 2025 and what...",
+   "date": "2026-05-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.483,
+   "pertinence": "elevee",
+   "themes": [
+    "data_act",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR"
+   ],
+   "score_bruit": 0.378,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "trad": {
+    "fr": {
+     "titre": "La réforme de la protection des données au Royaume-Uni a expliqué",
+     "resume": "Dans cet épisode de The Data Chronicles, l'hôte Scott Loughlin est rejoint par les partenaires Hogan Lovells Nicola Fulford et Katie McMullan pour déballer le UK Data (Use and Access) Act 2025 et..."
+    }
+   },
+   "sujets": [
+    "GDPR"
+   ],
+   "score_cyber": 0.483
+  },
+  {
+   "id": "dd3dbaf652a0",
+   "titre": "If the DMA is fit for purpose why are the gatekeepers winning?",
+   "lien": "https://edri.org/our-work/if-the-dma-is-fit-for-purpose-why-are-the-gatekeepers-winning/",
+   "resume": "The European Commission says the Digital Markets Act (DMA) was “fit for purpose” and had “positive impact.” But while it certainly has that potential, laissez-faire enforcement and political interference by the Commission undermine its effectiveness and allow gatekeepers to continue to dominate European digital markets. The post If the DMA is fit for purpose why are the gatekeepers winning? appeared first on…",
+   "date": "2026-04-30",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.455,
+   "pertinence": "moyenne",
+   "themes": [
+    "large",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.297,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Si le DMA est adapté au but, pourquoi les gardiens gagnent-ils?",
+     "resume": "La Commission européenne indique que la loi sur les marchés numériques (DMA) était adaptée à des fins précises et a eu un impact positif. Mais s'il dispose certainement de ce potentiel, l'application du laissez-faire et l'ingérence politique de la Commission compromettent son efficacité et permettent aux gardiens de continuer à dominer les marchés numériques européens. Le post Si le DMA est adapté au but pourquoi les gardiens gagnent-ils? Il est apparu en premier..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.455
+  },
+  {
+   "id": "e10c379ebb53",
+   "titre": "The New(ish) Architecture of Consumer Health and Artificial Intelligence",
+   "lien": "https://fpf.org/blog/the-newish-architecture-of-consumer-health-and-artificial-intelligence/",
+   "resume": "The rise of AI-powered health tools is prompting new thinking about how, where, and when sensitive health information receives legal protection. According to media reports, consumers are now using general-purpose AI tools to upload or query health information, including medical records, and several companies have recently released large language model (LLM)-based tools customized for consumer [&#8230;]",
+   "date": "2026-04-30",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.671,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.452,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "La nouvelle architecture de la santé des consommateurs et de l'intelligence artificielle",
+     "resume": "L'augmentation des outils de santé AI-powered suscite une nouvelle réflexion sur la façon dont, où et quand les renseignements de santé sensibles reçoivent une protection juridique. Selon les médias, les consommateurs utilisent maintenant des outils IA à usage général pour télécharger ou interroger des renseignements sur la santé, y compris des dossiers médicaux, et plusieurs entreprises ont récemment publié des outils à base de grand langage (LLM) adaptés aux consommateurs [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.671
+  },
+  {
+   "id": "a85117d6b19a",
+   "titre": "Medical devices incorporating AI – Navigating roles and responsibilities of manufacturers/providers and users/deployers under the MDR and AIA",
+   "lien": "https://www.hlc.com/en/publications/medical-devices-incorporating-ai-navigating-roles-and-responsibilities",
+   "resume": "Under the current regulatory framework, AI-based medical devices (“ AIMDs ”) are regulated under both the EU MDR or IVDR 1 (Regulations (EU) 2017/745 and 2017/746) and the AI Act...",
+   "date": "2026-04-30",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act",
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Secteur santé : mots clés spécifiques",
+    "Termes multilingues",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.751,
+   "pertinence": "elevee",
+   "themes": [
+    "ia",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "IVDR",
+    "MDR"
+   ],
+   "score_bruit": 0.519,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : AI Act, IVDR, MDR (dispositifs médicaux)",
+   "trad": {
+    "fr": {
+     "titre": "Dispositifs médicaux intégrant IA – Navigation des rôles et responsabilités des fabricants/fournisseurs et des utilisateurs/déploieurs sous MDR et AIA",
+     "resume": "Dans le cadre réglementaire actuel, les dispositifs médicaux AI-based (-) sont réglementés en vertu des règlements UE MDR ou IVDR 1 (-) 2017/745 et 2017/746 et de la loi IA..."
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "IVDR",
+    "MDR"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.671
+  },
+  {
+   "id": "1253424d4e4f",
+   "titre": "Greece’s AI Smart Policing system ruled unlawful after €4 million public spending\\",
+   "lien": "https://edri.org/our-work/greeces-ai-smart-policing-system-ruled-unlawful-after-e4-million-public-spending/",
+   "resume": "A 4 million EUR “Smart Policing” programme enabling the use of AI technologies, including facial recognition software, which was deployed by the Hellenic Police has been ruled unlawful by Greece’s data protection authority. The decision confirmed long-standing concerns raised by EDRi member Homo Digitalis about facial recognition and data protection violations. The post Greece’s AI Smart Policing system ruled…",
+   "date": "2026-04-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.649,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.455,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Grèce Le système de police intelligent IA a jugé illégal après 4 millions d'euros de dépenses publiques\\",
+     "resume": "Un programme de services de police intelligents de 4 millions de EUR permettant l'utilisation des technologies IA, y compris le logiciel de reconnaissance faciale, qui a été déployé par la police hellénique a été jugé illégal par l'autorité grecque de protection des données. La décision a confirmé les préoccupations exprimées de longue date par Homo Digitalis, membre de l'EDRI, au sujet des violations de la reconnaissance faciale et de la protection des données. Le post Grèce IA système de police intelligent ..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.649
+  },
+  {
+   "id": "582861b78449",
+   "titre": "EDRi responds to European Commission’s consultation call on the Digital Omnibus",
+   "lien": "https://edri.org/our-work/edri-responds-to-european-commissions-consultation-call-on-the-digital-omnibus/",
+   "resume": "The European Commission opened consultations for the Digital Omnibus, EDRi responded by urging the Commission not to prioritise corporate interests and deregulation over privacy, transparency, and fundamental rights, ultimately putting people at greater risk of data misuse and discrimination. The post EDRi responds to European Commission’s consultation call on the Digital Omnibus appeared first on European Digital…",
+   "date": "2026-04-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.452,
+   "pertinence": "elevee",
+   "themes": [
+    "cra",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.373,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "EDRi répond à l'appel de consultation de la Commission européenne sur l'omnibus numérique",
+     "resume": "La Commission européenne a ouvert des consultations pour l'omnibus numérique, EDRi a répondu en exhortant la Commission à ne pas donner la priorité aux intérêts des entreprises et à la déréglementation en matière de protection de la vie privée, de transparence et de droits fondamentaux, ce qui, en fin de compte, expose les personnes à un risque accru d'abus de données et de discrimination. Le post EDRi répond à l'appel de consultation de la Commission européenne sur l'omnibus numérique apparu en premier sur..."
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.452
+  },
+  {
+   "id": "fbbf3ed27436",
+   "titre": "The EU AI Office must prioritise setting up the Advisory Forum",
+   "lien": "https://edri.org/our-work/the-eu-ai-office-must-prioritise-setting-up-the-advisory-forum/",
+   "resume": "35 organisations and researchers call on the EU AI Office to provide clear information on the timeline and process of the establishment of the Advisory Forum, the only formal mechanism ensuring civil society voices are part of AI Act implementation. The post The EU AI Office must prioritise setting up the Advisory Forum appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-04-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.683,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "AI Office"
+   ],
+   "score_bruit": 0.455,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Le bureau UE IA doit établir en priorité le forum consultatif",
+     "resume": "35 organisations et chercheurs demandent au bureau UE IA de fournir des informations claires sur le calendrier et le processus de mise en place du Forum consultatif, le seul mécanisme officiel garantissant que les voix de la société civile font partie de la mise en œuvre de la loi IA. L'article Le bureau UE IA doit donner la priorité à la mise en place du forum consultatif sur les droits numériques européens (EDRi)."
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "AI Office"
+   ],
+   "score_cyber": 0.603
+  },
+  {
+   "id": "b69302ae9a43",
+   "titre": "Cybersecurity Act 2 and National Security: Same as It Ever Was",
+   "lien": "https://ecipe.org/insights/cybersecurity-act-2/",
+   "resume": "Much of CSA2 Is Already National Law As the Council has begun its deliberations on Cybersecurity Act 2 (CSA2), its controversial Section 4 on supply chain security is being framed by the Member States as upending the delicate balance between … Continued",
+   "date": "2026-04-29",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [],
+   "groupes": [
+    "Réglementations Cyber",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.745,
+   "pertinence": "elevee",
+   "themes": [
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Cybersecurity Act"
+   ],
+   "score_bruit": 0.503,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "Loi 2 sur la cybersécurité et la sécurité nationale : comme jamais",
+     "resume": "Une grande partie de CSA2 est déjà une loi nationale Comme le Conseil a commencé ses délibérations sur la Cybersécurité Act 2 (CSA2), sa section controversée 4 sur la sécurité de la chaîne d'approvisionnement est conçue par les États membres comme..."
+    }
+   },
+   "sujets": [
+    "Cybersecurity Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.665
+  },
+  {
+   "id": "bc86a60fa79a",
+   "titre": "Dutch DPA draft guidelines on the right to explanation in ADM – Key takeaways",
+   "lien": "https://www.hlc.com/en/publications/dutch-dpa-draft-guidelines-on-the-right-to-explanation-in-adm-key-takeaways",
+   "resume": "On April 21, 2026, the Dutch Data Protection Authority published draft guidelines on the right to explanation in the context of automated decision-making (“ADM”) under Article...",
+   "date": "2026-04-27",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.467,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.431,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Pays-Bas DPA projet de lignes directrices sur le droit à l'explication dans ADM – Principales options",
+     "resume": "Le 21 avril 2026, l'Autorité néerlandaise pour la protection des données a publié un projet de lignes directrices sur le droit à l'explication dans le cadre de la prise de décision automatisée..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.437
+  },
+  {
+   "id": "43ea37aee96a",
+   "titre": "EU Rethinks How to Regulate AI in Medical Devices – Interplay between the MDR and AIA under current and proposed legislation",
+   "lien": "https://www.hlc.com/en/publications/eu-rethinks-how-to-regulate-ai-in-medical-devices-interplay-between-the-mdr-and-aia",
+   "resume": "When the EU adopted the AI Act (Regulation (EU) 2024/1689, “ AIA ”), soon concerns were aired that this would create an additional regulatory burden for AI-based medical devices...",
+   "date": "2026-04-24",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act",
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Secteur santé : mots clés spécifiques",
+    "Termes multilingues",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.715,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.483,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : AI Act, MDR (dispositifs médicaux)",
+   "statut": "adopte",
+   "trad": {
+    "fr": {
+     "titre": "UE Repense Comment réglementer IA dans les instruments médicaux – Interaction entre MDR et AIA en vertu de la législation actuelle et proposée",
+     "resume": "Lorsque le UE a adopté la loi IA (Règlement (UE) 2024/1689, -) AIA -), des inquiétudes ont rapidement été exprimées quant à la possibilité de créer un fardeau réglementaire supplémentaire pour les dispositifs médicaux AI-based..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.635
+  },
+  {
+   "id": "e9c47a35c1ad",
+   "titre": "Contextualizing the Proposed SECURE Data Act in the State Privacy Landscape",
+   "lien": "https://fpf.org/blog/contextualizing-the-proposed-secure-data-act-in-the-state-privacy-landscape/",
+   "resume": "Special thanks to FPF’s Dr. Gabriela Zanfir-Fortuna, VP of Global Policy, for her contributions to this analysis. The House Committee on Energy and Commerce’s Republican data privacy working group released their long-awaited comprehensive consumer privacy bill on April 22, titled the “Securing and Establishing Consumer Uniform Rights and Enforcement over Data Act” (SECURE Data Act) [&#8230;]",
+   "date": "2026-04-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Data Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.627,
+   "pertinence": "elevee",
+   "themes": [
+    "fournisseurs_publics",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Data Act"
+   ],
+   "score_bruit": 0.441,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Data Act"
+   ],
+   "motif": "texte clé : Data Act",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Contexte du projet de loi sur les données SECURE dans le paysage de la protection de la vie privée de l'État",
+     "resume": "Remerciements spéciaux à la Dre Gabriela Zanfir-Fortuna, VP de Global Policy, pour sa contribution à cette analyse. Le 22 avril, le Comité de la Chambre sur l'énergie et le commerce a publié un projet de loi détaillé sur la protection des données des consommateurs, intitulé « Securing and Establishing Consumer Uniform Rights and Enforcement Over Data Act » (Loi sur les données SECURE) [&#8230;]"
+    }
+   },
+   "sujets": [
+    "Data Act"
+   ],
+   "score_cyber": 0.547
+  },
+  {
+   "id": "3577429f9c7e",
+   "titre": "The EU Digital Omnibus Package Webinar Series: Replay now available",
+   "lien": "https://www.hlc.com/en/publications/the-eu-digital-omnibus-package-webinar-series-replay-now-available",
+   "resume": "Decode the Commission's reforms today and prepare your regulatory roadmap for 2026. The European Commission's released Digital Omnibus Package marks a significant development in the ...",
+   "date": "2026-04-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.573,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.506,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "La série Webinar du paquet numérique Omnibus UE: Rejouez maintenant disponible",
+     "resume": "Décoder les réformes de la Commission aujourd'hui et préparer votre feuille de route réglementaire pour 2026. Le Paquet omnibus numérique publié par la Commission européenne marque un ..."
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.573
+  },
+  {
+   "id": "e23051e22e89",
+   "titre": "French data protection authority establishes heightened consent rules for tracking pixels in emails",
+   "lien": "https://www.hlc.com/en/publications/french-data-protection-authority-establishes-heightened-consent-rules-for-tracking-pixels-in-emails",
+   "resume": "The French Data Protection Authority (CNIL) released guidance on April 14, 2026 on the use of invisible tracking pixels in electronic mail. The guidance adapts to pixels a strict...",
+   "date": "2026-04-20",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.477,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CNIL"
+   ],
+   "score_bruit": 0.39,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "L'autorité française de protection des données établit des règles de consentement renforcées pour le suivi des pixels dans les courriels",
+     "resume": "L'Autorité française de protection des données (CNIL) a publié des directives le 14 avril 2026 sur l'utilisation de pixels invisibles de suivi dans le courrier électronique. Le guide s'adapte aux pixels..."
+    }
+   },
+   "sujets": [
+    "CNIL"
+   ],
+   "score_cyber": 0.477
+  },
+  {
+   "id": "c3ab7bda4be4",
+   "titre": "New EU pilot programme for breakthrough medical devices and in vitro diagnostics",
+   "lien": "https://www.hlc.com/en/publications/new-eu-pilot-programme-for-breakthrough-medical-devices-and-in-vitro-diagnostics",
+   "resume": "The European Medicines Agency (“EMA”) is set to launch a pilot programme providing expert panel advice for developers of breakthrough medical devices and in vitro diagnostic medical devices ...",
+   "date": "2026-04-16",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.594,
+   "pertinence": "moyenne",
+   "themes": [
+    "dm_div",
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR"
+   ],
+   "score_bruit": 0.447,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "bruit": [
+    "marchés / entreprises"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "Nouveau programme pilote UE pour les dispositifs médicaux révolutionnaires et les diagnostics in vitro",
+     "resume": "L'Agence européenne des médicaments (-) va lancer un programme pilote qui fournira des conseils d'experts aux développeurs de dispositifs médicaux révolutionnaires et de dispositifs médicaux de diagnostic in vitro ..."
+    }
+   },
+   "sujets": [
+    "IVDR"
+   ],
+   "score_cyber": 0.462
+  },
+  {
+   "id": "d56cb4fd16cd",
+   "titre": "Europe shouldn’t “move fast and break things” with fundamental rights",
+   "lien": "https://edri.org/our-work/europe-shouldnt-move-fast-and-break-things-with-fundamental-rights/",
+   "resume": "The Digital Omnibus proposals, presented as “simplification,” risk weakening essential safeguards in the GDPR, the ePrivacy Directive, and the AI Act. By reducing protections and delaying obligations for high-risk systems, they introduce a logic reminiscent of the tech industry’s “move fast and break things” approach. In digital infrastructures built on large-scale data processing and automated decision-making,…",
+   "date": "2026-04-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act",
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.671,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.385,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : AI Act, RGPD / GDPR, Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "L'Europe devrait se déplacer rapidement et briser les choses avec les droits fondamentaux",
+     "resume": "Les propositions omnibus numériques, présentées sous forme de simplification, risquent d'affaiblir les garanties essentielles de la directive RGPD, de la directive ePrivacy et de la loi IA. En réduisant les protections et les obligations de retard pour les systèmes à haut risque, ils introduisent une logique rappelant l'industrie de la technologie. Dans les infrastructures numériques construites sur le traitement de l'information à grande échelle et la prise de..."
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.591
+  },
+  {
+   "id": "a548fe27b8f1",
+   "titre": "Open Letter: EU lawmakers must safeguard the AI Act",
+   "lien": "https://edri.org/our-work/open-letter-eu-lawmakers-must-safeguard-the-ai-act/",
+   "resume": "41 organisations and experts are calling on the European Commission, the European Parliament, and the Council to reject the AI Omnibus, and honour their responsibility in upholding and safeguarding the integrity of the AI Act and its implementation without delay. The post Open Letter: EU lawmakers must safeguard the AI Act appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-04-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.718,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.517,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Lettre ouverte: les législateurs UE doivent protéger la loi IA",
+     "resume": "41 organisations et experts demandent à la Commission européenne, au Parlement européen et au Conseil de rejeter l'omnibus IA et d'honorer leur responsabilité dans le respect et la sauvegarde de l'intégrité de l'Acte IA et de sa mise en œuvre sans délai. L'article Lettre ouverte: les législateurs de UE doivent sauvegarder la loi IA est apparu en premier sur les droits numériques européens (EDRi)."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.638
+  },
+  {
+   "id": "a8e5c54d23fd",
+   "titre": "The Digital Omnibus reopens the EU data acquis before it has even been tested",
+   "lien": "https://edri.org/our-work/the-digital-omnibus-reopens-the-eu-data-acquis-before-it-has-even-been-tested/",
+   "resume": "The Digital Omnibus not only targets the GDPR, ePrivacy and AI rules, but also rewrites the EU’s data acquis by merging recent laws into the Data Act. These changes risk weakening safeguards, concentrating power, and creating uncertainty before the framework has even been implemented in practice. The post The Digital Omnibus reopens the EU data acquis before it has even been tested appeared first on European Digital…",
+   "date": "2026-04-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "Data Act",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.619,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR",
+    "Data Act",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.392,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Data Act",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Data Act, Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "L'omnibus numérique rouvre l'acquis de données UE avant même d'être testé",
+     "resume": "L'omnibus numérique vise non seulement les règles RGPD, ePrivacy et IA, mais réécrit également l'acquis en matière de données UES en fusionnant les lois récentes dans la loi sur les données. Ces changements risquent d'affaiblir les garanties, de concentrer le pouvoir et de créer des incertitudes avant même que le cadre n'ait été mis en œuvre dans la pratique. The post The Digital Omnibus rouvre l'acquis en matière de données UE avant même qu'il n'ait été testé par..."
+    }
+   },
+   "sujets": [
+    "GDPR",
+    "Data Act",
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.539
+  },
+  {
+   "id": "118d6392815c",
+   "titre": "How can the EU protect children online while dismantling the very rules designed to keep them safe?",
+   "lien": "https://edri.org/our-work/how-can-the-eu-protect-children-online-while-dismantling-the-very-rules-designed-to-keep-them-safe/",
+   "resume": "Protecting children online has become one of the most powerful political narratives in Brussels, yet proposals like the Digital Omnibus risk weakening the very safeguards that make this protection possible. This is a contradiction: can children truly be protected if the rules designed to keep them safe are being dismantled? The post How can the EU protect children online while dismantling the very rules designed to…",
+   "date": "2026-04-15",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.469,
+   "pertinence": "elevee",
+   "themes": [
+    "cra",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.373,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Comment le UE peut-il protéger les enfants en ligne tout en démontant les règles conçues pour les protéger ?",
+     "resume": "Protéger les enfants en ligne est devenu l'un des récits politiques les plus puissants à Bruxelles, mais des propositions comme l'omnibus numérique risquent d'affaiblir les garanties mêmes qui rendent cette protection possible. C'est une contradiction: les enfants peuvent-ils vraiment être protégés si les règles conçues pour les protéger sont démantelées? The post Comment le UE peut protéger les enfants en ligne tout en démontant les..."
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.469
+  },
+  {
+   "id": "a57e4e4f244f",
+   "titre": "When Rules Collide: Regulatory Frictions Around the DMA and the Future of the EU’s Digital Framework",
+   "lien": "https://ecipe.org/insights/regulatory-frictions-around-dma/",
+   "resume": "The EU’s digital rulebook is entering a new phase, one marked less by the need to close regulatory gaps than by the risk of friction between overlapping rules. At the centre of this shift stands the Digital Markets Act (DMA), … Continued",
+   "date": "2026-04-14",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.548,
+   "pertinence": "moyenne",
+   "themes": [
+    "donnees",
+    "large"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.405,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Quand les règles s'enchaînent: Les frictions réglementaires autour du DMA et l'avenir du UE",
+     "resume": "Le règlement numérique UES entre dans une nouvelle phase, moins marquée par la nécessité de combler les lacunes réglementaires que par le risque de friction entre les règles qui se chevauchent. Au centre de ce changement se trouve le Digital Markets Act (DMA), ... Continue"
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.548
+  },
+  {
+   "id": "2c036248e27e",
+   "titre": "Red Lines under the EU AI Act: Restricting Real-time Remote Biometric Identification Systems for Law Enforcement Purposes",
+   "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-restricting-real-time-remote-biometric-identification-systems-for-law-enforcement-purposes/",
+   "resume": "Blog 8 &#124; Red Lines under the EU AI Act Series This blog is the eighth of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can find the whole series here. The eighth blog in the “Red lines under the EU AI Act” series [&#8230;]",
+   "date": "2026-04-08",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.664,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.361,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Lignes rouges en vertu de la Loi UE IA : restreindre les systèmes d'identification biométrique à distance en temps réel aux fins de l'application de la loi",
+     "resume": "Blog 8 &#124; Lignes rouges sous la série d'actes UE IA Ce blog est le huitième d'une série qui explore les pratiques interdites IA en vertu de la loi UE IA et leur interaction avec la loi UE existante. Vous pouvez trouver toute la série ici. Le huitième blog dans les lignes rouges de la série UE IA Act (en anglais seulement) [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.584
+  },
+  {
+   "id": "524835d9a7f2",
+   "titre": "EU Design Act: Designing the future - why the EU Design Act matters for medical devices",
+   "lien": "https://www.hlc.com/en/publications/eu-design-act-designing-the-future-why-the-eu-design-act-matters-for-medical-devices",
+   "resume": "The EU Design Act (effective 1 May 2025 with further reforms effective 1 July 2026 ) has been introduced to strengthen, simplify, and modernize the EU design system and align it with EU...",
+   "date": "2026-04-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.498,
+   "pertinence": "moyenne",
+   "themes": [
+    "acheteurs_sante",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.455,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "UE Design Act: Concevoir l'avenir - pourquoi la UE Design Act importe pour les instruments médicaux",
+     "resume": "La UE Design Act (en vigueur le 1er mai 2025 avec d'autres réformes en vigueur le 1er juillet 2026 ) a été introduite pour renforcer, simplifier et moderniser le système de conception UE et l'aligner..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.418
+  },
+  {
+   "id": "ab176b19f598",
+   "titre": "CE marking in the UK: MHRA consults on indefinite recognition of EU-certified devices",
+   "lien": "https://www.medtecheurope.org/2026/04/07/ce-marking-in-the-uk-mhra-consults-on-indefinite-recognition-of-eu-certified-devices/",
+   "resume": "The UK Medicines and Healthcare products Regulatory Agency (MHRA) has launched a public consultation on the future recognition of CE-marked medical devices and in vitro diagnostic devices in Great Britain, setting out options for the UK’s long-term regulatory approach. The consultation seeks views on a number of proposals, including the potential for indefinite recognition of […] The post CE marking in the UK: MHRA…",
+   "date": "2026-04-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "public consultation",
+    "Dispositifs médicaux",
+    "Santé",
+    "Certification / qualification de sécurité"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Termes santé",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.516,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR",
+    "MHRA"
+   ],
+   "score_bruit": 0.315,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "Marquage CE dans le UK: MHRA consulte sur la reconnaissance indéfinie des appareils EU-certified",
+     "resume": "La UK Medicines and Healthcare Products Regulatory Agency (MHRA) a lancé une consultation publique sur la reconnaissance future des dispositifs médicaux CE-marked et des dispositifs de diagnostic in vitro en Grande-Bretagne, en établissant des options pour l'approche réglementaire à long terme de UK. La consultation vise à recueillir des points de vue sur un certain nombre de propositions, y compris la possibilité d'une [...] Le marquage CE dans le UK: MHRA..."
+    }
+   },
+   "sujets": [
+    "IVDR",
+    "MHRA"
+   ],
+   "score_cyber": 0.39
+  },
+  {
+   "id": "3193abde4894",
+   "titre": "MedTech Europe in the headlines",
+   "lien": "https://www.medtecheurope.org/2026/04/07/medtech-europe-in-the-headlines/",
+   "resume": "The recent media coverage showcased MedTech Europe’s consistent role as a leading voice in European medical technology, spanning regulatory reforms, global trade developments, and EU‑backed innovation initiatives. Regulation: Strong industry support for MDR/IVDR simplification The European Commission’s proposed simplification of the MDR and IVDR frameworks attracted significant attention. Intertek* highlighted the…",
+   "date": "2026-04-07",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.652,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR"
+   ],
+   "score_bruit": 0.502,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres",
+     "resume": "La récente couverture médiatique a mis en lumière le rôle de premier plan joué par MedTech Europe dans la technologie médicale européenne, qui englobe les réformes réglementaires, l'évolution du commerce mondial et les initiatives d'innovation soutenues par UE. Règlement: un solide soutien de l'industrie à la simplification MDR/IVDR La Commission européenne a proposé de simplifier les cadres MDR et IVDR avec une attention considérable. Intertek* a souligné..."
+    }
+   },
+   "sujets": [
+    "IVDR"
+   ],
+   "score_cyber": 0.572
+  },
+  {
+   "id": "9fd5fd61a676",
+   "titre": "A decade later, FDA updates its patient preference information guidance for medical devices",
+   "lien": "https://www.hlc.com/en/publications/a-decade-later-fda-updates-its-patient-preference-information-guidance-for-medical-devices",
+   "resume": "On March 30, 2026, FDA's Center for Devices and Radiological Health and Center for Biologics Evaluation and Research issued final guidance titled Incorporating Voluntary Patient Preference...",
+   "date": "2026-04-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.564,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.463,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "Une décennie plus tard, FDA met à jour ses conseils d'information sur les préférences des patients pour les dispositifs médicaux",
+     "resume": "Le 30 mars 2026, le Centre pour les appareils et la santé radiologique de FDA et le Centre pour l'évaluation et la recherche biologiques ont publié une orientation finale intitulée Intégration de la préférence volontaire..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.468
+  },
+  {
+   "id": "e062b92bb623",
+   "titre": "Europe’s digital laws are not bargaining chips",
+   "lien": "https://edri.org/our-work/europes-digital-laws-are-not-bargaining-chips/",
+   "resume": "In reaction to the recent plan to “open a formal dialogue” with the US government on EU tech rules, EDRi and other civil society organisations urge the Commission to halt this plan that risks giving Big Tech a back door to weaken the EU digital rulebook and its enforcement. The post Europe’s digital laws are not bargaining chips appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-04-02",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.512,
+   "pertinence": "moyenne",
+   "themes": [
+    "large",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.397,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Europe Les lois numériques ne sont pas des puces de négociation",
+     "resume": "En réaction au récent projet d'ouverture d'un dialogue formel avec le gouvernement US sur les règles techniques UE, EDRi et d'autres organisations de la société civile exhortent la Commission à mettre un terme à ce plan qui risque de donner à Big Tech une porte arrière pour affaiblir le règlement numérique UE et son application. L'après Europe Les lois numériques ne sont pas des puces de négociation sont apparues en premier sur les droits numériques européens (EDRi)."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.512
+  },
+  {
+   "id": "b7416e14a1d9",
+   "titre": "Red Lines under the EU AI Act: Understanding the prohibition of biometric categorization for certain sensitive characteristics",
+   "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-understanding-the-prohibition-of-biometric-categorization-for-certain-sensitive-characteristics/",
+   "resume": "Blog 7 &#124; Red Lines under the EU AI Act Series This blog is the seventh of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can find the whole series here. The EU AI Act provides for rules on prohibited AI practices that the [&#8230;]",
+   "date": "2026-04-01",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.592,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.376,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Lignes rouges en vertu de la Loi UE IA : Comprendre l'interdiction de la catégorisation biométrique pour certaines caractéristiques sensibles",
+     "resume": "Blog 7 &#124; Lignes rouges sous la série d'actes UE IA Ce blog est le septième d'une série qui explore les pratiques interdites IA en vertu de la loi UE IA et leur interaction avec la loi UE existante. Vous pouvez trouver toute la série ici. La Loi UE IA prévoit des règles sur les pratiques IA interdites que le [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.512
+  },
+  {
+   "id": "f2602b30ac42",
+   "titre": "PRODUCT | Product liability and product safety and the interface with class actions / collective redress: Private enforcement on the rise",
+   "lien": "https://www.hlc.com/en/publications/product-product-liability-and-product-safety-and-the-interface-with-class-actions-collective-redress",
+   "resume": "The new Product Liability Directive (EU 2024/2853 – PLD 2024) marks a profound shift in the European liability landscape, strengthening a system based on the liability without fault...",
+   "date": "2026-03-31",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.602,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "PLD"
+   ],
+   "score_bruit": 0.355,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Directive responsabilité produits (PLD)"
+   ],
+   "motif": "texte clé : Directive responsabilité produits (PLD)",
+   "bruit": [
+    "marchés / entreprises"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "La responsabilité du produit et la sécurité du produit et l'interface avec les actions collectives / recours collectif: l'application privée en hausse",
+     "resume": "La nouvelle directive sur la responsabilité des produits (EU 2024/2853 – PLD 2024) marque un changement profond dans le paysage européen de la responsabilité, renforçant un système basé sur la responsabilité sans faute..."
+    }
+   },
+   "sujets": [
+    "PLD"
+   ],
+   "score_cyber": 0.602
+  },
+  {
+   "id": "b07edebd6bd2",
+   "titre": "Red Lines under EU AI Act: Unpacking the prohibition of emotion recognition in the workplace and education institutions",
+   "lien": "https://fpf.org/blog/red-lines-under-eu-ai-act-unpacking-the-prohibition-of-emotion-recognition-in-the-workplace-and-education-institutions/",
+   "resume": "Blog 6 &#124; Red Lines under the EU AI Act Series This blog is the sixth of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can find the whole series here. The sixth blog in the “Red lines under the EU AI Act” [&#8230;]",
+   "date": "2026-03-24",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.511,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.344,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Red Lines under UE IA Act: Déballage de l'interdiction de la reconnaissance des émotions dans le milieu de travail et les établissements d'enseignement",
+     "resume": "Blog 6 &#124; Lignes rouges sous la série d'actes UE IA Ce blog est le sixième d'une série qui explore les pratiques IA interdites en vertu de la loi UE IA et leur interaction avec la loi UE. Vous pouvez trouver toute la série ici. Le sixième blog dans les lignes rouges sous la loi UE IA"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.431
+  },
+  {
+   "id": "01357a973114",
+   "titre": "Mile‑High machine learning: New policy framework would significantly alter Colorado AI Act",
+   "lien": "https://www.hlc.com/en/publications/milehigh-machine-learning-new-policy-framework-would-significantly-alter-colorado-ai-act",
+   "resume": "A new proposal from a group convened by Colorado's Governor to repeal and replace the Colorado AI Act flips the focus of Colorado's AI framework from regulating how high-risk AI...",
+   "date": "2026-03-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.668,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.361,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Mile‐High machine learning: un nouveau cadre politique modifierait considérablement Colorado IA Act",
+     "resume": "Une nouvelle proposition d'un groupe convoqué par le gouverneur du Colorado pour abroger et remplacer la Colorado IA Act renverse l'accent du cadre IA du Colorado de la réglementation..."
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.588
+  },
+  {
+   "id": "7b382fff67ec",
+   "titre": "Five lessons from three years of risk assessments under the Digital Services Act",
+   "lien": "https://edri.org/our-work/five-lessons-from-three-years-of-risk-assessments-under-the-digital-services-act/",
+   "resume": "Under the Digital Services Act (DSA), Big Tech platforms are required to annually assess systemic risks tied to their services and implement measures to mitigate them. EDRi member, the European Center for Not-for-Profit Law (ECNL) analysed the first three rounds of these risk assessments, spanning from 2023 to 2025, and identified five major gaps. In their current form, these assessments are unlikely to provide…",
+   "date": "2026-03-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.517,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.456,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Cinq leçons tirées de trois années d'évaluation des risques en vertu de la Loi sur les services numériques",
+     "resume": "En vertu de la Loi sur les services numériques (DSA), les plateformes Big Tech sont tenues d'évaluer chaque année les risques systémiques liés à leurs services et de mettre en oeuvre des mesures pour les atténuer. Membre de l ' EDRi, le Centre européen pour le droit sans but lucratif (ECNL) a analysé les trois premières séries de ces évaluations des risques, qui ont porté sur la période 2023-2025, et identifié cinq lacunes majeures. Dans leur forme actuelle, ces évaluations sont peu susceptibles de fournir..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.517
+  },
+  {
+   "id": "a2d27d0052c7",
+   "titre": "Red Lines under the EU AI Act: Understanding the ban of the untargeted scraping of facial images and facial recognition databases",
+   "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-understanding-the-ban-of-the-untargeted-scraping-of-facial-images-and-facial-recognition-databases/",
+   "resume": "Blog 5 &#124; Red Lines under the EU AI Act Series This blog is the fifth of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can find the whole series here. 1. Introduction The fifth blog in the “Red lines under the EU AI [&#8230;]",
+   "date": "2026-03-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.5,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.333,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Red Lines under the UE IA Act: Comprendre l'interdiction de la grattage non ciblé des images faciales et des bases de données de reconnaissance faciale",
+     "resume": "Blog 5 &#124; Lignes rouges sous la série d'actes UE IA Ce blog est le cinquième d'une série qui explore les pratiques IA interdites en vertu de la loi UE IA et leur interaction avec la loi UE existante. Vous pouvez trouver toute la série ici. 1. Présentation Le cinquième blog dans les lignes rouges sous le UE IA [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.42
+  },
+  {
+   "id": "7eb12d21e1a5",
+   "titre": "The Digital Omnibus: A step back from the brink, but the risks remain",
+   "lien": "https://edri.org/our-work/the-digital-omnibus-a-step-back-from-the-brink-but-the-risks-remain/",
+   "resume": "A first Council compromise on the Digital Omnibus removes several of the most dangerous changes that were originally proposed to the GDPR and the ePrivacy Directive. This is a welcome development, however, important risks remain. Some amendments could still weaken safeguards in practice, while new provisions on AI development and access to terminal equipment remain unresolved. Simplification should strengthen…",
+   "date": "2026-03-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "amendment",
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.747,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.414,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "L'omnibus numérique: Un pas en arrière du bord, mais les risques demeurent",
+     "resume": "Un premier compromis du Conseil sur l'omnibus numérique supprime plusieurs des changements les plus dangereux qui ont été initialement proposés à la directive RGPD et à la directive ePrivacy. Il s'agit d'une évolution bienvenue, mais des risques importants subsistent. Certains amendements pourraient encore affaiblir les garanties dans la pratique, tandis que de nouvelles dispositions concernant le développement de IA et l'accès aux équipements terminaux ne sont toujours pas réglées. La simplification devrait renforcer..."
+    }
+   },
+   "sujets": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.667
+  },
+  {
+   "id": "30a841a59859",
+   "titre": "Civil society calls for an ambitious Digital Fairness Act on World Consumer Rights Day",
+   "lien": "https://edri.org/our-work/civil-society-calls-for-an-ambitious-digital-fairness-act-on-world-consumer-rights-day/",
+   "resume": "On World Consumer Rights Day, EDRi and dozens of other civil society organisations have signed a joint letter urging the European Commission to adopt a strong Digital Fairness Act (DFA). The coalition calls for rules that address manipulative digital business models and protect people from harmful online practices. The letter echoes the recommendations set out in EDRi’s recent policy paper on a rights-based approach…",
+   "date": "2026-03-16",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.45,
+   "pertinence": "moyenne",
+   "themes": [
+    "acheteurs_sante",
+    "large"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.386,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "La société civile appelle à une loi ambitieuse sur l'équité numérique à l'occasion de la Journée mondiale des droits des consommateurs",
+     "resume": "À l'occasion de la Journée mondiale des droits des consommateurs, EDRi et des dizaines d'autres organisations de la société civile ont signé une lettre conjointe demandant à la Commission européenne d'adopter une loi forte sur l'équité numérique (DFA). La coalition appelle à des règles qui s'attaquent aux modèles d'affaires numériques manipulateurs et protègent les gens contre les pratiques néfastes en ligne. La lettre fait écho aux recommandations formulées dans le récent document d'orientation sur une approche fondée sur les droits..."
+    }
+   },
+   "sujets": [],
+   "statut": "adopte",
+   "score_cyber": 0.45
+  },
+  {
+   "id": "594d7456f012",
+   "titre": "Red Lines under the EU AI Act: Unpacking the Prohibition of Individual Risk Assessment for the Prediction of Criminal Offences",
+   "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-unpacking-the-prohibition-of-individual-risk-assessment-for-the-prediction-of-criminal-offences/",
+   "resume": "Blog 4 &#124; Red Lines under the EU AI Act Series This blog is the fourth of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can find the whole series here. The fourth blog in the “Red lines under the EU AI Act” series [&#8230;]",
+   "date": "2026-03-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.614,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.391,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Lignes rouges en vertu de la Loi UE IA : Déballage de l'interdiction de l'évaluation du risque individuel pour la prévision d'infractions criminelles",
+     "resume": "Blog 4 &#124; Lignes rouges sous la série d'actes UE IA Ce blog est le quatrième d'une série qui explore les pratiques interdites IA en vertu de la loi UE IA et leur interaction avec la loi UE existante. Vous pouvez trouver toute la série ici. Le quatrième blog dans les lignes rouges de la série UE IA Act [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.534
+  },
+  {
+   "id": "59ff1643d97f",
+   "titre": "EU Digital Omnibus – Where simplification is likely and what businesses should plan for",
+   "lien": "https://www.hlc.com/en/publications/eu-digital-omnibus-where-simplification-is-likely-and-what-businesses-should-plan-for",
+   "resume": "The ongoing progress of the Digital Omnibus legislative reform is beginning to show that while the EU is not seeking to radically rewrite the data management rulebook, the various selective ...",
+   "date": "2026-03-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.624,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.438,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "trad": {
+    "fr": {
+     "titre": "Omnibus numérique UE – Lorsque la simplification est probable et ce que les entreprises devraient prévoir",
+     "resume": "Les progrès en cours de la réforme législative omnibus numérique commencent à montrer que, bien que le UE ne cherche pas à réécrire radicalement le règlement de gestion des données, les ..."
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.624
+  },
+  {
+   "id": "9a3da57e0c97",
+   "titre": "The Economics of Copyright and Data Access in European AI Development",
+   "lien": "https://ecipe.org/insights/economics-copyright-data-access-european-ai-development/",
+   "resume": "This ECIPE Insight is based on a forthcoming ECIPE publication on Copyright and AI. Three developments in early 2026 have brought the relationship between copyright law and artificial intelligence to a head. On 28 January, the European Parliament’s Committee on … Continued",
+   "date": "2026-03-06",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.497,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.405,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "L'économie du droit d'auteur et de l'accès aux données dans le développement européen IA",
+     "resume": "Ce ECIPE Insight est basé sur une prochaine publication ECIPE sur Copyright et IA. Trois développements au début de 2026 ont amené la relation entre le droit d'auteur et l'intelligence artificielle à la tête. Le 28 janvier, la commission ... suite"
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.497
+  },
+  {
+   "id": "568f6feae1f4",
+   "titre": "The Data Chronicles | AI enforcement – An international overview",
+   "lien": "https://www.hlc.com/en/publications/the-data-chronicles-ai-enforcement-an-international-overview",
+   "resume": "In this episode of The Data Chronicles, host Scott Loughlin is joined by Hogan Lovells partners Eduardo Ustaran and Giulia Mariuz to examine how regulators and courts across Europe and...",
+   "date": "2026-03-05",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.467,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.436,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Les Chroniques de données – Aperçu international",
+     "resume": "Dans cet épisode de The Data Chronicles, l'hôte Scott Loughlin est rejoint par les partenaires Hogan Lovells Eduardo Ustaran et Giulia Mariuz pour examiner comment les régulateurs et les tribunaux à travers l'Europe et..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.467
+  },
+  {
+   "id": "553d69f046fd",
+   "titre": "Climate and health: MedTech Europe participates in European Commission consultation on Integrated Climate Resilience Framework",
+   "lien": "https://www.medtecheurope.org/2026/03/05/climate-and-health-medtech-europe-participates-in-european-commission-consultation-on-integrated-climate-resilience-framework/",
+   "resume": "In February 2026, MedTech Europe responded to the European Commission public consultation on the upcoming Integrated Climate Resilience Framework calling for a holistic healthcare system response to pressures stemming from climate change. Smart investments, better co-ordination, consistent policy frameworks and improved collaboration will be key for building more sustainable, resilient healthcare systems. The…",
+   "date": "2026-03-05",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "public consultation",
+    "Santé"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.56,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.49,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "Climat et santé: MedTech Europe participe à la consultation de la Commission européenne sur le cadre de résilience climatique intégrée",
+     "resume": "En février 2026, MedTech Europe a répondu à la consultation publique de la Commission européenne sur le prochain Cadre intégré de résilience au climat, appelant à une réponse globale du système de santé aux pressions découlant du changement climatique. Des investissements intelligents, une meilleure coordination, des cadres stratégiques cohérents et une meilleure collaboration seront essentiels pour bâtir des systèmes de santé plus durables et plus résilients. Les..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.48
+  },
+  {
+   "id": "f888d32a1df0",
+   "titre": "Red Lines under the EU AI Act: Unpacking Social Scoring as a Prohibited AI Practice",
+   "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-unpacking-social-scoring-as-a-prohibited-ai-practice/",
+   "resume": "Blog 3 &#124; Red Lines under the EU AI Act Series&#160; This blog is the third of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can find the whole series&#160;here. The prohibition of AI-enabled social scoring is among the red lines established by [&#8230;]",
+   "date": "2026-03-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.591,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.438,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "trad": {
+    "fr": {
+     "titre": "Lignes rouges en vertu de la loi UE IA : Déballage de la notation sociale comme pratique interdite IA",
+     "resume": "Blogue 3 &#124; Lignes rouges sous la série d'actes UE IA &#160; Ce blog est le troisième d'une série qui explore les pratiques IA interdites en vertu de la loi UE IA et leur interaction avec la loi UE existante. Vous pouvez trouver toute la série &#160;ici. L'interdiction de la notation sociale AI-enabled fait partie des lignes rouges établies par [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.511
+  },
+  {
+   "id": "8952fc95a8fc",
+   "titre": "EU Cyber Resilience Act: European Commission publishes draft guidance",
+   "lien": "https://www.hlc.com/en/publications/eu-cyber-resilience-act-european-commission-publishes-draft-guidance-",
+   "resume": "With only months to go until the first set of obligations under the EU Cyber Resilience Act (“CRA”) become applicable, the Commission has published on 3 March 2026 its first...",
+   "date": "2026-03-04",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.74,
+   "pertinence": "elevee",
+   "themes": [
+    "cra",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CRA"
+   ],
+   "score_bruit": 0.484,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Loi sur la cyberrésilience UE: la Commission européenne publie un projet d'orientation",
+     "resume": "Avec seulement des mois pour aller jusqu'à ce que la première série d'obligations en vertu de la loi UE sur la cyberrésilience soit applicable, la Commission a publié..."
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.66
+  },
+  {
+   "id": "c42ad0152958",
+   "titre": "Red Lines under the EU AI Act: Understanding Manipulative Techniques and the Exploitation of Vulnerabilities",
+   "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-understanding-manipulative-techniques-and-the-exploitation-of-vulnerabilities/",
+   "resume": "Blog 2 &#124; Red Lines under the EU AI Act Series This blog is the second of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can read the first episode here and find the whole series here. Harmful manipulation and deception through AI systems [&#8230;]",
+   "date": "2026-02-25",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.6,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act"
+   ],
+   "score_bruit": 0.414,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "bruit": [
+    "vulnérabilités / alertes techniques"
+   ],
+   "trad": {
+    "fr": {
+     "titre": "Lignes rouges sous la loi UE IA : Comprendre les techniques de manipulation et l'exploitation des vulnérabilités",
+     "resume": "Blog 2 &#124; Lignes rouges sous la série d'actes UE IA Ce blog est le deuxième d'une série qui explore les pratiques interdites IA en vertu de la loi UE IA et leur interaction avec la loi UE existante. Vous pouvez lire le premier épisode ici et trouver toute la série ici. Manipulation et tromperie préjudiciables par les systèmes IA [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act"
+   ],
+   "score_cyber": 0.52
+  },
+  {
+   "id": "66e69f89b00c",
+   "titre": "Breaking the extractive digital business model: a rights-based Digital Fairness Act",
+   "lien": "https://edri.org/our-work/breaking-the-extractive-digital-business-model-a-rights-based-digital-fairness-act/",
+   "resume": "EDRi’s new position paper addresses the growing threat of manipulative and unfair platform design in the EU’s digital environment. It examines how deceptive interfaces, exploitative personalisation, and addictive design practices are embedded in today’s digital economy and why existing laws fail to tackle their structural roots. Grounded in a rights-based analysis, the paper argues that the Digital Fairness Act must…",
+   "date": "2026-02-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.538,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.433,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Breaking the extractive digital business model: a rights-based Digital Fairness Act",
+     "resume": "Le nouveau document de position de l'EDRI s'attaque à la menace croissante de la conception de plateformes manipulatrices et injustes dans l'environnement numérique UE. Il examine comment les interfaces trompeuses, la personnalisation d'exploitation et les pratiques de conception addictive sont intégrées dans l'économie numérique actuelle et pourquoi les lois existantes ne s'attaquent pas à leurs racines structurelles. Fondé sur une analyse fondée sur les droits, le document soutient que la Loi sur l'équité numérique doit..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.538
+  },
+  {
+   "id": "5f126eca1667",
+   "titre": "Open Letter: We say no to Big Tech mass snooping on our messages!",
+   "lien": "https://edri.org/our-work/open-letter-we-say-no-to-big-tech-mass-snooping-on-our-messages/",
+   "resume": "EDRi and 39 organisations are urging Members of the European Parliament to reject any extension of the the temporary ePrivacy derogration, also known as “Chat Control 1.0”, and to protect the rights that keep us safe from arbitrary snooping in our lives. The post Open Letter: We say no to Big Tech mass snooping on our messages! appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-02-23",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.486,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.46,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Lettre ouverte: Nous disons non à la masse Big Tech fouiner sur nos messages!",
+     "resume": "EDRi et 39 organisations exhortent les membres du Parlement européen à rejeter toute extension de la dérogation temporaire à la protection de la vie privée, également connue sous le nom de « Contrôle de la vie privée ». The post Lettre ouverte: Nous disons non à Big Tech masse fouiner sur nos messages! est apparu en premier sur European Digital Rights (EDRI) ."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.486
+  },
+  {
+   "id": "408e6e51bba4",
+   "titre": "Ensuring human rights-based, global perspectives in the DSA enforcement: the DSA Human Rights Alliance’s guidelines",
+   "lien": "https://edri.org/our-work/ensuring-human-rights-based-global-perspectives-in-the-dsa-enforcement-the-dsa-human-rights-alliances-guidelines/",
+   "resume": "The DSA Human Rights Alliance has released 'Principles for a Human Rights-Centred Application of the Digital Services Act: A Global Perspective' to guide the European Commission, national policymakers, and regulators as the DSA moves from legislation to enforcement. The recommendations focus on the cross-border effects of DSA enforcement, empowering diverse groups to enforce users’ rights and providing input during…",
+   "date": "2026-02-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "guideline"
+   ],
+   "groupes": [
+    "Standards Cyber"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.494,
+   "pertinence": "moyenne",
+   "themes": [
+    "fournisseurs_publics",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.432,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "lignes_directrices",
+   "trad": {
+    "fr": {
+     "titre": "Assurer des perspectives mondiales fondées sur les droits de l'homme dans l'application de la loi DSA: les lignes directrices de l'Alliance des droits de l'homme DSA",
+     "resume": "L'Alliance des droits de l'homme DSA a publié « Principes pour une application centrée sur les droits de l'homme de la loi sur les services numériques : une perspective globale » pour guider la Commission européenne, les décideurs nationaux et les régulateurs à mesure que le DSA passe de la législation à l'application. Les recommandations mettent l'accent sur les effets transfrontaliers de l'application de DSA, l'habilitation de divers groupes à faire respecter les droits des utilisateurs et..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.464
+  },
+  {
+   "id": "03183b79b41f",
+   "titre": "Copyright, AI, and the CJEU – A Binary Choice That Will Shape Europe’s Role in Global AI",
+   "lien": "https://ecipe.org/insights/copyright-ai-cjeu/",
+   "resume": "A case before the Court of Justice of the European Union (CJEU) is set to clarify one of the most consequential legal questions raised by artificial intelligence: when machines learn from text, are they reading or are they copying? At … Continued",
+   "date": "2026-02-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.525,
+   "pertinence": "moyenne",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.394,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Le droit d'auteur, IA et le CJEU – Un choix binaire qui façonnera l'Europe Le rôle dans le monde IA",
+     "resume": "Une affaire portée devant la Cour de justice de l'Union européenne (CJEU) vise à clarifier l'une des questions juridiques les plus importantes soulevées par l'intelligence artificielle: lorsque les machines apprennent du texte, lisent-elles ou copient-elles? À ... suite"
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.525
+  },
+  {
+   "id": "d605f6d4c1dd",
+   "titre": "Red Lines under the EU AI Act: Understanding ‘Prohibited AI Practices’ and their Interplay with the GDPR, DSA",
+   "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-understanding-prohibited-ai-practices-and-their-interplay-with-the-gdpr-dsa/",
+   "resume": "Blog 1 &#124; Red Lines under the EU AI Act Series This blog is the first of a series that explores prohibited AI practices under the EU AI Act and their interplay with existing EU law. You can find the whole series&#160;here. The EU AI Act prohibits certain AI practices in the European Union (hereinafter also [&#8230;]",
+   "date": "2026-02-18",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act",
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.649,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "GDPR"
+   ],
+   "score_bruit": 0.414,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : AI Act, RGPD / GDPR",
+   "trad": {
+    "fr": {
+     "titre": "Lignes rouges en vertu de la loi UE IA : Comprendre les pratiques IA interdites et leur interaction avec la RGPD, DSA",
+     "resume": "Blog 1 &#124; Lignes rouges sous la série d'actes UE IA Ce blog est le premier d'une série qui explore les pratiques interdites IA en vertu de la loi UE IA et leur interaction avec la loi UE existante. Vous pouvez trouver toute la série &#160;ici. La loi UE IA interdit certaines pratiques IA dans l'Union européenne (ci-après également [&#8230;]"
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "GDPR"
+   ],
+   "score_cyber": 0.569
+  },
+  {
+   "id": "0c22a63f92e3",
+   "titre": "UK MHRA consults on Indefinite Recognition of CE Marked Medical Devices",
+   "lien": "https://www.hlc.com/en/publications/uk-mhra-consults-on-indefinite-recognition-of-ce-marked-medical-devices",
+   "resume": "The Medicines and Healthcare products Regulatory Agency (MHRA) has launched a consultation on extending the recognition of EU CE marked devices in Great Britain indefinitely. The...",
+   "date": "2026-02-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux",
+    "Santé"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.542,
+   "pertinence": "moyenne",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "MHRA"
+   ],
+   "score_bruit": 0.377,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "UK MHRA consulte sur la reconnaissance indéfinie des instruments médicaux marqués CE",
+     "resume": "La Medicines and Healthcare Products Regulatory Agency (MHRA) a lancé une consultation sur l'extension de la reconnaissance des appareils marqués UE CE en Grande-Bretagne indéfiniment. Les..."
+    }
+   },
+   "sujets": [
+    "MHRA"
+   ],
+   "score_cyber": 0.366
+  },
+  {
+   "id": "f085b830eec8",
+   "titre": "UK MHRA Announces Consultation on the Indefinite Recognition of CE-marked Medical Devices",
+   "lien": "https://www.insideeulifesciences.com/2026/02/17/uk-mhra-announces-consultation-on-the-indefinite-recognition-of-ce-marked-medical-devices/",
+   "resume": "The UK Medicines and Healthcare products Regulatory Agency (“MHRA”) has published a targeted consultation on the indefinite recognition of the CE-mark for medical devices placed on the market in Great Britain (“GB”) (i.e., England, Scotland and Wales) (the “Consultation”), which will run until 10 April 2026. The Consultation aims to complement wider planned reforms to... Continue Reading…",
+   "date": "2026-02-17",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Inside EU Life Sciences (blog Covington & Burling)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux",
+    "Santé"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.56,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "MHRA"
+   ],
+   "score_bruit": 0.423,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation",
+   "trad": {
+    "fr": {
+     "titre": "UK MHRA annonce une consultation sur la reconnaissance indéfinie des instruments médicaux CE-marked",
+     "resume": "La UK Medicines and Healthcare Products Regulatory Agency a publié une consultation ciblée sur la reconnaissance indéfinie de la CE-mark pour les dispositifs médicaux mis sur le marché en Grande-Bretagne ('GB') (c'est-à-dire l'Angleterre, l'Écosse et le pays de Galles) (''Consultation''), qui durera jusqu'au 10 avril 2026. La consultation vise à compléter les réformes... Continue Reading..."
+    }
+   },
+   "sujets": [
+    "MHRA"
+   ],
+   "score_cyber": 0.394
+  },
+  {
+   "id": "d9200aced789",
+   "titre": "Reopening GDPR and ePrivacy through the Digital Omnibus: a risky path for EU digital rights",
+   "lien": "https://edri.org/our-work/reopening-gdpr-and-eprivacy-through-the-digital-omnibus-a-risky-path-for-eu-digital-rights/",
+   "resume": "EDRi has assessed the Digital Omnibus proposals affecting the General Data Protection Regulation (GDPR) and the ePrivacy framework. While presented as simplification, the changes amount to deregulation in effect, weakening fundamental rights safeguards, increasing legal uncertainty, and advancing through a process that falls short of democratic lawmaking standards. The post Reopening GDPR and ePrivacy through the…",
+   "date": "2026-02-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.781,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.389,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Réouverture de RGPD et ePrivacy à travers l'omnibus numérique : un chemin risqué pour les droits numériques UE",
+     "resume": "EDRi a évalué les propositions omnibus numériques concernant le règlement général sur la protection des données (RGPD) et le cadre ePrivacy. Tout en étant présentés comme des simplifications, ces changements équivaudront à une déréglementation effective, à l'affaiblissement des garanties des droits fondamentaux, à l'aggravation de l'insécurité juridique et à l'avancement d'un processus qui ne respecte pas les normes législatives démocratiques. Le post Réouverture de RGPD et ePrivacy à travers..."
+    }
+   },
+   "sujets": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.701
+  },
+  {
+   "id": "3b3d6722a2c8",
+   "titre": "AI Omnibus: Reject the proposals to undermine transparency in the AI Act",
+   "lien": "https://edri.org/our-work/ai-omnibus-reject-the-proposals-to-undermine-transparency-in-the-ai-act/",
+   "resume": "The European Commission’s dangerous and misguided Digital Omnibus proposal includes a dangerous rollback of transparency requirements in the AI Act. 60 civil society organisations, independent public authorities and individuals, including EDRi, urge EU lawmakers to reject a change that would risk weakening enforcement, legal certainty, and the protection of fundamental rights, while offering negligible benefits for…",
+   "date": "2026-02-11",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.699,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "AI Act",
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.48,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : AI Act, Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "IA Omnibus: Rejeter les propositions visant à saper la transparence dans la loi IA",
+     "resume": "60 organisations de la société civile, des pouvoirs publics indépendants et des particuliers, y compris EDRi, exhortent les législateurs UE à rejeter un changement qui risquerait d'affaiblir l'application, la sécurité juridique et la protection des droits fondamentaux, tout en offrant des avantages négligeables..."
+    }
+   },
+   "sujets": [
+    "AI Act",
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.619
+  },
+  {
+   "id": "193103f3f3a8",
+   "titre": "EDRi urged the Council to demand a proper scrutiny of the Digital Omnibus proposal",
+   "lien": "https://edri.org/our-work/edri-urges-the-council-to-demand-a-proper-scrutiny-of-the-digital-omnibus-proposal/",
+   "resume": "The Digital Omnibus proposal fails to comply with the Charter of Fundamental Rights and Better Regulation rules, EDRi urged the Council to send the proposal back to the Commission for proper scrutiny and comprehensive assessments. The post EDRi urged the Council to demand a proper scrutiny of the Digital Omnibus proposal appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-02-10",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.482,
+   "pertinence": "elevee",
+   "themes": [
+    "acheteurs_sante",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "Digital Omnibus"
+   ],
+   "score_bruit": 0.374,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "EDRi invite le Conseil à exiger un examen approprié de la proposition d'omnibus numérique",
+     "resume": "La proposition omnibus numérique ne respecte pas les règles de la Charte des droits fondamentaux et de l'amélioration de la réglementation, EDRi a exhorté le Conseil à renvoyer la proposition à la Commission pour qu'elle fasse l'objet d'un examen approprié et d'évaluations complètes. Le post EDRi a exhorté le Conseil à exiger un examen approprié de la proposition omnibus numérique est apparu en premier sur les droits numériques européens (EDRi)."
+    }
+   },
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "score_cyber": 0.482
+  },
+  {
+   "id": "11644bf6e551",
+   "titre": "Reviewing the Digital Markets Act: Inspirations from Japan",
+   "lien": "https://ecipe.org/insights/dma-review-inspirations-from-japan/",
+   "resume": "The European Commission is in the process of reviewing the Digital Markets Act (DMA), the flagship ex-ante competition regulation introduced a few years ago to manage digital platform competition. It is a good opportunity to reflect on the DMA and, … Continued",
+   "date": "2026-02-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.515,
+   "pertinence": "moyenne",
+   "themes": [
+    "large"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.447,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Révision de la loi sur les marchés numériques: Inspirations du Japon",
+     "resume": "La Commission européenne est en train de réviser la loi sur les marchés numériques (DMA), le règlement phare sur la concurrence ex ante introduit il y a quelques années pour gérer la concurrence des plateformes numériques. C'est une bonne occasion de réfléchir sur le DMA et, ... Continue"
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.515
+  },
+  {
+   "id": "e879cd195249",
+   "titre": "Institutional and Regulatory Lock-in – Europe’s Greatest Vulnerability",
+   "lien": "https://ecipe.org/insights/institutional-regulatory-lock-in-europe/",
+   "resume": "Brussels and Member State capitals spend much of their time worrying about external threats – energy dependence, supply chains, foreign technology, geopolitical pressure. Yet Europe’s most significant vulnerability lies much closer to home. It is underestimated, largely self-inflicted, and deeply … Continued",
+   "date": "2026-02-06",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "ECIPE (European Centre for International Political Economy)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.56,
+   "pertinence": "moyenne",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.394,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Lock-in institutionnel et réglementaire – Europe",
+     "resume": "Bruxelles et les capitales des États membres passent une grande partie de leur temps à s'inquiéter des menaces extérieures – dépendance énergétique, chaînes d'approvisionnement, technologie étrangère, pression géopolitique. Pourtant, la vulnérabilité la plus importante de l'Europe est beaucoup plus proche de la maison. Il est sous-estimé, largement auto-infligé, et profondément ... Suite"
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.56
+  },
+  {
+   "id": "826da4a29d3d",
+   "titre": "UK’s Data Use and Access Act (2025) data protection provisions come into force",
+   "lien": "https://www.hlc.com/en/publications/uks-data-use-and-access-act-2025-data-protection-provisions-come-into-force",
+   "resume": "On 5 February 2026, many of the key reforms to UK data protection law will take effect. They are being introduced through the Data Use and Access Act 2025 (“DUAA”), which is intended to...",
+   "date": "2026-02-06",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.495,
+   "pertinence": "elevee",
+   "themes": [
+    "data_act",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR"
+   ],
+   "score_bruit": 0.439,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "trad": {
+    "fr": {
+     "titre": "Les dispositions de la Loi sur l'utilisation des données et l'accès aux données (2025) entrent en vigueur",
+     "resume": "Le 5 février 2026, de nombreuses réformes clés de la loi UK sur la protection des données entreront en vigueur. Ils sont introduits dans le cadre de la loi sur l'utilisation des données et l'accès de 2025..."
+    }
+   },
+   "sujets": [
+    "GDPR"
+   ],
+   "score_cyber": 0.495
+  },
+  {
+   "id": "74862f8fb1cd",
+   "titre": "Implementing act on uniform application of the requirements for Notified Bodies (Annex VII)",
+   "lien": "https://www.medtecheurope.org/2026/02/05/implementing-act-on-uniform-application-of-the-requirements-for-notified-bodies-annex-vii/",
+   "resume": "The draft Implementing Act on Medical Device Regulation (MDR) and In Vitro Diagnostic Medical Devices Regulation (IVDR) Annex VII marks an important and timely step towards reinforcing the practical functioning of the European regulatory framework for medical technologies. By introducing clearer operational provisions and expectations, it contributes to greater predictability, transparency, consistency and…",
+   "date": "2026-02-05",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.736,
+   "pertinence": "elevee",
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR",
+    "MDR"
+   ],
+   "score_bruit": 0.42,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR",
+    "MDR (dispositifs médicaux)"
+   ],
+   "motif": "texte clé : IVDR, MDR (dispositifs médicaux)",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Acte d'exécution relatif à l'application uniforme des exigences applicables aux organismes notifiés (annexe VII)",
+     "resume": "Le projet de loi d'application sur la réglementation des dispositifs médicaux (MDR) et le règlement sur les dispositifs médicaux de diagnostic in vitro (IVDR), annexe VII, constitue une étape importante et opportune vers le renforcement du fonctionnement pratique du cadre réglementaire européen pour les technologies médicales. En introduisant des dispositions opérationnelles et des attentes plus claires, elle contribue à une plus grande prévisibilité, transparence, cohérence et..."
+    }
+   },
+   "sujets": [
+    "IVDR",
+    "MDR"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.515
+  },
+  {
+   "id": "0a50b70773c4",
+   "titre": "FDA updates compliance program inspection manual for the QMSR age",
+   "lien": "https://www.hlc.com/en/publications/fda-updates-compliance-program-inspection-manual-for-the-qmsr-age",
+   "resume": "On February 2, 2026, the U.S. Food and Drug Administration (FDA) published its anticipated compliance program manual, Inspection of Medical Device Manufacturers ( CP 7382.850 ), to explain...",
+   "date": "2026-02-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.565,
+   "pertinence": "moyenne",
+   "themes": [
+    "acheteurs_sante",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.425,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "FDA met à jour le manuel d'inspection du programme de conformité pour l'âge de QMSR",
+     "resume": "Le 2 février 2026, la Food and Drug Administration (FDA) des États-Unis a publié son manuel de programme de conformité prévu, Inspection of Medical Device Manufacturers (CP 7382.850 ), pour..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.485
+  },
+  {
+   "id": "48517000dedd",
+   "titre": "Germany changes rules for Digital Health Applications (DiGA) – More Reporting, More Transparency, More Work",
+   "lien": "https://www.insideeulifesciences.com/2026/02/03/germany-changes-rules-for-digital-health-applications/",
+   "resume": "Last week, Germany’s Federal Ministry of Health has adjusted the rules governing Digital Health Applications (DiGA) once more. Key changes include new reporting obligations that require manufacturers to measure and document the success of their digital health apps. This reform adds notable operational pressure, while the reported outcomes will directly affect the prices of the... Continue Reading…",
+   "date": "2026-02-03",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Inside EU Life Sciences (blog Covington & Burling)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Technologies numériques en santé"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.591,
+   "pertinence": "elevee",
+   "themes": [
+    "sante_donnees",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "DiGA"
+   ],
+   "score_bruit": 0.402,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "L'Allemagne modifie les règles pour les applications de santé numériques (DiGA) – Plus de rapports, Plus de transparence, Plus de travail",
+     "resume": "La semaine dernière, le ministère fédéral de la Santé de l'Allemagne a une fois de plus modifié les règles régissant les applications numériques de santé (DiGA). Parmi les changements clés, mentionnons les nouvelles obligations de déclaration qui obligent les fabricants à mesurer et documenter le succès de leurs applications numériques de santé. Cette réforme ajoute une pression opérationnelle notable, tandis que les résultats... Continuer la lecture..."
+    }
+   },
+   "sujets": [
+    "DiGA"
+   ],
+   "score_cyber": 0.561
+  },
+  {
+   "id": "245147982189",
+   "titre": "2026: A Year at the Crossroads for Global Data Protection and Privacy",
+   "lien": "https://fpf.org/blog/2026-a-year-at-the-crossroads-for-global-data-protection-and-privacy/",
+   "resume": "There are three forces twirling and swirling to create a perfect storm for global data protection and privacy this year: the surprise reopening of the General Data Protection Regulation (GDPR) which will largely play out in Brussels over the following months, the complexity and velocity of AI developments, and the push and pull over the [&#8230;]",
+   "date": "2026-01-30",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Future of Privacy Forum (FPF)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.591,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "GDPR"
+   ],
+   "score_bruit": 0.491,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "trad": {
+    "fr": {
+     "titre": "2026: Une année à la croisée des chemins pour la protection et la protection des données à l'échelle mondiale",
+     "resume": "Cette année, trois forces sillonnent et tourbillonnent pour créer une tempête parfaite pour la protection des données à l'échelle mondiale et la vie privée : la réouverture surprise du règlement général sur la protection des données (RGPD) qui jouera en grande partie à Bruxelles au cours des mois suivants, la complexité et la vitesse des développements IA, ainsi que la poussée et l'attraction sur le [&#8230;]"
+    }
+   },
+   "sujets": [
+    "GDPR"
+   ],
+   "score_cyber": 0.511
+  },
+  {
+   "id": "628e2af51339",
+   "titre": "Dutch authorities to focus on computerised systems during GMP inspections",
+   "lien": "https://www.hlc.com/en/publications/dutch-authorities-to-focus-on-computerised-systems-during-gmp-inspections",
+   "resume": "The Dutch authority carrying out GMP inspections, the Health and Youth Care Inspectorate (IGJ), announced it will carry out a series of pilot inspections focussing on the validation of...",
+   "date": "2026-01-27",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.507,
+   "pertinence": "elevee",
+   "themes": [
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IGJ"
+   ],
+   "score_bruit": 0.361,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "BPF / GMP Annexe 11 et 22"
+   ],
+   "motif": "texte clé : BPF / GMP Annexe 11 et 22",
+   "trad": {
+    "fr": {
+     "titre": "Les autorités néerlandaises se concentreront sur les systèmes informatisés lors des inspections GMP",
+     "resume": "L'autorité néerlandaise qui effectue les inspections GMP, l'Inspection de la santé et de la jeunesse (IGJ), a annoncé qu'elle effectuerait une série d'inspections pilotes..."
+    }
+   },
+   "sujets": [
+    "IGJ"
+   ],
+   "score_cyber": 0.507
+  },
+  {
+   "id": "d4d5a1d0e34f",
+   "titre": "Press Release: EDRi calls for swift action as EU probes X’s Grok over AI-generated harm",
+   "lien": "https://edri.org/our-work/edri-calls-for-swift-action-as-eu-probes-xs-grok-over-ai-generated-harm/",
+   "resume": "The European Commission has opened a DSA investigation into Grok, X’s AI chatbot. EDRi welcomes this decision and is calling for a swift resolution to this matter, to ensure that X complies fully with its DSA obligations and protects its users. The post Press Release: EDRi calls for swift action as EU probes X’s Grok over AI-generated harm appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-01-26",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "langue": "en",
+   "score": 0.56,
+   "pertinence": "elevee",
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.395,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "trad": {
+    "fr": {
+     "titre": "Communiqué de presse : EDRi appelle à une action rapide car UE sondes X.S. Grok au-dessus de AI-generated",
+     "resume": "La Commission européenne a ouvert une enquête DSA sur le chatbot IA de Grok. EDRi se félicite de cette décision et appelle à une résolution rapide de cette question, afin que X respecte pleinement ses obligations DSA et protège ses utilisateurs. Le communiqué de presse post: EDRi appelle à une action rapide alors que les sondes UE X.S. Grok sur les dommages AI-generated apparaissent en premier sur European Digital Rights (EDRI)."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.56
+  },
+  {
+   "id": "6da06edd07ea",
+   "titre": "Processor BCR gets an upgrade: Inside the EDPB’s new draft recommendations",
+   "lien": "https://www.hlc.com/en/publications/processor-bcr-gets-an-upgrade-inside-the-edpbs-new-draft-recommendations",
+   "resume": "The European Data Protection Board (EDPB) has adopted its draft Recommendations 1/2026 on Binding Corporate Rules for Processors (BCR-P) (“Recommendations”). The draft...",
+   "date": "2026-01-20",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.482,
+   "pertinence": "elevee",
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "EDPB"
+   ],
+   "score_bruit": 0.387,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "Processeur BCR obtient une mise à jour: À l'intérieur de la nouvelle ébauche de recommandations EDPB",
+     "resume": "Le Conseil européen de la protection des données (EDPB) a adopté son projet de recommandations 1/2026 sur les règles d'entreprise contraignantes pour les processeurs (BCR-P) ('Recommandations'). Le projet..."
+    }
+   },
+   "sujets": [
+    "EDPB"
+   ],
+   "score_cyber": 0.482
+  },
+  {
+   "id": "0bb46f7b252f",
+   "titre": "EU Cyber Resilience Act: Key 2026 milestones toward CRA compliance",
+   "lien": "https://www.hlc.com/en/publications/eu-cyber-resilience-act-getting-ready-for-cra-compliance-in-2026",
+   "resume": "The EU Cyber Resilience Act (“CRA”) establishes mandatory cybersecurity requirements for most hardware and software products made available on the EU market. While the CRA's date of full...",
+   "date": "2026-01-20",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.794,
+   "pertinence": "elevee",
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "CRA"
+   ],
+   "score_bruit": 0.457,
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA",
+   "trad": {
+    "fr": {
+     "titre": "Loi sur la cyberrésilience UE : Principales étapes 2026 vers la conformité CRA",
+     "resume": "La loi UE sur la cyberrésilience établit des exigences obligatoires en matière de cybersécurité pour la plupart des produits matériels et logiciels mis à disposition sur le marché UE. Alors que la date du CRA est pleine..."
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "score_cyber": 0.714
+  },
+  {
+   "id": "5c2f79f76036",
+   "titre": "Combined studies for medicinal products, medical devices and/or in-vitro diagnostics in the EU: COMBINE project enters Phase 2",
+   "lien": "https://www.hlc.com/en/publications/combined-studies-for-medicinal-products-medical-devices-andor-invitro-diagnostics-in-the-eu-combine",
+   "resume": "On 26 June, the European Commission and the participating EU Member States announced the launch of Phase 2 of the COMBINE pilot project for the coordinated assessment of combined studies.",
+   "date": "2026-07-09",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "langue": "en",
+   "score": 0.559,
+   "pertinence": "moyenne",
+   "themes": [
+    "sante_donnees",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [
+    "IVDR"
+   ],
+   "score_bruit": 0.418,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "bruit": [
+    "marchés / entreprises",
+    "médicaments (hors dispositifs)"
+   ],
+   "titre_nettoye": 2,
+   "trad": {
+    "fr": {
+     "titre": "Études combinées de médicaments, de dispositifs médicaux et/ou de diagnostics in vitro dans le projet UE: le projet COMBINE entre en phase 2",
+     "resume": "Le 26 juin, la Commission européenne et les États membres participants UE ont annoncé le lancement de la phase 2 du projet pilote COMBINE pour l'évaluation coordonnée des études combinées."
+    }
+   },
+   "sujets": [
+    "IVDR"
+   ],
+   "score_cyber": 0.479
+  },
+  {
+   "id": "bfec90ddb6b3",
+   "titre": "The new UK Information Commission: Turning data protection enforcement into a team effort",
+   "lien": "https://www.hlc.com/en/publications/the-new-uk-information-commission-turning-data-protection-enforcement-into-a-team-effort",
+   "resume": "On 30 September 2026, the Information Commissioner's Office became the Information Commission’s Office, a subtle but important change introduced by the Data (Use and Access) Act 2025...",
+   "date": "2026-10-05",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_bruit": 0.448,
+   "score": 0.476,
+   "themes": [
+    "large",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La nouvelle Commission d'information UK : transformer l'application de la protection des données en une équipe",
+     "resume": "Le 30 septembre 2026, le Commissariat à l'information est devenu le Bureau de la Commission de l'information, un changement subtil mais important introduit par la Loi sur les données (utilisation et accès) de 2025..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "ICO"
+   ],
+   "acronymes": [
+    "GDPR",
+    "ICO"
+   ],
+   "score_cyber": 0.476
+  },
+  {
+   "id": "bc86d3897543",
+   "titre": "MedTech Europe in the headlines in September 2026",
+   "lien": "https://www.medtecheurope.org/2026/10/06/medtech-europe-in-the-headlines-in-september-2026/",
+   "resume": "In September, MedTech Europe featured prominently in coverage of the MDR/IVDR revision, setting out its positions on the IVDR, single-use devices and AI-enabled medical devices. Coverage also centred heavily on the EU’s proposed Public Procurement Regulation, with MedTech Europe welcoming the shift towards value-based procurement while warning against “Made in Europe” requirements. Further coverage included […] The…",
+   "date": "2026-10-06",
+   "date_estimee": false,
+   "detecte_le": "2026-10-06",
+   "version": "2026-10-06-1206",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "revision",
+    "MDR",
+    "Dispositifs médicaux",
+    "Achats publics"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "score_bruit": 0.448,
+   "score": 0.63,
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres en septembre 2026",
+     "resume": "En septembre, MedTech Europe a pris une place importante dans la révision de MDR/IVDR et a exposé ses positions sur les appareils IVDR, les appareils à usage unique et les appareils médicaux AI-enabled. La couverture s'est également fortement concentrée sur le règlement sur les marchés publics proposé par UE, MedTech Europe se félicitant de l'évolution vers des marchés à valeur ajoutée tout en mettant en garde contre les exigences de « Made in Europe ». Autre couverture : [...] Les..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "IVDR",
+    "MDR"
+   ],
+   "acronymes": [
+    "IVDR",
+    "MDR"
+   ],
+   "score_cyber": 0.55
+  },
+  {
+   "id": "399a1a84e774",
+   "titre": "The Cloud and AI Development Act (CADA) represents everything that’s wrong with Europe’s approach to digital sovereignty",
+   "lien": "https://edri.org/our-work/the-cloud-and-ai-development-act-cada-represents-everything-thats-wrong-with-europes-approach-to-digital-sovereignty/",
+   "resume": "The EU’s Tech Sovereignty Package is supposed to jump-start Europe’s “sovereign AI” ambitions. But due to fundamental misunderstandings about the technology behind ‘AI’ and the blind trust in Big Tech’s AI doomer and boomer narratives, it is more likely to instead hurt digital rights and the environment instead, and waste valuable public resources that should have been invested in actually increasing Europe’s…",
+   "date": "2026-10-08",
+   "date_estimee": false,
+   "detecte_le": "2026-10-12",
+   "version": "2026-10-12-1259",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_bruit": 0.4,
+   "score": 0.532,
+   "themes": [
+    "data_act",
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
+   ],
+   "motif": "texte clé : Cloud and AI Development Act (CADA)",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le Cloud and IA Development Act (CADA) représente tout ce qui ne va pas avec l'approche européenne de la souveraineté numérique",
+     "resume": "Le package de souveraineté technique de QZXO est censé démarrer l'Europe. Mais en raison de malentendus fondamentaux au sujet de la technologie derrière «IA. » et de la confiance aveugle dans le doomer IA Big Techs et les récits de boomer, il est plus probable qu'il porte atteinte aux droits numériques et à l'environnement à la place, et gaspille des ressources publiques précieuses qui auraient dû être investies dans l'augmentation de l'Europe..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CADA"
+   ],
+   "acronymes": [
+    "CADA"
+   ],
+   "score_cyber": 0.532
+  },
+  {
+   "id": "ae9d356841ae",
+   "titre": "No human required: Austria’s plan for AI-only government decisions",
+   "lien": "https://edri.org/our-work/no-human-required-austrias-plan-for-ai-only-government-decisions/",
+   "resume": "A sweeping change to Austria's administrative law would let authorities issue binding decisions using AI systems with no human ever reviewing the outcome. EDRi member epicenter.works has sent an open letter to parliament, and is looking for input from readers elsewhere in Europe about how other countries are handling, or planning to handle, the same issue. The post No human required: Austria’s plan for AI-only…",
+   "date": "2026-10-08",
+   "date_estimee": false,
+   "detecte_le": "2026-10-12",
+   "version": "2026-10-12-1259",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_bruit": 0.41,
+   "score": 0.547,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Pas d'humain requis: Autriche plan pour les décisions du gouvernement AI-only",
+     "resume": "Une modification radicale du droit administratif autrichien permettrait aux autorités de prendre des décisions contraignantes en utilisant des systèmes IA sans jamais examiner le résultat. EDRi membre epicenter.works a envoyé une lettre ouverte au Parlement, et est à la recherche de commentaires de lecteurs ailleurs en Europe sur la façon dont d'autres pays traitent, ou prévoient de traiter, la même question. Le post Pas d'humain requis: Austria..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": [],
+   "score_cyber": 0.547
+  },
+  {
+   "id": "ce3a39c7b254",
+   "titre": "FDA’s draft RASD guidance codifies years of existing review practice for general surgical robotics systems",
+   "lien": "https://www.hlc.com/en/publications/fdas-draft-rasd-guidance-codifies-years-of-existing-review-practice-for-general-surgical-systems",
+   "resume": "The U.S. Food and Drug Administration (FDA) issued new draft guidance on premarket submissions for robotically assisted surgical devices (RASDs). We see the guidance as a notable maturation ...",
+   "date": "2026-10-16",
+   "date_estimee": false,
+   "detecte_le": "2026-10-19",
+   "version": "2026-10-19-1048",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_cyber": 0.539,
+   "score_bruit": 0.466,
+   "score": 0.539,
+   "themes": [
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "texte à portée mondiale",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "L'ébauche du guide RASD codifie les années de pratique d'examen des systèmes de robotique chirurgicaux généraux",
+     "resume": "La Food and Drug Administration (FDA) des États-Unis a publié une nouvelle ébauche de lignes directrices sur les soumissions avant la mise en marché d'appareils chirurgicaux assistés par robot. Nous voyons les conseils comme une maturation notable ..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "01e0e347144f",
+   "titre": "Shades of gray: Navigating AI regulation without a global playbook",
+   "lien": "https://www.hlc.com/en/publications/shades-of-gray-navigating-ai-regulation-without-a-global-playbook",
+   "resume": "There is no global playbook for AI regulation, and there may not even be a national one. In this episode of The Data Chronicles, we examine how approaches are diverging across the EU, the...",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_cyber": 0.553,
+   "score_bruit": 0.536,
+   "score": 0.553,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Nuances de gris: Naviguer dans la régulation IA sans playbook global",
+     "resume": "Il n'y a pas de playbook global pour la réglementation IA, et il peut même n'y en avoir pas. Dans cet épisode de The Data Chronicles, nous examinons comment les approches sont divergentes dans le..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "eecf58304bbb",
+   "titre": "The future of EU-US data transfers: The Data Privacy Framework can survive after Slaughter",
+   "lien": "https://www.hlc.com/en/publications/the-future-of-eu-us-data-transfers-the-data-privacy-framework-can-survive-after-slaughter",
+   "resume": "On 29 June 2026, the US Supreme Court held in Trump v. Slaughter that statutory protections insulating Federal Trade Commission (FTC) commissioners from at-will removal by the US President...",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_cyber": 0.525,
+   "score_bruit": 0.393,
+   "score": 0.525,
+   "themes": [
+    "donnees",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "L'avenir des transferts de données EU-US : Le Cadre de confidentialité des données peut survivre après l'abattage",
+     "resume": "Le 29 juin 2026, la Cour suprême de US a jugé dans l'affaire Trump c. Slaughter que les protections légales isolent les commissaires de la Commission fédérale du commerce (FTC) de..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "5f29903f380b",
+   "titre": "EU Cyber Resilience Act: Germany adopts CRA Implementation Act as national enforcement regimes take shape across the EU",
+   "lien": "https://www.hlc.com/en/publications/eu-cyber-resilience-act-germany-adopts-cra-implementation-act-as-national-enforcement-regimes",
+   "resume": "On 14 October 2026, the German Parliament adopted the Implementation Act for the EU Cyber Resilience Act (“CRA”), determining how the EU’s cybersecurity rules for products ...",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "score_cyber": 0.633,
+   "score_bruit": 0.41,
+   "score": 0.713,
+   "themes": [
+    "cra",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "statut": "adopte",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "UE Cyber Resilience Act: L'Allemagne adopte la loi de mise en œuvre CRA alors que les régimes nationaux d'application prennent forme à travers la UE",
+     "resume": "Le 14 octobre 2026, le Parlement allemand a adopté la loi de mise en œuvre de la loi UE sur la cyberrésilience, qui définit les règles de cybersécurité ..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "b09e968a5a16",
+   "titre": "UK Medical Device Update: Developments in AI, Proposed GB Licensing Framework and Indefinite CE Mark Recognition",
+   "lien": "https://www.insideeulifesciences.com/2026/10/21/uk-medical-device-update-developments-in-ai-and-proposed-gb-licensing-framework/",
+   "resume": "Recent weeks have proved of great interest to the UK medical device industry, with various key developments emerging. Foremost among these, on 10 September 2026, the National Commission into the Regulation of AI in Healthcare (“National Commission”) published its report on recommendations for a future regulatory framework (“Report”). The Report contains 44 recommendations, including several... Continue Reading…",
+   "date": "2026-10-21",
+   "date_estimee": false,
+   "detecte_le": "2026-10-22",
+   "version": "2026-10-22-1302",
+   "source": "Inside EU Life Sciences (blog Covington & Burling)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux",
+    "Santé"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "score_cyber": 0.552,
+   "score_bruit": 0.517,
+   "score": 0.636,
+   "themes": [
+    "dm_div",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Mise à jour de l'instrument médical UK : développements dans IA, cadre de licence GB proposé et reconnaissance de marque CE indéterminée",
+     "resume": "Ces dernières semaines se sont révélées très intéressantes pour l'industrie des dispositifs médicaux UK, avec divers développements clés qui se font jour. En premier lieu, le 10 septembre 2026, la Commission nationale a publié son rapport sur les recommandations pour un futur cadre réglementaire ('Report'). Le rapport contient 44 recommandations, dont plusieurs... Continue Reading..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "243cc05df940",
+   "titre": "Insights and Analysis The EU AI Act and UK AI regulation: A product law perspective 19 October 2026",
+   "lien": "https://www.hlc.com/en/publications/the-eu-ai-act-and-uk-ai-regulation-a-product-law-perspective",
+   "resume": "",
+   "date": "2026-10-19",
+   "date_estimee": false,
+   "detecte_le": "2026-10-26",
+   "version": "2026-10-26-1112",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "score_cyber": 0.715,
+   "score_bruit": 0.511,
+   "score": 0.795,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : AI Act",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Insights and Analysis The UE IA Act and UK IA regulation: A product law perspective 19 octobre 2026",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "bba5b8a62111",
+   "titre": "FDA emphasizes totality-of-the-evidence approach in revised “substantial evidence” draft guidance for drugs, biologics",
+   "lien": "https://www.hlc.com/en/publications/fda-emphasizes-totalityoftheevidence-approach-in-revised-substantial-evidence-draft-guidance",
+   "resume": "In January 2026, (now former) U.S. Food and Drug Administration (FDA) leaders described a “single trial default” approach in a New England Journal of Medicine (NEJM) article, and in the...",
+   "date": "2026-07-21",
+   "date_estimee": false,
+   "detecte_le": "2026-09-25",
+   "version": "2026-09-25-1456",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "langue": "en",
+   "score": 0.519,
+   "pertinence": "moyenne",
+   "themes": [
+    "dm_div",
+    "retours_importants"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "echeances": [],
+   "acronymes": [],
+   "score_bruit": 0.364,
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "trad": {
+    "fr": {
+     "titre": "FDA met l'accent sur l'approche de la totalité de la preuve dans la version révisée des preuves substantielles.",
+     "resume": "En janvier 2026, (aujourd'hui ancien) les dirigeants de l'U.S. Food and Drug Administration (FDA) ont décrit une approche d'essai unique dans un article de New England Journal of Medicine (NEJM), et dans..."
+    }
+   },
+   "sujets": [],
+   "score_cyber": 0.466,
+   "titre_nettoye": 3
+  },
+  {
+   "id": "8c78703ef337",
+   "titre": "The internet should not demand constant self-defence: Fairness starts before the click",
+   "lien": "https://edri.org/our-work/the-internet-should-not-demand-constant-self-defence-fairness-starts-before-the-click/",
+   "resume": "A fair digital environment cannot – and should not – depend on everyone being permanently alert. Fairness must be built into the environment itself, not left to the skills of the people using it. In practice, that means rules, not appeals: cancelling must be as easy as subscribing, protection must be the default rather than a setting, and a system that detects a moment of weakness must not be allowed to act on it.…",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.483,
+   "score_bruit": 0.463,
+   "score": 0.483,
+   "themes": [
+    "cra",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Internet ne devrait pas exiger une légitime défense constante: L'équité commence avant le clic",
+     "resume": "Un environnement numérique équitable ne peut – et ne doit pas – dépendre de l'alerte permanente de tous. L'équité doit être intégrée dans l'environnement lui-même, et non pas laissée aux compétences des personnes qui l'utilisent. Dans la pratique, cela signifie des règles, pas des appels: l'annulation doit être aussi facile que l'abonnement, la protection doit être le défaut plutôt qu'un réglage, et un système qui détecte un moment de faiblesse ne doit pas être autorisé à agir sur elle...."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "c09b425f2882",
+   "titre": "Surveillance in times of insecurity: a wicked and stupid strategy",
+   "lien": "https://edri.org/our-work/surveillance-in-times-of-insecurity-a-wicked-and-stupid-strategy/",
+   "resume": "Sweden has been grappling with crime-related challenges in the past years. The difficulty to address violent crimes in cities notably has triggered extensive legislative reforms to increase surveillance and repression, including that of children. Tougher criminal penalties, widespread videosurveillance, mass electronic monitoring and government hacking are just a few examples illustrating the Swedish government’s…",
+   "date": "2026-10-29",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.48,
+   "score_bruit": 0.417,
+   "score": 0.48,
+   "themes": [
+    "cra",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Surveillance en période d'insécurité : une stratégie méchante et stupide",
+     "resume": "Au cours des dernières années, la Suède a relevé des défis liés à la criminalité. La difficulté de lutter contre les crimes violents dans les villes a notamment déclenché de vastes réformes législatives pour accroître la surveillance et la répression, y compris celle des enfants. Des sanctions pénales plus sévères, une surveillance vidéo généralisée, une surveillance électronique de masse et le piratage gouvernemental ne sont que quelques exemples illustrant le gouvernement suédois..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "286772bb7a1c",
+   "titre": "MedTech Europe in the headlines in October 2026",
+   "lien": "https://www.medtecheurope.org/2026/10/01/medtech-europe-in-the-headlines-in-october-2026/",
+   "resume": "October media coverage highlighted MedTech Europe’s call for a single regulatory pathway for AI-enabled medical technologies, efforts to reduce regulatory duplication and accelerate patient access to innovation, as well as its support for a shift towards value-based public procurement that prioritises quality alongside cost. The publication of the Facts & Figures 2026 report also generated broad […] The post MedTech…",
+   "date": "2026-10-01",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Achats publics"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "score_cyber": 0.581,
+   "score_bruit": 0.44,
+   "score": 0.611,
+   "themes": [
+    "sante_donnees",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "MedTech Europe dans les titres en octobre 2026",
+     "resume": "La couverture médiatique du mois d'octobre a mis en lumière l'appel lancé par MedTech Europe en faveur d'une voie réglementaire unique pour les technologies médicales AI-enabled, les efforts visant à réduire les doubles emplois réglementaires et à accélérer l'accès des patients à l'innovation, ainsi que son soutien à une réorientation vers des marchés publics à valeur ajoutée qui privilégient la qualité parallèlement aux coûts. La publication du rapport Faits et chiffres 2026 a également généré une large [...] Le post MedTech..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "fb3199fbb2a1",
+   "titre": "A Comparison of the EU Cloud and AI Development Act Requirements Against the U.S. FOCI Regime and FedRAMP",
+   "lien": "https://www.insideprivacy.com/cloud-computing/a-comparison-of-the-eu-cloud-and-ai-development-act-requirementsagainst-the-u-s-foci-regime-and-fedramp/",
+   "resume": "As governments increasingly focus on cloud security and sovereignty, the European Commission (“EC”) is, through its proposal for a Cloud and AI Development Act (“CADA Proposal”), attempting to create a regime establishing “sovereignty” requirements on cloud computing service providers that can be procured by the public sector. In our prior blog post, we discussed the... Continue Reading…",
+   "date": "2026-10-22",
+   "date_estimee": false,
+   "detecte_le": "2026-10-30",
+   "version": "2026-10-30-1705",
+   "source": "Inside Privacy (blog Covington & Burling – données et cybersécurité)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.663,
+   "score_bruit": 0.456,
+   "score": 0.663,
+   "themes": [
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cloud and AI Development Act (CADA)"
+   ],
+   "motif": "texte clé : Cloud and AI Development Act (CADA)",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Comparaison des exigences de la UE Cloud et de la IA Development Act par rapport au régime américain FOCI et FedRAMP",
+     "resume": "Étant donné que les gouvernements se concentrent de plus en plus sur la sécurité et la souveraineté dans le cloud, la Commission européenne tente, par sa proposition de loi sur le développement du Cloud et du IA (proposition CADA), de créer un régime établissant des exigences de souveraineté sur les fournisseurs de services de cloud informatique qui peuvent être achetés par le secteur public. Dans notre blog précédent, nous... Continuer la lecture..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CADA"
+   ],
+   "acronymes": [
+    "CADA"
+   ]
+  },
+  {
+   "id": "001bca83c3a9",
+   "titre": "EU governments call it ‘simplification,’ but their Data Omnibus deal considerably weakens our rights",
+   "lien": "https://edri.org/our-work/eu-governments-call-it-simplification-but-their-data-omnibus-deal-considerably-weakens-our-rights/",
+   "resume": "EU governments have agreed on their position on the Digital Omnibus, retaining changes that threaten fundamental rights to privacy and data protection. With negotiations moving to the European Parliament, MEPs must reject the proposed weakening of GDPR safeguards for AI and pseudonymised data, protect individual rights, and defend ePrivacy against new tracking exemptions. Genuine simplification should make our…",
+   "date": "2026-11-04",
+   "date_estimee": false,
+   "detecte_le": "2026-11-09",
+   "version": "2026-11-09-1000",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.592,
+   "score_bruit": 0.336,
+   "score": 0.672,
+   "themes": [
+    "donnees",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Les gouvernements UE l'appellent «simplification», mais leur accord sur l'omnibus de données affaiblit considérablement nos droits",
+     "resume": "Les gouvernements UE se sont mis d'accord sur leur position sur l'omnibus numérique, en maintenant des changements qui menacent les droits fondamentaux à la vie privée et à la protection des données. Avec le passage des négociations au Parlement européen, les députés doivent rejeter l'affaiblissement proposé des garanties RGPD pour IA et les données pseudonymes, protéger les droits individuels et défendre la vie privée contre les nouvelles exemptions de suivi. Une véritable simplification devrait..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "acronymes": [
+    "GDPR",
+    "Digital Omnibus"
+   ]
+  }
+ ]
+};

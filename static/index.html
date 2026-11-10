@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyber Watch</title>
+<meta name="description" content="Veille réglementaire cybersécurité, données, IA et dispositifs médicaux. Regulatory watch on cybersecurity, data, AI and medical devices.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu" data-i18n="skip">Aller au contenu</a>
+
+<!--
+  Aucun texte d'article n'est écrit ici : tout est construit par script.js, en
+  français ou en anglais, à partir des fichiers de data/ :
+    actualites.js   veille certifiée, 6 derniers mois (articles collectés + base de connaissance)
+    actualites_archives.js  articles plus anciens, chargés à la demande (période, restitution)
+    alertes.js      points clés (alertes stables) ; flux RSS points_cles_fr|en.xml
+    debats.js       avis d'experts (non certifié, toujours affiché à part)
+    pressentis.js   « Pressentis et avis d'experts » (sujets regroupés, cycle de vie)
+    referentiel.js  textes applicables par pays
+    etat_sources.js, versions.js, acronymes.js, syntheses.js, monde.js (fond de carte)
+-->
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="collecte-bandeau" id="collecte-bandeau" role="status" aria-live="polite" hidden></div>
+    <div class="mast-top">
+      <p class="mast-kicker" id="surtitre">Veille réglementaire — Wavestone</p>
+      <div class="mast-tools">
+        <div class="menu" id="menu-export">
+          <button type="button" class="btn btn-quiet" aria-haspopup="true" aria-expanded="false" data-menu data-i18n="btn_export">Exporter</button>
+          <div class="menu-list" role="menu" hidden>
+            <button type="button" role="menuitem" id="export-pdf-complet" data-i18n="btn_pdf_all">La veille complète (PDF)</button>
+            <button type="button" role="menuitem" id="export-pdf" data-i18n="btn_pdf">Les articles affichés (PDF)</button>
+            <button type="button" role="menuitem" id="export-csv" data-i18n="btn_excel">Les articles affichés (Excel)</button>
+            <button type="button" role="menuitem" id="export-slides" data-i18n="btn_slides">Support de slides (PowerPoint)</button>
+          </div>
+        </div>
+        <button type="button" class="btn btn-quiet btn-assistant" id="assistant-ouvrir" aria-controls="assistant" aria-expanded="false"><span aria-hidden="true">🔎</span> <span data-i18n="as_btn">Poser une question</span></button>
+        <a class="btn btn-quiet" id="lancer-maj" href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="btn_update">Lancer une mise à jour</a>
+        <div class="lang-switch" role="group" aria-label="Langue / Language">
+          <button type="button" class="lang-btn" data-lang="fr" lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+    <h1 class="mast-title" id="titre">Cyber Watch</h1>
+    <p class="mast-sub" id="sous-titre"></p>
+    <div class="mast-edition">
+      <p id="edition"></p>
+      <label class="edition-select"><span data-i18n="version_label">Édition</span>
+        <select id="version-select"></select></label>
+    </div>
+    <p class="version-banner" id="version-banner" hidden></p>
+    <div class="visite-banner" id="visite-banner" hidden></div>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Rubriques du site">
+  <div class="wrap">
+    <div class="tabs" role="tablist">
+      <a class="tab" role="tab" href="#essentiel" data-tab-link="essentiel" data-i18n="tab_essentiel">L'essentiel</a>
+      <a class="tab" role="tab" href="#veille" data-tab-link="veille" data-i18n="tab_watch">Veille</a>
+      <a class="tab" role="tab" href="#carte" data-tab-link="carte" data-i18n="tab_map">Carte</a>
+      <a class="tab" role="tab" href="#referentiel" data-tab-link="referentiel" data-i18n="tab_ref">Textes applicables</a>
+      <a class="tab tab-debats" role="tab" href="#debats" data-tab-link="debats" data-i18n="tab_debats">Pressentis et avis d'experts</a>
+      <a class="tab" role="tab" href="#sources" data-tab-link="sources" data-i18n="tab_sources">Sources</a>
+    </div>
+  </div>
+</nav>
+
+<main id="contenu">
+
+<!-- ============================================================ L'ESSENTIEL -->
+<div class="tab-panel" data-tab="essentiel">
+  <div class="wrap">
+    <section class="points-cles" aria-labelledby="pc-titre">
+      <header class="block-head pc-head">
+        <div>
+          <h2 id="pc-titre" data-i18n="pc_title">Points clés</h2>
+          <p class="block-lead" data-i18n="pc_lead"></p>
+        </div>
+        <button type="button" class="btn btn-quiet btn-sm" id="pc-rss"><span aria-hidden="true">📡</span> <span data-i18n="pc_rss">S'abonner (Outlook / RSS)</span></button>
+      </header>
+      <div class="pc-legende" id="pc-legende"></div>
+      <div class="pc-liste" id="pc-liste"></div>
+      <p class="empty" id="pc-vide" hidden data-i18n="pc_empty"></p>
+      <details class="pc-precedents" id="pc-precedents">
+        <summary><span data-i18n="pc_prev">Points clés précédents</span> <span class="block-meta" id="pc-prev-n"></span></summary>
+        <p class="block-meta" data-i18n="pc_prev_lead"></p>
+        <div id="pc-prev-liste"></div>
+      </details>
+    </section>
+
+    <section class="textes-mois" aria-labelledby="tm-titre">
+      <header class="block-head">
+        <h2 id="tm-titre" data-i18n="tm_title">Nouvelles réglementations et normes</h2>
+        <p class="block-lead" data-i18n="tm_lead"></p>
+      </header>
+      <div class="seg" role="group" id="tm-periode">
+        <button type="button" data-j="30" aria-pressed="true" data-i18n="p30">30 jours</button>
+        <button type="button" data-j="90" data-i18n="p90">3 mois</button>
+      </div>
+      <div id="tm-liste" class="tm-liste"></div>
+      <p class="empty" id="tm-vide" hidden data-i18n="tm_empty"></p>
+    </section>
+
+    <section class="agenda" aria-labelledby="agenda-titre">
+      <header class="block-head">
+        <h2 id="agenda-titre" data-i18n="agenda_title">Dates clés</h2>
+        <p class="block-lead" data-i18n="agenda_lead"></p>
+      </header>
+      <div class="seg" role="group" id="agenda-horizon">
+        <button type="button" data-h="90" aria-pressed="true" data-i18n="h90">3 mois</button>
+        <button type="button" data-h="180" data-i18n="h180">6 mois</button>
+        <button type="button" data-h="365" data-i18n="h365">12 mois</button>
+        <button type="button" data-h="1100" data-i18n="hall">Tout</button>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+      <p class="empty" id="agenda-vide" hidden data-i18n="agenda_empty"></p>
+    </section>
+
+    <section class="bilans" aria-labelledby="bilan-titre">
+      <header class="block-head">
+        <h2 id="bilan-titre" data-i18n="bi_title">Bilans et restitutions</h2>
+        <p class="block-lead" data-i18n="bi_lead"></p>
+      </header>
+      <div class="bilan-grid">
+        <div class="bilan-box">
+          <h3 data-i18n="bi_month">Bilan mensuel</h3>
+          <div class="bilan-ctrl">
+            <select id="bilan-mois" class="select" aria-label="Mois"></select>
+            <button type="button" class="btn btn-sm" id="bilan-pdf" data-i18n="bi_pdf">Télécharger (PDF)</button>
+          </div>
+          <div id="bilan-resume" class="bilan-resume"></div>
+        </div>
+        <div class="bilan-box">
+          <h3 data-i18n="bi_rest">Restitution sur une période</h3>
+          <div class="seg" role="group" id="rest-preset">
+            <button type="button" data-m="3" data-i18n="p90">3 mois</button>
+            <button type="button" data-m="6" aria-pressed="true" data-i18n="h180">6 mois</button>
+            <button type="button" data-m="12" data-i18n="h365">12 mois</button>
+          </div>
+          <div class="bilan-ctrl">
+            <label><span data-i18n="per_du">Du</span> <input type="date" id="rest-du" class="select"></label>
+            <label><span data-i18n="per_au">au</span> <input type="date" id="rest-au" class="select"></label>
+          </div>
+          <div class="bilan-ctrl">
+            <button type="button" class="btn btn-primary btn-sm" id="rest-pdf" data-i18n="bi_rest_pdf">Restitution (PDF)</button>
+            <button type="button" class="btn btn-sm" id="rest-csv" data-i18n="bi_rest_csv">Articles de la période (Excel)</button>
+          </div>
+          <p class="block-meta" data-i18n="bi_rest_note"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chiffres" aria-labelledby="chiffres-titre">
+      <h2 id="chiffres-titre" class="sr-only" data-i18n="kpi_title">En chiffres</h2>
+      <div class="kpis" id="kpis"></div>
+    </section>
+  </div>
+</div>
+
+<!-- ================================================================= VEILLE -->
+<div class="tab-panel" data-tab="veille" hidden>
+  <div class="wrap">
+    <div class="toolbar">
+      <div class="seg seg-big" role="group" id="fenetre">
+        <button type="button" data-f="recent" aria-pressed="true"><span data-i18n="w_recent">Nouveautés</span> <span class="seg-n" id="n-recent"></span></button>
+        <button type="button" data-f="archives"><span data-i18n="w_archives">Archives</span> <span class="seg-n" id="n-archives"></span></button>
+      </div>
+      <div class="toolbar-right">
+        <input type="search" id="recherche" class="search" data-i18n-ph="search_ph" autocomplete="off" aria-label="Rechercher">
+        <button type="button" class="btn" id="toggle-filters" aria-expanded="false" aria-controls="facets">
+          <span data-i18n="filters">Affiner</span> <span class="active-count" id="active-count" hidden></span>
+        </button>
+        <select id="tri" class="select" aria-label="Tri">
+          <option value="date" data-i18n="sort_date">Plus récents</option>
+          <option value="pertinence" data-i18n="sort_pert">Plus pertinents</option>
+          <option value="amende" data-i18n="sort_fine">Plus fortes amendes</option>
+        </select>
+      </div>
+    </div>
+    <p class="window-note" id="window-note"></p>
+    <p class="search-hint" data-i18n="search_hint"></p>
+
+    <div class="facets-panel" id="facets" hidden>
+      <div class="facets">
+        <fieldset class="facet facet-wide facet-periode"><legend data-i18n="f_periode">Période</legend>
+          <div class="periode-ctrl">
+            <label><span data-i18n="per_du">Du</span> <input type="date" id="per-du" class="select"></label>
+            <label><span data-i18n="per_au">au</span> <input type="date" id="per-au" class="select"></label>
+            <div class="seg" role="group" id="per-preset">
+              <button type="button" data-m="1" data-i18n="per_1m">1 mois</button>
+              <button type="button" data-m="6" data-i18n="h180">6 mois</button>
+              <button type="button" data-m="12" data-i18n="h365">12 mois</button>
+              <button type="button" data-m="0" data-i18n="per_clear">Effacer</button>
+            </div>
+          </div>
+          <label class="switch"><input type="checkbox" id="depuis-visite"><span data-i18n="since_visit">Seulement les nouveautés depuis ma dernière visite</span></label>
+          <p class="block-meta" id="per-archives" hidden></p>
+        </fieldset>
+        <fieldset class="facet"><legend data-i18n="f_pert">Pertinence</legend><div class="chips" id="fc-pert"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_zone">Pays / zone</legend><div class="chips" id="fc-zone"></div></fieldset>
+        <fieldset class="facet facet-wide"><legend data-i18n="f_theme">Textes et normes</legend><div class="chips" id="fc-theme"></div>
+          <button type="button" class="linkbtn" id="more-themes" hidden></button></fieldset>
+        <fieldset class="facet facet-wide"><legend data-i18n="f_autorite">Autorités</legend><div class="chips" id="fc-autorite"></div></fieldset>
+        <fieldset class="facet facet-wide"><legend data-i18n="f_grand">Grands thèmes</legend><div class="chips" id="fc-grand"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_section">Rubrique</legend><div class="chips" id="fc-section"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_status">Statut du texte</legend><div class="chips" id="fc-statut"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_nature">Source</legend><div class="chips" id="fc-nature"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_fine">Amendes</legend><div class="chips" id="fc-amende"></div></fieldset>
+      </div>
+      <div class="facets-foot">
+        <label class="switch"><input type="checkbox" id="voir-originaux"><span data-i18n="show_originals">Textes d'origine (non traduits)</span></label>
+        <button type="button" class="btn btn-quiet" id="reset-filters" data-i18n="reset">Tout effacer</button>
+      </div>
+    </div>
+
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+    <p class="surveiller-note" id="surveiller-note" hidden><span id="surveiller-texte"></span>
+      <button type="button" class="linkbtn" id="surveiller-bascule"></button></p>
+    <p class="empty" id="empty-state" hidden data-i18n="empty">Aucun article ne correspond à ces filtres.</p>
+    <p class="empty" id="no-data" hidden data-i18n="no_data"></p>
+    <div id="rubriques"></div>
+  </div>
+</div>
+
+<!-- ================================================================== CARTE -->
+<div class="tab-panel" data-tab="carte" hidden>
+  <div class="wrap">
+    <header class="block-head">
+      <h2 data-i18n="map_title">Carte de la veille</h2>
+      <p class="block-lead" data-i18n="map_lead"></p>
+    </header>
+    <div class="map-tools">
+      <div class="seg" role="group" id="map-vue">
+        <button type="button" data-v="europe" aria-pressed="true" data-i18n="map_europe">Europe</button>
+        <button type="button" data-v="monde" data-i18n="map_world">Monde</button>
+      </div>
+      <div class="seg" role="group" id="map-periode">
+        <button type="button" data-p="30" data-i18n="p30">30 jours</button>
+        <button type="button" data-p="90" data-i18n="p90">3 mois</button>
+        <button type="button" data-p="" aria-pressed="true" data-i18n="pall">Tout</button>
+      </div>
+      <div class="map-legend" id="map-legend" aria-hidden="true"></div>
+    </div>
+    <div class="map-layout">
+      <div class="map-stage" id="map-stage">
+        <svg id="map-svg" role="img" aria-labelledby="map-svg-title"><title id="map-svg-title">Carte</title></svg>
+        <div class="map-pills" id="map-pills"></div>
+        <div class="map-tooltip" id="map-tooltip" hidden></div>
+      </div>
+      <aside class="map-fiche" id="map-fiche">
+        <p class="map-hint" data-i18n="map_hint">Choisissez un pays sur la carte.</p>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ RÉFÉRENTIEL -->
+<div class="tab-panel" data-tab="referentiel" hidden>
+  <div class="wrap">
+    <header class="block-head">
+      <h2 data-i18n="ref_title">Textes applicables</h2>
+      <p class="block-lead" data-i18n="ref_lead"></p>
+      <p class="block-meta" id="ref-resume"></p>
+    </header>
+    <div class="toolbar">
+      <select id="ref-zone" class="select" aria-label="Zone"></select>
+      <select id="ref-cat" class="select" aria-label="Catégorie"></select>
+      <input type="search" id="ref-recherche" class="search" data-i18n-ph="ref_search_ph" autocomplete="off" aria-label="Filtrer">
+      <button type="button" class="btn btn-quiet" id="ref-export" data-i18n="btn_excel_ref">Exporter (Excel)</button>
+    </div>
+    <div id="ref-liste" class="ref-liste"></div>
+    <p class="empty" id="ref-vide" hidden data-i18n="ref_empty">Aucun texte pour ce filtre.</p>
+  </div>
+</div>
+
+<!-- ================================================================ DÉBATS -->
+<div class="tab-panel" data-tab="debats" hidden>
+  <div class="wrap">
+    <div class="avert" role="note">
+      <p class="avert-title" data-i18n="deb_warn_title">Section non certifiée</p>
+      <p data-i18n="deb_warn"></p>
+    </div>
+    <header class="block-head">
+      <h2 data-i18n="deb_title">Pressentis et avis d'experts</h2>
+      <p class="block-lead" data-i18n="deb_lead"></p>
+    </header>
+    <div class="toolbar">
+      <input type="search" id="deb-recherche" class="search" data-i18n-ph="deb_search_ph" autocomplete="off" aria-label="Filtrer">
+    </div>
+    <section aria-labelledby="pr-press-titre">
+      <h3 id="pr-press-titre" data-i18n="pre_title">Textes et évolutions pressentis</h3>
+      <p class="block-meta" data-i18n="pre_lead"></p>
+      <div id="pre-liste" class="deb-liste"></div>
+      <p class="empty" id="pre-vide" hidden data-i18n="pre_empty"></p>
+    </section>
+    <section aria-labelledby="pr-avis-titre">
+      <h3 id="pr-avis-titre" data-i18n="avi_title">Avis d'experts sur les textes adoptés</h3>
+      <p class="block-meta" data-i18n="avi_lead"></p>
+      <div id="avi-liste" class="deb-liste"></div>
+      <p class="empty" id="avi-vide" hidden data-i18n="avi_empty"></p>
+    </section>
+    <section aria-labelledby="deb-liste-titre" id="deb-ancien" hidden>
+      <h3 id="deb-liste-titre" data-i18n="deb_list">Dernières prises de position</h3>
+      <div id="tendances" hidden></div>
+      <div id="deb-liste" class="deb-liste"></div>
+      <p class="empty" id="deb-vide" hidden data-i18n="deb_empty"></p>
+    </section>
+  </div>
+</div>
+
+<!-- ================================================================ SOURCES -->
+<div class="tab-panel" data-tab="sources" hidden>
+  <div class="wrap">
+    <section id="etat-sources">
+      <header class="block-head">
+        <h2 data-i18n="src_title">Sources de la veille</h2>
+        <p class="block-lead" data-i18n="src_lead"></p>
+        <p class="block-meta" id="etat-resume"></p>
+      </header>
+      <div class="src-stats" id="etat-stats"></div>
+
+      <div class="src-manage">
+        <button type="button" class="btn btn-primary" id="src-ajouter" data-i18n="src_add">+ Ajouter une source</button>
+        <button type="button" class="btn btn-quiet" id="src-jeton" data-i18n="src_token">Jeton GitHub</button>
+        <span class="src-mode" id="src-mode"></span>
+      </div>
+      <form class="src-form" id="src-form" hidden novalidate>
+        <h3 data-i18n="src_form_title">Nouvelle source</h3>
+        <div class="form-grid">
+          <label><span data-i18n="sf_name">Nom de la source *</span><input type="text" name="nom" required maxlength="150"></label>
+          <label><span data-i18n="sf_zone">Pays / zone *</span><select name="zone" required id="sf-zone"></select></label>
+          <label><span data-i18n="sf_type">Type de source</span>
+            <select name="type">
+              <option value="Site gouvernemental officiel" data-i18n="n_officielle">Source officielle</option>
+              <option value="Cabinet d'avocats" data-i18n="n_cabinet">Cabinet d'avocats</option>
+              <option value="Presse spécialisée" data-i18n="n_presse">Presse et autres</option>
+              <option value="Avis d'experts (non certifié)" data-i18n="n_opinion">Avis d'experts (non certifié)</option>
+            </select></label>
+          <label class="wide"><span data-i18n="sf_url">Adresse du site *</span><input type="url" name="url" required placeholder="https://"></label>
+          <label class="wide"><span data-i18n="sf_feeds">Flux RSS (facultatif, un par ligne)</span><textarea name="flux" rows="2" placeholder="https://…/rss.xml"></textarea></label>
+          <label class="wide"><span data-i18n="sf_pages">Pages d'actualités datées (facultatif, une par ligne)</span><textarea name="pages" rows="2" placeholder="https://…/actualites"></textarea></label>
+        </div>
+        <p class="hint" data-i18n="sf_hint"></p>
+        <p class="form-error" id="src-form-err" hidden></p>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="sf_submit">Ajouter…</button>
+          <button type="button" class="btn btn-quiet" id="src-form-cancel" data-i18n="cancel">Annuler</button>
+        </div>
+      </form>
+
+      <div class="toolbar">
+        <div class="seg" role="group" id="etat-filtres">
+          <button type="button" data-a="" aria-pressed="true" data-i18n="s_all">Toutes</button>
+          <button type="button" data-a="ok" data-i18n="s_ok">Accessibles</button>
+          <button type="button" data-a="partielle" data-i18n="s_partial">Partielles</button>
+          <button type="button" data-a="ko" data-i18n="s_ko">Inaccessibles</button>
+          <button type="button" data-a="autre" data-i18n="s_other">Ignorées</button>
+        </div>
+        <input type="search" id="etat-recherche" class="search" data-i18n-ph="src_search_ph" autocomplete="off" aria-label="Filtrer">
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="th_access">Accès</th><th data-i18n="th_source">Source</th><th data-i18n="th_zone">Zone</th><th data-i18n="th_read">Lecture</th><th class="num" data-i18n="th_found">Trouvés</th><th class="num" data-i18n="th_new">Nouveaux</th><th data-i18n="th_detail">Détail</th><th data-i18n="th_action">Action</th></tr></thead>
+          <tbody id="etat-lignes"></tbody>
+        </table>
+      </div>
+      <p class="empty" id="etat-vide" hidden data-i18n="src_empty">Aucune source ne correspond à ce filtre.</p>
+      <p class="block-meta" id="trad-status"></p>
+    </section>
+
+    <details class="annexe" id="couverture">
+      <summary><span data-i18n="cov_title">Couverture : pays × thème</span> <span class="block-meta" id="cov-resume"></span></summary>
+      <p class="block-lead" data-i18n="cov_lead"></p>
+      <div class="table-wrap"><table class="data-table cov-table" id="cov-table"></table></div>
+    </details>
+
+    <details class="annexe" id="ecartes">
+      <summary><span data-i18n="ec_title">Articles écartés</span> <span class="block-meta" id="ec-resume"></span></summary>
+      <p class="block-lead" data-i18n="ec_lead"></p>
+      <div class="toolbar">
+        <input type="search" id="ec-recherche" class="search" data-i18n-ph="ec_search_ph" autocomplete="off" aria-label="Filtrer">
+        <select id="ec-motif" class="select" aria-label="Motif"></select>
+        <button type="button" class="btn btn-quiet" id="ec-export" data-i18n="ec_export">Télécharger la liste (Excel)</button>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="ec_th_date">Date</th><th data-i18n="ec_th_title">Titre</th><th data-i18n="th_source">Source</th><th data-i18n="ec_th_reason">Motif</th><th data-i18n="th_action">Action</th></tr></thead>
+          <tbody id="ec-lignes"></tbody>
+        </table>
+      </div>
+      <p class="block-meta" id="ec-plus"></p>
+    </details>
+
+    <details class="annexe" id="acronymes">
+      <summary><span data-i18n="acro_title">Sujets suivis</span> <span class="block-meta" id="acro-resume"></span></summary>
+      <p class="block-lead" data-i18n="acro_lead"></p>
+      <div class="toolbar">
+        <div class="seg" role="group" id="acro-filtres">
+          <button type="button" data-a="" aria-pressed="true" data-i18n="ac_all">Tous</button>
+          <button type="button" data-a="textes" data-i18n="ac_textes">Textes et normes</button>
+          <button type="button" data-a="autorites" data-i18n="ac_autorites">Autorités</button>
+          <button type="button" data-a="candidat" data-i18n="ac_candidats">Candidats à valider</button>
+        </div>
+        <input type="search" id="acro-recherche" class="search" data-i18n-ph="ac_search_ph" autocomplete="off" aria-label="Filtrer">
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="ac_th_acro">Sujet</th><th data-i18n="ac_th_type">Type</th><th class="num" data-i18n="ac_th_n">Articles</th><th data-i18n="ac_th_ex">Exemple récent</th></tr></thead>
+          <tbody id="acro-lignes"></tbody>
+        </table>
+      </div>
+      <p class="empty" id="acro-vide" hidden data-i18n="ac_empty">Aucun sujet pour ce filtre.</p>
+    </details>
+
+    <details class="annexe" id="methode" open>
+      <summary data-i18n="method">Méthode</summary>
+      <p class="block-lead" data-i18n="method_lead"></p>
+      <div class="method" id="method-blocks"></div>
+    </details>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p data-i18n="footer">Cyber Watch — Wavestone</p>
+    <p class="footer-note" data-i18n="footer_note"></p>
+  </div>
+</footer>
+
+<aside class="assistant" id="assistant" hidden aria-labelledby="as-titre">
+  <div class="as-head">
+    <h2 id="as-titre" data-i18n="as_title">Assistant de recherche</h2>
+    <button type="button" class="as-fermer" id="assistant-fermer" aria-label="Fermer">✕</button>
+  </div>
+  <p class="as-note" data-i18n="as_note"></p>
+  <form class="as-form" id="as-form" role="search">
+    <input type="search" id="as-q" class="search" autocomplete="off" data-i18n-ph="as_ph" aria-label="Question">
+    <button type="submit" class="btn btn-primary btn-sm" data-i18n="as_go">Chercher</button>
+  </form>
+  <div class="as-exemples" id="as-exemples"></div>
+  <div class="as-compris" id="as-compris" hidden></div>
+  <div class="as-resultats" id="as-resultats" aria-live="polite"></div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<div class="modal-back" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titre">
+    <h3 id="modal-titre"></h3>
+    <div id="modal-corps"></div>
+    <div class="form-actions">
+      <button type="button" class="btn btn-primary" id="modal-ok"></button>
+      <button type="button" class="btn btn-quiet" id="modal-annuler" data-i18n="cancel">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<div id="print-report" class="print-report" aria-hidden="true"></div>
+
+<script src="data/actualites.js"></script>
+<script src="data/alertes.js" onerror="window.VEILLE_ALERTES=null"></script>
+<script src="data/etat_sources.js"></script>
+<script src="data/syntheses.js" onerror="window.VEILLE_SYNTHESES=null"></script>
+<script src="data/syntheses_en.js" onerror="window.VEILLE_SYNTHESES_EN=null"></script>
+<script src="data/acronymes.js" onerror="window.VEILLE_ACRONYMES=null"></script>
+<script src="data/versions.js" onerror="window.VEILLE_VERSIONS=null"></script>
+<script src="data/referentiel.js" onerror="window.VEILLE_REFERENTIEL=null"></script>
+<script src="data/debats.js" onerror="window.VEILLE_DEBATS=null"></script>
+<script src="data/pressentis.js" onerror="window.VEILLE_PRESSENTIS=null"></script>
+<script src="data/ecartes_site.js" onerror="window.VEILLE_ECARTES=null"></script>
+<script src="data/monde.js" onerror="window.VEILLE_MONDE=null"></script>
+<script src="script.js"></script>
+</body>
+</html>

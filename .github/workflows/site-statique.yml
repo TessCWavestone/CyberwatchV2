@@ -1,0 +1,51 @@
+# Cyber Watch — met à jour le dossier static/ (lu par la plateforme d'hébergement de l'entreprise)
+# quand les fichiers du site changent sans collecte, par exemple après le dépôt d'une nouvelle version.
+# La collecte du lundi met déjà static/ à jour elle-même ; ce workflow ne touche pas aux données.
+# Quelques secondes, gratuit. Peut aussi être lancé à la main (« Run workflow »).
+
+name: Cyber Watch - site statique
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - style.css
+      - script.js
+      - slides.js
+      - vendor/**
+      - assets/**
+      - collecte/preparer_site.sh
+  workflow_dispatch:
+
+permissions:
+  contents: write   # pour enregistrer static/ sur main
+
+concurrency:
+  group: cyberwatch          # même file que la collecte : jamais les deux en même temps
+  cancel-in-progress: false
+
+jobs:
+  static:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Assembler le site dans static/
+        run: bash collecte/preparer_site.sh static
+
+      - name: Enregistrer static/
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add static vendor
+          if git diff --cached --quiet; then
+            echo "static/ déjà à jour."
+          else
+            git commit -m "Site statique : mise à jour de static/"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

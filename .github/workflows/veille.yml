@@ -157,13 +157,23 @@ jobs:
         if: always() && steps.garde.outputs.lancer == 'true'
         run: df -h / && du -sh ~/.cache/huggingface ~/.local/share/argos-translate 2>/dev/null || true
 
+      # Site public assemblé AVANT l'enregistrement : le même contenu part sur GitHub Pages (_site)
+      # et dans le dossier static/ du dépôt, lu par la plateforme d'hébergement de l'entreprise.
+      - name: Préparer le site (uniquement les fichiers publics)
+        if: steps.garde.outputs.lancer == 'true'
+        run: |
+          rm -rf rkc   # le contenu RKC ne doit jamais être publié
+          bash collecte/preparer_site.sh _site
+          bash collecte/preparer_site.sh static
+
       - name: Enregistrer les données et marquer la version
         if: steps.garde.outputs.lancer == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           rm -rf rkc   # le contenu RKC ne doit jamais être publié
-          git add data
+          # static/ : copie du site pour la plateforme de l'entreprise ; vendor/ : html2pdf téléchargé
+          git add data static vendor
           if git diff --cached --quiet; then
             echo "Aucun changement."
           else
@@ -175,18 +185,6 @@ jobs:
             # une étiquette par version : le site y renvoie pour consulter l'état complet
             git tag "veille-${version}" && git push origin "veille-${version}" || true
           fi
-
-      - name: Préparer le site (uniquement les fichiers publics)
-        if: steps.garde.outputs.lancer == 'true'
-        run: |
-          mkdir -p _site/data
-          cp index.html style.css script.js _site/
-          # v10/v11 : bouton « Support de slides » (générateur, bibliothèque PptxGenJS, images du modèle)
-          cp slides.js _site/ 2>/dev/null || true
-          cp -r vendor assets _site/ 2>/dev/null || true
-          cp data/*.js _site/data/
-          cp data/*.pdf _site/data/ 2>/dev/null || true
-          cp data/*.xml _site/data/ 2>/dev/null || true   # flux RSS des points clés
 
       - uses: actions/configure-pages@v5
         if: steps.garde.outputs.lancer == 'true'

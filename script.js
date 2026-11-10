@@ -1953,14 +1953,21 @@
 
   /* PDF téléchargé directement (sans fenêtre d'impression) : bibliothèque libre html2pdf.js,
      chargée seulement au clic ; rendu par morceaux pour les longues sélections. */
-  var URL_HTML2PDF = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+  /* v12.1 : copie locale d'abord (vendor/, déposée par la collecte), CDN en secours
+     (réseaux d'entreprise qui bloquent les CDN), puis fenêtre d'impression si les deux échouent. */
+  var URLS_HTML2PDF = ['vendor/html2pdf.bundle.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js'];
   function chargerHtml2pdf() {
     return new Promise(function (ok, ko) {
       if (window.html2pdf) { ok(window.html2pdf); return; }
-      var sc = document.createElement('script'); sc.src = URL_HTML2PDF; sc.async = true;
-      sc.onload = function () { window.html2pdf ? ok(window.html2pdf) : ko(new Error('html2pdf')); };
-      sc.onerror = function () { ko(new Error('html2pdf')); };
-      document.head.appendChild(sc);
+      var i = 0;
+      (function essayer() {
+        if (i >= URLS_HTML2PDF.length) { ko(new Error('html2pdf')); return; }
+        var sc = document.createElement('script'); sc.src = URLS_HTML2PDF[i++]; sc.async = true;
+        sc.onload = function () { window.html2pdf ? ok(window.html2pdf) : essayer(); };
+        sc.onerror = essayer;
+        document.head.appendChild(sc);
+      })();
     });
   }
   function repliImpression(msg) {

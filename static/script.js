@@ -71,8 +71,12 @@
       pdf_fail: "PDF impossible ici (bibliothèque non chargée) : choisissez « Enregistrer au format PDF » dans la fenêtre qui s'ouvre.",
       btn_pdf_all: 'La veille complète (PDF)', btn_pdf: 'Les articles affichés (PDF)', btn_excel: 'Les articles affichés (Excel)',
       btn_slides: 'Support de slides (PowerPoint)', sl_title: 'Générer un support de slides',
-      sl_lead: "Brouillon modifiable au format PowerPoint, en anglais, au modèle Wavestone : un sujet par slide (regroupés par texte, pays et étape), dates réglementaires, vue par pays, textes en préparation et annexe des articles. Les filtres du site ne sont pas appliqués ; les articles jugés « pas pertinent » par un lecteur sont exclus. Les encadrés « Impact » et « Recommended actions » restent à compléter. Les résumés et citations écrits par l'IA sont signalés sur chaque slide.",
+      sl_lead: "Brouillon modifiable au format PowerPoint, en anglais, au modèle Wavestone : un sujet par slide, synthèse par loi, dates réglementaires, vue par pays, textes en préparation et annexe numérotée des sources. Les filtres du site ne sont pas appliqués ; les articles jugés « pas pertinent » par un lecteur sont exclus. Les encadrés « Impact » et « Recommended actions » restent à compléter. Les résumés et citations écrits par l'IA sont signalés sur chaque slide.",
       sl_du: 'Du', sl_au: 'Au', sl_monitor: 'Inclure les sujets « à surveiller » (avec un bandeau « To verify »)', sl_go: 'Générer',
+      sl_syn: 'Synthétique', sl_syn_aide: 'les points clés détectés pendant la période (1 slide par point clé), synthèse par loi, vue par pays, dates et annexe des sources.',
+      sl_com: 'Complet', sl_com_aide: 'tous les articles très pertinents et pertinents (et « à surveiller » si coché), regroupés par texte, pays et étape.',
+      sl_pays: 'Pays à inclure :', sl_pays_tout: 'tout cocher / décocher', sl_pays_vide: 'Cochez au moins un pays.',
+      sl_compte: function (n) { return 'Environ ' + n + ' slides avec ces choix.'; },
       sl_mdp: 'Mot de passe des résumés : ', sl_mdp_aide: "Obligatoire. Il déchiffre les résumés et citations écrits par l'IA (jamais affichés sur le site). Il est défini dans le secret GitHub SLIDES_MOT_DE_PASSE ; il n'est ni enregistré ni envoyé.",
       sl_mdp_vide: 'Saisissez le mot de passe des résumés.', sl_mdp_faux: 'Mot de passe incorrect : support non généré.', sl_sans_resumes: "Aucun résumé disponible pour l'instant (ils seront faits aux prochaines collectes) : support sans résumés.",
       sl_bad: 'Période invalide.', sl_wait: 'Génération du support en cours…', sl_done: 'Support téléchargé.', sl_err: "La génération du support a échoué (voir la console du navigateur).",
@@ -123,7 +127,7 @@
       source: 'Source', sources: 'Sources', keywords: 'Thèmes', syntheses: 'Analyses rédigées', glossary: 'Glossaire',
       conf: { confirme: 'Confirmé', nuance: 'Nuancé', rapporte: 'Rapporté' },
       map_title: 'Carte de la veille', map_lead: "Couleur = nombre d'articles par pays. Survolez un pays pour voir sa dernière réglementation, cliquez pour ouvrir sa fiche : dernières réglementations, dates clés, textes applicables.",
-      map_europe: 'Europe', map_world: 'Monde', p30: '30 jours', p90: '3 mois', pall: 'Tout', map_legend: 'Articles',
+      map_europe: 'Europe', map_world: 'Monde', p30: '30 jours', p90: '3 mois', p365: '1 an', pall: 'Tout', map_legend: 'Articles',
       map_hint: 'Choisissez un pays sur la carte.', map_none: 'Aucun article pour cette zone sur la période.', map_top: 'Dernières réglementations',
       map_dates: 'Dates clés à venir', map_ref: 'Textes applicables', map_all: 'Tous les articles', map_latest: 'Dernière : ', map_more: function (n) { return 'Voir les ' + n + ' articles'; },
       map_articles: function (n) { return n + (n > 1 ? ' articles' : ' article'); }, map_nodata: 'Le fond de carte sera téléchargé lors de la prochaine collecte sur GitHub. En attendant, voici une carte simplifiée.',
@@ -220,8 +224,12 @@
       pdf_fail: 'PDF not available here (library not loaded): choose “Save as PDF” in the window that opens.',
       btn_pdf_all: 'The full watch (PDF)', btn_pdf: 'Articles shown (PDF)', btn_excel: 'Articles shown (Excel)',
       btn_slides: 'Slide deck (PowerPoint)', sl_title: 'Generate a slide deck',
-      sl_lead: 'Editable PowerPoint draft, in English, in the Wavestone template: one subject per slide (grouped by text, country and step), regulatory dates, view by country, texts in preparation and an appendix of articles. Site filters are not applied; articles rated “not relevant” by a reader are excluded. The “Impact” and “Recommended actions” boxes are left to complete.',
+      sl_lead: 'Editable PowerPoint draft, in English, in the Wavestone template: one subject per slide, summary by regulation, regulatory dates, view by country, texts in preparation and a numbered appendix of sources. Site filters are not applied; articles rated “not relevant” by a reader are excluded. The “Impact” and “Recommended actions” boxes are left to complete.',
       sl_du: 'From', sl_au: 'To', sl_monitor: 'Include subjects “to monitor” (with a “To verify” banner)', sl_go: 'Generate',
+      sl_syn: 'Summary', sl_syn_aide: 'key points detected over the period (1 slide per key point), summary by regulation, view by country, dates and appendix of sources.',
+      sl_com: 'Complete', sl_com_aide: 'all highly relevant and relevant articles (and “to monitor” if ticked), grouped by text, country and step.',
+      sl_pays: 'Countries to include:', sl_pays_tout: 'tick / untick all', sl_pays_vide: 'Tick at least one country.',
+      sl_compte: function (n) { return 'About ' + n + ' slides with these choices.'; },
       sl_mdp: 'Summaries password: ', sl_mdp_aide: 'Required. It decrypts the AI-written summaries and quotes (never shown on the site). It is set in the GitHub secret SLIDES_MOT_DE_PASSE; it is neither stored nor sent.',
       sl_mdp_vide: 'Enter the summaries password.', sl_mdp_faux: 'Wrong password: deck not generated.', sl_sans_resumes: 'No summary available yet (they will be written at the next collections): deck without summaries.',
       sl_bad: 'Invalid period.', sl_wait: 'Generating the deck…', sl_done: 'Deck downloaded.', sl_err: 'Deck generation failed (see the browser console).',
@@ -272,7 +280,7 @@
       source: 'Source', sources: 'Sources', keywords: 'Topics', syntheses: 'Written analyses', glossary: 'Glossary',
       conf: { confirme: 'Confirmed', nuance: 'Qualified', rapporte: 'Reported' },
       map_title: 'Watch map', map_lead: 'Colour = number of articles per country. Hover a country to see its latest regulation; click to open its card: latest regulations, key dates, applicable texts.',
-      map_europe: 'Europe', map_world: 'World', p30: '30 days', p90: '3 months', pall: 'All', map_legend: 'Articles',
+      map_europe: 'Europe', map_world: 'World', p30: '30 days', p90: '3 months', p365: '1 year', pall: 'All', map_legend: 'Articles',
       map_hint: 'Choose a country on the map.', map_none: 'No article for this area over the period.', map_top: 'Latest regulations',
       map_dates: 'Upcoming key dates', map_ref: 'Applicable texts', map_all: 'All articles', map_latest: 'Latest: ', map_more: function (n) { return 'Show all ' + n + ' articles'; },
       map_articles: function (n) { return n + ' article' + (n > 1 ? 's' : ''); }, map_nodata: 'The base map will be downloaded at the next collection on GitHub. Meanwhile, here is a simplified map.',
@@ -1045,7 +1053,12 @@
   function renderEssentiel() {
     sur('points clés', renderPointsCles);
     renderTextesMois(30);
-    document.getElementById('tm-periode').addEventListener('choix', function (e) { renderTextesMois(+e.detail.getAttribute('data-j')); });
+    document.getElementById('tm-periode').addEventListener('choix', function (e) {
+      var j = +e.detail.getAttribute('data-j');
+      // 1 an : les articles de plus de 6 mois sont dans les archives, chargées à la demande
+      var du = isoJour(new Date(Date.now() - j * 864e5));
+      (besoinArchives(du) ? chargerArchives() : Promise.resolve()).then(function () { renderTextesMois(j); });
+    });
     // nombre de dates à venir par horizon, affiché sur chaque bouton (les boutons ne changent rien s'il n'y a pas plus de dates)
     Array.prototype.forEach.call(document.querySelectorAll('#agenda-horizon button'), function (b) {
       var n = evenementsAgenda(+b.getAttribute('data-h')).filter(function (e) { return joursJusqua(e.date) >= 0; }).length;
@@ -2933,14 +2946,61 @@
       document.head.appendChild(sc);
     });
   }
-  function isoJour(d) { return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); }
+  /* 12/11/2026 : deux supports (synthétique = points clés de la période ; complet = tous les articles retenus),
+     choix des pays, et nombre de slides annoncé avant de générer */
+  function donneesSlides(o, RES) {
+    return { mode: o.mode, articles: ARTICLES.filter(function (a) { return o.surveiller || a.pertinence !== 'faible'; }),
+             alertes: ALERTES, articlesParId: ARTICLES_PAR_ID, pressentis: PRESSENTIS || [], ref: REF_TEXTES, pays: o.pays,
+             du: o.du, au: o.au, genere: isoJour(new Date()), exclus: AVIS_SESSION, resumes: RES || {},
+             zoneEn: function (z) { var d = ZONES[z]; return d ? d.en : (z || '—'); },
+             texteEn: function (x) { return TEXTES_CLES_EN[x] || x; },
+             acteurEn: function (x) { var l = (META.acteurs || {})[x]; return l ? l.en : ''; } };
+  }
   document.getElementById('export-slides').addEventListener('click', function () {
     var auj = new Date(), du = el('input', { type: 'date', value: isoJour(new Date(auj.getTime() - 30 * 864e5)) }), au = el('input', { type: 'date', value: isoJour(auj) });
     var cb = el('input', { type: 'checkbox' }); cb.checked = true;
     var mdp = el('input', { type: 'password', autocomplete: 'off' });
-    demander(t('sl_title'), [t('sl_lead'), el('label', { className: 'sl-champ' }, [t('sl_du') + ' ', du]), el('label', { className: 'sl-champ' }, [t('sl_au') + ' ', au]),
-      el('label', { className: 'sl-check' }, [cb, ' ' + t('sl_monitor')]), el('label', { className: 'sl-mdp' }, [t('sl_mdp'), mdp]), el('p', { className: 'block-meta', text: t('sl_mdp_aide') })],
-      t('sl_go'), function () { genererSlides(du.value, au.value, cb.checked, mdp.value); });
+    var rSyn = el('input', { type: 'radio', name: 'sl-mode', value: 'synthese' }), rCom = el('input', { type: 'radio', name: 'sl-mode', value: 'complet' });
+    rSyn.checked = true;
+    // pays présents dans la veille, tous cochés par défaut
+    var zonesVues = {};
+    ARTICLES.forEach(function (a) { if (a.zone) zonesVues[a.zone] = 1; });
+    ALERTES.forEach(function (x) { if (x.zone) zonesVues[x.zone] = 1; });
+    var cases = Object.keys(zonesVues).sort(function (a, b) { return nomZone(a).localeCompare(nomZone(b), LANG); }).map(function (z) {
+      var c = el('input', { type: 'checkbox', value: z }); c.checked = true;
+      return el('label', { className: 'sl-pays-item' }, [c, ' ' + nomZone(z)]);
+    });
+    var tout = el('button', { type: 'button', className: 'linkbtn', text: t('sl_pays_tout') });
+    var boitePays = el('div', { className: 'sl-pays' }, cases);
+    var compte = el('p', { className: 'sl-compte', text: '…' });
+    function options() {
+      return { mode: rSyn.checked ? 'synthese' : 'complet', du: du.value, au: au.value, surveiller: cb.checked,
+               pays: cases.map(function (l) { return l.firstChild; }).filter(function (c) { return c.checked; }).map(function (c) { return c.value; }) };
+    }
+    function estimer() {
+      var o = options();
+      cb.disabled = o.mode === 'synthese';
+      if (!o.du || !o.au || o.du > o.au) { compte.textContent = t('sl_bad'); return; }
+      if (!o.pays.length) { compte.textContent = t('sl_pays_vide'); return; }
+      (besoinArchives(o.du) ? chargerArchives() : Promise.resolve())
+        .then(function () { return chargerJs('slides.js', function () { return !!window.CW_SLIDES; }); })
+        .then(function () { compte.textContent = t('sl_compte')(window.CW_SLIDES.compter(donneesSlides(o, null))); })
+        .catch(function () { compte.textContent = ''; });
+    }
+    tout.addEventListener('click', function () {
+      var tous = cases.every(function (l) { return l.firstChild.checked; });
+      cases.forEach(function (l) { l.firstChild.checked = !tous; }); estimer();
+    });
+    [du, au, cb, rSyn, rCom].concat(cases.map(function (l) { return l.firstChild; })).forEach(function (x) { x.addEventListener('change', estimer); });
+    demander(t('sl_title'), [t('sl_lead'),
+      el('div', { className: 'sl-modes' }, [el('label', null, [rSyn, ' ', el('strong', { text: t('sl_syn') }), ' — ' + t('sl_syn_aide')]),
+                                             el('label', null, [rCom, ' ', el('strong', { text: t('sl_com') }), ' — ' + t('sl_com_aide')])]),
+      el('label', { className: 'sl-champ' }, [t('sl_du') + ' ', du]), el('label', { className: 'sl-champ' }, [t('sl_au') + ' ', au]),
+      el('label', { className: 'sl-check' }, [cb, ' ' + t('sl_monitor')]),
+      el('p', { className: 'sl-pays-titre' }, [t('sl_pays') + ' ', tout]), boitePays, compte,
+      el('label', { className: 'sl-mdp' }, [t('sl_mdp'), mdp]), el('p', { className: 'block-meta', text: t('sl_mdp_aide') })],
+      t('sl_go'), function () { var o = options(); if (!o.pays.length) { toast(t('sl_pays_vide')); return; } genererSlides(o, mdp.value); });
+    estimer();
   });
   /* v11 — résumés et citations des slides : fichier chiffré (AES-256-GCM, clé PBKDF2-SHA256 tirée du mot de passe).
      Le mot de passe n'est ni enregistré ni envoyé : le déchiffrement se fait dans le navigateur. */
@@ -2954,7 +3014,8 @@
               function () { throw new Error('mdp'); });
     }, function () { return null; });   // pas encore de fichier (aucune collecte avec résumés) : slides sans résumés
   }
-  function genererSlides(du, au, surveiller, mdp) {
+  function genererSlides(o, mdp) {
+    var du = o.du, au = o.au;
     if (!du || !au || du > au) { toast(t('sl_bad')); return; }
     if (!mdp) { toast(t('sl_mdp_vide')); return; }   // décision du 09/11 : pas de slides sans le mot de passe
     if (!window.crypto || !crypto.subtle) { toast(t('sl_err')); return; }
@@ -2969,12 +3030,9 @@
                           chargerJs('slides.js', function () { return !!window.CW_SLIDES; })]);
     }).then(function () {
       if (RES === null) toast(t('sl_sans_resumes'));
-      var D = { articles: ARTICLES.filter(function (a) { return surveiller || a.pertinence !== 'faible'; }), pressentis: PRESSENTIS || [], ref: REF_TEXTES,
-                du: du, au: au, genere: isoJour(new Date()), exclus: AVIS_SESSION, resumes: RES || {},
-                zoneEn: function (z) { var d = ZONES[z]; return d ? d.en : (z || '—'); },
-                texteEn: function (x) { return TEXTES_CLES_EN[x] || x; },
-                acteurEn: function (x) { var l = (META.acteurs || {})[x]; return l ? l.en : ''; } };
-      return window.CW_SLIDES.construire(window.PptxGenJS, window.CW_SLIDES_IMG, D).writeFile({ fileName: 'cyberwatch_slides_' + du + '_' + au + '.pptx' });
+      var D = donneesSlides(o, RES);
+      return window.CW_SLIDES.construire(window.PptxGenJS, window.CW_SLIDES_IMG, D)
+        .writeFile({ fileName: 'cyberwatch_' + (o.mode === 'synthese' ? 'points_cles' : 'complet') + '_' + du + '_' + au + '.pptx' });
     }).then(function () { toast(t('sl_done')); }).catch(function (e) { if (e && e.message === 'mdp') { toast(t('sl_mdp_faux')); return; } console.error(e); toast(t('sl_err')); });
   }
   document.getElementById('export-pdf').addEventListener('click', function () {

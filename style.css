@@ -543,3 +543,14 @@ a.as-titre:hover { text-decoration: underline; }
 .sl-check input { width: auto; margin-top: 3px; }
 .sl-mdp { display: block; margin-top: 12px; }
 .sl-mdp input { width: 100%; margin-top: 6px; }
+
+/* v13 — fenêtre « Support de slides » : modes, pays, nombre de slides */
+.sl-modes { display: grid; gap: 6px; margin: 10px 0 4px; }
+.sl-modes label { display: block; }
+.sl-modes input { width: auto; margin: 0 4px 0 0; }
+.sl-pays-titre { margin: 12px 0 4px; font-weight: 600; }
+.sl-pays { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 2px 10px; max-height: 140px; overflow: auto; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; }
+.sl-pays-item { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.sl-pays-item input { width: auto; margin: 0; }
+.sl-compte { margin: 10px 0 0; font-weight: 600; color: var(--ink); }
+.modal { max-height: 92vh; overflow: auto; }

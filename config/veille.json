@@ -307,7 +307,7 @@
     }
   },
   "_aide_mots_courts": "Les mots-clés de 4 lettres ou moins écrits en MAJUSCULES (CRA, MDR, NIST…) sont cherchés en respectant la casse et en mot entier, pour éviter les faux positifs.",
-  "jours_conservation": 730,
+  "jours_conservation": 365,
   "jours_premiere_collecte": 60,
   "nb_max_articles": 5000,
   "delai_requete_secondes": 25,

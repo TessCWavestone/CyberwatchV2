@@ -42,11 +42,57 @@
   function par(liste, n) { var r = []; for (var i = 0; i < liste.length; i += n) r.push(liste.slice(i, i + n)); return r.length ? r : [[]]; }
 
   /* ------------------------------------------------------------------ préparation des données */
-  function preparer(D) {
-    var exclus = D.exclus || {};
+  var TYPES_PC = { adopte: 'New text adopted', proposition: 'Draft text in progress', echeance: 'Announced deadline',
+                   a_qualifier: 'New text to be assessed', signale: 'Flagged by a reader' };
+  function paysOk(D, z) { return !D.pays || !D.pays.length || D.pays.indexOf(z || '') >= 0; }
+  function articleOk(D, a) {
+    return a && a.nature !== 'opinion' && !a.doublon_de && a.avis_lecteur !== 'pas_pertinent' && !(D.exclus || {})[a.id];
+  }
+  function completer(D, g) {
+    // article de tête : le plus pertinent, une source officielle de préférence, puis le plus récent
+    g.articles.sort(function (x, y) {
+      return ((REL[x.pertinence] || REL.moyenne).rang - (REL[y.pertinence] || REL.moyenne).rang) ||
+             ((y.nature === 'officielle') - (x.nature === 'officielle')) || (x.date < y.date ? 1 : -1);
+    });
+    g.rel = g.rel || (REL[g.articles[0].pertinence] ? g.articles[0].pertinence : 'moyenne');
+    g.verifier = g.verifier || g.rel === 'faible' || g.articles.some(function (a) { return a.a_verifier; });
+    g.titre = g.titre || titreEn(g.articles[0]);
+    g.texteEn = g.texte ? D.texteEn(g.texte) : '';
+    g.zoneEn = D.zoneEn(g.zone);
+    g.etapeEn = g.etapeEn || ETAPES[g.etape] || 'Update';
+    // dates : uniquement les dates réglementaires (pas de consultation : déjà filtrées à la collecte)
+    var vues = {}; g.dates = g.dates || [];
+    g.dates.forEach(function (d) { vues[d.date] = 1; });
+    g.articles.forEach(function (a) {
+      (a.echeances || []).forEach(function (e) {
+        if (vues[e.date]) return; vues[e.date] = 1;
+        var ex = (e.extrait || {}).en || '';
+        g.dates.push({ date: e.date, approx: e.approx, publication: e.publication, texte: ex });
+      });
+    });
+    (D.ref || []).forEach(function (r) {
+      var v = r.applicable_depuis || '';
+      if (!g.texte || !/^\d{4}-\d{2}-\d{2}$/.test(v) || vues[v] || v < D.du) return;   // pas les dates déjà passées
+      if ((r.acronyme === g.texte || r.nom === g.texte) && (r.zone === g.zone || !g.zone)) {
+        vues[v] = 1; g.dates.push({ date: v, ref: true, texte: 'Applicable from this date (' + (r.nom_en || r.nom || g.texteEn) + ')' });
+      }
+    });
+    g.dates.sort(function (x, y) { return x.date < y.date ? -1 : 1; });
+    var acteurs = [];
+    g.articles.forEach(function (a) { ((a.concernes || {}).acteurs || []).forEach(function (x) { if (acteurs.indexOf(x) < 0) acteurs.push(x); }); });
+    g.acteurs = acteurs.map(D.acteurEn).filter(Boolean);
+    return g;
+  }
+  function trier(liste) {
+    liste.sort(function (x, y) {
+      return (REL[x.rel].rang - REL[y.rel].rang) || x.zoneEn.localeCompare(y.zoneEn) || (x.texteEn || x.titre).localeCompare(y.texteEn || y.titre);
+    });
+    return liste;
+  }
+  // support « complet » : tous les articles très pertinents, pertinents (et à surveiller si demandé) de la période
+  function preparerComplet(D) {
     var arts = (D.articles || []).filter(function (a) {
-      return a.date >= D.du && a.date <= D.au && REL[a.pertinence] && a.nature !== 'opinion' && !a.doublon_de &&
-             a.avis_lecteur !== 'pas_pertinent' && !exclus[a.id];
+      return a.date >= D.du && a.date <= D.au && REL[a.pertinence] && articleOk(D, a) && paysOk(D, a.zone);
     });
     var groupes = {};
     arts.forEach(function (a) {
@@ -56,45 +102,26 @@
       var g = groupes[cle] || (groupes[cle] = { texte: texte, zone: a.zone || '', etape: etape, articles: [] });
       g.articles.push(a);
     });
-    var liste = Object.keys(groupes).map(function (k) {
-      var g = groupes[k];
-      // article de tête : le plus pertinent, une source officielle de préférence, puis le plus récent
-      g.articles.sort(function (x, y) {
-        return (REL[x.pertinence].rang - REL[y.pertinence].rang) || ((y.nature === 'officielle') - (x.nature === 'officielle')) || (x.date < y.date ? 1 : -1);
-      });
-      g.rel = g.articles[0].pertinence;
-      g.verifier = g.rel === 'faible' || g.articles.some(function (a) { return a.a_verifier; });
-      g.titre = titreEn(g.articles[0]);
-      g.texteEn = g.texte ? D.texteEn(g.texte) : '';
-      g.zoneEn = D.zoneEn(g.zone);
-      g.etapeEn = ETAPES[g.etape] || 'Update';
-      // dates : uniquement les dates réglementaires (pas de consultation : déjà filtrées à la collecte)
-      var vues = {}; g.dates = [];
-      g.articles.forEach(function (a) {
-        (a.echeances || []).forEach(function (e) {
-          if (vues[e.date]) return; vues[e.date] = 1;
-          var ex = (e.extrait || {}).en || '';
-          g.dates.push({ date: e.date, approx: e.approx, publication: e.publication, texte: ex });
-        });
-      });
-      (D.ref || []).forEach(function (r) {
-        var v = r.applicable_depuis || '';
-        if (!g.texte || !/^\d{4}-\d{2}-\d{2}$/.test(v) || vues[v] || v < D.du) return;   // pas les dates déjà passées
-        if ((r.acronyme === g.texte || r.nom === g.texte) && (r.zone === g.zone || !g.zone)) {
-          vues[v] = 1; g.dates.push({ date: v, ref: true, texte: 'Applicable from this date (' + (r.nom_en || r.nom || g.texteEn) + ')' });
-        }
-      });
-      g.dates.sort(function (x, y) { return x.date < y.date ? -1 : 1; });
-      var acteurs = [];
-      g.articles.forEach(function (a) { ((a.concernes || {}).acteurs || []).forEach(function (x) { if (acteurs.indexOf(x) < 0) acteurs.push(x); }); });
-      g.acteurs = acteurs.map(D.acteurEn).filter(Boolean);
-      return g;
-    });
-    liste.sort(function (x, y) {
-      return (REL[x.rel].rang - REL[y.rel].rang) || x.zoneEn.localeCompare(y.zoneEn) || (x.texteEn || x.titre).localeCompare(y.texteEn || y.titre);
-    });
-    return { articles: arts, groupes: liste };
+    return { articles: arts, groupes: trier(Object.keys(groupes).map(function (k) { return completer(D, groupes[k]); })) };
   }
+  // support « synthétique » (12/11/2026) : seulement les points clés détectés pendant la période
+  function preparerSynthese(D) {
+    var parId = D.articlesParId || {}, arts = [], vus = {};
+    var groupes = (D.alertes || []).filter(function (x) {
+      return !x.ref && (x.detecte_le || '') >= D.du && (x.detecte_le || '') <= D.au && paysOk(D, x.zone);
+    }).map(function (x) {
+      var liste = (x.articles || []).map(function (ap) { return parId[ap.id] || ap; }).filter(function (a) { return articleOk(D, a); });
+      if (!liste.length) return null;
+      liste.forEach(function (a) { if (!vus[a.id]) { vus[a.id] = 1; arts.push(a); } });
+      var g = { texte: x.texte && !x.inconnu ? x.texte : '', zone: x.zone || '', etape: '', etapeEn: TYPES_PC[x.type] || 'Key point',
+                articles: liste, rel: 'elevee', verifier: !!x.a_verifier, dates: [] };
+      if (x.echeance) g.dates.push({ date: x.echeance, texte: ((x.extrait || {}).en || '') });
+      return completer(D, g);
+    }).filter(Boolean);
+    groupes.sort(function (x, y) { return x.zoneEn.localeCompare(y.zoneEn) || (x.texteEn || x.titre).localeCompare(y.texteEn || y.titre); });
+    return { articles: arts, groupes: groupes };
+  }
+  function preparer(D) { return D.mode === 'synthese' ? preparerSynthese(D) : preparerComplet(D); }
 
   /* ------------------------------------------------------------------ construction */
   function construire(PptxGenJS, IMG, D) {
@@ -209,15 +236,20 @@
     var s = pptx.addSlide();
     s.background = { data: IMG.cover };
     s.addText('CYBER REGULATORY WATCH', { x: 0.6, y: 1.5, w: 9, h: 0.35, fontFace: F, fontSize: 12, bold: true, color: C.green, charSpacing: 2, margin: 0 });
-    s.addText('Regulatory developments', { x: 0.6, y: 1.9, w: 10, h: 0.8, fontFace: F, fontSize: 40, color: C.white, valign: 'top', margin: 0 });
+    s.addText(D.mode === 'synthese' ? 'Key regulatory points' : 'Regulatory developments', { x: 0.6, y: 1.9, w: 10, h: 0.8, fontFace: F, fontSize: 40, color: C.white, valign: 'top', margin: 0 });
     s.addText('Period covered: ' + periode + '  |  Generated on ' + dateLongue(D.genere), { x: 0.6, y: 2.9, w: 11, h: 0.35, fontFace: F, fontSize: 14, color: C.white, margin: 0 });
     s.addImage({ data: IMG.logo_white, x: 0.6, y: 6.6, w: 1.9, h: 0.26 });
 
     var G = P.groupes;
+    // 12/11/2026 : toutes les sources dans une annexe à part, numérotées ; les slides n'affichent que les numéros
+    var ann = P.articles.slice().sort(function (x, y) { return x.date < y.date ? 1 : -1; });
+    var NUM = {};
+    ann.forEach(function (a, i) { NUM[a.id] = i + 1; });
+    function refs(arts) { return arts.map(function (a) { return '[' + NUM[a.id] + ']'; }).join(' '); }
     if (!G.length) {
       s = contenu();
       titre(s, 'No relevant development over the period', 'Overview');
-      s.addText('No article rated very relevant, relevant or to monitor was found between ' + periode + '.', { x: 0.5, y: 1.7, w: 12, h: 0.5, fontFace: F, fontSize: 16, color: C.ink, margin: 0 });
+      s.addText((D.mode === 'synthese' ? 'No key point was detected between ' : 'No article rated very relevant, relevant or to monitor was found between ') + periode + '.', { x: 0.5, y: 1.7, w: 12, h: 0.5, fontFace: F, fontSize: 16, color: C.ink, margin: 0 });
     } else {
       /* 2. Synthèse */
       var pays = {}, nbDates = 0, rels = { elevee: 0, moyenne: 0, faible: 0 };
@@ -237,23 +269,58 @@
         s.addText(f[2], { x: x, y: 3.25, w: 2.4, h: 0.3, fontFace: F, fontSize: 12, color: C.sub, margin: 0 });
       });
       s.addShape(S.line, { x: 5.2, y: 4.1, w: 7.6, h: 0, line: { color: C.line, width: 0.75 } });
-      s.addText('Breakdown by relevance', { x: 5.2, y: 4.3, w: 7, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
-      ['elevee', 'moyenne', 'faible'].forEach(function (r, i) {
-        pastille(s, 5.2 + i * 2.6, 4.8, r);
-        s.addText(rels[r] + (rels[r] > 1 ? ' subjects' : ' subject'), { x: 5.2 + i * 2.6, y: 5.15, w: 2.4, h: 0.3, fontFace: F, fontSize: 13, color: C.ink, margin: 0 });
-      });
+      if (D.mode === 'synthese') {
+        // support synthétique : répartition par type de point clé
+        var types = {};
+        G.forEach(function (g) { types[g.etapeEn] = (types[g.etapeEn] || 0) + 1; });
+        s.addText('Breakdown by type of key point', { x: 5.2, y: 4.3, w: 7, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
+        s.addText(Object.keys(types).sort(function (a, b) { return types[b] - types[a]; }).map(function (k, i, l) {
+          return { text: k + ': ' + types[k], options: { bullet: true, breakLine: i < l.length - 1 } };
+        }), { x: 5.2, y: 4.75, w: 7.4, h: 1.8, fontFace: F, fontSize: 14, color: C.ink, valign: 'top', margin: 0 });
+      } else {
+        s.addText('Breakdown by relevance', { x: 5.2, y: 4.3, w: 7, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
+        ['elevee', 'moyenne', 'faible'].forEach(function (r, i) {
+          pastille(s, 5.2 + i * 2.6, 4.8, r);
+          s.addText(rels[r] + (rels[r] > 1 ? ' subjects' : ' subject'), { x: 5.2 + i * 2.6, y: 5.15, w: 2.4, h: 0.3, fontFace: F, fontSize: 13, color: C.ink, margin: 0 });
+        });
+      }
 
       /* 3. Points clés de la période (tableau) */
       par(G, 8).forEach(function (bloc, i) {
         s = contenu();
         titre(s, suite('Key points of the period', i), 'Overview');
-        tableau(s, ['Subject', 'Country', 'Step', 'Key regulatory date', 'Relevance'], bloc.map(function (g) {
+        tableau(s, ['Subject', 'Country', 'Step', 'Key regulatory date', D.mode === 'synthese' ? 'Check' : 'Relevance'], bloc.map(function (g) {
           var d = g.dates.filter(function (x) { return !x.publication; })[0];
           return [g.texteEn ? g.texteEn + ' — ' + couper(g.titre, 90) : couper(g.titre, 120), g.zoneEn, g.etapeEn, d ? dateCourte(d.date) : 'Not stated',
-                  { text: '● ' + REL[g.rel].label, options: { bold: true, color: g.rel === 'faible' ? 'B07A00' : C.violet } }];
+                  D.mode === 'synthese' ? (g.verifier ? { text: 'To verify', options: { bold: true, color: 'B07A00' } } : '—')
+                    : { text: '● ' + REL[g.rel].label, options: { bold: true, color: g.rel === 'faible' ? 'B07A00' : C.violet } }];
         }), [5.0, 1.9, 1.6, 1.9, 1.93], 1.55, 12);
-        if (i === 0) s.addText('Sorted by relevance, then by country. Subjects marked “To monitor” carry a “To verify” banner on their own slide.',
+        if (i === 0) s.addText(D.mode === 'synthese' ? 'Key points detected over the period, by country. Points marked “To verify” come from non-official sources.'
+            : 'Sorted by relevance, then by country. Subjects marked “To monitor” carry a “To verify” banner on their own slide.',
           { x: 0.5, y: 6.65, w: 12, h: 0.3, fontFace: F, fontSize: 12, color: C.sub, margin: 0 });
+      });
+
+      /* 3 bis. Synthèse par texte (loi) : pays, étapes, nombre de développements, prochaine date */
+      var parTexte = {};
+      G.forEach(function (g) {
+        var k = g.texteEn || 'Other subjects (no tracked text)';
+        var x = parTexte[k] || (parTexte[k] = { pays: [], etapes: [], n: 0, dates: [] });
+        if (x.pays.indexOf(g.zoneEn) < 0) x.pays.push(g.zoneEn);
+        if (x.etapes.indexOf(g.etapeEn) < 0) x.etapes.push(g.etapeEn);
+        x.n += g.articles.length;
+        g.dates.forEach(function (d) { if (!d.publication && !d.approx && d.date >= D.du) x.dates.push(d.date); });
+      });
+      var cles = Object.keys(parTexte).sort(function (a, b) {
+        if (/^Other subjects/.test(a)) return 1; if (/^Other subjects/.test(b)) return -1;
+        return (parTexte[b].n - parTexte[a].n) || a.localeCompare(b);
+      });
+      par(cles, 8).forEach(function (bloc, i) {
+        s = contenu();
+        titre(s, suite('Summary by regulation', i), 'Overview');
+        tableau(s, ['Regulation', 'Countries', 'Steps', 'Articles', 'Next regulatory date'], bloc.map(function (k) {
+          var x = parTexte[k], d = x.dates.sort()[0];
+          return [{ text: k, options: { bold: true } }, couper(x.pays.join(', '), 90), couper(x.etapes.join(', '), 60), String(x.n), d ? dateCourte(d) : '—'];
+        }), [3.0, 3.4, 2.4, 1.7, 1.83], 1.55, 12);
       });
 
       /* 4. Une slide par sujet (+ slides « continued ») ; les sujets presque vides vont dans « Other developments » */
@@ -269,15 +336,14 @@
           f.forEach(function (p) { p.ia = !!f.ia; faits.push(p); });
         });
         var faits1 = faits.slice(0, 4), faitsSuite = faits.slice(4);
-        var nS = faits1.some(function (p) { return p.ia; }) ? 2 : 3;   // slide avec résumé IA : plus de place au texte
-        var sources1 = g.articles.slice(0, nS), sourcesSuite = g.articles.slice(nS);
+        var sources1 = [], sourcesSuite = [];   // 12/11/2026 : les sources sont en annexe (numéros seulement)
         s = contenu();
         titre(s, g.titre, kicker);
-        pastille(s, 11.38, 0.2, g.rel);
+        if (D.mode !== 'synthese') pastille(s, 11.38, 0.2, g.rel);
         var y = 1.55;
         var iaIci = faits1.some(function (p) { return p.ia; }) ? ia : '';
         if (g.verifier || iaIci) y += bandeaux(s, y, g.verifier, iaIci);
-        var h = 6.75 - y - (0.45 + 0.3 * sources1.length);   // place laissée aux sources en bas
+        var h = 6.75 - y - 0.45;   // place laissée à la ligne des sources
         var dates = g.dates.length ? g.dates.slice(0, 3).map(function (d, i, l) {
           return { text: (d.approx ? 'Around ' : '') + dateCourte(d.date) + (d.publication ? ' (publication of the text)' : '') + (d.texte ? ': ' + couper(d.texte, 70) : ''), options: { breakLine: i < l.length - 1 } };
         }) : 'No regulatory date stated in the sources';
@@ -305,18 +371,18 @@
           s.addText('Recommended actions', { x: 9.03, y: y + h / 2 + 0.05, w: 3.6, h: 0.3, fontFace: F, fontSize: 14, color: C.violet, margin: 0 });
           s.addText('To complete', { x: 9.03, y: y + h / 2 + 0.37, w: 3.6, h: 0.9, fontFace: F, fontSize: 13, italic: true, color: C.sub, margin: 0, valign: 'top' });
         }
-        sources(s, y + h + 0.2, sources1, 'Sources');
+        s.addText([{ text: 'Sources: ', options: { bold: true, color: C.violet } }, { text: refs(g.articles) + '  (see appendix “Sources”)', options: { color: C.ink } }],
+          { x: 0.5, y: y + h + 0.15, w: 12.3, h: 0.3, fontFace: F, fontSize: 12, margin: 0, fit: 'shrink' });
         // slides « continued » : d'abord les faits et dates restants (avec 4 sources au plus), puis les sources seules
         var datesSuite = g.dates.slice(3);
         var nHaut = Math.max(Math.ceil(faitsSuite.length / 5), Math.ceil(datesSuite.length / 8));
         var pages = [];
-        for (var k = 0; k < nHaut; k++) pages.push({ fs: faitsSuite.slice(k * 5, k * 5 + 5), ds: datesSuite.slice(k * 8, k * 8 + 8), ss: sourcesSuite.splice(0, 4) });
-        while (sourcesSuite.length) pages.push({ fs: [], ds: [], ss: sourcesSuite.splice(0, 12) });
+        for (var k = 0; k < nHaut; k++) pages.push({ fs: faitsSuite.slice(k * 5, k * 5 + 5), ds: datesSuite.slice(k * 8, k * 8 + 8), ss: [] });
         pages.forEach(function (pg) {
           var fs = pg.fs, ds = pg.ds, ss = pg.ss;
           s = contenu();
           titre(s, g.titre + ' (continued)', kicker);
-          pastille(s, 11.38, 0.2, g.rel);
+          if (D.mode !== 'synthese') pastille(s, 11.38, 0.2, g.rel);
           var yy = 1.55;
           var iaSuite = fs.some(function (p) { return p.ia; }) ? ia : '';
           if (g.verifier || iaSuite) yy += bandeaux(s, yy, g.verifier, iaSuite);
@@ -342,7 +408,7 @@
           var lib = (g.texteEn ? g.texteEn + ' — ' : '') + couper(titreEn(a), 120);
           return [{ text: lib, options: a.lien ? { hyperlink: { url: a.lien }, color: C.violet } : {} }, g.zoneEn,
                   { text: '● ' + REL[g.rel].label, options: { bold: true, color: g.rel === 'faible' ? 'B07A00' : C.violet } },
-                  (a.nature === 'rkc' ? 'RKC watch (paid, ' + couper(a.publication || 'source not stated', 30) + ')' : couper(a.source, 30)) + ', ' + dateCourte(a.date)];
+                  '[' + NUM[a.id] + '] ' + (a.nature === 'rkc' ? 'RKC watch (paid)' : couper(a.source, 26)) + ', ' + dateCourte(a.date)];
         }), [6.3, 1.8, 1.6, 2.63], 1.9, 12);
         s.addText('Subjects with little information in the sources (no summary, no date). Items marked “To monitor” are to verify. Check the source articles.',
           { x: 0.5, y: 1.45, w: 12.3, h: 0.3, fontFace: F, fontSize: 12, color: C.sub, margin: 0 });
@@ -420,15 +486,15 @@
         });
       });
 
-      /* 8. Annexe : articles sources */
-      var ann = P.articles.slice().sort(function (x, y) { return x.date < y.date ? 1 : -1; });
+      /* 8. Annexe : toutes les sources, numérotées (les slides y renvoient par leur numéro) */
       par(ann, 9).forEach(function (bloc, i) {
         s = contenu();
-        titre(s, suite('Source articles of the period', i), 'Appendix');
-        tableau(s, ['Date', 'Source', 'Article', 'Subject', 'Relevance'], bloc.map(function (a) {
-          return [dateCourte(a.date), couper(a.source, 40), { text: couper(titreEn(a), 95), options: a.lien ? { hyperlink: { url: a.lien }, color: C.violet } : {} },
-                  (a.textes_cles || []).map(D.texteEn).join(', ') || '—', REL[a.pertinence].label];
-        }), [1.3, 2.0, 5.53, 2.0, 1.5], 1.45, 11);
+        titre(s, suite('Sources', i), 'Appendix');
+        tableau(s, ['#', 'Date', 'Source', 'Article', 'Subject'], bloc.map(function (a) {
+          var src = a.nature === 'rkc' ? 'RKC watch, paid (' + couper(a.publication || 'not stated', 24) + ')' : couper(a.source, 40);
+          return [String(NUM[a.id]), dateCourte(a.date), src, { text: couper(titreEn(a), 95), options: a.lien ? { hyperlink: { url: a.lien }, color: C.violet } : {} },
+                  (a.textes_cles || []).map(D.texteEn).join(', ') || '—'];
+        }), [0.55, 1.25, 2.3, 6.0, 2.23], 1.45, 11);
       });
     }
 
@@ -439,6 +505,15 @@
     return pptx;
   }
 
-  racine.CW_SLIDES = { construire: construire, preparer: preparer };
+  // nombre de slides sans rien dessiner (affiché dans la fenêtre avant de générer)
+  function compter(D) {
+    var n = 0, faux = function () { return obj; }, obj = { addText: faux, addShape: faux, addImage: faux, addTable: faux };
+    function FauxPptx() { this.ShapeType = { rect: 1, roundRect: 2, ellipse: 3, line: 4 }; }
+    FauxPptx.prototype.defineSlideMaster = function () {};
+    FauxPptx.prototype.addSlide = function () { n++; return obj; };
+    construire(FauxPptx, { cover: '', end: '', panel: '', logo_white: '', logo_violet: '' }, D);
+    return n;
+  }
+  racine.CW_SLIDES = { construire: construire, preparer: preparer, compter: compter };
   if (typeof module !== 'undefined' && module.exports) module.exports = racine.CW_SLIDES;
 })(typeof window !== 'undefined' ? window : this);

@@ -141,6 +141,30 @@ INSTRUMENT = re.compile(
     r"bekendtgorelse|laki|asetus|hallituksen esitys|νομος|νομοσχεδιο|σχεδιο νομου|προεδρικο διαταγμα|kanon\w*)\b", re.I)
 
 
+# 12/11/2026 : un texte précis et NUMÉROTÉ cité par la presse, un cabinet ou la veille RKC (« Legislative Decree
+# No. 179/2026 », « Loi n° 2026-123 », « Regulation (EU) 2026/1234 », « ustawa z dnia … 2026 ») ; pas une décision
+# ou une délibération d'une autorité (« provvedimento n. 584 », « decision no. »)
+TEXTE_NUMEROTE = re.compile(
+    r"\b((legislative )?decree|decret|decreto( legislativo| legge)?|d\.\s?lgs\.?|dlgs|d\.l\.|loi|law|act|regulation|reglement|"
+    r"directive|richtlinie|verordnung|gesetz|ustaw[ay]?|rozporzadzeni\w*|zakon\w*|torveny|lag|lov|laki|wet|real decreto|ley|"
+    r"legge|ordonnance|arrete|regolamento|reglamento|bekendtgorelse|asetus)\s*(\((eu|ue)\)\s*)?(no\.?|n°|nr\.?|num\.?|n\.)?\s*"
+    r"\d{1,5}\s*[/-]\s*(19|20)\d{2}\b|"
+    r"\b(loi|law|act|decret|decree|decreto|ustawa|gesetz)\s+(n°|no\.?|nr\.?)?\s*\d{0,5}\s*(du|of|del|z dnia|vom)\s+\d{1,2}\.?\s+\w+\s+(19|20)\d{2}\b", re.I)
+DECISION_AUTORITE = re.compile(r"provvedimento|deliberazione|deliberation|decision|beschluss|resolucion|resolution|"
+                               r"ordinanza|ingiunzione|sanction|amende|fine\b", re.I)
+
+
+def texte_numerote(a):
+    """Le titre ou le début du résumé cite-t-il un texte précis et numéroté (pas une décision d'autorité) ?"""
+    tr = (a.get("trad") or {}).get("en") or {}
+    t = regles._sa(" \n ".join([a.get("titre", ""), tr.get("titre", ""), (a.get("resume") or "")[:300], (tr.get("resume") or "")[:300]]))
+    m = TEXTE_NUMEROTE.search(t)
+    if not m:
+        return False
+    autour = t[max(0, m.start() - 40):m.end()]
+    return not DECISION_AUTORITE.search(autour)
+
+
 def type_article(a):
     """Type d'alerte d'un article, ou None (pas une alerte)."""
     if a.get("base") or a.get("doublon_de") or a.get("nature") == "opinion" or a.get("debat"):
@@ -153,7 +177,11 @@ def type_article(a):
     if (ia.get("avis") == "pertinent" and ia.get("motif") == "preparation" and a.get("pertinence") in ("elevee", "moyenne")
             and a.get("nature") == "officielle" and _europeen(a)):   # travaux d'une autorité, pas un guide de cabinet
         return "proposition"   # 31/10 (D2) : travaux préparatoires qui concernent l'entreprise = projet de texte en cours
-    if not a.get("essentiel") or a.get("pertinence") != "elevee" or not _europeen(a):
+    # 12/11/2026 : presse / cabinet / RKC qui cite un texte numéroté, jugé cyber et applicable par l'IA :
+    # point clé « Nouveau texte adopté », toujours « à vérifier » (source non officielle)
+    numerote = (a.get("nature") != "officielle" and a.get("pertinence") == "elevee" and texte_numerote(a)
+                and ia.get("sujet") == "oui" and ia.get("applicable") == "oui")
+    if (not a.get("essentiel") and not numerote) or a.get("pertinence") != "elevee" or not _europeen(a):
         return None
     texte = regles.texte_article(a)
     if EXCLUS.search(texte):
@@ -173,6 +201,9 @@ def type_article(a):
         # presse, cabinets, veille RKC : l'étape (adopté, projet, consultation…) doit être annoncée dans le TITRE ;
         # sinon c'est un commentaire d'un texte existant, pas une nouvelle étape (tests des 08 et 12/10)
         statut_a = regles.statut(titre)
+        if not statut_a and numerote:
+            a["a_verifier"] = True
+            statut_a = "adopte"
         if not statut_a:
             return None
     t = TYPE_STATUT.get(statut_a)

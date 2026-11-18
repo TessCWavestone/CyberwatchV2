@@ -37,10 +37,13 @@ def main():
     cfg.setdefault("ia_tri", {})
     cfg["ia_tri"].update({"budget_minutes": 10 ** 4, "max_articles": 10 ** 5})
     t1 = time.time()
-    ia = tri_ia.TriIA(cfg)
+    _ok, _msg = tri_ia.sonde(cfg)   # v13.4 : message clair au lieu d'un plantage si l'IA ne tourne pas sur cette machine
+    ia = tri_ia.TriIA(cfg if _ok else dict(cfg, ia_tri=dict(cfg.get("ia_tri") or {}, actif=False)))
+    if not _ok:
+        ia.erreur = _msg
     if not ia.actif:
         print(ia.erreur)
-        open(os.path.join(ICI, "rapport.md"), "w").write("# Test du tri par l'IA\n\n" + ia.erreur + "\n")
+        open(os.path.join(ICI, "rapport.md"), "w").write("# AI triage test\n\n" + ia.erreur + "\n")
         return
     print("Model loaded: %s (%d s)" % (ia.cfg["modele_fichier"], time.time() - t1))
     t2 = time.time()

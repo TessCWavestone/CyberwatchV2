@@ -3,7 +3,7 @@
 # La collecte du lundi met déjà static/ à jour elle-même ; ce workflow ne touche pas aux données.
 # Quelques secondes, gratuit. Peut aussi être lancé à la main (« Run workflow »).
 
-name: Cyber Watch - site statique
+name: Cyber Watch - static site
 
 on:
   push:
@@ -34,18 +34,18 @@ jobs:
         with:
           ref: main
 
-      - name: Assembler le site dans static/
+      - name: Build the site into static/
         run: bash collecte/preparer_site.sh static
 
-      - name: Enregistrer static/
+      - name: Save static/
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add static vendor
           if git diff --cached --quiet; then
-            echo "static/ déjà à jour."
+            echo "static/ already up to date."
           else
-            git commit -m "Site statique : mise à jour de static/"
+            git commit -m "Static site: update static/"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

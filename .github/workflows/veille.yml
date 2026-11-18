@@ -3,7 +3,7 @@
 #
 # Version « dépôt dédié » : le site, les données et ce fichier sont tous sur main.
 
-name: Cyber Watch - collecte
+name: Cyber Watch - collection
 
 on:
   schedule:
@@ -16,11 +16,11 @@ on:
   workflow_dispatch:          # bouton « Run workflow » dans l'onglet Actions
     inputs:
       rattrapage_depuis:
-        description: "Rattrapage des archives depuis cette date (AAAA-MM-JJ). Laisser vide pour une collecte normale."
+        description: "Catch up archives since this date (YYYY-MM-DD). Leave empty for a normal collection."
         required: false
         default: ""
       retester_inactives:
-        description: "Retester aussi les sources inactives (sinon : automatiquement le 1er lundi du mois)"
+        description: "Also re-test inactive sources (otherwise: automatically on the 1st Monday of the month)"
         type: boolean
         required: false
         default: false
@@ -47,13 +47,13 @@ jobs:
     outputs:
       lancer: ${{ steps.garde.outputs.lancer }}
     steps:
-      - name: Récupérer la branche de veille
+      - name: Fetch the watch branch
         uses: actions/checkout@v4
         with:
           ref: ${{ env.BRANCHE_VEILLE }}
           fetch-depth: 0
 
-      - name: Vérifier l'horaire (lundi 7 h, heure de Paris)
+      - name: Check the schedule (Monday 7 am, Paris time)
         id: garde
         run: |
           if [ "${{ github.event_name }}" != "schedule" ]; then
@@ -65,26 +65,26 @@ jobs:
           if [ "$heure" -ge 7 ] && [ "$derniere" != "$jour" ]; then
             echo "lancer=true" >> "$GITHUB_OUTPUT"
           else
-            echo "Créneau ignoré (il est ${heure} h à Paris, dernière collecte : ${derniere:-aucune})."
+            echo "Slot skipped (it is ${heure}:00 in Paris, last collection: ${derniere:-none})."
             echo "lancer=false" >> "$GITHUB_OUTPUT"
           fi
 
       # Le serveur gratuit de GitHub est livré avec des outils dont la collecte n'a pas besoin (Android, .NET,
       # Haskell, CodeQL…) ; la collecte installe l'IA de tri (~5 Go) et d'autres modèles : sans ce ménage, le disque
       # peut être plein (collecte du 02/11/2026 : « No space left on device »). Environ 20 Go libérés.
-      - name: Libérer de l'espace disque
+      - name: Free up disk space
         if: steps.garde.outputs.lancer == 'true'
         run: |
-          echo "Espace disque avant :"; df -h /
+          echo "Disk space before:"; df -h /
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL \
                       /usr/local/share/boost /usr/share/swift /usr/local/share/powershell /usr/local/share/chromium || true
           sudo docker image prune --all --force > /dev/null 2>&1 || true
-          echo "Espace disque après :"; df -h /
+          echo "Disk space after:"; df -h /
 
       # Veille RKC : fichiers (mails .eml/.msg, Word) déposés dans un dépôt PRIVÉ.
       # Facultatif : variable RKC_DEPOT (ex. mon-compte/cyberwatch-rkc) + secret RKC_TOKEN.
       # Le dossier rkc/ n'est jamais publié ni enregistré dans ce dépôt public.
-      - name: Récupérer les veilles RKC (dépôt privé)
+      - name: Fetch RKC watch files (private repository)
         if: steps.garde.outputs.lancer == 'true' && vars.RKC_DEPOT != ''
         continue-on-error: true
         uses: actions/checkout@v4
@@ -93,14 +93,14 @@ jobs:
           token: ${{ secrets.RKC_TOKEN }}
           path: rkc
 
-      - name: Installer Python
+      - name: Install Python
         if: steps.garde.outputs.lancer == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       # PIP_NO_CACHE_DIR : pip ne garde pas de copie des paquets téléchargés (plusieurs Go économisés)
-      - name: Installer les dépendances
+      - name: Install dependencies
         if: steps.garde.outputs.lancer == 'true'
         env:
           PIP_NO_CACHE_DIR: "1"
@@ -112,7 +112,7 @@ jobs:
       # Traduction (Argos Translate) et note de pertinence (sentence-transformers) :
       # modèles open source gratuits. Si cette étape échoue, la collecte continue
       # (textes en langue d'origine, note calculée avec les mots-clés).
-      - name: Installer les modèles open source (traduction, pertinence)
+      - name: Install open-source models (translation, relevance)
         if: steps.garde.outputs.lancer == 'true'
         continue-on-error: true
         env:
@@ -124,14 +124,14 @@ jobs:
 
       # v7 : petite IA open source de tri (llama.cpp, version précompilée pour processeur). Si elle ne
       # s'installe pas, la collecte continue avec les règles seules.
-      - name: Installer l'IA de tri (open source, gratuite)
+      - name: Install the triage AI (open source, free)
         if: steps.garde.outputs.lancer == 'true'
         continue-on-error: true
         env:
           PIP_NO_CACHE_DIR: "1"
         run: pip install -r requirements-ia.txt --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
 
-      - name: Garder en cache les modèles (téléchargés une seule fois)
+      - name: Cache the models (downloaded only once)
         if: steps.garde.outputs.lancer == 'true'
         uses: actions/cache@v4
         with:
@@ -141,7 +141,7 @@ jobs:
             ~/.cache/huggingface
           key: modeles-v7
 
-      - name: Collecter les nouveaux articles
+      - name: Collect new articles
         if: steps.garde.outputs.lancer == 'true'
         run: python collecte/collecte.py
         env:
@@ -153,20 +153,20 @@ jobs:
           RETEST_INACTIVES: ${{ github.event.inputs.retester_inactives }}
           # Journal officiel français : données ouvertes de la DILA, aucun identifiant nécessaire.
 
-      - name: Espace disque restant (contrôle)
+      - name: Remaining disk space (check)
         if: always() && steps.garde.outputs.lancer == 'true'
         run: df -h / && du -sh ~/.cache/huggingface ~/.local/share/argos-translate 2>/dev/null || true
 
       # Site public assemblé AVANT l'enregistrement : le même contenu part sur GitHub Pages (_site)
       # et dans le dossier static/ du dépôt, lu par la plateforme d'hébergement de l'entreprise.
-      - name: Préparer le site (uniquement les fichiers publics)
+      - name: Prepare the site (public files only)
         if: steps.garde.outputs.lancer == 'true'
         run: |
           rm -rf rkc   # le contenu RKC ne doit jamais être publié
           bash collecte/preparer_site.sh _site
           bash collecte/preparer_site.sh static
 
-      - name: Enregistrer les données et marquer la version
+      - name: Save data and tag the version
         if: steps.garde.outputs.lancer == 'true'
         run: |
           git config user.name  "github-actions[bot]"
@@ -175,10 +175,10 @@ jobs:
           # static/ : copie du site pour la plateforme de l'entreprise ; vendor/ : html2pdf téléchargé
           git add data static vendor
           if git diff --cached --quiet; then
-            echo "Aucun changement."
+            echo "No changes."
           else
             version=$(cat data/version_courante.txt)
-            git commit -m "Veille : version du ${version}"
+            git commit -m "Watch: version of ${version}"
             # si une source a été ajoutée depuis le site pendant la collecte
             git pull --rebase origin ${{ env.BRANCHE_VEILLE }}
             git push origin HEAD:${{ env.BRANCHE_VEILLE }}
@@ -204,6 +204,6 @@ jobs:
       name: github-pages
       url: ${{ steps.publication.outputs.page_url }}
     steps:
-      - name: Publier sur GitHub Pages
+      - name: Publish to GitHub Pages
         id: publication
         uses: actions/deploy-pages@v4

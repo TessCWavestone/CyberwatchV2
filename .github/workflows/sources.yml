@@ -10,7 +10,7 @@
 # La modification est écrite dans config/sources_manuelles.json et prise en
 # compte à la collecte suivante.
 
-name: Cyber Watch - sources (demandes du site)
+name: Cyber Watch - sources (site requests)
 
 on:
   issues:
@@ -41,7 +41,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Appliquer la demande
+      - name: Apply the request
         id: appli
         env:
           CORPS_ISSUE: ${{ github.event.issue.body }}
@@ -52,17 +52,17 @@ jobs:
           echo "code=$code" >> "$GITHUB_OUTPUT"
           exit 0
 
-      - name: Enregistrer
+      - name: Save
         if: steps.appli.outputs.code == '0'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add config/sources_manuelles.json config/retours.json 2>/dev/null || git add config/sources_manuelles.json
-          git diff --cached --quiet || git commit -m "Site : demande #${{ github.event.issue.number }}"
+          git diff --cached --quiet || git commit -m "Site: request #${{ github.event.issue.number }}"
           git pull --rebase origin main
           git push origin HEAD:main
 
-      - name: Répondre et fermer la demande
+      - name: Reply and close the request
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -70,5 +70,5 @@ jobs:
             gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body-file resultat.txt
             gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }}
           else
-            gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body "La demande n'a pas pu être appliquée : $(cat resultat.txt)"
+            gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body "The request could not be applied: $(cat resultat.txt)"
           fi

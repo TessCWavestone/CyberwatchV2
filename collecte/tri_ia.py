@@ -299,9 +299,12 @@ Answer in JSON with:
   the text in its ORIGINAL language, that best support the summary (the rule, the obligation or the date). Do not
   translate them, do not shorten them, do not change any word. If no passage fits, return an empty list."""
 
+# Pas de « maxLength » ici : llama.cpp transforme une longueur maximale en règles imbriquées, et au-delà d'environ
+# 250 caractères il dépasse sa limite de récursion (« grammar recursion depth limit exceeded ») puis plante
+# (collecte du 16/11/2026, erreur 139). La longueur est limitée par max_tokens et coupée ensuite en Python.
 SCHEMA_RESUME = {"type": "object", "properties": {
-    "resume": {"type": "string", "maxLength": 700},
-    "citations": {"type": "array", "maxItems": 2, "items": {"type": "string", "maxLength": 400}}},
+    "resume": {"type": "string"},
+    "citations": {"type": "array", "items": {"type": "string"}}},
     "required": ["resume", "citations"]}
 
 
@@ -364,9 +367,9 @@ class TriIA:
                                                              a.get("date", ""), texte[:self.cfg.get("caracteres_resume", 3500)])
         r = self.llm.create_chat_completion(
             messages=[{"role": "system", "content": CONSIGNE_RESUME}, {"role": "user", "content": msg}],
-            temperature=0, max_tokens=420, response_format={"type": "json_object", "schema": SCHEMA_RESUME})
+            temperature=0, max_tokens=600, response_format={"type": "json_object", "schema": SCHEMA_RESUME})
         d = json.loads(r["choices"][0]["message"]["content"])
-        return (d.get("resume") or "").strip(), [c.strip() for c in (d.get("citations") or []) if c and c.strip()][:2]
+        return (d.get("resume") or "").strip()[:900], [c.strip()[:400] for c in (d.get("citations") or []) if c and c.strip()][:2]
 
     def trier(self, articles, garder_raison=False):
         """Juge les articles donnés (dans l'ordre) qui ne l'ont pas encore été, dans le temps imparti.

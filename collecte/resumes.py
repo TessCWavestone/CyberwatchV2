@@ -68,6 +68,68 @@ def _candidat(a, limite):
             and not a.get("doublon_de"))
 
 
+def _travail(cfg_ia, lots, budget_s, file):
+    """Processus fils : charge le modèle, résume les articles un par un, envoie chaque résultat dès qu'il est prêt
+    (tuyau direct, sans tampon : un résultat envoyé est gardé même si le processus plante juste après)."""
+    import tri_ia
+    ia = tri_ia.TriIA(cfg_ia)
+    if not ia.actif:
+        file.send(("erreur", ia.erreur[:120]))
+        return
+    debut = time.time()
+    for a, texte in lots:
+        if time.time() - debut > budget_s:
+            file.send(("erreur", "temps imparti atteint : la suite à la prochaine collecte"))
+            break
+        try:
+            file.send(("ok", (a["id"],) + tuple(ia.resumer(a, texte))))
+        except Exception as e:
+            file.send(("erreur", "erreur IA : %s" % str(e)[:80]))
+    file.send(("fin", None))
+    file.close()
+
+
+def _resumer_isole(ia, lots, budget_s):
+    """Lance _travail dans un processus séparé ; retourne ({id: (résumé, citations)}, message)."""
+    import multiprocessing as mp
+    if not lots:
+        return {}, ""
+    # le modèle du tri est libéré d'abord (il n'est plus utilisé) : la mémoire va au processus fils
+    ia.llm = None
+    import gc
+    gc.collect()
+    ctx = mp.get_context("spawn")
+    lecture_f, file = ctx.Pipe(duplex=False)
+    legers = [({k: a.get(k, "") for k in ("id", "titre", "source", "zone", "date")}, t) for a, t in lots]
+    p = ctx.Process(target=_travail, args=({"ia_tri": dict(ia.cfg)}, legers, budget_s, file), daemon=True)
+    p.start()
+    file.close()   # le parent ne garde que le bout « lecture »
+    res, msg, fin = {}, "", time.time() + budget_s + 900
+    while time.time() < fin:
+        try:
+            if not lecture_f.poll(30):
+                if not p.is_alive():
+                    break
+                continue
+            genre, val = lecture_f.recv()
+        except (EOFError, OSError):
+            break   # processus fils arrêté
+        if genre == "ok":
+            res[val[0]] = (val[1], val[2])
+        elif genre == "erreur":
+            msg = val
+        else:
+            break
+    lecture_f.close()
+    p.join(timeout=60)
+    if p.is_alive():
+        p.terminate()
+        msg = "processus des résumés arrêté (trop long)"
+    elif p.exitcode not in (0, None):
+        msg = "le modèle s'est arrêté brutalement (code %s) : %d résumés gardés, la suite à la prochaine collecte" % (p.exitcode, len(res))
+    return res, msg
+
+
 def mettre_a_jour(liste, ia, trad, client, cfg, aujourdhui, id_version, dossier):
     """Complète le registre chiffré. Retourne (nombre de nouveaux résumés, message)."""
     c = dict({"actif": True, "budget_minutes": 30, "max_articles": 60, "jours": 60}, **(cfg.get("ia_resume") or {}))
@@ -92,24 +154,25 @@ def mettre_a_jour(liste, ia, trad, client, cfg, aujourdhui, id_version, dossier)
         todo = [a for a in liste if _candidat(a, limite) and a["id"] not in registre]
         todo.sort(key=lambda a: a.get("date", ""), reverse=True)
         todo.sort(key=lambda a: (a.get("version") != id_version, a.get("pertinence") != "elevee"))
-        debut = time.time()
-        for a in todo:
-            if n >= c["max_articles"] or time.time() - debut > 60 * c["budget_minutes"]:
-                msg = "temps imparti atteint : la suite à la prochaine collecte"
-                break
+        # 1. textes des pages (lus ici, jamais enregistrés)
+        lots = []
+        for a in todo[:c["max_articles"]]:
             texte = a.get("_texte")
             if not texte:
                 texte, err = lecture.lire_page(client, a["lien"])
                 if err or not texte:
                     continue
                 lecture.dates_page(a, texte, aujourdhui)   # au passage : dates réglementaires de la page
-            try:
-                resume, citations = ia.resumer(a, texte)
-            except Exception as e:
-                msg = "erreur IA : %s" % str(e)[:80]
+            lots.append((a, texte))
+        # 2. l'IA écrit les résumés dans un PROCESSUS SÉPARÉ : si llama.cpp plante (collecte du 16/11/2026 :
+        #    « grammar recursion depth limit exceeded » puis erreur 139), seule cette étape s'arrête ; la collecte
+        #    continue et les résumés déjà écrits sont gardés.
+        resultats, msg = _resumer_isole(ia, lots, 60 * c["budget_minutes"])
+        par_id = {a["id"]: (a, texte) for a, texte in lots}
+        for ident, (resume, citations) in resultats.items():
+            if ident not in par_id or not resume:
                 continue
-            if not resume:
-                continue
+            a, texte = par_id[ident]
             langue = a.get("langue") or "en"
             cits = []
             for q in citations:
@@ -121,7 +184,7 @@ def mettre_a_jour(liste, ia, trad, client, cfg, aujourdhui, id_version, dossier)
                     if tr:
                         x["tr"], x["m"] = tr, outil
                 cits.append(x)
-            registre[a["id"]] = {"r": resume, "c": cits, "mod": ia.cfg.get("modele_fichier", ""), "le": aujourdhui.isoformat(), "v": VERSION}
+            registre[ident] = {"r": resume, "c": cits, "mod": ia.cfg.get("modele_fichier", ""), "le": aujourdhui.isoformat(), "v": VERSION}
             n += 1
     env = chiffrer({"articles": registre, "maj": aujourdhui.isoformat()}, mdp)
     texte = json.dumps(env)

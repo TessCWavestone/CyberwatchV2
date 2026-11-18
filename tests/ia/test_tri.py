@@ -20,7 +20,7 @@ if os.environ.get("MAX"):
     jeu = jeu[:int(os.environ["MAX"])]
 REGLES = {"elevee": "pertinent", "moyenne": "pertinent", "faible": "a_surveiller", "ecarte": "pas_pertinent"}
 AV = ["pertinent", "a_surveiller", "pas_pertinent"]
-COURT = {"pertinent": "P", "a_surveiller": "S", "pas_pertinent": "N"}
+COURT = {"pertinent": "R", "a_surveiller": "M", "pas_pertinent": "N"}   # relevant / monitor / not relevant
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
                 if texte and not err:
                     a["_texte"] = texte
                     lues += 1
-    print("Pages lues : %d / %d (%d s)" % (lues, len(jeu), time.time() - t0))
+    print("Pages read: %d / %d (%d s)" % (lues, len(jeu), time.time() - t0))
     cfg.setdefault("ia_tri", {})
     cfg["ia_tri"].update({"budget_minutes": 10 ** 4, "max_articles": 10 ** 5})
     t1 = time.time()
@@ -42,11 +42,11 @@ def main():
         print(ia.erreur)
         open(os.path.join(ICI, "rapport.md"), "w").write("# Test du tri par l'IA\n\n" + ia.erreur + "\n")
         return
-    print("Modèle chargé : %s (%d s)" % (ia.cfg["modele_fichier"], time.time() - t1))
+    print("Model loaded: %s (%d s)" % (ia.cfg["modele_fichier"], time.time() - t1))
     t2 = time.time()
     for k in range(0, len(jeu), 25):
         ia.trier(jeu[k:k + 25], garder_raison=True)
-        print("  %d / %d articles jugés (%d s)" % (min(k + 25, len(jeu)), len(jeu), time.time() - t2))
+        print("  %d / %d articles assessed (%d s)" % (min(k + 25, len(jeu)), len(jeu), time.time() - t2))
     duree = time.time() - t2
 
     def final(a):
@@ -71,43 +71,43 @@ def main():
         rates = sum(1 for a in jeu if a["reference"] == "pertinent" and f(a) == "pas_pertinent")
         bruit = sum(1 for a in jeu if a["reference"] == "pas_pertinent" and f(a) == "pertinent")
         bruit_s = sum(1 for a in jeu if a["reference"] == "pas_pertinent" and f(a) == "a_surveiller")
-        lignes = ["| Référence \\ Avis | Pertinent | À surveiller | Pas pertinent |", "|---|---|---|---|"]
+        lignes = ["| Reference \\ Verdict | Relevant | To monitor | Not relevant |", "|---|---|---|---|"]
         for r in AV:
-            lignes.append("| %s | %s |" % ({"pertinent": "**Pertinent**", "a_surveiller": "**À surveiller**",
-                                             "pas_pertinent": "**Pas pertinent**"}[r], " | ".join(str(m[(r, x)]) for x in AV)))
+            lignes.append("| %s | %s |" % ({"pertinent": "**Relevant**", "a_surveiller": "**To monitor**",
+                                             "pas_pertinent": "**Not relevant**"}[r], " | ".join(str(m[(r, x)]) for x in AV)))
         return ok, rates, bruit, bruit_s, lignes
 
     nP = sum(1 for a in jeu if a["reference"] == "pertinent")
     nN = sum(1 for a in jeu if a["reference"] == "pas_pertinent")
     verif = sum(1 for a in jeu if a.get("verifie"))
     erreurs = sum(1 for a in jeu if (a.get("ia") or {}).get("erreur"))
-    L = ["# Test du tri par l'IA — %s" % dt.date.today().isoformat(), "",
-         "Modèle : **%s** · %d articles (%d vérifiés par un humain) · pages lues : %d · durée de l'IA : %d min "
-         "(%.0f s par article)%s." % (ia.cfg["modele_fichier"], len(jeu), verif, lues, duree / 60, duree / max(1, len(jeu)),
-                                       (" · %d réponses hors format" % erreurs) if erreurs else ""), "",
-         "Référence : %d pertinents, %d à surveiller, %d pas pertinents." % (nP, len(jeu) - nP - nN, nN), ""]
-    for titre, f in (("Règles actuelles (sans IA)", lambda a: REGLES[a["niveau_regles"]]),
-                     ("IA seule", lambda a: (a.get("ia") or {}).get("avis") or REGLES[a["niveau_regles"]]),
-                     ("IA + garde-fou (ce qui serait appliqué sur le site)", final)):
+    L = ["# AI triage test — %s" % dt.date.today().isoformat(), "",
+         "Model: **%s** · %d articles (%d checked by a human) · pages read: %d · AI duration: %d min "
+         "(%.0f s per article)%s." % (ia.cfg["modele_fichier"], len(jeu), verif, lues, duree / 60, duree / max(1, len(jeu)),
+                                       (" · %d malformed answers" % erreurs) if erreurs else ""), "",
+         "Reference: %d relevant, %d to monitor, %d not relevant." % (nP, len(jeu) - nP - nN, nN), ""]
+    for titre, f in (("Current rules (no AI)", lambda a: REGLES[a["niveau_regles"]]),
+                     ("AI alone", lambda a: (a.get("ia") or {}).get("avis") or REGLES[a["niveau_regles"]]),
+                     ("AI + safeguard (what the site would apply)", final)):
         ok, rates, bruit, bruit_s, lignes = matrice(f)
         L += ["## " + titre, "",
-              "- Avis identiques à la référence : **%d / %d** (%d %%)" % (ok, len(jeu), 100 * ok / len(jeu)),
-              "- Vrais sujets **ratés** (pertinents jugés « pas pertinents ») : **%d / %d**" % (rates, nP),
-              "- Hors-sujet gardés comme pertinents : **%d / %d** ; mis « à surveiller » : %d" % (bruit, nN, bruit_s), ""] + lignes + [""]
-    L += ["## Types d'articles vus par l'IA", "", "| Type | Nombre | dont référence « pertinent » |", "|---|---|---|"]
+              "- Verdicts matching the reference: **%d / %d** (%d %%)" % (ok, len(jeu), 100 * ok / len(jeu)),
+              "- Real topics **missed** (relevant judged \"not relevant\"): **%d / %d**" % (rates, nP),
+              "- Off-topic kept as relevant: **%d / %d**; put \"to monitor\": %d" % (bruit, nN, bruit_s), ""] + lignes + [""]
+    L += ["## Article types seen by the AI", "", "| Type | Count | of which reference \"relevant\" |", "|---|---|---|"]
     for t, n in collections.Counter((a.get("ia") or {}).get("type", "?") for a in jeu).most_common():
         L.append("| %s | %d | %d |" % (t, n, sum(1 for a in jeu if (a.get("ia") or {}).get("type", "?") == t and a["reference"] == "pertinent")))
-    L += ["", "## Désaccords entre l'IA et la référence", "",
-          "| N° | Référence | IA | Type / sujet / applicable | Raison donnée par l'IA (test seulement, jamais publiée) | Page | Titre |",
+    L += ["", "## Disagreements between the AI and the reference", "",
+          "| No. | Reference | AI | Type / cyber topic / applicable | Reason given by the AI (test only, never published) | Page | Title |",
           "|---|---|---|---|---|---|---|"]
     for a in jeu:
         d = a.get("ia") or {}
         if d.get("avis") != a["reference"]:
-            t = ((a.get("trad") or {}).get("fr") or {}).get("titre") or a["titre"]
+            t = ((a.get("trad") or {}).get("en") or {}).get("titre") or a["titre"]
             L.append("| %d | %s | %s | %s | %s | %s | %s |" % (
                 a["n"], COURT[a["reference"]], COURT.get(d.get("avis"), "?"),
-                "%s / %s / %s / secteur %s" % (d.get("type", d.get("erreur", "")), d.get("sujet", ""), d.get("applicable", ""), d.get("secteur", "")),
-                (d.get("raison") or "").replace("|", "/")[:160], "oui" if d.get("page") else "—", t.replace("|", "/")[:110]))
+                "%s / %s / %s / sector %s" % (d.get("type", d.get("erreur", "")), d.get("sujet", ""), d.get("applicable", ""), d.get("secteur", "")),
+                (d.get("raison") or "").replace("|", "/")[:160], "yes" if d.get("page") else "—", t.replace("|", "/")[:110]))
     for a in jeu:
         a.pop("_texte", None)
     json.dump(jeu, open(os.path.join(ICI, "resultats.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

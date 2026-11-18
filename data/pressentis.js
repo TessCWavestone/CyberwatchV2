@@ -1,5 +1,5 @@
 window.VEILLE_PRESSENTIS = {
- "mise_a_jour": "2026-11-09T10:00+00:00",
+ "mise_a_jour": "2026-11-18T10:16+00:00",
  "sujets": [
   {
    "id": "pd61e171d30e",
@@ -528,6 +528,255 @@ window.VEILLE_PRESSENTIS = {
    "statut": "pressenti"
   },
   {
+   "id": "p4617a0bcc11",
+   "sorte": "avis",
+   "texte": "AI Act",
+   "nom": "",
+   "zone": "Europe",
+   "premier_signal": "2026-02-25",
+   "dernier_signal": "2026-11-10",
+   "articles": [
+    {
+     "id": "c660085ac2ff",
+     "titre": "PATIENT AI Act targets FDA, reimbursement gaps for AI-enabled health technology",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "PATIENT La loi IA cible FDA, les écarts de remboursement pour la technologie de santé AI-enabled"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/patient-ai-act-targets-fda-reimbursement-gaps-for-aienabled-health-technology",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-11-10",
+     "detecte_le": "2026-11-18",
+     "version": "2026-11-18-1016",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "243cc05df940",
+     "titre": "Insights and Analysis The EU AI Act and UK AI regulation: A product law perspective 19 October 2026",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Insights and Analysis The UE IA Act and UK IA regulation: A product law perspective 19 octobre 2026"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/the-eu-ai-act-and-uk-ai-regulation-a-product-law-perspective",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-10-19",
+     "detecte_le": "2026-10-26",
+     "version": "2026-10-26-1112",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "8e2f9438e3b5",
+     "titre": "MedTech Europe in the headlines – Summer 2026",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "MedTech Europe dans les titres – Été 2026"
+      }
+     },
+     "lien": "https://www.medtecheurope.org/2026/09/11/medtech-europe-in-the-headlines-summer-2026/",
+     "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+     "zone": "Europe",
+     "date": "2026-09-11",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "7db8ca28be0c",
+     "titre": "MedTech Europe responds to stakeholder consultation on the classification of high-risk AI systems",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "MedTech Europe répond à la consultation des parties prenantes sur la classification des systèmes IA à haut risque"
+      }
+     },
+     "lien": "https://www.medtecheurope.org/2026/09/11/medtech-europe-responds-to-stakeholder-consultation-on-the-classification-of-high-risk-ai-systems/",
+     "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
+     "zone": "Europe",
+     "date": "2026-09-11",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "consultation",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "fd724b67e7ac",
+     "titre": "U.S. State AI laws v. EU AI Act: key differences and implications for AI agreements",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "États-Unis lois IA v. UE IA Act: principales différences et implications pour les accords IA"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/us-state-ai-laws-v-eu-ai-act-key-differences-and-implications-for-ai-agreements",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-08-03",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "a8c673be3df7",
+     "titre": "EU AI Act: German Implementation Act enters into force",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "UE Loi IA : mise en œuvre allemande La loi entre en vigueur"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/eu-ai-act-german-implementation-act-enters-into-force",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-07-29",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "adopte",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "50729a075a89",
+     "titre": "Vietnam designates high-risk AI systems: What businesses need to know",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Vietnam désigne les systèmes IA à haut risque: Ce que les entreprises doivent savoir"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/vietnam-designates-highrisk-ai-systems-what-businesses-need-to-know",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-07-09",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "4eec4628b124",
+     "titre": "Thailand moves towards comprehensive AI regulation with new draft AI Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Thaïlande se dirige vers une réglementation globale IA avec un nouveau projet de loi IA"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/thailand-moves-towards-comprehensive-ai-regulation-with-new-draft-ai-act",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-07-03",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "fdeebccf8550",
+     "titre": "Frontier AI Goes Federal: How the Great American AI Act Compares to State Laws",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Frontier IA Goes Federal: Comment la Grande loi américaine IA se compare aux lois de l'État"
+      }
+     },
+     "lien": "https://fpf.org/blog/frontier-ai-goes-federal-how-the-great-american-ai-act-compares-to-state-laws/",
+     "source": "Future of Privacy Forum (FPF)",
+     "zone": "Worldwide",
+     "date": "2026-06-09",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "a1f0bde72bab",
+     "titre": "European Commission publishes long-awaited guidelines on high-risk AI systems",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Commission européenne publie des lignes directrices tant attendues sur les systèmes IA à haut risque"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/european-commission-publishes-long-awaited-guidelines-on-high-risk-ai-systems",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-05-27",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "consultation",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "23b1e18d68e0",
+     "titre": "The European Commission issues draft guidelines on the transparency requirements under the AI Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Commission européenne publie des projets de lignes directrices sur les exigences de transparence en vertu de la loi IA"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/the-european-commission-issues-draft-guidelines-on-the-transparency-requirements-under-the-ai-act",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-05-21",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "6370cf69a09c",
+     "titre": "AI regulation in financial services: navigating the EU AI Act in a layered regulatory landscape",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La réglementation IA dans les services financiers: la navigation sur la loi UE IA dans un paysage réglementaire stratifié"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/ai-regulation-in-financial-services-navigating-the-eu-ai-act-in-a-layered-regulatory-landscape",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-05-12",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    }
+   ],
+   "nb_articles": 23,
+   "nb_sources": 4,
+   "statut": "pressenti"
+  },
+  {
    "id": "p8b7092a03d6",
    "sorte": "avis",
    "texte": "Cloud and AI Development Act (CADA)",
@@ -748,255 +997,6 @@ window.VEILLE_PRESSENTIS = {
    ],
    "nb_articles": 6,
    "nb_sources": 1,
-   "statut": "pressenti"
-  },
-  {
-   "id": "p4617a0bcc11",
-   "sorte": "avis",
-   "texte": "AI Act",
-   "nom": "",
-   "zone": "Europe",
-   "premier_signal": "2026-02-25",
-   "dernier_signal": "2026-10-19",
-   "articles": [
-    {
-     "id": "243cc05df940",
-     "titre": "Insights and Analysis The EU AI Act and UK AI regulation: A product law perspective 19 October 2026",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Insights and Analysis The UE IA Act and UK IA regulation: A product law perspective 19 octobre 2026"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/the-eu-ai-act-and-uk-ai-regulation-a-product-law-perspective",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-10-19",
-     "detecte_le": "2026-10-26",
-     "version": "2026-10-26-1112",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "8e2f9438e3b5",
-     "titre": "MedTech Europe in the headlines – Summer 2026",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "MedTech Europe dans les titres – Été 2026"
-      }
-     },
-     "lien": "https://www.medtecheurope.org/2026/09/11/medtech-europe-in-the-headlines-summer-2026/",
-     "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-     "zone": "Europe",
-     "date": "2026-09-11",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "7db8ca28be0c",
-     "titre": "MedTech Europe responds to stakeholder consultation on the classification of high-risk AI systems",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "MedTech Europe répond à la consultation des parties prenantes sur la classification des systèmes IA à haut risque"
-      }
-     },
-     "lien": "https://www.medtecheurope.org/2026/09/11/medtech-europe-responds-to-stakeholder-consultation-on-the-classification-of-high-risk-ai-systems/",
-     "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-     "zone": "Europe",
-     "date": "2026-09-11",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "consultation",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "fd724b67e7ac",
-     "titre": "U.S. State AI laws v. EU AI Act: key differences and implications for AI agreements",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "États-Unis lois IA v. UE IA Act: principales différences et implications pour les accords IA"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/us-state-ai-laws-v-eu-ai-act-key-differences-and-implications-for-ai-agreements",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-08-03",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "a8c673be3df7",
-     "titre": "EU AI Act: German Implementation Act enters into force",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "UE Loi IA : mise en œuvre allemande La loi entre en vigueur"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/eu-ai-act-german-implementation-act-enters-into-force",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-07-29",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "adopte",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "50729a075a89",
-     "titre": "Vietnam designates high-risk AI systems: What businesses need to know",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Vietnam désigne les systèmes IA à haut risque: Ce que les entreprises doivent savoir"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/vietnam-designates-highrisk-ai-systems-what-businesses-need-to-know",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-07-09",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "4eec4628b124",
-     "titre": "Thailand moves towards comprehensive AI regulation with new draft AI Act",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "La Thaïlande se dirige vers une réglementation globale IA avec un nouveau projet de loi IA"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/thailand-moves-towards-comprehensive-ai-regulation-with-new-draft-ai-act",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-07-03",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "fdeebccf8550",
-     "titre": "Frontier AI Goes Federal: How the Great American AI Act Compares to State Laws",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Frontier IA Goes Federal: Comment la Grande loi américaine IA se compare aux lois de l'État"
-      }
-     },
-     "lien": "https://fpf.org/blog/frontier-ai-goes-federal-how-the-great-american-ai-act-compares-to-state-laws/",
-     "source": "Future of Privacy Forum (FPF)",
-     "zone": "Worldwide",
-     "date": "2026-06-09",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "a1f0bde72bab",
-     "titre": "European Commission publishes long-awaited guidelines on high-risk AI systems",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "La Commission européenne publie des lignes directrices tant attendues sur les systèmes IA à haut risque"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/european-commission-publishes-long-awaited-guidelines-on-high-risk-ai-systems",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-05-27",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "consultation",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "23b1e18d68e0",
-     "titre": "The European Commission issues draft guidelines on the transparency requirements under the AI Act",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "La Commission européenne publie des projets de lignes directrices sur les exigences de transparence en vertu de la loi IA"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/the-european-commission-issues-draft-guidelines-on-the-transparency-requirements-under-the-ai-act",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-05-21",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "6370cf69a09c",
-     "titre": "AI regulation in financial services: navigating the EU AI Act in a layered regulatory landscape",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "La réglementation IA dans les services financiers: la navigation sur la loi UE IA dans un paysage réglementaire stratifié"
-      }
-     },
-     "lien": "https://www.hlc.com/en/publications/ai-regulation-in-financial-services-navigating-the-eu-ai-act-in-a-layered-regulatory-landscape",
-     "source": "Hogan Lovells (HLC) - Our thinking",
-     "zone": "Worldwide",
-     "date": "2026-05-12",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "986095d5b23c",
-     "titre": "AI Act deal lands: what it means for the medical technology sector?",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "IA Act traite des terres: ce que cela signifie pour le secteur de la technologie médicale?"
-      }
-     },
-     "lien": "https://www.medtecheurope.org/2026/05/07/joint-industry-voice-calls-for-one-coherent-framework-for-ai-enabled-medical-technologies/",
-     "source": "MedTech Europe (association européenne des technologies médicales et du DIV)",
-     "zone": "Europe",
-     "date": "2026-05-07",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    }
-   ],
-   "nb_articles": 22,
-   "nb_sources": 4,
    "statut": "pressenti"
   },
   {
@@ -1380,6 +1380,119 @@ window.VEILLE_PRESSENTIS = {
    "nb_articles": 6,
    "nb_sources": 2,
    "statut": "pressenti"
+  },
+  {
+   "id": "p12d9ddbf6c8",
+   "sorte": "evolution",
+   "texte": "AI Act",
+   "nom": "",
+   "zone": "Europe",
+   "premier_signal": "2026-02-11",
+   "dernier_signal": "2026-06-11",
+   "articles": [
+    {
+     "id": "ec27ca7f8476",
+     "titre": "AI Omnibus deal: EU lawmakers should reject a rollback of AI safeguards",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "IA accord Omnibus: les législateurs UE devraient rejeter un retour en arrière des garanties IA"
+      }
+     },
+     "lien": "https://edri.org/our-work/ai-omnibus-deal-eu-lawmakers-should-reject-a-rollback-of-ai-safeguards/",
+     "source": "EDRi (European Digital Rights)",
+     "zone": "Europe",
+     "date": "2026-06-11",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "38cc65510ee5",
+     "titre": "Colorado Revises Its AI Act: What Changed and Why",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Le Colorado révise sa loi IA : ce qui a changé et pourquoi"
+      }
+     },
+     "lien": "https://fpf.org/blog/colorado-revises-its-ai-act-what-changed-and-why/",
+     "source": "Future of Privacy Forum (FPF)",
+     "zone": "Worldwide",
+     "date": "2026-05-19",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "05a05ce28ba5",
+     "titre": "EU legislators agree to delay for high-risk AI rules",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Les législateurs de UE conviennent de retarder les règles IA à haut risque"
+      }
+     },
+     "lien": "https://www.hlc.com/en/publications/eu-legislators-agree-to-delay-for-highrisk-ai-rules",
+     "source": "Hogan Lovells (HLC) - Our thinking",
+     "zone": "Worldwide",
+     "date": "2026-05-07",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "594d7456f012",
+     "titre": "Red Lines under the EU AI Act: Unpacking the Prohibition of Individual Risk Assessment for the Prediction of Criminal Offences",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Lignes rouges en vertu de la Loi UE IA : Déballage de l'interdiction de l'évaluation du risque individuel pour la prévision d'infractions criminelles"
+      }
+     },
+     "lien": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-unpacking-the-prohibition-of-individual-risk-assessment-for-the-prediction-of-criminal-offences/",
+     "source": "Future of Privacy Forum (FPF)",
+     "zone": "Worldwide",
+     "date": "2026-03-11",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "3b3d6722a2c8",
+     "titre": "AI Omnibus: Reject the proposals to undermine transparency in the AI Act",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "IA Omnibus: Rejeter les propositions visant à saper la transparence dans la loi IA"
+      }
+     },
+     "lien": "https://edri.org/our-work/ai-omnibus-reject-the-proposals-to-undermine-transparency-in-the-ai-act/",
+     "source": "EDRi (European Digital Rights)",
+     "zone": "Europe",
+     "date": "2026-02-11",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    }
+   ],
+   "nb_articles": 5,
+   "nb_sources": 3,
+   "statut": "devenu_projet",
+   "devenu_le": "2026-10-30",
+   "alerte": "kb263c585b20"
   }
  ]
 };

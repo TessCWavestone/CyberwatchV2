@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-11-09T10:00+00:00",
+ "mise_a_jour": "2026-11-18T10:16+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 188,
+   "nb_articles": 197,
    "exemple": {
-    "date": "2026-11-09",
-    "lien": "https://www.google.com/search?q=%22Cyber+Resilience+Act+%3A+la+cryptographie+va-t-elle+d%C3%A9cider+quels+produits+pourront+%C3%AAtre+vendus+en+Europe+%3F%22+L%27Observatoire+de+la+Tech",
-    "titre": "Cyber Resilience Act : la cryptographie va-t-elle décider quels produits pourront être vendus en Europe ?",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Cyber Resilience Act: Will cryptography decide which products can be sold in Europe?"
+    "date": "2026-11-18",
+    "lien": "https://www.incibe.es/incibe-cert/blog/guia-de-notificaciones-cra-que-deben-comunicar-los-fabricantes-y-como-utilizar-la",
+    "titre": "Guía de notificaciones CRA: qué deben comunicar los fabricantes y cómo utilizar la plataforma SRP",
+    "langue": "es",
+    "titre_fr": "Guide de notification CRA: Ce que les fabricants doivent déclarer et comment utiliser la plateforme SRP",
+    "titre_en": "CRA Notifying Guide: What manufacturers should report and how to use SRP platform"
    }
   },
   {
@@ -164,14 +164,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "NIS2",
    "en": "NIS2",
-   "nb_articles": 90,
+   "nb_articles": 91,
    "exemple": {
-    "date": "2026-10-27",
-    "lien": "https://www.gov.pl/web/cyfryzacja/wykaz-ksc-nie-otrzymales-zawiadomienia-o-wpisie-zglos-podmiot-do-weryfikacji",
-    "titre": "Wykaz KSC: nie otrzymałeś zawiadomienia o wpisie? Zgłoś podmiot do weryfikacji",
-    "langue": "pl",
-    "titre_fr": "Liste KSC : n'avez-vous pas reçu un avis d'alerte ? Indiquer l'entité aux fins de vérification",
-    "titre_en": "List KSC: have you not received an alert notice? Report the entity for verification"
+    "date": "2026-11-16",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-telekomaktorer-som-inte-anmalt-sig-enligt-cybersakerhetslagen/",
+    "titre": "PTS granskar telekomaktörer som inte anmält sig enligt cybersäkerhetslagen",
+    "langue": "sv",
+    "titre_fr": "PTS examine les opérateurs de télécommunications qui ne se sont pas inscrits en vertu de la Loi sur la cybersécurité",
+    "titre_en": "PTS reviews telecom operators who have not registered under the Cybersecurity Act"
    }
   },
   {
@@ -179,13 +179,13 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 70,
+   "nb_articles": 74,
    "exemple": {
-    "date": "2026-11-09",
-    "lien": "https://digitalpolicyalert.org/event/44555-european-commission-closes-consultation-on-draft-implementing-regulation-on-practical-and-specific-arrangements-for-conduct-of-certain-proceedings-pursuant-to-article-75c-and-article-75d-of-artificial-intelligence-act",
-    "titre": "European Commission closes consultation on draft Implementing regulation on practical and specific arrangements for conduct of certain proceedings pursuant to Article 75c and Article 75d of Artificial Intelligence Act",
+    "date": "2026-11-16",
+    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
+    "titre": "Commission seeks feedback on draft template for the fundamental rights impact assessment under the AI Act",
     "langue": "en",
-    "titre_fr": "La Commission européenne clôt la consultation sur le projet de règlement d'exécution relatif aux modalités pratiques et spécifiques de la conduite de certaines procédures conformément aux articles 75 quater et 75 quinquies de la loi sur l'intelligence artificielle",
+    "titre_fr": "La Commission sollicite des commentaires sur le projet de modèle pour l'évaluation de l'impact sur les droits fondamentaux en vertu de la loi IA",
     "titre_en": ""
    }
   },
@@ -194,14 +194,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 59,
+   "nb_articles": 62,
    "exemple": {
-    "date": "2026-10-30",
-    "lien": "https://digitalpolicyalert.org/event/41476-european-data-protection-board-closes-consultation-on-guidelines-022026-on-anonymisation",
-    "titre": "European Data Protection Board closes consultation on draft guidelines on anonymisation",
-    "langue": "en",
-    "titre_fr": "Le Comité européen de la protection des données clôt la consultation sur les projets de lignes directrices sur l'anonymat",
-    "titre_en": ""
+    "date": "2026-11-18",
+    "lien": "https://www.naih.hu/hirek/871-uj-edpb-dontesek-atdolgozott-iranymutatas-a-gdpr-6-cikk-1-bekezdes-f-pontjarol-del-korea-megfelelosegi-hatarozata-bcr-p-ajanlasok-es-koordinalt-vegrehajtatasi-fellepes-2027-ben",
+    "titre": "Új EDPB-döntések: átdolgozott iránymutatás a GDPR 6. cikk (1) bekezdés f) pontjáról, Dél-Korea megfelelőségi határozata, BCR-P ajánlások és koordinált végrehajtatási fellépés 2027-ben",
+    "langue": "hu",
+    "titre_fr": "Nouveau EDPB-döntések: directives révisées sur l ' alinéa f) du paragraphe 1 de l ' article GDPR 6, décision de la Corée du Sud relative au respect des dispositions, recommandations du BCR-P et mesures coordonnées de mise en œuvre en 2027",
+    "titre_en": "New EDPB-döntések: revised guidance on Article GDPR 6 (1) (f), South Korea compliance decision, BCR-P recommendations and coordinated implementation action in 2027"
    }
   },
   {
@@ -209,14 +209,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cybersecurity Act (certification UE)",
    "en": "Cybersecurity Act (EU certification)",
-   "nb_articles": 29,
+   "nb_articles": 30,
    "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://www.lupa.cz/aktuality/jak-zvladnout-novy-zakon-o-kyberbezpecnosti-stat-ukazal-jak-spravne-nastavit-rizeni-rizik/?utm_source=rss&utm_medium=text&utm_campaign=rss",
-    "titre": "Jak zvládnout nový zákon o kyberbezpečnosti? Stát ukázal, jak správně nastavit řízení rizik",
-    "langue": "cs",
-    "titre_fr": "Comment gérer la nouvelle loi sur la cybersécurité? L'État a montré comment bien gérer les risques",
-    "titre_en": "How to handle the new cyber security bill? State has shown how to properly set risk management"
+    "date": "2026-11-16",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-telekomaktorer-som-inte-anmalt-sig-enligt-cybersakerhetslagen/",
+    "titre": "PTS granskar telekomaktörer som inte anmält sig enligt cybersäkerhetslagen",
+    "langue": "sv",
+    "titre_fr": "PTS examine les opérateurs de télécommunications qui ne se sont pas inscrits en vertu de la Loi sur la cybersécurité",
+    "titre_en": "PTS reviews telecom operators who have not registered under the Cybersecurity Act"
    }
   },
   {
@@ -659,14 +659,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 50,
+   "nb_articles": 53,
    "exemple": {
-    "date": "2026-10-30",
-    "lien": "https://digitalpolicyalert.org/event/41476-european-data-protection-board-closes-consultation-on-guidelines-022026-on-anonymisation",
-    "titre": "European Data Protection Board closes consultation on draft guidelines on anonymisation",
-    "langue": "en",
-    "titre_fr": "Le Comité européen de la protection des données clôt la consultation sur les projets de lignes directrices sur l'anonymat",
-    "titre_en": ""
+    "date": "2026-11-18",
+    "lien": "https://www.naih.hu/hirek/871-uj-edpb-dontesek-atdolgozott-iranymutatas-a-gdpr-6-cikk-1-bekezdes-f-pontjarol-del-korea-megfelelosegi-hatarozata-bcr-p-ajanlasok-es-koordinalt-vegrehajtatasi-fellepes-2027-ben",
+    "titre": "Új EDPB-döntések: átdolgozott iránymutatás a GDPR 6. cikk (1) bekezdés f) pontjáról, Dél-Korea megfelelőségi határozata, BCR-P ajánlások és koordinált végrehajtatási fellépés 2027-ben",
+    "langue": "hu",
+    "titre_fr": "Nouveau EDPB-döntések: directives révisées sur l ' alinéa f) du paragraphe 1 de l ' article GDPR 6, décision de la Corée du Sud relative au respect des dispositions, recommandations du BCR-P et mesures coordonnées de mise en œuvre en 2027",
+    "titre_en": "New EDPB-döntések: revised guidance on Article GDPR 6 (1) (f), South Korea compliance decision, BCR-P recommendations and coordinated implementation action in 2027"
    }
   },
   {
@@ -674,14 +674,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 40,
+   "nb_articles": 42,
    "exemple": {
-    "date": "2026-10-29",
-    "lien": "https://www.cnil.fr/fr/sanction-cookies-app-fnac",
-    "titre": "Cookies et application mobile : sanctions de 7 millions d’euros à l’encontre des sociétés FNAC DARTY PARTICIPATIONS ET SERVICES et FNAC DIRECT",
+    "date": "2026-11-18",
+    "lien": "https://www.cnil.fr/fr/conservation-des-mots-de-passe-sanction-5-millions-deuros",
+    "titre": "Conservation des mots de passe clients en clair : la CNIL prononce une sanction de 5 millions d’euros",
     "langue": "fr",
     "titre_fr": "",
-    "titre_en": "Cookies and mobile application: €7 million penalties for FNAC DARTY ET SERVICES and FNAC DIRECT"
+    "titre_en": "Preserving customer passwords in plain language: CNIL pronounces a penalty of €5 million"
    }
   },
   {
@@ -719,14 +719,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "INCIBE",
    "en": "INCIBE",
-   "nb_articles": 22,
+   "nb_articles": 24,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://www.incibe.es/incibe-cert/blog/supercomputacion-y-computacion-cuantica-en-ciberseguridad",
-    "titre": "Supercomputación y computación cuántica en ciberseguridad",
+    "date": "2026-11-18",
+    "lien": "https://www.incibe.es/incibe-cert/blog/guia-de-notificaciones-cra-que-deben-comunicar-los-fabricantes-y-como-utilizar-la",
+    "titre": "Guía de notificaciones CRA: qué deben comunicar los fabricantes y cómo utilizar la plataforma SRP",
     "langue": "es",
-    "titre_fr": "Supercomputation et calcul quantique dans la cybersécurité",
-    "titre_en": "Supercomputation and quantum computation in cyber security"
+    "titre_fr": "Guide de notification CRA: Ce que les fabricants doivent déclarer et comment utiliser la plateforme SRP",
+    "titre_en": "CRA Notifying Guide: What manufacturers should report and how to use SRP platform"
    }
   },
   {
@@ -734,13 +734,13 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "ENISA",
    "en": "ENISA",
-   "nb_articles": 20,
+   "nb_articles": 22,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://www.enisa.europa.eu/news/supporting-nis2-implementation-through-actionable-guidance",
-    "titre": "Supporting NIS2 implementation through actionable guidance",
+    "date": "2026-11-18",
+    "lien": "https://www.enisa.europa.eu/publications/cra-module-b-and-h-cabs-accreditation-for-notification",
+    "titre": "CRA-Module B and H: CABs accreditation for notification",
     "langue": "en",
-    "titre_fr": "Soutien à la mise en œuvre de NIS2 par des directives pratiques",
+    "titre_fr": "CRA-Module B et H: accréditation des CAB pour la notification",
     "titre_en": ""
    }
   },
@@ -835,6 +835,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "BSI",
+   "groupe": "autorites",
+   "fr": "BSI (Allemagne)",
+   "en": "BSI (Germany)",
+   "nb_articles": 10,
+   "exemple": {
+    "date": "2026-11-11",
+    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Hardware-Angriffe_TPM2_Verschluesselung_261111.html",
+    "titre": "Hardware-Angriffe umgehen TPM2-basierte Festplattenverschlüsselung",
+    "langue": "de",
+    "titre_fr": "Attaques matérielles contourner le chiffrement du disque dur TPM2-basierte",
+    "titre_en": "Hardware attacks bypass TPM2-basierte hard drive encryption"
+   }
+  },
+  {
    "code": "CNPD",
    "groupe": "autorites",
    "fr": "CNPD (Portugal / Luxembourg)",
@@ -850,18 +865,18 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "BSI",
+   "code": "ACN",
    "groupe": "autorites",
-   "fr": "BSI (Allemagne)",
-   "en": "BSI (Germany)",
+   "fr": "ACN (Italie)",
+   "en": "ACN (Italy)",
    "nb_articles": 9,
    "exemple": {
-    "date": "2026-09-25",
-    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CRA-Konformitaet_BSI_DAkkS_260925.html",
-    "titre": "CRA-Konformität: BSI und DAkkS schaffen Prüfkompetenz für die Cybersicherheit",
-    "langue": "de",
-    "titre_fr": "CRA-Konformität: BSI et DAkkS créent une expertise d'audit pour la cybersécurité",
-    "titre_en": "CRA-Konformität: BSI and DAkkS create audit expertise for cybersecurity"
+    "date": "2026-11-17",
+    "lien": "http://www.gazzettaufficiale.it/eli/id/2026/11/17/26A05971/SG",
+    "titre": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 9 settembre 2026",
+    "langue": "it",
+    "titre_fr": "DÉCRET DU PRÉSIDENT DU CONSEIL DU MINISTRI 9 septembre 2026",
+    "titre_en": "DECREATE OF THE PRESIDENT OF THE COUNCIL OF THE MINISTRI 9 September 2026"
    }
   },
   {
@@ -880,6 +895,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "PTS",
+   "groupe": "autorites",
+   "fr": "PTS (Suède)",
+   "en": "PTS (Sweden)",
+   "nb_articles": 9,
+   "exemple": {
+    "date": "2026-11-16",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-telekomaktorer-som-inte-anmalt-sig-enligt-cybersakerhetslagen/",
+    "titre": "PTS granskar telekomaktörer som inte anmält sig enligt cybersäkerhetslagen",
+    "langue": "sv",
+    "titre_fr": "PTS examine les opérateurs de télécommunications qui ne se sont pas inscrits en vertu de la Loi sur la cybersécurité",
+    "titre_en": "PTS reviews telecom operators who have not registered under the Cybersecurity Act"
+   }
+  },
+  {
    "code": "Traficom",
    "groupe": "autorites",
    "fr": "Traficom (Finlande)",
@@ -892,21 +922,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "fi",
     "titre_fr": "Fabricant - Prévoir les rapports de vulnérabilité et d'occurrence conformément à la Cyber Sustainability Act",
     "titre_en": "Manufacturer - anticipate vulnerability and occurrence reporting in accordance with the Cyber Sustainability Act"
-   }
-  },
-  {
-   "code": "ACN",
-   "groupe": "autorites",
-   "fr": "ACN (Italie)",
-   "en": "ACN (Italy)",
-   "nb_articles": 8,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
-    "titre": "Misure urgenti di verifica e mitigazione per operatori della distribuzione alimentare e della filiera del freddo",
-    "langue": "it",
-    "titre_fr": "Mesures urgentes de vérification et d'atténuation pour les exploitants d'approvisionnement en produits alimentaires et en froid",
-    "titre_en": "Urgent verification and mitigation measures for food and cold supply operators"
    }
   },
   {
@@ -940,18 +955,18 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "PTS",
+   "code": "SAMSIK",
    "groupe": "autorites",
-   "fr": "PTS (Suède)",
-   "en": "PTS (Sweden)",
+   "fr": "SAMSIK (Danemark)",
+   "en": "SAMSIK (Denmark)",
    "nb_articles": 8,
    "exemple": {
-    "date": "2026-10-19",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/remissvar-pa-eu-kommissionens-forslag-till-forordning-om-moln-och-ai/",
-    "titre": "Remissvar på EU-kommissionens förslag till förordning om moln och AI",
-    "langue": "sv",
-    "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
-    "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
+    "date": "2026-11-17",
+    "lien": "https://samsik.dk/artikler/2026/11/kvantecomputere-kan-true-danmarks-cybersikkerhed-nu-lanceres-nyt-projekt-til-hjaelp-for-virksomheder-og-myndigheder/",
+    "titre": "Kvantecomputere kan true Danmarks cybersikkerhed – nu lanceres nyt projekt til hjælp for virksomheder og myndigheder",
+    "langue": "da",
+    "titre_fr": "Les ordinateurs quantiques peuvent menacer la cybersécurité du Danemark - a lancé un nouveau projet pour aider les entreprises et les autorités",
+    "titre_en": "Quantum computers can threaten Denmark's cyber security - now launched new project to help companies and authorities"
    }
   },
   {
@@ -967,21 +982,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "de",
     "titre_fr": "\"Tout en un\": TI-Messenger peut également être utilisé à l'avenir via des systèmes logiciels pour les établissements de santé",
     "titre_en": "\"All in One\": TI-Messenger can also be used in the future via software systems for healthcare facilities"
-   }
-  },
-  {
-   "code": "SAMSIK",
-   "groupe": "autorites",
-   "fr": "SAMSIK (Danemark)",
-   "en": "SAMSIK (Denmark)",
-   "nb_articles": 7,
-   "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://samsik.dk/artikler/2026/10/myndigheder-organisationer-og-virksomheder-boer-supplere-identitetskontrol/",
-    "titre": "Myndigheder, organisationer og virksomheder bør supplere deres identitetskontrol efter læk fra CPR-registeret",
-    "langue": "da",
-    "titre_fr": "Les autorités, organisations et entreprises devraient compléter leurs contrôles d'identité à la suite de fuites de CPR-registeret",
-    "titre_en": "Authorities, organisations and undertakings should supplement their identity checks following leaks from CPR-registeret"
    }
   },
   {
@@ -1285,6 +1285,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "NAIH",
+   "groupe": "autorites",
+   "fr": "NAIH (Hongrie)",
+   "en": "NAIH (Hungary)",
+   "nb_articles": 2,
+   "exemple": {
+    "date": "2026-11-18",
+    "lien": "https://www.naih.hu/hirek/871-uj-edpb-dontesek-atdolgozott-iranymutatas-a-gdpr-6-cikk-1-bekezdes-f-pontjarol-del-korea-megfelelosegi-hatarozata-bcr-p-ajanlasok-es-koordinalt-vegrehajtatasi-fellepes-2027-ben",
+    "titre": "Új EDPB-döntések: átdolgozott iránymutatás a GDPR 6. cikk (1) bekezdés f) pontjáról, Dél-Korea megfelelőségi határozata, BCR-P ajánlások és koordinált végrehajtatási fellépés 2027-ben",
+    "langue": "hu",
+    "titre_fr": "Nouveau EDPB-döntések: directives révisées sur l ' alinéa f) du paragraphe 1 de l ' article GDPR 6, décision de la Corée du Sud relative au respect des dispositions, recommandations du BCR-P et mesures coordonnées de mise en œuvre en 2027",
+    "titre_en": "New EDPB-döntések: revised guidance on Article GDPR 6 (1) (f), South Korea compliance decision, BCR-P recommendations and coordinated implementation action in 2027"
+   }
+  },
+  {
    "code": "CERT Polska",
    "groupe": "autorites",
    "fr": "CERT Polska / NASK",
@@ -1420,21 +1435,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "NAIH",
-   "groupe": "autorites",
-   "fr": "NAIH (Hongrie)",
-   "en": "NAIH (Hungary)",
-   "nb_articles": 1,
-   "exemple": {
-    "date": "2026-10-05",
-    "lien": "https://www.naih.hu/hirek/858-uj-edpb-iranymutatas-a-gdpr-alapjan-kiszabhato-koezigazgatasi-birsagokrol",
-    "titre": "Új EDPB iránymutatás a GDPR alapján kiszabható közigazgatási bírságokról",
-    "langue": "hu",
-    "titre_fr": "Nouvelles lignes directrices EDPB sur les sanctions administratives en vertu de RGPD",
-    "titre_en": "New EDPB Guidelines on administrative penalties under GDPR"
-   }
-  },
-  {
    "code": "APD / GBA",
    "groupe": "autorites",
    "fr": "APD / GBA (Belgique)",
@@ -1495,14 +1495,26 @@ window.VEILLE_ACRONYMES = {
   },
   {
    "code": "DPA",
-   "nb_articles": 9,
+   "nb_articles": 10,
    "exemple": {
-    "date": "2026-10-09",
-    "lien": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
-    "titre": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
-    "titre_fr": "Italie DPA amendes IQVIA EUR 7 000 000 pour traitement illégal de patients",
+    "date": "2026-11-16",
+    "lien": "https://digitalpolicyalert.org/event/45869-data-protection-authority-reprimanded-ai-chatbot-application-provider-and-ordered-general-data-protection-regulation-compliance-for-processing-of-special-categories-of-data-in-ai-model-training",
+    "titre": "Data Protection Authority reprimanded AI chatbot application provider and ordered General Data Protection Regulation compliance for processing of special categories of data in AI model training",
+    "titre_fr": "L'autorité de protection des données a réprimandé le fournisseur d'application de chatbot IA et a ordonné le respect du règlement général sur la protection des données pour le traitement de catégories spéciales de données dans la formation modèle IA",
     "titre_en": "",
     "langue": "en"
+   }
+  },
+  {
+   "code": "SRP",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-11-18",
+    "lien": "https://www.incibe.es/incibe-cert/blog/guia-de-notificaciones-cra-que-deben-comunicar-los-fabricantes-y-como-utilizar-la",
+    "titre": "Guía de notificaciones CRA: qué deben comunicar los fabricantes y cómo utilizar la plataforma SRP",
+    "titre_fr": "Guide de notification CRA: Ce que les fabricants doivent déclarer et comment utiliser la plateforme SRP",
+    "titre_en": "CRA Notifying Guide: What manufacturers should report and how to use SRP platform",
+    "langue": "es"
    }
   },
   {

@@ -1,5 +1,5 @@
 window.VEILLE_DEBATS = {
- "mise_a_jour": "2026-11-09T10:00+00:00",
+ "mise_a_jour": "2026-11-18T10:16+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -7225,6 +7225,459 @@ window.VEILLE_DEBATS = {
     "GDPR",
     "Digital Omnibus"
    ]
+  },
+  {
+   "id": "e7aca0446787",
+   "titre": "Open Letter: EDRi warns of EU’s undemocratic attempt to introduce surveillance in satellite-based communications",
+   "lien": "https://edri.org/our-work/open-letter-edri-warns-of-eus-undemocratic-attempt-to-introduce-surveillance-in-satellite-based-communications/",
+   "resume": "The European Parliament and the Council of the European Union are currently negotiating two laws to regulate communications service providers, including satellite-based ones. In both laws, the Commission has sneakily attempted to attribute itself the possibility to impose intrusive surveillance, notably data retention and interception obligations, on those satellite operators through opaque procedures. EDRi and its…",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.58,
+   "score_bruit": 0.374,
+   "score": 0.58,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Lettre ouverte : EDRi met en garde contre la tentative antidémocratique de UE-S d'introduire la surveillance dans les communications par satellite",
+     "resume": "Le Parlement européen et le Conseil de l'Union européenne négocient actuellement deux lois visant à réglementer les fournisseurs de services de communications, y compris ceux basés sur les satellites. Dans les deux lois, la Commission s'est discrètement efforcée d'attribuer la possibilité d'imposer une surveillance intrusive, notamment des obligations de conservation des données et d'interception, à ces opérateurs de satellites par des procédures opaques. EDRi et ses..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "bdd87e31f260",
+   "titre": "1,840 amendments, one basic question: will the Data Omnibus simplify EU digital rules or weaken people’s rights?",
+   "lien": "https://edri.org/our-work/1840-amendments-one-basic-question-will-the-data-omnibus-simplify-eu-digital-rules-or-weaken-peoples-rights/",
+   "resume": "The European Parliament is considering 1,840 amendments to the Digital Omnibus on Data, a proposal that would change the General Data Protection Regulation (GDPR), ePrivacy and other parts of the EU’s data rules. We have analysed the amendments related to data protection and privacy. Our new guide shows that Parliament faces a choice between genuine simplification that makes rights easier to exercise and changes…",
+   "date": "2026-11-16",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "amendment",
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.643,
+   "score_bruit": 0.373,
+   "score": 0.723,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "RGPD / GDPR",
+    "Cybersecurity Act / certification UE"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : RGPD / GDPR, Cybersecurity Act / certification UE",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "1,840 amendements, une question de base : le Data Omnibus simplifiera-t-il les règles numériques UE ou affaiblira-t-il les droits des personnes ?",
+     "resume": "Le Parlement européen examine actuellement 1 840 amendements à l'omnibus numérique sur les données, proposition qui modifierait le règlement général sur la protection des données (RGPD), l'ePrivacy et d'autres parties des règles sur les données UE. Nous avons analysé les modifications relatives à la protection des données et à la vie privée. Notre nouveau guide montre que le Parlement est confronté à un choix entre une véritable simplification qui facilite l'exercice des droits et des changements..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "Digital Omnibus"
+   ],
+   "acronymes": [
+    "GDPR",
+    "Digital Omnibus"
+   ]
+  },
+  {
+   "id": "50e3e2db4398",
+   "titre": "Data retention is mass surveillance of people’s phone and internet activity",
+   "lien": "https://edri.org/our-work/data-retention-is-mass-surveillance-of-peoples-phone-and-internet-activity/",
+   "resume": "In 2014, the Court of Justice of the European Union (CJEU) declared mass retention of internet traffic and location data as contrary to the EU Charter of Fundamental Rights. Any proposal for a new EU instrument harmonising data retention must respect the boundaries of CJEU jurisprudence and uphold the rights to privacy, data protection and freedom of expression. Read more in EDRi’s new publication. The post Data…",
+   "date": "2026-11-09",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.508,
+   "score_bruit": 0.401,
+   "score": 0.508,
+   "themes": [
+    "cra",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La conservation des données est une surveillance de masse de l'activité du téléphone et de l'internet",
+     "resume": "En 2014, la Cour de justice de l'Union européenne (CJEU) a déclaré que la rétention massive de données sur le trafic Internet et la localisation était contraire à la Charte des droits fondamentaux de UE. Toute proposition de nouvel instrument UE harmonisant la conservation des données doit respecter les limites de la jurisprudence CJEU et respecter les droits à la vie privée, à la protection des données et à la liberté d'expression. En savoir plus dans la nouvelle publication d'EDRI. Les données post..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "feebd6965965",
+   "titre": "Cyberattacks on connected cooling equipment: Food law and cybersecurity implications for the EU food industry",
+   "lien": "https://www.hlc.com/en/publications/cyberattacks-on-connected-cooling-equipment-food-law-and-cybersecurity-implications",
+   "resume": "Over the past weeks across multiple European countries, fridges, freezers and other cooling equipment of supermarkets, wholesalers and other food businesses, including highly sensitive...",
+   "date": "2026-11-12",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_cyber": 0.549,
+   "score_bruit": 0.383,
+   "score": 0.549,
+   "themes": [
+    "cra",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Cyberattaques sur les équipements de refroidissement connectés: la législation alimentaire et les implications de la cybersécurité pour l'industrie alimentaire UE",
+     "resume": "Au cours des dernières semaines dans de nombreux pays européens, réfrigérateurs, congélateurs et autres équipements de refroidissement des supermarchés, grossistes et autres..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "c660085ac2ff",
+   "titre": "PATIENT AI Act targets FDA, reimbursement gaps for AI-enabled health technology",
+   "lien": "https://www.hlc.com/en/publications/patient-ai-act-targets-fda-reimbursement-gaps-for-aienabled-health-technology",
+   "resume": "A new legislative proposal would establish a broad federal framework for AI-enabled health technologies by addressing several of the regulatory and commercial barriers that currently...",
+   "date": "2026-11-10",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "legislative proposal",
+    "AI Act",
+    "Technologies numériques en santé"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Réglementations européennes majeures",
+    "Termes multilingues",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "score_cyber": 0.736,
+   "score_bruit": 0.443,
+   "score": 0.816,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : AI Act",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "PATIENT La loi IA cible FDA, les écarts de remboursement pour la technologie de santé AI-enabled",
+     "resume": "Une nouvelle proposition législative établirait un vaste cadre fédéral pour les technologies de santé AI-enabled en s'attaquant à plusieurs des obstacles réglementaires et commerciaux qui..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "4f38bbadd6e0",
+   "titre": "News EU Digital Fairness Act: Leaked draft Regulation proposes significant reform of the EU consumer protection framework 09 November 2026",
+   "lien": "https://www.hlc.com/en/publications/eu-digital-fairness-act-leaked-draft-regulation-proposes-significant-reform-of-the-eu-consumer",
+   "resume": "",
+   "date": "2026-11-18",
+   "date_estimee": true,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "draft regulation"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires"
+   ],
+   "amende": null,
+   "score_cyber": 0.556,
+   "score_bruit": 0.408,
+   "score": 0.586,
+   "themes": [
+    "donnees",
+    "large"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Nouvelle(s) UE Loi sur l'équité numérique : un projet de règlement abandonné propose une réforme importante du cadre de protection des consommateurs UE 09 novembre 2026",
+     "resume": ""
+    }
+   },
+   "echeances": [
+    {
+     "date": "2026-11-09",
+     "approx": false,
+     "extrait": {
+      "fr": "…abandonné propose une réforme importante du cadre de protection des consommateurs UE 09 novembre 2026."
+     }
+    }
+   ],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "5b9cde283be7",
+   "titre": "Jetzt herunterladen von: Gemeinsames Positionspapier zu klinischen Prüfungen im Rahmen der MDR-/IVDR-Reform",
+   "lien": "https://www.bvmed.de/download/positionspapier-der-isd-zu-klinischen-pruefungen-im-rahmen-der-mdr-ivdr-reform",
+   "resume": "Regulatorik/MDR Gemeinsames Positionspapier zu klinischen Prüfungen im Rahmen der MDR-/IVDR-Reform Die Initiative Studienstandort Deutschland fordert im Zuge der MDR-/IVDR-Reform klare rechtliche Abgrenzungen, verhältnismäßige Anforderungen und verlässliche regulatorische Rahmenbedingungen für…",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "BVMed (Bundesverband Medizintechnologie) – Regulatorik / MDR",
+   "zone": "Allemagne",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "MDR",
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Secteur santé : mots clés spécifiques",
+    "Termes santé"
+   ],
+   "amende": null,
+   "score_cyber": 0.442,
+   "score_bruit": 0.384,
+   "score": 0.65,
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "motif": "texte clé : IVDR",
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Download now from: Joint position paper on clinical trials in MDR-/IVDR-Reform",
+     "resume": "Regulatory/MDR Joint position paper on clinical trials in MDR-/IVDR-Reform In the course of MDR-/IVDR-Reform, the German Study Location Initiative calls for clear legal boundaries, proportionate requirements and reliable regulatory framework conditions for..."
+    },
+    "fr": {
+     "titre": "Télécharger maintenant de: Document de position conjointe sur les essais cliniques dans MDR-/IVDR-Reform",
+     "resume": "Réglementation/MDR Position commune sur les essais cliniques dans MDR-/IVDR-Reform Dans le cadre de MDR-/IVDR-Reform, l'initiative allemande de localisation des études exige des limites légales claires, des exigences proportionnées et des conditions de cadre réglementaire..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "IVDR"
+   ],
+   "acronymes": [
+    "IVDR"
+   ]
+  },
+  {
+   "id": "b45ba06df6ab",
+   "titre": "PPWR für Medizinprodukte und In-vitro-Diagnostika: Was Hersteller jetzt wissen müssen",
+   "lien": "https://www.johner-institut.de/blog/regulatory-affairs/ppwr/",
+   "resume": "",
+   "date": "2026-11-18",
+   "date_estimee": true,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Johner Institut – blog regulatory affairs (MDR/IVDR, AI Act, cybersécurité DM)",
+   "zone": "Allemagne",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "score_cyber": 0.542,
+   "score_bruit": 0.494,
+   "score": 0.816,
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : IVDR",
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "PPWR for medical devices and in vitro diagnostics: What manufacturers need to know now",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "PPWR pour les dispositifs médicaux et les diagnostics in vitro: Ce que les fabricants doivent savoir maintenant",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "IVDR"
+   ],
+   "acronymes": [
+    "IVDR"
+   ]
+  },
+  {
+   "id": "3c492c70fe6b",
+   "titre": "The EU Digital Fairness Act Proposal: European Commission Proposes Major Update of EU Consumer Law",
+   "lien": "https://www.insideprivacy.com/consumer-protection/the-eu-digital-fairness-act-proposal-european-commission-proposes-major-update-of-eu-consumer-law/",
+   "resume": "On November 11, 2026, the European Commission (the “Commission”) published its “Consumer Package,” a set of three related legislative proposals to update EU consumer law for the digital age (together, the “Proposals”): The Proposals respond to the Commission’s 2024 Fitness Check of consumer law. The review concluded that existing rules were only partially effective in... Continue Reading…",
+   "date": "2026-11-18",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Inside Privacy (blog Covington & Burling – données et cybersécurité)",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "legislative proposal"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.501,
+   "score_bruit": 0.421,
+   "score": 0.531,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "projet",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Proposition de loi sur l'équité numérique: la Commission européenne propose une mise à jour majeure du droit des consommateurs UE",
+     "resume": "Le 11 novembre 2026, la Commission européenne (la «Commission») a publié son paquet «Consommateurs», un ensemble de trois propositions législatives connexes visant à mettre à jour le droit des consommateurs UE à l'ère numérique (ensemble, les «Propositions») : Les propositions répondent à la Commission en 2024. L'examen a conclu que les règles existantes n'étaient... Continue Reading..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
   }
  ]
 };

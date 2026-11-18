@@ -3,9 +3,9 @@
   "titre": "Cyber Watch",
   "surtitre": "Veille réglementaire — Wavestone",
   "sous_titre": "Cybersécurité · Données · IA · Dispositifs médicaux — collecte automatique chaque lundi",
-  "mise_a_jour": "2026-11-09T10:00+00:00",
-  "version": "2026-11-09-1000",
-  "nb_sources": 159,
+  "mise_a_jour": "2026-11-18T10:16+00:00",
+  "version": "2026-11-18-1016",
+  "nb_sources": 158,
   "url_lancer_maj": "https://github.com/TessCWavestone/CyberwatchV2/actions/workflows/veille.yml",
   "depot": "TessCWavestone/CyberwatchV2",
   "branche": "main",
@@ -15,19 +15,19 @@
   "ia": {
    "actif": true,
    "modele": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
-   "faits": 148,
-   "erreur": "Temps imparti atteint : 148 articles triés par l'IA, les autres le seront à la prochaine collecte."
+   "faits": 307,
+   "erreur": "Temps imparti atteint : 307 articles triés par l'IA, les autres le seront à la prochaine collecte."
   },
   "traduction": {
    "active": true,
    "moteur": true,
-   "faites": 116,
+   "faites": 109,
    "en_attente": 0,
    "erreur": ""
   },
-  "nb_nouveaux": 40,
-  "nb_ecartes_nouveaux": 1046,
-  "nb_essentiel": 319,
+  "nb_nouveaux": 38,
+  "nb_ecartes_nouveaux": 1362,
+  "nb_essentiel": 337,
   "textes_cles_en": {
    "RGPD / GDPR": "GDPR",
    "MDR (dispositifs médicaux)": "MDR (medical devices)",
@@ -52,7 +52,7 @@
   },
   "pages": {
    "tentees": 400,
-   "lues": 211
+   "lues": 183
   },
   "acteurs": {
    "dm": {
@@ -730,10 +730,2799 @@
     "groupe": "autorites"
    }
   },
-  "nb_versions": 17,
-  "nb_alertes": 8
+  "nb_versions": 18,
+  "nb_alertes": 5
  },
  "articles": [
+  {
+   "id": "30e0cd457c70",
+   "titre": "Guía de notificaciones CRA: qué deben comunicar los fabricantes y cómo utilizar la plataforma SRP",
+   "lien": "https://www.incibe.es/incibe-cert/blog/guia-de-notificaciones-cra-que-deben-comunicar-los-fabricantes-y-como-utilizar-la",
+   "resume": "",
+   "date": "2026-11-18",
+   "date_estimee": true,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "INCIBE",
+   "zone": "Espagne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.68,
+   "score_bruit": 0.552,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA",
+   "statut": "lignes_directrices",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "CRA"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "lignes_directrices"
+   },
+   "score": 0.76,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "obligation_echeance",
+    "type": "obligation_echeance",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "oui",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "es",
+   "trad": {
+    "en": {
+     "titre": "CRA Notifying Guide: What manufacturers should report and how to use SRP platform",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Guide de notification CRA: Ce que les fabricants doivent déclarer et comment utiliser la plateforme SRP",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CRA",
+    "INCIBE"
+   ],
+   "acronymes": [
+    "CRA",
+    "INCIBE"
+   ]
+  },
+  {
+   "id": "742960bf7f83",
+   "titre": "Guía práctica para fabricantes - Notificación de vulnerabilidades e incidentes del Reglamento Europeo de Ciberresiliencia (CRA) en la plataforma SRP",
+   "lien": "https://www.incibe.es/incibe-cert/guias-y-estudios/guias/guia-practica-para-fabricantes-notificacion-de-vulnerabilidades-e-incidentes",
+   "resume": "",
+   "date": "2026-11-18",
+   "date_estimee": true,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "INCIBE",
+   "zone": "Espagne",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.772,
+   "score_bruit": 0.544,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "statut": "lignes_directrices",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "CRA"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "lignes_directrices"
+   },
+   "score": 0.852,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "es",
+   "trad": {
+    "en": {
+     "titre": "Practical guide for manufacturers - Reporting of vulnerabilities and incidents of the European Cyberresilience Regulation (CRA) on the SRP platform",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Guide pratique pour les fabricants - Déclaration des vulnérabilités et des incidents du règlement européen sur la cyberrésilience (CRA) sur la plateforme SRP",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CRA",
+    "INCIBE"
+   ],
+   "acronymes": [
+    "CRA",
+    "INCIBE"
+   ]
+  },
+  {
+   "id": "3fabc61fb704",
+   "titre": "CRA-Module B and H: CABs accreditation for notification",
+   "lien": "https://www.enisa.europa.eu/publications/cra-module-b-and-h-cabs-accreditation-for-notification",
+   "resume": "",
+   "date": "2026-11-18",
+   "date_estimee": true,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "ENISA (European Union Agency for Cybersecurity)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "CRA",
+    "Certification / qualification de sécurité"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.447,
+   "score_bruit": 0.357,
+   "themes": [
+    "fournisseurs_publics",
+    "acheteurs_sante"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "texte clé : CRA",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "CRA"
+    ],
+    "sig": true
+   },
+   "score": 0.527,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "CRA-Module B et H: accréditation des CAB pour la notification",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CRA",
+    "ENISA"
+   ],
+   "acronymes": [
+    "CRA",
+    "ENISA"
+   ]
+  },
+  {
+   "id": "d34efaa70621",
+   "titre": "Certification and Standards",
+   "lien": "https://www.enisa.europa.eu/topics/certification-and-standards",
+   "resume": "",
+   "date": "2026-11-18",
+   "date_estimee": true,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "ENISA (European Union Agency for Cybersecurity)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Certification / qualification de sécurité"
+   ],
+   "groupes": [
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.719,
+   "score_bruit": 0.493,
+   "themes": [
+    "fournisseurs_publics",
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "Cybersecurity Act / certification UE"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.749,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Certification et normes",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "ENISA"
+   ],
+   "acronymes": [
+    "ENISA"
+   ]
+  },
+  {
+   "id": "dfbf1b88b06c",
+   "titre": "Conservation des mots de passe clients en clair : la CNIL prononce une sanction de 5 millions d’euros",
+   "lien": "https://www.cnil.fr/fr/conservation-des-mots-de-passe-sanction-5-millions-deuros",
+   "resume": "En novembre 2026, la CNIL a infligé une sanction de 5 millions d’euros à une société en raison de l’insuffisance des mesures prises pour assurer la sécurité des données de ses clients et d’une durée excessive de conservation des données.",
+   "date": "2026-11-18",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes génériques"
+   ],
+   "amende": {
+    "montant_eur": 5000000,
+    "texte": "5 millions d’euros",
+    "plafond": false
+   },
+   "titre_nettoye": 3,
+   "score_cyber": 0.674,
+   "score_bruit": 0.552,
+   "themes": [
+    "donnees",
+    "fournisseurs_publics"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.704,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "sanction",
+    "type": "sanction",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "fr",
+   "trad": {
+    "en": {
+     "titre": "Preserving customer passwords in plain language: CNIL pronounces a penalty of €5 million",
+     "resume": "In November 2026, CNIL imposed a penalty of EUR 5 million on a company due to insufficient measures taken to ensure the security of its customers' data and excessive data retention."
+    }
+   },
+   "echeances": [
+    {
+     "date": "2026-11-01",
+     "approx": true,
+     "extrait": {
+      "en": "…customer passwords in plain language: CNIL pronounces a penalty of €5 million. In November 2026, CNIL imposed a penalty of EUR 5 million on a company due to insufficient measures taken…"
+     }
+    }
+   ],
+   "sujets": [
+    "CNIL"
+   ],
+   "acronymes": [
+    "CNIL"
+   ]
+  },
+  {
+   "id": "d63a5bcc6a12",
+   "titre": "Új EDPB-döntések: átdolgozott iránymutatás a GDPR 6. cikk (1) bekezdés f) pontjáról, Dél-Korea megfelelőségi határozata, BCR-P ajánlások és koordinált végrehajtatási fellépés 2027-ben",
+   "lien": "https://www.naih.hu/hirek/871-uj-edpb-dontesek-atdolgozott-iranymutatas-a-gdpr-6-cikk-1-bekezdes-f-pontjarol-del-korea-megfelelosegi-hatarozata-bcr-p-ajanlasok-es-koordinalt-vegrehajtatasi-fellepes-2027-ben",
+   "resume": "",
+   "date": "2026-11-18",
+   "date_estimee": true,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "NAIH (autorité de protection des données)",
+   "zone": "Hongrie",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.569,
+   "score_bruit": 0.504,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "statut": "consultation"
+   },
+   "score": 0.649,
+   "statut": "lignes_directrices",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "hu",
+   "trad": {
+    "en": {
+     "titre": "New EDPB-döntések: revised guidance on Article GDPR 6 (1) (f), South Korea compliance decision, BCR-P recommendations and coordinated implementation action in 2027",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Nouveau EDPB-döntések: directives révisées sur l ' alinéa f) du paragraphe 1 de l ' article GDPR 6, décision de la Corée du Sud relative au respect des dispositions, recommandations du BCR-P et mesures coordonnées de mise en œuvre en 2027",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "EDPB",
+    "NAIH"
+   ],
+   "acronymes": [
+    "GDPR",
+    "EDPB",
+    "NAIH"
+   ]
+  },
+  {
+   "id": "c8b5cae083ff",
+   "titre": "Kvantecomputere kan true Danmarks cybersikkerhed – nu lanceres nyt projekt til hjælp for virksomheder og myndigheder",
+   "lien": "https://samsik.dk/artikler/2026/11/kvantecomputere-kan-true-danmarks-cybersikkerhed-nu-lanceres-nyt-projekt-til-hjaelp-for-virksomheder-og-myndigheder/",
+   "resume": "Kvantetruslen kan blive en realitet allerede i 2030, og derfor er det vigtigt, at virksomheder og myndigheder forbereder overgangen til kvantesikker kryptografi nu.",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Agence pour la sécurité sociétale",
+   "zone": "Danemark",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.625,
+   "score_bruit": 0.546,
+   "themes": [
+    "cra",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : texte adopté, publié ou en vigueur (repêché par l'IA)",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "lignes_directrices"
+   },
+   "score": 0.705,
+   "sens_fort": true,
+   "statut": "lignes_directrices",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "da",
+   "trad": {
+    "en": {
+     "titre": "Quantum computers can threaten Denmark's cyber security - now launched new project to help companies and authorities",
+     "resume": "The quantum threat can become a reality as early as 2030 and therefore it is important that companies and authorities prepare for the transition to quantum-proof cryptography now."
+    },
+    "fr": {
+     "titre": "Les ordinateurs quantiques peuvent menacer la cybersécurité du Danemark - a lancé un nouveau projet pour aider les entreprises et les autorités",
+     "resume": "La menace quantique peut devenir une réalité dès 2030 et il est donc important que les entreprises et les autorités se préparent à la transition vers la cryptographie quantique."
+    }
+   },
+   "bruit": [
+    "marchés / entreprises",
+    "finance / banque"
+   ],
+   "echeances": [],
+   "sujets": [
+    "SAMSIK"
+   ],
+   "acronymes": [
+    "SAMSIK"
+   ]
+  },
+  {
+   "id": "b803fc4f3e47",
+   "titre": "Communication from the Commission – Commission guidance on the application of Regulation (EU) 2024/2847 (Cyber Resilience Act)",
+   "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026XC06013",
+   "resume": "",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Législation de l’UE - EUR-Lex",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.719,
+   "score_bruit": 0.518,
+   "score": 0.799,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "statut": "lignes_directrices",
+   "page": {
+    "date": "2026-11-18",
+    "ok": false,
+    "v": 2,
+    "erreur": "page sans texte lisible (contenu en JavaScript ?)"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "\"Communication de la Commission – Orientations de la Commission sur l'application du règlement (UE) 2024/2847 (loi sur la résilience des animaux)\"",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "1ad4a59c104b",
+   "titre": "La CNIL a prononcé 38 nouvelles sanctions en procédure simplifiée depuis juin 2026",
+   "lien": "https://www.cnil.fr/fr/38-sanctions-simplifiees",
+   "resume": "Cookies, sécurité des données, prospection commerciale, non-coopération : entre juin et octobre 2026, la CNIL a prononcé 38 nouvelles sanctions dans le cadre de la procédure simplifiée, dont 23 ont pour origine des plaintes.",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "Sanction"
+   ],
+   "groupes": [
+    "Termes génériques"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.61,
+   "score_bruit": 0.495,
+   "themes": [
+    "donnees",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sig_net": true,
+    "sujet": true
+   },
+   "score": 0.64,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "sanction",
+    "type": "sanction",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "fr",
+   "trad": {
+    "en": {
+     "titre": "CNIL has issued 38 new sanctions under simplified procedure since June 2026",
+     "resume": "Cookies, data security, commercial prospecting, non-cooperation: Between June and October 2026, CNIL issued 38 new sanctions under the simplified procedure, 23 of which are the source of complaints."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CNIL"
+   ],
+   "acronymes": [
+    "CNIL"
+   ]
+  },
+  {
+   "id": "c6273e63d3e4",
+   "titre": "Why threat hunting should matter to every board",
+   "lien": "https://www.ncsc.gov.uk/blogs/why-threat-hunting-should-matter-to-every-board",
+   "resume": "Monitoring alone cannot detect every threat. Proactive threat hunting can expose gaps in defences and help organisations learn from others facing common threats.",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Centre National de Cybersécurité)",
+   "zone": "Royaume-Uni",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.584,
+   "score_bruit": 0.537,
+   "themes": [
+    "cra",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : guide ou commentaire sans texte suivi",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.584,
+   "ia": {
+    "v": "t4",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Pourquoi la chasse aux menaces devrait-elle être importante pour chaque conseil d'administration?",
+     "resume": "La surveillance ne peut à elle seule détecter toutes les menaces. La chasse proactive aux menaces peut révéler des lacunes dans les défenses et aider les organisations à apprendre des autres personnes confrontées à des menaces communes."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NCSC"
+   ],
+   "acronymes": [
+    "NCSC"
+   ]
+  },
+  {
+   "id": "72320e31b13c",
+   "titre": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 9 settembre 2026",
+   "lien": "http://www.gazzettaufficiale.it/eli/id/2026/11/17/26A05971/SG",
+   "resume": "Ripartizione del Fondo per l'attuazione della Strategia nazionale di cybersicurezza e del Fondo per la gestione della cybersicurezza, su proposta dell'Agenzia per la cybersicurezza nazionale. (26A05971)",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Gazzetta Ufficiale",
+   "zone": "Italie",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.656,
+   "score_bruit": 0.607,
+   "themes": [
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.656,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "it",
+   "trad": {
+    "en": {
+     "titre": "DECREATE OF THE PRESIDENT OF THE COUNCIL OF THE MINISTRI 9 September 2026",
+     "resume": "Breakdown of the Fund for the implementation of the National Cybersecurity Strategy and the Cybersecurity Fund, on a proposal from the National Cybersecurity Agency. (26A0597)"
+    },
+    "fr": {
+     "titre": "DÉCRET DU PRÉSIDENT DU CONSEIL DU MINISTRI 9 septembre 2026",
+     "resume": "Ventilation du Fonds pour la mise en œuvre de la Stratégie nationale de cybersécurité et du Fonds pour la cybersécurité, sur proposition de l ' Agence nationale de cybersécurité (26A0597)."
+    }
+   },
+   "statut": "projet",
+   "echeances": [],
+   "sujets": [
+    "ACN"
+   ],
+   "acronymes": [
+    "ACN"
+   ]
+  },
+  {
+   "id": "efc45cf0deca",
+   "titre": "Ankieta badająca poziom cyberbezpieczeństwa w szpitalach",
+   "lien": "https://www.cez.gov.pl/pl/page/o-nas/aktualnosci/ankieta-badajaca-poziom-cyberbezpieczenstwa-w-szpitalach",
+   "resume": "",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Centrum e-Zdrowia — aktualności",
+   "zone": "Pologne",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)",
+    "Service national de santé"
+   ],
+   "groupes": [
+    "Termes multilingues",
+    "Exigences fournisseurs (santé, secteur public)"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.799,
+   "score_bruit": 0.723,
+   "themes": [
+    "sante_donnees",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "sens_fort": true,
+   "motif": "IA : étude ou enquête",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "echeances_page": [
+    {
+     "date": "2027-01-31",
+     "approx": false,
+     "extrait": {
+      "xx": "…do udziału w badaniu. Ankietę należy wypełnić do 31 stycznia 2027 roku . Ankieta jest dostępna wyłącznie w…"
+     }
+    }
+   ],
+   "score": 0.879,
+   "ia": {
+    "v": "t4",
+    "avis": "a_surveiller",
+    "motif": "etude_enquete",
+    "type": "etude_enquete",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "pl",
+   "trad": {
+    "en": {
+     "titre": "Survey on cybersecurity in hospitals",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Enquête sur la cybersécurité dans les hôpitaux",
+     "resume": ""
+    }
+   },
+   "echeances": [
+    {
+     "date": "2027-01-31",
+     "approx": false,
+     "extrait": {
+      "pl": "…do udziału w badaniu. Ankietę należy wypełnić do 31 stycznia 2027 roku . Ankieta jest dostępna wyłącznie w…",
+      "en": "...to participate in the study. The book must be completed by 31 January 2027. The survey is only available in..."
+     },
+     "page": true
+    }
+   ],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "6edad6f923d5",
+   "titre": "Nyhet Stulna Windows-datorer ska kunna fjärrlåsas Av Viktor Eriksson 17 nov. 2026 1 min Operativsystem Säkerhet Windows",
+   "lien": "https://computersweden.se/article/4249680/stulna-windows-datorer-ska-kunna-fjarrlasas.html",
+   "resume": "",
+   "date": "2026-11-17",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Computer Sweden — réglementation",
+   "zone": "Suède",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.471,
+   "score_bruit": 0.401,
+   "themes": [
+    "cra",
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : texte adopté, publié ou en vigueur (repêché par l'IA)",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sujet": true
+   },
+   "score": 0.471,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "sv",
+   "trad": {
+    "en": {
+     "titre": "Stolen Windows computers can be remotely locked by Viktor Eriksson 17 Nov. 2026 1 min Operating System Security Windows",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Les ordinateurs Windows volés peuvent être verrouillés à distance par Viktor Eriksson 17 nov. 2026 1 min Système d'exploitation Sécurité Windows",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "047226550e09",
+   "titre": "Commission seeks feedback on draft template for the fundamental rights impact assessment under the AI Act",
+   "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
+   "resume": "News article 16 November 2026 The Commission is collecting feedback on the draft template for a questionnaire to facilitate certain deployers of high-risk AI system in complying with their obligations to prepare a fundamental rights impact assessment under Article 27 AI Act.",
+   "date": "2026-11-16",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Commission Européenne - Cybersecurity",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.622,
+   "score_bruit": 0.496,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "statut": "projet",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "projet"
+   },
+   "echeances_page": [
+    {
+     "date": "2026-12-04",
+     "approx": false,
+     "extrait": {
+      "xx": "…to express their interest to the AI Office by 4 December 2026 . Depending on the number of expressions of…"
+     }
+    },
+    {
+     "date": "2027-12-02",
+     "approx": false,
+     "extrait": {
+      "xx": "…will need to comply with this obligation as of 2 December 2027. The draft template is accompanied by a draft…"
+     }
+    }
+   ],
+   "score": 0.702,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La Commission sollicite des commentaires sur le projet de modèle pour l'évaluation de l'impact sur les droits fondamentaux en vertu de la loi IA",
+     "resume": "Nouvelle article 16 novembre 2026 La Commission recueille des commentaires sur le projet de modèle de questionnaire destiné à faciliter le respect par certains déploiements du système IA à haut risque de leur obligation de préparer une analyse d'impact sur les droits fondamentaux en vertu de l'article 27 de la loi IA."
+    }
+   },
+   "echeances": [
+    {
+     "date": "2026-12-04",
+     "approx": false,
+     "extrait": {
+      "en": "…to express their interest to the AI Office by 4 December 2026 . Depending on the number of expressions of…"
+     },
+     "page": true
+    },
+    {
+     "date": "2027-12-02",
+     "approx": false,
+     "extrait": {
+      "en": "…will need to comply with this obligation as of 2 December 2027. The draft template is accompanied by a draft…"
+     },
+     "page": true
+    }
+   ],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "d520c5b5033a",
+   "titre": "Data Protection Authority reprimanded AI chatbot application provider and ordered General Data Protection Regulation compliance for processing of special categories of data in AI model training",
+   "lien": "https://digitalpolicyalert.org/event/45869-data-protection-authority-reprimanded-ai-chatbot-application-provider-and-ordered-general-data-protection-regulation-compliance-for-processing-of-special-categories-of-data-in-ai-model-training",
+   "resume": "Latest event Date: 2026-11-16 investigation ruling On 16 November 2026, the Data Protection Authority (DPA) issued a reprimand to the provider of an artificial intelligence (AI) chatbot application and gave it 4 months to align its use of special categories of personal data with the General Data…",
+   "date": "2026-11-16",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Digital Policy Alert",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.647,
+   "score_bruit": 0.456,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : sanction d'une autorité",
+   "bruit": [
+    "événements / webinaires"
+   ],
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.647,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "sanction",
+    "type": "sanction",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "L'autorité de protection des données a réprimandé le fournisseur d'application de chatbot IA et a ordonné le respect du règlement général sur la protection des données pour le traitement de catégories spéciales de données dans la formation modèle IA",
+     "resume": "Dernier événement Date: 2026-11-16 arrêt d'enquête Le 16 novembre 2026, l'Autorité pour la protection des données (DPA) a adressé une réprimande au fournisseur d'une application chatbot d'intelligence artificielle (IA) et lui a donné 4 mois pour aligner son utilisation de catégories spéciales de données personnelles sur les Données générales..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR"
+   ],
+   "acronymes": [
+    "GDPR"
+   ]
+  },
+  {
+   "id": "9c9595ddff48",
+   "titre": "AI Cuts Vulnerability Discovery from Nine Months to 90 Hours",
+   "lien": "https://www.infosecurity-magazine.com/news/ai-cut-vulnerability-discover-nine/",
+   "resume": "16 November 2026 Forescout report claims to have found 66 new flaws in just 90 hours using AI",
+   "date": "2026-11-16",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Infosecurity Magazine (UK)",
+   "zone": "Royaume-Uni",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.507,
+   "score_bruit": 0.441,
+   "score": 0.507,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : vulnérabilité touchant le secteur (dispositifs, laboratoires, santé)",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "vulnerabilite_secteur",
+    "type": "alerte_vulnerabilite",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "oui",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "IA réduit la vulnérabilité Découverte de neuf mois à 90 heures",
+     "resume": "16 novembre 2026 Le rapport Forescout prétend avoir trouvé 66 nouvelles failles en seulement 90 heures avec IA"
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "78a2ae6b220e",
+   "titre": "PTS granskar telekomaktörer som inte anmält sig enligt cybersäkerhetslagen",
+   "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-telekomaktorer-som-inte-anmalt-sig-enligt-cybersakerhetslagen/",
+   "resume": "Post- och telestyrelsen (PTS) inleder nu tillsyn mot aktörer som ännu inte har anmält sin verksamhet enligt cybersäkerhetslagen. Publicerades 2026-11-16 Internet och telefoni, Säkerhet och integritet",
+   "date": "2026-11-16",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "PTS (autorité de supervision NIS2 / cybersäkerhetslagen)",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cybersécurité (réglementation)"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.567,
+   "score_bruit": 0.575,
+   "score": 0.724,
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "NIS2",
+    "Cybersecurity Act / certification UE"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : NIS2, Cybersecurity Act / certification UE",
+   "page": {
+    "date": "2026-11-18",
+    "ok": false,
+    "v": 2,
+    "erreur": "page sans texte lisible (contenu en JavaScript ?)"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "obligation_echeance",
+    "type": "obligation_echeance",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": false
+   },
+   "langue": "sv",
+   "trad": {
+    "en": {
+     "titre": "PTS reviews telecom operators who have not registered under the Cybersecurity Act",
+     "resume": "The Swedish Post and Telecom Agency (PTS) is now initiating supervision of actors who have not yet notified their activities under the Cybersecurity Act. Posted in 2026-11-16 Internet and telephony, security and privacy"
+    },
+    "fr": {
+     "titre": "PTS examine les opérateurs de télécommunications qui ne se sont pas inscrits en vertu de la Loi sur la cybersécurité",
+     "resume": "L'Agence suédoise des postes et des télécommunications (PTS) est en train de mettre en place une supervision des acteurs qui n'ont pas encore notifié leurs activités en vertu de la loi sur la cybersécurité. Posted in 2026-11-16 Internet et téléphonie, sécurité et vie privée"
+    }
+   },
+   "bruit": [
+    "télécoms"
+   ],
+   "echeances": [],
+   "sujets": [
+    "NIS2",
+    "Cybersecurity Act",
+    "PTS"
+   ],
+   "acronymes": [
+    "NIS2",
+    "Cybersecurity Act",
+    "PTS"
+   ]
+  },
+  {
+   "id": "f0089ef41fbd",
+   "titre": "Nyhet EU hoppas på globala AI-regler efter USA:s mellanårsval Av Viktor Eriksson 16 nov. 2026 1 min Offentlig sektor Lagar och regleringar Marknader",
+   "lien": "https://computersweden.se/article/4249076/eu-hoppas-pa-globala-ai-regler-efter-usas-mellanarsval.html",
+   "resume": "",
+   "date": "2026-11-16",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Computer Sweden — réglementation",
+   "zone": "Suède",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.628,
+   "score_bruit": 0.456,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.628,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "sv",
+   "trad": {
+    "en": {
+     "titre": "EU hopes for global AI-regler after USA mid-term election of Viktor Eriksson 16 Nov. 2026 1 min Public Sector Laws and Regulations Markets",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "UE espère un AI-regler mondial après l'élection à mi-mandat de Viktor Eriksson 16 nov. 2026 1 min",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "df78fa5044da",
+   "titre": "RespiVirNet, Il Garante: \"Nessuna sospensione decisa da noi\"",
+   "lien": "https://www.gpdp.it/garante/doc.jsp?ID=10321055",
+   "resume": "RespiVirNet, Il Garante: \"Nessuna sospensione decisa da noi\" Il Garante Privacy precisa di non aver disposto alcuna sospensione dei flussi di dati di RespiVirNet: l’hanno decisa autonomamente Regioni e Province autonome. Dal 2012 è la legge che preve...",
+   "date": "2026-11-13",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Garante per la Protezione dei Dati Personali",
+   "zone": "Italie",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.583,
+   "score_bruit": 0.558,
+   "themes": [
+    "sante_donnees",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.583,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "commentaire",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "it",
+   "trad": {
+    "en": {
+     "titre": "RespiVirNet, Il Garante: \"No suspension decided by us\"",
+     "resume": "RespiVirNet, Il Garante: \"No suspension decided by us\" The Privacy Authority states that it has not placed any suspension of the data flows of RespiVirNet: it has decided autonomously Regions and autonomous Provinces. Since 2012 it has been the law..."
+    },
+    "fr": {
+     "titre": "RespiVirNet, Il Garante : « Aucune suspension décidée par nous »",
+     "resume": "RespiVirNet, Il Garante : « Aucune suspension décidée par nous » L'Autorité de protection de la vie privée déclare qu'elle n'a pas suspendu les flux de données de RespiVirNet : elle a décidé de manière autonome Régions et Provinces autonomes. Depuis 2012, c'est la loi..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "Garante"
+   ],
+   "acronymes": [
+    "Garante"
+   ]
+  },
+  {
+   "id": "a263655a7807",
+   "titre": "Nyhet Tinder får 120 miljoner i GDPR-böter Av Viktor Eriksson 13 nov. 2026 1 min Offentlig sektor Lagar och regleringar Marknader",
+   "lien": "https://computersweden.se/article/4248475/tinder-far-120-miljoner-i-gdpr-boter.html",
+   "resume": "",
+   "date": "2026-11-13",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Computer Sweden — réglementation",
+   "zone": "Suède",
+   "nature": "presse",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.562,
+   "score_bruit": 0.402,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sujet": true
+   },
+   "score": 0.642,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "sanction",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "sv",
+   "trad": {
+    "en": {
+     "titre": "Tinder receives 120 million in GDPR-böter by Viktor Eriksson 13 Nov. 2026 1 min Public Sector Laws and Regulations Markets",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Tinder reçoit 120 millions en GDPR-böter par Viktor Eriksson 13 nov. 2026 1 min",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR"
+   ],
+   "acronymes": [
+    "GDPR"
+   ]
+  },
+  {
+   "id": "n9c1bd10be59",
+   "titre": "Cyber Resilience Act : Due Diligence Obligations For Third-party Components",
+   "lien": "https://www.google.com/search?q=%22Cyber+Resilience+Act+%3A+Due+Diligence+Obligations+For+Third-party+Components%22+JD+Supra",
+   "resume": "",
+   "reserve": true,
+   "payant": false,
+   "publication": "JD Supra",
+   "date": "2026-11-13",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Veille RKC (Wavestone)",
+   "zone": "Europe",
+   "nature": "rkc",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "echeances": [],
+   "score_cyber": 0.829,
+   "score_bruit": 0.527,
+   "score": 0.909,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "obligation_echeance",
+    "type": "obligation_echeance",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Loi sur la cyberrésilience : Obligations de diligence pour les composants tiers",
+     "resume": ""
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "nddc78c0edaf",
+   "titre": "CRA in time for New Year's",
+   "lien": "https://www.google.com/search?q=%22CRA+in+time+for+New+Year%27s%22+Control",
+   "resume": "",
+   "reserve": true,
+   "payant": false,
+   "publication": "Control",
+   "date": "2026-11-13",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Veille RKC (Wavestone)",
+   "zone": "Europe",
+   "nature": "rkc",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "echeances": [],
+   "score_cyber": 0.552,
+   "score_bruit": 0.418,
+   "score": 0.632,
+   "themes": [
+    "cra",
+    "infra_critiques"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "motif": "IA : texte adopté, publié ou en vigueur",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "CRA à temps pour le Nouvel An",
+     "resume": ""
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "na45f27831cd",
+   "titre": "Finland: EU And Finnish Cyber Resilience Rules: New Obligations Ahead",
+   "lien": "https://www.google.com/search?q=%22Finland%3A+EU+And+Finnish+Cyber+Resilience+Rules%3A+New+Obligations+Ahead%22+Mondaq+Business+Briefing",
+   "resume": "",
+   "reserve": true,
+   "payant": false,
+   "publication": "Mondaq Business Briefing",
+   "date": "2026-11-13",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Veille RKC (Wavestone)",
+   "zone": "Finlande",
+   "nature": "rkc",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "echeances": [],
+   "score_cyber": 0.708,
+   "score_bruit": 0.513,
+   "score": 0.788,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "sens_fort": true,
+   "motif": "",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "obligation_echeance",
+    "type": "obligation_echeance",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Finlande: UE et règles de la cyberrésilience finlandaise: nouvelles obligations",
+     "resume": ""
+    }
+   },
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "c634d1e5c36b",
+   "titre": "Commission invites feedback on deploying cellular-based dual-use drone detection capacity",
+   "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-invites-feedback-deploying-cellular-based-dual-use-drone-detection-capacity",
+   "resume": "Press release 12 November 2026 The European Commission has launched a call for expression of interest to gather information from Member States and relevant private-sector partners on the testing and deployment of cellular-based dual-use drone detection capabilities.",
+   "date": "2026-11-12",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Commission Européenne - Cybersecurity",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.504,
+   "score_bruit": 0.408,
+   "themes": [
+    "cra",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.504,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La Commission invite à formuler des observations sur le déploiement d'une capacité cellulaire de détection à double usage des drones",
+     "resume": "Communiqué de presse 12 novembre 2026 La Commission européenne a lancé un appel à manifestation d'intérêt pour la collecte d'informations auprès des États membres et des partenaires du secteur privé concernés sur les essais et le déploiement de capacités cellulaires de détection à double usage."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "4818c40838e3",
+   "titre": "EDPB letter to the European Commission on the need for a legal basis for cross-regulatory exchange of information",
+   "lien": "https://www.edpb.europa.eu/documents/edpb-correspondence/edpb-letter-to-the-european-commission-on-the-need-for-a-legal-basis_en",
+   "resume": "",
+   "date": "2026-11-12",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.508,
+   "score_bruit": 0.378,
+   "score": 0.508,
+   "themes": [
+    "cra",
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "page": {
+    "date": "2026-11-18",
+    "ok": false,
+    "v": 2,
+    "erreur": "page sans texte lisible (contenu en JavaScript ?)"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Lettre EDPB à la Commission européenne sur la nécessité d'une base juridique pour l'échange d'informations entre réglementations",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "EDPB"
+   ],
+   "acronymes": [
+    "EDPB"
+   ]
+  },
+  {
+   "id": "65f1af6bc747",
+   "titre": "Actualité du CEPD : adéquation de la Corée du Sud, versions finales des BCR-ST, et action coordonnée sur le recrutement via IA",
+   "lien": "https://www.cnil.fr/fr/actualite-du-cepd-adequation-de-la-coree-du-sud-versions-finales-des-bcr-st-et-action-coordonnee-sur",
+   "resume": "Le 10 novembre 2026, le Comité européen de la protection des données (CEPD) a adopté une déclaration sur l’adéquation de la Corée du Sud en matière de protection des données, ses recommandations finales sur les règles d’entreprises contraignantes et le thème de la sixième action coordonnée (CEF).",
+   "date": "2026-11-12",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "CNIL",
+   "zone": "France",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "RGPD"
+   ],
+   "groupes": [
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.547,
+   "score_bruit": 0.554,
+   "themes": [
+    "fournisseurs_publics",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "bruit": [
+    "vœux / prix / RH"
+   ],
+   "statut": "adopte",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sig_fort": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "adopte"
+   },
+   "score": 0.627,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "lignes_directrices",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "fr",
+   "trad": {
+    "en": {
+     "titre": "CEPD news: South Korea's suitability, final versions of BCR-ST, and coordinated action on recruitment via AI",
+     "resume": "On 10 November 2026, the European Data Protection Committee (CEPD) adopted a declaration on the adequacy of South Korea in data protection, its final recommendations on binding business rules and the theme of the sixth coordinated action (CEF)."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "EDPB",
+    "CNIL"
+   ],
+   "acronymes": [
+    "EDPB",
+    "CNIL"
+   ]
+  },
+  {
+   "id": "n75b8d26db85",
+   "titre": "Robots and the Cyber Resilience Act : Obligations, requirements and responsibilities for manufacturers, importers, distributors and users",
+   "lien": "https://www.google.com/search?q=%22Robots+and+the+Cyber+Resilience+Act+%3A+Obligations%2C+requirements+and+responsibilities+for+manufacturers%2C+importers%2C+distributors+and+users%22+Bird+%26+Bird",
+   "resume": "",
+   "reserve": true,
+   "payant": false,
+   "publication": "Bird & Bird",
+   "date": "2026-11-12",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Veille RKC (Wavestone)",
+   "zone": "Europe",
+   "nature": "rkc",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "echeances": [],
+   "score_cyber": 0.769,
+   "score_bruit": 0.442,
+   "score": 0.849,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Robots et la Loi sur la cyberrésilience : Obligations, exigences et responsabilités des fabricants, importateurs, distributeurs et utilisateurs",
+     "resume": ""
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "0f604e87bf98",
+   "titre": "Hardware-Angriffe umgehen TPM2-basierte Festplattenverschlüsselung",
+   "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Hardware-Angriffe_TPM2_Verschluesselung_261111.html",
+   "resume": "",
+   "date": "2026-11-11",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "BSI (Office fédéral allemand de la sécurité de l'information)",
+   "zone": "Allemagne",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.46,
+   "score_bruit": 0.474,
+   "score": 0.482,
+   "themes": [
+    "dm_div",
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : vulnérabilité touchant le secteur (dispositifs, laboratoires, santé)",
+   "page": {
+    "date": "2026-11-18",
+    "ok": false,
+    "v": 2,
+    "erreur": "404 Client Error: Not Found for url: https://www.bsi.bund.de/DE/Service-Navi/Pre"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "vulnerabilite_secteur",
+    "type": "alerte_vulnerabilite",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "oui",
+    "exclusion": "aucune",
+    "page": false
+   },
+   "langue": "de",
+   "trad": {
+    "en": {
+     "titre": "Hardware attacks bypass TPM2-basierte hard drive encryption",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Attaques matérielles contourner le chiffrement du disque dur TPM2-basierte",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "BSI"
+   ],
+   "acronymes": [
+    "BSI"
+   ]
+  },
+  {
+   "id": "238ab1a64736",
+   "titre": "Commission Implementing Regulation (EU) 2026/2487 of 10 November 2026 laying down rules for the application of Regulation (EU) 2024/1689 of the European Parliament and of the Council as regards the establishment, development, implementation, operation and supervision of AI regulatory sandboxes",
+   "lien": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2487",
+   "resume": "",
+   "date": "2026-11-11",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Législation de l’UE - EUR-Lex",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "implementing regulation"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.499,
+   "score_bruit": 0.473,
+   "score": 0.529,
+   "themes": [
+    "nis2",
+    "data_act"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "motif": "texte clé : AI Act",
+   "page": {
+    "date": "2026-11-18",
+    "ok": false,
+    "v": 2,
+    "erreur": "page sans texte lisible (contenu en JavaScript ?)"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Règlement d'exécution (UE) 2026/2487 de la Commission du 10 novembre 2026 fixant les modalités d'application du règlement (UE) 2024/1689 du Parlement européen et du Conseil en ce qui concerne l'établissement, le développement, la mise en œuvre, le fonctionnement et la surveillance des bacs à sable réglementaires IA",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "caefc24d9263",
+   "titre": "NCSC scheme will help critical organisations test their cyber defences",
+   "lien": "https://www.ncsc.gov.uk/news/ncsc-scheme-help-critical-organisations-test-their-cyber-defences",
+   "resume": "New NCSC Cyber Adversary Simulation scheme will help critical organisations strengthen their resilience through rigorous, real-world testing by trusted providers.",
+   "date": "2026-11-11",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Centre National de Cybersécurité)",
+   "zone": "Royaume-Uni",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.658,
+   "score_bruit": 0.562,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "IA : guide ou commentaire sans texte suivi",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.658,
+   "ia": {
+    "v": "t4",
+    "avis": "a_surveiller",
+    "motif": "guide_sans_texte",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Le système NCSC aidera les organisations critiques à tester leurs cyberdéfenses",
+     "resume": "Le nouveau système NCSC Cyber Adversary Simulation aidera les organisations critiques à renforcer leur résilience grâce à des tests rigoureux et réels effectués par des fournisseurs fiables."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "NCSC"
+   ],
+   "acronymes": [
+    "NCSC"
+   ]
+  },
+  {
+   "id": "21490a6f9177",
+   "titre": "Inside Greece's new AI Act framework",
+   "lien": "https://iapp.org/news/a/inside-greece-s-new-ai-act-framework",
+   "resume": "",
+   "date": "2026-11-11",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "IAPP",
+   "zone": "Worldwide",
+   "nature": "presse",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "titre_nettoye": 3,
+   "score_cyber": 0.792,
+   "score_bruit": 0.492,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act",
+    "RGPD / GDPR"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : AI Act, RGPD / GDPR",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act",
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true,
+    "statut": "consultation"
+   },
+   "score": 0.872,
+   "statut": "consultation",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "À l'intérieur du nouveau cadre législatif grec IA",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "0ce6731dda8d",
+   "titre": "Inera arbetar för att SITHS ska godkännas på högsta tillitsnivå",
+   "lien": "https://www.inera.se/aktuellt/nyheter/inera-arbetar-for-att-siths-ska-godkannas-pa-hogsta-tillitsniva/",
+   "resume": "1 av 1 2026-11-11 Inera har påbörjat ett arbete för att e-legitimationen SITHS ska bli godkänd på tillitsnivå 4, den högsta tillitsnivån för e-legitimationer i Sverige. Syftet är att stärka säkerheten och möta kommande EU-krav på identifiering inom hälso- och sjukvård.",
+   "date": "2026-11-11",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Inera (services numériques communs des régions : 1177, NPÖ) — actualités",
+   "zone": "Suède",
+   "nature": "officielle",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.705,
+   "score_bruit": 0.513,
+   "themes": [
+    "sante_donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "EHDS"
+   ],
+   "motif": "texte clé : EHDS",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "EHDS"
+    ],
+    "sig": true,
+    "sujet": true
+   },
+   "score": 0.705,
+   "sens_fort": true,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "texte_officiel",
+    "type": "texte_officiel",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "sv",
+   "trad": {
+    "en": {
+     "titre": "Inera works to ensure that SITHS is approved at the highest level of trust",
+     "resume": "1 of 2026-11 Inera has begun work to ensure that the SITHS e-ID is approved at Trust Level 4, the highest level of trust for e-IDs in Sweden. The purpose is to strengthen safety and meet upcoming EU-krav on health care identification."
+    },
+    "fr": {
+     "titre": "Inera veille à ce que SITHS soit approuvé au plus haut niveau de confiance",
+     "resume": "1 de 2026-11 Inera a commencé à s'assurer que le SITHS e-ID est approuvé au niveau de confiance 4, le plus haut niveau de confiance pour les e-ID en Suède. L'objectif est de renforcer la sécurité et de rencontrer à venir EU-krav sur l'identification des soins de santé."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "3184862c2743",
+   "titre": "Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR",
+   "lien": "https://www.edpb.europa.eu/documents/guideline/guidelines-12024-on-processing-of-personal-data-based-on-article-61f-gdpr_en",
+   "resume": "Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR Guideline 10 November 2026 Public consultation closed #Legal basis",
+   "date": "2026-11-10",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "EDPB (European Data Protection Board)",
+   "zone": "Europe",
+   "nature": "officielle",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "public consultation",
+    "guideline",
+    "GDPR",
+    "RGPD"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires",
+    "Standards Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.497,
+   "score_bruit": 0.358,
+   "score": 0.577,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "texte clé : RGPD / GDPR",
+   "statut": "consultation",
+   "page": {
+    "date": "2026-11-18",
+    "ok": false,
+    "v": 2,
+    "erreur": "page sans texte lisible (contenu en JavaScript ?)"
+   },
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "lignes_directrices",
+    "type": "lignes_directrices",
+    "sujet": "non",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": false
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Lignes directrices 1/2024 concernant le traitement des données à caractère personnel fondé sur l'article 6, paragraphe 1, point f), RGPD",
+     "resume": "Lignes directrices 1/2024 sur le traitement des données à caractère personnel fondées sur l'article 6, paragraphe 1, point f) RGPD Ligne directrice 10 novembre 2026 Consultation publique close # Base juridique"
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "EDPB"
+   ],
+   "acronymes": [
+    "GDPR",
+    "EDPB"
+   ]
+  },
+  {
+   "id": "d695b456163e",
+   "titre": "10/11/2026 A Plataforma \"Privacidade para as Crianças\" / \"Privacy for Kids\" já está disponível",
+   "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/a-plataforma-privacidade-para-as-criancas-privacy-for-kids-ja-esta-disponivel/",
+   "resume": "",
+   "date": "2026-11-10",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Comissão Nacional de Proteção de Dados (CNPD)",
+   "zone": "Portugal",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.579,
+   "score_bruit": 0.595,
+   "themes": [
+    "donnees",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.579,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "sanction",
+    "sujet": "non",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "pt",
+   "trad": {
+    "en": {
+     "titre": "10/11/2026 The \"Privacy for Kids\" Platform is now available",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "10/11/2026 La plateforme \"Confidentialité pour les enfants\" est maintenant disponible",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "CNPD"
+   ],
+   "acronymes": [
+    "CNPD"
+   ]
+  },
+  {
+   "id": "7acc7984cc7a",
+   "titre": "Blog 10 november 2026 AI AI Act Europese norm voor AI-kwaliteitsbeheer prEN 18286: wat staat er eigenlijk in? Lees meer",
+   "lien": "https://www.ictrecht.nl/blog/europese-norm-voor-ai-kwaliteitsbeheer-pren-18286-wat-staat-er-eigenlijk-in",
+   "resume": "",
+   "date": "2026-11-10",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "ICTRecht — blog",
+   "zone": "Pays-Bas",
+   "nature": "cabinet",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "AI Act"
+   ],
+   "groupes": [
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.777,
+   "score_bruit": 0.598,
+   "themes": [
+    "ia"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "AI Act"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : AI Act",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "AI Act"
+    ],
+    "sig": true,
+    "sig_net": true,
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.857,
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "commentaire",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": true
+   },
+   "langue": "nl",
+   "trad": {
+    "en": {
+     "titre": "Blog 10 November 2026 AI AI Act European standard for AI-kwaliteitsbeheer prEN 18286: What does it say? Read more",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Blog 10 novembre 2026 IA IA Acte Norme européenne pour AI-kwaliteitsbeheer prEN 18286 : Qu'est-ce que ça dit ? Lire plus",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "AI Act"
+   ],
+   "acronymes": [
+    "AI Act"
+   ]
+  },
+  {
+   "id": "nf6241740052",
+   "titre": "Leuze integrates cybersecurity into industrial sensor development to meet CRA requirements",
+   "lien": "https://industrial-compliance.co.uk/leuze-cra-requirements/",
+   "resume": "",
+   "reserve": true,
+   "payant": false,
+   "publication": "IndustrialCompliance.co.uk",
+   "date": "2026-11-09",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Veille RKC (Wavestone)",
+   "zone": "Europe",
+   "nature": "rkc",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "echeances": [],
+   "score_cyber": 0.674,
+   "score_bruit": 0.475,
+   "score": 0.754,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "projet_consultation",
+    "type": "projet_consultation",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "autre_secteur",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Leuze intègre la cybersécurité au développement de capteurs industriels pour répondre aux exigences CRA",
+     "resume": ""
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
+  {
+   "id": "nf8b50bcda54",
+   "titre": "The EU Cyber Resilience Act puts product makers on a 24-hour clock; What is the EU Cyber Resilience Act ?",
+   "lien": "https://www.google.com/search?q=%22The+EU+Cyber+Resilience+Act+puts+product+makers+on+a+24-hour+clock%3B+What+is+the+EU+Cyber+Resilience+Act+%3F%22+North+Country+Now+%28Potsdam%2C+New+York%29",
+   "resume": "",
+   "reserve": true,
+   "payant": false,
+   "publication": "North Country Now (Potsdam, New York)",
+   "date": "2026-11-09",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Veille RKC (Wavestone)",
+   "zone": "Europe",
+   "nature": "rkc",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Cyber Resilience Act",
+    "CRA",
+    "DORA",
+    "NIS2"
+   ],
+   "groupes": [
+    "Réglementations Cyber",
+    "Réglementations européennes majeures",
+    "Termes multilingues"
+   ],
+   "amende": null,
+   "echeances": [],
+   "score_cyber": 0.728,
+   "score_bruit": 0.37,
+   "score": 0.808,
+   "themes": [
+    "cra"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": true,
+   "a_verifier": true,
+   "textes_cles": [
+    "CRA"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : CRA",
+   "ia": {
+    "v": "t4",
+    "avis": "pertinent",
+    "motif": "commentaire",
+    "type": "commentaire",
+    "sujet": "oui",
+    "applicable": "oui",
+    "secteur": "non",
+    "exclusion": "aucune",
+    "page": true
+   },
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La loi UE Cyber Resilience Act met les fabricants de produits sur une horloge de 24 heures; Qu'est-ce que la loi UE sur la cyberrésilience ?",
+     "resume": ""
+    }
+   },
+   "sujets": [
+    "CRA"
+   ],
+   "acronymes": [
+    "CRA"
+   ]
+  },
   {
    "id": "66c7ed5e550a",
    "titre": "European Commission closes consultation on draft Implementing regulation on practical and specific arrangements for conduct of certain proceedings pursuant to Article 75c and Article 75d of Artificial Intelligence Act",
@@ -980,16 +3769,7 @@
      "resume": ""
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-01",
-     "approx": false,
-     "extrait": {
-      "en": "…Japan Active Cyber Defence Act, in force from 1 October 2026 (“Japan Cyber Act”), takes the form of a…"
-     },
-     "page": true
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "NIS2",
     "CRA"
@@ -6515,9 +9295,28 @@
      "resume": "Recommandation du Plénipotentiaire du gouvernement en matière de cybersécurité sur les mesures organisationnelles et techniques 21 octobre 2026 Recommandation du Plénipotentiaire du gouvernement en matière de cybersécurité sur les mesures organisationnelles et techniques visant à accroître la sécurité des systèmes d'information En savoir plus..."
     }
    },
-   "echeances": [],
+   "echeances": [
+    {
+     "date": "2026-11-30",
+     "approx": false,
+     "extrait": {
+      "pl": "…i technicznych Prezes UKE przedłuża termin do 30 listopada 2026 r. na zgłaszanie kandydatów do Krajowej Rady do…",
+      "en": "...and technical President UKE extends the deadline until 30 November 2026 to submit candidates to the National Council for..."
+     },
+     "page": true
+    }
+   ],
    "sujets": [],
-   "acronymes": []
+   "acronymes": [],
+   "echeances_page": [
+    {
+     "date": "2026-11-30",
+     "approx": false,
+     "extrait": {
+      "pl": "…i technicznych Prezes UKE przedłuża termin do 30 listopada 2026 r. na zgłaszanie kandydatów do Krajowej Rady do…"
+     }
+    }
+   ]
   },
   {
    "id": "5dbbf0aa924c",
@@ -6867,6 +9666,83 @@
     "GDPR",
     "Garante",
     "AgID"
+   ]
+  },
+  {
+   "id": "eda654112803",
+   "titre": "Παραβίαση της αρχής της νομιμότητας του άρθρου 5 παρ. 1 στοιχ. α’ του ΓΚΠΔ από την εταιρεία με την επωνυμία ΑΜΕΡΙΚΑΝ ΚΟΜΠΙΟΥΤΕΡΣ ΚΑΙ ΕΝΤΖΙΝΙΕΡΣ ΕΛΛΑΣ – AMERICAN COMPUTERS & ENGINEERS HELLAS ΑΝΩΝΥΜΟΣ ΤΕΧΝΙΚΗ ΕΜΠΟΡΙΚΗ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗ ΕΤΑΙΡΕΙΑ»",
+   "lien": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/parabiasi-tis-arhis-tis-nomimotitas-toy-arthroy-5-par-1-stoih-toy-gkpd",
+   "resume": "",
+   "date": "2026-10-20",
+   "date_estimee": false,
+   "detecte_le": "2026-11-18",
+   "version": "2026-11-18-1016",
+   "source": "Hellenic Data Protection Authority",
+   "zone": "Grèce",
+   "nature": "officielle",
+   "rubrique": "autres",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "titre_nettoye": 3,
+   "score_cyber": 0.468,
+   "score_bruit": 0.459,
+   "themes": [
+    "fournisseurs_publics",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "faible",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "RGPD / GDPR"
+   ],
+   "motif": "IA : santé sans lien cyber ni réglementaire (texte suivi cité : gardé à surveiller)",
+   "page": {
+    "date": "2026-11-18",
+    "ok": true,
+    "v": 2
+   },
+   "indices_page": {
+    "tc": [
+     "RGPD / GDPR"
+    ],
+    "sujet": true,
+    "sujet_fort": true
+   },
+   "score": 0.468,
+   "ia": {
+    "v": "t4",
+    "avis": "pas_pertinent",
+    "motif": "sante_hors_sujet",
+    "type": "sanction",
+    "sujet": "oui",
+    "applicable": "non",
+    "secteur": "non",
+    "exclusion": "sante_hors_sujet",
+    "page": true
+   },
+   "langue": "el",
+   "trad": {
+    "en": {
+     "titre": "Violation of the principle of legality of Article 5(1)(a) GDPR (ΓΚΠΔ) by the company under the name ΑΜΕΡΙΚΑΝ COMPUTERS ΚΑΙ ENJINIERS ΕΛΛΑΣ – AMERICAN COMPUTERS & ENGINEERS HELLAS ΑΝΩΝΥΜΟΣ ΤΕΧΝΙΚΗ ΕΜΠΟΡΙΚΗ ΚΑΙ INFORMATION ΕΤΑΙΡΕΙΑ’",
+     "resume": ""
+    },
+    "fr": {
+     "titre": "Violation du principe de légalité de l'article 5, paragraphe 1, point a) RGPD (ΓΚΠΔ) par la société sous le nom de ΑΜΕΡΙΚΑΝ COMPUTERS ΚΑΙ ENJINIERS ΕΛΛΑΣ – AMERICAN COMPUTEURS & ENGINEERS HELLAS ΑΝΩΝΥΜΟΣ ΤΕΧΝΙΚΗ ΕΜΠΟΡΙΚΗ ΚΑΙ INFORMATION ΕΤΑΙΡΕΙΑ",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "GDPR",
+    "HDPA"
+   ],
+   "acronymes": [
+    "GDPR",
+    "HDPA"
    ]
   },
   {
@@ -14354,7 +17230,17 @@
     }
    },
    "statut": "projet",
-   "echeances": [],
+   "echeances": [
+    {
+     "date": "2027-12-11",
+     "approx": false,
+     "extrait": {
+      "nl": "…september 2026, de overige verplichtingen vanaf 11 december 2027. [1] De deurbel uit het voorbeeld komt daarna op…",
+      "en": "...September 2026, the other commitments from December 11, 2027. [1] The doorbell from the example comes up..."
+     },
+     "page": true
+    }
+   ],
    "sujets": [
     "CRA"
    ],
@@ -14372,7 +17258,16 @@
     "secteur": "non",
     "exclusion": "aucune",
     "page": false
-   }
+   },
+   "echeances_page": [
+    {
+     "date": "2027-12-11",
+     "approx": false,
+     "extrait": {
+      "nl": "…september 2026, de overige verplichtingen vanaf 11 december 2027. [1] De deurbel uit het voorbeeld komt daarna op…"
+     }
+    }
+   ]
   },
   {
    "id": "18c9215142f8",
@@ -41856,15 +44751,7 @@
    ],
    "pertinence_v": "v4-62329d164bmodele",
    "acronymes": [],
-   "echeances": [
-    {
-     "date": "2026-10-01",
-     "approx": false,
-     "extrait": {
-      "en": "Changes to server certificates 1.10.2026 - check the certificates at your carrier interface. 22.9.2026 Newsletter - Professional…"
-     }
-    }
-   ],
+   "echeances": [],
    "titre_nettoye": 3,
    "score_bruit": 0.359,
    "essentiel": false,
@@ -45178,14 +48065,6 @@
      "extrait": {
       "fr": "…Cybersicherheit avant le 31 décembre 2026 et transmettre une autodéclaration avant le 30 septembre 2027 ; les modalités d'enregistrement et certaines exigences restent à fixer par règlement.…",
       "en": "…the Federal Cybersecurity Office by 31 December 2026 and submit a self-declaration by 30 September 2027; registration arrangements and some requirements are still to be set by regulation.…"
-     }
-    },
-    {
-     "date": "2026-10-01",
-     "approx": false,
-     "extrait": {
-      "fr": "Autriche : NISG 2026 applicable au 1er octobre 2026 – enregistrement avant le 31 décembre 2026. La WKO rappelle que le NISG 2026…",
-      "en": "Austria: NISG 2026 applies from 1 October 2026 – registration by 31 December 2026. The WKO notes that NISG 2026 (NIS2 transposition,…"
      }
     }
    ],
@@ -49399,16 +52278,7 @@
     "fr": "Les filiales italiennes doivent intégrer les nouveaux risques IA dans leur modèle de conformité « 231 » et leurs contrats logiciels.",
     "en": "Italian subsidiaries must add the new AI risks to their '231' compliance model and software contracts."
    },
-   "echeances": [
-    {
-     "date": "2026-09-30",
-     "approx": false,
-     "extrait": {
-      "fr": "…a été publié au Journal officiel (série générale n. 214) et entre en vigueur le 30 septembre 2026. Il encadre l'IA en matière pénale (nouvelles infractions, identification biométrique),…",
-      "en": "Italy: Legislative Decree 160/2026 on artificial intelligence published, in force 30 September 2026. Legislative Decree No. 160 of 9 September 2026, implementing Law 132/2025, was…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [],
    "acronymes": []
   },
@@ -60764,17 +63634,7 @@
      "resume": "03.09.2026 La liste des entités clés et des entités importantes (Liste KSC) est une liste des organisations couvertes par la législation nationale en matière de cybersécurité. Les entités d'auto-enregistrement ont jusqu'au 3 octobre 2026 pour présenter une demande d'alerte."
     }
    },
-   "echeances": [
-    {
-     "date": "2026-10-03",
-     "approx": false,
-     "extrait": {
-      "pl": "…systemie cyberbezpieczeństwa. Podmioty zobowiązane do samorejestracji mają czas do 3 października 2026 r. na złożenie wniosku o wpis.",
-      "en": "…covered by national cybersecurity legislation. The self-registration entities have until 3 October 2026 to submit an application for an alert.",
-      "fr": "…nationale en matière de cybersécurité. Les entités d'auto-enregistrement ont jusqu'au 3 octobre 2026 pour présenter une demande d'alerte."
-     }
-    }
-   ],
+   "echeances": [],
    "titre_nettoye": 3,
    "score_bruit": 0.48,
    "essentiel": true,
@@ -72605,14 +75465,6 @@
    },
    "echeances": [
     {
-     "date": "2026-10-01",
-     "approx": true,
-     "extrait": {
-      "fr": "…national ; les dispositions sur les sanctions financières s'appliquent à partir d'octobre 2026.",
-      "en": "…authority and national contact point; financial penalty provisions apply from October 2026."
-     }
-    },
-    {
      "date": "2026-10-28",
      "approx": false,
      "extrait": {
@@ -83351,16 +86203,7 @@
     "NIS2",
     "Cybersecurity Act"
    ],
-   "echeances": [
-    {
-     "date": "2026-10-03",
-     "approx": false,
-     "extrait": {
-      "pl": "…powinny złożyć wniosek o wpis do Wykazu podmiotów kluczowych i podmiotów ważnych KSC do 3 października 2026 r. Wpis do Wykazu jest…",
-      "en": "…Act should apply for entry in the List of Key Entities and Important Entities KSC by 3 October 2026. The listing is..."
-     }
-    }
-   ],
+   "echeances": [],
    "titre_nettoye": 3,
    "score_bruit": 0.552,
    "essentiel": true,
@@ -90069,16 +92912,7 @@
     "fr": "Les hôpitaux et régions suédois (entités NIS2) devront imposer contractuellement ces exigences cyber à leurs fournisseurs de systèmes et automates connectés, et le fabricant lui-même peut être entité NIS2 (fabrication de DM/DIV).",
     "en": "Swedish hospitals and regions (NIS2 entities) will have to impose these cyber requirements contractually on their suppliers of connected systems and analysers, and the manufacturer itself may be a NIS2 entity (MD/IVD manufacturing)."
    },
-   "echeances": [
-    {
-     "date": "2026-10-01",
-     "approx": false,
-     "extrait": {
-      "fr": "…2026:11 sur les mesures de sécurité et la formation des dirigeants (NIS2), applicable au 1er octobre 2026. La MCF a adopté le 15 juin 2026 (publié le 18 juin) le règlement MCFFS 2026:11 qui…",
-      "en": "…2026:11 on security measures and management training (NIS2) adopted, applicable from 1 October 2026. MCF adopted MCFFS 2026:11 on 15 June 2026 (published 18 June), specifying the security…"
-     }
-    }
-   ],
+   "echeances": [],
    "sujets": [
     "NIS2",
     "Cybersecurity Act",
@@ -98978,14 +101812,6 @@
      "approx": false,
      "extrait": {
       "en": "…security measures by 3 April 2027, and essential entities must complete a first audit by 3 April 2028; administrative fines can only be imposed after that date. The law establishes…"
-     }
-    },
-    {
-     "date": "2026-10-03",
-     "approx": false,
-     "extrait": {
-      "fr": "Pologne : entrée en vigueur de la loi KSC (NIS2) – enregistrement avant le 3 octobre 2026. La réforme de la loi KSC est applicable depuis le 3 avril 2026 (environ 10 000 entités…",
-      "en": "Poland: KSC (NIS2) Act enters into force – registration due by 3 October 2026. The amended KSC Act has applied since 3 April 2026 (around 10,000 entities in scope).…"
      }
     }
    ],

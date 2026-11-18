@@ -71,7 +71,7 @@ class Pertinence:
             self._vec_themes = self.modele.encode(phrases, normalize_embeddings=True, batch_size=32)
         except Exception as e:  # modèle absent : mode mots-clés
             self.modele = None
-            self.erreur = "Modèle de pertinence indisponible (%s) : note calculée à partir des mots-clés." % str(e)[:120]
+            self.erreur = "Relevance model unavailable (%s): score computed from keywords." % str(e)[:120]
 
     @property
     def mode(self):

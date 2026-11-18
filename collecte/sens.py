@@ -107,7 +107,7 @@ class Sens:
             from transformers import pipeline
             self.clf = pipeline("zero-shot-classification", model=self.nom, device=-1)
         except Exception as e:
-            self.erreur = "Classifieur par le sens indisponible (%s) : tri par mots et note du modèle." % str(e)[:140]
+            self.erreur = "Semantic classifier unavailable (%s): sorting by keywords and model score." % str(e)[:140]
 
     @property
     def actif(self):
@@ -136,7 +136,7 @@ class Sens:
         n = 0
         for i in range(0, len(a_faire), 16):
             if time.time() - debut > self.budget:
-                self.erreur = "Budget de temps atteint : %d articles classés, les autres le seront à la prochaine collecte." % n
+                self.erreur = "Time budget reached: %d articles classified, the others will be at the next collection." % n
                 break
             lot = a_faire[i:i + 16]
             hyp = list(QUESTIONS.values())
@@ -159,7 +159,7 @@ class Sens:
             if (a.get("concernes") or {}).get("v") == VERSION_CONCERNES and not a.get("_texte"):
                 continue
             if fin and time.time() > fin:
-                self.erreur = "Temps imparti atteint : « qui est concerné » sera complété à la prochaine collecte."
+                self.erreur = "Time limit reached: \"who is concerned\" will be completed at the next collection."
                 break
             phrases = phrases_de(a)[:max_phrases]
             a["concernes"] = {"v": VERSION_CONCERNES}      # analysé (même si rien de sûr n'est trouvé)

@@ -89,7 +89,7 @@ class Traducteur:
             import argostranslate.translate
             self.moteur = argostranslate
         except Exception as e:  # moteur absent : le site reste en langue d'origine
-            self.erreur = "Moteur de traduction indisponible (%s)." % str(e)[:120]
+            self.erreur = "Translation engine unavailable (%s)." % str(e)[:120]
             self.moteur = None
         try:
             from langdetect import DetectorFactory, detect
@@ -229,7 +229,7 @@ class Traducteur:
                     sortie = texte
                     self.cache["x" + cle] = ECHEC
         except Exception as e:
-            self.erreur = "Traduction %s→%s impossible : %s" % (de, vers, str(e)[:100])
+            self.erreur = "Translation %s→%s failed: %s" % (de, vers, str(e)[:100])
             return None
         self.faits += 1
         self.cache[cle] = sortie

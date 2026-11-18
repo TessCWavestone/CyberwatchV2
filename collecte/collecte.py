@@ -69,7 +69,7 @@ def _date_rattrapage():
     try:
         return dt.date.fromisoformat(v) if v else None
     except ValueError:
-        print("RATTRAPAGE_DEPUIS invalide (%s) : ignoré" % v)
+        print("Invalid RATTRAPAGE_DEPUIS (%s): ignored" % v)
         return None
 
 
@@ -403,7 +403,7 @@ class Client:
 
     def get(self, url):
         if not self.autorise(url):
-            raise PermissionError("interdit aux robots par le robots.txt du site")
+            raise PermissionError("disallowed for robots by the site's robots.txt")
         r = self.s.get(url, timeout=self.delai, allow_redirects=True)
         r.raise_for_status()
         return r
@@ -636,7 +636,7 @@ def paginer(client, url, premiere, erreurs, max_pages):
         try:
             r = client.get(suiv)
         except Exception as e:
-            erreurs.append("Archives %s : %s" % (suiv, str(e)[:80]))
+            erreurs.append("Archive %s: %s" % (suiv, str(e)[:80]))
             break
         trouves = liens_page(r.content, r.url)
         dates = [a["date"] for a in trouves if a["date"]]
@@ -688,7 +688,7 @@ def collecter_source(src, client, etat_prec, max_pages=15):
             if RATTRAPAGE and dates and min(dates) > RATTRAPAGE:
                 arts.extend(dict(x, _orig=f) for x in flux_archives(client, f, {a["lien"] for a in lot}, max_pages))
         except Exception as e:
-            erreurs.append("Flux %s illisible : %s" % (f, str(e)[:100]))
+            erreurs.append("Feed %s unreadable: %s" % (f, str(e)[:100]))
 
     # 2. pages d'actualités de la colonne R : toujours surveillées, en plus des flux
     #    (une source peut avoir un flux « communiqués » et des pages « publications »,
@@ -697,11 +697,11 @@ def collecter_source(src, client, etat_prec, max_pages=15):
         try:
             r = client.get(u)
         except Exception as e:
-            erreurs.append("Page %s inaccessible : %s" % (u, str(e)[:100]))
+            erreurs.append("Page %s unreachable: %s" % (u, str(e)[:100]))
             continue
         trouves = lire_flux(r.content, u) if est_flux(r.content) else liens_page(r.content, r.url)
         if not trouves:
-            erreurs.append("Aucun lien d'article détecté sur %s (page probablement chargée en JavaScript)" % u)
+            erreurs.append("No article link found on %s (page probably loaded with JavaScript)" % u)
         elif RATTRAPAGE and not est_flux(r.content):
             trouves += paginer(client, r.url, r.content, erreurs, max_pages)
         for a in trouves:
@@ -723,7 +723,7 @@ def collecter_source(src, client, etat_prec, max_pages=15):
         try:
             r = client.get(src["url"])
         except Exception as e:
-            erreurs.append("Page %s inaccessible : %s" % (src["url"], str(e)[:100]))
+            erreurs.append("Page %s unreachable: %s" % (src["url"], str(e)[:100]))
             etat.update(mode="erreur", erreur=" ; ".join(erreurs))
             return [], etat
         if est_flux(r.content):
@@ -740,7 +740,7 @@ def collecter_source(src, client, etat_prec, max_pages=15):
                     pass
             arts = liens_page(r.content, r.url)
             if not arts:
-                erreurs.append("Aucun lien d'article détecté sur %s (page probablement chargée en JavaScript)" % src["url"])
+                erreurs.append("No article link found on %s (page probably loaded with JavaScript)" % src["url"])
             elif RATTRAPAGE:
                 arts += paginer(client, r.url, r.content, erreurs, max_pages)
             pages_lues.append(src["url"])
@@ -756,7 +756,8 @@ def niveau_acces(etat):
     """ok : tout a été lu ; partielle : lue mais au moins une page ou un flux en échec ;
     ko : rien n'a pu être lu ; non_configuree : API sans identifiants."""
     if etat["mode"] == "erreur":
-        return "non_configuree" if "non configurée" in etat.get("erreur", "") else "ko"
+        e = etat.get("erreur", "")
+        return "non_configuree" if ("non configurée" in e or "not configured" in e) else "ko"
     return "partielle" if etat.get("erreur") else "ok"
 
 
@@ -801,10 +802,10 @@ def telecharger_carte():
             json.loads(r.text)
             with open(chemin, "w", encoding="utf-8") as f:
                 f.write("window.VEILLE_MONDE = %s;\n" % r.text)
-            print("Fond de carte téléchargé (%d Ko)." % (len(r.text) // 1024))
+            print("Base map downloaded (%d KB)." % (len(r.text) // 1024))
             return
         except Exception as e:
-            print("Fond de carte indisponible depuis %s : %s" % (url, str(e)[:80]))
+            print("Base map unavailable from %s: %s" % (url, str(e)[:80]))
 
 
 # --------------------------------------------------------------------------- base de connaissance
@@ -901,8 +902,8 @@ def main():
     toutes = charger_sources(cfg, classeur, avec_inactives=True)
     sources = [x for x in toutes if not x["inactive"]]
     regles_mc = charger_mots_cles(cfg, classeur)
-    print("%d sources, %d mots-clés%s" % (len(sources), len(regles_mc),
-          (" — RATTRAPAGE depuis le %s" % RATTRAPAGE) if RATTRAPAGE else ""))
+    print("%d sources, %d keywords%s" % (len(sources), len(regles_mc),
+          (" — CATCH-UP since %s" % RATTRAPAGE) if RATTRAPAGE else ""))
 
     ancien = lire_json(os.path.join(DATA, "actualites.json"), {})
     # (les articles RKC lus par l'ancien analyseur de mails sont relus avec le nouveau)
@@ -990,7 +991,7 @@ def main():
         etat["a_retirer"] = etat["echecs"] >= 2
         etat["dernier_article"] = max([a["date"].isoformat() for a in arts if a.get("date")] or [prec.get("dernier_article", "")])
         etats.append(etat)
-        print("  %-9s %3d trouvés  %3d retenus  %s%s" % (
+        print("  %-9s %3d found  %3d kept  %s%s" % (
             etat["mode"], etat["nb_trouves"], retenus, src["nom"][:60],
             ("  ! " + etat["erreur"][:160]) if etat["erreur"] else ""))
 
@@ -1009,21 +1010,21 @@ def main():
                 lisible = etat_t.get("mode") != "erreur" and len(arts_t) > 0
                 retests[x["url"]] = {"date": AUJOURDHUI.isoformat(), "lisible": lisible, "nb_trouves": len(arts_t),
                                      "detail": (etat_t.get("erreur") or "")[:200]}
-        print("Nouveau test des sources inactives : %d testées, %d de nouveau lisibles." % (
+        print("Re-test of inactive sources: %d tested, %d readable again." % (
             len(retests), sum(1 for r in retests.values() if r["lisible"])))
     for src in inactives:
         motif = (src.get("motif_retrait") or "").strip()
         code = motif.split(" ", 1)[0].lower() if motif else ""
         reste = motif.split(" ", 1)[1] if " " in motif else ""
         if src.get("retiree"):
-            msg = "Retirée depuis le site : plus interrogée."
+            msg = "Removed from the site: no longer queried."
         elif code in ("robots", "javascript", "doublon", "remplacee"):
-            msg = {"robots": "Retirée le %s : le site bloque les robots (erreur 403 ou page protégée)." % reste,
-                   "javascript": "Retirée le %s : page construite en JavaScript, aucun article lisible par le serveur." % reste,
-                   "doublon": "Doublon de « %s » : non interrogée." % reste,
-                   "remplacee": "Remplacée par « %s »." % reste}[code]
+            msg = {"robots": "Removed on %s: the site blocks robots (403 error or protected page)." % reste,
+                   "javascript": "Removed on %s: page built with JavaScript, no article readable by the server." % reste,
+                   "doublon": "Duplicate of “%s”: not queried." % reste,
+                   "remplacee": "Replaced by “%s”." % reste}[code]
         else:
-            msg = "Désactivée dans la liste des sources (config/sources.xlsx)%s." % ((" : " + motif) if motif else "")
+            msg = "Disabled in the source list (config/sources.xlsx)%s." % ((": " + motif) if motif else "")
         prec = etats_prec.get(src["url"], {})
         etats.append({"nom": src["nom"], "zone": src["zone"], "url": src["url"], "mode": "inactif",
                       "acces": "retiree" if src.get("retiree") else "inactive", "flux": "", "page": "",
@@ -1059,9 +1060,9 @@ def main():
         nouveaux_ids.append(ident)
         n_rkc += 1
     if rapport_rkc["fichiers"]:
-        print("Veille RKC : %d fichiers (%d mails, %d Word), %d articles lus, %d nouveaux%s" % (
+        print("RKC watch: %d files (%d emails, %d Word), %d articles read, %d new%s" % (
             rapport_rkc["fichiers"], rapport_rkc["mails"], rapport_rkc["word"], rapport_rkc["articles_lus"], n_rkc,
-            (" — erreurs : " + " ; ".join(rapport_rkc["erreurs"])) if rapport_rkc["erreurs"] else ""))
+            (" — errors: " + " ; ".join(rapport_rkc["erreurs"])) if rapport_rkc["erreurs"] else ""))
         etats.append({"nom": "Veille RKC (Wavestone) — dépôt privé", "zone": "Europe", "url": "", "mode": "rkc",
                       "acces": "partielle" if rapport_rkc["erreurs"] else "ok", "flux": "", "page": "",
                       "nb_trouves": rapport_rkc["articles_lus"], "nb_retenus": n_rkc,
@@ -1143,7 +1144,7 @@ def main():
     for a in lues:
         a.pop("score", None)          # nouvelle note avec le texte de la page
     pert.noter(lues)
-    print("Lecture des pages : %d tentées, %d lues (%d s)" % (n_lues, n_ok, time.time() - t_v6))
+    print("Page reading: %d attempted, %d read (%d s)" % (n_lues, n_ok, time.time() - t_v6))
 
     # v7 — Tri par une petite IA open source (gratuite, sans clé, exécutée ici) : lit titre, résumé et début de la
     # page, répond pertinent / à surveiller / pas pertinent selon des critères écrits (collecte/tri_ia.py)
@@ -1170,7 +1171,7 @@ def main():
         a_juger.sort(key=lambda a: (a.get("version") != id_version, rang_niv.get(a.get("pertinence"), 4)))
         n_ia = ia.trier(a_juger)
         pert.noter(collectes)
-        print("Tri par l'IA : %d articles jugés (%d s)%s" % (n_ia, time.time() - t_ia, (" — " + ia.erreur) if ia.erreur else ""))
+        print("AI triage: %d articles assessed (%d s)%s" % (n_ia, time.time() - t_ia, (" — " + ia.erreur) if ia.erreur else ""))
     else:
         print(ia.erreur)
     meta["ia"] = {"actif": ia.actif, "modele": ia.cfg.get("modele_fichier", ""), "faits": ia.faits, "erreur": ia.erreur}
@@ -1187,7 +1188,7 @@ def main():
                 and (a.get("essentiel") or a.get("statut") or (a.get("sens") or {}).get("reg", 0) >= 0.8)]
         n_conc = sens.concernes(cles, lambda a: lecture.phrases_candidates(
             a.get("_texte") or ((a.get("titre") or "") + ". " + (a.get("resume") or ""))), fin=fin_v6)
-        print("Classement par le sens : %d articles ; « qui est concerné » trouvé pour %d (étapes v6 : %d s)%s" % (
+        print("Semantic classification: %d articles; \"who is concerned\" found for %d (v6 steps: %d s)%s" % (
             n_sens, sum(1 for a in cles if (a.get("concernes") or {}).get("acteurs")), time.time() - t_v6, (" — " + sens.erreur) if sens.erreur else ""))
     else:
         print(sens.erreur)
@@ -1209,7 +1210,7 @@ def main():
         c != a.get("langue") and c not in (a.get("trad") or {}) for c in trad.cibles))
     meta["traduction"] = {"active": trad.actif, "moteur": bool(trad.moteur), "faites": trad.faits,
                           "en_attente": en_attente, "erreur": trad.erreur}
-    print("Traduction : %d segments traduits, %d articles en attente%s" % (
+    print("Translation: %d segments translated, %d articles pending%s" % (
         trad.faits, en_attente, (" — " + trad.erreur) if trad.erreur else ""))
 
     # 2e passage : les règles lisent aussi le titre anglais (textes clés cités dans une autre langue)
@@ -1228,7 +1229,7 @@ def main():
     liste = sorted(gardes + base, key=lambda a: (a["date"], a.get("detecte_le", "")), reverse=True)
     liste = liste[:cfg.get("nb_max_articles", 5000)]
     n_doublons = regrouper_doublons(liste)
-    print("Doublons entre sources regroupés : %d" % n_doublons)
+    print("Cross-source duplicates grouped: %d" % n_doublons)
     # Texte INCONNU repris par plusieurs sources (même non officielles) avec un signal fort (adopté,
     # publié, proposition, projet de loi…) sur un sujet fort : il entre dans L'essentiel, « à vérifier ».
     n_multi = 0
@@ -1240,13 +1241,13 @@ def main():
                 a["essentiel"], a["a_verifier"] = True, True
                 n_multi += 1
     if n_multi:
-        print("Textes inconnus repris par plusieurs sources, ajoutés à L'essentiel : %d" % n_multi)
+        print("Unknown texts reported by several sources, added to Key items: %d" % n_multi)
     ids_liste = {a["id"] for a in liste}
     nouveaux_ids = [i for i in dict.fromkeys(nouveaux_ids) if i in ids_liste]
     meta["nb_nouveaux"] = len(nouveaux_ids)
     meta["nb_ecartes_nouveaux"] = sum(1 for a in ecartes.values() if a.get("version") == id_version)
     meta["nb_essentiel"] = sum(1 for a in liste if a.get("essentiel"))
-    print("Pertinence (%s) : %d gardés, dont %d dans L'essentiel ; %d écartés au total (%d cette semaine)%s" % (
+    print("Relevance (%s): %d kept, incl. %d in Key items; %d discarded in total (%d this week)%s" % (
         pert.mode, len(gardes), meta["nb_essentiel"], len(ecartes), meta["nb_ecartes_nouveaux"],
         (" — " + pert.erreur) if pert.erreur else ""))
     import regles as _regles
@@ -1268,9 +1269,9 @@ def main():
     t_res = time.time()
     try:
         n_res, msg_res = resumes.mettre_a_jour(liste, ia, trad, client, cfg, AUJOURDHUI, id_version, DATA)
-        print("Résumés pour les slides : %d nouveaux (%d s)%s" % (n_res, time.time() - t_res, (" — " + msg_res) if msg_res else ""))
+        print("Slide summaries: %d new (%d s)%s" % (n_res, time.time() - t_res, (" — " + msg_res) if msg_res else ""))
     except Exception as e:   # un incident sur les résumés ne doit jamais bloquer la collecte
-        print("Résumés pour les slides : non faits (%s)" % str(e)[:200])
+        print("Slide summaries: not done (%s)" % str(e)[:200])
 
     # Dates clés (échéances) : seulement près d'un mot d'obligation, jamais pour un événement
     for a in liste + debats_gardes:
@@ -1344,14 +1345,14 @@ def main():
     meta["nb_alertes"] = sum(1 for x in liste_alertes if x.get("active"))
     ecrire_json_et_js("alertes", {"mise_a_jour": meta["mise_a_jour"], "alertes": liste_alertes}, "VEILLE_ALERTES")
     alertes.ecrire_rss(liste_alertes, DATA, meta["url_site"], AUJOURDHUI)
-    print("Points clés : %d alertes actives, %d précédentes" % (meta["nb_alertes"], len(liste_alertes) - meta["nb_alertes"]))
+    print("Key points: %d active, %d previous" % (meta["nb_alertes"], len(liste_alertes) - meta["nb_alertes"]))
 
     # v9 — « Pressentis et avis d'experts » (remplace « Débats et signaux ») : textes et évolutions pressentis,
     # avis d'experts ; un sujet quitte la section quand le projet de texte sort (voir collecte/pressentis.py)
     ancien_press = lire_json(os.path.join(DATA, "pressentis.json"), {})
     liste_press = pressentis.construire(liste, debats_gardes, liste_alertes, ancien_press, AUJOURDHUI)
     ecrire_json_et_js("pressentis", {"mise_a_jour": meta["mise_a_jour"], "sujets": liste_press}, "VEILLE_PRESSENTIS")
-    print("Pressentis et avis d'experts : %d sujets (%d devenus projets de texte)" % (
+    print("Anticipated texts and expert views: %d topics (%d became draft texts)" % (
         len(liste_press), sum(1 for x in liste_press if x.get("statut") == "devenu_projet")))
 
     ecrire_json_et_js("acronymes", {"mise_a_jour": meta["mise_a_jour"], "glossaire": trad.glossaire,
@@ -1393,9 +1394,9 @@ def main():
         import export_pdf
         export_pdf.generer(liste, meta, ref, DATA)
     except Exception as e:
-        print("Export PDF non généré : %s" % str(e)[:200])
-    print("\n%d nouveaux articles — %d au total (dont %d de la base de connaissance)." % (len(nouveaux_ids), len(liste), len(base)))
-    print("%d/%d sources actives lues (%d partiellement, %d à retirer ?)." % (
+        print("PDF export not generated: %s" % str(e)[:200])
+    print("\n%d new articles — %d in total (incl. %d from the knowledge base)." % (len(nouveaux_ids), len(liste), len(base)))
+    print("%d/%d active sources read (%d partially, %d to remove?)." % (
         sum(1 for e in actives if e["acces"] in ("ok", "partielle")), len(actives),
         sum(1 for e in actives if e["acces"] == "partielle"), sum(1 for e in actives if e.get("a_retirer"))))
     return 0

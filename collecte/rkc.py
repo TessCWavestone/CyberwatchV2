@@ -396,7 +396,7 @@ def lire_rkc(dossier, aujourdhui, client=None, cache_liens=None, max_resolutions
         date_defaut = d_veille or date_mail or date_depuis_nom(os.path.basename(f), aujourdhui) or aujourdhui
         rapport["veilles"].append({"date": d_veille.isoformat() if d_veille else "", "articles": len(items)})
         if not items:
-            rapport["erreurs"].append("veille du %s : aucun article Newsdesk reconnu" % (d_veille or "?"))
+            rapport["erreurs"].append("watch of %s: no Newsdesk article recognised" % (d_veille or "?"))
         for it in items:
             cle = it["id_nd"] or _cle(it["titre"])
             if cle in par_cle or _cle(it["titre"]) in {_cle(x["titre"]) for x in par_cle.values()}:

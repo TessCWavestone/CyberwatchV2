@@ -85,7 +85,7 @@ def collecter(src, client, memoire, depuis, maintenant, max_archives=400):
     try:
         noms = archives_disponibles(client)
     except Exception as e:
-        etat.update(mode="erreur", erreur="Liste des archives DILA illisible : %s" % str(e)[:120])
+        etat.update(mode="erreur", erreur="DILA archive list unreadable: %s" % str(e)[:120])
         return [], etat
     derniere = memoire.get("derniere_archive", "")
     a_lire = [n for n in noms if n > derniere and dt.date(int(n[5:9]), int(n[9:11]), int(n[11:13])) >= depuis]
@@ -97,7 +97,7 @@ def collecter(src, client, memoire, depuis, maintenant, max_archives=400):
             textes = lire_archive(r.content)
             lues += 1
         except Exception as e:
-            erreurs.append("%s : %s" % (n, str(e)[:80]))
+            erreurs.append("%s: %s" % (n, str(e)[:80]))
             continue
         for t in textes:
             if MESURES_INDIVIDUELLES.search(t["titre"]):
@@ -112,7 +112,7 @@ def collecter(src, client, memoire, depuis, maintenant, max_archives=400):
             })
         memoire["derniere_archive"] = n
     etat.update(nb_trouves=len(arts), erreur=" ; ".join(erreurs[:5]),
-                page="%d archive(s) du JO lue(s)" % lues)
+                page="%d Official Journal archive(s) read" % lues)
     if erreurs and not lues:
         etat["mode"] = "erreur"
     return arts, etat

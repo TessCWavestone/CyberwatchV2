@@ -151,4 +151,4 @@ def generer(articles, meta, referentiel, dossier, jours=60):
             canvas.restoreState()
 
         doc.build(histoire, onFirstPage=pied, onLaterPages=pied)
-        print("Export PDF : %s (%d Ko)" % (os.path.basename(chemin), os.path.getsize(chemin) // 1024))
+        print("PDF export: %s (%d KB)" % (os.path.basename(chemin), os.path.getsize(chemin) // 1024))

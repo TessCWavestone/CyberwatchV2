@@ -45,7 +45,7 @@ def texte_principal(html):
 def lire_page(client, url):
     """Retourne (texte, erreur)."""
     if not url or not url.startswith("http"):
-        return "", "pas d'adresse"
+        return "", "no address"
     try:
         r = client.get(url)
     except PermissionError:
@@ -53,12 +53,12 @@ def lire_page(client, url):
     except Exception as e:
         return "", str(e)[:80]
     if not any(t in r.headers.get("Content-Type", "") for t in TYPES_HTML):
-        return "", "pas une page HTML"
+        return "", "not an HTML page"
     try:
         texte = texte_principal(r.text)
     except Exception as e:
-        return "", "lecture impossible : " + str(e)[:60]
-    return texte, ("" if len(texte) >= 200 else "page sans texte lisible (contenu en JavaScript ?)")
+        return "", "reading failed: " + str(e)[:60]
+    return texte, ("" if len(texte) >= 200 else "page without readable text (JavaScript content?)")
 
 
 def extrait(texte, titre=""):

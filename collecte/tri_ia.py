@@ -319,7 +319,7 @@ class TriIA:
         nom = os.environ.get("VEILLE_ENTREPRISE", "").strip() or "un fabricant de diagnostic in vitro"
         self.systeme = CRITERES.format(entreprise=ENTREPRISE.format(nom=nom), pays=PAYS)
         if not c.get("actif"):
-            self.erreur = "Tri par l'IA désactivé (config/veille.json › ia_tri)."
+            self.erreur = "AI triage disabled (config/veille.json › ia_tri)."
             return
         try:
             from huggingface_hub import hf_hub_download
@@ -328,7 +328,7 @@ class TriIA:
             self.llm = Llama(model_path=chemin, n_ctx=c["contexte"], n_threads=os.cpu_count() or 4,
                              verbose=False, seed=0)
         except Exception as e:
-            self.erreur = "IA de tri indisponible (%s) : tri par les règles seules." % str(e)[:160]
+            self.erreur = "AI triage unavailable (%s): rules-only sorting." % str(e)[:160]
 
     @property
     def actif(self):
@@ -381,7 +381,7 @@ class TriIA:
             if (a.get("ia") or {}).get("v") == VERSION and not (a.get("_texte") and not a["ia"].get("page")):
                 continue
             if n >= self.cfg["max_articles"] or time.time() - debut > 60 * self.cfg["budget_minutes"]:
-                self.erreur = "Temps imparti atteint : %d articles triés par l'IA, les autres le seront à la prochaine collecte." % n
+                self.erreur = "Time limit reached: %d articles sorted by the AI, the others will be at the next collection." % n
                 break
             try:
                 d = self.juger(a)

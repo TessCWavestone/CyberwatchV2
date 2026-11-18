@@ -79,12 +79,12 @@ def _travail(cfg_ia, lots, budget_s, file):
     debut = time.time()
     for a, texte in lots:
         if time.time() - debut > budget_s:
-            file.send(("erreur", "temps imparti atteint : la suite à la prochaine collecte"))
+            file.send(("erreur", "time limit reached: the rest at the next collection"))
             break
         try:
             file.send(("ok", (a["id"],) + tuple(ia.resumer(a, texte))))
         except Exception as e:
-            file.send(("erreur", "erreur IA : %s" % str(e)[:80]))
+            file.send(("erreur", "AI error: %s" % str(e)[:80]))
     file.send(("fin", None))
     file.close()
 
@@ -124,9 +124,9 @@ def _resumer_isole(ia, lots, budget_s):
     p.join(timeout=60)
     if p.is_alive():
         p.terminate()
-        msg = "processus des résumés arrêté (trop long)"
+        msg = "summary process stopped (too long)"
     elif p.exitcode not in (0, None):
-        msg = "le modèle s'est arrêté brutalement (code %s) : %d résumés gardés, la suite à la prochaine collecte" % (p.exitcode, len(res))
+        msg = "the model crashed (code %s): %d summaries kept, the rest at the next collection" % (p.exitcode, len(res))
     return res, msg
 
 
@@ -136,9 +136,9 @@ def mettre_a_jour(liste, ia, trad, client, cfg, aujourdhui, id_version, dossier)
     mdp = os.environ.get("SLIDES_MOT_DE_PASSE", "").strip()
     chemin = os.path.join(dossier, "resumes.enc.json")
     if not c["actif"]:
-        return 0, "désactivé (config/veille.json › ia_resume)"
+        return 0, "disabled (config/veille.json › ia_resume)"
     if not mdp:
-        return 0, "secret SLIDES_MOT_DE_PASSE absent : aucun résumé"
+        return 0, "SLIDES_MOT_DE_PASSE secret missing: no summary"
     registre = {}
     if os.path.exists(chemin):
         try:
@@ -192,4 +192,4 @@ def mettre_a_jour(liste, ia, trad, client, cfg, aujourdhui, id_version, dossier)
         f.write(texte)
     with open(os.path.join(dossier, "resumes.enc.js"), "w", encoding="utf-8") as f:
         f.write("window.CW_RESUMES_ENC = %s;\n" % texte)
-    return n, msg + ("" if msg else "") + (" ; %d résumés au total" % len(registre))
+    return n, msg + ("" if msg else "") + (" ; %d summaries in total" % len(registre))

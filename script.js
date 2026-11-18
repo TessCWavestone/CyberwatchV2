@@ -36,7 +36,7 @@
     var m = /[?&]lang=(fr|en)/.exec(location.search);
     if (m) return m[1];
     try { var s = localStorage.getItem('cw-lang'); if (s === 'fr' || s === 'en') return s; } catch (e) {}
-    return (navigator.language || 'fr').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+    return 'en';   // v13.3 : anglais par défaut ; le bouton FR reste et le choix est mémorisé
   }
   var LANG = langueInitiale();
   document.documentElement.lang = LANG;
@@ -1584,7 +1584,27 @@
     [/Doublon de « ([^»]+) » : non interrogée\./g, 'Duplicate of “$1”: not queried.'], [/Remplacée par « ([^»]+) »\./g, 'Replaced by “$1”.'],
     [/Désactivée dans la liste des sources \(config\/sources\.xlsx\)/g, 'Disabled in the source list (config/sources.xlsx)']
   ];
-  function traduireErreur(txt) { if (LANG !== 'en') return txt; ERREURS_EN.forEach(function (r) { txt = txt.replace(r[0], r[1]); }); return txt; }
+  // v13.3 : la collecte écrit ses messages en anglais (langue par défaut) ; traduits ici pour la version française.
+  // ERREURS_EN reste pour les anciens messages en français encore présents dans les données.
+  var ERREURS_FR = [
+    [/Page (\S+) unreachable: /g, 'Page $1 inaccessible : '], [/Feed (\S+) unreadable: /g, 'Flux $1 illisible : '],
+    [/Archive (\S+): /g, 'Archives $1 : '],
+    [/No article link found on (\S+) \(page probably loaded with JavaScript\)/g, "Aucun lien d'article détecté sur $1 (page probablement chargée en JavaScript)"],
+    [/disallowed for robots by the site's robots\.txt/g, 'interdit aux robots par le robots.txt du site'],
+    [/Removed from the site: no longer queried\./g, 'Retirée depuis le site : plus interrogée.'],
+    [/DILA archive list unreadable: /g, 'Liste des archives DILA illisible : '], [/(\d+) Official Journal archive\(s\) read/g, '$1 archive(s) du JO lue(s)'],
+    [/watch of (\S+): no Newsdesk article recognised/g, 'veille du $1 : aucun article Newsdesk reconnu'],
+    [/Removed on ([\d\/]+): the site blocks robots \(403 error or protected page\)\./g, 'Retirée le $1 : le site bloque les robots (erreur 403 ou page protégée).'],
+    [/Removed on ([\d\/]+): page built with JavaScript, no article readable by the server\./g, 'Retirée le $1 : page construite en JavaScript, aucun article lisible par le serveur.'],
+    [/Duplicate of “([^”]+)”: not queried\./g, 'Doublon de « $1 » : non interrogée.'], [/Replaced by “([^”]+)”\./g, 'Remplacée par « $1 ».'],
+    [/Disabled in the source list \(config\/sources\.xlsx\)/g, 'Désactivée dans la liste des sources (config/sources.xlsx)'],
+    [/Translation engine unavailable /g, 'Moteur de traduction indisponible '], [/Translation (\S+) failed: /g, 'Traduction $1 impossible : ']
+  ];
+  function traduireErreur(txt) {
+    txt = txt || '';
+    (LANG === 'en' ? ERREURS_EN : ERREURS_FR).forEach(function (r) { txt = txt.replace(r[0], r[1]); });
+    return txt;
+  }
   function inactifSrc(s) { return s.acces === 'inactive' || s.acces === 'retiree'; }
   function accesDe(s) { return s.acces || (s.mode === 'erreur' ? 'ko' : (s.erreur ? 'partielle' : 'ok')); }
 
@@ -1636,7 +1656,7 @@
     document.getElementById('etat-filtres').addEventListener('choix', function (e) { choix = e.detail.getAttribute('data-a'); filtrer(); });
     rech.addEventListener('input', filtrer);
     var tr = META.traduction, st = document.getElementById('trad-status');
-    if (tr && tr.active) st.textContent = tr.moteur ? t('trad_ok')(tr.faites || 0, tr.en_attente || 0) : t('trad_off') + (tr.erreur || '');
+    if (tr && tr.active) st.textContent = tr.moteur ? t('trad_ok')(tr.faites || 0, tr.en_attente || 0) : t('trad_off') + traduireErreur(tr.erreur || '');
   }
 
   /* Couverture : date du dernier article pertinent par pays et par rubrique (rouge si > 60 jours) */
@@ -2601,12 +2621,13 @@
   }
   function libelleEtape(nom) {
     var e = t('cs_etapes'); nom = nom || '';
-    if (/horaire/i.test(nom)) return e.garde;
+    // noms des étapes de veille.yml (en anglais depuis v13.3 ; anciens noms français gardés)
+    if (/horaire|schedule/i.test(nom)) return e.garde;
     if (/RKC/.test(nom)) return e.rkc;
-    if (/Collecter/i.test(nom)) return e.collecte;
-    if (/Enregistrer/i.test(nom)) return e.enreg;
-    if (/Python|d[ée]pendances|mod[eè]les|cache/i.test(nom)) return e.outils;
-    if (/site|pages|Publier|artifact/i.test(nom)) return e.publi;
+    if (/Collecter|Collect new/i.test(nom)) return e.collecte;
+    if (/Enregistrer|Save data/i.test(nom)) return e.enreg;
+    if (/Python|d[ée]pendances|depend|mod[eè]les|models|triage AI|cache/i.test(nom)) return e.outils;
+    if (/site|pages|Publier|Publish|artifact/i.test(nom)) return e.publi;
     return e.prep;
   }
   function boutonLancement() { return document.getElementById('lancer-maj'); }

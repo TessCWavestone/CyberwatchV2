@@ -25,7 +25,7 @@ API, pas d'abonnement, pas d'IA générative, rien à payer.
 - **Test rétrospectif à l'aveugle** (`tests/retro/`) : 10 textes, 145 publications réelles 2018-2026.
   5 textes de réglage (NIS2, CRA, AI Act, EHDS, ENS) et **5 textes de contrôle jamais utilisés pour régler**
   (DORA, Data Act, CER, PLD, UK Cyber Security and Resilience Bill). Le nom de chaque texte est « oublié »
-  (le sujet reste visible). Lancement avec le vrai modèle : Actions › **Cyber Watch - test rétrospectif**.
+  (le sujet reste visible). Lancement avec le vrai modèle : Actions › **Cyber Watch - retrospective test**.
 - Une alerte dont l'article a ensuite été écarté (avis d'un lecteur, règles) disparaît des points clés.
 - Bandeau d'avertissement si le modèle de pertinence n'a pas pu être installé lors d'une collecte.
 - Workflow : la publication du site est une étape séparée (une autorisation GitHub bloquée n'empêche plus la collecte).
@@ -35,7 +35,7 @@ API, pas d'abonnement, pas d'IA générative, rien à payer.
 Le zip ne contient **que les 11 fichiers modifiés ou nouveaux** : les déposer sur GitHub en remplaçant
 les anciens (même emplacement). Ne pas toucher au dossier `data/`, ni à `config/sources.xlsx`,
 `config/sources_manuelles.json`, `config/retours.json`. Puis lancer une collecte
-(Actions › Cyber Watch - collecte › Run workflow). Rien d'autre à faire.
+(Actions › Cyber Watch - collection › Run workflow). Rien d'autre à faire.
 
 Fichiers : `index.html`, `script.js`, `style.css`, `README.md`, `.github/workflows/veille.yml`,
 `collecte/collecte.py`, `collecte/regles.py`, `collecte/alertes.py` (nouveau), `config/veille.json`,
@@ -100,7 +100,7 @@ Nouveautés :
    non-collaborateurs.
 4. **Veille RKC** : rien ne change, déposez le mail `.msg` comme avant dans le
    dépôt privé (le Word n'est plus nécessaire).
-5. **Lancer une collecte** (Actions → Cyber Watch - collecte → Run workflow). La
+5. **Lancer une collecte** (Actions → Cyber Watch - collection → Run workflow). La
    première collecte v4 est plus longue (toutes les notes sont recalculées).
 
 Ce qui change : textes clés jamais écartés, « très pertinent » réservé aux
@@ -126,7 +126,7 @@ traductions en boucle, dates d'événements prises pour des échéances).
 - **Textes applicables** : titres traduits en français (titre d'origine affiché dessous).
 - **Collecte du lundi** : créneaux décalés (7 h 17 heure de Paris), car GitHub retarde ou abandonne souvent
   les tâches programmées « pile à l'heure » (créneaux de secours retirés en v5). Vérification : Actions ›
-  Cyber Watch - collecte, les lancements programmés apparaissent avec l'événement « schedule ».
+  Cyber Watch - collection, les lancements programmés apparaissent avec l'événement « schedule ».
 
 ## Contenu du dossier
 
@@ -211,7 +211,7 @@ politique de votre organisation GitHub : demandez-la à son administrateur.
 
 ### Étape 5 : lancer la première collecte
 
-1. Onglet **Actions**, puis **Cyber Watch - collecte** dans la liste de gauche.
+1. Onglet **Actions**, puis **Cyber Watch - collection** dans la liste de gauche.
 2. Cliquez sur **Run workflow**, puis sur **Run workflow**.
 3. Attendez 3 à 8 minutes que la pastille passe au vert.
 4. L'adresse du site s'affiche dans le récapitulatif du run, et dans
@@ -225,7 +225,7 @@ consultation du site n'en demande pas.
 
 ### Étape 6 : constituer la base depuis le 1er janvier 2026 (une seule fois)
 
-1. **Actions → Cyber Watch - collecte → Run workflow**.
+1. **Actions → Cyber Watch - collection → Run workflow**.
 2. Dans le champ **« Rattrapage des archives depuis cette date »**, tapez
    `2026-01-01`, puis **Run workflow**. Comptez 20 à 60 minutes.
 
@@ -382,7 +382,7 @@ Les titres de flux sont souvent vagues. Depuis la v6, la collecte ne dépend plu
 Temps ajouté à la collecte : environ 20 à 30 minutes (dans le temps gratuit de GitHub Actions). Réglages :
 `config/veille.json` (`lecture_pages_max`, `lecture_pages_jours`, `sens_max_articles`, `sens_budget_secondes`).
 
-**Test rétrospectif** : Actions › « Cyber Watch - test rétrospectif » › Run workflow (≈ 30 à 60 minutes). Il rejoue
+**Test rétrospectif** : Actions › « Cyber Watch - retrospective test » › Run workflow (≈ 30 à 60 minutes). Il rejoue
 de vraies publications de 10 textes (NIS2, CRA, AI Act, EHDS, ENS, DORA, Data Act, CER, PLD, loi britannique)
 « à l'aveugle » de trois façons (mots seuls, + sens, + page), vérifie « qui est concerné » sur des phrases dont la
 réponse est connue, et mesure le nombre de nouveaux points clés par mois sur les vraies données. Le rapport s'affiche
@@ -401,7 +401,7 @@ critères écrits en clair (`collecte/tri_ia.py`). Elle ne rédige rien pour le 
 - Nom de l'entreprise suivie : donné seulement à l'IA, par le secret GitHub `VEILLE_ENTREPRISE`
   (Settings › Secrets and variables › Actions › New repository secret). Il n'est écrit ni dans le dépôt ni sur le site.
 - Réglages : `config/veille.json` › `ia_tri` (modèle, temps maximal par collecte, `actif: false` pour revenir aux règles seules).
-- Test : Actions › « Cyber Watch - test du tri par l'IA » › Run workflow : compare l'IA, les règles et un jeu de
+- Test : Actions › « Cyber Watch - AI triage test » › Run workflow : compare l'IA, les règles et un jeu de
   référence de 300 articles réels notés (`tests/ia/jeu_reference.json`).
 
 ## Utilisation au quotidien

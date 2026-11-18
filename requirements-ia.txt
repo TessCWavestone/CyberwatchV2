@@ -1,4 +1,6 @@
 # v7 : tri des articles par une petite IA open source exécutée sur le serveur GitHub (gratuite, sans clé).
-# llama-cpp-python : version précompilée pour processeur (index indiqué dans le workflow).
-llama-cpp-python>=0.3.2
+# v13.4 : llama-cpp-python est installé par collecte/installer_ia.sh (compilé pour tous les processeurs, version
+# fixée dans ce script, mis en cache) : la version précompilée plantait sur certaines machines (« Illegal instruction »).
+# Ce fichier sert à une installation à la main : pip install -r requirements-ia.txt
+llama-cpp-python==0.3.16
 huggingface_hub>=0.23

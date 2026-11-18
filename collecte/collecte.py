@@ -1149,7 +1149,14 @@ def main():
     # v7 — Tri par une petite IA open source (gratuite, sans clé, exécutée ici) : lit titre, résumé et début de la
     # page, répond pertinent / à surveiller / pas pertinent selon des critères écrits (collecte/tri_ia.py)
     t_ia = time.time()
-    ia = tri_ia.TriIA(cfg)
+    # v13.4 : l'IA est d'abord testée dans un processus séparé ; si elle plante (processeur non pris en charge…),
+    # la collecte continue avec les règles seules au lieu de s'arrêter
+    ia_ok, ia_msg = tri_ia.sonde(cfg)
+    if ia_ok:
+        ia = tri_ia.TriIA(cfg)
+    else:
+        ia = tri_ia.TriIA(dict(cfg, ia_tri=dict(cfg.get("ia_tri") or {}, actif=False)))
+        ia.erreur = ia_msg
     if ia.actif:
         # gardés par les règles, plus les écartés « limites » (source officielle ou note suffisante, sans bruit) :
         # les écartés pour bruit (vulnérabilités, événements…) ne sont pas soumis à l'IA (test du 14/10)

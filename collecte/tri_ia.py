@@ -221,6 +221,48 @@ _TEMPS_LECTURE = _re.compile(r"\s\d{1,2} min\b")
 _SIGNATURE = _re.compile(r"\s(?:[Aa]v|[Bb]y|[Pp]ar|[Vv]on|[Dd]oor|[Pp]or|[Dd]i|[Oo]f)\s+[A-ZÅÄÖÉ][\w-]+\s+[A-ZÅÄÖÉ][\w-]+\s+\d")
 
 
+def _sonde_fils(cfg, file):
+    """Processus fils : charge le modèle et juge un article fictif. Un plantage ici n'atteint pas la collecte."""
+    ia = TriIA(cfg)
+    if not ia.actif:
+        file.send(("indisponible", ia.erreur))
+        return
+    try:
+        ia.juger({"titre": "Commission publishes guidelines on the security of medical device software",
+                  "resume": "Test article.", "source": "test", "zone": "Europe", "date": "2026-01-01"})
+    except Exception:
+        pass   # une réponse hors format n'est pas un plantage
+    file.send(("ok", ""))
+
+
+def sonde(cfg, delai_s=2400):
+    """v13.4 (test du 18/11/2026 : « Illegal instruction (core dumped) ») : vérifie, dans un processus séparé, que
+    l'IA se charge et répond sans planter. Retourne (True, "") ou (False, message). Si la sonde échoue, la collecte
+    tourne avec les règles seules au lieu de s'arrêter."""
+    if not (cfg.get("ia_tri") or {}).get("actif", True):
+        return True, ""   # IA désactivée : TriIA le dira lui-même
+    import multiprocessing as mp
+    ctx = mp.get_context("spawn")
+    lecture_f, ecriture = ctx.Pipe(duplex=False)
+    p = ctx.Process(target=_sonde_fils, args=(cfg, ecriture), daemon=True)
+    p.start()
+    ecriture.close()
+    res = None
+    try:
+        if lecture_f.poll(delai_s):
+            res = lecture_f.recv()
+    except (EOFError, OSError):
+        res = None
+    p.join(timeout=60)
+    if p.is_alive():
+        p.terminate()
+        return False, "AI triage skipped for this run: the startup check took too long."
+    if res is None or p.exitcode not in (0, None):
+        return False, ("AI triage skipped for this run: the model crashed during the startup check (code %s, "
+                       "e.g. processor not supported). Rules-only sorting." % p.exitcode)
+    return True, ""
+
+
 def decider(d, textes_cles=(), titre=""):
     """Classement calculé (et non choisi par l'IA) à partir de ses réponses : (avis, motif).
     Test du 16/10 : l'IA remplissait souvent « exclusion » même pour des articles pertinents (sanctions sur des

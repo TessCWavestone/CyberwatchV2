@@ -124,12 +124,19 @@ jobs:
 
       # v7 : petite IA open source de tri (llama.cpp, version précompilée pour processeur). Si elle ne
       # s'installe pas, la collecte continue avec les règles seules.
+      - name: Cache the triage AI build (portable, compiled once)
+        if: steps.garde.outputs.lancer == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/llama-wheel
+          key: llama-cpp-portable-0.3.16-py312-v1
+
       - name: Install the triage AI (open source, free)
         if: steps.garde.outputs.lancer == 'true'
         continue-on-error: true
         env:
           PIP_NO_CACHE_DIR: "1"
-        run: pip install -r requirements-ia.txt --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+        run: bash collecte/installer_ia.sh
 
       - name: Cache the models (downloaded only once)
         if: steps.garde.outputs.lancer == 'true'

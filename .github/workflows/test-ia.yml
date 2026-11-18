@@ -43,12 +43,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Cache the triage AI build (portable, compiled once)
+        uses: actions/cache@v4
+        with:
+          path: ~/llama-wheel
+          key: llama-cpp-portable-0.3.16-py312-v1
+
       - name: Install dependencies and the triage AI
         env:
           PIP_NO_CACHE_DIR: "1"   # pip ne garde pas de copie des paquets téléchargés (plusieurs Go économisés)
         run: |
           pip install -r requirements.txt
-          pip install -r requirements-ia.txt --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+          bash collecte/installer_ia.sh
 
       - name: Cache the model
         uses: actions/cache@v4

@@ -77,7 +77,10 @@ IA, NOTE_IA = None, ""
 if "ia" in MODES:
     import tri_ia
     t0 = time.time()
-    IA = tri_ia.TriIA(cfg)
+    _ok, _msg = tri_ia.sonde(cfg)   # v13.4 : un plantage de l'IA ne fait plus échouer tout le test
+    IA = tri_ia.TriIA(cfg if _ok else dict(cfg, ia_tri=dict(cfg.get("ia_tri") or {}, actif=False)))
+    if not _ok:
+        IA.erreur = _msg
     IA.cfg["max_articles"], IA.cfg["budget_minutes"] = 10 ** 6, 10 ** 6   # pas de limite pour le test
     NOTE_IA = ("triage AI \"%s\" loaded in %d s" % (IA.cfg.get("modele_fichier"), time.time() - t0)) if IA.actif else IA.erreur
     print(NOTE_IA)

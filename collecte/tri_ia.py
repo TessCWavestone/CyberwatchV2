@@ -221,46 +221,47 @@ _TEMPS_LECTURE = _re.compile(r"\s\d{1,2} min\b")
 _SIGNATURE = _re.compile(r"\s(?:[Aa]v|[Bb]y|[Pp]ar|[Vv]on|[Dd]oor|[Pp]or|[Dd]i|[Oo]f)\s+[A-ZÅÄÖÉ][\w-]+\s+[A-ZÅÄÖÉ][\w-]+\s+\d")
 
 
-def _sonde_fils(cfg, file):
-    """Processus fils : charge le modèle et juge un article fictif. Un plantage ici n'atteint pas la collecte."""
-    ia = TriIA(cfg)
+def _sonde_fils():
+    """Processus fils (lancé par sonde) : charge le modèle et juge un article fictif. Un plantage ici n'atteint pas
+    le programme principal. Configuration lue sur l'entrée standard ; réponse : « OK » ou « INDISPONIBLE <message> »."""
+    import sys
+    ia = TriIA(json.loads(sys.stdin.read()))
     if not ia.actif:
-        file.send(("indisponible", ia.erreur))
+        print("INDISPONIBLE " + ia.erreur)
         return
     try:
         ia.juger({"titre": "Commission publishes guidelines on the security of medical device software",
                   "resume": "Test article.", "source": "test", "zone": "Europe", "date": "2026-01-01"})
     except Exception:
         pass   # une réponse hors format n'est pas un plantage
-    file.send(("ok", ""))
+    print("OK")
 
 
 def sonde(cfg, delai_s=2400):
     """v13.4 (test du 18/11/2026 : « Illegal instruction (core dumped) ») : vérifie, dans un processus séparé, que
     l'IA se charge et répond sans planter. Retourne (True, "") ou (False, message). Si la sonde échoue, la collecte
-    tourne avec les règles seules au lieu de s'arrêter."""
+    tourne avec les règles seules au lieu de s'arrêter.
+    v13.5 : processus lancé par subprocess (et non multiprocessing, qui relançait le script principal dans le fils :
+    plantage « code 1 » du test rétrospectif du 18/11 avant même de charger l'IA)."""
     if not (cfg.get("ia_tri") or {}).get("actif", True):
         return True, ""   # IA désactivée : TriIA le dira lui-même
-    import multiprocessing as mp
-    ctx = mp.get_context("spawn")
-    lecture_f, ecriture = ctx.Pipe(duplex=False)
-    p = ctx.Process(target=_sonde_fils, args=(cfg, ecriture), daemon=True)
-    p.start()
-    ecriture.close()
-    res = None
+    import subprocess
+    import sys
+    ici = os.path.dirname(os.path.abspath(__file__))
+    code = "import sys; sys.path.insert(0, %r); import tri_ia; tri_ia._sonde_fils()" % ici
     try:
-        if lecture_f.poll(delai_s):
-            res = lecture_f.recv()
-    except (EOFError, OSError):
-        res = None
-    p.join(timeout=60)
-    if p.is_alive():
-        p.terminate()
+        r = subprocess.run([sys.executable, "-c", code], input=json.dumps(cfg, default=str), capture_output=True,
+                           text=True, timeout=delai_s)
+    except subprocess.TimeoutExpired:
         return False, "AI triage skipped for this run: the startup check took too long."
-    if res is None or p.exitcode not in (0, None):
-        return False, ("AI triage skipped for this run: the model crashed during the startup check (code %s, "
-                       "e.g. processor not supported). Rules-only sorting." % p.exitcode)
-    return True, ""
+    sortie = (r.stdout or "").strip().splitlines()
+    if r.returncode == 0 and sortie and sortie[-1] == "OK":
+        return True, ""
+    if r.returncode == 0 and sortie and sortie[-1].startswith("INDISPONIBLE"):
+        return True, ""   # IA absente (non installée…) : TriIA le dira lui-même, sans plantage
+    detail = ((r.stderr or "").strip().splitlines() or [""])[-1][:160]
+    return False, ("AI triage skipped for this run: the model crashed during the startup check (code %s%s). "
+                   "Rules-only sorting." % (r.returncode, (": " + detail) if detail else ""))
 
 
 def decider(d, textes_cles=(), titre=""):

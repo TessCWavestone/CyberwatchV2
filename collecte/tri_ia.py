@@ -17,7 +17,7 @@ import json
 import os
 import time
 
-VERSION = "t4"
+VERSION = "t5"   # v14 (20/11/2026) : consignes élargies aux données et au numérique (tests rétrospectifs du 18-19/11)
 
 PAYS = ("Union européenne (textes européens), Allemagne, Autriche, Belgique, Bulgarie, Danemark, Espagne, "
         "Finlande, France, Grèce, Hongrie, Irlande, Italie, Luxembourg, Norvège, Pays-Bas, Pologne, Portugal, "
@@ -69,6 +69,14 @@ Analyse l'article en répondant à CINQ questions. Le classement final est calcu
    artificielle ; la sécurité des logiciels, du cloud ou des produits connectés ; l'identité numérique ; la résilience
    des entités critiques (NIS2, CER) ; ou l'intégrité des données des systèmes informatisés en laboratoire (BPF
    Annexe 11 / 22, GAMP5).
+   « oui » aussi pour la RÉGULATION DES DONNÉES ET DU NUMÉRIQUE qui s'impose aux entreprises : accès, partage et
+   réutilisation des données (données des produits connectés, données industrielles, espaces européens de données,
+   données de santé), exigences sur les produits numériques et les logiciels (sécurité, mises à jour, conformité),
+   services cloud, systèmes d'IA ; et la cybersécurité du secteur public quand elle s'impose aussi à ses
+   fournisseurs et prestataires.
+   ATTENTION : le SUJET porte sur le THÈME, pas sur le secteur. Un texte sur les données, le numérique, l'IA ou la
+   cybersécurité qui vise toutes les entreprises, tous les produits ou plusieurs secteurs a « sujet » = oui, MÊME s'il
+   ne parle ni de santé ni de dispositifs médicaux.
    Pour les dispositifs médicaux / de diagnostic (MDR, IVDR, MDCG) : « oui » SEULEMENT si l'article porte sur leur
    cybersécurité, leurs logiciels ou leurs données ; « non » pour le remboursement, la prise en charge, l'évaluation
    clinique, la vigilance, le marquage CE ou les organismes notifiés sans aspect cyber.
@@ -79,8 +87,9 @@ Analyse l'article en répondant à CINQ questions. Le classement final est calcu
 3. APPLICABLE à l'entreprise (oui / incertain / non) : « oui » si le texte vise toutes les entreprises, plusieurs
    secteurs dont la santé, le secteur santé, les dispositifs médicaux / DIV, les fabricants de produits connectés ou
    de logiciels, les fournisseurs des hôpitaux et laboratoires ou le traitement de données, dans un pays suivi ou au
-   niveau européen. « incertain » si le texte vise seulement les administrations publiques, ou si l'article ne
-   permet pas de savoir. « non » si le texte vise un autre secteur ou un pays non suivi (sauf portée mondiale).
+   niveau européen. « oui » aussi si le texte vise le secteur public ET ses fournisseurs ou prestataires (services,
+   solutions ou systèmes informatiques). « incertain » si le texte vise SEULEMENT les administrations publiques, ou
+   si l'article ne permet pas de savoir. « non » si le texte vise un autre secteur ou un pays non suivi (sauf portée mondiale).
 
 4. SECTEUR VISÉ (oui / non), pour une alerte de vulnérabilité : « oui » seulement si la vulnérabilité (aspect
    cybersécurité) touche SPÉCIFIQUEMENT des dispositifs médicaux ou de diagnostic, des instruments, automates ou
@@ -89,16 +98,20 @@ Analyse l'article en répondant à CINQ questions. Le classement final est calcu
    d'exploitation, outil de développement…) : « non ». Pour les autres types d'article : « non ».
 
 5. EXCLUSION (une seule, « aucune » sinon) :
-- autre_secteur : finance (banques, assurances, crypto-actifs, DORA), télécoms (opérateurs, spectre, radiodiffusion),
-  automobile et véhicules connectés, aviation, ferroviaire, maritime, énergie seule ;
+- autre_secteur : texte qui vise EXCLUSIVEMENT un de ces secteurs : finance (banques, assurances, crypto-actifs,
+  DORA), télécoms (opérateurs, spectre, radiodiffusion), automobile et véhicules connectés, aviation, ferroviaire,
+  maritime, énergie seule. Jamais pour un texte qui vise tous les secteurs ou tous les produits ;
 - medicaments : médicaments seuls (autorisation, essais cliniques, pénuries, remboursement, pharmacovigilance,
   pharmacogénomique) ;
-- sante_hors_sujet : santé, dispositifs médicaux, diagnostic ou laboratoires SANS aspect cyber (remboursement,
+- sante_hors_sujet : SEULEMENT pour un article qui parle de santé : santé, dispositifs médicaux, diagnostic ou
+  laboratoires SANS aspect cyber, données ou numérique (remboursement,
   prise en charge, évaluation des technologies de santé, organisation, financement ou personnel des soins, santé
   publique, recherche médicale, vigilance…) ;
 - societe_grand_public : santé mentale, cyberharcèlement, protection des mineurs en ligne et réseaux sociaux,
   désinformation, conseils au grand public ;
-- dsa_dma : DSA, DMA, protection des consommateurs en ligne ;
+- dsa_dma : règles des PLATEFORMES EN LIGNE et des services aux consommateurs : réseaux sociaux, moteurs de
+  recherche, places de marché, modération des contenus, concurrence entre grandes plateformes (DSA, DMA…),
+  publicité et protection des consommateurs en ligne, médias et audiovisuel ;
 - hors_europe : sujet hors des pays suivis sans portée mondiale.
 
 Réponds uniquement en JSON : {{"raison": "<une phrase courte>", "type": "<type>", "sujet": "oui|non",
@@ -198,6 +211,23 @@ LOI = _re.compile(r"\b(law|act|bill|regulation|directive|decree|loi|reglement|de
                   r"verordnung|wet|wetsvoorstel|ley|real decreto|legge|decreto|ustaw\w*|zakon\w*|torveny\w*|lag|lov|laki)\b", _re.I)
 
 # PME : article qui ne vise que les PME (étude, guide, aide) : hors périmètre pour un grand groupe industriel
+# v14 : textes qui visent le secteur public ET ses fournisseurs (l'ENS espagnol s'impose aux prestataires
+# informatiques des hôpitaux publics) : jamais écartés comme « public seul »
+PUBLIC_ET_FOURNISSEURS = {"ENS / CPSTIC (Espagne)"}
+FOURNISSEURS = _re.compile(r"fournisseur|prestataire|supplier|provider|vendor|proveedor|prestador|anbieter|lieferant|"
+                           r"dienstleister|leverancier|fornitor|dostawc|contractor", _re.I)
+# v14 : l'exclusion « santé sans lien cyber » n'a de sens que pour un article qui parle de santé (tests du 18-19/11 :
+# l'IA l'utilisait pour le Data Act, le CRA, l'ENS…)
+SANTE = _re.compile(r"sant[eé]|health|gesundheit|salud|salute|saude|zorg|zdrow|terveys|halsa|helse|sundhed|medic|"
+                    r"medizin|hospital|hopita|krankenh|klinik|clinic|diagnos|laborat|patient|pharma|biolog|soins|ehds", _re.I)
+
+# v14 : un TEXTE (loi, règlement…) sur les données ou le numérique, applicable, que la petite IA jugerait quand même
+# « pas cyber » (tests du 18-19/11 : Data Act, EHDS, AI Act) : le sujet est corrigé d'après le titre
+NUMERIQUE = _re.compile(r"cyber|\bdata\b|donnees|\bdaten\w*|\bdatos\b|\bdati\b|gegevens|\bdane\b|artificial intelligence|"
+                        r"intelligence artificielle|kunstliche intelligenz|inteligencia artificial|intelligenza artificiale|"
+                        r"\b(ai|ia|ki)\b|software|logiciel|\bcloud\b|digital|numerique|connected (products|devices)|"
+                        r"produits connectes|vernetzte", _re.I)
+
 PME = _re.compile(r"\b(pme|pmi|tpe|kmu|kmus|smes?|mkb|pymes?|msp|kkv|mittelstand)\b|small (and medium[- ]sized |and medium |business|businesses|firms|companies)|"
                   r"petites et moyennes entreprises|kleine(n)? und mittlere(n)? unternehmen|piccole e medie imprese|"
                   r"pequenas y medianas empresas|male i srednie przedsiebiorstwa|midden- en kleinbedrijf", _re.I)
@@ -277,8 +307,14 @@ def decider(d, textes_cles=(), titre=""):
     sujet = d["sujet"]
     if tc & TEXTES_CYBER and (d["type"] in OFFICIELS or d["type"] == "commentaire"):
         sujet = "oui"
-    if d["exclusion"] != "aucune" and not (sujet == "oui" and d["applicable"] == "oui"):
-        return "pas_pertinent", d["exclusion"]
+    exclusion = d["exclusion"]
+    if exclusion == "sante_hors_sujet" and titre and not SANTE.search(titre):
+        exclusion = "aucune"   # v14 : pas de « santé sans lien cyber » pour un article qui ne parle pas de santé
+    if (sujet != "oui" and exclusion == "aucune" and d["applicable"] == "oui" and d["type"] in OFFICIELS and titre
+            and LOI.search(titre) and NUMERIQUE.search(titre)):
+        sujet = "oui"   # v14 : texte sur les données ou le numérique, applicable : dans le sujet
+    if exclusion != "aucune" and not (sujet == "oui" and d["applicable"] == "oui"):
+        return "pas_pertinent", exclusion
     if sujet != "oui":
         return "pas_pertinent", "hors_sujet"
     if d["applicable"] == "non":
@@ -288,7 +324,8 @@ def decider(d, textes_cles=(), titre=""):
         if PME.search(titre) and not tc:
             return "pas_pertinent", "pme"
         # D1 (retour du 20/10) : administrations publiques seules, ou désignation d'un organisme
-        if (PUBLIC_SEUL.search(titre) or DESIGNATION.search(titre)) and not ENTREPRISES.search(titre):
+        if ((PUBLIC_SEUL.search(titre) or DESIGNATION.search(titre)) and not ENTREPRISES.search(titre)
+                and not FOURNISSEURS.search(titre) and not (tc & PUBLIC_ET_FOURNISSEURS)):
             return "pas_pertinent", "public_seul"
     if d["type"] in OFFICIELS or d["type"] == "commentaire":
         if d["applicable"] != "oui":

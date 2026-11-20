@@ -181,7 +181,14 @@ def type_article(a):
     # point clé « Nouveau texte adopté », toujours « à vérifier » (source non officielle)
     numerote = (a.get("nature") != "officielle" and a.get("pertinence") == "elevee" and texte_numerote(a)
                 and ia.get("sujet") == "oui" and ia.get("applicable") == "oui")
-    if (not a.get("essentiel") and not numerote) or a.get("pertinence") != "elevee" or not _europeen(a):
+    # v14 (décision du 20/11/2026, tests rétrospectifs) : consultation ou projet sur un texte INCONNU, jugé cyber /
+    # données / numérique et applicable par l'IA : point clé « Projet de texte en cours », toujours « à vérifier »
+    # (le but : savoir tôt si le texte en consultation intéresse l'entreprise). Avant, il fallait en plus une note
+    # très haute et le nom d'un instrument (loi, règlement…) : 9 consultations très pertinentes n'étaient pas des
+    # points clés (NIS2 07/2020, CRA 03/2022, EHDS 05/2021, ENS 06/2021, UK 01/2022…).
+    consult = (not a.get("textes_cles") and a.get("pertinence") == "elevee" and ia.get("avis") == "pertinent"
+               and ia.get("type") == "projet_consultation" and ia.get("sujet") == "oui" and ia.get("applicable") == "oui")
+    if (not a.get("essentiel") and not numerote and not consult) or a.get("pertinence") != "elevee" or not _europeen(a):
         return None
     texte = regles.texte_article(a)
     if EXCLUS.search(texte):
@@ -196,6 +203,15 @@ def type_article(a):
                        (((a.get("trad") or {}).get("en") or {}).get("resume") or "")[:300])
     if ETUDE.search(debut) or (tri_ia.PME.search(titre) and not a.get("textes_cles")):
         return None
+    if consult:
+        tt = regles._sa(a.get("titre", "") + " \n " + tr)
+        officielle = a.get("nature") == "officielle"
+        if (officielle or regles.statut(tt) in ("projet", "consultation")) and not SECTEUR_EXCLU.search(
+                tt + " " + regles._sa(a.get("source", ""))):
+            a["a_verifier"] = True
+            return "proposition"
+        if not a.get("essentiel") and not numerote:
+            return None
     statut_a = a.get("statut") or ""
     if a.get("nature") != "officielle":
         # presse, cabinets, veille RKC : l'étape (adopté, projet, consultation…) doit être annoncée dans le TITRE ;

@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-11-18T10:16+00:00",
+ "mise_a_jour": "2026-11-23T16:01+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -7552,9 +7552,9 @@
     "dm_div"
    ],
    "pertinence_v": "v4-62329d164bmodele",
-   "pertinence": "elevee",
+   "pertinence": "moyenne",
    "essentiel": false,
-   "a_verifier": true,
+   "a_verifier": false,
    "textes_cles": [
     "IVDR"
    ],
@@ -7576,6 +7576,10 @@
    ],
    "acronymes": [
     "IVDR"
+   ],
+   "bruit": [
+    "événements / webinaires",
+    "médicaments (hors dispositifs)"
    ]
   },
   {
@@ -7678,6 +7682,199 @@
    "echeances": [],
    "sujets": [],
    "acronymes": []
+  },
+  {
+   "id": "022e6e8961b3",
+   "titre": "EDRi-gram, 19 November 2026",
+   "lien": "https://edri.org/our-work/edri-gram-19-november-2026/",
+   "resume": "What has the EDRi network been up to over the past few weeks? Find out the latest digital rights news in our regular newsletter. In this edition: Making sense of the Digital Fairness Act, a very unmerry birthday to the Digital Omnibus, and more! The post EDRi-gram, 19 November 2026 appeared first on European Digital Rights (EDRi) .",
+   "date": "2026-11-19",
+   "date_estimee": false,
+   "detecte_le": "2026-11-23",
+   "version": "2026-11-23-1601",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.341,
+   "score_bruit": 0.352,
+   "score": 0.341,
+   "themes": [
+    "normes",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "elevee",
+   "essentiel": false,
+   "a_verifier": true,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "EDRi-gram, 19 novembre 2026",
+     "resume": "Qu'est-ce que le réseau EDRi a fait ces dernières semaines ? Découvrez les dernières nouveautés en matière de droits numériques dans notre bulletin régulier. Dans cette édition : Rendre sens à la Digital Fairness Act, un anniversaire de l'omnibus numérique, et plus encore ! L'article EDRi-gram, 19 novembre 2026 est paru en premier sur European Digital Rights (EDRI)."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "acronymes": [
+    "Digital Omnibus"
+   ]
+  },
+  {
+   "id": "04ddf2e8ebf7",
+   "titre": "One year later, a broad coalition tells EU lawmakers: do not simplify away people’s rights with the Digital Omnibus",
+   "lien": "https://edri.org/our-work/one-year-later-digital-omnibus-broad-coalition-tells-eu-lawmakers-do-not-simplify-peoples-rights/",
+   "resume": "On 19 November 2025, the European Commission presented the Digital Omnibus as an exercise in simplification. One year later, 100 organisations and individuals from across civil society are warning that simplification is turning into deregulation, with consequences far beyond the usual digital-rights debate. The post One year later, a broad coalition tells EU lawmakers: do not simplify away people’s rights with the…",
+   "date": "2026-11-19",
+   "date_estimee": false,
+   "detecte_le": "2026-11-23",
+   "version": "2026-11-23-1601",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.58,
+   "score_bruit": 0.381,
+   "score": 0.58,
+   "themes": [
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "Cybersecurity Act / certification UE"
+   ],
+   "motif": "texte clé : Cybersecurity Act / certification UE",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Un an plus tard, une large coalition dit aux législateurs UE : ne pas simplifier les droits des gens avec l'omnibus numérique",
+     "resume": "Le 19 novembre 2025, la Commission européenne a présenté l'omnibus numérique comme un exercice de simplification. Un an plus tard, 100 organisations et particuliers de la société civile avertissent que la simplification se transforme en déréglementation, avec des conséquences bien au-delà du débat habituel sur les droits numériques. The post Un an plus tard, une large coalition dit aux législateurs de UE : ne pas simplifier les droits des..."
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "Digital Omnibus"
+   ],
+   "acronymes": [
+    "Digital Omnibus"
+   ]
+  },
+  {
+   "id": "539baa70c032",
+   "titre": "The Commission invites feedback on its social media ban proposal – join us in venting your frustration!",
+   "lien": "https://edri.org/our-work/participate-in-the-public-consultation-on-the-european-commissions-kids-act-proposal/",
+   "resume": "The European Commission recently published a proposal for a Regulation aiming to ensure greater safety for young people online, called the KIDS Act. It then opened a public consultation for everyone to speak up about their support or concerns – and oh do we have some! The post The Commission invites feedback on its social media ban proposal – join us in venting your frustration! appeared first on European Digital…",
+   "date": "2026-11-18",
+   "date_estimee": false,
+   "detecte_le": "2026-11-23",
+   "version": "2026-11-23-1601",
+   "source": "EDRi (European Digital Rights)",
+   "zone": "Europe",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [
+    "public consultation"
+   ],
+   "groupes": [
+    "Nouveaux textes réglementaires"
+   ],
+   "amende": null,
+   "filtre_pertinence": true,
+   "score_cyber": 0.476,
+   "score_bruit": 0.494,
+   "score": 0.506,
+   "themes": [
+    "infra_critiques",
+    "nis2"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "statut": "consultation",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "La Commission invite les internautes à faire part de leurs commentaires sur sa proposition d'interdiction des médias sociaux – joignez-vous à nous pour dissiper votre frustration!",
+     "resume": "La Commission européenne a récemment publié une proposition de règlement visant à améliorer la sécurité des jeunes en ligne, appelée loi KIDS. Il a ensuite ouvert une consultation publique pour que chacun puisse parler de son soutien ou de ses préoccupations – et oh avons-nous quelques-uns! L'article La Commission invite les internautes à revenir sur sa proposition d'interdiction des médias sociaux – joignez-vous à nous pour dissiper votre frustration ! est apparu en premier sur European Digital..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
+  },
+  {
+   "id": "1c0c9a8474ff",
+   "titre": "PPWR for Medical Devices and In Vitro Diagnostics: What Manufacturers Need to Know Now",
+   "lien": "https://blog.johner-institute.com/regulatory-affairs/ppwr-for-medical-devices-and-in-vitro-diagnostics-what-manufacturers-need-to-know-now/",
+   "resume": "",
+   "date": "2026-11-23",
+   "date_estimee": true,
+   "detecte_le": "2026-11-23",
+   "version": "2026-11-23-1601",
+   "source": "Johner Institut – blog regulatory affairs (MDR/IVDR, AI Act, cybersécurité DM)",
+   "zone": "Allemagne",
+   "nature": "opinion",
+   "rubrique": "secteur",
+   "rubrique_mots_cles": true,
+   "tags": [
+    "Dispositifs médicaux"
+   ],
+   "groupes": [
+    "Termes santé"
+   ],
+   "amende": null,
+   "score_cyber": 0.515,
+   "score_bruit": 0.557,
+   "score": 0.836,
+   "themes": [
+    "dm_div"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [
+    "IVDR"
+   ],
+   "sens_fort": true,
+   "motif": "texte clé : IVDR",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "PPWR pour les dispositifs médicaux et les diagnostics in vitro : ce que les fabricants doivent savoir maintenant",
+     "resume": ""
+    }
+   },
+   "echeances": [],
+   "sujets": [
+    "IVDR"
+   ],
+   "acronymes": [
+    "IVDR"
+   ]
   }
  ]
 }

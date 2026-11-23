@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-11-18T10:16+00:00",
+ "mise_a_jour": "2026-11-23T16:01+00:00",
  "sujets": [
   {
    "id": "pd61e171d30e",
@@ -8,8 +8,45 @@
    "nom": "Digital Omnibus",
    "zone": "Europe",
    "premier_signal": "2026-02-10",
-   "dernier_signal": "2026-10-22",
+   "dernier_signal": "2026-11-19",
    "articles": [
+    {
+     "id": "83d1b9737998",
+     "titre": "One year on, Digital Omnibus may face delays",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Un an plus tard, Digital Omnibus risque d'être retardé"
+      }
+     },
+     "lien": "https://iapp.org/news/a/one-year-on-digital-omnibus-may-face-delays",
+     "source": "IAPP",
+     "zone": "Worldwide",
+     "date": "2026-11-19",
+     "detecte_le": "2026-11-23",
+     "version": "2026-11-23-1601",
+     "statut": "projet",
+     "nature": "presse",
+     "a_verifier": true
+    },
+    {
+     "id": "04ddf2e8ebf7",
+     "titre": "One year later, a broad coalition tells EU lawmakers: do not simplify away people’s rights with the Digital Omnibus",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Un an plus tard, une large coalition dit aux législateurs UE : ne pas simplifier les droits des gens avec l'omnibus numérique"
+      }
+     },
+     "lien": "https://edri.org/our-work/one-year-later-digital-omnibus-broad-coalition-tells-eu-lawmakers-do-not-simplify-peoples-rights/",
+     "source": "EDRi (European Digital Rights)",
+     "zone": "Europe",
+     "date": "2026-11-19",
+     "detecte_le": "2026-11-23",
+     "version": "2026-11-23-1601",
+     "nature": "opinion",
+     "expert": true
+    },
     {
      "id": "9a90e564b411",
      "titre": "EU member states finalize negotiating stance on Digital Omnibus",
@@ -201,49 +238,9 @@
      "nature": "opinion",
      "a_verifier": true,
      "expert": true
-    },
-    {
-     "id": "d9200aced789",
-     "titre": "Reopening GDPR and ePrivacy through the Digital Omnibus: a risky path for EU digital rights",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Réouverture de RGPD et ePrivacy à travers l'omnibus numérique : un chemin risqué pour les droits numériques UE"
-      }
-     },
-     "lien": "https://edri.org/our-work/reopening-gdpr-and-eprivacy-through-the-digital-omnibus-a-risky-path-for-eu-digital-rights/",
-     "source": "EDRi (European Digital Rights)",
-     "zone": "Europe",
-     "date": "2026-02-11",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "193103f3f3a8",
-     "titre": "EDRi urged the Council to demand a proper scrutiny of the Digital Omnibus proposal",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "EDRi invite le Conseil à exiger un examen approprié de la proposition d'omnibus numérique"
-      }
-     },
-     "lien": "https://edri.org/our-work/edri-urges-the-council-to-demand-a-proper-scrutiny-of-the-digital-omnibus-proposal/",
-     "source": "EDRi (European Digital Rights)",
-     "zone": "Europe",
-     "date": "2026-02-10",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
     }
    ],
-   "nb_articles": 12,
+   "nb_articles": 14,
    "nb_sources": 5,
    "statut": "pressenti"
   },
@@ -525,6 +522,154 @@
    ],
    "nb_articles": 1,
    "nb_sources": 1,
+   "statut": "pressenti"
+  },
+  {
+   "id": "ped46f6d6e4f",
+   "sorte": "avis",
+   "texte": "Cybersecurity Act / certification UE",
+   "nom": "",
+   "zone": "Europe",
+   "premier_signal": "2026-04-15",
+   "dernier_signal": "2026-11-19",
+   "articles": [
+    {
+     "id": "022e6e8961b3",
+     "titre": "EDRi-gram, 19 November 2026",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "EDRi-gram, 19 novembre 2026"
+      }
+     },
+     "lien": "https://edri.org/our-work/edri-gram-19-november-2026/",
+     "source": "EDRi (European Digital Rights)",
+     "zone": "Europe",
+     "date": "2026-11-19",
+     "detecte_le": "2026-11-23",
+     "version": "2026-11-23-1601",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "7a8e433a3039",
+     "titre": "Cookies and consent: why ePrivacy matters for our browsing life",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Cookies et consentement: pourquoi ePrivacy importe pour notre vie de navigation"
+      }
+     },
+     "lien": "https://edri.org/our-work/cookies-and-consent-why-eprivacy-matters-for-our-browsing-life/",
+     "source": "EDRi (European Digital Rights)",
+     "zone": "Europe",
+     "date": "2026-06-18",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "a12297a020e9",
+     "titre": "Affordability and CSA2",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Abordabilité et CSA2"
+      }
+     },
+     "lien": "https://ecipe.org/insights/affordability-and-csa2/",
+     "source": "ECIPE (European Centre for International Political Economy)",
+     "zone": "Europe",
+     "date": "2026-06-03",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "c5c7bce2d75a",
+     "titre": "Who Shall Inherit the Cookie Banner?",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Qui héritera de la bannière des cookies ?"
+      }
+     },
+     "lien": "https://ecipe.org/insights/who-shall-inherit-the-cookie-banner/",
+     "source": "ECIPE (European Centre for International Political Economy)",
+     "zone": "Europe",
+     "date": "2026-06-03",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "expert": true
+    },
+    {
+     "id": "77ae9d24e66d",
+     "titre": "China Brings Trade Law to Cybersecurity",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Chine apporte le droit commercial à la cybersécurité"
+      }
+     },
+     "lien": "https://ecipe.org/insights/china-trade-law-cybersecurity/",
+     "source": "ECIPE (European Centre for International Political Economy)",
+     "zone": "Europe",
+     "date": "2026-05-11",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "b69302ae9a43",
+     "titre": "Cybersecurity Act 2 and National Security: Same as It Ever Was",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Loi 2 sur la cybersécurité et la sécurité nationale : comme jamais"
+      }
+     },
+     "lien": "https://ecipe.org/insights/cybersecurity-act-2/",
+     "source": "ECIPE (European Centre for International Political Economy)",
+     "zone": "Europe",
+     "date": "2026-04-29",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    },
+    {
+     "id": "118d6392815c",
+     "titre": "How can the EU protect children online while dismantling the very rules designed to keep them safe?",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Comment le UE peut-il protéger les enfants en ligne tout en démontant les règles conçues pour les protéger ?"
+      }
+     },
+     "lien": "https://edri.org/our-work/how-can-the-eu-protect-children-online-while-dismantling-the-very-rules-designed-to-keep-them-safe/",
+     "source": "EDRi (European Digital Rights)",
+     "zone": "Europe",
+     "date": "2026-04-15",
+     "detecte_le": "2026-09-25",
+     "version": "2026-09-25-1456",
+     "statut": "projet",
+     "nature": "opinion",
+     "a_verifier": true,
+     "expert": true
+    }
+   ],
+   "nb_articles": 7,
+   "nb_sources": 2,
    "statut": "pressenti"
   },
   {
@@ -1250,135 +1395,6 @@
    ],
    "nb_articles": 2,
    "nb_sources": 1,
-   "statut": "pressenti"
-  },
-  {
-   "id": "ped46f6d6e4f",
-   "sorte": "avis",
-   "texte": "Cybersecurity Act / certification UE",
-   "nom": "",
-   "zone": "Europe",
-   "premier_signal": "2026-04-15",
-   "dernier_signal": "2026-06-18",
-   "articles": [
-    {
-     "id": "7a8e433a3039",
-     "titre": "Cookies and consent: why ePrivacy matters for our browsing life",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Cookies et consentement: pourquoi ePrivacy importe pour notre vie de navigation"
-      }
-     },
-     "lien": "https://edri.org/our-work/cookies-and-consent-why-eprivacy-matters-for-our-browsing-life/",
-     "source": "EDRi (European Digital Rights)",
-     "zone": "Europe",
-     "date": "2026-06-18",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "a12297a020e9",
-     "titre": "Affordability and CSA2",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Abordabilité et CSA2"
-      }
-     },
-     "lien": "https://ecipe.org/insights/affordability-and-csa2/",
-     "source": "ECIPE (European Centre for International Political Economy)",
-     "zone": "Europe",
-     "date": "2026-06-03",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "c5c7bce2d75a",
-     "titre": "Who Shall Inherit the Cookie Banner?",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Qui héritera de la bannière des cookies ?"
-      }
-     },
-     "lien": "https://ecipe.org/insights/who-shall-inherit-the-cookie-banner/",
-     "source": "ECIPE (European Centre for International Political Economy)",
-     "zone": "Europe",
-     "date": "2026-06-03",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "expert": true
-    },
-    {
-     "id": "77ae9d24e66d",
-     "titre": "China Brings Trade Law to Cybersecurity",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "La Chine apporte le droit commercial à la cybersécurité"
-      }
-     },
-     "lien": "https://ecipe.org/insights/china-trade-law-cybersecurity/",
-     "source": "ECIPE (European Centre for International Political Economy)",
-     "zone": "Europe",
-     "date": "2026-05-11",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "b69302ae9a43",
-     "titre": "Cybersecurity Act 2 and National Security: Same as It Ever Was",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Loi 2 sur la cybersécurité et la sécurité nationale : comme jamais"
-      }
-     },
-     "lien": "https://ecipe.org/insights/cybersecurity-act-2/",
-     "source": "ECIPE (European Centre for International Political Economy)",
-     "zone": "Europe",
-     "date": "2026-04-29",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    },
-    {
-     "id": "118d6392815c",
-     "titre": "How can the EU protect children online while dismantling the very rules designed to keep them safe?",
-     "langue": "en",
-     "trad": {
-      "fr": {
-       "titre": "Comment le UE peut-il protéger les enfants en ligne tout en démontant les règles conçues pour les protéger ?"
-      }
-     },
-     "lien": "https://edri.org/our-work/how-can-the-eu-protect-children-online-while-dismantling-the-very-rules-designed-to-keep-them-safe/",
-     "source": "EDRi (European Digital Rights)",
-     "zone": "Europe",
-     "date": "2026-04-15",
-     "detecte_le": "2026-09-25",
-     "version": "2026-09-25-1456",
-     "statut": "projet",
-     "nature": "opinion",
-     "a_verifier": true,
-     "expert": true
-    }
-   ],
-   "nb_articles": 6,
-   "nb_sources": 2,
    "statut": "pressenti"
   },
   {

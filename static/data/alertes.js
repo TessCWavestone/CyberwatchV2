@@ -1,217 +1,47 @@
 window.VEILLE_ALERTES = {
- "mise_a_jour": "2026-11-18T10:16+00:00",
+ "mise_a_jour": "2026-11-23T16:01+00:00",
  "alertes": [
   {
-   "id": "kabd740e157c",
-   "type": "proposition",
-   "texte": "NIS2",
+   "id": "k30a92310a51",
+   "type": "adopte",
+   "texte": "MDR (dispositifs médicaux)",
    "inconnu": false,
-   "zone": "Pologne",
-   "detecte_le": "2026-10-22",
-   "maj_le": "2026-10-22",
-   "date": "2026-10-21",
-   "fin": "2026-11-19",
-   "version": "2026-10-22-1302",
-   "version_maj": "2026-10-22-1302",
+   "zone": "Europe",
+   "detecte_le": "2026-10-26",
+   "maj_le": "2026-10-26",
+   "date": "2026-10-24",
+   "fin": "2026-11-23",
+   "version": "2026-10-26-1112",
+   "version_maj": "2026-10-26-1112",
    "articles": [
     {
-     "id": "8e5e366e1dff",
-     "titre": "Więcej O: Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych",
-     "langue": "pl",
+     "id": "ea113bc475af",
+     "titre": "Arrêté du 20 octobre 2026 relatif aux arrêtés d'approbation des cahiers des charges des appels à projets « Espaces de données », « Transition numérique de la Culture et appropriation de l'intelligence artificielle », « Challenge prévention : démontrer la valeur des innovations en vie réelle », « Soutien aux innovations de rupture dans la filière des dispositifs médicaux implantables et de la robotique chirurgicale », « Innovation en biothérapies et bioproduction » et « Standardisation des réseaux du futur »",
+     "langue": "fr",
      "trad": {
       "en": {
-       "titre": "More About: Recommendation of the Government Representative for Cybersecurity regarding organisational and technical measures"
-      },
-      "fr": {
-       "titre": "En savoir plus sur: Recommandation du représentant du gouvernement pour la cybersécurité concernant les mesures organisationnelles et techniques"
+       "titre": "Order of 20 October 2026 on the decrees approving the specifications of the calls for projects \"Dataspaces\", \"Digital Transition of Culture and Appropriation of Artificial Intelligence\", \"Prevention Challenge: Demonstrating the Value of Real Life Innovations\", \"Support for Breakout Innovations in the Field of Implantable Medical Devices and Surgery Robotics\", \"Innovation in Biotherapy and Bioproduction\" and \"Standardisation of Networks of the Future\""
       }
      },
-     "lien": "https://www.uke.gov.pl/akt/rekomendacja-pelnomocnika-rzadu-ds-cyberbezpieczenstwa-dot-srodkow-organizacyjnych-i-technicznych,704.html",
-     "source": "UKE (Urząd Komunikacji Elektronicznej)",
-     "zone": "Pologne",
-     "date": "2026-10-21",
-     "detecte_le": "2026-10-22",
-     "version": "2026-10-22-1302",
-     "statut": "consultation",
+     "lien": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000055011497",
+     "source": "Légifrance",
+     "zone": "France",
+     "date": "2026-10-24",
+     "detecte_le": "2026-10-26",
+     "version": "2026-10-26-1112",
+     "statut": "adopte",
      "nature": "officielle"
     }
    ],
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
-    "78a2ae6b220e",
-    "9197dd7f9318",
-    "ac84545758cc",
-    "f25f99dd226e",
-    "3901c91188d7",
-    "734c4d15d6b9",
-    "aa9bd789aa90",
-    "b7c18b05b5e7",
-    "32e49230344c",
-    "2ef9d4236629",
-    "f01285f84788",
-    "1e04ec7ac876",
-    "ne936098b541",
-    "0a3fa23bda3a",
-    "8ebfa1f4b6bc",
-    "63aa7c4c18f5",
-    "5a78439e33f4",
-    "n362bccdce09",
-    "b1b61f43c4d8",
-    "e4644b41c05a",
-    "281ba3fd745a",
-    "5b8cc1c5cb07",
-    "11201a361012",
-    "29eddf2783bf",
-    "7b31fbd5898f",
-    "aa536c4932e3",
-    "4632d31c8ef8",
-    "41fa0ff9c48b",
-    "1eccbbdb8619",
-    "2eb217020c09",
-    "64f8d3eff1c5",
-    "a0bf728da210",
-    "04fe76f70754",
-    "89f049acff85",
-    "c76267e7d7d9",
-    "n2d18c011e62",
-    "n14ae6b2f1dc",
-    "855d9cd886f0",
-    "db646503cee0",
-    "81b92f7b5434",
-    "necdb6828002",
-    "c4a2510c7375",
-    "08da9d45d259",
-    "n275d6d134be",
-    "n9e7616a4274",
-    "3cf8168ed768",
-    "b00f865edf0a",
-    "d241a0931f87",
-    "32322c10ca94",
-    "d8a3a4ba56a8",
-    "8d3ec486ff5b",
-    "574c3ed8fab7",
-    "a36eb2dfd43f",
-    "233e75c7746f",
-    "62576ab73272",
-    "f34dcd685e44",
-    "1a8b067a0355",
-    "9e5e6aab08a7",
-    "7286880185ab",
-    "ba8e2ca7ba44",
-    "74ace7ed70ab",
-    "8a675041e196"
+    "f5c0ebe64e80",
+    "ne900756ad12",
+    "8721dacac751",
+    "0473e89d481e"
    ],
-   "nb_lies": 62,
-   "active": true
-  },
-  {
-   "id": "k10e1ec1ca16",
-   "type": "echeance",
-   "texte": "NIS2",
-   "inconnu": false,
-   "zone": "Pologne",
-   "detecte_le": "2026-10-22",
-   "maj_le": "2026-10-22",
-   "date": "2026-10-21",
-   "fin": "2026-11-19",
-   "version": "2026-10-22-1302",
-   "version_maj": "2026-10-22-1302",
-   "articles": [
-    {
-     "id": "8e5e366e1dff",
-     "titre": "Więcej O: Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych",
-     "langue": "pl",
-     "trad": {
-      "en": {
-       "titre": "More About: Recommendation of the Government Representative for Cybersecurity regarding organisational and technical measures"
-      },
-      "fr": {
-       "titre": "En savoir plus sur: Recommandation du représentant du gouvernement pour la cybersécurité concernant les mesures organisationnelles et techniques"
-      }
-     },
-     "lien": "https://www.uke.gov.pl/akt/rekomendacja-pelnomocnika-rzadu-ds-cyberbezpieczenstwa-dot-srodkow-organizacyjnych-i-technicznych,704.html",
-     "source": "UKE (Urząd Komunikacji Elektronicznej)",
-     "zone": "Pologne",
-     "date": "2026-10-21",
-     "detecte_le": "2026-10-22",
-     "version": "2026-10-22-1302",
-     "statut": "consultation",
-     "nature": "officielle"
-    }
-   ],
-   "nb_articles": 1,
-   "a_verifier": false,
-   "echeance": "2026-11-30",
-   "extrait": {
-    "pl": "…i technicznych Prezes UKE przedłuża termin do 30 listopada 2026 r. na zgłaszanie kandydatów do Krajowej Rady do…",
-    "en": "...and technical President UKE extends the deadline until 30 November 2026 to submit candidates to the National Council for..."
-   },
-   "lies": [
-    "78a2ae6b220e",
-    "9197dd7f9318",
-    "ac84545758cc",
-    "f25f99dd226e",
-    "3901c91188d7",
-    "734c4d15d6b9",
-    "aa9bd789aa90",
-    "b7c18b05b5e7",
-    "32e49230344c",
-    "2ef9d4236629",
-    "f01285f84788",
-    "1e04ec7ac876",
-    "ne936098b541",
-    "0a3fa23bda3a",
-    "8ebfa1f4b6bc",
-    "63aa7c4c18f5",
-    "5a78439e33f4",
-    "n362bccdce09",
-    "b1b61f43c4d8",
-    "e4644b41c05a",
-    "281ba3fd745a",
-    "5b8cc1c5cb07",
-    "11201a361012",
-    "29eddf2783bf",
-    "7b31fbd5898f",
-    "aa536c4932e3",
-    "4632d31c8ef8",
-    "41fa0ff9c48b",
-    "1eccbbdb8619",
-    "2eb217020c09",
-    "64f8d3eff1c5",
-    "a0bf728da210",
-    "04fe76f70754",
-    "89f049acff85",
-    "c76267e7d7d9",
-    "n2d18c011e62",
-    "n14ae6b2f1dc",
-    "855d9cd886f0",
-    "db646503cee0",
-    "81b92f7b5434",
-    "necdb6828002",
-    "c4a2510c7375",
-    "08da9d45d259",
-    "n275d6d134be",
-    "n9e7616a4274",
-    "3cf8168ed768",
-    "b00f865edf0a",
-    "d241a0931f87",
-    "32322c10ca94",
-    "d8a3a4ba56a8",
-    "8d3ec486ff5b",
-    "574c3ed8fab7",
-    "a36eb2dfd43f",
-    "233e75c7746f",
-    "62576ab73272",
-    "f34dcd685e44",
-    "1a8b067a0355",
-    "9e5e6aab08a7",
-    "7286880185ab",
-    "ba8e2ca7ba44",
-    "74ace7ed70ab",
-    "8a675041e196"
-   ],
-   "nb_lies": 62,
+   "nb_lies": 4,
    "active": true
   },
   {
@@ -253,6 +83,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": true,
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "047226550e09",
     "f0089ef41fbd",
     "238ab1a64736",
@@ -312,7 +144,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 58,
+   "nb_lies": 60,
    "active": true
   },
   {
@@ -322,12 +154,30 @@ window.VEILLE_ALERTES = {
    "inconnu": false,
    "zone": "Europe",
    "detecte_le": "2026-10-30",
-   "maj_le": "2026-10-30",
-   "date": "2026-10-27",
+   "maj_le": "2026-11-23",
+   "date": "2026-11-20",
    "fin": "2026-11-27",
    "version": "2026-10-30-1705",
-   "version_maj": "2026-10-30-1705",
+   "version_maj": "2026-11-23-1601",
    "articles": [
+    {
+     "id": "865b8da0807f",
+     "titre": "The AI Act Advisory Forum holds its second meeting",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "Le Forum consultatif sur la loi IA tient sa deuxième réunion"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-holds-its-second-meeting",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-11-20",
+     "detecte_le": "2026-11-23",
+     "version": "2026-11-23-1601",
+     "statut": "adopte",
+     "nature": "officielle"
+    },
     {
      "id": "972c08c416af",
      "titre": "Italy's AI Act framework takes shape: What Legislative Decree No. 179/2026 means for organizations",
@@ -348,9 +198,10 @@ window.VEILLE_ALERTES = {
      "a_verifier": true
     }
    ],
-   "nb_articles": 1,
-   "a_verifier": true,
+   "nb_articles": 2,
+   "a_verifier": false,
    "lies": [
+    "0cc2e548167c",
     "047226550e09",
     "f0089ef41fbd",
     "238ab1a64736",
@@ -410,7 +261,47 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 58,
+   "nb_lies": 59,
+   "active": true
+  },
+  {
+   "id": "k0ba12006753",
+   "type": "proposition",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Danemark",
+   "detecte_le": "2026-11-09",
+   "maj_le": "2026-11-09",
+   "date": "2026-11-02",
+   "fin": "2026-12-07",
+   "version": "2026-11-09-1000",
+   "version_maj": "2026-11-09-1000",
+   "articles": [
+    {
+     "id": "237bd314f26c",
+     "titre": "Udkast til bekendtgørelse om udpegning af markedsovervågningsmyndigheder for visse af de forbudte former for AI-praksis og gennemsigtighedsforpligtelserne i henhold til AI-loven",
+     "langue": "da",
+     "trad": {
+      "en": {
+       "titre": "Draft notice on the designation of market surveillance authorities for certain prohibited forms of AI-praksis and transparency obligations under AI-loven"
+      },
+      "fr": {
+       "titre": "Projet de communication sur la désignation d'autorités de surveillance du marché pour certaines formes interdites de AI-praksis et obligations de transparence au titre de AI-loven"
+      }
+     },
+     "lien": "https://hoeringsportalen.dk/Hearing/Details/71733",
+     "source": "Høringsportalen — consultations (numérique, justice, santé)",
+     "zone": "Danemark",
+     "date": "2026-11-02",
+     "detecte_le": "2026-11-09",
+     "version": "2026-11-09-1000",
+     "statut": "consultation",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
    "active": true
   },
   {
@@ -452,6 +343,8 @@ window.VEILLE_ALERTES = {
     "en": "…to express their interest to the AI Office by 4 December 2026 . Depending on the number of expressions of…"
    },
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "f0089ef41fbd",
     "238ab1a64736",
     "21490a6f9177",
@@ -511,7 +404,84 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 58,
+   "nb_lies": 60,
+   "active": true
+  },
+  {
+   "id": "k18b54942ef6",
+   "type": "proposition",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Danemark",
+   "detecte_le": "2026-11-23",
+   "maj_le": "2026-11-23",
+   "date": "2026-11-21",
+   "fin": "2026-12-21",
+   "version": "2026-11-23-1601",
+   "version_maj": "2026-11-23-1601",
+   "articles": [
+    {
+     "id": "b00d1b03b07f",
+     "titre": "Forslag til lov om ændring af lov om håndhævelse af Europa-Parlamentets og Rådets forordning om et indre marked for digitale tjenester (oprettelse og anvendelse af fiktive profiler m.v.)",
+     "langue": "da",
+     "trad": {
+      "en": {
+       "titre": "Proposal for a law amending the law implementing the regulation of the European Parliament and of the Council establishing a single market in digital services (creation and use of fictitious profiles, etc.)"
+      },
+      "fr": {
+       "titre": "Proposition de loi modifiant la loi d'application du règlement du Parlement européen et du Conseil instituant un marché unique des services numériques (création et utilisation de profils fictifs, etc.)"
+      }
+     },
+     "lien": "https://hoeringsportalen.dk/Hearing/Details/71849",
+     "source": "Høringsportalen — consultations (numérique, justice, santé)",
+     "zone": "Danemark",
+     "date": "2026-11-21",
+     "detecte_le": "2026-11-23",
+     "version": "2026-11-23-1601",
+     "statut": "consultation",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": true
+  },
+  {
+   "id": "k0893a424f39",
+   "type": "proposition",
+   "texte": "",
+   "inconnu": false,
+   "zone": "France",
+   "detecte_le": "2026-11-23",
+   "maj_le": "2026-11-23",
+   "date": "2026-11-20",
+   "fin": "2026-12-21",
+   "version": "2026-11-23-1601",
+   "version_maj": "2026-11-23-1601",
+   "articles": [
+    {
+     "id": "92b13b422923",
+     "titre": "IA et éducation : une résolution mondiale pour la protection des données",
+     "langue": "fr",
+     "trad": {
+      "en": {
+       "titre": "AI and education: a global resolution for data protection"
+      }
+     },
+     "lien": "https://www.cnil.fr/fr/gpa-ia-education",
+     "source": "CNIL",
+     "zone": "France",
+     "date": "2026-11-20",
+     "detecte_le": "2026-11-23",
+     "version": "2026-11-23-1601",
+     "statut": "adopte",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
    "active": true
   },
   {
@@ -629,6 +599,7 @@ window.VEILLE_ALERTES = {
    "nb_articles": 5,
    "a_verifier": false,
    "lies": [
+    "08454282b33e",
     "3fabc61fb704",
     "n9c1bd10be59",
     "nddc78c0edaf",
@@ -707,10 +678,9 @@ window.VEILLE_ALERTES = {
     "n493da50c677",
     "nf1e63dac1ec",
     "n3c8dd3eff82",
-    "n29bf9d09dce",
-    "n04f1798cec0"
+    "n29bf9d09dce"
    ],
-   "nb_lies": 191,
+   "nb_lies": 192,
    "active": false
   },
   {
@@ -827,9 +797,17 @@ window.VEILLE_ALERTES = {
    "nb_articles": 5,
    "a_verifier": false,
    "lies": [
+    "5131bb2fa6bc",
+    "6e320c730dd2",
+    "22caeb072bac",
+    "83d1b9737998",
+    "2716ce3d7107",
+    "99834fa440c1",
     "dfbf1b88b06c",
     "d63a5bcc6a12",
+    "65e9cbdf47fc",
     "d520c5b5033a",
+    "48dbd3a8c2fb",
     "4818c40838e3",
     "21490a6f9177",
     "3184862c2743",
@@ -898,17 +876,9 @@ window.VEILLE_ALERTES = {
     "4abc2abc2599",
     "e684cc0f4562",
     "8630d68a4c8e",
-    "cf859a5f552b",
-    "7a99837ab49a",
-    "f53ca2725f7b",
-    "85816f532617",
-    "f6b16436deef",
-    "e75f99da976a",
-    "4f6d520adaf1",
-    "bfb313e3af32",
-    "16c46cb75417"
+    "cf859a5f552b"
    ],
-   "nb_lies": 89,
+   "nb_lies": 97,
    "active": false
   },
   {
@@ -1016,9 +986,17 @@ window.VEILLE_ALERTES = {
    "nb_articles": 5,
    "a_verifier": false,
    "lies": [
+    "5131bb2fa6bc",
+    "6e320c730dd2",
+    "22caeb072bac",
+    "83d1b9737998",
+    "2716ce3d7107",
+    "99834fa440c1",
     "dfbf1b88b06c",
     "d63a5bcc6a12",
+    "65e9cbdf47fc",
     "d520c5b5033a",
+    "48dbd3a8c2fb",
     "4818c40838e3",
     "21490a6f9177",
     "3184862c2743",
@@ -1087,17 +1065,9 @@ window.VEILLE_ALERTES = {
     "204e6bd9d1a6",
     "4abc2abc2599",
     "e684cc0f4562",
-    "8630d68a4c8e",
-    "cf859a5f552b",
-    "7a99837ab49a",
-    "f53ca2725f7b",
-    "85816f532617",
-    "f6b16436deef",
-    "4f6d520adaf1",
-    "bfb313e3af32",
-    "16c46cb75417"
+    "8630d68a4c8e"
    ],
-   "nb_lies": 89,
+   "nb_lies": 97,
    "active": false
   },
   {
@@ -1229,6 +1199,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 3,
    "a_verifier": false,
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "f0089ef41fbd",
     "238ab1a64736",
     "21490a6f9177",
@@ -1286,7 +1258,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 56,
+   "nb_lies": 58,
    "active": false
   },
   {
@@ -1381,9 +1353,17 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": false,
    "lies": [
+    "5131bb2fa6bc",
+    "6e320c730dd2",
+    "22caeb072bac",
+    "83d1b9737998",
+    "2716ce3d7107",
+    "99834fa440c1",
     "dfbf1b88b06c",
     "d63a5bcc6a12",
+    "65e9cbdf47fc",
     "d520c5b5033a",
+    "48dbd3a8c2fb",
     "4818c40838e3",
     "21490a6f9177",
     "3184862c2743",
@@ -1452,17 +1432,9 @@ window.VEILLE_ALERTES = {
     "f7e9ba75ea34",
     "204e6bd9d1a6",
     "4abc2abc2599",
-    "8630d68a4c8e",
-    "cf859a5f552b",
-    "7a99837ab49a",
-    "f53ca2725f7b",
-    "85816f532617",
-    "f6b16436deef",
-    "e75f99da976a",
-    "4f6d520adaf1",
-    "bfb313e3af32"
+    "8630d68a4c8e"
    ],
-   "nb_lies": 90,
+   "nb_lies": 98,
    "active": false
   },
   {
@@ -1540,11 +1512,12 @@ window.VEILLE_ALERTES = {
    "nb_articles": 3,
    "a_verifier": false,
    "lies": [
+    "1c9ce004d698",
     "0554f3c2f833",
     "729642551464",
     "742aef11c88d"
    ],
-   "nb_lies": 3,
+   "nb_lies": 4,
    "active": false
   },
   {
@@ -1642,6 +1615,7 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": false,
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -1720,10 +1694,9 @@ window.VEILLE_ALERTES = {
     "nb45ccab90d3",
     "n493da50c677",
     "nf1e63dac1ec",
-    "n3c8dd3eff82",
-    "n29bf9d09dce"
+    "n3c8dd3eff82"
    ],
-   "nb_lies": 192,
+   "nb_lies": 193,
    "active": false
   },
   {
@@ -1815,6 +1788,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 4,
    "a_verifier": false,
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -1875,7 +1851,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 59,
+   "nb_lies": 62,
    "active": false
   },
   {
@@ -1913,6 +1889,7 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "83d1b9737998",
     "d34efaa70621",
     "78a2ae6b220e",
     "ceea0ceffe69",
@@ -1942,7 +1919,47 @@ window.VEILLE_ALERTES = {
     "233e75c7746f",
     "f34dcd685e44"
    ],
-   "nb_lies": 28,
+   "nb_lies": 29,
+   "active": false
+  },
+  {
+   "id": "kea01e3ef444",
+   "type": "proposition",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Grèce",
+   "detecte_le": "2026-09-24",
+   "maj_le": "2026-09-24",
+   "date": "2026-09-24",
+   "fin": "2026-10-22",
+   "version": "2026-09-24-0737",
+   "version_maj": "2026-09-24-0737",
+   "articles": [
+    {
+     "id": "7ec3a825dc76",
+     "titre": "Έως τις 10 Νοεμβρίου παρατείνεται η δημόσια διαβούλευση για την Εθνική Στρατηγική Κυβερνοασφάλειας 2026-2030",
+     "langue": "el",
+     "trad": {
+      "en": {
+       "titre": "Until 10 November public consultation on the National Cyber Security Strategy is extended 2026-2030"
+      },
+      "fr": {
+       "titre": "Jusqu'au 10 novembre, la consultation publique sur la Stratégie nationale de cybersécurité est prolongée 2026-2030"
+      }
+     },
+     "lien": "https://cyber.gov.gr/eos-tis-10-noemvrioy-parateinetai-i-dimosia-diavoyleysi-gia-tin-ethniki-stratigiki-kyvernoasfaleias-2026-2030/",
+     "source": "Autorité Nationale de Cybersécurité",
+     "zone": "Grèce",
+     "date": "2026-09-24",
+     "detecte_le": "2026-09-24",
+     "version": "2026-09-24-0737",
+     "statut": "consultation",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
    "active": false
   },
   {
@@ -1983,6 +2000,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -2046,7 +2066,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 62,
+   "nb_lies": 65,
    "active": false
   },
   {
@@ -2087,6 +2107,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -2150,7 +2173,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 62,
+   "nb_lies": 65,
    "active": false
   },
   {
@@ -2189,6 +2212,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": true,
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -2252,7 +2278,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 62,
+   "nb_lies": 65,
    "active": false
   },
   {
@@ -2315,6 +2341,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -2377,7 +2406,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 61,
+   "nb_lies": 64,
    "active": false
   },
   {
@@ -2472,6 +2501,8 @@ window.VEILLE_ALERTES = {
    "nb_articles": 2,
    "a_verifier": false,
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "047226550e09",
     "f0089ef41fbd",
     "238ab1a64736",
@@ -2530,7 +2561,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 57,
+   "nb_lies": 59,
    "active": false
   },
   {
@@ -2608,6 +2639,8 @@ window.VEILLE_ALERTES = {
     "en": "…will need to comply with this obligation as of 2 December 2027. The draft template is accompanied by a draft…"
    },
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "f0089ef41fbd",
     "238ab1a64736",
     "21490a6f9177",
@@ -2667,7 +2700,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 58,
+   "nb_lies": 60,
    "active": false
   },
   {
@@ -2724,6 +2757,7 @@ window.VEILLE_ALERTES = {
    "a_verifier": false,
    "echeance": "2027-12-11",
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -2802,10 +2836,9 @@ window.VEILLE_ALERTES = {
     "neabda431a4a",
     "nb45ccab90d3",
     "n493da50c677",
-    "nf1e63dac1ec",
-    "n3c8dd3eff82"
+    "nf1e63dac1ec"
    ],
-   "nb_lies": 195,
+   "nb_lies": 196,
    "active": false
   },
   {
@@ -2848,6 +2881,9 @@ window.VEILLE_ALERTES = {
     "en": "Austria: NISG 2026 applies from 1 October 2026 – registration by 31 December 2026. The WKO notes that NISG 2026 (NIS2 transposition, published in the BGBl on 23 December…"
    },
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -2912,7 +2948,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 63,
+   "nb_lies": 66,
    "active": false
   },
   {
@@ -2955,6 +2991,9 @@ window.VEILLE_ALERTES = {
     "en": "…the Federal Cybersecurity Office by 31 December 2026 and submit a self-declaration by 30 September 2027; registration arrangements and some requirements are still to be set by regulation.…"
    },
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -3019,7 +3058,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 63,
+   "nb_lies": 66,
    "active": false
   },
   {
@@ -3062,6 +3101,9 @@ window.VEILLE_ALERTES = {
     "en": "…prior suspicion, and the sanctioning procedure). The clarifications come ahead of the 31 October 2026 deadline for adopting baseline security measures (determination 379907/2025), which ends…"
    },
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -3126,7 +3168,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 63,
+   "nb_lies": 66,
    "active": false
   },
   {
@@ -3168,6 +3210,7 @@ window.VEILLE_ALERTES = {
     "en": "…Cybersecurity Authority's EL-CSIRT. Essential requirements and CE marking apply from 11 December 2027."
    },
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -3246,10 +3289,9 @@ window.VEILLE_ALERTES = {
     "nea67054bb06",
     "neabda431a4a",
     "nb45ccab90d3",
-    "n493da50c677",
-    "nf1e63dac1ec"
+    "n493da50c677"
    ],
-   "nb_lies": 196,
+   "nb_lies": 197,
    "active": false
   },
   {
@@ -3332,6 +3374,8 @@ window.VEILLE_ALERTES = {
     "en": "…AI interaction and make synthetic content identifiable (machine-readable marking by 2 December 2026 for systems already on the market); deployers must disclose emotion recognition and…"
    },
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "047226550e09",
     "f0089ef41fbd",
     "238ab1a64736",
@@ -3392,7 +3436,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 59,
+   "nb_lies": 61,
    "active": false
   },
   {
@@ -3435,6 +3479,8 @@ window.VEILLE_ALERTES = {
     "en": "…mostly entered into force on 11 August 2026, with full implementation scheduled for 28 October 2026. KRiBSI is the supervisory authority and national contact point; financial penalty…"
    },
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "047226550e09",
     "f0089ef41fbd",
     "238ab1a64736",
@@ -3495,7 +3541,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 59,
+   "nb_lies": 61,
    "active": false
   },
   {
@@ -3556,6 +3602,8 @@ window.VEILLE_ALERTES = {
     "en": "…systems must comply by 2 December 2027 and those embedded in Annex I products by 2 August 2028."
    },
    "lies": [
+    "865b8da0807f",
+    "0cc2e548167c",
     "047226550e09",
     "f0089ef41fbd",
     "238ab1a64736",
@@ -3616,7 +3664,7 @@ window.VEILLE_ALERTES = {
     "93541a6b0c64",
     "8ec25e1d0626"
    ],
-   "nb_lies": 59,
+   "nb_lies": 61,
    "active": false
   },
   {
@@ -3699,6 +3747,7 @@ window.VEILLE_ALERTES = {
     "en": "…horizontal type A and B standards to 31 October 2026, vertical type C standards to 31 December 2026. No CRA harmonised standard had yet been cited in the OJ."
    },
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -3777,10 +3826,9 @@ window.VEILLE_ALERTES = {
     "nea67054bb06",
     "neabda431a4a",
     "nb45ccab90d3",
-    "n493da50c677",
-    "nf1e63dac1ec"
+    "n493da50c677"
    ],
-   "nb_lies": 196,
+   "nb_lies": 197,
    "active": false
   },
   {
@@ -3823,6 +3871,7 @@ window.VEILLE_ALERTES = {
     "en": "…postponing CRA harmonised standard deadlines: horizontal type A and B standards to 31 October 2026, vertical type C standards to 31 December 2026. No CRA harmonised standard had yet been…"
    },
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -3901,10 +3950,9 @@ window.VEILLE_ALERTES = {
     "nea67054bb06",
     "neabda431a4a",
     "nb45ccab90d3",
-    "n493da50c677",
-    "nf1e63dac1ec"
+    "n493da50c677"
    ],
-   "nb_lies": 196,
+   "nb_lies": 197,
    "active": false
   },
   {
@@ -3947,6 +3995,7 @@ window.VEILLE_ALERTES = {
     "en": "…Notifying-authority rules apply from 11 June 2026; market surveillance and fines from 11 December 2027. Fines: up to EUR 15m or 2.5% of global turnover (essential requirements), EUR 10m or…"
    },
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -4025,10 +4074,9 @@ window.VEILLE_ALERTES = {
     "nea67054bb06",
     "neabda431a4a",
     "nb45ccab90d3",
-    "n493da50c677",
-    "nf1e63dac1ec"
+    "n493da50c677"
    ],
-   "nb_lies": 196,
+   "nb_lies": 197,
    "active": false
   },
   {
@@ -4071,6 +4119,7 @@ window.VEILLE_ALERTES = {
     "en": "…bodies may apply for authorisation from 11 June 2026 and all products must comply by 11 December 2027."
    },
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -4149,10 +4198,9 @@ window.VEILLE_ALERTES = {
     "nea67054bb06",
     "neabda431a4a",
     "nb45ccab90d3",
-    "n493da50c677",
-    "nf1e63dac1ec"
+    "n493da50c677"
    ],
-   "nb_lies": 196,
+   "nb_lies": 197,
    "active": false
   },
   {
@@ -4371,6 +4419,9 @@ window.VEILLE_ALERTES = {
     "en": "…sets a phased timeline for entities registered in 2026 (baseline security measures by 31 July 2027, CSIRT contact by end-2026); 127437/2026 requires NIS entities to report their 'relevant…"
    },
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -4435,7 +4486,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 63,
+   "nb_lies": 66,
    "active": false
   },
   {
@@ -4477,6 +4528,9 @@ window.VEILLE_ALERTES = {
     "en": "…Ministry of Digital Affairs register by 3 October 2026, implement security measures by 3 April 2027, and essential entities must complete a first audit by 3 April 2028; administrative…"
    },
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -4541,7 +4595,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 63,
+   "nb_lies": 66,
    "active": false
   },
   {
@@ -4583,6 +4637,9 @@ window.VEILLE_ALERTES = {
     "en": "…security measures by 3 April 2027, and essential entities must complete a first audit by 3 April 2028; administrative fines can only be imposed after that date. The law establishes…"
    },
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -4647,7 +4704,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 63,
+   "nb_lies": 66,
    "active": false
   },
   {
@@ -4692,9 +4749,9 @@ window.VEILLE_ALERTES = {
   },
   {
    "id": "k658ea8460c5",
-   "type": "a_qualifier",
+   "type": "proposition",
    "texte": "",
-   "inconnu": true,
+   "inconnu": false,
    "zone": "Suisse",
    "detecte_le": "2026-09-25",
    "maj_le": "2026-09-25",
@@ -4765,6 +4822,9 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -4828,7 +4888,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 62,
+   "nb_lies": 65,
    "active": false
   },
   {
@@ -4957,6 +5017,7 @@ window.VEILLE_ALERTES = {
    "a_verifier": true,
    "echeance": "2026-09-11",
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -5035,10 +5096,9 @@ window.VEILLE_ALERTES = {
     "nea67054bb06",
     "neabda431a4a",
     "nb45ccab90d3",
-    "n493da50c677",
-    "nf1e63dac1ec"
+    "n493da50c677"
    ],
-   "nb_lies": 190,
+   "nb_lies": 191,
    "active": false
   },
   {
@@ -5077,6 +5137,9 @@ window.VEILLE_ALERTES = {
    "a_verifier": true,
    "echeance": "2027-04-18",
    "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
     "78a2ae6b220e",
     "9197dd7f9318",
     "ac84545758cc",
@@ -5140,7 +5203,7 @@ window.VEILLE_ALERTES = {
     "74ace7ed70ab",
     "8a675041e196"
    ],
-   "nb_lies": 62,
+   "nb_lies": 65,
    "active": false
   },
   {
@@ -5178,6 +5241,7 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -5256,10 +5320,9 @@ window.VEILLE_ALERTES = {
     "neabda431a4a",
     "nb45ccab90d3",
     "n493da50c677",
-    "nf1e63dac1ec",
-    "n3c8dd3eff82"
+    "nf1e63dac1ec"
    ],
-   "nb_lies": 195,
+   "nb_lies": 196,
    "active": false
   },
   {
@@ -5296,6 +5359,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "6e320c730dd2",
+    "2716ce3d7107",
+    "99834fa440c1",
+    "b185f59079b1",
+    "90375370fe14",
     "d520c5b5033a",
     "38a1462619ee",
     "4f773d1a0849",
@@ -5309,7 +5377,7 @@ window.VEILLE_ALERTES = {
     "85816f532617",
     "b328c0a69f47"
    ],
-   "nb_lies": 12,
+   "nb_lies": 17,
    "active": false
   },
   {
@@ -5346,6 +5414,11 @@ window.VEILLE_ALERTES = {
    "nb_articles": 1,
    "a_verifier": false,
    "lies": [
+    "6e320c730dd2",
+    "2716ce3d7107",
+    "99834fa440c1",
+    "b185f59079b1",
+    "90375370fe14",
     "d520c5b5033a",
     "516fc3c5fbde",
     "38a1462619ee",
@@ -5356,7 +5429,7 @@ window.VEILLE_ALERTES = {
     "af5d98081af4",
     "85816f532617"
    ],
-   "nb_lies": 9,
+   "nb_lies": 14,
    "active": false
   },
   {
@@ -5403,6 +5476,7 @@ window.VEILLE_ALERTES = {
     "en": "...September 2026, the other commitments from December 11, 2027. [1] The doorbell from the example comes up..."
    },
    "lies": [
+    "08454282b33e",
     "30e0cd457c70",
     "742960bf7f83",
     "3fabc61fb704",
@@ -5481,15 +5555,123 @@ window.VEILLE_ALERTES = {
     "neabda431a4a",
     "nb45ccab90d3",
     "n493da50c677",
-    "nf1e63dac1ec",
-    "n3c8dd3eff82"
+    "nf1e63dac1ec"
    ],
-   "nb_lies": 195,
+   "nb_lies": 196,
    "active": false
   },
   {
    "id": "kf33bba5f699",
    "type": "proposition",
+   "texte": "Data Act",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-10-13",
+   "maj_le": "2026-11-23",
+   "date": "2026-11-19",
+   "fin": "2026-11-10",
+   "version": "2026-10-13-1556",
+   "version_maj": "2026-11-23-1601",
+   "articles": [
+    {
+     "id": "21ed64f1d6de",
+     "titre": "Większa kontrola nad danymi. Data Act przyjęte przez Sejm",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "More data control. Date Act adopted by the Sejm"
+      },
+      "fr": {
+       "titre": "Plus de contrôle des données. Date Loi adoptée par le Sejm"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/wieksza-kontrola-nad-danymi-data-act-przyjete-przez-sejm",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-11-19",
+     "detecte_le": "2026-11-23",
+     "version": "2026-11-23-1601",
+     "statut": "projet",
+     "nature": "officielle"
+    },
+    {
+     "id": "f745a2bec8aa",
+     "titre": "Większa kontrola nad danymi. Rząd przyjął projekt ustawy",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "More data control. The government adopted the bill"
+      },
+      "fr": {
+       "titre": "Plus de contrôle des données. Le gouvernement a adopté le projet de loi"
+      }
+     },
+     "lien": "https://www.gov.pl/web/cyfryzacja/wieksza-kontrola-nad-danymi-rzad-przyjal-projekt-ustawy",
+     "source": "Ministère du numérique",
+     "zone": "Pologne",
+     "date": "2026-10-13",
+     "detecte_le": "2026-10-13",
+     "version": "2026-10-13-1556",
+     "statut": "projet",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 2,
+   "a_verifier": false,
+   "lies": [
+    "09a466399d4c",
+    "f5fbbdae4b1b",
+    "b241a110efeb",
+    "5d608ae28055",
+    "cb7ec8841f49",
+    "de76db758bed"
+   ],
+   "nb_lies": 6,
+   "active": false
+  },
+  {
+   "id": "k9c443e8d1d0",
+   "type": "proposition",
+   "texte": "",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-10-13",
+   "maj_le": "2026-10-13",
+   "date": "2026-10-12",
+   "fin": "2026-11-10",
+   "version": "2026-10-13-1556",
+   "version_maj": "2026-10-13-1556",
+   "articles": [
+    {
+     "id": "01f4571792bb",
+     "titre": "Nowe wymagania dla oprogramowania medycznego. Zapraszamy do udziału w konsultacjach",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "New requirements for medical software. We invite you to participate in the consultation"
+      },
+      "fr": {
+       "titre": "Nouvelles exigences pour les logiciels médicaux. Nous vous invitons à participer à la consultation"
+      }
+     },
+     "lien": "https://www.cez.gov.pl/pl/page/o-nas/aktualnosci/nowe-wymagania-dla-oprogramowania-medycznego-zapraszamy-do-udzialu-w",
+     "source": "Centrum e-Zdrowia — aktualności",
+     "zone": "Pologne",
+     "date": "2026-10-12",
+     "detecte_le": "2026-10-13",
+     "version": "2026-10-13-1556",
+     "statut": "consultation",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": true,
+   "active": false
+  },
+  {
+   "id": "k540ee645d84",
+   "type": "echeance",
    "texte": "Data Act",
    "inconnu": false,
    "zone": "Pologne",
@@ -5524,7 +5706,13 @@ window.VEILLE_ALERTES = {
    ],
    "nb_articles": 1,
    "a_verifier": false,
+   "echeance": "2027-01-12",
+   "extrait": {
+    "pl": "…danych i usług między dostawcami, a od 12 stycznia 2027 r. przewidują zniesienie opłat związanych ze…",
+    "en": "...data and services between suppliers and from 12 January 2027 provide for the abolition of charges related to..."
+   },
    "lies": [
+    "21ed64f1d6de",
     "09a466399d4c",
     "f5fbbdae4b1b",
     "b241a110efeb",
@@ -5532,7 +5720,226 @@ window.VEILLE_ALERTES = {
     "cb7ec8841f49",
     "de76db758bed"
    ],
-   "nb_lies": 6,
+   "nb_lies": 7,
+   "active": false
+  },
+  {
+   "id": "kabd740e157c",
+   "type": "proposition",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-10-22",
+   "maj_le": "2026-10-22",
+   "date": "2026-10-21",
+   "fin": "2026-11-19",
+   "version": "2026-10-22-1302",
+   "version_maj": "2026-10-22-1302",
+   "articles": [
+    {
+     "id": "8e5e366e1dff",
+     "titre": "Więcej O: Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "More About: Recommendation of the Government Representative for Cybersecurity regarding organisational and technical measures"
+      },
+      "fr": {
+       "titre": "En savoir plus sur: Recommandation du représentant du gouvernement pour la cybersécurité concernant les mesures organisationnelles et techniques"
+      }
+     },
+     "lien": "https://www.uke.gov.pl/akt/rekomendacja-pelnomocnika-rzadu-ds-cyberbezpieczenstwa-dot-srodkow-organizacyjnych-i-technicznych,704.html",
+     "source": "UKE (Urząd Komunikacji Elektronicznej)",
+     "zone": "Pologne",
+     "date": "2026-10-21",
+     "detecte_le": "2026-10-22",
+     "version": "2026-10-22-1302",
+     "statut": "consultation",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
+    "78a2ae6b220e",
+    "9197dd7f9318",
+    "ac84545758cc",
+    "f25f99dd226e",
+    "3901c91188d7",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
+    "b7c18b05b5e7",
+    "32e49230344c",
+    "2ef9d4236629",
+    "f01285f84788",
+    "1e04ec7ac876",
+    "ne936098b541",
+    "0a3fa23bda3a",
+    "8ebfa1f4b6bc",
+    "63aa7c4c18f5",
+    "5a78439e33f4",
+    "n362bccdce09",
+    "b1b61f43c4d8",
+    "e4644b41c05a",
+    "281ba3fd745a",
+    "5b8cc1c5cb07",
+    "11201a361012",
+    "29eddf2783bf",
+    "7b31fbd5898f",
+    "aa536c4932e3",
+    "4632d31c8ef8",
+    "41fa0ff9c48b",
+    "1eccbbdb8619",
+    "2eb217020c09",
+    "64f8d3eff1c5",
+    "a0bf728da210",
+    "04fe76f70754",
+    "89f049acff85",
+    "c76267e7d7d9",
+    "n2d18c011e62",
+    "n14ae6b2f1dc",
+    "855d9cd886f0",
+    "db646503cee0",
+    "81b92f7b5434",
+    "necdb6828002",
+    "c4a2510c7375",
+    "08da9d45d259",
+    "n275d6d134be",
+    "n9e7616a4274",
+    "3cf8168ed768",
+    "b00f865edf0a",
+    "d241a0931f87",
+    "32322c10ca94",
+    "d8a3a4ba56a8",
+    "8d3ec486ff5b",
+    "574c3ed8fab7",
+    "a36eb2dfd43f",
+    "233e75c7746f",
+    "62576ab73272",
+    "f34dcd685e44",
+    "1a8b067a0355",
+    "9e5e6aab08a7",
+    "7286880185ab",
+    "ba8e2ca7ba44",
+    "74ace7ed70ab",
+    "8a675041e196"
+   ],
+   "nb_lies": 65,
+   "active": false
+  },
+  {
+   "id": "k10e1ec1ca16",
+   "type": "echeance",
+   "texte": "NIS2",
+   "inconnu": false,
+   "zone": "Pologne",
+   "detecte_le": "2026-10-22",
+   "maj_le": "2026-10-22",
+   "date": "2026-10-21",
+   "fin": "2026-11-19",
+   "version": "2026-10-22-1302",
+   "version_maj": "2026-10-22-1302",
+   "articles": [
+    {
+     "id": "8e5e366e1dff",
+     "titre": "Więcej O: Rekomendacja Pełnomocnika Rządu ds. Cyberbezpieczeństwa dot. środków organizacyjnych i technicznych",
+     "langue": "pl",
+     "trad": {
+      "en": {
+       "titre": "More About: Recommendation of the Government Representative for Cybersecurity regarding organisational and technical measures"
+      },
+      "fr": {
+       "titre": "En savoir plus sur: Recommandation du représentant du gouvernement pour la cybersécurité concernant les mesures organisationnelles et techniques"
+      }
+     },
+     "lien": "https://www.uke.gov.pl/akt/rekomendacja-pelnomocnika-rzadu-ds-cyberbezpieczenstwa-dot-srodkow-organizacyjnych-i-technicznych,704.html",
+     "source": "UKE (Urząd Komunikacji Elektronicznej)",
+     "zone": "Pologne",
+     "date": "2026-10-21",
+     "detecte_le": "2026-10-22",
+     "version": "2026-10-22-1302",
+     "statut": "consultation",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "a_verifier": false,
+   "echeance": "2026-11-30",
+   "extrait": {
+    "pl": "…i technicznych Prezes UKE przedłuża termin do 30 listopada 2026 r. na zgłaszanie kandydatów do Krajowej Rady do…",
+    "en": "...and technical President UKE extends the deadline until 30 November 2026 to submit candidates to the National Council for..."
+   },
+   "lies": [
+    "330d6a1caece",
+    "f512dce5627f",
+    "5e4995151120",
+    "78a2ae6b220e",
+    "9197dd7f9318",
+    "ac84545758cc",
+    "f25f99dd226e",
+    "3901c91188d7",
+    "734c4d15d6b9",
+    "aa9bd789aa90",
+    "b7c18b05b5e7",
+    "32e49230344c",
+    "2ef9d4236629",
+    "f01285f84788",
+    "1e04ec7ac876",
+    "ne936098b541",
+    "0a3fa23bda3a",
+    "8ebfa1f4b6bc",
+    "63aa7c4c18f5",
+    "5a78439e33f4",
+    "n362bccdce09",
+    "b1b61f43c4d8",
+    "e4644b41c05a",
+    "281ba3fd745a",
+    "5b8cc1c5cb07",
+    "11201a361012",
+    "29eddf2783bf",
+    "7b31fbd5898f",
+    "aa536c4932e3",
+    "4632d31c8ef8",
+    "41fa0ff9c48b",
+    "1eccbbdb8619",
+    "2eb217020c09",
+    "64f8d3eff1c5",
+    "a0bf728da210",
+    "04fe76f70754",
+    "89f049acff85",
+    "c76267e7d7d9",
+    "n2d18c011e62",
+    "n14ae6b2f1dc",
+    "855d9cd886f0",
+    "db646503cee0",
+    "81b92f7b5434",
+    "necdb6828002",
+    "c4a2510c7375",
+    "08da9d45d259",
+    "n275d6d134be",
+    "n9e7616a4274",
+    "3cf8168ed768",
+    "b00f865edf0a",
+    "d241a0931f87",
+    "32322c10ca94",
+    "d8a3a4ba56a8",
+    "8d3ec486ff5b",
+    "574c3ed8fab7",
+    "a36eb2dfd43f",
+    "233e75c7746f",
+    "62576ab73272",
+    "f34dcd685e44",
+    "1a8b067a0355",
+    "9e5e6aab08a7",
+    "7286880185ab",
+    "ba8e2ca7ba44",
+    "74ace7ed70ab",
+    "8a675041e196"
+   ],
+   "nb_lies": 65,
    "active": false
   }
  ]

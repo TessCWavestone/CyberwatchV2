@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-11-18T10:16+00:00",
+ "mise_a_jour": "2026-11-23T16:01+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 197,
+   "nb_articles": 198,
    "exemple": {
-    "date": "2026-11-18",
-    "lien": "https://www.incibe.es/incibe-cert/blog/guia-de-notificaciones-cra-que-deben-comunicar-los-fabricantes-y-como-utilizar-la",
-    "titre": "Guía de notificaciones CRA: qué deben comunicar los fabricantes y cómo utilizar la plataforma SRP",
-    "langue": "es",
-    "titre_fr": "Guide de notification CRA: Ce que les fabricants doivent déclarer et comment utiliser la plateforme SRP",
-    "titre_en": "CRA Notifying Guide: What manufacturers should report and how to use SRP platform"
+    "date": "2026-11-19",
+    "lien": "https://digital-strategy.ec.europa.eu/en/news/first-european-standard-published-support-cyber-resilience-act",
+    "titre": "First European standard published to support the Cyber Resilience Act",
+    "langue": "en",
+    "titre_fr": "Première norme européenne publiée pour soutenir la Cyber Resilience Act",
+    "titre_en": ""
    }
   },
   {
@@ -164,14 +164,14 @@
    "groupe": "textes",
    "fr": "NIS2",
    "en": "NIS2",
-   "nb_articles": 91,
+   "nb_articles": 93,
    "exemple": {
-    "date": "2026-11-16",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-telekomaktorer-som-inte-anmalt-sig-enligt-cybersakerhetslagen/",
-    "titre": "PTS granskar telekomaktörer som inte anmält sig enligt cybersäkerhetslagen",
-    "langue": "sv",
-    "titre_fr": "PTS examine les opérateurs de télécommunications qui ne se sont pas inscrits en vertu de la Loi sur la cybersécurité",
-    "titre_en": "PTS reviews telecom operators who have not registered under the Cybersecurity Act"
+    "date": "2026-11-23",
+    "lien": "https://www.hwsw.hu/go/hw6af45cafcf9a4",
+    "titre": "NIS2 ellenőrzések - ami jól ment, és ami még hátravan",
+    "langue": "hu",
+    "titre_fr": "Contrôles NIS2 - qui s'est bien passé et ce qui reste",
+    "titre_en": "NIS2 checks - which went well and what remains"
    }
   },
   {
@@ -179,13 +179,13 @@
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 74,
+   "nb_articles": 76,
    "exemple": {
-    "date": "2026-11-16",
-    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
-    "titre": "Commission seeks feedback on draft template for the fundamental rights impact assessment under the AI Act",
+    "date": "2026-11-20",
+    "lien": "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-holds-its-second-meeting",
+    "titre": "The AI Act Advisory Forum holds its second meeting",
     "langue": "en",
-    "titre_fr": "La Commission sollicite des commentaires sur le projet de modèle pour l'évaluation de l'impact sur les droits fondamentaux en vertu de la loi IA",
+    "titre_fr": "Le Forum consultatif sur la loi IA tient sa deuxième réunion",
     "titre_en": ""
    }
   },
@@ -194,14 +194,14 @@
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 62,
+   "nb_articles": 65,
    "exemple": {
-    "date": "2026-11-18",
-    "lien": "https://www.naih.hu/hirek/871-uj-edpb-dontesek-atdolgozott-iranymutatas-a-gdpr-6-cikk-1-bekezdes-f-pontjarol-del-korea-megfelelosegi-hatarozata-bcr-p-ajanlasok-es-koordinalt-vegrehajtatasi-fellepes-2027-ben",
-    "titre": "Új EDPB-döntések: átdolgozott iránymutatás a GDPR 6. cikk (1) bekezdés f) pontjáról, Dél-Korea megfelelőségi határozata, BCR-P ajánlások és koordinált végrehajtatási fellépés 2027-ben",
-    "langue": "hu",
-    "titre_fr": "Nouveau EDPB-döntések: directives révisées sur l ' alinéa f) du paragraphe 1 de l ' article GDPR 6, décision de la Corée du Sud relative au respect des dispositions, recommandations du BCR-P et mesures coordonnées de mise en œuvre en 2027",
-    "titre_en": "New EDPB-döntések: revised guidance on Article GDPR 6 (1) (f), South Korea compliance decision, BCR-P recommendations and coordinated implementation action in 2027"
+    "date": "2026-11-20",
+    "lien": "https://www.security.nl/posting/962492/Autoriteit+Persoonsgegevens+geeft+On+That+Ass+boete+van+90_000+euro?channel=rss",
+    "titre": "Autoriteit Persoonsgegevens geeft On That Ass boete van 90.000 euro",
+    "langue": "nl",
+    "titre_fr": "Autorité fournit des données à caractère personnel sur ce Ass 90.000 euros d'amende",
+    "titre_en": "Authority Provides Personal Data On That Ass 90,000 euro fine"
    }
   },
   {
@@ -254,13 +254,13 @@
    "groupe": "textes",
    "fr": "Omnibus numérique",
    "en": "Digital Omnibus",
-   "nb_articles": 10,
+   "nb_articles": 11,
    "exemple": {
-    "date": "2026-10-29",
-    "lien": "https://iapp.org/news/a/notes-from-the-iapp-europe-digital-omnibus-progress-health-data-and-online-scams-and-fraud",
-    "titre": "Notes from the IAPP Europe: Digital Omnibus progress, health data and online scams and fraud",
+    "date": "2026-11-19",
+    "lien": "https://iapp.org/news/a/one-year-on-digital-omnibus-may-face-delays",
+    "titre": "One year on, Digital Omnibus may face delays",
     "langue": "en",
-    "titre_fr": "Notes du IAPP Europe: progrès de l'omnibus numérique, données de santé et escroqueries et fraudes en ligne",
+    "titre_fr": "Un an plus tard, Digital Omnibus risque d'être retardé",
     "titre_en": ""
    }
   },
@@ -295,6 +295,21 @@
    }
   },
   {
+   "code": "Data Act",
+   "groupe": "textes",
+   "fr": "Data Act",
+   "en": "Data Act",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-11-19",
+    "lien": "https://www.gov.pl/web/cyfryzacja/wieksza-kontrola-nad-danymi-data-act-przyjete-przez-sejm",
+    "titre": "Większa kontrola nad danymi. Data Act przyjęte przez Sejm",
+    "langue": "pl",
+    "titre_fr": "Plus de contrôle des données. Date Loi adoptée par le Sejm",
+    "titre_en": "More data control. Date Act adopted by the Sejm"
+   }
+  },
+  {
    "code": "CADA",
    "groupe": "textes",
    "fr": "Cloud and AI Development Act",
@@ -321,21 +336,6 @@
     "titre": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
     "langue": "en",
     "titre_fr": "MDCG 2020-16 rev.5 - Lignes directrices sur les règles de classification des instruments médicaux de diagnostic in vitro en vertu du Règlement (UE) 2017/746 (septembre 2026)",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "Data Act",
-   "groupe": "textes",
-   "fr": "Data Act",
-   "en": "Data Act",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-11-06",
-    "lien": "https://digitalpolicyalert.org/event/44947-dutch-authority-for-consumers-and-markets-closes-consultation-on-guidelines-on-switching-between-cloud-services-under-data-act",
-    "titre": "Dutch Authority for Consumers and Markets closes consultation on guidelines on switching between cloud services under Data Act",
-    "langue": "en",
-    "titre_fr": "L'Autorité néerlandaise des consommateurs et des marchés clôt la consultation sur les lignes directrices relatives au passage d'un service cloud à un autre en vertu de la loi sur les données",
     "titre_en": ""
    }
   },
@@ -385,6 +385,21 @@
    }
   },
   {
+   "code": "ENS",
+   "groupe": "textes",
+   "fr": "ENS (Espagne)",
+   "en": "ENS (Spain)",
+   "nb_articles": 4,
+   "exemple": {
+    "date": "2026-11-19",
+    "lien": "https://www.redseguridad.com/actualidad/organismos-ciberseguridad/el-ccn-publica-dos-nuevas-guias-que-facilitan-la-adecuacion-al-ens-frente-a-la-ia-ofensiva-y-la-amenaza-cuantica_20261119.html",
+    "titre": "El CCN publica dos nuevas guías que facilitan la adecuación al ENS frente a la IA ofensiva y la amenaza cuántica",
+    "langue": "es",
+    "titre_fr": "Le CCN publie deux nouveaux guides qui facilitent la correspondance avec le ENS avec une menace offensive IA et quantique",
+    "titre_en": "The CCN publishes two new guides that facilitate matching to the ENS with an offensive AI and quantum threat"
+   }
+  },
+  {
    "code": "MDR",
    "groupe": "textes",
    "fr": "MDR (dispositifs médicaux)",
@@ -427,21 +442,6 @@
     "langue": "en",
     "titre_fr": "Cyber Essentials a record d'année mais la consommation reste faible",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "ENS",
-   "groupe": "textes",
-   "fr": "ENS (Espagne)",
-   "en": "ENS (Spain)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-29",
-    "lien": "https://www.redseguridad.com/actualidad/ciberseguridad/el-ccn-renueva-la-herramienta-ines-para-facilitar-la-adecuacion-al-ens_20261029.html",
-    "titre": "El CCN renueva la herramienta Inés para facilitar la adecuación al ENS",
-    "langue": "es",
-    "titre_fr": "Le CCN renouvelle l'outil Ines pour faciliter l'appariement avec le ENS",
-    "titre_en": "The CCN renews the Ines tool to facilitate matching to the ENS"
    }
   },
   {
@@ -640,6 +640,21 @@
    }
   },
   {
+   "code": "EDPB",
+   "groupe": "autorites",
+   "fr": "CEPD / EDPB",
+   "en": "EDPB",
+   "nb_articles": 61,
+   "exemple": {
+    "date": "2026-11-19",
+    "lien": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-private-individual-for-credit-check-and-publication-of-personal-data_en",
+    "titre": "Norwegian DPA fines private individual for credit check and publication of personal data without a lawful basis",
+    "langue": "en",
+    "titre_fr": "Norwegian DPA amende une personne privée pour vérification du crédit et publication de données personnelles sans base légale",
+    "titre_en": ""
+   }
+  },
+  {
    "code": "NCSC",
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
@@ -655,33 +670,18 @@
    }
   },
   {
-   "code": "EDPB",
-   "groupe": "autorites",
-   "fr": "CEPD / EDPB",
-   "en": "EDPB",
-   "nb_articles": 53,
-   "exemple": {
-    "date": "2026-11-18",
-    "lien": "https://www.naih.hu/hirek/871-uj-edpb-dontesek-atdolgozott-iranymutatas-a-gdpr-6-cikk-1-bekezdes-f-pontjarol-del-korea-megfelelosegi-hatarozata-bcr-p-ajanlasok-es-koordinalt-vegrehajtatasi-fellepes-2027-ben",
-    "titre": "Új EDPB-döntések: átdolgozott iránymutatás a GDPR 6. cikk (1) bekezdés f) pontjáról, Dél-Korea megfelelőségi határozata, BCR-P ajánlások és koordinált végrehajtatási fellépés 2027-ben",
-    "langue": "hu",
-    "titre_fr": "Nouveau EDPB-döntések: directives révisées sur l ' alinéa f) du paragraphe 1 de l ' article GDPR 6, décision de la Corée du Sud relative au respect des dispositions, recommandations du BCR-P et mesures coordonnées de mise en œuvre en 2027",
-    "titre_en": "New EDPB-döntések: revised guidance on Article GDPR 6 (1) (f), South Korea compliance decision, BCR-P recommendations and coordinated implementation action in 2027"
-   }
-  },
-  {
    "code": "CNIL",
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 42,
+   "nb_articles": 43,
    "exemple": {
-    "date": "2026-11-18",
-    "lien": "https://www.cnil.fr/fr/conservation-des-mots-de-passe-sanction-5-millions-deuros",
-    "titre": "Conservation des mots de passe clients en clair : la CNIL prononce une sanction de 5 millions d’euros",
+    "date": "2026-11-20",
+    "lien": "https://www.cnil.fr/fr/gpa-ia-education",
+    "titre": "IA et éducation : une résolution mondiale pour la protection des données",
     "langue": "fr",
     "titre_fr": "",
-    "titre_en": "Preserving customer passwords in plain language: CNIL pronounces a penalty of €5 million"
+    "titre_en": "AI and education: a global resolution for data protection"
    }
   },
   {
@@ -745,6 +745,21 @@
    }
   },
   {
+   "code": "NKI",
+   "groupe": "autorites",
+   "fr": "NKI (Hongrie)",
+   "en": "NKI (Hungary)",
+   "nb_articles": 21,
+   "exemple": {
+    "date": "2026-11-23",
+    "lien": "https://nki.gov.hu/it-biztonsag/hirek/ujabb-vedelmi-megoldas-erkezik-a-signalra/",
+    "titre": "Újabb védelmi megoldás érkezik a Signalra",
+    "langue": "hu",
+    "titre_fr": "Une autre solution de défense pour les signaux.",
+    "titre_en": "Another defense solution for the Signals."
+   }
+  },
+  {
    "code": "Garante",
    "groupe": "autorites",
    "fr": "Garante privacy (Italie)",
@@ -760,21 +775,6 @@
    }
   },
   {
-   "code": "NKI",
-   "groupe": "autorites",
-   "fr": "NKI (Hongrie)",
-   "en": "NKI (Hungary)",
-   "nb_articles": 20,
-   "exemple": {
-    "date": "2026-10-16",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/kihasznalt-serulekenysegektol-a-reklamokon-at-terjesztett-kemprogramokig/",
-    "titre": "Kihasznált sérülékenységektől a reklámokon át terjesztett kémprogramokig",
-    "langue": "hu",
-    "titre_fr": "De vulnérabilité utilisée aux programmes espions transmis par la publicité",
-    "titre_en": "From used vulnerability to spy programs transmitted through advertising"
-   }
-  },
-  {
    "code": "MCF",
    "groupe": "autorites",
    "fr": "MCF / MSB (Suède)",
@@ -787,6 +787,21 @@
     "langue": "sv",
     "titre_fr": "Penser sûrement 2026",
     "titre_en": "Thinking Surely 2026"
+   }
+  },
+  {
+   "code": "ANSSI",
+   "groupe": "autorites",
+   "fr": "ANSSI",
+   "en": "ANSSI",
+   "nb_articles": 12,
+   "exemple": {
+    "date": "2026-11-23",
+    "lien": "https://cyber.gouv.fr/actualites/lanssi-accompagne-les-organisations-dans-leur-securisation/",
+    "titre": "L’ANSSI accompagne les organisations dans leur sécurisation",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "The ANSSI supports organisations in their security"
    }
   },
   {
@@ -816,21 +831,6 @@
     "titre": "Government backs recommendations of NHS doctors-led AI Commission",
     "langue": "en",
     "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "ANSSI",
-   "groupe": "autorites",
-   "fr": "ANSSI",
-   "en": "ANSSI",
-   "nb_articles": 11,
-   "exemple": {
-    "date": "2026-10-12",
-    "lien": "http://cyber.sites.beta.gouv.fr/actualites/ecsc-2026-la-team-france-a-bochum/",
-    "titre": "ECSC 2026 : la Team France à Bochum",
-    "langue": "en",
-    "titre_fr": "ECSC 2026 : la Team France à Bochum",
     "titre_en": ""
    }
   },
@@ -925,6 +925,21 @@
    }
   },
   {
+   "code": "SAMSIK",
+   "groupe": "autorites",
+   "fr": "SAMSIK (Danemark)",
+   "en": "SAMSIK (Denmark)",
+   "nb_articles": 9,
+   "exemple": {
+    "date": "2026-11-20",
+    "lien": "https://samsik.dk/artikler/2026/11/56-millioner-til-innovative-projekter-i-ny-cybersikkerhedschallenge/",
+    "titre": "5,6 millioner til innovative projekter i ny cybersikkerhedschallenge",
+    "langue": "da",
+    "titre_fr": "5,6 millions pour des projets innovants dans le nouveau défi de la cybersécurité",
+    "titre_en": "5.6 million for innovative projects in new cybersecurity challenge"
+   }
+  },
+  {
    "code": "MHRA",
    "groupe": "autorites",
    "fr": "MHRA",
@@ -952,21 +967,6 @@
     "langue": "sv",
     "titre_fr": "IMY revues AI-system de Viktor Eriksson 6 nov. 2026 1 min Secteur public Lois et règlements Marchés",
     "titre_en": "IMY reviews AI-system of Viktor Eriksson 6 Nov. 2026 1 min Public sector Laws and Regulations Markets"
-   }
-  },
-  {
-   "code": "SAMSIK",
-   "groupe": "autorites",
-   "fr": "SAMSIK (Danemark)",
-   "en": "SAMSIK (Denmark)",
-   "nb_articles": 8,
-   "exemple": {
-    "date": "2026-11-17",
-    "lien": "https://samsik.dk/artikler/2026/11/kvantecomputere-kan-true-danmarks-cybersikkerhed-nu-lanceres-nyt-projekt-til-hjaelp-for-virksomheder-og-myndigheder/",
-    "titre": "Kvantecomputere kan true Danmarks cybersikkerhed – nu lanceres nyt projekt til hjælp for virksomheder og myndigheder",
-    "langue": "da",
-    "titre_fr": "Les ordinateurs quantiques peuvent menacer la cybersécurité du Danemark - a lancé un nouveau projet pour aider les entreprises et les autorités",
-    "titre_en": "Quantum computers can threaten Denmark's cyber security - now launched new project to help companies and authorities"
    }
   },
   {
@@ -1045,6 +1045,21 @@
    }
   },
   {
+   "code": "CCN",
+   "groupe": "autorites",
+   "fr": "CCN (Espagne)",
+   "en": "CCN (Spain)",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-11-19",
+    "lien": "https://www.redseguridad.com/actualidad/organismos-ciberseguridad/el-ccn-publica-dos-nuevas-guias-que-facilitan-la-adecuacion-al-ens-frente-a-la-ia-ofensiva-y-la-amenaza-cuantica_20261119.html",
+    "titre": "El CCN publica dos nuevas guías que facilitan la adecuación al ENS frente a la IA ofensiva y la amenaza cuántica",
+    "langue": "es",
+    "titre_fr": "Le CCN publie deux nouveaux guides qui facilitent la correspondance avec le ENS avec une menace offensive IA et quantique",
+    "titre_en": "The CCN publishes two new guides that facilitate matching to the ENS with an offensive AI and quantum threat"
+   }
+  },
+  {
    "code": "AgID",
    "groupe": "autorites",
    "fr": "AgID",
@@ -1117,21 +1132,6 @@
     "langue": "el",
     "titre_fr": "Actions communes et synergies des CNC à Chypre pour un écosystème européen de cybersécurité plus fort",
     "titre_en": "Joint actions and synergies of NCCs in Cyprus for a stronger European cybersecurity ecosystem"
-   }
-  },
-  {
-   "code": "CCN",
-   "groupe": "autorites",
-   "fr": "CCN (Espagne)",
-   "en": "CCN (Spain)",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-29",
-    "lien": "https://www.redseguridad.com/actualidad/ciberseguridad/el-ccn-renueva-la-herramienta-ines-para-facilitar-la-adecuacion-al-ens_20261029.html",
-    "titre": "El CCN renueva la herramienta Inés para facilitar la adecuación al ENS",
-    "langue": "es",
-    "titre_fr": "Le CCN renouvelle l'outil Ines pour faciliter l'appariement avec le ENS",
-    "titre_en": "The CCN renews the Ines tool to facilitate matching to the ENS"
    }
   },
   {
@@ -1240,6 +1240,21 @@
    }
   },
   {
+   "code": "Autoriteit Persoonsgegevens",
+   "groupe": "autorites",
+   "fr": "Autoriteit Persoonsgegevens (Pays-Bas)",
+   "en": "Dutch DPA (AP)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-11-20",
+    "lien": "https://www.security.nl/posting/962492/Autoriteit+Persoonsgegevens+geeft+On+That+Ass+boete+van+90_000+euro?channel=rss",
+    "titre": "Autoriteit Persoonsgegevens geeft On That Ass boete van 90.000 euro",
+    "langue": "nl",
+    "titre_fr": "Autorité fournit des données à caractère personnel sur ce Ass 90.000 euros d'amende",
+    "titre_en": "Authority Provides Personal Data On That Ass 90,000 euro fine"
+   }
+  },
+  {
    "code": "RDI",
    "groupe": "autorites",
    "fr": "RDI (Pays-Bas)",
@@ -1312,21 +1327,6 @@
     "langue": "pl",
     "titre_fr": "En savoir plus sur : Cours NASK-PIB avec système S46",
     "titre_en": "More About: NASK-PIB Course with S46 System"
-   }
-  },
-  {
-   "code": "Autoriteit Persoonsgegevens",
-   "groupe": "autorites",
-   "fr": "Autoriteit Persoonsgegevens (Pays-Bas)",
-   "en": "Dutch DPA (AP)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-09-22",
-    "lien": "https://www.security.nl/posting/954102/Autoriteit+Persoonsgegevens+waarschuwt+gebruikers+camerabrillen+voor+privacyregels?channel=rss",
-    "titre": "Autoriteit Persoonsgegevens waarschuwt gebruikers camerabrillen voor privacyregels",
-    "langue": "nl",
-    "titre_fr": "Autorité Données personnelles avertit les utilisateurs lunettes de caméra pour les règles de confidentialité",
-    "titre_en": "Authority Personal data warns users camera glasses for privacy rules"
    }
   },
   {
@@ -1483,24 +1483,36 @@
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 15,
+   "nb_articles": 17,
    "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://www.gov.pl/web/cyfryzacja/dsa---co-zmienia-nowe-przepisy",
-    "titre": "DSA - co zmienią nowe przepisy",
-    "titre_fr": "DSA - ce qui va changer les nouveaux règlements",
-    "titre_en": "DSA - what will change the new regulations",
-    "langue": "pl"
+    "date": "2026-11-06",
+    "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
+    "titre": "Commission preliminarily finds TikTok’s ‘For You’ feed in breach of Digital Services Act for harmful ‘rabbit holes’ effect",
+    "titre_fr": "La Commission constate à titre préliminaire que TikToks «Pour vous» a enfreint la loi sur les services numériques en cas d'effets nocifs des «trous de lapin»",
+    "titre_en": "",
+    "langue": "en"
    }
   },
   {
    "code": "DPA",
-   "nb_articles": 10,
+   "nb_articles": 15,
    "exemple": {
-    "date": "2026-11-16",
-    "lien": "https://digitalpolicyalert.org/event/45869-data-protection-authority-reprimanded-ai-chatbot-application-provider-and-ordered-general-data-protection-regulation-compliance-for-processing-of-special-categories-of-data-in-ai-model-training",
-    "titre": "Data Protection Authority reprimanded AI chatbot application provider and ordered General Data Protection Regulation compliance for processing of special categories of data in AI model training",
-    "titre_fr": "L'autorité de protection des données a réprimandé le fournisseur d'application de chatbot IA et a ordonné le respect du règlement général sur la protection des données pour le traitement de catégories spéciales de données dans la formation modèle IA",
+    "date": "2026-11-19",
+    "lien": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-private-individual-for-credit-check-and-publication-of-personal-data_en",
+    "titre": "Norwegian DPA fines private individual for credit check and publication of personal data without a lawful basis",
+    "titre_fr": "Norwegian DPA amende une personne privée pour vérification du crédit et publication de données personnelles sans base légale",
+    "titre_en": "",
+    "langue": "en"
+   }
+  },
+  {
+   "code": "DPC",
+   "nb_articles": 5,
+   "exemple": {
+    "date": "2026-11-17",
+    "lien": "https://www.edpb.europa.eu/news/irish-data-protection-commission-fines-mtch-eur-11-million-following-inquiry-into-tinder-users_en",
+    "titre": "Irish Data Protection Commission fines MTCH EUR 11 million following Inquiry into Tinder users’ personal data requests",
+    "titre_fr": "Irish Data Protection Commission amende MTCH EUR 11 millions à la suite d'une enquête auprès des utilisateurs de Tinder.",
     "titre_en": "",
     "langue": "en"
    }
@@ -1566,18 +1578,6 @@
    }
   },
   {
-   "code": "DPC",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/tobb-mint-460-millio-dollarra-birsagoltak-a-google-t-a-helyadatok-kezelese-miatt/",
-    "titre": "Több mint 460 millió dollárra bírságolták a Google-t a helyadatok kezelése miatt",
-    "titre_fr": "Plus de 460 millions de dollars ont été infligés à Google pour la gestion des données de localisation",
-    "titre_en": "More than $460 million has been fined to Google for managing location data",
-    "langue": "hu"
-   }
-  },
-  {
    "code": "IQVIA",
    "nb_articles": 3,
    "exemple": {
@@ -1590,7 +1590,7 @@
    }
   },
   {
-   "code": "SANS",
+   "code": "OUCH",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",
@@ -1602,7 +1602,7 @@
    }
   },
   {
-   "code": "OUCH",
+   "code": "SANS",
    "nb_articles": 3,
    "exemple": {
     "date": "2026-10-07",

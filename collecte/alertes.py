@@ -50,7 +50,10 @@ EXCLUS = re.compile(
 SECTEUR_EXCLU = re.compile(
     r"\b(ESMA|EBA|EIOPA|ECB|BCE|ACPR|AMF|BaFin|CNMV|Consob|FCA|BEREC|ORECE)\b|central counterpart|\bCCPs?\b|tokeni[sz]ation|"
     r"crypto-?asset|\bMiCA\b|payment services|anti-money laundering|blanchiment|banking union|insurance distribution|"
-    r"internet openness|net neutrality|neutralite du net|roaming|(radio )?spectrum (auction|allocation|management)|electronic communications code")
+    r"internet openness|net neutrality|neutralite du net|roaming|(radio )?spectrum (auction|allocation|management)|electronic communications code|"
+    # v14.1 : autorités du DSA (coordinateurs pour les services numériques), hors périmètre
+    r"(?i:digital services coordinator|coordinateur (pour les|des) services numeriques|koordynator\w* ds\.? us[lł]ug cyfrowych|"
+    r"koordinator\w* fur digitale dienste|coordinador de servicios digitales|coordinatore dei servizi digitali)|\bDSC\b")
 
 # Texte INCONNU : il faut un sujet au cœur de la veille (cyber, données, dispositifs médicaux, IA, santé
 # numérique) ; « diagnostic », « laboratoire » ou « biologie » seuls ne suffisent pas (ex. décrets sur

@@ -17,7 +17,7 @@ import json
 import os
 import time
 
-VERSION = "t5"   # v14 (20/11/2026) : consignes élargies aux données et au numérique (tests rétrospectifs du 18-19/11)
+VERSION = "t6"   # v14.1 (23/11/2026) : + responsabilité des produits numériques, coordinateurs DSA (t5 : données et numérique)
 
 PAYS = ("Union européenne (textes européens), Allemagne, Autriche, Belgique, Bulgarie, Danemark, Espagne, "
         "Finlande, France, Grèce, Hongrie, Irlande, Italie, Luxembourg, Norvège, Pays-Bas, Pologne, Portugal, "
@@ -72,7 +72,9 @@ Analyse l'article en répondant à CINQ questions. Le classement final est calcu
    « oui » aussi pour la RÉGULATION DES DONNÉES ET DU NUMÉRIQUE qui s'impose aux entreprises : accès, partage et
    réutilisation des données (données des produits connectés, données industrielles, espaces européens de données,
    données de santé), exigences sur les produits numériques et les logiciels (sécurité, mises à jour, conformité),
-   services cloud, systèmes d'IA ; et la cybersécurité du secteur public quand elle s'impose aussi à ses
+   services cloud, systèmes d'IA ; les règles de RESPONSABILITÉ ou de conformité des produits quand elles couvrent
+   les logiciels, l'IA, la cybersécurité, les mises à jour ou les données (un défaut de sécurité ou une mise à jour
+   non fournie qui engage le fabricant) ; et la cybersécurité du secteur public quand elle s'impose aussi à ses
    fournisseurs et prestataires.
    ATTENTION : le SUJET porte sur le THÈME, pas sur le secteur. Un texte sur les données, le numérique, l'IA ou la
    cybersécurité qui vise toutes les entreprises, tous les produits ou plusieurs secteurs a « sujet » = oui, MÊME s'il
@@ -109,7 +111,8 @@ Analyse l'article en répondant à CINQ questions. Le classement final est calcu
   publique, recherche médicale, vigilance…) ;
 - societe_grand_public : santé mentale, cyberharcèlement, protection des mineurs en ligne et réseaux sociaux,
   désinformation, conseils au grand public ;
-- dsa_dma : règles des PLATEFORMES EN LIGNE et des services aux consommateurs : réseaux sociaux, moteurs de
+- dsa_dma : règles des PLATEFORMES EN LIGNE et des services aux consommateurs (et leurs autorités, comme les
+  coordinateurs pour les services numériques) : réseaux sociaux, moteurs de
   recherche, places de marché, modération des contenus, concurrence entre grandes plateformes (DSA, DMA…),
   publicité et protection des consommateurs en ligne, médias et audiovisuel ;
 - hors_europe : sujet hors des pays suivis sans portée mondiale.
@@ -207,6 +210,15 @@ PREPARATION = _re.compile(
 # C : consultation sur un PROJET de lignes directrices, guide, avis (droit souple) : rien à appliquer encore
 DROIT_SOUPLE = _re.compile(r"guideline|guidance|lignes directrices|recommandation|recommendation|\bguide\b|\bfaq\b|"
                            r"opinion|avis\b|leitlinie|leitfaden|richtsnoer|orientaciones|linee guida|wytyczn|iranymutat", _re.I)
+# v14.1 : PLD (décision du 23/11/2026) : suivie seulement sous l'angle cyber / numérique, plus ses transpositions
+PLD = "Directive responsabilité produits (PLD)"
+TRANSPOSITION = _re.compile(r"transpos|umsetzung|recepimento|implementa|omzetting|wetsvoorstel|projet de loi|"
+                            r"gesetzentwurf|referentenentwurf|kabinett|anteproyecto|disegno di legge|projekt ustawy|"
+                            r"lakiehdotus|hallituksen esitys|lagforslag|lovforslag", _re.I)
+# v14.1 : mot de « règle » au sens large (pour corriger le sujet d'un texte sur le numérique d'après son titre)
+REGLE = _re.compile(r"\b(rules?|regles?|regels?|vorschriften|regeln|normas?|norme|liability|responsabilite|haftung|"
+                    r"aansprakelijkheid|responsabilidad|responsabilita|odpowiedzialnosc|requirements?|exigences|anforderungen)\b", _re.I)
+
 LOI = _re.compile(r"\b(law|act|bill|regulation|directive|decree|loi|reglement|decret|ordonnance|arrete|gesetz\w*|"
                   r"verordnung|wet|wetsvoorstel|ley|real decreto|legge|decreto|ustaw\w*|zakon\w*|torveny\w*|lag|lov|laki)\b", _re.I)
 
@@ -307,12 +319,18 @@ def decider(d, textes_cles=(), titre=""):
     sujet = d["sujet"]
     if tc & TEXTES_CYBER and (d["type"] in OFFICIELS or d["type"] == "commentaire"):
         sujet = "oui"
+    # v14.1 : PLD suivie sous l'angle cyber / numérique (titre) et pour ses transpositions nationales
+    if PLD in tc and titre and (d["type"] in OFFICIELS or d["type"] == "commentaire") and (
+            NUMERIQUE.search(titre) or TRANSPOSITION.search(titre)):
+        sujet = "oui"
     exclusion = d["exclusion"]
-    if exclusion == "sante_hors_sujet" and titre and not SANTE.search(titre):
-        exclusion = "aucune"   # v14 : pas de « santé sans lien cyber » pour un article qui ne parle pas de santé
+    if exclusion == "sante_hors_sujet" and titre and (not SANTE.search(titre) or NUMERIQUE.search(titre)):
+        # v14 : pas de « santé sans lien cyber » pour un article qui ne parle pas de santé ;
+        # v14.1 : ni pour un article qui parle de données ou de numérique (EHDS : « Health Data Space »)
+        exclusion = "aucune"
     if (sujet != "oui" and exclusion == "aucune" and d["applicable"] == "oui" and d["type"] in OFFICIELS and titre
-            and LOI.search(titre) and NUMERIQUE.search(titre)):
-        sujet = "oui"   # v14 : texte sur les données ou le numérique, applicable : dans le sujet
+            and (LOI.search(titre) or REGLE.search(titre)) and NUMERIQUE.search(titre)):
+        sujet = "oui"   # v14 : texte sur les données ou le numérique, applicable : dans le sujet (v14.1 : « règles »)
     if exclusion != "aucune" and not (sujet == "oui" and d["applicable"] == "oui"):
         return "pas_pertinent", exclusion
     if sujet != "oui":

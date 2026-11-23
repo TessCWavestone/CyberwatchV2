@@ -110,7 +110,7 @@ NETTOYAGE_CONSIGNES = {
     "NIS2": [("relève de NIS2 (fabrication de dispositifs médicaux), du", "relève du"), ("(NIS2, CER)", "(CER)")],
     "CRA": [(", du règlement DIV (IVDR) et du Cyber Resilience Act", " et du règlement DIV (IVDR)")],
     "CER": [("(NIS2, CER)", "(NIS2)")],
-    "DORA": [("crypto-actifs, DORA)", "crypto-actifs)")],
+    "DORA": [("crypto-actifs, DORA)", "crypto-actifs)"), ("crypto-actifs,\n  DORA)", "crypto-actifs)")],
 }
 
 

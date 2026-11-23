@@ -606,7 +606,8 @@ def evaluer(a, seuils, score_neg=None):
     # les administrations publiques (D1) ou que les PME, d'après le titre : pas pertinent
     if niveau != "ecarte" and not (ia.get("avis") and ia.get("motif") not in ("public_seul", "pme")):
         tt = tri_ia.titres(a)
-        if (tri_ia.PUBLIC_SEUL.search(tt) or tri_ia.DESIGNATION.search(tt)) and not tri_ia.ENTREPRISES.search(tt):
+        if ((tri_ia.PUBLIC_SEUL.search(tt) or tri_ia.DESIGNATION.search(tt)) and not tri_ia.ENTREPRISES.search(tt)
+                and not tri_ia.FOURNISSEURS.search(tt) and not ({x[0] for x in tc} & tri_ia.PUBLIC_ET_FOURNISSEURS)):
             niveau, motif = "ecarte", tri_ia.LIBELLES["public_seul"]
         elif tri_ia.PME.search(tt) and not tc:
             niveau, motif = "ecarte", tri_ia.LIBELLES["pme"]

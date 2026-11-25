@@ -56,6 +56,7 @@ import tri_ia  # noqa: E402
 import alertes  # noqa: E402
 import pressentis  # noqa: E402
 import resumes  # noqa: E402
+import lots  # noqa: E402
 import regles  # noqa: E402
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -897,6 +898,7 @@ def regrouper_doublons(liste):
 
 
 def main():
+    t_debut = time.time()
     cfg = charger_config()
     classeur = openpyxl.load_workbook(os.path.join(RACINE, cfg["fichier_sources"]), read_only=True, data_only=True)
     toutes = charger_sources(cfg, classeur, avec_inactives=True)
@@ -1148,6 +1150,44 @@ def main():
 
     # v7 — Tri par une petite IA open source (gratuite, sans clé, exécutée ici) : lit titre, résumé et début de la
     # page, répond pertinent / à surveiller / pas pertinent selon des critères écrits (collecte/tri_ia.py)
+    # gardés par les règles, plus les écartés « limites » (source officielle ou note suffisante, sans bruit) :
+    # les écartés pour bruit (vulnérabilités, événements…) ne sont pas soumis à l'IA (test du 14/10)
+    def a_soumettre(a):
+        if not (candidat(a) or a.get("version") == id_version):
+            return False
+        if a["pertinence"] != "ecarte":
+            return True
+        t = regles.texte_article(a)
+        if a.get("bruit"):
+            # décision du 16/10 : une alerte de vulnérabilité est soumise à l'IA si elle évoque le secteur
+            return any(b.startswith("vulnérabilités") for b in a["bruit"]) and bool(
+                regles.SANTE_METIER.search(t) or regles.DISPO_NUM_SANTE.search(t) or regles.REG_DISPOSITIFS.search(t))
+        return a.get("nature") == "officielle" or (a.get("score") or 0) >= pert.seuils.get("moyenne", 0.45)
+    a_juger = [a for a in collectes if a_soumettre(a)]
+    a_juger = [a for a in a_juger if a.get("nature") != "opinion" and not a.get("base")]
+    rang_niv = {"elevee": 0, "moyenne": 1, "faible": 2, "ecarte": 3}
+    a_juger.sort(key=lambda a: a["date"], reverse=True)
+    a_juger.sort(key=lambda a: (a.get("version") != id_version, rang_niv.get(a.get("pertinence"), 4)))
+
+    # v15 (24/11/2026, passage à l'échelle mondiale) : tri par l'IA en lots parallèles (collecte/lots.py).
+    # PRÉPARATION : on écrit la liste des articles à juger et on s'arrête (rien n'est enregistré).
+    if os.environ.get("MODE_COLLECTE", "").strip().lower() == "preparation":
+        n_lot = lots.ecrire_a_juger(a_juger, os.path.join(RACINE, "lots", "a_juger.json"))
+        print("Preparation: %d articles to be assessed by the AI in parallel batches (%d s since start)." % (
+            n_lot, time.time() - t_debut))
+        return 0
+    # ASSEMBLAGE : avis des lots repris ; l'IA ne juge ensuite que ce qui manque (articles apparus entre-temps,
+    # lot en échec…), dans un budget plus court
+    n_repris, n_lots = lots.injecter(a_juger, os.environ.get("VERDICTS_DIR", ""))
+    if n_lots:
+        pert.noter(collectes)
+        # étape 1.1 (A, 25/11/2026) : l'assemblage ne juge que les articles NOUVEAUX de cette collecte que les lots
+        # n'ont pas jugés (lot en échec, article apparu depuis la préparation) ; l'arriéré attend les lots suivants
+        a_juger = [a for a in a_juger if a.get("version") == id_version]
+        cfg = dict(cfg, ia_tri=dict(cfg.get("ia_tri") or {},
+                                     budget_minutes=(cfg.get("ia_tri") or {}).get("budget_minutes_assemblage", 30)))
+        print("AI triage in parallel batches: %d assessments taken from %d batches." % (n_repris, n_lots))
+
     t_ia = time.time()
     # v13.4 : l'IA est d'abord testée dans un processus séparé ; si elle plante (processeur non pris en charge…),
     # la collecte continue avec les règles seules au lieu de s'arrêter
@@ -1158,24 +1198,6 @@ def main():
         ia = tri_ia.TriIA(dict(cfg, ia_tri=dict(cfg.get("ia_tri") or {}, actif=False)))
         ia.erreur = ia_msg
     if ia.actif:
-        # gardés par les règles, plus les écartés « limites » (source officielle ou note suffisante, sans bruit) :
-        # les écartés pour bruit (vulnérabilités, événements…) ne sont pas soumis à l'IA (test du 14/10)
-        def a_soumettre(a):
-            if not (candidat(a) or a.get("version") == id_version):
-                return False
-            if a["pertinence"] != "ecarte":
-                return True
-            t = regles.texte_article(a)
-            if a.get("bruit"):
-                # décision du 16/10 : une alerte de vulnérabilité est soumise à l'IA si elle évoque le secteur
-                return any(b.startswith("vulnérabilités") for b in a["bruit"]) and bool(
-                    regles.SANTE_METIER.search(t) or regles.DISPO_NUM_SANTE.search(t) or regles.REG_DISPOSITIFS.search(t))
-            return a.get("nature") == "officielle" or (a.get("score") or 0) >= pert.seuils.get("moyenne", 0.45)
-        a_juger = [a for a in collectes if a_soumettre(a)]
-        a_juger = [a for a in a_juger if a.get("nature") != "opinion" and not a.get("base")]
-        rang_niv = {"elevee": 0, "moyenne": 1, "faible": 2, "ecarte": 3}
-        a_juger.sort(key=lambda a: a["date"], reverse=True)
-        a_juger.sort(key=lambda a: (a.get("version") != id_version, rang_niv.get(a.get("pertinence"), 4)))
         n_ia = ia.trier(a_juger)
         pert.noter(collectes)
         print("AI triage: %d articles assessed (%d s)%s" % (n_ia, time.time() - t_ia, (" — " + ia.erreur) if ia.erreur else ""))

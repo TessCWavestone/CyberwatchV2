@@ -53,7 +53,11 @@ SECTEUR_EXCLU = re.compile(
     r"internet openness|net neutrality|neutralite du net|roaming|(radio )?spectrum (auction|allocation|management)|electronic communications code|"
     # v14.1 : autorités du DSA (coordinateurs pour les services numériques), hors périmètre
     r"(?i:digital services coordinator|coordinateur (pour les|des) services numeriques|koordynator\w* ds\.? us[lł]ug cyfrowych|"
-    r"koordinator\w* fur digitale dienste|coordinador de servicios digitales|coordinatore dei servizi digitali)|\bDSC\b")
+    r"koordinator\w* fur digitale dienste|coordinador de servicios digitales|coordinatore dei servizi digitali|"
+    # étape 1.1 (C, 25/11/2026) : DSA et DMA hors périmètre (essai du 24/11 : TikTok et le DSA en point clé)
+    r"digital services act|digital markets act|legge sui servizi digitali|ley de servicios digitales|"
+    r"gesetz uber digitale dienste|reglement sur les services numeriques|reglement sur les marches numeriques)|"
+    r"\bDSC\b|\bDSA\b|\bDMA\b")
 
 # Texte INCONNU : il faut un sujet au cœur de la veille (cyber, données, dispositifs médicaux, IA, santé
 # numérique) ; « diagnostic », « laboratoire » ou « biologie » seuls ne suffisent pas (ex. décrets sur

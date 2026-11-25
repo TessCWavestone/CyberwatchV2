@@ -2603,10 +2603,18 @@
     if (!META.depot) return Promise.reject(new Error('depot'));
     if (COLLECTE.run) {   // collecte repérée : on ne suit plus que ses étapes (1 appel)
       return apiGh('/repos/' + META.depot + '/actions/runs/' + COLLECTE.run.id + '/jobs').then(function (j) {
-        var job = (j.jobs || [])[0] || {};
-        if (job.status === 'completed') { COLLECTE.run = null; return { en_cours: false, derniere: { conclusion: job.conclusion } }; }
+        // v15 : la collecte compte plusieurs jobs (préparation, lots d'IA en parallèle, assemblage) ; la publication
+        // du site (job séparé) n'est pas suivie ici. Toutes les étapes sont mises bout à bout.
+        var jobs = (j.jobs || []).filter(function (x) { return !/publi/i.test(x.name || ''); });
+        var job = jobs[0] || {};
+        var fini = jobs.length && jobs.every(function (x) { return x.status === 'completed'; });
+        var dernier = jobs.filter(function (x) { return /^collecte/i.test(x.name || ''); })[0] || jobs[jobs.length - 1] || {};
+        if (fini) { COLLECTE.run = null; return { en_cours: false, derniere: { conclusion: dernier.conclusion || job.conclusion } }; }
+        var etapes = [];
+        jobs.forEach(function (x) { (x.steps || []).forEach(function (s) { etapes.push({ nom: s.name, statut: s.status, conclusion: s.conclusion }); }); });
+        var statut = jobs.some(function (x) { return x.status === 'in_progress'; }) ? 'in_progress' : (job.status || 'queued');
         return { en_cours: true, duree_habituelle_s: COLLECTE.duree, collecte: { debut: COLLECTE.run.debut, declenchement: COLLECTE.run.decl,
-          statut: job.status || 'queued', etapes: (job.steps || []).map(function (s) { return { nom: s.name, statut: s.status, conclusion: s.conclusion }; }) } };
+          statut: statut, etapes: etapes } };
       });
     }
     return apiGh('/repos/' + META.depot + '/actions/workflows/veille.yml/runs?per_page=10').then(function (d) {
@@ -2624,7 +2632,7 @@
     // noms des étapes de veille.yml (en anglais depuis v13.3 ; anciens noms français gardés)
     if (/horaire|schedule/i.test(nom)) return e.garde;
     if (/RKC/.test(nom)) return e.rkc;
-    if (/Collecter|Collect new/i.test(nom)) return e.collecte;
+    if (/Collecter|Collect new|Prepare the articles|Sort articles with the AI|assessments/i.test(nom)) return e.collecte;
     if (/Enregistrer|Save data/i.test(nom)) return e.enreg;
     if (/Python|d[ée]pendances|depend|mod[eè]les|models|triage AI|cache/i.test(nom)) return e.outils;
     if (/site|pages|Publier|Publish|artifact/i.test(nom)) return e.publi;

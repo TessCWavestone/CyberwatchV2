@@ -1,5 +1,5 @@
 window.VEILLE_ACRONYMES = {
- "mise_a_jour": "2026-11-23T16:01+00:00",
+ "mise_a_jour": "2026-11-25T17:22+00:00",
  "glossaire": {
   "ΓΚΠΔ": {
    "langues": [
@@ -149,14 +149,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cyber Resilience Act (CRA)",
    "en": "Cyber Resilience Act (CRA)",
-   "nb_articles": 198,
+   "nb_articles": 197,
    "exemple": {
-    "date": "2026-11-19",
-    "lien": "https://digital-strategy.ec.europa.eu/en/news/first-european-standard-published-support-cyber-resilience-act",
-    "titre": "First European standard published to support the Cyber Resilience Act",
-    "langue": "en",
-    "titre_fr": "Première norme européenne publiée pour soutenir la Cyber Resilience Act",
-    "titre_en": ""
+    "date": "2026-11-25",
+    "lien": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/355",
+    "titre": "Gesetz zur Durchführung der Verordnung (EU) 2024/2847 über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen (Cyberresilienz-Verordnung)",
+    "langue": "de",
+    "titre_fr": "Loi d'application du règlement (UE) 2024/2847 sur les exigences horizontales en matière de cybersécurité pour les produits à éléments numériques (Règlement sur la cyberrésilience)",
+    "titre_en": "Act implementing Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyberresilience Regulation)"
    }
   },
   {
@@ -164,7 +164,7 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "NIS2",
    "en": "NIS2",
-   "nb_articles": 93,
+   "nb_articles": 92,
    "exemple": {
     "date": "2026-11-23",
     "lien": "https://www.hwsw.hu/go/hw6af45cafcf9a4",
@@ -179,13 +179,13 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "AI Act (règlement IA)",
    "en": "AI Act",
-   "nb_articles": 76,
+   "nb_articles": 82,
    "exemple": {
-    "date": "2026-11-20",
-    "lien": "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-holds-its-second-meeting",
-    "titre": "The AI Act Advisory Forum holds its second meeting",
+    "date": "2026-11-25",
+    "lien": "https://digital-strategy.ec.europa.eu/en/news/ai-act-scientific-panel-holds-second-regular-meeting",
+    "titre": "AI Act scientific panel holds second regular meeting",
     "langue": "en",
-    "titre_fr": "Le Forum consultatif sur la loi IA tient sa deuxième réunion",
+    "titre_fr": "Le groupe scientifique de la loi IA tient une deuxième réunion ordinaire",
     "titre_en": ""
    }
   },
@@ -194,14 +194,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "RGPD",
    "en": "GDPR",
-   "nb_articles": 65,
+   "nb_articles": 72,
    "exemple": {
-    "date": "2026-11-20",
-    "lien": "https://www.security.nl/posting/962492/Autoriteit+Persoonsgegevens+geeft+On+That+Ass+boete+van+90_000+euro?channel=rss",
-    "titre": "Autoriteit Persoonsgegevens geeft On That Ass boete van 90.000 euro",
-    "langue": "nl",
-    "titre_fr": "Autorité fournit des données à caractère personnel sur ce Ass 90.000 euros d'amende",
-    "titre_en": "Authority Provides Personal Data On That Ass 90,000 euro fine"
+    "date": "2026-11-25",
+    "lien": "https://iapp.org/news/a/how-to-track-ai-use-and-meet-gdpr-obligations-effectively",
+    "titre": "How to track AI use and meet GDPR obligations effectively",
+    "langue": "en",
+    "titre_fr": "Comment suivre efficacement l'utilisation de IA et respecter les obligations de RGPD",
+    "titre_en": ""
    }
   },
   {
@@ -209,14 +209,29 @@ window.VEILLE_ACRONYMES = {
    "groupe": "textes",
    "fr": "Cybersecurity Act (certification UE)",
    "en": "Cybersecurity Act (EU certification)",
-   "nb_articles": 30,
+   "nb_articles": 28,
    "exemple": {
-    "date": "2026-11-16",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-telekomaktorer-som-inte-anmalt-sig-enligt-cybersakerhetslagen/",
-    "titre": "PTS granskar telekomaktörer som inte anmält sig enligt cybersäkerhetslagen",
-    "langue": "sv",
-    "titre_fr": "PTS examine les opérateurs de télécommunications qui ne se sont pas inscrits en vertu de la Loi sur la cybersécurité",
-    "titre_en": "PTS reviews telecom operators who have not registered under the Cybersecurity Act"
+    "date": "2026-10-21",
+    "lien": "https://www.lupa.cz/aktuality/jak-zvladnout-novy-zakon-o-kyberbezpecnosti-stat-ukazal-jak-spravne-nastavit-rizeni-rizik/?utm_source=rss&utm_medium=text&utm_campaign=rss",
+    "titre": "Jak zvládnout nový zákon o kyberbezpečnosti? Stát ukázal, jak správně nastavit řízení rizik",
+    "langue": "cs",
+    "titre_fr": "Comment gérer la nouvelle loi sur la cybersécurité? L'État a montré comment bien gérer les risques",
+    "titre_en": "How to handle the new cyber security bill? State has shown how to properly set risk management"
+   }
+  },
+  {
+   "code": "EHDS",
+   "groupe": "textes",
+   "fr": "EHDS (espace européen des données de santé)",
+   "en": "EHDS (European Health Data Space)",
+   "nb_articles": 17,
+   "exemple": {
+    "date": "2026-11-24",
+    "lien": "https://www.ictrecht.nl/blog/de-klok-van-de-ehds-tikt-wat-speelt-er-nu-echt-in-de-praktijk",
+    "titre": "Blog 24 november 2026 Zorg & ICT EHDS De klok van de EHDS tikt: wat speelt er nu echt in de praktijk? Lees meer",
+    "langue": "nl",
+    "titre_fr": "Blog 24 novembre 2026 Soins et ICT EHDS L'horloge du EHDS tourne : que se passe-t-il vraiment en pratique ? Lire plus",
+    "titre_en": "Blog 24 November 2026 Care & ICT EHDS The clock of the EHDS is ticking: what is really going on in practice? Read more"
    }
   },
   {
@@ -232,21 +247,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "nl",
     "titre_fr": "Loi sur la cybersécurité et entités essentielles de résilience en vigueur aujourd'hui",
     "titre_en": "Cyber Security Act and Resilience Critical Entities Effective Today"
-   }
-  },
-  {
-   "code": "EHDS",
-   "groupe": "textes",
-   "fr": "EHDS (espace européen des données de santé)",
-   "en": "EHDS (European Health Data Space)",
-   "nb_articles": 16,
-   "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://health.ec.europa.eu/node/17803",
-    "titre": "Commission establishes the European Health Data Space Stakeholder Forum and Community",
-    "langue": "en",
-    "titre_fr": "La Commission établit le Forum européen des parties prenantes dans le domaine des données sanitaires et la Communauté",
-    "titre_en": ""
    }
   },
   {
@@ -280,6 +280,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "eIDAS",
+   "groupe": "textes",
+   "fr": "eIDAS 2 / portefeuille d'identité",
+   "en": "eIDAS 2 / digital identity wallet",
+   "nb_articles": 7,
+   "exemple": {
+    "date": "2026-11-24",
+    "lien": "https://www.gov.pl/web/cyfryzacja/europejski-portfel-tozsamosci-cyfrowej-coraz-wiecej-firm-i-instytucji-przygotowuje-sie-do-zmian",
+    "titre": "Europejski Portfel Tożsamości Cyfrowej. Coraz więcej firm i instytucji przygotowuje się do zmian",
+    "langue": "pl",
+    "titre_fr": "Portefeuille européen d'identité numérique. De plus en plus d'entreprises et d'institutions se préparent au changement",
+    "titre_en": "European Digital Identity Wallet. More and more companies and institutions are preparing for change"
+   }
+  },
+  {
    "code": "ISO 27001",
    "groupe": "textes",
    "fr": "ISO/IEC 27001 et famille 2700x",
@@ -292,6 +307,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Netherlands: Cybersecurity Regulation for healthcare published – NEN 7510 / ISO 27001 compliance and reporting thresholds"
+   }
+  },
+  {
+   "code": "Normes harmonisées",
+   "groupe": "textes",
+   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
+   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
+   "nb_articles": 7,
+   "exemple": {
+    "date": "2026-11-25",
+    "lien": "https://www.federprivacy.org/informazione/primo-piano/pubblicata-nella-gazzetta-ufficiale-dell-ue-la-uni-cei-en-18286-2026-la-prima-norma-armonizzata-a-sostegno-dell-attuazione-dell-ai-act",
+    "titre": "Pubblicata nella Gazzetta Ufficiale dell’UE la UNI CEI EN 18286:2026, la prima norma armonizzata a sostegno dell'attuazione dell’AI Act",
+    "langue": "it",
+    "titre_fr": "La UNI CEI CEI EN 18286:2026, première norme harmonisée à l'appui de la mise en œuvre de la loi AI, publiée au Journal officiel de la UE.",
+    "titre_en": "The UNI CEI CEI EN 18286:2026, the first harmonized standard in support of the implementation of the AI Act, published in the Official Journal of the EU."
    }
   },
   {
@@ -336,36 +366,6 @@ window.VEILLE_ACRONYMES = {
     "titre": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
     "langue": "en",
     "titre_fr": "MDCG 2020-16 rev.5 - Lignes directrices sur les règles de classification des instruments médicaux de diagnostic in vitro en vertu du Règlement (UE) 2017/746 (septembre 2026)",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "eIDAS",
-   "groupe": "textes",
-   "fr": "eIDAS 2 / portefeuille d'identité",
-   "en": "eIDAS 2 / digital identity wallet",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://lvm.fi/-/10623/eurooppalaisen-digitaalisen-identiteetin-lompakon-mahdollistava-lainsaadanto-tulee-voimaan-lokakuussa",
-    "titre": "Eurooppalaisen digitaalisen identiteetin lompakon mahdollistava lainsäädäntö tulee voimaan lokakuussa",
-    "langue": "fi",
-    "titre_fr": "La législation européenne sur le portefeuille d'identité numérique entrera en vigueur en octobre",
-    "titre_en": "European digital identity wallet legislation will enter into force in October"
-   }
-  },
-  {
-   "code": "Normes harmonisées",
-   "groupe": "textes",
-   "fr": "Normes harmonisées (CEN-CENELEC, ETSI)",
-   "en": "Harmonised standards (CEN-CENELEC, ETSI)",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-11-06",
-    "lien": "https://www.google.com/search?q=%22COCIR+-+Cyber+Resilience+Act%3A+Timely+Citation+of+Harmonised+Standards+Essential%22+Global%3A+Government+News+and+Documents%3B+Political+and+Economic+Org+...",
-    "titre": "COCIR - Cyber Resilience Act: Timely Citation of Harmonised Standards Essential",
-    "langue": "en",
-    "titre_fr": "COCIR - Loi sur la cyberrésilience : Citation opportune de normes harmonisées essentielles",
     "titre_en": ""
    }
   },
@@ -644,7 +644,7 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CEPD / EDPB",
    "en": "EDPB",
-   "nb_articles": 61,
+   "nb_articles": 64,
    "exemple": {
     "date": "2026-11-19",
     "lien": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-private-individual-for-credit-check-and-publication-of-personal-data_en",
@@ -659,14 +659,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "NCSC (Royaume-Uni, Pays-Bas, Suisse…)",
    "en": "NCSC (UK, NL, CH…)",
-   "nb_articles": 60,
+   "nb_articles": 52,
    "exemple": {
-    "date": "2026-11-06",
-    "lien": "https://www.ncsc.nl/nieuws/cybersecuritybeeld-2026-ai-versnelt-en-vergroot-de-dreiging",
-    "titre": "Cybersecuritybeeld 2026: AI versnelt en vergroot de dreiging",
+    "date": "2026-11-18",
+    "lien": "https://www.ncsc.nl/alerts/kwetsbaarheden-in-atlassian-producten-installeer-de-updates",
+    "titre": "Kwetsbaarheden in Atlassian-producten: installeer de updates",
     "langue": "nl",
-    "titre_fr": "Image Cybersécurité 2026: IA accélère et augmente la menace",
-    "titre_en": "Cybersecurity image 2026: AI accelerates and increases the threat"
+    "titre_fr": "Vulnérabilités dans les produits Atlassian : installer les mises à jour",
+    "titre_en": "Vulnerabilities in Atlassian products: install the updates"
    }
   },
   {
@@ -674,14 +674,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "CNIL",
    "en": "CNIL",
-   "nb_articles": 43,
+   "nb_articles": 49,
    "exemple": {
-    "date": "2026-11-20",
-    "lien": "https://www.cnil.fr/fr/gpa-ia-education",
-    "titre": "IA et éducation : une résolution mondiale pour la protection des données",
+    "date": "2026-11-24",
+    "lien": "https://www.cnil.fr/fr/acteurs-secteur-livraison-responsabilites",
+    "titre": "Acteurs du secteur de la livraison : comment définir les responsabilités au regard du RGPD ?",
     "langue": "fr",
     "titre_fr": "",
-    "titre_en": "AI and education: a global resolution for data protection"
+    "titre_en": "Actors in the delivery sector: how to define responsibilities with regard to GDPR?"
    }
   },
   {
@@ -689,29 +689,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "Autorité nationale de cybersécurité (Grèce)",
    "en": "National Cybersecurity Authority (Greece)",
-   "nb_articles": 30,
+   "nb_articles": 29,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://cyber.gov.gr/koines-draseis-kai-synergeies-ton-nccs-stin-kypro-gia-ena-ischyrotero-eyropaiko-oikosystima-kyvernoasfaleias/",
-    "titre": "Κοινές δράσεις και συνέργειες των NCCs στην Κύπρο για ένα ισχυρότερο ευρωπαϊκό οικοσύστημα κυβερνοασφάλειας",
+    "date": "2026-10-16",
+    "lien": "https://cyber.gov.gr/microsoft-365-kai-apaitiseis-kyvernoasfaleias-ena-dorean-diadiktyako-ergaleio-gia-na-epilexete-tin-katallili-adeia-gia-tin-kya-1689-2025-kai-tin-odigia-nis2/",
+    "titre": "Microsoft 365 και απαιτήσεις κυβερνοασφάλειας: Ένα δωρεάν διαδικτυακό εργαλείο για να επιλέξετε την κατάλληλη άδεια για την ΚΥΑ 1689/2025 και την Οδηγία NIS2",
     "langue": "el",
-    "titre_fr": "Actions communes et synergies des CNC à Chypre pour un écosystème européen de cybersécurité plus fort",
-    "titre_en": "Joint actions and synergies of NCCs in Cyprus for a stronger European cybersecurity ecosystem"
-   }
-  },
-  {
-   "code": "NÚKIB",
-   "groupe": "autorites",
-   "fr": "NÚKIB (Tchéquie)",
-   "en": "NÚKIB (Czechia)",
-   "nb_articles": 27,
-   "exemple": {
-    "date": "2026-10-22",
-    "lien": "https://sukl.gov.cz/zdravotnicke-prostredky/aktuality-zp/docasne-omezeni-elektronickeho-rozhrani-sukl-pro-podavani-vigilancnich-hlaseni-zdravotnickych-prostredku/",
-    "titre": "Dočasné omezení elektronického rozhraní SÚKL pro podávání vigilančních hlášení zdravotnických prostředků",
-    "langue": "cs",
-    "titre_fr": "Restriction temporaire de l'interface électronique SÚKL pour la soumission des rapports de vigilance des dispositifs médicaux",
-    "titre_en": "Temporary restriction of SÚKL electronic interface for submission of vigilance reports of medical devices"
+    "titre_fr": "Microsoft 365 et les exigences de cybersécurité: Un outil en ligne gratuit pour choisir la licence appropriée pour ΚΥΑ 1689/2025 et NIS2 Directive",
+    "titre_en": "Microsoft 365 and cybersecurity requirements: A free online tool to choose the appropriate license for ΚΥΑ 1689/2025 and NIS2 Directive"
    }
   },
   {
@@ -730,6 +715,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "NÚKIB",
+   "groupe": "autorites",
+   "fr": "NÚKIB (Tchéquie)",
+   "en": "NÚKIB (Czechia)",
+   "nb_articles": 24,
+   "exemple": {
+    "date": "2026-10-22",
+    "lien": "https://sukl.gov.cz/zdravotnicke-prostredky/aktuality-zp/docasne-omezeni-elektronickeho-rozhrani-sukl-pro-podavani-vigilancnich-hlaseni-zdravotnickych-prostredku/",
+    "titre": "Dočasné omezení elektronického rozhraní SÚKL pro podávání vigilančních hlášení zdravotnických prostředků",
+    "langue": "cs",
+    "titre_fr": "Restriction temporaire de l'interface électronique SÚKL pour la soumission des rapports de vigilance des dispositifs médicaux",
+    "titre_en": "Temporary restriction of SÚKL electronic interface for submission of vigilance reports of medical devices"
+   }
+  },
+  {
    "code": "ENISA",
    "groupe": "autorites",
    "fr": "ENISA",
@@ -745,11 +745,26 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "Garante",
+   "groupe": "autorites",
+   "fr": "Garante privacy (Italie)",
+   "en": "Garante privacy (Italy)",
+   "nb_articles": 22,
+   "exemple": {
+    "date": "2026-11-17",
+    "lien": "https://www.gpdp.it/garante/doc.jsp?ID=Sanzionata Techpartner per 25mila euro: violati i diritti di un ex dipendente",
+    "titre": "Sanzionata Techpartner per 25mila euro: violati i diritti di un ex dipendente",
+    "langue": "it",
+    "titre_fr": "Techpartner sanctionné pour 25 mille euros: a violé les droits d'un ancien employé",
+    "titre_en": "Sanctioned Techpartner for 25 thousand euros: violated the rights of a former employee"
+   }
+  },
+  {
    "code": "NKI",
    "groupe": "autorites",
    "fr": "NKI (Hongrie)",
    "en": "NKI (Hungary)",
-   "nb_articles": 21,
+   "nb_articles": 14,
    "exemple": {
     "date": "2026-11-23",
     "lien": "https://nki.gov.hu/it-biztonsag/hirek/ujabb-vedelmi-megoldas-erkezik-a-signalra/",
@@ -760,48 +775,18 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "Garante",
-   "groupe": "autorites",
-   "fr": "Garante privacy (Italie)",
-   "en": "Garante privacy (Italy)",
-   "nb_articles": 20,
-   "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://www.federprivacy.org/informazione/garante-privacy/pec-con-gli-indirizzi-dei-destinatari-in-chiaro-il-garante-privacy-multa-la-federazione-degli-ordini-dei-biologi",
-    "titre": "PEC con gli indirizzi dei destinatari in chiaro: il Garante Privacy multa la Federazione degli Ordini dei Biologi",
-    "langue": "it",
-    "titre_fr": "PEC avec les adresses des destinataires en clair: le garant de la vie privée amende la Fédération des ordres biologistes",
-    "titre_en": "PEC with the addresses of the recipients in clear: the Privacy Guarantor fines the Federation of Biologist Orders"
-   }
-  },
-  {
    "code": "MCF",
    "groupe": "autorites",
    "fr": "MCF / MSB (Suède)",
    "en": "MCF / MSB (Sweden)",
-   "nb_articles": 14,
+   "nb_articles": 13,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://www.ncsc.se/sv/aktuellt/nu-startar-tank-sakert-2026/",
-    "titre": "Nu startar Tänk Säkert 2026",
+    "date": "2026-09-14",
+    "lien": "https://www.ncsc.se/sv/aktuellt/inga-storre-informations--eller-cyberangrepp-mot-svenska-valet/",
+    "titre": "Inga större informations- eller cyberangrepp mot svenska valet",
     "langue": "sv",
-    "titre_fr": "Penser sûrement 2026",
-    "titre_en": "Thinking Surely 2026"
-   }
-  },
-  {
-   "code": "ANSSI",
-   "groupe": "autorites",
-   "fr": "ANSSI",
-   "en": "ANSSI",
-   "nb_articles": 12,
-   "exemple": {
-    "date": "2026-11-23",
-    "lien": "https://cyber.gouv.fr/actualites/lanssi-accompagne-les-organisations-dans-leur-securisation/",
-    "titre": "L’ANSSI accompagne les organisations dans leur sécurisation",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "The ANSSI supports organisations in their security"
+    "titre_fr": "Aucune information importante ou cyberattaque contre les élections suédoises",
+    "titre_en": "No major information or cyber attacks against Swedish elections"
    }
   },
   {
@@ -820,33 +805,33 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "ANSSI",
+   "groupe": "autorites",
+   "fr": "ANSSI",
+   "en": "ANSSI",
+   "nb_articles": 11,
+   "exemple": {
+    "date": "2026-11-23",
+    "lien": "https://cyber.gouv.fr/actualites/lanssi-accompagne-les-organisations-dans-leur-securisation/",
+    "titre": "L’ANSSI accompagne les organisations dans leur sécurisation",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "The ANSSI supports organisations in their security"
+   }
+  },
+  {
    "code": "NHS",
    "groupe": "autorites",
    "fr": "NHS (Royaume-Uni)",
    "en": "NHS (UK)",
-   "nb_articles": 12,
+   "nb_articles": 11,
    "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
-    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
+    "date": "2026-09-25",
+    "lien": "https://www.england.nhs.uk/2026/09/nhs-staff-suspected-snooping-patient-records-immediately-suspended/",
+    "titre": "NHS staff suspected of snooping on patient records to be immediately suspended",
     "langue": "en",
-    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
+    "titre_fr": "Le personnel de NHS soupçonné de fouiner sur les dossiers du patient doit être immédiatement suspendu",
     "titre_en": ""
-   }
-  },
-  {
-   "code": "BSI",
-   "groupe": "autorites",
-   "fr": "BSI (Allemagne)",
-   "en": "BSI (Germany)",
-   "nb_articles": 10,
-   "exemple": {
-    "date": "2026-11-11",
-    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Hardware-Angriffe_TPM2_Verschluesselung_261111.html",
-    "titre": "Hardware-Angriffe umgehen TPM2-basierte Festplattenverschlüsselung",
-    "langue": "de",
-    "titre_fr": "Attaques matérielles contourner le chiffrement du disque dur TPM2-basierte",
-    "titre_en": "Hardware attacks bypass TPM2-basierte hard drive encryption"
    }
   },
   {
@@ -856,57 +841,27 @@ window.VEILLE_ACRONYMES = {
    "en": "CNPD (Portugal / Luxembourg)",
    "nb_articles": 10,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-participa-em-workshop-europeu-sobre-avaliacao-de-impacto-de-sistemas-de-inteligencia-artificial/",
-    "titre": "13/10/2026 CNPD participa em workshop europeu sobre avaliação de impacto de sistemas de Inteligência Artificial A iniciativa decorreu de 24 a 26 de setembro de 2026, na Croácia.",
+    "date": "2026-10-01",
+    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-e-aepd-reforcam-cooperacao-e-partilham-experiencias-sobre-os-desafios-da-utilizacao-da-inteligencia-artificial-na-protecao-de-dados-pessoais/",
+    "titre": "01/10/2026 CNPD e AEPD reforçam cooperação e partilham experiências sobre os desafios da utilização da inteligência artificial na proteção de dados pessoais",
     "langue": "pt",
-    "titre_fr": "13/10/2026 CNPD participe à un atelier européen sur l'analyse d'impact des systèmes d'intelligence artificielle Cette initiative a eu lieu du 24 au 26 septembre 2026 en Croatie.",
-    "titre_en": "13/10/2026 CNPD participates in European workshop on impact assessment of Artificial Intelligence systems The initiative took place from 24 to 26 September 2026 in Croatia."
+    "titre_fr": "01/10/2026 CNPD et AEPD renforcent la coopération et échangent des expériences sur les défis de l'utilisation de l'intelligence artificielle dans la protection des données personnelles",
+    "titre_en": "01/10/2026 CNPD and AEPD reinforce cooperation and share experiences on the challenges of using artificial intelligence in the protection of personal data"
    }
   },
   {
-   "code": "ACN",
+   "code": "BSI",
    "groupe": "autorites",
-   "fr": "ACN (Italie)",
-   "en": "ACN (Italy)",
+   "fr": "BSI (Allemagne)",
+   "en": "BSI (Germany)",
    "nb_articles": 9,
    "exemple": {
-    "date": "2026-11-17",
-    "lien": "http://www.gazzettaufficiale.it/eli/id/2026/11/17/26A05971/SG",
-    "titre": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 9 settembre 2026",
-    "langue": "it",
-    "titre_fr": "DÉCRET DU PRÉSIDENT DU CONSEIL DU MINISTRI 9 septembre 2026",
-    "titre_en": "DECREATE OF THE PRESIDENT OF THE COUNCIL OF THE MINISTRI 9 September 2026"
-   }
-  },
-  {
-   "code": "CNCS",
-   "groupe": "autorites",
-   "fr": "CNCS (Portugal)",
-   "en": "CNCS (Portugal)",
-   "nb_articles": 9,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://dyn.cncs.gov.pt/pt/detalhe/art/136098/equipa-do-cybersecurity-challenge-pt-representa-portugal-em-competicao-europeia",
-    "titre": "Equipa do Cybersecurity Challenge PT representa Portugal em competição europeia",
-    "langue": "pt",
-    "titre_fr": "Cybersecurity Challenge L'équipe PT représente le Portugal dans la compétition européenne",
-    "titre_en": "Cybersecurity Challenge PT team represents Portugal in European competition"
-   }
-  },
-  {
-   "code": "PTS",
-   "groupe": "autorites",
-   "fr": "PTS (Suède)",
-   "en": "PTS (Sweden)",
-   "nb_articles": 9,
-   "exemple": {
-    "date": "2026-11-16",
-    "lien": "https://pts.se/nyheter-och-pressmeddelanden/pts-granskar-telekomaktorer-som-inte-anmalt-sig-enligt-cybersakerhetslagen/",
-    "titre": "PTS granskar telekomaktörer som inte anmält sig enligt cybersäkerhetslagen",
-    "langue": "sv",
-    "titre_fr": "PTS examine les opérateurs de télécommunications qui ne se sont pas inscrits en vertu de la Loi sur la cybersécurité",
-    "titre_en": "PTS reviews telecom operators who have not registered under the Cybersecurity Act"
+    "date": "2026-09-25",
+    "lien": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CRA-Konformitaet_BSI_DAkkS_260925.html",
+    "titre": "CRA-Konformität: BSI und DAkkS schaffen Prüfkompetenz für die Cybersicherheit",
+    "langue": "de",
+    "titre_fr": "CRA-Konformität: BSI et DAkkS créent une expertise d'audit pour la cybersécurité",
+    "titre_en": "CRA-Konformität: BSI and DAkkS create audit expertise for cybersecurity"
    }
   },
   {
@@ -925,11 +880,86 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "ACN",
+   "groupe": "autorites",
+   "fr": "ACN (Italie)",
+   "en": "ACN (Italy)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-11-17",
+    "lien": "http://www.gazzettaufficiale.it/eli/id/2026/11/17/26A05971/SG",
+    "titre": "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI 9 settembre 2026",
+    "langue": "it",
+    "titre_fr": "DÉCRET DU PRÉSIDENT DU CONSEIL DU MINISTRI 9 septembre 2026",
+    "titre_en": "DECREATE OF THE PRESIDENT OF THE COUNCIL OF THE MINISTRI 9 September 2026"
+   }
+  },
+  {
+   "code": "CNCS",
+   "groupe": "autorites",
+   "fr": "CNCS (Portugal)",
+   "en": "CNCS (Portugal)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-09-15",
+    "lien": "https://www.n4a.pt/noticias-nis2/nis2-fim-prazo-registo-15-setembro",
+    "titre": "Portugal : fin de la période d'enregistrement NIS2 sur la plateforme MyCiber (15 septembre 2026)",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Portugal: NIS2 registration window on the MyCiber platform closes (15 September 2026)"
+   }
+  },
+  {
+   "code": "MHRA",
+   "groupe": "autorites",
+   "fr": "MHRA",
+   "en": "MHRA",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-19",
+    "lien": "https://www.gov.uk/government/news/uk-regulator-brings-new-ai-and-medtech-agenda-to-advamed",
+    "titre": "UK regulator brings new AI and MedTech agenda to AdvaMed",
+    "langue": "en",
+    "titre_fr": "Le régulateur UK apporte un nouveau programme IA et MedTech à AdvaMed",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "PTS",
+   "groupe": "autorites",
+   "fr": "PTS (Suède)",
+   "en": "PTS (Sweden)",
+   "nb_articles": 8,
+   "exemple": {
+    "date": "2026-10-19",
+    "lien": "https://pts.se/nyheter-och-pressmeddelanden/remissvar-pa-eu-kommissionens-forslag-till-forordning-om-moln-och-ai/",
+    "titre": "Remissvar på EU-kommissionens förslag till förordning om moln och AI",
+    "langue": "sv",
+    "titre_fr": "Responsabilité de la proposition EU-kommissionens pour un règlement cloud et IA",
+    "titre_en": "Responsibility of EU-kommissionens proposal for a cloud and AI regulation"
+   }
+  },
+  {
+   "code": "IMY",
+   "groupe": "autorites",
+   "fr": "IMY (Suède)",
+   "en": "IMY (Sweden)",
+   "nb_articles": 7,
+   "exemple": {
+    "date": "2026-09-24",
+    "lien": "https://www.security.nl/posting/954321/Zweedse+privacytoezichthouder+legt+Milj%C3%B6data+boete+op+na+groot+datalek?channel=rss",
+    "titre": "Zweedse privacytoezichthouder legt Miljödata boete op na groot datalek",
+    "langue": "nl",
+    "titre_fr": "Le contrôleur suédois de la protection de la vie privée sanctionne Miljödata après une violation importante des données",
+    "titre_en": "Swedish Privacy Supervisor fines Miljödata after large data breach"
+   }
+  },
+  {
    "code": "SAMSIK",
    "groupe": "autorites",
    "fr": "SAMSIK (Danemark)",
    "en": "SAMSIK (Denmark)",
-   "nb_articles": 9,
+   "nb_articles": 7,
    "exemple": {
     "date": "2026-11-20",
     "lien": "https://samsik.dk/artikler/2026/11/56-millioner-til-innovative-projekter-i-ny-cybersikkerhedschallenge/",
@@ -940,33 +970,18 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "MHRA",
+   "code": "ANS",
    "groupe": "autorites",
-   "fr": "MHRA",
-   "en": "MHRA",
-   "nb_articles": 8,
+   "fr": "Agence du numérique en santé",
+   "en": "French Digital Health Agency (ANS)",
+   "nb_articles": 6,
    "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
-    "titre": "Government backs recommendations of NHS doctors-led AI Commission",
-    "langue": "en",
-    "titre_fr": "Le gouvernement soutient les recommandations de la Commission IA dirigée par des médecins NHS",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "IMY",
-   "groupe": "autorites",
-   "fr": "IMY (Suède)",
-   "en": "IMY (Sweden)",
-   "nb_articles": 8,
-   "exemple": {
-    "date": "2026-11-06",
-    "lien": "https://computersweden.se/article/4245742/imy-granskar-arbetsformedlingens-ai-system.html",
-    "titre": "Nyhet IMY granskar Arbetsförmedlingens AI-system Av Viktor Eriksson 6 nov. 2026 1 min Offentlig sektor Lagar och regleringar Marknader",
-    "langue": "sv",
-    "titre_fr": "IMY revues AI-system de Viktor Eriksson 6 nov. 2026 1 min Secteur public Lois et règlements Marchés",
-    "titre_en": "IMY reviews AI-system of Viktor Eriksson 6 Nov. 2026 1 min Public sector Laws and Regulations Markets"
+    "date": "2026-10-15",
+    "lien": "https://esante.gouv.fr/actualites/espace-europeen-des-donnees-de-sante-contribuez-aux-travaux-europeens",
+    "titre": "Espace européen des données de santé : contribuez aux travaux européens",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "European Health Data Area: contribute to European work"
    }
   },
   {
@@ -974,59 +989,14 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "gematik",
    "en": "gematik",
-   "nb_articles": 7,
+   "nb_articles": 6,
    "exemple": {
-    "date": "2026-09-30",
-    "lien": "https://www.gematik.de/newsroom/news-detail/all-in-one-ti-messenger-kann-kuenftig-auch-ueber-softwaresysteme-fuer-gesundheitseinrichtungen-genutzt-werden",
-    "titre": "\"All in One\": TI-Messenger kann künftig auch über Softwaresysteme für Gesundheitseinrichtungen genutzt werden",
+    "date": "2026-09-23",
+    "lien": "https://www.gematik.de/newsroom/news-detail/wie-kann-das-zusammenspiel-von-patientenportalen-mit-primaersystemen-und-der-epa-aussehen-positionspapier-auf-ina-veroeffentlicht",
+    "titre": "Wie kann das Zusammenspiel von Patientenportalen mit Primärsystemen und der ePA aussehen? Positionspapier auf INA veröffentlicht",
     "langue": "de",
-    "titre_fr": "\"Tout en un\": TI-Messenger peut également être utilisé à l'avenir via des systèmes logiciels pour les établissements de santé",
-    "titre_en": "\"All in One\": TI-Messenger can also be used in the future via software systems for healthcare facilities"
-   }
-  },
-  {
-   "code": "AI Office",
-   "groupe": "autorites",
-   "fr": "Bureau de l'IA (UE)",
-   "en": "EU AI Office",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models",
-    "titre": "Requirements for qualified independent external evaluators of General-Purpose AI models",
-    "langue": "en",
-    "titre_fr": "Exigences pour les évaluateurs externes indépendants qualifiés des modèles IA à usage général",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "ANS",
-   "groupe": "autorites",
-   "fr": "Agence du numérique en santé",
-   "en": "French Digital Health Agency (ANS)",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-10-08",
-    "lien": "https://esante.gouv.fr/actualites/rencontres-de-l-ans-construire-une-europe-du-numerique-en-sante-partir-des-usages",
-    "titre": "Rencontres de l’ANS : construire une Europe du numérique en santé à partir des usages",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "Meetings of ANS: Building a Europe of digital health from uses"
-   }
-  },
-  {
-   "code": "Nkom",
-   "groupe": "autorites",
-   "fr": "Nkom (Norvège)",
-   "en": "Nkom (Norway)",
-   "nb_articles": 6,
-   "exemple": {
-    "date": "2026-11-03",
-    "lien": "https://nkom.no/aktuelt/hacking-av-frysarar-noreg-kan-ogsa-bli-ramma",
-    "titre": "Hacking av frysarar: Noreg kan også bli ramma",
-    "langue": "nb",
-    "titre_fr": "Hacking congélateurs: la Norvège peut également être encadrée",
-    "titre_en": "Hacking freezers: Norway can also be framed"
+    "titre_fr": "À quoi peut ressembler l'interaction des portails de patients avec les systèmes primaires et l'ePA? Position publiée sur INA",
+    "titre_en": "What can the interaction of patient portals with primary systems and the ePA look like? Position paper published on INA"
    }
   },
   {
@@ -1034,13 +1004,28 @@ window.VEILLE_ACRONYMES = {
    "groupe": "autorites",
    "fr": "AEPD (Espagne)",
    "en": "AEPD (Spain)",
+   "nb_articles": 6,
+   "exemple": {
+    "date": "2026-10-01",
+    "lien": "https://www.cnpd.pt/comunicacao-publica/noticias/cnpd-e-aepd-reforcam-cooperacao-e-partilham-experiencias-sobre-os-desafios-da-utilizacao-da-inteligencia-artificial-na-protecao-de-dados-pessoais/",
+    "titre": "01/10/2026 CNPD e AEPD reforçam cooperação e partilham experiências sobre os desafios da utilização da inteligência artificial na proteção de dados pessoais",
+    "langue": "pt",
+    "titre_fr": "01/10/2026 CNPD et AEPD renforcent la coopération et échangent des expériences sur les défis de l'utilisation de l'intelligence artificielle dans la protection des données personnelles",
+    "titre_en": "01/10/2026 CNPD and AEPD reinforce cooperation and share experiences on the challenges of using artificial intelligence in the protection of personal data"
+   }
+  },
+  {
+   "code": "AI Office",
+   "groupe": "autorites",
+   "fr": "Bureau de l'IA (UE)",
+   "en": "EU AI Office",
    "nb_articles": 5,
    "exemple": {
-    "date": "2026-09-23",
-    "lien": "https://digitalpolicyalert.org/event/43928-data-protection-agency-investigation-into-a-company-over-data-protection-safeguards-in-a-planned-ai-based-cv-screening-tool-exp202600427",
-    "titre": "Data Protection Agency issued a preventive warning to a company over data protection safeguards in a planned AI-based CV screening tool (EXP202600427)",
+    "date": "2026-10-21",
+    "lien": "https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models",
+    "titre": "Requirements for qualified independent external evaluators of General-Purpose AI models",
     "langue": "en",
-    "titre_fr": "L'Agence de protection des données a émis un avertissement préventif à une entreprise sur les garanties de protection des données dans un outil de dépistage AI-based CV prévu (EXP202600427)",
+    "titre_fr": "Exigences pour les évaluateurs externes indépendants qualifiés des modèles IA à usage général",
     "titre_en": ""
    }
   },
@@ -1060,33 +1045,18 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "AgID",
+   "code": "ICO",
    "groupe": "autorites",
-   "fr": "AgID",
-   "en": "AgID",
+   "fr": "ICO (Royaume-Uni)",
+   "en": "ICO (UK)",
    "nb_articles": 5,
    "exemple": {
-    "date": "2026-10-21",
-    "lien": "https://www.federprivacy.org/informazione/flash-news/il-garante-privacy-sanziona-ancora-agid-altri-15mila-euro-per-violazione-del-gdpr",
-    "titre": "Il Garante Privacy sanziona ancora AgID: altri 15mila euro per violazione del GDPR",
-    "langue": "it",
-    "titre_fr": "Le garant de la vie privée sanctionne toujours AgID : 15 000 euros supplémentaires pour violation de RGPD",
-    "titre_en": "The Privacy Guarantor still sanctions AgID: another 15 thousand euros for violation of GDPR"
-   }
-  },
-  {
-   "code": "UODO",
-   "groupe": "autorites",
-   "fr": "UODO (Pologne)",
-   "en": "UODO (Poland)",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-10-12",
-    "lien": "https://uodo.gov.pl/pl/138/4598",
-    "titre": "Cyfryzacja, automatyzacja i ochrona danych: jak będą wyglądały polskie urzędy za kilka lat? 07.10.2026",
-    "langue": "pl",
-    "titre_fr": "Digitalisation, automatisation et protection des données : à quoi ressembleront les bureaux polonais dans quelques années ? 07.10.2026",
-    "titre_en": "Digitalisation, automation and data protection: what will Polish offices look like in a few years? 07.10.2026"
+    "date": "2026-10-29",
+    "lien": "https://digitalpolicyalert.org/event/45261-information-commissions-office-adopted-updated-guidance-on-special-category-data-under-data-use-and-access-act",
+    "titre": "Information Commission’s Office adopted updated guidance on special category data under Data (Use and Access) Act",
+    "langue": "en",
+    "titre_fr": "Commission de l'information Le Bureau a adopté des directives actualisées sur les données de catégorie spéciale en vertu de la Loi sur les données (utilisation et accès)",
+    "titre_en": ""
    }
   },
   {
@@ -1096,102 +1066,57 @@ window.VEILLE_ACRONYMES = {
    "en": "Datatilsynet (Norway, Denmark)",
    "nb_articles": 5,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://nki.gov.hu/it-biztonsag/hirek/96-millio-dollaros-birsagot-kapott-a-microsoft-hirdetestechnologiai-cege-a-grindr-adatok-jogellenes-megosztasa-miatt/",
-    "titre": "9,6 millió dolláros bírságot kapott a Microsoft hirdetéstechnológiai cége a Grindr-adatok jogellenes megosztása miatt",
-    "langue": "hu",
-    "titre_fr": "Une amende de 9,6 millions de dollars pour le partage illégal de données Grindr par la société de publicité de Microsoft",
-    "titre_en": "A $9.6 million fine for the illegal sharing of Grindr data by Microsoft's advertising company"
+    "date": "2026-11-16",
+    "lien": "https://www.version2.dk/artikel/tilsyn-gaar-haardt-til-regeringens-ai-lov-der-skal-saette-persondataen-fri-her-er-de-tre-vigtigste",
+    "titre": "Tilsyn går hårdt til regeringens AI-lov, der skal sætte persondataen fri: Her er de tre vigtigste kritikpunkter",
+    "langue": "da",
+    "titre_fr": "La surveillance est difficile au AI-lov du gouvernement pour libérer les données personnelles: Voici les trois principales critiques",
+    "titre_en": "Oversight goes hard to the government's AI-lov to free the personal data: Here are the three main criticisms"
    }
   },
   {
-   "code": "Swissmedic",
+   "code": "AgID",
    "groupe": "autorites",
-   "fr": "Swissmedic",
-   "en": "Swissmedic",
-   "nb_articles": 5,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
-    "titre": "Revision of the Guidance document Authorisation Biosimilar",
-    "langue": "en",
-    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "ECCC",
-   "groupe": "autorites",
-   "fr": "ECCC (centre de compétences cyber UE)",
-   "en": "ECCC (EU cyber competence centre)",
+   "fr": "AgID",
+   "en": "AgID",
    "nb_articles": 4,
    "exemple": {
-    "date": "2026-10-13",
-    "lien": "https://cyber.gov.gr/koines-draseis-kai-synergeies-ton-nccs-stin-kypro-gia-ena-ischyrotero-eyropaiko-oikosystima-kyvernoasfaleias/",
-    "titre": "Κοινές δράσεις και συνέργειες των NCCs στην Κύπρο για ένα ισχυρότερο ευρωπαϊκό οικοσύστημα κυβερνοασφάλειας",
-    "langue": "el",
-    "titre_fr": "Actions communes et synergies des CNC à Chypre pour un écosystème européen de cybersécurité plus fort",
-    "titre_en": "Joint actions and synergies of NCCs in Cyprus for a stronger European cybersecurity ecosystem"
+    "date": "2026-11-25",
+    "lien": "https://www.agid.gov.it/it/notizie/specifiche-tecniche-suap-rimozione-dei-test-sulla-gestione-delle-richieste-prive-del-token",
+    "titre": "Specifiche Tecniche SUAP: rimozione dei test sulla gestione delle richieste prive del token di sicurezza",
+    "langue": "it",
+    "titre_fr": "Spécifications Techniques SUAP: Suppression des demandes sans jeton de sécurité",
+    "titre_en": "Specifications SUAP Techniques: Removal of safety token-free requests testing"
    }
   },
   {
-   "code": "ICO",
+   "code": "UODO",
    "groupe": "autorites",
-   "fr": "ICO (Royaume-Uni)",
-   "en": "ICO (UK)",
+   "fr": "UODO (Pologne)",
+   "en": "UODO (Poland)",
    "nb_articles": 4,
    "exemple": {
-    "date": "2026-09-24",
-    "lien": "https://digitalpolicyalert.org/event/44015-information-commissioners-office-adopts-waspi-uk-gdpr-code-of-conduct-for-information-sharing-protocols",
-    "titre": "Information Commissioner's Office adopted Code of Conduct for Information Sharing Protocols",
-    "langue": "en",
-    "titre_fr": "Le Commissariat à l'information a adopté le Code de conduite pour les protocoles de partage de l'information",
-    "titre_en": ""
+    "date": "2026-09-25",
+    "lien": "https://uodo.gov.pl/pl/185/4584",
+    "titre": "EROD ujednolica metodologię nakładania kar i przyjmuje ostateczne wytyczne dotyczące DSA i RODO 25.09.2026",
+    "langue": "pl",
+    "titre_fr": "EROD harmonise la méthodologie de sanction et adopte des lignes directrices finales pour DSA et RODO 25.09.2026",
+    "titre_en": "EROD harmonises the sanctioning methodology and adopts final guidelines for DSA and RODO 25.09.2026"
    }
   },
   {
-   "code": "Fimea",
+   "code": "DSB",
    "groupe": "autorites",
-   "fr": "Fimea (Finlande)",
-   "en": "Fimea (Finland)",
+   "fr": "DSB (Autriche)",
+   "en": "DSB (Austria)",
    "nb_articles": 4,
    "exemple": {
-    "date": "2026-10-06",
-    "lien": "https://fimea.fi/en/-/instructions-for-use-of-medical-devices-must-be-available-to-the-user-and-easy-to-understand",
-    "titre": "Instructions for use of medical devices must be available to the user and easy to understand",
-    "langue": "en",
-    "titre_fr": "Les instructions d'utilisation des instruments médicaux doivent être à la disposition de l'utilisateur et faciles à comprendre",
-    "titre_en": ""
-   }
-  },
-  {
-   "code": "PFPDT / EDÖB",
-   "groupe": "autorites",
-   "fr": "PFPDT / EDÖB (Suisse)",
-   "en": "FDPIC (Switzerland)",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-11-06",
-    "lien": "https://www.edoeb.admin.ch/fr/violation-de-la-securite-des-donnees-le-taf-confirme-le-devoir-dinformation-dune-exploitante-de-boutique-en-ligne",
-    "titre": "«Violation de la sécurité des données : Le Tribunal administratif fédéral confirme le devoir d’information d’une exploitante de boutique en ligne»",
-    "langue": "fr",
-    "titre_fr": "",
-    "titre_en": "\"Data Security Violation: The Federal Administrative Court confirms the information duty of an online shop operator\""
-   }
-  },
-  {
-   "code": "EOF",
-   "groupe": "autorites",
-   "fr": "EOF (Grèce)",
-   "en": "EOF (Greece)",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-09-18",
-    "lien": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%ce%b1%cf%82-0366002724-%cf%84%ce%bf%cf%85-%ce%b9%ce%b1%cf%84%cf%81%ce%bf%cf%84%ce%b5%cf%87/",
-    "titre": "Ανάκληση της παρτίδας 0366002724 του Ιατροτεχνολογικού προϊόντος UR-TEST 120ml Sterile Ουροσυλλέκτης",
-    "langue": "el",
-    "titre_fr": "Retrait du lot 0366002724 du dispositif médical UR-TEST 120ml Urocallor stérile",
-    "titre_en": "Withdrawal of batch 0366002724 of the medical device UR-TEST 120ml Sterile Urocollector"
+    "date": "2026-11-04",
+    "lien": "https://dsb.gv.at/aktuelles/aktuelles/ifg-information-ueber-die-diesjaehrigen-evaluierungskriterien",
+    "titre": "IFG – Information über die diesjährigen Evaluierungskriterien",
+    "langue": "de",
+    "titre_fr": "IFG – Informations sur cette année",
+    "titre_en": "IFG – Information about this year’s evaluation criteria"
    }
   },
   {
@@ -1201,12 +1126,12 @@ window.VEILLE_ACRONYMES = {
    "en": "Hellenic DPA",
    "nb_articles": 4,
    "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://www.dpa.gr/el/enimerwtiko/deltia/17-nees-theseis-eidikoy-epistimonikoy-prosopikoy-stin-arhi-prostasias-dedomenon",
-    "titre": "17 νέες θέσεις Ειδικού Επιστημονικού Προσωπικού στην Αρχή Προστασίας Δεδομένων",
+    "date": "2026-10-20",
+    "lien": "https://www.dpa.gr/el/enimerwtiko/prakseisArxis/parabiasi-tis-arhis-tis-nomimotitas-toy-arthroy-5-par-1-stoih-toy-gkpd",
+    "titre": "Παραβίαση της αρχής της νομιμότητας του άρθρου 5 παρ. 1 στοιχ. α’ του ΓΚΠΔ από την εταιρεία με την επωνυμία ΑΜΕΡΙΚΑΝ ΚΟΜΠΙΟΥΤΕΡΣ ΚΑΙ ΕΝΤΖΙΝΙΕΡΣ ΕΛΛΑΣ – AMERICAN COMPUTERS & ENGINEERS HELLAS ΑΝΩΝΥΜΟΣ ΤΕΧΝΙΚΗ ΕΜΠΟΡΙΚΗ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗ ΕΤΑΙΡΕΙΑ»",
     "langue": "el",
-    "titre_fr": "17 nouveaux postes de personnel scientifique spécial à l'Autorité de protection des données",
-    "titre_en": "17 new Special Scientific Personnel posts at the Data Protection Authority"
+    "titre_fr": "Violation du principe de légalité de l'article 5, paragraphe 1, point a) RGPD (ΓΚΠΔ) par la société sous le nom de ΑΜΕΡΙΚΑΝ COMPUTERS ΚΑΙ ENJINIERS ΕΛΛΑΣ – AMERICAN COMPUTEURS & ENGINEERS HELLAS ΑΝΩΝΥΜΟΣ ΤΕΧΝΙΚΗ ΕΜΠΟΡΙΚΗ ΚΑΙ INFORMATION ΕΤΑΙΡΕΙΑ",
+    "titre_en": "Violation of the principle of legality of Article 5(1)(a) GDPR (ΓΚΠΔ) by the company under the name ΑΜΕΡΙΚΑΝ COMPUTERS ΚΑΙ ENJINIERS ΕΛΛΑΣ – AMERICAN COMPUTERS & ENGINEERS HELLAS ΑΝΩΝΥΜΟΣ ΤΕΧΝΙΚΗ ΕΜΠΟΡΙΚΗ ΚΑΙ INFORMATION ΕΤΑΙΡΕΙΑ’"
    }
   },
   {
@@ -1222,6 +1147,21 @@ window.VEILLE_ACRONYMES = {
     "langue": "en",
     "titre_fr": "Opine EDPB et EDPS sur le projet de modifications RGPD suite à la simplification du paquet Omnibus IV",
     "titre_en": ""
+   }
+  },
+  {
+   "code": "ECCC",
+   "groupe": "autorites",
+   "fr": "ECCC (centre de compétences cyber UE)",
+   "en": "ECCC (EU cyber competence centre)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-09-04",
+    "lien": "https://cyber.gov.gr/nea-prosklisi-toy-eccc-96-ekat-eyro-gia-erga-enischysis-tis-kyvernoasfaleias-stin-eyropi/",
+    "titre": "Νέα πρόσκληση του ECCC: 96 εκατ. ευρώ για έργα ενίσχυσης της κυβερνοασφάλειας στην Ευρώπη",
+    "langue": "el",
+    "titre_fr": "Nouvel appel ECCC: 96 millions d'euros pour des projets de cybersécurité en Europe",
+    "titre_en": "New ECCC call: 96m euros for cybersecurity projects in Europe"
    }
   },
   {
@@ -1255,21 +1195,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "RDI",
-   "groupe": "autorites",
-   "fr": "RDI (Pays-Bas)",
-   "en": "RDI (Netherlands)",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://www.ncsc.nl/nieuws/ncsc-en-toezichthouders-maken-afspraken-over-samenwerking-bij-cyberbeveiligingswet",
-    "titre": "NCSC en toezichthouders maken afspraken over samenwerking bij Cyberbeveiligingswet",
-    "langue": "nl",
-    "titre_fr": "NCSC et les superviseurs conviennent de la coopération avec la Loi sur la cybersécurité",
-    "titre_en": "NCSC and supervisors agree on cooperation with Cybersecurity Act"
-   }
-  },
-  {
    "code": "CCB",
    "groupe": "autorites",
    "fr": "CCB (Belgique)",
@@ -1285,6 +1210,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "Nkom",
+   "groupe": "autorites",
+   "fr": "Nkom (Norvège)",
+   "en": "Nkom (Norway)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-09-11",
+    "lien": "https://nkom.no/aktuelt/skal-sikre-smartprodukter-bedre-fra-na-gjelder-nye-krav-til-rapportering",
+    "titre": "Norvège : la Nkom rappelle les obligations de signalement CRA, pas encore intégrées dans l'accord EEE",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Norway: Nkom reminds of CRA reporting obligations, not yet incorporated into the EEA Agreement"
+   }
+  },
+  {
    "code": "Läkemedelsverket",
    "groupe": "autorites",
    "fr": "Läkemedelsverket (Suède)",
@@ -1297,6 +1237,51 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Sweden: only 21 medical device manufacturers registered under the new cyber law"
+   }
+  },
+  {
+   "code": "Fimea",
+   "groupe": "autorites",
+   "fr": "Fimea (Finlande)",
+   "en": "Fimea (Finland)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-08-25",
+    "lien": "https://fimea.fi/en/-/application-of-the-ai-act-s-transparency-obligation-to-medical-devices",
+    "titre": "Application of the AI Act’s transparency obligation to medical devices",
+    "langue": "en",
+    "titre_fr": "Application de la loi IA : obligation de transparence aux dispositifs médicaux",
+    "titre_en": ""
+   }
+  },
+  {
+   "code": "PFPDT / EDÖB",
+   "groupe": "autorites",
+   "fr": "PFPDT / EDÖB (Suisse)",
+   "en": "FDPIC (Switzerland)",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-11-06",
+    "lien": "https://www.edoeb.admin.ch/fr/violation-de-la-securite-des-donnees-le-taf-confirme-le-devoir-dinformation-dune-exploitante-de-boutique-en-ligne",
+    "titre": "«Violation de la sécurité des données : Le Tribunal administratif fédéral confirme le devoir d’information d’une exploitante de boutique en ligne»",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "\"Data Security Violation: The Federal Administrative Court confirms the information duty of an online shop operator\""
+   }
+  },
+  {
+   "code": "Swissmedic",
+   "groupe": "autorites",
+   "fr": "Swissmedic",
+   "en": "Swissmedic",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-09-24",
+    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
+    "titre": "Swissmedic Portal Release – New Features Available from 23 September 2026",
+    "langue": "en",
+    "titre_fr": "Swissmedic Portal Release – Nouvelles fonctionnalités Disponible à partir du 23 septembre 2026",
+    "titre_en": ""
    }
   },
   {
@@ -1330,6 +1315,21 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
+   "code": "RDI",
+   "groupe": "autorites",
+   "fr": "RDI (Pays-Bas)",
+   "en": "RDI (Netherlands)",
+   "nb_articles": 2,
+   "exemple": {
+    "date": "2026-09-11",
+    "lien": "https://www.rdi.nl/onderwerpen/draadloze-apparatuur/handel-en-apparatuur/cra",
+    "titre": "Pays-Bas : la RDI rappelle les obligations de signalement CRA en vigueur depuis le 11 septembre 2026",
+    "langue": "fr",
+    "titre_fr": "",
+    "titre_en": "Netherlands: RDI highlights CRA reporting obligations applicable since 11 September 2026"
+   }
+  },
+  {
    "code": "IGJ",
    "groupe": "autorites",
    "fr": "IGJ (Pays-Bas)",
@@ -1342,21 +1342,6 @@ window.VEILLE_ACRONYMES = {
     "langue": "fr",
     "titre_fr": "",
     "titre_en": "Netherlands: Cybersecurity Regulation for healthcare published – NEN 7510 / ISO 27001 compliance and reporting thresholds"
-   }
-  },
-  {
-   "code": "DSB",
-   "groupe": "autorites",
-   "fr": "DSB (Autriche)",
-   "en": "DSB (Austria)",
-   "nb_articles": 2,
-   "exemple": {
-    "date": "2026-09-18",
-    "lien": "https://dsb.gv.at/aktuelles/aktuelles/treffen-der-datenschutzbehoerden-aus-slowenien-sterreich-kroatien-tschechien-und-ungarn-in-ljubljana",
-    "titre": "Treffen der Datenschutzbehörden aus Slowenien, Österreich, Kroatien, Tschechien und Ungarn in Ljubljana",
-    "langue": "de",
-    "titre_fr": "Réunion des autorités de protection des données de Slovénie, d'Autriche, de Croatie, de République tchèque et de Hongrie à Ljubljana",
-    "titre_en": "Meeting of data protection authorities from Slovenia, Austria, Croatia, Czech Republic and Hungary in Ljubljana"
    }
   },
   {
@@ -1478,12 +1463,27 @@ window.VEILLE_ACRONYMES = {
     "titre_fr": "",
     "titre_en": "Norway: Norwegian Board of Health Supervision clarifies Digital Security Act requirements"
    }
+  },
+  {
+   "code": "EOF",
+   "groupe": "autorites",
+   "fr": "EOF (Grèce)",
+   "en": "EOF (Greece)",
+   "nb_articles": 1,
+   "exemple": {
+    "date": "2026-09-03",
+    "lien": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%8c%ce%bb%cf%89%ce%bd-%cf%84%cf%89%ce%bd-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%ce%bf%cf%85-%cf%80%ce%b1%cf%81%ce%b1%ce%ba%ce%ac/",
+    "titre": "Ανάκληση όλων των παρτίδων του παρακάτω πίνακα, του Ιατροτεχνολογικού προϊόντος κατηγορίας MDD Class IIb, Σωλήνες τραχειοστομίας Hi-Lo με αεροθάλαμο Shiley",
+    "langue": "el",
+    "titre_fr": "Retrait de tous les lots du tableau ci-dessous de la catégorie d'instruments médicaux MDD Classe IIb, tubes de trachéostomie Hi-Lo avec sa sas Shiley",
+    "titre_en": "Withdrawal of all batches of the table below, of the medical device category MDD Class IIb, Hi-Lo tracheostomy tubes with Shiley airlock"
+   }
   }
  ],
  "candidats": [
   {
    "code": "DSA",
-   "nb_articles": 17,
+   "nb_articles": 15,
    "exemple": {
     "date": "2026-11-06",
     "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
@@ -1495,7 +1495,7 @@ window.VEILLE_ACRONYMES = {
   },
   {
    "code": "DPA",
-   "nb_articles": 15,
+   "nb_articles": 14,
    "exemple": {
     "date": "2026-11-19",
     "lien": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-private-individual-for-credit-check-and-publication-of-personal-data_en",
@@ -1507,7 +1507,7 @@ window.VEILLE_ACRONYMES = {
   },
   {
    "code": "DPC",
-   "nb_articles": 5,
+   "nb_articles": 6,
    "exemple": {
     "date": "2026-11-17",
     "lien": "https://www.edpb.europa.eu/news/irish-data-protection-commission-fines-mtch-eur-11-million-following-inquiry-into-tinder-users_en",
@@ -1527,18 +1527,6 @@ window.VEILLE_ACRONYMES = {
     "titre_fr": "Guide de notification CRA: Ce que les fabricants doivent déclarer et comment utiliser la plateforme SRP",
     "titre_en": "CRA Notifying Guide: What manufacturers should report and how to use SRP platform",
     "langue": "es"
-   }
-  },
-  {
-   "code": "DIRECT",
-   "nb_articles": 4,
-   "exemple": {
-    "date": "2026-10-29",
-    "lien": "https://www.cnil.fr/fr/sanction-cookies-app-fnac",
-    "titre": "Cookies et application mobile : sanctions de 7 millions d’euros à l’encontre des sociétés FNAC DARTY PARTICIPATIONS ET SERVICES et FNAC DIRECT",
-    "titre_fr": "",
-    "titre_en": "Cookies and mobile application: €7 million penalties for FNAC DARTY ET SERVICES and FNAC DIRECT",
-    "langue": "fr"
    }
   },
   {
@@ -1566,15 +1554,39 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "EMA",
-   "nb_articles": 4,
+   "code": "AP",
+   "nb_articles": 3,
    "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
-    "titre": "Revision of the Guidance document Authorisation Biosimilar",
-    "titre_fr": "Révision du document d'orientation Autorisation Biosimilaire",
-    "titre_en": "",
-    "langue": "en"
+    "date": "2026-11-20",
+    "lien": "https://www.security.nl/posting/962492/Autoriteit+Persoonsgegevens+geeft+On+That+Ass+boete+van+90_000+euro?channel=rss",
+    "titre": "Autoriteit Persoonsgegevens geeft On That Ass boete van 90.000 euro",
+    "titre_fr": "Autorité fournit des données à caractère personnel sur ce Ass 90.000 euros d'amende",
+    "titre_en": "Authority Provides Personal Data On That Ass 90,000 euro fine",
+    "langue": "nl"
+   }
+  },
+  {
+   "code": "FG",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-11-16",
+    "lien": "https://www.ictrecht.nl/blog/nieuw-handhavingsbeleid-ap-boetekorting-en-de-rol-van-de-fg",
+    "titre": "Blog 16 november 2026 Data & privacy Wetgeving Nieuw handhavingsbeleid AP: boetekorting en de rol van de FG Lees meer",
+    "titre_fr": "Blogue 16 novembre 2026 Vie privée et données Législation Nouvelle politique d'application AP : rabais sur les pénalités et le rôle du FG Lire la suite",
+    "titre_en": "Blog November 16, 2026 Data & privacy Legislation New enforcement policy AP: penalty discount and the role of the FG Read more",
+    "langue": "nl"
+   }
+  },
+  {
+   "code": "EEDS",
+   "nb_articles": 3,
+   "exemple": {
+    "date": "2026-10-15",
+    "lien": "https://esante.gouv.fr/actualites/espace-europeen-des-donnees-de-sante-contribuez-aux-travaux-europeens",
+    "titre": "Espace européen des données de santé : contribuez aux travaux européens",
+    "titre_fr": "",
+    "titre_en": "European Health Data Area: contribute to European work",
+    "langue": "fr"
    }
   },
   {
@@ -1590,42 +1602,6 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "OUCH",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
-    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
-    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
-    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
-    "langue": "hu"
-   }
-  },
-  {
-   "code": "SANS",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-07",
-    "lien": "https://nki.gov.hu/it-biztonsag/kiadvanyok/sans-ouch/az-okostelefon-aranybanya-a-kiberbunozoknek-sans-ouch-2026-oktober/",
-    "titre": "Az okostelefon: aranybánya a kiberbűnözőknek – SANS OUCH! – 2026. október",
-    "titre_fr": "Le smartphone est une mine d'or pour les cybercriminels - SANS OUCH! - Octobre 2026",
-    "titre_en": "The smartphone is a gold mine for cyber criminals - SANS OUCH! - October 2026",
-    "langue": "hu"
-   }
-  },
-  {
-   "code": "PFPDT",
-   "nb_articles": 3,
-   "exemple": {
-    "date": "2026-10-01",
-    "lien": "https://www.edoeb.admin.ch/fr/bodycams-blt-fr",
-    "titre": "«Bodycams – Le PFPDT interdit à la société BLT Baselland Transport AG de traiter les données»",
-    "titre_fr": "",
-    "titre_en": "‘Bodycams – The PFPDT prohibits the company BLT Baselland Transport AG from processing the data»",
-    "langue": "fr"
-   }
-  },
-  {
    "code": "S46",
    "nb_articles": 3,
    "exemple": {
@@ -1638,15 +1614,15 @@ window.VEILLE_ACRONYMES = {
    }
   },
   {
-   "code": "MDD",
+   "code": "DIRECT",
    "nb_articles": 3,
    "exemple": {
-    "date": "2026-09-07",
-    "lien": "https://www.eof.gr/%ce%b1%ce%bd%ce%ac%ce%ba%ce%bb%ce%b7%cf%83%ce%b7-%cf%84%cf%89%ce%bd-%cf%80%ce%b1%cf%81%cf%84%ce%af%ce%b4%cf%89%ce%bd-%cf%84%ce%bf%cf%85-%cf%83%cf%85%ce%bd%ce%b7%ce%bc%ce%bc%ce%ad%ce%bd%ce%bf%cf%85-11/",
-    "titre": "Ανάκληση των παρτίδων του συνημμένου πίνακα, του Ιατροτεχνολογικού προϊόντος κατηγορίας MDD Class I, NDI Passive Sphere & κιτ βελόνων βιοψίας.",
-    "titre_fr": "Retrait des lots du tableau ci-joint, de la trousse à aiguilles passives et biopsies de classe MDD classe I, NDI.",
-    "titre_en": "Withdrawal of batches of the attached table, the Class MDD Class I, NDI Passive Sphere & biopsy needle kit.",
-    "langue": "el"
+    "date": "2026-09-22",
+    "lien": "https://www.edpb.europa.eu/news/the-spanish-dpa-fines-securitas-direct-eur-100-000-for-making-the-exercise-of-data-subject_en",
+    "titre": "The Spanish DPA fines Securitas Direct EUR 100 000 for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number",
+    "titre_fr": "L'espagnol DPA amende Securitas Direct EUR 100 000 pour avoir rendu l'exercice des droits des personnes concernées plus difficile en orientant les personnes vers un numéro de téléphone payant",
+    "titre_en": "",
+    "langue": "en"
    }
   },
   {

@@ -1,5 +1,5 @@
 window.VEILLE_DEBATS = {
- "mise_a_jour": "2026-11-23T16:01+00:00",
+ "mise_a_jour": "2026-11-25T17:22+00:00",
  "articles": [
   {
    "id": "cf9dee9a8108",
@@ -7875,6 +7875,47 @@ window.VEILLE_DEBATS = {
    "acronymes": [
     "IVDR"
    ]
+  },
+  {
+   "id": "709754b46393",
+   "titre": "Could state attorneys general strengthen the DPF after slaughter?",
+   "lien": "https://www.hlc.com/en/publications/could-state-attorneys-general-strengthen-the-dpf-after-slaughter",
+   "resume": "The debate over the EU-U.S. Data Privacy Framework has developed a new institutional dimension following the U.S. Supreme Court’s holding that a statutory protection limiting the...",
+   "date": "2026-11-23",
+   "date_estimee": false,
+   "detecte_le": "2026-11-25",
+   "version": "2026-11-25-1722",
+   "source": "Hogan Lovells (HLC) - Our thinking",
+   "zone": "Worldwide",
+   "nature": "opinion",
+   "rubrique": "reglementation",
+   "rubrique_mots_cles": false,
+   "tags": [],
+   "groupes": [],
+   "amende": null,
+   "score_cyber": 0.466,
+   "score_bruit": 0.423,
+   "score": 0.466,
+   "themes": [
+    "fournisseurs_publics",
+    "donnees"
+   ],
+   "pertinence_v": "v4-62329d164bmodele",
+   "pertinence": "moyenne",
+   "essentiel": false,
+   "a_verifier": false,
+   "textes_cles": [],
+   "motif": "",
+   "langue": "en",
+   "trad": {
+    "fr": {
+     "titre": "Les procureurs généraux pourraient-ils renforcer le DPF après l'abattage ?",
+     "resume": "Le débat sur le EU-U.S. Data Privacy Framework a développé une nouvelle dimension institutionnelle à la suite de la Cour suprême des États-Unis..."
+    }
+   },
+   "echeances": [],
+   "sujets": [],
+   "acronymes": []
   }
  ]
 };

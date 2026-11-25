@@ -7109,6 +7109,42 @@ window.VEILLE_VERSIONS = {
    "sources_lues": 150,
    "sources_actives": 158,
    "declenchement": "schedule"
+  },
+  {
+   "id": "2026-11-25-1722",
+   "date": "2026-11-25T17:22+00:00",
+   "nb_total": 1881,
+   "nb_nouveaux": 22,
+   "nouveaux": [
+    "2fde67a8eede",
+    "ffee2d39622c",
+    "de0631b84987",
+    "f8c1236b452b",
+    "0e0c2dd30403",
+    "ff07fe060c33",
+    "1aa7a856da9b",
+    "c27bc29bbb5b",
+    "3b8b49d40ee6",
+    "e33720fc1419",
+    "efe217849e7f",
+    "2617c8ecf6a3",
+    "980f4df4ab5e",
+    "3a7f33f38ef4",
+    "d9f940457de6",
+    "856cc3dfa01e",
+    "ec4dcf528bbb",
+    "740a57ac7f68",
+    "9240743b2d8f",
+    "d860738eb403",
+    "7108d7b0f249",
+    "482156831327"
+   ],
+   "rattrapage": "",
+   "nb_essentiel": 363,
+   "nb_ecartes": 664,
+   "sources_lues": 150,
+   "sources_actives": 158,
+   "declenchement": "workflow_dispatch"
   }
  ]
 };

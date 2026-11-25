@@ -1,5 +1,5 @@
 window.VEILLE_PRESSENTIS = {
- "mise_a_jour": "2026-11-23T16:01+00:00",
+ "mise_a_jour": "2026-11-25T17:22+00:00",
  "sujets": [
   {
    "id": "pd61e171d30e",
@@ -397,6 +397,69 @@ window.VEILLE_PRESSENTIS = {
      "date": "2026-10-19",
      "detecte_le": "2026-10-20",
      "version": "2026-10-20-0730",
+     "nature": "officielle",
+     "a_verifier": true
+    }
+   ],
+   "nb_articles": 1,
+   "nb_sources": 1,
+   "statut": "pressenti"
+  },
+  {
+   "id": "p95798a65645",
+   "sorte": "pressenti",
+   "texte": "",
+   "nom": "",
+   "zone": "Europe",
+   "premier_signal": "2026-10-09",
+   "dernier_signal": "2026-10-09",
+   "articles": [
+    {
+     "id": "c4e0f25e9abe",
+     "titre": "Commission holds special meeting of Scientific panel on frontier AI safety and risks",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Commission tient une réunion spéciale du groupe scientifique sur la sécurité et les risques des frontières IA"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-10-09",
+     "detecte_le": "2026-10-12",
+     "version": "2026-10-12-1259",
+     "nature": "officielle"
+    }
+   ],
+   "nb_articles": 1,
+   "nb_sources": 1,
+   "statut": "pressenti"
+  },
+  {
+   "id": "p64aa0af485e",
+   "sorte": "pressenti",
+   "texte": "",
+   "nom": "",
+   "zone": "Europe",
+   "premier_signal": "2026-10-06",
+   "dernier_signal": "2026-10-06",
+   "articles": [
+    {
+     "id": "a853d457ffb6",
+     "titre": "Commission registers European Citizens' Initiative for sovereign European AI domains",
+     "langue": "en",
+     "trad": {
+      "fr": {
+       "titre": "La Commission enregistre l'initiative citoyenne européenne pour les domaines européens souverains IA"
+      }
+     },
+     "lien": "https://digital-strategy.ec.europa.eu/en/news/commission-registers-european-citizens-initiative-sovereign-european-ai-domains",
+     "source": "Commission Européenne - Cybersecurity",
+     "zone": "Europe",
+     "date": "2026-10-06",
+     "detecte_le": "2026-10-12",
+     "version": "2026-10-12-1259",
      "nature": "officielle"
     }
    ],

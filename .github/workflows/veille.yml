@@ -26,7 +26,9 @@ on:
         default: false
 
 env:
-  BRANCHE_VEILLE: main  # dépôt dédié : tout est sur la branche main
+  # dépôt dédié : tout est sur la branche main. v15 : une exécution lancée à la main depuis une autre branche
+  # (essai d'une nouvelle version) utilise le code de cette branche et n'enregistre ni ne publie rien.
+  BRANCHE_VEILLE: ${{ github.ref_name }}
 
 permissions:
   contents: write   # pour enregistrer les nouvelles données sur la branche
@@ -38,12 +40,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collecte:
-    # version figée : « ubuntu-latest » passe à Ubuntu 26 le 19/10/2026 (évite une collecte cassée par ce changement)
+  # v15 (24/11/2026, passage à l'échelle mondiale) : la collecte se fait en 3 temps.
+  #   1. preparation : lecture des sources et des pages, règles -> liste des articles à faire juger par l'IA ;
+  #   2. tri-ia      : NB_LOTS machines en parallèle jugent chacune une part de la liste (collecte/lots.py) ;
+  #   3. collecte    : assemblage (avis des lots repris), traduction, points clés, résumés, site — comme avant.
+  # Si un lot échoue, ses articles sont jugés à la collecte suivante ; la collecte n'est jamais bloquée.
+  preparation:
     runs-on: ubuntu-24.04
-    timeout-minutes: 300
-    # pas d'« environment » ici : la collecte et l'enregistrement des données ne doivent jamais
-    # attendre une autorisation de déploiement ; seule la publication (job suivant) en dépend
+    timeout-minutes: 90
     outputs:
       lancer: ${{ steps.garde.outputs.lancer }}
     steps:
@@ -51,7 +55,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.BRANCHE_VEILLE }}
-          fetch-depth: 0
 
       - name: Check the schedule (Monday 7 am, Paris time)
         id: garde
@@ -68,6 +71,140 @@ jobs:
             echo "Slot skipped (it is ${heure}:00 in Paris, last collection: ${derniere:-none})."
             echo "lancer=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Free up disk space
+        if: steps.garde.outputs.lancer == 'true'
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL \
+                      /usr/local/share/boost /usr/share/swift /usr/local/share/powershell /usr/local/share/chromium || true
+
+      - name: Install Python
+        if: steps.garde.outputs.lancer == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        if: steps.garde.outputs.lancer == 'true'
+        env:
+          PIP_NO_CACHE_DIR: "1"
+        run: |
+          pip install -r requirements.txt
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-traduction.txt
+          pip install -r requirements-pertinence.txt
+
+      - name: Cache the models (downloaded only once)
+        if: steps.garde.outputs.lancer == 'true'
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.local/share/argos-translate
+            ~/.local/cache/argos-translate
+            ~/.cache/huggingface
+          key: modeles-v7
+
+      - name: Prepare the articles to be assessed by the AI
+        if: steps.garde.outputs.lancer == 'true'
+        run: python collecte/collecte.py
+        env:
+          MODE_COLLECTE: preparation
+          RATTRAPAGE_DEPUIS: ${{ github.event.inputs.rattrapage_depuis }}
+
+      # liste privée (texte des pages compris) : gardée 3 jours dans l'exécution, jamais publiée
+      - name: Hand the list over to the AI batches
+        if: steps.garde.outputs.lancer == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: a-juger
+          path: lots/a_juger.json
+          retention-days: 3
+
+  tri-ia:
+    needs: preparation
+    if: needs.preparation.outputs.lancer == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    continue-on-error: true      # un lot en échec ne bloque pas la collecte
+    strategy:
+      fail-fast: false
+      matrix:
+        lot: [0, 1, 2, 3]        # NB_LOTS = 4 : ajouter des numéros (et changer NB_LOTS) quand le volume augmente
+    env:
+      NB_LOTS: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCHE_VEILLE }}
+
+      - name: Free up disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL \
+                      /usr/local/share/boost /usr/share/swift /usr/local/share/powershell /usr/local/share/chromium || true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache the triage AI build (portable, compiled once)
+        uses: actions/cache@v4
+        with:
+          path: ~/llama-wheel
+          key: llama-cpp-portable-0.3.16-py312-v1
+
+      - name: Install the triage AI (open source, free)
+        env:
+          PIP_NO_CACHE_DIR: "1"
+        run: bash collecte/installer_ia.sh
+
+      - name: Cache the AI model (downloaded only once)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface/hub/models--bartowski--Qwen2.5-7B-Instruct-GGUF
+          key: modele-ia-qwen7b-v1
+
+      - name: Get the list of articles
+        uses: actions/download-artifact@v4
+        with:
+          name: a-juger
+          path: lots
+
+      - name: Sort articles with the AI (batch ${{ matrix.lot }})
+        run: python collecte/lots.py juger ${{ matrix.lot }} $NB_LOTS lots
+        env:
+          VEILLE_ENTREPRISE: ${{ secrets.VEILLE_ENTREPRISE }}
+
+      - name: Hand the assessments over to the assembly
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verdicts-${{ matrix.lot }}
+          path: lots/verdicts_*.json
+          retention-days: 3
+          if-no-files-found: ignore
+
+  collecte:
+    needs: [preparation, tri-ia]
+    if: always() && needs.preparation.outputs.lancer == 'true'
+
+    # version figée : « ubuntu-latest » passe à Ubuntu 26 le 19/10/2026 (évite une collecte cassée par ce changement)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    # pas d'« environment » ici : la collecte et l'enregistrement des données ne doivent jamais
+    # attendre une autorisation de déploiement ; seule la publication (job suivant) en dépend
+    outputs:
+      lancer: ${{ steps.garde.outputs.lancer }}
+    steps:
+      - name: Fetch the watch branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCHE_VEILLE }}
+          fetch-depth: 0
+
+      # v15 : l'horaire est vérifié par la préparation (job « preparation ») ; ici on suit sa décision
+      - name: Continue the collection (decided by the preparation)
+        id: garde
+        run: echo "lancer=${{ needs.preparation.outputs.lancer }}" >> "$GITHUB_OUTPUT"
 
       # Le serveur gratuit de GitHub est livré avec des outils dont la collecte n'a pas besoin (Android, .NET,
       # Haskell, CodeQL…) ; la collecte installe l'IA de tri (~5 Go) et d'autres modèles : sans ce ménage, le disque
@@ -148,10 +285,21 @@ jobs:
             ~/.cache/huggingface
           key: modeles-v7
 
+      - name: Get the AI assessments from the parallel batches
+        if: steps.garde.outputs.lancer == 'true'
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: verdicts-*
+          path: lots/verdicts
+          merge-multiple: true
+
       - name: Collect new articles
         if: steps.garde.outputs.lancer == 'true'
         run: python collecte/collecte.py
         env:
+          # v15 : avis déjà donnés par les lots parallèles (l'IA ne juge ici que ce qui manque)
+          VERDICTS_DIR: lots/verdicts
           # nom de l'entreprise suivie, donné seulement à l'IA de tri (secret : jamais dans le dépôt ni sur le site)
           VEILLE_ENTREPRISE: ${{ secrets.VEILLE_ENTREPRISE }}
           # v11 : mot de passe qui chiffre les résumés des slides (secret : jamais dans le dépôt ni sur le site)
@@ -173,8 +321,23 @@ jobs:
           bash collecte/preparer_site.sh _site
           bash collecte/preparer_site.sh static
 
+      # v15 : essai depuis une autre branche que main : rien n'est enregistré ni publié, les données produites
+      # sont seulement jointes à l'exécution (« Artifacts ») pour comparaison
+      - name: Test run on a branch - keep the results for comparison
+        if: steps.garde.outputs.lancer == 'true' && github.ref_name != 'main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultats-essai
+          path: |
+            data/actualites.json
+            data/alertes.json
+            data/ecartes.json
+            data/pressentis.json
+            data/etat_sources.json
+          retention-days: 7
+
       - name: Save data and tag the version
-        if: steps.garde.outputs.lancer == 'true'
+        if: steps.garde.outputs.lancer == 'true' && github.ref_name == 'main'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -194,9 +357,9 @@ jobs:
           fi
 
       - uses: actions/configure-pages@v5
-        if: steps.garde.outputs.lancer == 'true'
+        if: steps.garde.outputs.lancer == 'true' && github.ref_name == 'main'
       - uses: actions/upload-pages-artifact@v3
-        if: steps.garde.outputs.lancer == 'true'
+        if: steps.garde.outputs.lancer == 'true' && github.ref_name == 'main'
         with:
           path: _site
 
@@ -204,7 +367,7 @@ jobs:
   # les données sont déjà enregistrées et la publication peut être relancée seule (« Re-run jobs »).
   publication:
     needs: collecte
-    if: needs.collecte.outputs.lancer == 'true'
+    if: needs.collecte.outputs.lancer == 'true' && github.ref_name == 'main'
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     environment:

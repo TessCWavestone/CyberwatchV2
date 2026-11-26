@@ -362,6 +362,8 @@
   "v6_budget_minutes": 35,
   "lecture_pages_minutes": 10,
   "_aide_v7": "ia_tri : petite IA open source de tri (pertinent / à surveiller / pas pertinent). modele : qwen7b (Qwen2.5 7B, Apache 2.0, le plus fiable, ~30-40 s par article), phi35 (Phi-3.5 mini, MIT, ~2 fois plus rapide) ou llama3b. caracteres_page : début de la page lu par l'IA. budget_minutes / max_articles : limites par collecte (le reste est repris la fois suivante ; les nouveaux articles passent en premier). actif : false pour revenir aux règles seules.",
+  "_aide_monde": "Passage à l'échelle mondiale (étape 3, 26/11/2026) : pays suivis en plus de l'Europe. Les articles de ces pays ne sont plus écartés comme « hors Europe », peuvent devenir des points clés, et ces pays sont donnés à l'IA de tri. Nom exact des zones de config/sources.xlsx.",
+  "pays_suivis_hors_europe": ["États-Unis", "Canada"],
   "ia_tri": {
     "actif": true,
     "modele": "qwen7b",

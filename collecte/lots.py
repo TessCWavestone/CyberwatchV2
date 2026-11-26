@@ -61,10 +61,10 @@ def injecter(articles, dossier):
     for a in articles:
         x = avis.get(a.get("id"))
         if x and not x.get("erreur") and a_juger_encore(a, tri_ia.VERSION):
-            # page lue à l'assemblage mais pas lors de la préparation : l'IA rejugera avec la page
-            if a.get("_texte") and not x.get("page"):
-                continue
-            a["ia"] = x
+            # 26/11/2026 : on garde l'avis des lots même si la page n'a été lue qu'à l'assemblage (collecte du 25/11 :
+            # 30 articles rejugés pour cette seule raison, 34 min) ; l'avis est marqué « avec page » pour ne pas
+            # être rejugé chaque semaine
+            a["ia"] = dict(x, page=x.get("page") or bool(a.get("_texte")))
             n += 1
     return n, n_lots
 

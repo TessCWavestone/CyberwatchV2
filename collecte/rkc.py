@@ -43,6 +43,9 @@ PAYS = {
     "Rép. Tchèque": r"tcheque|czech|cesk", "Royaume-Uni": r"royaume-uni|britannique|united kingdom|\buk\b|britain|british|\bnhs\b|\bico\b|ncsc",
     "Suède": r"suede|suedois|sweden|swedish|sverige", "Suisse": r"suisse|switzerland|swiss|schweiz",
     "Europe": r"europeen|european|\beu\b|\bue\b|commission|enisa|edpb|nis2|cyber resilience act|ai act|ehds",
+    # étape 3 (monde)
+    "États-Unis": r"etats-unis|americain|united states|\bu\.s\.|\busa\b|\bfda\b|hipaa|\bftc\b|\bcisa\b|\bnist\b|california",
+    "Canada": r"canada|canadien|canadian|quebec|ontario|pipeda",
 }
 MOIS_EN = {m: i + 1 for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split())}
 RE_DATE_ND = re.compile(r"\b(\d{1,2}) ([A-Z][a-z]{2}) (20\d\d)(?: \d\d:\d\d)?")

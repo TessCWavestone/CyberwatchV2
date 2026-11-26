@@ -284,12 +284,35 @@ BRUIT = [
         r"radio numerique|digital radio|\bDAB\+?|radiodiffusion|broadcast|rundfunk|pharmacogenom|pharmacogenetic")),
 ]
 
-# Sujets nettement centrés sur les États-Unis (ou un autre pays hors Europe)
-HORS_EUROPE = _rx(
-    r"\bHIPAA\b|\bHITECH\b|\bHITRUST\b|\bFTC\b|\bSEC\b|\bCISA\b|\bCMS\b|\bU\.?S\.? (state|federal|congress|senate)|"
-    r"\b(state|federal) law\b|\bCongress\b|\bSenate\b|\bWhite House\b|California|Texas|New York|Colorado|Missouri|Georgia\b|"
-    r"Alabama|Virginia|Illinois|Washington state|\bCCPA\b|\bCPRA\b|Canada|Australia|India\b|Japan|China|Singapore|"
-    r"Brazil|South Korea|Saudi|UAE|Nigeria|Kenya|Philippines|Indonesia|Vietnam|Malaysia")
+# Étape 3 du passage à l'échelle mondiale (26/11/2026) : pays suivis hors Europe, lus dans config/veille.json
+# (« pays_suivis_hors_europe » ; complété à chaque étape : Amérique du Nord, puis ASPAC, LATAM, Moyen-Orient, Afrique)
+def _pays_suivis_hors_europe():
+    import json, os
+    try:
+        with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config", "veille.json"),
+                  encoding="utf-8") as f:
+            return list(json.load(f).get("pays_suivis_hors_europe") or [])
+    except Exception:
+        return []
+
+
+PAYS_HORS_EUROPE = _pays_suivis_hors_europe()
+
+# Sujets nettement centrés sur un pays hors Europe : un motif par pays (ou groupe de pays). Les pays SUIVIS ne
+# sont plus « hors sujet » : leur motif sert alors à reconnaître qu'un article parle d'un pays suivi.
+SUJETS_PAYS = {
+    "États-Unis": r"\bHIPAA\b|\bHITECH\b|\bHITRUST\b|\bFTC\b|\bSEC\b|\bCISA\b|\bCMS\b|\bFDA\b|\bNIST\b|\bU\.?S\.? (state|federal|congress|senate)|"
+                  r"\b(state|federal) law\b|\bCongress\b|\bSenate\b|\bWhite House\b|California|Texas|New York|Colorado|Missouri|Georgia\b|"
+                  r"Alabama|Virginia|Illinois|Washington state|\bCCPA\b|\bCPRA\b|United States|\bU\.S\.|\bUSA\b|Etats-Unis|americain",
+    "Canada": r"Canada|Canadian|canadien|Quebec|Ontario|\bPIPEDA\b",
+    "Australie": r"Australia|Australie", "Inde": r"India\b|Inde\b", "Japon": r"Japan|Japon", "Chine": r"China|Chine|Chinese",
+    "Singapour": r"Singapore|Singapour", "Brésil": r"Brazil|Bresil|LGPD", "Corée du Sud": r"South Korea|Coree du Sud",
+    "Arabie saoudite": r"Saudi|Arabie saoudite", "Émirats arabes unis": r"\bUAE\b|Emirates|Emirats",
+    "Nigeria": r"Nigeria", "Kenya": r"Kenya", "Philippines": r"Philippines", "Indonésie": r"Indonesia|Indonesie",
+    "Vietnam": r"Vietnam|Viet Nam", "Malaisie": r"Malaysia|Malaisie",
+}
+HORS_EUROPE = _rx("|".join("(?:%s)" % m for p, m in SUJETS_PAYS.items() if p not in PAYS_HORS_EUROPE) or r"(?!x)x")
+PAYS_SUIVIS_SUJET = _rx("|".join("(?:%s)" % SUJETS_PAYS[p] for p in PAYS_HORS_EUROPE if p in SUJETS_PAYS) or r"(?!x)x")
 
 # L'article parle de l'Europe (même publié par une source internationale)
 EUROPE_SUJET = _rx(
@@ -330,6 +353,8 @@ SUJET = _rx(
 EUROPE = {"Europe", "Union européenne", "UE", "Allemagne", "Autriche", "Belgique", "Bulgarie", "Danemark", "Espagne",
           "Finlande", "France", "Grèce", "Hongrie", "Italie", "Norvège", "Pays-Bas", "Pologne", "Portugal",
           "Rép. Tchèque", "République tchèque", "Royaume-Uni", "Suède", "Suisse", "Irlande", "Luxembourg"}
+# toutes les zones suivies (Europe + pays hors Europe ajoutés par étapes)
+ZONES_SUIVIES = EUROPE | set(PAYS_HORS_EUROPE)
 
 # Signaux « forts » (texte adopté / publié) : permettent L'essentiel sans texte clé connu,
 # pour une source officielle (badge « à vérifier »)
@@ -503,7 +528,7 @@ def evaluer(a, seuils, score_neg=None):
     nature = a.get("nature", "presse")
     officiel = nature == "officielle"
     zone = a.get("zone", "")
-    hors_eu_source = zone not in EUROPE and zone not in ("", "—")
+    hors_eu_source = zone not in ZONES_SUIVIES and zone not in ("", "—")
     hors_eu_sujet = bool(HORS_EUROPE.search(t))
     mondial = bool(PORTEE_MONDIALE.search(t))
     s = a.get("score") or 0
@@ -520,7 +545,7 @@ def evaluer(a, seuils, score_neg=None):
         br = ["hors sujet (sens)"]
     statut_t = statut(t) or ip.get("statut", "")
 
-    europe_cite = bool(EUROPE_SUJET.search(t))
+    europe_cite = bool(EUROPE_SUJET.search(t)) or bool(PAYS_SUIVIS_SUJET.search(t))   # étape 3 : ou un pays suivi hors Europe
     hors_eu = (hors_eu_source and not europe_cite) or (hors_eu_sujet and not europe_cite)
     sujet = bool(SUJET.search(t)) or sn["sujet"] or bool(ip.get("sujet"))
     sujet_fort = bool(SUJET_FORT.search(t)) or bool(ip.get("sujet_fort"))

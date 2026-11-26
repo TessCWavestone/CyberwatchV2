@@ -32,7 +32,7 @@ LANGUE_ZONE = {
     "Espagne": "es", "Europe": "en", "Finlande": "fi", "France": "fr", "Grèce": "el",
     "Hongrie": "hu", "Italie": "it", "Norvège": "nb", "Pays-Bas": "nl", "Pologne": "pl",
     "Portugal": "pt", "Rép. Tchèque": "cs", "Royaume-Uni": "en", "Suède": "sv",
-    "Suisse": "fr", "Worldwide": "en",
+    "Suisse": "fr", "Worldwide": "en", "États-Unis": "en", "Canada": "en",
 }
 LANGUES_CONNUES = set(LANGUE_ZONE.values()) | {"en"}
 

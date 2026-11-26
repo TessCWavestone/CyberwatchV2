@@ -23,6 +23,13 @@ PAYS = ("Union européenne (textes européens), Allemagne, Autriche, Belgique, B
         "Finlande, France, Grèce, Hongrie, Irlande, Italie, Luxembourg, Norvège, Pays-Bas, Pologne, Portugal, "
         "République tchèque, Royaume-Uni, Suède, Suisse")
 
+def pays_suivis():
+    """Étape 3 (monde, 26/11/2026) : Europe + pays hors Europe de config/veille.json (« pays_suivis_hors_europe »).
+    VERSION n'est pas changée pour un ajout de pays : les articles européens déjà jugés n'ont pas à être rejugés."""
+    import regles
+    return PAYS + "".join(", " + p for p in regles.PAYS_HORS_EUROPE)
+
+
 ENTREPRISE = (
     "{nom}, fabricant européen de diagnostic in vitro (DIV), présent dans les pays listés. Activités : "
     "diagnostic clinique (microbiologie, immunoessais, biologie moléculaire, tests rapides, sepsis, résistance aux "
@@ -149,7 +156,7 @@ MOTIFS = {
     "sante_hors_sujet": "santé sans lien cyber ni réglementaire",
     "societe_grand_public": "société / grand public",
     "dsa_dma": "DSA / DMA (hors périmètre)",
-    "hors_europe": "hors Europe",
+    "hors_europe": "hors des pays suivis",
     "hors_sujet": "hors du sujet suivi",
     "non_applicable": "ne vise pas l'entreprise",
     "incertain": "applicabilité incertaine",
@@ -415,7 +422,7 @@ class TriIA:
         c["modele_depot"], c["modele_fichier"] = MODELES.get(c["modele"], MODELES["qwen7b"])
         self.cfg, self.llm, self.erreur, self.faits = c, None, "", 0
         nom = os.environ.get("VEILLE_ENTREPRISE", "").strip() or "un fabricant de diagnostic in vitro"
-        self.systeme = CRITERES.format(entreprise=ENTREPRISE.format(nom=nom), pays=PAYS)
+        self.systeme = CRITERES.format(entreprise=ENTREPRISE.format(nom=nom), pays=pays_suivis())
         if not c.get("actif"):
             self.erreur = "AI triage disabled (config/veille.json › ia_tri)."
             return

@@ -82,7 +82,14 @@ ZONES_EN = {"Europe": "Europe (EU)", "Union européenne": "European Union", "All
             "France": "France", "Grèce": "Greece", "Hongrie": "Hungary", "Italie": "Italy", "Norvège": "Norway",
             "Pays-Bas": "Netherlands", "Pologne": "Poland", "Portugal": "Portugal", "République tchèque": "Czech Republic",
             "Rép. Tchèque": "Czech Republic", "Royaume-Uni": "United Kingdom", "Suède": "Sweden", "Suisse": "Switzerland",
-            "Irlande": "Ireland", "Luxembourg": "Luxembourg", "Worldwide": "Worldwide", "Monde": "Worldwide"}
+            "Irlande": "Ireland", "Luxembourg": "Luxembourg", "Worldwide": "Worldwide", "Monde": "Worldwide",
+            "États-Unis": "United States", "Canada": "Canada", "Mexique": "Mexico", "Turquie": "Türkiye",
+            "Arabie saoudite": "Saudi Arabia", "Émirats arabes unis": "United Arab Emirates", "Chine": "China",
+            "Corée du Sud": "South Korea", "Inde": "India", "Indonésie": "Indonesia", "Japon": "Japan", "Malaisie": "Malaysia",
+            "Philippines": "Philippines", "Singapour": "Singapore", "Thaïlande": "Thailand", "Vietnam": "Vietnam",
+            "Australie": "Australia", "Argentine": "Argentina", "Brésil": "Brazil", "Chili": "Chile", "Colombie": "Colombia",
+            "Afrique du Sud": "South Africa", "Algérie": "Algeria", "Côte d'Ivoire": "Côte d'Ivoire", "Égypte": "Egypt",
+            "Kenya": "Kenya", "Nigeria": "Nigeria"}
 
 LIB_TYPE = {
     "fr": {"echeance": "Échéance annoncée", "adopte": "Nouveau texte adopté", "signale": "Signalé par un lecteur",
@@ -104,7 +111,8 @@ def _date(s):
 
 
 def _europeen(a):
-    return a.get("zone") in regles.EUROPE or bool(a.get("textes_cles"))
+    # étape 3 (monde) : toutes les zones suivies, et plus seulement l'Europe
+    return a.get("zone") in regles.ZONES_SUIVIES or bool(a.get("textes_cles"))
 
 
 def _apercu(a):

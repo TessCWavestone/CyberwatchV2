@@ -185,6 +185,7 @@
       csv_head: ['Date', 'Rubrique', 'Pertinence', 'Titre', "Titre d'origine", 'Langue', 'Source', 'Pays / zone', 'Nature', 'Statut', 'Amende', 'Amende (€, estimation)', 'Dates clés', 'Pourquoi', 'Thèmes', 'Lien', 'Résumé'],
       robust_err: "Une partie de la page n'a pas pu s'afficher : ", at: ' à ', no_date: 'Sans date',
       method_html: [
+        ['Régions et pays', "<p>Trois niveaux : <b>pays › sous-région › région</b>. <b>EMEA</b> = Union européenne (textes européens et pays de l'UE), Europe hors UE (Royaume-Uni, Suisse, Norvège, Turquie), Moyen-Orient (Arabie saoudite, Émirats arabes unis), Afrique (Afrique du Sud, Algérie, Côte d'Ivoire, Égypte, Kenya, Nigeria) ; <b>ASPAC</b> = Asie-Pacifique (Chine, Corée du Sud, Inde, Indonésie, Japon, Malaisie, Philippines, Singapour, Thaïlande, Vietnam, Australie) ; <b>Amérique du Nord</b> = États-Unis, Canada ; <b>LATAM</b> = Mexique, Argentine, Brésil, Chili, Colombie. « International » regroupe les normes et textes de portée mondiale. Les points clés sont présentés par région ; la veille se filtre par région, sous-région et pays ; la carte se zoome par continent.</p>"],
         ['Collecte', "<p>Chaque lundi à 7 h (et à la demande), un script lit toutes les sources : flux RSS, pages d'actualités datées, Journal officiel de l'UE (EUR-Lex) et français (données ouvertes de la DILA), et l'alerte RKC déposée dans un dépôt privé. La base couvre l'actualité depuis le 1er janvier 2026 (badge « Base 2026 » pour la recherche documentaire initiale).</p>"],
         ['Pertinence', "<p>Chaque article reçoit une note d'un petit modèle open source gratuit (exécuté sur GitHub) qui compare son sens aux thèmes du client, puis des règles fixes et lisibles décident du niveau : <strong>un texte clé cité</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) n'est jamais écarté ; <strong>« très pertinent »</strong> exige un signal réglementaire (loi, décret, lignes directrices, consultation, norme, sanction… dans toutes les langues) ; le bruit (alertes de vulnérabilités, événements, marchés, finance, télécoms) est écarté, sauf source officielle ; hors Europe, seuls les textes à portée mondiale (ISO/IEC, IMDRF, FDA cybersécurité des dispositifs) sont gardés.</p>"],
         ['Rien ne se perd', "<p>Les articles de faible pertinence sont gardés dans « À surveiller » (masqués par défaut). Les articles écartés restent consultables et téléchargeables dans Sources › Articles écartés. Les boutons « Important » et « Pas pertinent » corrigent le classement à la collecte suivante et servent d'exemples au modèle.</p>"],
@@ -338,6 +339,7 @@
       csv_head: ['Date', 'Section', 'Relevance', 'Title', 'Original title', 'Language', 'Source', 'Country / area', 'Type', 'Status', 'Fine', 'Fine (€, estimate)', 'Key dates', 'Why', 'Topics', 'Link', 'Summary'],
       robust_err: 'Part of the page could not be displayed: ', at: ' at ', no_date: 'No date',
       method_html: [
+        ['Regions and countries', '<p>Three levels: <b>country › sub-region › region</b>. <b>EMEA</b> = European Union (EU texts and EU countries), Europe outside the EU (United Kingdom, Switzerland, Norway, Türkiye), Middle East (Saudi Arabia, United Arab Emirates), Africa (South Africa, Algeria, Côte d’Ivoire, Egypt, Kenya, Nigeria); <b>ASPAC</b> = Asia-Pacific (China, South Korea, India, Indonesia, Japan, Malaysia, Philippines, Singapore, Thailand, Vietnam, Australia); <b>North America</b> = United States, Canada; <b>LATAM</b> = Mexico, Argentina, Brazil, Chile, Colombia. “International” groups standards and texts with a global scope. Key points are shown by region; the watch can be filtered by region, sub-region and country; the map zooms by continent.</p>'],
         ['Collection', '<p>Every Monday at 7 am (and on demand), a script reads every source: RSS feeds, dated news pages, the EU Official Journal (EUR-Lex) and the French one (DILA open data), and the RKC alert stored in a private repository. The database covers news since 1 January 2026 (“2026 base” badge for the initial desk research).</p>'],
         ['Relevance', '<p>Each article is scored by a small, free, open-source model (running on GitHub) that compares its meaning with the client’s themes; then fixed, readable rules set the level: <strong>an article mentioning a key text</strong> (NIS2, CRA, AI Act, IVDR, MDR, MDCG, EHDS, Data Act, CER, ISO 27001, EN 18031, IEC 81001-5-1, DTAC, DSPT, ENS, HDS, SecNumCloud, C5, NEN 7510…) is never discarded; <strong>“highly relevant”</strong> requires a regulatory signal (law, decree, guidelines, consultation, standard, sanction… in every language); noise (vulnerability alerts, events, business news, finance, telecoms) is discarded unless the source is official; outside Europe, only texts with a global scope (ISO/IEC, IMDRF, FDA medical-device cybersecurity) are kept.</p>'],
         ['Nothing is lost', '<p>Low-relevance articles are kept under “To monitor” (hidden by default). Discarded articles remain listed and downloadable in Sources › Discarded articles. The “Important” and “Not relevant” buttons correct the rating at the next collection and serve as examples for the model.</p>'],
@@ -349,6 +351,23 @@
       ]
     }
   };
+  // étape 2 (monde, 25/11/2026)
+  Object.assign(T.fr, {
+    f_region: 'Région', f_sr: 'Sous-région',
+    f_geo_aide: "Trois niveaux : pays › sous-région › région. EMEA = Union européenne, Europe hors UE (Royaume-Uni, Suisse, Norvège, Turquie), Moyen-Orient, Afrique ; ASPAC = Asie-Pacifique ; Amérique du Nord = États-Unis et Canada ; LATAM = Amérique latine (Mexique compris). « International » = textes et normes de portée mondiale.",
+    pc_global: 'International (textes multi-régions)',
+    pc_global_aide: "Normes et textes de portée internationale (ISO, IEC, IMDRF, OCDE…) et textes en cours dans plusieurs régions à la fois (ils figurent aussi dans chacune de leurs régions).",
+    pc_region_vide: 'Aucun point clé en cours pour cette région.',
+    map_na: 'Amérique du Nord', map_latam: 'Amérique latine', map_aspac: 'Asie-Pacifique', map_mea: 'Moyen-Orient et Afrique'
+  });
+  Object.assign(T.en, {
+    f_region: 'Region', f_sr: 'Sub-region',
+    f_geo_aide: 'Three levels: country › sub-region › region. EMEA = European Union, Europe (non-EU: United Kingdom, Switzerland, Norway, Türkiye), Middle East, Africa; ASPAC = Asia-Pacific; North America = United States and Canada; LATAM = Latin America (including Mexico). “International” = texts and standards with a global scope.',
+    pc_global: 'International (multi-region texts)',
+    pc_global_aide: 'International standards and texts (ISO, IEC, IMDRF, OECD…) and texts in progress in several regions at once (they also appear in each of their regions).',
+    pc_region_vide: 'No current key point for this region.',
+    map_na: 'North America', map_latam: 'Latin America', map_aspac: 'Asia-Pacific', map_mea: 'Middle East & Africa'
+  });
   function t(k) { return (T[LANG] && T[LANG][k] !== undefined) ? T[LANG][k] : T.fr[k]; }
 
   var MOIS = {
@@ -388,6 +407,72 @@
     'Europe':       { code: 'EU', fr: 'Union européenne', en: 'European Union', side: true },
     'Worldwide':    { code: 'INT', fr: 'International', en: 'International', side: true }
   };
+
+  // Étape 2 du passage à l'échelle mondiale (25/11/2026) : pays -> sous-région -> région.
+  // EMEA = UE / Europe hors UE / Moyen-Orient / Afrique ; ASPAC ; Amérique du Nord (US, Canada) ; LATAM (Mexique compris).
+  var NOUVEAUX_PAYS = {
+    'Turquie':            { code: 'TR', iso: 792, fr: 'Turquie', en: 'Türkiye' },
+    'Arabie saoudite':    { code: 'SA', iso: 682, fr: 'Arabie saoudite', en: 'Saudi Arabia' },
+    'Émirats arabes unis': { code: 'AE', iso: 784, fr: 'Émirats arabes unis', en: 'United Arab Emirates' },
+    'Afrique du Sud':     { code: 'ZA', iso: 710, fr: 'Afrique du Sud', en: 'South Africa' },
+    'Algérie':            { code: 'DZ', iso: 12, fr: 'Algérie', en: 'Algeria' },
+    "Côte d'Ivoire":      { code: 'CI', iso: 384, fr: "Côte d'Ivoire", en: "Côte d'Ivoire" },
+    'Égypte':             { code: 'EG', iso: 818, fr: 'Égypte', en: 'Egypt' },
+    'Kenya':              { code: 'KE', iso: 404, fr: 'Kenya', en: 'Kenya' },
+    'Nigeria':            { code: 'NG', iso: 566, fr: 'Nigeria', en: 'Nigeria' },
+    'Chine':              { code: 'CN', iso: 156, fr: 'Chine', en: 'China' },
+    'Corée du Sud':       { code: 'KR', iso: 410, fr: 'Corée du Sud', en: 'South Korea' },
+    'Inde':               { code: 'IN', iso: 356, fr: 'Inde', en: 'India' },
+    'Indonésie':          { code: 'ID', iso: 360, fr: 'Indonésie', en: 'Indonesia' },
+    'Japon':              { code: 'JP', iso: 392, fr: 'Japon', en: 'Japan' },
+    'Malaisie':           { code: 'MY', iso: 458, fr: 'Malaisie', en: 'Malaysia' },
+    'Philippines':        { code: 'PH', iso: 608, fr: 'Philippines', en: 'Philippines' },
+    'Singapour':          { code: 'SG', iso: 702, fr: 'Singapour', en: 'Singapore' },
+    'Thaïlande':          { code: 'TH', iso: 764, fr: 'Thaïlande', en: 'Thailand' },
+    'Vietnam':            { code: 'VN', iso: 704, fr: 'Vietnam', en: 'Vietnam' },
+    'Australie':          { code: 'AU', iso: 36, fr: 'Australie', en: 'Australia' },
+    'États-Unis':         { code: 'US', iso: 840, fr: 'États-Unis', en: 'United States' },
+    'Canada':             { code: 'CA', iso: 124, fr: 'Canada', en: 'Canada' },
+    'Mexique':            { code: 'MX', iso: 484, fr: 'Mexique', en: 'Mexico' },
+    'Argentine':          { code: 'AR', iso: 32, fr: 'Argentine', en: 'Argentina' },
+    'Brésil':             { code: 'BR', iso: 76, fr: 'Brésil', en: 'Brazil' },
+    'Chili':              { code: 'CL', iso: 152, fr: 'Chili', en: 'Chile' },
+    'Colombie':           { code: 'CO', iso: 170, fr: 'Colombie', en: 'Colombia' }
+  };
+  Object.keys(NOUVEAUX_PAYS).forEach(function (z) { ZONES[z] = NOUVEAUX_PAYS[z]; });
+  var REGIONS = {
+    GLOBAL: { fr: 'International', en: 'International', ordre: 0 },
+    EMEA: { fr: 'EMEA', en: 'EMEA', ordre: 1 },
+    ASPAC: { fr: 'ASPAC (Asie-Pacifique)', en: 'ASPAC (Asia-Pacific)', ordre: 2 },
+    NA: { fr: 'Amérique du Nord', en: 'North America', ordre: 3 },
+    LATAM: { fr: 'LATAM (Amérique latine)', en: 'LATAM (Latin America)', ordre: 4 }
+  };
+  var SOUS_REGIONS = {
+    INT: { r: 'GLOBAL', fr: 'International', en: 'International', ordre: 0 },
+    UE: { r: 'EMEA', fr: 'Union européenne', en: 'European Union', ordre: 1 },
+    EUR: { r: 'EMEA', fr: 'Europe hors UE', en: 'Europe (non-EU)', ordre: 2 },
+    MO: { r: 'EMEA', fr: 'Moyen-Orient', en: 'Middle East', ordre: 3 },
+    AFR: { r: 'EMEA', fr: 'Afrique', en: 'Africa', ordre: 4 },
+    ASPAC: { r: 'ASPAC', fr: 'Asie-Pacifique', en: 'Asia-Pacific', ordre: 5 },
+    NA: { r: 'NA', fr: 'Amérique du Nord', en: 'North America', ordre: 6 },
+    LATAM: { r: 'LATAM', fr: 'Amérique latine', en: 'Latin America', ordre: 7 }
+  };
+  var SR_PAR_PAYS = {
+    INT: ['Worldwide'],
+    UE: ['Europe', 'Allemagne', 'Autriche', 'Belgique', 'Bulgarie', 'Danemark', 'Espagne', 'Finlande', 'France', 'Grèce', 'Hongrie',
+         'Italie', 'Pays-Bas', 'Pologne', 'Portugal', 'Rép. Tchèque', 'Suède', 'Irlande', 'Luxembourg'],
+    EUR: ['Royaume-Uni', 'Suisse', 'Norvège', 'Turquie'],
+    MO: ['Arabie saoudite', 'Émirats arabes unis'],
+    AFR: ['Afrique du Sud', 'Algérie', "Côte d'Ivoire", 'Égypte', 'Kenya', 'Nigeria'],
+    ASPAC: ['Chine', 'Corée du Sud', 'Inde', 'Indonésie', 'Japon', 'Malaisie', 'Philippines', 'Singapour', 'Thaïlande', 'Vietnam', 'Australie'],
+    NA: ['États-Unis', 'Canada'],
+    LATAM: ['Mexique', 'Argentine', 'Brésil', 'Chili', 'Colombie']
+  };
+  Object.keys(SR_PAR_PAYS).forEach(function (sr) { SR_PAR_PAYS[sr].forEach(function (z) { if (ZONES[z]) { ZONES[z].sr = sr; ZONES[z].r = SOUS_REGIONS[sr].r; } }); });
+  function srZone(z) { var d = ZONES[z]; return d && d.sr ? d.sr : ''; }
+  function regionZone(z) { var d = ZONES[z]; return d && d.r ? d.r : ''; }
+  function nomRegion(r) { var d = REGIONS[r]; return d ? d[LANG] : (r || '—'); }
+  function nomSousRegion(s) { var d = SOUS_REGIONS[s]; return d ? d[LANG] : (s || '—'); }
   var ZONE_PAR_ISO = {};
   Object.keys(ZONES).forEach(function (z) { if (ZONES[z].iso) ZONE_PAR_ISO[ZONES[z].iso] = z; });
   function nomZone(z) { var d = ZONES[z]; return d ? d[LANG] : (z || '—'); }
@@ -695,6 +780,7 @@
     var themes = themesDe(a);
     card._f = {
       section: a.rubrique, nature: a.nature || 'presse', zone: a.zone || '—', pert: a.pertinence || 'faible',
+      region: regionZone(a.zone), sr: srZone(a.zone),
       statut: a.statut || '', amende: a.amende ? (a.amende.plafond ? 'plafond' : 'prononcee') : '',
       theme: sujetsDe(a, 'textes').map(function (c) { return 's:' + c; }), autorite: sujetsDe(a, 'autorites').map(function (c) { return 's:' + c; }),
       grand: (a.pertinence !== 'faible' ? (a.themes || []) : []).map(function (x) { return 'g:' + x; }),
@@ -849,6 +935,12 @@
     function compte(cle) { var c = {}; cartes.forEach(function (k) { var v = k._f[cle]; (Array.isArray(v) ? v : [v]).forEach(function (x) { if (x) c[x] = (c[x] || 0) + 1; }); }); return c; }
     var box = document.getElementById('fc-pert');
     ['elevee', 'moyenne', 'faible'].forEach(function (p) { box.appendChild(chip('pert', p, t('pert_badge')[p])); });
+    // étape 2 (monde) : région -> sous-région -> pays
+    var crg = compte('region'), csr = compte('sr');
+    box = document.getElementById('fc-region');
+    if (box) Object.keys(crg).sort(function (a, b) { return REGIONS[a].ordre - REGIONS[b].ordre; }).forEach(function (r) { box.appendChild(chip('region', r, nomRegion(r), crg[r])); });
+    box = document.getElementById('fc-sr');
+    if (box) Object.keys(csr).sort(function (a, b) { return SOUS_REGIONS[a].ordre - SOUS_REGIONS[b].ordre; }).forEach(function (s) { box.appendChild(chip('sr', s, nomSousRegion(s), csr[s])); });
     var cz = compte('zone'); box = document.getElementById('fc-zone');
     Object.keys(cz).filter(function (z) { return z !== '—'; }).sort(function (a, b) { return nomZone(a).localeCompare(nomZone(b), LANG); })
       .forEach(function (z) { box.appendChild(chip('zone', z, nomZone(z), cz[z])); });
@@ -900,6 +992,8 @@
     if (etatFiltres.depuisVisite && !f.nouveau) return false;
     if (sel.section.length && sel.section.indexOf(f.section) === -1) return false;
     if (sel.nature.length && sel.nature.indexOf(f.nature) === -1) return false;
+    if (sel.region.length && sel.region.indexOf(f.region) === -1) return false;
+    if (sel.sr.length && sel.sr.indexOf(f.sr) === -1) return false;
     if (sel.zone.length && sel.zone.indexOf(f.zone) === -1) return false;
     if (sel.pert.length && sel.pert.indexOf(f.pert) === -1) return false;
     if (sel.statut.length && sel.statut.indexOf(f.statut) === -1) return false;
@@ -928,7 +1022,7 @@
     });
   }
   function appliquerFiltres() {
-    var sel = { section: selection('section'), nature: selection('nature'), zone: selection('zone'), pert: selection('pert'), statut: selection('statut'), amende: selection('amende'), theme: selection('theme'), autorite: selection('autorite'), grand: selection('grand') };
+    var sel = { region: selection('region'), sr: selection('sr'), section: selection('section'), nature: selection('nature'), zone: selection('zone'), pert: selection('pert'), statut: selection('statut'), amende: selection('amende'), theme: selection('theme'), autorite: selection('autorite'), grand: selection('grand') };
     var total = 0, visibles = 0, nRecent = 0, nArch = 0, nMasques = 0, nFaiblesVis = 0;
     var parRub = {};
     cartes.forEach(function (c) {
@@ -974,7 +1068,7 @@
       document.getElementById('surveiller-texte').textContent = montrerFaible ? t('surv_shown')(nFaibles) + ' ' : t('surv_hidden')(nMasques) + ' ';
       document.getElementById('surveiller-bascule').textContent = montrerFaible ? t('surv_hide') : t('surv_show');
     }
-    var actifs = sel.section.length + sel.nature.length + sel.zone.length + sel.pert.length + sel.statut.length + sel.amende.length + sel.theme.length + sel.autorite.length + sel.grand.length + (periode ? 1 : 0) + (etatFiltres.depuisVisite ? 1 : 0);
+    var actifs = sel.region.length + sel.sr.length + sel.section.length + sel.nature.length + sel.zone.length + sel.pert.length + sel.statut.length + sel.amende.length + sel.theme.length + sel.autorite.length + sel.grand.length + (periode ? 1 : 0) + (etatFiltres.depuisVisite ? 1 : 0);
     var ac = document.getElementById('active-count'); ac.textContent = actifs; ac.hidden = !actifs;
     Array.prototype.forEach.call(document.querySelectorAll('.tag[data-theme]'), function (b) { var v = b.getAttribute('data-theme'); b.setAttribute('aria-pressed', sel.theme.indexOf(v) !== -1 || sel.autorite.indexOf(v) !== -1 ? 'true' : 'false'); });
   }
@@ -1260,7 +1354,10 @@
     var svg = document.getElementById('map-svg'), stage = document.getElementById('map-stage');
     var fiche = document.getElementById('map-fiche'), bulle = document.getElementById('map-tooltip'), pills = document.getElementById('map-pills');
     var legende = document.getElementById('map-legend');
-    var periode = '', vue = 'europe', choisi = null, formes = {}, PAYS = null;
+    var periode = '', vue = 'monde', choisi = null, formes = {}, PAYS = null;
+    // étape 2 (monde) : cadres [lon min, lon max, lat min, lat max] des vues ; Europe garde sa projection dédiée
+    var CADRES = { europe: [-11, 33, 35, 71], monde: [-180, 180, -58, 84], na: [-170, -50, 14, 72], latam: [-118, -33, -56, 33],
+                   aspac: [64, 180, -48, 55], mea: [-20, 62, -36, 43] };
 
     legende.appendChild(el('span', { text: t('map_legend') }));
     ['0', '1–2', '3–5', '6–10', '11–20', '21+'].forEach(function (lab, i) {
@@ -1291,18 +1388,19 @@
       var proj = vue === 'europe' ? projEurope : projMonde;
       // cadre : Europe (Portugal → Finlande, Grèce → Cap Nord) ou monde entier
       var cadre = [], lo, la;
-      if (vue === 'europe') { for (lo = -11; lo <= 33; lo += 2) { cadre.push([lo, 35]); cadre.push([lo, 71]); } for (la = 35; la <= 71; la += 2) { cadre.push([-11, la]); cadre.push([33, la]); } }
-      else { for (lo = -180; lo <= 180; lo += 10) { cadre.push([lo, -58]); cadre.push([lo, 84]); } for (la = -58; la <= 84; la += 4) { cadre.push([-180, la]); cadre.push([180, la]); } }
+      var cb = CADRES[vue] || CADRES.monde;
+      for (lo = cb[0]; lo <= cb[1]; lo += 2) { cadre.push([lo, cb[2]]); cadre.push([lo, cb[3]]); }
+      for (la = cb[2]; la <= cb[3]; la += 2) { cadre.push([cb[0], la]); cadre.push([cb[1], la]); }
       var xs = [], ys = [];
       cadre.forEach(function (c) { var q = proj(c[0], c[1]); if (q) { xs.push(q[0]); ys.push(q[1]); } });
       var x0 = Math.min.apply(null, xs), x1 = Math.max.apply(null, xs), y0 = Math.min.apply(null, ys), y1 = Math.max.apply(null, ys);
       var L = 1000, ech = L / (x1 - x0), H = Math.round((y1 - y0) * ech);
       svg.setAttribute('viewBox', '0 0 ' + L + ' ' + H);
-      if (vue === 'monde') svg.appendChild(svgEl('rect', { x: 0, y: 0, width: L, height: H, fill: '#eaf0f5' }));
+      if (vue !== 'europe') svg.appendChild(svgEl('rect', { x: 0, y: 0, width: L, height: H, fill: '#eaf0f5' }));
       PAYS.forEach(function (p) {
         if (p.id === 10) return;  // Antarctique
         var z = ZONE_PAR_ISO[p.id];
-        var path = svgEl('path', { d: cheminPays(p, proj, vue === 'monde', ech, x0, y0), 'class': 'pays ' + (z ? 'pays-suivi' : 'pays-autre') });
+        var path = svgEl('path', { d: cheminPays(p, proj, vue !== 'europe', ech, x0, y0), 'class': 'pays ' + (z ? 'pays-suivi' : 'pays-autre') });
         if (z) {
           path.setAttribute('tabindex', '0'); path.setAttribute('role', 'button'); path.setAttribute('aria-label', nomZone(z));
           path.addEventListener('mousemove', function (e) { bulleSur(e, z); });
@@ -1323,7 +1421,7 @@
       stage.insertBefore(el('p', { className: 'map-hint', style: 'padding:12px 16px 0', text: t('map_nodata') }), svg);
       svg.style.display = 'none';
       Object.keys(ZONES).forEach(function (z) {
-        var d = ZONES[z]; if (d.side) return;
+        var d = ZONES[z]; if (d.side || !d.x) return;   // tuiles de secours : pays d'Europe seulement
         var b = el('button', { type: 'button', className: 'tile', style: 'grid-column:' + d.x + ';grid-row:' + d.y }, [el('strong', { text: d.code }), el('br'), el('span', { text: d[LANG] })]);
         b.addEventListener('click', function () { choisir(z); });
         b.addEventListener('mousemove', function (e) { bulleSur(e, z); });
@@ -2374,6 +2472,20 @@
     SEL_PC = { top: act, autres: [], prec: ALERTES.filter(function (x) { return !alerteActive(x) && !x.ref; }) };
     return SEL_PC;
   }
+  // « International » : textes multi-régions — zone internationale, normes internationales (ISO, IEC, IMDRF, OCDE…),
+  // ou un même texte en cours dans plusieurs régions (il figure alors aussi dans chacune de ses régions)
+  var INTERNATIONAL = /\b(ISO|IEC|IMDRF|OCDE|OECD|ONU|UN|G7|G20|ENISA-ISO)\b|normes ISO/i;
+  function groupesRegions(xs) {
+    var res = {}, regionsTexte = {};
+    xs.forEach(function (x) { var r = regionZone(x.zone); if (x.texte && r && r !== 'GLOBAL') (regionsTexte[x.texte] = regionsTexte[x.texte] || {})[r] = 1; });
+    xs.forEach(function (x) {
+      var r = regionZone(x.zone) || 'GLOBAL';
+      var multi = x.texte && Object.keys(regionsTexte[x.texte] || {}).length > 1;
+      if (r === 'GLOBAL' || INTERNATIONAL.test(x.texte || '') || multi) (res.GLOBAL = res.GLOBAL || []).push(x);
+      if (r !== 'GLOBAL') (res[r] = res[r] || []).push(x);
+    });
+    return res;
+  }
   function ouvrirPrecedents() {
     var det = document.getElementById('pc-precedents');
     location.hash = '#essentiel'; det.open = true;
@@ -2387,7 +2499,19 @@
     });
     var sel = selectionPointsCles();
     document.getElementById('pc-vide').hidden = sel.top.length > 0;
-    sel.top.forEach(function (x) { liste.appendChild(carteAlerte(x, false)); });
+    // étape 2 (monde, décision du 25/11/2026) : « International » (textes multi-régions) puis une section par région
+    var parRegion = groupesRegions(sel.top);
+    liste.className = 'pc-regions';
+    ['GLOBAL', 'EMEA', 'ASPAC', 'NA', 'LATAM'].forEach(function (r) {
+      var xs = parRegion[r] || [];
+      var sec = el('section', { className: 'pc-region', id: 'pc-r-' + r.toLowerCase() }, [
+        el('h3', { className: 'pc-region-titre' }, [el('span', { text: r === 'GLOBAL' ? t('pc_global') : nomRegion(r) }), el('span', { className: 'pc-region-n', text: String(xs.length) })]),
+        r === 'GLOBAL' ? el('p', { className: 'block-meta', text: t('pc_global_aide') }) : null
+      ]);
+      if (!xs.length) sec.appendChild(el('p', { className: 'empty pc-region-vide', text: t('pc_region_vide') }));
+      else { var g = el('div', { className: 'pc-liste' }); xs.forEach(function (x) { g.appendChild(carteAlerte(x, false)); }); sec.appendChild(g); }
+      liste.appendChild(sec);
+    });
     var nPrec = sel.autres.length + sel.prec.length;
     document.getElementById('pc-prev-n').textContent = t('pc_prev_n')(nPrec);
     var det = document.getElementById('pc-precedents'), fait = false;

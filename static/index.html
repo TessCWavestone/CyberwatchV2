@@ -203,6 +203,8 @@
           <p class="block-meta" id="per-archives" hidden></p>
         </fieldset>
         <fieldset class="facet"><legend data-i18n="f_pert">Pertinence</legend><div class="chips" id="fc-pert"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_region">Région</legend><p class="facet-aide" data-i18n="f_geo_aide"></p><div class="chips" id="fc-region"></div></fieldset>
+        <fieldset class="facet"><legend data-i18n="f_sr">Sous-région</legend><div class="chips" id="fc-sr"></div></fieldset>
         <fieldset class="facet"><legend data-i18n="f_zone">Pays / zone</legend><div class="chips" id="fc-zone"></div></fieldset>
         <fieldset class="facet facet-wide"><legend data-i18n="f_theme">Textes et normes</legend><div class="chips" id="fc-theme"></div>
           <button type="button" class="linkbtn" id="more-themes" hidden></button></fieldset>
@@ -237,8 +239,12 @@
     </header>
     <div class="map-tools">
       <div class="seg" role="group" id="map-vue">
-        <button type="button" data-v="europe" aria-pressed="true" data-i18n="map_europe">Europe</button>
-        <button type="button" data-v="monde" data-i18n="map_world">Monde</button>
+        <button type="button" data-v="monde" aria-pressed="true" data-i18n="map_world">Monde</button>
+        <button type="button" data-v="europe" data-i18n="map_europe">Europe</button>
+        <button type="button" data-v="mea" data-i18n="map_mea">Moyen-Orient et Afrique</button>
+        <button type="button" data-v="na" data-i18n="map_na">Amérique du Nord</button>
+        <button type="button" data-v="latam" data-i18n="map_latam">Amérique latine</button>
+        <button type="button" data-v="aspac" data-i18n="map_aspac">Asie-Pacifique</button>
       </div>
       <div class="seg" role="group" id="map-periode">
         <button type="button" data-p="30" data-i18n="p30">30 jours</button>

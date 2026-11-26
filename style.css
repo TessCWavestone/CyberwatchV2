@@ -562,3 +562,6 @@ a.as-titre:hover { text-decoration: underline; }
 .pc-region-vide { margin: 0; }
 .facet-aide { font-size: .78rem; color: var(--muted, #5b6470); margin: 2px 0 8px; line-height: 1.35; }
 #map-vue { flex-wrap: wrap; }
+
+/* étape 3 (monde) : sources regroupées par pays */
+.data-table tr.src-groupe th { text-align: left; background: var(--chip-bg, #eef1f5); font-size: .82rem; font-weight: 650; padding: 8px 10px; color: var(--ink, #16181b); }

@@ -358,7 +358,10 @@
     pc_global: 'International (textes multi-régions)',
     pc_global_aide: "Normes et textes de portée internationale (ISO, IEC, IMDRF, OCDE…) et textes en cours dans plusieurs régions à la fois (ils figurent aussi dans chacune de leurs régions).",
     pc_region_vide: 'Aucun point clé en cours pour cette région.',
-    map_na: 'Amérique du Nord', map_latam: 'Amérique latine', map_aspac: 'Asie-Pacifique', map_mea: 'Moyen-Orient et Afrique'
+    map_na: 'Amérique du Nord', map_latam: 'Amérique latine', map_aspac: 'Asie-Pacifique', map_mea: 'Moyen-Orient et Afrique',
+    src_textes_ue: "textes de l'Union européenne", sf_zone_choisir: '— Choisir le pays concerné —', sf_zone_ue: "Union européenne (textes de l'UE)",
+    sf_zone_aide: "Pays dont la source suit la réglementation. Pour une institution ou un texte de l'UE (Commission, ENISA, EDPB…), choisissez « Union européenne » ; pour une source qui couvre plusieurs pays du monde, « International ».",
+    sf_err_zone: 'Choisissez le pays (ou la zone) que la source concerne.'
   });
   Object.assign(T.en, {
     f_region: 'Region', f_sr: 'Sub-region',
@@ -366,7 +369,10 @@
     pc_global: 'International (multi-region texts)',
     pc_global_aide: 'International standards and texts (ISO, IEC, IMDRF, OECD…) and texts in progress in several regions at once (they also appear in each of their regions).',
     pc_region_vide: 'No current key point for this region.',
-    map_na: 'North America', map_latam: 'Latin America', map_aspac: 'Asia-Pacific', map_mea: 'Middle East & Africa'
+    map_na: 'North America', map_latam: 'Latin America', map_aspac: 'Asia-Pacific', map_mea: 'Middle East & Africa',
+    src_textes_ue: 'European Union texts', sf_zone_choisir: '— Choose the country concerned —', sf_zone_ue: 'European Union (EU texts)',
+    sf_zone_aide: 'Country whose regulation the source follows. For an EU institution or text (Commission, ENISA, EDPB…), choose “European Union”; for a source covering several countries worldwide, “International”.',
+    sf_err_zone: 'Choose the country (or area) the source is about.'
   });
   function t(k) { return (T[LANG] && T[LANG][k] !== undefined) ? T[LANG][k] : T.fr[k]; }
 
@@ -1708,9 +1714,14 @@
 
   function renderEtat() {
     var tbody = document.getElementById('etat-lignes');
+    // étape 3 (monde, 26/11/2026) : sources regroupées par région › sous-région › pays, puis état d'accès et nom
+    function ordreGeo(z) { var sr = srZone(z) || 'INT'; return [(REGIONS[SOUS_REGIONS[sr].r] || {}).ordre || 0, SOUS_REGIONS[sr].ordre]; }
     var src = (ETAT.sources || []).slice().sort(function (a, b) {
-      return ((ACCES[accesDe(a)] || {}).ordre - (ACCES[accesDe(b)] || {}).ordre) || nomZone(a.zone).localeCompare(nomZone(b.zone), LANG) || (a.nom || '').localeCompare(b.nom || '', LANG);
+      var ga = ordreGeo(a.zone), gb = ordreGeo(b.zone);
+      return (ga[0] - gb[0]) || (ga[1] - gb[1]) || (a.zone === 'Europe' ? -1 : 0) - (b.zone === 'Europe' ? -1 : 0) || nomZone(a.zone).localeCompare(nomZone(b.zone), LANG) ||
+        ((ACCES[accesDe(a)] || {}).ordre - (ACCES[accesDe(b)] || {}).ordre) || (a.nom || '').localeCompare(b.nom || '', LANG);
     });
+    var zoneCourante = null;
     var compte = { ok: 0, partielle: 0, ko: 0, autre: 0 };
     src.forEach(function (s) {
       var a = accesDe(s), info = ACCES[a] || ACCES.ko, groupe = a in compte ? a : 'autre';
@@ -1723,7 +1734,14 @@
       var action = !s.url ? null : (a === 'retiree'
         ? el('button', { type: 'button', className: 'btn btn-sm', 'data-src-action': 'retablir', 'data-url': s.url, 'data-nom': s.nom, text: t('src_restore') })
         : el('button', { type: 'button', className: 'btn btn-sm btn-danger', 'data-src-action': 'retrait', 'data-url': s.url, 'data-nom': s.nom, text: t('src_remove') }));
-      tbody.appendChild(el('tr', { 'data-acces': groupe, 'data-texte': normaliser((s.nom || '') + ' ' + (s.zone || '') + ' ' + nomZone(s.zone)) }, [
+      if (s.zone !== zoneCourante) {
+        zoneCourante = s.zone;
+        var srz = srZone(s.zone) || 'INT', rz = SOUS_REGIONS[srz].r;
+        var chemin = rz === 'GLOBAL' ? nomRegion('GLOBAL') : nomRegion(rz) + (rz === srz ? '' : ' › ' + nomSousRegion(srz)) + (s.zone === 'Europe' ? '' : ' › ' + nomZone(s.zone));
+        if (s.zone === 'Europe') chemin += ' — ' + t('src_textes_ue');
+        tbody.appendChild(el('tr', { className: 'src-groupe' }, [el('th', { colspan: '8', scope: 'colgroup', text: chemin })]));
+      }
+      tbody.appendChild(el('tr', { 'data-acces': groupe, 'data-texte': normaliser((s.nom || '') + ' ' + (s.zone || '') + ' ' + nomZone(s.zone) + ' ' + nomSousRegion(srZone(s.zone)) + ' ' + nomRegion(regionZone(s.zone))) }, [
         el('td', null, [el('span', { className: 'mode ' + info.cls, text: t(info.key) })]),
         el('td', null, [s.url ? el('a', { href: s.url, target: '_blank', rel: 'noopener noreferrer', text: s.nom || s.url }) : el('span', { text: s.nom }),
           s.origine === 'site' ? badge('badge-sm', t('added_site')) : null, s.nature === 'opinion' ? badge('badge-opinion badge-sm', t('opinion_src')) : null,
@@ -1745,10 +1763,13 @@
     var rech = document.getElementById('etat-recherche'), choix = '';
     function filtrer() {
       var q = normaliser(rech.value).trim(), n = 0;
+      var entete = null, vus = 0;
       Array.prototype.forEach.call(tbody.children, function (tr) {
+        if (tr.classList.contains('src-groupe')) { if (entete) entete.hidden = !vus; entete = tr; vus = 0; return; }
         var ok = (!choix || tr.getAttribute('data-acces') === choix) && (!q || tr.getAttribute('data-texte').indexOf(q) !== -1);
-        tr.hidden = !ok; if (ok) n++;
+        tr.hidden = !ok; if (ok) { n++; vus++; }
       });
+      if (entete) entete.hidden = !vus;
       document.getElementById('etat-vide').hidden = n !== 0 || !src.length;
     }
     document.getElementById('etat-filtres').addEventListener('choix', function (e) { choix = e.detail.getAttribute('data-a'); filtrer(); });
@@ -1760,7 +1781,9 @@
   /* Couverture : date du dernier article pertinent par pays et par rubrique (rouge si > 60 jours) */
   function renderCouverture() {
     var table = document.getElementById('cov-table'); if (!table) return;
-    var zones = Object.keys(ZONES).filter(function (z) { return z !== 'Worldwide' && z !== 'Bulgarie'; })
+    var avecSources = {};
+    (ETAT.sources || []).forEach(function (s) { avecSources[s.zone] = 1; }); ARTICLES.forEach(function (a) { avecSources[a.zone] = 1; });
+    var zones = Object.keys(ZONES).filter(function (z) { return z !== 'Worldwide' && z !== 'Bulgarie' && avecSources[z]; })
       .sort(function (a, b) { return a === 'Europe' ? -1 : b === 'Europe' ? 1 : nomZone(a).localeCompare(nomZone(b), LANG); });
     var rubs = (META.rubriques || []).filter(function (r) { return r.id !== 'autres'; });
     var der = {};
@@ -1949,8 +1972,17 @@
 
   function gestionSources() {
     var form = document.getElementById('src-form'), err = document.getElementById('src-form-err'), zoneSel = document.getElementById('sf-zone');
-    Object.keys(ZONES).sort(function (a, b) { return nomZone(a).localeCompare(nomZone(b), LANG); }).forEach(function (z) { zoneSel.appendChild(el('option', { value: z, text: nomZone(z) })); });
-    zoneSel.value = 'France';
+    // étape 3 (monde) : pays obligatoire, choisi dans une liste regroupée par région › sous-région
+    zoneSel.appendChild(el('option', { value: '', text: t('sf_zone_choisir') }));
+    Object.keys(SOUS_REGIONS).sort(function (a, b) { return SOUS_REGIONS[a].ordre - SOUS_REGIONS[b].ordre; }).forEach(function (sr) {
+      var r = SOUS_REGIONS[sr].r;
+      var og = el('optgroup', { label: (r === 'GLOBAL' || r === sr) ? nomRegion(r) : nomRegion(r) + ' › ' + nomSousRegion(sr) });
+      Object.keys(ZONES).filter(function (z) { return srZone(z) === sr; })
+        .sort(function (a, b) { return a === 'Europe' ? -1 : b === 'Europe' ? 1 : nomZone(a).localeCompare(nomZone(b), LANG); })
+        .forEach(function (z) { og.appendChild(el('option', { value: z, text: z === 'Europe' ? t('sf_zone_ue') : nomZone(z) })); });
+      if (og.children.length) zoneSel.appendChild(og);
+    });
+    zoneSel.value = '';
     afficherMode();
     document.getElementById('src-ajouter').addEventListener('click', function () { form.hidden = !form.hidden; if (!form.hidden) form.querySelector('input').focus(); });
     document.getElementById('src-form-cancel').addEventListener('click', function () { form.hidden = true; err.hidden = true; });
@@ -1960,8 +1992,9 @@
       var f = form.elements;
       var d = { action: 'ajout', nom: f.nom.value.trim(), zone: f.zone.value, type: f.type.value, url: f.url.value.trim(), flux: lignes(f.flux.value), pages: lignes(f.pages.value) };
       if (!d.nom || !/^https?:\/\/[^\s.]+\.[^\s]+/.test(d.url)) { err.textContent = t('sf_err'); err.hidden = false; return; }
+      if (!d.zone) { err.textContent = t('sf_err_zone'); err.hidden = false; zoneSel.focus(); return; }
       err.hidden = true;
-      demander(t('confirm_add_t'), [t('confirm_add')(d.nom, d.url), lireJeton() ? t('via_token') : t('via_issue')], t('confirm'), function () { envoyerDemande(d); form.reset(); zoneSel.value = 'France'; form.hidden = true; });
+      demander(t('confirm_add_t'), [t('confirm_add')(d.nom, d.url), lireJeton() ? t('via_token') : t('via_issue')], t('confirm'), function () { envoyerDemande(d); form.reset(); zoneSel.value = ''; form.hidden = true; });
     });
     document.getElementById('etat-lignes').addEventListener('click', function (e) {
       var b = e.target.closest('[data-src-action]'); if (!b) return;

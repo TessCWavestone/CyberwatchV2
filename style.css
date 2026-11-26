@@ -554,3 +554,11 @@ a.as-titre:hover { text-decoration: underline; }
 .sl-pays-item input { width: auto; margin: 0; }
 .sl-compte { margin: 10px 0 0; font-weight: 600; color: var(--ink); }
 .modal { max-height: 92vh; overflow: auto; }
+
+/* étape 2 (monde, 25/11/2026) : points clés par région, aide des filtres géographiques */
+.pc-regions { display: flex; flex-direction: column; gap: 22px; }
+.pc-region-titre { display: flex; align-items: baseline; gap: 10px; margin: 0 0 8px; font-size: 1.05rem; }
+.pc-region-n { font-size: .8rem; font-weight: 600; padding: 1px 8px; border-radius: 10px; background: var(--chip-bg, #eef1f5); color: var(--muted, #5b6470); }
+.pc-region-vide { margin: 0; }
+.facet-aide { font-size: .78rem; color: var(--muted, #5b6470); margin: 2px 0 8px; line-height: 1.35; }
+#map-vue { flex-wrap: wrap; }
